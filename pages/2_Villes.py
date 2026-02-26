@@ -12,39 +12,39 @@ import streamlit as st
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 from utils.data_loader import METRICS, city_stats, load_stations
+from utils.styles import abstract_box, inject_css, section, sidebar_nav
 
 st.set_page_config(
     page_title="Comparaison des villes — Gold Standard GBFS",
     page_icon=None,
     layout="wide",
 )
+inject_css()
 
 st.title("Analyse comparative des villes")
-st.markdown(
-    "Classement et profil multi-dimensionnel des agglomérations françaises "
-    "selon les métriques d'enrichissement spatial du Gold Standard GBFS."
+st.caption("Gold Standard GBFS · CESI BikeShare-ICT 2025-2026")
+
+abstract_box(
+    "Cette analyse classe les agglomérations françaises dotées d'un réseau VLS "
+    "selon les métriques d'enrichissement spatial du Gold Standard GBFS. "
+    "Trois niveaux d'analyse sont proposés : un classement univarié sur la métrique principale choisie, "
+    "un scatter plot croisant infrastructure cyclable et accidentologie, "
+    "et un profil radar multi-dimensionnel permettant la comparaison simultanée "
+    "de plusieurs villes sur quatre axes normalisés."
 )
 
 df     = load_stations()
 cities = city_stats(df)
 
 # ── Sidebar ───────────────────────────────────────────────────────────────────
+sidebar_nav()
 with st.sidebar:
-    st.markdown("## Navigation")
-    st.page_link("app.py",                   label="Accueil")
-    st.page_link("pages/1_Carte.py",         label="Carte des stations")
-    st.page_link("pages/2_Villes.py",        label="Comparaison des villes")
-    st.page_link("pages/3_Distributions.py", label="Distributions statistiques")
-    st.page_link("pages/4_Export.py",        label="Export des données")
-    st.page_link("pages/5_Mobilite_France.py",    label="Indicateurs nationaux")
-    st.page_link("pages/6_Montpellier.py",        label="Montpellier — Velomagg")
-    st.divider()
     st.header("Paramètres")
     n_top = st.slider("Nombre de villes", min_value=5, max_value=40, value=20, step=5)
     metric_key = st.selectbox(
         "Métrique principale",
         options=list(METRICS.keys()),
-        format_func=lambda k: METRICS[k]["label"],
+        format_func=lambda k: METRICS[k][\"label\"],
         index=0,
     )
     min_stations = st.number_input(
@@ -67,11 +67,12 @@ cities_sorted = cities_f.dropna(subset=[metric_key]).sort_values(
     metric_key, ascending=ascending
 )
 
-# ── Tableau + classement ──────────────────────────────────────────────────────
+# ── Section 1 — Classement ────────────────────────────────────────────────────
+section(1, "Classement univarié")
+
 col_tab, col_chart = st.columns([2, 3])
 
 with col_tab:
-    st.subheader(f"Top {n_top} — {meta['label']}")
     extra_cols = [
         c for c in ["infra_cyclable_pct", "baac_accidents_cyclistes", "gtfs_heavy_stops_300m"]
         if c != metric_key
@@ -79,12 +80,12 @@ with col_tab:
     display = cities_sorted.head(n_top)[
         ["city", "n_stations", metric_key] + extra_cols
     ].rename(columns={
-        "city": "Ville",
-        "n_stations": "Stations",
-        metric_key: meta["label"],
-        "infra_cyclable_pct": "Infra cyclable (%)",
-        "baac_accidents_cyclistes": "Accidents (moy.)",
-        "gtfs_heavy_stops_300m": "TC lourds (moy.)",
+        "city":                       "Ville",
+        "n_stations":                 "Stations",
+        metric_key:                   meta["label"],
+        "infra_cyclable_pct":         "Infra cyclable (%)",
+        "baac_accidents_cyclistes":   "Accidents (moy.)",
+        "gtfs_heavy_stops_300m":      "TC lourds (moy.)",
     })
     st.dataframe(
         display,
@@ -99,11 +100,13 @@ with col_tab:
             )
         },
     )
+    st.caption(
+        f"Tableau 1.1. Top {n_top} villes classées par {meta['label']}. "
+        f"Seuil : ≥ {min_stations} stations."
+    )
 
 with col_chart:
-    st.subheader("Classement — barres horizontales")
     plot_df = cities_sorted.head(n_top).copy()
-
     fig = px.bar(
         plot_df,
         x=metric_key,
@@ -123,17 +126,19 @@ with col_chart:
         yaxis=dict(autorange="reversed"),
     )
     st.plotly_chart(fig, use_container_width=True)
+    st.caption(
+        f"Figure 1.1. Classement des {n_top} premières villes par {meta['label']}. "
+        "Les barres indiquent la valeur moyenne de la métrique sur les stations de la ville."
+    )
 
+# ── Section 2 — Infrastructure et accidentologie ──────────────────────────────
 st.divider()
+section(2, "Infrastructure cyclable et accidentologie")
 
-# ── Scatter : infrastructure vs accidentologie ────────────────────────────────
-st.subheader("Infrastructure cyclable et accidentologie")
 st.caption(
-    "Chaque point représente une ville. "
-    "La taille est proportionnelle au nombre de stations ; "
-    "la couleur indique l'accessibilité aux transports lourds (TC). "
-    "Le quadrant idéal se situe en haut à gauche : "
-    "forte infrastructure cyclable, faible sinistralité."
+    "Chaque point représente une ville. La taille est proportionnelle au nombre de stations ; "
+    "la couleur indique l'accessibilité aux transports lourds. "
+    "Le quadrant idéal (forte infrastructure, faible sinistralité) est en haut à gauche."
 )
 
 scatter_df = cities_f.dropna(subset=["infra_cyclable_pct", "baac_accidents_cyclistes"])
@@ -152,9 +157,9 @@ fig_sc = px.scatter(
         "baac_accidents_cyclistes": ":.3f",
     },
     labels={
-        "infra_cyclable_pct": "Infrastructure cyclable moyenne (%)",
+        "infra_cyclable_pct":       "Infrastructure cyclable moyenne (%)",
         "baac_accidents_cyclistes": "Accidents cyclistes moyens (300 m)",
-        "gtfs_heavy_stops_300m": "Arrêts TC lourds (moy.)",
+        "gtfs_heavy_stops_300m":    "Arrêts TC lourds (moy.)",
     },
     size_max=40,
     height=480,
@@ -175,21 +180,25 @@ fig_sc.add_vline(
     annotation_text="Moyenne infra", annotation_position="top",
 )
 st.plotly_chart(fig_sc, use_container_width=True)
-
-st.divider()
-
-# ── Radar multi-villes ────────────────────────────────────────────────────────
-st.subheader("Profil radar — comparaison multi-dimensionnelle")
 st.caption(
-    "Les valeurs sont normalisées entre 0 et 1 par métrique pour permettre "
-    "la comparaison entre dimensions hétérogènes. "
-    "Pour les accidents, la valeur est inversée (1 = moins d'accidents)."
+    "Figure 2.1. Infrastructure cyclable (axe horizontal) versus accidentologie cycliste (axe vertical). "
+    "La couleur encode l'accessibilité aux transports en commun lourds. "
+    "Les lignes pointillées indiquent les moyennes nationales."
+)
+
+# ── Section 3 — Profil radar ──────────────────────────────────────────────────
+st.divider()
+section(3, "Profil radar multi-dimensionnel")
+
+st.caption(
+    "Les valeurs sont normalisées entre 0 et 1 par métrique pour permettre la comparaison "
+    "entre dimensions hétérogènes. La composante accidents est inversée (1 = moins d'accidents)."
 )
 
 radar_cols = {
-    "infra_cyclable_pct": "Infra cyclable",
-    "gtfs_heavy_stops_300m": "TC lourds",
-    "baac_accidents_cyclistes": "Sécurité (inv.)",
+    "infra_cyclable_pct":        "Infra cyclable",
+    "gtfs_heavy_stops_300m":     "TC lourds",
+    "baac_accidents_cyclistes":  "Sécurité (inv.)",
     "gtfs_stops_within_300m_pct": "Couv. GTFS",
 }
 top_radar_cities = (
@@ -237,5 +246,10 @@ if len(radar_city_sel) >= 2:
         margin=dict(l=60, r=60, t=30, b=30),
     )
     st.plotly_chart(fig_radar, use_container_width=True)
+    st.caption(
+        "Figure 3.1. Profil radar des villes sélectionnées. "
+        "Chaque axe est normalisé min-max sur les villes affichées. "
+        "La composante sécurité est inversée (valeur haute = faible accidentologie)."
+    )
 else:
-    st.info("Sélectionnez au moins 2 villes pour afficher le radar.")
+    st.info("Sélectionnez au moins 2 villes pour afficher le profil radar.")

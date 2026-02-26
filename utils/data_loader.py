@@ -143,6 +143,46 @@ def completeness_report(df: pd.DataFrame) -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 
+@st.cache_data(ttl=3600, show_spinner=False)
+def compute_imd_cities(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Calcule l'Indice de Mobilité Douce (IMD) à l'échelle des villes.
+
+    Composantes (pondération égale, 25 % chacune) :
+    - S : Sécurité      = 1 − norm(baac_accidents_cyclistes)
+    - I : Infrastructure = norm(infra_cyclable_pct)
+    - M : Multimodalité  = norm(gtfs_heavy_stops_300m)
+    - T : Topographie    = 1 − norm(topography_roughness_index)
+
+    Normalisation min-max sur les villes avec au moins 5 stations.
+    La médiane est utilisée pour imputer les valeurs manquantes.
+    IMD ∈ [0, 100].
+
+    Référence méthodologique : notebooks 21-25, CESI BikeShare-ICT 2025-2026.
+    """
+    stats = city_stats(df).query("n_stations >= 5").copy().reset_index(drop=True)
+
+    def _minmax(s: pd.Series) -> pd.Series:
+        lo, hi = s.min(), s.max()
+        if hi == lo:
+            return pd.Series(0.5, index=s.index)
+        return (s - lo) / (hi - lo)
+
+    def _fill(col: str) -> pd.Series:
+        s = stats[col].copy() if col in stats.columns else pd.Series(np.nan, index=stats.index)
+        return s.fillna(s.median())
+
+    stats["S_securite"] = (1 - _minmax(_fill("baac_accidents_cyclistes"))).values
+    stats["I_infra"]    = _minmax(_fill("infra_cyclable_pct")).values
+    stats["M_multi"]    = _minmax(_fill("gtfs_heavy_stops_300m")).values
+    stats["T_topo"]     = (1 - _minmax(_fill("topography_roughness_index"))).values
+
+    comp_cols = ["S_securite", "I_infra", "M_multi", "T_topo"]
+    stats["IMD"] = stats[comp_cols].mean(axis=1) * 100
+
+    return stats.sort_values("IMD", ascending=False).reset_index(drop=True)
+
+
 def color_scale_rgb(
     series: pd.Series,
     palette: str = "Greens",

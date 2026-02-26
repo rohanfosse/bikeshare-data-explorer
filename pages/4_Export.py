@@ -1,6 +1,6 @@
 """
 4_Export.py — Export des données Gold Standard pour les chercheurs.
-Permet de filtrer, prévisualiser et télécharger le jeu de données.
+Filtrage, prévisualisation et téléchargement du jeu de données.
 """
 from __future__ import annotations
 
@@ -13,25 +13,32 @@ import streamlit as st
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 from utils.data_loader import METRICS, load_stations
+from utils.styles import abstract_box, inject_css, section, sidebar_nav
 
 st.set_page_config(
     page_title="Export des données — Gold Standard GBFS",
     page_icon=None,
     layout="wide",
 )
+inject_css()
 
-st.title("Export des données")
-st.markdown(
-    """
-    Cette page permet aux chercheurs de filtrer, prévisualiser et télécharger
-    le jeu de données Gold Standard GBFS selon leurs besoins d'analyse.
-    Les filtres appliqués ici n'affectent pas les autres pages du tableau de bord.
-    """
+st.title("Export des données — Gold Standard GBFS")
+st.caption("Gold Standard GBFS · CESI BikeShare-ICT 2025-2026")
+
+abstract_box(
+    "Cette page permet aux chercheurs de filtrer, prévisualiser et télécharger "
+    "le jeu de données Gold Standard GBFS selon leurs besoins analytiques. "
+    "Les filtres portent sur les villes, les réseaux GBFS, la source des données "
+    "et les plages de valeurs des métriques enrichies. "
+    "L'export est disponible en CSV (UTF-8, séparateur virgule) "
+    "ou en Parquet (Apache Arrow, recommandé pour les grands volumes). "
+    "Les filtres appliqués ici n'affectent pas les autres pages du tableau de bord."
 )
 
 df = load_stations()
 
 # ── Sidebar — filtres ─────────────────────────────────────────────────────────
+sidebar_nav()
 with st.sidebar:
     st.header("Filtres")
 
@@ -86,16 +93,15 @@ with st.sidebar:
 
     st.divider()
     st.markdown("**Colonnes à exporter**")
-    all_cols = list(df.columns)
+    all_cols      = list(df.columns)
     enriched_cols = [k for k in METRICS if k in df.columns]
-    base_cols = [c for c in all_cols if c not in enriched_cols]
+    base_cols     = [c for c in all_cols if c not in enriched_cols]
 
-    include_base = st.checkbox("Colonnes de base (id, localisation, capacité…)", value=True)
+    include_base     = st.checkbox("Colonnes de base (id, localisation, capacité…)", value=True)
     include_enriched = st.checkbox("Métriques enrichies (modules 2-4)", value=True)
 
 # ── Application des filtres ───────────────────────────────────────────────────
 dff = df.copy()
-
 if city_sel:
     dff = dff[dff["city"].isin(city_sel)]
 if system_sel:
@@ -107,7 +113,6 @@ for mkey, rng in metric_filters.items():
     if rng is not None:
         dff = dff[(dff[mkey] >= rng[0]) & (dff[mkey] <= rng[1])]
 
-# Sélection des colonnes
 cols_to_export: list[str] = []
 if include_base:
     cols_to_export += base_cols
@@ -118,8 +123,8 @@ if not cols_to_export:
 
 dff_export = dff[cols_to_export]
 
-# ── Résumé de la sélection ────────────────────────────────────────────────────
-st.subheader("Résumé de la sélection")
+# ── Section 1 — Résumé de la sélection ───────────────────────────────────────
+section(1, "Résumé de la sélection")
 
 m1, m2, m3, m4 = st.columns(4)
 m1.metric("Stations sélectionnées", f"{len(dff_export):,}")
@@ -127,21 +132,22 @@ m2.metric("Villes", f"{dff['city'].nunique()}")
 m3.metric("Réseaux", f"{dff['system_id'].nunique()}")
 m4.metric("Colonnes", f"{len(cols_to_export)}")
 
+# ── Section 2 — Schéma des colonnes ──────────────────────────────────────────
 st.divider()
+section(2, "Schéma des colonnes exportées")
 
-# ── Schéma des colonnes ───────────────────────────────────────────────────────
-with st.expander("Schéma des colonnes exportées", expanded=False):
+with st.expander("Afficher le schéma", expanded=False):
     schema_rows = []
     for col in cols_to_export:
-        dtype = str(dff_export[col].dtype)
+        dtype   = str(dff_export[col].dtype)
         n_valid = int(dff_export[col].notna().sum())
-        pct_valid = 100 * n_valid / len(dff_export) if len(dff_export) else 0
-        description = METRICS[col]["description"] if col in METRICS else "Champ de base"
+        pct     = 100 * n_valid / len(dff_export) if len(dff_export) else 0
+        desc    = METRICS[col]["description"] if col in METRICS else "Champ de base"
         schema_rows.append({
-            "Colonne": col,
-            "Type": dtype,
-            "Valides": f"{n_valid:,} ({pct_valid:.1f} %)",
-            "Description": description,
+            "Colonne":     col,
+            "Type":        dtype,
+            "Valides":     f"{n_valid:,} ({pct:.1f} %)",
+            "Description": desc,
         })
     st.dataframe(
         pd.DataFrame(schema_rows),
@@ -149,58 +155,58 @@ with st.expander("Schéma des colonnes exportées", expanded=False):
         hide_index=True,
     )
 
-# ── Statistiques descriptives de l'export ────────────────────────────────────
-with st.expander("Statistiques descriptives de la sélection", expanded=False):
+# ── Section 3 — Statistiques descriptives ─────────────────────────────────────
+st.divider()
+section(3, "Statistiques descriptives de la sélection")
+
+with st.expander("Afficher les statistiques", expanded=False):
     metric_cols_present = [k for k in METRICS if k in dff_export.columns]
     if metric_cols_present:
         stat_rows = []
         for mkey in metric_cols_present:
             meta = METRICS[mkey]
-            s = dff_export[mkey].dropna()
+            s    = dff_export[mkey].dropna()
             if s.empty:
                 continue
             stat_rows.append({
                 "Métrique": meta["label"],
-                "n": f"{len(s):,}",
-                "Moyenne": round(s.mean(), 3),
-                "Médiane": round(s.median(), 3),
+                "n":        f"{len(s):,}",
+                "Moyenne":  round(s.mean(), 3),
+                "Médiane":  round(s.median(), 3),
                 "Éc. type": round(s.std(), 3),
-                "Min": round(s.min(), 3),
-                "Q25": round(s.quantile(0.25), 3),
-                "Q75": round(s.quantile(0.75), 3),
-                "Max": round(s.max(), 3),
-                "Unité": meta["unit"],
+                "Min":      round(s.min(), 3),
+                "Q25":      round(s.quantile(0.25), 3),
+                "Q75":      round(s.quantile(0.75), 3),
+                "Max":      round(s.max(), 3),
+                "Unité":    meta["unit"],
             })
         st.dataframe(
             pd.DataFrame(stat_rows),
             use_container_width=True,
             hide_index=True,
-            column_config={k: st.column_config.NumberColumn(format="%.3f")
-                           for k in ["Moyenne", "Médiane", "Éc. type", "Min", "Q25", "Q75", "Max"]},
+            column_config={
+                k: st.column_config.NumberColumn(format="%.3f")
+                for k in ["Moyenne", "Médiane", "Éc. type", "Min", "Q25", "Q75", "Max"]
+            },
         )
     else:
         st.info("Aucune métrique enrichie dans les colonnes sélectionnées.")
 
+# ── Section 4 — Prévisualisation ──────────────────────────────────────────────
 st.divider()
-
-# ── Prévisualisation ──────────────────────────────────────────────────────────
-st.subheader("Prévisualisation des données")
+section(4, "Prévisualisation des données")
 
 n_preview = st.slider("Nombre de lignes à afficher", 10, 200, 50, 10)
-st.dataframe(
-    dff_export.head(n_preview),
-    use_container_width=True,
-    hide_index=True,
-)
+st.dataframe(dff_export.head(n_preview), use_container_width=True, hide_index=True)
 
+# ── Section 5 — Téléchargement ────────────────────────────────────────────────
 st.divider()
+section(5, "Téléchargement")
 
-# ── Téléchargement ────────────────────────────────────────────────────────────
-st.subheader("Téléchargement")
 st.caption(
     "Le fichier CSV est encodé en UTF-8 avec séparateur virgule. "
-    "Le fichier Parquet (Apache Arrow) est recommandé pour les analyses "
-    "en Python ou R sur les grands volumes."
+    "Le format Parquet (Apache Arrow) est recommandé pour les analyses "
+    "Python ou R sur les grands volumes de données."
 )
 
 dl1, dl2 = st.columns(2)
@@ -208,7 +214,7 @@ dl1, dl2 = st.columns(2)
 with dl1:
     st.markdown("**Format CSV**")
     csv_bytes = dff_export.to_csv(index=False).encode("utf-8")
-    size_kb = len(csv_bytes) / 1024
+    size_kb   = len(csv_bytes) / 1024
     st.download_button(
         label=f"Télécharger en CSV ({size_kb:,.0f} Ko — {len(dff_export):,} lignes)",
         data=csv_bytes,
@@ -221,7 +227,7 @@ with dl2:
     buf = io.BytesIO()
     dff_export.to_parquet(buf, index=False)
     parquet_bytes = buf.getvalue()
-    size_kb_pq = len(parquet_bytes) / 1024
+    size_kb_pq    = len(parquet_bytes) / 1024
     st.download_button(
         label=f"Télécharger en Parquet ({size_kb_pq:,.0f} Ko — {len(dff_export):,} lignes)",
         data=parquet_bytes,
@@ -229,10 +235,11 @@ with dl2:
         mime="application/octet-stream",
     )
 
+# ── Section 6 — Citation et reproductibilité ──────────────────────────────────
 st.divider()
+section(6, "Citation et reproductibilité")
 
-# ── Métadonnées de citation ────────────────────────────────────────────────────
-with st.expander("Informations pour la citation et la reproductibilité", expanded=False):
+with st.expander("Informations pour la citation", expanded=False):
     metric_keys_present = [k for k in METRICS if k in dff_export.columns]
     st.markdown(
         f"""
