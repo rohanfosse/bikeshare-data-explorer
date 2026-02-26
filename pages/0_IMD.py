@@ -162,8 +162,6 @@ with col_bar:
         "Les barres indiquent la performance globale [0-100] post-audit GBFS."
     )
 
-st.info("**Conclusion intermédiaire :** La hiérarchie révélée par l'IMD bouleverse les classements naïfs basés uniquement sur le volume de vélos. L'absence de corrélation forte entre la taille démographique et la position dans le classement prouve que l'efficacité d'un réseau cyclable résulte d'une ingénierie de maillage et d'une hybridation des flottes réussies, et non de la simple taille de la ville.")
-
 # ── Section 3 — Décomposition ─────────────────────────────────────────────────
 if show_components:
     st.divider()
@@ -209,7 +207,6 @@ if show_components:
         st.caption("**Figure 3.1.** Décomposition de la variance intra-ville. Permet de lire les compromis opérés par les décideurs publics.")
 
     with tab_quadrant:
-        # Scatter plot Infrastructure vs Multimodality
         fig_quad = px.scatter(
             imd_f, 
             x="I_infra", y="M_multi", 
@@ -223,7 +220,6 @@ if show_components:
             height=550
         )
         fig_quad.update_traces(textposition="top center", marker_opacity=0.7)
-        # Ajout des médianes pour créer les quadrants
         med_I = imd_f["I_infra"].median()
         med_M = imd_f["M_multi"].median()
         fig_quad.add_hline(y=med_M, line_dash="dash", line_color="gray", annotation_text="Médiane Multimodalité")
@@ -348,13 +344,48 @@ with right_radar:
     else:
         st.info("Sélectionnez au moins 2 villes pour amorcer l'audit comparatif.")
 
-# ── Section 6 — Conclusions de la page ────────────────────────────────────
+# ── Section 6 — Baseline Comparison (NOUVEAU) ──────────────────────────────────
 st.divider()
-section(6, "Conclusions de la Modélisation Spatiale (IMD)")
+section(6, "Au-delà du Volume : Supériorité de l'IMD face aux Métriques Naïves")
+
+st.markdown(r"""
+Dans l'évaluation des politiques cyclables, l'approche traditionnelle (ou *baseline*) s'appuie fréquemment sur des métriques purement volumétriques : le nombre total de vélos, le nombre de stations brutes, ou le ratio par habitant. **Cette approche « naïve » postule implicitement que l'abondance génère l'usage.**
+
+Pour démontrer l'apport scientifique de l'IMD, nous confrontons ici notre indice d'efficacité (Y) au volume brut d'équipement (Nombre de stations, axe X).
+""")
+
+# Nuage de points : Volume Brut (n_stations) vs IMD
+fig_baseline = px.scatter(
+    imd_f, 
+    x="n_stations", y="IMD", 
+    text="city", color="M_multi", color_continuous_scale="Plasma",
+    log_x=True, # Échelle log pour mieux voir les petites/grandes villes
+    labels={
+        "n_stations": "Volume Brut (Nombre de stations - Échelle Logarithmique)", 
+        "IMD": "Indice Qualitatif (IMD / 100)",
+        "M_multi": "Score Multimodalité",
+        "city": "Agglomération"
+    },
+    height=550
+)
+fig_baseline.update_traces(textposition="top center", marker_opacity=0.8, marker_size=12)
+fig_baseline.update_layout(plot_bgcolor="white")
+st.plotly_chart(fig_baseline, use_container_width=True)
+
+st.markdown("""
+**📝 Démonstration Analytique (Lecture du graphique) :**
+La non-linéarité de ce nuage de points prouve les limites de l'approche volumétrique :
+1. **Les Faux Positifs (Volume fort, IMD faible) :** Certaines métropoles déploient des centaines de stations (à droite du graphique) mais obtiennent un IMD médiocre car ces stations sont isolées des réseaux de transports lourds ou plongées dans des zones accidentogènes. Le volume brut masque l'inefficacité spatiale.
+2. **Les Pépites d'Efficacité (Volume faible, IMD fort) :** À l'inverse, des agglomérations de taille moyenne (à gauche) atteignent d'excellents scores IMD en optimisant chirurgicalement le placement de leurs quelques stations (hybridation de la flotte et ciblage exclusif des gares/pôles d'échanges). 
+""")
+
+# ── Section 7 — Conclusions de la page ────────────────────────────────────
+st.divider()
+section(7, "Conclusions de la Modélisation Spatiale (IMD)")
 st.success("""
 **Bilan des résultats observés dans cette section :**
 
-1. **Validité du Modèle :** L'Indice de Mobilité Douce (IMD), purgé des anomalies de l'Open Data, offre une représentation fidèle de l'offre cyclable. Sa double validation externe (Ressenti psychologique FUB et Pratique comportementale EMP 2019) prouve qu'il ne s'agit pas d'un simple exercice mathématique, mais d'un indicateur corrélé à la réalité physique du report modal.
+1. **Validité et Supériorité du Modèle :** L'Indice de Mobilité Douce (IMD) offre une évaluation beaucoup plus fidèle de la qualité d'un réseau que le simple comptage de vélos. Sa double validation externe (Ressenti psychologique FUB et Pratique comportementale EMP 2019) prouve que l'ingénierie spatiale prime sur le volume brut.
 2. **Robustesse Structurelle :** Les simulations de Monte Carlo confirment que le classement national n'est pas soumis à la volatilité des pondérations. L'intégration multimodale (composante $M$) est mathématiquement le cœur du réacteur des réseaux les plus performants.
 3. **Diagnostic des Typologies :** L'analyse en matrice démontre qu'il n'existe pas un modèle unique de réussite, mais plusieurs trajectoires d'aménagement (Réseaux centrés sur les pôles d'échanges vs. Réseaux étendus de maillage urbain continu).
 
