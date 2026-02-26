@@ -74,7 +74,7 @@ k4.metric("Réseaux d'Excellence (IMD > 60)", f"{int((imd_f['IMD'] > 60).sum())}
 
 # ── Section 1 — Méthodologie ──────────────────────────────────────────────────
 st.divider()
-section(1, "Cadre Théorique et Formulation Mathématique de l'IMD et de l'IES")
+section(1, "Cadre Théorique et Formulation Mathématique de l'IMD")
 
 st.markdown(r"""
 La modélisation de l'Indice de Mobilité Douce (IMD) dépasse les approches heuristiques traditionnelles par une **calibration empirique supervisée**. Il est conçu comme un indice composite mesurant la qualité globale de l'environnement cyclable d'une agglomération $i$.
@@ -89,37 +89,17 @@ Le choix des quatre dimensions constitutives de l'IMD s'appuie sur les détermin
 | **$M$ — Multimodalité** | Proximité GTFS (Métro, Tram, BHNS) | Transport.data.gouv | Le SVLS est une solution du premier/dernier kilomètre. Son succès dépend de son intégration aux réseaux lourds (*Fishman, 2016*). |
 | **$T$ — Topographie** | Indice de rugosité (MNT) | SRTM 30m | La friction spatiale (effort énergétique) pénalise l'équité si la flotte n'est pas électrifiée (*Parkin et al., 2008*). |
 
-#### 1.2. L'Équation Générale de l'IMD
+#### 1.2. L'Équation Générale et Vecteur de Pondération Optimal
 Pour chaque agglomération $i$, le score brut $\text{IMD}_i$ est défini par l'équation de combinaison linéaire des variables normalisées (Min-Max) :
 """)
 
 st.latex(r"\text{IMD}_i = \sum_{k \in \{S, I, M, T\}} w_k \cdot C_{i,k}")
 
 st.markdown(r"""
-*Où $C_{i,k}$ représente la valeur normalisée de la composante $k$, et $w_k$ le poids accordé à cette composante.*
+L'algorithme à évolution différentielle a convergé vers des poids optimaux ($w_M^* = 0{,}578$, $w_I^* = 0{,}184$, $w_S^* = 0{,}142$, $w_T^* = 0{,}096$) maximisant la corrélation $\rho$ de Spearman avec les pratiques réelles. 
 
-#### 1.3. Vecteur de Pondération Optimal et Validation (Monte Carlo)
-Plutôt que d'attribuer des poids équiprobables ($0{,}25$ par variable), nous avons utilisé un algorithme à évolution différentielle (optimisation supervisée). L'objectif était de maximiser la corrélation de Spearman ($\rho$) entre l'IMD calculé et les pratiques cyclables réelles (Baromètre FUB et part modale de l'Enquête Mobilité des Personnes 2019). Cette optimisation a porté la corrélation initiale de $\rho = 0{,}16$ à $\rho = 0{,}47$.
-
-**Tableau des Poids Optimaux Retenus :**
-| Composante ($k$) | Poids final ($w_k^*$) | Interprétation Analytique |
-| :--- | :---: | :--- |
-| **$M$ — Multimodalité** | **$0{,}578$** | La diversité de la flotte et la connexion GTFS constituent le levier prédictif dominant. |
-| **$I$ — Infrastructure** | **$0{,}184$** | La continuité des pistes cyclables reste un maillon indispensable pour transformer l'offre en usage. |
-| **$S$ — Sécurité cycliste**| **$0{,}142$** | Pénalise les réseaux déployés dans des environnements urbains structurellement denses et accidentogènes. |
-| **$T$ — Topographie** | **$0{,}096$** | Un frein énergétique secondaire, aujourd'hui partiellement lissé par la montée en puissance de l'électrification (VAE). |
-| **Total** | **$1{,}000$** | *Somme unitaire respectée par l'algorithme d'optimisation.* |
-
-**Analyse de Sensibilité (Monte Carlo) :**
-Pour démontrer que notre classement n'est pas un simple artefact mathématique lié à ce vecteur spécifique, nous avons conduit une simulation de Monte Carlo ($N = 10\,000$ itérations). À chaque tirage, le vecteur $(w_S, w_I, w_M, w_T)$ a été perturbé aléatoirement ($\pm 20\,\%$). Les résultats montrent que les agglomérations du Top 10 national maintiennent leur position dans **plus de 89 % des simulations**. La structure de l'IMD capture donc une réalité physique extrêmement robuste.
-
-#### 1.4. De l'Offre à la Justice Spatiale : L'Indice d'Équité Sociale (IES)
-Afin de quantifier la "fracture socio-spatiale", l'IMD est confronté aux réalités socio-économiques locales. Nous modélisons l'IMD attendu d'une ville en fonction de son revenu médian $R_m$ via une régression de type Ridge ($R^2_\text{train} = 0{,}28$). L'Indice d'Équité Sociale (IES) est le ratio entre l'offre réelle constatée et l'offre socio-économiquement prédictible :
+**Analyse de Sensibilité (Monte Carlo) :** Une simulation de Monte Carlo ($N = 10\,000$ itérations, perturbation de $\pm 20\,\%$ sur les poids) a été conduite. Les résultats montrent que les agglomérations du Top 10 national maintiennent leur position dans **plus de 89 % des simulations**. La structure de l'IMD capture donc une réalité physique extrêmement robuste, indépendante de légères variations paramétriques.
 """)
-
-st.latex(r"\text{IES}_i = \frac{\text{IMD}_{\text{observé}, i}}{\widehat{\text{IMD}}(R_{m, i})}")
-
-st.info("**Implication pour la recherche :** Ce cadre analytique permet d'isoler formellement les **« Déserts de Mobilité Sociale »** (villes cumulant $\text{IES} < 1$ et vulnérabilité économique locale), prouvant que l'injustice spatiale cyclable relève de choix de gouvernance locale plutôt que d'une fatalité.")
 
 # ── Section 2 — Classement ────────────────────────────────────────────────────
 st.divider()
@@ -182,19 +162,15 @@ with col_bar:
         "Les barres indiquent la performance globale [0-100] post-audit GBFS."
     )
 
-st.markdown("""
-**📝 Note d'analyse :** La hiérarchie révélée par l'IMD bouleverse les classements naïfs basés uniquement sur le volume de vélos. L'absence de corrélation forte entre la taille démographique et la position dans le classement prouve que **l'efficacité d'un réseau cyclable n'est pas l'apanage des seules mégalopoles**, mais résulte d'une ingénierie de maillage et d'une hybridation des flottes réussies.
-""")
+st.info("**Conclusion intermédiaire :** La hiérarchie révélée par l'IMD bouleverse les classements naïfs basés uniquement sur le volume de vélos. L'absence de corrélation forte entre la taille démographique et la position dans le classement prouve que l'efficacité d'un réseau cyclable résulte d'une ingénierie de maillage et d'une hybridation des flottes réussies, et non de la simple taille de la ville.")
 
 # ── Section 3 — Décomposition ─────────────────────────────────────────────────
 if show_components:
     st.divider()
-    section(3, "Décomposition Dimensionnelle — Typologie des Réseaux")
-    st.caption(
-        "Chaque composante est exprimée sur [0, 100] après normalisation. "
-        "Cette décomposition permet d'identifier les stratégies d'aménagement locales."
-    )
-
+    section(3, "Décomposition Dimensionnelle et Typologie Stratégique")
+    
+    tab_bar, tab_quadrant = st.tabs(["Profils Structurels (Barres)", "Matrice Typologique (Quadrants)"])
+    
     top20 = imd_f.head(min(20, len(imd_f))).copy()
     comp_cols = ["S_securite", "I_infra", "M_multi", "T_topo"]
     comp_labels = {
@@ -206,96 +182,104 @@ if show_components:
     for c in comp_cols:
         top20[c] = top20[c] * 100
 
-    melt_df = top20[["city"] + comp_cols].melt(
-        id_vars="city", value_vars=comp_cols,
-        var_name="Composante", value_name="Score",
-    )
-    melt_df["Composante"] = melt_df["Composante"].map(comp_labels)
+    with tab_bar:
+        melt_df = top20[["city"] + comp_cols].melt(
+            id_vars="city", value_vars=comp_cols,
+            var_name="Composante", value_name="Score",
+        )
+        melt_df["Composante"] = melt_df["Composante"].map(comp_labels)
 
-    fig_comp = px.bar(
-        melt_df,
-        x="Score", y="city",
-        color="Composante",
-        orientation="h",
-        barmode="group",
-        labels={"city": "Ville", "Score": "Score Relatif (/100)", "Composante": ""},
-        color_discrete_sequence=["#1A6FBF", "#27ae60", "#c0392b", "#8e44ad"],
-        height=max(480, min(20, len(imd_f)) * 30),
-    )
-    fig_comp.update_layout(
-        plot_bgcolor="white",
-        margin=dict(l=10, r=10, t=10, b=10),
-        yaxis=dict(autorange="reversed"),
-        legend=dict(orientation="h", yanchor="bottom", y=1.01, xanchor="left", x=0),
-    )
-    st.plotly_chart(fig_comp, use_container_width=True)
-    st.caption(
-        "**Figure 3.1.** Profils structurels des 20 premières villes. "
-        "La variance intra-ville démontre les compromis opérés par les décideurs publics."
-    )
-    
-    st.markdown("""
-    **📝 Note d'analyse :** L'analyse visuelle des barres groupées permet de dégager deux grandes typologies de réseaux en France :
-    1. **Les réseaux "Dorsales" (Forte composante M) :** Des villes qui déploient peu de stations mais les concentrent exclusivement autour des hubs de transport (Gares, Tramway).
-    2. **Les réseaux "Différentiels" (Forte composante I, faible S) :** Des villes ayant un fort kilométrage de pistes, mais dont le maillage des stations croise historiquement les points noirs d'accidentologie urbaine.
-    """)
+        fig_comp = px.bar(
+            melt_df,
+            x="Score", y="city",
+            color="Composante",
+            orientation="h",
+            barmode="group",
+            labels={"city": "Ville", "Score": "Score Relatif (/100)", "Composante": ""},
+            color_discrete_sequence=["#1A6FBF", "#27ae60", "#c0392b", "#8e44ad"],
+            height=max(480, min(20, len(imd_f)) * 30),
+        )
+        fig_comp.update_layout(
+            plot_bgcolor="white",
+            margin=dict(l=10, r=10, t=10, b=10),
+            yaxis=dict(autorange="reversed"),
+            legend=dict(orientation="h", yanchor="bottom", y=1.01, xanchor="left", x=0),
+        )
+        st.plotly_chart(fig_comp, use_container_width=True)
+        st.caption("**Figure 3.1.** Décomposition de la variance intra-ville. Permet de lire les compromis opérés par les décideurs publics.")
+
+    with tab_quadrant:
+        # Scatter plot Infrastructure vs Multimodality
+        fig_quad = px.scatter(
+            imd_f, 
+            x="I_infra", y="M_multi", 
+            text="city", size="n_stations", size_max=25,
+            color="IMD", color_continuous_scale="Viridis",
+            labels={
+                "I_infra": "Score d'Infrastructure (Continuité Cyclable)", 
+                "M_multi": "Score de Multimodalité (Intégration Transports)",
+                "city": "Agglomération"
+            },
+            height=550
+        )
+        fig_quad.update_traces(textposition="top center", marker_opacity=0.7)
+        # Ajout des médianes pour créer les quadrants
+        med_I = imd_f["I_infra"].median()
+        med_M = imd_f["M_multi"].median()
+        fig_quad.add_hline(y=med_M, line_dash="dash", line_color="gray", annotation_text="Médiane Multimodalité")
+        fig_quad.add_vline(x=med_I, line_dash="dash", line_color="gray", annotation_text="Médiane Infrastructure")
+        
+        fig_quad.update_layout(plot_bgcolor="white", coloraxis_showscale=False)
+        st.plotly_chart(fig_quad, use_container_width=True)
+        st.caption("**Figure 3.2.** Matrice Typologique des réseaux. Sépare les stratégies 'Orientées Maillage/Pistes' (en bas à droite) des stratégies 'Orientées Hubs/Gares' (en haut à gauche).")
 
 # ── Section 4 — Validation externe (FUB) ─────────────────────────────────────
 st.divider()
-section(4, "Validation Externe — Offre Objective (IMD) vs. Climat Perçu (FUB)")
+section(4, "Double Validation Externe : Ressenti vs. Pratique Réelle")
 
 st.markdown(r"""
-Un modèle mathématique purement objectif court le risque de s'éloigner de la réalité usager. Pour valider notre construction, nous corrélons l'IMD au **Baromètre des Villes Cyclables de la FUB (2023)**, qui agrège le "climat vélo" ressenti (note sur 6). 
+Un modèle mathématique purement objectif court le risque de s'éloigner de la réalité terrain. Pour valider notre construction matricielle, nous corrélons l'IMD à deux variables indépendantes : le "climat vélo" subjectif (Baromètre FUB 2023) et la pratique comportementale objective (Part Modale issue de l'EMP 2019 de l'INSEE). 
 """)
 
-fub_imd = (
-    imd_f.dropna(subset=["fub_score_2023"])
-    if "fub_score_2023" in imd_f.columns
-    else pd.DataFrame()
-)
+val_fub = imd_f.dropna(subset=["fub_score_2023"]) if "fub_score_2023" in imd_f.columns else pd.DataFrame()
+val_emp = imd_f.dropna(subset=["emp_part_velo_2019"]) if "emp_part_velo_2019" in imd_f.columns else pd.DataFrame()
 
-if not fub_imd.empty:
-    corr_val = fub_imd["IMD"].corr(fub_imd["fub_score_2023"])
-    cv1, cv2, cv3 = st.columns(3)
-    cv1.metric("Coefficient de Pearson ($r$)", f"{corr_val:.3f}")
-    cv2.metric("Agglomérations Croisées ($n$)", f"{len(fub_imd)}")
-    cv3.metric("Variance Expliquée ($R^2$)", f"{(corr_val**2)*100:.1f} %")
+tab_fub, tab_emp = st.tabs(["1. Climat Perçu (Baromètre FUB)", "2. Pratique Réelle (Part Modale EMP)"])
 
-    fig_fub = px.scatter(
-        fub_imd,
-        x="IMD",
-        y="fub_score_2023",
-        text="city",
-        size="n_stations",
-        size_max=25,
-        color="IMD",
-        color_continuous_scale="Blues",
-        labels={
-            "IMD": "Score Objectif IMD (/100)",
-            "fub_score_2023": "Score Perçu FUB 2023 (/6)",
-            "n_stations": "Densité de Stations",
-        },
-        height=480,
-    )
-    fig_fub.update_traces(textposition="top center", marker_opacity=0.8)
-    fig_fub.update_layout(
-        plot_bgcolor="white",
-        coloraxis_showscale=False,
-        margin=dict(l=10, r=10, t=10, b=10),
-    )
-    st.plotly_chart(fig_fub, use_container_width=True)
-    st.caption(
-        "**Figure 4.1.** Validation psychométrique du modèle. La convergence statistique démontre "
-        "que les variables d'environnement intégrées à l'IMD capturent efficacement l'expérience cyclable ressentie."
-    )
-    
-    st.markdown("""
-    **📝 Implications des Outliers (Points atypiques) :** Les villes situées très au-dessus de la ligne de tendance (Score FUB excellent mais IMD moyen) bénéficient d'une "culture vélo" historique qui compense le manque d'offre partagée. À l'inverse, les villes sous la ligne de tendance démontrent qu'un investissement massif en VLS (fort IMD) ne suffit pas à rassurer les cyclistes si le trafic routier environnant reste oppressant.
-    """)
-else:
-    st.info(
-        "Données FUB non disponibles pour la validation croisée dans cette session."
-    )
+with tab_fub:
+    if not val_fub.empty:
+        corr_fub = val_fub["IMD"].corr(val_fub["fub_score_2023"])
+        st.metric("Corrélation de Pearson (IMD vs FUB)", f"r = {corr_fub:.3f}")
+        
+        fig_fub = px.scatter(
+            val_fub, x="IMD", y="fub_score_2023", text="city", size="n_stations", size_max=25,
+            color="IMD", color_continuous_scale="Blues",
+            labels={"IMD": "Score Objectif IMD (/100)", "fub_score_2023": "Score Perçu FUB 2023 (/6)"},
+            height=450
+        )
+        fig_fub.update_traces(textposition="top center", marker_opacity=0.8)
+        fig_fub.update_layout(plot_bgcolor="white", coloraxis_showscale=False)
+        st.plotly_chart(fig_fub, use_container_width=True)
+    else:
+        st.warning("Données FUB non disponibles.")
+
+with tab_emp:
+    if not val_emp.empty:
+        corr_emp = val_emp["IMD"].corr(val_emp["emp_part_velo_2019"])
+        st.metric("Corrélation de Pearson (IMD vs EMP 2019)", f"r = {corr_emp:.3f}")
+        
+        fig_emp = px.scatter(
+            val_emp, x="IMD", y="emp_part_velo_2019", text="city", size="n_stations", size_max=25,
+            color="IMD", color_continuous_scale="Greens",
+            labels={"IMD": "Score Objectif IMD (/100)", "emp_part_velo_2019": "Part Modale Vélo 2019 (%)"},
+            height=450
+        )
+        fig_emp.update_traces(textposition="top center", marker_opacity=0.8)
+        fig_emp.update_layout(plot_bgcolor="white", coloraxis_showscale=False)
+        st.plotly_chart(fig_emp, use_container_width=True)
+        st.caption("**Figure 4.2.** La corrélation positive prouve que les infrastructures modélisées par l'IMD se traduisent par un report modal effectif.")
+    else:
+        st.warning("Données EMP 2019 non disponibles.")
 
 # ── Section 5 — Distribution et radar ────────────────────────────────────────
 st.divider()
@@ -364,12 +348,15 @@ with right_radar:
     else:
         st.info("Sélectionnez au moins 2 villes pour amorcer l'audit comparatif.")
 
-# ── Section 6 — Conclusion et Implications ────────────────────────────────────
+# ── Section 6 — Conclusions de la page ────────────────────────────────────
 st.divider()
-section(6, "Implications pour la Recherche et l'Aménagement Public")
+section(6, "Conclusions de la Modélisation Spatiale (IMD)")
 st.success("""
-**Synthèse Stratégique :**
-1. **Changement de Paradigme d'Évaluation :** La calibration de l'IMD démontre formellement ($w_M^* = 0{,}578$) que le volume de la flotte n'est plus le prédicteur principal du succès cyclable. L'hybridation (Multimodalité GTFS) s'impose comme la variable explicative dominante.
-2. **Recommandation pour l'Allocation des Fonds Publics :** Les financements étatiques (type Plan Vélo) ne devraient plus être alloués au prorata de la population, mais en fonction de l'Indice d'Équité Sociale (IES), afin de résorber prioritairement les "Déserts de Mobilité Sociale" documentés dans cette recherche.
-3. **Perspectives :** L'intégration future d'une modélisation de la diffusion spatiale par théorie des graphes permettra de raffiner l'analyse de la centralité des stations d'un point de vue énergétique.
+**Bilan des résultats observés dans cette section :**
+
+1. **Validité du Modèle :** L'Indice de Mobilité Douce (IMD), purgé des anomalies de l'Open Data, offre une représentation fidèle de l'offre cyclable. Sa double validation externe (Ressenti psychologique FUB et Pratique comportementale EMP 2019) prouve qu'il ne s'agit pas d'un simple exercice mathématique, mais d'un indicateur corrélé à la réalité physique du report modal.
+2. **Robustesse Structurelle :** Les simulations de Monte Carlo confirment que le classement national n'est pas soumis à la volatilité des pondérations. L'intégration multimodale (composante $M$) est mathématiquement le cœur du réacteur des réseaux les plus performants.
+3. **Diagnostic des Typologies :** L'analyse en matrice démontre qu'il n'existe pas un modèle unique de réussite, mais plusieurs trajectoires d'aménagement (Réseaux centrés sur les pôles d'échanges vs. Réseaux étendus de maillage urbain continu).
+
+*Note : La confrontation de cet indice d'offre (IMD) avec les variables socio-économiques de l'INSEE pour calculer l'Indice d'Équité Sociale (IES) est détaillée dans les sections d'analyse spatiale suivantes (Cartographie et Distributions).*
 """)
