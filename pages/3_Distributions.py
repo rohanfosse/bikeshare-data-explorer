@@ -54,7 +54,7 @@ st.caption(f"**{len(dff):,}** stations · {dff['city'].nunique()} villes")
 
 # ── Section 1 — Distributions univariées ─────────────────────────────────────
 st.divider()
-section(1, "Distributions univariées des métriques enrichies")
+section(1, "Distributions univariées — forme et dispersion des sept métriques")
 
 st.caption(
     "Bleu : valeur élevée favorable. Rouge : valeur faible favorable. Gris-bleu : neutre. "
@@ -105,7 +105,7 @@ for i, mkey in enumerate(metric_keys):
 
 # ── Section 2 — Boîtes à moustaches inter-villes ─────────────────────────────
 st.divider()
-section(2, "Dispersion inter-villes — boîtes à moustaches")
+section(2, "Dispersion inter-villes — significativité des différences de médiane")
 
 st.caption(
     "Les boîtes à moustaches avec encoche (notched) permettent d'évaluer visuellement "
@@ -169,7 +169,7 @@ else:
 
 # ── Section 3 — Matrice de corrélation de Spearman ───────────────────────────
 st.divider()
-section(3, "Matrice de corrélation de Spearman")
+section(3, "Corrélations de Spearman — colinéarités et indépendances entre métriques")
 
 st.caption(
     "Corrélation de rang de Spearman entre les métriques d'enrichissement. "
@@ -209,7 +209,7 @@ st.caption(
 
 # ── Section 4 — Scatter matriciel ─────────────────────────────────────────────
 st.divider()
-section(4, "Scatter matriciel (pairplot)")
+section(4, "Analyse croisée par paires — scatter matriciel sur échantillon")
 
 with st.expander("Afficher le scatter matriciel — calcul sur échantillon", expanded=False):
     st.caption(

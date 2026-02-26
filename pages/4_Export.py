@@ -124,7 +124,7 @@ if not cols_to_export:
 dff_export = dff[cols_to_export]
 
 # ── Section 1 — Résumé de la sélection ───────────────────────────────────────
-section(1, "Résumé de la sélection")
+section(1, "Résumé de la sélection — volumétrie et périmètre de l'export")
 
 m1, m2, m3, m4 = st.columns(4)
 m1.metric("Stations sélectionnées", f"{len(dff_export):,}")
@@ -134,7 +134,7 @@ m4.metric("Colonnes", f"{len(cols_to_export)}")
 
 # ── Section 2 — Schéma des colonnes ──────────────────────────────────────────
 st.divider()
-section(2, "Schéma des colonnes exportées")
+section(2, "Schéma des données — types, complétude et description des colonnes")
 
 with st.expander("Afficher le schéma", expanded=False):
     schema_rows = []
@@ -157,7 +157,7 @@ with st.expander("Afficher le schéma", expanded=False):
 
 # ── Section 3 — Statistiques descriptives ─────────────────────────────────────
 st.divider()
-section(3, "Statistiques descriptives de la sélection")
+section(3, "Statistiques descriptives — distribution des métriques dans la sélection")
 
 with st.expander("Afficher les statistiques", expanded=False):
     metric_cols_present = [k for k in METRICS if k in dff_export.columns]
@@ -194,14 +194,14 @@ with st.expander("Afficher les statistiques", expanded=False):
 
 # ── Section 4 — Prévisualisation ──────────────────────────────────────────────
 st.divider()
-section(4, "Prévisualisation des données")
+section(4, "Prévisualisation tabulaire — aperçu des n premières lignes")
 
 n_preview = st.slider("Nombre de lignes à afficher", 10, 200, 50, 10)
 st.dataframe(dff_export.head(n_preview), use_container_width=True, hide_index=True)
 
 # ── Section 5 — Téléchargement ────────────────────────────────────────────────
 st.divider()
-section(5, "Téléchargement")
+section(5, "Téléchargement — export CSV (UTF-8) ou Parquet (Apache Arrow)")
 
 st.caption(
     "Le fichier CSV est encodé en UTF-8 avec séparateur virgule. "
@@ -237,7 +237,7 @@ with dl2:
 
 # ── Section 6 — Citation et reproductibilité ──────────────────────────────────
 st.divider()
-section(6, "Citation et reproductibilité")
+section(6, "Métadonnées — informations pour la citation et la reproductibilité")
 
 with st.expander("Informations pour la citation", expanded=False):
     metric_keys_present = [k for k in METRICS if k in dff_export.columns]

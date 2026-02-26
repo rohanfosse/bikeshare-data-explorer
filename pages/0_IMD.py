@@ -74,7 +74,7 @@ k4.metric("Villes IMD > 60", f"{int((imd_f['IMD'] > 60).sum())}")
 
 # ── Section 1 — Méthodologie ──────────────────────────────────────────────────
 st.divider()
-section(1, "Méthodologie de construction de l'IMD")
+section(1, "Méthodologie — formule et sources des quatre composantes (S, I, M, T)")
 
 st.markdown(
     """
@@ -91,7 +91,7 @@ st.markdown(
 
 # ── Section 2 — Classement ────────────────────────────────────────────────────
 st.divider()
-section(2, "Classement des villes par score IMD")
+section(2, "Classement national des villes par score IMD (/100)")
 
 top_imd = imd_f.head(n_top).copy()
 top_imd["Rang"] = range(1, len(top_imd) + 1)
@@ -154,7 +154,7 @@ with col_bar:
 # ── Section 3 — Décomposition ─────────────────────────────────────────────────
 if show_components:
     st.divider()
-    section(3, "Décomposition par composante — top 20 villes")
+    section(3, "Décomposition — contribution relative de chaque composante (S, I, M, T)")
     st.caption(
         "Chaque composante est exprimée sur [0, 100] après normalisation. "
         "S = Sécurité, I = Infrastructure, M = Multimodalité, T = Topographie."
@@ -201,7 +201,7 @@ if show_components:
 
 # ── Section 4 — Validation externe (FUB) ─────────────────────────────────────
 st.divider()
-section(4, "Validation externe — corrélation avec le Baromètre FUB 2023")
+section(4, "Validation externe — corrélation IMD × Baromètre FUB 2023 (perception cycliste)")
 st.caption(
     "Le Baromètre FUB mesure la perception de la qualité cyclable par les usagers (1 à 6). "
     "Une corrélation positive avec l'IMD valide la cohérence de l'indice avec l'expérience perçue."
@@ -256,7 +256,7 @@ else:
 
 # ── Section 5 — Distribution et radar ────────────────────────────────────────
 st.divider()
-section(5, "Distribution des scores et comparaison radar")
+section(5, "Distribution nationale des scores IMD et profil radar multi-villes")
 
 left_dist, right_radar = st.columns(2)
 

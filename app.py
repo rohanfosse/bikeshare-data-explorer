@@ -62,7 +62,7 @@ with st.sidebar:
     )
 
 # ── Section 1 — Questions de recherche ───────────────────────────────────────
-section(1, "Questions de recherche")
+section(1, "Questions de recherche et objectifs scientifiques")
 
 st.markdown(
     """
@@ -75,7 +75,7 @@ st.markdown(
 
 # ── Section 2 — Structure du tableau de bord ─────────────────────────────────
 st.divider()
-section(2, "Structure du tableau de bord")
+section(2, "Présentation des sept analyses — structure du tableau de bord")
 
 pages_data = [
     ("Indice de Mobilité Douce (IMD)",
@@ -106,7 +106,7 @@ for name, description in pages_data:
 
 # ── Section 3 — Corpus Gold Standard ─────────────────────────────────────────
 st.divider()
-section(3, "Description du corpus Gold Standard GBFS")
+section(3, "Corpus Gold Standard GBFS — 46 000+ stations enrichies dans 300 m")
 
 n_total   = len(df)
 n_cities  = df["city"].nunique()
@@ -146,7 +146,7 @@ c14.metric("Enrichissement complet", f"{100*n_complete/n_total:.1f} %")
 
 # ── Section 4 — Pipeline d'enrichissement ────────────────────────────────────
 st.divider()
-section(4, "Pipeline d'enrichissement spatial")
+section(4, "Pipeline d'enrichissement spatial — cinq modules thématiques")
 
 with st.expander("Description détaillée des cinq modules", expanded=True):
     st.markdown(
@@ -165,7 +165,7 @@ with st.expander("Description détaillée des cinq modules", expanded=True):
 
 # ── Section 5 — Statistiques descriptives ────────────────────────────────────
 st.divider()
-section(5, "Statistiques descriptives des métriques enrichies")
+section(5, "Statistiques descriptives des sept métriques d'enrichissement")
 
 left_stat, right_stat = st.columns([3, 2])
 
@@ -231,7 +231,7 @@ with right_stat:
 
 # ── Section 6 — Définitions ───────────────────────────────────────────────────
 st.divider()
-section(6, "Définitions des métriques enrichies")
+section(6, "Glossaire — définitions et sources des métriques enrichies")
 
 with st.expander("Consulter les définitions", expanded=False):
     for col, meta in METRICS.items():

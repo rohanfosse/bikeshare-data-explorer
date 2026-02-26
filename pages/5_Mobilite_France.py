@@ -55,7 +55,7 @@ if region_sel:
     sys_f = sys_f[sys_f["region"].isin(region_sel)]
 
 # ── Section 1 — Vue d'ensemble ────────────────────────────────────────────────
-section(1, "Vue d'ensemble du réseau national")
+section(1, "Vue d'ensemble — 122 systèmes GBFS actifs sur le territoire français")
 
 n_sys   = len(sys_f)
 n_reg   = sys_f["region"].nunique()
@@ -81,7 +81,7 @@ if not city_df.empty and "fub_score_2023" in city_df.columns:
 
 # ── Section 2 — Catalogue par région ─────────────────────────────────────────
 st.divider()
-section(2, "Catalogue des systèmes GBFS par région")
+section(2, "Catalogue GBFS — répartition régionale des systèmes et stations")
 
 st.caption(
     "Chaque barre représente le nombre de systèmes actifs dans la région. "
@@ -162,7 +162,7 @@ if city_df.empty:
     st.stop()
 
 st.divider()
-section(3, "Indicateurs comparatifs des villes")
+section(3, "Tableau comparatif — cinq sources d'indicateurs croisées par ville")
 
 st.caption(
     "Fusion des cinq sources d'indicateurs à l'échelle des villes. "
@@ -196,7 +196,7 @@ st.caption(
 # ── Section 4 — Classement FUB ───────────────────────────────────────────────
 if "fub_score_2023" in city_df.columns:
     st.divider()
-    section(4, "Classement FUB Baromètre 2023")
+    section(4, "FUB Baromètre 2023 — classement des villes par perception cycliste (/6)")
 
     st.caption(
         "Le FUB Baromètre mesure la perception de la qualité cyclable par les usagers (1 à 6). "
@@ -232,7 +232,7 @@ if "fub_score_2023" in city_df.columns:
 # ── Section 5 — Perception vs usage effectif ─────────────────────────────────
 if {"fub_score_2023", "emp_part_velo_2019"}.issubset(city_df.columns):
     st.divider()
-    section(5, "Perception cycliste et usage effectif")
+    section(5, "Perception cycliste (FUB) × usage réel (EMP 2019) — cohérence des indicateurs")
 
     st.caption(
         "Chaque point représente une ville. "
@@ -283,7 +283,7 @@ if {"fub_score_2023", "emp_part_velo_2019"}.issubset(city_df.columns):
 # ── Section 6 — Infrastructure vs accidentologie ─────────────────────────────
 if {"infra_cyclable_km_per_km2", "baac_accidents_cyclistes_per_100k"}.issubset(city_df.columns):
     st.divider()
-    section(6, "Infrastructure cyclable et sinistralité")
+    section(6, "Infrastructure cyclable (Cerema) × sinistralité cycliste (BAAC) — effet protecteur")
 
     st.caption(
         "Densité d'infrastructure cyclable (Cerema) versus taux d'accidents cyclistes "

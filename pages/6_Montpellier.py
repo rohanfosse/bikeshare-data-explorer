@@ -79,7 +79,7 @@ k6.metric("Stations < 5 min d'un tram", f"{pct_5min:.1f} %")
 
 # ── Section 1 — Topologie du réseau ──────────────────────────────────────────
 st.divider()
-section(1, "Topologie du réseau — carte et profils de stations")
+section(1, "Topologie du réseau — carte et classification des 56 stations Vélomagg")
 
 st.caption(
     "Taille des points proportionnelle au volume de trips historiques. "
@@ -167,7 +167,7 @@ with right_prof:
 
 # ── Section 2 — Dynamiques temporelles ───────────────────────────────────────
 st.divider()
-section(2, "Dynamiques temporelles — flux horaires et déséquilibres")
+section(2, "Dynamiques temporelles — patterns horaires, OD et déséquilibres source/puits")
 
 left_hr, right_hr = st.columns(2)
 
@@ -251,7 +251,7 @@ if {"station", "net_flow"}.issubset(net_flows.columns):
 
 # ── Section 3 — Centralité et stress ─────────────────────────────────────────
 st.divider()
-section(3, "Centralité du réseau et indice de stress opérationnel")
+section(3, "Centralité et stress — PageRank, betweenness et fragilité opérationnelle")
 
 left_cent, right_cent = st.columns(2)
 
@@ -304,7 +304,7 @@ with right_cent:
 
 # ── Section 4 — Intégration multimodale ──────────────────────────────────────
 st.divider()
-section(4, "Intégration multimodale — proximité vélo / tram")
+section(4, "Intégration multimodale — distance à pied entre stations Vélomagg et arrêts tram")
 
 st.caption(
     "Distance à pied entre chaque station Vélomagg et l'arrêt de tram le plus proche. "
@@ -354,7 +354,7 @@ if {"bike_station", "distance_m", "walkable_5min", "walkable_10min"}.issubset(bi
 
 # ── Section 5 — Analyse socio-économique ─────────────────────────────────────
 st.divider()
-section(5, "Mobilité vélo et profil socio-économique par quartier")
+section(5, "Inégalités d'accès — usage du vélo et profil socio-économique par quartier")
 
 left_sq, right_sq = st.columns(2)
 

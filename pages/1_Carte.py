@@ -76,7 +76,7 @@ n_shown  = len(dff)
 n_nodata = int(dff[metric_key].isna().sum()) if metric_key in dff else 0
 
 # ── Section 1 — Contexte ─────────────────────────────────────────────────────
-section(1, "Contexte et couverture géographique")
+section(1, "Couverture géographique — 46 000+ stations VLS sur le territoire national")
 
 col_info, col_na = st.columns([4, 1])
 col_info.caption(
@@ -88,7 +88,7 @@ if n_nodata:
     col_na.caption(f"{n_nodata:,} sans données (gris)")
 
 # ── Section 2 — Carte ────────────────────────────────────────────────────────
-section(2, "Visualisation cartographique")
+section(2, "Carte interactive — coloration par métrique d'enrichissement (rayon 300 m)")
 
 palette = meta["color_scale"]
 dff = dff.copy()
@@ -156,7 +156,7 @@ if len(valid) > 0:
 
 # ── Section 3 — Statistiques de la sélection ─────────────────────────────────
 st.divider()
-section(3, "Statistiques de la sélection courante")
+section(3, "Statistiques descriptives de la sélection — min, moy, médiane, max")
 
 if len(valid) > 0:
     s1, s2, s3, s4, s5 = st.columns(5)

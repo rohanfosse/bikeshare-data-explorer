@@ -68,7 +68,7 @@ cities_sorted = cities_f.dropna(subset=[metric_key]).sort_values(
 )
 
 # ── Section 1 — Classement ────────────────────────────────────────────────────
-section(1, "Classement univarié")
+section(1, "Classement univarié — villes triées par la métrique principale sélectionnée")
 
 col_tab, col_chart = st.columns([2, 3])
 
@@ -133,7 +133,7 @@ with col_chart:
 
 # ── Section 2 — Infrastructure et accidentologie ──────────────────────────────
 st.divider()
-section(2, "Infrastructure cyclable et accidentologie")
+section(2, "Infrastructure cyclable et accidentologie — analyse spatiale croisée")
 
 st.caption(
     "Chaque point représente une ville. La taille est proportionnelle au nombre de stations ; "
@@ -188,7 +188,7 @@ st.caption(
 
 # ── Section 3 — Profil radar ──────────────────────────────────────────────────
 st.divider()
-section(3, "Profil radar multi-dimensionnel")
+section(3, "Profil radar — comparaison multi-dimensionnelle entre agglomérations")
 
 st.caption(
     "Les valeurs sont normalisées entre 0 et 1 par métrique pour permettre la comparaison "
