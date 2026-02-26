@@ -36,6 +36,8 @@ with st.sidebar:
     st.page_link("pages/2_Villes.py",        label="Comparaison des villes")
     st.page_link("pages/3_Distributions.py", label="Distributions statistiques")
     st.page_link("pages/4_Export.py",        label="Export des données")
+    st.page_link("pages/5_Mobilite_France.py",    label="Indicateurs nationaux")
+    st.page_link("pages/6_Montpellier.py",        label="Montpellier — Velomagg")
     st.divider()
     st.header("Filtres et options")
 

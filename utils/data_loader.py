@@ -10,9 +10,30 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 
-# Chemin vers le CSV exporté par le notebook 27
+# Chemins des données
 _ROOT     = Path(__file__).parent.parent
 DATA_PATH = _ROOT / "data" / "stations_gold_standard.parquet"
+
+# Catalogue des systèmes GBFS
+SYSTEMS_PATH   = _ROOT / "data" / "gbfs_france" / "systems_catalog.csv"
+
+# Indicateurs de mobilité à l'échelle des villes (sources externes)
+FUB_PATH        = _ROOT / "data" / "external" / "mobility_sources" / "fub_barometre_2023_city_scores.csv"
+EMP_PATH        = _ROOT / "data" / "external" / "mobility_sources" / "emp_2019_city_modal_share.csv"
+BAAC_CITY_PATH  = _ROOT / "data" / "external" / "mobility_sources" / "baac_cyclist_accidents_city.csv"
+CEREMA_PATH     = _ROOT / "data" / "external" / "mobility_sources" / "cerema_cycling_infra_city.csv"
+ECO_PATH        = _ROOT / "data" / "external" / "mobility_sources" / "eco_compteurs_city_usage.csv"
+
+# Données Montpellier Vélomagg (analyse de réseau)
+SOCIO_MMM_PATH   = _ROOT / "data" / "processed" / "socioeconomic_analysis_results.csv"
+TEMPORAL_PATH    = _ROOT / "data" / "processed" / "station_temporal_profiles.csv"
+STRESS_PATH      = _ROOT / "data" / "processed" / "station_stress_ranking.csv"
+BIKETRAM_PATH    = _ROOT / "data" / "processed" / "multimodal" / "bike_tram_proximity_matrix.csv"
+HOURLY_PATH      = _ROOT / "data" / "processed" / "flow_analysis" / "hourly_flow_statistics.csv"
+NETFLOW_PATH     = _ROOT / "data" / "processed" / "flow_analysis" / "net_flow_analysis.csv"
+SYNTHESE_PATH    = _ROOT / "data" / "processed" / "ville_montpellier" / "analyses" / "synthese_velo_socio.csv"
+TOP_QUART_PATH   = _ROOT / "data" / "processed" / "ville_montpellier" / "analyses" / "top_10_quartiers_velo.csv"
+BOT_QUART_PATH   = _ROOT / "data" / "processed" / "ville_montpellier" / "analyses" / "bottom_10_quartiers_velo.csv"
 
 # ── Métadonnées des métriques ──────────────────────────────────────────────────
 METRICS: dict[str, dict] = {
@@ -148,3 +169,98 @@ def color_scale_rgb(
             r, g, b, _ = cmap(norm_v)
             colors.append([int(r * 255), int(g * 255), int(b * 255), alpha])
     return colors
+
+
+# ── Données nationales ────────────────────────────────────────────────────────
+
+@st.cache_data(ttl=3600, show_spinner=False)
+def load_systems_catalog() -> pd.DataFrame:
+    """Catalogue des 122 systèmes GBFS français (notebook 20)."""
+    df = pd.read_csv(SYSTEMS_PATH)
+    df["n_stations"] = pd.to_numeric(df["n_stations"], errors="coerce")
+    return df
+
+
+@st.cache_data(ttl=3600, show_spinner=False)
+def load_city_mobility() -> pd.DataFrame:
+    """
+    Fusion des indicateurs de mobilité à l'échelle des villes :
+    FUB Baromètre 2023, EMP 2019, BAAC, Cerema, Eco-compteurs.
+    """
+    paths = [FUB_PATH, EMP_PATH, BAAC_CITY_PATH, CEREMA_PATH, ECO_PATH]
+    merged: pd.DataFrame | None = None
+    for path in paths:
+        try:
+            df = pd.read_csv(path)
+            if merged is None:
+                merged = df
+            else:
+                merged = merged.merge(df, on="city", how="outer")
+        except Exception:
+            pass
+    return merged if merged is not None else pd.DataFrame()
+
+
+# ── Données Montpellier Vélomagg ──────────────────────────────────────────────
+
+@st.cache_data(ttl=3600, show_spinner=False)
+def load_montpellier_stations() -> pd.DataFrame:
+    """Profils des stations Vélomagg : centralité, trips, quartier."""
+    df = pd.read_csv(SOCIO_MMM_PATH)
+    for col in ("latitude", "longitude", "Total_Trips", "PageRank", "Betweenness"):
+        if col in df.columns:
+            df[col] = pd.to_numeric(df[col], errors="coerce")
+    return df.dropna(subset=["latitude", "longitude"])
+
+
+@st.cache_data(ttl=3600, show_spinner=False)
+def load_station_temporal_profiles() -> pd.DataFrame:
+    """Profils temporels des stations (commuter index, trips semaine/week-end)."""
+    df = pd.read_csv(TEMPORAL_PATH)
+    for col in ("Total_Trips", "Weekday_Departures", "Weekend_Departures", "Weekend_Ratio"):
+        if col in df.columns:
+            df[col] = pd.to_numeric(df[col], errors="coerce")
+    return df
+
+
+@st.cache_data(ttl=3600, show_spinner=False)
+def load_station_stress() -> pd.DataFrame:
+    """Classement des stations par indice de stress (demande vs capacité)."""
+    return pd.read_csv(STRESS_PATH)
+
+
+@st.cache_data(ttl=3600, show_spinner=False)
+def load_hourly_flows() -> pd.DataFrame:
+    """Statistiques agrégées des flux par heure (0-23h)."""
+    return pd.read_csv(HOURLY_PATH)
+
+
+@st.cache_data(ttl=3600, show_spinner=False)
+def load_net_flows() -> pd.DataFrame:
+    """Flux nets (entrées − sorties) par station et par heure."""
+    return pd.read_csv(NETFLOW_PATH)
+
+
+@st.cache_data(ttl=3600, show_spinner=False)
+def load_bike_tram_proximity() -> pd.DataFrame:
+    """Matrice de proximité stations vélo — arrêts tram (distance en m)."""
+    df = pd.read_csv(BIKETRAM_PATH)
+    df["distance_m"] = pd.to_numeric(df["distance_m"], errors="coerce")
+    return df
+
+
+@st.cache_data(ttl=3600, show_spinner=False)
+def load_synthese_velo_socio() -> pd.DataFrame:
+    """Synthèse mobilité vélo × indicateurs socio-économiques par quartier."""
+    return pd.read_csv(SYNTHESE_PATH)
+
+
+@st.cache_data(ttl=3600, show_spinner=False)
+def load_top_quartiers() -> tuple[pd.DataFrame, pd.DataFrame]:
+    """Top 10 et bottom 10 quartiers par usage vélo."""
+    top = pd.read_csv(TOP_QUART_PATH)
+    try:
+        bot = pd.read_csv(BOT_QUART_PATH)
+    except Exception:
+        bot = pd.DataFrame()
+    return top, bot
