@@ -62,7 +62,7 @@ Bien que l'ontologie GBFS garantisse la localisation ponctuelle de l'offre maté
 Cette architecture de données hybride permet d'opérer une transition paradigmatique : il ne s'agit plus de mesurer un simple volume d'équipement (où sont les vélos ?), mais de **modéliser un système complexe** (le vélo est-il déployé dans un écosystème sécurisé, physiquement accessible et intégré aux autres modes de transport ?).
 """)
 
-# Tableau récapitulatif des sources (mis à jour avec un ton académique)
+# Tableau récapitulatif des sources
 donnees_sources = pd.DataFrame({
     "Dimension Modélisée": [
         "Infrastructure Primaire (Offre)", 
@@ -71,7 +71,7 @@ donnees_sources = pd.DataFrame({
         "Capillarité Multimodale (M)", 
         "Friction Spatiale (T)", 
         "Vulnérabilité Socio-Économique",
-        "Pratiques Comportementales (Validation)"
+        "Pratiques Comportementales"
     ],
     "Source de la donnée": [
         "APIs GBFS (Auditées)", 
@@ -85,77 +85,89 @@ donnees_sources = pd.DataFrame({
     "Format / Nature": [
         "GeoJSON point", 
         "Open Data Gouvernemental", 
-        "Réseau filaire (Lignes/Graphes)", 
-        "Schedules & Stops (Noeuds)", 
-        "Modèle Numérique de Terrain (MNT)", 
-        "Carroyage Démographique (200m)",
-        "Micro-données de sondage"
+        "Réseau filaire (Lignes)", 
+        "Schedules & Stops", 
+        "Modèle Numérique (MNT)", 
+        "Carroyage (200m)",
+        "Sondages & Enquêtes"
     ],
     "Intégration et Apport au Modèle Spatial": [
-        "Coordonnées de vérité terrain et capacités ajustées post-correction (Le socle).",
-        "Modélisation de l'exposition au risque via la densité de clusters d'accidents corporels (Rayon 300m).",
-        "Mesure de la continuité de l'aménagement en site propre protégeant l'usager vulnérable.",
-        "Calcul de la distance aux pôles d'échanges lourds (Ferroviaire, BHNS, Tram) pour évaluer la capacité de rabattement.",
-        "Extraction du gradient altimétrique pour modéliser la friction spatiale et la barrière énergétique de l'usager.",
-        "Analyse de la variance des revenus médians par quartier pour objectiver l'Indice d'Équité Sociale (IES).",
-        "Analyse de convergence statistique pour valider l'efficience de l'IMD face au report modal réel."
+        "Coordonnées de vérité terrain et capacités ajustées post-correction.",
+        "Densité de clusters d'accidents corporels à moins de 300m.",
+        "Mesure de la continuité de l'aménagement en site propre.",
+        "Distance aux pôles d'échanges lourds (Ferroviaire, BHNS, Tram).",
+        "Gradient altimétrique pour modéliser la barrière énergétique.",
+        "Revenus médians pour objectiver l'Indice d'Équité Sociale (IES).",
+        "Convergence statistique validant l'efficience de l'IMD."
     ]
 })
 
 st.table(donnees_sources)
 
-# Tableau récapitulatif des sources
-donnees_sources = pd.DataFrame({
-    "Dimension Modélisée": [
-        "Offre VLS (Le socle)", 
-        "Sécurité Spatiale (S)", 
-        "Infrastructure Continue (I)", 
-        "Multimodalité (M)", 
-        "Friction Spatiale (T)", 
-        "Vulnérabilité Sociale",
-        "Pratiques Réelles (Validation)"
-    ],
-    "Source de la donnée": [
-        "APIs GBFS agrégées", 
-        "Fichier BAAC (ONISR)", 
-        "OpenStreetMap / Cerema", 
-        "Point d'Accès National (GTFS)", 
-        "NASA SRTM (30m)", 
-        "INSEE (Filosofi)",
-        "FUB / EMP 2019"
-    ],
-    "Type de Donnée": [
-        "JSON/GeoJSON", 
-        "Open Data Gouvernemental", 
-        "Vecteur Spatial (Lignes)", 
-        "Schedules / Stops", 
-        "Modèle Numérique de Terrain (MNT)", 
-        "Carroyage Socio-démographique",
-        "Enquêtes / Statistiques"
-    ],
-    "Apport Scientifique pour le Modèle": [
-        "Localisation exacte et capacité réelle des flottes.",
-        "Cartographie des clusters d'accidents corporels cyclistes à moins de 300m.",
-        "Mesure des aménagements en site propre protégeant l'usager vulnérable.",
-        "Calcul de la distance aux pôles d'échanges (Train, Tram, BHNS) pour le 1er/dernier kilomètre.",
-        "Calcul de la rugosité (dénivelé cumulé) mesurant l'effort physiologique requis.",
-        "Revenu médian par quartier pour objectiver la présence de Déserts de Mobilité Sociale.",
-        "Double validation de l'indice composite par le climat perçu et le report modal."
-    ]
-})
-
-st.table(donnees_sources)
-
-# ── Section 3 : Implication pour la Recherche ──────────────────────────────────
+# ── Section 3 : Avant / Après ──────────────────────────────────────────────────
 st.divider()
-section(3, "Conclusion : L'Infrastructure de Recherche comme Contribution")
+section(3, "Avant / Après : L'Impact Structurant de la Consolidation")
 
-st.success("""
-**Pourquoi cet effort d'ingénierie était-il indispensable ?**
+st.markdown(r"""
+Pour saisir l'ampleur de la contribution de ce jeu de données (*Gold Standard*), il convient d'observer la métamorphose de l'information entre l'extraction initiale et l'architecture finale. Le fichier brut n'est qu'un inventaire logistique ; le fichier final est une véritable matrice de recherche socio-spatiale.
+""")
 
-Dans le champ des études urbaines, le traitement des données est trop souvent relégué au rang de "détail technique". Cette recherche prouve au contraire que **la donnée est éminemment politique**. 
+col_before, col_after = st.columns(2)
 
-En omettant de corriger les anomalies GBFS (notamment capacitives), un algorithme de planification publique conclurait à tort qu'une agglomération est parfaitement couverte, justifiant potentiellement un arrêt des subventions pour l'aménagement cyclable de ce territoire. 
+with col_before:
+    st.error("**AVANT : GBFS Brut (Approche Naïve)**")
+    st.markdown("""
+    * **Nature :** Fichiers JSON éclatés par opérateur.
+    * **Bruit statistique :** Fort (Stations doublons, points géolocalisés en plein océan ou hors EPCI).
+    * **Aberrations capacitives :** Prévalence du "999 vélos" pour les stations virtuelles, faussant totalement les moyennes.
+    * **Absence de contexte :** Un point GPS nu. Impossible de savoir si la station se trouve sur une autoroute dangereuse ou au pied d'une gare.
+    * **Agnosticisme social :** Aucune donnée sur la population desservie.
+    """)
+    st.code("""
+    # Exemple d'un point GBFS brut
+    {
+      "station_id": "bordeaux_hub_12",
+      "lat": 44.8377,
+      "lon": -0.5791,
+      "capacity": 999, // BIAIS MAJEUR (A3)
+      "is_installed": true
+    }
+    """, language="json")
+
+with col_after:
+    st.success("**APRÈS : Gold Standard (Notre Contribution)**")
+    st.markdown("""
+    * **Nature :** Fichier structuré unique (`.parquet` / `.geojson`).
+    * **Signal purifié :** Application des filtres spatiaux et suppression des 6 anomalies.
+    * **Redressement de l'offre :** Capacité recalculée par la moyenne conditionnelle locale.
+    * **Environnement 360° :** Chaque station porte désormais son score de rugosité (MNT), sa distance au tramway (GTFS) et la qualité des pistes (OSM).
+    * **Dimension Sociale :** Enrichissement par le revenu médian du carroyage INSEE.
+    """)
+    st.code("""
+    # Exemple d'un point Gold Standard enrichi
+    {
+      "station_id": "bordeaux_hub_12",
+      "lat": 44.8377,
+      "lon": -0.5791,
+      "capacity_corrected": 14,     // CORRIGÉ
+      "imd_topography_score": 0.85, // SRTM NASA
+      "imd_safety_score": 0.42,     // BAAC
+      "imd_transit_dist_m": 120,    // GTFS
+      "insee_median_income": 22450  // FILOSOFI
+    }
+    """, language="json")
+
+st.info("**Conclusion méthodologique :** Les données sont intrinsèquement de *meilleure qualité* car elles reflètent la réalité physique du terrain, et elles sont *plus complètes* car elles intègrent les dimensions sécuritaires, topographiques et sociales indispensables à toute analyse d'équité.")
+
+
+# ── Section 4 : Implication pour la Recherche ──────────────────────────────────
+st.divider()
+section(4, "Implication : L'Infrastructure de Données comme Objet de Recherche")
+
+st.markdown("""
+Dans le champ des études urbaines, le traitement des données est trop souvent relégué au rang de "détail technique". Cette recherche prouve au contraire que **la qualité de la donnée est éminemment politique**. 
+
+En omettant de corriger les anomalies GBFS, un algorithme de planification publique conclurait à tort qu'une agglomération est parfaitement couverte grâce à des capacités artificiellement gonflées, justifiant potentiellement un arrêt des subventions pour l'aménagement cyclable de ce territoire. 
 
 La mise à disposition de ce **Gold Standard au format `.parquet`** constitue donc une contribution académique autonome. Elle offre aux futurs chercheurs et géomaticiens un "socle de vérité terrain" déjà purgé de ses biais, prêt à supporter des modélisations complexes telles que la théorie des graphes ou l'analyse des flux de micromobilité.
 """)
