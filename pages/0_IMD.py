@@ -373,12 +373,76 @@ fig_baseline.update_layout(plot_bgcolor="white")
 st.plotly_chart(fig_baseline, use_container_width=True)
 
 st.markdown("""
-**📝 Démonstration Analytique (Lecture du graphique) :**
+**Démonstration Analytique (Lecture du graphique) :**
 La non-linéarité de ce nuage de points prouve les limites de l'approche volumétrique :
 1. **Les Faux Positifs (Volume fort, IMD faible) :** Certaines métropoles déploient des centaines de stations (à droite du graphique) mais obtiennent un IMD médiocre car ces stations sont isolées des réseaux de transports lourds ou plongées dans des zones accidentogènes. Le volume brut masque l'inefficacité spatiale.
 2. **Les Pépites d'Efficacité (Volume faible, IMD fort) :** À l'inverse, des agglomérations de taille moyenne (à gauche) atteignent d'excellents scores IMD en optimisant chirurgicalement le placement de leurs quelques stations (hybridation de la flotte et ciblage exclusif des gares/pôles d'échanges). 
 """)
 
+# ── Section 7 — Indice d'Équité Sociale (IES) et Déserts de Mobilité ──────────
+st.divider()
+section(7, "Justice Spatiale : L'Indice d'Équité Sociale (IES)")
+
+st.markdown(r"""
+L'IMD quantifie la qualité de l'offre physique, mais une analyse de politique publique doit impérativement croiser cette offre avec la capacité des populations à s'en saisir. La transition écologique ne doit pas engendrer une **"double peine" socio-spatiale**, où les populations vulnérables seraient exclues des alternatives à la voiture individuelle.
+
+Pour mesurer cette équité, l'IMD observé est confronté au Revenu Médian ($R_m$) de l'agglomération via un modèle de régression Ridge ($R^2_\text{train} = 0{,}28$). L'Indice d'Équité Sociale (IES) isole la part de l'aménagement cyclable qui relève d'une volonté politique proactive, au-delà du simple déterminisme économique :
+""")
+
+st.latex(r"\text{IES}_i = \frac{\text{IMD}_{\text{observé}, i}}{\widehat{\text{IMD}}(R_{m, i})}")
+
+st.markdown("""
+* **$\text{IES} > 1$ : "Mobilité Inclusive"** (sur-investissement relatif protégeant les populations).
+* **$\text{IES} < 1$ : "Sous-investissement"** (vulnérabilité face à la dépendance automobile).
+""")
+
+# Vérification de la disponibilité des données socio-économiques
+if "revenu_median" in imd_f.columns and "IES" in imd_f.columns:
+    
+    # Création des quadrants
+    med_rev = imd_f["revenu_median"].median()
+    med_imd_val = imd_f["IMD"].median()
+    
+    fig_ies = px.scatter(
+        imd_f, 
+        x="revenu_median", y="IMD", 
+        text="city", size="n_stations", size_max=25,
+        color="IES", color_continuous_scale="RdYlGn", # Rouge (Inéquitable) à Vert (Équitable)
+        color_continuous_midpoint=1.0,
+        labels={
+            "revenu_median": "Revenu Médian Annuel (€)", 
+            "IMD": "Score d'Offre (IMD / 100)",
+            "IES": "Indice d'Équité (IES)",
+            "city": "Agglomération"
+        },
+        height=550
+    )
+    
+    # Lignes de démarcation des quadrants
+    fig_ies.add_hline(y=med_imd_val, line_dash="dash", line_color="gray")
+    fig_ies.add_vline(x=med_rev, line_dash="dash", line_color="gray")
+    
+    # Annotation du "Désert de Mobilité Sociale"
+    fig_ies.add_annotation(
+        x=imd_f["revenu_median"].min() * 1.05, 
+        y=imd_f["IMD"].min() * 1.05,
+        text="Déserts de Mobilité Sociale<br>(Captivité)",
+        showarrow=False, font=dict(color="red", size=14),
+        bgcolor="rgba(255, 255, 255, 0.8)", bordercolor="red"
+    )
+    
+    fig_ies.update_traces(textposition="top center", marker_opacity=0.9)
+    fig_ies.update_layout(plot_bgcolor="white")
+    st.plotly_chart(fig_ies, use_container_width=True)
+    
+    st.markdown("""
+    **📝 Diagnostic Socio-Spatial (Lecture des Quadrants) :**
+    Le quadrant inférieur gauche concentre les **"Déserts de Mobilité Sociale"** (environ 29 % des villes du panel). Ces agglomérations cumulent une fragilité économique structurelle (revenu inférieur à la médiane) et un sous-équipement cyclable profond (IMD faible, IES < 1). Les usagers de ces territoires sont triplement pénalisés : précarité budgétaire, éloignement des hubs multimodaux, et impossibilité de se reporter sur les SVLS.
+    """)
+else:
+    st.info("💡 *Les données socio-économiques (colonnes `revenu_median` et `IES`) ne sont pas détectées dans ce dataset pour générer la matrice d'équité. Assurez-vous d'avoir fusionné les résultats du Notebook 22.*")
+
+    
 # ── Section 7 — Conclusions de la page ────────────────────────────────────
 st.divider()
 section(7, "Conclusions de la Modélisation Spatiale (IMD)")
