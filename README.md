@@ -1,4 +1,4 @@
-# Gold Standard GBFS — Tableau de bord de la micromobilité française
+# Tableau de bord de la micromobilité française
 
 Tableau de bord interactif pour l'exploration et l'analyse comparative
 du jeu de données Gold Standard GBFS, produit dans le cadre du projet de
