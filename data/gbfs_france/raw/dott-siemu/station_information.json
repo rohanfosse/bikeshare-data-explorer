@@ -1,0 +1,1413 @@
+{
+  "data": {
+    "stations": [
+      {
+        "is_virtual_station": true,
+        "lat": 48.8607709,
+        "lon": 2.7390828,
+        "name": "CHL - CHÊNE SAINT FIACRE 2",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "9e8aba63-97a1-41b0-b6ea-e385dd17e914",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 4
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8627113,
+        "lon": 2.6705255,
+        "name": "SGN - LOUIS DE BROGLIE",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "c8621f0d-ad23-45c4-a8bd-481e3044b824",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.823148,
+        "lon": 2.699927,
+        "name": "FEB - FORGES",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "db6b0028-5d64-4a4b-acda-c102f5ef64b8",
+        "vehicle_capacity": {
+          "dott_bicycle": 3,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8366438,
+        "lon": 2.7089699,
+        "name": "BUS - PASSAGE CARTER",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "e91a5434-e7a5-4d8d-93d3-d393613ba1a0",
+        "vehicle_capacity": {
+          "dott_bicycle": 7,
+          "dott_scooter": 7
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.861174,
+        "lon": 2.695333,
+        "name": "GOU - PASTEUR",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "c6631f9a-8be4-4ef3-a507-c54834b9670c",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.877715,
+        "lon": 2.727739,
+        "name": "LSM - LIS",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "650d245f-79f7-42d2-ab1b-304d170f36b8",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8698024,
+        "lon": 2.7187132,
+        "name": "LSM - JEAN MERMOZ",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "ec1a933d-0887-45cd-ba24-8992e3b99d98",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8332553,
+        "lon": 2.7092644,
+        "name": "BUS - MENDÈS FRANCE",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "6407b763-70f6-4864-9e7d-a3c3782e7558",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8427878,
+        "lon": 2.7289315,
+        "name": "BUS - COUR SUZANNE VALADON",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "5312d1e1-e960-4202-8935-bf76d50d5518",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8463963,
+        "lon": 2.6729114,
+        "name": "BUSM - L'ETANG",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "954afa75-b7b6-45e2-b5db-9cc7396468d0",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.826701,
+        "lon": 2.717818,
+        "name": "FEB - JOSEPH PAXTON",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "f19b5d67-1352-49c8-a311-2d32cb7c6ff0",
+        "vehicle_capacity": {
+          "dott_bicycle": 3,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8511196,
+        "lon": 2.6771563,
+        "name": "SGN - ROSSINI",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "cad4d6d7-8f30-42db-8a03-b4906807e2b8",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8407855,
+        "lon": 2.70118,
+        "name": "BUS - ALLEE DES 2 CHATEAUX",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "5c88387a-2dd0-4c75-9e89-6011bf718164",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8395512,
+        "lon": 2.7188745,
+        "name": "BUS - GÉNÉRAL DE GAULLE",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "db528c82-51eb-4d7b-98e0-af77c5a43d34",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.852686,
+        "lon": 2.762069,
+        "name": "MTN - PROVINS",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "228234c8-f3cc-4951-a826-323cf5a50410",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8682014,
+        "lon": 2.6756252,
+        "name": "SGN - LA NOUE GUIMANTE",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "a3d4511d-a0fc-48a5-a757-0631afaa7088",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.83199032,
+        "lon": 2.718341651,
+        "name": "BUS - L'EUROPE",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "f7aa4317-b976-45a0-8ad6-0e2d14205d5c",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8337715,
+        "lon": 2.7228461,
+        "name": "BUS - CHRISTIAN BARNARD",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "b5d17be4-2485-4b50-99d5-15a8104ba114",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8325233,
+        "lon": 2.7379327,
+        "name": "BUS - GUTENBERG 2",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "c2d7c534-5052-4947-a613-8b8a4358377c",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8557718,
+        "lon": 2.7240899,
+        "name": "CSG - LAURENÇON",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "aea46a66-81cb-490b-94a5-475884b71128",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8393576,
+        "lon": 2.7046031,
+        "name": "BUS - PRÉ AUX LIÈVRES",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "7e645e2c-e3de-4234-a580-e5a767cc23f0",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.876035,
+        "lon": 2.70433,
+        "name": "LSM - ALLEE VIEILLE ET GENTIL",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "54f2cc30-7536-49eb-9ab8-76f50650705c",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.873162,
+        "lon": 2.700218,
+        "name": "LSM - HENRI DUNANT",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "d5d4567d-17ea-4517-ab63-ce467dd21ed4",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.82647279,
+        "lon": 2.709864918,
+        "name": "FEB - VIOLAINE",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "056af9f1-3f34-42f1-8ad3-ba20100aa29c",
+        "vehicle_capacity": {
+          "dott_bicycle": 3,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8633569,
+        "lon": 2.6745908,
+        "name": "SGN - MONNET",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "5f7c96d4-f663-403b-953a-1bfc01078f50",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8682448,
+        "lon": 2.7500492,
+        "name": "MTN - CHENE SAINT FIACRE",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "251a4dce-aa15-4929-89d4-70cf562cc894",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8342413,
+        "lon": 2.7023958,
+        "name": "BUS - GRAHAM BELL 1",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "6f5c22c9-5097-40ec-8c2e-ada6b0285488",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8693932,
+        "lon": 2.6781547,
+        "name": "SGN - MARMOUSETS",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "81d50897-bda7-4c52-8726-cf40c129fa08",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.879979,
+        "lon": 2.705963,
+        "name": "LSM - DELAMBRE",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "e9703a33-94b3-4a8c-b261-fbf6d1869dd8",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8752435,
+        "lon": 2.7468709,
+        "name": "MTN - MAUREGARD",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "6f83b500-1d14-4779-a904-8a745c8af0b4",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8678989,
+        "lon": 2.7536519,
+        "name": "MTN - FRANÇOIS MITTERRAND 1",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "140dcadc-45de-42b9-b64a-a6fdf0942648",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8420522,
+        "lon": 2.7042769,
+        "name": "BUS - CLOS SAINT GEORGES 2",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "615aae11-58d4-42f9-b075-8945ab7d7040",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.874373,
+        "lon": 2.6765296,
+        "name": "LSM - FREYCINET",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "8021885e-e6ee-48e0-882f-47e20ef9decc",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8348662,
+        "lon": 2.7304446,
+        "name": "BUS - PAVEE",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "379ce6e1-c616-429f-8dd0-0c75f38b1d24",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8742662,
+        "lon": 2.6859601,
+        "name": "LSM - BRANLY",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "1bc5f372-ae44-4dce-b9a3-ba0377aefa90",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.877274,
+        "lon": 2.705276,
+        "name": "LSM - L'HOTEL DE VILLE",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "b47243f1-cb92-41f0-b242-50a0e078b10c",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.85353989,
+        "lon": 2.755111593,
+        "name": "MTN - FONTENELLE",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "cdb87dd8-c70e-4513-bb28-9efb31d58778",
+        "vehicle_capacity": {
+          "dott_bicycle": 3,
+          "dott_scooter": 3
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.87906,
+        "lon": 2.708208,
+        "name": "LSM - SAINT-DENIS",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "4750338d-25b1-4593-9b28-a70f58f8b044",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8691105,
+        "lon": 2.6815466,
+        "name": "SGN - VERGERS",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "6a9ae4b3-8473-4db8-84ad-332ec0852a6c",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8656885,
+        "lon": 2.7614068,
+        "name": "MTN - EDOUARD BUFFARD",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "9efc9325-7af9-4446-9e7b-133c7583abcc",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.870822,
+        "lon": 2.7515743,
+        "name": "MTN - FRANÇOIS MITTERRAND 2",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "50383249-279f-44ca-8125-32ad69d5ccb0",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8707912,
+        "lon": 2.7609887,
+        "name": "MTN - FRÊNES",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "40981d92-42c9-4c2f-895f-d2070a839538",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.87311625,
+        "lon": 2.719712346,
+        "name": "LMS - STADE",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "3c417b0b-73ad-4000-95f6-cf56d73cc954",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8426321,
+        "lon": 2.7089984,
+        "name": "BUS - CLOS SAINT GEORGES 1",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "6350a8e2-2b48-4dc9-8bb2-6bfabe8e6514",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8563602,
+        "lon": 2.7348154,
+        "name": "CHL - MOULIN BOURCIER",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "d7d7837e-af11-455f-ae13-ce964160b764",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.827203,
+        "lon": 2.706396,
+        "name": "FEB - JAMES DE ROTHSCHILD 2",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "410a5d9a-0583-4cd6-aea4-c1492200ead8",
+        "vehicle_capacity": {
+          "dott_bicycle": 3,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8545814,
+        "lon": 2.7056556,
+        "name": "GUE - 2 CHATEAUX",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "45118397-05a0-4a11-a9bd-d3d6b95cb228",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.820627,
+        "lon": 2.714867,
+        "name": "FEB - HORTENSIAS",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "3fa71d61-5892-400e-9b80-c193dd62e5e0",
+        "vehicle_capacity": {
+          "dott_bicycle": 3,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8356695,
+        "lon": 2.7098071,
+        "name": "BUS - MARNE",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "6f42461e-5203-4f66-8531-34c0ccf86d8c",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.875957,
+        "lon": 2.6975592,
+        "name": "LSM - GÉNÉRAL LECLERC",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "4ed76865-ab21-47f7-b98b-32659df64934",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8542308,
+        "lon": 2.6672026,
+        "name": "SGN - CLAUDE MONET",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "1a305503-d7ad-4f52-8574-4dc5d96c0aa0",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8628442,
+        "lon": 2.7149782,
+        "name": "CSG - RUELLE BINETTE",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "9c9d6618-040f-49c5-ac2c-c5ca9b35dd50",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8430288,
+        "lon": 2.6974919,
+        "name": "BUS - FERRIERES",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "a01e5257-7c1a-4628-bd05-8be04385ed50",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8561413,
+        "lon": 2.7453885,
+        "name": "CHL - LA FERME DU PAVILLON",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "431e7bc6-1dc8-4f50-87ec-a8b4b5c09ea0",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8473288,
+        "lon": 2.6910466,
+        "name": "BUSM - SOURCES",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "00d1821f-36ab-471c-926f-b0f8911eda14",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.866813,
+        "lon": 2.706313,
+        "name": "LSM - LUCIEN GRIVEAU",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "bf485fd3-d214-45d9-a439-9633231136f0",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.82688159,
+        "lon": 2.704144576,
+        "name": "FEB - JAMES DE ROTHSCHILD 1",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "a7b9427f-8317-4470-8630-4245e6d85760",
+        "vehicle_capacity": {
+          "dott_bicycle": 3,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.88080622,
+        "lon": 2.722276104,
+        "name": "LSM - QUINCANGROGNE 1",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "f74e0803-b17b-479b-a8b5-bca906d5a790",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8802007,
+        "lon": 2.704895073,
+        "name": "LSM - CHATEAU FORT",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "13237682-51ed-4ca6-95ac-c2aa80d0ab7c",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.873405,
+        "lon": 2.695768,
+        "name": "LSM - ROTHSCHILD",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "c14f2500-8787-4a44-97e1-1a05722decb4",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8410712,
+        "lon": 2.7153345,
+        "name": "BUS - ANDRÉ MALRAUX",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "b898bb1a-2b01-4c8b-8055-d112cfd14f60",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8443504,
+        "lon": 2.7317523,
+        "name": "BUS - PETITS PAS",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "f3b0529c-e839-4982-ac84-50277eb31d10",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8545988,
+        "lon": 2.7710101,
+        "name": "MTN - JEAN MONNET",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "c7dceb09-12fa-465e-82f1-340f010771c4",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8345146,
+        "lon": 2.7045517,
+        "name": "BUS - GRAHAM BELL 2",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "969adad5-08c3-4c22-8060-44ead13983b8",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.876428,
+        "lon": 2.711872,
+        "name": "LSM - DOCTEUR D'HALLUIN",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "6842c5d5-ea33-4d18-a028-ca00c5916d20",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.843224,
+        "lon": 2.6672016,
+        "name": "BUSM - GUÉ LANGLOIS",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "a8cf75a8-e92c-403b-970b-b3ed19aa5454",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.881749,
+        "lon": 2.727069,
+        "name": "LSM - QUINCANGROGNE 2",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "0ac485ac-5ce4-43a4-81a2-6ba7e969ecf0",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.874548,
+        "lon": 2.721828,
+        "name": "LSM - LOUIS BLÉRIOT",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "0b789365-0759-4354-ba93-d9f21a47f98c",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.840757,
+        "lon": 2.7213094,
+        "name": "BUS - GENÊTS 3",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "67de6732-d72c-43c5-a40c-86f0381e6830",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8428873,
+        "lon": 2.7205054,
+        "name": "BUS - GENÊTS 1",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "18e58216-07fb-4677-9e5a-faf67fa6263c",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8519939,
+        "lon": 2.7153612,
+        "name": "GUE - ALLEE DU CLOS CHARON",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "4da5f532-d8b3-4672-a18a-05f278050050",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.873344,
+        "lon": 2.708426,
+        "name": "LSM - ALFRED BREBION",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "d55de6b3-595c-43d9-9692-7bc0cc567dd0",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8562011,
+        "lon": 2.7484995,
+        "name": "CHL - LA CUEILLETTE",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "9320b947-4dba-4208-b599-2182049d72b4",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.875517,
+        "lon": 2.741711,
+        "name": "MTN - BONNE MOUCHE",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "96b511ce-8f52-4c01-8f79-64dda8e01ae4",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8704671,
+        "lon": 2.7606004,
+        "name": "MTN - FRENES",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "c6ff48a9-8e5a-4012-8fca-a8ece481e17c",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.876609,
+        "lon": 2.720325,
+        "name": "LSM - RAYMOND POINCARÉ",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "f2c4234d-6ce5-4e74-ab50-ace8cd2b3358",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8542063,
+        "lon": 2.7420369,
+        "name": "CHL - TERRES FORTES",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "b74bbc24-6c68-4d9c-b79e-1520e57cb018",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8719696,
+        "lon": 2.6920777,
+        "name": "BUS - LAGNY",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "ef2c2898-b4ac-41bb-bcdf-50e497b7f3f4",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8348855,
+        "lon": 2.7134834,
+        "name": "BUS - HAROUN TAZIEFF",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "c20e4968-c796-4254-b7b1-6e564d4e5894",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8397686,
+        "lon": 2.7271784,
+        "name": "BUS - VICTOR SCHOELCHER",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "b82b8d56-03e8-4588-8df3-cce55488e83c",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8409181,
+        "lon": 2.7212696,
+        "name": "BUS - GENÊTS 2",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "a30ee308-5c7a-4bce-85d3-9eebbb4a82c8",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8587922,
+        "lon": 2.6893758,
+        "name": "GOU - VICTOR HUGO",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "3911a1e2-11fa-41c3-a65e-9c96804d0380",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.878356,
+        "lon": 2.701419,
+        "name": "LSM - JACQUES LE PAIRE",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "7a35c08d-d430-46b3-a6b4-eec112276d0c",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.83661976,
+        "lon": 2.710490867,
+        "name": "BUS - PAUL DELOUVRIER",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "2a7c7921-b28d-418b-b5e8-c2008a1ec9b0",
+        "vehicle_capacity": {
+          "dott_bicycle": 7,
+          "dott_scooter": 7
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8438314,
+        "lon": 2.737783,
+        "name": "BUS - 100 ARPENTS",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "9217700f-41af-4af5-b1f7-4bae5257a15c",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8527141,
+        "lon": 2.6692344,
+        "name": "SGN - CLOS DE L'ERABLE",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "0597fae7-6128-4201-9635-eeec48638364",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.882144,
+        "lon": 2.708017,
+        "name": "THO - LA GARE",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "0ae48611-7e39-495d-8ad6-6ef913c9cedc",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8665242,
+        "lon": 2.7094865,
+        "name": "LSM - ANDRÉ MALRAUX",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "74a47b5a-8c34-4633-913a-b93cbd32fbe8",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.87758039,
+        "lon": 2.722588151,
+        "name": "LSM - BONNET",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "e2e0f338-ea60-4f35-b825-ef024b5ce55c",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8733057,
+        "lon": 2.6885054,
+        "name": "SGN - GÉNÉRAL LECLERC",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "d8ca6e4d-9034-4bc7-97a4-2dbae959ad08",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8601298,
+        "lon": 2.7458108,
+        "name": "CHL - LA DECOUVERTE",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "d0809ea9-9242-41f7-bda2-e9a202097dd4",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.859173,
+        "lon": 2.7605123,
+        "name": "MTN - LA SOCIÉTÉ DES NATIONS 1",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "6b85ab82-7dcb-40b2-ad5e-c6e8745b3734",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.87836,
+        "lon": 2.694052,
+        "name": "LSM - AV DU MAL DE LATTRE DE TASSIGNY",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "13990bdf-9600-4d67-ac1a-6ce15c41ea28",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.865584,
+        "lon": 2.75899,
+        "name": "MTN - LA SOCIÉTÉ DES NATIONS 3",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "48e29234-af58-4ba2-ae74-3ab663872158",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.865618,
+        "lon": 2.715808,
+        "name": "LSM - GEORGES POMPIDOU",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "ce5e3798-1890-40e1-80e1-b956f1676d54",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.879081,
+        "lon": 2.72154,
+        "name": "LSM - GROUARD",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "699601ee-8b64-4e06-bd0f-17e1c749b904",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.83704567,
+        "lon": 2.712646131,
+        "name": "BUS - FULGENCE BIENVENÜE",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "59f1e272-5620-44c6-8617-71e724d4a338",
+        "vehicle_capacity": {
+          "dott_bicycle": 7,
+          "dott_scooter": 7
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.882152,
+        "lon": 2.708119,
+        "name": "THO - RAYMOND POINCARÉ",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "536dd524-ee83-44dd-8465-1df603a907bc",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8419143,
+        "lon": 2.7018156,
+        "name": "BUS - ROCADE DE LA CROIX SAINT GEORGES",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "59e1239a-3865-41d1-aaef-75d8d5da746c",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.850869,
+        "lon": 2.769362,
+        "name": "JY  - COURS DE LA GONDOIRE",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "2385ed00-2128-4119-9d82-2a9ebc5f71d0",
+        "vehicle_capacity": {
+          "dott_bicycle": 15,
+          "dott_scooter": 15
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8588692,
+        "lon": 2.760804,
+        "name": "MTN - LA SOCIÉTÉ DES NATIONS 2",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "87698032-29eb-40d9-8e2d-8709714eda24",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.86647,
+        "lon": 2.698507,
+        "name": "LSM - HENRI GABRIEL IBELS",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "315ab6e6-70a5-4d0b-8695-d967ea60af74",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8334763,
+        "lon": 2.7345254,
+        "name": "BUS - STRASBOURG",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "039005c2-bb2f-42d1-af3a-3a3599b301ec",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8594397,
+        "lon": 2.7420469,
+        "name": "CHL - CHÊNE SAINT FIACRE 1",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "37489cbc-ea36-4ee3-9086-c7bc892a5564",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.872185,
+        "lon": 2.682252,
+        "name": "LSM - JACQUARD",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "82c2a2f7-ab44-4624-9576-6e97cdbc8730",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8562007,
+        "lon": 2.7390096,
+        "name": "CHL - LA JONCHERE",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "0c413179-9392-477c-8838-41c00b338824",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.82239396,
+        "lon": 2.703759911,
+        "name": "FEB - PAUL DOUMER",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "8aebe3e5-4ab9-4580-ac01-8229e1e92730",
+        "vehicle_capacity": {
+          "dott_bicycle": 3,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8610627,
+        "lon": 2.7597371,
+        "name": "MTN - VERGER",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "dc7b842f-422d-4ab4-9d7f-49a7a65b55dc",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8574768,
+        "lon": 2.6713151,
+        "name": "SGN - SABLONS",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "cd175ae6-0e05-477d-a891-b23b52a8f564",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8759666,
+        "lon": 2.6851313,
+        "name": "LSM - AMPÈRE",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "8026a9ad-29a4-4ee3-9bdc-5dac43906eec",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.867193,
+        "lon": 2.719733,
+        "name": "LSM - LA QUARANTAINE",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "a8a71012-5994-446d-afcb-47e2f07ef814",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.82723339,
+        "lon": 2.700185248,
+        "name": "FEB - EDOUARD DE ROTHSCHILD",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "3adde71d-b49a-4a97-a8ab-6ca85d99bc94",
+        "vehicle_capacity": {
+          "dott_bicycle": 3,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.870787,
+        "lon": 2.704643,
+        "name": "LSM - LA VICTOIRE",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "e5b7eb3c-24a2-4787-8fbf-88050ee2107c",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8413216,
+        "lon": 2.7322155,
+        "name": "BUS - LOUIS GUIBERT",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "f529426e-6295-4054-9aa6-74551354a6c4",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8389554,
+        "lon": 2.7077847,
+        "name": "BUS - JEAN MONNET",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "ebb30024-bf6e-43ae-af20-74052ed8ce30",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8758592,
+        "lon": 2.7503156,
+        "name": "MTN - CHARLES DE GAULLE",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "7065ee74-5b25-4691-96ac-a02617af4bb4",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8316829,
+        "lon": 2.7319664,
+        "name": "BUS - GUTENBERG 1",
+        "region_id": "6133971a-230d-4237-8bb3-7977738a4bd8",
+        "station_id": "b724ef0a-b0b4-41b3-a63f-545ed2131f70",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      }
+    ]
+  },
+  "last_updated": 1771749796,
+  "ttl": 0,
+  "version": "2.3"
+}

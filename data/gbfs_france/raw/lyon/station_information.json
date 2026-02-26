@@ -1,0 +1,4147 @@
+{
+  "last_updated": 1771749873,
+  "ttl": 300,
+  "version": "2.3",
+  "data": {
+    "stations": [
+      {
+        "station_id": "1024",
+        "name": "ROUVILLE",
+        "lat": 45.769684,
+        "lon": 4.824607,
+        "address": "PLACE ROUVILLE",
+        "capacity": 17
+      },
+      {
+        "station_id": "1",
+        "name": "WOOSTOWER 2025",
+        "lat": 45.72463,
+        "lon": 4.829195,
+        "address": "Borne évènementielle n°1",
+        "capacity": 6
+      },
+      {
+        "station_id": "1031",
+        "name": "PLACE DE LA PAIX",
+        "lat": 45.768023,
+        "lon": 4.831733,
+        "address": "Place de la Paix - En face de La Poste",
+        "capacity": 20
+      },
+      {
+        "station_id": "3079",
+        "name": "PLACE LOUISE",
+        "lat": 45.75118,
+        "lon": 4.884795,
+        "address": "4 PLACE LOUISE",
+        "capacity": 16
+      },
+      {
+        "station_id": "1032",
+        "name": "PIZAY",
+        "lat": 45.767165,
+        "lon": 4.836334,
+        "address": "17 RUE PIZAY",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 22
+      },
+      {
+        "station_id": "3080",
+        "name": "PART-DIEU / VILLETTE",
+        "lat": 45.760042,
+        "lon": 4.861734,
+        "address": "55 RUE DE LA VILLETTE",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 30
+      },
+      {
+        "station_id": "3081",
+        "name": "PART-DIEU / FRANCFORT",
+        "lat": 45.760689,
+        "lon": 4.863069,
+        "address": "44 RUE MAURICE FLANDIN 69003 LYON",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 28
+      },
+      {
+        "station_id": "1034",
+        "name": "CARMÉLITES",
+        "lat": 45.770006,
+        "lon": 4.829274,
+        "address": "30 MONTEE DES CARMELITES",
+        "capacity": 16
+      },
+      {
+        "station_id": "3082",
+        "name": "SAXE / MONCEY",
+        "lat": 45.757578,
+        "lon": 4.846117,
+        "address": "33 RUE MONCEY",
+        "capacity": 28
+      },
+      {
+        "station_id": "1035",
+        "name": "QUAI LASSAGNE",
+        "lat": 45.772191,
+        "lon": 4.837917,
+        "address": "3 QUAI ANDRE LASSAGNE",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 16
+      },
+      {
+        "station_id": "3083",
+        "name": "LES HALLES",
+        "lat": 45.761595,
+        "lon": 4.850477,
+        "address": "118 RUE MONCEY",
+        "capacity": 18
+      },
+      {
+        "station_id": "1036",
+        "name": "AVEYRON",
+        "lat": 45.774366,
+        "lon": 4.832716,
+        "address": "158 BVD DE LA CROIX-ROUSSE",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 17
+      },
+      {
+        "station_id": "3084",
+        "name": "DESAIX",
+        "lat": 45.757268,
+        "lon": 4.855193,
+        "address": "143 RUE PAUL BERT",
+        "capacity": 28
+      },
+      {
+        "station_id": "1037",
+        "name": "CHAZETTE LASSAGNE",
+        "lat": 45.77291,
+        "lon": 4.837315,
+        "address": "",
+        "capacity": 20
+      },
+      {
+        "station_id": "3085",
+        "name": "SACRE COEUR",
+        "lat": 45.757864,
+        "lon": 4.868337,
+        "address": "66 RUE ANTOINE CHARIAL",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 16
+      },
+      {
+        "station_id": "3086",
+        "name": "FEUILLAT / LACASSAGNE",
+        "lat": 45.749563,
+        "lon": 4.875934,
+        "address": "76 AV. LACASSAGNE",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 16
+      },
+      {
+        "station_id": "3087",
+        "name": "PART-DIEU / GARIBALDI",
+        "lat": 45.762768,
+        "lon": 4.852563,
+        "address": "4 BVD EUGENE DERUELLE",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 20
+      },
+      {
+        "station_id": "3088",
+        "name": "PLACE GUICHARD",
+        "lat": 45.75882,
+        "lon": 4.846453,
+        "address": "65 RUE MAZENOD",
+        "capacity": 16
+      },
+      {
+        "station_id": "3089",
+        "name": "TRARIEUX / LACASSAGNE",
+        "lat": 45.745304,
+        "lon": 4.888964,
+        "address": "221 AV. LACASSAGNE",
+        "capacity": 24
+      },
+      {
+        "station_id": "3090",
+        "name": "VINATIER",
+        "lat": 45.741922,
+        "lon": 4.894068,
+        "address": "",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 20
+      },
+      {
+        "station_id": "3094",
+        "name": "VILLETTE",
+        "lat": 45.757808,
+        "lon": 4.861512,
+        "address": "74 RUE DE LA VILLETTE",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 38
+      },
+      {
+        "station_id": "3097",
+        "name": "AUGAGNEUR / FOSSE AUX OURS",
+        "lat": 45.756654,
+        "lon": 4.840479,
+        "address": "28 QUAI VICTOR AUGAGNEUR",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 40
+      },
+      {
+        "station_id": "3099",
+        "name": "PLACE SAINTE ANNE",
+        "lat": 45.757042,
+        "lon": 4.86532,
+        "address": "10 PLACE SAINTE ANNE",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 18
+      },
+      {
+        "station_id": "3100",
+        "name": "SISLEY / DAUPHINE",
+        "lat": 45.752484,
+        "lon": 4.868755,
+        "address": "61 RUE DU DAUPHINE",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 17
+      },
+      {
+        "station_id": "3101",
+        "name": "PATINOIRE BARABAN",
+        "lat": 45.762055,
+        "lon": 4.868486,
+        "address": "55 RUE DE BARABAN",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 20
+      },
+      {
+        "station_id": "3102",
+        "name": "DOCTEUR LONG / CAILLE",
+        "lat": 45.75254,
+        "lon": 4.894272,
+        "address": "135 COURS DOCTEUR LONG",
+        "capacity": 16
+      },
+      {
+        "station_id": "3103",
+        "name": "PLACE DANTON",
+        "lat": 45.75485,
+        "lon": 4.857488,
+        "address": "3 PLACE DANTON",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 18
+      },
+      {
+        "station_id": "3138",
+        "name": "VIVIER MERLE / PAUL BERT OUEST",
+        "lat": 45.757484,
+        "lon": 4.858386,
+        "address": "Devant l'hôtel IBIS",
+        "capacity": 19
+      },
+      {
+        "station_id": "35001",
+        "name": "ST GERMAIN AU MONT D'OR",
+        "lat": 45.887541,
+        "lon": 4.803999,
+        "address": "",
+        "capacity": 15
+      },
+      {
+        "station_id": "13500",
+        "name": "CHASSIEU - GENAS / PROGRES",
+        "lat": 45.738173,
+        "lon": 4.969598,
+        "address": "Route de Genas angle rue du progrès 69680 Chassieu",
+        "capacity": 12
+      },
+      {
+        "station_id": "202",
+        "name": "PLATINE PLAISIR BEE",
+        "lat": 48.799974,
+        "lon": 1.946202,
+        "address": "plaisir : Latitude : 48,79997371   Longitude:1,94620213\r\nVilleurbanne : Latitude : 45,780403    Longitude :4,905",
+        "capacity": 6
+      },
+      {
+        "station_id": "34001",
+        "name": "NEUVILLE - QUAI PASTEUR",
+        "lat": 45.876622,
+        "lon": 4.838578,
+        "address": "",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 20
+      },
+      {
+        "station_id": "34002",
+        "name": "NEUVILLE - STADE",
+        "lat": 45.870877,
+        "lon": 4.839595,
+        "address": "",
+        "capacity": 15
+      },
+      {
+        "station_id": "33001",
+        "name": "ALBIGNY - GARE",
+        "lat": 45.874978,
+        "lon": 4.833024,
+        "address": "",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 18
+      },
+      {
+        "station_id": "32001",
+        "name": "COUZON - CENTRE",
+        "lat": 45.846034,
+        "lon": 4.832409,
+        "address": "",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 17
+      },
+      {
+        "station_id": "30001",
+        "name": "RILLIEUX - CANELLAS",
+        "lat": 45.805207,
+        "lon": 4.88477,
+        "address": "",
+        "capacity": 12
+      },
+      {
+        "station_id": "30002",
+        "name": "RILLIEUX - LOUP PENDU",
+        "lat": 45.816751,
+        "lon": 4.888719,
+        "address": "",
+        "capacity": 20
+      },
+      {
+        "station_id": "28001",
+        "name": "FONTAINES S/S - QUAI SIMON",
+        "lat": 45.832495,
+        "lon": 4.848795,
+        "address": "",
+        "capacity": 20
+      },
+      {
+        "station_id": "28002",
+        "name": "FONTAINES S/S - GAMBETTA",
+        "lat": 45.835406,
+        "lon": 4.8457,
+        "address": "",
+        "capacity": 20
+      },
+      {
+        "station_id": "27001",
+        "name": "COLLONGES - GARE",
+        "lat": 45.830874,
+        "lon": 4.846988,
+        "address": "",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 24
+      },
+      {
+        "station_id": "27002",
+        "name": "COLLONGES - MEDIATHEQUE",
+        "lat": 45.822442,
+        "lon": 4.839868,
+        "address": "",
+        "capacity": 15
+      },
+      {
+        "station_id": "26001",
+        "name": "ST DIDIER",
+        "lat": 45.791621,
+        "lon": 4.808426,
+        "address": "",
+        "capacity": 17
+      },
+      {
+        "station_id": "25001",
+        "name": "ST CYR",
+        "lat": 45.799742,
+        "lon": 4.819607,
+        "address": "",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 12
+      },
+      {
+        "station_id": "24001",
+        "name": "ECULLY - MAIRIE",
+        "lat": 45.775112,
+        "lon": 4.778531,
+        "address": "",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 12
+      },
+      {
+        "station_id": "23001",
+        "name": "TASSIN - TUILERIES",
+        "lat": 45.763244,
+        "lon": 4.778641,
+        "address": "",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 12
+      },
+      {
+        "station_id": "22001",
+        "name": "STE FOY - PLACE ST LUC",
+        "lat": 45.749588,
+        "lon": 4.800967,
+        "address": "",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 15
+      },
+      {
+        "station_id": "21001",
+        "name": "LA MULATIERE - AQUARIUM",
+        "lat": 45.727309,
+        "lon": 4.814779,
+        "address": "",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 24
+      },
+      {
+        "station_id": "20001",
+        "name": "OULLINS - GARE",
+        "lat": 45.717001,
+        "lon": 4.814072,
+        "address": "",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 40
+      },
+      {
+        "station_id": "20002",
+        "name": "OULLINS - MAIRIE",
+        "lat": 45.714039,
+        "lon": 4.806642,
+        "address": "",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 18
+      },
+      {
+        "station_id": "20003",
+        "name": "OULLINS - PONT BLANC",
+        "lat": 45.720156,
+        "lon": 4.798426,
+        "address": "",
+        "capacity": 24
+      },
+      {
+        "station_id": "555",
+        "name": "555 - ATELIER VÉLO'V",
+        "lat": 45.780403,
+        "lon": 4.904869,
+        "address": "",
+        "capacity": 3
+      },
+      {
+        "station_id": "19001",
+        "name": "ST GENIS L. - MÉDIATHÈQUE",
+        "lat": 45.697863,
+        "lon": 4.794658,
+        "address": "",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 12
+      },
+      {
+        "station_id": "19002",
+        "name": "SAINT GENIS - HOPITAUX SUD",
+        "lat": 45.700744,
+        "lon": 4.803876,
+        "address": "",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 15
+      },
+      {
+        "station_id": "18001",
+        "name": "PIERRE BÉNITE - EUROPE",
+        "lat": 45.703245,
+        "lon": 4.821204,
+        "address": "",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 15
+      },
+      {
+        "station_id": "17001",
+        "name": "ST FONS - ARSENAL",
+        "lat": 45.712362,
+        "lon": 4.855202,
+        "address": "",
+        "capacity": 27
+      },
+      {
+        "station_id": "17002",
+        "name": "ST FONS - 4 CHEMINS",
+        "lat": 45.708561,
+        "lon": 4.854821,
+        "address": "",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 11
+      },
+      {
+        "station_id": "17003",
+        "name": "ST FONS - THEATRE",
+        "lat": 45.708123,
+        "lon": 4.861905,
+        "address": "",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 18
+      },
+      {
+        "station_id": "17004",
+        "name": "SAINT-FONS - GARE",
+        "lat": 45.706374,
+        "lon": 4.852492,
+        "address": "21, avenue Diderot 69190 Saint Fons",
+        "capacity": 15
+      },
+      {
+        "station_id": "17005",
+        "name": "SAINT-FONS - PLACE DES CUBES",
+        "lat": 45.710902,
+        "lon": 4.861087,
+        "address": "Place des cubes rue Monstequieu 69190 Saint Fons",
+        "capacity": 15
+      },
+      {
+        "station_id": "16001",
+        "name": "VENISSIEUX - PLACE ROMAND",
+        "lat": 45.725891,
+        "lon": 4.858428,
+        "address": "",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 20
+      },
+      {
+        "station_id": "16002",
+        "name": "VÉNISSIEUX - LÉVY / VIENNE",
+        "lat": 45.719399,
+        "lon": 4.854681,
+        "address": "",
+        "capacity": 18
+      },
+      {
+        "station_id": "16003",
+        "name": "VÉNISSIEUX - JOLIOT CURIE / SEMBAT",
+        "lat": 45.71532,
+        "lon": 4.878337,
+        "address": "",
+        "capacity": 25
+      },
+      {
+        "station_id": "16004",
+        "name": "VENISSIEUX PARILLY",
+        "lat": 45.719746,
+        "lon": 4.888457,
+        "address": "",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 25
+      },
+      {
+        "station_id": "16005",
+        "name": "VENISSIEUX - GARE",
+        "lat": 45.708509,
+        "lon": 4.886939,
+        "address": "",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 25
+      },
+      {
+        "station_id": "16006",
+        "name": "VENISSIEUX - COBLOD",
+        "lat": 45.697014,
+        "lon": 4.896127,
+        "address": "83, boulevard du docteur Coblod 69200 Vénissieux",
+        "capacity": 15
+      },
+      {
+        "station_id": "16007",
+        "name": "VENISSIEUX - PAUL / PICARD",
+        "lat": 45.699605,
+        "lon": 4.882002,
+        "address": "17, avenue Marcel Paul 69200 Vénissieux",
+        "capacity": 15
+      },
+      {
+        "station_id": "16011",
+        "name": "VENISSIEUX - FARGE / CLOCHETTES",
+        "lat": 45.697423,
+        "lon": 4.858227,
+        "address": "Boulevard Yves Farges angle rue des Clochettes 69200 Vénissieux",
+        "capacity": 12
+      },
+      {
+        "station_id": "15001",
+        "name": "ST PRIEST - PARC TECHNOLOGIQUE",
+        "lat": 45.714426,
+        "lon": 4.930975,
+        "address": "",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 20
+      },
+      {
+        "station_id": "15002",
+        "name": "ST PRIEST - CITE BERLIET",
+        "lat": 45.70597,
+        "lon": 4.900886,
+        "address": "",
+        "capacity": 20
+      },
+      {
+        "station_id": "14001",
+        "name": "BRON - CENTRE NAUTIQUE",
+        "lat": 45.742932,
+        "lon": 4.90863,
+        "address": "",
+        "capacity": 13
+      },
+      {
+        "station_id": "14003",
+        "name": "BRON - PLACE CURIAL",
+        "lat": 45.736633,
+        "lon": 4.917009,
+        "address": "",
+        "capacity": 25
+      },
+      {
+        "station_id": "14004",
+        "name": "BRON - MAIRIE",
+        "lat": 45.73403,
+        "lon": 4.908777,
+        "address": "",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 23
+      },
+      {
+        "station_id": "14005",
+        "name": "BRON - UNIVERSITE",
+        "lat": 45.72284,
+        "lon": 4.915219,
+        "address": "",
+        "capacity": 30
+      },
+      {
+        "station_id": "13001",
+        "name": "DECINES - CENTRE",
+        "lat": 45.771902,
+        "lon": 4.955721,
+        "address": "",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 20
+      },
+      {
+        "station_id": "12001",
+        "name": "VAULX - LA SOIE",
+        "lat": 45.760908,
+        "lon": 4.920569,
+        "address": "45 RUE DE LA POUDRETTE (VILLEURBANNE)",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 17
+      },
+      {
+        "station_id": "12002",
+        "name": "VAULX - POUDRETTE / LA SOIE",
+        "lat": 45.76438,
+        "lon": 4.919276,
+        "address": "Face au 2 rue de la Poudrette, Vaulx en Velin",
+        "capacity": 20
+      },
+      {
+        "station_id": "12003",
+        "name": "VAULX - BIBLIOTHEQUE",
+        "lat": 45.757092,
+        "lon": 4.92731,
+        "address": "",
+        "capacity": 15
+      },
+      {
+        "station_id": "12004",
+        "name": "VAULX - HÔTEL DE VILLE",
+        "lat": 45.778178,
+        "lon": 4.920544,
+        "address": "",
+        "capacity": 30
+      },
+      {
+        "station_id": "12005",
+        "name": "VAULX - VILLAGE",
+        "lat": 45.786262,
+        "lon": 4.926788,
+        "address": "",
+        "capacity": 20
+      },
+      {
+        "station_id": "11001",
+        "name": "CALUIRE - GARE DE CUIRE",
+        "lat": 45.785796,
+        "lon": 4.833733,
+        "address": "2 RUE CLAUDE BERNARD (CALUIRE ET CUIRE)",
+        "capacity": 16
+      },
+      {
+        "station_id": "11002",
+        "name": "CALUIRE - SAINT-CLAIR",
+        "lat": 45.785465,
+        "lon": 4.847838,
+        "address": "49 COURS ARISTIDE BRIAND (CALUIRE)",
+        "capacity": 20
+      },
+      {
+        "station_id": "11003",
+        "name": "CALUIRE - LA ROCHETTE",
+        "lat": 45.791748,
+        "lon": 4.823595,
+        "address": "Quai Gillet au  niveau de la place de la Rochette. Caluire et Cuire.",
+        "capacity": 20
+      },
+      {
+        "station_id": "11004",
+        "name": "CALUIRE - BRANLY / PASTEUR",
+        "lat": 45.79169,
+        "lon": 4.843452,
+        "address": "",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 15
+      },
+      {
+        "station_id": "11005",
+        "name": "CALUIRE - PASSERELLE DE LA PAIX",
+        "lat": 45.787941,
+        "lon": 4.853035,
+        "address": "",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 25
+      },
+      {
+        "station_id": "10001",
+        "name": "IUT / FEYSSINE",
+        "lat": 45.785632,
+        "lon": 4.882366,
+        "address": "rue de la Technologie",
+        "capacity": 30
+      },
+      {
+        "station_id": "10002",
+        "name": "INSA",
+        "lat": 45.782222,
+        "lon": 4.876951,
+        "address": "Avenue Albert Einstein au niveau du virage",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 55
+      },
+      {
+        "station_id": "10004",
+        "name": "TONKIN",
+        "lat": 45.776217,
+        "lon": 4.862636,
+        "address": "Rue Salvador Allende / Angle promenade du Lys",
+        "capacity": 10
+      },
+      {
+        "station_id": "10005",
+        "name": "11 NOVEMBRE",
+        "lat": 45.779702,
+        "lon": 4.860029,
+        "address": "Face Entrée du Parc de la Tête d'Or**",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 35
+      },
+      {
+        "station_id": "10006",
+        "name": "CHARPENNES",
+        "lat": 45.770225,
+        "lon": 4.863102,
+        "address": "Place Charles Hernu / côté sud",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 46
+      },
+      {
+        "station_id": "10007",
+        "name": "PIATON / CONDORCET",
+        "lat": 45.774204,
+        "lon": 4.867512,
+        "address": "Av Piaton / angle Condorcet",
+        "capacity": 20
+      },
+      {
+        "station_id": "10008",
+        "name": "SALENGRO / VAILLANT",
+        "lat": 45.778385,
+        "lon": 4.879673,
+        "address": "Rue Roger Salengro - Angle rue Vaillant",
+        "capacity": 24
+      },
+      {
+        "station_id": "10010",
+        "name": "BAUDIN / ZOLA",
+        "lat": 45.765105,
+        "lon": 4.905129,
+        "address": "12 rue baudin\r\nVilleurbanne",
+        "capacity": 16
+      },
+      {
+        "station_id": "10011",
+        "name": "GRATTE-CIEL",
+        "lat": 45.769226,
+        "lon": 4.880491,
+        "address": "174 COURS EMILE ZOLA",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 16
+      },
+      {
+        "station_id": "10012",
+        "name": "ZOLA / FRANCE",
+        "lat": 45.767957,
+        "lon": 4.887232,
+        "address": "Rue de France/Angle Cours Emile Zola",
+        "capacity": 16
+      },
+      {
+        "station_id": "10013",
+        "name": "CUSSET",
+        "lat": 45.764961,
+        "lon": 4.901018,
+        "address": "103 RUE PIERRE VOYANT (VILLEURBANNE)",
+        "capacity": 20
+      },
+      {
+        "station_id": "10014",
+        "name": "LAURENT BONNEVAY / ASTROBALLE",
+        "lat": 45.765214,
+        "lon": 4.909808,
+        "address": "64 AV. MARCEL CERDAN",
+        "capacity": 28
+      },
+      {
+        "station_id": "10015",
+        "name": "POUDRETTE / MUSSET",
+        "lat": 45.757936,
+        "lon": 4.921156,
+        "address": "",
+        "capacity": 18
+      },
+      {
+        "station_id": "10016",
+        "name": "PLACE DE LA PAIX",
+        "lat": 45.752074,
+        "lon": 4.91466,
+        "address": "10 PLACE DE LA PAIX (VILLEURBANNE)",
+        "capacity": 17
+      },
+      {
+        "station_id": "10017",
+        "name": "VOILLOT / GARNIER",
+        "lat": 45.753188,
+        "lon": 4.910892,
+        "address": "169 RUE JEAN VOILLOT\r\n69100 villeurbanne",
+        "capacity": 15
+      },
+      {
+        "station_id": "10018",
+        "name": "TOLSTOÏ / FLORIAN",
+        "lat": 45.761879,
+        "lon": 4.881062,
+        "address": "118 COURS TOLSTOI\r\n69100 VILLEURBANNE",
+        "capacity": 24
+      },
+      {
+        "station_id": "10019",
+        "name": "4 AOUT / RACINE",
+        "lat": 45.764489,
+        "lon": 4.877894,
+        "address": "",
+        "capacity": 30
+      },
+      {
+        "station_id": "10021",
+        "name": "GRANDCLÉMENT",
+        "lat": 45.759743,
+        "lon": 4.889938,
+        "address": "Angle cours Tolstoï",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 19
+      },
+      {
+        "station_id": "10023",
+        "name": "JAURES SAINT EXUPERY",
+        "lat": 45.757646,
+        "lon": 4.883377,
+        "address": "",
+        "capacity": 25
+      },
+      {
+        "station_id": "10024",
+        "name": "MAISONS NEUVES",
+        "lat": 45.755988,
+        "lon": 4.877409,
+        "address": "Place des Maisons Neuves/Côté rue Jean Jaurès",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 23
+      },
+      {
+        "station_id": "10025",
+        "name": "TOTEM",
+        "lat": 45.763652,
+        "lon": 4.873158,
+        "address": "",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 16
+      },
+      {
+        "station_id": "9002",
+        "name": "MAIRIE DU 9E",
+        "lat": 45.774241,
+        "lon": 4.805676,
+        "address": "Prox. métro Valmy",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 27
+      },
+      {
+        "station_id": "9003",
+        "name": "PLACE VALMY",
+        "lat": 45.775679,
+        "lon": 4.805314,
+        "address": "Rue Roquette / angle rue de Bourgogne",
+        "capacity": 16
+      },
+      {
+        "station_id": "10027",
+        "name": "MAIRIE DE VILLEURBANNE",
+        "lat": 45.766861,
+        "lon": 4.880059,
+        "address": "Avenue Aristide Briand, en face de la mairie",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 26
+      },
+      {
+        "station_id": "9004",
+        "name": "GARE DE VAISE",
+        "lat": 45.779786,
+        "lon": 4.804666,
+        "address": "Face entrée de la gare",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 22
+      },
+      {
+        "station_id": "10028",
+        "name": "ECOLE DE MUSIQUE",
+        "lat": 45.767467,
+        "lon": 4.874032,
+        "address": "Cours de la République/Angle Anatole France",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 24
+      },
+      {
+        "station_id": "9006",
+        "name": "THÉÂTRE NOUVELLE GÉNÉRATION",
+        "lat": 45.777287,
+        "lon": 4.803297,
+        "address": "Rue Tissot / angle rue de Bourgogne",
+        "capacity": 16
+      },
+      {
+        "station_id": "10030",
+        "name": "GREUZE",
+        "lat": 45.773845,
+        "lon": 4.893851,
+        "address": "126 RUE DU 8 MAI 1945 (VILLEURBANNE)",
+        "capacity": 18
+      },
+      {
+        "station_id": "10031",
+        "name": "CROIX LUIZET",
+        "lat": 45.780679,
+        "lon": 4.88356,
+        "address": "sur la place Croix Luizet",
+        "capacity": 22
+      },
+      {
+        "station_id": "9008",
+        "name": "L'ILE BARBE",
+        "lat": 45.797415,
+        "lon": 4.829038,
+        "address": "3 QUAI PAUL SEDAILLAN",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 16
+      },
+      {
+        "station_id": "10032",
+        "name": "PRIMAT / DECORPS",
+        "lat": 45.757173,
+        "lon": 4.89998,
+        "address": "Rue Antoine Primat/Angle rue Decorps",
+        "capacity": 13
+      },
+      {
+        "station_id": "9009",
+        "name": "BERLIOZ / CHALINEL",
+        "lat": 45.801192,
+        "lon": 4.825451,
+        "address": "",
+        "capacity": 15
+      },
+      {
+        "station_id": "9010",
+        "name": "PISCINE DE VAISE",
+        "lat": 45.771034,
+        "lon": 4.79644,
+        "address": "37 AV. SIDOINE APOLLINAIRE",
+        "capacity": 19
+      },
+      {
+        "station_id": "10034",
+        "name": "DOCTEUR DAMIDOT",
+        "lat": 45.761825,
+        "lon": 4.886156,
+        "address": "Devant la MJC",
+        "capacity": 18
+      },
+      {
+        "station_id": "9011",
+        "name": "CONSERVATOIRE",
+        "lat": 45.769803,
+        "lon": 4.812681,
+        "address": "Quai Chauveau / angle Pont Koenig",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 19
+      },
+      {
+        "station_id": "10035",
+        "name": "BOIRON GRANGER",
+        "lat": 45.763139,
+        "lon": 4.900492,
+        "address": "43 RUE PIERRE BARATIN (VILLEURBANNE)",
+        "capacity": 16
+      },
+      {
+        "station_id": "10036",
+        "name": "STALINGRAD",
+        "lat": 45.77435,
+        "lon": 4.859157,
+        "address": "Boulevard Stalingrad/angle rue Charlie Chaplin",
+        "capacity": 21
+      },
+      {
+        "station_id": "9013",
+        "name": "QUAI PAUL SÉDALLIAN",
+        "lat": 45.787522,
+        "lon": 4.814418,
+        "address": "Angle rue de la Navigation",
+        "capacity": 20
+      },
+      {
+        "station_id": "10037",
+        "name": "DUPEUBLE / 8 MAI 1945",
+        "lat": 45.776088,
+        "lon": 4.892275,
+        "address": "40 RUE MICHEL DUPEUBLE\r\n69100 VILLEURBANNE",
+        "capacity": 15
+      },
+      {
+        "station_id": "9014",
+        "name": "QUAI DU COMMERCE",
+        "lat": 45.782001,
+        "lon": 4.81044,
+        "address": "Angle rue Emile Duport",
+        "capacity": 30
+      },
+      {
+        "station_id": "10038",
+        "name": "CONDORCET",
+        "lat": 45.779062,
+        "lon": 4.866874,
+        "address": "Bvd 11 Nov./prox. arret tram Condorcet",
+        "capacity": 23
+      },
+      {
+        "station_id": "9015",
+        "name": "SAINT-CYR",
+        "lat": 45.782855,
+        "lon": 4.807288,
+        "address": "",
+        "capacity": 30
+      },
+      {
+        "station_id": "10039",
+        "name": "BOUVIER",
+        "lat": 45.779487,
+        "lon": 4.891692,
+        "address": "Rue Professeur Bouvier/Angle rue du 8 mai 1945",
+        "capacity": 16
+      },
+      {
+        "station_id": "10041",
+        "name": "KIMMERLING",
+        "lat": 45.752923,
+        "lon": 4.898891,
+        "address": "1 PLACE KIMMERLING (VILLEURBANNE)",
+        "capacity": 16
+      },
+      {
+        "station_id": "10043",
+        "name": "SALENGRO / FEYSSINE",
+        "lat": 45.782994,
+        "lon": 4.890614,
+        "address": "RUE DE LA FEYSSINE (VILLEURBANNE)",
+        "capacity": 20
+      },
+      {
+        "station_id": "9020",
+        "name": "BOURBONNAIS",
+        "lat": 45.773468,
+        "lon": 4.800286,
+        "address": "Angle rue Horand / rue Masset",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 12
+      },
+      {
+        "station_id": "10044",
+        "name": "ROCARD OCTAVIE",
+        "lat": 45.780904,
+        "lon": 4.889588,
+        "address": "",
+        "capacity": 25
+      },
+      {
+        "station_id": "10045",
+        "name": "ALSACE ANATOLE FRANCE",
+        "lat": 45.766921,
+        "lon": 4.870087,
+        "address": "",
+        "capacity": 20
+      },
+      {
+        "station_id": "9022",
+        "name": "MASARYK / SAINT-CYR",
+        "lat": 45.778639,
+        "lon": 4.8071,
+        "address": "Angle rue Chinard/rue St Cyr",
+        "capacity": 13
+      },
+      {
+        "station_id": "10046",
+        "name": "CHARMETTES/ZOLA",
+        "lat": 45.770705,
+        "lon": 4.867201,
+        "address": "Rue des Charmettes/Angle Cours Emile Zola",
+        "capacity": 23
+      },
+      {
+        "station_id": "10047",
+        "name": "LHERMINIER / PRESSENSÉ",
+        "lat": 45.771143,
+        "lon": 4.88504,
+        "address": "Avenue du Cdt Lherminier/Angle rue F. de Pressensé",
+        "capacity": 15
+      },
+      {
+        "station_id": "10048",
+        "name": "PLACE MARENGO",
+        "lat": 45.759176,
+        "lon": 4.875958,
+        "address": "52 AV. MARC SANGNIER (VILLEURBANNE)",
+        "capacity": 27
+      },
+      {
+        "station_id": "8001",
+        "name": "UNIVERSITÉ LYON III",
+        "lat": 45.748535,
+        "lon": 4.861533,
+        "address": "Devant entrée principale de l'université",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 36
+      },
+      {
+        "station_id": "8002",
+        "name": "PLACE AMBROISE COURTOIS",
+        "lat": 45.745296,
+        "lon": 4.871604,
+        "address": "Face au cours Albert Thomas",
+        "capacity": 20
+      },
+      {
+        "station_id": "8003",
+        "name": "CLAUDE BERNARD LYON I",
+        "lat": 45.738135,
+        "lon": 4.886885,
+        "address": "Devant entrée de la fac",
+        "capacity": 16
+      },
+      {
+        "station_id": "8004",
+        "name": "MAIRIE DU 8E",
+        "lat": 45.735158,
+        "lon": 4.872803,
+        "address": "Devant la mairie du 8e",
+        "capacity": 21
+      },
+      {
+        "station_id": "9029",
+        "name": "SAINT PIERRE DE VAISE",
+        "lat": 45.773125,
+        "lon": 4.807831,
+        "address": "Place Vanderpol/Angle St Pierre de Vaise",
+        "capacity": 15
+      },
+      {
+        "station_id": "10053",
+        "name": "ROSSELINI / 11 NOVEMBRE",
+        "lat": 45.77939,
+        "lon": 4.863068,
+        "address": "Bd du 11 novembre angle av. Claude Bernard",
+        "capacity": 30
+      },
+      {
+        "station_id": "8006",
+        "name": "PLACE DU 8 MAI 1945",
+        "lat": 45.729771,
+        "lon": 4.868157,
+        "address": "Rue Professeur Beauvisage/Angle bd des Etats-Unis",
+        "capacity": 20
+      },
+      {
+        "station_id": "10054",
+        "name": "STALINGRAD / MELIÈS",
+        "lat": 45.776715,
+        "lon": 4.859573,
+        "address": "RUE GEORGES MELIES (VILLEURBANNE)",
+        "capacity": 24
+      },
+      {
+        "station_id": "8007",
+        "name": "FRÈRES LUMIÈRE",
+        "lat": 45.745018,
+        "lon": 4.866424,
+        "address": "Angle rue Villon",
+        "capacity": 15
+      },
+      {
+        "station_id": "10055",
+        "name": "CONDORCET / GALLINE",
+        "lat": 45.776428,
+        "lon": 4.866976,
+        "address": "Avenue Galline/angle av. de Condorcet",
+        "capacity": 15
+      },
+      {
+        "station_id": "8008",
+        "name": "BEAUVISAGE / PRESSENSÉ",
+        "lat": 45.727881,
+        "lon": 4.86355,
+        "address": "Rue du Professeur Beauvisage",
+        "capacity": 17
+      },
+      {
+        "station_id": "9032",
+        "name": "PLACE DU PORT MOUTON",
+        "lat": 45.773815,
+        "lon": 4.809566,
+        "address": "Quai Arloing, Côté Saône",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 18
+      },
+      {
+        "station_id": "10056",
+        "name": "11 NOVEMBRE / GASTON BERGER",
+        "lat": 45.779066,
+        "lon": 4.871581,
+        "address": "Avenue du 11 Nov./angle av Gaston Berger",
+        "capacity": 35
+      },
+      {
+        "station_id": "8009",
+        "name": "JEAN XXIII / MERMOZ",
+        "lat": 45.73648,
+        "lon": 4.869789,
+        "address": "Boulevard Jean XXIII - Angle de la rue Mermoz",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 20
+      },
+      {
+        "station_id": "9033",
+        "name": "GORGE DE LOUP",
+        "lat": 45.767484,
+        "lon": 4.805626,
+        "address": "49 RUE SGT BERTHET",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 40
+      },
+      {
+        "station_id": "8010",
+        "name": "PLACE MENDÈS FRANCE",
+        "lat": 45.740052,
+        "lon": 4.85941,
+        "address": "95 AV. DE L'EUROPE",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 20
+      },
+      {
+        "station_id": "9034",
+        "name": "MONTEE DE L'OBSERVANCE",
+        "lat": 45.767927,
+        "lon": 4.809499,
+        "address": "72 montée de l'observance Lyon 9",
+        "capacity": 15
+      },
+      {
+        "station_id": "10058",
+        "name": "MÉTRO FLACHET",
+        "lat": 45.767051,
+        "lon": 4.892467,
+        "address": "274 COURS EMILE ZOLA (VILLEURBANNE)",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 22
+      },
+      {
+        "station_id": "8011",
+        "name": "PLACE LEBRET",
+        "lat": 45.735653,
+        "lon": 4.853042,
+        "address": "Côté route de Vienne",
+        "capacity": 14
+      },
+      {
+        "station_id": "10059",
+        "name": "ANATOLE FRANCE / ZOLA",
+        "lat": 45.76884,
+        "lon": 4.884276,
+        "address": "Rue Anatole France",
+        "capacity": 13
+      },
+      {
+        "station_id": "10060",
+        "name": "SAINT EXUPÉRY",
+        "lat": 45.758874,
+        "lon": 4.878683,
+        "address": "Avenue Antoine Saint Exupery",
+        "capacity": 15
+      },
+      {
+        "station_id": "10061",
+        "name": "RÉPUBLIQUE",
+        "lat": 45.770854,
+        "lon": 4.872612,
+        "address": "Cours Emile Zola/Angle cours de la République",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 17
+      },
+      {
+        "station_id": "8015",
+        "name": "JEAN XXIII",
+        "lat": 45.740324,
+        "lon": 4.874192,
+        "address": "RUE MARYSE BASTIE",
+        "capacity": 16
+      },
+      {
+        "station_id": "10063",
+        "name": "PERRIN / JEAN JAURÈS",
+        "lat": 45.757924,
+        "lon": 4.885265,
+        "address": "Face au 24 rue Antonin Perrin (Villeurbanne)",
+        "capacity": 34
+      },
+      {
+        "station_id": "9040",
+        "name": "PLACE RHODIACETA",
+        "lat": 45.770991,
+        "lon": 4.807578,
+        "address": "1 PLACE DE LA RHODIACETA",
+        "capacity": 12
+      },
+      {
+        "station_id": "10064",
+        "name": "4 AOÛT 1789",
+        "lat": 45.764812,
+        "lon": 4.884311,
+        "address": "Angle Rue Rollet/Blanqui",
+        "capacity": 15
+      },
+      {
+        "station_id": "9041",
+        "name": "CARRET / SÉDALLIAN",
+        "lat": 45.792478,
+        "lon": 4.820567,
+        "address": "10 QUAI PAUL SEDAILLAN",
+        "capacity": 18
+      },
+      {
+        "station_id": "9042",
+        "name": "VAISE DOCKS",
+        "lat": 45.786533,
+        "lon": 4.811446,
+        "address": "39 rue des Docks Lyon 9",
+        "capacity": 19
+      },
+      {
+        "station_id": "9043",
+        "name": "MARIETTON OUEST",
+        "lat": 45.776087,
+        "lon": 4.799725,
+        "address": "",
+        "capacity": 20
+      },
+      {
+        "station_id": "8020",
+        "name": "MOULIN A VENT",
+        "lat": 45.729714,
+        "lon": 4.854338,
+        "address": "",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 22
+      },
+      {
+        "station_id": "9044",
+        "name": "MASSET / SAINT-PIERRE DE VAISE",
+        "lat": 45.770508,
+        "lon": 4.800869,
+        "address": "20 AV. JOANNES MASSET",
+        "capacity": 16
+      },
+      {
+        "station_id": "8021",
+        "name": "PAUL SANTY",
+        "lat": 45.728542,
+        "lon": 4.877279,
+        "address": "Place Général André - Face au 126 avenue Paul Santy",
+        "capacity": 16
+      },
+      {
+        "station_id": "9046",
+        "name": "MANGINI",
+        "lat": 45.790414,
+        "lon": 4.816359,
+        "address": "",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 24
+      },
+      {
+        "station_id": "8023",
+        "name": "MERMOZ / PINEL",
+        "lat": 45.730788,
+        "lon": 4.887513,
+        "address": "",
+        "capacity": 23
+      },
+      {
+        "station_id": "10071",
+        "name": "LYCÉE MARIE CURIE",
+        "lat": 45.761532,
+        "lon": 4.895763,
+        "address": "64 BVD EUGENE REGUILLON (VILLEURBANNE)",
+        "capacity": 15
+      },
+      {
+        "station_id": "8024",
+        "name": "MERMOZ / MICHELET",
+        "lat": 45.733317,
+        "lon": 4.878607,
+        "address": "Angle av Michelet",
+        "capacity": 12
+      },
+      {
+        "station_id": "10072",
+        "name": "JACQUES BREL",
+        "lat": 45.774228,
+        "lon": 4.864269,
+        "address": "Rue Jacques Brel/angle rue Korel",
+        "capacity": 23
+      },
+      {
+        "station_id": "7001",
+        "name": "PLACE GABRIEL PÉRI",
+        "lat": 45.755023,
+        "lon": 4.843936,
+        "address": "Place Gabriel Péri",
+        "capacity": 24
+      },
+      {
+        "station_id": "8025",
+        "name": "DUMONT / JOUVET",
+        "lat": 45.744447,
+        "lon": 4.860889,
+        "address": "12 RUE SANTOS DUMONT",
+        "capacity": 17
+      },
+      {
+        "station_id": "9049",
+        "name": "SERGENT BERTHET / GORGE DE LOUP",
+        "lat": 45.770136,
+        "lon": 4.80516,
+        "address": "23 RUE GORGE DE LOUP",
+        "capacity": 16
+      },
+      {
+        "station_id": "10073",
+        "name": "INSTITUT D'ART CONTEMPORAIN",
+        "lat": 45.761468,
+        "lon": 4.872466,
+        "address": "Rue Docteur Dolard / Angle rue 4 Septembre",
+        "capacity": 25
+      },
+      {
+        "station_id": "7002",
+        "name": "UNIVERSITÉS LYON III / LYON II",
+        "lat": 45.751102,
+        "lon": 4.836154,
+        "address": "Quai Claude Bernard",
+        "capacity": 39
+      },
+      {
+        "station_id": "9050",
+        "name": "ALLEE DE L'EUROPE",
+        "lat": 45.783698,
+        "lon": 4.794485,
+        "address": "AVENUE DU PLATEAU",
+        "capacity": 12
+      },
+      {
+        "station_id": "10074",
+        "name": "ZOLA / PASSAGE REY",
+        "lat": 45.770099,
+        "lon": 4.876728,
+        "address": "Cours E. Zola / Angle passage Rey",
+        "capacity": 19
+      },
+      {
+        "station_id": "7003",
+        "name": "GAMBETTA / GARIBALDI",
+        "lat": 45.751827,
+        "lon": 4.8526,
+        "address": "Cours Gambette - Prolongement rue Rachais",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 40
+      },
+      {
+        "station_id": "9051",
+        "name": "ANDREI SAKHAROV",
+        "lat": 45.786546,
+        "lon": 4.797107,
+        "address": "373 AV. ANDREI SAKHAROV",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 12
+      },
+      {
+        "station_id": "7004",
+        "name": "MAIRIE DU 7E",
+        "lat": 45.74656,
+        "lon": 4.842265,
+        "address": "Place Jean Macé - Face à la mairie",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 30
+      },
+      {
+        "station_id": "9052",
+        "name": "BALMONT",
+        "lat": 45.789194,
+        "lon": 4.799308,
+        "address": "360 BVD DE BALMONT",
+        "capacity": 12
+      },
+      {
+        "station_id": "7005",
+        "name": "DEBOURG",
+        "lat": 45.73182,
+        "lon": 4.833996,
+        "address": "Avenue Debourg - Angle avenue Jean Jaurès",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 20
+      },
+      {
+        "station_id": "8029",
+        "name": "ETATS-UNIS / LÉVIGNE",
+        "lat": 45.732366,
+        "lon": 4.865101,
+        "address": "81 BVD DES Etats-Unis",
+        "capacity": 22
+      },
+      {
+        "station_id": "9053",
+        "name": "ROSA PARKS",
+        "lat": 45.786614,
+        "lon": 4.790101,
+        "address": "27 AVENUE ROSA PARKS\r\n69009 lyon",
+        "capacity": 15
+      },
+      {
+        "station_id": "7006",
+        "name": "GERLAND",
+        "lat": 45.727494,
+        "lon": 4.831145,
+        "address": "Avenue Jean Jaurès - Au niveau du square Galtier",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 40
+      },
+      {
+        "station_id": "8030",
+        "name": "LAËNNEC",
+        "lat": 45.741425,
+        "lon": 4.879733,
+        "address": "Angle rue Nungesser et Coli",
+        "capacity": 16
+      },
+      {
+        "station_id": "7007",
+        "name": "FARGE / AYASSE",
+        "lat": 45.735741,
+        "lon": 4.827725,
+        "address": "Angle Bld Y. Farge / rue Commandant Ayasse",
+        "capacity": 20
+      },
+      {
+        "station_id": "10079",
+        "name": "ANATOLE FRANCE / BARBUSSE",
+        "lat": 45.768127,
+        "lon": 4.879096,
+        "address": "Rue Anatole France/Angle av Barbusse",
+        "capacity": 20
+      },
+      {
+        "station_id": "7008",
+        "name": "JEAN JAURÈS / GUILLOTIÈRE",
+        "lat": 45.75251,
+        "lon": 4.846278,
+        "address": "Avenue Jean Jaurès - Angle rue de la Guillotière",
+        "capacity": 10
+      },
+      {
+        "station_id": "10080",
+        "name": "VAILLANT / PERRONCEL",
+        "lat": 45.775409,
+        "lon": 4.880261,
+        "address": "96 RUE ALEXIS PERRONCEL (VILLEURBANNE)",
+        "capacity": 17
+      },
+      {
+        "station_id": "7009",
+        "name": "JEAN JAURÈS",
+        "lat": 45.737503,
+        "lon": 4.837484,
+        "address": "174–180 Avenue Jean Jaurès 69007 Lyon",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 16
+      },
+      {
+        "station_id": "8033",
+        "name": "BERTHELOT / CAZENEUVE",
+        "lat": 45.737481,
+        "lon": 4.865503,
+        "address": "",
+        "capacity": 20
+      },
+      {
+        "station_id": "7010",
+        "name": "CENTRE BERTHELOT",
+        "lat": 45.747358,
+        "lon": 4.836009,
+        "address": "Rue Pasteur - Angle avenue Berthelot",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 19
+      },
+      {
+        "station_id": "8034",
+        "name": "BERTHELOT / VILLON",
+        "lat": 45.738301,
+        "lon": 4.862727,
+        "address": "Angle avenue Berthelot",
+        "capacity": 13
+      },
+      {
+        "station_id": "7011",
+        "name": "BERTHELOT / GARIBALDI",
+        "lat": 45.743756,
+        "lon": 4.847406,
+        "address": "Rue Garibaldi - Angle avenue Berthelot",
+        "capacity": 15
+      },
+      {
+        "station_id": "8035",
+        "name": "SANS SOUCI",
+        "lat": 45.747251,
+        "lon": 4.865386,
+        "address": "54 COURS ALBERT THOMAS",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 20
+      },
+      {
+        "station_id": "10083",
+        "name": "CHATEAU GAILLARD / BIENVENUS",
+        "lat": 45.777873,
+        "lon": 4.884238,
+        "address": "2 RUE DES BIENVENUS",
+        "capacity": 15
+      },
+      {
+        "station_id": "7012",
+        "name": "MERIEUX / PAVILLONS",
+        "lat": 45.729136,
+        "lon": 4.830117,
+        "address": "246 RUE MARCEL MERIEUX",
+        "capacity": 16
+      },
+      {
+        "station_id": "10084",
+        "name": "DOUA / AVENUE DES ARTS",
+        "lat": 45.783533,
+        "lon": 4.871294,
+        "address": "84 avenue des Arts",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 30
+      },
+      {
+        "station_id": "7013",
+        "name": "HALLE TONY GARNIER",
+        "lat": 45.730786,
+        "lon": 4.823733,
+        "address": "93–131 Avenue Tony Garnier 69007 Lyon",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 20
+      },
+      {
+        "station_id": "8037",
+        "name": "CAZENEUVE",
+        "lat": 45.734027,
+        "lon": 4.862906,
+        "address": "Rue Paul Cazeneuve - Angle du boulevard des Etats-Unis",
+        "capacity": 19
+      },
+      {
+        "station_id": "7014",
+        "name": "MARSEILLE / FÉLISSENT",
+        "lat": 45.752989,
+        "lon": 4.841417,
+        "address": "Rue Felissent, angle rue de Marseille",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 30
+      },
+      {
+        "station_id": "8038",
+        "name": "ALBERT THOMAS / VILLON",
+        "lat": 45.746691,
+        "lon": 4.867501,
+        "address": "Angle rue Villon",
+        "capacity": 20
+      },
+      {
+        "station_id": "10086",
+        "name": "ANATOLE FRANCE",
+        "lat": 45.769837,
+        "lon": 4.889629,
+        "address": "Angle Rue de Préssensé / Flachet",
+        "capacity": 10
+      },
+      {
+        "station_id": "7015",
+        "name": "TECHSUD",
+        "lat": 45.7228,
+        "lon": 4.842706,
+        "address": "Rue professeur Jean Bernard angle Boulevard Chambaud de la Bruyère Lyon 7",
+        "capacity": 12
+      },
+      {
+        "station_id": "8039",
+        "name": "PIERRE DELORE",
+        "lat": 45.738617,
+        "lon": 4.852412,
+        "address": "97 ROUTE DE VIENNE",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 20
+      },
+      {
+        "station_id": "10087",
+        "name": "BARATIN",
+        "lat": 45.760603,
+        "lon": 4.900702,
+        "address": "Face au 115 rue Pierre Baratin",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 12
+      },
+      {
+        "station_id": "7016",
+        "name": "PLACE SAINT LOUIS",
+        "lat": 45.748925,
+        "lon": 4.847714,
+        "address": "Rue de la Madeleine - Angle rue St Lazarre",
+        "capacity": 15
+      },
+      {
+        "station_id": "8040",
+        "name": "AMBROISE PARÉ",
+        "lat": 45.736289,
+        "lon": 4.883667,
+        "address": "Face au 54 Boulevard Ambroise Paré",
+        "capacity": 24
+      },
+      {
+        "station_id": "10088",
+        "name": "4 AOÛT 1789 / PRESSENSÉ",
+        "lat": 45.76611,
+        "lon": 4.898539,
+        "address": "COURS EMILE ZOLA (VILLEURBANNE)",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 19
+      },
+      {
+        "station_id": "7017",
+        "name": "BEAUVOIR / MAROT",
+        "lat": 45.73674,
+        "lon": 4.834106,
+        "address": "",
+        "capacity": 20
+      },
+      {
+        "station_id": "8041",
+        "name": "ETATS-UNIS / VIVIANI",
+        "lat": 45.724775,
+        "lon": 4.870745,
+        "address": "170 Boulevard des Etats-Unis, Angle Avenue Viviani, direction Venissieux",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 20
+      },
+      {
+        "station_id": "10089",
+        "name": "COLIN / PERRONCEL",
+        "lat": 45.774581,
+        "lon": 4.87406,
+        "address": "Rue Colin - Angle rue Alexis Perroncel",
+        "capacity": 15
+      },
+      {
+        "station_id": "7018",
+        "name": "LYCEE LOUISE LABE",
+        "lat": 45.740279,
+        "lon": 4.832061,
+        "address": "2 Rue Crépet 69007 Lyon",
+        "capacity": 20
+      },
+      {
+        "station_id": "8042",
+        "name": "FRANCIS DE PRESSENSÉ",
+        "lat": 45.731361,
+        "lon": 4.860139,
+        "address": "73 RUE CAZENEUVE",
+        "capacity": 22
+      },
+      {
+        "station_id": "7019",
+        "name": "CROIX BARRET / BOURDEIX",
+        "lat": 45.736722,
+        "lon": 4.841079,
+        "address": "",
+        "capacity": 32
+      },
+      {
+        "station_id": "10091",
+        "name": "CHÂTEAU GAILLARD / FORT",
+        "lat": 45.774754,
+        "lon": 4.887977,
+        "address": "28 RUE DU CHÂTEAU GAILLARD (VILLEURBANNE)",
+        "capacity": 16
+      },
+      {
+        "station_id": "7020",
+        "name": "PARC DE GERLAND",
+        "lat": 45.724352,
+        "lon": 4.826821,
+        "address": "Allée Pierre de Coubertin",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 26
+      },
+      {
+        "station_id": "10092",
+        "name": "MONTGOLFIER / CHATEAU GAILLARD",
+        "lat": 45.771561,
+        "lon": 4.890378,
+        "address": "3 RUE DU CHAMP DE L'ORME (VILLEURBANNE)",
+        "capacity": 17
+      },
+      {
+        "station_id": "7021",
+        "name": "CHALLEMEL LACOUR / GERLAND",
+        "lat": 45.729791,
+        "lon": 4.838138,
+        "address": "176–180 Rue de Gerland 69007 Lyon",
+        "capacity": 12
+      },
+      {
+        "station_id": "7022",
+        "name": "JAURÈS / LAGRANGE",
+        "lat": 45.743975,
+        "lon": 4.841463,
+        "address": "16 Impasse du Pré Gaudry 69007 Lyon",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 30
+      },
+      {
+        "station_id": "7023",
+        "name": "BERTHELOT / ROUTE DE VIENNE",
+        "lat": 45.742639,
+        "lon": 4.850538,
+        "address": "Route de Vienne - Angle avenue Berthelot",
+        "capacity": 15
+      },
+      {
+        "station_id": "7024",
+        "name": "BANCEL / CHEVREUL",
+        "lat": 45.748504,
+        "lon": 4.840505,
+        "address": "6 RUE BANCEL",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 21
+      },
+      {
+        "station_id": "6001",
+        "name": "GARE DES BROTTEAUX",
+        "lat": 45.766893,
+        "lon": 4.858922,
+        "address": "Place Jules Ferry angle rue Général Brosset face à la gare des Brotteaux",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 16
+      },
+      {
+        "station_id": "7025",
+        "name": "LACOUR / ARTILLERIE",
+        "lat": 45.729454,
+        "lon": 4.844228,
+        "address": "",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 20
+      },
+      {
+        "station_id": "6002",
+        "name": "PORTE DES ENFANTS DU RHÔNE",
+        "lat": 45.777521,
+        "lon": 4.844922,
+        "address": "Le long des grilles, côté ouest de la porte",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 40
+      },
+      {
+        "station_id": "7026",
+        "name": "BALDASSINI / GERLAND",
+        "lat": 45.727691,
+        "lon": 4.837392,
+        "address": "",
+        "capacity": 20
+      },
+      {
+        "station_id": "8050",
+        "name": "BATAILLE / KRÜGER",
+        "lat": 45.736219,
+        "lon": 4.879855,
+        "address": "",
+        "capacity": 18
+      },
+      {
+        "station_id": "6003",
+        "name": "AVENUE VERGUIN",
+        "lat": 45.772846,
+        "lon": 4.856274,
+        "address": "Devant l'entrée du parc",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 20
+      },
+      {
+        "station_id": "7027",
+        "name": "RACLET / GERLAND",
+        "lat": 45.73409,
+        "lon": 4.83981,
+        "address": "Rue Jean-François Raclet angle rue de Gerland Lyon 7",
+        "capacity": 15
+      },
+      {
+        "station_id": "8051",
+        "name": "HÔPITAL SAINT-JEAN DE DIEU",
+        "lat": 45.724172,
+        "lon": 4.854165,
+        "address": "303 ROUTE DE VIENNE (VENISSIEUX)",
+        "capacity": 20
+      },
+      {
+        "station_id": "6004",
+        "name": "FOCH",
+        "lat": 45.768896,
+        "lon": 4.844845,
+        "address": "Angle rue Vendôme",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 20
+      },
+      {
+        "station_id": "8052",
+        "name": "CLINIQUE MONPLAISIR",
+        "lat": 45.747091,
+        "lon": 4.860196,
+        "address": "2 AV. DES FRERES LUMIERE",
+        "capacity": 16
+      },
+      {
+        "station_id": "6005",
+        "name": "PLACE EDGAR QUINET",
+        "lat": 45.765811,
+        "lon": 4.844767,
+        "address": "Devant le lycée",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 23
+      },
+      {
+        "station_id": "8053",
+        "name": "LUMIERE / TROUILHET",
+        "lat": 45.743569,
+        "lon": 4.870083,
+        "address": "6 RUE ANTOINE LUMIERE",
+        "capacity": 16
+      },
+      {
+        "station_id": "10101",
+        "name": "EINSTEIN / 11 NOVEMBRE 1918",
+        "lat": 45.779429,
+        "lon": 4.873992,
+        "address": "43 BVD DU 11 NOVEMBRE 1918 (VILLEURBANNE)",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 34
+      },
+      {
+        "station_id": "6006",
+        "name": "BOULEVARD DES BELGES",
+        "lat": 45.773304,
+        "lon": 4.852001,
+        "address": "Boulevard des Belges - Angle rue Duquesne",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 15
+      },
+      {
+        "station_id": "7030",
+        "name": "QUARTIER GENERAL FRERE",
+        "lat": 45.743163,
+        "lon": 4.834165,
+        "address": "33 Boulevard Yves Farge 69007 Lyon",
+        "capacity": 30
+      },
+      {
+        "station_id": "8054",
+        "name": "MARTINIÈRE / MONPLAISIR",
+        "lat": 45.740865,
+        "lon": 4.868244,
+        "address": "34 RUE ANTOINE LUMIERE",
+        "capacity": 20
+      },
+      {
+        "station_id": "10102",
+        "name": "DOUA / GASTON BERGER",
+        "lat": 45.781008,
+        "lon": 4.871219,
+        "address": "ave G. Berger",
+        "capacity": 30
+      },
+      {
+        "station_id": "6007",
+        "name": "MASSÉNA",
+        "lat": 45.769654,
+        "lon": 4.852366,
+        "address": "Angle Cours Vitton",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 27
+      },
+      {
+        "station_id": "7031",
+        "name": "JAURÈS / GERLAND",
+        "lat": 45.739827,
+        "lon": 4.840308,
+        "address": "42 Rue de Gerland 69007 Lyon",
+        "capacity": 20
+      },
+      {
+        "station_id": "8055",
+        "name": "SAINT-ROMAIN / BERLIET",
+        "lat": 45.74222,
+        "lon": 4.860219,
+        "address": "",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 20
+      },
+      {
+        "station_id": "10103",
+        "name": "DOUA / RUE DES SPORTS",
+        "lat": 45.784526,
+        "lon": 4.877482,
+        "address": "103 ave des Arts / rue des Sports",
+        "capacity": 30
+      },
+      {
+        "station_id": "6008",
+        "name": "PLACE JULES FERRY",
+        "lat": 45.7684,
+        "lon": 4.858972,
+        "address": "17 PLACE JULES FERRY",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 20
+      },
+      {
+        "station_id": "8056",
+        "name": "DELORE / AUDIBERT ET LAVIROTTE",
+        "lat": 45.73586,
+        "lon": 4.856888,
+        "address": "69 RUE AUDIBERT ET LAVIROTTE",
+        "capacity": 18
+      },
+      {
+        "station_id": "7033",
+        "name": "SAINT-LUC / SAINT-JOSEPH",
+        "lat": 45.749431,
+        "lon": 4.834816,
+        "address": "Sur le quai haut",
+        "capacity": 33
+      },
+      {
+        "station_id": "8057",
+        "name": "VIENNE / MONTAGNY",
+        "lat": 45.732483,
+        "lon": 4.853406,
+        "address": "184 ROUTE DE VIENNE",
+        "capacity": 20
+      },
+      {
+        "station_id": "7034",
+        "name": "PISCINE DU RHÔNE",
+        "lat": 45.753705,
+        "lon": 4.838283,
+        "address": "Sur le quai devant l'entrée de la piscine",
+        "capacity": 31
+      },
+      {
+        "station_id": "8058",
+        "name": "LONGEFER / KRUGER",
+        "lat": 45.738671,
+        "lon": 4.878117,
+        "address": "10 RUE PDT P. KRUGER",
+        "capacity": 16
+      },
+      {
+        "station_id": "6011",
+        "name": "MAIRIE DU 6E",
+        "lat": 45.768395,
+        "lon": 4.849402,
+        "address": "Angle rue Boileau",
+        "capacity": 23
+      },
+      {
+        "station_id": "7035",
+        "name": "MARSEILLE / UNIVERSITÉ",
+        "lat": 45.750945,
+        "lon": 4.83927,
+        "address": "Angle rue de Marseille",
+        "capacity": 40
+      },
+      {
+        "station_id": "8059",
+        "name": "LAENNEC / PINEL",
+        "lat": 45.735375,
+        "lon": 4.88954,
+        "address": "173 BVD PINEL (BRON)",
+        "capacity": 15
+      },
+      {
+        "station_id": "6012",
+        "name": "PLACE PUVIS DE CHAVANNES",
+        "lat": 45.771794,
+        "lon": 4.84459,
+        "address": "Angle rue Vendôme",
+        "capacity": 10
+      },
+      {
+        "station_id": "7036",
+        "name": "GRYPHE / MONTESQUIEU",
+        "lat": 45.751902,
+        "lon": 4.843812,
+        "address": "",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 25
+      },
+      {
+        "station_id": "8060",
+        "name": "SANTY / BEAUVISAGE",
+        "lat": 45.731708,
+        "lon": 4.874205,
+        "address": "",
+        "capacity": 17
+      },
+      {
+        "station_id": "8061",
+        "name": "STADE VUILLERMET",
+        "lat": 45.725403,
+        "lon": 4.881292,
+        "address": "164 AV. PAUL SANTY",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 18
+      },
+      {
+        "station_id": "7038",
+        "name": "PLACE STALINGRAD",
+        "lat": 45.749622,
+        "lon": 4.85299,
+        "address": "Angle Rue de la Guillotiere",
+        "capacity": 13
+      },
+      {
+        "station_id": "10110",
+        "name": "MÉMOIRE ET SOCIÉTÉ",
+        "lat": 45.75958,
+        "lon": 4.882739,
+        "address": "20 RUE VALENTIN HAUY (VILLEURBANNE)",
+        "capacity": 24
+      },
+      {
+        "station_id": "7039",
+        "name": "GUILLOTIÈRE / MADELEINE",
+        "lat": 45.751073,
+        "lon": 4.848018,
+        "address": "Angle rue de la Madeleine",
+        "capacity": 10
+      },
+      {
+        "station_id": "10111",
+        "name": "CHARLES HERNU",
+        "lat": 45.770309,
+        "lon": 4.86196,
+        "address": "",
+        "capacity": 20
+      },
+      {
+        "station_id": "6016",
+        "name": "VIABERT / THIERS",
+        "lat": 45.766032,
+        "lon": 4.862063,
+        "address": "Angle avenue Thiers",
+        "capacity": 16
+      },
+      {
+        "station_id": "10112",
+        "name": "PLACE DE LA RECONNAISSANCE",
+        "lat": 45.754415,
+        "lon": 4.885249,
+        "address": "105 ROUTE DE GENAS (VILLEURBANNE)",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 32
+      },
+      {
+        "station_id": "6017",
+        "name": "LAFAYETTE / INKERMANN",
+        "lat": 45.764062,
+        "lon": 4.865802,
+        "address": "",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 30
+      },
+      {
+        "station_id": "7041",
+        "name": "DOMER / CHEVREUL",
+        "lat": 45.746681,
+        "lon": 4.844455,
+        "address": "Rue Domer/angle rue Chevreul",
+        "capacity": 12
+      },
+      {
+        "station_id": "10113",
+        "name": "GARE DE VILLEURBANNE",
+        "lat": 45.755768,
+        "lon": 4.891542,
+        "address": "49 AV. GENERAL LECLERC (VILLEURBANNE)",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 22
+      },
+      {
+        "station_id": "10114",
+        "name": "BEL AIR / LES BROSSES",
+        "lat": 45.757931,
+        "lon": 4.910776,
+        "address": "2 AV. DU BEL AIR (VILLEURBANNE)",
+        "capacity": 20
+      },
+      {
+        "station_id": "10115",
+        "name": "PLACE D'ESPAGNE / STADE KRUGER",
+        "lat": 45.754181,
+        "lon": 4.90528,
+        "address": "173 AV. PAUL KRUGER (VILLEURBANNE)",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 22
+      },
+      {
+        "station_id": "6020",
+        "name": "MUSÉE GUIMET",
+        "lat": 45.774526,
+        "lon": 4.848443,
+        "address": "Angle rue Morellet",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 15
+      },
+      {
+        "station_id": "10116",
+        "name": "BLUM / FAYS",
+        "lat": 45.760526,
+        "lon": 4.905877,
+        "address": "",
+        "capacity": 16
+      },
+      {
+        "station_id": "6021",
+        "name": "GARIBALDI",
+        "lat": 45.770664,
+        "lon": 4.849946,
+        "address": "Entre rue Crillon et rue Sully",
+        "capacity": 11
+      },
+      {
+        "station_id": "7045",
+        "name": "PARC DES BERGES",
+        "lat": 45.737745,
+        "lon": 4.824495,
+        "address": "40 AV. LECLERC",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 25
+      },
+      {
+        "station_id": "10117",
+        "name": "LA PERRALIÈRE",
+        "lat": 45.764567,
+        "lon": 4.892349,
+        "address": "166 RUE DU QUATRE AOUT (VILLEURBANNE)",
+        "capacity": 22
+      },
+      {
+        "station_id": "6022",
+        "name": "PLACE MARÉCHAL LYAUTEY",
+        "lat": 45.769383,
+        "lon": 4.842364,
+        "address": "Pierre Corneille/cours Franklin Roosevelt",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 20
+      },
+      {
+        "station_id": "7046",
+        "name": "PLACE DE L'ECOLE",
+        "lat": 45.730083,
+        "lon": 4.82781,
+        "address": "Angle rue de St Cloud",
+        "capacity": 28
+      },
+      {
+        "station_id": "10118",
+        "name": "VOYANT / CHAMBFORT",
+        "lat": 45.767194,
+        "lon": 4.900597,
+        "address": "99 RUE PIERRE VOYANT (VILLEURBANNE)",
+        "capacity": 22
+      },
+      {
+        "station_id": "6023",
+        "name": "QUAI SARRAIL",
+        "lat": 45.766821,
+        "lon": 4.841095,
+        "address": "Niveau rue de Sèze",
+        "capacity": 14
+      },
+      {
+        "station_id": "10119",
+        "name": "VILLEURBANNE SAINT-JEAN",
+        "lat": 45.780422,
+        "lon": 4.904505,
+        "address": "2 RUE DES ACACIAS VILLEURBANNE",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 12
+      },
+      {
+        "station_id": "6024",
+        "name": "TRONCHET / ANATOLE FRANCE",
+        "lat": 45.770743,
+        "lon": 4.856713,
+        "address": "Angle bvd Anatole France",
+        "capacity": 10
+      },
+      {
+        "station_id": "10120",
+        "name": "SALENGRO / DESCARTES",
+        "lat": 45.776239,
+        "lon": 4.871634,
+        "address": "41 AV. ROGER SALENGRO (VILLEURBANNE)",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 15
+      },
+      {
+        "station_id": "5001",
+        "name": "PLACE VARILLON (FUNICULAIRE ST JUST)",
+        "lat": 45.757319,
+        "lon": 4.815064,
+        "address": "Devant le n°63 rue de Trion",
+        "capacity": 23
+      },
+      {
+        "station_id": "6025",
+        "name": "PLACE D'HELVÉTIE",
+        "lat": 45.773232,
+        "lon": 4.841949,
+        "address": "",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 30
+      },
+      {
+        "station_id": "7049",
+        "name": "CITÉ SCOLAIRE INTERNATIONALE",
+        "lat": 45.727951,
+        "lon": 4.823563,
+        "address": "27–33 Rue Alexander Fleming 69007 Lyon",
+        "capacity": 25
+      },
+      {
+        "station_id": "10121",
+        "name": "PARC DU CENTRE",
+        "lat": 45.771898,
+        "lon": 4.877112,
+        "address": "85 RUE F. DE PRESSENSE",
+        "capacity": 16
+      },
+      {
+        "station_id": "5002",
+        "name": "PLACE DES COMPAGNONS DE LA CHANSON",
+        "lat": 45.756535,
+        "lon": 4.796616,
+        "address": "Angle rue des Aqueducs",
+        "capacity": 18
+      },
+      {
+        "station_id": "7050",
+        "name": "VEYRON / TCHEKOSLOVAQUES",
+        "lat": 45.74545,
+        "lon": 4.85803,
+        "address": "Rue Veyron / Bd des Tchekoslovaques Lyon 3",
+        "capacity": 15
+      },
+      {
+        "station_id": "10122",
+        "name": "VERDUN / DESGRAND",
+        "lat": 45.784023,
+        "lon": 4.897102,
+        "address": "17 RUE DE VERDUN (VILLEURBANNE)",
+        "capacity": 18
+      },
+      {
+        "station_id": "7051",
+        "name": "GUILLOTIERE / NICOLAÏ",
+        "lat": 45.747933,
+        "lon": 4.856358,
+        "address": "",
+        "capacity": 30
+      },
+      {
+        "station_id": "10123",
+        "name": "SAINT JEAN CANAL",
+        "lat": 45.776646,
+        "lon": 4.902366,
+        "address": "",
+        "capacity": 12
+      },
+      {
+        "station_id": "5004",
+        "name": "SAINT-JEAN",
+        "lat": 45.760468,
+        "lon": 4.826548,
+        "address": "Entre la cathédrale et le funiculaire",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 39
+      },
+      {
+        "station_id": "6028",
+        "name": "RÉCAMIER / TÊTE D'OR",
+        "lat": 45.764345,
+        "lon": 4.853492,
+        "address": "Angle rue Tête d'Or",
+        "capacity": 16
+      },
+      {
+        "station_id": "7052",
+        "name": "PARC BLANDAN",
+        "lat": 45.745939,
+        "lon": 4.851214,
+        "address": "Rue de l'Epargne",
+        "capacity": 25
+      },
+      {
+        "station_id": "10124",
+        "name": "SALENGRO / YVONNE",
+        "lat": 45.777294,
+        "lon": 4.876759,
+        "address": "1 rue Georges Courteline\r\n69100 Villeurbanne",
+        "capacity": 24
+      },
+      {
+        "station_id": "5005",
+        "name": "SAINT-PAUL",
+        "lat": 45.766278,
+        "lon": 4.827425,
+        "address": "Près de la gare de St Paul",
+        "capacity": 23
+      },
+      {
+        "station_id": "7053",
+        "name": "JAURÈS / THIBAUDIÈRE",
+        "lat": 45.750344,
+        "lon": 4.845048,
+        "address": "26 RUE DE LA THIBAUDIERE",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 28
+      },
+      {
+        "station_id": "10125",
+        "name": "VERDUN / PETIT ROULET",
+        "lat": 45.779304,
+        "lon": 4.898683,
+        "address": "81 RUE DE VERDUN\r\n69100 VILLEURBANNE",
+        "capacity": 15
+      },
+      {
+        "station_id": "5006",
+        "name": "QUAI ROMAIN ROLLAND",
+        "lat": 45.762045,
+        "lon": 4.828727,
+        "address": "Face ancien Palais de Justice",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 17
+      },
+      {
+        "station_id": "5007",
+        "name": "PLACE DE TRION",
+        "lat": 45.757916,
+        "lon": 4.81317,
+        "address": "Place de Trion",
+        "capacity": 16
+      },
+      {
+        "station_id": "6031",
+        "name": "LAFAYETTE / CORNEILLE",
+        "lat": 45.763717,
+        "lon": 4.843791,
+        "address": "Angle cours Lafayette",
+        "capacity": 13
+      },
+      {
+        "station_id": "7055",
+        "name": "SERVANT / JABOULAY",
+        "lat": 45.746779,
+        "lon": 4.842051,
+        "address": "23 RUE RENAN",
+        "capacity": 16
+      },
+      {
+        "station_id": "5008",
+        "name": "SAINTE-IRÉNÉE",
+        "lat": 45.754978,
+        "lon": 4.812427,
+        "address": "Place Sainte Irénée",
+        "capacity": 20
+      },
+      {
+        "station_id": "6032",
+        "name": "PRÉFECTURE / SARRAIL",
+        "lat": 45.764821,
+        "lon": 4.841567,
+        "address": "Angle rue Vauban",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 20
+      },
+      {
+        "station_id": "7056",
+        "name": "PLACE RASPAIL",
+        "lat": 45.755783,
+        "lon": 4.840745,
+        "address": "4 PLACE RASPAIL",
+        "capacity": 22
+      },
+      {
+        "station_id": "5009",
+        "name": "PLACE ENNEMOND FOUSSERET",
+        "lat": 45.764695,
+        "lon": 4.828969,
+        "address": "angle quai de Bondy",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 16
+      },
+      {
+        "station_id": "6033",
+        "name": "CRÉQUI / LAFAYETTE",
+        "lat": 45.763755,
+        "lon": 4.847082,
+        "address": "153 RUE CREQUI",
+        "capacity": 15
+      },
+      {
+        "station_id": "7057",
+        "name": "JAURES / BOLLIER",
+        "lat": 45.734712,
+        "lon": 4.835486,
+        "address": "217b–221 Avenue Jean Jaurès 69007 Lyon",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 34
+      },
+      {
+        "station_id": "6035",
+        "name": "CITÉ INTERNATIONALE",
+        "lat": 45.785456,
+        "lon": 4.854085,
+        "address": "Face parvis du palais des congrès",
+        "capacity": 21
+      },
+      {
+        "station_id": "6036",
+        "name": "MUSÉE D'ART CONTEMPORAIN",
+        "lat": 45.783885,
+        "lon": 4.852156,
+        "address": "Allée A. Lignon",
+        "capacity": 23
+      },
+      {
+        "station_id": "6037",
+        "name": "CITÉ INTERNATIONALE / INTERPOL",
+        "lat": 45.782287,
+        "lon": 4.849378,
+        "address": "Allée A. Lignon",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 27
+      },
+      {
+        "station_id": "7061",
+        "name": "JAURES / UNIVERSITE",
+        "lat": 45.748478,
+        "lon": 4.843147,
+        "address": "64 AV. JEAN JAURES",
+        "capacity": 25
+      },
+      {
+        "station_id": "7062",
+        "name": "GARIBALDI / DOMER",
+        "lat": 45.747735,
+        "lon": 4.85162,
+        "address": "51 RUE DOMER",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 19
+      },
+      {
+        "station_id": "5015",
+        "name": "FULCHIRON",
+        "lat": 45.75197,
+        "lon": 4.821662,
+        "address": "Devant le n°41 rue de la Quarantaine",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 19
+      },
+      {
+        "station_id": "6039",
+        "name": "GARIBALDI / BUGEAUD",
+        "lat": 45.766708,
+        "lon": 4.852073,
+        "address": "",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 20
+      },
+      {
+        "station_id": "5016",
+        "name": "POINT DU JOUR / GRANGES",
+        "lat": 45.756204,
+        "lon": 4.802727,
+        "address": "Devant la mairie du 5°",
+        "capacity": 13
+      },
+      {
+        "station_id": "6040",
+        "name": "LES HALLES",
+        "lat": 45.764013,
+        "lon": 4.849933,
+        "address": "71 COURS LAFAYETTE",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 15
+      },
+      {
+        "station_id": "7064",
+        "name": "CROUS",
+        "lat": 45.74541,
+        "lon": 4.847843,
+        "address": "96 RUE CHEVREUL",
+        "capacity": 17
+      },
+      {
+        "station_id": "6042",
+        "name": "CITÉ INTERNATIONALE / RÉSIDENCE HÔTELIÈRE",
+        "lat": 45.784812,
+        "lon": 4.856432,
+        "address": "devant la résidence hôtelière à l'ouest de la place publique",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 28
+      },
+      {
+        "station_id": "6043",
+        "name": "CITÉ INTERNATIONALE / CINÉMA",
+        "lat": 45.784698,
+        "lon": 4.851896,
+        "address": "80 QUAI CHARLES DE GAULLE",
+        "capacity": 32
+      },
+      {
+        "station_id": "6044",
+        "name": "CHARMETTES / BELLECOMBE",
+        "lat": 45.766372,
+        "lon": 4.865058,
+        "address": "23 RUE DE LA VIABERT",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 21
+      },
+      {
+        "station_id": "6045",
+        "name": "BROTTEAUX / VAUBAN",
+        "lat": 45.766284,
+        "lon": 4.856848,
+        "address": "44 BVD DES BROTTEAUX",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 15
+      },
+      {
+        "station_id": "4001",
+        "name": "CONSERVATOIRE BIS",
+        "lat": 45.770392,
+        "lon": 4.814254,
+        "address": "",
+        "capacity": 22
+      },
+      {
+        "station_id": "4002",
+        "name": "MAIRIE DU 4E",
+        "lat": 45.774193,
+        "lon": 4.827743,
+        "address": "Devant la mairie du 4°",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 20
+      },
+      {
+        "station_id": "5026",
+        "name": "RUE DE LA BALEINE",
+        "lat": 45.763383,
+        "lon": 4.829024,
+        "address": "Angle quai Romain Rolland",
+        "capacity": 14
+      },
+      {
+        "station_id": "4003",
+        "name": "PLACE COMMANDANT  ARNAUD",
+        "lat": 45.779731,
+        "lon": 4.834708,
+        "address": "Angle rue de Belfort",
+        "capacity": 17
+      },
+      {
+        "station_id": "4004",
+        "name": "HÉNON",
+        "lat": 45.779786,
+        "lon": 4.827635,
+        "address": "Angle rue Hénon",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 22
+      },
+      {
+        "station_id": "4005",
+        "name": "PLACE BERTONE",
+        "lat": 45.77762,
+        "lon": 4.83453,
+        "address": "Rue du Chariot d'Or",
+        "capacity": 12
+      },
+      {
+        "station_id": "5029",
+        "name": "PLACE GERSON",
+        "lat": 45.767057,
+        "lon": 4.827014,
+        "address": "Prox. Quai Pierre Scize",
+        "capacity": 20
+      },
+      {
+        "station_id": "4006",
+        "name": "PHILIPPE DE LASSALLE",
+        "lat": 45.773358,
+        "lon": 4.821234,
+        "address": "Angle rue Anselme, face à l'IUFM",
+        "capacity": 23
+      },
+      {
+        "station_id": "5030",
+        "name": "CHARCOT / RÉSIDENCE UNIVERSITAIRE",
+        "lat": 45.755054,
+        "lon": 4.807811,
+        "address": "Angle rue du fort Ste Irénée / Charcot",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 32
+      },
+      {
+        "station_id": "4007",
+        "name": "PLACE FLAMMARION",
+        "lat": 45.779332,
+        "lon": 4.820259,
+        "address": "Côté Rue Philippe de Lassalle",
+        "capacity": 18
+      },
+      {
+        "station_id": "5031",
+        "name": "MÉNIVAL / JOLIOT CURIE",
+        "lat": 45.754654,
+        "lon": 4.78821,
+        "address": "49 RUE JOLIOT CURIE",
+        "capacity": 20
+      },
+      {
+        "station_id": "4008",
+        "name": "CLOS SAVARON",
+        "lat": 45.782631,
+        "lon": 4.825576,
+        "address": "",
+        "capacity": 20
+      },
+      {
+        "station_id": "5032",
+        "name": "MÉNIVAL / EISENHOWER",
+        "lat": 45.756757,
+        "lon": 4.783206,
+        "address": "",
+        "capacity": 12
+      },
+      {
+        "station_id": "4009",
+        "name": "JACQUARD / DENFERT-ROCHEREAU",
+        "lat": 45.77591,
+        "lon": 4.825394,
+        "address": "Rue Denfert-Rochereau / Angle rue Jacquart",
+        "capacity": 14
+      },
+      {
+        "station_id": "4011",
+        "name": "PLACE JOANNÈS AMBRE",
+        "lat": 45.781574,
+        "lon": 4.832866,
+        "address": "Place Jean Ambre",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 20
+      },
+      {
+        "station_id": "4012",
+        "name": "PLACE ADRIEN GODIEN",
+        "lat": 45.778767,
+        "lon": 4.841109,
+        "address": "Angle montée de la Boucle",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 30
+      },
+      {
+        "station_id": "5036",
+        "name": "LA SALETTE",
+        "lat": 45.749627,
+        "lon": 4.795546,
+        "address": "104 RUE DU COMMANDANT CHARCOT",
+        "capacity": 15
+      },
+      {
+        "station_id": "4014",
+        "name": "PHILIPPE DE LASSALLE / PILLEMENT",
+        "lat": 45.777431,
+        "lon": 4.820526,
+        "address": "Angle rue Pillement",
+        "capacity": 13
+      },
+      {
+        "station_id": "5040",
+        "name": "PLACE CRÉPU",
+        "lat": 45.757847,
+        "lon": 4.826103,
+        "address": "7 PLACE BENOIT CREPU",
+        "capacity": 20
+      },
+      {
+        "station_id": "4017",
+        "name": "PLACE DES TAPIS",
+        "lat": 45.776002,
+        "lon": 4.829628,
+        "address": "Angle Bvd de la Croix-Rousse",
+        "capacity": 17
+      },
+      {
+        "station_id": "5041",
+        "name": "L'HOMME DE LA ROCHE",
+        "lat": 45.766576,
+        "lon": 4.820214,
+        "address": "55 QUAI PIERRE SCIZE",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 21
+      },
+      {
+        "station_id": "5044",
+        "name": "CHAMPVERT",
+        "lat": 45.760056,
+        "lon": 4.798366,
+        "address": "87 RUE DOCTEUR EDMOND LOCARD",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 15
+      },
+      {
+        "station_id": "24500",
+        "name": "CHAMPAGNE - MAIRIE",
+        "lat": 45.794882,
+        "lon": 4.792008,
+        "address": "1 RUE J RUE KENNEDY\t69410\tCHAMPAGNE AU MONT D'OR\r\n",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 15
+      },
+      {
+        "station_id": "4021",
+        "name": "TABAREAU",
+        "lat": 45.774061,
+        "lon": 4.82516,
+        "address": "Angle Bvd de la Croix-Rousse",
+        "capacity": 10
+      },
+      {
+        "station_id": "5045",
+        "name": "VALDO / RIVET",
+        "lat": 45.750497,
+        "lon": 4.788819,
+        "address": "Face au 1 Rue Jeunet",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 18
+      },
+      {
+        "station_id": "4022",
+        "name": "PLACE DE LA CROIX-ROUSSE",
+        "lat": 45.77608,
+        "lon": 4.832543,
+        "address": "Prox. Grande rue de la Croix-Rousse",
+        "capacity": 21
+      },
+      {
+        "station_id": "5046",
+        "name": "WITKOWSKI/VALDO",
+        "lat": 45.750059,
+        "lon": 4.78539,
+        "address": "",
+        "capacity": 15
+      },
+      {
+        "station_id": "4023",
+        "name": "PONT MASARYK",
+        "lat": 45.778175,
+        "lon": 4.810716,
+        "address": "Face au 45 quai Gillet",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 22
+      },
+      {
+        "station_id": "5047",
+        "name": "ALBÉRIC PONT",
+        "lat": 45.753452,
+        "lon": 4.804401,
+        "address": "2B RUE DR. ALBERIC PONT",
+        "capacity": 16
+      },
+      {
+        "station_id": "4024",
+        "name": "LYON METROPOLE",
+        "lat": 45.788204,
+        "lon": 4.818572,
+        "address": "FACE AU 81 QUAI JOSEPH GILLET",
+        "capacity": 25
+      },
+      {
+        "station_id": "4025",
+        "name": "CHAZIÈRE",
+        "lat": 45.775425,
+        "lon": 4.817888,
+        "address": "29 RUE CHAZIERE",
+        "capacity": 20
+      },
+      {
+        "station_id": "4026",
+        "name": "BIRMINGHAM",
+        "lat": 45.774632,
+        "lon": 4.813425,
+        "address": "Avenue Birmingham, sortie tunnel mode doux côté Saöne - 69000 Lyon",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 20
+      },
+      {
+        "station_id": "3003",
+        "name": "PART-DIEU / DERUELLE",
+        "lat": 45.762974,
+        "lon": 4.855071,
+        "address": "Face rue Massena, entrée centre commercial",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 30
+      },
+      {
+        "station_id": "5051",
+        "name": "LUGDUNUM - RADISSON",
+        "lat": 45.760581,
+        "lon": 4.819617,
+        "address": "",
+        "capacity": 15
+      },
+      {
+        "station_id": "3004",
+        "name": "BOURSE DU TRAVAIL",
+        "lat": 45.759648,
+        "lon": 4.848139,
+        "address": "Angle rue Moncey / Part-Dieu",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 27
+      },
+      {
+        "station_id": "3005",
+        "name": "SAXE / GAMBETTA",
+        "lat": 45.75377,
+        "lon": 4.848043,
+        "address": "Place Victor Basch",
+        "capacity": 26
+      },
+      {
+        "station_id": "5053",
+        "name": "SAINT-JUST",
+        "lat": 45.75597,
+        "lon": 4.818904,
+        "address": "1 PLACE DE L'ABBE LARUE",
+        "capacity": 18
+      },
+      {
+        "station_id": "3006",
+        "name": "VILLETTE / SAINT-ANTOINE",
+        "lat": 45.762876,
+        "lon": 4.862249,
+        "address": "",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 23
+      },
+      {
+        "station_id": "5054",
+        "name": "CHAMPVERT",
+        "lat": 45.763906,
+        "lon": 4.792643,
+        "address": "192 AV. BARTHELEMY BUYER",
+        "capacity": 18
+      },
+      {
+        "station_id": "3007",
+        "name": "PLACE D'ARSONVAL",
+        "lat": 45.743396,
+        "lon": 4.87897,
+        "address": "A côté du stand de fleurs",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 32
+      },
+      {
+        "station_id": "5055",
+        "name": "BUYER / APOLLINAIRE",
+        "lat": 45.762013,
+        "lon": 4.802751,
+        "address": "101 AV. BARTHELEMY BUYER",
+        "capacity": 20
+      },
+      {
+        "station_id": "3008",
+        "name": "INSTITUT LUMIERE",
+        "lat": 45.745828,
+        "lon": 4.870631,
+        "address": "105 COURS ALBERT THOMAS",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 18
+      },
+      {
+        "station_id": "3009",
+        "name": "MUSEE AFRICAIN",
+        "lat": 45.750251,
+        "lon": 4.857919,
+        "address": "133 COURS GAMBETTA",
+        "capacity": 22
+      },
+      {
+        "station_id": "3010",
+        "name": "PART-DIEU / CUIRASSIERS (FAR)",
+        "lat": 45.758946,
+        "lon": 4.856245,
+        "address": "Rue des Cuirassiers Lyon 3",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 34
+      },
+      {
+        "station_id": "3011",
+        "name": "PART-DIEU / CUIRASSIERS",
+        "lat": 45.75991,
+        "lon": 4.857555,
+        "address": "",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 40
+      },
+      {
+        "station_id": "3012",
+        "name": "PLACE DU CHÂTEAU",
+        "lat": 45.749565,
+        "lon": 4.887311,
+        "address": "A côté de l'église",
+        "capacity": 25
+      },
+      {
+        "station_id": "3013",
+        "name": "PLACE ANTOINETTE",
+        "lat": 45.753683,
+        "lon": 4.889285,
+        "address": "Place Antoinette",
+        "capacity": 21
+      },
+      {
+        "station_id": "3014",
+        "name": "PART-DIEU/POMPIDOU",
+        "lat": 45.758925,
+        "lon": 4.860098,
+        "address": "Sous le pont rail avenue Pompidou",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 40
+      },
+      {
+        "station_id": "3015",
+        "name": "SERVIENT / GARIBALDI",
+        "lat": 45.760779,
+        "lon": 4.85276,
+        "address": "Angle rue Garibaldi",
+        "capacity": 32
+      },
+      {
+        "station_id": "3016",
+        "name": "LIBERTÉ / PART-DIEU",
+        "lat": 45.759361,
+        "lon": 4.842308,
+        "address": "Angle rue de la Part-Dieu",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 9
+      },
+      {
+        "station_id": "3017",
+        "name": "SAXE / DUNOIR",
+        "lat": 45.760912,
+        "lon": 4.845291,
+        "address": "",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 37
+      },
+      {
+        "station_id": "4041",
+        "name": "BOUSSANGES / AUSTERLITZ",
+        "lat": 45.775071,
+        "lon": 4.835499,
+        "address": "25 RUE D'AUSTERLITZ",
+        "capacity": 18
+      },
+      {
+        "station_id": "3018",
+        "name": "CRÉQUI / VOLTAIRE",
+        "lat": 45.756596,
+        "lon": 4.848442,
+        "address": "Angle rue Paul Bert",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 30
+      },
+      {
+        "station_id": "4042",
+        "name": "GREGORY COUPET",
+        "lat": 45.781699,
+        "lon": 4.820596,
+        "address": "94 RUE PHILIPPE DE LASALLE",
+        "capacity": 16
+      },
+      {
+        "station_id": "3019",
+        "name": "PART-DIEU / DERUELLE",
+        "lat": 45.76326,
+        "lon": 4.85749,
+        "address": "Intersection Bd Vivier Merle - Rue Eugène Deruelle Lyon 3",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 39
+      },
+      {
+        "station_id": "3021",
+        "name": "PLACE DE LA FERRANDIÈRE",
+        "lat": 45.759488,
+        "lon": 4.869346,
+        "address": "Intersection Ferrandière/Jasseron",
+        "capacity": 20
+      },
+      {
+        "station_id": "3024",
+        "name": "ROCKEFELLER / ESQUIROL",
+        "lat": 45.741336,
+        "lon": 4.885538,
+        "address": "Intersection Rockefeller / Esquirol",
+        "capacity": 21
+      },
+      {
+        "station_id": "2001",
+        "name": "BELLECOUR / RÉPUBLIQUE",
+        "lat": 45.758,
+        "lon": 4.834594,
+        "address": "Angle République / rue de la Barre",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 18
+      },
+      {
+        "station_id": "2002",
+        "name": "BELLECOUR / ST EXUPÉRY",
+        "lat": 45.758149,
+        "lon": 4.830428,
+        "address": "PLACE BELLECOUR Côté rue Lintier",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 40
+      },
+      {
+        "station_id": "2003",
+        "name": "PLACE AMPÈRE",
+        "lat": 45.753049,
+        "lon": 4.828297,
+        "address": "Angle Henry IV",
+        "capacity": 10
+      },
+      {
+        "station_id": "2004",
+        "name": "PERRACHE / CARNOT",
+        "lat": 45.750116,
+        "lon": 4.82801,
+        "address": "16 PLACE CARNOT",
+        "capacity": 18
+      },
+      {
+        "station_id": "2005",
+        "name": "CONFLUENCE HÔTEL DE RÉGION",
+        "lat": 45.740675,
+        "lon": 4.819284,
+        "address": "101 cours Charlemagne Lyon 2 direction centre ville. Devant l'hôtel de Région",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 28
+      },
+      {
+        "station_id": "3029",
+        "name": "PLACE ARISTIDE BRIAND",
+        "lat": 45.752967,
+        "lon": 4.850271,
+        "address": "Angle Gambetta",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 38
+      },
+      {
+        "station_id": "2006",
+        "name": "PLACE DE L'HIPPODROME",
+        "lat": 45.745528,
+        "lon": 4.82359,
+        "address": "Angle cours Charlemagne",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 24
+      },
+      {
+        "station_id": "2007",
+        "name": "PATINOIRE CHARLEMAGNE",
+        "lat": 45.742617,
+        "lon": 4.820464,
+        "address": "Angle rue Casimir Périer",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 37
+      },
+      {
+        "station_id": "3031",
+        "name": "CORNEILLE / SERVIENT",
+        "lat": 45.759906,
+        "lon": 4.844511,
+        "address": "Angle rue Servient",
+        "capacity": 13
+      },
+      {
+        "station_id": "2008",
+        "name": "PLACE ANTONIN PONCET",
+        "lat": 45.756775,
+        "lon": 4.833917,
+        "address": "Côté rue des Marroniers",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 40
+      },
+      {
+        "station_id": "2009",
+        "name": "CONFLUENCE / DOCKS",
+        "lat": 45.739652,
+        "lon": 4.814984,
+        "address": "Sur l'esplanade entre la rue Hrant Dink et le 40 quai Rambaud",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 26
+      },
+      {
+        "station_id": "3033",
+        "name": "WOODSTOWER 2025",
+        "lat": 45.72463,
+        "lon": 4.829195,
+        "address": "",
+        "capacity": 18
+      },
+      {
+        "station_id": "2010",
+        "name": "CONFLUENCE / DARSE",
+        "lat": 45.743317,
+        "lon": 4.815747,
+        "address": "ANGLE ALLEE ANDRE MURE ET QUAI ANTOINE RIBOUD",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 22
+      },
+      {
+        "station_id": "3034",
+        "name": "GARIBALDI / PENSIONNAT",
+        "lat": 45.754727,
+        "lon": 4.85346,
+        "address": "",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 30
+      },
+      {
+        "station_id": "2011",
+        "name": "SALA / RUE DU PLAT",
+        "lat": 45.756813,
+        "lon": 4.828342,
+        "address": "Face à la faculté catholique",
+        "capacity": 14
+      },
+      {
+        "station_id": "3035",
+        "name": "PHILOMENE MAGNIN",
+        "lat": 45.752453,
+        "lon": 4.858785,
+        "address": "",
+        "capacity": 24
+      },
+      {
+        "station_id": "2012",
+        "name": "GAILLETON",
+        "lat": 45.753455,
+        "lon": 4.833367,
+        "address": "3 PLACE GAILLETON",
+        "capacity": 16
+      },
+      {
+        "station_id": "3036",
+        "name": "FELIX FAURE / VIVIER MERLE",
+        "lat": 45.75381,
+        "lon": 4.859795,
+        "address": "AVENUE FELIX FAURE ANGLE VIVIER MERLE. 10M AVANT VIVIER MERLE EN DIRECTION DU RHONE",
+        "capacity": 34
+      },
+      {
+        "station_id": "2013",
+        "name": "CÉLESTINS",
+        "lat": 45.759932,
+        "lon": 4.832111,
+        "address": "Côté nord de la place, vers l'ascenseur",
+        "capacity": 22
+      },
+      {
+        "station_id": "3037",
+        "name": "PAUL BERT / GARIBALDI",
+        "lat": 45.757112,
+        "lon": 4.853405,
+        "address": "Rue Paul Bert",
+        "capacity": 21
+      },
+      {
+        "station_id": "2014",
+        "name": "JACOBINS",
+        "lat": 45.760762,
+        "lon": 4.834305,
+        "address": "3 RUE JEAN DE TOURNES",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 26
+      },
+      {
+        "station_id": "3038",
+        "name": "VIVIER MERLE / PAUL BERT EST",
+        "lat": 45.757147,
+        "lon": 4.858975,
+        "address": "Devant le bâtiment du Klesia",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 20
+      },
+      {
+        "station_id": "2015",
+        "name": "RÉPUBLIQUE / STELLA",
+        "lat": 45.760698,
+        "lon": 4.836279,
+        "address": "Côté est de la place",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 27
+      },
+      {
+        "station_id": "3039",
+        "name": "PLACE BIR-HAKEIM",
+        "lat": 45.752553,
+        "lon": 4.855756,
+        "address": "Au niveau de la rue Duvivier",
+        "capacity": 19
+      },
+      {
+        "station_id": "2016",
+        "name": "PLACE REGAUD",
+        "lat": 45.763065,
+        "lon": 4.83425,
+        "address": "Angle rue Tupin / rue Herriot",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 12
+      },
+      {
+        "station_id": "3040",
+        "name": "FAURE / DANTON",
+        "lat": 45.753528,
+        "lon": 4.857784,
+        "address": "",
+        "capacity": 35
+      },
+      {
+        "station_id": "2017",
+        "name": "RÉPUBLIQUE / FERRANDIÈRE",
+        "lat": 45.762184,
+        "lon": 4.836023,
+        "address": "Rue de la République",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 25
+      },
+      {
+        "station_id": "2018",
+        "name": "HOTEL DIEU / PONT DE LA GUILLOTIERE",
+        "lat": 45.757571,
+        "lon": 4.837183,
+        "address": "",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 50
+      },
+      {
+        "station_id": "2019",
+        "name": "SUCRIERE",
+        "lat": 45.736216,
+        "lon": 4.815348,
+        "address": "",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 20
+      },
+      {
+        "station_id": "3043",
+        "name": "PLACE ROUGET DE L'ISLE",
+        "lat": 45.753975,
+        "lon": 4.867336,
+        "address": "Avenue Lacassagne",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 16
+      },
+      {
+        "station_id": "2020",
+        "name": "MUSÉE DES CONFLUENCES",
+        "lat": 45.733388,
+        "lon": 4.818954,
+        "address": "Parvis du musée des confluences",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 20
+      },
+      {
+        "station_id": "3044",
+        "name": "QUAI AUGAGNEUR",
+        "lat": 45.762023,
+        "lon": 4.841053,
+        "address": "Entre rue de Bonnel et rue Rabelais",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 19
+      },
+      {
+        "station_id": "2021",
+        "name": "RAMBAUD / ECOLE DU CINÉMA",
+        "lat": 45.745824,
+        "lon": 4.817176,
+        "address": "",
+        "capacity": 30
+      },
+      {
+        "station_id": "2022",
+        "name": "PLACE CARNOT",
+        "lat": 45.751233,
+        "lon": 4.82688,
+        "address": "Angle rue Plessier",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 30
+      },
+      {
+        "station_id": "2023",
+        "name": "PERRACHE / PETIT",
+        "lat": 45.744475,
+        "lon": 4.82672,
+        "address": "Entre rue Victor Hugo et rue d'Auvergne",
+        "capacity": 18
+      },
+      {
+        "station_id": "2024",
+        "name": "HERRIOT / MAUPIN",
+        "lat": 45.759032,
+        "lon": 4.833906,
+        "address": "Entre Herriot et République",
+        "capacity": 24
+      },
+      {
+        "station_id": "1001",
+        "name": "TERREAUX / TERME",
+        "lat": 45.767736,
+        "lon": 4.832114,
+        "address": "Angle rue d'Algérie",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 16
+      },
+      {
+        "station_id": "2025",
+        "name": "MERCIÈRE / FERRANDIÈRE",
+        "lat": 45.762064,
+        "lon": 4.833527,
+        "address": "Entre rue de Brest et rue Mercière",
+        "capacity": 18
+      },
+      {
+        "station_id": "1002",
+        "name": "OPÉRA",
+        "lat": 45.767611,
+        "lon": 4.836619,
+        "address": "Angle rue Serlin - Angle place de la comédie",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 41
+      },
+      {
+        "station_id": "2026",
+        "name": "RÉPUBLIQUE / PAUFIQUE",
+        "lat": 45.759379,
+        "lon": 4.835414,
+        "address": "Angle rue de la République",
+        "capacity": 28
+      },
+      {
+        "station_id": "3050",
+        "name": "FRICHE RVI",
+        "lat": 45.748346,
+        "lon": 4.875955,
+        "address": "5 rue Félix Rollet 69003 Lyon",
+        "capacity": 20
+      },
+      {
+        "station_id": "1003",
+        "name": "PLACE SATHONAY",
+        "lat": 45.769289,
+        "lon": 4.830127,
+        "address": "6 PLACE SATHONAY",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 22
+      },
+      {
+        "station_id": "2027",
+        "name": "PERRACHE EST",
+        "lat": 45.746163,
+        "lon": 4.82548,
+        "address": "",
+        "capacity": 20
+      },
+      {
+        "station_id": "3051",
+        "name": "PLACE HENRI",
+        "lat": 45.748193,
+        "lon": 4.880641,
+        "address": "Angle rue Docteur Long/av. Lacassagne",
+        "capacity": 13
+      },
+      {
+        "station_id": "2028",
+        "name": "SAINTE-BLANDINE",
+        "lat": 45.744438,
+        "lon": 4.822152,
+        "address": "Face station tram Ste Blandine",
+        "capacity": 16
+      },
+      {
+        "station_id": "1005",
+        "name": "MEISSONNIER",
+        "lat": 45.766073,
+        "lon": 4.832849,
+        "address": "Place Meissonier - Angle Sud-Est de la place",
+        "capacity": 16
+      },
+      {
+        "station_id": "2029",
+        "name": "PERRACHE / DE PURY",
+        "lat": 45.739497,
+        "lon": 4.822521,
+        "address": "54 quai Perrache 69002 Lyon",
+        "capacity": 18
+      },
+      {
+        "station_id": "3053",
+        "name": "GAMBETTA / JUSSERAND",
+        "lat": 45.751123,
+        "lon": 4.855604,
+        "address": "Angle cours Gambetta",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 13
+      },
+      {
+        "station_id": "1006",
+        "name": "SUBSISTANCES",
+        "lat": 45.767912,
+        "lon": 4.819872,
+        "address": "12 QUAI ST VINCENT",
+        "capacity": 22
+      },
+      {
+        "station_id": "2030",
+        "name": "RÉPUBLIQUE / POULAILLERIE",
+        "lat": 45.764079,
+        "lon": 4.835554,
+        "address": "Angle Poulaillerie / République",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 32
+      },
+      {
+        "station_id": "3058",
+        "name": "PLACE DU LAC",
+        "lat": 45.758974,
+        "lon": 4.853599,
+        "address": "Face à la poste",
+        "capacity": 19
+      },
+      {
+        "station_id": "2035",
+        "name": "CHILDEBERT / RIVIÈRE",
+        "lat": 45.759842,
+        "lon": 4.835776,
+        "address": "",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 23
+      },
+      {
+        "station_id": "1012",
+        "name": "AMPÈRE / BOURSE",
+        "lat": 45.765789,
+        "lon": 4.836906,
+        "address": "Rue de la Bourse - Long du Collège-Lycée Ampère",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 26
+      },
+      {
+        "station_id": "2036",
+        "name": "PLACE ANTONIN GOURJU",
+        "lat": 45.759494,
+        "lon": 4.830161,
+        "address": "11 PLACE ANTONIN GOURJU",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 30
+      },
+      {
+        "station_id": "1013",
+        "name": "MARTINIÈRE",
+        "lat": 45.768223,
+        "lon": 4.827533,
+        "address": "Rue de la Martinière",
+        "capacity": 11
+      },
+      {
+        "station_id": "2037",
+        "name": "PLACE DES ARCHIVES",
+        "lat": 45.747956,
+        "lon": 4.824898,
+        "address": "12 COURS CHARLEMAGNE",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 40
+      },
+      {
+        "station_id": "2038",
+        "name": "REMPARTS D'AINAY",
+        "lat": 45.753077,
+        "lon": 4.829706,
+        "address": "16 RUE DES REMPARTS D'AINAY",
+        "capacity": 24
+      },
+      {
+        "station_id": "2039",
+        "name": "CHARITÉ / RÉCAMIER",
+        "lat": 45.749257,
+        "lon": 4.82984,
+        "address": "86 RUE DE LA CHARITE",
+        "capacity": 17
+      },
+      {
+        "station_id": "1016",
+        "name": "PÊCHERIE",
+        "lat": 45.765944,
+        "lon": 4.831089,
+        "address": "Rue de la Platière - Angle quai de la Pêcherie",
+        "capacity": 17
+      },
+      {
+        "station_id": "2040",
+        "name": "ST ANTOINE / GRENETTE",
+        "lat": 45.763376,
+        "lon": 4.832125,
+        "address": "12 QUAI ST AINTOINE",
+        "capacity": 23
+      },
+      {
+        "station_id": "2041",
+        "name": "SALA / CHARITÉ",
+        "lat": 45.754468,
+        "lon": 4.833041,
+        "address": "44 RUE SALA",
+        "capacity": 21
+      },
+      {
+        "station_id": "2042",
+        "name": "JOFFRE / VAUBECOUR",
+        "lat": 45.751873,
+        "lon": 4.824763,
+        "address": "43 RUE VAUBECOUR",
+        "capacity": 20
+      },
+      {
+        "station_id": "3066",
+        "name": "KIMMERLING / FAURE",
+        "lat": 45.754296,
+        "lon": 4.86359,
+        "address": "139 AV. FELIX FAURE",
+        "capacity": 19
+      },
+      {
+        "station_id": "3067",
+        "name": "HACHETTE",
+        "lat": 45.752907,
+        "lon": 4.863923,
+        "address": "6 RUE JEAN RENOIR",
+        "capacity": 15
+      },
+      {
+        "station_id": "1020",
+        "name": "TERREAUX / CHENAVARD",
+        "lat": 45.766763,
+        "lon": 4.832942,
+        "address": "Rue Chenavard - Côté place des Terreaux",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 18
+      },
+      {
+        "station_id": "3068",
+        "name": "FAURE / MEYNIS",
+        "lat": 45.755068,
+        "lon": 4.871457,
+        "address": "",
+        "capacity": 28
+      },
+      {
+        "station_id": "1021",
+        "name": "TERREAUX / BEAUX ARTS",
+        "lat": 45.767062,
+        "lon": 4.834294,
+        "address": "Rue Herriot - Devant Musée des Beaux Arts",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 11
+      },
+      {
+        "station_id": "3069",
+        "name": "DAUPHINÉ / SAINT-MAXIMIN",
+        "lat": 45.750002,
+        "lon": 4.864587,
+        "address": "",
+        "capacity": 30
+      },
+      {
+        "station_id": "1022",
+        "name": "PLACE TOLOZAN",
+        "lat": 45.769508,
+        "lon": 4.837495,
+        "address": "Place Tolozan - Angle nord-est de la place",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 36
+      },
+      {
+        "station_id": "3070",
+        "name": "REBATEL / SAINT-MAXIMIN",
+        "lat": 45.747835,
+        "lon": 4.872261,
+        "address": "",
+        "capacity": 30
+      },
+      {
+        "station_id": "1023",
+        "name": "CROIX ROUSSE / PERFETTI",
+        "lat": 45.772229,
+        "lon": 4.819389,
+        "address": "16 BVD DE LA CROIX-ROUSSE",
+        "capacity": 20
+      },
+      {
+        "station_id": "3071",
+        "name": "BIOPARC",
+        "lat": 45.740492,
+        "lon": 4.888084,
+        "address": "angle ave Rockfeller / cours Eugénie face au Bioparc",
+        "capacity": 23
+      }
+    ]
+  }
+}

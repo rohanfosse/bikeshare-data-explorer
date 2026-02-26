@@ -1,0 +1,375 @@
+{
+  "last_updated": 1771749769,
+  "ttl": 300,
+  "version": "2.3",
+  "data": {
+    "stations": [
+      {
+        "station_id": "128",
+        "name": "MAISON DE LA CULTURE",
+        "lat": 49.893839,
+        "lon": 2.292683,
+        "address": "",
+        "capacity": 20
+      },
+      {
+        "station_id": "129",
+        "name": "GAMBETTA",
+        "lat": 49.892705,
+        "lon": 2.297094,
+        "address": "3 Rue de la République, 80000 Amiens\r\n",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 20
+      },
+      {
+        "station_id": "130",
+        "name": "SAMAROBRIVA",
+        "lat": 49.895473,
+        "lon": 2.30631,
+        "address": "",
+        "capacity": 20
+      },
+      {
+        "station_id": "131",
+        "name": "BEFFROI",
+        "lat": 49.895445,
+        "lon": 2.296298,
+        "address": "1 rue des Chaudronniers\r\n",
+        "capacity": 20
+      },
+      {
+        "station_id": "132",
+        "name": "MARCHE AUX CHEVAUX",
+        "lat": 49.897376,
+        "lon": 2.289324,
+        "address": "",
+        "capacity": 20
+      },
+      {
+        "station_id": "133",
+        "name": "VOGEL",
+        "lat": 49.898484,
+        "lon": 2.295236,
+        "address": "",
+        "capacity": 20
+      },
+      {
+        "station_id": "134",
+        "name": "RUE ST LEU",
+        "lat": 49.899076,
+        "lon": 2.300543,
+        "address": "",
+        "capacity": 20
+      },
+      {
+        "station_id": "135",
+        "name": "ELOI MOREL",
+        "lat": 49.901601,
+        "lon": 2.303096,
+        "address": "",
+        "capacity": 20
+      },
+      {
+        "station_id": "136",
+        "name": "EGLISE SAINT PIERRE",
+        "lat": 49.903358,
+        "lon": 2.306375,
+        "address": "133 chaussée St Pierre\r\n",
+        "capacity": 12
+      },
+      {
+        "station_id": "137",
+        "name": "LE SAFRAN",
+        "lat": 49.910216,
+        "lon": 2.300603,
+        "address": "3 Rue Georges Guynemer, 80080 Amiens\r\n",
+        "capacity": 12
+      },
+      {
+        "station_id": "138",
+        "name": "CITADELLE",
+        "lat": 49.904299,
+        "lon": 2.300764,
+        "address": "Avenue du Général de Gaulle",
+        "capacity": 50
+      },
+      {
+        "station_id": "139",
+        "name": "KRUGER",
+        "lat": 49.9026,
+        "lon": 2.29511,
+        "address": "31 rue Octave Tierce\r\n",
+        "capacity": 12
+      },
+      {
+        "station_id": "140",
+        "name": "PARC DE LA HOTOIE",
+        "lat": 49.896863,
+        "lon": 2.282868,
+        "address": "",
+        "capacity": 20
+      },
+      {
+        "station_id": "141",
+        "name": "LYCEE LA HOTOIE",
+        "lat": 49.898193,
+        "lon": 2.273297,
+        "address": "80 rue du Bahonnier Mahu\r\n",
+        "capacity": 20
+      },
+      {
+        "station_id": "142",
+        "name": "POLE LICORNE",
+        "lat": 49.897387,
+        "lon": 2.266611,
+        "address": "parking du Pôle Licorne\r\n",
+        "capacity": 15
+      },
+      {
+        "station_id": "143",
+        "name": "LOUIS BLANC",
+        "lat": 49.902109,
+        "lon": 2.272345,
+        "address": "62 rue Robert Lecoq\r\n",
+        "capacity": 15
+      },
+      {
+        "station_id": "144",
+        "name": "L'HORTILLONNE",
+        "lat": 49.893774,
+        "lon": 2.314663,
+        "address": "Rue de Verdun\r\n",
+        "capacity": 12
+      },
+      {
+        "station_id": "145",
+        "name": "CHATEAU MILAN",
+        "lat": 49.902,
+        "lon": 2.284045,
+        "address": "Rue du Château Milan\r\n",
+        "capacity": 15
+      },
+      {
+        "station_id": "101",
+        "name": "CHU",
+        "lat": 49.876161,
+        "lon": 2.255436,
+        "address": "au rond-point devant l'entrée du CHU\r\n",
+        "capacity": 30
+      },
+      {
+        "station_id": "102",
+        "name": "CAMPUS",
+        "lat": 49.874947,
+        "lon": 2.264305,
+        "address": "35 chemin du Thil\r\n",
+        "capacity": 20
+      },
+      {
+        "station_id": "103",
+        "name": "AMBROISE PARE",
+        "lat": 49.879711,
+        "lon": 2.267321,
+        "address": "40 rue du Professeur Christian Cabrol / 50 Avenue VGE\r\n",
+        "capacity": 20
+      },
+      {
+        "station_id": "104",
+        "name": "JEAN MOULIN",
+        "lat": 49.877522,
+        "lon": 2.270418,
+        "address": "217 rue Jean Moulin (devant la pharmacie)\r\n",
+        "capacity": 20
+      },
+      {
+        "station_id": "105",
+        "name": "GEORGES BEAUVAIS",
+        "lat": 49.8738,
+        "lon": 2.289268,
+        "address": "99 rue Alexandre Dumas\r\n",
+        "capacity": 15
+      },
+      {
+        "station_id": "106",
+        "name": "ALEXANDRE DUMAS",
+        "lat": 49.871488,
+        "lon": 2.299806,
+        "address": "74 rue Alexandre Dumas\r\n",
+        "capacity": 12
+      },
+      {
+        "station_id": "107",
+        "name": "CROIX ROMPUE",
+        "lat": 49.870923,
+        "lon": 2.307541,
+        "address": "2 rue Jean Marc Laurent\r\n",
+        "capacity": 15
+      },
+      {
+        "station_id": "108",
+        "name": "SAINT QUENTIN",
+        "lat": 49.878877,
+        "lon": 2.305702,
+        "address": "369 blvd de Bapaume\r\n",
+        "capacity": 12
+      },
+      {
+        "station_id": "109",
+        "name": "BAPAUME",
+        "lat": 49.881119,
+        "lon": 2.313644,
+        "address": "144 blvd de Bapaume\r\n",
+        "capacity": 9
+      },
+      {
+        "station_id": "110",
+        "name": "LYCEE DE LUZARCHES",
+        "lat": 49.88465,
+        "lon": 2.321192,
+        "address": "2 blvd Pont Noyelles\r\n",
+        "capacity": 15
+      },
+      {
+        "station_id": "111",
+        "name": "PINCEAU",
+        "lat": 49.887082,
+        "lon": 2.315379,
+        "address": "2 rue de Cottenchy\r\n",
+        "capacity": 15
+      },
+      {
+        "station_id": "112",
+        "name": "DE FOUILLOY",
+        "lat": 49.8838,
+        "lon": 2.304022,
+        "address": "1 rue Evrard de Fouilloy\r\n",
+        "capacity": 12
+      },
+      {
+        "station_id": "113",
+        "name": "CITE SCOLAIRE",
+        "lat": 49.879217,
+        "lon": 2.296137,
+        "address": "68 Bd de Saint-Quentin, 80090 Amiens\r\n",
+        "capacity": 40
+      },
+      {
+        "station_id": "114",
+        "name": "BOULEVARD DE DURY",
+        "lat": 49.88149,
+        "lon": 2.28513,
+        "address": "387 Av. du 14 Juillet 1789, 80000 Amiens\r\n",
+        "capacity": 15
+      },
+      {
+        "station_id": "115",
+        "name": "LIBERATION",
+        "lat": 49.886659,
+        "lon": 2.278477,
+        "address": "7, Bd de strasbourg",
+        "capacity": 15
+      },
+      {
+        "station_id": "116",
+        "name": "QUATRE CHENES",
+        "lat": 49.890151,
+        "lon": 2.282078,
+        "address": "Avenue du Général Foy, 38 Sq. Friant\r\n",
+        "capacity": 20
+      },
+      {
+        "station_id": "117",
+        "name": "COLLEGE SAINT MARTIN",
+        "lat": 49.884055,
+        "lon": 2.294711,
+        "address": "72 Rue Delpech\r\n",
+        "capacity": 15
+      },
+      {
+        "station_id": "118",
+        "name": "JOFFRE",
+        "lat": 49.887854,
+        "lon": 2.303655,
+        "address": "11 Pl. du Maréchal Joffre, 80000 Amiens\r\n",
+        "capacity": 20
+      },
+      {
+        "station_id": "119",
+        "name": "GARE BARNI",
+        "lat": 49.889774,
+        "lon": 2.3091,
+        "address": "",
+        "capacity": 18
+      },
+      {
+        "station_id": "120",
+        "name": "RUE DE LA VALLEE",
+        "lat": 49.890999,
+        "lon": 2.312296,
+        "address": "75 Rue de la Vallée\r\n",
+        "capacity": 20
+      },
+      {
+        "station_id": "121",
+        "name": "GARE PARVIS",
+        "lat": 49.890566,
+        "lon": 2.307503,
+        "address": "Place Alphonse Fiquet\r\n",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 30
+      },
+      {
+        "station_id": "122",
+        "name": "ALSACE LORRAINE",
+        "lat": 49.892052,
+        "lon": 2.307671,
+        "address": "",
+        "capacity": 18
+      },
+      {
+        "station_id": "123",
+        "name": "RENE GOBLET",
+        "lat": 49.891386,
+        "lon": 2.302146,
+        "address": "26 rue Allart\r\n",
+        "capacity": 20
+      },
+      {
+        "station_id": "124",
+        "name": "MAIGNAN LARIVIERE",
+        "lat": 49.889088,
+        "lon": 2.295012,
+        "address": "45 Maignan Larivière\r\n",
+        "capacity": 21
+      },
+      {
+        "station_id": "125",
+        "name": "NICOLE FONTAINE",
+        "lat": 49.890038,
+        "lon": 2.290999,
+        "address": "",
+        "capacity": 20
+      },
+      {
+        "station_id": "126",
+        "name": "SIMONE VEIL",
+        "lat": 49.893388,
+        "lon": 2.284845,
+        "address": "",
+        "capacity": 20
+      },
+      {
+        "station_id": "127",
+        "name": "COLISEUM",
+        "lat": 49.893658,
+        "lon": 2.288663,
+        "address": "parvis du Coliséum\r\n",
+        "capacity": 20
+      }
+    ]
+  }
+}

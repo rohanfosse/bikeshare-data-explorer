@@ -1,0 +1,1884 @@
+{
+  "last_updated": 1771749800,
+  "ttl": 60,
+  "version": "2.2",
+  "data": {
+    "stations": [
+      {
+        "station_id": "ctbhn681snvdkble5qe0",
+        "name": "Abbaye-aux-Hommes ",
+        "lat": 49.18154,
+        "lon": -0.37103,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 10,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 10,
+          "4": 10,
+          "5": 0,
+          "6": 0,
+          "7": 10
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctbhn681snvdkble5qe0)",
+          "ios": "-%!(EXTRA string=ctbhn681snvdkble5qe0)"
+        }
+      },
+      {
+        "station_id": "ctbhn6naok6uht7ctb8g",
+        "name": "Beaulieu",
+        "lat": 49.1821,
+        "lon": -0.40061,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 20,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 20,
+          "4": 20,
+          "5": 0,
+          "6": 0,
+          "7": 20
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctbhn6naok6uht7ctb8g)",
+          "ios": "-%!(EXTRA string=ctbhn6naok6uht7ctb8g)"
+        }
+      },
+      {
+        "station_id": "ctbhn6naok6uht7ctba0",
+        "name": "Bénouville Mairie",
+        "lat": 49.24338,
+        "lon": -0.27755,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 9,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 9,
+          "4": 9,
+          "5": 0,
+          "6": 0,
+          "7": 9
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctbhn6naok6uht7ctba0)",
+          "ios": "-%!(EXTRA string=ctbhn6naok6uht7ctba0)"
+        }
+      },
+      {
+        "station_id": "ctbhn6g1snvdkble5qfg",
+        "name": "Blainville-sur-Orne Médiathèque",
+        "lat": 49.22696,
+        "lon": -0.30257,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 7,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 7,
+          "4": 7,
+          "5": 0,
+          "6": 0,
+          "7": 7
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctbhn6g1snvdkble5qfg)",
+          "ios": "-%!(EXTRA string=ctbhn6g1snvdkble5qfg)"
+        }
+      },
+      {
+        "station_id": "ctbhn6naok6uht7ctbbg",
+        "name": "Calvaire St Pierre - Défense passive",
+        "lat": 49.19877,
+        "lon": -0.36429,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 9,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 9,
+          "4": 9,
+          "5": 0,
+          "6": 0,
+          "7": 9
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctbhn6naok6uht7ctbbg)",
+          "ios": "-%!(EXTRA string=ctbhn6naok6uht7ctbbg)"
+        }
+      },
+      {
+        "station_id": "ctbhn6g1snvdkble5qh0",
+        "name": "Campus 1 - Esplanade",
+        "lat": 49.18855,
+        "lon": -0.36425,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 20,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 20,
+          "4": 20,
+          "5": 0,
+          "6": 0,
+          "7": 20
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctbhn6g1snvdkble5qh0)",
+          "ios": "-%!(EXTRA string=ctbhn6g1snvdkble5qh0)"
+        }
+      },
+      {
+        "station_id": "ctbhn6g1snvdkble5qig",
+        "name": "Campus 2 - ENSICAEN",
+        "lat": 49.21384,
+        "lon": -0.36745,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 9,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 9,
+          "4": 9,
+          "5": 0,
+          "6": 0,
+          "7": 9
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctbhn6g1snvdkble5qig)",
+          "ios": "-%!(EXTRA string=ctbhn6g1snvdkble5qig)"
+        }
+      },
+      {
+        "station_id": "ctbhn6naok6uht7ctbd0",
+        "name": "Campus 4 et 5",
+        "lat": 49.20995,
+        "lon": -0.35643,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 17,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 17,
+          "4": 17,
+          "5": 0,
+          "6": 0,
+          "7": 17
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctbhn6naok6uht7ctbd0)",
+          "ios": "-%!(EXTRA string=ctbhn6naok6uht7ctbd0)"
+        }
+      },
+      {
+        "station_id": "ctbhn6g1snvdkble5qk0",
+        "name": "Carpiquet Mairie",
+        "lat": 49.1836,
+        "lon": -0.44082,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 5,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 5,
+          "4": 5,
+          "5": 0,
+          "6": 0,
+          "7": 5
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctbhn6g1snvdkble5qk0)",
+          "ios": "-%!(EXTRA string=ctbhn6g1snvdkble5qk0)"
+        }
+      },
+      {
+        "station_id": "ctbhn6g1snvdkble5qlg",
+        "name": "Chemin Vert - Coty",
+        "lat": 49.19217,
+        "lon": -0.39509,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 7,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 7,
+          "4": 7,
+          "5": 0,
+          "6": 0,
+          "7": 7
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctbhn6g1snvdkble5qlg)",
+          "ios": "-%!(EXTRA string=ctbhn6g1snvdkble5qlg)"
+        }
+      },
+      {
+        "station_id": "ctbhn6g1snvdkble5qn0",
+        "name": "Chemin Vert - Schuman",
+        "lat": 49.19228,
+        "lon": -0.39078,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 6,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 6,
+          "4": 6,
+          "5": 0,
+          "6": 0,
+          "7": 6
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctbhn6g1snvdkble5qn0)",
+          "ios": "-%!(EXTRA string=ctbhn6g1snvdkble5qn0)"
+        }
+      },
+      {
+        "station_id": "ctbhn6naok6uht7ctbeg",
+        "name": "CHU - Entrée nord",
+        "lat": 49.20588,
+        "lon": -0.3573,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 18,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 18,
+          "4": 18,
+          "5": 0,
+          "6": 0,
+          "7": 18
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctbhn6naok6uht7ctbeg)",
+          "ios": "-%!(EXTRA string=ctbhn6naok6uht7ctbeg)"
+        }
+      },
+      {
+        "station_id": "ctbhn6o1snvdkble5qog",
+        "name": "CHU - Entrée sud",
+        "lat": 49.20396,
+        "lon": -0.35903,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 19,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 19,
+          "4": 19,
+          "5": 0,
+          "6": 0,
+          "7": 19
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctbhn6o1snvdkble5qog)",
+          "ios": "-%!(EXTRA string=ctbhn6o1snvdkble5qog)"
+        }
+      },
+      {
+        "station_id": "ctbhn6o1snvdkble5qq0",
+        "name": "Claude Decaen",
+        "lat": 49.1679,
+        "lon": -0.34669,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 6,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 6,
+          "4": 6,
+          "5": 0,
+          "6": 0,
+          "7": 6
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctbhn6o1snvdkble5qq0)",
+          "ios": "-%!(EXTRA string=ctbhn6o1snvdkble5qq0)"
+        }
+      },
+      {
+        "station_id": "ctbhn6vaok6uht7ctbh0",
+        "name": "Colombelles Effiscience",
+        "lat": 49.18825,
+        "lon": -0.30689,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 6,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 6,
+          "4": 6,
+          "5": 0,
+          "6": 0,
+          "7": 6
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctbhn6vaok6uht7ctbh0)",
+          "ios": "-%!(EXTRA string=ctbhn6vaok6uht7ctbh0)"
+        }
+      },
+      {
+        "station_id": "ctbhn6o1snvdkble5qrg",
+        "name": "Colombelles Mairie",
+        "lat": 49.20412,
+        "lon": -0.29701,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 7,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 7,
+          "4": 7,
+          "5": 0,
+          "6": 0,
+          "7": 7
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctbhn6o1snvdkble5qrg)",
+          "ios": "-%!(EXTRA string=ctbhn6o1snvdkble5qrg)"
+        }
+      },
+      {
+        "station_id": "ctbhn6o1snvdkble5qt0",
+        "name": "Cormelles-le-Royal Drakkars",
+        "lat": 49.16104,
+        "lon": -0.33579,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 5,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 5,
+          "4": 5,
+          "5": 0,
+          "6": 0,
+          "7": 5
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctbhn6o1snvdkble5qt0)",
+          "ios": "-%!(EXTRA string=ctbhn6o1snvdkble5qt0)"
+        }
+      },
+      {
+        "station_id": "ctbhn6vaok6uht7ctbjg",
+        "name": "Côte de Nacre",
+        "lat": 49.21028,
+        "lon": -0.36717,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 15,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 15,
+          "4": 15,
+          "5": 0,
+          "6": 0,
+          "7": 15
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctbhn6vaok6uht7ctbjg)",
+          "ios": "-%!(EXTRA string=ctbhn6vaok6uht7ctbjg)"
+        }
+      },
+      {
+        "station_id": "ctbhn6vaok6uht7ctbl0",
+        "name": "Detolle",
+        "lat": 49.1817,
+        "lon": -0.38711,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 1,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 1,
+          "4": 1,
+          "5": 0,
+          "6": 0,
+          "7": 1
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctbhn6vaok6uht7ctbl0)",
+          "ios": "-%!(EXTRA string=ctbhn6vaok6uht7ctbl0)"
+        }
+      },
+      {
+        "station_id": "ctbhn6o1snvdkble5qug",
+        "name": "Fleury-sur-Orne Bourg",
+        "lat": 49.14877,
+        "lon": -0.37487,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 10,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 10,
+          "4": 10,
+          "5": 0,
+          "6": 0,
+          "7": 10
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctbhn6o1snvdkble5qug)",
+          "ios": "-%!(EXTRA string=ctbhn6o1snvdkble5qug)"
+        }
+      },
+      {
+        "station_id": "ctbhn6vaok6uht7ctbmg",
+        "name": "Folie-Couvrechef - Sainte-Ursule",
+        "lat": 49.20094,
+        "lon": -0.38054,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctbhn6vaok6uht7ctbmg)",
+          "ios": "-%!(EXTRA string=ctbhn6vaok6uht7ctbmg)"
+        }
+      },
+      {
+        "station_id": "ctbhn6o1snvdkble5r00",
+        "name": "Fontaine Venoise ",
+        "lat": 49.17498,
+        "lon": -0.40084,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctbhn6o1snvdkble5r00)",
+          "ios": "-%!(EXTRA string=ctbhn6o1snvdkble5r00)"
+        }
+      },
+      {
+        "station_id": "ctbhn6vaok6uht7ctbp0",
+        "name": "Gare nord ",
+        "lat": 49.17706,
+        "lon": -0.34929,
+        "is_virtual_station": false,
+        "capacity": 30,
+        "vehicle_type_capacity": {
+          "1": 25,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 25,
+          "4": 25,
+          "5": 0,
+          "6": 0,
+          "7": 25
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctbhn6vaok6uht7ctbp0)",
+          "ios": "-%!(EXTRA string=ctbhn6vaok6uht7ctbp0)"
+        }
+      },
+      {
+        "station_id": "ctbhn6o1snvdkble5r1g",
+        "name": "Giberville Pierre de Coubertin ",
+        "lat": 49.18216,
+        "lon": -0.28269,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 9,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 9,
+          "4": 9,
+          "5": 0,
+          "6": 0,
+          "7": 9
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctbhn6o1snvdkble5r1g)",
+          "ios": "-%!(EXTRA string=ctbhn6o1snvdkble5r1g)"
+        }
+      },
+      {
+        "station_id": "ctbhn701snvdkble5r30",
+        "name": "Grâce de Dieu - Place du Commerce",
+        "lat": 49.1612,
+        "lon": -0.35981,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 2,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 2,
+          "4": 2,
+          "5": 0,
+          "6": 0,
+          "7": 2
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctbhn701snvdkble5r30)",
+          "ios": "-%!(EXTRA string=ctbhn701snvdkble5r30)"
+        }
+      },
+      {
+        "station_id": "ctbhn77aok6uht7ctbrg",
+        "name": "Guérinière - Place de la Liberté",
+        "lat": 49.16064,
+        "lon": -0.34361,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 8,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 8,
+          "4": 8,
+          "5": 0,
+          "6": 0,
+          "7": 8
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctbhn77aok6uht7ctbrg)",
+          "ios": "-%!(EXTRA string=ctbhn77aok6uht7ctbrg)"
+        }
+      },
+      {
+        "station_id": "ctbhn701snvdkble5r4g",
+        "name": "Hérouville Café des images",
+        "lat": 49.20235,
+        "lon": -0.33294,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 11,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 11,
+          "4": 11,
+          "5": 0,
+          "6": 0,
+          "7": 11
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctbhn701snvdkble5r4g)",
+          "ios": "-%!(EXTRA string=ctbhn701snvdkble5r4g)"
+        }
+      },
+      {
+        "station_id": "ctbhn77aok6uht7ctbt0",
+        "name": "Hérouville Citis",
+        "lat": 49.212955,
+        "lon": -0.354931,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 18,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 18,
+          "4": 18,
+          "5": 0,
+          "6": 0,
+          "7": 18
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctbhn77aok6uht7ctbt0)",
+          "ios": "-%!(EXTRA string=ctbhn77aok6uht7ctbt0)"
+        }
+      },
+      {
+        "station_id": "ctbhn701snvdkble5r60",
+        "name": "Hérouville Collège-lycée expérimental",
+        "lat": 49.19981,
+        "lon": -0.33726,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 9,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 9,
+          "4": 9,
+          "5": 0,
+          "6": 0,
+          "7": 9
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctbhn701snvdkble5r60)",
+          "ios": "-%!(EXTRA string=ctbhn701snvdkble5r60)"
+        }
+      },
+      {
+        "station_id": "ctbhn701snvdkble5r7g",
+        "name": "Hérouville Fonderie ",
+        "lat": 49.20996,
+        "lon": -0.33537,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 5,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 5,
+          "4": 5,
+          "5": 0,
+          "6": 0,
+          "7": 5
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctbhn701snvdkble5r7g)",
+          "ios": "-%!(EXTRA string=ctbhn701snvdkble5r7g)"
+        }
+      },
+      {
+        "station_id": "ctbhn77aok6uht7ctbug",
+        "name": "Hérouville Montmorency",
+        "lat": 49.19519,
+        "lon": -0.32759,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 9,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 9,
+          "4": 9,
+          "5": 0,
+          "6": 0,
+          "7": 9
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctbhn77aok6uht7ctbug)",
+          "ios": "-%!(EXTRA string=ctbhn77aok6uht7ctbug)"
+        }
+      },
+      {
+        "station_id": "ctbhn701snvdkble5r90",
+        "name": "Ifs Jean Vilar",
+        "lat": 49.15002,
+        "lon": -0.35059,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 10,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 10,
+          "4": 10,
+          "5": 0,
+          "6": 0,
+          "7": 10
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctbhn701snvdkble5r90)",
+          "ios": "-%!(EXTRA string=ctbhn701snvdkble5r90)"
+        }
+      },
+      {
+        "station_id": "ctbhn77aok6uht7ctc00",
+        "name": "Institut Lemonnier",
+        "lat": 49.19306,
+        "lon": -0.35298,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 7,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 7,
+          "4": 7,
+          "5": 0,
+          "6": 0,
+          "7": 7
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctbhn77aok6uht7ctc00)",
+          "ios": "-%!(EXTRA string=ctbhn77aok6uht7ctc00)"
+        }
+      },
+      {
+        "station_id": "ctbhn701snvdkble5rag",
+        "name": "Lebisey",
+        "lat": 49.19951,
+        "lon": -0.35386,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 4,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 4,
+          "4": 4,
+          "5": 0,
+          "6": 0,
+          "7": 4
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctbhn701snvdkble5rag)",
+          "ios": "-%!(EXTRA string=ctbhn701snvdkble5rag)"
+        }
+      },
+      {
+        "station_id": "ctbhn77aok6uht7ctc2g",
+        "name": "Lyautey",
+        "lat": 49.16827,
+        "lon": -0.36144,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 1,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 1,
+          "4": 1,
+          "5": 0,
+          "6": 0,
+          "7": 1
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctbhn77aok6uht7ctc2g)",
+          "ios": "-%!(EXTRA string=ctbhn77aok6uht7ctc2g)"
+        }
+      },
+      {
+        "station_id": "ctbhn77aok6uht7ctc40",
+        "name": "Mondeville centre",
+        "lat": 49.17589,
+        "lon": -0.3226,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 3,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 3,
+          "4": 3,
+          "5": 0,
+          "6": 0,
+          "7": 3
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctbhn77aok6uht7ctc40)",
+          "ios": "-%!(EXTRA string=ctbhn77aok6uht7ctc40)"
+        }
+      },
+      {
+        "station_id": "ctbhn781snvdkble5rc0",
+        "name": "Mondeville Espace Letellier",
+        "lat": 49.16786,
+        "lon": -0.32523,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 6,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 6,
+          "4": 6,
+          "5": 0,
+          "6": 0,
+          "7": 6
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctbhn781snvdkble5rc0)",
+          "ios": "-%!(EXTRA string=ctbhn781snvdkble5rc0)"
+        }
+      },
+      {
+        "station_id": "ctbhn7faok6uht7ctc5g",
+        "name": "Mountbatten",
+        "lat": 49.20016,
+        "lon": -0.39395,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 5,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 5,
+          "4": 5,
+          "5": 0,
+          "6": 0,
+          "7": 5
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctbhn7faok6uht7ctc5g)",
+          "ios": "-%!(EXTRA string=ctbhn7faok6uht7ctc5g)"
+        }
+      },
+      {
+        "station_id": "ctbhn781snvdkble5rdg",
+        "name": "Ouistreham Eglise",
+        "lat": 49.27615,
+        "lon": -0.25819,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 8,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 8,
+          "4": 8,
+          "5": 0,
+          "6": 0,
+          "7": 8
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctbhn781snvdkble5rdg)",
+          "ios": "-%!(EXTRA string=ctbhn781snvdkble5rdg)"
+        }
+      },
+      {
+        "station_id": "ctbhn781snvdkble5rf0",
+        "name": "Ouistreham Plage",
+        "lat": 49.28854,
+        "lon": -0.25763,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 14,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 14,
+          "4": 14,
+          "5": 0,
+          "6": 0,
+          "7": 14
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctbhn781snvdkble5rf0)",
+          "ios": "-%!(EXTRA string=ctbhn781snvdkble5rf0)"
+        }
+      },
+      {
+        "station_id": "ctbhn781snvdkble5rgg",
+        "name": "Parc expo-Zénith",
+        "lat": 49.17163,
+        "lon": -0.38139,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 19,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 19,
+          "4": 19,
+          "5": 0,
+          "6": 0,
+          "7": 19
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctbhn781snvdkble5rgg)",
+          "ios": "-%!(EXTRA string=ctbhn781snvdkble5rgg)"
+        }
+      },
+      {
+        "station_id": "ctbhn781snvdkble5rj0",
+        "name": "Pierre Heuzé - Champlain",
+        "lat": 49.19797,
+        "lon": -0.3474,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 6,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 6,
+          "4": 6,
+          "5": 0,
+          "6": 0,
+          "7": 6
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctbhn781snvdkble5rj0)",
+          "ios": "-%!(EXTRA string=ctbhn781snvdkble5rj0)"
+        }
+      },
+      {
+        "station_id": "ctbhn7faok6uht7ctc80",
+        "name": "Place Bouchard",
+        "lat": 49.1834,
+        "lon": -0.36425,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 20,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 20,
+          "4": 20,
+          "5": 0,
+          "6": 0,
+          "7": 20
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctbhn7faok6uht7ctc80)",
+          "ios": "-%!(EXTRA string=ctbhn7faok6uht7ctc80)"
+        }
+      },
+      {
+        "station_id": "ctbhn781snvdkble5rkg",
+        "name": "Presqu'ile - Bibliothèque",
+        "lat": 49.18259,
+        "lon": -0.35018,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 9,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 9,
+          "4": 9,
+          "5": 0,
+          "6": 0,
+          "7": 9
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctbhn781snvdkble5rkg)",
+          "ios": "-%!(EXTRA string=ctbhn781snvdkble5rkg)"
+        }
+      },
+      {
+        "station_id": "ctbhn781snvdkble5rm0",
+        "name": "République",
+        "lat": 49.18088,
+        "lon": -0.36406,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 18,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 18,
+          "4": 18,
+          "5": 0,
+          "6": 0,
+          "7": 18
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctbhn781snvdkble5rm0)",
+          "ios": "-%!(EXTRA string=ctbhn781snvdkble5rm0)"
+        }
+      },
+      {
+        "station_id": "ctbhn781snvdkble5rng",
+        "name": "Résistance",
+        "lat": 49.18031,
+        "lon": -0.35589,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 20,
+          "10": 10,
+          "14": 0,
+          "15": 0,
+          "2": 20,
+          "4": 20,
+          "5": 0,
+          "6": 0,
+          "7": 20
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctbhn781snvdkble5rng)",
+          "ios": "-%!(EXTRA string=ctbhn781snvdkble5rng)"
+        }
+      },
+      {
+        "station_id": "ctbhn781snvdkble5rp0",
+        "name": "Rue de Vaucelles",
+        "lat": 49.17531,
+        "lon": -0.35382,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 10,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 10,
+          "4": 10,
+          "5": 0,
+          "6": 0,
+          "7": 10
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctbhn781snvdkble5rp0)",
+          "ios": "-%!(EXTRA string=ctbhn781snvdkble5rp0)"
+        }
+      },
+      {
+        "station_id": "ctbhn781snvdkble5rqg",
+        "name": "Sainte-Thérèse",
+        "lat": 49.17066,
+        "lon": -0.3395,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 7,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 7,
+          "4": 7,
+          "5": 0,
+          "6": 0,
+          "7": 7
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctbhn781snvdkble5rqg)",
+          "ios": "-%!(EXTRA string=ctbhn781snvdkble5rqg)"
+        }
+      },
+      {
+        "station_id": "ctq0fm5j5eo065fugij0",
+        "name": "Anciennes Boucheries",
+        "lat": 49.18252,
+        "lon": -0.37507,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 3,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 3,
+          "4": 3,
+          "5": 0,
+          "6": 0,
+          "7": 3
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctq0fm5j5eo065fugij0)",
+          "ios": "-%!(EXTRA string=ctq0fm5j5eo065fugij0)"
+        }
+      },
+      {
+        "station_id": "ctq0fmdj5eo065fugikg",
+        "name": "Bretteville-sur-Odon Eglise",
+        "lat": 49.16683,
+        "lon": -0.41283,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 8,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 8,
+          "4": 8,
+          "5": 0,
+          "6": 0,
+          "7": 8
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctq0fmdj5eo065fugikg)",
+          "ios": "-%!(EXTRA string=ctq0fmdj5eo065fugikg)"
+        }
+      },
+      {
+        "station_id": "ctq0fme82ttmd6g9m9k0",
+        "name": "Clemenceau",
+        "lat": 49.18798,
+        "lon": -0.35208,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 10,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 10,
+          "4": 10,
+          "5": 0,
+          "6": 0,
+          "7": 10
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctq0fme82ttmd6g9m9k0)",
+          "ios": "-%!(EXTRA string=ctq0fme82ttmd6g9m9k0)"
+        }
+      },
+      {
+        "station_id": "ctq0fmdj5eo065fugim0",
+        "name": "Foch",
+        "lat": 49.17852,
+        "lon": -0.35996,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 9,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 9,
+          "4": 9,
+          "5": 0,
+          "6": 0,
+          "7": 9
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctq0fmdj5eo065fugim0)",
+          "ios": "-%!(EXTRA string=ctq0fmdj5eo065fugim0)"
+        }
+      },
+      {
+        "station_id": "ctq0fme82ttmd6g9m9lg",
+        "name": "Gare sud",
+        "lat": 49.17609,
+        "lon": -0.34824,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 16,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 16,
+          "4": 16,
+          "5": 0,
+          "6": 0,
+          "7": 16
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctq0fme82ttmd6g9m9lg)",
+          "ios": "-%!(EXTRA string=ctq0fme82ttmd6g9m9lg)"
+        }
+      },
+      {
+        "station_id": "ctq0fmdj5eo065fuging",
+        "name": "Ifs Debussy",
+        "lat": 49.14039,
+        "lon": -0.35456,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 5,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 5,
+          "4": 5,
+          "5": 0,
+          "6": 0,
+          "7": 5
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctq0fmdj5eo065fuging)",
+          "ios": "-%!(EXTRA string=ctq0fmdj5eo065fuging)"
+        }
+      },
+      {
+        "station_id": "ctq0fmdj5eo065fugip0",
+        "name": "Planitre",
+        "lat": 49.18686,
+        "lon": -0.40221,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 4,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 4,
+          "4": 4,
+          "5": 0,
+          "6": 0,
+          "7": 4
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctq0fmdj5eo065fugip0)",
+          "ios": "-%!(EXTRA string=ctq0fmdj5eo065fugip0)"
+        }
+      },
+      {
+        "station_id": "ctq0fmdj5eo065fugiqg",
+        "name": "Saint-Jean-Eudes",
+        "lat": 49.19056,
+        "lon": -0.34243,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctq0fmdj5eo065fugiqg)",
+          "ios": "-%!(EXTRA string=ctq0fmdj5eo065fugiqg)"
+        }
+      },
+      {
+        "station_id": "ctq0fmdj5eo065fugis0",
+        "name": "Saint-Ouen",
+        "lat": 49.17479,
+        "lon": -0.37749,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 8,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 8,
+          "4": 8,
+          "5": 0,
+          "6": 0,
+          "7": 8
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctq0fmdj5eo065fugis0)",
+          "ios": "-%!(EXTRA string=ctq0fmdj5eo065fugis0)"
+        }
+      },
+      {
+        "station_id": "ctq0fmdj5eo065fugitg",
+        "name": "Saint-Pierre",
+        "lat": 49.18398,
+        "lon": -0.3598,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 17,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 17,
+          "4": 17,
+          "5": 0,
+          "6": 0,
+          "7": 17
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctq0fmdj5eo065fugitg)",
+          "ios": "-%!(EXTRA string=ctq0fmdj5eo065fugitg)"
+        }
+      },
+      {
+        "station_id": "ctrbpd5j5eocn9cbci1g",
+        "name": "Port - Place Courtonne",
+        "lat": 49.18406,
+        "lon": -0.3557,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 18,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 18,
+          "4": 18,
+          "5": 0,
+          "6": 0,
+          "7": 18
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctrbpd5j5eocn9cbci1g)",
+          "ios": "-%!(EXTRA string=ctrbpd5j5eocn9cbci1g)"
+        }
+      },
+      {
+        "station_id": "ctrqn0rh0nj4spam44d0",
+        "name": "Stade Nautique",
+        "lat": 49.17679,
+        "lon": -0.36845,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 19,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 19,
+          "4": 19,
+          "5": 0,
+          "6": 0,
+          "7": 19
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=ctrqn0rh0nj4spam44d0)",
+          "ios": "-%!(EXTRA string=ctrqn0rh0nj4spam44d0)"
+        }
+      },
+      {
+        "station_id": "st_d5n49d436rpc7392r7t0",
+        "name": "Caen Place Villers",
+        "lat": 49.17855,
+        "lon": -0.37904,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 10,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 10,
+          "4": 10,
+          "5": 0,
+          "6": 0,
+          "7": 10
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=st_d5n49d436rpc7392r7t0)",
+          "ios": "-%!(EXTRA string=st_d5n49d436rpc7392r7t0)"
+        }
+      },
+      {
+        "station_id": "st_d5n49ddt8lms738msls0",
+        "name": "Caen Demi-Lune",
+        "lat": 49.1744,
+        "lon": -0.33799,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 10,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 10,
+          "4": 10,
+          "5": 0,
+          "6": 0,
+          "7": 10
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=st_d5n49ddt8lms738msls0)",
+          "ios": "-%!(EXTRA string=st_d5n49ddt8lms738msls0)"
+        }
+      },
+      {
+        "station_id": "st_d5n49dc36rpc73c22ol0",
+        "name": "Saint-Germain Mairie",
+        "lat": 49.18897,
+        "lon": -0.4097,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 4,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 4,
+          "4": 4,
+          "5": 0,
+          "6": 0,
+          "7": 4
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=st_d5n49dc36rpc73c22ol0)",
+          "ios": "-%!(EXTRA string=st_d5n49dc36rpc73c22ol0)"
+        }
+      },
+      {
+        "station_id": "st_d5n49dc36rpc73c22omg",
+        "name": "Hermanville Plage",
+        "lat": 49.2976,
+        "lon": -0.30289,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 5,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 5,
+          "4": 5,
+          "5": 0,
+          "6": 0,
+          "7": 5
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=st_d5n49dc36rpc73c22omg)",
+          "ios": "-%!(EXTRA string=st_d5n49dc36rpc73c22omg)"
+        }
+      },
+      {
+        "station_id": "st_d5n49dkm0t7c73ft4hig",
+        "name": "Lion-sur-Mer Plage",
+        "lat": 49.30264,
+        "lon": -0.31469,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 9,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 9,
+          "4": 9,
+          "5": 0,
+          "6": 0,
+          "7": 9
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=st_d5n49dkm0t7c73ft4hig)",
+          "ios": "-%!(EXTRA string=st_d5n49dkm0t7c73ft4hig)"
+        }
+      },
+      {
+        "station_id": "st_d5n49dkm0t7c73ft4hk0",
+        "name": "Fleury-sur-Orne Hauts de l'Orne",
+        "lat": 49.15267,
+        "lon": -0.36095,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 4,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 4,
+          "4": 4,
+          "5": 0,
+          "6": 0,
+          "7": 4
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=st_d5n49dkm0t7c73ft4hk0)",
+          "ios": "-%!(EXTRA string=st_d5n49dkm0t7c73ft4hk0)"
+        }
+      },
+      {
+        "station_id": "st_d5n49dlt8lms738msltg",
+        "name": "Colleville Plage",
+        "lat": 49.29338,
+        "lon": -0.2831,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 4,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 4,
+          "4": 4,
+          "5": 0,
+          "6": 0,
+          "7": 4
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=st_d5n49dlt8lms738msltg)",
+          "ios": "-%!(EXTRA string=st_d5n49dlt8lms738msltg)"
+        }
+      },
+      {
+        "station_id": "st_d5n49dqk57hc73csh550",
+        "name": "Caen Saint-Jean Église",
+        "lat": 49.18076,
+        "lon": -0.35859,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 10,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 10,
+          "4": 10,
+          "5": 0,
+          "6": 0,
+          "7": 10
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=st_d5n49dqk57hc73csh550)",
+          "ios": "-%!(EXTRA string=st_d5n49dqk57hc73csh550)"
+        }
+      },
+      {
+        "station_id": "st_d5n49dsftekc739t4lk0",
+        "name": "Caen Saint-Gabriel",
+        "lat": 49.18845,
+        "lon": -0.37803,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 4,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 4,
+          "4": 4,
+          "5": 0,
+          "6": 0,
+          "7": 4
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=st_d5n49dsftekc739t4lk0)",
+          "ios": "-%!(EXTRA string=st_d5n49dsftekc739t4lk0)"
+        }
+      },
+      {
+        "station_id": "st_d5n49ds36rpc7392r82g",
+        "name": "Épron Orée du Golf",
+        "lat": 49.22193,
+        "lon": -0.36364,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 10,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 10,
+          "4": 10,
+          "5": 0,
+          "6": 0,
+          "7": 10
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=st_d5n49ds36rpc7392r82g)",
+          "ios": "-%!(EXTRA string=st_d5n49ds36rpc7392r82g)"
+        }
+      },
+      {
+        "station_id": "st_d5n49e4ftekc739t4llg",
+        "name": "Caen Aviation",
+        "lat": 49.16327,
+        "lon": -0.34968,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 6,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 6,
+          "4": 6,
+          "5": 0,
+          "6": 0,
+          "7": 6
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=st_d5n49e4ftekc739t4llg)",
+          "ios": "-%!(EXTRA string=st_d5n49e4ftekc739t4llg)"
+        }
+      },
+      {
+        "station_id": "st_d5n49e2k57hc73csh57g",
+        "name": "Hérouville Château d'Eau",
+        "lat": 49.20268,
+        "lon": -0.34066,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 13,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 13,
+          "4": 13,
+          "5": 0,
+          "6": 0,
+          "7": 13
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=st_d5n49e2k57hc73csh57g)",
+          "ios": "-%!(EXTRA string=st_d5n49e2k57hc73csh57g)"
+        }
+      },
+      {
+        "station_id": "st_d5n49e436rpc73c22os0",
+        "name": "Saint-Contest La Folie",
+        "lat": 49.202462,
+        "lon": -0.400177,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 6,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 6,
+          "4": 6,
+          "5": 0,
+          "6": 0,
+          "7": 6
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=st_d5n49e436rpc73c22os0)",
+          "ios": "-%!(EXTRA string=st_d5n49e436rpc73c22os0)"
+        }
+      },
+      {
+        "station_id": "st_d5n49ec36rpc7392r850",
+        "name": "Louvigny Long Cours",
+        "lat": 49.16074,
+        "lon": -0.39971,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 9,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 9,
+          "4": 9,
+          "5": 0,
+          "6": 0,
+          "7": 9
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=st_d5n49ec36rpc7392r850)",
+          "ios": "-%!(EXTRA string=st_d5n49ec36rpc7392r850)"
+        }
+      },
+      {
+        "station_id": "st_d5n49edt8lms738msm50",
+        "name": "Caen Place du 36ème",
+        "lat": 49.17739,
+        "lon": -0.3557,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 9,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 9,
+          "4": 9,
+          "5": 0,
+          "6": 0,
+          "7": 9
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "-%!(EXTRA string=st_d5n49edt8lms738msm50)",
+          "ios": "-%!(EXTRA string=st_d5n49edt8lms738msm50)"
+        }
+      }
+    ]
+  }
+}

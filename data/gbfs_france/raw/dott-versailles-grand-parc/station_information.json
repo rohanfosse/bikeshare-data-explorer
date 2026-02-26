@@ -1,0 +1,957 @@
+{
+  "data": {
+    "stations": [
+      {
+        "is_virtual_station": true,
+        "lat": 48.86558,
+        "lon": 2.132567,
+        "name": "BOU - GEROME",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "f07161dc-670c-4ada-97b1-cd0194225664",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8625585,
+        "lon": 2.13945071,
+        "name": "BOU - DE LOUVECIENNES",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "a0a1994d-0a4c-41e7-935f-23c28abeeeb8",
+        "vehicle_capacity": {
+          "dott_bicycle": 3,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.87064415,
+        "lon": 2.125151738,
+        "name": "BOU - QUAI RENNEQUIN SUALEM",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "736b2b5e-90e7-499b-817f-687ce00b38d8",
+        "vehicle_capacity": {
+          "dott_bicycle": 3,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8277988,
+        "lon": 2.1210761,
+        "name": "LCR - CHARLES DE GAULLE",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "a5e312e7-c216-4d31-9a4f-0e137055efa4",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 7
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8343569,
+        "lon": 2.1182607,
+        "name": "LCR - DES ERABLES",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "616f3a67-be1f-41a9-aad3-3054ebbe1ee8",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8357062,
+        "lon": 2.1179033,
+        "name": "LCR - DE L’HOTEL DE VILLE",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "b37cad7a-1d95-43cd-bc76-b9309cfb22d8",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.86675542,
+        "lon": 2.138201522,
+        "name": "BOU - DU GÉNÉRAL LECLERC 2",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "427447cc-d654-4aa4-92a4-35132b9d4550",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8242959,
+        "lon": 2.1400627,
+        "name": "LCR - DE RUEIL",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "7893afd0-7e3b-499e-957d-f40253128344",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8381954,
+        "lon": 2.1293845,
+        "name": "LCSC - DU PUITS D’ANGLE",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "7b8ea366-28e6-493a-8111-5787ee199e64",
+        "vehicle_capacity": {
+          "dott_bicycle": 8,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.85790384,
+        "lon": 2.129295159,
+        "name": "BOU - DES BEAUVILLIERS",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "7cdc8036-8b9e-4103-b2d9-5f7119a782ec",
+        "vehicle_capacity": {
+          "dott_bicycle": 3,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.82402,
+        "lon": 2.1277,
+        "name": "LCR - DE VERSAILLES 3",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "bb2685cd-1ef9-416c-a67f-9be1821e7524",
+        "vehicle_capacity": {
+          "dott_bicycle": 8,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8480072,
+        "lon": 2.1468852,
+        "name": "LCSC - EMMA",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "01a30023-4e04-45e7-9fa3-93643686c1c8",
+        "vehicle_capacity": {
+          "dott_bicycle": 3,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8223466,
+        "lon": 2.1206554,
+        "name": "LCR - DU HAMEAU 1",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "e5fc44ae-b70f-49dc-8b19-bebd4e5caf94",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8536036,
+        "lon": 2.1464634,
+        "name": "LCSC - DE LA JONCHERE 1",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "f5197350-8ddf-4a58-8f6e-36bb2a7df3b8",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8162363,
+        "lon": 2.1295037,
+        "name": "LCR - DU MARÉCHAL LECLERC",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "b927e6bc-a488-46f8-a94a-f973a8e4d844",
+        "vehicle_capacity": {
+          "dott_bicycle": 8,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8617844,
+        "lon": 2.1468234,
+        "name": "LCSC - RESIDENCE ELYSEE 2",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "50ef4ab4-bd65-4d0d-8b9a-c7924fa79f18",
+        "vehicle_capacity": {
+          "dott_bicycle": 3,
+          "dott_scooter": 3
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8427424,
+        "lon": 2.1385833,
+        "name": "LCSC - CORNEILLE 2",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "85762d1a-c781-4345-9ca6-f45821ae0540",
+        "vehicle_capacity": {
+          "dott_bicycle": 8,
+          "dott_scooter": 12
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8257524,
+        "lon": 2.1225416,
+        "name": "LCR - SCHWEITZER",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "49c89775-6e92-483b-8845-b1e01d74f568",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8338962,
+        "lon": 2.128967,
+        "name": "LCR - DU PARC",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "4dd50c84-b556-48bd-a699-fbc2bd40a014",
+        "vehicle_capacity": {
+          "dott_bicycle": 8,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8528358,
+        "lon": 2.1439601,
+        "name": "LCSC - DE L'EGLISE",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "c17aa157-56c9-4d53-aea3-8270bb47f3d4",
+        "vehicle_capacity": {
+          "dott_bicycle": 3,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8204115,
+        "lon": 2.1308133,
+        "name": "LCR - PASTEUR",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "10119f00-32c3-40b4-9733-b7588e0bc2d0",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.825863,
+        "lon": 2.1371779,
+        "name": "LCR - SAINTE CLAIRE",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "b818d063-4b82-4d72-815c-8029a8d8a7e4",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8259831,
+        "lon": 2.132207,
+        "name": "LCR - DU DOCTEUR AUDIGIER",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "8f5c95e6-e311-4831-b5c5-724fc5ef128c",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8168848,
+        "lon": 2.1317768,
+        "name": "LCR - DEBASSEUX",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "9654b8d5-cc47-4aed-a846-438b96bb028c",
+        "vehicle_capacity": {
+          "dott_bicycle": 3,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8270059,
+        "lon": 2.1284579,
+        "name": "LCR - DE VERSAILLES 2",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "8b16867e-f8ef-4a8e-aff3-dbf5775af618",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.86678545,
+        "lon": 2.137423861,
+        "name": "BOU - DU GÉNÉRAL LECLERC 1",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "a4d3faa1-bb5b-4f0f-b326-ad715326995c",
+        "vehicle_capacity": {
+          "dott_bicycle": 3,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.86846635,
+        "lon": 2.131619169,
+        "name": "BOU - QUAI BOISSY D'ANGLAS",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "a8a5f6ba-1d14-4f0d-828e-c74910107d8c",
+        "vehicle_capacity": {
+          "dott_bicycle": 3,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8377306,
+        "lon": 2.1073412,
+        "name": "LCR - DE LA SABRETACHE",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "c793123a-bd58-4e82-b353-aae2b147ad90",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8446652,
+        "lon": 2.1374003,
+        "name": "LCSC - CORNEILLE 1",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "81a2b019-2e47-4107-ad4c-a77841d7b140",
+        "vehicle_capacity": {
+          "dott_bicycle": 3,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8188141,
+        "lon": 2.1369002,
+        "name": "LCR - DUFÉTEL",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "a4b81f0b-a731-40af-ab4e-c24c48c9df28",
+        "vehicle_capacity": {
+          "dott_bicycle": 3,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.82635,
+        "lon": 2.12579,
+        "name": "LCR - POTTIER 2",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "76a0f708-df52-4f58-9b1d-4a5988cd5474",
+        "vehicle_capacity": {
+          "dott_bicycle": 8,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.85823019,
+        "lon": 2.145149761,
+        "name": "LCSC - DES SABLONS",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "da347797-62b9-4bdd-b380-2ce3dca25518",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.86355097,
+        "lon": 2.152908431,
+        "name": "BOU - VIGNES",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "277e2e54-0651-433b-a676-026bb164a3ec",
+        "vehicle_capacity": {
+          "dott_bicycle": 3,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8448902,
+        "lon": 2.1324558,
+        "name": "LCSC - DES SOURCES",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "10993095-a988-4269-8c7d-73ac46bda5cc",
+        "vehicle_capacity": {
+          "dott_bicycle": 8,
+          "dott_scooter": 12
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8175394,
+        "lon": 2.1365173,
+        "name": "LCR - DU MAL DE LATTRE DE TASSIGNY",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "bdbd6fb7-0eb3-480f-b281-684c0b6bfdf4",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8146534,
+        "lon": 2.1324054,
+        "name": "LCR - PAUL GARNIER",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "4148d47e-2d3d-4f25-bd0e-4b5f3a65fa40",
+        "vehicle_capacity": {
+          "dott_bicycle": 8,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8271591,
+        "lon": 2.1194587,
+        "name": "LCR - DUTARTRE 2",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "9f1cd560-702b-472f-bbc7-c6a788e566f0",
+        "vehicle_capacity": {
+          "dott_bicycle": 8,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8458175,
+        "lon": 2.1478314,
+        "name": "LCSC - PIGAULT LEBRUN",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "e8851235-b51f-4dc5-ab98-0df5c0d2d2a4",
+        "vehicle_capacity": {
+          "dott_bicycle": 3,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.84768483,
+        "lon": 2.136482678,
+        "name": "LCSC - CHARLES DE GAULLE",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "d290670c-071e-4aee-b5df-068a60d39870",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.849255,
+        "lon": 2.1436621,
+        "name": "LCSC - AUGUSTE DUTREUX",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "ae8e5e96-5106-4720-a17d-04ab6d610f74",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8247888,
+        "lon": 2.1292606,
+        "name": "LCR - DE GLATIGNY",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "38fb2e21-357d-4760-97b4-24c96217e2b4",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.86890331,
+        "lon": 2.155015714,
+        "name": "BOU - YVAN TOURGUENEFF 2",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "bc00c530-a54a-48a5-a93d-16c5b5f2f80c",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8592112,
+        "lon": 2.1478708,
+        "name": "LCSC - DE LA JONCHERE 2",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "c6cba362-4b50-465f-a6a6-7ddf014c2674",
+        "vehicle_capacity": {
+          "dott_bicycle": 3,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8474107,
+        "lon": 2.1284866,
+        "name": "LCSC - DU PRE D’ORIENT",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "167522ad-a315-4aca-b18b-0ded7c333910",
+        "vehicle_capacity": {
+          "dott_bicycle": 3,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.86798478,
+        "lon": 2.146525078,
+        "name": "BOU - YVAN TOURGUENEFF 1",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "e16a9a10-41a1-4f1e-a1e2-3d73a24c0acc",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8208444,
+        "lon": 2.1209155,
+        "name": "LCR - CARUEL DE SAINT-MARTIN 2",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "730f6237-ba0a-4370-95e8-cce656d848e0",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8202946,
+        "lon": 2.1272955,
+        "name": "LCR - DU GENERAL EXELMANS",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "7f664416-3a64-4bf2-91a7-be58c87e1fb4",
+        "vehicle_capacity": {
+          "dott_bicycle": 8,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8415108,
+        "lon": 2.1311412,
+        "name": "LCSC - DES PRES",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "0310a7cf-b1e6-4e3b-b805-f574f249fc68",
+        "vehicle_capacity": {
+          "dott_bicycle": 8,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8191612,
+        "lon": 2.1265708,
+        "name": "LCR - GUYNEMER",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "69769ab0-c512-49e5-ab5c-d2f6dd072c48",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.85960723,
+        "lon": 2.135146746,
+        "name": "BOU - DU DOCTEUR DUBORGIA",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "f3a539ed-d0f9-4e56-8321-31aec07f5450",
+        "vehicle_capacity": {
+          "dott_bicycle": 3,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.83757411,
+        "lon": 2.111187723,
+        "name": "LCR - DE VERSAILLES 1",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "ef474491-d9a7-4ad2-b33e-57a6f0866fb4",
+        "vehicle_capacity": {
+          "dott_bicycle": 3,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8396043,
+        "lon": 2.1335534,
+        "name": "LCSC - HAMEAU DE BOIS FONTAINE",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "88d1debc-361e-4462-80b4-07dcef101450",
+        "vehicle_capacity": {
+          "dott_bicycle": 3,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8211912,
+        "lon": 2.1230478,
+        "name": "LCR - CARUEL DE SAINT-MARTIN 1",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "efadccd2-e5b8-4f0d-bc16-a0ad3d716fe0",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.85619792,
+        "lon": 2.126670114,
+        "name": "BOU - RESIDENCE DES 3 FORETS",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "f529e1d0-6e76-4b14-a244-d280296d28d8",
+        "vehicle_capacity": {
+          "dott_bicycle": 3,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8416649,
+        "lon": 2.1246085,
+        "name": "LCSC - DU COMTE DE BENDERN",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "afb14842-ec00-4020-bd8a-5f6bac5e43f0",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8223866,
+        "lon": 2.1327281,
+        "name": "LCR - CORNEILLE",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "9983c6ae-fd76-4046-95b9-c65b7075c070",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.825605,
+        "lon": 2.125694,
+        "name": "LCR - POTTIER 1",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "0c818b18-3e2c-4dde-916d-b82ea7bf0510",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8227159,
+        "lon": 2.138136,
+        "name": "LCR - DU BEL AIR",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "98285320-8f61-4e1a-b092-27514a248644",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.836413,
+        "lon": 2.1086544,
+        "name": "LCR - COURS EXELMANS",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "42e3f28f-b399-4d73-83a7-4e9859432ea0",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8415754,
+        "lon": 2.1182513,
+        "name": "LCSC - MAURICE DE HIRSCH",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "e5bec2a8-b5a9-48f2-8d22-9f10ac2c300c",
+        "vehicle_capacity": {
+          "dott_bicycle": 3,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8222469,
+        "lon": 2.1276736,
+        "name": "LCR - DE ROCQUENCOURT",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "d1cecce8-bf18-48f8-a338-e9693ca5ea94",
+        "vehicle_capacity": {
+          "dott_bicycle": 8,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8328388,
+        "lon": 2.1134786,
+        "name": "LCR - DE L'ETANG",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "6f5311c7-62b2-4b72-a121-1d0873b6ac30",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8289865,
+        "lon": 2.1331348,
+        "name": "LCR - SQUARE DE FURSTENBERG",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "41668688-215a-4dfa-94b7-c3b261e2f330",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8433591,
+        "lon": 2.1347425,
+        "name": "LCSC - DES GRESSETS",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "b42d6084-7712-42e4-a175-759616ab5f48",
+        "vehicle_capacity": {
+          "dott_bicycle": 1,
+          "dott_scooter": 16
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8190355,
+        "lon": 2.1212407,
+        "name": "LCR - DES SPORTS",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "0cd83690-037d-42b2-9cad-fea24650a0d8",
+        "vehicle_capacity": {
+          "dott_bicycle": 8,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8487001,
+        "lon": 2.1503141,
+        "name": "LCSC - DU CLOS-TOUTAIN",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "2201381a-1978-4719-8760-765e1e40d1e8",
+        "vehicle_capacity": {
+          "dott_bicycle": 3,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8296221,
+        "lon": 2.1219072,
+        "name": "LCR - LOUIS FOUCAULT",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "c457e703-a798-4bbc-8c17-4a44eaa42024",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8420614,
+        "lon": 2.128432,
+        "name": "LCSC - DU PANORAMA",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "3ca363de-39cd-45cc-b7d4-f567280dc934",
+        "vehicle_capacity": {
+          "dott_bicycle": 3,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.85447915,
+        "lon": 2.132403598,
+        "name": "LCSC - PL MARECHAL LECLERC",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "86338c41-1de2-47cf-8ca5-078930ebf360",
+        "vehicle_capacity": {
+          "dott_bicycle": 3,
+          "dott_scooter": 24
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8427556,
+        "lon": 2.1377827,
+        "name": "LCSC - PL JEAN MERMOZ",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "a547df96-d72a-4582-857b-d1cfe3451ed0",
+        "vehicle_capacity": {
+          "dott_bicycle": 8,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8237041,
+        "lon": 2.1181837,
+        "name": "LCR - DU HAMEAU 2",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "6d670553-0c9a-4ed8-b4a5-ba30cf2428dc",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.85998895,
+        "lon": 2.139404006,
+        "name": "BOU - DE LA DRIONNE",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "d1f7f55c-c5ab-4cb9-a014-575be7524f74",
+        "vehicle_capacity": {
+          "dott_bicycle": 3,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.82966,
+        "lon": 2.11558,
+        "name": "LCR - SQUARE RIVOLI (LE CHESNAY)",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "d4a454c2-a999-49ae-85c6-a3a167b9e814",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8270477,
+        "lon": 2.1193989,
+        "name": "LCR - DUTARTRE 1",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "ded6f9ac-fcf1-44ab-b344-9bda3e3e8560",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.85794684,
+        "lon": 2.137671309,
+        "name": "BOU - PASTEUR",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "78995075-d4e4-4149-884e-a91ac7cd9c00",
+        "vehicle_capacity": {
+          "dott_bicycle": 3,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8296992,
+        "lon": 2.1295307,
+        "name": "LCR - DE LA BRETECHE",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "e4ee1774-4735-4390-a6ab-7b942c43ec1c",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8181973,
+        "lon": 2.1310636,
+        "name": "LCR - SAINT ANTOINE DE PADOUE",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "2fd39583-2a41-4be5-a448-d47d7e057218",
+        "vehicle_capacity": {
+          "dott_bicycle": 5,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8217865,
+        "lon": 2.1163615,
+        "name": "LCR - DUTARTRE 3",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "bf05fd19-b79a-4cf5-921a-8e68ce5ea41c",
+        "vehicle_capacity": {
+          "dott_bicycle": 8,
+          "dott_scooter": 8
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.8607045,
+        "lon": 2.1512587,
+        "name": "LCSC - DES GALLICOURTS",
+        "region_id": "e8f2b60f-16f0-42ee-a110-526fe0eb96d0",
+        "station_id": "1f75c9e8-68f2-4581-8141-440932049448",
+        "vehicle_capacity": {
+          "dott_bicycle": 3,
+          "dott_scooter": 8
+        }
+      }
+    ]
+  },
+  "last_updated": 1771749797,
+  "ttl": 0,
+  "version": "2.3"
+}

@@ -1,0 +1,451 @@
+{
+  "data": {
+    "stations": [
+      {
+        "capacity": 18,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 45.160769,
+        "lon": 1.54059,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Piscine"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://velibeo.ecovelo.mobi/#/station/stn_gY7GaY9SYQxW7e2Sokh9gw"
+        },
+        "station_id": "stn_gY7GaY9SYQxW7e2Sokh9gw"
+      },
+      {
+        "capacity": 5,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 45.155411,
+        "lon": 1.48075,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Marquisie"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://velibeo.ecovelo.mobi/#/station/stn_QJ3fx8Ld7TAoGpkiCxtDfo"
+        },
+        "station_id": "stn_QJ3fx8Ld7TAoGpkiCxtDfo"
+      },
+      {
+        "capacity": 16,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 45.159925,
+        "lon": 1.546829,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Léo Lagrange"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://velibeo.ecovelo.mobi/#/station/stn_XKwmCZyQLXEJWZm77jnWt7"
+        },
+        "station_id": "stn_XKwmCZyQLXEJWZm77jnWt7"
+      },
+      {
+        "capacity": 18,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 45.152826,
+        "lon": 1.528694,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Gare SNCF"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://velibeo.ecovelo.mobi/#/station/stn_YGmVaUTWLCJjYEsuyfpSXh"
+        },
+        "station_id": "stn_YGmVaUTWLCJjYEsuyfpSXh"
+      },
+      {
+        "capacity": 5,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 45.157009,
+        "lon": 1.528047,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Zola"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://velibeo.ecovelo.mobi/#/station/stn_VHKU3FgD69amvpXLwFZQh5"
+        },
+        "station_id": "stn_VHKU3FgD69amvpXLwFZQh5"
+      },
+      {
+        "capacity": 20,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 45.154658,
+        "lon": 1.509974,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Université"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://velibeo.ecovelo.mobi/#/station/stn_A6dzWhCR8DCnSznucHZTSo"
+        },
+        "station_id": "stn_A6dzWhCR8DCnSznucHZTSo"
+      },
+      {
+        "capacity": 18,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 45.16234,
+        "lon": 1.53406,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Guierle"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://velibeo.ecovelo.mobi/#/station/stn_ebSvjfxGbSygotjea8SWw2"
+        },
+        "station_id": "stn_ebSvjfxGbSygotjea8SWw2"
+      },
+      {
+        "capacity": 18,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 45.160418,
+        "lon": 1.530081,
+        "name": [
+          {
+            "language": "fr",
+            "text": "D'Arsonval"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://velibeo.ecovelo.mobi/#/station/stn_h8x3xcXATrrvvE2ie367pK"
+        },
+        "station_id": "stn_h8x3xcXATrrvvE2ie367pK"
+      },
+      {
+        "capacity": 16,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 45.136697,
+        "lon": 1.585945,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Cosnac"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://velibeo.ecovelo.mobi/#/station/stn_X8QhqtSHLAc2nvRjozuNum"
+        },
+        "station_id": "stn_X8QhqtSHLAc2nvRjozuNum"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 45.168846,
+        "lon": 1.497102,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Rivet"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://velibeo.ecovelo.mobi/#/station/stn_nPf3KyYk3VfihK5gXbiC4n"
+        },
+        "station_id": "stn_nPf3KyYk3VfihK5gXbiC4n"
+      },
+      {
+        "capacity": 14,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 45.167816,
+        "lon": 1.53332,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Hôpital"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://velibeo.ecovelo.mobi/#/station/stn_amCS7aZa2S8vW52BaWdGXm"
+        },
+        "station_id": "stn_amCS7aZa2S8vW52BaWdGXm"
+      },
+      {
+        "capacity": 16,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 45.163531,
+        "lon": 1.519773,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Île du Roi"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://velibeo.ecovelo.mobi/#/station/stn_PaQbjU8f2QZXHHDjSbDaTA"
+        },
+        "station_id": "stn_PaQbjU8f2QZXHHDjSbDaTA"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 45.140594,
+        "lon": 1.445536,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Saint Pantaléon de Larche"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://velibeo.ecovelo.mobi/#/station/stn_Mai4vfdVsAQpiAjiW4DTm7"
+        },
+        "station_id": "stn_Mai4vfdVsAQpiAjiW4DTm7"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 45.154667,
+        "lon": 1.549669,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Chapélies"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://velibeo.ecovelo.mobi/#/station/stn_iaeYjpFF2Nrjdyrx9uQGVb"
+        },
+        "station_id": "stn_iaeYjpFF2Nrjdyrx9uQGVb"
+      },
+      {
+        "capacity": 5,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 45.165289,
+        "lon": 1.556772,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Les Bouriottes"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://velibeo.ecovelo.mobi/#/station/stn_SkbXskwhyKsSXgQ6brDqS5"
+        },
+        "station_id": "stn_SkbXskwhyKsSXgQ6brDqS5"
+      },
+      {
+        "capacity": 14,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 45.159861,
+        "lon": 1.52134,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Trois Lycées"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://velibeo.ecovelo.mobi/#/station/stn_SAhCdXLpiL7ndSMULCkn5H"
+        },
+        "station_id": "stn_SAhCdXLpiL7ndSMULCkn5H"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 45.186957,
+        "lon": 1.507446,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Ussac"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://velibeo.ecovelo.mobi/#/station/stn_kLrjvGCWExbjqadRrChyyu"
+        },
+        "station_id": "stn_kLrjvGCWExbjqadRrChyyu"
+      },
+      {
+        "capacity": 16,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 45.166269,
+        "lon": 1.543555,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Trois Provinces"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://velibeo.ecovelo.mobi/#/station/stn_GoVBciBw7RSJTkUhvyLqeX"
+        },
+        "station_id": "stn_GoVBciBw7RSJTkUhvyLqeX"
+      },
+      {
+        "capacity": 14,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 45.156389,
+        "lon": 1.533286,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Halle Gaillarde"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://velibeo.ecovelo.mobi/#/station/stn_haXqCqZLZmdkRpVkde3inN"
+        },
+        "station_id": "stn_haXqCqZLZmdkRpVkde3inN"
+      },
+      {
+        "capacity": 5,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 45.159403,
+        "lon": 1.533573,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Mairie de Brive"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://velibeo.ecovelo.mobi/#/station/stn_7NLUAv4sBXRzsEikCGScXZ"
+        },
+        "station_id": "stn_7NLUAv4sBXRzsEikCGScXZ"
+      },
+      {
+        "capacity": 5,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 45.154003,
+        "lon": 1.538261,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Brune"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://velibeo.ecovelo.mobi/#/station/stn_iPawB33yfSeqsfojsfszCx"
+        },
+        "station_id": "stn_iPawB33yfSeqsfojsfszCx"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 45.148525,
+        "lon": 1.479463,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Brive Laroche"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://velibeo.ecovelo.mobi/#/station/stn_BtHxDV9iPHTueM3U8Hyj9o"
+        },
+        "station_id": "stn_BtHxDV9iPHTueM3U8Hyj9o"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 45.156821,
+        "lon": 1.499005,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Tujac"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://velibeo.ecovelo.mobi/#/station/stn_ioQhSdYDvzLNzYZ7Jah4LQ"
+        },
+        "station_id": "stn_ioQhSdYDvzLNzYZ7Jah4LQ"
+      },
+      {
+        "capacity": 5,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 45.145882,
+        "lon": 1.530405,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Saint-Antoine"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://velibeo.ecovelo.mobi/#/station/stn_2g94qtmZDMo6TabnziR2vm"
+        },
+        "station_id": "stn_2g94qtmZDMo6TabnziR2vm"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 45.169528,
+        "lon": 1.563722,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Malemort"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://velibeo.ecovelo.mobi/#/station/stn_SUvhViDGizAW3XMCpqb8CY"
+        },
+        "station_id": "stn_SUvhViDGizAW3XMCpqb8CY"
+      },
+      {
+        "capacity": 5,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 45.15292,
+        "lon": 1.560082,
+        "name": [
+          {
+            "language": "fr",
+            "text": "ZA Brive-Est"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://velibeo.ecovelo.mobi/#/station/stn_FqmLQESHREXV5wb3HMgoac"
+        },
+        "station_id": "stn_FqmLQESHREXV5wb3HMgoac"
+      }
+    ]
+  },
+  "last_updated": "2026-02-22T09:44:27+01:00",
+  "ttl": 0,
+  "version": "3.0"
+}

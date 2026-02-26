@@ -1,0 +1,342 @@
+{
+  "last_updated": 1740496234,
+  "ttl": 300,
+  "version": "2.3",
+  "data": {
+    "stations": [
+      {
+        "station_id": "1",
+        "name": "Gare Dijon Ville",
+        "lat": 47.3233,
+        "lon": 5.0274,
+        "address": "Cour de la Gare",
+        "rental_methods": ["creditcard"],
+        "capacity": 40
+      },
+      {
+        "station_id": "2",
+        "name": "Foch - Gare",
+        "lat": 47.3238,
+        "lon": 5.0300,
+        "address": "Avenue Maréchal Foch",
+        "rental_methods": ["creditcard"],
+        "capacity": 20
+      },
+      {
+        "station_id": "3",
+        "name": "Darcy",
+        "lat": 47.3236,
+        "lon": 5.0339,
+        "address": "Place Darcy",
+        "rental_methods": ["creditcard"],
+        "capacity": 30
+      },
+      {
+        "station_id": "4",
+        "name": "Grangier",
+        "lat": 47.3228,
+        "lon": 5.0381,
+        "address": "Place Grangier",
+        "rental_methods": ["creditcard"],
+        "capacity": 25
+      },
+      {
+        "station_id": "5",
+        "name": "Bossuet",
+        "lat": 47.3212,
+        "lon": 5.0378,
+        "address": "Place Bossuet",
+        "capacity": 15
+      },
+      {
+        "station_id": "6",
+        "name": "Zola",
+        "lat": 47.3188,
+        "lon": 5.0355,
+        "address": "Place Emile Zola",
+        "capacity": 20
+      },
+      {
+        "station_id": "7",
+        "name": "Monge",
+        "lat": 47.3178,
+        "lon": 5.0370,
+        "address": "Place Monge",
+        "capacity": 18
+      },
+      {
+        "station_id": "8",
+        "name": "Cité de la Gastronomie",
+        "lat": 47.3158,
+        "lon": 5.0274,
+        "address": "Parvis de l'UNESCO",
+        "rental_methods": ["creditcard"],
+        "capacity": 30
+      },
+      {
+        "station_id": "9",
+        "name": "1er Mai",
+        "lat": 47.3135,
+        "lon": 5.0232,
+        "address": "Place du 1er Mai",
+        "capacity": 15
+      },
+      {
+        "station_id": "10",
+        "name": "Port du Canal",
+        "lat": 47.3105,
+        "lon": 5.0238,
+        "address": "Avenue Jean Jaurès",
+        "capacity": 20
+      },
+      {
+        "station_id": "11",
+        "name": "Wilson",
+        "lat": 47.3168,
+        "lon": 5.0428,
+        "address": "Place Wilson",
+        "capacity": 25
+      },
+      {
+        "station_id": "12",
+        "name": "Chabot Charny",
+        "lat": 47.3195,
+        "lon": 5.0435,
+        "address": "Rue Chabot Charny",
+        "capacity": 18
+      },
+      {
+        "station_id": "13",
+        "name": "Saint Fiacre",
+        "lat": 47.3206,
+        "lon": 5.0408,
+        "address": "Place Saint Fiacre",
+        "capacity": 15
+      },
+      {
+        "station_id": "14",
+        "name": "Théâtre",
+        "lat": 47.3214,
+        "lon": 5.0436,
+        "address": "Place du Théâtre",
+        "rental_methods": ["creditcard"],
+        "capacity": 25
+      },
+      {
+        "station_id": "15",
+        "name": "Forges",
+        "lat": 47.3222,
+        "lon": 5.0408,
+        "address": "Rue des Forges",
+        "capacity": 20
+      },
+      {
+        "station_id": "16",
+        "name": "Les Halles",
+        "lat": 47.3250,
+        "lon": 5.0390,
+        "address": "Rue Bannelier",
+        "rental_methods": ["creditcard"],
+        "capacity": 25
+      },
+      {
+        "station_id": "17",
+        "name": "Trémouille",
+        "lat": 47.3265,
+        "lon": 5.0420,
+        "address": "Boulevard de la Trémouille",
+        "capacity": 20
+      },
+      {
+        "station_id": "18",
+        "name": "République",
+        "lat": 47.3283,
+        "lon": 5.0445,
+        "address": "Place de la République",
+        "rental_methods": ["creditcard"],
+        "capacity": 35
+      },
+      {
+        "station_id": "19",
+        "name": "30 Octobre",
+        "lat": 47.3245,
+        "lon": 5.0505,
+        "address": "Place du 30 Octobre",
+        "capacity": 22
+      },
+      {
+        "station_id": "20",
+        "name": "Vaillant",
+        "lat": 47.3275,
+        "lon": 5.0560,
+        "address": "Boulevard Carnot",
+        "capacity": 15
+      },
+      {
+        "station_id": "21",
+        "name": "Auditorium",
+        "lat": 47.3292,
+        "lon": 5.0485,
+        "address": "Boulevard de Champagne",
+        "rental_methods": ["creditcard"],
+        "capacity": 30
+      },
+      {
+        "station_id": "22",
+        "name": "Lycée Carnot",
+        "lat": 47.3240,
+        "lon": 5.0480,
+        "address": "Boulevard Thiers",
+        "capacity": 25
+      },
+      {
+        "station_id": "23",
+        "name": "Drapeau",
+        "lat": 47.3340,
+        "lon": 5.0440,
+        "address": "Avenue du Drapeau",
+        "capacity": 20
+      },
+      {
+        "station_id": "24",
+        "name": "Junot",
+        "lat": 47.3385,
+        "lon": 5.0445,
+        "address": "Avenue Junot",
+        "capacity": 15
+      },
+      {
+        "station_id": "25",
+        "name": "Parc des Sports",
+        "lat": 47.3300,
+        "lon": 5.0580,
+        "address": "Boulevard Paul Doumer",
+        "capacity": 20
+      },
+      {
+        "station_id": "26",
+        "name": "Facultés",
+        "lat": 47.3180,
+        "lon": 5.0660,
+        "address": "Boulevard Gabriel",
+        "rental_methods": ["creditcard"],
+        "capacity": 35
+      },
+      {
+        "station_id": "27",
+        "name": "CHU Bocage 1",
+        "lat": 47.3215,
+        "lon": 5.0680,
+        "address": "Boulevard Maréchal de Lattre de Tassigny",
+        "capacity": 25
+      },
+      {
+        "station_id": "28",
+        "name": "CHU Bocage 2",
+        "lat": 47.3230,
+        "lon": 5.0710,
+        "address": "Avenue Françoise Giroud",
+        "capacity": 20
+      },
+      {
+        "station_id": "29",
+        "name": "Campus Erasme",
+        "lat": 47.3150,
+        "lon": 5.0680,
+        "address": "Esplanade Erasme",
+        "rental_methods": ["creditcard"],
+        "capacity": 30
+      },
+      {
+        "station_id": "30",
+        "name": "Petit-Cîteaux",
+        "lat": 47.3130,
+        "lon": 5.0310,
+        "address": "Rue des Corroyeurs",
+        "capacity": 15
+      },
+      {
+        "station_id": "31",
+        "name": "Bourroches",
+        "lat": 47.3050,
+        "lon": 5.0150,
+        "address": "Boulevard Eugène Fyot",
+        "capacity": 18
+      },
+      {
+        "station_id": "32",
+        "name": "Fontaine d'Ouche",
+        "lat": 47.3180,
+        "lon": 5.0020,
+        "address": "Boulevard Bachelard",
+        "capacity": 25
+      },
+      {
+        "station_id": "33",
+        "name": "Victor Hugo",
+        "lat": 47.3270,
+        "lon": 5.0310,
+        "address": "Avenue Victor Hugo",
+        "capacity": 18
+      },
+      {
+        "station_id": "34",
+        "name": "Jouvence",
+        "lat": 47.3330,
+        "lon": 5.0370,
+        "address": "Rue de Jouvence",
+        "capacity": 15
+      },
+      {
+        "station_id": "35",
+        "name": "Montchapet",
+        "lat": 47.3310,
+        "lon": 5.0250,
+        "address": "Rue de Montchapet",
+        "capacity": 15
+      },
+      {
+        "station_id": "36",
+        "name": "Chevreul",
+        "lat": 47.3140,
+        "lon": 5.0460,
+        "address": "Avenue Chevreul",
+        "capacity": 20
+      },
+      {
+        "station_id": "37",
+        "name": "Parc de la Colombière",
+        "lat": 47.3060,
+        "lon": 5.0510,
+        "address": "Cours du Parc",
+        "rental_methods": ["creditcard"],
+        "capacity": 25
+      },
+      {
+        "station_id": "38",
+        "name": "Toison d'Or",
+        "lat": 47.3600,
+        "lon": 5.0550,
+        "address": "Avenue de Langres",
+        "rental_methods": ["creditcard"],
+        "capacity": 30
+      },
+      {
+        "station_id": "39",
+        "name": "Jaurès",
+        "lat": 47.3090,
+        "lon": 5.0340,
+        "address": "Boulevard Jean Jaurès",
+        "capacity": 15
+      },
+      {
+        "station_id": "40",
+        "name": "Chartreux",
+        "lat": 47.3230,
+        "lon": 5.0180,
+        "address": "Rue des Chartreux",
+        "capacity": 12
+      }
+    ]
+  }
+}

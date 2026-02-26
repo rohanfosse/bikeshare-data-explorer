@@ -1,0 +1,689 @@
+{
+  "data": {
+    "stations": [
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.201474,
+        "lon": 1.191988,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Collège Suzanne Lipinska"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://semo.ecovelo.mobi/#/station/stn_Tz3PChGu85hDype4iYH3Wc"
+        },
+        "station_id": "stn_Tz3PChGu85hDype4iYH3Wc"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.155896,
+        "lon": 1.341242,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Gailloncel"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://semo.ecovelo.mobi/#/station/stn_cFvg8sJEzZoJWTNzNYzNiJ"
+        },
+        "station_id": "stn_cFvg8sJEzZoJWTNzNYzNiJ"
+      },
+      {
+        "capacity": 14,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.267152,
+        "lon": 1.20377,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Centre Commercial des Falaises"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://semo.ecovelo.mobi/#/station/stn_MJ3AHtNyidbs2FDCZHfNv4"
+        },
+        "station_id": "stn_MJ3AHtNyidbs2FDCZHfNv4"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.1745,
+        "lon": 1.33633,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Mairie Le Val d'Hazey"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://semo.ecovelo.mobi/#/station/stn_6L9z42toWJR32MSYfpKbrM"
+        },
+        "station_id": "stn_6L9z42toWJR32MSYfpKbrM"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.214615,
+        "lon": 1.178581,
+        "name": [
+          {
+            "language": "fr",
+            "text": "PLAINE DES LOISIRS"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://semo.ecovelo.mobi/#/station/stn_PYwAxaqeAhHfQpQ4Aj69DU"
+        },
+        "station_id": "stn_PYwAxaqeAhHfQpQ4Aj69DU"
+      },
+      {
+        "capacity": 18,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.215046,
+        "lon": 1.168503,
+        "name": [
+          {
+            "language": "fr",
+            "text": "PLACE THOREL"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://semo.ecovelo.mobi/#/station/stn_espgseZ8eqvd6MFCGiz5YP"
+        },
+        "station_id": "stn_espgseZ8eqvd6MFCGiz5YP"
+      },
+      {
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.302524,
+        "lon": 1.141237,
+        "name": [
+          {
+            "language": "fr",
+            "text": "La Pommeraie"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://semo.ecovelo.mobi/#/station/stn_AGXpE3SKdR87LgZUSTa9fj"
+        },
+        "station_id": "stn_AGXpE3SKdR87LgZUSTa9fj"
+      },
+      {
+        "capacity": 4,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.2374,
+        "lon": 1.17148,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Pasteur"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://semo.ecovelo.mobi/#/station/stn_VvNN3raTyb5MNLXQPjx2Ji"
+        },
+        "station_id": "stn_VvNN3raTyb5MNLXQPjx2Ji"
+      },
+      {
+        "capacity": 3,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.26378,
+        "lon": 1.21439,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Bois Rollon"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://semo.ecovelo.mobi/#/station/stn_CoK9xh5k2ujZffRoSEL56z"
+        },
+        "station_id": "stn_CoK9xh5k2ujZffRoSEL56z"
+      },
+      {
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.192192,
+        "lon": 1.176363,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Mairie Pinterville"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://semo.ecovelo.mobi/#/station/stn_NfPDWV6pHug4GYLXSJWKpu"
+        },
+        "station_id": "stn_NfPDWV6pHug4GYLXSJWKpu"
+      },
+      {
+        "capacity": 14,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.319668,
+        "lon": 1.141806,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Cimetière d'Igoville"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://semo.ecovelo.mobi/#/station/stn_FhkQZAXqguhyFphxHNUA3f"
+        },
+        "station_id": "stn_FhkQZAXqguhyFphxHNUA3f"
+      },
+      {
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.146589,
+        "lon": 1.329709,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Mairie St-Aubin-sur-Gaillon "
+          }
+        ],
+        "rental_uris": {
+          "web": "https://semo.ecovelo.mobi/#/station/stn_46DbBeGJkEvoJky3GCxvwR"
+        },
+        "station_id": "stn_46DbBeGJkEvoJky3GCxvwR"
+      },
+      {
+        "capacity": 4,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.28425,
+        "lon": 1.222918,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Les Vignettes"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://semo.ecovelo.mobi/#/station/stn_gQU5fcnRQXRSXVvKXGKgo8"
+        },
+        "station_id": "stn_gQU5fcnRQXRSXVvKXGKgo8"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.256131,
+        "lon": 1.194803,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Le Cavé"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://semo.ecovelo.mobi/#/station/stn_THuEKWWRwj8AsFuKkxRZf9"
+        },
+        "station_id": "stn_THuEKWWRwj8AsFuKkxRZf9"
+      },
+      {
+        "capacity": 14,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.166486,
+        "lon": 1.346315,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Lycée André Malraux"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://semo.ecovelo.mobi/#/station/stn_FKoTJdbisbcdiJqCrvjYsQ"
+        },
+        "station_id": "stn_FKoTJdbisbcdiJqCrvjYsQ"
+      },
+      {
+        "capacity": 14,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.270577,
+        "lon": 1.213442,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Place des Chalands"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://semo.ecovelo.mobi/#/station/stn_CwkqrZimT9eFa5TW39spWr"
+        },
+        "station_id": "stn_CwkqrZimT9eFa5TW39spWr"
+      },
+      {
+        "capacity": 18,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.22552,
+        "lon": 1.168635,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Le HUB"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://semo.ecovelo.mobi/#/station/stn_dca5VueXXNkNesyUScmpFy"
+        },
+        "station_id": "stn_dca5VueXXNkNesyUScmpFy"
+      },
+      {
+        "capacity": 3,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.24616,
+        "lon": 1.17393,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Voie Babeurre"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://semo.ecovelo.mobi/#/station/stn_C4yQgnorMLgczCxXEBrnqT"
+        },
+        "station_id": "stn_C4yQgnorMLgczCxXEBrnqT"
+      },
+      {
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.274565,
+        "lon": 1.21222,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Conservatoire"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://semo.ecovelo.mobi/#/station/stn_9zyg9tJ6xAG3yWqgQQDhGd"
+        },
+        "station_id": "stn_9zyg9tJ6xAG3yWqgQQDhGd"
+      },
+      {
+        "capacity": 18,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.209271,
+        "lon": 1.155705,
+        "name": [
+          {
+            "language": "fr",
+            "text": "PARVIS A BELTRAME"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://semo.ecovelo.mobi/#/station/stn_6w9qwWceTjHd8VmX6MdepZ"
+        },
+        "station_id": "stn_6w9qwWceTjHd8VmX6MdepZ"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.159911,
+        "lon": 1.333465,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Parking Paul Doumer"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://semo.ecovelo.mobi/#/station/stn_kQnZwQMv7uUhGQVtRQ6cxv"
+        },
+        "station_id": "stn_kQnZwQMv7uUhGQVtRQ6cxv"
+      },
+      {
+        "capacity": 3,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.13976,
+        "lon": 1.31484,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Champs Chouette"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://semo.ecovelo.mobi/#/station/stn_J676wWk38LzvKtuhz2H9z9"
+        },
+        "station_id": "stn_J676wWk38LzvKtuhz2H9z9"
+      },
+      {
+        "capacity": 14,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.275574,
+        "lon": 1.224273,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Gare SNCF Val-de-Reuil"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://semo.ecovelo.mobi/#/station/stn_chp8Vks555SgnRY5basMyq"
+        },
+        "station_id": "stn_chp8Vks555SgnRY5basMyq"
+      },
+      {
+        "capacity": 4,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.285968,
+        "lon": 1.205954,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Mairie Léry"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://semo.ecovelo.mobi/#/station/stn_WbToFXQCoQAEXfXpGWdVQY"
+        },
+        "station_id": "stn_WbToFXQCoQAEXfXpGWdVQY"
+      },
+      {
+        "capacity": 16,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.174835,
+        "lon": 1.352007,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Gare SNCF Gaillon Aubevoye"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://semo.ecovelo.mobi/#/station/stn_KKxksEk75KYBeyqfxAa3Qk"
+        },
+        "station_id": "stn_KKxksEk75KYBeyqfxAa3Qk"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.210897,
+        "lon": 1.17089,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Foch"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://semo.ecovelo.mobi/#/station/stn_BrQHaxLkeZ7TjKALWEqydg"
+        },
+        "station_id": "stn_BrQHaxLkeZ7TjKALWEqydg"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.235459,
+        "lon": 1.181796,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Mairie Incarville"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://semo.ecovelo.mobi/#/station/stn_FJenRfjFiTdnsPMvx5bdw8"
+        },
+        "station_id": "stn_FJenRfjFiTdnsPMvx5bdw8"
+      },
+      {
+        "capacity": 3,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.25775,
+        "lon": 1.18573,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Janssen"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://semo.ecovelo.mobi/#/station/stn_K4nhwtY6WcHgv8ZgHLDhya"
+        },
+        "station_id": "stn_K4nhwtY6WcHgv8ZgHLDhya"
+      },
+      {
+        "capacity": 14,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.208682,
+        "lon": 1.182425,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Centre Commercial du Becquet"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://semo.ecovelo.mobi/#/station/stn_XuHMmg6Z2mMoPbrGhHiaJJ"
+        },
+        "station_id": "stn_XuHMmg6Z2mMoPbrGhHiaJJ"
+      },
+      {
+        "capacity": 14,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.320386,
+        "lon": 1.179504,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Centre Commercial Alizay"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://semo.ecovelo.mobi/#/station/stn_NAmbzasRMbjboqhpfrdT9j"
+        },
+        "station_id": "stn_NAmbzasRMbjboqhpfrdT9j"
+      },
+      {
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.272,
+        "lon": 1.196611,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Parc des Sports"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://semo.ecovelo.mobi/#/station/stn_5NkrenK4rezyfUGZt7vtvs"
+        },
+        "station_id": "stn_5NkrenK4rezyfUGZt7vtvs"
+      },
+      {
+        "capacity": 16,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.317127,
+        "lon": 1.159218,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Gare de Pont-de-l'Arche - Alizay"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://semo.ecovelo.mobi/#/station/stn_NpNC5ibW85HJXxSZnHzKv3"
+        },
+        "station_id": "stn_NpNC5ibW85HJXxSZnHzKv3"
+      },
+      {
+        "capacity": 3,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.24952,
+        "lon": 1.18266,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Les Clouets"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://semo.ecovelo.mobi/#/station/stn_84Kxzv2W4nuFDrxGKJ46vk"
+        },
+        "station_id": "stn_84Kxzv2W4nuFDrxGKJ46vk"
+      },
+      {
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.14936,
+        "lon": 1.34963,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Jeufosse"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://semo.ecovelo.mobi/#/station/stn_nVTPQJm3sVHcyPUv75JAwY"
+        },
+        "station_id": "stn_nVTPQJm3sVHcyPUv75JAwY"
+      },
+      {
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.304332,
+        "lon": 1.245179,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Mairie Poses"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://semo.ecovelo.mobi/#/station/stn_Udq5q6KhRHQDp8TjCbnM8Y"
+        },
+        "station_id": "stn_Udq5q6KhRHQDp8TjCbnM8Y"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.303185,
+        "lon": 1.156084,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Place Aristide Briand"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://semo.ecovelo.mobi/#/station/stn_b7rrmEXT8A5XPXZhcgJzsw"
+        },
+        "station_id": "stn_b7rrmEXT8A5XPXZhcgJzsw"
+      },
+      {
+        "capacity": 3,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.23207,
+        "lon": 1.22125,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Mairie St-Pierre-du-Vauvray"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://semo.ecovelo.mobi/#/station/stn_EPzhEzUage3UTdbqzXGPUA"
+        },
+        "station_id": "stn_EPzhEzUage3UTdbqzXGPUA"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.257986,
+        "lon": 1.208196,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Notre Dame"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://semo.ecovelo.mobi/#/station/stn_ABeiMhUtpqs6Wz6a95Lgah"
+        },
+        "station_id": "stn_ABeiMhUtpqs6Wz6a95Lgah"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.18271,
+        "lon": 1.35772,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Mairie Courcelles-sur-Seine"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://semo.ecovelo.mobi/#/station/stn_ZijsRqDbbi9VdzEknP8haz"
+        },
+        "station_id": "stn_ZijsRqDbbi9VdzEknP8haz"
+      },
+      {
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.270146,
+        "lon": 1.209803,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Place des 4 Saisons"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://semo.ecovelo.mobi/#/station/stn_Jeg3SPZAernT7dCeGBDC9D"
+        },
+        "station_id": "stn_Jeg3SPZAernT7dCeGBDC9D"
+      }
+    ]
+  },
+  "last_updated": "2026-02-22T09:40:30+01:00",
+  "ttl": 0,
+  "version": "3.0"
+}

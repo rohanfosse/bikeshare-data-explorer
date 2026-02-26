@@ -1,0 +1,9 @@
+pr_id,name,latitude,longitude,capacity,tram_line,address,accessible,charging_stations,bike_parking,zone,data_created,last_updated,data_version
+PR001,P+R Mosson,43.6098,3.8305,950,1,"Avenue du Pont Juvénal, Montpellier",True,False,True,West,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+PR002,P+R Odysseum,43.6056,3.9178,1200,"1,5","Rue Georges Méliès, Montpellier",True,True,True,East,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+PR003,P+R Jacou,43.6589,3.9145,500,2,Jacou,True,False,True,North-East,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+PR004,P+R Saint-Jean-de-Védas,43.5678,3.8312,600,2,Saint-Jean-de-Védas,True,False,True,South-West,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+PR005,P+R Lattes Centre,43.5689,3.9012,400,3,Lattes,True,False,True,South,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+PR006,P+R Pérols Étang de l'Or,43.5589,3.9612,850,3,Pérols,True,True,True,South-East,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+PR007,P+R Clapiers,43.6589,3.8878,300,4,Clapiers,True,False,True,North,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+PR008,P+R Lavérune,43.5756,3.8189,450,5,Lavérune,True,False,True,West,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0

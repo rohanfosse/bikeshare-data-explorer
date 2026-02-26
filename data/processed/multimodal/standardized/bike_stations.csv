@@ -1,0 +1,58 @@
+station_id,station_name,station_name_raw,latitude,longitude,data_source,last_updated,data_version
+BK011,Comédie,002 Comédie,43.6091864,3.8815041,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK051,Rue Jules Ferry - Gare Saint-Roch,001 Rue Jules Ferry - Gare Saint-Roch,43.6053253,3.8812294,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK018,Foch,007 Foch,43.6109947,3.8733344,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK016,Fac de Lettres,038 Fac de Lettres,43.6353331,3.8687709,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK053,Saint-Guilhem - Courreau,057 Saint-Guilhem - Courreau,43.6089424,3.8727765,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK039,Place Albert 1er - St Charles,006 Place Albert 1er - St Charles,43.6166028,3.8739949,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK040,Place Viala,047 Place Viala,43.6168167,3.8550842,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK027,Les Arceaux,023 Les Arceaux,43.6126513,3.8632773,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK015,Euromédecine,041 Euromédecine,43.6419736,3.8375497,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK017,FacdesSciences,037 FacdesSciences,43.633469,3.863365,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK002,Albert 1er - Cathédrale,056 Albert 1er - Cathédrale,43.6148176,3.8737832,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK008,Charles Flahault,030 Charles Flahault,43.6187686,3.8659891,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK032,Médiathèque Emile Zola,017 Médiathèque Emile Zola,43.6082468,3.8930561,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK033,Nombre d'Or,018 Nombre d'Or,43.6079002,3.8866534,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK006,Boutonnet,012 Boutonnet,43.6199984,3.8678033,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK035,Observatoire,009 Observatoire,43.6145267,3.8710807,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK034,Nouveau Saint-Roch,025 Nouveau Saint-Roch,43.5992903,3.8756446,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK050,Rondelet,010 Rondelet,43.6041463,3.8748308,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK041,Plan Cabanes,011 Plan Cabanes,43.6084996,3.868611,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK055,Tonnelles,049 Tonnelles,43.6151527,3.8394759,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK005,Beaux-Arts,014 Beaux-Arts,43.6169338,3.8834353,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK037,Parvis Jules Ferry - Gare Saint-Roch,050 Parvis Jules Ferry - Gare Saint-Roch,43.605325,3.881229,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK029,Louis Blanc,019 Louis Blanc,43.614645,3.8776294,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK048,Renouvier,026 Renouvier,43.6031881,3.8678316,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK046,Père Soulas,046 Père Soulas,43.6219699,3.855618,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK001,Aiguelongue,039 Aiguelongue,43.636472,3.8823753,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK026,Jeu de Mail des Abbés,040 Jeu de Mail des Abbés,43.6204066,3.8840474,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK057,Voltaire,031 Voltaire,43.6037185,3.8889694,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK023,Hôtel du Département,048 Hôtel du Département,43.6218482,3.8350214,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK049,Richter,029 Richter,43.6056173,3.8995795,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK014,Emile Combes,013 Emile Combes,43.6167422,3.8799722,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK009,Cité Mion,024 Cité Mion,43.6011431,3.8844511,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK028,Les Aubes,015 Les Aubes,43.6192157,3.8913335,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK056,Vert Bois,034 Vert Bois,43.6354897,3.8717793,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK030,Malbosc,035 Malbosc,43.6333264,3.8310425,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK025,Jean de Beins,061 Jean de Beins,43.6096975,3.8845248,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK042,Pont de Lattes - Gare Saint-Roch,051 Pont de Lattes - Gare Saint-Roch,43.60438,3.88216,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK036,Occitanie,036 Occitanie,43.6343515,3.8486697,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK003,Antigone centre,016 Antigone centre,43.6079062,3.8904657,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK007,Celleneuve,044 Celleneuve,43.6137045,3.8245262,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK012,Corum,005 Corum,43.6141888,3.8818829,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK043,Port Marianne,021 Port Marianne,43.6059165,3.9168169,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK054,Sud De France,059 Sud De France,43.6092765,3.8895111,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK019,Gambetta,020 Gambetta,43.6041258,3.8730462,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK004,AtelierTAM,098 AtelierTAM,43.5934,3.8585,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK024,Jardin de la Lironde,045 Jardin de la Lironde,43.6058517,3.9115715,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK021,Halles Castellane,008 Halles Castellane,43.6101245,3.8768434,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK047,Pérols Etang de l'Or,055 Pérols Etang de l'Or,43.5579564,3.9636474,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK022,Hôtel de Ville,004 Hôtel de Ville,43.5985194,3.8966319,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK052,Sabines,043 Sabines,43.583879,3.8601051,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK010,Comedie Baudin,060 Comedie Baudin,43.6085548,3.8811936,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK044,Providence - Ovalie,054 Providence - Ovalie,43.5882994,3.8534561,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK020,Garcia Lorca,033 Garcia Lorca,43.5877543,3.8871086,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK045,Prés d'Arènes,032 Prés d'Arènes,43.5936317,3.8877518,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK031,Marie Caizergues,042 Marie Caizergues,43.619655,3.8733067,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK013,Deux Ponts - Gare Saint-Roch,55-053 Deux Ponts - Gare Saint-Roch,43.60424,3.88339,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0
+BK038,Perols etang or,058 Perols etang or,43.5584733,3.9633257,OpenStreetMap_Geocoded,2025-12-16 10:11:13,1.0

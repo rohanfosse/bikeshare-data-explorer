@@ -1,0 +1,129 @@
+{
+  "last_updated": "2026-02-22T09:42:38.8913316+01:00",
+  "ttl": 300,
+  "version": "3.0",
+  "data": {
+    "stations": [
+      {
+        "station_id": "349",
+        "name": [
+          {
+            "text": "Gare de Bayonne // Baionako geltokia",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.495801,
+        "lon": -1.47237,
+        "address": "7 quai de Lesseps, 64100 Bayonne",
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "350",
+        "name": [
+          {
+            "text": "Mairie d'Anglet // Herriko etxea",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.48231887817383,
+        "lon": -1.515362024307251,
+        "address": "3 rue du 8 mai, 64600 Anglet",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "351",
+        "name": [
+          {
+            "text": "Jean Monnet",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.480504,
+        "lon": -1.516501,
+        "address": "Place Jean Monnet, avenue de Biarritz, 64600 Anglet",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "352",
+        "name": [
+          {
+            "text": "Mairie de Biarritz // Herriko etxea",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.48252868652344,
+        "lon": -1.5582480430603027,
+        "address": "5 avenue Louis Barthou 64200 Biarritz",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "354",
+        "name": [
+          {
+            "text": "Mairie de Bayonne // Herriko etxea",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.49391,
+        "lon": -1.476794,
+        "address": "1 Rue du 49ÈME Régiment d'Infanterie, 64100 Bayonne",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1108",
+        "name": [
+          {
+            "text": "Jardin public // Loretegi publikoa",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.480545,
+        "lon": -1.558926,
+        "address": "16 avenue Jaulerry 64200 Biarritz",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1248",
+        "name": [
+          {
+            "text": "Musées // Museoak",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.492544,
+        "lon": -1.472231,
+        "address": "2 rue Jacques Lafitte, 64100 Bayonne",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1675",
+        "name": [
+          {
+            "text": "Grandola",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.54279,
+        "lon": -1.46063,
+        "address": "12 boulevard Jacques Duclos, 40220 Tarnos",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      }
+    ]
+  }
+}

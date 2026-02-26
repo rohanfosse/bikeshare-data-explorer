@@ -1,0 +1,594 @@
+{
+  "last_updated": 1771749809,
+  "ttl": 60,
+  "data": {
+    "stations": [
+      {
+        "station_id": "245557155",
+        "name": "Bischheim Gare",
+        "short_name": "62000",
+        "lat": 48.611639,
+        "lon": 7.742056,
+        "region_id": "924",
+        "rental_uris": {
+          "android": "https://velhop.nextbike.app/station?id=245557155",
+          "ios": "https://velhop.nextbike.app/station?id=245557155",
+          "web": "https://nxtb.it/p/245557155"
+        },
+        "is_virtual_station": false,
+        "capacity": 5
+      },
+      {
+        "station_id": "245557947",
+        "name": "Bischheim Espace Européen",
+        "short_name": "62001",
+        "lat": 48.616361,
+        "lon": 7.720056,
+        "region_id": "924",
+        "rental_uris": {
+          "android": "https://velhop.nextbike.app/station?id=245557947",
+          "ios": "https://velhop.nextbike.app/station?id=245557947",
+          "web": "https://nxtb.it/p/245557947"
+        },
+        "is_virtual_station": false,
+        "capacity": 10
+      },
+      {
+        "station_id": "245559919",
+        "name": "Entzheim Gare",
+        "short_name": "62003",
+        "lat": 48.547222,
+        "lon": 7.628056,
+        "region_id": "925",
+        "rental_uris": {
+          "android": "https://velhop.nextbike.app/station?id=245559919",
+          "ios": "https://velhop.nextbike.app/station?id=245559919",
+          "web": "https://nxtb.it/p/245559919"
+        },
+        "is_virtual_station": false,
+        "capacity": 10
+      },
+      {
+        "station_id": "245564614",
+        "name": "Geispolsheim Gare",
+        "short_name": "62004",
+        "lat": 48.521222,
+        "lon": 7.684944,
+        "region_id": "926",
+        "rental_uris": {
+          "android": "https://velhop.nextbike.app/station?id=245564614",
+          "ios": "https://velhop.nextbike.app/station?id=245564614",
+          "web": "https://nxtb.it/p/245564614"
+        },
+        "is_virtual_station": false,
+        "capacity": 5
+      },
+      {
+        "station_id": "245566026",
+        "name": "Hoenheim Gare",
+        "short_name": "62005",
+        "lat": 48.628333,
+        "lon": 7.758833,
+        "region_id": "927",
+        "rental_uris": {
+          "android": "https://velhop.nextbike.app/station?id=245566026",
+          "ios": "https://velhop.nextbike.app/station?id=245566026",
+          "web": "https://nxtb.it/p/245566026"
+        },
+        "is_virtual_station": false,
+        "capacity": 10
+      },
+      {
+        "station_id": "245576518",
+        "name": "Campus d'Illkirch",
+        "short_name": "62007",
+        "lat": 48.528917,
+        "lon": 7.732778,
+        "region_id": "928",
+        "rental_uris": {
+          "android": "https://velhop.nextbike.app/station?id=245576518",
+          "ios": "https://velhop.nextbike.app/station?id=245576518",
+          "web": "https://nxtb.it/p/245576518"
+        },
+        "is_virtual_station": false,
+        "capacity": 10
+      },
+      {
+        "station_id": "500084605",
+        "name": "Salle des fêtes",
+        "short_name": "62006",
+        "lat": 48.524194,
+        "lon": 7.707583,
+        "region_id": "928",
+        "rental_uris": {
+          "android": "https://velhop.nextbike.app/station?id=500084605",
+          "ios": "https://velhop.nextbike.app/station?id=500084605",
+          "web": "https://nxtb.it/p/500084605"
+        },
+        "is_virtual_station": false,
+        "capacity": 10
+      },
+      {
+        "station_id": "245580402",
+        "name": "La Wantzenau Gare",
+        "short_name": "62008",
+        "lat": 48.664972,
+        "lon": 7.824972,
+        "region_id": "929",
+        "rental_uris": {
+          "android": "https://velhop.nextbike.app/station?id=245580402",
+          "ios": "https://velhop.nextbike.app/station?id=245580402",
+          "web": "https://nxtb.it/p/245580402"
+        },
+        "is_virtual_station": false,
+        "capacity": 8
+      },
+      {
+        "station_id": "245581065",
+        "name": "Lingolsheim Gare",
+        "short_name": "62009",
+        "lat": 48.559694,
+        "lon": 7.678194,
+        "region_id": "930",
+        "rental_uris": {
+          "android": "https://velhop.nextbike.app/station?id=245581065",
+          "ios": "https://velhop.nextbike.app/station?id=245581065",
+          "web": "https://nxtb.it/p/245581065"
+        },
+        "is_virtual_station": false,
+        "capacity": 6
+      },
+      {
+        "station_id": "245581709",
+        "name": "Mundolsheim Gare",
+        "short_name": "62010",
+        "lat": 48.645404,
+        "lon": 7.721483,
+        "region_id": "931",
+        "rental_uris": {
+          "android": "https://velhop.nextbike.app/station?id=245581709",
+          "ios": "https://velhop.nextbike.app/station?id=245581709",
+          "web": "https://nxtb.it/p/245581709"
+        },
+        "is_virtual_station": false,
+        "capacity": 9
+      },
+      {
+        "station_id": "245582029",
+        "name": "Oberhausbergen Mairie",
+        "short_name": "62011",
+        "lat": 48.605593,
+        "lon": 7.685699,
+        "region_id": "932",
+        "rental_uris": {
+          "android": "https://velhop.nextbike.app/station?id=245582029",
+          "ios": "https://velhop.nextbike.app/station?id=245582029",
+          "web": "https://nxtb.it/p/245582029"
+        },
+        "is_virtual_station": false,
+        "capacity": 6
+      },
+      {
+        "station_id": "245582844",
+        "name": "Schiltigheim Mairie",
+        "short_name": "62012",
+        "lat": 48.606417,
+        "lon": 7.749778,
+        "region_id": "933",
+        "rental_uris": {
+          "android": "https://velhop.nextbike.app/station?id=245582844",
+          "ios": "https://velhop.nextbike.app/station?id=245582844",
+          "web": "https://nxtb.it/p/245582844"
+        },
+        "is_virtual_station": false,
+        "capacity": 20
+      },
+      {
+        "station_id": "245584292",
+        "name": "Strasbourg Gare Centrale",
+        "short_name": "62013",
+        "lat": 48.584306,
+        "lon": 7.73475,
+        "region_id": "934",
+        "rental_uris": {
+          "android": "https://velhop.nextbike.app/station?id=245584292",
+          "ios": "https://velhop.nextbike.app/station?id=245584292",
+          "web": "https://nxtb.it/p/245584292"
+        },
+        "is_virtual_station": false,
+        "capacity": 50
+      },
+      {
+        "station_id": "245585106",
+        "name": "Roethig Gare",
+        "short_name": "62014",
+        "lat": 48.563583,
+        "lon": 7.694944,
+        "region_id": "934",
+        "rental_uris": {
+          "android": "https://velhop.nextbike.app/station?id=245585106",
+          "ios": "https://velhop.nextbike.app/station?id=245585106",
+          "web": "https://nxtb.it/p/245585106"
+        },
+        "is_virtual_station": false,
+        "capacity": 10
+      },
+      {
+        "station_id": "245585847",
+        "name": "Elsau",
+        "short_name": "62015",
+        "lat": 48.56775,
+        "lon": 7.726917,
+        "region_id": "934",
+        "rental_uris": {
+          "android": "https://velhop.nextbike.app/station?id=245585847",
+          "ios": "https://velhop.nextbike.app/station?id=245585847",
+          "web": "https://nxtb.it/p/245585847"
+        },
+        "is_virtual_station": false,
+        "capacity": 10
+      },
+      {
+        "station_id": "245586606",
+        "name": "Rotonde",
+        "short_name": "62016",
+        "lat": 48.591806,
+        "lon": 7.725278,
+        "region_id": "934",
+        "rental_uris": {
+          "android": "https://velhop.nextbike.app/station?id=245586606",
+          "ios": "https://velhop.nextbike.app/station?id=245586606",
+          "web": "https://nxtb.it/p/245586606"
+        },
+        "is_virtual_station": false,
+        "capacity": 15
+      },
+      {
+        "station_id": "245587953",
+        "name": "Rives de l Aar",
+        "short_name": "62017",
+        "lat": 48.599972,
+        "lon": 7.754306,
+        "region_id": "934",
+        "rental_uris": {
+          "android": "https://velhop.nextbike.app/station?id=245587953",
+          "ios": "https://velhop.nextbike.app/station?id=245587953",
+          "web": "https://nxtb.it/p/245587953"
+        },
+        "is_virtual_station": false,
+        "capacity": 10
+      },
+      {
+        "station_id": "245588745",
+        "name": "Robertsau Boecklin",
+        "short_name": "62018",
+        "lat": 48.598108,
+        "lon": 7.778822,
+        "region_id": "934",
+        "rental_uris": {
+          "android": "https://velhop.nextbike.app/station?id=245588745",
+          "ios": "https://velhop.nextbike.app/station?id=245588745",
+          "web": "https://nxtb.it/p/245588745"
+        },
+        "is_virtual_station": false,
+        "capacity": 16
+      },
+      {
+        "station_id": "245589413",
+        "name": "Poteries",
+        "short_name": "62019",
+        "lat": 48.583333,
+        "lon": 7.691639,
+        "region_id": "934",
+        "rental_uris": {
+          "android": "https://velhop.nextbike.app/station?id=245589413",
+          "ios": "https://velhop.nextbike.app/station?id=245589413",
+          "web": "https://nxtb.it/p/245589413"
+        },
+        "is_virtual_station": false,
+        "capacity": 10
+      },
+      {
+        "station_id": "245590268",
+        "name": "Citadelle",
+        "short_name": "62037",
+        "lat": 48.570209,
+        "lon": 7.779269,
+        "region_id": "934",
+        "rental_uris": {
+          "android": "https://velhop.nextbike.app/station?id=245590268",
+          "ios": "https://velhop.nextbike.app/station?id=245590268",
+          "web": "https://nxtb.it/p/245590268"
+        },
+        "is_virtual_station": false,
+        "capacity": 10
+      },
+      {
+        "station_id": "245591123",
+        "name": "Halles",
+        "short_name": "62021",
+        "lat": 48.588024,
+        "lon": 7.740345,
+        "region_id": "934",
+        "rental_uris": {
+          "android": "https://velhop.nextbike.app/station?id=245591123",
+          "ios": "https://velhop.nextbike.app/station?id=245591123",
+          "web": "https://nxtb.it/p/245591123"
+        },
+        "is_virtual_station": false,
+        "capacity": 15
+      },
+      {
+        "station_id": "245591375",
+        "name": "République",
+        "short_name": "62022",
+        "lat": 48.587757,
+        "lon": 7.755487,
+        "region_id": "934",
+        "rental_uris": {
+          "android": "https://velhop.nextbike.app/station?id=245591375",
+          "ios": "https://velhop.nextbike.app/station?id=245591375",
+          "web": "https://nxtb.it/p/245591375"
+        },
+        "is_virtual_station": false,
+        "capacity": 10
+      },
+      {
+        "station_id": "245591893",
+        "name": "Austerlitz",
+        "short_name": "62023",
+        "lat": 48.578111,
+        "lon": 7.751944,
+        "region_id": "934",
+        "rental_uris": {
+          "android": "https://velhop.nextbike.app/station?id=245591893",
+          "ios": "https://velhop.nextbike.app/station?id=245591893",
+          "web": "https://nxtb.it/p/245591893"
+        },
+        "is_virtual_station": false,
+        "capacity": 32
+      },
+      {
+        "station_id": "245592472",
+        "name": "Parc des Romains",
+        "short_name": "62024",
+        "lat": 48.581129,
+        "lon": 7.723453,
+        "region_id": "934",
+        "rental_uris": {
+          "android": "https://velhop.nextbike.app/station?id=245592472",
+          "ios": "https://velhop.nextbike.app/station?id=245592472",
+          "web": "https://nxtb.it/p/245592472"
+        },
+        "is_virtual_station": false,
+        "capacity": 12
+      },
+      {
+        "station_id": "245593080",
+        "name": "Broglie",
+        "short_name": "62025",
+        "lat": 48.585333,
+        "lon": 7.749722,
+        "region_id": "934",
+        "rental_uris": {
+          "android": "https://velhop.nextbike.app/station?id=245593080",
+          "ios": "https://velhop.nextbike.app/station?id=245593080",
+          "web": "https://nxtb.it/p/245593080"
+        },
+        "is_virtual_station": false,
+        "capacity": 28
+      },
+      {
+        "station_id": "245594460",
+        "name": "Université",
+        "short_name": "62026",
+        "lat": 48.582028,
+        "lon": 7.766611,
+        "region_id": "934",
+        "rental_uris": {
+          "android": "https://velhop.nextbike.app/station?id=245594460",
+          "ios": "https://velhop.nextbike.app/station?id=245594460",
+          "web": "https://nxtb.it/p/245594460"
+        },
+        "is_virtual_station": false,
+        "capacity": 20
+      },
+      {
+        "station_id": "245595123",
+        "name": "Place Arnold",
+        "short_name": "62027",
+        "lat": 48.584528,
+        "lon": 7.768694,
+        "region_id": "934",
+        "rental_uris": {
+          "android": "https://velhop.nextbike.app/station?id=245595123",
+          "ios": "https://velhop.nextbike.app/station?id=245595123",
+          "web": "https://nxtb.it/p/245595123"
+        },
+        "is_virtual_station": false,
+        "capacity": 15
+      },
+      {
+        "station_id": "245595689",
+        "name": "Place du Marché",
+        "short_name": "62028",
+        "lat": 48.566222,
+        "lon": 7.759222,
+        "region_id": "934",
+        "rental_uris": {
+          "android": "https://velhop.nextbike.app/station?id=245595689",
+          "ios": "https://velhop.nextbike.app/station?id=245595689",
+          "web": "https://nxtb.it/p/245595689"
+        },
+        "is_virtual_station": false,
+        "capacity": 15
+      },
+      {
+        "station_id": "245596275",
+        "name": "Place d'Islande",
+        "short_name": "62029",
+        "lat": 48.580417,
+        "lon": 7.776972,
+        "region_id": "934",
+        "rental_uris": {
+          "android": "https://velhop.nextbike.app/station?id=245596275",
+          "ios": "https://velhop.nextbike.app/station?id=245596275",
+          "web": "https://nxtb.it/p/245596275"
+        },
+        "is_virtual_station": false,
+        "capacity": 12
+      },
+      {
+        "station_id": "245597085",
+        "name": "Etoile Bourse",
+        "short_name": "62030",
+        "lat": 48.574417,
+        "lon": 7.753833,
+        "region_id": "934",
+        "rental_uris": {
+          "android": "https://velhop.nextbike.app/station?id=245597085",
+          "ios": "https://velhop.nextbike.app/station?id=245597085",
+          "web": "https://nxtb.it/p/245597085"
+        },
+        "is_virtual_station": false,
+        "capacity": 20
+      },
+      {
+        "station_id": "245597920",
+        "name": "Etoile Cinéma",
+        "short_name": "62031",
+        "lat": 48.5735,
+        "lon": 7.762444,
+        "region_id": "934",
+        "rental_uris": {
+          "android": "https://velhop.nextbike.app/station?id=245597920",
+          "ios": "https://velhop.nextbike.app/station?id=245597920",
+          "web": "https://nxtb.it/p/245597920"
+        },
+        "is_virtual_station": false,
+        "capacity": 16
+      },
+      {
+        "station_id": "245598687",
+        "name": "Krimmeri Gare",
+        "short_name": "62032",
+        "lat": 48.561806,
+        "lon": 7.751889,
+        "region_id": "934",
+        "rental_uris": {
+          "android": "https://velhop.nextbike.app/station?id=245598687",
+          "ios": "https://velhop.nextbike.app/station?id=245598687",
+          "web": "https://nxtb.it/p/245598687"
+        },
+        "is_virtual_station": false,
+        "capacity": 10
+      },
+      {
+        "station_id": "245599491",
+        "name": "Parlement",
+        "short_name": "62033",
+        "lat": 48.5995,
+        "lon": 7.766917,
+        "region_id": "934",
+        "rental_uris": {
+          "android": "https://velhop.nextbike.app/station?id=245599491",
+          "ios": "https://velhop.nextbike.app/station?id=245599491",
+          "web": "https://nxtb.it/p/245599491"
+        },
+        "is_virtual_station": false,
+        "capacity": 10
+      },
+      {
+        "station_id": "245602743",
+        "name": "Musée d'Art Moderne",
+        "short_name": "62034",
+        "lat": 48.580306,
+        "lon": 7.736,
+        "region_id": "934",
+        "rental_uris": {
+          "android": "https://velhop.nextbike.app/station?id=245602743",
+          "ios": "https://velhop.nextbike.app/station?id=245602743",
+          "web": "https://nxtb.it/p/245602743"
+        },
+        "is_virtual_station": false,
+        "capacity": 16
+      },
+      {
+        "station_id": "245603512",
+        "name": "Place de Bordeaux",
+        "short_name": "62035",
+        "lat": 48.593778,
+        "lon": 7.757361,
+        "region_id": "934",
+        "rental_uris": {
+          "android": "https://velhop.nextbike.app/station?id=245603512",
+          "ios": "https://velhop.nextbike.app/station?id=245603512",
+          "web": "https://nxtb.it/p/245603512"
+        },
+        "is_virtual_station": false,
+        "capacity": 8
+      },
+      {
+        "station_id": "499948064",
+        "name": "Rotterdam",
+        "short_name": "62020",
+        "lat": 48.581564,
+        "lon": 7.782014,
+        "region_id": "934",
+        "rental_uris": {
+          "android": "https://velhop.nextbike.app/station?id=499948064",
+          "ios": "https://velhop.nextbike.app/station?id=499948064",
+          "web": "https://nxtb.it/p/499948064"
+        },
+        "is_virtual_station": false,
+        "capacity": 10
+      },
+      {
+        "station_id": "499949546",
+        "name": "Jean Jaurès",
+        "short_name": "62002",
+        "lat": 48.567206,
+        "lon": 7.772907,
+        "region_id": "934",
+        "rental_uris": {
+          "android": "https://velhop.nextbike.app/station?id=499949546",
+          "ios": "https://velhop.nextbike.app/station?id=499949546",
+          "web": "https://nxtb.it/p/499949546"
+        },
+        "is_virtual_station": false,
+        "capacity": 7
+      },
+      {
+        "station_id": "245604683",
+        "name": "Vendenheim Gare",
+        "short_name": "62036",
+        "lat": 48.665556,
+        "lon": 7.718611,
+        "region_id": "935",
+        "rental_uris": {
+          "android": "https://velhop.nextbike.app/station?id=245604683",
+          "ios": "https://velhop.nextbike.app/station?id=245604683",
+          "web": "https://nxtb.it/p/245604683"
+        },
+        "is_virtual_station": false,
+        "capacity": 10
+      },
+      {
+        "station_id": "586719545",
+        "name": "Wolfisheim",
+        "short_name": "62039",
+        "lat": 48.591485,
+        "lon": 7.672662,
+        "region_id": "936",
+        "rental_uris": {
+          "android": "https://velhop.nextbike.app/station?id=586719545",
+          "ios": "https://velhop.nextbike.app/station?id=586719545",
+          "web": "https://nxtb.it/p/586719545"
+        },
+        "is_virtual_station": false,
+        "capacity": 10
+      }
+    ]
+  },
+  "version": "2.3"
+}

@@ -1,0 +1,309 @@
+{
+  "last_updated": 1771749829,
+  "ttl": 60,
+  "version": "2.2",
+  "data": {
+    "stations": [
+      {
+        "station_id": "c89rum7ui9nq2a60ua80",
+        "name": "Place Duguesclin",
+        "lat": 48.511264,
+        "lon": -2.758775,
+        "is_virtual_station": false,
+        "capacity": 15,
+        "vehicle_type_capacity": {
+          "1": 7,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 7,
+          "4": 7,
+          "5": 0,
+          "6": 0,
+          "7": 7
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "velobaie://app?sid=c89rum7ui9nq2a60ua80",
+          "ios": "velobaie://app?sid=c89rum7ui9nq2a60ua80"
+        }
+      },
+      {
+        "station_id": "c89sj4fui9nq2a60v110",
+        "name": "Port du Légué",
+        "lat": 48.523102,
+        "lon": -2.750325,
+        "is_virtual_station": false,
+        "capacity": 15,
+        "vehicle_type_capacity": {
+          "1": 4,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 4,
+          "4": 4,
+          "5": 0,
+          "6": 0,
+          "7": 4
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "velobaie://app?sid=c89sj4fui9nq2a60v110",
+          "ios": "velobaie://app?sid=c89sj4fui9nq2a60v110"
+        }
+      },
+      {
+        "station_id": "c89sm4nui9nq2a60v5tg",
+        "name": "Gare",
+        "lat": 48.50781,
+        "lon": -2.76577,
+        "is_virtual_station": false,
+        "capacity": 15,
+        "vehicle_type_capacity": {
+          "1": 6,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 6,
+          "4": 6,
+          "5": 0,
+          "6": 0,
+          "7": 6
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "velobaie://app?sid=c89sm4nui9nq2a60v5tg",
+          "ios": "velobaie://app?sid=c89sm4nui9nq2a60v5tg"
+        }
+      },
+      {
+        "station_id": "c89smk7ui9nq2a60v6c0",
+        "name": "Campus Universitaire",
+        "lat": 48.5121,
+        "lon": -2.7405,
+        "is_virtual_station": false,
+        "capacity": 15,
+        "vehicle_type_capacity": {
+          "1": 11,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 11,
+          "4": 11,
+          "5": 0,
+          "6": 0,
+          "7": 11
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "velobaie://app?sid=c89smk7ui9nq2a60v6c0",
+          "ios": "velobaie://app?sid=c89smk7ui9nq2a60v6c0"
+        }
+      },
+      {
+        "station_id": "st_d40t5vn2bg4c73fuh15g",
+        "name": "La Grille",
+        "lat": 48.514935,
+        "lon": -2.76305,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 4,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 4,
+          "4": 4,
+          "5": 0,
+          "6": 0,
+          "7": 4
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "velobaie://app?sid=st_d40t5vn2bg4c73fuh15g",
+          "ios": "velobaie://app?sid=st_d40t5vn2bg4c73fuh15g"
+        }
+      },
+      {
+        "station_id": "st_d40t7niq22rs738m3su0",
+        "name": "Gare Routière Robien",
+        "lat": 48.506739,
+        "lon": -2.766023,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 6,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 6,
+          "4": 6,
+          "5": 0,
+          "6": 0,
+          "7": 6
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "velobaie://app?sid=st_d40t7niq22rs738m3su0",
+          "ios": "velobaie://app?sid=st_d40t7niq22rs738m3su0"
+        }
+      },
+      {
+        "station_id": "st_d40ta4qq22rs73f14u3g",
+        "name": "Hôpital Yves Le Foll",
+        "lat": 48.49255,
+        "lon": -2.74921,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 6,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 6,
+          "4": 6,
+          "5": 0,
+          "6": 0,
+          "7": 6
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "velobaie://app?sid=st_d40ta4qq22rs73f14u3g",
+          "ios": "velobaie://app?sid=st_d40ta4qq22rs73f14u3g"
+        }
+      },
+      {
+        "station_id": "st_d40taof2bg4c73fuh51g",
+        "name": "Palais des Congrès",
+        "lat": 48.49919,
+        "lon": -2.76436,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 5,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 5,
+          "4": 5,
+          "5": 0,
+          "6": 0,
+          "7": 5
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "velobaie://app?sid=st_d40taof2bg4c73fuh51g",
+          "ios": "velobaie://app?sid=st_d40taof2bg4c73fuh51g"
+        }
+      },
+      {
+        "station_id": "st_d40tbeiq22rs73f14uu0",
+        "name": "Les Villages",
+        "lat": 48.51962,
+        "lon": -2.7903,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 4,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 4,
+          "4": 4,
+          "5": 0,
+          "6": 0,
+          "7": 4
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "velobaie://app?sid=st_d40tbeiq22rs73f14uu0",
+          "ios": "velobaie://app?sid=st_d40tbeiq22rs73f14uu0"
+        }
+      },
+      {
+        "station_id": "st_d40tca1ju2ac73ej8450",
+        "name": "Rabelais",
+        "lat": 48.50508,
+        "lon": -2.74319,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 5,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 5,
+          "4": 5,
+          "5": 0,
+          "6": 0,
+          "7": 5
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "velobaie://app?sid=st_d40tca1ju2ac73ej8450",
+          "ios": "velobaie://app?sid=st_d40tca1ju2ac73ej8450"
+        }
+      },
+      {
+        "station_id": "st_d4imjn64mi3s73dbh740",
+        "name": "Trégueux Centre",
+        "lat": 48.49007,
+        "lon": -2.73739,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 6,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 6,
+          "4": 6,
+          "5": 0,
+          "6": 0,
+          "7": 6
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "velobaie://app?sid=st_d4imjn64mi3s73dbh740",
+          "ios": "velobaie://app?sid=st_d4imjn64mi3s73dbh740"
+        }
+      },
+      {
+        "station_id": "st_d4inobe4mi3s73dbi270",
+        "name": "Langueux Espace Commercial",
+        "lat": 48.49773,
+        "lon": -2.731588,
+        "is_virtual_station": true,
+        "capacity": 0,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "velobaie://app?sid=st_d4inobe4mi3s73dbi270",
+          "ios": "velobaie://app?sid=st_d4inobe4mi3s73dbi270"
+        }
+      }
+    ]
+  }
+}

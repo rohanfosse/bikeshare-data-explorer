@@ -1,0 +1,485 @@
+{
+  "data": {
+    "stations": [
+      {
+        "capacity": 6,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.390868,
+        "lon": 3.275217,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Base Nautique - Pommiers"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclovis.ecovelo.mobi/#/station/stn_Hh8FncreXTLUjQV87B82Ny"
+        },
+        "station_id": "stn_Hh8FncreXTLUjQV87B82Ny"
+      },
+      {
+        "capacity": 20,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.377402,
+        "lon": 3.328096,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Square Saint Martin"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclovis.ecovelo.mobi/#/station/stn_BY9nimxDsAh9efGNk2MQbF"
+        },
+        "station_id": "stn_BY9nimxDsAh9efGNk2MQbF"
+      },
+      {
+        "capacity": 20,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.38083,
+        "lon": 3.327809,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Place Fernand Marquigny"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclovis.ecovelo.mobi/#/station/stn_fGXspgD7bkuHtGsVH6FQ6x"
+        },
+        "station_id": "stn_fGXspgD7bkuHtGsVH6FQ6x"
+      },
+      {
+        "capacity": 3,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.356849,
+        "lon": 3.385101,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Billy sur Aisne - Place de la Mairie"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclovis.ecovelo.mobi/#/station/stn_BGqwm3AhiEeWEFTLw9XjAY"
+        },
+        "station_id": "stn_BGqwm3AhiEeWEFTLw9XjAY"
+      },
+      {
+        "capacity": 7,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.359502,
+        "lon": 3.339947,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Les deux Lions - Belleu"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclovis.ecovelo.mobi/#/station/stn_4QiSUtdwHXxgwTn7krNbJT"
+        },
+        "station_id": "stn_4QiSUtdwHXxgwTn7krNbJT"
+      },
+      {
+        "capacity": 20,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.370814,
+        "lon": 3.335785,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Hôpital"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclovis.ecovelo.mobi/#/station/stn_8cMS9tPDCCMcZh7jRqgJFp"
+        },
+        "station_id": "stn_8cMS9tPDCCMcZh7jRqgJFp"
+      },
+      {
+        "capacity": 14,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.392854,
+        "lon": 3.338125,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Pôle Emploi - Zone des Entrepôts"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclovis.ecovelo.mobi/#/station/stn_M2DMt6Q5KxuVpwufAhTQJq"
+        },
+        "station_id": "stn_M2DMt6Q5KxuVpwufAhTQJq"
+      },
+      {
+        "capacity": 20,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.362899,
+        "lon": 3.337194,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Collège Jean Mermoz - Belleu"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclovis.ecovelo.mobi/#/station/stn_Hhkgj4tuccUUeiJ5FmckTX"
+        },
+        "station_id": "stn_Hhkgj4tuccUUeiJ5FmckTX"
+      },
+      {
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.375614,
+        "lon": 3.334592,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Lycée Saint Vincent de Paul"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclovis.ecovelo.mobi/#/station/stn_WxVmgPeF6vWGSTcGwgSWeg"
+        },
+        "station_id": "stn_WxVmgPeF6vWGSTcGwgSWeg"
+      },
+      {
+        "capacity": 14,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.38263,
+        "lon": 3.33557,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Place Alsace Lorraine"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclovis.ecovelo.mobi/#/station/stn_Xgsg9UUANCrZJikMo4P2KB"
+        },
+        "station_id": "stn_Xgsg9UUANCrZJikMo4P2KB"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.385722,
+        "lon": 3.322512,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Lycée Gérard de Nerval"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclovis.ecovelo.mobi/#/station/stn_g8CxLhTQxdxMqbKtwEPk4P"
+        },
+        "station_id": "stn_g8CxLhTQxdxMqbKtwEPk4P"
+      },
+      {
+        "capacity": 3,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.369283,
+        "lon": 3.337696,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Gare SNCF 2"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclovis.ecovelo.mobi/#/station/stn_6ZsgFyFnYv8jGhuG8SJBSQ"
+        },
+        "station_id": "stn_6ZsgFyFnYv8jGhuG8SJBSQ"
+      },
+      {
+        "capacity": 20,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.384289,
+        "lon": 3.328258,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Bibliothèque - Hôtel de ville"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclovis.ecovelo.mobi/#/station/stn_6xNe4tF7fnitnbri4iDGQH"
+        },
+        "station_id": "stn_6xNe4tF7fnitnbri4iDGQH"
+      },
+      {
+        "capacity": 30,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.400758,
+        "lon": 3.32927,
+        "name": [
+          {
+            "language": "fr",
+            "text": "IUT - CUFFIES"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclovis.ecovelo.mobi/#/station/stn_HBZyRD6HKFTNdddaXgtuji"
+        },
+        "station_id": "stn_HBZyRD6HKFTNdddaXgtuji"
+      },
+      {
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.380057,
+        "lon": 3.358029,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Villeneuve - Mairie"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclovis.ecovelo.mobi/#/station/stn_ZuPVdXsVCnji6SGZ94WUiA"
+        },
+        "station_id": "stn_ZuPVdXsVCnji6SGZ94WUiA"
+      },
+      {
+        "capacity": 14,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.367328,
+        "lon": 3.324306,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Place des Maraîchers - Chevreux"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclovis.ecovelo.mobi/#/station/stn_C9ZPBAPTshaqQk5AsENbVT"
+        },
+        "station_id": "stn_C9ZPBAPTshaqQk5AsENbVT"
+      },
+      {
+        "capacity": 6,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.37618,
+        "lon": 3.343205,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Villeneuve - Jean Zay"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclovis.ecovelo.mobi/#/station/stn_RoBGT5kDTRQ2pEJMqxnRcM"
+        },
+        "station_id": "stn_RoBGT5kDTRQ2pEJMqxnRcM"
+      },
+      {
+        "capacity": 14,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.39035,
+        "lon": 3.327699,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Parc Saint Crépin"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclovis.ecovelo.mobi/#/station/stn_2jMbSN7c92GdqNDfRA2ssZ"
+        },
+        "station_id": "stn_2jMbSN7c92GdqNDfRA2ssZ"
+      },
+      {
+        "capacity": 20,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.373422,
+        "lon": 3.308698,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Centre Social de Presles"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclovis.ecovelo.mobi/#/station/stn_oCiUJkTdD2a2FQXQgf66Ad"
+        },
+        "station_id": "stn_oCiUJkTdD2a2FQXQgf66Ad"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.333219,
+        "lon": 3.3282,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Les 3 Clochers - Bernoy le Château"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclovis.ecovelo.mobi/#/station/stn_aMAspKvo5tbQoYPYYrB83M"
+        },
+        "station_id": "stn_aMAspKvo5tbQoYPYYrB83M"
+      },
+      {
+        "capacity": 20,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.380498,
+        "lon": 3.29965,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Les Bains du Lac"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclovis.ecovelo.mobi/#/station/stn_2gTJzqjCYBjQZJo6BnvEYp"
+        },
+        "station_id": "stn_2gTJzqjCYBjQZJo6BnvEYp"
+      },
+      {
+        "capacity": 5,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.369448,
+        "lon": 3.33799,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Gare SNCF 1"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclovis.ecovelo.mobi/#/station/stn_mGESvqcgngvtgGEvB9hTCb"
+        },
+        "station_id": "stn_mGESvqcgngvtgGEvB9hTCb"
+      },
+      {
+        "capacity": 5,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.401162,
+        "lon": 3.355964,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Crouy - Place Tivoli"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclovis.ecovelo.mobi/#/station/stn_3SqAZe2okhiHqNM8znBSJW"
+        },
+        "station_id": "stn_3SqAZe2okhiHqNM8znBSJW"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.391473,
+        "lon": 3.319923,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Jeu d'Arc"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclovis.ecovelo.mobi/#/station/stn_bucgDv3xWRGQEV7n3yk7Qh"
+        },
+        "station_id": "stn_bucgDv3xWRGQEV7n3yk7Qh"
+      },
+      {
+        "capacity": 6,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.364431,
+        "lon": 3.315618,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Lycée Le Corbusier"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclovis.ecovelo.mobi/#/station/stn_BHjtDQBmKCAsDKKYiCXmhF"
+        },
+        "station_id": "stn_BHjtDQBmKCAsDKKYiCXmhF"
+      },
+      {
+        "capacity": 14,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.386677,
+        "lon": 3.316549,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Place Lamartine"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclovis.ecovelo.mobi/#/station/stn_QEQQqsPqR3uF2tFqLXPtuX"
+        },
+        "station_id": "stn_QEQQqsPqR3uF2tFqLXPtuX"
+      },
+      {
+        "capacity": 20,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.375741,
+        "lon": 3.321787,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Saint Jean des Vignes - Gouraud"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclovis.ecovelo.mobi/#/station/stn_RxTFyqtztvSBmKPmKUcMNS"
+        },
+        "station_id": "stn_RxTFyqtztvSBmKPmKUcMNS"
+      },
+      {
+        "capacity": 4,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.381901,
+        "lon": 3.320717,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Place Saint Christophe"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclovis.ecovelo.mobi/#/station/stn_eLMGHviMf4JiaATztbszzc"
+        },
+        "station_id": "stn_eLMGHviMf4JiaATztbszzc"
+      }
+    ]
+  },
+  "last_updated": "2026-02-22T09:41:40+01:00",
+  "ttl": 0,
+  "version": "3.0"
+}

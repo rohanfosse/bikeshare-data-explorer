@@ -1,0 +1,339 @@
+{
+  "last_updated": "2026-02-22T09:39:52.4938428+01:00",
+  "ttl": 300,
+  "version": "3.0",
+  "data": {
+    "stations": [
+      {
+        "station_id": "547",
+        "name": [
+          {
+            "text": " BUXEROLLES MAIRIE",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.598487854003906,
+        "lon": 0.35229700803756714,
+        "address": "10 rue Maurice Ravel 86180 BUXEROLLES",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "548",
+        "name": [
+          {
+            "text": "GARE TOUMAÏ",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.58420944213867,
+        "lon": 0.33599498867988586,
+        "address": "Boulevard du Grand cerf 86000 POITIERS",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "549",
+        "name": [
+          {
+            "text": "TECHNOPOLE DU FUTUROSCOPE",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.66313171386719,
+        "lon": 0.35889899730682373,
+        "address": "18  Boulevard des Frères Lumières 86360 CHASSENEUIL DU POITOU",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "550",
+        "name": [
+          {
+            "text": "MARBOURG",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.58864974975586,
+        "lon": 0.36120399832725525,
+        "address": "10rue Marcel Paul 86000 POITIERS",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "551",
+        "name": [
+          {
+            "text": "PONT-NEUF",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.5726432800293,
+        "lon": 0.3592570126056671,
+        "address": "172 rue du faubourg du pont neuf",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "552",
+        "name": [
+          {
+            "text": "MONTMIDI",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.57841491699219,
+        "lon": 0.3205670118331909,
+        "address": "148 rue Georges guynemer 86000 POITIERS",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "553",
+        "name": [
+          {
+            "text": "DESCARTES (campus universitaire)",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.56735610961914,
+        "lon": 0.38768601417541504,
+        "address": "rue Marcel Doré 86000 POITIERS",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1483",
+        "name": [
+          {
+            "text": "EUROPE",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.59140892962806,
+        "lon": 0.352244801328796,
+        "address": "51 avenue de l’Europe 86000 POITIERS",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1484",
+        "name": [
+          {
+            "text": "AUGOUARD",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.583757,
+        "lon": 0.345772,
+        "address": "35 rue Monseigneur Augouard 86000 POITIERS",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1485",
+        "name": [
+          {
+            "text": "MAGENTA",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.578792,
+        "lon": 0.339976,
+        "address": "17 rue magenta 86000 POITIERS",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1486",
+        "name": [
+          {
+            "text": "GASTON HULIN",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.5831461,
+        "lon": 0.3411186,
+        "address": "6 rue Gaston Hulin 86000 POITIERS",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1487",
+        "name": [
+          {
+            "text": "MADELEINE",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.5739714,
+        "lon": 0.3290087,
+        "address": "4 rue des Douves 86000 POITIERS",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1488",
+        "name": [
+          {
+            "text": "GIBAUDERIE",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.559541,
+        "lon": 0.37517,
+        "address": "59 rue Victor Schoelcher 86000 POITIERS",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1489",
+        "name": [
+          {
+            "text": "MAILLOCHON",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.5835817,
+        "lon": 0.3321877,
+        "address": "2 rue Maillochon 86000 POITIERS",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1490",
+        "name": [
+          {
+            "text": "CONDORCET",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.5889996,
+        "lon": 0.3301599,
+        "address": "96 rue Condorcet 86000 POITIERS",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1491",
+        "name": [
+          {
+            "text": "PASTEUR",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.576033,
+        "lon": 0.353497,
+        "address": "36 Faubourg du Pont Neuf 86000 POITIERS",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1492",
+        "name": [
+          {
+            "text": "CLAIN SAINTE-RADEGONDE",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.58000142738736,
+        "lon": 0.35283432124799674,
+        "address": "27 boulevard du Pont Joubert 86000 POITIERS",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1493",
+        "name": [
+          {
+            "text": "TROIS QUARTIERS",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.58942,
+        "lon": 0.342216,
+        "address": "2 rue Grignion de Montfort 86000 POITIERS",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1494",
+        "name": [
+          {
+            "text": "BAPTISTERE SAINT-JEAN",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.57953,
+        "lon": 0.3495705,
+        "address": "13 rue Sainte Croix 86000 POITIERS",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1495",
+        "name": [
+          {
+            "text": "SABLETTE",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.568076,
+        "lon": 0.344022,
+        "address": "115 Rue du Faubourg Saint-Cyprien 86000 POITIERS",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1782",
+        "name": [
+          {
+            "text": "CHAUVIGNY",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.568190989349,
+        "lon": 0.644840011673,
+        "address": "17 rue de Banfora 86300  Chauvigny",
+        "parking_type": "parking_lot",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1811",
+        "name": [
+          {
+            "text": "PARC EXPO",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.580802,
+        "lon": 0.37611,
+        "address": "24 rue Salvador Allende 86000 POITIERS",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      }
+    ]
+  }
+}

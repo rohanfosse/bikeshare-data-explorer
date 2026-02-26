@@ -1,0 +1,5534 @@
+{
+  "last_updated": 1771749769,
+  "ttl": 60,
+  "version": "2.2",
+  "data": {
+    "stations": [
+      {
+        "station_id": "ce4bgg92rcd13ifvqb30",
+        "name": "National - Guibal",
+        "lat": 43.305364,
+        "lon": 5.384119,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 19,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 19,
+          "4": 19,
+          "5": 0,
+          "6": 0,
+          "7": 19
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bgg92rcd13ifvqb30",
+          "ios": "levelo://app?sid=ce4bgg92rcd13ifvqb30"
+        }
+      },
+      {
+        "station_id": "ce4bgh92rcd13ifvqb40",
+        "name": "Place aux huiles",
+        "lat": 43.29307,
+        "lon": 5.3718,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 17,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 17,
+          "4": 17,
+          "5": 0,
+          "6": 0,
+          "7": 17
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bgh92rcd13ifvqb40",
+          "ios": "levelo://app?sid=ce4bgh92rcd13ifvqb40"
+        }
+      },
+      {
+        "station_id": "ce4bgh92rcd13ifvqb50",
+        "name": "Canebiere Reine Elisabeth",
+        "lat": 43.295748,
+        "lon": 5.37522,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 17,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 17,
+          "4": 17,
+          "5": 0,
+          "6": 0,
+          "7": 17
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bgh92rcd13ifvqb50",
+          "ios": "levelo://app?sid=ce4bgh92rcd13ifvqb50"
+        }
+      },
+      {
+        "station_id": "ce4bghh2rcd13ifvqb60",
+        "name": "National - Longchamp",
+        "lat": 43.301396,
+        "lon": 5.387812,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 20,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 20,
+          "4": 20,
+          "5": 0,
+          "6": 0,
+          "7": 20
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bghh2rcd13ifvqb60",
+          "ios": "levelo://app?sid=ce4bghh2rcd13ifvqb60"
+        }
+      },
+      {
+        "station_id": "ce4bgi12rcd13ifvqb70",
+        "name": "Cours Jean Ballard",
+        "lat": 43.293009,
+        "lon": 5.374584,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 19,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 19,
+          "4": 19,
+          "5": 0,
+          "6": 0,
+          "7": 19
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bgi12rcd13ifvqb70",
+          "ios": "levelo://app?sid=ce4bgi12rcd13ifvqb70"
+        }
+      },
+      {
+        "station_id": "ce4bgi12rcd13ifvqb80",
+        "name": "Sainte - Lulli",
+        "lat": 43.292666,
+        "lon": 5.376394,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 20,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 20,
+          "4": 20,
+          "5": 0,
+          "6": 0,
+          "7": 20
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bgi12rcd13ifvqb80",
+          "ios": "levelo://app?sid=ce4bgi12rcd13ifvqb80"
+        }
+      },
+      {
+        "station_id": "ce4bgi92rcd13ifvqb90",
+        "name": "Canebière Saint-Ferreol",
+        "lat": 43.296278,
+        "lon": 5.37712,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 15,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 15,
+          "4": 15,
+          "5": 0,
+          "6": 0,
+          "7": 15
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bgi92rcd13ifvqb90",
+          "ios": "levelo://app?sid=ce4bgi92rcd13ifvqb90"
+        }
+      },
+      {
+        "station_id": "ce4bgih2rcd13ifvqba0",
+        "name": "Sibie - Curiol",
+        "lat": 43.29529,
+        "lon": 5.385581,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 18,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 18,
+          "4": 18,
+          "5": 0,
+          "6": 0,
+          "7": 18
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bgih2rcd13ifvqba0",
+          "ios": "levelo://app?sid=ce4bgih2rcd13ifvqba0"
+        }
+      },
+      {
+        "station_id": "ce4bgip2rcd13ifvqbb0",
+        "name": "Canebière - Dugommier",
+        "lat": 43.298037,
+        "lon": 5.381066,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 18,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 18,
+          "4": 18,
+          "5": 0,
+          "6": 0,
+          "7": 18
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bgip2rcd13ifvqbb0",
+          "ios": "levelo://app?sid=ce4bgip2rcd13ifvqbb0"
+        }
+      },
+      {
+        "station_id": "ce4bgj12rcd13ifvqbc0",
+        "name": "Allées Gambetta",
+        "lat": 43.299028,
+        "lon": 5.381509,
+        "is_virtual_station": false,
+        "capacity": 30,
+        "vehicle_type_capacity": {
+          "1": 28,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 28,
+          "4": 28,
+          "5": 0,
+          "6": 0,
+          "7": 28
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bgj12rcd13ifvqbc0",
+          "ios": "levelo://app?sid=ce4bgj12rcd13ifvqbc0"
+        }
+      },
+      {
+        "station_id": "ce4bgj92rcd13ifvqbd0",
+        "name": "Réformés Canebière",
+        "lat": 43.299719,
+        "lon": 5.384854,
+        "is_virtual_station": false,
+        "capacity": 30,
+        "vehicle_type_capacity": {
+          "1": 29,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 29,
+          "4": 29,
+          "5": 0,
+          "6": 0,
+          "7": 29
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bgj92rcd13ifvqbd0",
+          "ios": "levelo://app?sid=ce4bgj92rcd13ifvqbd0"
+        }
+      },
+      {
+        "station_id": "ce4bgj92rcd13ifvqbe0",
+        "name": "Vallon de l’Oriol",
+        "lat": 43.27618,
+        "lon": 5.36101,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 11,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 11,
+          "4": 11,
+          "5": 0,
+          "6": 0,
+          "7": 11
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bgj92rcd13ifvqbe0",
+          "ios": "levelo://app?sid=ce4bgj92rcd13ifvqbe0"
+        }
+      },
+      {
+        "station_id": "ce4bgjh2rcd13ifvqbf0",
+        "name": "Saint-Ferréol - Davso",
+        "lat": 43.2936,
+        "lon": 5.37835,
+        "is_virtual_station": false,
+        "capacity": 30,
+        "vehicle_type_capacity": {
+          "1": 29,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 29,
+          "4": 29,
+          "5": 0,
+          "6": 0,
+          "7": 29
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bgjh2rcd13ifvqbf0",
+          "ios": "levelo://app?sid=ce4bgjh2rcd13ifvqbf0"
+        }
+      },
+      {
+        "station_id": "ce4bgjh2rcd13ifvqbg0",
+        "name": "Colbert - Sainte Barbe",
+        "lat": 43.299249,
+        "lon": 5.374809,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 11,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 11,
+          "4": 11,
+          "5": 0,
+          "6": 0,
+          "7": 11
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bgjh2rcd13ifvqbg0",
+          "ios": "levelo://app?sid=ce4bgjh2rcd13ifvqbg0"
+        }
+      },
+      {
+        "station_id": "ce4bgjp2rcd13ifvqbh0",
+        "name": "Saint Charles - Place des Marseillaises",
+        "lat": 43.301417,
+        "lon": 5.3809,
+        "is_virtual_station": false,
+        "capacity": 30,
+        "vehicle_type_capacity": {
+          "1": 23,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 23,
+          "4": 23,
+          "5": 0,
+          "6": 0,
+          "7": 23
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bgjp2rcd13ifvqbh0",
+          "ios": "levelo://app?sid=ce4bgjp2rcd13ifvqbh0"
+        }
+      },
+      {
+        "station_id": "ce4bgk12rcd13ifvqbi0",
+        "name": "Flammarion - Isoard",
+        "lat": 43.304278,
+        "lon": 5.388873,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 20,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 20,
+          "4": 20,
+          "5": 0,
+          "6": 0,
+          "7": 20
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bgk12rcd13ifvqbi0",
+          "ios": "levelo://app?sid=ce4bgk12rcd13ifvqbi0"
+        }
+      },
+      {
+        "station_id": "ce4bgk12rcd13ifvqbj0",
+        "name": "Coutellerie",
+        "lat": 43.2968,
+        "lon": 5.37291,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 14,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 14,
+          "4": 14,
+          "5": 0,
+          "6": 0,
+          "7": 14
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bgk12rcd13ifvqbj0",
+          "ios": "levelo://app?sid=ce4bgk12rcd13ifvqbj0"
+        }
+      },
+      {
+        "station_id": "ce4bgkh2rcd13ifvqbk0",
+        "name": "Longchamp - Grobet",
+        "lat": 43.302997,
+        "lon": 5.392138,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 20,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 20,
+          "4": 20,
+          "5": 0,
+          "6": 0,
+          "7": 20
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bgkh2rcd13ifvqbk0",
+          "ios": "levelo://app?sid=ce4bgkh2rcd13ifvqbk0"
+        }
+      },
+      {
+        "station_id": "ce4bgkh2rcd13ifvqbl0",
+        "name": "Centre Bourse",
+        "lat": 43.297067,
+        "lon": 5.376836,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 18,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 18,
+          "4": 18,
+          "5": 0,
+          "6": 0,
+          "7": 18
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bgkh2rcd13ifvqbl0",
+          "ios": "levelo://app?sid=ce4bgkh2rcd13ifvqbl0"
+        }
+      },
+      {
+        "station_id": "ce4bgkp2rcd13ifvqbmg",
+        "name": "Canebiere - Beauvau",
+        "lat": 43.295279,
+        "lon": 5.375048,
+        "is_virtual_station": false,
+        "capacity": 30,
+        "vehicle_type_capacity": {
+          "1": 25,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 25,
+          "4": 25,
+          "5": 0,
+          "6": 0,
+          "7": 25
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bgkp2rcd13ifvqbmg",
+          "ios": "levelo://app?sid=ce4bgkp2rcd13ifvqbmg"
+        }
+      },
+      {
+        "station_id": "ce4bgl12rcd13ifvqbo0",
+        "name": "Académie - Capucins",
+        "lat": 43.296007,
+        "lon": 5.381079,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 20,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 20,
+          "4": 20,
+          "5": 0,
+          "6": 0,
+          "7": 20
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bgl12rcd13ifvqbo0",
+          "ios": "levelo://app?sid=ce4bgl12rcd13ifvqbo0"
+        }
+      },
+      {
+        "station_id": "ce4bgl92rcd13ifvqbq0",
+        "name": "Arenc - Chanterac",
+        "lat": 43.312239,
+        "lon": 5.368562,
+        "is_virtual_station": false,
+        "capacity": 50,
+        "vehicle_type_capacity": {
+          "1": 46,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 46,
+          "4": 46,
+          "5": 0,
+          "6": 0,
+          "7": 46
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bgl92rcd13ifvqbq0",
+          "ios": "levelo://app?sid=ce4bgl92rcd13ifvqbq0"
+        }
+      },
+      {
+        "station_id": "ce4bgm92rcd13ifvqbr0",
+        "name": "La Major",
+        "lat": 43.299215,
+        "lon": 5.365548,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 20,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 20,
+          "4": 20,
+          "5": 0,
+          "6": 0,
+          "7": 20
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bgm92rcd13ifvqbr0",
+          "ios": "levelo://app?sid=ce4bgm92rcd13ifvqbr0"
+        }
+      },
+      {
+        "station_id": "ce4bgn12rcd13ifvqbt0",
+        "name": "Place de Lenche",
+        "lat": 43.297075,
+        "lon": 5.366057,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 16,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 16,
+          "4": 16,
+          "5": 0,
+          "6": 0,
+          "7": 16
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bgn12rcd13ifvqbt0",
+          "ios": "levelo://app?sid=ce4bgn12rcd13ifvqbt0"
+        }
+      },
+      {
+        "station_id": "ce4bgn92rcd13ifvqbvg",
+        "name": "Euromediterrannee Gantes",
+        "lat": 43.309076,
+        "lon": 5.368465,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 11,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 11,
+          "4": 11,
+          "5": 0,
+          "6": 0,
+          "7": 11
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bgn92rcd13ifvqbvg",
+          "ios": "levelo://app?sid=ce4bgn92rcd13ifvqbvg"
+        }
+      },
+      {
+        "station_id": "ce4bgnh2rcd13ifvqc0g",
+        "name": "Hôtel de Ville",
+        "lat": 43.296153,
+        "lon": 5.37152,
+        "is_virtual_station": false,
+        "capacity": 30,
+        "vehicle_type_capacity": {
+          "1": 28,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 28,
+          "4": 28,
+          "5": 0,
+          "6": 0,
+          "7": 28
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bgnh2rcd13ifvqc0g",
+          "ios": "levelo://app?sid=ce4bgnh2rcd13ifvqc0g"
+        }
+      },
+      {
+        "station_id": "ce4bgop2rcd13ifvqc1g",
+        "name": "Grand Rue",
+        "lat": 43.297839,
+        "lon": 5.370991,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 19,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 19,
+          "4": 19,
+          "5": 0,
+          "6": 0,
+          "7": 19
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bgop2rcd13ifvqc1g",
+          "ios": "levelo://app?sid=ce4bgop2rcd13ifvqc1g"
+        }
+      },
+      {
+        "station_id": "ce4bgph2rcd13ifvqc2g",
+        "name": "Quai du Port",
+        "lat": 43.29573,
+        "lon": 5.367355,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 20,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 20,
+          "4": 20,
+          "5": 0,
+          "6": 0,
+          "7": 20
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bgph2rcd13ifvqc2g",
+          "ios": "levelo://app?sid=ce4bgph2rcd13ifvqc2g"
+        }
+      },
+      {
+        "station_id": "ce4bgpp2rcd13ifvqc3g",
+        "name": "MUCEM",
+        "lat": 43.298433,
+        "lon": 5.362774,
+        "is_virtual_station": false,
+        "capacity": 30,
+        "vehicle_type_capacity": {
+          "1": 27,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 27,
+          "4": 27,
+          "5": 0,
+          "6": 0,
+          "7": 27
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bgpp2rcd13ifvqc3g",
+          "ios": "levelo://app?sid=ce4bgpp2rcd13ifvqc3g"
+        }
+      },
+      {
+        "station_id": "ce4bgqh2rcd13ifvqc4g",
+        "name": "Paris - Forbin",
+        "lat": 43.30606,
+        "lon": 5.372256,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 14,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 14,
+          "4": 14,
+          "5": 0,
+          "6": 0,
+          "7": 14
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bgqh2rcd13ifvqc4g",
+          "ios": "levelo://app?sid=ce4bgqh2rcd13ifvqc4g"
+        }
+      },
+      {
+        "station_id": "ce4bgqh2rcd13ifvqc5g",
+        "name": "République - Joliette",
+        "lat": 43.303042,
+        "lon": 5.368994,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 15,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 15,
+          "4": 15,
+          "5": 0,
+          "6": 0,
+          "7": 15
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bgqh2rcd13ifvqc5g",
+          "ios": "levelo://app?sid=ce4bgqh2rcd13ifvqc5g"
+        }
+      },
+      {
+        "station_id": "ce4bgr92rcd13ifvqc6g",
+        "name": "Tour La Marseillaise",
+        "lat": 43.313389,
+        "lon": 5.367081,
+        "is_virtual_station": false,
+        "capacity": 40,
+        "vehicle_type_capacity": {
+          "1": 35,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 35,
+          "4": 35,
+          "5": 0,
+          "6": 0,
+          "7": 35
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bgr92rcd13ifvqc6g",
+          "ios": "levelo://app?sid=ce4bgr92rcd13ifvqc6g"
+        }
+      },
+      {
+        "station_id": "ce4bgr92rcd13ifvqc7g",
+        "name": "Sadi-Carnot",
+        "lat": 43.299724,
+        "lon": 5.371829,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 16,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 16,
+          "4": 16,
+          "5": 0,
+          "6": 0,
+          "7": 16
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bgr92rcd13ifvqc7g",
+          "ios": "levelo://app?sid=ce4bgr92rcd13ifvqc7g"
+        }
+      },
+      {
+        "station_id": "ce4bgrh2rcd13ifvqc8g",
+        "name": "Schuman - Leca",
+        "lat": 43.301939,
+        "lon": 5.366286,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 15,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 15,
+          "4": 15,
+          "5": 0,
+          "6": 0,
+          "7": 15
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bgrh2rcd13ifvqc8g",
+          "ios": "levelo://app?sid=ce4bgrh2rcd13ifvqc8g"
+        }
+      },
+      {
+        "station_id": "ce4bgrp2rcd13ifvqc9g",
+        "name": "Joliette - Dunkerque",
+        "lat": 43.305365,
+        "lon": 5.367344,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 19,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 19,
+          "4": 19,
+          "5": 0,
+          "6": 0,
+          "7": 19
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bgrp2rcd13ifvqc9g",
+          "ios": "levelo://app?sid=ce4bgrp2rcd13ifvqc9g"
+        }
+      },
+      {
+        "station_id": "ce4bgs12rcd13ifvqcag",
+        "name": "Les Docks - Terrasses du Port",
+        "lat": 43.305625,
+        "lon": 5.365619,
+        "is_virtual_station": false,
+        "capacity": 30,
+        "vehicle_type_capacity": {
+          "1": 19,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 19,
+          "4": 19,
+          "5": 0,
+          "6": 0,
+          "7": 19
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bgs12rcd13ifvqcag",
+          "ios": "levelo://app?sid=ce4bgs12rcd13ifvqcag"
+        }
+      },
+      {
+        "station_id": "ce4bgs92rcd13ifvqcc0",
+        "name": "Jules Guesde",
+        "lat": 43.301429,
+        "lon": 5.374132,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 18,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 18,
+          "4": 18,
+          "5": 0,
+          "6": 0,
+          "7": 18
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bgs92rcd13ifvqcc0",
+          "ios": "levelo://app?sid=ce4bgs92rcd13ifvqcc0"
+        }
+      },
+      {
+        "station_id": "ce4bgt12rcd13ifvqcd0",
+        "name": "National Métro",
+        "lat": 43.314811,
+        "lon": 5.373104,
+        "is_virtual_station": false,
+        "capacity": 30,
+        "vehicle_type_capacity": {
+          "1": 20,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 20,
+          "4": 20,
+          "5": 0,
+          "6": 0,
+          "7": 20
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bgt12rcd13ifvqcd0",
+          "ios": "levelo://app?sid=ce4bgt12rcd13ifvqcd0"
+        }
+      },
+      {
+        "station_id": "ce4bgt12rcd13ifvqce0",
+        "name": "National - Belle de Mai",
+        "lat": 43.308012,
+        "lon": 5.381511,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 17,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 17,
+          "4": 17,
+          "5": 0,
+          "6": 0,
+          "7": 17
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bgt12rcd13ifvqce0",
+          "ios": "levelo://app?sid=ce4bgt12rcd13ifvqce0"
+        }
+      },
+      {
+        "station_id": "ce4bgt92rcd13ifvqcf0",
+        "name": "Place Placide Caffo",
+        "lat": 43.313571,
+        "lon": 5.384829,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 19,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 19,
+          "4": 19,
+          "5": 0,
+          "6": 0,
+          "7": 19
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bgt92rcd13ifvqcf0",
+          "ios": "levelo://app?sid=ce4bgt92rcd13ifvqcf0"
+        }
+      },
+      {
+        "station_id": "ce4bgt92rcd13ifvqcg0",
+        "name": "National - Hoche",
+        "lat": 43.311124,
+        "lon": 5.377653,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 10,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 10,
+          "4": 10,
+          "5": 0,
+          "6": 0,
+          "7": 10
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bgt92rcd13ifvqcg0",
+          "ios": "levelo://app?sid=ce4bgt92rcd13ifvqcg0"
+        }
+      },
+      {
+        "station_id": "ce4bgth2rcd13ifvqch0",
+        "name": "Auphan - Vaillant",
+        "lat": 43.317075,
+        "lon": 5.377367,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 17,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 17,
+          "4": 17,
+          "5": 0,
+          "6": 0,
+          "7": 17
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bgth2rcd13ifvqch0",
+          "ios": "levelo://app?sid=ce4bgth2rcd13ifvqch0"
+        }
+      },
+      {
+        "station_id": "ce4bguh2rcd13ifvqcj0",
+        "name": "Ferry-Nédelec",
+        "lat": 43.302784,
+        "lon": 5.377158,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 17,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 17,
+          "4": 17,
+          "5": 0,
+          "6": 0,
+          "7": 17
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bguh2rcd13ifvqcj0",
+          "ios": "levelo://app?sid=ce4bguh2rcd13ifvqcj0"
+        }
+      },
+      {
+        "station_id": "ce4bguh2rcd13ifvqckg",
+        "name": "Hôpital Européen",
+        "lat": 43.309054,
+        "lon": 5.371777,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 12,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 12,
+          "4": 12,
+          "5": 0,
+          "6": 0,
+          "7": 12
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bguh2rcd13ifvqckg",
+          "ios": "levelo://app?sid=ce4bguh2rcd13ifvqckg"
+        }
+      },
+      {
+        "station_id": "ce4bgup2rcd13ifvqcn0",
+        "name": "Saint Charles - Faculté",
+        "lat": 43.304606,
+        "lon": 5.379026,
+        "is_virtual_station": false,
+        "capacity": 30,
+        "vehicle_type_capacity": {
+          "1": 24,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 24,
+          "4": 24,
+          "5": 0,
+          "6": 0,
+          "7": 24
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bgup2rcd13ifvqcn0",
+          "ios": "levelo://app?sid=ce4bgup2rcd13ifvqcn0"
+        }
+      },
+      {
+        "station_id": "ce4bgup2rcd13ifvqco0",
+        "name": "Friche Belle de Mai",
+        "lat": 43.309589,
+        "lon": 5.390258,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 19,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 19,
+          "4": 19,
+          "5": 0,
+          "6": 0,
+          "7": 19
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bgup2rcd13ifvqco0",
+          "ios": "levelo://app?sid=ce4bgup2rcd13ifvqco0"
+        }
+      },
+      {
+        "station_id": "ce4bgv12rcd13ifvqcp0",
+        "name": "Place Cadenat",
+        "lat": 43.311722,
+        "lon": 5.387247,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 8,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 8,
+          "4": 8,
+          "5": 0,
+          "6": 0,
+          "7": 8
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bgv12rcd13ifvqcp0",
+          "ios": "levelo://app?sid=ce4bgv12rcd13ifvqcp0"
+        }
+      },
+      {
+        "station_id": "ce4bgv92rcd13ifvqcq0",
+        "name": "Strasbourg - Leca",
+        "lat": 43.307945,
+        "lon": 5.376487,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 7,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 7,
+          "4": 7,
+          "5": 0,
+          "6": 0,
+          "7": 7
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bgv92rcd13ifvqcq0",
+          "ios": "levelo://app?sid=ce4bgv92rcd13ifvqcq0"
+        }
+      },
+      {
+        "station_id": "ce4bgvh2rcd13ifvqcs0",
+        "name": "Blancarde - Duparc",
+        "lat": 43.302759,
+        "lon": 5.400793,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 16,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 16,
+          "4": 16,
+          "5": 0,
+          "6": 0,
+          "7": 16
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bgvh2rcd13ifvqcs0",
+          "ios": "levelo://app?sid=ce4bgvh2rcd13ifvqcs0"
+        }
+      },
+      {
+        "station_id": "ce4bgvp2rcd13ifvqct0",
+        "name": "Eglise des Chartreux",
+        "lat": 43.309371,
+        "lon": 5.401449,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 16,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 16,
+          "4": 16,
+          "5": 0,
+          "6": 0,
+          "7": 16
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bgvp2rcd13ifvqct0",
+          "ios": "levelo://app?sid=ce4bgvp2rcd13ifvqct0"
+        }
+      },
+      {
+        "station_id": "ce4bgvp2rcd13ifvqcu0",
+        "name": "Chutes Lavie - Guigou",
+        "lat": 43.313291,
+        "lon": 5.396838,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 11,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 11,
+          "4": 11,
+          "5": 0,
+          "6": 0,
+          "7": 11
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bgvp2rcd13ifvqcu0",
+          "ios": "levelo://app?sid=ce4bgvp2rcd13ifvqcu0"
+        }
+      },
+      {
+        "station_id": "ce4bh012rcd13ifvqcv0",
+        "name": "Chutes Lavie - Dahdah",
+        "lat": 43.309047,
+        "lon": 5.396549,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 11,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 11,
+          "4": 11,
+          "5": 0,
+          "6": 0,
+          "7": 11
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bh012rcd13ifvqcv0",
+          "ios": "levelo://app?sid=ce4bh012rcd13ifvqcv0"
+        }
+      },
+      {
+        "station_id": "ce4bh012rcd13ifvqd00",
+        "name": "Saint-Just - Le Dôme",
+        "lat": 43.31683,
+        "lon": 5.404722,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 15,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 15,
+          "4": 15,
+          "5": 0,
+          "6": 0,
+          "7": 15
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bh012rcd13ifvqd00",
+          "ios": "levelo://app?sid=ce4bh012rcd13ifvqd00"
+        }
+      },
+      {
+        "station_id": "ce4bh012rcd13ifvqd10",
+        "name": "Blancarde - Botinelly",
+        "lat": 43.303256,
+        "lon": 5.404389,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 17,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 17,
+          "4": 17,
+          "5": 0,
+          "6": 0,
+          "7": 17
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bh012rcd13ifvqd10",
+          "ios": "levelo://app?sid=ce4bh012rcd13ifvqd10"
+        }
+      },
+      {
+        "station_id": "ce4bh092rcd13ifvqd20",
+        "name": "Cinq Avenues Longchamp",
+        "lat": 43.304292,
+        "lon": 5.397521,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 13,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 13,
+          "4": 13,
+          "5": 0,
+          "6": 0,
+          "7": 13
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bh092rcd13ifvqd20",
+          "ios": "levelo://app?sid=ce4bh092rcd13ifvqd20"
+        }
+      },
+      {
+        "station_id": "ce4bh092rcd13ifvqd30",
+        "name": "Saint-Just - Labry",
+        "lat": 43.312609,
+        "lon": 5.401662,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 20,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 20,
+          "4": 20,
+          "5": 0,
+          "6": 0,
+          "7": 20
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bh092rcd13ifvqd30",
+          "ios": "levelo://app?sid=ce4bh092rcd13ifvqd30"
+        }
+      },
+      {
+        "station_id": "ce4bh0h2rcd13ifvqd40",
+        "name": "Foch - Fayolle",
+        "lat": 43.301229,
+        "lon": 5.398615,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 13,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 13,
+          "4": 13,
+          "5": 0,
+          "6": 0,
+          "7": 13
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bh0h2rcd13ifvqd40",
+          "ios": "levelo://app?sid=ce4bh0h2rcd13ifvqd40"
+        }
+      },
+      {
+        "station_id": "ce4bh0h2rcd13ifvqd50",
+        "name": "Place Sébastopol",
+        "lat": 43.298681,
+        "lon": 5.397225,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 20,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 20,
+          "4": 20,
+          "5": 0,
+          "6": 0,
+          "7": 20
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bh0h2rcd13ifvqd50",
+          "ios": "levelo://app?sid=ce4bh0h2rcd13ifvqd50"
+        }
+      },
+      {
+        "station_id": "ce4bh0h2rcd13ifvqd60",
+        "name": "Blancarde - Gare SNCF",
+        "lat": 43.296263,
+        "lon": 5.40601,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 12,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 12,
+          "4": 12,
+          "5": 0,
+          "6": 0,
+          "7": 12
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bh0h2rcd13ifvqd60",
+          "ios": "levelo://app?sid=ce4bh0h2rcd13ifvqd60"
+        }
+      },
+      {
+        "station_id": "ce4bh0p2rcd13ifvqd70",
+        "name": "Libération - Chape - Espérandieu",
+        "lat": 43.30213,
+        "lon": 5.394762,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 20,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 20,
+          "4": 20,
+          "5": 0,
+          "6": 0,
+          "7": 20
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bh0p2rcd13ifvqd70",
+          "ios": "levelo://app?sid=ce4bh0p2rcd13ifvqd70"
+        }
+      },
+      {
+        "station_id": "ce4bh0p2rcd13ifvqd80",
+        "name": "Flammarion- Montricher",
+        "lat": 43.305994,
+        "lon": 5.393687,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 18,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 18,
+          "4": 18,
+          "5": 0,
+          "6": 0,
+          "7": 18
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bh0p2rcd13ifvqd80",
+          "ios": "levelo://app?sid=ce4bh0p2rcd13ifvqd80"
+        }
+      },
+      {
+        "station_id": "ce4bh112rcd13ifvqd90",
+        "name": "Foch - Boisson",
+        "lat": 43.297961,
+        "lon": 5.404053,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 16,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 16,
+          "4": 16,
+          "5": 0,
+          "6": 0,
+          "7": 16
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bh112rcd13ifvqd90",
+          "ios": "levelo://app?sid=ce4bh112rcd13ifvqd90"
+        }
+      },
+      {
+        "station_id": "ce4bh112rcd13ifvqda0",
+        "name": "Duparc - Brossolette",
+        "lat": 43.306414,
+        "lon": 5.401029,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 8,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 8,
+          "4": 8,
+          "5": 0,
+          "6": 0,
+          "7": 8
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bh112rcd13ifvqda0",
+          "ios": "levelo://app?sid=ce4bh112rcd13ifvqda0"
+        }
+      },
+      {
+        "station_id": "ce4bh192rcd13ifvqdb0",
+        "name": "Liberation - Isoard",
+        "lat": 43.300851,
+        "lon": 5.390857,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 18,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 18,
+          "4": 18,
+          "5": 0,
+          "6": 0,
+          "7": 18
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bh192rcd13ifvqdb0",
+          "ios": "levelo://app?sid=ce4bh192rcd13ifvqdb0"
+        }
+      },
+      {
+        "station_id": "ce4bh192rcd13ifvqdc0",
+        "name": "Place Pol Lapeyre",
+        "lat": 43.292572,
+        "lon": 5.409104,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 20,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 20,
+          "4": 20,
+          "5": 0,
+          "6": 0,
+          "7": 20
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bh192rcd13ifvqdc0",
+          "ios": "levelo://app?sid=ce4bh192rcd13ifvqdc0"
+        }
+      },
+      {
+        "station_id": "ce4bh192rcd13ifvqdd0",
+        "name": "Saint-Pierre - Hugueny",
+        "lat": 43.292005,
+        "lon": 5.392897,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 19,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 19,
+          "4": 19,
+          "5": 0,
+          "6": 0,
+          "7": 19
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bh192rcd13ifvqdd0",
+          "ios": "levelo://app?sid=ce4bh192rcd13ifvqdd0"
+        }
+      },
+      {
+        "station_id": "ce4bh292rcd13ifvqdf0",
+        "name": "Chave - Goudard",
+        "lat": 43.295197,
+        "lon": 5.39397,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 19,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 19,
+          "4": 19,
+          "5": 0,
+          "6": 0,
+          "7": 19
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bh292rcd13ifvqdf0",
+          "ios": "levelo://app?sid=ce4bh292rcd13ifvqdf0"
+        }
+      },
+      {
+        "station_id": "ce4bh292rcd13ifvqdg0",
+        "name": "Pierre Roux",
+        "lat": 43.285735,
+        "lon": 5.39501,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 20,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 20,
+          "4": 20,
+          "5": 0,
+          "6": 0,
+          "7": 20
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bh292rcd13ifvqdg0",
+          "ios": "levelo://app?sid=ce4bh292rcd13ifvqdg0"
+        }
+      },
+      {
+        "station_id": "ce4bh2p2rcd13ifvqdi0",
+        "name": "Baille - Vertus",
+        "lat": 43.288494,
+        "lon": 5.393092,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 10,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 10,
+          "4": 10,
+          "5": 0,
+          "6": 0,
+          "7": 10
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bh2p2rcd13ifvqdi0",
+          "ios": "levelo://app?sid=ce4bh2p2rcd13ifvqdi0"
+        }
+      },
+      {
+        "station_id": "ce4bh312rcd13ifvqdj0",
+        "name": "Chave - Sakakini",
+        "lat": 43.295713,
+        "lon": 5.399639,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 15,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 15,
+          "4": 15,
+          "5": 0,
+          "6": 0,
+          "7": 15
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bh312rcd13ifvqdj0",
+          "ios": "levelo://app?sid=ce4bh312rcd13ifvqdj0"
+        }
+      },
+      {
+        "station_id": "ce4bh312rcd13ifvqdk0",
+        "name": "Sakakini - Saint-Pierre",
+        "lat": 43.292724,
+        "lon": 5.401131,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 15,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 15,
+          "4": 15,
+          "5": 0,
+          "6": 0,
+          "7": 15
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bh312rcd13ifvqdk0",
+          "ios": "levelo://app?sid=ce4bh312rcd13ifvqdk0"
+        }
+      },
+      {
+        "station_id": "ce4bh392rcd13ifvqdl0",
+        "name": "Tivoli - Roosevelt",
+        "lat": 43.298764,
+        "lon": 5.388973,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 20,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 20,
+          "4": 20,
+          "5": 0,
+          "6": 0,
+          "7": 20
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bh392rcd13ifvqdl0",
+          "ios": "levelo://app?sid=ce4bh392rcd13ifvqdl0"
+        }
+      },
+      {
+        "station_id": "ce4bh392rcd13ifvqdm0",
+        "name": "Jean Moulin - Hôpital La Timone",
+        "lat": 43.29041,
+        "lon": 5.399634,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 17,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 17,
+          "4": 17,
+          "5": 0,
+          "6": 0,
+          "7": 17
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bh392rcd13ifvqdm0",
+          "ios": "levelo://app?sid=ce4bh392rcd13ifvqdm0"
+        }
+      },
+      {
+        "station_id": "ce4bh3h2rcd13ifvqdn0",
+        "name": "Baille - Hôpital Conception",
+        "lat": 43.289363,
+        "lon": 5.396322,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 17,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 17,
+          "4": 17,
+          "5": 0,
+          "6": 0,
+          "7": 17
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bh3h2rcd13ifvqdn0",
+          "ios": "levelo://app?sid=ce4bh3h2rcd13ifvqdn0"
+        }
+      },
+      {
+        "station_id": "ce4bh3h2rcd13ifvqdo0",
+        "name": "Briffaut Camas",
+        "lat": 43.294314,
+        "lon": 5.397498,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 20,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 20,
+          "4": 20,
+          "5": 0,
+          "6": 0,
+          "7": 20
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bh3h2rcd13ifvqdo0",
+          "ios": "levelo://app?sid=ce4bh3h2rcd13ifvqdo0"
+        }
+      },
+      {
+        "station_id": "ce4bh3p2rcd13ifvqdp0",
+        "name": "Chave Eugene Pierre",
+        "lat": 43.295169,
+        "lon": 5.390426,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 20,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 20,
+          "4": 20,
+          "5": 0,
+          "6": 0,
+          "7": 20
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bh3p2rcd13ifvqdp0",
+          "ios": "levelo://app?sid=ce4bh3p2rcd13ifvqdp0"
+        }
+      },
+      {
+        "station_id": "ce4bh3p2rcd13ifvqdq0",
+        "name": "Notre-Dame - Dragon",
+        "lat": 43.286961,
+        "lon": 5.373785,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 7,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 7,
+          "4": 7,
+          "5": 0,
+          "6": 0,
+          "7": 7
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bh3p2rcd13ifvqdq0",
+          "ios": "levelo://app?sid=ce4bh3p2rcd13ifvqdq0"
+        }
+      },
+      {
+        "station_id": "ce4bh412rcd13ifvqdr0",
+        "name": "Paradis - Escat",
+        "lat": 43.283506,
+        "lon": 5.380945,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 20,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 20,
+          "4": 20,
+          "5": 0,
+          "6": 0,
+          "7": 20
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bh412rcd13ifvqdr0",
+          "ios": "levelo://app?sid=ce4bh412rcd13ifvqdr0"
+        }
+      },
+      {
+        "station_id": "ce4bh412rcd13ifvqds0",
+        "name": "Notre-Dame - Vauban",
+        "lat": 43.283998,
+        "lon": 5.375062,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 18,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 18,
+          "4": 18,
+          "5": 0,
+          "6": 0,
+          "7": 18
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bh412rcd13ifvqds0",
+          "ios": "levelo://app?sid=ce4bh412rcd13ifvqds0"
+        }
+      },
+      {
+        "station_id": "ce4bh492rcd13ifvqdug",
+        "name": "Baille - Friedland",
+        "lat": 43.286595,
+        "lon": 5.386795,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 19,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 19,
+          "4": 19,
+          "5": 0,
+          "6": 0,
+          "7": 19
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bh492rcd13ifvqdug",
+          "ios": "levelo://app?sid=ce4bh492rcd13ifvqdug"
+        }
+      },
+      {
+        "station_id": "ce4bh492rcd13ifvqdvg",
+        "name": "Rouet",
+        "lat": 43.283502,
+        "lon": 5.386471,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 20,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 20,
+          "4": 20,
+          "5": 0,
+          "6": 0,
+          "7": 20
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bh492rcd13ifvqdvg",
+          "ios": "levelo://app?sid=ce4bh492rcd13ifvqdvg"
+        }
+      },
+      {
+        "station_id": "ce4bh4p2rcd13ifvqe0g",
+        "name": "Lodi - Berlioz",
+        "lat": 43.290345,
+        "lon": 5.386447,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 20,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 20,
+          "4": 20,
+          "5": 0,
+          "6": 0,
+          "7": 20
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bh4p2rcd13ifvqe0g",
+          "ios": "levelo://app?sid=ce4bh4p2rcd13ifvqe0g"
+        }
+      },
+      {
+        "station_id": "ce4bh4p2rcd13ifvqe1g",
+        "name": "Rome - Sylvabelle",
+        "lat": 43.290099,
+        "lon": 5.381274,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 20,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 20,
+          "4": 20,
+          "5": 0,
+          "6": 0,
+          "7": 20
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bh4p2rcd13ifvqe1g",
+          "ios": "levelo://app?sid=ce4bh4p2rcd13ifvqe1g"
+        }
+      },
+      {
+        "station_id": "ce4bh512rcd13ifvqe2g",
+        "name": "Rome - Salvator",
+        "lat": 43.290995,
+        "lon": 5.381361,
+        "is_virtual_station": false,
+        "capacity": 30,
+        "vehicle_type_capacity": {
+          "1": 30,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 30,
+          "4": 30,
+          "5": 0,
+          "6": 0,
+          "7": 30
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bh512rcd13ifvqe2g",
+          "ios": "levelo://app?sid=ce4bh512rcd13ifvqe2g"
+        }
+      },
+      {
+        "station_id": "ce4bh512rcd13ifvqe3g",
+        "name": "Castellane",
+        "lat": 43.28479,
+        "lon": 5.384124,
+        "is_virtual_station": false,
+        "capacity": 50,
+        "vehicle_type_capacity": {
+          "1": 49,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 49,
+          "4": 49,
+          "5": 0,
+          "6": 0,
+          "7": 49
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bh512rcd13ifvqe3g",
+          "ios": "levelo://app?sid=ce4bh512rcd13ifvqe3g"
+        }
+      },
+      {
+        "station_id": "ce4bh5p2rcd13ifvqe4g",
+        "name": "Place de la Corderie",
+        "lat": 43.290779,
+        "lon": 5.371482,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 19,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 19,
+          "4": 19,
+          "5": 0,
+          "6": 0,
+          "7": 19
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bh5p2rcd13ifvqe4g",
+          "ios": "levelo://app?sid=ce4bh5p2rcd13ifvqe4g"
+        }
+      },
+      {
+        "station_id": "ce4bh612rcd13ifvqe6g",
+        "name": "Lieutaud - Berlioz",
+        "lat": 43.289307,
+        "lon": 5.38406,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 20,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 20,
+          "4": 20,
+          "5": 0,
+          "6": 0,
+          "7": 20
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bh612rcd13ifvqe6g",
+          "ios": "levelo://app?sid=ce4bh612rcd13ifvqe6g"
+        }
+      },
+      {
+        "station_id": "ce4bh692rcd13ifvqe90",
+        "name": "Pierre Puget - Breteuil",
+        "lat": 43.290323,
+        "lon": 5.375722,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 20,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 20,
+          "4": 20,
+          "5": 0,
+          "6": 0,
+          "7": 20
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bh692rcd13ifvqe90",
+          "ios": "levelo://app?sid=ce4bh692rcd13ifvqe90"
+        }
+      },
+      {
+        "station_id": "ce4bh692rcd13ifvqea0",
+        "name": "Cours Julien - Frères Barthelemy",
+        "lat": 43.292639,
+        "lon": 5.384248,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 18,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 18,
+          "4": 18,
+          "5": 0,
+          "6": 0,
+          "7": 18
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bh692rcd13ifvqea0",
+          "ios": "levelo://app?sid=ce4bh692rcd13ifvqea0"
+        }
+      },
+      {
+        "station_id": "ce4bh8p2rcd13ifvqeb0",
+        "name": "Cantini - Rouet",
+        "lat": 43.284776,
+        "lon": 5.385603,
+        "is_virtual_station": false,
+        "capacity": 40,
+        "vehicle_type_capacity": {
+          "1": 38,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 38,
+          "4": 38,
+          "5": 0,
+          "6": 0,
+          "7": 38
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bh8p2rcd13ifvqeb0",
+          "ios": "levelo://app?sid=ce4bh8p2rcd13ifvqeb0"
+        }
+      },
+      {
+        "station_id": "ce4bh9p2rcd13ifvqec0",
+        "name": "Paradis - Vignerons",
+        "lat": 43.287184,
+        "lon": 5.379377,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 19,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 19,
+          "4": 19,
+          "5": 0,
+          "6": 0,
+          "7": 19
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bh9p2rcd13ifvqec0",
+          "ios": "levelo://app?sid=ce4bh9p2rcd13ifvqec0"
+        }
+      },
+      {
+        "station_id": "ce4bh9p2rcd13ifvqed0",
+        "name": "Estrangin",
+        "lat": 43.289744,
+        "lon": 5.378304,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 20,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 20,
+          "4": 20,
+          "5": 0,
+          "6": 0,
+          "7": 20
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bh9p2rcd13ifvqed0",
+          "ios": "levelo://app?sid=ce4bh9p2rcd13ifvqed0"
+        }
+      },
+      {
+        "station_id": "ce4bha12rcd13ifvqee0",
+        "name": "Vallon Montebello",
+        "lat": 43.281044,
+        "lon": 5.378308,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 12,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 12,
+          "4": 12,
+          "5": 0,
+          "6": 0,
+          "7": 12
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bha12rcd13ifvqee0",
+          "ios": "levelo://app?sid=ce4bha12rcd13ifvqee0"
+        }
+      },
+      {
+        "station_id": "ce4bha12rcd13ifvqef0",
+        "name": "Place du Terrail",
+        "lat": 43.280391,
+        "lon": 5.369308,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 20,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 20,
+          "4": 20,
+          "5": 0,
+          "6": 0,
+          "7": 20
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bha12rcd13ifvqef0",
+          "ios": "levelo://app?sid=ce4bha12rcd13ifvqef0"
+        }
+      },
+      {
+        "station_id": "ce4bha92rcd13ifvqeg0",
+        "name": "Pasteur",
+        "lat": 43.290639,
+        "lon": 5.359243,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 17,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 17,
+          "4": 17,
+          "5": 0,
+          "6": 0,
+          "7": 17
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bha92rcd13ifvqeg0",
+          "ios": "levelo://app?sid=ce4bha92rcd13ifvqeg0"
+        }
+      },
+      {
+        "station_id": "ce4bha92rcd13ifvqeh0",
+        "name": "Sainte - Notre-Dame",
+        "lat": 43.291672,
+        "lon": 5.371569,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 20,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 20,
+          "4": 20,
+          "5": 0,
+          "6": 0,
+          "7": 20
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bha92rcd13ifvqeh0",
+          "ios": "levelo://app?sid=ce4bha92rcd13ifvqeh0"
+        }
+      },
+      {
+        "station_id": "ce4bhah2rcd13ifvqei0",
+        "name": "Saint-Eugene",
+        "lat": 43.284533,
+        "lon": 5.358661,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 19,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 19,
+          "4": 19,
+          "5": 0,
+          "6": 0,
+          "7": 19
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhah2rcd13ifvqei0",
+          "ios": "levelo://app?sid=ce4bhah2rcd13ifvqei0"
+        }
+      },
+      {
+        "station_id": "ce4bhah2rcd13ifvqej0",
+        "name": "Vallon Jourdan",
+        "lat": 43.286598,
+        "lon": 5.363348,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 18,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 18,
+          "4": 18,
+          "5": 0,
+          "6": 0,
+          "7": 18
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhah2rcd13ifvqej0",
+          "ios": "levelo://app?sid=ce4bhah2rcd13ifvqej0"
+        }
+      },
+      {
+        "station_id": "ce4bhap2rcd13ifvqek0",
+        "name": "Endoume - Corderie",
+        "lat": 43.289184,
+        "lon": 5.366408,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 13,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 13,
+          "4": 13,
+          "5": 0,
+          "6": 0,
+          "7": 13
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhap2rcd13ifvqek0",
+          "ios": "levelo://app?sid=ce4bhap2rcd13ifvqek0"
+        }
+      },
+      {
+        "station_id": "ce4bhb12rcd13ifvqel0",
+        "name": "Livon - Pasteur",
+        "lat": 43.292004,
+        "lon": 5.357898,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 16,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 16,
+          "4": 16,
+          "5": 0,
+          "6": 0,
+          "7": 16
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhb12rcd13ifvqel0",
+          "ios": "levelo://app?sid=ce4bhb12rcd13ifvqel0"
+        }
+      },
+      {
+        "station_id": "ce4bhb12rcd13ifvqem0",
+        "name": "Place du 4 Septembre",
+        "lat": 43.28856,
+        "lon": 5.358371,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 6,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 6,
+          "4": 6,
+          "5": 0,
+          "6": 0,
+          "7": 6
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhb12rcd13ifvqem0",
+          "ios": "levelo://app?sid=ce4bhb12rcd13ifvqem0"
+        }
+      },
+      {
+        "station_id": "ce4bhb92rcd13ifvqen0",
+        "name": "Plage des Catalans",
+        "lat": 43.290104,
+        "lon": 5.356111,
+        "is_virtual_station": false,
+        "capacity": 30,
+        "vehicle_type_capacity": {
+          "1": 28,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 28,
+          "4": 28,
+          "5": 0,
+          "6": 0,
+          "7": 28
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhb92rcd13ifvqen0",
+          "ios": "levelo://app?sid=ce4bhb92rcd13ifvqen0"
+        }
+      },
+      {
+        "station_id": "ce4bhbh2rcd13ifvqeo0",
+        "name": "Plage du Prophète",
+        "lat": 43.273606,
+        "lon": 5.362709,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 17,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 17,
+          "4": 17,
+          "5": 0,
+          "6": 0,
+          "7": 17
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhbh2rcd13ifvqeo0",
+          "ios": "levelo://app?sid=ce4bhbh2rcd13ifvqeo0"
+        }
+      },
+      {
+        "station_id": "ce4bhbh2rcd13ifvqepg",
+        "name": "Corniche - Malmousque",
+        "lat": 43.284214,
+        "lon": 5.349706,
+        "is_virtual_station": false,
+        "capacity": 30,
+        "vehicle_type_capacity": {
+          "1": 26,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 26,
+          "4": 26,
+          "5": 0,
+          "6": 0,
+          "7": 26
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhbh2rcd13ifvqepg",
+          "ios": "levelo://app?sid=ce4bhbh2rcd13ifvqepg"
+        }
+      },
+      {
+        "station_id": "ce4bhbh2rcd13ifvqeqg",
+        "name": "Livon - Vieux-Port",
+        "lat": 43.292311,
+        "lon": 5.360731,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 13,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 13,
+          "4": 13,
+          "5": 0,
+          "6": 0,
+          "7": 13
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhbh2rcd13ifvqeqg",
+          "ios": "levelo://app?sid=ce4bhbh2rcd13ifvqeqg"
+        }
+      },
+      {
+        "station_id": "ce4bhbp2rcd13ifvqerg",
+        "name": "Corniche - Endoume",
+        "lat": 43.282743,
+        "lon": 5.350526,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 18,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 18,
+          "4": 18,
+          "5": 0,
+          "6": 0,
+          "7": 18
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhbp2rcd13ifvqerg",
+          "ios": "levelo://app?sid=ce4bhbp2rcd13ifvqerg"
+        }
+      },
+      {
+        "station_id": "ce4bhbp2rcd13ifvqesg",
+        "name": "La Criée",
+        "lat": 43.292748,
+        "lon": 5.368402,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 18,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 18,
+          "4": 18,
+          "5": 0,
+          "6": 0,
+          "7": 18
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhbp2rcd13ifvqesg",
+          "ios": "levelo://app?sid=ce4bhbp2rcd13ifvqesg"
+        }
+      },
+      {
+        "station_id": "ce4bhc92rcd13ifvqetg",
+        "name": "Corse - Saint Maurice",
+        "lat": 43.289468,
+        "lon": 5.363719,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 6,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 6,
+          "4": 6,
+          "5": 0,
+          "6": 0,
+          "7": 6
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhc92rcd13ifvqetg",
+          "ios": "levelo://app?sid=ce4bhc92rcd13ifvqetg"
+        }
+      },
+      {
+        "station_id": "ce4bhch2rcd13ifvqeug",
+        "name": "Vallon des Auffes",
+        "lat": 43.286229,
+        "lon": 5.351079,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 16,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 16,
+          "4": 16,
+          "5": 0,
+          "6": 0,
+          "7": 16
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhch2rcd13ifvqeug",
+          "ios": "levelo://app?sid=ce4bhch2rcd13ifvqeug"
+        }
+      },
+      {
+        "station_id": "ce4bhdp2rcd13ifvqf20",
+        "name": "Rabatau - Hôpital Saint-Joseph",
+        "lat": 43.274106,
+        "lon": 5.394017,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 11,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 11,
+          "4": 11,
+          "5": 0,
+          "6": 0,
+          "7": 11
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhdp2rcd13ifvqf20",
+          "ios": "levelo://app?sid=ce4bhdp2rcd13ifvqf20"
+        }
+      },
+      {
+        "station_id": "ce4bhe12rcd13ifvqf30",
+        "name": "Mazargues - Huveaune",
+        "lat": 43.265575,
+        "lon": 5.390043,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 11,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 11,
+          "4": 11,
+          "5": 0,
+          "6": 0,
+          "7": 11
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhe12rcd13ifvqf30",
+          "ios": "levelo://app?sid=ce4bhe12rcd13ifvqf30"
+        }
+      },
+      {
+        "station_id": "ce4bhf92rcd13ifvqf40",
+        "name": "Cantini",
+        "lat": 43.279185,
+        "lon": 5.395692,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 15,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 15,
+          "4": 15,
+          "5": 0,
+          "6": 0,
+          "7": 15
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhf92rcd13ifvqf40",
+          "ios": "levelo://app?sid=ce4bhf92rcd13ifvqf40"
+        }
+      },
+      {
+        "station_id": "ce4bhf92rcd13ifvqf50",
+        "name": "Périer - Cremieux",
+        "lat": 43.279087,
+        "lon": 5.380114,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 17,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 17,
+          "4": 17,
+          "5": 0,
+          "6": 0,
+          "7": 17
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhf92rcd13ifvqf50",
+          "ios": "levelo://app?sid=ce4bhf92rcd13ifvqf50"
+        }
+      },
+      {
+        "station_id": "ce4bhg12rcd13ifvqf60",
+        "name": "Zenatti - Malrieu",
+        "lat": 43.246465,
+        "lon": 5.388992,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 16,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 16,
+          "4": 16,
+          "5": 0,
+          "6": 0,
+          "7": 16
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhg12rcd13ifvqf60",
+          "ios": "levelo://app?sid=ce4bhg12rcd13ifvqf60"
+        }
+      },
+      {
+        "station_id": "ce4bhg12rcd13ifvqf70",
+        "name": "Base Nautique Roucas Blanc",
+        "lat": 43.265714,
+        "lon": 5.372891,
+        "is_virtual_station": false,
+        "capacity": 40,
+        "vehicle_type_capacity": {
+          "1": 24,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 24,
+          "4": 24,
+          "5": 0,
+          "6": 0,
+          "7": 24
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhg12rcd13ifvqf70",
+          "ios": "levelo://app?sid=ce4bhg12rcd13ifvqf70"
+        }
+      },
+      {
+        "station_id": "ce4bhg12rcd13ifvqf80",
+        "name": "Prado - Périer",
+        "lat": 43.279742,
+        "lon": 5.38744,
+        "is_virtual_station": false,
+        "capacity": 50,
+        "vehicle_type_capacity": {
+          "1": 43,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 43,
+          "4": 43,
+          "5": 0,
+          "6": 0,
+          "7": 43
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhg12rcd13ifvqf80",
+          "ios": "levelo://app?sid=ce4bhg12rcd13ifvqf80"
+        }
+      },
+      {
+        "station_id": "ce4bhg92rcd13ifvqf90",
+        "name": "Prado - Gabes",
+        "lat": 43.26681,
+        "lon": 5.382694,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 20,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 20,
+          "4": 20,
+          "5": 0,
+          "6": 0,
+          "7": 20
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhg92rcd13ifvqf90",
+          "ios": "levelo://app?sid=ce4bhg92rcd13ifvqf90"
+        }
+      },
+      {
+        "station_id": "ce4bhgh2rcd13ifvqfa0",
+        "name": "Mendès France Huveaune",
+        "lat": 43.260218,
+        "lon": 5.375453,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 13,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 13,
+          "4": 13,
+          "5": 0,
+          "6": 0,
+          "7": 13
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhgh2rcd13ifvqfa0",
+          "ios": "levelo://app?sid=ce4bhgh2rcd13ifvqfa0"
+        }
+      },
+      {
+        "station_id": "ce4bhgh2rcd13ifvqfb0",
+        "name": "Vieille Chapelle",
+        "lat": 43.2479,
+        "lon": 5.374457,
+        "is_virtual_station": false,
+        "capacity": 30,
+        "vehicle_type_capacity": {
+          "1": 25,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 25,
+          "4": 25,
+          "5": 0,
+          "6": 0,
+          "7": 25
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhgh2rcd13ifvqfb0",
+          "ios": "levelo://app?sid=ce4bhgh2rcd13ifvqfb0"
+        }
+      },
+      {
+        "station_id": "ce4bhgp2rcd13ifvqfc0",
+        "name": "Promenade Pompidou David",
+        "lat": 43.261782,
+        "lon": 5.374515,
+        "is_virtual_station": false,
+        "capacity": 30,
+        "vehicle_type_capacity": {
+          "1": 17,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 17,
+          "4": 17,
+          "5": 0,
+          "6": 0,
+          "7": 17
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhgp2rcd13ifvqfc0",
+          "ios": "levelo://app?sid=ce4bhgp2rcd13ifvqfc0"
+        }
+      },
+      {
+        "station_id": "ce4bhgp2rcd13ifvqfd0",
+        "name": "Hambourg Rond Point Guerre",
+        "lat": 43.250035,
+        "lon": 5.389139,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 14,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 14,
+          "4": 14,
+          "5": 0,
+          "6": 0,
+          "7": 14
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhgp2rcd13ifvqfd0",
+          "ios": "levelo://app?sid=ce4bhgp2rcd13ifvqfd0"
+        }
+      },
+      {
+        "station_id": "ce4bhgp2rcd13ifvqfe0",
+        "name": "Rond Point du Prado",
+        "lat": 43.273128,
+        "lon": 5.390727,
+        "is_virtual_station": false,
+        "capacity": 30,
+        "vehicle_type_capacity": {
+          "1": 17,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 17,
+          "4": 17,
+          "5": 0,
+          "6": 0,
+          "7": 17
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhgp2rcd13ifvqfe0",
+          "ios": "levelo://app?sid=ce4bhgp2rcd13ifvqfe0"
+        }
+      },
+      {
+        "station_id": "ce4bhh12rcd13ifvqff0",
+        "name": "Escale Borély",
+        "lat": 43.254948,
+        "lon": 5.376452,
+        "is_virtual_station": false,
+        "capacity": 60,
+        "vehicle_type_capacity": {
+          "1": 49,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 49,
+          "4": 49,
+          "5": 0,
+          "6": 0,
+          "7": 49
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhh12rcd13ifvqff0",
+          "ios": "levelo://app?sid=ce4bhh12rcd13ifvqff0"
+        }
+      },
+      {
+        "station_id": "ce4bhh12rcd13ifvqfg0",
+        "name": "Michelet - Huveaune",
+        "lat": 43.267966,
+        "lon": 5.393976,
+        "is_virtual_station": false,
+        "capacity": 40,
+        "vehicle_type_capacity": {
+          "1": 30,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 30,
+          "4": 30,
+          "5": 0,
+          "6": 0,
+          "7": 30
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhh12rcd13ifvqfg0",
+          "ios": "levelo://app?sid=ce4bhh12rcd13ifvqfg0"
+        }
+      },
+      {
+        "station_id": "ce4bhh92rcd13ifvqfh0",
+        "name": "Prado - Paradis",
+        "lat": 43.269467,
+        "lon": 5.386439,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 18,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 18,
+          "4": 18,
+          "5": 0,
+          "6": 0,
+          "7": 18
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhh92rcd13ifvqfh0",
+          "ios": "levelo://app?sid=ce4bhh92rcd13ifvqfh0"
+        }
+      },
+      {
+        "station_id": "ce4bhh92rcd13ifvqfi0",
+        "name": "Paradis - Lord Duveen",
+        "lat": 43.275625,
+        "lon": 5.384392,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 15,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 15,
+          "4": 15,
+          "5": 0,
+          "6": 0,
+          "7": 15
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhh92rcd13ifvqfi0",
+          "ios": "levelo://app?sid=ce4bhh92rcd13ifvqfi0"
+        }
+      },
+      {
+        "station_id": "ce4bhh92rcd13ifvqfj0",
+        "name": "318 Mazargues",
+        "lat": 43.2607,
+        "lon": 5.393983,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 15,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 15,
+          "4": 15,
+          "5": 0,
+          "6": 0,
+          "7": 15
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhh92rcd13ifvqfj0",
+          "ios": "levelo://app?sid=ce4bhh92rcd13ifvqfj0"
+        }
+      },
+      {
+        "station_id": "ce4bhhh2rcd13ifvqfk0",
+        "name": "Plage de la Pointe Rouge",
+        "lat": 43.243884,
+        "lon": 5.370736,
+        "is_virtual_station": false,
+        "capacity": 40,
+        "vehicle_type_capacity": {
+          "1": 20,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 20,
+          "4": 20,
+          "5": 0,
+          "6": 0,
+          "7": 20
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhhh2rcd13ifvqfk0",
+          "ios": "levelo://app?sid=ce4bhhh2rcd13ifvqfk0"
+        }
+      },
+      {
+        "station_id": "ce4bhhh2rcd13ifvqfl0",
+        "name": "Negresko - Paulet",
+        "lat": 43.269319,
+        "lon": 5.389397,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 15,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 15,
+          "4": 15,
+          "5": 0,
+          "6": 0,
+          "7": 15
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhhh2rcd13ifvqfl0",
+          "ios": "levelo://app?sid=ce4bhhh2rcd13ifvqfl0"
+        }
+      },
+      {
+        "station_id": "ce4bhhp2rcd13ifvqfm0",
+        "name": "Prado - Michelet",
+        "lat": 43.272119,
+        "lon": 5.39176,
+        "is_virtual_station": false,
+        "capacity": 40,
+        "vehicle_type_capacity": {
+          "1": 29,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 29,
+          "4": 29,
+          "5": 0,
+          "6": 0,
+          "7": 29
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhhp2rcd13ifvqfm0",
+          "ios": "levelo://app?sid=ce4bhhp2rcd13ifvqfm0"
+        }
+      },
+      {
+        "station_id": "ce4bhi12rcd13ifvqfo0",
+        "name": "Prado - Lord Duveen",
+        "lat": 43.27677,
+        "lon": 5.388793,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 19,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 19,
+          "4": 19,
+          "5": 0,
+          "6": 0,
+          "7": 19
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhi12rcd13ifvqfo0",
+          "ios": "levelo://app?sid=ce4bhi12rcd13ifvqfo0"
+        }
+      },
+      {
+        "station_id": "ce4bhi12rcd13ifvqfp0",
+        "name": "Parc Pastré",
+        "lat": 43.239588,
+        "lon": 5.366238,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 8,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 8,
+          "4": 8,
+          "5": 0,
+          "6": 0,
+          "7": 8
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhi12rcd13ifvqfp0",
+          "ios": "levelo://app?sid=ce4bhi12rcd13ifvqfp0"
+        }
+      },
+      {
+        "station_id": "ce4bhi12rcd13ifvqfq0",
+        "name": "Cité Radieuse",
+        "lat": 43.264971,
+        "lon": 5.395435,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 16,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 16,
+          "4": 16,
+          "5": 0,
+          "6": 0,
+          "7": 16
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhi12rcd13ifvqfq0",
+          "ios": "levelo://app?sid=ce4bhi12rcd13ifvqfq0"
+        }
+      },
+      {
+        "station_id": "ce4bhih2rcd13ifvqfr0",
+        "name": "Lapin Blanc",
+        "lat": 43.246609,
+        "lon": 5.381688,
+        "is_virtual_station": false,
+        "capacity": 30,
+        "vehicle_type_capacity": {
+          "1": 19,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 19,
+          "4": 19,
+          "5": 0,
+          "6": 0,
+          "7": 19
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhih2rcd13ifvqfr0",
+          "ios": "levelo://app?sid=ce4bhih2rcd13ifvqfr0"
+        }
+      },
+      {
+        "station_id": "ce4bhih2rcd13ifvqfs0",
+        "name": "Clot Bey - Leau",
+        "lat": 43.255756,
+        "lon": 5.382303,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 8,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 8,
+          "4": 8,
+          "5": 0,
+          "6": 0,
+          "7": 8
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhih2rcd13ifvqfs0",
+          "ios": "levelo://app?sid=ce4bhih2rcd13ifvqfs0"
+        }
+      },
+      {
+        "station_id": "ce4bhip2rcd13ifvqft0",
+        "name": "Mazargues - Sainte Anne",
+        "lat": 43.258189,
+        "lon": 5.394357,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 16,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 16,
+          "4": 16,
+          "5": 0,
+          "6": 0,
+          "7": 16
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhip2rcd13ifvqft0",
+          "ios": "levelo://app?sid=ce4bhip2rcd13ifvqft0"
+        }
+      },
+      {
+        "station_id": "ce4bhjp2rcd13ifvqg90",
+        "name": "Huveaune - Borely",
+        "lat": 43.262023,
+        "lon": 5.379296,
+        "is_virtual_station": false,
+        "capacity": 30,
+        "vehicle_type_capacity": {
+          "1": 27,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 27,
+          "4": 27,
+          "5": 0,
+          "6": 0,
+          "7": 27
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhjp2rcd13ifvqg90",
+          "ios": "levelo://app?sid=ce4bhjp2rcd13ifvqg90"
+        }
+      },
+      {
+        "station_id": "ce4bhjp2rcd13ifvqga0",
+        "name": "Liandier - Rouet",
+        "lat": 43.27839,
+        "lon": 5.392143,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 18,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 18,
+          "4": 18,
+          "5": 0,
+          "6": 0,
+          "7": 18
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhjp2rcd13ifvqga0",
+          "ios": "levelo://app?sid=ce4bhjp2rcd13ifvqga0"
+        }
+      },
+      {
+        "station_id": "ce4bhk92rcd13ifvqgb0",
+        "name": "Boulevard urbain Sud - François Mauriac",
+        "lat": 43.27073,
+        "lon": 5.422766,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 10,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 10,
+          "4": 10,
+          "5": 0,
+          "6": 0,
+          "7": 10
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhk92rcd13ifvqgb0",
+          "ios": "levelo://app?sid=ce4bhk92rcd13ifvqgb0"
+        }
+      },
+      {
+        "station_id": "ce4bhk92rcd13ifvqgc0",
+        "name": "Sainte-Marguerite Dromel",
+        "lat": 43.270585,
+        "lon": 5.402538,
+        "is_virtual_station": false,
+        "capacity": 30,
+        "vehicle_type_capacity": {
+          "1": 22,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 22,
+          "4": 22,
+          "5": 0,
+          "6": 0,
+          "7": 22
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhk92rcd13ifvqgc0",
+          "ios": "levelo://app?sid=ce4bhk92rcd13ifvqgc0"
+        }
+      },
+      {
+        "station_id": "ce4bhkp2rcd13ifvqgd0",
+        "name": "La Gaye",
+        "lat": 43.257079,
+        "lon": 5.411051,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 18,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 18,
+          "4": 18,
+          "5": 0,
+          "6": 0,
+          "7": 18
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhkp2rcd13ifvqgd0",
+          "ios": "levelo://app?sid=ce4bhkp2rcd13ifvqgd0"
+        }
+      },
+      {
+        "station_id": "ce4bhl12rcd13ifvqgf0",
+        "name": "Rolland - Platanes",
+        "lat": 43.271718,
+        "lon": 5.409959,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 16,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 16,
+          "4": 16,
+          "5": 0,
+          "6": 0,
+          "7": 16
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhl12rcd13ifvqgf0",
+          "ios": "levelo://app?sid=ce4bhl12rcd13ifvqgf0"
+        }
+      },
+      {
+        "station_id": "ce4bhl92rcd13ifvqghg",
+        "name": "Michelet - Luce",
+        "lat": 43.258658,
+        "lon": 5.398935,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 19,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 19,
+          "4": 19,
+          "5": 0,
+          "6": 0,
+          "7": 19
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhl92rcd13ifvqghg",
+          "ios": "levelo://app?sid=ce4bhl92rcd13ifvqghg"
+        }
+      },
+      {
+        "station_id": "ce4bhlh2rcd13ifvqgig",
+        "name": "Obélisque de Mazargues",
+        "lat": 43.25102,
+        "lon": 5.403214,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 14,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 14,
+          "4": 14,
+          "5": 0,
+          "6": 0,
+          "7": 14
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhlh2rcd13ifvqgig",
+          "ios": "levelo://app?sid=ce4bhlh2rcd13ifvqgig"
+        }
+      },
+      {
+        "station_id": "ce4bhlp2rcd13ifvqgjg",
+        "name": "Lancier - Savary",
+        "lat": 43.24558,
+        "lon": 5.39507,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 9,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 9,
+          "4": 9,
+          "5": 0,
+          "6": 0,
+          "7": 9
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhlp2rcd13ifvqgjg",
+          "ios": "levelo://app?sid=ce4bhlp2rcd13ifvqgjg"
+        }
+      },
+      {
+        "station_id": "ce4bhm12rcd13ifvqgkg",
+        "name": "Mazargues - Almeras",
+        "lat": 43.250963,
+        "lon": 5.395187,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 19,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 19,
+          "4": 19,
+          "5": 0,
+          "6": 0,
+          "7": 19
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhm12rcd13ifvqgkg",
+          "ios": "levelo://app?sid=ce4bhm12rcd13ifvqgkg"
+        }
+      },
+      {
+        "station_id": "ce4bhm92rcd13ifvqglg",
+        "name": "Hôpital Sainte-Marguerite",
+        "lat": 43.259269,
+        "lon": 5.40899,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 19,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 19,
+          "4": 19,
+          "5": 0,
+          "6": 0,
+          "7": 19
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhm92rcd13ifvqglg",
+          "ios": "levelo://app?sid=ce4bhm92rcd13ifvqglg"
+        }
+      },
+      {
+        "station_id": "ce4bhmh2rcd13ifvqgmg",
+        "name": "Coin Joli",
+        "lat": 43.262163,
+        "lon": 5.404472,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 12,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 12,
+          "4": 12,
+          "5": 0,
+          "6": 0,
+          "7": 12
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhmh2rcd13ifvqgmg",
+          "ios": "levelo://app?sid=ce4bhmh2rcd13ifvqgmg"
+        }
+      },
+      {
+        "station_id": "ce4bhmp2rcd13ifvqgng",
+        "name": "Jean Bouin",
+        "lat": 43.265631,
+        "lon": 5.403472,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 17,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 17,
+          "4": 17,
+          "5": 0,
+          "6": 0,
+          "7": 17
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhmp2rcd13ifvqgng",
+          "ios": "levelo://app?sid=ce4bhmp2rcd13ifvqgng"
+        }
+      },
+      {
+        "station_id": "ce4bhmp2rcd13ifvqgog",
+        "name": "Luminy - Parc National des Calanques",
+        "lat": 43.231562,
+        "lon": 5.436933,
+        "is_virtual_station": false,
+        "capacity": 40,
+        "vehicle_type_capacity": {
+          "1": 33,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 33,
+          "4": 33,
+          "5": 0,
+          "6": 0,
+          "7": 33
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhmp2rcd13ifvqgog",
+          "ios": "levelo://app?sid=ce4bhmp2rcd13ifvqgog"
+        }
+      },
+      {
+        "station_id": "ce4bhn12rcd13ifvqgpg",
+        "name": "Roy d'Espagne - Floralia",
+        "lat": 43.241784,
+        "lon": 5.397272,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 17,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 17,
+          "4": 17,
+          "5": 0,
+          "6": 0,
+          "7": 17
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhn12rcd13ifvqgpg",
+          "ios": "levelo://app?sid=ce4bhn12rcd13ifvqgpg"
+        }
+      },
+      {
+        "station_id": "ce4bhn12rcd13ifvqgqg",
+        "name": "Sormiou",
+        "lat": 43.231794,
+        "lon": 5.400047,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 17,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 17,
+          "4": 17,
+          "5": 0,
+          "6": 0,
+          "7": 17
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhn12rcd13ifvqgqg",
+          "ios": "levelo://app?sid=ce4bhn12rcd13ifvqgqg"
+        }
+      },
+      {
+        "station_id": "ce4bhn92rcd13ifvqgrg",
+        "name": "Boulevard Urbain Sud - Verdillon",
+        "lat": 43.275028,
+        "lon": 5.424534,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 3,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 3,
+          "4": 3,
+          "5": 0,
+          "6": 0,
+          "7": 3
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhn92rcd13ifvqgrg",
+          "ios": "levelo://app?sid=ce4bhn92rcd13ifvqgrg"
+        }
+      },
+      {
+        "station_id": "ce4bhn92rcd13ifvqgsg",
+        "name": "Parc du 26ème Centenaire",
+        "lat": 43.282239,
+        "lon": 5.390869,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 9,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 9,
+          "4": 9,
+          "5": 0,
+          "6": 0,
+          "7": 9
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhn92rcd13ifvqgsg",
+          "ios": "levelo://app?sid=ce4bhn92rcd13ifvqgsg"
+        }
+      },
+      {
+        "station_id": "ce4bhnh2rcd13ifvqgtg",
+        "name": "Huveaune - Curtel",
+        "lat": 43.278128,
+        "lon": 5.407195,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 14,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 14,
+          "4": 14,
+          "5": 0,
+          "6": 0,
+          "7": 14
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhnh2rcd13ifvqgtg",
+          "ios": "levelo://app?sid=ce4bhnh2rcd13ifvqgtg"
+        }
+      },
+      {
+        "station_id": "ce4bhnh2rcd13ifvqgug",
+        "name": "Boulevard Urbain Sud - Pont de Vivaux",
+        "lat": 43.281548,
+        "lon": 5.42643,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 20,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 20,
+          "4": 20,
+          "5": 0,
+          "6": 0,
+          "7": 20
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhnh2rcd13ifvqgug",
+          "ios": "levelo://app?sid=ce4bhnh2rcd13ifvqgug"
+        }
+      },
+      {
+        "station_id": "ce4bhnp2rcd13ifvqgvg",
+        "name": "Corail - Marseilleveyre",
+        "lat": 43.24071,
+        "lon": 5.377613,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 20,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 20,
+          "4": 20,
+          "5": 0,
+          "6": 0,
+          "7": 20
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhnp2rcd13ifvqgvg",
+          "ios": "levelo://app?sid=ce4bhnp2rcd13ifvqgvg"
+        }
+      },
+      {
+        "station_id": "ce4bhnp2rcd13ifvqh0g",
+        "name": "Capelette - Forges",
+        "lat": 43.279465,
+        "lon": 5.410561,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 20,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 20,
+          "4": 20,
+          "5": 0,
+          "6": 0,
+          "7": 20
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhnp2rcd13ifvqh0g",
+          "ios": "levelo://app?sid=ce4bhnp2rcd13ifvqh0g"
+        }
+      },
+      {
+        "station_id": "ce4bho12rcd13ifvqh1g",
+        "name": "Pont de Vivaux",
+        "lat": 43.27996,
+        "lon": 5.416622,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 16,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 16,
+          "4": 16,
+          "5": 0,
+          "6": 0,
+          "7": 16
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bho12rcd13ifvqh1g",
+          "ios": "levelo://app?sid=ce4bho12rcd13ifvqh1g"
+        }
+      },
+      {
+        "station_id": "ce4bho12rcd13ifvqh2g",
+        "name": "Reboul - Argile",
+        "lat": 43.280784,
+        "lon": 5.396622,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 15,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 15,
+          "4": 15,
+          "5": 0,
+          "6": 0,
+          "7": 15
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bho12rcd13ifvqh2g",
+          "ios": "levelo://app?sid=ce4bho12rcd13ifvqh2g"
+        }
+      },
+      {
+        "station_id": "ce4bho92rcd13ifvqh3g",
+        "name": "Jean Moulin - Sainte Baume",
+        "lat": 43.287154,
+        "lon": 5.399979,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 12,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 12,
+          "4": 12,
+          "5": 0,
+          "6": 0,
+          "7": 12
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bho92rcd13ifvqh3g",
+          "ios": "levelo://app?sid=ce4bho92rcd13ifvqh3g"
+        }
+      },
+      {
+        "station_id": "ce4bho92rcd13ifvqh4g",
+        "name": "Palais Omnisports",
+        "lat": 43.279966,
+        "lon": 5.400089,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 18,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 18,
+          "4": 18,
+          "5": 0,
+          "6": 0,
+          "7": 18
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bho92rcd13ifvqh4g",
+          "ios": "levelo://app?sid=ce4bho92rcd13ifvqh4g"
+        }
+      },
+      {
+        "station_id": "ce4bhoh2rcd13ifvqh5g",
+        "name": "Toulon - Menpenti",
+        "lat": 43.284462,
+        "lon": 5.392121,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 18,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 18,
+          "4": 18,
+          "5": 0,
+          "6": 0,
+          "7": 18
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhoh2rcd13ifvqh5g",
+          "ios": "levelo://app?sid=ce4bhoh2rcd13ifvqh5g"
+        }
+      },
+      {
+        "station_id": "ce4bhoh2rcd13ifvqh6g",
+        "name": "La Fourragère",
+        "lat": 43.304024,
+        "lon": 5.424768,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 19,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 19,
+          "4": 19,
+          "5": 0,
+          "6": 0,
+          "7": 19
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhoh2rcd13ifvqh6g",
+          "ios": "levelo://app?sid=ce4bhoh2rcd13ifvqh6g"
+        }
+      },
+      {
+        "station_id": "ce4bhop2rcd13ifvqh7g",
+        "name": "Place Caire",
+        "lat": 43.303837,
+        "lon": 5.418724,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 19,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 19,
+          "4": 19,
+          "5": 0,
+          "6": 0,
+          "7": 19
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhop2rcd13ifvqh7g",
+          "ios": "levelo://app?sid=ce4bhop2rcd13ifvqh7g"
+        }
+      },
+      {
+        "station_id": "ce4bhop2rcd13ifvqh8g",
+        "name": "Saint-Barnabé - Haguenau",
+        "lat": 43.304188,
+        "lon": 5.412904,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 9,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 9,
+          "4": 9,
+          "5": 0,
+          "6": 0,
+          "7": 9
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhop2rcd13ifvqh8g",
+          "ios": "levelo://app?sid=ce4bhop2rcd13ifvqh8g"
+        }
+      },
+      {
+        "station_id": "ce4bhp12rcd13ifvqh9g",
+        "name": "Louis Armand",
+        "lat": 43.299586,
+        "lon": 5.413265,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 18,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 18,
+          "4": 18,
+          "5": 0,
+          "6": 0,
+          "7": 18
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhp12rcd13ifvqh9g",
+          "ios": "levelo://app?sid=ce4bhp12rcd13ifvqh9g"
+        }
+      },
+      {
+        "station_id": "ce4bhp92rcd13ifvqhag",
+        "name": "Bois Luzy",
+        "lat": 43.310785,
+        "lon": 5.424305,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 8,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 8,
+          "4": 8,
+          "5": 0,
+          "6": 0,
+          "7": 8
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhp92rcd13ifvqhag",
+          "ios": "levelo://app?sid=ce4bhp92rcd13ifvqhag"
+        }
+      },
+      {
+        "station_id": "ce4bhp92rcd13ifvqhbg",
+        "name": "Montolivet",
+        "lat": 43.317121,
+        "lon": 5.423936,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 19,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 19,
+          "4": 19,
+          "5": 0,
+          "6": 0,
+          "7": 19
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhp92rcd13ifvqhbg",
+          "ios": "levelo://app?sid=ce4bhp92rcd13ifvqhbg"
+        }
+      },
+      {
+        "station_id": "ce4bhp92rcd13ifvqhcg",
+        "name": "Stade Bombardière",
+        "lat": 43.317108,
+        "lon": 5.437064,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 18,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 18,
+          "4": 18,
+          "5": 0,
+          "6": 0,
+          "7": 18
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhp92rcd13ifvqhcg",
+          "ios": "levelo://app?sid=ce4bhp92rcd13ifvqhcg"
+        }
+      },
+      {
+        "station_id": "ce4bhph2rcd13ifvqhdg",
+        "name": "La Boiseraie",
+        "lat": 43.295522,
+        "lon": 5.422931,
+        "is_virtual_station": false,
+        "capacity": 40,
+        "vehicle_type_capacity": {
+          "1": 35,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 35,
+          "4": 35,
+          "5": 0,
+          "6": 0,
+          "7": 35
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhph2rcd13ifvqhdg",
+          "ios": "levelo://app?sid=ce4bhph2rcd13ifvqhdg"
+        }
+      },
+      {
+        "station_id": "ce4bhpp2rcd13ifvqhfg",
+        "name": "Saint-Jean du Désert",
+        "lat": 43.298776,
+        "lon": 5.436434,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 9,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 9,
+          "4": 9,
+          "5": 0,
+          "6": 0,
+          "7": 9
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhpp2rcd13ifvqhfg",
+          "ios": "levelo://app?sid=ce4bhpp2rcd13ifvqhfg"
+        }
+      },
+      {
+        "station_id": "ce4bhpp2rcd13ifvqhgg",
+        "name": "Saint-Paul - Malpassé",
+        "lat": 43.326605,
+        "lon": 5.409903,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 15,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 15,
+          "4": 15,
+          "5": 0,
+          "6": 0,
+          "7": 15
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhpp2rcd13ifvqhgg",
+          "ios": "levelo://app?sid=ce4bhpp2rcd13ifvqhgg"
+        }
+      },
+      {
+        "station_id": "ce4bhq12rcd13ifvqhhg",
+        "name": "Lavéran - Diderot",
+        "lat": 43.325246,
+        "lon": 5.414323,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 18,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 18,
+          "4": 18,
+          "5": 0,
+          "6": 0,
+          "7": 18
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhq12rcd13ifvqhhg",
+          "ios": "levelo://app?sid=ce4bhq12rcd13ifvqhhg"
+        }
+      },
+      {
+        "station_id": "ce4bhq12rcd13ifvqhig",
+        "name": "Perrin - Le Moulin",
+        "lat": 43.318909,
+        "lon": 5.40752,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 16,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 16,
+          "4": 16,
+          "5": 0,
+          "6": 0,
+          "7": 16
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhq12rcd13ifvqhig",
+          "ios": "levelo://app?sid=ce4bhq12rcd13ifvqhig"
+        }
+      },
+      {
+        "station_id": "ce4bhq92rcd13ifvqhkg",
+        "name": "Malpassé Métro",
+        "lat": 43.320421,
+        "lon": 5.415563,
+        "is_virtual_station": false,
+        "capacity": 30,
+        "vehicle_type_capacity": {
+          "1": 29,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 29,
+          "4": 29,
+          "5": 0,
+          "6": 0,
+          "7": 29
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhq92rcd13ifvqhkg",
+          "ios": "levelo://app?sid=ce4bhq92rcd13ifvqhkg"
+        }
+      },
+      {
+        "station_id": "ce4bhqh2rcd13ifvqhlg",
+        "name": "IUT Saint Jérôme",
+        "lat": 43.341354,
+        "lon": 5.409118,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 18,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 18,
+          "4": 18,
+          "5": 0,
+          "6": 0,
+          "7": 18
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhqh2rcd13ifvqhlg",
+          "ios": "levelo://app?sid=ce4bhqh2rcd13ifvqhlg"
+        }
+      },
+      {
+        "station_id": "ce4bhqh2rcd13ifvqhmg",
+        "name": "Faculté Saint Jérôme",
+        "lat": 43.336146,
+        "lon": 5.410335,
+        "is_virtual_station": false,
+        "capacity": 30,
+        "vehicle_type_capacity": {
+          "1": 30,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 30,
+          "4": 30,
+          "5": 0,
+          "6": 0,
+          "7": 30
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhqh2rcd13ifvqhmg",
+          "ios": "levelo://app?sid=ce4bhqh2rcd13ifvqhmg"
+        }
+      },
+      {
+        "station_id": "ce4bhqp2rcd13ifvqhng",
+        "name": "Sainte-Marthe - Glacière",
+        "lat": 43.317557,
+        "lon": 5.390173,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 13,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 13,
+          "4": 13,
+          "5": 0,
+          "6": 0,
+          "7": 13
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhqp2rcd13ifvqhng",
+          "ios": "levelo://app?sid=ce4bhqp2rcd13ifvqhng"
+        }
+      },
+      {
+        "station_id": "ce4bhqp2rcd13ifvqhog",
+        "name": "Sainte-Marthe - Moretti",
+        "lat": 43.32367,
+        "lon": 5.388836,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 18,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 18,
+          "4": 18,
+          "5": 0,
+          "6": 0,
+          "7": 18
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhqp2rcd13ifvqhog",
+          "ios": "levelo://app?sid=ce4bhqp2rcd13ifvqhog"
+        }
+      },
+      {
+        "station_id": "ce4bhr12rcd13ifvqhpg",
+        "name": "Bon Secours - Huilerie",
+        "lat": 43.319929,
+        "lon": 5.381694,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 14,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 14,
+          "4": 14,
+          "5": 0,
+          "6": 0,
+          "7": 14
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhr12rcd13ifvqhpg",
+          "ios": "levelo://app?sid=ce4bhr12rcd13ifvqhpg"
+        }
+      },
+      {
+        "station_id": "ce4bhr12rcd13ifvqhqg",
+        "name": "Place Dalmas",
+        "lat": 43.322872,
+        "lon": 5.382756,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 18,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 18,
+          "4": 18,
+          "5": 0,
+          "6": 0,
+          "7": 18
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhr12rcd13ifvqhqg",
+          "ios": "levelo://app?sid=ce4bhr12rcd13ifvqhqg"
+        }
+      },
+      {
+        "station_id": "ce4bhr92rcd13ifvqhrg",
+        "name": "Pierre Paraf",
+        "lat": 43.330205,
+        "lon": 5.390362,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 20,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 20,
+          "4": 20,
+          "5": 0,
+          "6": 0,
+          "7": 20
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhr92rcd13ifvqhrg",
+          "ios": "levelo://app?sid=ce4bhr92rcd13ifvqhrg"
+        }
+      },
+      {
+        "station_id": "ce4bhr92rcd13ifvqhsg",
+        "name": "Peupliers - Berthelot",
+        "lat": 43.337166,
+        "lon": 5.39184,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 16,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 16,
+          "4": 16,
+          "5": 0,
+          "6": 0,
+          "7": 16
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhr92rcd13ifvqhsg",
+          "ios": "levelo://app?sid=ce4bhr92rcd13ifvqhsg"
+        }
+      },
+      {
+        "station_id": "ce4bhrh2rcd13ifvqhug",
+        "name": "Zoccola",
+        "lat": 43.3209,
+        "lon": 5.367666,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 16,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 16,
+          "4": 16,
+          "5": 0,
+          "6": 0,
+          "7": 16
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhrh2rcd13ifvqhug",
+          "ios": "levelo://app?sid=ce4bhrh2rcd13ifvqhug"
+        }
+      },
+      {
+        "station_id": "ce4bhs12rcd13ifvqhvg",
+        "name": "Allar",
+        "lat": 43.324771,
+        "lon": 5.36557,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 6,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 6,
+          "4": 6,
+          "5": 0,
+          "6": 0,
+          "7": 6
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhs12rcd13ifvqhvg",
+          "ios": "levelo://app?sid=ce4bhs12rcd13ifvqhvg"
+        }
+      },
+      {
+        "station_id": "ce4bhsh2rcd13ifvqi2g",
+        "name": "Lyon - Zoccola",
+        "lat": 43.323417,
+        "lon": 5.367669,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 18,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 18,
+          "4": 18,
+          "5": 0,
+          "6": 0,
+          "7": 18
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhsh2rcd13ifvqi2g",
+          "ios": "levelo://app?sid=ce4bhsh2rcd13ifvqi2g"
+        }
+      },
+      {
+        "station_id": "ce4bhsp2rcd13ifvqi50",
+        "name": "Belle Vue",
+        "lat": 43.31529,
+        "lon": 5.380359,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 19,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 19,
+          "4": 19,
+          "5": 0,
+          "6": 0,
+          "7": 19
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhsp2rcd13ifvqi50",
+          "ios": "levelo://app?sid=ce4bhsp2rcd13ifvqi50"
+        }
+      },
+      {
+        "station_id": "ce4bht12rcd13ifvqi60",
+        "name": "Char Jeanne d'Arc - Notre Dame de La Garde",
+        "lat": 43.28604,
+        "lon": 5.370677,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 19,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 19,
+          "4": 19,
+          "5": 0,
+          "6": 0,
+          "7": 19
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bht12rcd13ifvqi60",
+          "ios": "levelo://app?sid=ce4bht12rcd13ifvqi60"
+        }
+      },
+      {
+        "station_id": "ce4bhu92rcd13ifvqi70",
+        "name": "Madrague de Montredon",
+        "lat": 43.231926,
+        "lon": 5.355532,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 13,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 13,
+          "4": 13,
+          "5": 0,
+          "6": 0,
+          "7": 13
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce4bhu92rcd13ifvqi70",
+          "ios": "levelo://app?sid=ce4bhu92rcd13ifvqi70"
+        }
+      },
+      {
+        "station_id": "ce501612rcd8frsf0b60",
+        "name": "Augustin Aubert",
+        "lat": 43.267959,
+        "lon": 5.402685,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 16,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 16,
+          "4": 16,
+          "5": 0,
+          "6": 0,
+          "7": 16
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=ce501612rcd8frsf0b60",
+          "ios": "levelo://app?sid=ce501612rcd8frsf0b60"
+        }
+      },
+      {
+        "station_id": "chh1huq6cuj3fo74tm60",
+        "name": "Camas - Jaubert",
+        "lat": 43.297807,
+        "lon": 5.393533,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 18,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 18,
+          "4": 18,
+          "5": 0,
+          "6": 0,
+          "7": 18
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=chh1huq6cuj3fo74tm60",
+          "ios": "levelo://app?sid=chh1huq6cuj3fo74tm60"
+        }
+      },
+      {
+        "station_id": "cjm6bp8fraef2m0cb0m0",
+        "name": "Sainte Marguerite Schloesing",
+        "lat": 43.26949,
+        "lon": 5.40262,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 15,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 15,
+          "4": 15,
+          "5": 0,
+          "6": 0,
+          "7": 15
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=cjm6bp8fraef2m0cb0m0",
+          "ios": "levelo://app?sid=cjm6bp8fraef2m0cb0m0"
+        }
+      },
+      {
+        "station_id": "cki0cbj6b192h4jlfktg",
+        "name": "Tobelem - Crinias",
+        "lat": 43.28727,
+        "lon": 5.36078,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 18,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 18,
+          "4": 18,
+          "5": 0,
+          "6": 0,
+          "7": 18
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=cki0cbj6b192h4jlfktg",
+          "ios": "levelo://app?sid=cki0cbj6b192h4jlfktg"
+        }
+      },
+      {
+        "station_id": "cpo3342slgdg3j2ifvpg",
+        "name": "Entrée du parc national des calanques",
+        "lat": 43.23052,
+        "lon": 5.35489,
+        "is_virtual_station": false,
+        "capacity": 30,
+        "vehicle_type_capacity": {
+          "1": 30,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 30,
+          "4": 30,
+          "5": 0,
+          "6": 0,
+          "7": 30
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=cpo3342slgdg3j2ifvpg",
+          "ios": "levelo://app?sid=cpo3342slgdg3j2ifvpg"
+        }
+      },
+      {
+        "station_id": "cpo3532slgdg3j2ikp40",
+        "name": "Saména",
+        "lat": 43.22926,
+        "lon": 5.35377,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 15,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 15,
+          "4": 15,
+          "5": 0,
+          "6": 0,
+          "7": 15
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=cpo3532slgdg3j2ikp40",
+          "ios": "levelo://app?sid=cpo3532slgdg3j2ikp40"
+        }
+      },
+      {
+        "station_id": "cpo36qri1sfpv3e86is0",
+        "name": "Bain des Dames",
+        "lat": 43.24167,
+        "lon": 5.36393,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 17,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 17,
+          "4": 17,
+          "5": 0,
+          "6": 0,
+          "7": 17
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=cpo36qri1sfpv3e86is0",
+          "ios": "levelo://app?sid=cpo36qri1sfpv3e86is0"
+        }
+      },
+      {
+        "station_id": "st_cvj5dfep6f1abm77gieg",
+        "name": "Station éphémère - Escalette",
+        "lat": 43.225362,
+        "lon": 5.348357,
+        "is_virtual_station": true,
+        "capacity": 100,
+        "vehicle_type_capacity": {
+          "1": 100,
+          "10": 100,
+          "14": 0,
+          "15": 0,
+          "2": 100,
+          "4": 100,
+          "5": 0,
+          "6": 0,
+          "7": 100
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=st_cvj5dfep6f1abm77gieg",
+          "ios": "levelo://app?sid=st_cvj5dfep6f1abm77gieg"
+        }
+      },
+      {
+        "station_id": "st_cvj6ca6bvosntc0bfgr0",
+        "name": "Kaddouz",
+        "lat": 43.3073,
+        "lon": 5.42464,
+        "is_virtual_station": false,
+        "capacity": 30,
+        "vehicle_type_capacity": {
+          "1": 28,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 28,
+          "4": 28,
+          "5": 0,
+          "6": 0,
+          "7": 28
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=st_cvj6ca6bvosntc0bfgr0",
+          "ios": "levelo://app?sid=st_cvj6ca6bvosntc0bfgr0"
+        }
+      },
+      {
+        "station_id": "st_cvj6r9ubvosntc0bgbag",
+        "name": "Station éphémère - Les goudes",
+        "lat": 43.21738,
+        "lon": 5.34602,
+        "is_virtual_station": true,
+        "capacity": 100,
+        "vehicle_type_capacity": {
+          "1": 77,
+          "10": 77,
+          "14": 0,
+          "15": 0,
+          "2": 77,
+          "4": 77,
+          "5": 0,
+          "6": 0,
+          "7": 77
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=st_cvj6r9ubvosntc0bgbag",
+          "ios": "levelo://app?sid=st_cvj6r9ubvosntc0bgbag"
+        }
+      },
+      {
+        "station_id": "st_cvj6sg6p6f1abm77japg",
+        "name": "Station éphémère - Callelongue",
+        "lat": 43.21181,
+        "lon": 5.35089,
+        "is_virtual_station": true,
+        "capacity": 100,
+        "vehicle_type_capacity": {
+          "1": 70,
+          "10": 70,
+          "14": 0,
+          "15": 0,
+          "2": 70,
+          "4": 70,
+          "5": 0,
+          "6": 0,
+          "7": 70
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=st_cvj6sg6p6f1abm77japg",
+          "ios": "levelo://app?sid=st_cvj6sg6p6f1abm77japg"
+        }
+      },
+      {
+        "station_id": "st_d2m65c5bi1j21697t3ng",
+        "name": "La rouvière",
+        "lat": 43.253415,
+        "lon": 5.421725,
+        "is_virtual_station": false,
+        "capacity": 30,
+        "vehicle_type_capacity": {
+          "1": 28,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 28,
+          "4": 28,
+          "5": 0,
+          "6": 0,
+          "7": 28
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=st_d2m65c5bi1j21697t3ng",
+          "ios": "levelo://app?sid=st_d2m65c5bi1j21697t3ng"
+        }
+      },
+      {
+        "station_id": "st_d2m6c4gdas8pm72e190g",
+        "name": "Lachamp Le Clos des Iris",
+        "lat": 43.24634,
+        "lon": 5.43156,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 13,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 13,
+          "4": 13,
+          "5": 0,
+          "6": 0,
+          "7": 13
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=st_d2m6c4gdas8pm72e190g",
+          "ios": "levelo://app?sid=st_d2m6c4gdas8pm72e190g"
+        }
+      },
+      {
+        "station_id": "st_d2ngiaodas8pm72gd1h0",
+        "name": "Tassigny - Mazargues",
+        "lat": 43.249557,
+        "lon": 5.404859,
+        "is_virtual_station": false,
+        "capacity": 30,
+        "vehicle_type_capacity": {
+          "1": 22,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 22,
+          "4": 22,
+          "5": 0,
+          "6": 0,
+          "7": 22
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=st_d2ngiaodas8pm72gd1h0",
+          "ios": "levelo://app?sid=st_d2ngiaodas8pm72gd1h0"
+        }
+      },
+      {
+        "station_id": "st_d2o4gvlbi1j2169b742g",
+        "name": "Morgiou",
+        "lat": 43.225616,
+        "lon": 5.416236,
+        "is_virtual_station": false,
+        "capacity": 40,
+        "vehicle_type_capacity": {
+          "1": 33,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 33,
+          "4": 33,
+          "5": 0,
+          "6": 0,
+          "7": 33
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=st_d2o4gvlbi1j2169b742g",
+          "ios": "levelo://app?sid=st_d2o4gvlbi1j2169b742g"
+        }
+      },
+      {
+        "station_id": "st_d3b462108ojc7389ooeg",
+        "name": "Chemin de l'armée d'afrique",
+        "lat": 43.28861,
+        "lon": 5.42533,
+        "is_virtual_station": false,
+        "capacity": 30,
+        "vehicle_type_capacity": {
+          "1": 26,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 26,
+          "4": 26,
+          "5": 0,
+          "6": 0,
+          "7": 26
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=st_d3b462108ojc7389ooeg",
+          "ios": "levelo://app?sid=st_d3b462108ojc7389ooeg"
+        }
+      },
+      {
+        "station_id": "st_d3j5ugp08ojc73fj9d10",
+        "name": "La Grognarde",
+        "lat": 43.29494,
+        "lon": 5.43316,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 19,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 19,
+          "4": 19,
+          "5": 0,
+          "6": 0,
+          "7": 19
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=st_d3j5ugp08ojc73fj9d10",
+          "ios": "levelo://app?sid=st_d3j5ugp08ojc73fj9d10"
+        }
+      },
+      {
+        "station_id": "st_d3jp68qikq2c7381ktn0",
+        "name": "Bastide cazaux",
+        "lat": 43.29788,
+        "lon": 5.44046,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 20,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 20,
+          "4": 20,
+          "5": 0,
+          "6": 0,
+          "7": 20
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=st_d3jp68qikq2c7381ktn0",
+          "ios": "levelo://app?sid=st_d3jp68qikq2c7381ktn0"
+        }
+      },
+      {
+        "station_id": "st_d3js3co5814s73ftftug",
+        "name": "Les Borromées",
+        "lat": 43.30125,
+        "lon": 5.43125,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 18,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 18,
+          "4": 18,
+          "5": 0,
+          "6": 0,
+          "7": 18
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=st_d3js3co5814s73ftftug",
+          "ios": "levelo://app?sid=st_d3js3co5814s73ftftug"
+        }
+      },
+      {
+        "station_id": "st_d3md5207bmas73dh9klg",
+        "name": "Clérissy Gaston de Flotte",
+        "lat": 43.29763,
+        "lon": 5.42772,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 17,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 17,
+          "4": 17,
+          "5": 0,
+          "6": 0,
+          "7": 17
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=st_d3md5207bmas73dh9klg",
+          "ios": "levelo://app?sid=st_d3md5207bmas73dh9klg"
+        }
+      },
+      {
+        "station_id": "st_d3n2fo6cfp8s73cte1j0",
+        "name": "Mairie de Bagatelle",
+        "lat": 43.270679,
+        "lon": 5.383221,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 14,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 14,
+          "4": 14,
+          "5": 0,
+          "6": 0,
+          "7": 14
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=st_d3n2fo6cfp8s73cte1j0",
+          "ios": "levelo://app?sid=st_d3n2fo6cfp8s73cte1j0"
+        }
+      },
+      {
+        "station_id": "st_d3nk18o9ro0c73en2l3g",
+        "name": "Carthage - Engaliere",
+        "lat": 43.2378,
+        "lon": 5.36635,
+        "is_virtual_station": true,
+        "capacity": 0,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "levelo://app?sid=st_d3nk18o9ro0c73en2l3g",
+          "ios": "levelo://app?sid=st_d3nk18o9ro0c73en2l3g"
+        }
+      },
+      {
+        "station_id": "st_d3svhcjqgbts73a3dn0g",
+        "name": "La Barasse",
+        "lat": 43.28473,
+        "lon": 5.48491,
+        "is_virtual_station": false,
+        "capacity": 30,
+        "vehicle_type_capacity": {
+          "1": 21,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 21,
+          "4": 21,
+          "5": 0,
+          "6": 0,
+          "7": 21
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=st_d3svhcjqgbts73a3dn0g",
+          "ios": "levelo://app?sid=st_d3svhcjqgbts73a3dn0g"
+        }
+      },
+      {
+        "station_id": "st_d45171o9ee8s73djdqug",
+        "name": "Moretti - Gibbes",
+        "lat": 43.32343,
+        "lon": 5.38501,
+        "is_virtual_station": false,
+        "capacity": 30,
+        "vehicle_type_capacity": {
+          "1": 30,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 30,
+          "4": 30,
+          "5": 0,
+          "6": 0,
+          "7": 30
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=st_d45171o9ee8s73djdqug",
+          "ios": "levelo://app?sid=st_d45171o9ee8s73djdqug"
+        }
+      },
+      {
+        "station_id": "st_d46cu089ee8s73dldbu0",
+        "name": "Geze - Arnavon",
+        "lat": 43.331575,
+        "lon": 5.376771,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 18,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 18,
+          "4": 18,
+          "5": 0,
+          "6": 0,
+          "7": 18
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=st_d46cu089ee8s73dldbu0",
+          "ios": "levelo://app?sid=st_d46cu089ee8s73dldbu0"
+        }
+      },
+      {
+        "station_id": "st_d46tts09ee8s73dlu43g",
+        "name": "Gay - Lussac",
+        "lat": 43.33558,
+        "lon": 5.3746,
+        "is_virtual_station": false,
+        "capacity": 30,
+        "vehicle_type_capacity": {
+          "1": 19,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 19,
+          "4": 19,
+          "5": 0,
+          "6": 0,
+          "7": 19
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=st_d46tts09ee8s73dlu43g",
+          "ios": "levelo://app?sid=st_d46tts09ee8s73dlu43g"
+        }
+      },
+      {
+        "station_id": "st_d4a3vfp97mjs738cd8kg",
+        "name": "Valmont - Redon",
+        "lat": 43.24473,
+        "lon": 5.42547,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 15,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 15,
+          "4": 15,
+          "5": 0,
+          "6": 0,
+          "7": 15
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=st_d4a3vfp97mjs738cd8kg",
+          "ios": "levelo://app?sid=st_d4a3vfp97mjs738cd8kg"
+        }
+      },
+      {
+        "station_id": "st_d4a7ka997mjs738ck50g",
+        "name": "Jean Moulin - Saint Etienne",
+        "lat": 43.28608,
+        "lon": 5.39874,
+        "is_virtual_station": false,
+        "capacity": 30,
+        "vehicle_type_capacity": {
+          "1": 22,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 22,
+          "4": 22,
+          "5": 0,
+          "6": 0,
+          "7": 22
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=st_d4a7ka997mjs738ck50g",
+          "ios": "levelo://app?sid=st_d4a7ka997mjs738ck50g"
+        }
+      },
+      {
+        "station_id": "st_d4asgbiv49dc73anf9m0",
+        "name": "Gibbes - Calvet",
+        "lat": 43.32495,
+        "lon": 5.38301,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 18,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 18,
+          "4": 18,
+          "5": 0,
+          "6": 0,
+          "7": 18
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=st_d4asgbiv49dc73anf9m0",
+          "ios": "levelo://app?sid=st_d4asgbiv49dc73anf9m0"
+        }
+      },
+      {
+        "station_id": "st_d4e5ca6na9uc73bfl5fg",
+        "name": "Paoli Calmettes",
+        "lat": 43.26366,
+        "lon": 5.41087,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 12,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 12,
+          "4": 12,
+          "5": 0,
+          "6": 0,
+          "7": 12
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=st_d4e5ca6na9uc73bfl5fg",
+          "ios": "levelo://app?sid=st_d4e5ca6na9uc73bfl5fg"
+        }
+      },
+      {
+        "station_id": "st_d4kl2rp97mjs73e7tdfg",
+        "name": "Ruffi Guinot",
+        "lat": 43.310586,
+        "lon": 5.371562,
+        "is_virtual_station": false,
+        "capacity": 40,
+        "vehicle_type_capacity": {
+          "1": 35,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 35,
+          "4": 35,
+          "5": 0,
+          "6": 0,
+          "7": 35
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "levelo://app?sid=st_d4kl2rp97mjs73e7tdfg",
+          "ios": "levelo://app?sid=st_d4kl2rp97mjs73e7tdfg"
+        }
+      }
+    ]
+  }
+}

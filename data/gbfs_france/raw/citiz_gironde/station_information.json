@@ -1,0 +1,1912 @@
+{
+  "last_updated": "2026-02-22T09:41:13.8866041+01:00",
+  "ttl": 300,
+  "version": "3.0",
+  "data": {
+    "stations": [
+      {
+        "station_id": "601",
+        "name": [
+          {
+            "text": "Carnot (Parc Bordelais)",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.851314544677734,
+        "lon": -0.5962259769439697,
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "602",
+        "name": [
+          {
+            "text": "Terres-Neuves",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.81455612182617,
+        "lon": -0.550466001033783,
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "603",
+        "name": [
+          {
+            "text": "Bergonié",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.82540512084961,
+        "lon": -0.5776309967041016,
+        "parking_type": "street_parking",
+        "capacity": 6,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "604",
+        "name": [
+          {
+            "text": "Gare de Cenon",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.85597610473633,
+        "lon": -0.5341470241546631,
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "605",
+        "name": [
+          {
+            "text": "Chartrons / Notre Dame",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.85150146484375,
+        "lon": -0.5716760158538818,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "607",
+        "name": [
+          {
+            "text": "Jean-Jaurès",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.84282684326172,
+        "lon": -0.5709310173988342,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "609",
+        "name": [
+          {
+            "text": "Mérignac Centre",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.8407096862793,
+        "lon": -0.6472110152244568,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "610",
+        "name": [
+          {
+            "text": "Musée d'Aquitaine",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.836097717285156,
+        "lon": -0.5754179954528809,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "611",
+        "name": [
+          {
+            "text": "Nansouty (Somme)",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.82154083251953,
+        "lon": -0.5725200176239014,
+        "address": "233 cours de la Somme 33 800 Bordeaux",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "614",
+        "name": [
+          {
+            "text": "Quinconces (METPARK-Parcub)",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.84647750854492,
+        "lon": -0.5736470222473145,
+        "parking_type": "street_parking",
+        "capacity": 6,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "615",
+        "name": [
+          {
+            "text": "Sainte-Croix (Etables)",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.830291748046875,
+        "lon": -0.560916006565094,
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "616",
+        "name": [
+          {
+            "text": "Stalingrad (Serr)",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.84116744995117,
+        "lon": -0.561447024345398,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "617",
+        "name": [
+          {
+            "text": "Forum",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.811893463134766,
+        "lon": -0.5908269882202148,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "618",
+        "name": [
+          {
+            "text": "Victor-Hugo (METPARK-Parcub)",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.835670471191406,
+        "lon": -0.5723950266838074,
+        "parking_type": "street_parking",
+        "capacity": 6,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "619",
+        "name": [
+          {
+            "text": "Gare Saint-Jean",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.827196,
+        "lon": -0.558069,
+        "address": "4 rue Saint Vincent de Paul 33800 Bordeaux",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "620",
+        "name": [
+          {
+            "text": "Z (NE PAS RÉSERVER)",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.25,
+        "lon": -15.66,
+        "parking_type": "street_parking",
+        "capacity": 20,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "621",
+        "name": [
+          {
+            "text": "Gare de Pessac",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.8044319152832,
+        "lon": -0.6323530077934265,
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "622",
+        "name": [
+          {
+            "text": "Mairie de Talence",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.8089485168457,
+        "lon": -0.5883499979972839,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "624",
+        "name": [
+          {
+            "text": "Darwin / Parking Chantier Nicolas",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.850555419921875,
+        "lon": -0.5600669980049133,
+        "parking_type": "street_parking",
+        "capacity": 5,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "625",
+        "name": [
+          {
+            "text": "Larminat",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.834007263183594,
+        "lon": -0.590391993522644,
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "626",
+        "name": [
+          {
+            "text": "Gambetta (Clémenceau)",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.84238052368164,
+        "lon": -0.5795320272445679,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "627",
+        "name": [
+          {
+            "text": "Ginko",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.878929138183594,
+        "lon": -0.5706539750099182,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "628",
+        "name": [
+          {
+            "text": "Arnozan",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.84893035888672,
+        "lon": -0.5714560151100159,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "629",
+        "name": [
+          {
+            "text": "Picard",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.855403900146484,
+        "lon": -0.5711169838905334,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "630",
+        "name": [
+          {
+            "text": "Tourny (Huguerie)",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.84485626220703,
+        "lon": -0.5784339904785156,
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "631",
+        "name": [
+          {
+            "text": "Cap Sciences",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.85993576049805,
+        "lon": -0.5546810030937195,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "632",
+        "name": [
+          {
+            "text": "Pellegrin",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.829917907714844,
+        "lon": -0.602990984916687,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "633",
+        "name": [
+          {
+            "text": "Victoire (Henri IV)",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.831905364990234,
+        "lon": -0.5751090049743652,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "634",
+        "name": [
+          {
+            "text": "Alsace-Lorraine (Agence Citiz)",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.83791732788086,
+        "lon": -0.5684329867362976,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "636",
+        "name": [
+          {
+            "text": "Barrière de Pessac (Ségur)",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.825599670410156,
+        "lon": -0.5884039998054504,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "637",
+        "name": [
+          {
+            "text": "Benauge",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.84151077270508,
+        "lon": -0.5465400218963623,
+        "address": "flex temporaire travaux fin 10/10/25",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "638",
+        "name": [
+          {
+            "text": "Ravezies",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.86638641357422,
+        "lon": -0.5754269957542419,
+        "address": "flex temporaire fin 24/10/25",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "639",
+        "name": [
+          {
+            "text": "Gare-Belcier",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.82290267944336,
+        "lon": -0.5524500012397766,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "640",
+        "name": [
+          {
+            "text": "Malbec",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.82493209838867,
+        "lon": -0.5633789896965027,
+        "address": "90 rue Malbec",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "641",
+        "name": [
+          {
+            "text": "Rue Victor Hugo",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.81924819946289,
+        "lon": -0.5803390145301819,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "643",
+        "name": [
+          {
+            "text": "[FLEX]-Galin",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.849937438964844,
+        "lon": -0.5442780256271362,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  -0.546333,
+                  44.851077,
+                  0
+                ],
+                [
+                  -0.548244,
+                  44.849803,
+                  0
+                ],
+                [
+                  -0.547622,
+                  44.847552,
+                  0
+                ],
+                [
+                  -0.542128,
+                  44.846898,
+                  0
+                ],
+                [
+                  -0.541699,
+                  44.847712,
+                  0
+                ],
+                [
+                  -0.541291,
+                  44.848906,
+                  0
+                ],
+                [
+                  -0.540776,
+                  44.848814,
+                  0
+                ],
+                [
+                  -0.540562,
+                  44.849431,
+                  0
+                ],
+                [
+                  -0.540219,
+                  44.849389,
+                  0
+                ],
+                [
+                  -0.539875,
+                  44.850564,
+                  0
+                ],
+                [
+                  -0.542295,
+                  44.850861,
+                  0
+                ],
+                [
+                  -0.542718,
+                  44.851013,
+                  0
+                ],
+                [
+                  -0.543198,
+                  44.85069,
+                  0
+                ],
+                [
+                  -0.54282,
+                  44.851363,
+                  0
+                ],
+                [
+                  -0.543788,
+                  44.851779,
+                  0
+                ],
+                [
+                  -0.544692,
+                  44.852169,
+                  0
+                ],
+                [
+                  -0.546333,
+                  44.851077,
+                  0
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "644",
+        "name": [
+          {
+            "text": "Mairie (Parking rue Coudol)",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.86592102050781,
+        "lon": -0.5995299816131592,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "645",
+        "name": [
+          {
+            "text": "Mondésir",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.83821487426758,
+        "lon": -0.6162440180778503,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "646",
+        "name": [
+          {
+            "text": "Arlac Peychotte",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.826171875,
+        "lon": -0.6246100068092346,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "661",
+        "name": [
+          {
+            "text": "Réduit-Grand Darnal",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.88449478149414,
+        "lon": -0.6028950214385986,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "665",
+        "name": [
+          {
+            "text": "Gare - La Réole",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.57976531982422,
+        "lon": -0.03284800052642822,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "667",
+        "name": [
+          {
+            "text": "Gare - Langon",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.555328369140625,
+        "lon": -0.25543299317359924,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "668",
+        "name": [
+          {
+            "text": "Place Kennedy",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.553253173828125,
+        "lon": -0.24983400106430054,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "669",
+        "name": [
+          {
+            "text": "Peixotto",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.8066291809082,
+        "lon": -0.5924500226974487,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "670",
+        "name": [
+          {
+            "text": "Anatole France",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.81142044067383,
+        "lon": -0.5632699728012085,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "671",
+        "name": [
+          {
+            "text": "Place du bicentenaire",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.80730357,
+        "lon": -0.54801979,
+        "address": "Place du Bicentenaire Bègles ",
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "672",
+        "name": [
+          {
+            "text": "Place Simiot",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.823387145996094,
+        "lon": -0.5773640275001526,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "673",
+        "name": [
+          {
+            "text": "Yser / Brémontier",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.824764251708984,
+        "lon": -0.5698829889297485,
+        "address": "Flex temporaire jusqu'au 10/11/25 cause travaux",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "674",
+        "name": [
+          {
+            "text": "Giono",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.84442138671875,
+        "lon": -0.5598199963569641,
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "675",
+        "name": [
+          {
+            "text": "Victoire / Pasteur",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.83177947998047,
+        "lon": -0.5736100077629089,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "676",
+        "name": [
+          {
+            "text": "Barrière de Toulouse",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.81441116333008,
+        "lon": -0.5726699829101562,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "677",
+        "name": [
+          {
+            "text": "Delacroix",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.82289123535156,
+        "lon": -0.5541200041770935,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "678",
+        "name": [
+          {
+            "text": "Pelleport Pont du Guit",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.823970794677734,
+        "lon": -0.5583599805831909,
+        "address": "1 rue Pelleport",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "679",
+        "name": [
+          {
+            "text": "Commandant Arnould",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.836830139160156,
+        "lon": -0.5775099992752075,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "680",
+        "name": [
+          {
+            "text": "Jardins Hôtel de Ville",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.83755874633789,
+        "lon": -0.5812600255012512,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "681",
+        "name": [
+          {
+            "text": "Jean-Jacques Bosc",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.81645965576172,
+        "lon": -0.5493199825286865,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "682",
+        "name": [
+          {
+            "text": "Galliéni",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.8226318359375,
+        "lon": -0.5932000279426575,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "683",
+        "name": [
+          {
+            "text": "Mouneyra",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.83047866821289,
+        "lon": -0.5887600183486938,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "684",
+        "name": [
+          {
+            "text": "Boucheries",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.835838317871094,
+        "lon": -0.5694379806518555,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "685",
+        "name": [
+          {
+            "text": "Bonnier / Château d'eau",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.838340759277344,
+        "lon": -0.5832800269126892,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "686",
+        "name": [
+          {
+            "text": "Piscine Judaïque",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.84086990356445,
+        "lon": -0.5924999713897705,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "687",
+        "name": [
+          {
+            "text": "Gauthier / Chartreuse",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.83536148071289,
+        "lon": -0.5990599989891052,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "688",
+        "name": [
+          {
+            "text": "Bel-Air / République",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.83951187133789,
+        "lon": -0.6064000129699707,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "689",
+        "name": [
+          {
+            "text": "Gare de Caudéran-Mérignac",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.84259033203125,
+        "lon": -0.6283800005912781,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "690",
+        "name": [
+          {
+            "text": "Place Lopès / rue Bahr",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.8462335914074,
+        "lon": -0.613110432671286,
+        "address": "2 places après la station de recharge électrique, au 1 rue Bahr",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "691",
+        "name": [
+          {
+            "text": "Avenue d'Eysines",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.863868713378906,
+        "lon": -0.6196799874305725,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "692",
+        "name": [
+          {
+            "text": "Cours du Médoc / Tatry",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.863441467285156,
+        "lon": -0.5725200176239014,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "693",
+        "name": [
+          {
+            "text": "Louis Fargue",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.865238189697266,
+        "lon": -0.5653300285339355,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "694",
+        "name": [
+          {
+            "text": "Lucien Faure",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.863380432128906,
+        "lon": -0.5570899844169617,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "695",
+        "name": [
+          {
+            "text": "Balguerie",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.860618591308594,
+        "lon": -0.5633999705314636,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "696",
+        "name": [
+          {
+            "text": "Saint-Louis",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.8579216003418,
+        "lon": -0.5697900056838989,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "697",
+        "name": [
+          {
+            "text": "Quai des Chartrons / Cours du Médoc",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.85538101196289,
+        "lon": -0.56427001953125,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "698",
+        "name": [
+          {
+            "text": "Lagrange / Frère",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.8537483215332,
+        "lon": -0.5792199969291687,
+        "address": "36 rue Lagrange",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "699",
+        "name": [
+          {
+            "text": "Clémenceau / Tourny",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.84462356567383,
+        "lon": -0.5786030292510986,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "700",
+        "name": [
+          {
+            "text": "Orléans",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.84383010864258,
+        "lon": -0.5721399784088135,
+        "address": "20 allée Orléans",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "701",
+        "name": [
+          {
+            "text": "Québec",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.88233184814453,
+        "lon": -0.5696300268173218,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "702",
+        "name": [
+          {
+            "text": "Gaviniès",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.83340835571289,
+        "lon": -0.5934799909591675,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "703",
+        "name": [
+          {
+            "text": "Fourcand / Barraud",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.847164154052734,
+        "lon": -0.5837529897689819,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "704",
+        "name": [
+          {
+            "text": "Grand Parc / Europe - Cours de Luze",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.8583213168987,
+        "lon": -0.580664084781362,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "705",
+        "name": [
+          {
+            "text": "[Titi Floris]-MÉRIGNAC-108 AVENUE DE MAGUDAS",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.85703659057617,
+        "lon": -0.6586419939994812,
+        "address": "108 avenue Magudas à Mérignac",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  -0.6591943638931208,
+                  44.85709302265694
+                ],
+                [
+                  -0.6582019465576106,
+                  44.85694661984573
+                ],
+                [
+                  -0.6582421796928339,
+                  44.85643325639785
+                ],
+                [
+                  -0.6593204277168208,
+                  44.85662909558642
+                ],
+                [
+                  -0.6591943638931208,
+                  44.85709302265694
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "707",
+        "name": [
+          {
+            "text": "Mairie de Bruges",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.8816656324356,
+        "lon": -0.612686649075032,
+        "address": "allée des Borges à l'arrière de la Mairie, 2 places face au bâtiment de la Mairie\n",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "708",
+        "name": [
+          {
+            "text": "[Titi Floris]-BORDEAUX-2 RUE DES FRÈRES PORTMANN",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.86053466796875,
+        "lon": -0.5756539702415466,
+        "address": "2 rue des frères Portmann 33000 BORDEAUX",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  -0.5769877228927522,
+                  44.86058404888381
+                ],
+                [
+                  -0.5754588637542635,
+                  44.8606905169664
+                ],
+                [
+                  -0.5752496514511019,
+                  44.859686667221794
+                ],
+                [
+                  -0.5761776957702547,
+                  44.85964483976925
+                ],
+                [
+                  -0.5769877228927522,
+                  44.86058404888381
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "711",
+        "name": [
+          {
+            "text": "Forum (Cinémas)",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.811893463134766,
+        "lon": -0.5908269882202148,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "948",
+        "name": [
+          {
+            "text": "[FLEX]-Bacalan",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.87240219116211,
+        "lon": -0.5498011112213135,
+        "address": "Bacalan",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  -0.5617813384668446,
+                  44.86586369476371
+                ],
+                [
+                  -0.5550007140771962,
+                  44.87073015955598
+                ],
+                [
+                  -0.5550007140771962,
+                  44.873284888866756
+                ],
+                [
+                  -0.5536274230615712,
+                  44.87571785896889
+                ],
+                [
+                  -0.5513958251611806,
+                  44.88228636445657
+                ],
+                [
+                  -0.5393795287744618,
+                  44.87985367207776
+                ],
+                [
+                  -0.5428127563135243,
+                  44.872919934479704
+                ],
+                [
+                  -0.5434994018213368,
+                  44.869756899512836
+                ],
+                [
+                  -0.5457309997217274,
+                  44.864586179578644
+                ],
+                [
+                  -0.5536274230615712,
+                  44.85959751546442
+                ],
+                [
+                  -0.5617813384668446,
+                  44.86586369476371
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "949",
+        "name": [
+          {
+            "text": "[FLEX]-Parc Rivière",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.854209899902344,
+        "lon": -0.5862500071525574,
+        "address": "Zone Flex autour du Parc Rivière",
+        "parking_type": "street_parking",
+        "capacity": 5,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  -0.5894557204243189,
+                  44.859581626621136
+                ],
+                [
+                  -0.5937901701923853,
+                  44.85364941912084
+                ],
+                [
+                  -0.5937901701923853,
+                  44.85340603345505
+                ],
+                [
+                  -0.58168804311719,
+                  44.84978555022944
+                ],
+                [
+                  -0.5808726515766627,
+                  44.852249937495785
+                ],
+                [
+                  -0.5796281065937525,
+                  44.853040953027765
+                ],
+                [
+                  -0.5894557204243189,
+                  44.859581626621136
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "951",
+        "name": [
+          {
+            "text": "[FLEX]-Bastide",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.83974838256836,
+        "lon": -0.5526099801063538,
+        "address": "Station flex délimité par le cours le Rouzic, Joliot Curie, les quais et l'avenue Thiers",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  -0.5611370477772848,
+                  44.8400946683587
+                ],
+                [
+                  -0.5527256403065817,
+                  44.84505459436577
+                ],
+                [
+                  -0.5482624445058004,
+                  44.84128143798288
+                ],
+                [
+                  -0.5467174921132223,
+                  44.84167702242533
+                ],
+                [
+                  -0.5461166772938864,
+                  44.840520691036375
+                ],
+                [
+                  -0.5457304391957418,
+                  44.83878615043842
+                ],
+                [
+                  -0.5496357355214254,
+                  44.83735587592894
+                ],
+                [
+                  -0.5524252328969137,
+                  44.83440392054666
+                ],
+                [
+                  -0.5611370477772848,
+                  44.8400946683587
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "952",
+        "name": [
+          {
+            "text": "[FLEX]-Barrière St Genès (Bordeaux)",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.82181930541992,
+        "lon": -0.582539975643158,
+        "address": "Autour de la barrière St Genès, côté Bordeaux",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  -0.5755953583371598,
+                  44.8168196237066
+                ],
+                [
+                  -0.5761532578122575,
+                  44.81858526712768
+                ],
+                [
+                  -0.5782561096799332,
+                  44.82178155302818
+                ],
+                [
+                  -0.5800156387937028,
+                  44.82330353165503
+                ],
+                [
+                  -0.581732252563234,
+                  44.82366880054677
+                ],
+                [
+                  -0.5813460144650895,
+                  44.82446020853939
+                ],
+                [
+                  -0.5827622208249528,
+                  44.82509941475585
+                ],
+                [
+                  -0.5856804642331559,
+                  44.82503853827868
+                ],
+                [
+                  -0.5886416229855973,
+                  44.82592124090535
+                ],
+                [
+                  -0.5898003372800309,
+                  44.825282043801586
+                ],
+                [
+                  -0.5758528504025895,
+                  44.81636298298806
+                ],
+                [
+                  -0.5755953583371598,
+                  44.8168196237066
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "953",
+        "name": [
+          {
+            "text": "[FLEX]-Cité Numérique",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.81282043457031,
+        "lon": -0.5543000102043152,
+        "address": "Autour de la Cité Numérique",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  -0.5560415084851345,
+                  44.81609177965196
+                ],
+                [
+                  -0.5546467597973903,
+                  44.8148588258506
+                ],
+                [
+                  -0.5540030296338161,
+                  44.81508715261752
+                ],
+                [
+                  -0.5534451301587184,
+                  44.81466094192134
+                ],
+                [
+                  -0.5528443153393825,
+                  44.81496537845433
+                ],
+                [
+                  -0.5521362121594509,
+                  44.814326059878766
+                ],
+                [
+                  -0.5502264793408473,
+                  44.81417384012563
+                ],
+                [
+                  -0.5511491592419704,
+                  44.81058133731899
+                ],
+                [
+                  -0.5541961486828884,
+                  44.81080968102152
+                ],
+                [
+                  -0.5556767280591091,
+                  44.81048999958486
+                ],
+                [
+                  -0.5562131698620876,
+                  44.81108369227123
+                ],
+                [
+                  -0.5570071037304958,
+                  44.811372924955826
+                ],
+                [
+                  -0.5581229026806911,
+                  44.81263639809645
+                ],
+                [
+                  -0.5589812095654567,
+                  44.813915065623185
+                ],
+                [
+                  -0.5576079185498317,
+                  44.81513281786241
+                ],
+                [
+                  -0.5560415084851345,
+                  44.81609177965196
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "1191",
+        "name": [
+          {
+            "text": "Gare de Libourne",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.916021,
+        "lon": -0.237001,
+        "address": "devant la gare, entre la Place des Martyrs et la gare",
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1655",
+        "name": [
+          {
+            "text": "Yser électrique",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.8247303445314,
+        "lon": -0.569924208223919,
+        "address": "2 BORNES DE RECHARGE AU 140 COURS DE L'YSER",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1656",
+        "name": [
+          {
+            "text": "Furtado électrique",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.8242982728806,
+        "lon": -0.558580145116688,
+        "address": "3 BORNES AU 75 RUE FURTADO",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1657",
+        "name": [
+          {
+            "text": "Bergonié électrique",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.82533,
+        "lon": -0.57759,
+        "address": "3 BORNES SUR LE PARKING DE LA RUE COLETTE EN FACE STATION CITIZ",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1658",
+        "name": [
+          {
+            "text": "Forum électrique",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.81201,
+        "lon": -0.59109,
+        "address": "4 bornes au niveau tram Forum à Talence",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1659",
+        "name": [
+          {
+            "text": "Saint-Louis électrique",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.8581389953373,
+        "lon": -0.569730830785325,
+        "address": "3 bornes au 56 cours Saint Louis\n",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1660",
+        "name": [
+          {
+            "text": "Piscine judaïque électrique",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.8409796120779,
+        "lon": -0.592625370837323,
+        "address": "3 bornes au 1 place du capitaine Dutertre",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1661",
+        "name": [
+          {
+            "text": "Saint Michel / Monnaie",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.8339612030894,
+        "lon": -0.562571029774551,
+        "address": "20 quai de la Monnaie\n",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1663",
+        "name": [
+          {
+            "text": "[FLEX]-Martyrs de la Résistance",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.8425355017914,
+        "lon": -0.584644573874374,
+        "address": "Place des Martyrs de la Résistance",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  -0.5868180549722246,
+                  44.84354849097797
+                ],
+                [
+                  -0.5848975933175615,
+                  44.84383756080857
+                ],
+                [
+                  -0.5849726951699785,
+                  44.843297455474634
+                ],
+                [
+                  -0.5845542705636553,
+                  44.842415018963884
+                ],
+                [
+                  -0.5839963710885576,
+                  44.841859685609535
+                ],
+                [
+                  -0.5841143882852129,
+                  44.841737967994774
+                ],
+                [
+                  -0.5860133922677568,
+                  44.84230851709161
+                ],
+                [
+                  -0.5868180549722246,
+                  44.84354849097797
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "1679",
+        "name": [
+          {
+            "text": "[FLEX]-Sainte Germaine",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.8700858307791,
+        "lon": -0.614446271936705,
+        "address": "Avenue Georges Clémenceau : entre la route du Médoc et la rue Pierre Renaudel",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  -0.6135926230829858,
+                  44.87076000561565
+                ],
+                [
+                  -0.6159958823603295,
+                  44.86977914242226
+                ],
+                [
+                  -0.6150624736231469,
+                  44.86914803556107
+                ],
+                [
+                  -0.6132493003290795,
+                  44.8705395029434
+                ],
+                [
+                  -0.6135926230829858,
+                  44.87076000561565
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "1810",
+        "name": [
+          {
+            "text": "Tasta - Messager",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.8787026001239,
+        "lon": -0.585749243372019,
+        "address": "90 rue André Messager à Bruges",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      }
+    ]
+  }
+}

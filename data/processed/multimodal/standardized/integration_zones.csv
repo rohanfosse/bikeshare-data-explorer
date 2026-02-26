@@ -1,0 +1,5 @@
+zone_id,zone_name,latitude,longitude,radius_km,tram_lines,bike_stations_count,pr_nearby,description,data_created,last_updated,data_version
+MZ001,Centre-Ville Multimodal Hub,43.6108,3.8767,0.5,"1,2,4",15,,High-density urban core with convergence of multiple tram lines,2025-12-16 09:57:43,2025-12-16 10:11:13,1.0
+MZ002,Odysseum Commercial Hub,43.6056,3.9178,0.3,"1,5",3,PR002,Shopping center with P+R integration,2025-12-16 09:57:43,2025-12-16 10:11:13,1.0
+MZ003,University Campus Zone,43.6312,3.8682,0.4,"1,4",8,,University campus with high bike usage,2025-12-16 09:57:43,2025-12-16 10:11:13,1.0
+MZ004,Mosson Transit Hub,43.6098,3.8305,0.4,1,2,PR001,Western terminus with large P+R,2025-12-16 09:57:43,2025-12-16 10:11:13,1.0

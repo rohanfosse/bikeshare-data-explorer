@@ -1,0 +1,455 @@
+{
+  "data": {
+    "stations": [
+      {
+        "is_virtual_station": true,
+        "lat": 49.4295938,
+        "lon": 2.0838176,
+        "name": "beauvais_parking_Place_des_Halles_zid7J7AOEMZ",
+        "station_id": "beauvais_parking_Place_des_Halles_zid7J7AOEMZ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.431518,
+        "lon": 2.0823418,
+        "name": "beauvais_parking_Office_de_Toursime_zid5ABSE1JY",
+        "station_id": "beauvais_parking_Office_de_Toursime_zid5ABSE1JY"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.4295391,
+        "lon": 2.0811841,
+        "name": "beauvais_parking_Consigne_Velo_zid621UBA81",
+        "station_id": "beauvais_parking_Consigne_Velo_zid621UBA81"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.4320313,
+        "lon": 2.0884291,
+        "name": "beauvais_parking_Jeu_de_Paume_zidVZ1ZB2Q5",
+        "station_id": "beauvais_parking_Jeu_de_Paume_zidVZ1ZB2Q5"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.4266649,
+        "lon": 2.0889325,
+        "name": "beauvais_parking_Gare_SNCF_zidSBH89CRN",
+        "station_id": "beauvais_parking_Gare_SNCF_zidSBH89CRN"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.4282201,
+        "lon": 2.1010935,
+        "name": "beauvais_parking_Parc_Kennedy_1_zidM7BYDNQJ",
+        "station_id": "beauvais_parking_Parc_Kennedy_1_zidM7BYDNQJ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.43313,
+        "lon": 2.1156128,
+        "name": "beauvais_parking_Speed_Park_zid5E91GPE8",
+        "station_id": "beauvais_parking_Speed_Park_zid5E91GPE8"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.4307313,
+        "lon": 2.094654,
+        "name": "beauvais_parking_Parc_Kennedy_2_zidQ88ODAWP",
+        "station_id": "beauvais_parking_Parc_Kennedy_2_zidQ88ODAWP"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.4324029,
+        "lon": 2.0996761,
+        "name": "beauvais_parking_Pharmacie_zidB206EF0S",
+        "station_id": "beauvais_parking_Pharmacie_zidB206EF0S"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.4289649,
+        "lon": 2.1072471,
+        "name": "beauvais_parking_Place_de_Marissel_zid90PA62ZI",
+        "station_id": "beauvais_parking_Place_de_Marissel_zid90PA62ZI"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.4308875,
+        "lon": 2.115898,
+        "name": "beauvais_parking_Aire_de_Covoiturage_zidF54FZRZH",
+        "station_id": "beauvais_parking_Aire_de_Covoiturage_zidF54FZRZH"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.43357,
+        "lon": 2.0932906,
+        "name": "beauvais_parking_Station_BP_zidT6TSAV8P",
+        "station_id": "beauvais_parking_Station_BP_zidT6TSAV8P"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.4343285,
+        "lon": 2.0618887,
+        "name": "beauvais_parking_La_Poste_zidLV4JVL6N",
+        "station_id": "beauvais_parking_La_Poste_zidLV4JVL6N"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.4300414,
+        "lon": 2.0731856,
+        "name": "beauvais_parking_Carrefour_zidJCCBLSVQ",
+        "station_id": "beauvais_parking_Carrefour_zidJCCBLSVQ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.4333012,
+        "lon": 2.0780246,
+        "name": "beauvais_parking_Hotel_Mercure_zidWZSQDBJA",
+        "station_id": "beauvais_parking_Hotel_Mercure_zidWZSQDBJA"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.439739,
+        "lon": 2.057124,
+        "name": "beauvais_parking_Cimetiere_zidTDZIBN7K",
+        "station_id": "beauvais_parking_Cimetiere_zidTDZIBN7K"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.4560601,
+        "lon": 2.0619134,
+        "name": "beauvais_parking_Plan_d_Eau_du_Canada_zidHVRYOVIV",
+        "station_id": "beauvais_parking_Plan_d_Eau_du_Canada_zidHVRYOVIV"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.4419789,
+        "lon": 2.0937051,
+        "name": "beauvais_parking_Carrefour_Pieton_zid57TFAOSM",
+        "station_id": "beauvais_parking_Carrefour_Pieton_zid57TFAOSM"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.4347569,
+        "lon": 2.0899111,
+        "name": "beauvais_parking_Lycee_Felix_Faure_zid8FH33XDT",
+        "station_id": "beauvais_parking_Lycee_Felix_Faure_zid8FH33XDT"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.4359829,
+        "lon": 2.0980984,
+        "name": "beauvais_parking_Centre_Commercial_zidB8IA1D4E",
+        "station_id": "beauvais_parking_Centre_Commercial_zidB8IA1D4E"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.438698,
+        "lon": 2.101827,
+        "name": "beauvais_parking_College_HBaumont_zidZXGA6BMS",
+        "station_id": "beauvais_parking_College_HBaumont_zidZXGA6BMS"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.4487286,
+        "lon": 2.0961597,
+        "name": "beauvais_parking_Stade_Omet_zid4NTU6RNE",
+        "station_id": "beauvais_parking_Stade_Omet_zid4NTU6RNE"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.4377479,
+        "lon": 2.088193,
+        "name": "beauvais_parking_Angle_Rue_d_Amiens_zidVZTHH5MY",
+        "station_id": "beauvais_parking_Angle_Rue_d_Amiens_zidVZTHH5MY"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.4405086,
+        "lon": 2.1064714,
+        "name": "beauvais_parking_Champs_Dolent_zidANLKWQPH",
+        "station_id": "beauvais_parking_Champs_Dolent_zidANLKWQPH"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.4345641,
+        "lon": 2.1059974,
+        "name": "beauvais_parking_Centre_Commercial_zid6M50VVC9",
+        "station_id": "beauvais_parking_Centre_Commercial_zid6M50VVC9"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.4376555,
+        "lon": 2.117106,
+        "name": "beauvais_parking_Leroy_Merlin_zidFSR1XV4N",
+        "station_id": "beauvais_parking_Leroy_Merlin_zidFSR1XV4N"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.4362503,
+        "lon": 2.1219712,
+        "name": "beauvais_parking_CCMO_zid5A19M6CL",
+        "station_id": "beauvais_parking_CCMO_zid5A19M6CL"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.4510815,
+        "lon": 2.0722604,
+        "name": "beauvais_parking_Hopital_zidR4X88LBG",
+        "station_id": "beauvais_parking_Hopital_zidR4X88LBG"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.444464,
+        "lon": 2.0737061,
+        "name": "beauvais_parking_Louis_Prache_zid4BD4JRXV",
+        "station_id": "beauvais_parking_Louis_Prache_zid4BD4JRXV"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.4408866,
+        "lon": 2.0749052,
+        "name": "beauvais_parking_Malice_zid5A678KZQ",
+        "station_id": "beauvais_parking_Malice_zid5A678KZQ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.4358833,
+        "lon": 2.0826727,
+        "name": "beauvais_parking_Lycee_Jeanne_Hachette_zidICGZKMK0",
+        "station_id": "beauvais_parking_Lycee_Jeanne_Hachette_zidICGZKMK0"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.4382415,
+        "lon": 2.0769547,
+        "name": "beauvais_parking_Conseil_Departemental_zidXZG70VFY",
+        "station_id": "beauvais_parking_Conseil_Departemental_zidXZG70VFY"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.4473,
+        "lon": 2.080311,
+        "name": "beauvais_parking_Les_Ecoles_zid5IIUKE1T",
+        "station_id": "beauvais_parking_Les_Ecoles_zid5IIUKE1T"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.4386719,
+        "lon": 2.0824761,
+        "name": "beauvais_parking_Pharmacie_zidA7WY7KX8",
+        "station_id": "beauvais_parking_Pharmacie_zidA7WY7KX8"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.4434906,
+        "lon": 2.0861626,
+        "name": "beauvais_parking_Place_de_Noailles_zidYVMYY6TX",
+        "station_id": "beauvais_parking_Place_de_Noailles_zidYVMYY6TX"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.4242594,
+        "lon": 2.0991807,
+        "name": "beauvais_parking_Match_zidHL6QN5OO",
+        "station_id": "beauvais_parking_Match_zidHL6QN5OO"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.4180188,
+        "lon": 2.104917,
+        "name": "beauvais_parking_Angle_Rue_de_There_zidBUYU8O5H",
+        "station_id": "beauvais_parking_Angle_Rue_de_There_zidBUYU8O5H"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.4199609,
+        "lon": 2.097753,
+        "name": "beauvais_parking_Place_de_Voisinlieu_zidPWO53I4Q",
+        "station_id": "beauvais_parking_Place_de_Voisinlieu_zidPWO53I4Q"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.4235661,
+        "lon": 2.0849574,
+        "name": "beauvais_parking_Lycee_Francois_Truffaut_zid50DEB4K1",
+        "station_id": "beauvais_parking_Lycee_Francois_Truffaut_zid50DEB4K1"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.4136767,
+        "lon": 2.1171722,
+        "name": "beauvais_parking_VB_zidTQ966GFK",
+        "station_id": "beauvais_parking_VB_zidTQ966GFK"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.4102569,
+        "lon": 2.1132574,
+        "name": "beauvais_parking_Monsieur_Meuble_zid0ATU3CG7",
+        "station_id": "beauvais_parking_Monsieur_Meuble_zid0ATU3CG7"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.4167679,
+        "lon": 2.1066458,
+        "name": "beauvais_parking_Lycee_Langevin_zidY69A24E3",
+        "station_id": "beauvais_parking_Lycee_Langevin_zidY69A24E3"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.4160883,
+        "lon": 2.0995704,
+        "name": "beauvais_parking_Clinique_du_Parc_zidGAW4RCJU",
+        "station_id": "beauvais_parking_Clinique_du_Parc_zidGAW4RCJU"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.4258397,
+        "lon": 2.0746938,
+        "name": "beauvais_parking_Le_Petit_Bristol_zidCQIUZS4A",
+        "station_id": "beauvais_parking_Le_Petit_Bristol_zidCQIUZS4A"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.4227746,
+        "lon": 2.0747882,
+        "name": "beauvais_parking_Hotel_de_Police_zidJXAE6WWJ",
+        "station_id": "beauvais_parking_Hotel_de_Police_zidJXAE6WWJ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.4195131,
+        "lon": 2.0745269,
+        "name": "beauvais_parking_Maison_Departementale_zid3DELA3Z1",
+        "station_id": "beauvais_parking_Maison_Departementale_zid3DELA3Z1"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.4202757,
+        "lon": 2.077813,
+        "name": "beauvais_parking_Lycee_JB_Corot_zidVULLQPES",
+        "station_id": "beauvais_parking_Lycee_JB_Corot_zidVULLQPES"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.4168387,
+        "lon": 2.0768794,
+        "name": "beauvais_parking_Maison_de_la_Jeunesse_zidDILLFO95",
+        "station_id": "beauvais_parking_Maison_de_la_Jeunesse_zidDILLFO95"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.4168296,
+        "lon": 2.0694872,
+        "name": "beauvais_parking_Chateau_d_Eau_zidBXCTOE2W",
+        "station_id": "beauvais_parking_Chateau_d_Eau_zidBXCTOE2W"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.4186282,
+        "lon": 2.0871324,
+        "name": "beauvais_parking_Lycee_Saint_Esprit_zidV9NCB3IG",
+        "station_id": "beauvais_parking_Lycee_Saint_Esprit_zidV9NCB3IG"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.45862955078986,
+        "lon": 2.0706292421324832,
+        "name": "Marquage Frère Gagne",
+        "station_id": "Marquage Frère Gagne"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.4524544202643,
+        "lon": 2.0944803267248626,
+        "name": "Marquage Aquaspace",
+        "station_id": "Marquage Aquaspace"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.4351909,
+        "lon": 2.0832228,
+        "name": "beauvais_parking_Arceaux___Jules_Ferry_zid6EIF6YH7",
+        "station_id": "beauvais_parking_Arceaux___Jules_Ferry_zid6EIF6YH7"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.4283413,
+        "lon": 2.0926525,
+        "name": "beauvais_parking_Arceaux___Rue_du_Pre_Martinet_zidF7IU7O14",
+        "station_id": "beauvais_parking_Arceaux___Rue_du_Pre_Martinet_zidF7IU7O14"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.4196636,
+        "lon": 2.0805792,
+        "name": "beauvais_parking_Arceaux___Rue_Louis_Roger_zidL4R6HMRB",
+        "station_id": "beauvais_parking_Arceaux___Rue_Louis_Roger_zidL4R6HMRB"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.4166284,
+        "lon": 2.077067,
+        "name": "beauvais_parking_Arceaux___Rue_Hector_Berlioz_zidJ0VIMRI2",
+        "station_id": "beauvais_parking_Arceaux___Rue_Hector_Berlioz_zidJ0VIMRI2"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.4472595,
+        "lon": 2.0885767,
+        "name": "beauvais_parking_Arceaux___Rue_Charles_Nungesser_zid92F3H5IU",
+        "station_id": "beauvais_parking_Arceaux___Rue_Charles_Nungesser_zid92F3H5IU"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.44538061444292,
+        "lon": 2.050210407941156,
+        "name": "beauvais_parking_av_des_chenes_zidO11W6412",
+        "station_id": "beauvais_parking_av_des_chenes_zidO11W6412"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.42377,
+        "lon": 2.115,
+        "name": "beauvais_parking_BikeRack_Lidl_Beauvais_zidI8AZGMZQ",
+        "station_id": "beauvais_parking_BikeRack_Lidl_Beauvais_zidI8AZGMZQ",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.45937,
+        "lon": 2.11271,
+        "name": "beauvais_parking_Aeroport_zidA7Y6DCKC",
+        "station_id": "beauvais_parking_Aeroport_zidA7Y6DCKC",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.4503,
+        "lon": 2.09974,
+        "name": "beauvais_parking_Virtual_Elispace_zidA65L1VGI",
+        "station_id": "beauvais_parking_Virtual_Elispace_zidA65L1VGI",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.452,
+        "lon": 2.09757,
+        "name": "beauvais_parking_Virtual_City_Hotel_zidWZGHU0S1",
+        "station_id": "beauvais_parking_Virtual_City_Hotel_zidWZGHU0S1",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      }
+    ]
+  },
+  "last_updated": 1771749828,
+  "ttl": 0,
+  "version": "2.2"
+}

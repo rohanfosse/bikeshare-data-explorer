@@ -1,0 +1,1451 @@
+{
+  "data": {
+    "stations": [
+      {
+        "is_virtual_station": true,
+        "lat": 47.7330119,
+        "lon": -3.3641787,
+        "name": "lorient_parking_42_Av_de_la_Perriere_zidT3FT3I28",
+        "station_id": "lorient_parking_42_Av_de_la_Perriere_zidT3FT3I28"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.7481511,
+        "lon": -3.3643614,
+        "name": "lorient_parking_4_Av_du_Faouedic_zidRA0MXJ8Z",
+        "station_id": "lorient_parking_4_Av_du_Faouedic_zidRA0MXJ8Z"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.745995,
+        "lon": -3.355606,
+        "name": "lorient_parking_Place_d_Armes_zidNM96RB7K",
+        "station_id": "lorient_parking_Place_d_Armes_zidNM96RB7K"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.7544446,
+        "lon": -3.3661737,
+        "name": "lorient_parking_Gare_de_Lorient_zidHZEMV5EW",
+        "station_id": "lorient_parking_Gare_de_Lorient_zidHZEMV5EW"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.7316789,
+        "lon": -3.3735926,
+        "name": "lorient_parking_La_Base_zidOJAVVKTT",
+        "station_id": "lorient_parking_La_Base_zidOJAVVKTT"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.7456598,
+        "lon": -3.3605712,
+        "name": "lorient_parking_Palais_des_Congres_zid896BD2FI",
+        "station_id": "lorient_parking_Palais_des_Congres_zid896BD2FI"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.7425813,
+        "lon": -3.3848443,
+        "name": "lorient_parking_Universite_Kerjulaude_zidVVCHKSEL",
+        "station_id": "lorient_parking_Universite_Kerjulaude_zidVVCHKSEL"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.7612774,
+        "lon": -3.3862037,
+        "name": "lorient_parking_21_Pl_de_la_Liberte_zidTCP9PVCN",
+        "station_id": "lorient_parking_21_Pl_de_la_Liberte_zidTCP9PVCN"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.7458606,
+        "lon": -3.3905745,
+        "name": "lorient_parking_Bibliotheque_Universitaire_zidAKFTT74S",
+        "station_id": "lorient_parking_Bibliotheque_Universitaire_zidAKFTT74S"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.751319,
+        "lon": -3.358725,
+        "name": "lorient_parking_Place_Colbert_zidUFZ7RM9W",
+        "station_id": "lorient_parking_Place_Colbert_zidUFZ7RM9W"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.751568,
+        "lon": -3.365492,
+        "name": "lorient_parking_Cineville_zidKFKB76S8",
+        "station_id": "lorient_parking_Cineville_zidKFKB76S8"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.745259,
+        "lon": -3.368561,
+        "name": "lorient_parking_Halles_de_Merville_zid3NCSNOFJ",
+        "station_id": "lorient_parking_Halles_de_Merville_zid3NCSNOFJ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.747019,
+        "lon": -3.382616,
+        "name": "lorient_parking_CFA_zidYN4Z7LEC",
+        "station_id": "lorient_parking_CFA_zidYN4Z7LEC"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.740623,
+        "lon": -3.393412,
+        "name": "lorient_parking_Kervenanec_zidA4TWSNK2",
+        "station_id": "lorient_parking_Kervenanec_zidA4TWSNK2"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.747782,
+        "lon": -3.367534,
+        "name": "lorient_parking_Moustoir_zidOQ2ANL1C",
+        "station_id": "lorient_parking_Moustoir_zidOQ2ANL1C"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.753429,
+        "lon": -3.37312,
+        "name": "lorient_parking_Bd_Cosmao_Dumanoir___Devant_la_salle_de_sport_zidOFPD8EBJ",
+        "station_id": "lorient_parking_Bd_Cosmao_Dumanoir___Devant_la_salle_de_sport_zidOFPD8EBJ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.740829,
+        "lon": -3.374272,
+        "name": "lorient_parking_Av_General_de_Gaulle_zidNENNY375",
+        "station_id": "lorient_parking_Av_General_de_Gaulle_zidNENNY375"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.739866,
+        "lon": -3.368877,
+        "name": "lorient_parking_Rue_de_Carnel_zidUPTZ4A45",
+        "station_id": "lorient_parking_Rue_de_Carnel_zidUPTZ4A45"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.76631910265543,
+        "lon": -3.395079014390021,
+        "name": "Cc Carrefour 1",
+        "station_id": "Cc Carrefour 1"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.766210589462865,
+        "lon": -3.3948188331822777,
+        "name": "CC Carrefour 2",
+        "station_id": "CC Carrefour 2"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.764539,
+        "lon": -3.400577,
+        "name": "lorient_parking_Point_1_zidL1MAQNHJ",
+        "station_id": "lorient_parking_Point_1_zidL1MAQNHJ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.76625,
+        "lon": -3.40098,
+        "name": "lorient_parking_Point_2_zidJ2RXKWU6",
+        "station_id": "lorient_parking_Point_2_zidJ2RXKWU6"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.740051,
+        "lon": -3.366498,
+        "name": "lorient_parking_Point_5_zid6M0M3JRJ",
+        "station_id": "lorient_parking_Point_5_zid6M0M3JRJ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.730566,
+        "lon": -3.363671,
+        "name": "lorient_parking_Point_6_zidEQIC9LZR",
+        "station_id": "lorient_parking_Point_6_zidEQIC9LZR"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.73147880629621,
+        "lon": -3.363180330885606,
+        "name": "lorient_parking_Point_7_zidBGY4EKRB",
+        "station_id": "lorient_parking_Point_7_zidBGY4EKRB"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.733016,
+        "lon": -3.384598,
+        "name": "lorient_parking_Point_8_zidDL8FJ3TV",
+        "station_id": "lorient_parking_Point_8_zidDL8FJ3TV"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.734962,
+        "lon": -3.383183,
+        "name": "lorient_parking_Point_9_zidAIXD9AN5",
+        "station_id": "lorient_parking_Point_9_zidAIXD9AN5"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.736065,
+        "lon": -3.38236,
+        "name": "lorient_parking_Point_10_zid1VHE833T",
+        "station_id": "lorient_parking_Point_10_zid1VHE833T"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.743731,
+        "lon": -3.388553,
+        "name": "lorient_parking_Point_11_zidRJXAX5E4",
+        "station_id": "lorient_parking_Point_11_zidRJXAX5E4"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.745382,
+        "lon": -3.386774,
+        "name": "lorient_parking_Point_12_zidM7EKWKZG",
+        "station_id": "lorient_parking_Point_12_zidM7EKWKZG"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.746374,
+        "lon": -3.39012,
+        "name": "lorient_parking_Point_13_zidVRQ95JZV",
+        "station_id": "lorient_parking_Point_13_zidVRQ95JZV"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.747345,
+        "lon": -3.393065,
+        "name": "lorient_parking_Point_14_zidM1FA5AUY",
+        "station_id": "lorient_parking_Point_14_zidM1FA5AUY"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.747402,
+        "lon": -3.394715,
+        "name": "lorient_parking_Point_15_zidEZQE3VOZ",
+        "station_id": "lorient_parking_Point_15_zidEZQE3VOZ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.752085,
+        "lon": -3.391703,
+        "name": "lorient_parking_Point_16_zid1MYS8Z6K",
+        "station_id": "lorient_parking_Point_16_zid1MYS8Z6K"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.756143,
+        "lon": -3.391596,
+        "name": "lorient_parking_Point_17_zidNP7PYEVY",
+        "station_id": "lorient_parking_Point_17_zidNP7PYEVY"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.755348,
+        "lon": -3.391373,
+        "name": "lorient_parking_Point_18_zid5TXD1QDN",
+        "station_id": "lorient_parking_Point_18_zid5TXD1QDN"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.755732,
+        "lon": -3.388718,
+        "name": "lorient_parking_Point_19_zidF6ES5PCQ",
+        "station_id": "lorient_parking_Point_19_zidF6ES5PCQ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.757004,
+        "lon": -3.388306,
+        "name": "lorient_parking_Point_20_zidDHFAQM10",
+        "station_id": "lorient_parking_Point_20_zidDHFAQM10"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.761665,
+        "lon": -3.388144,
+        "name": "lorient_parking_Point_21_zid3SNUZLJC",
+        "station_id": "lorient_parking_Point_21_zid3SNUZLJC"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.763448,
+        "lon": -3.395643,
+        "name": "lorient_parking_Point_22_zidJOKPTD6F",
+        "station_id": "lorient_parking_Point_22_zidJOKPTD6F"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.764394,
+        "lon": -3.385166,
+        "name": "lorient_parking_Point_23_zidLWVMKKPM",
+        "station_id": "lorient_parking_Point_23_zidLWVMKKPM"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.755939,
+        "lon": -3.357198,
+        "name": "lorient_parking_Point_24_zidBVZTP4U3",
+        "station_id": "lorient_parking_Point_24_zidBVZTP4U3"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.752672,
+        "lon": -3.354998,
+        "name": "lorient_parking_Point_27_zid2TMHFL8U",
+        "station_id": "lorient_parking_Point_27_zid2TMHFL8U"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.747209,
+        "lon": -3.354382,
+        "name": "lorient_parking_Point_30_zidLA4GPRVH",
+        "station_id": "lorient_parking_Point_30_zidLA4GPRVH"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.748227,
+        "lon": -3.357478,
+        "name": "lorient_parking_Point_31_zidQE6JIIMM",
+        "station_id": "lorient_parking_Point_31_zidQE6JIIMM"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.740391,
+        "lon": -3.375558,
+        "name": "lorient_parking_Point_32_zidOOOIZ1UQ",
+        "station_id": "lorient_parking_Point_32_zidOOOIZ1UQ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.739342,
+        "lon": -3.378883,
+        "name": "lorient_parking_Point_33_zid88ZF8EB5",
+        "station_id": "lorient_parking_Point_33_zid88ZF8EB5"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.748413,
+        "lon": -3.373519,
+        "name": "lorient_parking_Point_34_zid0NAA1LE5",
+        "station_id": "lorient_parking_Point_34_zid0NAA1LE5"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.755731,
+        "lon": -3.36634,
+        "name": "lorient_parking_Point_36_zidI1P6Q22M",
+        "station_id": "lorient_parking_Point_36_zidI1P6Q22M"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.756942,
+        "lon": -3.367221,
+        "name": "lorient_parking_Point_37_zid09QS5SM4",
+        "station_id": "lorient_parking_Point_37_zid09QS5SM4"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.757277,
+        "lon": -3.371511,
+        "name": "lorient_parking_Point_38_zidB7NP0MVF",
+        "station_id": "lorient_parking_Point_38_zidB7NP0MVF"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.769082,
+        "lon": -3.374551,
+        "name": "lorient_parking_Point_39_zidIZT91NT7",
+        "station_id": "lorient_parking_Point_39_zidIZT91NT7"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.767195,
+        "lon": -3.376923,
+        "name": "lorient_parking_Point_41_zidGAIZFVS4",
+        "station_id": "lorient_parking_Point_41_zidGAIZFVS4"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.73481,
+        "lon": -3.388265,
+        "name": "lorient_parking_Point_42_zidDCBRA89H",
+        "station_id": "lorient_parking_Point_42_zidDCBRA89H"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.746231,
+        "lon": -3.379457,
+        "name": "lorient_parking_Point_43_zidS6DC4R38",
+        "station_id": "lorient_parking_Point_43_zidS6DC4R38"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.751547,
+        "lon": -3.364971,
+        "name": "lorient_parking_Point_44_zid26Y60XPY",
+        "station_id": "lorient_parking_Point_44_zid26Y60XPY"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.752844,
+        "lon": -3.362149,
+        "name": "lorient_parking_Point_45_zidCHWV62XB",
+        "station_id": "lorient_parking_Point_45_zidCHWV62XB"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.77244,
+        "lon": -3.40414,
+        "name": "lorient_parking_BikeRack_Cimetiere_zid49JI8UV1",
+        "station_id": "lorient_parking_BikeRack_Cimetiere_zid49JI8UV1",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.77321,
+        "lon": -3.40438,
+        "name": "lorient_parking_BikeRack_Centre_funeraire_zidZXIR5WQ5",
+        "station_id": "lorient_parking_BikeRack_Centre_funeraire_zidZXIR5WQ5",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.77124,
+        "lon": -3.40021,
+        "name": "lorient_parking_BikeRack_UIMM_zid4647ZXG1",
+        "station_id": "lorient_parking_BikeRack_UIMM_zid4647ZXG1",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.75879,
+        "lon": -3.37823,
+        "name": "lorient_parking_BikeRack_Huet_zidOLLD99I8",
+        "station_id": "lorient_parking_BikeRack_Huet_zidOLLD99I8",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.75796,
+        "lon": -3.37555,
+        "name": "lorient_parking_BikeRack_Calvin_zidUULHG94N",
+        "station_id": "lorient_parking_BikeRack_Calvin_zidUULHG94N",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.75476,
+        "lon": -3.36391,
+        "name": "lorient_parking_11062907057_zidYTP0FDP1",
+        "station_id": "lorient_parking_11062907057_zidYTP0FDP1"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74892,
+        "lon": -3.36424,
+        "name": "lorient_parking_3457469501_zidHGJOIT6R",
+        "station_id": "lorient_parking_3457469501_zidHGJOIT6R"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74538,
+        "lon": -3.38677,
+        "name": "lorient_parking_4610591581_zidNJ0AVJLU",
+        "station_id": "lorient_parking_4610591581_zidNJ0AVJLU"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74794,
+        "lon": -3.36458,
+        "name": "lorient_parking_4616178677_zid3XMZSWTE",
+        "station_id": "lorient_parking_4616178677_zid3XMZSWTE"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74483,
+        "lon": -3.36344,
+        "name": "lorient_parking_11062024032_zidVJ3VPCX5",
+        "station_id": "lorient_parking_11062024032_zidVJ3VPCX5"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.76576,
+        "lon": -3.40191,
+        "name": "lorient_parking_6017371519_zidJQ4MMF0F",
+        "station_id": "lorient_parking_6017371519_zidJQ4MMF0F"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74547,
+        "lon": -3.36842,
+        "name": "lorient_parking_4674881590_zidOX50O4E7",
+        "station_id": "lorient_parking_4674881590_zidOX50O4E7"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.75423,
+        "lon": -3.36594,
+        "name": "lorient_parking_11062907050_zidIHOW1PMW",
+        "station_id": "lorient_parking_11062907050_zidIHOW1PMW"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.7499,
+        "lon": -3.36471,
+        "name": "lorient_parking_11063649782_zidBUEBIKSV",
+        "station_id": "lorient_parking_11063649782_zidBUEBIKSV"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74815,
+        "lon": -3.36754,
+        "name": "lorient_parking_5352464238_zid5YD9NBS8",
+        "station_id": "lorient_parking_5352464238_zid5YD9NBS8"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.75201,
+        "lon": -3.35959,
+        "name": "lorient_parking_5362106783_zidPWQDIGSO",
+        "station_id": "lorient_parking_5362106783_zidPWQDIGSO"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74248,
+        "lon": -3.38421,
+        "name": "lorient_parking_4610591578_zidT3YW1L5A",
+        "station_id": "lorient_parking_4610591578_zidT3YW1L5A"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74822,
+        "lon": -3.36576,
+        "name": "lorient_parking_4610592198_zidUYXHW8U1",
+        "station_id": "lorient_parking_4610592198_zidUYXHW8U1"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74647,
+        "lon": -3.36818,
+        "name": "lorient_parking_4674881188_zidWSNDN9RW",
+        "station_id": "lorient_parking_4674881188_zidWSNDN9RW"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74533,
+        "lon": -3.36208,
+        "name": "lorient_parking_11062021003_zidNBSVQ7SU",
+        "station_id": "lorient_parking_11062021003_zidNBSVQ7SU"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74232,
+        "lon": -3.36856,
+        "name": "lorient_parking_7846532927_zidEM6MHUS2",
+        "station_id": "lorient_parking_7846532927_zidEM6MHUS2"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.7463,
+        "lon": -3.36833,
+        "name": "lorient_parking_5299634323_zidFSYK09VQ",
+        "station_id": "lorient_parking_5299634323_zidFSYK09VQ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.75482,
+        "lon": -3.36402,
+        "name": "lorient_parking_11062907056_zidU47EK7SB",
+        "station_id": "lorient_parking_11062907056_zidU47EK7SB"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.73564,
+        "lon": -3.36537,
+        "name": "lorient_parking_4614857452_zidG4ALGAMM",
+        "station_id": "lorient_parking_4614857452_zidG4ALGAMM"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74249,
+        "lon": -3.38712,
+        "name": "lorient_parking_4616178644_zidO1BPO0N5",
+        "station_id": "lorient_parking_4616178644_zidO1BPO0N5"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.75514,
+        "lon": -3.36318,
+        "name": "lorient_parking_5020898526_zid82UZJXBL",
+        "station_id": "lorient_parking_5020898526_zid82UZJXBL"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74642,
+        "lon": -3.39107,
+        "name": "lorient_parking_4610591583_zidGL9QB9NM",
+        "station_id": "lorient_parking_4610591583_zidGL9QB9NM"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74184,
+        "lon": -3.39464,
+        "name": "lorient_parking_4610591586_zidSB6UIC36",
+        "station_id": "lorient_parking_4610591586_zidSB6UIC36"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.73554,
+        "lon": -3.36566,
+        "name": "lorient_parking_4614857451_zidT2YTJ6IX",
+        "station_id": "lorient_parking_4614857451_zidT2YTJ6IX"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74519,
+        "lon": -3.36925,
+        "name": "lorient_parking_4674881184_zidIB88JB4I",
+        "station_id": "lorient_parking_4674881184_zidIB88JB4I"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.73397,
+        "lon": -3.36515,
+        "name": "lorient_parking_9880487172_zid3DMKV67W",
+        "station_id": "lorient_parking_9880487172_zid3DMKV67W"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74866,
+        "lon": -3.36685,
+        "name": "lorient_parking_11062914198_zidAHLT5BRC",
+        "station_id": "lorient_parking_11062914198_zidAHLT5BRC"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.75003,
+        "lon": -3.36678,
+        "name": "lorient_parking_11063281147_zidHNLLZWNJ",
+        "station_id": "lorient_parking_11063281147_zidHNLLZWNJ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.75214,
+        "lon": -3.35649,
+        "name": "lorient_parking_5352380695_zidTO53U38C",
+        "station_id": "lorient_parking_5352380695_zidTO53U38C"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.7545,
+        "lon": -3.36498,
+        "name": "lorient_parking_11062907053_zid1KQWTIFN",
+        "station_id": "lorient_parking_11062907053_zid1KQWTIFN"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.7546,
+        "lon": -3.3649,
+        "name": "lorient_parking_11062907054_zidGZVC56M7",
+        "station_id": "lorient_parking_11062907054_zidGZVC56M7"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.7464,
+        "lon": -3.36653,
+        "name": "lorient_parking_9069713571_zidYUUYEQZT",
+        "station_id": "lorient_parking_9069713571_zidYUUYEQZT"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74794,
+        "lon": -3.37017,
+        "name": "lorient_parking_5352464235_zidX6BIYU8J",
+        "station_id": "lorient_parking_5352464235_zidX6BIYU8J"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.76808,
+        "lon": -3.37675,
+        "name": "lorient_parking_5424878158_zidQU7N0O2S",
+        "station_id": "lorient_parking_5424878158_zidQU7N0O2S"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.75405,
+        "lon": -3.36597,
+        "name": "lorient_parking_11061810334_zid38HZ0JGM",
+        "station_id": "lorient_parking_11061810334_zid38HZ0JGM"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74849,
+        "lon": -3.36426,
+        "name": "lorient_parking_11063281174_zid7G8OP6UH",
+        "station_id": "lorient_parking_11063281174_zid7G8OP6UH"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.75336,
+        "lon": -3.37525,
+        "name": "lorient_parking_12118772491_zidGRKAO2XR",
+        "station_id": "lorient_parking_12118772491_zidGRKAO2XR"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74776,
+        "lon": -3.36336,
+        "name": "lorient_parking_12135699697_zid70M5S5QH",
+        "station_id": "lorient_parking_12135699697_zid70M5S5QH"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.73903,
+        "lon": -3.369,
+        "name": "lorient_parking_11808266737_zid81XU06K8",
+        "station_id": "lorient_parking_11808266737_zid81XU06K8"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74577,
+        "lon": -3.36854,
+        "name": "lorient_parking_4674881185_zidCDF4WM6X",
+        "station_id": "lorient_parking_4674881185_zidCDF4WM6X"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74546,
+        "lon": -3.366,
+        "name": "lorient_parking_6017375235_zidEOT1QSRI",
+        "station_id": "lorient_parking_6017375235_zidEOT1QSRI"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74851,
+        "lon": -3.36588,
+        "name": "lorient_parking_4610592213_zidKF8RO5M8",
+        "station_id": "lorient_parking_4610592213_zidKF8RO5M8"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74686,
+        "lon": -3.35958,
+        "name": "lorient_parking_4674881591_zidJPZ39YDQ",
+        "station_id": "lorient_parking_4674881591_zidJPZ39YDQ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.75423,
+        "lon": -3.36256,
+        "name": "lorient_parking_4616178665_zidOHCPWCWC",
+        "station_id": "lorient_parking_4616178665_zidOHCPWCWC"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.7468,
+        "lon": -3.36127,
+        "name": "lorient_parking_4616178683_zidHBCXT4GO",
+        "station_id": "lorient_parking_4616178683_zidHBCXT4GO"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.75208,
+        "lon": -3.35899,
+        "name": "lorient_parking_5362106777_zidSRGKH2SI",
+        "station_id": "lorient_parking_5362106777_zidSRGKH2SI"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.7399,
+        "lon": -3.39349,
+        "name": "lorient_parking_3409026030_zidPEOBDQS4",
+        "station_id": "lorient_parking_3409026030_zidPEOBDQS4"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.75302,
+        "lon": -3.3611,
+        "name": "lorient_parking_5381976816_zidW2936NAR",
+        "station_id": "lorient_parking_5381976816_zidW2936NAR"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74831,
+        "lon": -3.3625,
+        "name": "lorient_parking_5430241916_zid8WZ5W1DF",
+        "station_id": "lorient_parking_5430241916_zid8WZ5W1DF"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74544,
+        "lon": -3.37098,
+        "name": "lorient_parking_5299634357_zidQSUZO6ME",
+        "station_id": "lorient_parking_5299634357_zidQSUZO6ME"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.73871,
+        "lon": -3.36861,
+        "name": "lorient_parking_11808266734_zidTKRAQ0BC",
+        "station_id": "lorient_parking_11808266734_zidTKRAQ0BC"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.75471,
+        "lon": -3.36639,
+        "name": "lorient_parking_6881407061_zidMITVK5G8",
+        "station_id": "lorient_parking_6881407061_zidMITVK5G8"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.75462,
+        "lon": -3.36685,
+        "name": "lorient_parking_6881407062_zidH2EJKT4G",
+        "station_id": "lorient_parking_6881407062_zidH2EJKT4G"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74787,
+        "lon": -3.36536,
+        "name": "lorient_parking_11062929667_zidP87V1AIM",
+        "station_id": "lorient_parking_11062929667_zidP87V1AIM"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74977,
+        "lon": -3.36324,
+        "name": "lorient_parking_4616178674_zidW8F1GRND",
+        "station_id": "lorient_parking_4616178674_zidW8F1GRND"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74912,
+        "lon": -3.36158,
+        "name": "lorient_parking_4621996212_zid6S0KPRYY",
+        "station_id": "lorient_parking_4621996212_zid6S0KPRYY"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.73427,
+        "lon": -3.36516,
+        "name": "lorient_parking_9880487171_zidN37WFVUF",
+        "station_id": "lorient_parking_9880487171_zidN37WFVUF"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74891,
+        "lon": -3.35999,
+        "name": "lorient_parking_4621996214_zidP5WH0DZG",
+        "station_id": "lorient_parking_4621996214_zidP5WH0DZG"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74616,
+        "lon": -3.36462,
+        "name": "lorient_parking_5352948315_zidK3I7P5C9",
+        "station_id": "lorient_parking_5352948315_zidK3I7P5C9"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.73369,
+        "lon": -3.36468,
+        "name": "lorient_parking_5352948309_zidOLGR5R6F",
+        "station_id": "lorient_parking_5352948309_zidOLGR5R6F"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.75115,
+        "lon": -3.35954,
+        "name": "lorient_parking_5362153159_zidZ6U1GPE6",
+        "station_id": "lorient_parking_5362153159_zidZ6U1GPE6"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74491,
+        "lon": -3.36337,
+        "name": "lorient_parking_11062024033_zidTJYUS1XQ",
+        "station_id": "lorient_parking_11062024033_zidTJYUS1XQ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74694,
+        "lon": -3.36649,
+        "name": "lorient_parking_11063101462_zid1HVG0FVS",
+        "station_id": "lorient_parking_11063101462_zid1HVG0FVS"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.75664,
+        "lon": -3.39097,
+        "name": "lorient_parking_12075396702_zid7MSH2LKV",
+        "station_id": "lorient_parking_12075396702_zid7MSH2LKV"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74102,
+        "lon": -3.36029,
+        "name": "lorient_parking_5355545188_zidY04E71MM",
+        "station_id": "lorient_parking_5355545188_zidY04E71MM"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74615,
+        "lon": -3.38944,
+        "name": "lorient_parking_4610591585_zidPJEPW5CG",
+        "station_id": "lorient_parking_4610591585_zidPJEPW5CG"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.7732,
+        "lon": -3.40439,
+        "name": "lorient_parking_12201212233_zid98TIL6R0",
+        "station_id": "lorient_parking_12201212233_zid98TIL6R0"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.76178,
+        "lon": -3.38631,
+        "name": "lorient_parking_6017346596_zidMLPL9NX2",
+        "station_id": "lorient_parking_6017346596_zidMLPL9NX2"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.75688,
+        "lon": -3.36434,
+        "name": "lorient_parking_6766013095_zid64WXZAQA",
+        "station_id": "lorient_parking_6766013095_zid64WXZAQA"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74758,
+        "lon": -3.3609,
+        "name": "lorient_parking_4616178682_zidECIN2CHS",
+        "station_id": "lorient_parking_4616178682_zidECIN2CHS"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.75211,
+        "lon": -3.35916,
+        "name": "lorient_parking_5362106784_zidJGZ1HE8O",
+        "station_id": "lorient_parking_5362106784_zidJGZ1HE8O"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.75304,
+        "lon": -3.37378,
+        "name": "lorient_parking_5394376632_zidP05IO1C6",
+        "station_id": "lorient_parking_5394376632_zidP05IO1C6"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74525,
+        "lon": -3.36196,
+        "name": "lorient_parking_11061856929_zid3BGY1CNS",
+        "station_id": "lorient_parking_11061856929_zid3BGY1CNS"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74866,
+        "lon": -3.36643,
+        "name": "lorient_parking_11062914183_zidKAB0F3W4",
+        "station_id": "lorient_parking_11062914183_zidKAB0F3W4"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74786,
+        "lon": -3.36366,
+        "name": "lorient_parking_11063281178_zidNLTTSNH5",
+        "station_id": "lorient_parking_11063281178_zidNLTTSNH5"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.75428,
+        "lon": -3.36712,
+        "name": "lorient_parking_9922652754_zidL6AL46QB",
+        "station_id": "lorient_parking_9922652754_zidL6AL46QB"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.76277,
+        "lon": -3.38615,
+        "name": "lorient_parking_5423517933_zid1FAKYWNH",
+        "station_id": "lorient_parking_5423517933_zid1FAKYWNH"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.7628,
+        "lon": -3.38737,
+        "name": "lorient_parking_5423518172_zidSG4K8F47",
+        "station_id": "lorient_parking_5423518172_zidSG4K8F47"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74551,
+        "lon": -3.36828,
+        "name": "lorient_parking_4674881589_zid4WV5L9S7",
+        "station_id": "lorient_parking_4674881589_zid4WV5L9S7"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74111,
+        "lon": -3.36303,
+        "name": "lorient_parking_5355545182_zidW9XKWRGB",
+        "station_id": "lorient_parking_5355545182_zidW9XKWRGB"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.7473,
+        "lon": -3.38778,
+        "name": "lorient_parking_4610592199_zidE5UU0JPD",
+        "station_id": "lorient_parking_4610592199_zidE5UU0JPD"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74963,
+        "lon": -3.3624,
+        "name": "lorient_parking_1949692879_zidGMIU4BFI",
+        "station_id": "lorient_parking_1949692879_zidGMIU4BFI"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74547,
+        "lon": -3.37073,
+        "name": "lorient_parking_5299634356_zidVTEWECG5",
+        "station_id": "lorient_parking_5299634356_zidVTEWECG5"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.75483,
+        "lon": -3.36398,
+        "name": "lorient_parking_11062907059_zidOP2XQ523",
+        "station_id": "lorient_parking_11062907059_zidOP2XQ523"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.75173,
+        "lon": -3.37067,
+        "name": "lorient_parking_11063281167_zid08T2OR8V",
+        "station_id": "lorient_parking_11063281167_zid08T2OR8V"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.75303,
+        "lon": -3.37401,
+        "name": "lorient_parking_5394376639_zidK9IUMTCP",
+        "station_id": "lorient_parking_5394376639_zidK9IUMTCP"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74941,
+        "lon": -3.36151,
+        "name": "lorient_parking_4621996213_zidL97NWZDJ",
+        "station_id": "lorient_parking_4621996213_zidL97NWZDJ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74675,
+        "lon": -3.36666,
+        "name": "lorient_parking_11063101461_zidGZBA3SIV",
+        "station_id": "lorient_parking_11063101461_zidGZBA3SIV"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.73869,
+        "lon": -3.3654,
+        "name": "lorient_parking_4614857450_zidA7YNV26A",
+        "station_id": "lorient_parking_4614857450_zidA7YNV26A"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.75153,
+        "lon": -3.36112,
+        "name": "lorient_parking_4616178649_zid8JAJ2ZQF",
+        "station_id": "lorient_parking_4616178649_zid8JAJ2ZQF"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.75154,
+        "lon": -3.36497,
+        "name": "lorient_parking_4616178668_zid8LVL4BLQ",
+        "station_id": "lorient_parking_4616178668_zid8LVL4BLQ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74094,
+        "lon": -3.373,
+        "name": "lorient_parking_8089467568_zidL6CCJFLH",
+        "station_id": "lorient_parking_8089467568_zidL6CCJFLH"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74651,
+        "lon": -3.37134,
+        "name": "lorient_parking_5299634359_zidELFXHCBB",
+        "station_id": "lorient_parking_5299634359_zidELFXHCBB"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74875,
+        "lon": -3.36507,
+        "name": "lorient_parking_5441291114_zid3Q1SK9V2",
+        "station_id": "lorient_parking_5441291114_zid3Q1SK9V2"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74636,
+        "lon": -3.36133,
+        "name": "lorient_parking_11062062578_zidK76AC6W0",
+        "station_id": "lorient_parking_11062062578_zidK76AC6W0"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74946,
+        "lon": -3.36217,
+        "name": "lorient_parking_11063202215_zid9EHIKQB5",
+        "station_id": "lorient_parking_11063202215_zid9EHIKQB5"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74869,
+        "lon": -3.36424,
+        "name": "lorient_parking_3457469500_zidQVTEBY2K",
+        "station_id": "lorient_parking_3457469500_zidQVTEBY2K"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.73534,
+        "lon": -3.36589,
+        "name": "lorient_parking_4614857453_zidZBNFGKFE",
+        "station_id": "lorient_parking_4614857453_zidZBNFGKFE"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74718,
+        "lon": -3.36104,
+        "name": "lorient_parking_4614857464_zidVDTP9DAS",
+        "station_id": "lorient_parking_4614857464_zidVDTP9DAS"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74777,
+        "lon": -3.37419,
+        "name": "lorient_parking_5339248801_zidJAEHO3P6",
+        "station_id": "lorient_parking_5339248801_zidJAEHO3P6"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74797,
+        "lon": -3.36664,
+        "name": "lorient_parking_12118548529_zidY6T4OZAT",
+        "station_id": "lorient_parking_12118548529_zidY6T4OZAT"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.7552,
+        "lon": -3.36321,
+        "name": "lorient_parking_5020898525_zidJ67LQEY1",
+        "station_id": "lorient_parking_5020898525_zidJ67LQEY1"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74902,
+        "lon": -3.3659,
+        "name": "lorient_parking_11063281170_zid8DJ9S56W",
+        "station_id": "lorient_parking_11063281170_zid8DJ9S56W"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.75101,
+        "lon": -3.36813,
+        "name": "lorient_parking_11063281151_zid7MOIZCNT",
+        "station_id": "lorient_parking_11063281151_zid7MOIZCNT"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74969,
+        "lon": -3.36418,
+        "name": "lorient_parking_11063675205_zidX4UQCXX9",
+        "station_id": "lorient_parking_11063675205_zidX4UQCXX9"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74547,
+        "lon": -3.36873,
+        "name": "lorient_parking_11063094583_zidFO2ELLGZ",
+        "station_id": "lorient_parking_11063094583_zidFO2ELLGZ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74673,
+        "lon": -3.36845,
+        "name": "lorient_parking_11063101460_zid259WWPU5",
+        "station_id": "lorient_parking_11063101460_zid259WWPU5"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74777,
+        "lon": -3.36341,
+        "name": "lorient_parking_12135699696_zidWKLO2X65",
+        "station_id": "lorient_parking_12135699696_zidWKLO2X65"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74771,
+        "lon": -3.36544,
+        "name": "lorient_parking_4610592197_zidAGY7U0LM",
+        "station_id": "lorient_parking_4610592197_zidAGY7U0LM"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.75101,
+        "lon": -3.36267,
+        "name": "lorient_parking_4616178670_zid2J8390G4",
+        "station_id": "lorient_parking_4616178670_zid2J8390G4"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.75085,
+        "lon": -3.3712,
+        "name": "lorient_parking_5339254621_zidHAIYBYTI",
+        "station_id": "lorient_parking_5339254621_zidHAIYBYTI"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.75408,
+        "lon": -3.3675,
+        "name": "lorient_parking_11062861104_zidFUF8UBHV",
+        "station_id": "lorient_parking_11062861104_zidFUF8UBHV"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.7443,
+        "lon": -3.39449,
+        "name": "lorient_parking_4610591576_zid90ZIQ7GU",
+        "station_id": "lorient_parking_4610591576_zid90ZIQ7GU"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74664,
+        "lon": -3.39086,
+        "name": "lorient_parking_4610591584_zidFCPUKL2E",
+        "station_id": "lorient_parking_4610591584_zidFCPUKL2E"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74732,
+        "lon": -3.38826,
+        "name": "lorient_parking_4614857423_zid8I3IDCB0",
+        "station_id": "lorient_parking_4614857423_zid8I3IDCB0"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74532,
+        "lon": -3.36571,
+        "name": "lorient_parking_6017375236_zidDYI75709",
+        "station_id": "lorient_parking_6017375236_zidDYI75709"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.73725,
+        "lon": -3.36743,
+        "name": "lorient_parking_11808266727_zidNZ3O8D7S",
+        "station_id": "lorient_parking_11808266727_zidNZ3O8D7S"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.75059,
+        "lon": -3.36128,
+        "name": "lorient_parking_4616178646_zidQREO9QKR",
+        "station_id": "lorient_parking_4616178646_zidQREO9QKR"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.75458,
+        "lon": -3.36413,
+        "name": "lorient_parking_9922652750_zidW8MK0CUT",
+        "station_id": "lorient_parking_9922652750_zidW8MK0CUT"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74325,
+        "lon": -3.38524,
+        "name": "lorient_parking_4610591580_zidOZJKCJP5",
+        "station_id": "lorient_parking_4610591580_zidOZJKCJP5"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74344,
+        "lon": -3.38827,
+        "name": "lorient_parking_4614857454_zidRU083IW1",
+        "station_id": "lorient_parking_4614857454_zidRU083IW1"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.73219,
+        "lon": -3.36357,
+        "name": "lorient_parking_9880487173_zidHIHZFMPN",
+        "station_id": "lorient_parking_9880487173_zidHIHZFMPN"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.75102,
+        "lon": -3.37104,
+        "name": "lorient_parking_5339254622_zidSBW9T40P",
+        "station_id": "lorient_parking_5339254622_zidSBW9T40P"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.75149,
+        "lon": -3.35923,
+        "name": "lorient_parking_5362106775_zidJMFGX9V9",
+        "station_id": "lorient_parking_5362106775_zidJMFGX9V9"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74603,
+        "lon": -3.35501,
+        "name": "lorient_parking_5381976809_zidKSF2YJX2",
+        "station_id": "lorient_parking_5381976809_zidKSF2YJX2"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74418,
+        "lon": -3.36837,
+        "name": "lorient_parking_5347966130_zidT6WR7FOK",
+        "station_id": "lorient_parking_5347966130_zidT6WR7FOK"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74837,
+        "lon": -3.36627,
+        "name": "lorient_parking_5352464232_zidAUM4AER3",
+        "station_id": "lorient_parking_5352464232_zidAUM4AER3"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.75175,
+        "lon": -3.35952,
+        "name": "lorient_parking_5362106773_zidV9IW93CB",
+        "station_id": "lorient_parking_5362106773_zidV9IW93CB"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.75538,
+        "lon": -3.36399,
+        "name": "lorient_parking_5381976812_zidSRSAQ4KE",
+        "station_id": "lorient_parking_5381976812_zidSRSAQ4KE"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74725,
+        "lon": -3.35824,
+        "name": "lorient_parking_7354822313_zidGMAMQ7CJ",
+        "station_id": "lorient_parking_7354822313_zidGMAMQ7CJ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74806,
+        "lon": -3.36624,
+        "name": "lorient_parking_11062914157_zidGO9L069Z",
+        "station_id": "lorient_parking_11062914157_zidGO9L069Z"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.75667,
+        "lon": -3.36474,
+        "name": "lorient_parking_6766013098_zid4IAV8XYX",
+        "station_id": "lorient_parking_6766013098_zid4IAV8XYX"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74271,
+        "lon": -3.36355,
+        "name": "lorient_parking_5353060421_zidWFJ1ND7G",
+        "station_id": "lorient_parking_5353060421_zidWFJ1ND7G"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74156,
+        "lon": -3.36625,
+        "name": "lorient_parking_11205453639_zidASFVJM05",
+        "station_id": "lorient_parking_11205453639_zidASFVJM05"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.73159,
+        "lon": -3.37671,
+        "name": "lorient_parking_4385209190_zidOIVATOGP",
+        "station_id": "lorient_parking_4385209190_zidOIVATOGP"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74753,
+        "lon": -3.36868,
+        "name": "lorient_parking_4614857424_zidXUNZ6L5N",
+        "station_id": "lorient_parking_4614857424_zidXUNZ6L5N"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.73487,
+        "lon": -3.3832,
+        "name": "lorient_parking_8427121682_zid1LT6CBDV",
+        "station_id": "lorient_parking_8427121682_zid1LT6CBDV"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74543,
+        "lon": -3.36297,
+        "name": "lorient_parking_11062024005_zidPS21YNRF",
+        "station_id": "lorient_parking_11062024005_zidPS21YNRF"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74744,
+        "lon": -3.36094,
+        "name": "lorient_parking_11063302034_zidT4ZPZEXQ",
+        "station_id": "lorient_parking_11063302034_zidT4ZPZEXQ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.75752,
+        "lon": -3.39856,
+        "name": "lorient_parking_Arceau_Boulanger_zidNGJMM0AT",
+        "station_id": "lorient_parking_Arceau_Boulanger_zidNGJMM0AT",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.74405,
+        "lon": -3.35196,
+        "name": "lorient_parking_Arceau_Metropole_Lorient_zidERMDY1IL",
+        "station_id": "lorient_parking_Arceau_Metropole_Lorient_zidERMDY1IL",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      }
+    ]
+  },
+  "last_updated": 1771749836,
+  "ttl": 0,
+  "version": "2.2"
+}

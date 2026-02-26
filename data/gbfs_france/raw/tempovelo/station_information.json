@@ -1,0 +1,281 @@
+{
+  "data": {
+    "stations": [
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.200763,
+        "lon": 0.616303,
+        "name": [
+          {
+            "language": "fr",
+            "text": "PREFECTURE"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://tempovelo.ecovelo.mobi//#/station/stn_i4Mpw4BZL4WpE2WRdZbQGC"
+        },
+        "station_id": "stn_i4Mpw4BZL4WpE2WRdZbQGC"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.200529,
+        "lon": 0.620539,
+        "name": [
+          {
+            "language": "fr",
+            "text": "JAYAN"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://tempovelo.ecovelo.mobi//#/station/stn_6rWmgu7STtYeEvHC3aW3MJ"
+        },
+        "station_id": "stn_6rWmgu7STtYeEvHC3aW3MJ"
+      },
+      {
+        "capacity": 6,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.204821,
+        "lon": 0.609568,
+        "name": [
+          {
+            "language": "fr",
+            "text": "DUVERGÉ"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://tempovelo.ecovelo.mobi//#/station/stn_ktr222ez4etYF5D4unKbL2"
+        },
+        "station_id": "stn_ktr222ez4etYF5D4unKbL2"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.203569,
+        "lon": 0.611612,
+        "name": [
+          {
+            "language": "fr",
+            "text": "JASMIN"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://tempovelo.ecovelo.mobi//#/station/stn_PA4jnhLKrZMNwATyNXrSgW"
+        },
+        "station_id": "stn_PA4jnhLKrZMNwATyNXrSgW"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.205482,
+        "lon": 0.626898,
+        "name": [
+          {
+            "language": "fr",
+            "text": "PIN"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://tempovelo.ecovelo.mobi//#/station/stn_44XPRiAjL6rpmmm8KKJvHX"
+        },
+        "station_id": "stn_44XPRiAjL6rpmmm8KKJvHX"
+      },
+      {
+        "capacity": 14,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.184382,
+        "lon": 0.626116,
+        "name": [
+          {
+            "language": "fr",
+            "text": "UNIVERSITE"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://tempovelo.ecovelo.mobi//#/station/stn_fGVWb4hjLNBSiLcskFAR9A"
+        },
+        "station_id": "stn_fGVWb4hjLNBSiLcskFAR9A"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.191905,
+        "lon": 0.617153,
+        "name": [
+          {
+            "language": "fr",
+            "text": "STADE"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://tempovelo.ecovelo.mobi//#/station/stn_6wCbXUPTjxhZNMb5mDDjSX"
+        },
+        "station_id": "stn_6wCbXUPTjxhZNMb5mDDjSX"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.20017,
+        "lon": 0.611373,
+        "name": [
+          {
+            "language": "fr",
+            "text": "GRAVIER"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://tempovelo.ecovelo.mobi//#/station/stn_9V8YGrPS7DcYfk6ae3YaNf"
+        },
+        "station_id": "stn_9V8YGrPS7DcYfk6ae3YaNf"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.186085,
+        "lon": 0.668254,
+        "name": [
+          {
+            "language": "fr",
+            "text": "BON ENCONTRE MAIRIE"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://tempovelo.ecovelo.mobi//#/station/stn_MCzuqKwq4dYNtZRsyqeHi3"
+        },
+        "station_id": "stn_MCzuqKwq4dYNtZRsyqeHi3"
+      },
+      {
+        "capacity": 30,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.208132,
+        "lon": 0.620536,
+        "name": [
+          {
+            "language": "fr",
+            "text": "GARE"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://tempovelo.ecovelo.mobi//#/station/stn_jS3qxxcWXSRuMLXNgAEK5y"
+        },
+        "station_id": "stn_jS3qxxcWXSRuMLXNgAEK5y"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.231726,
+        "lon": 0.681045,
+        "name": [
+          {
+            "language": "fr",
+            "text": "PONT DU CASSE"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://tempovelo.ecovelo.mobi//#/station/stn_mcEzzEdyp5sjTryXZmc9NJ"
+        },
+        "station_id": "stn_mcEzzEdyp5sjTryXZmc9NJ"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.194659,
+        "lon": 0.603419,
+        "name": [
+          {
+            "language": "fr",
+            "text": "LE PASSAGE - POSTE"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://tempovelo.ecovelo.mobi//#/station/stn_WeyKGAmMPvUNKKBEdE5nMb"
+        },
+        "station_id": "stn_WeyKGAmMPvUNKKBEdE5nMb"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.194521,
+        "lon": 0.640455,
+        "name": [
+          {
+            "language": "fr",
+            "text": "PARC CHABAUD"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://tempovelo.ecovelo.mobi//#/station/stn_HGSoLAU75ViDTEUEJVjfyB"
+        },
+        "station_id": "stn_HGSoLAU75ViDTEUEJVjfyB"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.204751,
+        "lon": 0.617414,
+        "name": [
+          {
+            "language": "fr",
+            "text": "PLACE DES LAITIERS"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://tempovelo.ecovelo.mobi//#/station/stn_bBWcSvQCV6dQJkb3uw2dRV"
+        },
+        "station_id": "stn_bBWcSvQCV6dQJkb3uw2dRV"
+      },
+      {
+        "capacity": 5,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.198882,
+        "lon": 0.636576,
+        "name": [
+          {
+            "language": "fr",
+            "text": "TOUSSAINT"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://tempovelo.ecovelo.mobi//#/station/stn_kmDFEcicLK23TdHpEaoFKB"
+        },
+        "station_id": "stn_kmDFEcicLK23TdHpEaoFKB"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.207598,
+        "lon": 0.633573,
+        "name": [
+          {
+            "language": "fr",
+            "text": "SCHUMAN"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://tempovelo.ecovelo.mobi//#/station/stn_ZvnK4NBaUqBhVMaPjEytrk"
+        },
+        "station_id": "stn_ZvnK4NBaUqBhVMaPjEytrk"
+      }
+    ]
+  },
+  "last_updated": "2026-02-22T09:42:09+01:00",
+  "ttl": 0,
+  "version": "3.0"
+}

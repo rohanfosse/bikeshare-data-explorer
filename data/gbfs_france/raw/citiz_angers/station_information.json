@@ -1,0 +1,379 @@
+{
+  "last_updated": "2026-02-22T09:39:35.2043904+01:00",
+  "ttl": 300,
+  "version": "3.0",
+  "data": {
+    "stations": [
+      {
+        "station_id": "273",
+        "name": [
+          {
+            "text": "Chevreul",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.47207260131836,
+        "lon": -0.5486609935760498,
+        "parking_type": "street_parking",
+        "capacity": 6,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "274",
+        "name": [
+          {
+            "text": "Imbach",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.47395706176758,
+        "lon": -0.5481740236282349,
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "275",
+        "name": [
+          {
+            "text": "Lorraine",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.46980285644531,
+        "lon": -0.5458390116691589,
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "276",
+        "name": [
+          {
+            "text": "Sainte Croix",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.4701749,
+        "lon": -0.5551388,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "278",
+        "name": [
+          {
+            "text": "Mitterrand",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.477149963378906,
+        "lon": -0.5515649914741516,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "279",
+        "name": [
+          {
+            "text": "La Fayette",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.462947845458984,
+        "lon": -0.5527330040931702,
+        "parking_type": "street_parking",
+        "capacity": 6,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "280",
+        "name": [
+          {
+            "text": "Louis Gain",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.46890640258789,
+        "lon": -0.5398629903793335,
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "281",
+        "name": [
+          {
+            "text": "Monprofit",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.47433090209961,
+        "lon": -0.5673999786376953,
+        "parking_type": "street_parking",
+        "capacity": 5,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "282",
+        "name": [
+          {
+            "text": "Ney",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.4788703918457,
+        "lon": -0.5432800054550171,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "283",
+        "name": [
+          {
+            "text": "Bichon",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.478946685791016,
+        "lon": -0.5636640191078186,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "284",
+        "name": [
+          {
+            "text": "Giffard Langevin",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.463279724121094,
+        "lon": -0.5590599775314331,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "285",
+        "name": [
+          {
+            "text": "Tunnel Vélo Cargo",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.46506118774414,
+        "lon": -0.5556229948997498,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "286",
+        "name": [
+          {
+            "text": "Madeleine",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.46025085449219,
+        "lon": -0.5381960272789001,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "287",
+        "name": [
+          {
+            "text": "Jean Moulin",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.49222183227539,
+        "lon": -0.5517640113830566,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "288",
+        "name": [
+          {
+            "text": "Votier Poirel",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.46053695678711,
+        "lon": -0.5620840191841125,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "289",
+        "name": [
+          {
+            "text": "Mairie des Ponts de Cé",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.42621612548828,
+        "lon": -0.5258740186691284,
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "520",
+        "name": [
+          {
+            "text": "Beaussier",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.476863861083984,
+        "lon": -0.5983690023422241,
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "521",
+        "name": [
+          {
+            "text": "Patton Croix Pelette",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.472835540771484,
+        "lon": -0.585739016532898,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "522",
+        "name": [
+          {
+            "text": "Desjardins",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.47848129272461,
+        "lon": -0.5322239995002747,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1185",
+        "name": [
+          {
+            "text": "Fraternité",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.491016,
+        "lon": -0.560761,
+        "address": "4 Place de la Fraternité,49100 Angers",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1186",
+        "name": [
+          {
+            "text": "Centre Avrillé",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.503303,
+        "lon": -0.58692,
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1545",
+        "name": [
+          {
+            "text": "Justices Saumuroise",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.454483,
+        "lon": -0.527771,
+        "address": "Sur le parking à l'angle de la rue Paul Cézanne et rue Saumuroise\n",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1546",
+        "name": [
+          {
+            "text": "Strasbourg",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.455679,
+        "lon": -0.551181,
+        "address": "Petit parking à l'angle du boulevard de Strasbourg et de la rue d'Epluchard\n\n",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1724",
+        "name": [
+          {
+            "text": "Marengo",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.464433,
+        "lon": -0.554212,
+        "address": "\n\n",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1750",
+        "name": [
+          {
+            "text": "Lac de Maine",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.466423,
+        "lon": -0.598383,
+        "address": "3 Rue de la Picotière, Angers - France",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1751",
+        "name": [
+          {
+            "text": "Châtenay",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.483715,
+        "lon": -0.519092,
+        "address": "32 Avenue Victor Châtenay, Angers - France",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      }
+    ]
+  }
+}

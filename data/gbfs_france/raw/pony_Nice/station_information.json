@@ -1,0 +1,3394 @@
+{
+  "data": {
+    "stations": [
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.68365,
+        "lon": 7.20266,
+        "name": "63 | Avenue Simone Veil | Nice",
+        "station_id": "nice_parking_1_zidUK4HWG8Y"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.66808,
+        "lon": 7.21508,
+        "name": "8 | Avenue Charles Buchet | Nice",
+        "station_id": "nice_parking_10_zid8H905137"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.69354,
+        "lon": 7.2441,
+        "name": "10 | Boulevard de la Madeleine | Nice",
+        "station_id": "nice_parking_100_zidOWH413M8"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.69652,
+        "lon": 7.24169,
+        "name": "48 | Boulevard de la Madeleine | Nice",
+        "station_id": "nice_parking_101_zidAT32RUZP"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.70814,
+        "lon": 7.23061,
+        "name": "Place Alexandre Blanchi (Madeleine) | Nice",
+        "station_id": "nice_parking_102_zidEHJWGFF7"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.70384,
+        "lon": 7.23459,
+        "name": "212 | Boulevard de la Madeleine | Nice",
+        "station_id": "nice_parking_104_zid7L12PN3G"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.70053,
+        "lon": 7.23755,
+        "name": "109 | Boulevard de la Madeleine | Nice",
+        "station_id": "nice_parking_105_zidTJ2Y76R7"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.69826,
+        "lon": 7.24036,
+        "name": "94 | Boulevard de la Madeleine | Nice",
+        "station_id": "nice_parking_106_zid6IRSJ5VK"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.70588,
+        "lon": 7.25637,
+        "name": "64 | Rue Trachel | Nice",
+        "station_id": "nice_parking_107_zidCG8XT0YN"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.70271,
+        "lon": 7.25517,
+        "name": "4 | Boulevard Tzarewitch | Nice",
+        "station_id": "nice_parking_108_zidLOSVMUUI"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.7081,
+        "lon": 7.25678,
+        "name": "46 | Rue Clément Roassal | Nice",
+        "station_id": "nice_parking_109_zidED91FIMD"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.71001,
+        "lon": 7.25569,
+        "name": "49 | Boulevard Joseph Garnier | Nice",
+        "station_id": "nice_parking_110_zidNELL3MO5"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.71233,
+        "lon": 7.26204,
+        "name": "20 | Rue Michel Ange | Nice",
+        "station_id": "nice_parking_112_zidITYN89TJ"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.71411,
+        "lon": 7.25886,
+        "name": "44 | Boulevard Auguste Raynaud | Nice",
+        "station_id": "nice_parking_113_zidOBG77S37"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.72025,
+        "lon": 7.26258,
+        "name": "1 | Place Alexandre Médecin | Nice",
+        "station_id": "nice_parking_115_zidTSDKKILL"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.719,
+        "lon": 7.25688,
+        "name": "18 | Boulevard Gorbella | Nice",
+        "station_id": "nice_parking_116_zidTVFAVRG3"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.72009,
+        "lon": 7.25125,
+        "name": "99 | Avenue Cyrille Besset | Nice",
+        "station_id": "nice_parking_117_zidJRKHFAVZ"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.72209,
+        "lon": 7.25103,
+        "name": "2 | Avenue Claude Gimelle | Nice",
+        "station_id": "nice_parking_118_zidASDYSNKZ"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.67472,
+        "lon": 7.22534,
+        "name": "17 | Rue Marie Bashkirtseff | Nice",
+        "station_id": "nice_parking_12_zid9X9RC9VM"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.71289,
+        "lon": 7.25899,
+        "name": "22 | Rue Molière | Nice",
+        "station_id": "nice_parking_121_zidR16KJRPE"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.72595,
+        "lon": 7.25551,
+        "name": "1 | Boulevard Comte de Falicon | Nice",
+        "station_id": "nice_parking_122_zid6JW1XXJ8"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.70595,
+        "lon": 7.26511,
+        "name": "35 | Boulevard Raimbaldi | Nice",
+        "station_id": "nice_parking_124_zidYWJYG98G"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.71176,
+        "lon": 7.28531,
+        "name": "7 | Place du Palio | Nice",
+        "station_id": "nice_parking_126_zidCTRF69P8"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.71065,
+        "lon": 7.2881,
+        "name": "47 | Rue de Roquebillière | Nice",
+        "station_id": "nice_parking_127_zidG40C79L2"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.71265,
+        "lon": 7.28902,
+        "name": "16 | Rue Humbert Ricolfi | Nice",
+        "station_id": "nice_parking_128_zidCVJHAW9E"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.67779,
+        "lon": 7.22936,
+        "name": "74 | Promenade des Anglais | Nice",
+        "station_id": "nice_parking_13_zid7HEOKOAI"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.71757,
+        "lon": 7.29097,
+        "name": "2 | Rue Pie-François Toesca | Nice",
+        "station_id": "nice_parking_130_zidNKCWJ8ZQ"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.71536,
+        "lon": 7.29242,
+        "name": "43 | Avenue Denis Semeria | Nice",
+        "station_id": "nice_parking_132_zidSYLJR6TI"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.71023,
+        "lon": 7.29303,
+        "name": "7 | Rue Docteur Fighiéra | Nice",
+        "station_id": "nice_parking_134_zidTN3UBWGQ"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.70767,
+        "lon": 7.29297,
+        "name": "16 | Boulevard de l'Armée des Alpes | Nice",
+        "station_id": "nice_parking_135_zidEFMGT8WK"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.71173,
+        "lon": 7.26483,
+        "name": "29 | Avenue Romain Rolland | Nice",
+        "station_id": "nice_parking_136_zidW2FWEPUR"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.70906,
+        "lon": 7.26672,
+        "name": "26 | Avenue Mirabeau | Nice",
+        "station_id": "nice_parking_137_zidA3P19ZR3"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.68814,
+        "lon": 7.2388,
+        "name": "84 | Avenue de la Californie | Nice",
+        "station_id": "nice_parking_14_zid7UZQFH3Z"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.71942,
+        "lon": 7.2835,
+        "name": "141 | Avenue Maréchal Lyautey | Nice",
+        "station_id": "nice_parking_149_zid0NXGSXGB"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.69176,
+        "lon": 7.24508,
+        "name": "2 | Boulevard de la Madeleine | Nice",
+        "station_id": "nice_parking_15_zidI1HYE182"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.71387,
+        "lon": 7.2824,
+        "name": "55 | Avenue Maréchal Lyautey | Nice",
+        "station_id": "nice_parking_151_zidQPAD6FJT"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.71637,
+        "lon": 7.28435,
+        "name": "70 | Route de Turin | Nice",
+        "station_id": "nice_parking_154_zidSK7Z50IO"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.71866,
+        "lon": 7.28458,
+        "name": "Autopont Route de Turin | Nice",
+        "station_id": "nice_parking_155_zidNI6HQHGC"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.70816,
+        "lon": 7.2592,
+        "name": "30 | Rue Clément Roassal | Nice",
+        "station_id": "nice_parking_161_zid5JS51HG7"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.71043,
+        "lon": 7.26286,
+        "name": "8 | Rue Raiberti | Nice",
+        "station_id": "nice_parking_162_zid2LQIYKTX"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.72518,
+        "lon": 7.25208,
+        "name": "1 | Avenue Saint-Sylvestre | Nice",
+        "station_id": "nice_parking_163_zid019HIKPB"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.7149,
+        "lon": 7.28285,
+        "name": "42 | Boulevard Jean-Baptiste Verany | Nice",
+        "station_id": "nice_parking_165_zidW5AIR8QF"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.7158,
+        "lon": 7.26168,
+        "name": "54 | Avenue Alfred Borriglione | Nice",
+        "station_id": "nice_parking_167_zid93CQ7JGT"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.71471,
+        "lon": 7.25404,
+        "name": "1 | Avenue Cyrnos | Nice",
+        "station_id": "nice_parking_168_zidKYJLFYDV"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.697952,
+        "lon": 7.265601,
+        "name": "4 | Rue Grimaldi | Nice",
+        "station_id": "nice_parking_17_zidFDOVEJD5"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.71613,
+        "lon": 7.26561,
+        "name": "1 | Chemin Bessi | Nice",
+        "station_id": "nice_parking_172_zidRBHMJ4CZ"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.69443,
+        "lon": 7.26021,
+        "name": "29 | Promenade des Anglais | Nice",
+        "station_id": "nice_parking_174_zid51PH6M7X"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.695722,
+        "lon": 7.26965,
+        "name": "15 | Rue Saint-François de Paule | Nice",
+        "station_id": "nice_parking_20_zidJBPIG97D"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.66257,
+        "lon": 7.19456,
+        "name": "40 | Rue Léonard Anfossi | Saint-Laurent-du-Var",
+        "station_id": "nice_parking_201_zidLKCMIDRD"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.66373,
+        "lon": 7.18529,
+        "name": "256 | Avenue Victor Bellissime | Saint-Laurent-du-Var",
+        "station_id": "nice_parking_202_zidTU4CKKNV"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.67415,
+        "lon": 7.18979,
+        "name": "16 | Place Jean Médecin | Saint-Laurent-du-Var",
+        "station_id": "nice_parking_205_zidUPHAUOP4"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.67401,
+        "lon": 7.19117,
+        "name": "243 | Avenue du 11 Novembre | Saint-Laurent-du-Var",
+        "station_id": "nice_parking_206_zidZLIOGEAD"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.65803,
+        "lon": 7.18644,
+        "name": "1 | Promenade des Flots Bleus | Saint-Laurent-du-Var",
+        "station_id": "nice_parking_208_zid5638C14V"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.65952,
+        "lon": 7.19115,
+        "name": "105 | Avenue France d'Outre-Mer | Saint-Laurent-du-Var",
+        "station_id": "nice_parking_209_zidTNLR5BWS"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.69668,
+        "lon": 7.27446,
+        "name": "6 | Rue de la Préfecture | Nice",
+        "station_id": "nice_parking_21_zid5X9PZFPV"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.65839,
+        "lon": 7.19545,
+        "name": "317 | Avenue Eugène Donadei | Saint-Laurent-du-Var",
+        "station_id": "nice_parking_210_zidGJL2H219"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.66034,
+        "lon": 7.19508,
+        "name": "180 | Avenue Eugène Donadei | Saint-Laurent-du-Var",
+        "station_id": "nice_parking_211_zidSHB1BI50"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.6785,
+        "lon": 7.19052,
+        "name": "Liaison Rue Albert Camus/Contre Allée du Commandant Jouhaud | Saint-Laurent-du-Var",
+        "station_id": "nice_parking_212_zid12HJF17V"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.68552,
+        "lon": 7.18121,
+        "name": "849 | Avenue Jean Aicard | Saint-Laurent-du-Var",
+        "station_id": "nice_parking_215_zid2ZG2CIBB"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.6879,
+        "lon": 7.18385,
+        "name": "645 | Route des Pugets | Saint-Laurent-du-Var",
+        "station_id": "nice_parking_216_zidKHBF2QHJ"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.69069,
+        "lon": 7.18389,
+        "name": "6 | Chemin du Fahnestock | Saint-Laurent-du-Var",
+        "station_id": "nice_parking_217_zid7BMX0KEE"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.69464,
+        "lon": 7.278258,
+        "name": "13 | Quai des Etats-Unis | Nice",
+        "station_id": "nice_parking_22_zidJOO8TC1W"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.69918,
+        "lon": 7.27619,
+        "name": "2 | Avenue Félix Faure | Nice",
+        "station_id": "nice_parking_23_zidE73O97BB"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.695102634789635,
+        "lon": 7.274154137921715,
+        "name": "75 | Quai des Etats-Unis | Nice",
+        "station_id": "nice_parking_24_zidDRA8W536"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.70182,
+        "lon": 7.27806,
+        "name": "16 | Avenue Saint-Jean-Baptiste | Nice",
+        "station_id": "nice_parking_25_zidUHXS6DO7"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.69363,
+        "lon": 7.29001,
+        "name": "22 | Boulevard Franck Pilatte | Nice",
+        "station_id": "nice_parking_29_zid1SFX7OFJ"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.6789,
+        "lon": 7.20454,
+        "name": "11 | Avenue Simone Veil | Nice",
+        "station_id": "nice_parking_3_zidZ5HVQELY"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.70808,
+        "lon": 7.2817,
+        "name": "2 | Rue Jean Allègre | Nice",
+        "station_id": "nice_parking_30_zidOTU34B4R"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.65646,
+        "lon": 7.17792,
+        "name": "120 | Promenade de la Plage | Cagnes-sur-Mer",
+        "station_id": "nice_parking_301_zidWU35VTKO"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.66395,
+        "lon": 7.13005,
+        "name": "122 | Avenue des Alpes | Cagnes-sur-Mer",
+        "station_id": "nice_parking_302_zidZF9HRG6L"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.66,
+        "lon": 7.13712,
+        "name": "53 | Avenue des Alpes | Cagnes-sur-Mer",
+        "station_id": "nice_parking_303_zid11K55BVV"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.65765,
+        "lon": 7.16866,
+        "name": "99 | Promenade de la Plage | Cagnes-sur-Mer",
+        "station_id": "nice_parking_304_zidZFLO6JKI"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.6571,
+        "lon": 7.16465,
+        "name": "73 | Promenade de la Plage | Cagnes-sur-Mer",
+        "station_id": "nice_parking_305_zidS2FYU5C1"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.65446,
+        "lon": 7.15779,
+        "name": "25 | Promenade de la Plage | Cagnes-sur-Mer",
+        "station_id": "nice_parking_308_zidXJS5WA87"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.70651,
+        "lon": 7.28314,
+        "name": "3 | Rue Maraldi | Nice",
+        "station_id": "nice_parking_31_zidU568T5QJ"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.65061,
+        "lon": 7.15139,
+        "name": "33 | Boulevard J. F. Kennedy | Cagnes-sur-Mer",
+        "station_id": "nice_parking_310_zidQM0N8J3D"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.64375,
+        "lon": 7.14433,
+        "name": "2 | Avenue du Loup | Villeneuve-Loubet",
+        "station_id": "nice_parking_311_zidICZM13MA"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.65622,
+        "lon": 7.15527,
+        "name": "24 | Avenue de Nice | Cagnes-sur-Mer",
+        "station_id": "nice_parking_313_zidCX9J9AHS"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.65766,
+        "lon": 7.15913,
+        "name": "École Élémentaire De La Pinède | Cagnes-sur-Mer",
+        "station_id": "nice_parking_314_zid5GXJ5056"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.65887,
+        "lon": 7.16982,
+        "name": "2 | Passage du Lido | Cagnes-sur-Mer",
+        "station_id": "nice_parking_317_zid3ST1ET4F"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.70514,
+        "lon": 7.28645,
+        "name": "32 | Rue Auguste Gal | Nice",
+        "station_id": "nice_parking_32_zidKKXJE10V"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.6575,
+        "lon": 7.15137,
+        "name": "55 | Boulevard Maréchal Juin | Cagnes-sur-Mer",
+        "station_id": "nice_parking_320_zidM2B8UGDY"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.65784,
+        "lon": 7.15088,
+        "name": "48 | Boulevard du Maréchal Alphonse Juin | Cagnes-sur-Mer",
+        "station_id": "nice_parking_320_zidJBQIMMRT"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.66129,
+        "lon": 7.15076,
+        "name": "12 | Boulevard du Maréchal Alphonse Juin | Cagnes-sur-Mer",
+        "station_id": "nice_parking_323_zidD1ZQE4GC"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.66317,
+        "lon": 7.14825,
+        "name": "5 | Place Gabriel Péri | Cagnes-sur-Mer",
+        "station_id": "nice_parking_326_zid1QYDUBX9"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.66486,
+        "lon": 7.15123,
+        "name": "4 | Allée des Platanes | Cagnes-sur-Mer",
+        "station_id": "nice_parking_327_zid8G7OIP9B"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.7025,
+        "lon": 7.27347,
+        "name": "29 Rue Delille | Nice",
+        "station_id": "nice_parking_33_zid85GL890N"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.66349,
+        "lon": 7.15255,
+        "name": "8 | Rue Louis Négro | Cagnes-sur-Mer",
+        "station_id": "nice_parking_331_zidALDMW85P"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.66485,
+        "lon": 7.17145,
+        "name": "48 | Chemin du Val Fleuri | Cagnes-sur-Mer",
+        "station_id": "nice_parking_332_zidPNNG0JNU"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.66393,
+        "lon": 7.15193,
+        "name": "40bis | Avenue Anatole France | Cagnes-sur-Mer",
+        "station_id": "nice_parking_334_zidBO3EPMK8"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.67166,
+        "lon": 7.14931,
+        "name": "20 | Avenue Marcel Pagnol | Cagnes-sur-Mer",
+        "station_id": "nice_parking_335_zid4265HF9T"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.70267,
+        "lon": 7.27118,
+        "name": "Place Sasserno | Nice",
+        "station_id": "nice_parking_34_zidAMEEDQ74"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.700847,
+        "lon": 7.268573,
+        "name": "43 | Boulevard Dubouchage | Nice",
+        "station_id": "nice_parking_35_zidNPZD525K"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.70447,
+        "lon": 7.26258,
+        "name": "Escalier Avenue Thiers/Rue de Belgique | Nice",
+        "station_id": "nice_parking_36_zidIDAIYPR1"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.70557,
+        "lon": 7.28976,
+        "name": "57 | Rue Arson | Nice",
+        "station_id": "nice_parking_37_zidVAXTO5WL"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.6722,
+        "lon": 7.22349,
+        "name": "4 | Rue Maurice Mignon | Nice",
+        "station_id": "nice_parking_38_zidJTWEVPA2"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.67345,
+        "lon": 7.22539,
+        "name": "2 | Rue Léon Bertrand | Nice",
+        "station_id": "nice_parking_39_zidS8HDBHMO"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.67549,
+        "lon": 7.19928,
+        "name": "147 | Boulevard du Mercantour | Nice",
+        "station_id": "nice_parking_4_zidB6ST7KQH"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.66944,
+        "lon": 7.21422,
+        "name": "143 | Boulevard René Cassin | Nice",
+        "station_id": "nice_parking_409_zidKYMHX4NO"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.67467,
+        "lon": 7.22303,
+        "name": "58 | Avenue Saint-Augustin | Nice",
+        "station_id": "nice_parking_41_zid7EXFDCGG"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.72066,
+        "lon": 7.29213,
+        "name": "2 | Rue Escoffier | Nice",
+        "station_id": "nice_parking_414_zidE8S4FR6W"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.69424,
+        "lon": 7.23841,
+        "name": "6 | Avenue de la Bornala | Nice",
+        "station_id": "nice_parking_416_zidDJBSO6WP"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.69049,
+        "lon": 7.22677,
+        "name": "7 | Chemin de la Madonette de Terron | Nice",
+        "station_id": "nice_parking_417_zidHN1F2MMB"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.69188,
+        "lon": 7.23671,
+        "name": "93 | Boulevard Edouard Herriot | Nice",
+        "station_id": "nice_parking_418_zidXGA5XL0U"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.67722,
+        "lon": 7.22553,
+        "name": "1 | Avenue Sainte-Marguerite | Nice",
+        "station_id": "nice_parking_42_zid2OPT28OX"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.70966,
+        "lon": 7.26392,
+        "name": "7 | Rue Général Hoche | Nice",
+        "station_id": "nice_parking_420_zid6ZESOXEH"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.707528,
+        "lon": 7.252009,
+        "name": "1 | Rue Gabriel Hanotaux | Nice",
+        "station_id": "nice_parking_422_zid31H3YOF1"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.70514,
+        "lon": 7.25154,
+        "name": "2 | Avenue Jean Aicard | Nice",
+        "station_id": "nice_parking_423_zidOAWL4I6V"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.70052,
+        "lon": 7.26222,
+        "name": "2 | Avenue Durante | Nice",
+        "station_id": "nice_parking_424_zidCDUIUXI4"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.72339,
+        "lon": 7.28175,
+        "name": "4 | Boulevard Pasteur | Nice",
+        "station_id": "nice_parking_425_zidVE9Q73H7"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.72516,
+        "lon": 7.27543,
+        "name": "34 | Avenue de Flirey | Nice",
+        "station_id": "nice_parking_426_zid0FKYNJBM"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.70938,
+        "lon": 7.27039,
+        "name": "25 | Boulevard de Cimiez | Nice",
+        "station_id": "nice_parking_427_zidFJD66218"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.73031,
+        "lon": 7.27601,
+        "name": "51bis | Avenue Cap de Croix | Nice",
+        "station_id": "nice_parking_428_zid1VGSD7I5"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.72075,
+        "lon": 7.27705,
+        "name": "Avenue du Monastère | Nice",
+        "station_id": "nice_parking_429_zidVX7G9BUP"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.72218,
+        "lon": 7.26048,
+        "name": "1 | Avenue Ernest Lairolle | Nice",
+        "station_id": "nice_parking_430_zidIDS03GRA"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.71728,
+        "lon": 7.23685,
+        "name": "203 | Route de Saint-Pierre de Féric | Nice",
+        "station_id": "nice_parking_431_zidXA89514R"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.70791,
+        "lon": 7.21588,
+        "name": "286 | Route de Saint-Antoine | Nice",
+        "station_id": "nice_parking_432_zidZ9MFTZKG"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.69942,
+        "lon": 7.23881,
+        "name": "118 | Boulevard de la Madeleine | Nice",
+        "station_id": "nice_parking_433_zid8GX6WZG3"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.729,
+        "lon": 7.24429,
+        "name": "76 | Boulevard Jean Behra | Nice",
+        "station_id": "nice_parking_434_zid2G76DOFJ"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.75259,
+        "lon": 7.29699,
+        "name": "1954 | Ancien Chemin de l'Abadie | Nice",
+        "station_id": "nice_parking_435_zidJI1Z9NXY"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.70035,
+        "lon": 7.27842,
+        "name": "1 | Boulevard Jean Jaurès | Nice",
+        "station_id": "nice_parking_436_zidG8C11C8X"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.70996,
+        "lon": 7.28909,
+        "name": "13 | Rue Monseigneur Alfred Daumas | Nice",
+        "station_id": "nice_parking_437_zidDY1T2VA2"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.7105,
+        "lon": 7.19484,
+        "name": "Saint-Isidore | Nice",
+        "station_id": "nice_parking_438_zid27GYH2SU"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.71093,
+        "lon": 7.19404,
+        "name": "19 | Avenue Auguste Vérola | Nice",
+        "station_id": "nice_parking_439_zidC6XZ0SC6"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.67998,
+        "lon": 7.23091,
+        "name": "297 | Promenade des Anglais | Nice",
+        "station_id": "nice_parking_44_zidQHN6R7HZ"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.675419,
+        "lon": 7.228143,
+        "name": "333 | Promenade des Anglais | Nice",
+        "station_id": "nice_parking_440_zidNVN2SRS6"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.70479,
+        "lon": 7.19691,
+        "name": "230 | Avenue Simone Veil | Nice",
+        "station_id": "nice_parking_441_zidM0T6JW8A"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.69225,
+        "lon": 7.19977,
+        "name": "303 | Avenue Sainte-Marguerite | Nice",
+        "station_id": "nice_parking_442_zid1SVZAJ1C"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.69046,
+        "lon": 7.2454,
+        "name": "110 Promande des Angalsi | Nice",
+        "station_id": "nice_parking_443_zidXSVLP2LM"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.69215,
+        "lon": 7.19935,
+        "name": "147 | Avenue Simone Veil | Nice",
+        "station_id": "nice_parking_444_zidZYQ3M25M"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.69041,
+        "lon": 7.19513,
+        "name": "253 | Boulevard du Mercantour | Nice",
+        "station_id": "nice_parking_445_zidOWA53G8V"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.68496,
+        "lon": 7.23614,
+        "name": "221 | Promenade des Anglais | Nice",
+        "station_id": "nice_parking_446_zidDPP9MTBU"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.69851,
+        "lon": 7.28424,
+        "name": "11 | Place de l'Ile de Beauté | Nice",
+        "station_id": "nice_parking_448_zid9LLZ0LS7"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.68659,
+        "lon": 7.2129,
+        "name": "227 | Avenue de la Lanterne | Nice",
+        "station_id": "nice_parking_449_zidZC8RN8CV"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.68007,
+        "lon": 7.22985,
+        "name": "2 | Avenue Saint-Augustin | Nice",
+        "station_id": "nice_parking_45_zidXH481JA6"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.68497,
+        "lon": 7.19822,
+        "name": "38 | Avenue Pierre Isnard | Nice",
+        "station_id": "nice_parking_450_zid8HN7QOC1"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.68794,
+        "lon": 7.21233,
+        "name": "258 | Avenue de la Lanterne | Nice",
+        "station_id": "nice_parking_451_zidAERXZO84"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.68933,
+        "lon": 7.24111,
+        "name": "57 | Avenue de la Californie | Nice",
+        "station_id": "nice_parking_452_zid5OFII8ZY"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.68601,
+        "lon": 7.23628,
+        "name": "133 | Avenue de la Californie | Nice",
+        "station_id": "nice_parking_46_zid2G1YA2RV"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.68651,
+        "lon": 7.23797,
+        "name": "198 | Promenade des Anglais | Nice",
+        "station_id": "nice_parking_48_zid0ISS484W"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.69287,
+        "lon": 7.2488,
+        "name": "2bis | Rue Henri Cordier | Nice",
+        "station_id": "nice_parking_49_zidE5CPDVZ3"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.69604,
+        "lon": 7.25194,
+        "name": "17 | Rue Alexis Mossa | Nice",
+        "station_id": "nice_parking_50_zidAFETEBBE"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.6978,
+        "lon": 7.25718,
+        "name": "65 | Boulevard Victor Hugo | Nice",
+        "station_id": "nice_parking_51_zidLP9OSNGW"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.69442,
+        "lon": 7.25445,
+        "name": "8 | Rue Andrioli | Nice",
+        "station_id": "nice_parking_52_zid98BY82BT"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.69799,
+        "lon": 7.25152,
+        "name": "27 | Avenue des Fleurs | Nice",
+        "station_id": "nice_parking_53_zidZL56GKW3"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.69953,
+        "lon": 7.25223,
+        "name": "26 | Rue Frédéric Passy | Nice",
+        "station_id": "nice_parking_55_zidCG2JQ69K"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.70219,
+        "lon": 7.25778,
+        "name": "61 | Avenue Georges Clemenceau | Nice",
+        "station_id": "nice_parking_56_zidHK2J4X8G"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.70106,
+        "lon": 7.25505,
+        "name": "22 | Rue François Aune | Nice",
+        "station_id": "nice_parking_57_zidP7W6MU5E"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.69564,
+        "lon": 7.2587,
+        "name": "52 | Rue de France | Nice",
+        "station_id": "nice_parking_58_zid9PLVT5JD"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.6983,
+        "lon": 7.26015,
+        "name": "43 | Boulevard Victor Hugo | Nice",
+        "station_id": "nice_parking_59_zidVLEM9YNX"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.66523,
+        "lon": 7.20339,
+        "name": "Bretelle Sortie Promenade des Anglais-Aéroport | Nice",
+        "station_id": "nice_parking_6_zid5LOMT2M9"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.70056,
+        "lon": 7.26034,
+        "name": "26 | Rue Rossini | Nice",
+        "station_id": "nice_parking_60_zid7FLJMPBU"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.68866,
+        "lon": 7.33484,
+        "name": "Port de Plaisance | Saint-Jean-Cap-Ferrat",
+        "station_id": "nice_parking_600_zid9ZRUR0U9"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.68891,
+        "lon": 7.32925,
+        "name": "3 | Boulevard du Général de Gaulle | Saint-Jean-Cap-Ferrat",
+        "station_id": "nice_parking_602_zidLLURVEKD"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.70257,
+        "lon": 7.26272,
+        "name": "25 | Rue d'Italie | Nice",
+        "station_id": "nice_parking_61_zidU1U32G1I"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.77039,
+        "lon": 7.3316,
+        "name": "25 | Avenue Virgile Barel | Drap",
+        "station_id": "nice_parking_650_zid8FG6X0X7"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.76435,
+        "lon": 7.33641,
+        "name": "630 | Chemin du Fontanil des Croves | Drap",
+        "station_id": "nice_parking_651_zid8AYP6FQJ"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.75159,
+        "lon": 7.32133,
+        "name": "221 | Montée du Grec | Drap",
+        "station_id": "nice_parking_652_zidE4FPGMDL"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.75488,
+        "lon": 7.32002,
+        "name": "5bis | Rue de Verdun | Drap",
+        "station_id": "nice_parking_653_zidW6VD2DCZ"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.70042,
+        "lon": 7.27289,
+        "name": "6 | Allée Sandro Pertini | Nice",
+        "station_id": "nice_parking_66_zidI93N215V"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.69734,
+        "lon": 7.27353,
+        "name": "10 | Descente Crotti | Nice",
+        "station_id": "nice_parking_67_zidNCAV9Y6I"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.7007,
+        "lon": 7.27576,
+        "name": "Espace Père Ambroise Steve | Nice",
+        "station_id": "nice_parking_68_zid6US8YA2L"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.70384,
+        "lon": 7.27359,
+        "name": "30 | Rue Edouard Beri | Nice",
+        "station_id": "nice_parking_69_zid0TJJNNF3"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.66625,
+        "lon": 7.21208,
+        "name": "Passage de la Caravelle | Nice",
+        "station_id": "nice_parking_7_zidD84G51EW"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.73719,
+        "lon": 7.28702,
+        "name": "29 | Quai de la Banquière | Saint-André-de-la-Roche",
+        "station_id": "nice_parking_700_zidIZ44L91I"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.73961,
+        "lon": 7.28736,
+        "name": "Quai de la Banquière | Saint-André-de-la-Roche",
+        "station_id": "nice_parking_701_zid6S9P22U3"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.73853,
+        "lon": 7.28759,
+        "name": "21 | Boulevard du 8 Mai 1945 | Saint-André-de-la-Roche",
+        "station_id": "nice_parking_702_zidPHL573A0"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.74333,
+        "lon": 7.28784,
+        "name": "127 | Quai de la Banquière | Saint-André-de-la-Roche",
+        "station_id": "nice_parking_703_zidUPP5RQ0S"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.70712,
+        "lon": 7.2693,
+        "name": "1 | Boulevard Raimbaldi | Nice",
+        "station_id": "nice_parking_71_zidDRMYR9X0"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.70416,
+        "lon": 7.27004,
+        "name": "12 | Rue de Lépante | Nice",
+        "station_id": "nice_parking_72_zidRB19B16F"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.69486,
+        "lon": 7.28639,
+        "name": "52 | Boulevard Stalingrad | Nice",
+        "station_id": "nice_parking_73_zidH3H0Y9DN"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.69895,
+        "lon": 7.28753,
+        "name": "11 | Boulevard Lech Walesa | Nice",
+        "station_id": "nice_parking_74_zidX0TKX7US"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.69719,
+        "lon": 7.28692,
+        "name": "32 | Boulevard Stalingrad | Nice",
+        "station_id": "nice_parking_75_zidTGD5G3YL"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.69718,
+        "lon": 7.28298,
+        "name": "4 | Rue de Foresta | Nice",
+        "station_id": "nice_parking_76_zidDYU5JLD6"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.70052,
+        "lon": 7.28595,
+        "name": "49 | Rue Bonaparte | Nice",
+        "station_id": "nice_parking_77_zidQF4HWONA"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.70194,
+        "lon": 7.28204,
+        "name": "2 | Rue Boyer | Nice",
+        "station_id": "nice_parking_78_zidTSZ6EX9T"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.70222,
+        "lon": 7.28641,
+        "name": "29 | Rue Scaliéro | Nice",
+        "station_id": "nice_parking_79_zidJETBAG8H"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.66894,
+        "lon": 7.21267,
+        "name": "153 | Boulevard René Cassin | Nice",
+        "station_id": "nice_parking_8_zidJE4L2008"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.74137,
+        "lon": 7.31125,
+        "name": "15 | Boulevard Général de Gaulle | La Trinité",
+        "station_id": "nice_parking_800_zidPE4Y0USC"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.74277,
+        "lon": 7.31569,
+        "name": "13 | Boulevard François Suarez | La Trinité",
+        "station_id": "nice_parking_801_zidKZIORIS9"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.70409,
+        "lon": 7.28726,
+        "name": "17 | Rue de Orestis | Nice",
+        "station_id": "nice_parking_81_zidDUXE6DSR"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.70221,
+        "lon": 7.28855,
+        "name": "50 | Rue Smollett | Nice",
+        "station_id": "nice_parking_82_zid629V4ATG"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.70386,
+        "lon": 7.28394,
+        "name": "23 | Rue Georges Ville | Nice",
+        "station_id": "nice_parking_83_zidS0XXFGFI"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.6941,
+        "lon": 7.28235,
+        "name": "6 | Place Guynemer | Nice",
+        "station_id": "nice_parking_84_zid9VQLKW82"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.69508,
+        "lon": 7.27758,
+        "name": "32 | Rue des Ponchettes | Nice",
+        "station_id": "nice_parking_85_zidXDJTF9VL"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.69845,
+        "lon": 7.27671,
+        "name": "20 | Boulevard Jean Jaurès | Nice",
+        "station_id": "nice_parking_87_zidZ3RLBUBB"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.70249,
+        "lon": 7.25965,
+        "name": "45 | Rue Berlioz | Nice",
+        "station_id": "nice_parking_88_zidW5L0T05L"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.69365,
+        "lon": 7.25619,
+        "name": "45 | Promenade des Anglais | Nice",
+        "station_id": "nice_parking_89_zid8BESGCX1"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.69168,
+        "lon": 7.2489,
+        "name": "89 | Promenade des Anglais | Nice",
+        "station_id": "nice_parking_90_zid3ZDDOAZP"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.66902,
+        "lon": 7.22068,
+        "name": "400 | Promenade des Anglais | Nice",
+        "station_id": "nice_parking_91_zid9LV315F8",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.68265,
+        "lon": 7.2323,
+        "name": "190 | Avenue de la Californie | Nice",
+        "station_id": "nice_parking_96_zidJ2DUM7MT"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.71678,
+        "lon": 7.25681,
+        "name": "Square Roger Boyer | Nice",
+        "station_id": "nice_parking_97_zidND5JJVVE"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.70022,
+        "lon": 7.28327,
+        "name": "7ter | Rue Emmanuel-Philibert | Nice",
+        "station_id": "nice_parking_98_zidDYVG5UHO"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.70837,
+        "lon": 7.28833,
+        "name": "24 | Avenue des Diables Bleus | Nice",
+        "station_id": "nice_parking_99_zidJ25W00Z2"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.708858709828554,
+        "lon": 7.335198311832527,
+        "name": "Port de Beaulieu | Beaulieu-sur-Mer",
+        "station_id": "nice_parking_Port_de_Beaulieu_zidAHRBCDQP"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.70707,
+        "lon": 7.33141,
+        "name": "2 | Avenue du Maréchal Foch | Beaulieu-sur-Mer",
+        "station_id": "nice_parking_Pl_Georges_Clemenceau_zidPRFQI20J"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.6881,
+        "lon": 7.29668,
+        "name": "2 | Boulevard du Mont-Boron | Nice",
+        "station_id": "nice_parking_Marquage_MontBoron_zidMVK2RQLT",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.70104,
+        "lon": 7.16472,
+        "name": "2067 | Avenue Marcel Pagnol | La Gaude",
+        "station_id": "nice_parking_Point_1_zidRPUD2TL9"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.70535,
+        "lon": 7.13298,
+        "name": "2431bis | Route de Cagnes | Vence",
+        "station_id": "nice_parking_Point_2_zid8S5J5GLR"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.71362,
+        "lon": 7.08881,
+        "name": "1260 | Chemin de la Sine | Vence",
+        "station_id": "nice_parking_Point_3_zidD2V4JH9T"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.72296,
+        "lon": 7.08216,
+        "name": "2475 | Route de Grasse | Vence",
+        "station_id": "nice_parking_Point_4_zid2XXOVI1M"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.72411,
+        "lon": 7.10306,
+        "name": "326 | Avenue Rhin et Danube | Vence",
+        "station_id": "nice_parking_Point_5_zidB4TX7C63"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.72309,
+        "lon": 7.10685,
+        "name": "39 | Avenue Victor Tuby | Vence",
+        "station_id": "nice_parking_Point_6_zidDVP7EL9P"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.72252,
+        "lon": 7.11141,
+        "name": "28 | Place du Grand Jardin | Vence",
+        "station_id": "nice_parking_Point_7_zidQF8GBWK0"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.72224,
+        "lon": 7.11682,
+        "name": "111 | Avenue Alphonse Toreille | Vence",
+        "station_id": "nice_parking_Point_8_zid1Q87KNLG"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.71947,
+        "lon": 7.15025,
+        "name": "11 | Rue du Pontis | La Gaude",
+        "station_id": "nice_parking_Point_10_zid0YDZ7RQD"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.7217,
+        "lon": 7.15305,
+        "name": "5 | Rue Louis Michel Feraud | La Gaude",
+        "station_id": "nice_parking_Point_11_zid2M9CM8HV"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.73231,
+        "lon": 7.15626,
+        "name": "78 | Route de Saint-Laurent | La Gaude",
+        "station_id": "nice_parking_Point_12_zidRTBPL9B2"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.74364,
+        "lon": 7.14563,
+        "name": "2380 | Route de Gattières | Saint-Jeannet",
+        "station_id": "nice_parking_Point_13_zidU0BRWF1U"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.74991,
+        "lon": 7.14459,
+        "name": "Parking René Veyssi | Saint-Jeannet",
+        "station_id": "nice_parking_Point_14_zidWJKZ0CQB"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.76678,
+        "lon": 7.20261,
+        "name": "37 | Route de la ZA de la Grave | Carros",
+        "station_id": "nice_parking_Point_15_zidGJN89WLZ"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.76909,
+        "lon": 7.19673,
+        "name": "11 | Boulevard de La Colle Belle | Carros",
+        "station_id": "nice_parking_Point_16_zidZ6ONE0U9"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.769579,
+        "lon": 7.193234,
+        "name": "1 | Rue de la Vésubie | Carros",
+        "station_id": "nice_parking_Point_17_zidTA2L1I7G"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.77357,
+        "lon": 7.19157,
+        "name": "Parking rue des Arbousiers | Carros",
+        "station_id": "nice_parking_Point_18_zidT1QWASB9"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.77496,
+        "lon": 7.19929,
+        "name": "Giratoire Louis Frescolini | Carros",
+        "station_id": "nice_parking_Point_19_zidWMQTKPI5"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.78343,
+        "lon": 7.20473,
+        "name": "1038 | Route des Plans | Carros",
+        "station_id": "nice_parking_Point_20_zidJ68KWI1R"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.79214,
+        "lon": 7.18598,
+        "name": "Carriero Fernand Barbary | Carros",
+        "station_id": "nice_parking_Point_21_zidFFLC0OWK"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.73846,
+        "lon": 7.30962,
+        "name": "54 | Boulevard Général de Gaulle | La Trinité",
+        "station_id": "nice_parking_Chemin_de_l_arbre_zidHTE156UQ"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.73578540558525,
+        "lon": 7.3077837560188765,
+        "name": "2 | Rue Micheo | La Trinité",
+        "station_id": "nice_parking_Jean_Micheo_zidAZEI4J11"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.65855,
+        "lon": 7.14832,
+        "name": "36 | Avenue de la Gare | Cagnes-sur-Mer",
+        "station_id": "nice_parking_parking_cagnes_zidUTGTCS7Q",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.65815,
+        "lon": 7.15983,
+        "name": "57 | Avenue de Nice | Cagnes-sur-Mer",
+        "station_id": "nice_parking_Espace_peint_jean_bouin_zidG2NUZGI7",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.7013,
+        "lon": 7.28433,
+        "name": "2 | Rue François Guisol | Nice",
+        "station_id": "nice_parking_Marquage_Guisol_zidNX25E3RW",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.7231,
+        "lon": 7.13185,
+        "name": "1292bis | Chemin du Pioulier | Vence",
+        "station_id": "nice_parking_Parking_temporaire_Guillem_zid9HGU7IWN",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.7231,
+        "lon": 7.13185,
+        "name": "1292bis | Chemin du Pioulier | Vence",
+        "station_id": "nice_parking_La_lune_zidBXUU55YV",
+        "vehicle_capacity": {
+          "ebike": 3
+        },
+        "vehicle_type_capacity": {
+          "ebike": 3
+        },
+        "vehicle_types_capacity": [
+          {
+            "count": 3,
+            "vehicle_type_ids": [
+              "ebike"
+            ]
+          }
+        ]
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.75813,
+        "lon": 7.47912,
+        "name": "2 | Avenue Robert Bineau | Roquebrune-Cap-Martin",
+        "station_id": "nice_parking_Ndeg1_zidQ6C5FCYW"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.75123,
+        "lon": 7.48746,
+        "name": "42 | Avenue Winston Churchill | Roquebrune-Cap-Martin",
+        "station_id": "nice_parking_Ndeg2_zid1VM9SQJX"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.75859,
+        "lon": 7.48244,
+        "name": "23 | Promenade du Cap | Roquebrune-Cap-Martin",
+        "station_id": "nice_parking_Ndeg4_zidNSDTDD2L"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.75686,
+        "lon": 7.4818,
+        "name": "52 | Avenue Winston Churchill | Roquebrune-Cap-Martin",
+        "station_id": "nice_parking_Ndeg3_zidI8MG7NKG"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.75985,
+        "lon": 7.48327,
+        "name": "33 | Promenade du Cap | Roquebrune-Cap-Martin",
+        "station_id": "nice_parking_Ndeg5_zid7F02BQCA"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.76221,
+        "lon": 7.4846,
+        "name": "51 | Promenade Robert Schuman | Roquebrune-Cap-Martin",
+        "station_id": "nice_parking_Ndeg6_zidX6N8CIPX"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.76342,
+        "lon": 7.48769,
+        "name": "63b | Promenade Robert Schuman | Roquebrune-Cap-Martin",
+        "station_id": "nice_parking_Ndeg7_zidWOZDGBAR"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.76515,
+        "lon": 7.48799,
+        "name": "71b | Promenade Robert Schuman | Roquebrune-Cap-Martin",
+        "station_id": "nice_parking_Ndeg8_zid5OUTD6YF"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.76492,
+        "lon": 7.48274,
+        "name": "189 | Avenue Aristide Briand | Roquebrune-Cap-Martin",
+        "station_id": "nice_parking_Ndeg10_zid8BIDEB03"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.76502,
+        "lon": 7.4855,
+        "name": "213 | Avenue Aristide Briand | Roquebrune-Cap-Martin",
+        "station_id": "nice_parking_Ndeg9_zidUXS3IEPL"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.76211,
+        "lon": 7.48146,
+        "name": "1 | Avenue Profondeville | Roquebrune-Cap-Martin",
+        "station_id": "nice_parking_Ndeg12_zid3LBM4VEN"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.76498,
+        "lon": 7.48111,
+        "name": "2 | Rue du Moulin | Roquebrune-Cap-Martin",
+        "station_id": "nice_parking_Ndeg11_zidWZJTXFWU"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.76268,
+        "lon": 7.48202,
+        "name": "19 | Avenue Profondeville | Roquebrune-Cap-Martin",
+        "station_id": "nice_parking_Ndeg13_zidS1RHJINC"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.75779,
+        "lon": 7.47419,
+        "name": "45 | Avenue Paul Doumer | Roquebrune-Cap-Martin",
+        "station_id": "nice_parking_Ndeg15_zidX4NQSJDK"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.76332,
+        "lon": 7.47867,
+        "name": "69 | Montée du Stade | Roquebrune-Cap-Martin",
+        "station_id": "nice_parking_Ndeg14_zidF8KV3MES"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.7602,
+        "lon": 7.45638,
+        "name": "10bis | Avenue le Corbusier | Roquebrune-Cap-Martin",
+        "station_id": "nice_parking_Ndeg17_zidJ39M84XA"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.75649,
+        "lon": 7.47618,
+        "name": "32 | Avenue Paul Doumer | Roquebrune-Cap-Martin",
+        "station_id": "nice_parking_Ndeg16_zidON5PHNHL"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.76099,
+        "lon": 7.47056,
+        "name": "129 | Avenue de Verdun | Roquebrune-Cap-Martin",
+        "station_id": "nice_parking_Ndeg18_zidPATH4FDM"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.77497,
+        "lon": 7.50521,
+        "name": "5 | Quai de Monléon | Menton",
+        "station_id": "nice_parking_Quai_de_Monleon_au_droit_du_Credit_Agricole_zidFCP32U2F"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.77555,
+        "lon": 7.50333,
+        "name": "24 | Rue de la République | Menton",
+        "station_id": "nice_parking_Rue_de_la_Republique___Mairie_zid3PEZDX1F"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.77637,
+        "lon": 7.5034,
+        "name": "9 | Rue Loredan Larchey | Menton",
+        "station_id": "nice_parking_Place_Loredan_Larchey_zidK3UAH1Y6"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.77868,
+        "lon": 7.50758,
+        "name": "16 | Promenade de la Mer | Menton",
+        "station_id": "nice_parking_Porte_de_France__zidRIGOI8I9"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.78153,
+        "lon": 7.5103,
+        "name": "10 | Promenade de la Mer | Menton",
+        "station_id": "nice_parking_Porte_de_France_acces_ndeg5_zidGQ17G6KR"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.77929,
+        "lon": 7.50681,
+        "name": "17 | Avenue Laurenti | Menton",
+        "station_id": "nice_parking_Avenue_Laurenti_zidI3ABT25D"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.78192,
+        "lon": 7.51168,
+        "name": "1 | Quai Gordon Bennett | Menton",
+        "station_id": "nice_parking_Promenade_de_la_Mer___Parking_Triangulaire_zidN8DCWERE"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.78208,
+        "lon": 7.51264,
+        "name": "21 | Promenade de la Mer | Menton",
+        "station_id": "nice_parking_Espace_Rondelli_zid0UL4XWMR"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.78618,
+        "lon": 7.5123,
+        "name": "39 | Boulevard de Garavan | Menton",
+        "station_id": "nice_parking_Boulevard_de_Garavan___Parc_du_Pian_zid6RBUQNFO"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.7707,
+        "lon": 7.49487,
+        "name": "2 | Avenue Carnot | Menton",
+        "station_id": "nice_parking_Allee_Whitney__zid73T1DPBA"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.78503526070046,
+        "lon": 7.523422277056178,
+        "name": "1bis | Promenade Reine Astrid | Menton",
+        "station_id": "nice_parking_Avenue_Reine_Astrid_zidY1NPKZGG"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.76768,
+        "lon": 7.48919,
+        "name": "5 | Rue Paul Morillot | Menton",
+        "station_id": "nice_parking_Avenue_de_la_Madone___rue_Paul_Morillot_zidPZ7NYH0N"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.774824,
+        "lon": 7.494188,
+        "name": "18 | Rue Albert 1er | Menton",
+        "station_id": "nice_parking_Parvis_de_la_Gare__zidTDROBB3K"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.77236,
+        "lon": 7.49374,
+        "name": "20 | Rue Morgan | Menton",
+        "station_id": "nice_parking_Rue_Morgan___Cours_du_Centenaire_zidDG6NT2OH"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.77893,
+        "lon": 7.50575,
+        "name": "2bis | Boulevard de Garavan | Menton",
+        "station_id": "nice_parking_Boulevard_de_Garavan___point_de_vue_zid0RGZ8TYR"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.7715,
+        "lon": 7.49331,
+        "name": "10 | Avenue Cochrane | Menton",
+        "station_id": "nice_parking_Conservatoire_de_Musique__zidQJFZRVSZ"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.77327,
+        "lon": 7.4956,
+        "name": "1 | Cours George V | Menton",
+        "station_id": "nice_parking_Cours_du_Centenaire___Avenue_Edouard_VII_zidKJ421F16"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.76746,
+        "lon": 7.48978,
+        "name": "10 | Avenue Général de Gaulle | Menton",
+        "station_id": "nice_parking_Allee_Panait_Istratti__zidXN57W5H8"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.76592,
+        "lon": 7.48779,
+        "name": "2 | Avenue Général de Gaulle | Menton",
+        "station_id": "nice_parking_Avenue_General_de_Gaulle___Entree_Menton_zidBGL9LP02"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.76652,
+        "lon": 7.48496,
+        "name": "14 | Rue Paul Morillot | Menton",
+        "station_id": "nice_parking_Rue_Paul_Morillot__zidUIORIYGA"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.76927,
+        "lon": 7.48006,
+        "name": "48 | Route du Val de Gorbio | Menton",
+        "station_id": "nice_parking_Val_de_Gorbio___Les_Jacarandas__zidTWLS5QQ2"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.77139,
+        "lon": 7.47871,
+        "name": "55 | Route du Val de Gorbio | Menton",
+        "station_id": "nice_parking_Val_de_Gorbio___L_intemporel__zidRWCXDKDB"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.7752,
+        "lon": 7.47439,
+        "name": "85 | Route du Val de Gorbio | Menton",
+        "station_id": "nice_parking_Val_de_Gorbio___Serres_de_la_Madone_zid434DR3KR"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.77746,
+        "lon": 7.47231,
+        "name": "95bis | Route du Val de Gorbio | Menton",
+        "station_id": "nice_parking_Val_de_Gorbio___Azur_Parc__zidN0CKVF9Y"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.77739,
+        "lon": 7.48685,
+        "name": "97b | Avenue Cernuschi | Menton",
+        "station_id": "nice_parking_Avenue_Cernuschi___Avenue_Doyen_Lepine_zidQO0CZ3FL"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.77558,
+        "lon": 7.48846,
+        "name": "73 | Avenue Cernuschi | Menton",
+        "station_id": "nice_parking_Avenue_Cernuschi___Cours_Rene_Coty___rue_des_Soeurs_Munet_zidMXPG1CF5"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.7827,
+        "lon": 7.48504,
+        "name": "33 | Avenue des Acacias | Menton",
+        "station_id": "nice_parking_31_Avenue_des_Acacias__zidRA5LXR67"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.77955,
+        "lon": 7.49359,
+        "name": "55 | Avenue de Sospel | Menton",
+        "station_id": "nice_parking_Avenue_de_Sospel___Hotel_Menton_Riviera__zidG3N5UI3H"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.77814,
+        "lon": 7.49374,
+        "name": "55b | Avenue de Sospel | Menton",
+        "station_id": "nice_parking_Avenue_de_Sospel___Carrefour_City__zidC5T4JIL6"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.7864,
+        "lon": 7.49441,
+        "name": "60bis | Val du Carei | Menton",
+        "station_id": "nice_parking_58_promenade_val_du_Carei_zidWFSYC46S"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.78287,
+        "lon": 7.49421,
+        "name": "95 | Avenue de Sospel | Menton",
+        "station_id": "nice_parking_Avenue_de_Sospel___EDF__zid9JC2TS1S"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.79097,
+        "lon": 7.49204,
+        "name": "57 | Route de Sospel | Menton",
+        "station_id": "nice_parking_Route_de_Sospel___Chapelle_Jeanne_D_Arc_zidJAVJ429A"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.79329,
+        "lon": 7.49127,
+        "name": "85 | Route de Sospel | Menton",
+        "station_id": "nice_parking_87_route_de_Sospel___pharmacie__zidFEMVUSHV"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.78724,
+        "lon": 7.49379,
+        "name": "76 | Val du Carei | Menton",
+        "station_id": "nice_parking_76_val_du_Carei__zid3D3G2VCC"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.78926,
+        "lon": 7.49215,
+        "name": "33 | Route de Sospel | Menton",
+        "station_id": "nice_parking_37_route_de_Sospel___Piscine_Municipale__zidVFS32YFZ"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.79972,
+        "lon": 7.48848,
+        "name": "32 | Rue des Etoiles | Menton",
+        "station_id": "nice_parking_45_avenue_Saint_Roman___Intermarche__zidJ10ER0UJ"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.80127,
+        "lon": 7.48814,
+        "name": "254 | Avenue Saint-roman | Menton",
+        "station_id": "nice_parking_275_avenue_Saint_Roman___Aroma___Stade_Saint_Roman__zidU8DHETFR"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.77911,
+        "lon": 7.48404,
+        "name": "39 | Rue du Val des Castagnins | Menton",
+        "station_id": "nice_parking_18_val_des_Castagnins__zidZYOHP9AD"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.78143,
+        "lon": 7.48049,
+        "name": "99 | Avenue de Pradès | Menton",
+        "station_id": "nice_parking_Val_des_Castagnins_face_Intermarche__zidB0EDPRYX"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.78028,
+        "lon": 7.48344,
+        "name": "21bis | Chemin du Suillet | Menton",
+        "station_id": "nice_parking_361_avenue_de_Prades__zidITMYA6K1"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.77666,
+        "lon": 7.50827,
+        "name": "8 | Quai Gordon Bennett | Menton",
+        "station_id": "nice_parking_Quai_Bonaparte___le_long_de_la_piste_cyclable_zidIQV481T6"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.65839,
+        "lon": 7.16372,
+        "name": "Avenue de Nice | Cagnes-sur-Mer",
+        "station_id": "nice_parking_Marquage_General_leclerc_cagne_zid386I0OOI",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.70459,
+        "lon": 7.33297,
+        "name": "5 | Avenue des Hellènes | Beaulieu-sur-Mer",
+        "station_id": "nice_parking_Avenue_des_hellenes_zidJ38PPAGC",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.55461,
+        "lon": 7.13542,
+        "name": "955 | Chemin de la Garoupe | Antibes",
+        "station_id": "nice_parking_Chemin_de_la_Garoupe_zidO7L2HFYQ"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.60988,
+        "lon": 7.07354,
+        "name": "370 | Rue des Cistes | Antibes",
+        "station_id": "nice_parking_Rue_des_Cistes_zidWX8USJTY"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.58367,
+        "lon": 7.1253,
+        "name": "Square du 8 Mai 1945 | Antibes",
+        "station_id": "nice_parking_Parvis_du_pre_des_pecheurs_zidF65SJ8Y3"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.56804,
+        "lon": 7.11575,
+        "name": "60 | Chemin des Sables | Antibes",
+        "station_id": "nice_parking_Palais_des_Congres_zidRW0MIT5F"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.58028,
+        "lon": 7.08962,
+        "name": "711 | Chemin des Eucalyptus | Antibes",
+        "station_id": "nice_parking_Stade_Gilbert_Auvergne_zidHKDPK8P1"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.5737,
+        "lon": 7.12475,
+        "name": "Promenade Pierre Merli | Antibes",
+        "station_id": "nice_parking_Parking_du_Ponteil_zidW6JXDUIL"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.5863,
+        "lon": 7.11878,
+        "name": "15 | Boulevard Général Vautrin | Antibes",
+        "station_id": "nice_parking_Boulevard_General_Vautrin___Pole_d_echanges_multimodal_zidY4NVJTD5"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.59998,
+        "lon": 7.12213,
+        "name": "13 | Impasse du Jardin des Roses | Antibes",
+        "station_id": "nice_parking_Chemin_des_Freres_Garbero_1_zidWATK12T1"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.59962,
+        "lon": 7.12514,
+        "name": "22 | Chemin des Frères Garbero | Antibes",
+        "station_id": "nice_parking_Chemin_des_Freres_Garbero_2_zidN11ESD2M"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.57154,
+        "lon": 7.09664,
+        "name": "43 | Rue Dulys Prolongée | Antibes",
+        "station_id": "nice_parking_Parking_Dulys_zidEDORL9XK"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.57158,
+        "lon": 7.12761,
+        "name": "22 | Boulevard James Wyllie | Antibes",
+        "station_id": "nice_parking_Boulevard_James_Wyllie_base_de_voile_zidEWHTGGCH"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.57118,
+        "lon": 7.12785,
+        "name": "28 | Boulevard James Wyllie | Antibes",
+        "station_id": "nice_parking_Boulevard_James_Wyllie_1_zid2M3M79JH"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.57039,
+        "lon": 7.12862,
+        "name": "38 | Boulevard James Wyllie | Antibes",
+        "station_id": "nice_parking_Boulevard_James_Wyllie_2_zid1TF7QDGA"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.56981,
+        "lon": 7.12915,
+        "name": "44bis | Boulevard James Wyllie | Antibes",
+        "station_id": "nice_parking_Boulevard_James_Wyllie_3_zidG54WU34G"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.57948,
+        "lon": 7.12384,
+        "name": "6 | Place Amiral Barnaud | Antibes",
+        "station_id": "nice_parking_Rue_du_General_Vandenberg_zidP8SSEVVQ"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.57673,
+        "lon": 7.12494,
+        "name": "41 | Boulevard Albert 1er | Antibes",
+        "station_id": "nice_parking_Boulevard_Albert_1er_zid2LH54CTD"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.58112,
+        "lon": 7.12601,
+        "name": "23 | Rue Sade | Antibes",
+        "station_id": "nice_parking_Place_Nationale_zidA2JQ0IZI"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.57075,
+        "lon": 7.11179,
+        "name": "1bis | Avenue de l'Estérel | Antibes",
+        "station_id": "nice_parking_Gare_de_Juin_les_pins___Avenue_de_L_Esterel_zidC3SN9MEX"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.57133,
+        "lon": 7.09079,
+        "name": "410 | Allée de la Roselière | Antibes",
+        "station_id": "nice_parking_Parc_Exflora_zidZDFQPXKZ"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.57929,
+        "lon": 7.12371,
+        "name": "2 | Avenue Maréchal Reille | Antibes",
+        "station_id": "nice_parking_Avenue_Marechal_Reille_zidNXJ2S75Y"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.57331,
+        "lon": 7.08754,
+        "name": "48 | Avenue de Cannes | Antibes",
+        "station_id": "nice_parking_Avenue_de_Cannes_zidMH3MNUM0"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.5637,
+        "lon": 7.13194,
+        "name": "645 | Route du Phare | Antibes",
+        "station_id": "nice_parking_Route_du_Phare_zidQ2UTCKS4"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.58165,
+        "lon": 7.12068,
+        "name": "14 | Avenue Robert Soleau | Antibes",
+        "station_id": "nice_parking_Avenue_Robert_Soleau_zidKQWLF3OK"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.59941,
+        "lon": 7.12558,
+        "name": "22 | Chemin des Frères Garbero | Antibes",
+        "station_id": "nice_parking_Bord_de_Mer_zidYAN166AY"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.59044,
+        "lon": 7.12373,
+        "name": "61 | Avenue du 11 Novembre | Antibes",
+        "station_id": "nice_parking_Avenue_du_11_Novembre_zid12Q3M131"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.54801,
+        "lon": 7.12993,
+        "name": "435 | Avenue Mrs L. D. Beaumont | Antibes",
+        "station_id": "nice_parking_Avenue_Mrs__L_D__Beaumont_zidO5DSPE66"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.5703,
+        "lon": 7.1051,
+        "name": "Boulevard Charles Guillaumont | Antibes",
+        "station_id": "nice_parking_Boulevard_Charles_Guillaumont_zidW1L3AAZT"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.58225,
+        "lon": 7.12152,
+        "name": "21 | Avenue Pasteur | Antibes",
+        "station_id": "nice_parking_Avenue_Pasteur_zid1GMNPS36"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.59087,
+        "lon": 7.11859,
+        "name": "Rue Line Renaud et Loulou Gasté | Antibes",
+        "station_id": "nice_parking_Rue_Claude_Debussy_zid3H8GLYZF"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.58509,
+        "lon": 7.11978,
+        "name": "54 | Avenue Robert Soleau | Antibes",
+        "station_id": "nice_parking_Avenue_Robert_Soleau_zidEJ8CL4GW"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.59723,
+        "lon": 7.06789,
+        "name": "990 | Boulevard Guillaume Apollinaire | Antibes",
+        "station_id": "nice_parking_Boulevard_G__Apolinaire_zidSUDT3UV0"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.57246,
+        "lon": 7.1025,
+        "name": "116bis | Boulevard Raymond Poincaré | Antibes",
+        "station_id": "nice_parking_Boulevard_Raymond_Poincare_1_zidA6T7I9J9"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.57227,
+        "lon": 7.10341,
+        "name": "73 | Boulevard Raymond Poincaré | Antibes",
+        "station_id": "nice_parking_Boulevard_Raymond_Poincare_2_zidWNNI8XRH"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.57853,
+        "lon": 7.12607,
+        "name": "Square Louis Pretazzini | Antibes",
+        "station_id": "nice_parking_Rue_du_Haut_Castellet_zidMOR0PD7G"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.57015,
+        "lon": 7.08696,
+        "name": "294 | Avenue de la Mer | Vallauris",
+        "station_id": "nice_parking_Boulevard_Charles_Guillaumont_zidC5C7S0J5"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.57118,
+        "lon": 7.1071,
+        "name": "9 | Rue Saint Honorat | Antibes",
+        "station_id": "nice_parking_Rue_Saint_Honorat_zid86OIAV9I"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.56934,
+        "lon": 7.10762,
+        "name": "45 | Boulevard Charles Guillaumont | Antibes",
+        "station_id": "nice_parking_Boulevard_Guillaumont___Plage_l_Esterel_zidLOS55RAT"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.57545,
+        "lon": 7.12436,
+        "name": "14 | Boulevard Maréchal Leclerc | Antibes",
+        "station_id": "nice_parking_Boulevard_Marechal_Leclerc_zid7N0IJA7R"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.57677,
+        "lon": 7.12585,
+        "name": "1 | Avenue Barquier | Antibes",
+        "station_id": "nice_parking_Avenue_Barquier_zid2LMSPCPB"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.56917,
+        "lon": 7.11458,
+        "name": "3 | Boulevard Baptistin Ardisson | Antibes",
+        "station_id": "nice_parking_Boulevard_B__Ardisson_zidBSEYDD5M"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.60282,
+        "lon": 7.11476,
+        "name": "701 | Chemin des Quatre Chemins | Antibes",
+        "station_id": "nice_parking_Chemin_des_4_Chemins_zid9ZS57AQ5"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.58038,
+        "lon": 7.1274,
+        "name": "4 | Cours Masséna | Antibes",
+        "station_id": "nice_parking_Cours_Massena_zidWV6YH9P9"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.58163,
+        "lon": 7.11934,
+        "name": "10 | Boulevard Dugommier | Antibes",
+        "station_id": "nice_parking_Boulevard_Dugommier_zidVGUZNU2L"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.58316,
+        "lon": 7.12585,
+        "name": "25 | Boulevard d'Aguillon | Antibes",
+        "station_id": "nice_parking_Boulevard_d_Aguillon_zidB3TILCX7"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.54953,
+        "lon": 7.11855,
+        "name": "1747 | Boulevard Maréchal Juin | Antibes",
+        "station_id": "nice_parking_Boulevard_Marechal_Juin_zidHMOPTU35"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.58291,
+        "lon": 7.1223,
+        "name": "21bis | Avenue Thiers | Antibes",
+        "station_id": "nice_parking_Avenue_Thiers_zid7O2OMXNU"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.57283,
+        "lon": 7.10034,
+        "name": "83 | Chemin des Liserons | Antibes",
+        "station_id": "nice_parking_Chemin_des_Liserons_zid2RU07LYA"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.66837,
+        "lon": 6.98503,
+        "name": "1 | Route de Chateauneuf | Opio",
+        "station_id": "nice_parking_Parking_relais_Font_Neuve_zidYTRYLZ58"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.66139,
+        "lon": 6.98743,
+        "name": "14 | Route de Cannes | Opio",
+        "station_id": "nice_parking_Ecole_Primaire_de_la_Tour_zidWKBGML31"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.62304,
+        "lon": 7.05116,
+        "name": "Avenue Georges Pompidou | Valbonne",
+        "station_id": "nice_parking_Dojo___Ecole_Garbejaire_zidOHGLWA1J"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.64183,
+        "lon": 7.0102,
+        "name": "4 | Place des Anciens Combattants | Valbonne",
+        "station_id": "nice_parking_Parking_des_anciens_combattants_zidSBHRJ2DF"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.63323,
+        "lon": 7.00005,
+        "name": "925b | Route de Cannes | Valbonne",
+        "station_id": "nice_parking_Piscine_Cuberte_zidBNR8OLFL"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.64022,
+        "lon": 7.00771,
+        "name": "8 | Avenue Saint Roch | Valbonne",
+        "station_id": "nice_parking_Hotel_de_Ville_zid1JJ0OZE5"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.64017,
+        "lon": 7.00573,
+        "name": "20b | Avenue Saint Roch | Valbonne",
+        "station_id": "nice_parking_Entree_du_Parking_Vignasse_zidOQSSJ946"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.62372,
+        "lon": 7.04522,
+        "name": "1855 | Route des Dolines | Valbonne",
+        "station_id": "nice_parking_Mediatheque_Colette_zid5LNU8KYY"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.64171,
+        "lon": 7.02515,
+        "name": "92 | Chemin de Peidessalle | Valbonne",
+        "station_id": "nice_parking_Peidessalle_zidQANX349M"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.6213,
+        "lon": 7.04403,
+        "name": "112 | Rue de la Vigne Haute | Valbonne",
+        "station_id": "nice_parking_Ecole_Sartoux_zidQVST1JIN"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.6226,
+        "lon": 7.04668,
+        "name": "Place Mejane | Valbonne",
+        "station_id": "nice_parking_Place_Mejane_zidQER8C7V6"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.62353,
+        "lon": 7.00765,
+        "name": "704 | Route d’Antibes | Valbonne",
+        "station_id": "nice_parking_Peyniblou_zidK6MUFIM9"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.62362,
+        "lon": 7.02953,
+        "name": "399 | Route des Cretes | Valbonne",
+        "station_id": "nice_parking_Siege_CASA_zidETJ7F3KH"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.63206,
+        "lon": 7.00839,
+        "name": "235 | Chemin du Val Martin | Valbonne",
+        "station_id": "nice_parking_Val_Martin_zidP7O2PGA0"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.62049,
+        "lon": 7.05538,
+        "name": "502 | Rue Albert Caquot | Valbonne",
+        "station_id": "nice_parking_Albert_Caquot_zidHPWXIZRI"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.60713,
+        "lon": 7.0573,
+        "name": "974 | Route de la Valmasque | Valbonne",
+        "station_id": "nice_parking_Futur_Arret_Bus_Tram_Clausonnes_zidV2AYO6XR"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.62527,
+        "lon": 7.05375,
+        "name": "Rue du Vallon | Valbonne",
+        "station_id": "nice_parking_Nautipolis_zidITSI8Q51"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.62839,
+        "lon": 7.03621,
+        "name": "1300 | Route des Cretes | Valbonne",
+        "station_id": "nice_parking_Parking_Marti___Air_France_zidAKFK46T9"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.61504,
+        "lon": 7.05469,
+        "name": "720 | Rue Albert Einstein | Valbonne",
+        "station_id": "nice_parking_Sophie_Laffitte_zidXCO52XCW"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.62406,
+        "lon": 7.03686,
+        "name": "947 | Route des Dolines | Valbonne",
+        "station_id": "nice_parking_Gare_Routiere_VSA_zid9IRNUR2D"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.62204730851825,
+        "lon": 7.040195950923857,
+        "name": "15 | Place Joseph Bermond | Valbonne",
+        "station_id": "nice_parking_Place_Bermond_zidR39IYQ64"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.61585,
+        "lon": 7.04134,
+        "name": "3935 | Route du Parc | Valbonne",
+        "station_id": "nice_parking_Parking_La_Source_zid9OFVVZNV"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.62059,
+        "lon": 7.03571,
+        "name": "444 | Route des Dolines | Valbonne",
+        "station_id": "nice_parking_Centrium_zidRPHKV3N4"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.61782,
+        "lon": 7.05168,
+        "name": "650 | Route des Lucioles | Valbonne",
+        "station_id": "nice_parking_Lucioles_zid66406J8S"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.61084,
+        "lon": 7.05141,
+        "name": "4 | Rue Albert Einstein | Valbonne",
+        "station_id": "nice_parking_Albert_Einstein_zidREKCSB24"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.61432,
+        "lon": 7.05988,
+        "name": "355 | Rue Dostoievski | Valbonne",
+        "station_id": "nice_parking_Rue_Fedor_Dostoievski_zidL8HM20RO"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.62673,
+        "lon": 7.04064,
+        "name": "1047 | Route des Dolines | Valbonne",
+        "station_id": "nice_parking_Business_Pole_zid2PJ2KVXL"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.64287,
+        "lon": 7.03637,
+        "name": "1306 | Route de Biot | Valbonne",
+        "station_id": "nice_parking_Lycee_S_Veil_zidJLINBVM0"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.64109,
+        "lon": 7.0352,
+        "name": "412 | Chemin de la Verriere | Valbonne",
+        "station_id": "nice_parking_Salle_St_Helene_zid6LRTALIS"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.64452,
+        "lon": 7.04898,
+        "name": "17 | Chemin du Darbousson | Valbonne",
+        "station_id": "nice_parking_Commerces_Ile_Verte_zid5B5RQTU2"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.60064,
+        "lon": 7.05973,
+        "name": "2720 | Chemin de Saint-Bernard | Vallauris",
+        "station_id": "nice_parking_saint_Bernard_sur_trottoir_zidS1STNPYO"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.56908,
+        "lon": 7.08293,
+        "name": "109 | Avenue des Frères Roustan | Vallauris",
+        "station_id": "nice_parking_plage_du_Midi_zidKVZM9P41"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.57032,
+        "lon": 7.08628,
+        "name": "294 | Avenue de la Mer | Vallauris",
+        "station_id": "nice_parking_passage_Made_av_Mer_zid09PGE5DO"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.56507,
+        "lon": 7.07275,
+        "name": "18 | Avenue des Frères Roustan | Vallauris",
+        "station_id": "nice_parking_parking_du_Vieux_port_zidL01BEML0"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.56222,
+        "lon": 7.06724,
+        "name": "1 | Avenue de la Liberté | Vallauris",
+        "station_id": "nice_parking_Pont_de_l_Aube_zid4WXD40P0"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.56393,
+        "lon": 7.06744,
+        "name": "12 | Avenue de la Liberté | Vallauris",
+        "station_id": "nice_parking_parking_covoiturage_RD_6107_zidMSNAFQ4X"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.57179,
+        "lon": 7.07806,
+        "name": "176 | Avenue des Mimosas | Vallauris",
+        "station_id": "nice_parking_gymnas_Allinei_zidAPCYVTYW"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.5684,
+        "lon": 7.08228,
+        "name": "34 | Avenue des Frères Roustan | Vallauris",
+        "station_id": "nice_parking_theatre_de_la_mer_zidTZGUVL5A"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.57575,
+        "lon": 7.05528,
+        "name": "20 | Rue Gilbert Portanier | Vallauris",
+        "station_id": "nice_parking_Portanier_zidUUUV71XD"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.57565,
+        "lon": 7.05383,
+        "name": "71 | Avenue Jérôme Massier | Vallauris",
+        "station_id": "nice_parking_stade_vallauris_zidX79DAEUR"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.57952,
+        "lon": 7.0558,
+        "name": "12 | Avenue de l'Hopital | Vallauris",
+        "station_id": "nice_parking_mairie_zidED5732CL"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.57988,
+        "lon": 7.05413,
+        "name": "3 | Rue Etienne Lieutaud | Vallauris",
+        "station_id": "nice_parking_chateau_musee_zidEP1HIN2Q"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.56685,
+        "lon": 7.07447,
+        "name": "16 | Avenue de la Gare | Vallauris",
+        "station_id": "nice_parking_Cevoule___Gare_zid293V92X4"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.57358,
+        "lon": 7.0568,
+        "name": "3 | Avenue des Martyrs de la Résistance | Vallauris",
+        "station_id": "nice_parking_Fournas_zid3D3DD2J5"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.6606,
+        "lon": 7.17542,
+        "name": "161 | Avenue de Nice | Cagnes-sur-Mer",
+        "station_id": "nice_parking_Av_de_Nice_zidNI5VJJW4",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.67115,
+        "lon": 7.16336,
+        "name": "Rond point Robert Schuman | Cagnes-sur-Mer",
+        "station_id": "nice_parking_Robert_Schuman_zidRMGN5QGQ",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.73762,
+        "lon": 7.31938,
+        "name": "3 | Rue Gaston Mouton | La Trinité",
+        "station_id": "nice_parking_Mouton_trinite_zid27LSRO1P",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.70722,
+        "lon": 7.26253,
+        "name": "7 | Rue Vernier | Nice",
+        "station_id": "nice_parking_rue_de_DIJON_zidTGOCZ4Q5",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.61689,
+        "lon": 7.08037,
+        "name": "30c | Avenue de Saint Philippe | Biot",
+        "station_id": "nice_parking_Saint_philippe_zidUE75O1W1",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.6168,
+        "lon": 7.0733,
+        "name": "1000 | Route des Colles | Biot",
+        "station_id": "nice_parking_IUT_Biot_zidY4R9NMX6",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.61854,
+        "lon": 7.11118,
+        "name": "1520a | Route de la Mer | Biot",
+        "station_id": "nice_parking_F_leger_zidNH2FO3IB",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.62284,
+        "lon": 7.09902,
+        "name": "1 | Route des Clausonnes | Biot",
+        "station_id": "nice_parking_Route_d_Antibes_zid4VBQNCO0",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.62603,
+        "lon": 7.09692,
+        "name": "1 | Route d'Antibes | Biot",
+        "station_id": "nice_parking_Parking_saint_jean_Biot_zidHFSIG6BB",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.6279,
+        "lon": 7.09583,
+        "name": "2bis | Chemin Neuf | Biot",
+        "station_id": "nice_parking_Chemin_neuf_zid3098F8PQ",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.65773,
+        "lon": 7.1219,
+        "name": "Jardin Escoffier | Villeneuve-Loubet",
+        "station_id": "nice_parking_1___Place_de_la_Republique_Avenue_Liberte_zid76X5P3Y4"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.65592,
+        "lon": 7.12641,
+        "name": "Allée Simone Veil | Villeneuve-Loubet",
+        "station_id": "nice_parking_4___Pole_culturel_A__Escoffier_Mediatheque_Jean_d_Ormesson_zidS86FFFI2"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.66592,
+        "lon": 7.11671,
+        "name": "431 | Avenue Antony Fabre | Villeneuve-Loubet",
+        "station_id": "nice_parking_5___Stade_rugby_JP_Rives_Avenue_Antony_Fabre_zidS4AIUTIU"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.6568,
+        "lon": 7.12191,
+        "name": "87 | Allée des Bugadières | Villeneuve-Loubet",
+        "station_id": "nice_parking_2___Parking_des_Bugadieres_87_Allee_des_Bugadieres_zidK1ZVO9OW"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.6423,
+        "lon": 7.13422,
+        "name": "2 | Avenue des Rives | Villeneuve-Loubet",
+        "station_id": "nice_parking_6___Maison_bleue_face_a_la_poste___Avenue_des_Rives_zidC58ADI52"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.65416,
+        "lon": 7.12705,
+        "name": "1470 | Avenue du Loubet | Villeneuve-Loubet",
+        "station_id": "nice_parking_3___College_Romee_zidR461XZ4R"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.64256,
+        "lon": 7.13837,
+        "name": "Rond-Point France d'Outre Mer | Villeneuve-Loubet",
+        "station_id": "nice_parking_7___Square_Beranger_zidQ6WXB3ZK"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.641432,
+        "lon": 7.141881,
+        "name": "1 | Avenue de la Mer | Villeneuve-Loubet",
+        "station_id": "nice_parking_8___Entree_Intermarche_chaussee_nord_zid8QXK8H5S"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.64066,
+        "lon": 7.14114,
+        "name": "385 | Boulevard des Italiens | Villeneuve-Loubet",
+        "station_id": "nice_parking_9___Boulevard_des_Italiens_1_Route_du_bord_de_mer_zidU96ETDPS"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.63628,
+        "lon": 7.13872,
+        "name": "Avenue de la Batterie | Villeneuve-Loubet",
+        "station_id": "nice_parking_12___Marina_zidPGYCBGDU"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.64194,
+        "lon": 7.14298,
+        "name": "157 | Boulevard des Italiens | Villeneuve-Loubet",
+        "station_id": "nice_parking_10___Boulevard_des_Italiens_2_Plage_du_Loup_zidCU67IC2U"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.63419,
+        "lon": 7.13812,
+        "name": "Rue de la Jetée | Villeneuve-Loubet",
+        "station_id": "nice_parking_13___Marina_cote_sud_zidSHYTN1E9"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.63738,
+        "lon": 7.1403,
+        "name": "Plage de la Fighière | Villeneuve-Loubet",
+        "station_id": "nice_parking_11___Parking_Fighiere_La_Fighiere_zidWMQTLX2V"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.62939,
+        "lon": 7.13492,
+        "name": "Parking des Maurettes | Villeneuve-Loubet",
+        "station_id": "nice_parking_15___Parking_des_Maurettes_Les_Maurettes_zid32YYA9G4"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.62501,
+        "lon": 7.13136,
+        "name": "1902 | Boulevard Nationale 7 | Villeneuve-Loubet",
+        "station_id": "nice_parking_16___Parc_de_Vaugrenier_zidLIRLUTNO"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.62913762330058,
+        "lon": 7.133667226294212,
+        "name": "Parking d'Ecomobilité | Villeneuve-Loubet",
+        "station_id": "nice_parking_17___Gare_SNCF_zidS62SPJUD"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.62875,
+        "lon": 7.09617,
+        "name": "3a | Chemin des Bachettes | Biot",
+        "station_id": "nice_parking_Mairie_Biot_zidFSLNI13N",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.5899,
+        "lon": 7.11818,
+        "name": "60 | Rue Line Renaud et Loulou Gasté | Antibes",
+        "station_id": "nice_parking_Arceau_Antibes_Anthea_zidVK76LV9Y",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.59255,
+        "lon": 7.1249,
+        "name": "75 | Avenue du 11 Novembre | Antibes",
+        "station_id": "nice_parking_Arceau_Antibes_Fort_Carre_zidFRIENAOK",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.58143,
+        "lon": 7.12355,
+        "name": "1 | Rue Championnet | Antibes",
+        "station_id": "nice_parking_Place_resistance_zidSB36YBCT",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.61302,
+        "lon": 7.12462,
+        "name": "165 | Avenue Mozart | Antibes",
+        "station_id": "nice_parking_Point_1_zidFXW3O4JA"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.6111,
+        "lon": 7.12616,
+        "name": "1260 | Route de Nice | Antibes",
+        "station_id": "nice_parking_Point_2_zidQD04LG8P"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.60245,
+        "lon": 7.11667,
+        "name": "539 | Chemin des Quatre Chemins | Antibes",
+        "station_id": "nice_parking_Point_3_zidUIAXCKPV"
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.676,
+        "lon": 7.22156,
+        "name": "14 | Avenue des Eucalyptus | Nice",
+        "station_id": "nice_parking_Virtual_Eucalyptus_zidKMSP7P9I",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.69603,
+        "lon": 7.24567,
+        "name": "2 | Avenue Doyen Louis Trotabas | Nice",
+        "station_id": "nice_parking_Fac_de_Nice_zidQDB84US9",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "capacity": 100,
+        "is_virtual_station": true,
+        "lat": 43.68763,
+        "lon": 7.22767,
+        "name": "Vieux Chemin de Fabron | Nice",
+        "station_id": "nice_parking_IUT_Napoleon_3_zidIG5ZRB0K",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      }
+    ]
+  },
+  "last_updated": 1771749837,
+  "ttl": 0,
+  "version": "2.2"
+}

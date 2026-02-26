@@ -1,0 +1,909 @@
+{
+  "last_updated": 1771749810,
+  "ttl": 60,
+  "data": {
+    "stations": [
+      {
+        "station_id": "512663383",
+        "name": "1 Gare Centrale",
+        "short_name": "62201",
+        "lat": 47.742359,
+        "lon": 7.342289,
+        "region_id": "1124",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=512663383",
+          "ios": "https://app.nextbike.net/station?id=512663383",
+          "web": "https://nxtb.it/p/512663383"
+        },
+        "is_virtual_station": false,
+        "capacity": 40
+      },
+      {
+        "station_id": "512803782",
+        "name": "2 Porte de Bâle",
+        "short_name": "62202",
+        "lat": 47.746525,
+        "lon": 7.343309,
+        "region_id": "1124",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=512803782",
+          "ios": "https://app.nextbike.net/station?id=512803782",
+          "web": "https://nxtb.it/p/512803782"
+        },
+        "is_virtual_station": false,
+        "capacity": 20
+      },
+      {
+        "station_id": "512804070",
+        "name": "3 Bonbonnière",
+        "short_name": "62203",
+        "lat": 47.747452,
+        "lon": 7.334959,
+        "region_id": "1124",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=512804070",
+          "ios": "https://app.nextbike.net/station?id=512804070",
+          "web": "https://nxtb.it/p/512804070"
+        },
+        "is_virtual_station": false,
+        "capacity": 20
+      },
+      {
+        "station_id": "512804551",
+        "name": "4-Parc Salvator",
+        "short_name": "62204",
+        "lat": 47.748282,
+        "lon": 7.343077,
+        "region_id": "1124",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=512804551",
+          "ios": "https://app.nextbike.net/station?id=512804551",
+          "web": "https://nxtb.it/p/512804551"
+        },
+        "is_virtual_station": false,
+        "capacity": 12
+      },
+      {
+        "station_id": "512804767",
+        "name": "5 Metz",
+        "short_name": "62205",
+        "lat": 47.74931,
+        "lon": 7.341074,
+        "region_id": "1124",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=512804767",
+          "ios": "https://app.nextbike.net/station?id=512804767",
+          "web": "https://nxtb.it/p/512804767"
+        },
+        "is_virtual_station": false,
+        "capacity": 16
+      },
+      {
+        "station_id": "512804950",
+        "name": "6 Porte Jeune",
+        "short_name": "62206",
+        "lat": 47.74993,
+        "lon": 7.338714,
+        "region_id": "1124",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=512804950",
+          "ios": "https://app.nextbike.net/station?id=512804950",
+          "web": "https://nxtb.it/p/512804950"
+        },
+        "is_virtual_station": false,
+        "capacity": 19
+      },
+      {
+        "station_id": "512805536",
+        "name": "7 Mairie",
+        "short_name": "62207",
+        "lat": 47.749415,
+        "lon": 7.335778,
+        "region_id": "1124",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=512805536",
+          "ios": "https://app.nextbike.net/station?id=512805536",
+          "web": "https://nxtb.it/p/512805536"
+        },
+        "is_virtual_station": false,
+        "capacity": 15
+      },
+      {
+        "station_id": "512805895",
+        "name": "8 Porte Haute",
+        "short_name": "62208",
+        "lat": 47.746982,
+        "lon": 7.3321,
+        "region_id": "1124",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=512805895",
+          "ios": "https://app.nextbike.net/station?id=512805895",
+          "web": "https://nxtb.it/p/512805895"
+        },
+        "is_virtual_station": false,
+        "capacity": 20
+      },
+      {
+        "station_id": "512806136",
+        "name": "9 Tour Nessel",
+        "short_name": "62209",
+        "lat": 47.744703,
+        "lon": 7.328304,
+        "region_id": "1124",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=512806136",
+          "ios": "https://app.nextbike.net/station?id=512806136",
+          "web": "https://nxtb.it/p/512806136"
+        },
+        "is_virtual_station": false,
+        "capacity": 16
+      },
+      {
+        "station_id": "512806355",
+        "name": "10 Place de la Paix",
+        "short_name": "62210",
+        "lat": 47.744243,
+        "lon": 7.335932,
+        "region_id": "1124",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=512806355",
+          "ios": "https://app.nextbike.net/station?id=512806355",
+          "web": "https://nxtb.it/p/512806355"
+        },
+        "is_virtual_station": false,
+        "capacity": 13
+      },
+      {
+        "station_id": "512806730",
+        "name": "11 Place du Printemps",
+        "short_name": "62211",
+        "lat": 47.749647,
+        "lon": 7.348686,
+        "region_id": "1124",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=512806730",
+          "ios": "https://app.nextbike.net/station?id=512806730",
+          "web": "https://nxtb.it/p/512806730"
+        },
+        "is_virtual_station": false,
+        "capacity": 18
+      },
+      {
+        "station_id": "512807943",
+        "name": "12 Place Hauger",
+        "short_name": "62212",
+        "lat": 47.758631,
+        "lon": 7.362698,
+        "region_id": "1124",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=512807943",
+          "ios": "https://app.nextbike.net/station?id=512807943",
+          "web": "https://nxtb.it/p/512807943"
+        },
+        "is_virtual_station": false,
+        "capacity": 14
+      },
+      {
+        "station_id": "512808171",
+        "name": "13 Marché du Canal couvert",
+        "short_name": "62213",
+        "lat": 47.750571,
+        "lon": 7.32988,
+        "region_id": "1124",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=512808171",
+          "ios": "https://app.nextbike.net/station?id=512808171",
+          "web": "https://nxtb.it/p/512808171"
+        },
+        "is_virtual_station": false,
+        "capacity": 18
+      },
+      {
+        "station_id": "512808387",
+        "name": "14 Parc Expo",
+        "short_name": "62214",
+        "lat": 47.762963,
+        "lon": 7.336817,
+        "region_id": "1124",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=512808387",
+          "ios": "https://app.nextbike.net/station?id=512808387",
+          "web": "https://nxtb.it/p/512808387"
+        },
+        "is_virtual_station": false,
+        "capacity": 14
+      },
+      {
+        "station_id": "512808611",
+        "name": "15 Grand Rex",
+        "short_name": "62215",
+        "lat": 47.7523,
+        "lon": 7.337305,
+        "region_id": "1124",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=512808611",
+          "ios": "https://app.nextbike.net/station?id=512808611",
+          "web": "https://nxtb.it/p/512808611"
+        },
+        "is_virtual_station": false,
+        "capacity": 18
+      },
+      {
+        "station_id": "512812555",
+        "name": "16 Parc Zoologique et botanique",
+        "short_name": "62216",
+        "lat": 47.73163,
+        "lon": 7.347316,
+        "region_id": "1124",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=512812555",
+          "ios": "https://app.nextbike.net/station?id=512812555",
+          "web": "https://nxtb.it/p/512812555"
+        },
+        "is_virtual_station": false,
+        "capacity": 12
+      },
+      {
+        "station_id": "512812978",
+        "name": "17 Box Briand",
+        "short_name": "62217",
+        "lat": 47.748104,
+        "lon": 7.323548,
+        "region_id": "1124",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=512812978",
+          "ios": "https://app.nextbike.net/station?id=512812978",
+          "web": "https://nxtb.it/p/512812978"
+        },
+        "is_virtual_station": false,
+        "capacity": 15
+      },
+      {
+        "station_id": "512813196",
+        "name": "18 DMC",
+        "short_name": "62218",
+        "lat": 47.748818,
+        "lon": 7.316895,
+        "region_id": "1124",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=512813196",
+          "ios": "https://app.nextbike.net/station?id=512813196",
+          "web": "https://nxtb.it/p/512813196"
+        },
+        "is_virtual_station": false,
+        "capacity": 14
+      },
+      {
+        "station_id": "512813462",
+        "name": "19 Trois rois",
+        "short_name": "62219",
+        "lat": 47.744143,
+        "lon": 7.333235,
+        "region_id": "1124",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=512813462",
+          "ios": "https://app.nextbike.net/station?id=512813462",
+          "web": "https://nxtb.it/p/512813462"
+        },
+        "is_virtual_station": false,
+        "capacity": 15
+      },
+      {
+        "station_id": "512814381",
+        "name": "20 Filature",
+        "short_name": "62220",
+        "lat": 47.753378,
+        "lon": 7.348603,
+        "region_id": "1124",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=512814381",
+          "ios": "https://app.nextbike.net/station?id=512814381",
+          "web": "https://nxtb.it/p/512814381"
+        },
+        "is_virtual_station": false,
+        "capacity": 14
+      },
+      {
+        "station_id": "512814633",
+        "name": "21 Fonderie",
+        "short_name": "62221",
+        "lat": 47.739654,
+        "lon": 7.332368,
+        "region_id": "1124",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=512814633",
+          "ios": "https://app.nextbike.net/station?id=512814633",
+          "web": "https://nxtb.it/p/512814633"
+        },
+        "is_virtual_station": false,
+        "capacity": 34
+      },
+      {
+        "station_id": "512815948",
+        "name": "22 Rattachement",
+        "short_name": "62222",
+        "lat": 47.769678,
+        "lon": 7.321408,
+        "region_id": "1124",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=512815948",
+          "ios": "https://app.nextbike.net/station?id=512815948",
+          "web": "https://nxtb.it/p/512815948"
+        },
+        "is_virtual_station": false,
+        "capacity": 14
+      },
+      {
+        "station_id": "512816459",
+        "name": "23 Hasenrain",
+        "short_name": "62223",
+        "lat": 47.735945,
+        "lon": 7.332042,
+        "region_id": "1124",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=512816459",
+          "ios": "https://app.nextbike.net/station?id=512816459",
+          "web": "https://nxtb.it/p/512816459"
+        },
+        "is_virtual_station": false,
+        "capacity": 13
+      },
+      {
+        "station_id": "512816736",
+        "name": "24 Tivoli",
+        "short_name": "62224",
+        "lat": 47.743073,
+        "lon": 7.347419,
+        "region_id": "1124",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=512816736",
+          "ios": "https://app.nextbike.net/station?id=512816736",
+          "web": "https://nxtb.it/p/512816736"
+        },
+        "is_virtual_station": false,
+        "capacity": 12
+      },
+      {
+        "station_id": "512816864",
+        "name": "25 Palais des Sports",
+        "short_name": "62225",
+        "lat": 47.74015,
+        "lon": 7.320266,
+        "region_id": "1124",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=512816864",
+          "ios": "https://app.nextbike.net/station?id=512816864",
+          "web": "https://nxtb.it/p/512816864"
+        },
+        "is_virtual_station": false,
+        "capacity": 16
+      },
+      {
+        "station_id": "512817022",
+        "name": "26 Daguerre",
+        "short_name": "62226",
+        "lat": 47.742661,
+        "lon": 7.323789,
+        "region_id": "1124",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=512817022",
+          "ios": "https://app.nextbike.net/station?id=512817022",
+          "web": "https://nxtb.it/p/512817022"
+        },
+        "is_virtual_station": false,
+        "capacity": 16
+      },
+      {
+        "station_id": "512818067",
+        "name": "27 Bel Air",
+        "short_name": "62227",
+        "lat": 47.733074,
+        "lon": 7.304612,
+        "region_id": "1124",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=512818067",
+          "ios": "https://app.nextbike.net/station?id=512818067",
+          "web": "https://nxtb.it/p/512818067"
+        },
+        "is_virtual_station": false,
+        "capacity": 16
+      },
+      {
+        "station_id": "512818221",
+        "name": "28 Caserne Lefebvre",
+        "short_name": "62228",
+        "lat": 47.758066,
+        "lon": 7.345706,
+        "region_id": "1124",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=512818221",
+          "ios": "https://app.nextbike.net/station?id=512818221",
+          "web": "https://nxtb.it/p/512818221"
+        },
+        "is_virtual_station": false,
+        "capacity": 16
+      },
+      {
+        "station_id": "512819040",
+        "name": "29 Gluck",
+        "short_name": "62229",
+        "lat": 47.755193,
+        "lon": 7.322087,
+        "region_id": "1124",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=512819040",
+          "ios": "https://app.nextbike.net/station?id=512819040",
+          "web": "https://nxtb.it/p/512819040"
+        },
+        "is_virtual_station": false,
+        "capacity": 12
+      },
+      {
+        "station_id": "512819230",
+        "name": "30 Hardt",
+        "short_name": "62230",
+        "lat": 47.753113,
+        "lon": 7.355303,
+        "region_id": "1124",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=512819230",
+          "ios": "https://app.nextbike.net/station?id=512819230",
+          "web": "https://nxtb.it/p/512819230"
+        },
+        "is_virtual_station": false,
+        "capacity": 14
+      },
+      {
+        "station_id": "512819368",
+        "name": "31 Kinepolis",
+        "short_name": "62231",
+        "lat": 47.76009,
+        "lon": 7.351332,
+        "region_id": "1124",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=512819368",
+          "ios": "https://app.nextbike.net/station?id=512819368",
+          "web": "https://nxtb.it/p/512819368"
+        },
+        "is_virtual_station": false,
+        "capacity": 15
+      },
+      {
+        "station_id": "512819530",
+        "name": "32 Campus - Illberg",
+        "short_name": "62232",
+        "lat": 47.733452,
+        "lon": 7.315696,
+        "region_id": "1124",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=512819530",
+          "ios": "https://app.nextbike.net/station?id=512819530",
+          "web": "https://nxtb.it/p/512819530"
+        },
+        "is_virtual_station": false,
+        "capacity": 34
+      },
+      {
+        "station_id": "512819747",
+        "name": "33 Châtaigniers",
+        "short_name": "62233",
+        "lat": 47.776653,
+        "lon": 7.328638,
+        "region_id": "1124",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=512819747",
+          "ios": "https://app.nextbike.net/station?id=512819747",
+          "web": "https://nxtb.it/p/512819747"
+        },
+        "is_virtual_station": false,
+        "capacity": 16
+      },
+      {
+        "station_id": "512819957",
+        "name": "34 Patinoire",
+        "short_name": "62234",
+        "lat": 47.736082,
+        "lon": 7.318705,
+        "region_id": "1124",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=512819957",
+          "ios": "https://app.nextbike.net/station?id=512819957",
+          "web": "https://nxtb.it/p/512819957"
+        },
+        "is_virtual_station": false,
+        "capacity": 20
+      },
+      {
+        "station_id": "512820660",
+        "name": "35 Nordfeld",
+        "short_name": "62235",
+        "lat": 47.752975,
+        "lon": 7.346664,
+        "region_id": "1124",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=512820660",
+          "ios": "https://app.nextbike.net/station?id=512820660",
+          "web": "https://nxtb.it/p/512820660"
+        },
+        "is_virtual_station": false,
+        "capacity": 18
+      },
+      {
+        "station_id": "512820976",
+        "name": "36 Musée de l'automobile",
+        "short_name": "62236",
+        "lat": 47.760022,
+        "lon": 7.332357,
+        "region_id": "1124",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=512820976",
+          "ios": "https://app.nextbike.net/station?id=512820976",
+          "web": "https://nxtb.it/p/512820976"
+        },
+        "is_virtual_station": false,
+        "capacity": 13
+      },
+      {
+        "station_id": "512821262",
+        "name": "37 Dornach Saint Barthélemy",
+        "short_name": "62237",
+        "lat": 47.743196,
+        "lon": 7.312601,
+        "region_id": "1124",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=512821262",
+          "ios": "https://app.nextbike.net/station?id=512821262",
+          "web": "https://nxtb.it/p/512821262"
+        },
+        "is_virtual_station": false,
+        "capacity": 14
+      },
+      {
+        "station_id": "512823988",
+        "name": "38 Villon",
+        "short_name": "62238",
+        "lat": 47.753395,
+        "lon": 7.313159,
+        "region_id": "1124",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=512823988",
+          "ios": "https://app.nextbike.net/station?id=512823988",
+          "web": "https://nxtb.it/p/512823988"
+        },
+        "is_virtual_station": false,
+        "capacity": 12
+      },
+      {
+        "station_id": "512824206",
+        "name": "39 Parc Steinbach",
+        "short_name": "62239",
+        "lat": 47.745539,
+        "lon": 7.3382,
+        "region_id": "1124",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=512824206",
+          "ios": "https://app.nextbike.net/station?id=512824206",
+          "web": "https://nxtb.it/p/512824206"
+        },
+        "is_virtual_station": false,
+        "capacity": 15
+      },
+      {
+        "station_id": "512824395",
+        "name": "40 Gare de Dornach",
+        "short_name": "62240",
+        "lat": 47.746391,
+        "lon": 7.308494,
+        "region_id": "1124",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=512824395",
+          "ios": "https://app.nextbike.net/station?id=512824395",
+          "web": "https://nxtb.it/p/512824395"
+        },
+        "is_virtual_station": false,
+        "capacity": 16
+      },
+      {
+        "station_id": "512824552",
+        "name": "41 KM0",
+        "short_name": "62241",
+        "lat": 47.738868,
+        "lon": 7.328728,
+        "region_id": "1124",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=512824552",
+          "ios": "https://app.nextbike.net/station?id=512824552",
+          "web": "https://nxtb.it/p/512824552"
+        },
+        "is_virtual_station": false,
+        "capacity": 17
+      },
+      {
+        "station_id": "512824858",
+        "name": "42 NEPPERT",
+        "short_name": "62242",
+        "lat": 47.75566,
+        "lon": 7.339515,
+        "region_id": "1124",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=512824858",
+          "ios": "https://app.nextbike.net/station?id=512824858",
+          "web": "https://nxtb.it/p/512824858"
+        },
+        "is_virtual_station": false,
+        "capacity": 14
+      },
+      {
+        "station_id": "512827015",
+        "name": "43 Hôpital Emile Muller",
+        "short_name": "62243",
+        "lat": 47.7234,
+        "lon": 7.344979,
+        "region_id": "1124",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=512827015",
+          "ios": "https://app.nextbike.net/station?id=512827015",
+          "web": "https://nxtb.it/p/512827015"
+        },
+        "is_virtual_station": false,
+        "capacity": 20
+      },
+      {
+        "station_id": "512827178",
+        "name": "44 Zuckerberg",
+        "short_name": "62244",
+        "lat": 47.727957,
+        "lon": 7.346551,
+        "region_id": "1124",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=512827178",
+          "ios": "https://app.nextbike.net/station?id=512827178",
+          "web": "https://nxtb.it/p/512827178"
+        },
+        "is_virtual_station": false,
+        "capacity": 20
+      },
+      {
+        "station_id": "512827312",
+        "name": "45 Nations",
+        "short_name": "62245",
+        "lat": 47.73647,
+        "lon": 7.301448,
+        "region_id": "1124",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=512827312",
+          "ios": "https://app.nextbike.net/station?id=512827312",
+          "web": "https://nxtb.it/p/512827312"
+        },
+        "is_virtual_station": false,
+        "capacity": 12
+      },
+      {
+        "station_id": "512828119",
+        "name": "46 Technopole",
+        "short_name": "62246",
+        "lat": 47.745671,
+        "lon": 7.296855,
+        "region_id": "1124",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=512828119",
+          "ios": "https://app.nextbike.net/station?id=512828119",
+          "web": "https://nxtb.it/p/512828119"
+        },
+        "is_virtual_station": false,
+        "capacity": 10
+      },
+      {
+        "station_id": "512828291",
+        "name": "47 Saint-Fridolin",
+        "short_name": "62247",
+        "lat": 47.754414,
+        "lon": 7.328894,
+        "region_id": "1124",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=512828291",
+          "ios": "https://app.nextbike.net/station?id=512828291",
+          "web": "https://nxtb.it/p/512828291"
+        },
+        "is_virtual_station": false,
+        "capacity": 12
+      },
+      {
+        "station_id": "572794852",
+        "name": "49 Doller",
+        "short_name": "62249",
+        "lat": 47.773395,
+        "lon": 7.334423,
+        "region_id": "1124",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=572794852",
+          "ios": "https://app.nextbike.net/station?id=572794852",
+          "web": "https://nxtb.it/p/572794852"
+        },
+        "is_virtual_station": false,
+        "capacity": 12
+      },
+      {
+        "station_id": "551504531",
+        "name": "54 Rixheim Romains",
+        "short_name": "62254",
+        "lat": 47.750335,
+        "lon": 7.408399,
+        "region_id": "1125",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=551504531",
+          "ios": "https://app.nextbike.net/station?id=551504531",
+          "web": "https://nxtb.it/p/551504531"
+        },
+        "is_virtual_station": false,
+        "capacity": 20
+      },
+      {
+        "station_id": "551504798",
+        "name": "55 Rixheim Ile Napoléon",
+        "short_name": "62255",
+        "lat": 47.763973,
+        "lon": 7.391191,
+        "region_id": "1125",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=551504798",
+          "ios": "https://app.nextbike.net/station?id=551504798",
+          "web": "https://nxtb.it/p/551504798"
+        },
+        "is_virtual_station": false,
+        "capacity": 10
+      },
+      {
+        "station_id": "551505770",
+        "name": "58 Illzach Modenheim",
+        "short_name": "62258",
+        "lat": 47.769562,
+        "lon": 7.359719,
+        "region_id": "1126",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=551505770",
+          "ios": "https://app.nextbike.net/station?id=551505770",
+          "web": "https://nxtb.it/p/551505770"
+        },
+        "is_virtual_station": false,
+        "capacity": 20
+      },
+      {
+        "station_id": "551506461",
+        "name": "61 Kingersheim Mairie",
+        "short_name": "62261",
+        "lat": 47.788812,
+        "lon": 7.335581,
+        "region_id": "1127",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=551506461",
+          "ios": "https://app.nextbike.net/station?id=551506461",
+          "web": "https://nxtb.it/p/551506461"
+        },
+        "is_virtual_station": false,
+        "capacity": 20
+      },
+      {
+        "station_id": "551506716",
+        "name": "62 Kingersheim Kaligone",
+        "short_name": "62262",
+        "lat": 47.790342,
+        "lon": 7.3156,
+        "region_id": "1127",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=551506716",
+          "ios": "https://app.nextbike.net/station?id=551506716",
+          "web": "https://nxtb.it/p/551506716"
+        },
+        "is_virtual_station": false,
+        "capacity": 20
+      },
+      {
+        "station_id": "512829701",
+        "name": "48 Riedisheim Couvent",
+        "short_name": "62248",
+        "lat": 47.746132,
+        "lon": 7.357037,
+        "region_id": "1129",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=512829701",
+          "ios": "https://app.nextbike.net/station?id=512829701",
+          "web": "https://nxtb.it/p/512829701"
+        },
+        "is_virtual_station": false,
+        "capacity": 15
+      },
+      {
+        "station_id": "551505196",
+        "name": "56 Riedisheim L'Aronde",
+        "short_name": "62256",
+        "lat": 47.74466,
+        "lon": 7.366936,
+        "region_id": "1129",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=551505196",
+          "ios": "https://app.nextbike.net/station?id=551505196",
+          "web": "https://nxtb.it/p/551505196"
+        },
+        "is_virtual_station": false,
+        "capacity": 20
+      },
+      {
+        "station_id": "551502345",
+        "name": "50 Sausheim Mairie",
+        "short_name": "62250",
+        "lat": 47.789515,
+        "lon": 7.370891,
+        "region_id": "1130",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=551502345",
+          "ios": "https://app.nextbike.net/station?id=551502345",
+          "web": "https://nxtb.it/p/551502345"
+        },
+        "is_virtual_station": false,
+        "capacity": 8
+      },
+      {
+        "station_id": "551507028",
+        "name": "63 Brunstatt Vignerons",
+        "short_name": "62263",
+        "lat": 47.719626,
+        "lon": 7.317587,
+        "region_id": "1131",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=551507028",
+          "ios": "https://app.nextbike.net/station?id=551507028",
+          "web": "https://nxtb.it/p/551507028"
+        },
+        "is_virtual_station": false,
+        "capacity": 14
+      },
+      {
+        "station_id": "551507295",
+        "name": "64 Didenheim Mairie",
+        "short_name": "62264",
+        "lat": 47.717395,
+        "lon": 7.301998,
+        "region_id": "1131",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=551507295",
+          "ios": "https://app.nextbike.net/station?id=551507295",
+          "web": "https://nxtb.it/p/551507295"
+        },
+        "is_virtual_station": false,
+        "capacity": 12
+      },
+      {
+        "station_id": "551505960",
+        "name": "59 Wittenheim Médiathèque",
+        "short_name": "62259",
+        "lat": 47.805529,
+        "lon": 7.337035,
+        "region_id": "1132",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=551505960",
+          "ios": "https://app.nextbike.net/station?id=551505960",
+          "web": "https://nxtb.it/p/551505960"
+        },
+        "is_virtual_station": false,
+        "capacity": 20
+      },
+      {
+        "station_id": "551506281",
+        "name": "60 Wittenheim Collège Marcel Pagnol",
+        "short_name": "62260",
+        "lat": 47.815966,
+        "lon": 7.329729,
+        "region_id": "1132",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=551506281",
+          "ios": "https://app.nextbike.net/station?id=551506281",
+          "web": "https://nxtb.it/p/551506281"
+        },
+        "is_virtual_station": false,
+        "capacity": 20
+      }
+    ]
+  },
+  "version": "2.3"
+}

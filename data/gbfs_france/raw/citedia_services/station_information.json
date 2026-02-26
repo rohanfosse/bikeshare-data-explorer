@@ -1,0 +1,39 @@
+{
+  "last_updated": "2026-02-22T09:42:40.8187737+01:00",
+  "ttl": 300,
+  "version": "3.0",
+  "data": {
+    "stations": [
+      {
+        "station_id": "596",
+        "name": [
+          {
+            "text": "ILO",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.12120056152344,
+        "lon": -1.6720000505447388,
+        "address": "Résidence Illo, 93 Rue d'Antrain, 35700 Rennes",
+        "parking_type": "underground_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1218",
+        "name": [
+          {
+            "text": "Citédia Services",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.104881,
+        "lon": -1.680479,
+        "address": "40, place du colombier",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": true
+      }
+    ]
+  }
+}

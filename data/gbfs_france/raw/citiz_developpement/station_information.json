@@ -1,0 +1,993 @@
+{
+  "last_updated": "2026-02-22T09:37:55.2682692+01:00",
+  "ttl": 300,
+  "version": "3.0",
+  "data": {
+    "stations": [
+      {
+        "station_id": "43",
+        "name": [
+          {
+            "text": "Halles",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.39277648925781,
+        "lon": 0.6796849966049194,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "44",
+        "name": [
+          {
+            "text": "Constantine-Commerce",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.39515686035156,
+        "lon": 0.6841260194778442,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "45",
+        "name": [
+          {
+            "text": "Cathédrale-Sicard",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.394527435302734,
+        "lon": 0.6937609910964966,
+        "address": "17 place François Sicard",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "46",
+        "name": [
+          {
+            "text": "Gare",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.390403747558594,
+        "lon": 0.6944929957389832,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "47",
+        "name": [
+          {
+            "text": "Jean Jaurès (16 bd Beranger)",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.38991165161133,
+        "lon": 0.6871880292892456,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "48",
+        "name": [
+          {
+            "text": "Michelet (place)",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.38682556152344,
+        "lon": 0.6912750005722046,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "49",
+        "name": [
+          {
+            "text": "ZZ_SXB LIVRAISON NE PAS RESERVER",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.63065719604492,
+        "lon": 7.753045082092285,
+        "parking_type": "street_parking",
+        "capacity": 5,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "50",
+        "name": [
+          {
+            "text": "Velpeau",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.38774490356445,
+        "lon": 0.7022020220756531,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "51",
+        "name": [
+          {
+            "text": "Mairie",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.86116,
+        "lon": 2.443582,
+        "address": "Rue Franklin",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "52",
+        "name": [
+          {
+            "text": "République",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.85319519042969,
+        "lon": 2.423048973083496,
+        "address": "4 rue de la République",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "53",
+        "name": [
+          {
+            "text": "Croix de Chavaux",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.85720443725586,
+        "lon": 2.437577962875366,
+        "address": "12 rue de Vincennes",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "54",
+        "name": [
+          {
+            "text": "Gare de St Pierre des Corps",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.38666915893555,
+        "lon": 0.7245200276374817,
+        "address": "Rue Fabienne Landy",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  0.7241914568873709,
+                  47.38673584203628
+                ],
+                [
+                  0.7245562373133962,
+                  47.38629637308024
+                ],
+                [
+                  0.7273510991069143,
+                  47.387287897020144
+                ],
+                [
+                  0.7266966401072805,
+                  47.38761840085538
+                ],
+                [
+                  0.7241914568873709,
+                  47.38673584203628
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "55",
+        "name": [
+          {
+            "text": "Rabelais",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.384376525878906,
+        "lon": -0.323578000068665,
+        "address": "42 place Rabelais",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "56",
+        "name": [
+          {
+            "text": "Chambray-lès-Tours En[vert]gure",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.34170150756836,
+        "lon": 0.6843000054359436,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "57",
+        "name": [
+          {
+            "text": "Paul Bert",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.4027099609375,
+        "lon": 0.6940770149230957,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "58",
+        "name": [
+          {
+            "text": "Preuilly",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.392356872558594,
+        "lon": 0.6703180074691772,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "59",
+        "name": [
+          {
+            "text": "Longchamp",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.86725997924805,
+        "lon": 2.2221620082855225,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "60",
+        "name": [
+          {
+            "text": "Belvédère",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.87406921386719,
+        "lon": 2.224126100540161,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "554",
+        "name": [
+          {
+            "text": "Maison France Services",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.11085510253906,
+        "lon": 2.8696324825286865,
+        "address": "Maison France Service, 4, rue du Faubourg Notre Dame, 15300 Murat",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1184",
+        "name": [
+          {
+            "text": "Gare (nouvelle)",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.5854333,
+        "lon": 1.325215,
+        "address": "9 Rue du Dr Desfray",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1522",
+        "name": [
+          {
+            "text": "ORANGERIE",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.1885032653809,
+        "lon": -1.11660599708557,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1535",
+        "name": [
+          {
+            "text": "7 rue de Seine",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.809605,
+        "lon": 2.41117,
+        "address": "7 rue de Seine\n!! DURANT LES TRAVAUX SE REPORTER SUR UN EMPLACEMENT PAYANT NON GENANT A PROXIMITé !!",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  2.410727365347074,
+                  48.8118781857412
+                ],
+                [
+                  2.409922702642606,
+                  48.80933461411186
+                ],
+                [
+                  2.4097403124295935,
+                  48.80775188219763
+                ],
+                [
+                  2.4177332952939734,
+                  48.808967198655694
+                ],
+                [
+                  2.416424377294706,
+                  48.81236215628644
+                ],
+                [
+                  2.410727365347074,
+                  48.8118781857412
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "1536",
+        "name": [
+          {
+            "text": "Gare Vert-de-Maisons - Cour Beethoven",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.790283,
+        "lon": 2.43097,
+        "address": "Cour Beethoven (Sud Gare RER) à l'angle des rues Naples et Constantinople",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1560",
+        "name": [
+          {
+            "text": "TAMARIS",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.144546,
+        "lon": -1.14126,
+        "address": "3 RUE FRANÇOIS VIETE",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1634",
+        "name": [
+          {
+            "text": "Place Bouchard",
+            "language": "fr"
+          }
+        ],
+        "lat": 49.18410383626941,
+        "lon": -0.3643882256209964,
+        "address": "10 rue Gémare (place Bouchard)\n",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1635",
+        "name": [
+          {
+            "text": "Campus 1 - rue du magasin à poudre",
+            "language": "fr"
+          }
+        ],
+        "lat": 49.19098053661006,
+        "lon": -0.3673817574794826,
+        "address": "Campus 1 - rue du magasin à poudre\n",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1636",
+        "name": [
+          {
+            "text": "Gare sud",
+            "language": "fr"
+          }
+        ],
+        "lat": 49.1751486,
+        "lon": -0.3496331,
+        "address": "49 Rue d'Auge, Caen - France - Gare SNCF de Caen",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1637",
+        "name": [
+          {
+            "text": "Place de la Résistance",
+            "language": "fr"
+          }
+        ],
+        "lat": 49.180395995482215,
+        "lon": -0.35586918996091943,
+        "address": "Place de la Résistance\n",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1638",
+        "name": [
+          {
+            "text": "Place Saint-Etienne-le-Vieux",
+            "language": "fr"
+          }
+        ],
+        "lat": 49.18068198679792,
+        "lon": -0.3688109858770803,
+        "address": "Place Saint-Etienne-le-Vieux\n",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1639",
+        "name": [
+          {
+            "text": "Gare nord",
+            "language": "fr"
+          }
+        ],
+        "lat": 49.178176197092064,
+        "lon": -0.3479050472904434,
+        "address": "Rue Rosa Parks, Gare SNCF de Caen",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1640",
+        "name": [
+          {
+            "text": " Place du Café des Images Hérouville-Saint-Clair",
+            "language": "fr"
+          }
+        ],
+        "lat": 49.20207,
+        "lon": -0.332586,
+        "address": "Place du Café des images Vhl 100% électrique - Borne dédiée (IRVE n° MCWD 2 – Point gauche T2) ",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1641",
+        "name": [
+          {
+            "text": "Eglise de Ouistreham",
+            "language": "fr"
+          }
+        ],
+        "lat": 49.27594438973717,
+        "lon": -0.25817019817990494,
+        "address": "5 Avenue Michel Cabieu",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1643",
+        "name": [
+          {
+            "text": "Place Villers",
+            "language": "fr"
+          }
+        ],
+        "lat": 49.178274,
+        "lon": -0.378717,
+        "address": "5/3 Place Villers",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1644",
+        "name": [
+          {
+            "text": "Abbaye-aux-Dames",
+            "language": "fr"
+          }
+        ],
+        "lat": 49.186721,
+        "lon": -0.353753,
+        "address": "27 Pl. Reine Mathilde",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1647",
+        "name": [
+          {
+            "text": "République",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.58922,
+        "lon": 1.33427,
+        "address": "1 Rue du Père Brottier\n",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1672",
+        "name": [
+          {
+            "text": "JOSEPHINE",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.159599,
+        "lon": -1.181888,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1673",
+        "name": [
+          {
+            "text": "Saint-Jean-le-Blanc - L'envol",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.88845,
+        "lon": 1.920619,
+        "address": "39 rue Demay",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1677",
+        "name": [
+          {
+            "text": "RER Alfortville  Maisons-Alfort",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.8026796,
+        "lon": 2.4255347,
+        "address": "17 Av. du Général Malleret-Joinville\n",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1678",
+        "name": [
+          {
+            "text": "Jardin Secret",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.4368529,
+        "lon": 1.5082218,
+        "address": "RESIDENCE JARDIN SERCRET 7 RUE DES BLOTTES. ",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1680",
+        "name": [
+          {
+            "text": "POMPIDOU",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.8755294,
+        "lon": 2.2325856,
+        "address": "31 Av Georges Pompidou",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1681",
+        "name": [
+          {
+            "text": "Les Bons Raisins",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.8656397,
+        "lon": 2.2150462,
+        "address": "86 Bd Maréchal de Lattre de Tassigny ",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1686",
+        "name": [
+          {
+            "text": "Agence Twisto",
+            "language": "fr"
+          }
+        ],
+        "lat": 49.1801703,
+        "lon": -0.3613467,
+        "address": "25 rue des Jacobins",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1687",
+        "name": [
+          {
+            "text": "Anciennes Boucheries",
+            "language": "fr"
+          }
+        ],
+        "lat": 49.1825437,
+        "lon": -0.3757072,
+        "address": "15 rue de Bayeux",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1688",
+        "name": [
+          {
+            "text": "Cygne de Croix",
+            "language": "fr"
+          }
+        ],
+        "lat": 49.1697524,
+        "lon": -0.3528257,
+        "address": "103 rue de Falaise",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1689",
+        "name": [
+          {
+            "text": "Beaulieu",
+            "language": "fr"
+          }
+        ],
+        "lat": 49.1821977,
+        "lon": -0.4003517,
+        "address": "43 Rue Nicolas Oresme",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1690",
+        "name": [
+          {
+            "text": "Grace de Dieu",
+            "language": "fr"
+          }
+        ],
+        "lat": 49.1602853,
+        "lon": -0.3615749,
+        "address": "7 Av. Général Laperrine",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1691",
+        "name": [
+          {
+            "text": "Hauts de l’Orne",
+            "language": "fr"
+          }
+        ],
+        "lat": 49.1536554,
+        "lon": -0.3609238,
+        "address": "37 Avenue des Étangs - Fleury-sur-Orne ",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1692",
+        "name": [
+          {
+            "text": "Place de la mare",
+            "language": "fr"
+          }
+        ],
+        "lat": 49.1867773,
+        "lon": -0.3663499,
+        "address": "Place de la Mare",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1712",
+        "name": [
+          {
+            "text": "JARDIN BOTANIQUE LES JARDINS DE THEIA",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.38616,
+        "lon": 0.663086,
+        "address": "5 rue Renée Groussin / 16 Rue Chesneau , 37520 La Riche",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1715",
+        "name": [
+          {
+            "text": "QUARTIERS MAÎTRES",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.16156,
+        "lon": -1.21553,
+        "address": "13 rue d'Alger 17000 La Rochelle",
+        "parking_type": "parking_lot",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1725",
+        "name": [
+          {
+            "text": "Hôtel de Ville",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.39142,
+        "lon": 0.689582,
+        "address": "5 rue des Minimes",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1777",
+        "name": [
+          {
+            "text": "[FLEX] Gare - Parking Münster",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.91102,
+        "lon": 1.90557,
+        "address": "Zone flex Parking Münster -  Avenue de Münster (en enclos) - 45000 Orléans",
+        "parking_type": "parking_lot",
+        "capacity": 1,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  1.905659822474628,
+                  47.90997118924378
+                ],
+                [
+                  1.905284313212543,
+                  47.90997118924378
+                ],
+                [
+                  1.9055719420414574,
+                  47.91346654424264
+                ],
+                [
+                  1.9060440108280785,
+                  47.913437780130344
+                ],
+                [
+                  1.905659822474628,
+                  47.90997118924378
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "1785",
+        "name": [
+          {
+            "text": "Agate",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.4466803,
+        "lon": 1.4940302,
+        "address": "42 BOULEVARD CLEMENCEAU 28000 Chartres \nLe code d’accès piétons est : A2528B\nEntrée Parking 2 Faubourg Guillaume \nUne télécommande est disponible dans le véhicule pour entrer et sortir du parking\n",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1786",
+        "name": [
+          {
+            "text": "[FLEX] HUGUENOTE",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.1493934,
+        "lon": -1.157051,
+        "address": "Zone flex Autour du 18 rue de la Huguenote ",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  -1.158834974290961,
+                  46.14935588727336
+                ],
+                [
+                  -1.1562064094563662,
+                  46.15008429022885
+                ],
+                [
+                  -1.154564897539252,
+                  46.15032956660562
+                ],
+                [
+                  -1.1545327110310732,
+                  46.14986874341971
+                ],
+                [
+                  -1.158834974290961,
+                  46.14902141329909
+                ],
+                [
+                  -1.158834974290961,
+                  46.14935588727336
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "1787",
+        "name": [
+          {
+            "text": "[FLEX] TAVERA",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.1478318,
+        "lon": -1.1482659,
+        "address": "Zone Flex Autour du 2 Rue Roger Tavera",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  -1.1487003830045794,
+                  46.1481613050982
+                ],
+                [
+                  -1.1488398578733539,
+                  46.147938317835184
+                ],
+                [
+                  -1.1482712295621966,
+                  46.147789659157965
+                ],
+                [
+                  -1.1485287216276263,
+                  46.14709095799727
+                ],
+                [
+                  -1.1471768882841205,
+                  46.14634764915423
+                ],
+                [
+                  -1.1468550232023333,
+                  46.146540910418985
+                ],
+                [
+                  -1.1463507679075335,
+                  46.14745517566632
+                ],
+                [
+                  -1.1468550232023333,
+                  46.1479011532035
+                ],
+                [
+                  -1.1486038234800433,
+                  46.148153872204
+                ],
+                [
+                  -1.1487003830045794,
+                  46.1481613050982
+                ]
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "data": {
+    "stations": [
+      {
+        "capacity": 30,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.26095,
+        "lon": -2.3353,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Rond-point de l'Hippodrome"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://velyceo.ecovelo.mobi/#/station/stn_VWFEvC9XWrvmE2m7kkFkKo"
+        },
+        "station_id": "stn_VWFEvC9XWrvmE2m7kkFkKo"
+      },
+      {
+        "capacity": 28,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.270352,
+        "lon": -2.345135,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Gare de Pornichet"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://velyceo.ecovelo.mobi/#/station/stn_TdAEzFgrkvHXmQ3U8nRxtt"
+        },
+        "station_id": "stn_TdAEzFgrkvHXmQ3U8nRxtt"
+      },
+      {
+        "capacity": 30,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.27534,
+        "lon": -2.20371,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Base sous-marine"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://velyceo.ecovelo.mobi/#/station/stn_WHVsPmdCdZss5ovnAf2qdn"
+        },
+        "station_id": "stn_WHVsPmdCdZss5ovnAf2qdn"
+      },
+      {
+        "capacity": 30,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.28573,
+        "lon": -2.21146,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Gare de Saint-Nazaire"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://velyceo.ecovelo.mobi/#/station/stn_KbACm96ycPQe3QnVn2oeqy"
+        },
+        "station_id": "stn_KbACm96ycPQe3QnVn2oeqy"
+      },
+      {
+        "capacity": 30,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.35974,
+        "lon": -2.18619,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Port de Rozé"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://velyceo.ecovelo.mobi/#/station/stn_UTdtGiWwjAmJHuU8tCZ3u4"
+        },
+        "station_id": "stn_UTdtGiWwjAmJHuU8tCZ3u4"
+      }
+    ]
+  },
+  "last_updated": "2026-02-22T09:41:04+01:00",
+  "ttl": 0,
+  "version": "3.0"
+}

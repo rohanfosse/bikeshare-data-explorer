@@ -1,0 +1,5398 @@
+{
+  "last_updated": "2026-02-22T08:42:33Z",
+  "ttl": 28,
+  "data": {
+    "stations": [
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 32
+          }
+        ],
+        "station_id": "2",
+        "name": [
+          {
+            "text": "02 - Parvis de la gare",
+            "language": "en"
+          },
+          {
+            "text": "02 - Parvis de la gare",
+            "language": "fr"
+          },
+          {
+            "text": "02 - Parvis de la gare",
+            "language": "es"
+          }
+        ],
+        "lat": 45.77922,
+        "lon": 3.100944,
+        "address": "46 Avenue de l'Union Soviétique",
+        "post_code": "63000",
+        "capacity": 32,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "02",
+            "language": "en"
+          },
+          {
+            "text": "02",
+            "language": "fr"
+          },
+          {
+            "text": "02",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 31
+          }
+        ],
+        "station_id": "3",
+        "name": [
+          {
+            "text": "03 UCA - Campus Centre",
+            "language": "en"
+          },
+          {
+            "text": "03 UCA - Campus Centre",
+            "language": "fr"
+          },
+          {
+            "text": "03 UCA - Campus Centre",
+            "language": "es"
+          }
+        ],
+        "lat": 45.7716221,
+        "lon": 3.0901719,
+        "address": "1 Cours Raymond Poincaré",
+        "post_code": "63000",
+        "capacity": 31,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "03",
+            "language": "en"
+          },
+          {
+            "text": "03",
+            "language": "fr"
+          },
+          {
+            "text": "03",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 30
+          }
+        ],
+        "station_id": "4",
+        "name": [
+          {
+            "text": "04 UCA - Campus Cézeaux",
+            "language": "en"
+          },
+          {
+            "text": "04 UCA - Campus Cézeaux",
+            "language": "fr"
+          },
+          {
+            "text": "04 UCA - Campus Cézeaux",
+            "language": "es"
+          }
+        ],
+        "lat": 45.7588314,
+        "lon": 3.1133168,
+        "address": "26 Avenue Blaise Pascal",
+        "post_code": "63170",
+        "capacity": 30,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "04",
+            "language": "en"
+          },
+          {
+            "text": "04",
+            "language": "fr"
+          },
+          {
+            "text": "04",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 32
+          }
+        ],
+        "station_id": "5",
+        "name": [
+          {
+            "text": "05 - Salins",
+            "language": "en"
+          },
+          {
+            "text": "05 - Salins",
+            "language": "fr"
+          },
+          {
+            "text": "05 - Salins",
+            "language": "es"
+          }
+        ],
+        "lat": 45.7715819,
+        "lon": 3.0834568,
+        "address": "Boulevard Charles de Gaulle",
+        "post_code": "63000",
+        "capacity": 32,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "05",
+            "language": "en"
+          },
+          {
+            "text": "05",
+            "language": "fr"
+          },
+          {
+            "text": "05",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 32
+          }
+        ],
+        "station_id": "6",
+        "name": [
+          {
+            "text": "06 - CHU G.Montpied",
+            "language": "en"
+          },
+          {
+            "text": "06 - CHU G.Montpied",
+            "language": "fr"
+          },
+          {
+            "text": "06 - CHU G.Montpied",
+            "language": "es"
+          }
+        ],
+        "lat": 45.7615198,
+        "lon": 3.089667,
+        "address": "38 Place Henri Dunant",
+        "post_code": "63000",
+        "capacity": 32,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "06",
+            "language": "en"
+          },
+          {
+            "text": "06",
+            "language": "fr"
+          },
+          {
+            "text": "06",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 20
+          }
+        ],
+        "station_id": "7",
+        "name": [
+          {
+            "text": "07 - Delille",
+            "language": "en"
+          },
+          {
+            "text": "07 - Delille",
+            "language": "fr"
+          },
+          {
+            "text": "07 - Delille",
+            "language": "es"
+          }
+        ],
+        "lat": 45.780855,
+        "lon": 3.09134,
+        "address": "Place Delille",
+        "post_code": "63000",
+        "capacity": 20,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "07",
+            "language": "en"
+          },
+          {
+            "text": "07",
+            "language": "fr"
+          },
+          {
+            "text": "07",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 15
+          }
+        ],
+        "station_id": "8",
+        "name": [
+          {
+            "text": "08A - Gaillard",
+            "language": "en"
+          },
+          {
+            "text": "08A - Gaillard",
+            "language": "fr"
+          },
+          {
+            "text": "08A - Gaillard",
+            "language": "es"
+          }
+        ],
+        "lat": 45.780268,
+        "lon": 3.083758,
+        "address": "29 Rue Saint-Hérem",
+        "post_code": "63000",
+        "capacity": 15,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "08A",
+            "language": "en"
+          },
+          {
+            "text": "08A",
+            "language": "fr"
+          },
+          {
+            "text": "08A",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 20
+          }
+        ],
+        "station_id": "9",
+        "name": [
+          {
+            "text": "09 - Chamalières Mairie",
+            "language": "en"
+          },
+          {
+            "text": "09 - Chamalières Mairie",
+            "language": "fr"
+          },
+          {
+            "text": "09 - Chamalières Mairie",
+            "language": "es"
+          }
+        ],
+        "lat": 45.776106,
+        "lon": 3.068945,
+        "address": "Rue Charles Fournier",
+        "post_code": "63400",
+        "capacity": 20,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "09",
+            "language": "en"
+          },
+          {
+            "text": "09",
+            "language": "fr"
+          },
+          {
+            "text": "09",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 24
+          }
+        ],
+        "station_id": "10",
+        "name": [
+          {
+            "text": "10 - Ballainvilliers",
+            "language": "en"
+          },
+          {
+            "text": "10 - Ballainvilliers",
+            "language": "fr"
+          },
+          {
+            "text": "10 - Ballainvilliers",
+            "language": "es"
+          }
+        ],
+        "lat": 45.77575,
+        "lon": 3.08597,
+        "address": "Place Renoux",
+        "post_code": "63000",
+        "capacity": 24,
+        "is_charging_station": true,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "10",
+            "language": "en"
+          },
+          {
+            "text": "10",
+            "language": "fr"
+          },
+          {
+            "text": "10",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 24
+          }
+        ],
+        "station_id": "11",
+        "name": [
+          {
+            "text": "11A - Gare - Terminal routier",
+            "language": "en"
+          },
+          {
+            "text": "11A - Gare - Terminal routier",
+            "language": "fr"
+          },
+          {
+            "text": "11A - Gare - Terminal routier",
+            "language": "es"
+          }
+        ],
+        "lat": 45.77799,
+        "lon": 3.09891,
+        "address": "32 Avenue de lUnion Soviétique",
+        "post_code": "63000",
+        "capacity": 24,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "11A",
+            "language": "en"
+          },
+          {
+            "text": "11A",
+            "language": "fr"
+          },
+          {
+            "text": "11A",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 24
+          }
+        ],
+        "station_id": "12",
+        "name": [
+          {
+            "text": "12 - Montferrand",
+            "language": "en"
+          },
+          {
+            "text": "12 - Montferrand",
+            "language": "fr"
+          },
+          {
+            "text": "12 - Montferrand",
+            "language": "es"
+          }
+        ],
+        "lat": 45.790756,
+        "lon": 3.111834,
+        "address": "18-20 Rue Debay Facy",
+        "post_code": "63100",
+        "capacity": 24,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "12",
+            "language": "en"
+          },
+          {
+            "text": "12",
+            "language": "fr"
+          },
+          {
+            "text": "12",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 24
+          }
+        ],
+        "station_id": "13",
+        "name": [
+          {
+            "text": "13 - 1er mai",
+            "language": "en"
+          },
+          {
+            "text": "13 - 1er mai",
+            "language": "fr"
+          },
+          {
+            "text": "13 - 1er mai",
+            "language": "es"
+          }
+        ],
+        "lat": 45.787376,
+        "lon": 3.099456,
+        "address": "1er Mai",
+        "post_code": "63100",
+        "capacity": 24,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "13",
+            "language": "en"
+          },
+          {
+            "text": "13",
+            "language": "fr"
+          },
+          {
+            "text": "13",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 24
+          }
+        ],
+        "station_id": "14",
+        "name": [
+          {
+            "text": "14 - Les Carmes",
+            "language": "en"
+          },
+          {
+            "text": "14 - Les Carmes",
+            "language": "fr"
+          },
+          {
+            "text": "14 - Les Carmes",
+            "language": "es"
+          }
+        ],
+        "lat": 45.782483,
+        "lon": 3.094552,
+        "address": "12 Place des Carmes Dechaux",
+        "post_code": "63000",
+        "capacity": 24,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "14",
+            "language": "en"
+          },
+          {
+            "text": "14",
+            "language": "fr"
+          },
+          {
+            "text": "14",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 32
+          }
+        ],
+        "station_id": "15",
+        "name": [
+          {
+            "text": "15 - Maison des sports",
+            "language": "en"
+          },
+          {
+            "text": "15 - Maison des sports",
+            "language": "fr"
+          },
+          {
+            "text": "15 - Maison des sports",
+            "language": "es"
+          }
+        ],
+        "lat": 45.786381,
+        "lon": 3.087015,
+        "address": "29 Rue Cuvier",
+        "post_code": "63000",
+        "capacity": 32,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "15",
+            "language": "en"
+          },
+          {
+            "text": "15",
+            "language": "fr"
+          },
+          {
+            "text": "15",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 16
+          }
+        ],
+        "station_id": "16",
+        "name": [
+          {
+            "text": "16 - Fontgiève",
+            "language": "en"
+          },
+          {
+            "text": "16 - Fontgiève",
+            "language": "fr"
+          },
+          {
+            "text": "16 - Fontgiève",
+            "language": "es"
+          }
+        ],
+        "lat": 45.781105,
+        "lon": 3.075984,
+        "address": "1 Rue Pierre Besset",
+        "post_code": "63000",
+        "capacity": 16,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "16",
+            "language": "en"
+          },
+          {
+            "text": "16",
+            "language": "fr"
+          },
+          {
+            "text": "16",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 19
+          }
+        ],
+        "station_id": "17",
+        "name": [
+          {
+            "text": "17 - Hôpital d'Estaing",
+            "language": "en"
+          },
+          {
+            "text": "17 - Hôpital d'Estaing",
+            "language": "fr"
+          },
+          {
+            "text": "17 - Hôpital d'Estaing",
+            "language": "es"
+          }
+        ],
+        "lat": 45.78609,
+        "lon": 3.10927,
+        "address": "1 Rue Lucie et Raymond Aubrac",
+        "post_code": "63100",
+        "capacity": 19,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "17",
+            "language": "en"
+          },
+          {
+            "text": "17",
+            "language": "fr"
+          },
+          {
+            "text": "17",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 19
+          }
+        ],
+        "station_id": "18",
+        "name": [
+          {
+            "text": "18 - Côte Blatin",
+            "language": "en"
+          },
+          {
+            "text": "18 - Côte Blatin",
+            "language": "fr"
+          },
+          {
+            "text": "18 - Côte Blatin",
+            "language": "es"
+          }
+        ],
+        "lat": 45.77088,
+        "lon": 3.09244,
+        "address": "39-29 Boulevard Côte Blatin",
+        "post_code": "63000",
+        "capacity": 19,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "18",
+            "language": "en"
+          },
+          {
+            "text": "18",
+            "language": "fr"
+          },
+          {
+            "text": "18",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 20
+          }
+        ],
+        "station_id": "19",
+        "name": [
+          {
+            "text": "19 - Amboise",
+            "language": "en"
+          },
+          {
+            "text": "19 - Amboise",
+            "language": "fr"
+          },
+          {
+            "text": "19 - Amboise",
+            "language": "es"
+          }
+        ],
+        "lat": 45.774455,
+        "lon": 3.093153,
+        "address": "25-13 Rue dAmboise",
+        "post_code": "63000",
+        "capacity": 20,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "19",
+            "language": "en"
+          },
+          {
+            "text": "19",
+            "language": "fr"
+          },
+          {
+            "text": "19",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 24
+          }
+        ],
+        "station_id": "20",
+        "name": [
+          {
+            "text": "20 - Pochet Lagaye",
+            "language": "en"
+          },
+          {
+            "text": "20 - Pochet Lagaye",
+            "language": "fr"
+          },
+          {
+            "text": "20 - Pochet Lagaye",
+            "language": "es"
+          }
+        ],
+        "lat": 45.763731,
+        "lon": 3.100239,
+        "address": "9 Boulevard Paul Pochet Lagaye",
+        "post_code": "63000",
+        "capacity": 24,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "20",
+            "language": "en"
+          },
+          {
+            "text": "20",
+            "language": "fr"
+          },
+          {
+            "text": "20",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 24
+          }
+        ],
+        "station_id": "21",
+        "name": [
+          {
+            "text": "21 - CROUS / Dolet",
+            "language": "en"
+          },
+          {
+            "text": "21 - CROUS / Dolet",
+            "language": "fr"
+          },
+          {
+            "text": "21 - CROUS / Dolet",
+            "language": "es"
+          }
+        ],
+        "lat": 45.7645446,
+        "lon": 3.0867282,
+        "address": "33-21 Rue Etienne Dolet",
+        "post_code": "63000",
+        "capacity": 24,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "21",
+            "language": "en"
+          },
+          {
+            "text": "21",
+            "language": "fr"
+          },
+          {
+            "text": "21",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 13
+          }
+        ],
+        "station_id": "22",
+        "name": [
+          {
+            "text": "22 - Jaurès",
+            "language": "en"
+          },
+          {
+            "text": "22 - Jaurès",
+            "language": "fr"
+          },
+          {
+            "text": "22 - Jaurès",
+            "language": "es"
+          }
+        ],
+        "lat": 45.770958,
+        "lon": 3.073871,
+        "address": "59 Avenue Jean Jaurès",
+        "post_code": "63400",
+        "capacity": 13,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "22",
+            "language": "en"
+          },
+          {
+            "text": "22",
+            "language": "fr"
+          },
+          {
+            "text": "22",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 31
+          }
+        ],
+        "station_id": "23",
+        "name": [
+          {
+            "text": "23 - Lagarlaye",
+            "language": "en"
+          },
+          {
+            "text": "23 - Lagarlaye",
+            "language": "fr"
+          },
+          {
+            "text": "23 - Lagarlaye",
+            "language": "es"
+          }
+        ],
+        "lat": 45.7735895,
+        "lon": 3.0828651,
+        "address": "Boulevard Charles de Gaulle",
+        "post_code": "63000",
+        "capacity": 31,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "23",
+            "language": "en"
+          },
+          {
+            "text": "23",
+            "language": "fr"
+          },
+          {
+            "text": "23",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 19
+          }
+        ],
+        "station_id": "24",
+        "name": [
+          {
+            "text": "24 - Dumas",
+            "language": "en"
+          },
+          {
+            "text": "24 - Dumas",
+            "language": "fr"
+          },
+          {
+            "text": "24 - Dumas",
+            "language": "es"
+          }
+        ],
+        "lat": 45.7861772,
+        "lon": 3.0924364,
+        "address": "Boulevard Jean Baptiste Dumas",
+        "post_code": "63000",
+        "capacity": 19,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "24",
+            "language": "en"
+          },
+          {
+            "text": "24",
+            "language": "fr"
+          },
+          {
+            "text": "24",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 20
+          }
+        ],
+        "station_id": "25",
+        "name": [
+          {
+            "text": "25 - Apollinaire",
+            "language": "en"
+          },
+          {
+            "text": "25 - Apollinaire",
+            "language": "fr"
+          },
+          {
+            "text": "25 - Apollinaire",
+            "language": "es"
+          }
+        ],
+        "lat": 45.782667,
+        "lon": 3.087111,
+        "address": "21-19 Rue Henri Barbusse",
+        "post_code": "63000",
+        "capacity": 20,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "25",
+            "language": "en"
+          },
+          {
+            "text": "25",
+            "language": "fr"
+          },
+          {
+            "text": "25",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 17
+          }
+        ],
+        "station_id": "26",
+        "name": [
+          {
+            "text": "26 - Clos Notre Dame",
+            "language": "en"
+          },
+          {
+            "text": "26 - Clos Notre Dame",
+            "language": "fr"
+          },
+          {
+            "text": "26 - Clos Notre Dame",
+            "language": "es"
+          }
+        ],
+        "lat": 45.7846673,
+        "lon": 3.0802146,
+        "address": "2-16 Rue du Clos Notre Dame",
+        "post_code": "63000",
+        "capacity": 17,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "26",
+            "language": "en"
+          },
+          {
+            "text": "26",
+            "language": "fr"
+          },
+          {
+            "text": "26",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 19
+          }
+        ],
+        "station_id": "27",
+        "name": [
+          {
+            "text": "27 - Berthelot",
+            "language": "en"
+          },
+          {
+            "text": "27 - Berthelot",
+            "language": "fr"
+          },
+          {
+            "text": "27 - Berthelot",
+            "language": "es"
+          }
+        ],
+        "lat": 45.77993770936482,
+        "lon": 3.071771331078823,
+        "address": "Rue Kellermann",
+        "post_code": "63400",
+        "capacity": 19,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "27",
+            "language": "en"
+          },
+          {
+            "text": "27",
+            "language": "fr"
+          },
+          {
+            "text": "27",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 16
+          }
+        ],
+        "station_id": "28",
+        "name": [
+          {
+            "text": "28 - Morel Ladeuil",
+            "language": "en"
+          },
+          {
+            "text": "28 - Morel Ladeuil",
+            "language": "fr"
+          },
+          {
+            "text": "28 - Morel Ladeuil",
+            "language": "es"
+          }
+        ],
+        "lat": 45.776406082668665,
+        "lon": 3.0751890587897446,
+        "address": "79-65 Rue Blatin",
+        "post_code": "63000",
+        "capacity": 16,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "28",
+            "language": "en"
+          },
+          {
+            "text": "28",
+            "language": "fr"
+          },
+          {
+            "text": "28",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 22
+          }
+        ],
+        "station_id": "29",
+        "name": [
+          {
+            "text": "29 - Regensburg",
+            "language": "en"
+          },
+          {
+            "text": "29 - Regensburg",
+            "language": "fr"
+          },
+          {
+            "text": "29 - Regensburg",
+            "language": "es"
+          }
+        ],
+        "lat": 45.771778364731055,
+        "lon": 3.078104155316672,
+        "address": "7 rue du 8 mai 1945",
+        "post_code": "63000",
+        "capacity": 22,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "29",
+            "language": "en"
+          },
+          {
+            "text": "29",
+            "language": "fr"
+          },
+          {
+            "text": "29",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 20
+          }
+        ],
+        "station_id": "30",
+        "name": [
+          {
+            "text": "30 - Coubertin",
+            "language": "en"
+          },
+          {
+            "text": "30 - Coubertin",
+            "language": "fr"
+          },
+          {
+            "text": "30 - Coubertin",
+            "language": "es"
+          }
+        ],
+        "lat": 45.76916,
+        "lon": 3.08374,
+        "address": "14 rue Pierre de Coubertin",
+        "post_code": "63000",
+        "capacity": 20,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "30",
+            "language": "en"
+          },
+          {
+            "text": "30",
+            "language": "fr"
+          },
+          {
+            "text": "30",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 18
+          }
+        ],
+        "station_id": "31",
+        "name": [
+          {
+            "text": "31 - Poncillon",
+            "language": "en"
+          },
+          {
+            "text": "31 - Poncillon",
+            "language": "fr"
+          },
+          {
+            "text": "31 - Poncillon",
+            "language": "es"
+          }
+        ],
+        "lat": 45.76381,
+        "lon": 3.08404,
+        "address": "24 Rue Poncillon",
+        "post_code": "63000",
+        "capacity": 18,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "31",
+            "language": "en"
+          },
+          {
+            "text": "31",
+            "language": "fr"
+          },
+          {
+            "text": "31",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 16
+          }
+        ],
+        "station_id": "32",
+        "name": [
+          {
+            "text": "32 - Liondards",
+            "language": "en"
+          },
+          {
+            "text": "32 - Liondards",
+            "language": "fr"
+          },
+          {
+            "text": "32 - Liondards",
+            "language": "es"
+          }
+        ],
+        "lat": 45.76492,
+        "lon": 3.09343,
+        "address": "57-45 Rue Alexandre Ribot",
+        "post_code": "63000",
+        "capacity": 16,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "32",
+            "language": "en"
+          },
+          {
+            "text": "32",
+            "language": "fr"
+          },
+          {
+            "text": "32",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 20
+          }
+        ],
+        "station_id": "33",
+        "name": [
+          {
+            "text": "33 - La Fayette",
+            "language": "en"
+          },
+          {
+            "text": "33 - La Fayette",
+            "language": "fr"
+          },
+          {
+            "text": "33 - La Fayette",
+            "language": "es"
+          }
+        ],
+        "lat": 45.7679529,
+        "lon": 3.1055338,
+        "address": "145 Boulevard Lafayette",
+        "post_code": "63000",
+        "capacity": 20,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "33",
+            "language": "en"
+          },
+          {
+            "text": "33",
+            "language": "fr"
+          },
+          {
+            "text": "33",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 32
+          }
+        ],
+        "station_id": "34",
+        "name": [
+          {
+            "text": "34 - République",
+            "language": "en"
+          },
+          {
+            "text": "34 - République",
+            "language": "fr"
+          },
+          {
+            "text": "34 - République",
+            "language": "es"
+          }
+        ],
+        "lat": 45.7849029,
+        "lon": 3.1010334,
+        "address": "42 Avenue de la République",
+        "post_code": "63100",
+        "capacity": 32,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "34",
+            "language": "en"
+          },
+          {
+            "text": "34",
+            "language": "fr"
+          },
+          {
+            "text": "34",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 44
+          }
+        ],
+        "station_id": "35",
+        "name": [
+          {
+            "text": "35 - Cataroux",
+            "language": "en"
+          },
+          {
+            "text": "35 - Cataroux",
+            "language": "fr"
+          },
+          {
+            "text": "35 - Cataroux",
+            "language": "es"
+          }
+        ],
+        "lat": 45.7895095,
+        "lon": 3.1044574,
+        "address": "39-35 Rue du Clos Four",
+        "post_code": "63000",
+        "capacity": 44,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "35",
+            "language": "en"
+          },
+          {
+            "text": "35",
+            "language": "fr"
+          },
+          {
+            "text": "35",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 16
+          }
+        ],
+        "station_id": "36",
+        "name": [
+          {
+            "text": "36 - Rodade",
+            "language": "en"
+          },
+          {
+            "text": "36 - Rodade",
+            "language": "fr"
+          },
+          {
+            "text": "36 - Rodade",
+            "language": "es"
+          }
+        ],
+        "lat": 45.79345,
+        "lon": 3.109389,
+        "address": "7 Place de la Rodade",
+        "post_code": "63100",
+        "capacity": 16,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "36",
+            "language": "en"
+          },
+          {
+            "text": "36",
+            "language": "fr"
+          },
+          {
+            "text": "36",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 20
+          }
+        ],
+        "station_id": "37",
+        "name": [
+          {
+            "text": "37 - Musée d'art Roger Quilliot",
+            "language": "en"
+          },
+          {
+            "text": "37 - Musée d'art Roger Quilliot",
+            "language": "fr"
+          },
+          {
+            "text": "37 - Musée d'art Roger Quilliot",
+            "language": "es"
+          }
+        ],
+        "lat": 45.794027,
+        "lon": 3.117223,
+        "address": "Place Louis Deteix",
+        "post_code": "63100",
+        "capacity": 20,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "37",
+            "language": "en"
+          },
+          {
+            "text": "37",
+            "language": "fr"
+          },
+          {
+            "text": "37",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 20
+          }
+        ],
+        "station_id": "38",
+        "name": [
+          {
+            "text": "38 - Les Paulines",
+            "language": "en"
+          },
+          {
+            "text": "38 - Les Paulines",
+            "language": "fr"
+          },
+          {
+            "text": "38 - Les Paulines",
+            "language": "es"
+          }
+        ],
+        "lat": 45.77615349293115,
+        "lon": 3.097009238557824,
+        "address": "38 Avenue des Paulines",
+        "post_code": "63000",
+        "capacity": 20,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "38",
+            "language": "en"
+          },
+          {
+            "text": "38",
+            "language": "fr"
+          },
+          {
+            "text": "38",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 16
+          }
+        ],
+        "station_id": "39",
+        "name": [
+          {
+            "text": "39 - Oradou",
+            "language": "en"
+          },
+          {
+            "text": "39 - Oradou",
+            "language": "fr"
+          },
+          {
+            "text": "39 - Oradou",
+            "language": "es"
+          }
+        ],
+        "lat": 45.770283,
+        "lon": 3.106752,
+        "address": "105-111 Rue de lOradou",
+        "post_code": "63000",
+        "capacity": 16,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "39",
+            "language": "en"
+          },
+          {
+            "text": "39",
+            "language": "fr"
+          },
+          {
+            "text": "39",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 24
+          }
+        ],
+        "station_id": "40",
+        "name": [
+          {
+            "text": "40 - Parking Gare",
+            "language": "en"
+          },
+          {
+            "text": "40 - Parking Gare",
+            "language": "fr"
+          },
+          {
+            "text": "40 - Parking Gare",
+            "language": "es"
+          }
+        ],
+        "lat": 45.777594,
+        "lon": 3.101163,
+        "address": "72 Avenue des Paulines",
+        "post_code": "63000",
+        "capacity": 24,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "40",
+            "language": "en"
+          },
+          {
+            "text": "40",
+            "language": "fr"
+          },
+          {
+            "text": "40",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 24
+          }
+        ],
+        "station_id": "41",
+        "name": [
+          {
+            "text": "41 - Cézeaux Pellez",
+            "language": "en"
+          },
+          {
+            "text": "41 - Cézeaux Pellez",
+            "language": "fr"
+          },
+          {
+            "text": "41 - Cézeaux Pellez",
+            "language": "es"
+          }
+        ],
+        "lat": 45.7613789,
+        "lon": 3.109198,
+        "address": "2 Avenue Blaise Pascal",
+        "post_code": "63170",
+        "capacity": 24,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "41",
+            "language": "en"
+          },
+          {
+            "text": "41",
+            "language": "fr"
+          },
+          {
+            "text": "41",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 24
+          }
+        ],
+        "station_id": "42",
+        "name": [
+          {
+            "text": "42 - Les pistes",
+            "language": "en"
+          },
+          {
+            "text": "42 - Les pistes",
+            "language": "fr"
+          },
+          {
+            "text": "42 - Les pistes",
+            "language": "es"
+          }
+        ],
+        "lat": 45.798403,
+        "lon": 3.113679,
+        "address": "349 Rue de la Fontaine de la Ratte",
+        "post_code": "63100",
+        "capacity": 24,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "42",
+            "language": "en"
+          },
+          {
+            "text": "42",
+            "language": "fr"
+          },
+          {
+            "text": "42",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 20
+          }
+        ],
+        "station_id": "43",
+        "name": [
+          {
+            "text": "43 - Chandiots",
+            "language": "en"
+          },
+          {
+            "text": "43 - Chandiots",
+            "language": "fr"
+          },
+          {
+            "text": "43 - Chandiots",
+            "language": "es"
+          }
+        ],
+        "lat": 45.789433,
+        "lon": 3.117123,
+        "address": "2-10 Rue des Gravanches",
+        "post_code": "63100",
+        "capacity": 20,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "43",
+            "language": "en"
+          },
+          {
+            "text": "43",
+            "language": "fr"
+          },
+          {
+            "text": "43",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 40
+          }
+        ],
+        "station_id": "44",
+        "name": [
+          {
+            "text": "44 - Braga",
+            "language": "en"
+          },
+          {
+            "text": "44 - Braga",
+            "language": "fr"
+          },
+          {
+            "text": "44 - Braga",
+            "language": "es"
+          }
+        ],
+        "lat": 45.78693,
+        "lon": 3.112,
+        "address": "39 Rue du Ressort",
+        "post_code": "63100",
+        "capacity": 40,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "44",
+            "language": "en"
+          },
+          {
+            "text": "44",
+            "language": "fr"
+          },
+          {
+            "text": "44",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 20
+          }
+        ],
+        "station_id": "45",
+        "name": [
+          {
+            "text": "45 - Trois coquins",
+            "language": "en"
+          },
+          {
+            "text": "45 - Trois coquins",
+            "language": "fr"
+          },
+          {
+            "text": "45 - Trois coquins",
+            "language": "es"
+          }
+        ],
+        "lat": 45.779401,
+        "lon": 3.108504,
+        "address": "12 Rue Agrippa dAubigné",
+        "post_code": "63000",
+        "capacity": 20,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "45",
+            "language": "en"
+          },
+          {
+            "text": "45",
+            "language": "fr"
+          },
+          {
+            "text": "45",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 17
+          }
+        ],
+        "station_id": "46",
+        "name": [
+          {
+            "text": "46 - Musset",
+            "language": "en"
+          },
+          {
+            "text": "46 - Musset",
+            "language": "fr"
+          },
+          {
+            "text": "46 - Musset",
+            "language": "es"
+          }
+        ],
+        "lat": 45.777646,
+        "lon": 3.107972,
+        "address": "110 Rue de Cournon",
+        "post_code": "63000",
+        "capacity": 17,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "46",
+            "language": "en"
+          },
+          {
+            "text": "46",
+            "language": "fr"
+          },
+          {
+            "text": "46",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 24
+          }
+        ],
+        "station_id": "47",
+        "name": [
+          {
+            "text": "47 - Carnot",
+            "language": "en"
+          },
+          {
+            "text": "47 - Carnot",
+            "language": "fr"
+          },
+          {
+            "text": "47 - Carnot",
+            "language": "es"
+          }
+        ],
+        "lat": 45.777444,
+        "lon": 3.089722,
+        "address": "15 Place Michel de lHospital",
+        "post_code": "63000",
+        "capacity": 24,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "47",
+            "language": "en"
+          },
+          {
+            "text": "47",
+            "language": "fr"
+          },
+          {
+            "text": "47",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 19
+          }
+        ],
+        "station_id": "48",
+        "name": [
+          {
+            "text": "48 - Voltaire",
+            "language": "en"
+          },
+          {
+            "text": "48 - Voltaire",
+            "language": "fr"
+          },
+          {
+            "text": "48 - Voltaire",
+            "language": "es"
+          }
+        ],
+        "lat": 45.779035,
+        "lon": 3.066813,
+        "address": "10 Avenue Voltaire",
+        "post_code": "63400",
+        "capacity": 19,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "48",
+            "language": "en"
+          },
+          {
+            "text": "48",
+            "language": "fr"
+          },
+          {
+            "text": "48",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 20
+          }
+        ],
+        "station_id": "49",
+        "name": [
+          {
+            "text": "49 - Galaxie",
+            "language": "en"
+          },
+          {
+            "text": "49 - Galaxie",
+            "language": "fr"
+          },
+          {
+            "text": "49 - Galaxie",
+            "language": "es"
+          }
+        ],
+        "lat": 45.782552,
+        "lon": 3.072704,
+        "address": "7 Rue de Nohanent",
+        "post_code": "63100",
+        "capacity": 20,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "49",
+            "language": "en"
+          },
+          {
+            "text": "49",
+            "language": "fr"
+          },
+          {
+            "text": "49",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 16
+          }
+        ],
+        "station_id": "50",
+        "name": [
+          {
+            "text": "50 - Sabourin",
+            "language": "en"
+          },
+          {
+            "text": "50 - Sabourin",
+            "language": "fr"
+          },
+          {
+            "text": "50 - Sabourin",
+            "language": "es"
+          }
+        ],
+        "lat": 45.80243,
+        "lon": 3.107287,
+        "address": "154 Rue sous les Vignes",
+        "post_code": "63100",
+        "capacity": 16,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "50",
+            "language": "en"
+          },
+          {
+            "text": "50",
+            "language": "fr"
+          },
+          {
+            "text": "50",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 17
+          }
+        ],
+        "station_id": "51",
+        "name": [
+          {
+            "text": "51 - Montjuzet",
+            "language": "en"
+          },
+          {
+            "text": "51 - Montjuzet",
+            "language": "fr"
+          },
+          {
+            "text": "51 - Montjuzet",
+            "language": "es"
+          }
+        ],
+        "lat": 45.788487,
+        "lon": 3.078934,
+        "address": "22-32 Rue Montjuzet",
+        "post_code": "63100",
+        "capacity": 17,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "51",
+            "language": "en"
+          },
+          {
+            "text": "51",
+            "language": "fr"
+          },
+          {
+            "text": "51",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 19
+          }
+        ],
+        "station_id": "52",
+        "name": [
+          {
+            "text": "52 - La Glacière",
+            "language": "en"
+          },
+          {
+            "text": "52 - La Glacière",
+            "language": "fr"
+          },
+          {
+            "text": "52 - La Glacière",
+            "language": "es"
+          }
+        ],
+        "lat": 45.792281,
+        "lon": 3.079362,
+        "address": "75 Rue Châteaubriand",
+        "post_code": "63100",
+        "capacity": 19,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "52",
+            "language": "en"
+          },
+          {
+            "text": "52",
+            "language": "fr"
+          },
+          {
+            "text": "52",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 28
+          }
+        ],
+        "station_id": "53",
+        "name": [
+          {
+            "text": "53 - Les Carmes - Barbusse",
+            "language": "en"
+          },
+          {
+            "text": "53 - Les Carmes - Barbusse",
+            "language": "fr"
+          },
+          {
+            "text": "53 - Les Carmes - Barbusse",
+            "language": "es"
+          }
+        ],
+        "lat": 45.782641,
+        "lon": 3.092636,
+        "address": "Rue Henri Barbusse",
+        "post_code": "63000",
+        "capacity": 28,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "53",
+            "language": "en"
+          },
+          {
+            "text": "53",
+            "language": "fr"
+          },
+          {
+            "text": "53",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 15
+          }
+        ],
+        "station_id": "54",
+        "name": [
+          {
+            "text": "54 - La Plaine",
+            "language": "en"
+          },
+          {
+            "text": "54 - La Plaine",
+            "language": "fr"
+          },
+          {
+            "text": "54 - La Plaine",
+            "language": "es"
+          }
+        ],
+        "lat": 45.8116603,
+        "lon": 3.1138475,
+        "address": "1 Rue Adrien Mabrut",
+        "post_code": "63100",
+        "capacity": 15,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "54",
+            "language": "en"
+          },
+          {
+            "text": "54",
+            "language": "fr"
+          },
+          {
+            "text": "54",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 20
+          }
+        ],
+        "station_id": "55",
+        "name": [
+          {
+            "text": "55 - Viviani",
+            "language": "en"
+          },
+          {
+            "text": "55 - Viviani",
+            "language": "fr"
+          },
+          {
+            "text": "55 - Viviani",
+            "language": "es"
+          }
+        ],
+        "lat": 45.80775,
+        "lon": 3.119468,
+        "address": "66 Rue Viviani",
+        "post_code": "63100",
+        "capacity": 20,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "55",
+            "language": "en"
+          },
+          {
+            "text": "55",
+            "language": "fr"
+          },
+          {
+            "text": "55",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 12
+          }
+        ],
+        "station_id": "56",
+        "name": [
+          {
+            "text": "56 - Collège Albert Camus",
+            "language": "en"
+          },
+          {
+            "text": "56 - Collège Albert Camus",
+            "language": "fr"
+          },
+          {
+            "text": "56 - Collège Albert Camus",
+            "language": "es"
+          }
+        ],
+        "lat": 45.808444,
+        "lon": 3.107111,
+        "address": "1 Rue du Sous-Marin Casabianca",
+        "post_code": "63100",
+        "capacity": 12,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "56",
+            "language": "en"
+          },
+          {
+            "text": "56",
+            "language": "fr"
+          },
+          {
+            "text": "56",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 20
+          }
+        ],
+        "station_id": "57",
+        "name": [
+          {
+            "text": "57 - Croix de Neyrat",
+            "language": "en"
+          },
+          {
+            "text": "57 - Croix de Neyrat",
+            "language": "fr"
+          },
+          {
+            "text": "57 - Croix de Neyrat",
+            "language": "es"
+          }
+        ],
+        "lat": 45.811,
+        "lon": 3.107389,
+        "address": "Rue du Torpilleur Sirocco",
+        "post_code": "63100",
+        "capacity": 20,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "57",
+            "language": "en"
+          },
+          {
+            "text": "57",
+            "language": "fr"
+          },
+          {
+            "text": "57",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 32
+          }
+        ],
+        "station_id": "59",
+        "name": [
+          {
+            "text": "01 - Jaude",
+            "language": "en"
+          },
+          {
+            "text": "01 - Jaude",
+            "language": "fr"
+          },
+          {
+            "text": "01 - Jaude",
+            "language": "es"
+          }
+        ],
+        "lat": 45.777457,
+        "lon": 3.08131,
+        "address": "6 Place de Jaude",
+        "post_code": "63000",
+        "capacity": 32,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "01",
+            "language": "en"
+          },
+          {
+            "text": "01",
+            "language": "fr"
+          },
+          {
+            "text": "01",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 12
+          }
+        ],
+        "station_id": "60",
+        "name": [
+          {
+            "text": "08B - Gaillard",
+            "language": "en"
+          },
+          {
+            "text": "08B - Gaillard",
+            "language": "fr"
+          },
+          {
+            "text": "08B - Gaillard",
+            "language": "es"
+          }
+        ],
+        "lat": 45.780306,
+        "lon": 3.083583,
+        "address": "18-22 Rue André Moinier",
+        "post_code": "63000",
+        "capacity": 12,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "08B",
+            "language": "en"
+          },
+          {
+            "text": "08B",
+            "language": "fr"
+          },
+          {
+            "text": "08B",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 24
+          }
+        ],
+        "station_id": "61",
+        "name": [
+          {
+            "text": "11B - Gare - Terminal routier ",
+            "language": "en"
+          },
+          {
+            "text": "11B - Gare - Terminal routier ",
+            "language": "fr"
+          },
+          {
+            "text": "11B - Gare - Terminal routier ",
+            "language": "es"
+          }
+        ],
+        "lat": 45.778822487625874,
+        "lon": 3.09927501817703,
+        "address": "32 Avenue de l'Union Soviétique",
+        "post_code": "63000",
+        "capacity": 24,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "11B",
+            "language": "en"
+          },
+          {
+            "text": "11B",
+            "language": "fr"
+          },
+          {
+            "text": "11B",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 19
+          }
+        ],
+        "station_id": "64",
+        "name": [
+          {
+            "text": "58 - Parc Saint-Jean",
+            "language": "en"
+          },
+          {
+            "text": "58 - Parc Saint-Jean",
+            "language": "fr"
+          },
+          {
+            "text": "58 - Parc Saint-Jean",
+            "language": "es"
+          }
+        ],
+        "lat": 45.7851289968064,
+        "lon": 3.116304932053146,
+        "address": "53 rue du Pre la Reine - Clermont-Ferrand",
+        "capacity": 19,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "58",
+            "language": "en"
+          },
+          {
+            "text": "58",
+            "language": "fr"
+          },
+          {
+            "text": "58",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 19
+          }
+        ],
+        "station_id": "65",
+        "name": [
+          {
+            "text": "59 - Lycée Gergovie",
+            "language": "en"
+          },
+          {
+            "text": "59 - Lycée Gergovie",
+            "language": "fr"
+          },
+          {
+            "text": "59 - Lycée Gergovie",
+            "language": "es"
+          }
+        ],
+        "lat": 45.78226130373415,
+        "lon": 3.117885205784656,
+        "address": "1 rue Michel Foucault - Clermont-Ferrand",
+        "capacity": 19,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "59",
+            "language": "en"
+          },
+          {
+            "text": "59",
+            "language": "fr"
+          },
+          {
+            "text": "59",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 15
+          }
+        ],
+        "station_id": "66",
+        "name": [
+          {
+            "text": "60 - Parc de la Muraille",
+            "language": "en"
+          },
+          {
+            "text": "60 - Parc de la Muraille",
+            "language": "fr"
+          },
+          {
+            "text": "60 - Parc de la Muraille",
+            "language": "es"
+          }
+        ],
+        "lat": 45.765927688153795,
+        "lon": 3.0896468764125036,
+        "address": "60 - Parc de la Muraille",
+        "capacity": 15,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "60",
+            "language": "en"
+          },
+          {
+            "text": "60",
+            "language": "fr"
+          },
+          {
+            "text": "60",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 16
+          }
+        ],
+        "station_id": "67",
+        "name": [
+          {
+            "text": "61 - Stade Philippe Marcombes",
+            "language": "en"
+          },
+          {
+            "text": "61 - Stade Philippe Marcombes",
+            "language": "fr"
+          },
+          {
+            "text": "61 - Stade Philippe Marcombes",
+            "language": "es"
+          }
+        ],
+        "lat": 45.7619287474495,
+        "lon": 3.0836899771144073,
+        "address": "16, rue Albert Thomas - 63000",
+        "capacity": 16,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "61",
+            "language": "en"
+          },
+          {
+            "text": "61",
+            "language": "fr"
+          },
+          {
+            "text": "61",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 16
+          }
+        ],
+        "station_id": "68",
+        "name": [
+          {
+            "text": "62 - Les Ormeaux",
+            "language": "en"
+          },
+          {
+            "text": "62 - Les Ormeaux",
+            "language": "fr"
+          },
+          {
+            "text": "62 - Les Ormeaux",
+            "language": "es"
+          }
+        ],
+        "lat": 45.75800522120445,
+        "lon": 3.080551405986543,
+        "address": "62 - Les Ormeaux",
+        "capacity": 16,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "62",
+            "language": "en"
+          },
+          {
+            "text": "62",
+            "language": "fr"
+          },
+          {
+            "text": "62",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 16
+          }
+        ],
+        "station_id": "69",
+        "name": [
+          {
+            "text": "63 - Mairie de Beaumont",
+            "language": "en"
+          },
+          {
+            "text": "63 - Mairie de Beaumont",
+            "language": "fr"
+          },
+          {
+            "text": "63 - Mairie de Beaumont",
+            "language": "es"
+          }
+        ],
+        "lat": 45.75361313211599,
+        "lon": 3.08653379770288,
+        "address": "63 - Mairie de Beaumont",
+        "capacity": 16,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "63",
+            "language": "en"
+          },
+          {
+            "text": "63",
+            "language": "fr"
+          },
+          {
+            "text": "63",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 20
+          }
+        ],
+        "station_id": "70",
+        "name": [
+          {
+            "text": "64 - Fontaine du Bac",
+            "language": "en"
+          },
+          {
+            "text": "64 - Fontaine du Bac",
+            "language": "fr"
+          },
+          {
+            "text": "64 - Fontaine du Bac",
+            "language": "es"
+          }
+        ],
+        "lat": 45.766397127292215,
+        "lon": 3.1211965733240983,
+        "address": "271 rue de l'Oradou - Clermont-Ferrand",
+        "capacity": 20,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "64",
+            "language": "en"
+          },
+          {
+            "text": "64",
+            "language": "fr"
+          },
+          {
+            "text": "64",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 20
+          }
+        ],
+        "station_id": "71",
+        "name": [
+          {
+            "text": "65 - Gare La Pardieu",
+            "language": "en"
+          },
+          {
+            "text": "65 - Gare La Pardieu",
+            "language": "fr"
+          },
+          {
+            "text": "65 - Gare La Pardieu",
+            "language": "es"
+          }
+        ],
+        "lat": 45.76658838391269,
+        "lon": 3.1340628830627444,
+        "address": "18 rue Jean-Claret - Clermont-ferrand",
+        "capacity": 20,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "65",
+            "language": "en"
+          },
+          {
+            "text": "65",
+            "language": "fr"
+          },
+          {
+            "text": "65",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 19
+          }
+        ],
+        "station_id": "72",
+        "name": [
+          {
+            "text": "66 - Lycée Lafayette",
+            "language": "en"
+          },
+          {
+            "text": "66 - Lycée Lafayette",
+            "language": "fr"
+          },
+          {
+            "text": "66 - Lycée Lafayette",
+            "language": "es"
+          }
+        ],
+        "lat": 45.763367978121764,
+        "lon": 3.128494599348972,
+        "address": "66 - Lycée Lafayette",
+        "capacity": 19,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "66",
+            "language": "en"
+          },
+          {
+            "text": "66",
+            "language": "fr"
+          },
+          {
+            "text": "66",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 20
+          }
+        ],
+        "station_id": "73",
+        "name": [
+          {
+            "text": "67 - Pont de Sarliève",
+            "language": "en"
+          },
+          {
+            "text": "67 - Pont de Sarliève",
+            "language": "fr"
+          },
+          {
+            "text": "67 - Pont de Sarliève",
+            "language": "es"
+          }
+        ],
+        "lat": 45.7564194154056,
+        "lon": 3.1497566004582462,
+        "address": "67 - Pont de Sarliève",
+        "capacity": 20,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "67",
+            "language": "en"
+          },
+          {
+            "text": "67",
+            "language": "fr"
+          },
+          {
+            "text": "67",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 16
+          }
+        ],
+        "station_id": "74",
+        "name": [
+          {
+            "text": "68 - Le Grand Mail",
+            "language": "en"
+          },
+          {
+            "text": "68 - Le Grand Mail",
+            "language": "fr"
+          },
+          {
+            "text": "68 - Le Grand Mail",
+            "language": "es"
+          }
+        ],
+        "lat": 45.744721540336286,
+        "lon": 3.171670704856487,
+        "address": "68 - Le Grand Mail",
+        "capacity": 16,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "68",
+            "language": "en"
+          },
+          {
+            "text": "68",
+            "language": "fr"
+          },
+          {
+            "text": "68",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 15
+          }
+        ],
+        "station_id": "75",
+        "name": [
+          {
+            "text": "69 - La Poëlade ",
+            "language": "en"
+          },
+          {
+            "text": "69 - La Poëlade ",
+            "language": "fr"
+          },
+          {
+            "text": "69 - La Poëlade ",
+            "language": "es"
+          }
+        ],
+        "lat": 45.74441401958403,
+        "lon": 3.1776232699484166,
+        "address": "69 - La Poëlade ",
+        "capacity": 15,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "69",
+            "language": "en"
+          },
+          {
+            "text": "69",
+            "language": "fr"
+          },
+          {
+            "text": "69",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 19
+          }
+        ],
+        "station_id": "76",
+        "name": [
+          {
+            "text": "70 - Gare de Cournon-d'Auvergne",
+            "language": "en"
+          },
+          {
+            "text": "70 - Gare de Cournon-d'Auvergne",
+            "language": "fr"
+          },
+          {
+            "text": "70 - Gare de Cournon-d'Auvergne",
+            "language": "es"
+          }
+        ],
+        "lat": 45.73857391686516,
+        "lon": 3.168850346114996,
+        "address": "70 - Gare de Cournon-d'Auvergne",
+        "capacity": 19,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "70",
+            "language": "en"
+          },
+          {
+            "text": "70",
+            "language": "fr"
+          },
+          {
+            "text": "70",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 16
+          }
+        ],
+        "station_id": "77",
+        "name": [
+          {
+            "text": "71 - Pervenches",
+            "language": "en"
+          },
+          {
+            "text": "71 - Pervenches",
+            "language": "fr"
+          },
+          {
+            "text": "71 - Pervenches",
+            "language": "es"
+          }
+        ],
+        "lat": 45.73919545036062,
+        "lon": 3.1883071403995475,
+        "address": "71 - Pervenches",
+        "capacity": 16,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "71",
+            "language": "en"
+          },
+          {
+            "text": "71",
+            "language": "fr"
+          },
+          {
+            "text": "71",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 19
+          }
+        ],
+        "station_id": "78",
+        "name": [
+          {
+            "text": "72 - La Coloc' de la culture",
+            "language": "en"
+          },
+          {
+            "text": "72 - La Coloc' de la culture",
+            "language": "fr"
+          },
+          {
+            "text": "72 - La Coloc' de la culture",
+            "language": "es"
+          }
+        ],
+        "lat": 45.7301152370717,
+        "lon": 3.190542459700372,
+        "address": "72 - La Coloc' de la culture",
+        "capacity": 19,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "72",
+            "language": "en"
+          },
+          {
+            "text": "72",
+            "language": "fr"
+          },
+          {
+            "text": "72",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 19
+          }
+        ],
+        "station_id": "79",
+        "name": [
+          {
+            "text": "73 - Espace Ariccia",
+            "language": "en"
+          },
+          {
+            "text": "73 - Espace Ariccia",
+            "language": "fr"
+          },
+          {
+            "text": "73 - Espace Ariccia",
+            "language": "es"
+          }
+        ],
+        "lat": 45.731110413215646,
+        "lon": 3.2022701327479006,
+        "address": "73 - Espace Ariccia",
+        "capacity": 19,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "73",
+            "language": "en"
+          },
+          {
+            "text": "73",
+            "language": "fr"
+          },
+          {
+            "text": "73",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 16
+          }
+        ],
+        "station_id": "80",
+        "name": [
+          {
+            "text": "74 - Samuel Paty",
+            "language": "en"
+          },
+          {
+            "text": "74 - Samuel Paty",
+            "language": "fr"
+          },
+          {
+            "text": "74 - Samuel Paty",
+            "language": "es"
+          }
+        ],
+        "lat": 45.736713562593295,
+        "lon": 3.193619537310198,
+        "address": "74 - Samuel Paty",
+        "capacity": 16,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "74",
+            "language": "en"
+          },
+          {
+            "text": "74",
+            "language": "fr"
+          },
+          {
+            "text": "74",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 19
+          }
+        ],
+        "station_id": "81",
+        "name": [
+          {
+            "text": "75 - Place de la République",
+            "language": "en"
+          },
+          {
+            "text": "75 - Place de la République",
+            "language": "fr"
+          },
+          {
+            "text": "75 - Place de la République",
+            "language": "es"
+          }
+        ],
+        "lat": 45.738744519773704,
+        "lon": 3.195787212964934,
+        "address": "75 - Place de la République",
+        "capacity": 19,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "75",
+            "language": "en"
+          },
+          {
+            "text": "75",
+            "language": "fr"
+          },
+          {
+            "text": "75",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 15
+          }
+        ],
+        "station_id": "82",
+        "name": [
+          {
+            "text": "76 - Les Toulaits",
+            "language": "en"
+          },
+          {
+            "text": "76 - Les Toulaits",
+            "language": "fr"
+          },
+          {
+            "text": "76 - Les Toulaits",
+            "language": "es"
+          }
+        ],
+        "lat": 45.73935875766421,
+        "lon": 3.2136410096561807,
+        "address": "76 - Les Toulaits",
+        "capacity": 15,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "76",
+            "language": "en"
+          },
+          {
+            "text": "76",
+            "language": "fr"
+          },
+          {
+            "text": "76",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 19
+          }
+        ],
+        "station_id": "83",
+        "name": [
+          {
+            "text": "77 - Lycée Descartes",
+            "language": "en"
+          },
+          {
+            "text": "77 - Lycée Descartes",
+            "language": "fr"
+          },
+          {
+            "text": "77 - Lycée Descartes",
+            "language": "es"
+          }
+        ],
+        "lat": 45.74344686484823,
+        "lon": 3.2101467903035905,
+        "address": "77 - Lycée Descartes",
+        "capacity": 19,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "77",
+            "language": "en"
+          },
+          {
+            "text": "77",
+            "language": "fr"
+          },
+          {
+            "text": "77",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 20
+          }
+        ],
+        "station_id": "84",
+        "name": [
+          {
+            "text": "78 - Plan d'eau",
+            "language": "en"
+          },
+          {
+            "text": "78 - Plan d'eau",
+            "language": "fr"
+          },
+          {
+            "text": "78 - Plan d'eau",
+            "language": "es"
+          }
+        ],
+        "lat": 45.73966003261314,
+        "lon": 3.2171085492029237,
+        "address": "78 - Plan d'eau",
+        "capacity": 20,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "78",
+            "language": "en"
+          },
+          {
+            "text": "78",
+            "language": "fr"
+          },
+          {
+            "text": "78",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 16
+          }
+        ],
+        "station_id": "85",
+        "name": [
+          {
+            "text": "79 - Gare du Cendre",
+            "language": "en"
+          },
+          {
+            "text": "79 - Gare du Cendre",
+            "language": "fr"
+          },
+          {
+            "text": "79 - Gare du Cendre",
+            "language": "es"
+          }
+        ],
+        "lat": 45.723660020357656,
+        "lon": 3.189364934002992,
+        "address": "79 - Gare du Cendre",
+        "capacity": 16,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "79",
+            "language": "en"
+          },
+          {
+            "text": "79",
+            "language": "fr"
+          },
+          {
+            "text": "79",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      },
+      {
+        "vehicle_types_capacity": [
+          {
+            "vehicle_type_ids": [],
+            "count": 0
+          }
+        ],
+        "vehicle_docks_capacity": [
+          {
+            "vehicle_type_ids": [
+              "ASTRO",
+              "BOOST",
+              "CHLOE",
+              "COSMO",
+              "EFIT",
+              "FIT",
+              "ICONIC",
+              "METRO"
+            ],
+            "count": 15
+          }
+        ],
+        "station_id": "86",
+        "name": [
+          {
+            "text": "80 - Verger du Caire",
+            "language": "en"
+          },
+          {
+            "text": "80 - Verger du Caire",
+            "language": "fr"
+          },
+          {
+            "text": "80 - Verger du Caire",
+            "language": "es"
+          }
+        ],
+        "lat": 45.71959369085426,
+        "lon": 3.188434178471359,
+        "address": "80 - Verger du Caire",
+        "capacity": 15,
+        "is_charging_station": false,
+        "rental_methods": [
+          "key",
+          "transitcard",
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "short_name": [
+          {
+            "text": "80",
+            "language": "en"
+          },
+          {
+            "text": "80",
+            "language": "fr"
+          },
+          {
+            "text": "80",
+            "language": "es"
+          }
+        ],
+        "rental_uris": {}
+      }
+    ]
+  },
+  "version": "3.0"
+}

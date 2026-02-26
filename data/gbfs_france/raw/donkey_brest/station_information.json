@@ -1,0 +1,1211 @@
+{
+  "ttl": 60,
+  "last_updated": 1771749763,
+  "data": {
+    "stations": [
+      {
+        "station_id": "20055",
+        "name": "Studios",
+        "lat": 48.3961964,
+        "lon": -4.4768758,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 3,
+        "vehicle_capacity": {
+          "ebike": 3
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20055",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20055"
+        }
+      },
+      {
+        "station_id": "20043",
+        "name": "Strasbourg-Quimper",
+        "lat": 48.4026068,
+        "lon": -4.46628,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 4,
+        "vehicle_capacity": {
+          "ebike": 4
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20043",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20043"
+        }
+      },
+      {
+        "station_id": "20087",
+        "name": "Kennedy Gare",
+        "lat": 48.387034,
+        "lon": -4.4819847,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 6,
+        "vehicle_capacity": {
+          "ebike": 6
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20087",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20087"
+        }
+      },
+      {
+        "station_id": "20098",
+        "name": "Keravel",
+        "lat": 48.3894339,
+        "lon": -4.4912362,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 3,
+        "vehicle_capacity": {
+          "ebike": 3
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20098",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20098"
+        }
+      },
+      {
+        "station_id": "20045",
+        "name": "Château",
+        "lat": 48.3854164,
+        "lon": -4.4928074,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 5,
+        "vehicle_capacity": {
+          "ebike": 5
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20045",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20045"
+        }
+      },
+      {
+        "station_id": "19900",
+        "name": "Liberté",
+        "lat": 48.3906371,
+        "lon": -4.4847383,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 4,
+        "vehicle_capacity": {
+          "ebike": 4
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=19900",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=19900"
+        },
+        "address": ", ",
+        "post_code": ""
+      },
+      {
+        "station_id": "20035",
+        "name": "Digue La Pérouse",
+        "lat": 48.3788035,
+        "lon": -4.4863172,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 4,
+        "vehicle_capacity": {
+          "ebike": 4
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20035",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20035"
+        }
+      },
+      {
+        "station_id": "20036",
+        "name": "Recouvrance",
+        "lat": 48.3839433,
+        "lon": -4.4997769,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 10,
+        "vehicle_capacity": {
+          "ebike": 10
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20036",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20036"
+        }
+      },
+      {
+        "station_id": "20040",
+        "name": "Ateliers Téléphérique",
+        "lat": 48.3882612,
+        "lon": -4.4972743,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 12,
+        "vehicle_capacity": {
+          "ebike": 12
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20040",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20040"
+        }
+      },
+      {
+        "station_id": "20041",
+        "name": "Ateliers Rue de Pontaniou",
+        "lat": 48.3891752,
+        "lon": -4.4997966,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 20,
+        "vehicle_capacity": {
+          "ebike": 20
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20041",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20041"
+        }
+      },
+      {
+        "station_id": "20042",
+        "name": "Kerinou",
+        "lat": 48.4025803,
+        "lon": -4.4892055,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 8,
+        "vehicle_capacity": {
+          "ebike": 8
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20042",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20042"
+        }
+      },
+      {
+        "station_id": "20044",
+        "name": "Français Libres",
+        "lat": 48.3846125,
+        "lon": -4.4940831,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 3,
+        "vehicle_capacity": {
+          "ebike": 3
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20044",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20044"
+        }
+      },
+      {
+        "station_id": "20046",
+        "name": "Aiguillon",
+        "lat": 48.3868104,
+        "lon": -4.4904901,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 2,
+        "vehicle_capacity": {
+          "ebike": 2
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20046",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20046"
+        }
+      },
+      {
+        "station_id": "20047",
+        "name": "Square Marc Sangnier",
+        "lat": 48.3875733,
+        "lon": -4.4908121,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 2,
+        "vehicle_capacity": {
+          "ebike": 2
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20047",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20047"
+        }
+      },
+      {
+        "station_id": "20048",
+        "name": "Jean Macé",
+        "lat": 48.3877232,
+        "lon": -4.4895568,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 4,
+        "vehicle_capacity": {
+          "ebike": 4
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20048",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20048"
+        }
+      },
+      {
+        "station_id": "20049",
+        "name": "Siam-Lyon",
+        "lat": 48.3886838,
+        "lon": -4.4882032,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 4,
+        "vehicle_capacity": {
+          "ebike": 4
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20049",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20049"
+        }
+      },
+      {
+        "station_id": "20050",
+        "name": "Liberté Quartz",
+        "lat": 48.389902,
+        "lon": -4.4852341,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 4,
+        "vehicle_capacity": {
+          "ebike": 4
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20050",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20050"
+        }
+      },
+      {
+        "station_id": "20051",
+        "name": "Place de la Liberté",
+        "lat": 48.3912414,
+        "lon": -4.4855167,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 6,
+        "vehicle_capacity": {
+          "ebike": 6
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20051",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20051"
+        }
+      },
+      {
+        "station_id": "20052",
+        "name": "Hôtel de Ville",
+        "lat": 48.3915626,
+        "lon": -4.4842823,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 5,
+        "vehicle_capacity": {
+          "ebike": 5
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20052",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20052"
+        }
+      },
+      {
+        "station_id": "20053",
+        "name": "Jean Jaurès",
+        "lat": 48.3925371,
+        "lon": -4.4823969,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 2,
+        "vehicle_capacity": {
+          "ebike": 2
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20053",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20053"
+        }
+      },
+      {
+        "station_id": "20054",
+        "name": "Eglise Saint-Martin",
+        "lat": 48.3946166,
+        "lon": -4.4794813,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 5,
+        "vehicle_capacity": {
+          "ebike": 5
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20054",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20054"
+        }
+      },
+      {
+        "station_id": "20056",
+        "name": "Celtic",
+        "lat": 48.3982448,
+        "lon": -4.4738143,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 2,
+        "vehicle_capacity": {
+          "ebike": 2
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20056",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20056"
+        }
+      },
+      {
+        "station_id": "20057",
+        "name": "Pilier Rouge",
+        "lat": 48.3990752,
+        "lon": -4.4723487,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 3,
+        "vehicle_capacity": {
+          "ebike": 3
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20057",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20057"
+        }
+      },
+      {
+        "station_id": "20058",
+        "name": "Vercors-Jaurès",
+        "lat": 48.4017216,
+        "lon": -4.4684979,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 10,
+        "vehicle_capacity": {
+          "ebike": 10
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20058",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20058"
+        }
+      },
+      {
+        "station_id": "20061",
+        "name": "Ernest Renan",
+        "lat": 48.3917885,
+        "lon": -4.476117,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 3,
+        "vehicle_capacity": {
+          "ebike": 3
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20061",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20061"
+        }
+      },
+      {
+        "station_id": "20062",
+        "name": "Gare",
+        "lat": 48.3876551,
+        "lon": -4.4806528,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 6,
+        "vehicle_capacity": {
+          "ebike": 6
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20062",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20062"
+        }
+      },
+      {
+        "station_id": "20065",
+        "name": "Mairie Quatre Moulins",
+        "lat": 48.3828337,
+        "lon": -4.5155465,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 4,
+        "vehicle_capacity": {
+          "ebike": 4
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20065",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20065"
+        }
+      },
+      {
+        "station_id": "20071",
+        "name": "Vali Hir",
+        "lat": 48.3871071,
+        "lon": -4.5272619,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 5,
+        "vehicle_capacity": {
+          "ebike": 5
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20071",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20071"
+        }
+      },
+      {
+        "station_id": "20076",
+        "name": "Carpon",
+        "lat": 48.389985,
+        "lon": -4.5031952,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 24,
+        "vehicle_capacity": {
+          "ebike": 24
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20076",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20076"
+        }
+      },
+      {
+        "station_id": "20077",
+        "name": "Saint-Exupéry",
+        "lat": 48.3877293,
+        "lon": -4.5043734,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 8,
+        "vehicle_capacity": {
+          "ebike": 8
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20077",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20077"
+        }
+      },
+      {
+        "station_id": "20081",
+        "name": "Place Sanquer",
+        "lat": 48.3915185,
+        "lon": -4.4771788,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 5,
+        "vehicle_capacity": {
+          "ebike": 5
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20081",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20081"
+        }
+      },
+      {
+        "station_id": "20082",
+        "name": "Musée de la Marine",
+        "lat": 48.3828451,
+        "lon": -4.4920418,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 3,
+        "vehicle_capacity": {
+          "ebike": 3
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20082",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20082"
+        }
+      },
+      {
+        "station_id": "20083",
+        "name": "Place Wilson",
+        "lat": 48.386365,
+        "lon": -4.4884905,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 3,
+        "vehicle_capacity": {
+          "ebike": 3
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20083",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20083"
+        }
+      },
+      {
+        "station_id": "20084",
+        "name": "Musée des Beaux-Arts",
+        "lat": 48.385225,
+        "lon": -4.4899068,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 4,
+        "vehicle_capacity": {
+          "ebike": 4
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20084",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20084"
+        }
+      },
+      {
+        "station_id": "20086",
+        "name": "Square Beautemps-Beaupré",
+        "lat": 48.384598,
+        "lon": -4.4846281,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 5,
+        "vehicle_capacity": {
+          "ebike": 5
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20086",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20086"
+        }
+      },
+      {
+        "station_id": "20088",
+        "name": "Foyer du Marin",
+        "lat": 48.3903561,
+        "lon": -4.4822569,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 2,
+        "vehicle_capacity": {
+          "ebike": 2
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20088",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20088"
+        }
+      },
+      {
+        "station_id": "20089",
+        "name": "Victor Hugo",
+        "lat": 48.3920303,
+        "lon": -4.4810875,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 2,
+        "vehicle_capacity": {
+          "ebike": 2
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20089",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20089"
+        }
+      },
+      {
+        "station_id": "20090",
+        "name": "Parking Jaurès",
+        "lat": 48.39347,
+        "lon": -4.4790249,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 3,
+        "vehicle_capacity": {
+          "ebike": 3
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20090",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20090"
+        }
+      },
+      {
+        "station_id": "20091",
+        "name": "République",
+        "lat": 48.3891114,
+        "lon": -4.4780478,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 3,
+        "vehicle_capacity": {
+          "ebike": 3
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20091",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20091"
+        }
+      },
+      {
+        "station_id": "20093",
+        "name": "Quai Eric Tabarly",
+        "lat": 48.3798973,
+        "lon": -4.490665,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 9,
+        "vehicle_capacity": {
+          "ebike": 9
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20093",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20093"
+        }
+      },
+      {
+        "station_id": "20096",
+        "name": "Jean Moulin",
+        "lat": 48.3863996,
+        "lon": -4.49315,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 3,
+        "vehicle_capacity": {
+          "ebike": 3
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20096",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20096"
+        }
+      },
+      {
+        "station_id": "20097",
+        "name": "Haut de Siam",
+        "lat": 48.3897563,
+        "lon": -4.4872531,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 2,
+        "vehicle_capacity": {
+          "ebike": 2
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20097",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20097"
+        }
+      },
+      {
+        "station_id": "20099",
+        "name": "Algésiras",
+        "lat": 48.3900698,
+        "lon": -4.4892326,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 4,
+        "vehicle_capacity": {
+          "ebike": 4
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20099",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20099"
+        }
+      },
+      {
+        "station_id": "20100",
+        "name": "Fautras",
+        "lat": 48.3903779,
+        "lon": -4.4915527,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 5,
+        "vehicle_capacity": {
+          "ebike": 5
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20100",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20100"
+        }
+      },
+      {
+        "station_id": "20101",
+        "name": "Université Segalen",
+        "lat": 48.3916816,
+        "lon": -4.4881865,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 8,
+        "vehicle_capacity": {
+          "ebike": 8
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20101",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20101"
+        }
+      },
+      {
+        "station_id": "20102",
+        "name": "Observatoire",
+        "lat": 48.3925036,
+        "lon": -4.4917551,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 3,
+        "vehicle_capacity": {
+          "ebike": 3
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20102",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20102"
+        }
+      },
+      {
+        "station_id": "20103",
+        "name": "Bibliothèque Universitaire Lettres",
+        "lat": 48.3933244,
+        "lon": -4.4880215,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 20,
+        "vehicle_capacity": {
+          "ebike": 20
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20103",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20103"
+        }
+      },
+      {
+        "station_id": "20104",
+        "name": "Albert 1er",
+        "lat": 48.3972319,
+        "lon": -4.4871325,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 7,
+        "vehicle_capacity": {
+          "ebike": 7
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20104",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20104"
+        }
+      },
+      {
+        "station_id": "20105",
+        "name": "Brizeux",
+        "lat": 48.3971659,
+        "lon": -4.4832927,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 3,
+        "vehicle_capacity": {
+          "ebike": 3
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20105",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20105"
+        }
+      },
+      {
+        "station_id": "20106",
+        "name": "Halles Saint Martin",
+        "lat": 48.396457,
+        "lon": -4.4815895,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 3,
+        "vehicle_capacity": {
+          "ebike": 3
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20106",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20106"
+        }
+      },
+      {
+        "station_id": "20107",
+        "name": "BAPAV",
+        "lat": 48.3974223,
+        "lon": -4.4816109,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 4,
+        "vehicle_capacity": {
+          "ebike": 4
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20107",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20107"
+        }
+      },
+      {
+        "station_id": "20108",
+        "name": "Place Guérin",
+        "lat": 48.3968699,
+        "lon": -4.4790265,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 4,
+        "vehicle_capacity": {
+          "ebike": 4
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20108",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20108"
+        }
+      },
+      {
+        "station_id": "20109",
+        "name": "Kerfautras",
+        "lat": 48.3969654,
+        "lon": -4.4760292,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 5,
+        "vehicle_capacity": {
+          "ebike": 5
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20109",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20109"
+        }
+      },
+      {
+        "station_id": "20110",
+        "name": "Hôtel de Métropôle",
+        "lat": 48.3938754,
+        "lon": -4.4828607,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 10,
+        "vehicle_capacity": {
+          "ebike": 10
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20110",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20110"
+        }
+      },
+      {
+        "station_id": "20120",
+        "name": "Halles Saint Louis",
+        "lat": 48.3894462,
+        "lon": -4.4899269,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 6,
+        "vehicle_capacity": {
+          "ebike": 6
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20120",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20120"
+        }
+      },
+      {
+        "station_id": "20121",
+        "name": "Siam",
+        "lat": 48.3881861,
+        "lon": -4.4892083,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 5,
+        "vehicle_capacity": {
+          "ebike": 5
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20121",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20121"
+        }
+      },
+      {
+        "station_id": "20122",
+        "name": "Strasbourg-Jaurès",
+        "lat": 48.402117,
+        "lon": -4.467499,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 8,
+        "vehicle_capacity": {
+          "ebike": 8
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20122",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20122"
+        }
+      },
+      {
+        "station_id": "20126",
+        "name": "Menez Paul",
+        "lat": 48.4064245,
+        "lon": -4.4680273,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 5,
+        "vehicle_capacity": {
+          "ebike": 5
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20126",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20126"
+        }
+      },
+      {
+        "station_id": "20128",
+        "name": "Strasbourg-Iroise",
+        "lat": 48.4020728,
+        "lon": -4.4661808,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 4,
+        "vehicle_capacity": {
+          "ebike": 4
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20128",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20128"
+        }
+      },
+      {
+        "station_id": "20129",
+        "name": "Espace Jaurès",
+        "lat": 48.3932771,
+        "lon": -4.4810376,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 3,
+        "vehicle_capacity": {
+          "ebike": 3
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20129",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20129"
+        }
+      },
+      {
+        "station_id": "20131",
+        "name": "Parc à Chaînes",
+        "lat": 48.3824656,
+        "lon": -4.4876351,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 6,
+        "vehicle_capacity": {
+          "ebike": 6
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20131",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20131"
+        }
+      },
+      {
+        "station_id": "20227",
+        "name": "Boussingault",
+        "lat": 48.3880887,
+        "lon": -4.4878956,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 6,
+        "vehicle_capacity": {
+          "ebike": 6
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20227",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20227"
+        }
+      },
+      {
+        "station_id": "20418",
+        "name": "Langevin",
+        "lat": 48.4027049,
+        "lon": -4.4983026,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 4,
+        "vehicle_capacity": {
+          "ebike": 4
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20418",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20418"
+        }
+      },
+      {
+        "station_id": "20521",
+        "name": "Cinéma",
+        "lat": 48.3904367,
+        "lon": -4.4873628,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 3,
+        "vehicle_capacity": {
+          "ebike": 3
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20521",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20521"
+        }
+      },
+      {
+        "station_id": "20534",
+        "name": "Laninon",
+        "lat": 48.3842761,
+        "lon": -4.4980169,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 2,
+        "vehicle_capacity": {
+          "ebike": 2
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20534",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20534"
+        }
+      },
+      {
+        "station_id": "20559",
+        "name": "Dupuy de Lôme",
+        "lat": 48.3905554,
+        "lon": -4.5105924,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 5,
+        "vehicle_capacity": {
+          "ebike": 5
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20559",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20559"
+        }
+      },
+      {
+        "station_id": "20589",
+        "name": "Kermenguy",
+        "lat": 48.4008517,
+        "lon": -4.5010119,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 14,
+        "vehicle_capacity": {
+          "ebike": 14
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20589",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20589"
+        }
+      },
+      {
+        "station_id": "20593",
+        "name": "Carène",
+        "lat": 48.3845041,
+        "lon": -4.4821697,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 6,
+        "vehicle_capacity": {
+          "ebike": 6
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20593",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20593"
+        }
+      },
+      {
+        "station_id": "20594",
+        "name": "Octroi",
+        "lat": 48.3966006,
+        "lon": -4.4748493,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 3,
+        "vehicle_capacity": {
+          "ebike": 3
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20594",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20594"
+        }
+      },
+      {
+        "station_id": "20595",
+        "name": "Sébastopol",
+        "lat": 48.3996953,
+        "lon": -4.4699711,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 2,
+        "vehicle_capacity": {
+          "ebike": 2
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20595",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20595"
+        }
+      },
+      {
+        "station_id": "20599",
+        "name": "Hotel de Police",
+        "lat": 48.3889287,
+        "lon": -4.4869863,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 5,
+        "vehicle_capacity": {
+          "ebike": 5
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20599",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20599"
+        }
+      },
+      {
+        "station_id": "20729",
+        "name": "Liberté Morvan",
+        "lat": 48.3918634,
+        "lon": -4.487158,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 5,
+        "vehicle_capacity": {
+          "ebike": 5
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20729",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20729"
+        }
+      },
+      {
+        "station_id": "20759",
+        "name": "Chateau-Lyon",
+        "lat": 48.3871181,
+        "lon": -4.4858762,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 3,
+        "vehicle_capacity": {
+          "ebike": 3
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=20759",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=20759"
+        }
+      },
+      {
+        "station_id": "21758",
+        "name": "Dupleix",
+        "lat": 48.392908,
+        "lon": -4.4842934,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 4,
+        "vehicle_capacity": {
+          "ebike": 4
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=21758",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=21758"
+        }
+      },
+      {
+        "station_id": "21779",
+        "name": "Pasteur/Traverse",
+        "lat": 48.3865965,
+        "lon": -4.4921365,
+        "region_id": "689",
+        "is_virtual_station": true,
+        "capacity": 3,
+        "vehicle_capacity": {
+          "ebike": 3
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=21779",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=21779"
+        }
+      }
+    ]
+  },
+  "version": "2.3"
+}

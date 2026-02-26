@@ -1,0 +1,14 @@
+Table,Column,Type,Description,Constraints
+bike_stations,station_id,object,Unique bike station identifier,"PRIMARY KEY, Format: BK###"
+bike_stations,station_name,object,Bike station station_name,
+bike_stations,station_name_raw,object,Bike station station_name_raw,
+bike_stations,latitude,float64,Station latitude (WGS84),"DECIMAL(9,6), Range: [43.55, 43.67]"
+bike_stations,longitude,float64,Station longitude (WGS84),"DECIMAL(9,6), Range: [3.80, 3.95]"
+bike_stations,data_source,object,Bike station data_source,
+bike_stations,last_updated,object,Bike station last_updated,
+bike_stations,data_version,object,Bike station data_version,
+tram_stations,tram_id,object,Unique tram stop identifier,"PRIMARY KEY, Format: TR####"
+tram_stations,tram_name,object,Tram tram_name,
+tram_stations,latitude,float64,Tram latitude,
+tram_stations,longitude,float64,Tram longitude,
+tram_stations,tram_line,object,Tram tram_line,

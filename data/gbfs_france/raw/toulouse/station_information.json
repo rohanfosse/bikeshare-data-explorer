@@ -1,0 +1,3658 @@
+{
+  "last_updated": 1771749886,
+  "ttl": 300,
+  "version": "2.3",
+  "data": {
+    "stations": [
+      {
+        "station_id": "1",
+        "name": "POIDS DE L'HUILE",
+        "lat": 43.60419,
+        "lon": 1.445475,
+        "address": "12 RUE DU POIDS DE L'HUILE",
+        "capacity": 19
+      },
+      {
+        "station_id": "2",
+        "name": "LAFAYETTE",
+        "lat": 43.604885,
+        "lon": 1.445306,
+        "address": "21 RUE LAFAYETTE",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 24
+      },
+      {
+        "station_id": "3",
+        "name": "ALSACE-LORRAINE - POMME",
+        "lat": 43.603302,
+        "lon": 1.445454,
+        "address": "62 RUE DE LA POMME",
+        "capacity": 18
+      },
+      {
+        "station_id": "4",
+        "name": "GAMBETTA - STE-URSULE",
+        "lat": 43.602671,
+        "lon": 1.442031,
+        "address": "15 RUE SAINTE-URSULE",
+        "capacity": 20
+      },
+      {
+        "station_id": "5",
+        "name": "MARENGO - LEDUC",
+        "lat": 43.611386,
+        "lon": 1.456729,
+        "address": "FACE AU 5 RUE RENE LEDUC",
+        "capacity": 19
+      },
+      {
+        "station_id": "6",
+        "name": "LOIS - CAPITOLE",
+        "lat": 43.605161,
+        "lon": 1.442323,
+        "address": "10 RUE DES LOIS",
+        "capacity": 18
+      },
+      {
+        "station_id": "7",
+        "name": "PLACE VICTOR HUGO",
+        "lat": 43.605777,
+        "lon": 1.446507,
+        "address": "6 RUE DU REMPART VILLENEUVE",
+        "capacity": 25
+      },
+      {
+        "station_id": "1031",
+        "name": "BORNE CGB ATELIER",
+        "lat": 43.615909,
+        "lon": 1.000176,
+        "address": "16 rue Brouardel",
+        "capacity": 12
+      },
+      {
+        "station_id": "8",
+        "name": "VIDAL - SAINT-JÉRÔME",
+        "lat": 43.603205,
+        "lon": 1.448118,
+        "address": "19 RUE PAUL VIDAL",
+        "capacity": 25
+      },
+      {
+        "station_id": "9",
+        "name": "ROQUEMAUREL - MAILLARD",
+        "lat": 43.596069,
+        "lon": 1.410505,
+        "address": "RUE ROQUEMAUREL / ANGLE 3 RUE ANNE FRANCK",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 18
+      },
+      {
+        "station_id": "10",
+        "name": "PLACE ESQUIROL",
+        "lat": 43.600348,
+        "lon": 1.444659,
+        "address": "15 PL ETIENNE ESQUIROL",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 44
+      },
+      {
+        "station_id": "11",
+        "name": "PLACE DE LA DAURADE",
+        "lat": 43.601888,
+        "lon": 1.440368,
+        "address": "2 PL DE LA DAURADE",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 23
+      },
+      {
+        "station_id": "12",
+        "name": "PARGAMINIÈRES - LAKANAL",
+        "lat": 43.60459,
+        "lon": 1.44002,
+        "address": "66 RUE PARGAMINIERES",
+        "capacity": 11
+      },
+      {
+        "station_id": "13",
+        "name": "LOIS - ESQUILE",
+        "lat": 43.606146,
+        "lon": 1.44135,
+        "address": "1 RUE DE L ESQUILE",
+        "capacity": 15
+      },
+      {
+        "station_id": "14",
+        "name": "PÉRIGORD",
+        "lat": 43.60742,
+        "lon": 1.444699,
+        "address": "26 RUE DE PERIGORD",
+        "capacity": 17
+      },
+      {
+        "station_id": "15",
+        "name": "PORT ST-SAUVEUR - SEEL",
+        "lat": 43.596411,
+        "lon": 1.456584,
+        "address": "FACE AU 5 PORT SAINT-SAUVEUR",
+        "capacity": 20
+      },
+      {
+        "station_id": "16",
+        "name": "STRASBOURG - BAYARD",
+        "lat": 43.607847,
+        "lon": 1.446666,
+        "address": "32 BD DE STRASBOURG",
+        "capacity": 21
+      },
+      {
+        "station_id": "17",
+        "name": "STRASBOURG - AUSTERLITZ",
+        "lat": 43.606499,
+        "lon": 1.44769,
+        "address": "7 BD DE STRASBOURG",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 23
+      },
+      {
+        "station_id": "18",
+        "name": "STRASBOURG - JAURÈS",
+        "lat": 43.606346,
+        "lon": 1.44813,
+        "address": "4 BD DE STRASBOURG",
+        "capacity": 24
+      },
+      {
+        "station_id": "19",
+        "name": "CARNOT - PÉRI",
+        "lat": 43.605571,
+        "lon": 1.449297,
+        "address": "1 RUE DES 7 TROUBADOURS",
+        "capacity": 24
+      },
+      {
+        "station_id": "20",
+        "name": "CARNOT - TROIS JOURNÉES",
+        "lat": 43.604677,
+        "lon": 1.449586,
+        "address": "69 BD LAZARE CARNOT",
+        "capacity": 26
+      },
+      {
+        "station_id": "21",
+        "name": "CARNOT - LABÉDA",
+        "lat": 43.604079,
+        "lon": 1.450158,
+        "address": "63 BD LAZARE CARNOT",
+        "capacity": 25
+      },
+      {
+        "station_id": "22",
+        "name": "CARNOT - ROLAND",
+        "lat": 43.602914,
+        "lon": 1.451719,
+        "address": "24 BD LAZARE CARNOT",
+        "capacity": 20
+      },
+      {
+        "station_id": "23",
+        "name": "CARNOT - IDRAC",
+        "lat": 43.601372,
+        "lon": 1.452038,
+        "address": "6 BD LAZARE CARNOT",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 26
+      },
+      {
+        "station_id": "24",
+        "name": "PLACE SAINT-ÉTIENNE",
+        "lat": 43.600055,
+        "lon": 1.449273,
+        "address": "14 PL SAINT-ETIENNE",
+        "capacity": 22
+      },
+      {
+        "station_id": "25",
+        "name": "PLACE ROUAIX",
+        "lat": 43.599525,
+        "lon": 1.445544,
+        "address": "1 RUE DES TOURNEURS",
+        "capacity": 18
+      },
+      {
+        "station_id": "26",
+        "name": "DALBADE - PARADOUX",
+        "lat": 43.597941,
+        "lon": 1.443002,
+        "address": "9 RUE HENRY DE GORSSE",
+        "capacity": 22
+      },
+      {
+        "station_id": "27",
+        "name": "TOUNIS - PONT NEUF",
+        "lat": 43.598966,
+        "lon": 1.440387,
+        "address": "20 M APRES 122 QUAI DE TOUNIS",
+        "capacity": 22
+      },
+      {
+        "station_id": "28",
+        "name": "PLACE SAINT-PIERRE",
+        "lat": 43.603228,
+        "lon": 1.436034,
+        "address": "2 PLACE SAINT-PIERRE",
+        "capacity": 22
+      },
+      {
+        "station_id": "29",
+        "name": "VALADE",
+        "lat": 43.605031,
+        "lon": 1.437386,
+        "address": "31 RUE VALADE",
+        "capacity": 21
+      },
+      {
+        "station_id": "30",
+        "name": "PLACE ANATOLE FRANCE",
+        "lat": 43.606241,
+        "lon": 1.438341,
+        "address": "40 PL ANATOLE FRANCE",
+        "capacity": 25
+      },
+      {
+        "station_id": "31",
+        "name": "PLACE DU PEYROU",
+        "lat": 43.607369,
+        "lon": 1.439453,
+        "address": "7 RUE DES SALENQUES",
+        "capacity": 20
+      },
+      {
+        "station_id": "32",
+        "name": "MUSEE SAINT-RAYMOND",
+        "lat": 43.607608,
+        "lon": 1.441304,
+        "address": "2 PLACE SAINT-SERNIN / ANGLE 2 RUE DES 3 RENARDS",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 12
+      },
+      {
+        "station_id": "33",
+        "name": "ST-BERNARD - BERALDI",
+        "lat": 43.608605,
+        "lon": 1.4436,
+        "address": "11 RUE HENRI BERALDI",
+        "capacity": 15
+      },
+      {
+        "station_id": "34",
+        "name": "STRASBOURG - BOSC",
+        "lat": 43.609766,
+        "lon": 1.445681,
+        "address": "15 RUE JOSEPH BOSC",
+        "capacity": 22
+      },
+      {
+        "station_id": "35",
+        "name": "PLACE JEANNE D'ARC",
+        "lat": 43.609602,
+        "lon": 1.446881,
+        "address": "1 RUE RAYMOND IV",
+        "capacity": 25
+      },
+      {
+        "station_id": "36",
+        "name": "PLACE ROBERT SCHUMAN",
+        "lat": 43.609622,
+        "lon": 1.449431,
+        "address": "5 PL ROBERT SCHUMAN",
+        "capacity": 19
+      },
+      {
+        "station_id": "37",
+        "name": "STE-LUCIE - ARCS ST-CYPRIEN",
+        "lat": 43.593516,
+        "lon": 1.430039,
+        "address": "53 RUE SAINTE-LUCIE",
+        "capacity": 18
+      },
+      {
+        "station_id": "38",
+        "name": "JAURÈS - BACHELIER",
+        "lat": 43.607222,
+        "lon": 1.451244,
+        "address": "54 ALLEE JEAN JAURES",
+        "capacity": 31
+      },
+      {
+        "station_id": "39",
+        "name": "PLACE DE DAMLOUP",
+        "lat": 43.605855,
+        "lon": 1.452805,
+        "address": "9 PL DE DAMLOUP",
+        "capacity": 19
+      },
+      {
+        "station_id": "40",
+        "name": "COLOMBETTE - MAURY",
+        "lat": 43.604565,
+        "lon": 1.453659,
+        "address": "41 RUE DE LA COLOMBETTE",
+        "capacity": 16
+      },
+      {
+        "station_id": "41",
+        "name": "RIQUET - CAMICHEL",
+        "lat": 43.602708,
+        "lon": 1.454367,
+        "address": "1 RUE CHARLES CAMICHEL",
+        "capacity": 21
+      },
+      {
+        "station_id": "42",
+        "name": "ESCANDE - DAURIAC",
+        "lat": 43.601607,
+        "lon": 1.456158,
+        "address": "3 BD PR LEOPOLD ESCANDE / FACE ASSURANCE MALADIE HG",
+        "capacity": 20
+      },
+      {
+        "station_id": "43",
+        "name": "PLACE DUPUY",
+        "lat": 43.600188,
+        "lon": 1.454764,
+        "address": "14 PL DOMINIQUE MARTIN DUPUY",
+        "capacity": 22
+      },
+      {
+        "station_id": "44",
+        "name": "PLACE SAINT-JACQUES",
+        "lat": 43.597825,
+        "lon": 1.451609,
+        "address": "1 ALL FORAIN FRANCOIS VERDIER",
+        "capacity": 22
+      },
+      {
+        "station_id": "45",
+        "name": "OZENNE - NAZARETH",
+        "lat": 43.596314,
+        "lon": 1.447081,
+        "address": "10 RUE THEODORE OZENNE",
+        "capacity": 19
+      },
+      {
+        "station_id": "46",
+        "name": "PLACE DES CARMES",
+        "lat": 43.597364,
+        "lon": 1.445314,
+        "address": "1 PL DES CARMES",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 20
+      },
+      {
+        "station_id": "47",
+        "name": "LANGUEDOC - NAZARETH",
+        "lat": 43.595247,
+        "lon": 1.445416,
+        "address": "12 RUE DU LANGUEDOC",
+        "capacity": 30
+      },
+      {
+        "station_id": "48",
+        "name": "PLACE DU SALIN",
+        "lat": 43.594461,
+        "lon": 1.443822,
+        "address": "18 PL DU SALIN",
+        "capacity": 32
+      },
+      {
+        "station_id": "49",
+        "name": "PLACE DU PONT-NEUF",
+        "lat": 43.599598,
+        "lon": 1.440942,
+        "address": "DEVANT 12 PLACE DU PONT NEUF",
+        "capacity": 24
+      },
+      {
+        "station_id": "50",
+        "name": "HAURIOU - GARONNETTE",
+        "lat": 43.594359,
+        "lon": 1.44095,
+        "address": "1 AV MAURICE HAURIOU",
+        "capacity": 23
+      },
+      {
+        "station_id": "51",
+        "name": "DUPORTAL - CANAL DE BRIENNE",
+        "lat": 43.605342,
+        "lon": 1.434081,
+        "address": "1 BD ARMAND DUPORTAL",
+        "capacity": 16
+      },
+      {
+        "station_id": "52",
+        "name": "DUPORTAL - RAYMOND V",
+        "lat": 43.608571,
+        "lon": 1.434762,
+        "address": "39 BD ARMAND DUPORTAL",
+        "capacity": 21
+      },
+      {
+        "station_id": "53",
+        "name": "PLACE SAINT-JULIEN",
+        "lat": 43.608639,
+        "lon": 1.436965,
+        "address": "PLACE SAINT JULIEN",
+        "capacity": 25
+      },
+      {
+        "station_id": "54",
+        "name": "CHAÎNE - TIERCERETTES",
+        "lat": 43.608674,
+        "lon": 1.439461,
+        "address": "10 RUE DE LA CHAINE",
+        "capacity": 17
+      },
+      {
+        "station_id": "55",
+        "name": "ST-SERNIN - GATIEN-ARNOULT",
+        "lat": 43.609022,
+        "lon": 1.441105,
+        "address": "2 RUE GATIEN ARNOULT",
+        "capacity": 15
+      },
+      {
+        "station_id": "56",
+        "name": "SAINT-SERNIN - MERLY",
+        "lat": 43.609191,
+        "lon": 1.442749,
+        "address": "1 RUE MERLY",
+        "capacity": 15
+      },
+      {
+        "station_id": "57",
+        "name": "ARCOLE - MERLY",
+        "lat": 43.6103,
+        "lon": 1.442975,
+        "address": "15 RUE MERLY",
+        "capacity": 15
+      },
+      {
+        "station_id": "58",
+        "name": "ARCOLE  - CONCORDE",
+        "lat": 43.610663,
+        "lon": 1.443637,
+        "address": "4 RUE DE LA CONCORDE",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 25
+      },
+      {
+        "station_id": "59",
+        "name": "CONCORDE - PRINTEMPS",
+        "lat": 43.613442,
+        "lon": 1.446395,
+        "address": "61 RUE DE LA CONCORDE",
+        "capacity": 18
+      },
+      {
+        "station_id": "60",
+        "name": "PLACE ROQUELAINE",
+        "lat": 43.612615,
+        "lon": 1.448286,
+        "address": "32 PL ROQUELAINE",
+        "capacity": 24
+      },
+      {
+        "station_id": "61",
+        "name": "MATABIAU GARE - BONREPOS",
+        "lat": 43.611052,
+        "lon": 1.452593,
+        "address": "12 BD DE BONREPOS",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 40
+      },
+      {
+        "station_id": "62",
+        "name": "JAURÈS - BONREPOS",
+        "lat": 43.609222,
+        "lon": 1.453542,
+        "address": "81 ALLEE JEAN JAURES",
+        "capacity": 24
+      },
+      {
+        "station_id": "63",
+        "name": "PISCINE LÉO LAGRANGE",
+        "lat": 43.607468,
+        "lon": 1.454329,
+        "address": "54 RUE DES SEPT TROUBADOURS",
+        "capacity": 22
+      },
+      {
+        "station_id": "64",
+        "name": "PÉRI - MERCADIER",
+        "lat": 43.606208,
+        "lon": 1.455005,
+        "address": "30 RUE GABRIEL PERI",
+        "capacity": 24
+      },
+      {
+        "station_id": "65",
+        "name": "VERDIER - GRAND ROND",
+        "lat": 43.596904,
+        "lon": 1.452596,
+        "address": "2 ALL FORAIN FRANCOIS VERDIER",
+        "capacity": 27
+      },
+      {
+        "station_id": "66",
+        "name": "JARDIN ROYAL",
+        "lat": 43.596419,
+        "lon": 1.45104,
+        "address": "RUE DU 8 MAI 1945 / FACE JARDIN ROYAL",
+        "capacity": 23
+      },
+      {
+        "station_id": "67",
+        "name": "GUESDE - OZENNE",
+        "lat": 43.594812,
+        "lon": 1.449176,
+        "address": "35 ALL JULES GUESDE",
+        "capacity": 22
+      },
+      {
+        "station_id": "68",
+        "name": "PALAIS DE JUSTICE  MÉTRO",
+        "lat": 43.592782,
+        "lon": 1.444726,
+        "address": "1 BIS ALLEE JULES GUESDE",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 16
+      },
+      {
+        "station_id": "69",
+        "name": "FEUGA - PONT ST-MICHEL",
+        "lat": 43.592388,
+        "lon": 1.442463,
+        "address": "11 ALL PAUL FEUGA",
+        "capacity": 18
+      },
+      {
+        "station_id": "70",
+        "name": "PLACE DU FER À CHEVAL",
+        "lat": 43.592366,
+        "lon": 1.434121,
+        "address": "5 PLACE DU FER A CHEVAL",
+        "capacity": 18
+      },
+      {
+        "station_id": "71",
+        "name": "FER À CHEVAL - COURS DILLON",
+        "lat": 43.593227,
+        "lon": 1.435062,
+        "address": "3 RUE LAGANNE",
+        "capacity": 22
+      },
+      {
+        "station_id": "72",
+        "name": "FITTE -  MAGNÉ",
+        "lat": 43.59522,
+        "lon": 1.432503,
+        "address": "23 ALL CHARLES DE FITTE",
+        "capacity": 20
+      },
+      {
+        "station_id": "73",
+        "name": "FITTE - TEINTURIERS",
+        "lat": 43.596294,
+        "lon": 1.432158,
+        "address": "40 ALLEE CHARLES DE FITTE",
+        "capacity": 16
+      },
+      {
+        "station_id": "74",
+        "name": "LAGANNE - TEINTURIERS",
+        "lat": 43.596667,
+        "lon": 1.436229,
+        "address": "37 RUE LAGANNE",
+        "capacity": 18
+      },
+      {
+        "station_id": "75",
+        "name": "CHÂTEAU D'EAU",
+        "lat": 43.59859,
+        "lon": 1.436594,
+        "address": "12 PLACE LAGANNE",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 21
+      },
+      {
+        "station_id": "76",
+        "name": "RECLUSANE - PLACE OLIVIER",
+        "lat": 43.598478,
+        "lon": 1.434043,
+        "address": "PLACE OLIVIER, DEVANT N°1 RUE  RECLUSANE",
+        "capacity": 16
+      },
+      {
+        "station_id": "77",
+        "name": "ST-CYPRIEN - MÉTRO VIÉ",
+        "lat": 43.59778,
+        "lon": 1.431619,
+        "address": "2 PL INTERIEURE SAINT-CYPRIEN",
+        "capacity": 13
+      },
+      {
+        "station_id": "78",
+        "name": "ST-CYPRIEN - MÉTRO DARRÉ",
+        "lat": 43.598124,
+        "lon": 1.431382,
+        "address": "14 PL INTERIEURE ST CYPRIEN",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 17
+      },
+      {
+        "station_id": "79",
+        "name": "VIGUERIE -  LANGE",
+        "lat": 43.601016,
+        "lon": 1.434129,
+        "address": "1 PL LANGE",
+        "capacity": 20
+      },
+      {
+        "station_id": "80",
+        "name": "FITTE - VARSI",
+        "lat": 43.599637,
+        "lon": 1.429338,
+        "address": "89B ALLEE CHARLES DE FITTE",
+        "capacity": 22
+      },
+      {
+        "station_id": "81",
+        "name": "JARDIN RAYMOND VI",
+        "lat": 43.599797,
+        "lon": 1.429521,
+        "address": "ALLEE CHARLES DE FITTE / FACE JARDIN RAYMOND VI",
+        "capacity": 33
+      },
+      {
+        "station_id": "82",
+        "name": "SÉJOURNÉ - PT DES CATALANS",
+        "lat": 43.605804,
+        "lon": 1.428054,
+        "address": "1 AV PAUL SEJOURNE",
+        "capacity": 21
+      },
+      {
+        "station_id": "83",
+        "name": "SÉJOURNÉ - AMIDONNIERS",
+        "lat": 43.605687,
+        "lon": 1.428225,
+        "address": "2 AV PAUL SEJOURNE",
+        "capacity": 17
+      },
+      {
+        "station_id": "84",
+        "name": "BRIENNE - MANUFACTURE",
+        "lat": 43.605381,
+        "lon": 1.432485,
+        "address": "19T ALL DE BRIENNE",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 24
+      },
+      {
+        "station_id": "85",
+        "name": "BARCELONE - LECLERC",
+        "lat": 43.606847,
+        "lon": 1.430615,
+        "address": "2 BD DU MARECHAL LECLERC",
+        "capacity": 22
+      },
+      {
+        "station_id": "86",
+        "name": "HÉRACLÈS - BÉARNAIS",
+        "lat": 43.608004,
+        "lon": 1.428585,
+        "address": "23 RUE DU BEARNAIS",
+        "capacity": 20
+      },
+      {
+        "station_id": "87",
+        "name": "LASCROSSES - LECLERC",
+        "lat": 43.609277,
+        "lon": 1.432157,
+        "address": "47 BD LASCROSSES",
+        "capacity": 25
+      },
+      {
+        "station_id": "88",
+        "name": "LASCROSSES - DUPORTAL",
+        "lat": 43.61009,
+        "lon": 1.434974,
+        "address": "17T BD LASCROSSES",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 25
+      },
+      {
+        "station_id": "89",
+        "name": "COMPANS CAFFARELLI MÉTRO",
+        "lat": 43.611073,
+        "lon": 1.436704,
+        "address": "1 ESP COMPANS-CAFFARELLI",
+        "capacity": 22
+      },
+      {
+        "station_id": "90",
+        "name": "LASCROSSES - ARNAUD BERNARD",
+        "lat": 43.611271,
+        "lon": 1.438093,
+        "address": "3B BD LASCROSSES",
+        "capacity": 25
+      },
+      {
+        "station_id": "91",
+        "name": "ARCOLE - BALANCE",
+        "lat": 43.611556,
+        "lon": 1.439662,
+        "address": "48 BD D'ARCOLE",
+        "capacity": 21
+      },
+      {
+        "station_id": "92",
+        "name": "CHALETS - DOUVILLÉ",
+        "lat": 43.613149,
+        "lon": 1.441326,
+        "address": "31 RUE DES CHALETS",
+        "capacity": 15
+      },
+      {
+        "station_id": "93",
+        "name": "BD MATABIAU - INGRES",
+        "lat": 43.614574,
+        "lon": 1.443571,
+        "address": "57 RUE DU PRINTEMPS",
+        "capacity": 17
+      },
+      {
+        "station_id": "94",
+        "name": "LYON - SÉMARD",
+        "lat": 43.614083,
+        "lon": 1.451158,
+        "address": "76 BD DE LA GARE",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 25
+      },
+      {
+        "station_id": "95",
+        "name": "THÉÂTRE GARONNE",
+        "lat": 43.602426,
+        "lon": 1.425347,
+        "address": "4 AV DU CHÂTEAU D'EAU",
+        "capacity": 22
+      },
+      {
+        "station_id": "96",
+        "name": "MÉDIATHÈQUE JOSÉ CABANIS",
+        "lat": 43.609757,
+        "lon": 1.455212,
+        "address": "50 RUE DU GENERAL COMPANS",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 25
+      },
+      {
+        "station_id": "97",
+        "name": "BONREPOS - RAYMOND IV",
+        "lat": 43.612475,
+        "lon": 1.451558,
+        "address": "FACE AU 66 RUE RAYMOND IV",
+        "capacity": 21
+      },
+      {
+        "station_id": "98",
+        "name": "DEMOISELLES - CRAMPEL",
+        "lat": 43.58771,
+        "lon": 1.459838,
+        "address": "80 ALL DES DEMOISELLES",
+        "capacity": 21
+      },
+      {
+        "station_id": "99",
+        "name": "METZ - REMPART ST-ÉTIENNE",
+        "lat": 43.600825,
+        "lon": 1.450655,
+        "address": "7 RUE DU REMPART ST ETIENNE",
+        "capacity": 16
+      },
+      {
+        "station_id": "100",
+        "name": "PORT ST-SAUVEUR - SABATIER",
+        "lat": 43.596652,
+        "lon": 1.45564,
+        "address": "16 ALL PAUL SABATIER",
+        "capacity": 20
+      },
+      {
+        "station_id": "101",
+        "name": "LESPINET - MARINE",
+        "lat": 43.582551,
+        "lon": 1.464204,
+        "address": "Place de Lespinet - Face 51 avenue de Lespinet\r\n",
+        "capacity": 20
+      },
+      {
+        "station_id": "102",
+        "name": "MISTRAL - FLEURANCE",
+        "lat": 43.593567,
+        "lon": 1.453066,
+        "address": "18 ALLEE FREDERIC MISTRAL",
+        "capacity": 19
+      },
+      {
+        "station_id": "103",
+        "name": "ST-MICHEL - STE-CATHERINE",
+        "lat": 43.590847,
+        "lon": 1.445284,
+        "address": "134 GRANDE RUE SAINT-MICHEL",
+        "capacity": 20
+      },
+      {
+        "station_id": "104",
+        "name": "AV. DE MURET TRAMWAY",
+        "lat": 43.589126,
+        "lon": 1.431449,
+        "address": "219 AV DE MURET",
+        "capacity": 18
+      },
+      {
+        "station_id": "105",
+        "name": "BILLIÈRES - CHAMPÊTRE",
+        "lat": 43.597539,
+        "lon": 1.428891,
+        "address": "12  AV  ETIENNE  BILLIERES",
+        "capacity": 18
+      },
+      {
+        "station_id": "106",
+        "name": "BRIENNE - DELORME",
+        "lat": 43.608424,
+        "lon": 1.423848,
+        "address": "99 ALL DE BRIENNE",
+        "capacity": 21
+      },
+      {
+        "station_id": "107",
+        "name": "LASCROSSE - SÉBASTOPOL",
+        "lat": 43.60962,
+        "lon": 1.430401,
+        "address": "1 RUE DE SEBASTOPOL",
+        "capacity": 27
+      },
+      {
+        "station_id": "108",
+        "name": "MARQUETTE - SÉBASTOPOL",
+        "lat": 43.612279,
+        "lon": 1.428827,
+        "address": "40 RUE SEBASTOPOL",
+        "capacity": 20
+      },
+      {
+        "station_id": "109",
+        "name": "HÔTEL DE DÉPARTEMENT",
+        "lat": 43.615275,
+        "lon": 1.434944,
+        "address": "1 BD DE LA MARQUETTE",
+        "capacity": 25
+      },
+      {
+        "station_id": "110",
+        "name": "SERRES - CABANEL",
+        "lat": 43.614227,
+        "lon": 1.437999,
+        "address": "16 RUE ALEXANDRE CABANEL",
+        "capacity": 18
+      },
+      {
+        "station_id": "111",
+        "name": "BD DES MINIMES - PASSERELLE",
+        "lat": 43.615273,
+        "lon": 1.442937,
+        "address": "38B BD DES MINIMES",
+        "capacity": 27
+      },
+      {
+        "station_id": "112",
+        "name": "BRANLY - PLACE RUSSELL",
+        "lat": 43.585409,
+        "lon": 1.453014,
+        "address": "47 ALLEE BRANLY",
+        "capacity": 20
+      },
+      {
+        "station_id": "113",
+        "name": "DUMÉRIL - LAMARCK",
+        "lat": 43.592349,
+        "lon": 1.449015,
+        "address": "FACE 58 RUE DUMERIL",
+        "capacity": 20
+      },
+      {
+        "station_id": "114",
+        "name": "MONTPLAISIR - DELIEUX",
+        "lat": 43.592347,
+        "lon": 1.457491,
+        "address": "FACE 43 RUE MONTPLAISIR",
+        "capacity": 20
+      },
+      {
+        "station_id": "115",
+        "name": "DUMERIL - SAINT JOSEPH",
+        "lat": 43.591224,
+        "lon": 1.452159,
+        "address": "FACE 104 RUE ALFRED DUMERIL",
+        "capacity": 18
+      },
+      {
+        "station_id": "116",
+        "name": "ST-MICHEL - MAGENDIE",
+        "lat": 43.589553,
+        "lon": 1.445888,
+        "address": "88 GRANDE RUE SAINT-MICHEL",
+        "capacity": 15
+      },
+      {
+        "station_id": "117",
+        "name": "BILLIERES - ROGUET",
+        "lat": 43.596889,
+        "lon": 1.426109,
+        "address": "39 AVENUE ETIENNE BILLIERES",
+        "capacity": 20
+      },
+      {
+        "station_id": "118",
+        "name": "PLACE DU BUSCA",
+        "lat": 43.588588,
+        "lon": 1.451003,
+        "address": "PLACE DU BUSCA / FACE ECOLE JEAN JAURES",
+        "capacity": 16
+      },
+      {
+        "station_id": "119",
+        "name": "BRIENNE - CHAPOU",
+        "lat": 43.610005,
+        "lon": 1.419568,
+        "address": "129 ALL DE BRIENNE",
+        "capacity": 24
+      },
+      {
+        "station_id": "120",
+        "name": "BARCELONE - SANIÈRES",
+        "lat": 43.610343,
+        "lon": 1.420407,
+        "address": "152 ALL DE BARCELONE",
+        "capacity": 18
+      },
+      {
+        "station_id": "121",
+        "name": "SERRES - ARNAUD BERNARD",
+        "lat": 43.612627,
+        "lon": 1.438268,
+        "address": "33 AV HONORE SERRES",
+        "capacity": 17
+      },
+      {
+        "station_id": "122",
+        "name": "PASSERELLE HAEDENS",
+        "lat": 43.613504,
+        "lon": 1.430339,
+        "address": "57 BD DE L EMBOUCHURE",
+        "capacity": 19
+      },
+      {
+        "station_id": "123",
+        "name": "HOTEL DE POLICE",
+        "lat": 43.61497,
+        "lon": 1.432909,
+        "address": "1 RUE DE CHAUSSAS",
+        "capacity": 23
+      },
+      {
+        "station_id": "124",
+        "name": "ÉGLISE DES MINIMES",
+        "lat": 43.618287,
+        "lon": 1.436857,
+        "address": "27 AV DES MINIMES",
+        "capacity": 18
+      },
+      {
+        "station_id": "125",
+        "name": "BARRIERE DE PARIS MÉTRO",
+        "lat": 43.627017,
+        "lon": 1.434129,
+        "address": "FACE AU 2 BARRIERE DE PARIS",
+        "capacity": 25
+      },
+      {
+        "station_id": "126",
+        "name": "BONNEFOY - ARAGO",
+        "lat": 43.616939,
+        "lon": 1.454243,
+        "address": "18 RUE BONNEFOY",
+        "capacity": 22
+      },
+      {
+        "station_id": "127",
+        "name": "DEMOISELLES - BÉGUÉ-DAVID",
+        "lat": 43.589802,
+        "lon": 1.455967,
+        "address": "1 RUE BEGUE",
+        "capacity": 15
+      },
+      {
+        "station_id": "128",
+        "name": "ST-MICHEL - CASTELET",
+        "lat": 43.58585,
+        "lon": 1.447374,
+        "address": "18 B GRANDE RUE ST MICHEL",
+        "capacity": 24
+      },
+      {
+        "station_id": "129",
+        "name": "CROIX DE PIERRE TRAMWAY",
+        "lat": 43.585732,
+        "lon": 1.427853,
+        "address": "2 BD DEODAT DE SEVERAC",
+        "capacity": 16
+      },
+      {
+        "station_id": "130",
+        "name": "PATTE D'OIE - MÉTRO",
+        "lat": 43.596716,
+        "lon": 1.424382,
+        "address": "66 TER AV ETIENNE BILLIERES",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 15
+      },
+      {
+        "station_id": "131",
+        "name": "RTE DE BLAGNAC - BERNIES",
+        "lat": 43.611584,
+        "lon": 1.414669,
+        "address": "15 RUE PAUL BERNIES",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 19
+      },
+      {
+        "station_id": "132",
+        "name": "MINIMES - BAQUÉ",
+        "lat": 43.622966,
+        "lon": 1.434449,
+        "address": "101 AVENUES DES MINIMES",
+        "capacity": 19
+      },
+      {
+        "station_id": "133",
+        "name": "MINIMES  C.NOUGARO MÉTRO",
+        "lat": 43.620693,
+        "lon": 1.435612,
+        "address": "71 AV DES MINIMES",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 22
+      },
+      {
+        "station_id": "134",
+        "name": "EGLISE BONNEFOY",
+        "lat": 43.619031,
+        "lon": 1.456759,
+        "address": "8 ALLEE DE L'EGLISE BONNEFOY",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 19
+      },
+      {
+        "station_id": "135",
+        "name": "BONNEFOY - LEMAÎTRE",
+        "lat": 43.622963,
+        "lon": 1.458647,
+        "address": "179 RUE DU FAUBOURG BONNEFOY",
+        "capacity": 18
+      },
+      {
+        "station_id": "136",
+        "name": "FONTAINES - MILHÈS",
+        "lat": 43.60202,
+        "lon": 1.414772,
+        "address": "FACE 175 RUE DES FONTAINES",
+        "capacity": 15
+      },
+      {
+        "station_id": "137",
+        "name": "BRUNHES - FONTAINES",
+        "lat": 43.600473,
+        "lon": 1.420165,
+        "address": "68 BD JEAN BRUNHES FACE AU 53",
+        "capacity": 15
+      },
+      {
+        "station_id": "138",
+        "name": "BARRIERE DE BAYONNE",
+        "lat": 43.597908,
+        "lon": 1.420144,
+        "address": "3 BD JEAN BRUNHES",
+        "capacity": 20
+      },
+      {
+        "station_id": "139",
+        "name": "BARRIERE DE LOMBEZ",
+        "lat": 43.595503,
+        "lon": 1.418503,
+        "address": "39 BIS AV DE LOMBEZ",
+        "capacity": 25
+      },
+      {
+        "station_id": "140",
+        "name": "PLACE ÉMILE MÂLE",
+        "lat": 43.591661,
+        "lon": 1.418768,
+        "address": "PLACE EMILE MALE",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 29
+      },
+      {
+        "station_id": "141",
+        "name": "FONTAINE LESTANG METRO",
+        "lat": 43.587389,
+        "lon": 1.417918,
+        "address": "237 RUE HENRI DESBALS",
+        "capacity": 18
+      },
+      {
+        "station_id": "142",
+        "name": "LYCEE DÉODAT DE SÉVERAC",
+        "lat": 43.588046,
+        "lon": 1.42436,
+        "address": "FACE AU 65 BD DEODAT DE SEVERAC",
+        "capacity": 20
+      },
+      {
+        "station_id": "143",
+        "name": "DESBALS - SAINTONGE",
+        "lat": 43.581384,
+        "lon": 1.413607,
+        "address": "PL GENEVIEVE ANTHONIOZ DE GAULLE / ANGLE RUE HENRY DESBALS",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 20
+      },
+      {
+        "station_id": "144",
+        "name": "SUISSE - LAUSANNE",
+        "lat": 43.615988,
+        "lon": 1.42163,
+        "address": "62 BD DE SUISSE",
+        "capacity": 22
+      },
+      {
+        "station_id": "145",
+        "name": "GOUNOD - GARROS",
+        "lat": 43.613881,
+        "lon": 1.424953,
+        "address": "29 RUE ROLAND GARROS",
+        "capacity": 20
+      },
+      {
+        "station_id": "146",
+        "name": "SANG DE SERP - DAGNAUX",
+        "lat": 43.61567,
+        "lon": 1.428308,
+        "address": "57 CHEMIN DU SANG DE SERP",
+        "capacity": 20
+      },
+      {
+        "station_id": "147",
+        "name": "CHAUSSAS - DAUDET",
+        "lat": 43.619704,
+        "lon": 1.429176,
+        "address": "96 RUE DE CHAUSSAS",
+        "capacity": 19
+      },
+      {
+        "station_id": "148",
+        "name": "COLLIGNON - RAISIN",
+        "lat": 43.617712,
+        "lon": 1.445142,
+        "address": "16 AV DE COLLIGNON",
+        "capacity": 19
+      },
+      {
+        "station_id": "149",
+        "name": "BD DES MINIMES - RAISIN",
+        "lat": 43.61539,
+        "lon": 1.448573,
+        "address": "FACE 2 CHEMIN DU RAISIN",
+        "capacity": 22
+      },
+      {
+        "station_id": "150",
+        "name": "CURIE - CAMPISTRON",
+        "lat": 43.62563,
+        "lon": 1.439513,
+        "address": "78 BD PIERRE ET MARIE CURIE",
+        "capacity": 18
+      },
+      {
+        "station_id": "151",
+        "name": "CURIE - NÉGRENEYS",
+        "lat": 43.624514,
+        "lon": 1.443326,
+        "address": "27 BD PIERRE ET MARIE CURIE",
+        "capacity": 24
+      },
+      {
+        "station_id": "152",
+        "name": "THÉÂTRE DES MAZADES",
+        "lat": 43.624114,
+        "lon": 1.438463,
+        "address": "10 AV DES MAZADES",
+        "capacity": 20
+      },
+      {
+        "station_id": "153",
+        "name": "PLACE ANTONIN FROIDURE",
+        "lat": 43.628672,
+        "lon": 1.448469,
+        "address": "12 AV BOURGES MAUNOURY",
+        "capacity": 18
+      },
+      {
+        "station_id": "154",
+        "name": "HÔTEL DE REGION",
+        "lat": 43.589928,
+        "lon": 1.441706,
+        "address": "50 M AVANT 4 RUE DES GALLOIS",
+        "capacity": 19
+      },
+      {
+        "station_id": "155",
+        "name": "RÉCOLLETS - FERETRA",
+        "lat": 43.583787,
+        "lon": 1.443299,
+        "address": "34 BD DES RECOLLETS",
+        "capacity": 20
+      },
+      {
+        "station_id": "156",
+        "name": "EMPALOT - MÉTRO",
+        "lat": 43.579666,
+        "lon": 1.44184,
+        "address": "38 AV JEAN MOULIN FACE DEBOUCHE RUE DE CANNES",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 18
+      },
+      {
+        "station_id": "157",
+        "name": "URSS - PEYROUSET",
+        "lat": 43.58295,
+        "lon": 1.448578,
+        "address": "16 AV DE L'U.R.S.S",
+        "capacity": 19
+      },
+      {
+        "station_id": "158",
+        "name": "URSS - MARAN",
+        "lat": 43.580915,
+        "lon": 1.449198,
+        "address": "57 AV DE L'URSS",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 20
+      },
+      {
+        "station_id": "159",
+        "name": "SAINT-AGNE GARE",
+        "lat": 43.578572,
+        "lon": 1.450234,
+        "address": "96 AV JULES JULIEN",
+        "capacity": 20
+      },
+      {
+        "station_id": "160",
+        "name": "THÉÂTRE JULES JULIEN",
+        "lat": 43.57337,
+        "lon": 1.452405,
+        "address": "21 AV DES ECOLES JULES JULIEN",
+        "capacity": 17
+      },
+      {
+        "station_id": "161",
+        "name": "AV . DE RANGUEIL  - BEDOUCE",
+        "lat": 43.576773,
+        "lon": 1.454742,
+        "address": "35 AV DE RANGUEIL",
+        "capacity": 15
+      },
+      {
+        "station_id": "162",
+        "name": "PLACE D'ITALIE",
+        "lat": 43.580296,
+        "lon": 1.45486,
+        "address": "FACE 49 AV D' ITALIE",
+        "capacity": 17
+      },
+      {
+        "station_id": "163",
+        "name": "BEDOUCE - MARNE",
+        "lat": 43.581506,
+        "lon": 1.462341,
+        "address": "115 AV ALBERT BEDOUCE",
+        "capacity": 20
+      },
+      {
+        "station_id": "164",
+        "name": "SAOUZELONG - MÉTRO",
+        "lat": 43.579846,
+        "lon": 1.460126,
+        "address": "FACE 79 AV ALBERT BEDOUCE",
+        "capacity": 20
+      },
+      {
+        "station_id": "165",
+        "name": "AVIONS - LIBELLULES",
+        "lat": 43.57688,
+        "lon": 1.460189,
+        "address": "33 AVENUE DES AVIONS",
+        "capacity": 15
+      },
+      {
+        "station_id": "166",
+        "name": "RANGUEIL  MÉTRO",
+        "lat": 43.57421,
+        "lon": 1.462367,
+        "address": "23 RUE GUYOU",
+        "capacity": 20
+      },
+      {
+        "station_id": "167",
+        "name": "LAPUJADE - FLANDRES",
+        "lat": 43.624202,
+        "lon": 1.454685,
+        "address": "RUE LAPUJADE / ANGLE RUE DES FLANDRES",
+        "capacity": 18
+      },
+      {
+        "station_id": "168",
+        "name": "PLACE BILA",
+        "lat": 43.626597,
+        "lon": 1.458835,
+        "address": "FACE 3 PL BILA",
+        "capacity": 20
+      },
+      {
+        "station_id": "169",
+        "name": "ALBI - AVRANCHES",
+        "lat": 43.632532,
+        "lon": 1.463081,
+        "address": "65 RTE D'ALBI",
+        "capacity": 17
+      },
+      {
+        "station_id": "170",
+        "name": "ALBI - NICOL",
+        "lat": 43.635586,
+        "lon": 1.464289,
+        "address": "FACE 163 CHE NICOL",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 17
+      },
+      {
+        "station_id": "171",
+        "name": "ALBI - PELET",
+        "lat": 43.641034,
+        "lon": 1.466458,
+        "address": "191 RTE D'ALBI",
+        "capacity": 17
+      },
+      {
+        "station_id": "172",
+        "name": "NETWILLER - EBELOT",
+        "lat": 43.642859,
+        "lon": 1.461124,
+        "address": "RD-PT DE L'ABBE LAFFORGUE ANGLE RUE HENRI EBELOT",
+        "capacity": 20
+      },
+      {
+        "station_id": "173",
+        "name": "BOURGÈS-MAUNOURY - SÉGLA",
+        "lat": 43.633171,
+        "lon": 1.450638,
+        "address": "25 AV MAURICE BOURGES MAUNOURY",
+        "capacity": 19
+      },
+      {
+        "station_id": "174",
+        "name": "BOURGÈS-MAUNOURY - MÉLAT",
+        "lat": 43.63694,
+        "lon": 1.452615,
+        "address": "41 AV MAURICE BOURGES MAUNOURY",
+        "capacity": 19
+      },
+      {
+        "station_id": "175",
+        "name": "BORDEROUGE - MÉTRO",
+        "lat": 43.639633,
+        "lon": 1.452569,
+        "address": "FACE 52 AV BOURGES MAUNOURY",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 30
+      },
+      {
+        "station_id": "176",
+        "name": "CIMETIÈRE - COMPANS",
+        "lat": 43.606701,
+        "lon": 1.458143,
+        "address": "1 RUE DU GENERAL COMPANS",
+        "capacity": 18
+      },
+      {
+        "station_id": "177",
+        "name": "BRUNAUD - BAILLAUD",
+        "lat": 43.617458,
+        "lon": 1.465428,
+        "address": "64 RUE BAILLAUD",
+        "capacity": 20
+      },
+      {
+        "station_id": "178",
+        "name": "BRUNAUD - PLANA",
+        "lat": 43.619291,
+        "lon": 1.468681,
+        "address": "FACE 100 AV YVES BRUNAUD",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 20
+      },
+      {
+        "station_id": "179",
+        "name": "PLANA - CASSAING",
+        "lat": 43.616938,
+        "lon": 1.473616,
+        "address": "5 CH CASSAING",
+        "capacity": 17
+      },
+      {
+        "station_id": "180",
+        "name": "PLACE DE SOUPETARD",
+        "lat": 43.612162,
+        "lon": 1.477347,
+        "address": "3 PLACE DE SOUPETARD",
+        "capacity": 18
+      },
+      {
+        "station_id": "181",
+        "name": "PLANA - GARNIER",
+        "lat": 43.609275,
+        "lon": 1.479898,
+        "address": "27 AV LOUIS PLANA",
+        "capacity": 17
+      },
+      {
+        "station_id": "182",
+        "name": "CHAUBET - PLANA",
+        "lat": 43.60592,
+        "lon": 1.481742,
+        "address": "FACE 155 AV JEAN CHAUBET",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 20
+      },
+      {
+        "station_id": "183",
+        "name": "RUE DE CUGNAUX - GRAVETTE",
+        "lat": 43.593147,
+        "lon": 1.424313,
+        "address": "RUE DE CUGNAUX",
+        "capacity": 18
+      },
+      {
+        "station_id": "184",
+        "name": "MICHOUN - HYÈRES",
+        "lat": 43.62724,
+        "lon": 1.469293,
+        "address": "70 CHEMIN MICHOUN",
+        "capacity": 20
+      },
+      {
+        "station_id": "185",
+        "name": "ROUBICHOU - ARLES",
+        "lat": 43.627108,
+        "lon": 1.465538,
+        "address": "30 RUE ROUBICHOU",
+        "capacity": 15
+      },
+      {
+        "station_id": "186",
+        "name": "DESBALS - BOUALAM",
+        "lat": 43.579171,
+        "lon": 1.410939,
+        "address": "1 IMPASSE BACHAGA BOUALAM",
+        "capacity": 18
+      },
+      {
+        "station_id": "187",
+        "name": "DESBALS - FIEUX",
+        "lat": 43.58456,
+        "lon": 1.415683,
+        "address": "187 RUE HENRI DESBALS",
+        "capacity": 17
+      },
+      {
+        "station_id": "188",
+        "name": "AV. DE MURET - LAFAGE",
+        "lat": 43.584339,
+        "lon": 1.427597,
+        "address": "121 AVENUE DE MURET",
+        "capacity": 20
+      },
+      {
+        "station_id": "189",
+        "name": "AV. DE MURET - BOUTINON",
+        "lat": 43.581793,
+        "lon": 1.425738,
+        "address": "46 AVENUE DE MURET",
+        "capacity": 19
+      },
+      {
+        "station_id": "190",
+        "name": "ESPAGNE - OUSTALOUS",
+        "lat": 43.577437,
+        "lon": 1.423953,
+        "address": "39 RTE D'ESPAGNE",
+        "capacity": 20
+      },
+      {
+        "station_id": "191",
+        "name": "JARDIN DU PECH",
+        "lat": 43.590046,
+        "lon": 1.415246,
+        "address": "395 ROUTE DE SAINT SIMON",
+        "capacity": 18
+      },
+      {
+        "station_id": "192",
+        "name": "ST-SIMON - PRADO",
+        "lat": 43.587845,
+        "lon": 1.409785,
+        "address": "355 ROUTE DE SAINT-SIMON",
+        "capacity": 20
+      },
+      {
+        "station_id": "193",
+        "name": "LOMBEZ - PETITE VITESSE",
+        "lat": 43.59487,
+        "lon": 1.415088,
+        "address": "59 AV DE LOMBEZ",
+        "capacity": 20
+      },
+      {
+        "station_id": "194",
+        "name": "LOMBEZ - HIPPODROME",
+        "lat": 43.593979,
+        "lon": 1.410311,
+        "address": "FACE 140 AV DE LOMBEZ",
+        "capacity": 20
+      },
+      {
+        "station_id": "195",
+        "name": "RIEUX - CHANT DU MERLE",
+        "lat": 43.597355,
+        "lon": 1.459063,
+        "address": "FACE 15 RUE PIERRE LAROUSSE",
+        "capacity": 18
+      },
+      {
+        "station_id": "196",
+        "name": "PUJOL - GOUJON",
+        "lat": 43.601719,
+        "lon": 1.458019,
+        "address": "6 RUE JEAN GOUJON",
+        "capacity": 20
+      },
+      {
+        "station_id": "197",
+        "name": "PUJOL - PÉRIGNON",
+        "lat": 43.600361,
+        "lon": 1.464039,
+        "address": "6 AV LOUIS BLERIOT",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 20
+      },
+      {
+        "station_id": "198",
+        "name": "DELTOUR - LAFILAIRE",
+        "lat": 43.596193,
+        "lon": 1.473375,
+        "address": "FACE 25 CHEMIN LAFILAIRE",
+        "capacity": 20
+      },
+      {
+        "station_id": "199",
+        "name": "DELTOUR - RIEUX",
+        "lat": 43.591484,
+        "lon": 1.470014,
+        "address": "4 BD DELTOUR",
+        "capacity": 22
+      },
+      {
+        "station_id": "200",
+        "name": "REVEL - BAJAC",
+        "lat": 43.576559,
+        "lon": 1.487548,
+        "address": "43 route de Revel - Gymnase écoles publiques Henri Guillaumet\r\n",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 16
+      },
+      {
+        "station_id": "201",
+        "name": "ST-EXUPÉRY - POTEZ",
+        "lat": 43.579763,
+        "lon": 1.480838,
+        "address": "256 AV ANTOINE DE ST EXUPERY",
+        "capacity": 18
+      },
+      {
+        "station_id": "202",
+        "name": "ST-EXUPÉRY - BUTTE",
+        "lat": 43.581632,
+        "lon": 1.475865,
+        "address": "165 AV ANTOINE DE ST EXUPERY",
+        "capacity": 17
+      },
+      {
+        "station_id": "203",
+        "name": "ST-EXUPERY - PETIT PRINCE",
+        "lat": 43.58355,
+        "lon": 1.470033,
+        "address": "2 AV ANTOINE DE ST EXUPERY",
+        "capacity": 20
+      },
+      {
+        "station_id": "204",
+        "name": "PLACE ROGER ARNAUD",
+        "lat": 43.586859,
+        "lon": 1.463178,
+        "address": "PL ROGER ARNAUD",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 18
+      },
+      {
+        "station_id": "205",
+        "name": "RIEUX - COTTAGES",
+        "lat": 43.585924,
+        "lon": 1.475057,
+        "address": "58 AV DES COTTAGES",
+        "capacity": 18
+      },
+      {
+        "station_id": "206",
+        "name": "RIEUX - LEYGUE",
+        "lat": 43.594117,
+        "lon": 1.465197,
+        "address": "20 AV ARMAND LEYGUE",
+        "capacity": 18
+      },
+      {
+        "station_id": "207",
+        "name": "MAL CLABEL - AUDE",
+        "lat": 43.583202,
+        "lon": 1.481757,
+        "address": "FACE 25 RUE DE L AUDE",
+        "capacity": 17
+      },
+      {
+        "station_id": "208",
+        "name": "BAROUX - LIMAYRAC",
+        "lat": 43.591603,
+        "lon": 1.479018,
+        "address": "Avenue Lucien Baroux, face parking Place Auguste Albert",
+        "capacity": 18
+      },
+      {
+        "station_id": "209",
+        "name": "BAROUX - DARASSE",
+        "lat": 43.589557,
+        "lon": 1.4789,
+        "address": "4 AV LUCIEN BAROUX",
+        "capacity": 18
+      },
+      {
+        "station_id": "210",
+        "name": "TERRASSE - MONT VENTOUX",
+        "lat": 43.586086,
+        "lon": 1.482942,
+        "address": "FACE 42 CHE DE LA TERRASSE",
+        "capacity": 18
+      },
+      {
+        "station_id": "211",
+        "name": "TERRASSE - LEDORMEUR",
+        "lat": 43.583511,
+        "lon": 1.487795,
+        "address": "9 RUE LE DORMEUR",
+        "capacity": 18
+      },
+      {
+        "station_id": "212",
+        "name": "CHIRAC - CHAUMIÈRE",
+        "lat": 43.6152,
+        "lon": 1.465444,
+        "address": "RUE DE LA CHAUMIERE / 50 M APRES RD-PT DU CAPITAINE DREYFUS",
+        "capacity": 17
+      },
+      {
+        "station_id": "213",
+        "name": "PUJOL - CHAUBET",
+        "lat": 43.600704,
+        "lon": 1.467249,
+        "address": "129 AV DE CASTRES",
+        "capacity": 17
+      },
+      {
+        "station_id": "214",
+        "name": "CASTRES - ACHIARY",
+        "lat": 43.600828,
+        "lon": 1.473579,
+        "address": "48 AV DE CASTRES",
+        "capacity": 17
+      },
+      {
+        "station_id": "215",
+        "name": "ARGOULETS MÉTRO",
+        "lat": 43.623823,
+        "lon": 1.475935,
+        "address": "FACE 8 RUE DE GAILLAC",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 20
+      },
+      {
+        "station_id": "216",
+        "name": "ARGOULETS - HOUDON",
+        "lat": 43.622823,
+        "lon": 1.474083,
+        "address": "3 RUE JEAN HOUDON",
+        "capacity": 17
+      },
+      {
+        "station_id": "217",
+        "name": "AMOUROUX - ST-TROPEZ",
+        "lat": 43.629655,
+        "lon": 1.466259,
+        "address": "42 CHEMIN AMOUROUX",
+        "capacity": 18
+      },
+      {
+        "station_id": "218",
+        "name": "AMOUROUX - STE-AUGUSTINE",
+        "lat": 43.627643,
+        "lon": 1.461861,
+        "address": "24 BIS CHE AMOUROUX",
+        "capacity": 18
+      },
+      {
+        "station_id": "219",
+        "name": "RTE DE BLAGNAC - PUCCINI",
+        "lat": 43.614514,
+        "lon": 1.411161,
+        "address": "35 RUE GIACOMO PUCCINI",
+        "capacity": 18
+      },
+      {
+        "station_id": "220",
+        "name": "MIRAIL UNIVERSITÉ MÉTRO",
+        "lat": 43.574466,
+        "lon": 1.402211,
+        "address": "3 RUE DE L'UNIVERSITE",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 19
+      },
+      {
+        "station_id": "221",
+        "name": "AV. DE REYNERIE - VAUQUELIN",
+        "lat": 43.576221,
+        "lon": 1.406355,
+        "address": "FACE 85 RUE VAUQUELIN",
+        "capacity": 20
+      },
+      {
+        "station_id": "222",
+        "name": "ROCHE - LAAS",
+        "lat": 43.563894,
+        "lon": 1.474416,
+        "address": "15 AV DU COLONEL ROCHE",
+        "capacity": 19
+      },
+      {
+        "station_id": "223",
+        "name": "BELIN - ROCHE",
+        "lat": 43.565079,
+        "lon": 1.478297,
+        "address": "7 AV EDOUARD BELIN ANGLE AV ROCHE RD-PT GUY DU MERLE",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 22
+      },
+      {
+        "station_id": "224",
+        "name": "BELIN - SUPAERO",
+        "lat": 43.56644,
+        "lon": 1.475301,
+        "address": "10 AV EDOUARD BELIN FACE CHATEAU D'EAU CREPS RD-PT JEAN LAGASSE",
+        "capacity": 20
+      },
+      {
+        "station_id": "225",
+        "name": "BELIN - ONERA",
+        "lat": 43.570117,
+        "lon": 1.473463,
+        "address": "4 AV EDOUARD BELIN DEVANT ONERA FACE AU CREPS",
+        "capacity": 20
+      },
+      {
+        "station_id": "226",
+        "name": "CASSELARDIT - FONTAINES",
+        "lat": 43.604159,
+        "lon": 1.407267,
+        "address": "FACE 287 RUE DES FONTAINES ANGLE AV DE CASSELARDIT",
+        "capacity": 17
+      },
+      {
+        "station_id": "227",
+        "name": "UNIV. PAUL SABATIER MÉTRO",
+        "lat": 43.561074,
+        "lon": 1.462928,
+        "address": "118  RTE DE NARBONNE",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 32
+      },
+      {
+        "station_id": "228",
+        "name": "FAC. DE PHARMACIE MÉTRO",
+        "lat": 43.568165,
+        "lon": 1.464353,
+        "address": "FACE 35 CHEMIN DES MARAICHERS",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 18
+      },
+      {
+        "station_id": "229",
+        "name": "AV. DE RANGUEIL - PELUDE",
+        "lat": 43.57141,
+        "lon": 1.462732,
+        "address": "129 AV DE RANGUEIL",
+        "capacity": 18
+      },
+      {
+        "station_id": "230",
+        "name": "UT3 - CHAMPS MAGNÉTIQUES",
+        "lat": 43.567307,
+        "lon": 1.467715,
+        "address": "141 AV DE RANGUEIL",
+        "capacity": 20
+      },
+      {
+        "station_id": "231",
+        "name": "NARBONNE - DURAND",
+        "lat": 43.557264,
+        "lon": 1.46541,
+        "address": "FACE 215 RTE DE NARBONNE ANGLE ALL EMILE DURAND",
+        "capacity": 20
+      },
+      {
+        "station_id": "232",
+        "name": "NARBONNE - CAUBÈRE",
+        "lat": 43.569089,
+        "lon": 1.456292,
+        "address": "73 RTE DE NARBONNE",
+        "capacity": 15
+      },
+      {
+        "station_id": "233",
+        "name": "NARBONNE - SAHUQUE",
+        "lat": 43.566528,
+        "lon": 1.458648,
+        "address": "FACE 88 RTE DE NARBONNE STATION ESSO",
+        "capacity": 20
+      },
+      {
+        "station_id": "234",
+        "name": "RAYNAL - LOUIN",
+        "lat": 43.628145,
+        "lon": 1.451413,
+        "address": "50M APRES 4 RUE PIERRETTE LOUIN",
+        "capacity": 15
+      },
+      {
+        "station_id": "235",
+        "name": "LA VACHE MÉTRO",
+        "lat": 43.633454,
+        "lon": 1.435519,
+        "address": "FACE AU 8 RUE PAUL VERLAINE",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 19
+      },
+      {
+        "station_id": "236",
+        "name": "TOEC - LEMIRE",
+        "lat": 43.597322,
+        "lon": 1.403694,
+        "address": "RUE DE L'ABBE JULES LEMIRE ANGLE VOIE DU TOEC",
+        "capacity": 20
+      },
+      {
+        "station_id": "237",
+        "name": "BELIN - CNES",
+        "lat": 43.562273,
+        "lon": 1.480912,
+        "address": "16 BIS AV EDOUARD BELIN FACE CNRS",
+        "capacity": 20
+      },
+      {
+        "station_id": "238",
+        "name": "HERBETTES - BUTTE",
+        "lat": 43.579341,
+        "lon": 1.47313,
+        "address": "FACE 48/58 CHEMIN DE LA BUTTE",
+        "capacity": 17
+      },
+      {
+        "station_id": "239",
+        "name": "LESPINET - HERBETTES",
+        "lat": 43.576637,
+        "lon": 1.470245,
+        "address": "ANGLE AVENUE DE LESPINET ET RUE GEORGES BIDAULT",
+        "capacity": 25
+      },
+      {
+        "station_id": "240",
+        "name": "PLACE JOB",
+        "lat": 43.616945,
+        "lon": 1.408383,
+        "address": "FACE 103 BIS ROUTE DE BLAGNAC",
+        "capacity": 18
+      },
+      {
+        "station_id": "241",
+        "name": "ESPAGNE - CHARPENTIER",
+        "lat": 43.575101,
+        "lon": 1.424227,
+        "address": "57 RTE D'ESPAGNE",
+        "capacity": 20
+      },
+      {
+        "station_id": "242",
+        "name": "PADER - FRONTON",
+        "lat": 43.63639,
+        "lon": 1.433072,
+        "address": "8 RUE HILAIRE PADER",
+        "capacity": 16
+      },
+      {
+        "station_id": "243",
+        "name": "ÉTATS-UNIS - FERRY",
+        "lat": 43.632734,
+        "lon": 1.431732,
+        "address": "FACE 97 AV DES ETATS-UNIS ANGLE JULES FERRY",
+        "capacity": 17
+      },
+      {
+        "station_id": "244",
+        "name": "RENAN - VITRY",
+        "lat": 43.635856,
+        "lon": 1.443828,
+        "address": "93 RUE ERNEST RENAN ANGLE RUE VITRY",
+        "capacity": 18
+      },
+      {
+        "station_id": "245",
+        "name": "GRANDE BRETAGNE - BADIOU",
+        "lat": 43.599732,
+        "lon": 1.415372,
+        "address": "103 BIS AV DE GRANDE BRETAGNE ANGLE RUE BADIOU",
+        "capacity": 19
+      },
+      {
+        "station_id": "246",
+        "name": "WAGNER - BRUNHES",
+        "lat": 43.603842,
+        "lon": 1.420002,
+        "address": "29 BD RICHARD WAGNER ANGLE BD JEAN BRUNHES",
+        "capacity": 20
+      },
+      {
+        "station_id": "247",
+        "name": "RTE DE LAUNAGUET - AUDIBERT",
+        "lat": 43.636446,
+        "lon": 1.438984,
+        "address": "FACE 112 RTE DE LAUNAGUET",
+        "capacity": 17
+      },
+      {
+        "station_id": "248",
+        "name": "ROSTAND - BOUQUETINS",
+        "lat": 43.641013,
+        "lon": 1.448524,
+        "address": "RUE DES BOUQUETINS ANGLE RUE EDMOND ROSTAND",
+        "capacity": 20
+      },
+      {
+        "station_id": "249",
+        "name": "ALBI - REINE",
+        "lat": 43.637842,
+        "lon": 1.464879,
+        "address": "147 RTE D'ALBI",
+        "capacity": 18
+      },
+      {
+        "station_id": "250",
+        "name": "11 NOVEMBRE - NÉGOGOUSSES",
+        "lat": 43.593052,
+        "lon": 1.414659,
+        "address": "RUE DU 11 NOVEMBRE FACE 45 RUE DU 14 JUILLET",
+        "capacity": 18
+      },
+      {
+        "station_id": "251",
+        "name": "JOLIMONT MÉTRO",
+        "lat": 43.61432,
+        "lon": 1.461721,
+        "address": "26 AV LEON BLUM ANGLE RUE LEON JOUHAUX",
+        "capacity": 13
+      },
+      {
+        "station_id": "252",
+        "name": "CATELLAN - CAZENEUVE",
+        "lat": 43.626914,
+        "lon": 1.444986,
+        "address": "RUE MARIE CLAIRE DE CATELLAN (10M AVANT LE PONT SNCF LE LONG DE LA PISTE CYCLABE)",
+        "capacity": 18
+      },
+      {
+        "station_id": "253",
+        "name": "ÉTATS-UNIS - CHARLAS",
+        "lat": 43.630519,
+        "lon": 1.43234,
+        "address": "FACE 74 AV DES ETATS-UNIS (GARAGE RENAULT TOULOUSE)",
+        "capacity": 20
+      },
+      {
+        "station_id": "254",
+        "name": "VESTREPAIN - LOT",
+        "lat": 43.583264,
+        "lon": 1.407055,
+        "address": "RUE DU LOT / 100M AVANT LA RUE VESTREPAIN",
+        "capacity": 18
+      },
+      {
+        "station_id": "255",
+        "name": "SELLIER - MOUETTES",
+        "lat": 43.576893,
+        "lon": 1.440049,
+        "address": "2 RUE DES MOUETTES / ANGLE ALL HENRI SELLIER",
+        "capacity": 16
+      },
+      {
+        "station_id": "256",
+        "name": "CITÉ DE L'HERS - ROTONDE",
+        "lat": 43.596636,
+        "lon": 1.483995,
+        "address": "4 RUE DE CARCASSONNE",
+        "capacity": 18
+      },
+      {
+        "station_id": "257",
+        "name": "CHÂT. DE L'HERS - FONTANELLES",
+        "lat": 43.600712,
+        "lon": 1.48356,
+        "address": "CH DU CHATEAU DE L'HERS / ANGLE CH FONTANELLES",
+        "capacity": 16
+      },
+      {
+        "station_id": "258",
+        "name": "ATLANTA - CAMBARD",
+        "lat": 43.629395,
+        "lon": 1.476186,
+        "address": "BD ATLANTA / ANGLE RUE CAMBARD",
+        "capacity": 18
+      },
+      {
+        "station_id": "259",
+        "name": "PLACE PAUL RICHÉ",
+        "lat": 43.647504,
+        "lon": 1.43286,
+        "address": "PL PAUL RICHE A COTE 231 AV DE FRONTON",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 20
+      },
+      {
+        "station_id": "260",
+        "name": "FRONTON - DUCLOS",
+        "lat": 43.644963,
+        "lon": 1.433998,
+        "address": "RUE LEONCE DUCLOS / ANGLE AV DE FRONTON FACE 26 IMP DU BARON",
+        "capacity": 18
+      },
+      {
+        "station_id": "261",
+        "name": "VAN DYCK - RAPHAËL",
+        "lat": 43.640631,
+        "lon": 1.440154,
+        "address": "DEVANT 6 RUE VAN DICK / FACE RUE RAPHAEL",
+        "capacity": 18
+      },
+      {
+        "station_id": "262",
+        "name": "ARTHAUD - NETWILLER",
+        "lat": 43.643358,
+        "lon": 1.455501,
+        "address": "RON?D-POINT NETWILLER - BORDEROUGE",
+        "capacity": 18
+      },
+      {
+        "station_id": "263",
+        "name": "LA CÉPIÈRE - BAYLET",
+        "lat": 43.584444,
+        "lon": 1.398745,
+        "address": "87 AV JEAN BAYLET / ANGLE CHEMIN CEPIERES SUR PARKING LYCEE POLYVALENT",
+        "capacity": 18
+      },
+      {
+        "station_id": "265",
+        "name": "RTE DE SEYSSES - LONDRES",
+        "lat": 43.568038,
+        "lon": 1.413363,
+        "address": "PASSAGE DU CANAL DE BORDELONGUE FACE 251 RTE DE SEYSSES",
+        "capacity": 18
+      },
+      {
+        "station_id": "266",
+        "name": "TOURAINE - AUVERGNE",
+        "lat": 43.573708,
+        "lon": 1.41394,
+        "address": "38 RUE DE LA TOURAINE",
+        "capacity": 20
+      },
+      {
+        "station_id": "267",
+        "name": "GONIN - GÉNIN",
+        "lat": 43.573895,
+        "lon": 1.483924,
+        "address": "2 IMP GASTON GENIN ANGLE RUE CLAUDE GONIN",
+        "capacity": 16
+      },
+      {
+        "station_id": "268",
+        "name": "PLACE JOSEPH BAYLAC",
+        "lat": 43.608597,
+        "lon": 1.397192,
+        "address": "PL DU DR JOSEPH BAYLAC ANGLE AV DES ARENES ROMAINES",
+        "capacity": 22
+      },
+      {
+        "station_id": "269",
+        "name": "PLACE JACQUES SAUVEGRAIN",
+        "lat": 43.589921,
+        "lon": 1.377827,
+        "address": "PL JACQUES SAUVEGRAIN / ANGLE AV DE LARDENNES",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 18
+      },
+      {
+        "station_id": "270",
+        "name": "TRENTIN - VERNE",
+        "lat": 43.623998,
+        "lon": 1.427823,
+        "address": "RUE JULES VERNE / ANGLE FACE 40 BD SILVIO TRENTIN",
+        "capacity": 16
+      },
+      {
+        "station_id": "271",
+        "name": "ANCELY TRAMWAY",
+        "lat": 43.619301,
+        "lon": 1.396986,
+        "address": "FACE 151 AV DES ARENES ROMAINES",
+        "capacity": 20
+      },
+      {
+        "station_id": "272",
+        "name": "ATLANTA - VASSEUR",
+        "lat": 43.635421,
+        "lon": 1.472855,
+        "address": "BD ATLANTA / FACE 31 RUE ANDRE VASSEUR",
+        "capacity": 17
+      },
+      {
+        "station_id": "273",
+        "name": "ST-SIMON - PASSERIEU",
+        "lat": 43.579135,
+        "lon": 1.392596,
+        "address": "RD PT LOUIS IZAR / ANGLE AV LOUIS ARISTE PASSERIEU",
+        "capacity": 18
+      },
+      {
+        "station_id": "274",
+        "name": "GALLIENI GARE",
+        "lat": 43.573998,
+        "lon": 1.419495,
+        "address": "FACE 296 RTE DE SEYSSES / HALTE SNCF GALLIENI - CANCEROPOLE",
+        "capacity": 18
+      },
+      {
+        "station_id": "275",
+        "name": "PLACE DES PRADETTES",
+        "lat": 43.58144,
+        "lon": 1.388774,
+        "address": "41 AV LOUIS ARISTE PASSERIEU / PL DES PRADETTES",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 17
+      },
+      {
+        "station_id": "276",
+        "name": "MARIN - REBOUL",
+        "lat": 43.581463,
+        "lon": 1.379769,
+        "address": "FACE 1 CHEMIN DU MARIN",
+        "capacity": 18
+      },
+      {
+        "station_id": "277",
+        "name": "ZAMENHOF",
+        "lat": 43.585431,
+        "lon": 1.377279,
+        "address": "10/12 RUE ZAMENHOF",
+        "capacity": 18
+      },
+      {
+        "station_id": "278",
+        "name": "ARÈNES ROMAINES TRAMWAY",
+        "lat": 43.614159,
+        "lon": 1.397008,
+        "address": "RD PT ANGLE AV DES ARENES ROMAINES RUE JEAN ESPITALIER",
+        "capacity": 18
+      },
+      {
+        "station_id": "279",
+        "name": "CASSELARDIT - ESPAGNO",
+        "lat": 43.613555,
+        "lon": 1.401417,
+        "address": "AV DE CASSELARDIT / ANGLE AV DU PR GUY ESPAGNO",
+        "capacity": 18
+      },
+      {
+        "station_id": "280",
+        "name": "CHARBONNIÈRE - PALMIERS",
+        "lat": 43.573732,
+        "lon": 1.448768,
+        "address": "RUE DE LA CHARBONNIERE ENTRE IMP AMPERE ET RUE DES PALMIERS",
+        "capacity": 18
+      },
+      {
+        "station_id": "281",
+        "name": "JARDIN NIEL",
+        "lat": 43.578687,
+        "lon": 1.446733,
+        "address": "FACE 80 RUE SAINT ROCH / ANGLE AC DU 14EME REGIMENT D'INFANTERIE",
+        "capacity": 18
+      },
+      {
+        "station_id": "282",
+        "name": "WAGNER - VIVALDI",
+        "lat": 43.606115,
+        "lon": 1.414755,
+        "address": "BD RICHARD WAGNER / ANGLE RUE ANTONIO VIVALDI",
+        "capacity": 18
+      },
+      {
+        "station_id": "283",
+        "name": "TROIS COCUS MÉTRO",
+        "lat": 43.638055,
+        "lon": 1.444344,
+        "address": "12 RUE DU COL PAUL PAILLOLE PL MICOULEAU",
+        "capacity": 20
+      },
+      {
+        "station_id": "284",
+        "name": "ATLANTA - AGDE",
+        "lat": 43.627013,
+        "lon": 1.477098,
+        "address": "67 RTE D'AGDE / RD PT DAVID FREIMAN",
+        "capacity": 15
+      },
+      {
+        "station_id": "285",
+        "name": "BALMA GRAMONT MÉTRO",
+        "lat": 43.628659,
+        "lon": 1.482629,
+        "address": "METRO GRAMONT / ANGLE RUE SAINT JEAN",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 18
+      },
+      {
+        "station_id": "286",
+        "name": "FONTAINES - BRUN",
+        "lat": 43.600241,
+        "lon": 1.42564,
+        "address": "40, rue des Fontaines\r\n",
+        "capacity": 13
+      },
+      {
+        "station_id": "287",
+        "name": "STADE TOULOUSAIN",
+        "lat": 43.620607,
+        "lon": 1.415125,
+        "address": "114 RUE DES TROENES / ANGLE STADE ERNEST WALLON",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 30
+      },
+      {
+        "station_id": "288",
+        "name": "METZ - MARCHANDS",
+        "lat": 43.600021,
+        "lon": 1.44293,
+        "address": "28 RUE DES MARCHANDS",
+        "capacity": 36
+      },
+      {
+        "station_id": "289",
+        "name": "BIARRITZ - CASSELARDIT",
+        "lat": 43.607189,
+        "lon": 1.409324,
+        "address": "18, avenue de Biarritz",
+        "capacity": 13
+      },
+      {
+        "station_id": "290",
+        "name": "AMIDONNIERS - DEBAT-PONSAN",
+        "lat": 43.606453,
+        "lon": 1.420798,
+        "address": "71, bis rue des amidonniers",
+        "capacity": 13
+      },
+      {
+        "station_id": "291",
+        "name": "ÎLE DU RAMIER TRAMWAY",
+        "lat": 43.592077,
+        "lon": 1.439829,
+        "address": "Carrefour pont Saint Michel  /  avenue du Grand Ramier, face Théâtre de verdure",
+        "capacity": 13
+      },
+      {
+        "station_id": "292",
+        "name": "ÎLE DU RAMIER - PASSERELLE POUJADE",
+        "lat": 43.588124,
+        "lon": 1.436312,
+        "address": "Rond point Michel Benech",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 13
+      },
+      {
+        "station_id": "293",
+        "name": "TASSIGNY - MOMBIOLA",
+        "lat": 43.578537,
+        "lon": 1.438375,
+        "address": "Face 11, rue Maria Mombiola / 50m avant l’annexe Mairie Empalot (« La brique rouge » )",
+        "capacity": 13
+      },
+      {
+        "station_id": "294",
+        "name": "ILE DU RAMIER - PASSERELLE CONTI",
+        "lat": 43.580259,
+        "lon": 1.434156,
+        "address": "ILE DU RAMIER - PASSERELLE CONTI",
+        "capacity": 13
+      },
+      {
+        "station_id": "295",
+        "name": "PLACE GUY HERSANT",
+        "lat": 43.577461,
+        "lon": 1.442964,
+        "address": "Place Guy Hersant, angle rue Alfred Rambaud",
+        "capacity": 13
+      },
+      {
+        "station_id": "296",
+        "name": "ESPAGNE-LANGLADE",
+        "lat": 43.571858,
+        "lon": 1.42447,
+        "address": "89, route d'Espagne",
+        "capacity": 13
+      },
+      {
+        "station_id": "297",
+        "name": "AV. DE MURET - DUBOUL",
+        "lat": 43.57981,
+        "lon": 1.4237,
+        "address": "3, rue Axel Duboul - Carrefour avenue de Muret",
+        "capacity": 13
+      },
+      {
+        "station_id": "298",
+        "name": "RTE DE SEYSSES - C. DE VIÇOSE",
+        "lat": 43.57179,
+        "lon": 1.418239,
+        "address": "Route de Seysses - C. de Viçose",
+        "capacity": 13
+      },
+      {
+        "station_id": "299",
+        "name": "VOSGES - BEAUCE",
+        "lat": 43.581868,
+        "lon": 1.419446,
+        "address": "66, rue de la Beauce",
+        "capacity": 13
+      },
+      {
+        "station_id": "300",
+        "name": "VESTREPAIN - BAGATELLE",
+        "lat": 43.584492,
+        "lon": 1.411057,
+        "address": "7, chemin de Bagatelle",
+        "capacity": 13
+      },
+      {
+        "station_id": "301",
+        "name": "LARDENNE - BROMBACH",
+        "lat": 43.592951,
+        "lon": 1.40379,
+        "address": "50 avenue de Lardenne",
+        "capacity": 13
+      },
+      {
+        "station_id": "302",
+        "name": "JARDIN DU BARRY",
+        "lat": 43.601379,
+        "lon": 1.403879,
+        "address": "Carrefour rue du Docteur Suzanne Noel / Voie du TOEC, face jardins du Barry",
+        "capacity": 13
+      },
+      {
+        "station_id": "304",
+        "name": "CARTOUCHERIE TRAMWAY",
+        "lat": 43.602797,
+        "lon": 1.408133,
+        "address": "Place de la Charte des Libertes (le long du tram)",
+        "capacity": 12
+      },
+      {
+        "station_id": "305",
+        "name": "ZÉNITH TRAMWAY",
+        "lat": 43.601356,
+        "lon": 1.411617,
+        "address": "Face 151, avenue de Grande-Bretagne / Massonié",
+        "capacity": 13
+      },
+      {
+        "station_id": "306",
+        "name": "DEODAT - ARCS ST-CYPRIEN",
+        "lat": 43.590111,
+        "lon": 1.423003,
+        "address": "13 et 15, rue des Arcs Saint-Cyprien",
+        "capacity": 13
+      },
+      {
+        "station_id": "307",
+        "name": "SUISSE - POLITKOVSKAIA",
+        "lat": 43.61324,
+        "lon": 1.419932,
+        "address": "38, boulevard de Suisse",
+        "capacity": 13
+      },
+      {
+        "station_id": "308",
+        "name": "SEPT DENIERS - TROÈNES",
+        "lat": 43.620967,
+        "lon": 1.412027,
+        "address": "Carrefour des Troènes - 76 chemin des Sept Deniers",
+        "capacity": 13
+      },
+      {
+        "station_id": "309",
+        "name": "RTE DE BLAGNAC - ROQUES",
+        "lat": 43.622042,
+        "lon": 1.405735,
+        "address": "Face 149, route de Blagnac / Rond-point Pierre Mounicq",
+        "capacity": 13
+      },
+      {
+        "station_id": "310",
+        "name": "DALI - BONIN",
+        "lat": 43.626244,
+        "lon": 1.411083,
+        "address": "3, rue Louis Bonin",
+        "capacity": 13
+      },
+      {
+        "station_id": "311",
+        "name": "ETATS-UNIS - GLACIÈRE",
+        "lat": 43.646471,
+        "lon": 1.426013,
+        "address": "Face 67, rue de la Glacière - carrefour rue de la Glacière / avenue des Etats-Unis",
+        "capacity": 13
+      },
+      {
+        "station_id": "312",
+        "name": "BASE DE LOISIRS SESQUIÈRES",
+        "lat": 43.651836,
+        "lon": 1.419854,
+        "address": "Lac de Sesquières  - Devant l'entrée Wam Park",
+        "capacity": 13
+      },
+      {
+        "station_id": "313",
+        "name": "RUE DE FENOUILLET - VERNE",
+        "lat": 43.628271,
+        "lon": 1.425653,
+        "address": "58, rue de Fenouillet",
+        "capacity": 13
+      },
+      {
+        "station_id": "314",
+        "name": "EGLISE DE LALANDE",
+        "lat": 43.646547,
+        "lon": 1.431152,
+        "address": "",
+        "capacity": 13
+      },
+      {
+        "station_id": "315",
+        "name": "FRONTON - LAPIN",
+        "lat": 43.651176,
+        "lon": 1.432557,
+        "address": "269, Avenue de Fronton\r\n",
+        "capacity": 13
+      },
+      {
+        "station_id": "316",
+        "name": "FRONTON - HAON",
+        "lat": 43.656202,
+        "lon": 1.432254,
+        "address": "Rond-point Maurice Espitalier - carrefour avenue de Fronton, rue André Haon",
+        "capacity": 13
+      },
+      {
+        "station_id": "317",
+        "name": "GAUSSEN - CROIX-BÉNITE",
+        "lat": 43.662024,
+        "lon": 1.434622,
+        "address": "Face, 22 - 24 boulevard Henri Gaussen",
+        "capacity": 13
+      },
+      {
+        "station_id": "318",
+        "name": "EGLISE AUCAMVILLE",
+        "lat": 43.665305,
+        "lon": 1.430323,
+        "address": "448, route / avenue de Fronton",
+        "capacity": 13
+      },
+      {
+        "station_id": "319",
+        "name": "RTE DE LAUNAGUET - DELBO",
+        "lat": 43.651318,
+        "lon": 1.438377,
+        "address": "Rond-point, 50m avant 283, route de Launaguet",
+        "capacity": 13
+      },
+      {
+        "station_id": "320",
+        "name": "PARC DE LA VIOLETTE",
+        "lat": 43.654363,
+        "lon": 1.438131,
+        "address": "Face 14, rue Virginia Wolf",
+        "capacity": 13
+      },
+      {
+        "station_id": "321",
+        "name": "NÉGRENEYS - ANGES",
+        "lat": 43.620308,
+        "lon": 1.440963,
+        "address": "57, rue des Anges",
+        "capacity": 13
+      },
+      {
+        "station_id": "323",
+        "name": "RAYNAL - ALLIER",
+        "lat": 43.631641,
+        "lon": 1.454852,
+        "address": "Face 81, chemin Raynal",
+        "capacity": 13
+      },
+      {
+        "station_id": "324",
+        "name": "ROSTAND - DURAND",
+        "lat": 43.642299,
+        "lon": 1.449624,
+        "address": "Face 113, rue Edmond Rostand",
+        "capacity": 13
+      },
+      {
+        "station_id": "325",
+        "name": "PLACE ROGER LOUPIAC",
+        "lat": 43.648121,
+        "lon": 1.450024,
+        "address": "Place Roger Loupiac - face 1 et 3, rue Thérèse Avondo\r\n",
+        "capacity": 13
+      },
+      {
+        "station_id": "326",
+        "name": "EBELOT - PUJIBET",
+        "lat": 43.638044,
+        "lon": 1.457716,
+        "address": "Face 55, rue Henri Ebelot (sur le rond-point)",
+        "capacity": 13
+      },
+      {
+        "station_id": "327",
+        "name": "ROSTAND - EIDENBENZ",
+        "lat": 43.644197,
+        "lon": 1.463566,
+        "address": "32, 34 rue Edmond Rostand",
+        "capacity": 13
+      },
+      {
+        "station_id": "328",
+        "name": "NICOL - VASSEUR",
+        "lat": 43.633437,
+        "lon": 1.469891,
+        "address": "2, rue Vasseur",
+        "capacity": 13
+      },
+      {
+        "station_id": "329",
+        "name": "ATLANTA - CAUNES",
+        "lat": 43.64046,
+        "lon": 1.469314,
+        "address": "Face dépot Tisséo sur avenue Atlanta",
+        "capacity": 13
+      },
+      {
+        "station_id": "330",
+        "name": "LAPUJADE - BARTOLI",
+        "lat": 43.622099,
+        "lon": 1.453553,
+        "address": "Face 72, chemin de  Lapujade",
+        "capacity": 13
+      },
+      {
+        "station_id": "331",
+        "name": "LAVAUR - DALOU",
+        "lat": 43.622578,
+        "lon": 1.462668,
+        "address": "41, rue Jules Dalou - Angle avenue Lavaur",
+        "capacity": 13
+      },
+      {
+        "station_id": "332",
+        "name": "PLACE ROSINE BET",
+        "lat": 43.623355,
+        "lon": 1.467742,
+        "address": "4, place Rosine Bet",
+        "capacity": 13
+      },
+      {
+        "station_id": "333",
+        "name": "CH. DE TOURNEFEUILLE - LESBRE",
+        "lat": 43.597281,
+        "lon": 1.369665,
+        "address": "Parking carrefour, chemin de Tournefeuille / impasse Michel Lesbre",
+        "capacity": 13
+      },
+      {
+        "station_id": "334",
+        "name": "GLOIRE - ST-BERTRAND",
+        "lat": 43.605557,
+        "lon": 1.458483,
+        "address": "1, rue Saint-Bertrand",
+        "capacity": 13
+      },
+      {
+        "station_id": "335",
+        "name": "COLONNE - REILLE",
+        "lat": 43.609218,
+        "lon": 1.459543,
+        "address": "Face 5, rue Maréchal Honoré Reille",
+        "capacity": 13
+      },
+      {
+        "station_id": "336",
+        "name": "COLONNE - SALONIQUE",
+        "lat": 43.610556,
+        "lon": 1.464953,
+        "address": "Face 90, avenue de la Colonne, 30 m après angle rue de Caillibens",
+        "capacity": 13
+      },
+      {
+        "station_id": "337",
+        "name": "CHIRAC - HEREDIA",
+        "lat": 43.612555,
+        "lon": 1.467544,
+        "address": "1, rue David Elbaz",
+        "capacity": 13
+      },
+      {
+        "station_id": "338",
+        "name": "GUILLAUMET - CEAT",
+        "lat": 43.61445,
+        "lon": 1.469636,
+        "address": "Face 24, avenue Henri Guillaumet (nouveau quartier)",
+        "capacity": 13
+      },
+      {
+        "station_id": "339",
+        "name": "GLOIRE - SAVIGNAC",
+        "lat": 43.605899,
+        "lon": 1.463601,
+        "address": "57, rue Labat de Savignac, 40m après angle rue de la Gloire",
+        "capacity": 13
+      },
+      {
+        "station_id": "341",
+        "name": "SOUPETARD - GENÊTS",
+        "lat": 43.610183,
+        "lon": 1.472401,
+        "address": "42, rue Soupetard",
+        "capacity": 13
+      },
+      {
+        "station_id": "342",
+        "name": "GLOIRE - CHIRAC",
+        "lat": 43.606975,
+        "lon": 1.473375,
+        "address": "Face 2 bis, chemin de Pelleport",
+        "capacity": 13
+      },
+      {
+        "station_id": "343",
+        "name": "CHAUBET - CHIRAC",
+        "lat": 43.604681,
+        "lon": 1.474453,
+        "address": "",
+        "capacity": 13
+      },
+      {
+        "station_id": "344",
+        "name": "RIEUX - VAISSE",
+        "lat": 43.596256,
+        "lon": 1.462071,
+        "address": "58, avenue Jean Rieux",
+        "capacity": 13
+      },
+      {
+        "station_id": "345",
+        "name": "CASTRES - LASBORDES",
+        "lat": 43.594671,
+        "lon": 1.488444,
+        "address": "Parking face 241, avenue de Castres",
+        "capacity": 13
+      },
+      {
+        "station_id": "346",
+        "name": "CITÉ DE L'ESPACE",
+        "lat": 43.586894,
+        "lon": 1.492386,
+        "address": "Parking Cité de l’Espace le long de l’avenue Jean Gonord",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 13
+      },
+      {
+        "station_id": "347",
+        "name": "REVEL - ARMENTIÈRES",
+        "lat": 43.573815,
+        "lon": 1.491081,
+        "address": "Face, 1 rue d'Armentières",
+        "capacity": 13
+      },
+      {
+        "station_id": "348",
+        "name": "REVEL - LABÈGE",
+        "lat": 43.570862,
+        "lon": 1.49832,
+        "address": ", Rond-point route de Revel / route de Labège face Jardiland et Midas,",
+        "capacity": 13
+      },
+      {
+        "station_id": "349",
+        "name": "REVEL - NOUADHIBOU",
+        "lat": 43.567084,
+        "lon": 1.506071,
+        "address": "100m après 238, route de Revel - Carrefour rond-point route de Revel/rue Nouadhibou",
+        "capacity": 13
+      },
+      {
+        "station_id": "350",
+        "name": "PISTE DES GÉANTS - TERECHKOVA",
+        "lat": 43.576029,
+        "lon": 1.473627,
+        "address": "Place de l’Aéropostale, rue Valentina Terechkova Montaudran",
+        "capacity": 13
+      },
+      {
+        "station_id": "351",
+        "name": "L'ENVOL DES PIONNIERS",
+        "lat": 43.574602,
+        "lon": 1.476596,
+        "address": "Sur piste cyclabe, carrefour 7, rue Jacqueline Auriol (Montaudran) / rue Beppo de Massini",
+        "capacity": 13
+      },
+      {
+        "station_id": "352",
+        "name": "MONTAUDRAN GARE",
+        "lat": 43.573248,
+        "lon": 1.48022,
+        "address": "10, avenue de l’aérodrome de Montaudran",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 13
+      },
+      {
+        "station_id": "353",
+        "name": "RODIER - PRANVILLE-NÉGRIN",
+        "lat": 43.569898,
+        "lon": 1.485423,
+        "address": "11, rue Jean Rodier",
+        "capacity": 13
+      },
+      {
+        "station_id": "354",
+        "name": "DAURAT - CORNEMONT",
+        "lat": 43.56481,
+        "lon": 1.488996,
+        "address": "2, rue René Cornemont - Face rond-point Henri Erable",
+        "capacity": 13
+      },
+      {
+        "station_id": "355",
+        "name": "COSMONAUTES - GRIFFON",
+        "lat": 43.559298,
+        "lon": 1.495916,
+        "address": "32 et 34 rue des Cosmonautes",
+        "capacity": 13
+      },
+      {
+        "station_id": "356",
+        "name": "PLACE NINA SIMONE",
+        "lat": 43.567293,
+        "lon": 1.500385,
+        "address": "Route de Labège (quartier en construction)",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 13
+      },
+      {
+        "station_id": "357",
+        "name": "BELIN - TARFAYA",
+        "lat": 43.562329,
+        "lon": 1.48431,
+        "address": "23, avenue Edouard Belin",
+        "capacity": 13
+      },
+      {
+        "station_id": "358",
+        "name": "SALADE PONSAN - CÔTEAUX",
+        "lat": 43.567744,
+        "lon": 1.451907,
+        "address": "2, rue Thomas Edison",
+        "capacity": 13
+      },
+      {
+        "station_id": "359",
+        "name": "SALADE PONSAN - SAHUQUE",
+        "lat": 43.563636,
+        "lon": 1.45531,
+        "address": "Face au 49, chemin salade Ponsan",
+        "capacity": 13
+      },
+      {
+        "station_id": "360",
+        "name": "SALADE PONSAN - VALLON",
+        "lat": 43.560168,
+        "lon": 1.457394,
+        "address": "Croisement chemin salade Ponsan / Chemin du Vallon",
+        "capacity": 13
+      },
+      {
+        "station_id": "361",
+        "name": "POUVOURVILLE - BOURDETTE",
+        "lat": 43.5552,
+        "lon": 1.457169,
+        "address": "Croisement chemin de Pouvourville / Chemin de la Bourdette",
+        "capacity": 13
+      },
+      {
+        "station_id": "362",
+        "name": "POUVOURVILLE - GOSCINNY",
+        "lat": 43.550243,
+        "lon": 1.457515,
+        "address": "Chemin de Pouvourville, face rue de la Cocagne",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 13
+      },
+      {
+        "station_id": "363",
+        "name": "NARRADE - FONDEVILLE",
+        "lat": 43.549322,
+        "lon": 1.454015,
+        "address": "Face 37, chemin de Narrade - Pouvourville",
+        "capacity": 13
+      },
+      {
+        "station_id": "364",
+        "name": "ESPAGNE - GIRONIS",
+        "lat": 43.563741,
+        "lon": 1.425433,
+        "address": "Rond-point Hélène Rouch – route d’Espagne face clinique Médipôle",
+        "capacity": 13
+      },
+      {
+        "station_id": "365",
+        "name": "ESPAGNE - CURIEN",
+        "lat": 43.558038,
+        "lon": 1.426581,
+        "address": "2, avenue Hubert Curien face entrée Pierre Fabre et IUCT",
+        "capacity": 13
+      },
+      {
+        "station_id": "366",
+        "name": "ONCOPOLE TÉLÉO",
+        "lat": 43.554843,
+        "lon": 1.428013,
+        "address": "avenue Irène Joliot Curie",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 13
+      },
+      {
+        "station_id": "367",
+        "name": "PARC DE GIRONIS",
+        "lat": 43.564067,
+        "lon": 1.413739,
+        "address": "Parking salle des fêtes de Lafourguette",
+        "capacity": 13
+      },
+      {
+        "station_id": "368",
+        "name": "RTE DE SEYSSES - BELLEFONTAINE",
+        "lat": 43.562792,
+        "lon": 1.406829,
+        "address": "Face 10, allée Bellefontaine",
+        "capacity": 13
+      },
+      {
+        "station_id": "369",
+        "name": "ROUTE DE SEYSSES - RÉGIS",
+        "lat": 43.548387,
+        "lon": 1.390449,
+        "address": "",
+        "capacity": 13
+      },
+      {
+        "station_id": "370",
+        "name": "PLACE DES TIBAOUS",
+        "lat": 43.550424,
+        "lon": 1.386158,
+        "address": "Face 11 et 13, rue Missak Manouchian",
+        "capacity": 13
+      },
+      {
+        "station_id": "371",
+        "name": "REYNERIE - LONDRES",
+        "lat": 43.569148,
+        "lon": 1.408256,
+        "address": "9, rue de Londres",
+        "capacity": 13
+      },
+      {
+        "station_id": "372",
+        "name": "REYNERIE MÉTRO",
+        "lat": 43.571497,
+        "lon": 1.402857,
+        "address": "Angle rue André Maginot / Place André Abbal",
+        "capacity": 13
+      },
+      {
+        "station_id": "373",
+        "name": "REYNERIE - LIZOP",
+        "lat": 43.566932,
+        "lon": 1.400526,
+        "address": "",
+        "capacity": 13
+      },
+      {
+        "station_id": "375",
+        "name": "LESTAND - PERGAUD",
+        "lat": 43.564715,
+        "lon": 1.395886,
+        "address": "32, chemin de Lestang – passage Louis Pergaud",
+        "capacity": 13
+      },
+      {
+        "station_id": "376",
+        "name": "EISENHOWER - LESTANG",
+        "lat": 43.559962,
+        "lon": 1.394427,
+        "address": "Avenue du général Eisenhower, face au collège Saint Simon",
+        "capacity": 13
+      },
+      {
+        "station_id": "377",
+        "name": "MONLONG - LOUP",
+        "lat": 43.554796,
+        "lon": 1.387295,
+        "address": "Face 55, bis chemin du loup",
+        "capacity": 13
+      },
+      {
+        "station_id": "378",
+        "name": "BASSO CAMBO MÉTRO",
+        "lat": 43.569972,
+        "lon": 1.391809,
+        "address": "P+R Métro Basso, entre Parc à vélo et parking aérien",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 13
+      },
+      {
+        "station_id": "379",
+        "name": "MAFFRE - BASSO CAMBO",
+        "lat": 43.561453,
+        "lon": 1.384967,
+        "address": "Rue Robert Maffre, face 123, chemin de Basso Cambo",
+        "capacity": 13
+      },
+      {
+        "station_id": "380",
+        "name": "EGLISE SAINT-SIMON",
+        "lat": 43.557175,
+        "lon": 1.381013,
+        "address": "Face 2, place de l’Eglise – Face Caisse d’épargne",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 13
+      },
+      {
+        "station_id": "381",
+        "name": "LIFFARD - RÈGUELONGUE",
+        "lat": 43.55978,
+        "lon": 1.37828,
+        "address": "Liffard - Règuelongue",
+        "capacity": 13
+      },
+      {
+        "station_id": "382",
+        "name": "LIFFARD - SAINT-SIMON",
+        "lat": 43.564413,
+        "lon": 1.375571,
+        "address": "Face 66, chemin de Liffard",
+        "capacity": 13
+      },
+      {
+        "station_id": "383",
+        "name": "PARC DE LA MOUNÈDE",
+        "lat": 43.572131,
+        "lon": 1.38317,
+        "address": "8, rue Roger Camboulives",
+        "capacity": 13
+      },
+      {
+        "station_id": "384",
+        "name": "GUILHERMY - LAS BRUGUES",
+        "lat": 43.567628,
+        "lon": 1.371151,
+        "address": "",
+        "capacity": 13
+      },
+      {
+        "station_id": "385",
+        "name": "VITARELLES - FRONDE",
+        "lat": 43.587323,
+        "lon": 1.39462,
+        "address": "21, chemin de la Fronde",
+        "capacity": 13
+      },
+      {
+        "station_id": "386",
+        "name": "BORDEBLANCHE - BROUSSIN",
+        "lat": 43.582717,
+        "lon": 1.386115,
+        "address": "16, chemin de Bordeblanche",
+        "capacity": 13
+      },
+      {
+        "station_id": "387",
+        "name": "CORIOLIS - DUPOUY",
+        "lat": 43.578809,
+        "lon": 1.379975,
+        "address": "Avenue Gaspard Coriolis carrefour rue du professeur Gaston Dupouy",
+        "capacity": 13
+      },
+      {
+        "station_id": "388",
+        "name": "LARDENNE - CALQUET",
+        "lat": 43.593736,
+        "lon": 1.391125,
+        "address": "Face au 145, avenue de Lardenne / Chemin de Calquet",
+        "capacity": 13
+      },
+      {
+        "station_id": "389",
+        "name": "EGLISE - LARDENNE",
+        "lat": 43.591193,
+        "lon": 1.384961,
+        "address": "199, avenue de Lardenne",
+        "capacity": 13
+      },
+      {
+        "station_id": "390",
+        "name": "CAPELLES - ECOLE VÉTÉRINAIRE",
+        "lat": 43.601523,
+        "lon": 1.384712,
+        "address": "",
+        "capacity": 13
+      },
+      {
+        "station_id": "391",
+        "name": "LARDENNE GARE",
+        "lat": 43.597343,
+        "lon": 1.383108,
+        "address": "Face 10, chemin de Capelles",
+        "capacity": 13
+      },
+      {
+        "station_id": "392",
+        "name": "CASSELARDIT - DUCIS",
+        "lat": 43.609739,
+        "lon": 1.406035,
+        "address": "",
+        "capacity": 13
+      },
+      {
+        "station_id": "393",
+        "name": "HÔPITAL PURPAN",
+        "lat": 43.60768,
+        "lon": 1.402173,
+        "address": "Avenue du Professeur Jean Dausset – carrefour Tram / entrée de l’hôpital Paule de Viguier",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 13
+      },
+      {
+        "station_id": "394",
+        "name": "BAYONNE - FLAMBÈRE",
+        "lat": 43.608267,
+        "lon": 1.389792,
+        "address": "73, route de Bayonne",
+        "capacity": 13
+      },
+      {
+        "station_id": "395",
+        "name": "BAYONNE - SENTENAC",
+        "lat": 43.608999,
+        "lon": 1.379956,
+        "address": "Parking face 1, rue René Sentenac (rond-point)",
+        "capacity": 13
+      },
+      {
+        "station_id": "396",
+        "name": "FOURNIER - JARDINERIE",
+        "lat": 43.606486,
+        "lon": 1.36915,
+        "address": "Rue Alain Fournier",
+        "capacity": 13
+      },
+      {
+        "station_id": "397",
+        "name": "NÉGO SAOUMOS - ZIEGLER",
+        "lat": 43.605637,
+        "lon": 1.364053,
+        "address": "50m avant 5, rue Négo Saoumos",
+        "capacity": 13
+      },
+      {
+        "station_id": "398",
+        "name": "MARTRE - CAULET",
+        "lat": 43.606204,
+        "lon": 1.355664,
+        "address": "6, rue de Caulet - Carrefour rue de Caulet / rue Marius Tercé",
+        "capacity": 13
+      },
+      {
+        "station_id": "399",
+        "name": "CH. DE TOURNEFEUILLE - BOURIETTE",
+        "lat": 43.605078,
+        "lon": 1.376499,
+        "address": "Parking, 212 chemin de Tournefeuille",
+        "capacity": 13
+      },
+      {
+        "station_id": "400",
+        "name": "ST-MARTIN-DU-TOUCH  GARE",
+        "lat": 43.600614,
+        "lon": 1.372218,
+        "address": "4, rue Marie Louise Dissard (sur la contre allée face au parking de la halte)",
+        "capacity": 13
+      },
+      {
+        "station_id": "401",
+        "name": "MOULIS - CROIX-BÉNITE",
+        "lat": 43.664331,
+        "lon": 1.434191,
+        "address": "71, chemin de Moulis\r\n",
+        "capacity": 12
+      },
+      {
+        "station_id": "402",
+        "name": "GRYNFOGEL - GAILLARDIE",
+        "lat": 43.579985,
+        "lon": 1.37018,
+        "address": "Face 130, Chemin de Gaillardie \r\n",
+        "capacity": 16
+      },
+      {
+        "station_id": "403",
+        "name": "NARBONNE - CLOTASSES",
+        "lat": 43.553468,
+        "lon": 1.468265,
+        "address": "271, route de Narbonne \r\n",
+        "capacity": 16
+      },
+      {
+        "station_id": "406",
+        "name": "LARDENNE - MAXWELL",
+        "lat": 43.590272,
+        "lon": 1.367674,
+        "address": "Face 343, avenue de Lardenne et du groupe scolaire Emilie Chatelet \r\n",
+        "capacity": 16
+      },
+      {
+        "station_id": "407",
+        "name": "MONSO - INP",
+        "lat": 43.556202,
+        "lon": 1.503571,
+        "address": "6, allée Emile Monso - Parking face accueil INPT et Institut pour une culture de Sécurité Industrielle\r\n",
+        "capacity": 16
+      },
+      {
+        "station_id": "408",
+        "name": "BRUNAUD - CEAT",
+        "lat": 43.617615,
+        "lon": 1.466289,
+        "address": "Face 76, avenue Yves Brunaud - Toulouse\r\n",
+        "capacity": 16
+      },
+      {
+        "station_id": "410",
+        "name": "PLACE MARCEL BOUILLOUX",
+        "lat": 43.572097,
+        "lon": 1.478675,
+        "address": "Place Marcel Bouilloux - Lafont 1 avenue de l’aérodrome de Montaudran Toulouse\r\n",
+        "capacity": 16
+      },
+      {
+        "station_id": "411",
+        "name": "PISCINE NAKACHE",
+        "lat": 43.585921,
+        "lon": 1.437868,
+        "address": "Croisement avenue du Pr. Camille soula, allée Jacques Lacassagne et Gabriel Biénès\r\n",
+        "capacity": 16
+      },
+      {
+        "station_id": "412",
+        "name": "PARC DE LA POUDRERIE",
+        "lat": 43.576697,
+        "lon": 1.43429,
+        "address": "Face 8 et 9 chemin de la loge Ile du Ramier - Toulouse",
+        "capacity": 16
+      },
+      {
+        "station_id": "6001",
+        "name": "ARÈNES - AÉROSTIERS",
+        "lat": 43.609908,
+        "lon": 1.489803,
+        "address": "1, avenue des Arènes, face arrêt Tisséo « Aérostiers » - Balma\r\n",
+        "capacity": 16
+      },
+      {
+        "station_id": "5001",
+        "name": "MÉTRO RAMONVILLE",
+        "lat": 43.55563,
+        "lon": 1.476132,
+        "address": "Avenue Flora Tristan - Métro Ramonville\r\n",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 16
+      },
+      {
+        "station_id": "5002",
+        "name": "TOLOSANE - POUCIQUOT",
+        "lat": 43.551101,
+        "lon": 1.469875,
+        "address": "25, avenue Tolosane – Ramonville\r\n",
+        "capacity": 16
+      },
+      {
+        "station_id": "5003",
+        "name": "MAIRIE  RAMONVILLE",
+        "lat": 43.546064,
+        "lon": 1.474738,
+        "address": "Place de la mairie - Ramonville\r\n",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 16
+      },
+      {
+        "station_id": "5004",
+        "name": "MÉDIATHÈQUE",
+        "lat": 43.548859,
+        "lon": 1.477414,
+        "address": "Face 9, allée Georges Pompidou - Ramonville\r\n",
+        "capacity": 16
+      },
+      {
+        "station_id": "5005",
+        "name": "TOLOSANE - DE FRANCE",
+        "lat": 43.543115,
+        "lon": 1.477417,
+        "address": "Face 1, rue de France - Ramonville\r\n",
+        "capacity": 16
+      },
+      {
+        "station_id": "4001",
+        "name": "OCCITANE - SIENNE",
+        "lat": 43.550278,
+        "lon": 1.501549,
+        "address": "52, rue L’Occitane – Labège \r\n",
+        "capacity": 16
+      },
+      {
+        "station_id": "4002",
+        "name": "LABÈGE INNOPOLE GARE",
+        "lat": 43.547467,
+        "lon": 1.51246,
+        "address": "Parking proche gare SNCF Innopole et Parc à vélo - Labège\r\n",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 16
+      },
+      {
+        "station_id": "4003",
+        "name": "OCCITANE - MARCO POLO",
+        "lat": 43.542949,
+        "lon": 1.508834,
+        "address": "Face 1202, rue L’Occitane – Labège (à côté de Hife Toulouse – résidence de coliving) – Labège \r\n",
+        "capacity": 16
+      },
+      {
+        "station_id": "3001",
+        "name": "AURIOL - MUSSET",
+        "lat": 43.588092,
+        "lon": 1.354191,
+        "address": "Face 51/53, boulevard Vincent Auriol – devant centre commercial de Tournefeuille\r\n",
+        "capacity": 16
+      },
+      {
+        "station_id": "3002",
+        "name": "DOUMERGUE - DAUDET",
+        "lat": 43.586113,
+        "lon": 1.352169,
+        "address": "Face 142, rue Gaston Doumergue - Tournefeuille\r\n",
+        "capacity": 16
+      },
+      {
+        "station_id": "3003",
+        "name": "TOURNEFEUILLE  MAIRIE",
+        "lat": 43.583665,
+        "lon": 1.346042,
+        "address": "\"Place de la mairie de Tournefeuille - face 69, rue Gaston Doumergue - Tournefeuille\"\r\n",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 16
+      },
+      {
+        "station_id": "3004",
+        "name": "MONTEL - DOUMERGUE",
+        "lat": 43.585029,
+        "lon": 1.342821,
+        "address": "17 Bd. Eugène Montel - Tournefeuille\r\n",
+        "capacity": 16
+      },
+      {
+        "station_id": "2001",
+        "name": "VELASQUEZ - TAMARIS",
+        "lat": 43.621004,
+        "lon": 1.390347,
+        "address": "Entrée Airbus - Carrefour rue Velasquez – rue Tamaris - Blagnac\r\n",
+        "capacity": 16
+      },
+      {
+        "station_id": "2002",
+        "name": "PLAN DU PORT",
+        "lat": 43.624831,
+        "lon": 1.399657,
+        "address": "Face n° 2 et 4 Place Le Plan du Port - Blagnac\r\n",
+        "capacity": 16
+      },
+      {
+        "station_id": "2003",
+        "name": "SERVANTY AIRBUS TRAMWAY",
+        "lat": 43.624972,
+        "lon": 1.392925,
+        "address": "Face n°44, avenue Lucien Servanty - Blagnac\r\n",
+        "capacity": 16
+      },
+      {
+        "station_id": "2004",
+        "name": "GRENADE - GAUGUIN",
+        "lat": 43.641431,
+        "lon": 1.387603,
+        "address": "Face 2, rue Claude Monet - Blagnac\r\n",
+        "capacity": 16
+      },
+      {
+        "station_id": "2005",
+        "name": "DAURAT - GROUPE D'OR",
+        "lat": 43.629692,
+        "lon": 1.379616,
+        "address": "Face n°13, avenue Didier Daurat - Blagnac\r\n",
+        "capacity": 16
+      },
+      {
+        "station_id": "2006",
+        "name": "AÉROPORT TRAMWAY",
+        "lat": 43.632018,
+        "lon": 1.375287,
+        "address": "Terminus tramway aéroport - Blagnac\r\n",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 20
+      },
+      {
+        "station_id": "2007",
+        "name": "BLAGNAC MAIRIE",
+        "lat": 43.634559,
+        "lon": 1.397157,
+        "address": "Place Jean-Louis Puig, face mairie - Blagnac\r\n",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 16
+      },
+      {
+        "station_id": "2008",
+        "name": "PASTEUR - LAVOISIER",
+        "lat": 43.634625,
+        "lon": 1.394706,
+        "address": "26, rue Pasteur – Face La poste sur rue du 19 mars 1962 - Blagnac\r\n",
+        "capacity": 16
+      },
+      {
+        "station_id": "2009",
+        "name": "PLACE DU RELAIS TRAMWAY",
+        "lat": 43.636972,
+        "lon": 1.39127,
+        "address": "Parking face 46, rue de Bûches - Blagnac\r\n",
+        "capacity": 16
+      },
+      {
+        "station_id": "2010",
+        "name": "ODYSSUD RITOURET TRAMWAY",
+        "lat": 43.635559,
+        "lon": 1.384149,
+        "address": "3, avenue des tilleuls face Brasserie du Parc  - Blagnac\r\n",
+        "capacity": 16
+      },
+      {
+        "station_id": "2011",
+        "name": "PATINOIRE BARRADELS TRAMWAY",
+        "lat": 43.641052,
+        "lon": 1.38325,
+        "address": "Parking de la patinoire municipale Jacques Raynaud - Blagnac\r\n",
+        "capacity": 16
+      },
+      {
+        "station_id": "2012",
+        "name": "PLACE GEORGES BRASSENS",
+        "lat": 43.64883,
+        "lon": 1.376338,
+        "address": "Parking, face écoles Louis Weidknnet - Place Georges Brassens - Blagnac\r\n",
+        "capacity": 16
+      },
+      {
+        "station_id": "2013",
+        "name": "ANDROMÈDE LYCÉE TRAMWAY",
+        "lat": 43.654817,
+        "lon": 1.375528,
+        "address": "Face 18, boulevard Alain Savary et face Storting village - Blagnac\r\n",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 16
+      },
+      {
+        "station_id": "2014",
+        "name": "AV. DU PARC - GUYENNE",
+        "lat": 43.632311,
+        "lon": 1.388446,
+        "address": "Av. du Parc - Guyenne\r\n",
+        "capacity": 16
+      },
+      {
+        "station_id": "1001",
+        "name": "AUCAMVILLE MAIRIE",
+        "lat": 43.667507,
+        "lon": 1.429317,
+        "address": "101, Route de fronton - Aucamville\r\n",
+        "capacity": 16
+      },
+      {
+        "station_id": "1002",
+        "name": "FRONTON - ALLENDE",
+        "lat": 43.661581,
+        "lon": 1.43105,
+        "address": "Avenue Salvador Allende – parking face restaurant « la côte et l’arête » - Aucamville\r\n",
+        "capacity": 16
+      }
+    ]
+  }
+}

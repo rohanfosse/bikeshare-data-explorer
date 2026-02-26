@@ -1,0 +1,191 @@
+{
+  "last_updated": "2026-02-22T09:41:05.727+01:00",
+  "ttl": 300,
+  "version": "3.0",
+  "data": {
+    "stations": [
+      {
+        "station_id": "281",
+        "name": [
+          {
+            "text": "Thure",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.831799,
+        "lon": 0.456986,
+        "is_virtual_station": false,
+        "capacity": 7,
+        "is_charging_station": true
+      },
+      {
+        "station_id": "282",
+        "name": [
+          {
+            "text": "Cenon-sur-Vienne",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.774101,
+        "lon": 0.536247,
+        "is_virtual_station": false,
+        "capacity": 7,
+        "is_charging_station": true
+      },
+      {
+        "station_id": "313",
+        "name": [
+          {
+            "text": "Chatellerault Hotel de Ville",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.818699,
+        "lon": 0.545703,
+        "is_virtual_station": false,
+        "capacity": 7,
+        "is_charging_station": true
+      },
+      {
+        "station_id": "314",
+        "name": [
+          {
+            "text": "Chatellerault Nobel",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.834301,
+        "lon": 0.535307,
+        "is_virtual_station": false,
+        "capacity": 7,
+        "is_charging_station": true
+      },
+      {
+        "station_id": "315",
+        "name": [
+          {
+            "text": "Chatellerault Papin",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.839199,
+        "lon": 0.538896,
+        "is_virtual_station": false,
+        "capacity": 7,
+        "is_charging_station": true
+      },
+      {
+        "station_id": "316",
+        "name": [
+          {
+            "text": "Naintré",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.763,
+        "lon": 0.482709,
+        "is_virtual_station": false,
+        "capacity": 7,
+        "is_charging_station": true
+      },
+      {
+        "station_id": "362",
+        "name": [
+          {
+            "text": "Lencloitre",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.816716,
+        "lon": 0.327637,
+        "is_virtual_station": false,
+        "capacity": 7,
+        "is_charging_station": true
+      },
+      {
+        "station_id": "363",
+        "name": [
+          {
+            "text": "La Roche Posay",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.785595,
+        "lon": 0.812009,
+        "is_virtual_station": false,
+        "capacity": 7,
+        "is_charging_station": true
+      },
+      {
+        "station_id": "566",
+        "name": [
+          {
+            "text": "Châtellerault Gare SNCF",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.818104,
+        "lon": 0.549515,
+        "is_virtual_station": false,
+        "capacity": 5,
+        "is_charging_station": true
+      },
+      {
+        "station_id": "567",
+        "name": [
+          {
+            "text": "Ingrandes",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.876355,
+        "lon": 0.56626,
+        "is_virtual_station": false,
+        "capacity": 7,
+        "is_charging_station": true
+      },
+      {
+        "station_id": "675",
+        "name": [
+          {
+            "text": "Mairie  Scorbé Clairvaux",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.813351,
+        "lon": 0.415725,
+        "is_virtual_station": false,
+        "capacity": 7,
+        "is_charging_station": true
+      },
+      {
+        "station_id": "676",
+        "name": [
+          {
+            "text": "Mairie Dangé St Romain",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.93758,
+        "lon": 0.605704,
+        "is_virtual_station": false,
+        "capacity": 7,
+        "is_charging_station": true
+      },
+      {
+        "station_id": "678",
+        "name": [
+          {
+            "text": "Therme La Roche Posay",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.778922,
+        "lon": 0.808094,
+        "is_virtual_station": false,
+        "capacity": 7,
+        "is_charging_station": true
+      }
+    ]
+  }
+}

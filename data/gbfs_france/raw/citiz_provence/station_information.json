@@ -1,0 +1,1894 @@
+{
+  "last_updated": "2026-02-22T09:41:29.477531+01:00",
+  "ttl": 300,
+  "version": "3.0",
+  "data": {
+    "stations": [
+      {
+        "station_id": "1378",
+        "name": [
+          {
+            "text": "NE PAS RESERVER",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.4947738647461,
+        "lon": 5.43823194503784,
+        "parking_type": "street_parking",
+        "capacity": 20,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1379",
+        "name": [
+          {
+            "text": "Camas",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.2957992553711,
+        "lon": 5.396240234375,
+        "address": "105 Rue du Camas 13005 Marseille",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1380",
+        "name": [
+          {
+            "text": "Centre Bourse",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.2969017028809,
+        "lon": 5.37480020523071,
+        "parking_type": "underground_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1381",
+        "name": [
+          {
+            "text": "Saint Victor - Corderie",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.2899017333984,
+        "lon": 5.36700010299683,
+        "address": "116, boulevard de la Corderie 13007",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1382",
+        "name": [
+          {
+            "text": "Cours Julien",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.2929992675781,
+        "lon": 5.38350009918213,
+        "parking_type": "underground_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1383",
+        "name": [
+          {
+            "text": "Gambetta",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.2990455627441,
+        "lon": 5.38314008712769,
+        "parking_type": "underground_parking",
+        "capacity": 6,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1384",
+        "name": [
+          {
+            "text": "Grand Rue",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.2976913452148,
+        "lon": 5.37060022354126,
+        "address": "35 Grand Rue 13002 Marseille",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1385",
+        "name": [
+          {
+            "text": "Isoard",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.3018913269043,
+        "lon": 5.39079999923706,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1386",
+        "name": [
+          {
+            "text": "Jean Jaures",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.2955093383789,
+        "lon": 5.38710021972656,
+        "parking_type": "underground_parking",
+        "capacity": 6,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1387",
+        "name": [
+          {
+            "text": "Dunkerque",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.3065948486328,
+        "lon": 5.36762714385986,
+        "address": "7, boulevard de Dunkerque 13002 Marseille",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1388",
+        "name": [
+          {
+            "text": "Joliette - Mazenod",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.3039894104004,
+        "lon": 5.36601114273071,
+        "parking_type": "parking_lot",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1389",
+        "name": [
+          {
+            "text": "Lodi",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.2887001037598,
+        "lon": 5.38774919509888,
+        "parking_type": "street_parking",
+        "capacity": 5,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1390",
+        "name": [
+          {
+            "text": "Monthyon",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.2910003662109,
+        "lon": 5.37550020217896,
+        "parking_type": "underground_parking",
+        "capacity": 6,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1391",
+        "name": [
+          {
+            "text": "Phocéens",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.3005981445313,
+        "lon": 5.37011003494263,
+        "parking_type": "underground_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1392",
+        "name": [
+          {
+            "text": "Prado-Périer",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.2791786193848,
+        "lon": 5.38781023025513,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1393",
+        "name": [
+          {
+            "text": "Préfecture",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.2905311584473,
+        "lon": 5.3795599937439,
+        "parking_type": "underground_parking",
+        "capacity": 7,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1394",
+        "name": [
+          {
+            "text": "Saint Charles Gare",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.3027267456055,
+        "lon": 5.38012504577637,
+        "parking_type": "underground_parking",
+        "capacity": 5,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1395",
+        "name": [
+          {
+            "text": "Cinq Avenues",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.3041801452637,
+        "lon": 5.39749479293823,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1396",
+        "name": [
+          {
+            "text": "Porte St Michel",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.9430541992188,
+        "lon": 4.80969476699829,
+        "address": "rue Paul Manivet (devant l'archevêché)",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1397",
+        "name": [
+          {
+            "text": "Porte Limbert",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.9440460205078,
+        "lon": 4.81464004516602,
+        "address": "27 rue Ninon Vallin",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1398",
+        "name": [
+          {
+            "text": "Ecobio Université",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.9503173828125,
+        "lon": 4.82142019271851,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1399",
+        "name": [
+          {
+            "text": "Rue St Etienne",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.9504241943359,
+        "lon": 4.80445194244385,
+        "address": "17 rue St Etienne/Angle rue Petite Fusterie, derrière l'Hôtel de Ville",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1400",
+        "name": [
+          {
+            "text": "Lycée Aubanel",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.952335357666,
+        "lon": 4.81180095672607,
+        "address": "4 Place St Joseph",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1401",
+        "name": [
+          {
+            "text": "National Électrique",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.3062286376953,
+        "lon": 5.38326692581177,
+        "address": "Parking NATIOPARK\nAu 93 Boulevard National 13003 \nMarseille ",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1402",
+        "name": [
+          {
+            "text": "Eugène Pierre",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.2980342737884,
+        "lon": 5.39044951331257,
+        "address": "12-16 boulevard Eugène Pierre 13005\n43.29803427378835, 5.390449513312573",
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1403",
+        "name": [
+          {
+            "text": "Allées de l'Oulle (ex Oratoire)",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.9492874145508,
+        "lon": 4.80069303512573,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1404",
+        "name": [
+          {
+            "text": "Arras",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.3088003,
+        "lon": 5.4011811,
+        "address": "39-41, boulevard d'Arras 13004",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1405",
+        "name": [
+          {
+            "text": "Saint Charles Voltaire",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.302437,
+        "lon": 5.38385,
+        "address": "31 Boulevard Voltaire 13001",
+        "parking_type": "parking_lot",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1406",
+        "name": [
+          {
+            "text": "Blanqui",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.2920913696289,
+        "lon": 5.39055299758911,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1407",
+        "name": [
+          {
+            "text": "Sébastopol",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.2994003295898,
+        "lon": 5.39719486236572,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1408",
+        "name": [
+          {
+            "text": "Abeilles",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.3013763427734,
+        "lon": 5.38578987121582,
+        "address": "24 rue des Abeilles 13001 Marseille",
+        "parking_type": "street_parking",
+        "capacity": 7,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1409",
+        "name": [
+          {
+            "text": "République",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.3007888793945,
+        "lon": 5.37055492401123,
+        "parking_type": "underground_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1410",
+        "name": [
+          {
+            "text": "Préfecture Électrique",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.2907409667969,
+        "lon": 5.38010406494141,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1411",
+        "name": [
+          {
+            "text": "Berlioz",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.2889671325684,
+        "lon": 5.38320016860962,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1413",
+        "name": [
+          {
+            "text": "Blancarde",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.296199798584,
+        "lon": 5.40537309646606,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1414",
+        "name": [
+          {
+            "text": "Pasteur",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.2898788452148,
+        "lon": 5.35935688018799,
+        "parking_type": "street_parking",
+        "capacity": 11,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1415",
+        "name": [
+          {
+            "text": "Place Corderie",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.2907638549805,
+        "lon": 5.37234878540039,
+        "parking_type": "street_parking",
+        "capacity": 7,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1416",
+        "name": [
+          {
+            "text": "Paradis",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.2873840332031,
+        "lon": 5.37931489944458,
+        "address": "142, rue Paradis 13006 Marseille",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1417",
+        "name": [
+          {
+            "text": "Pauriol",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.2886848449707,
+        "lon": 5.39105796813965,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1418",
+        "name": [
+          {
+            "text": "Paradis Mélizan",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.2837905883789,
+        "lon": 5.3807578086853,
+        "parking_type": "underground_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1419",
+        "name": [
+          {
+            "text": "Timone",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.2917,
+        "lon": 5.4029,
+        "address": "Parking QPARK, 264 Rue Saint-Pierre 13005 Marseille. Niv -1 place 76 et 74 Entrée piétonne par l'hôpital rue Saint Pierre.",
+        "parking_type": "underground_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1420",
+        "name": [
+          {
+            "text": "Chave",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.29541015625,
+        "lon": 5.39229202270508,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1421",
+        "name": [
+          {
+            "text": "Lodi - ND du Mont",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.2909545898438,
+        "lon": 5.38579511642456,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1422",
+        "name": [
+          {
+            "text": "Caisserie - Saint-Jean",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.2965316772461,
+        "lon": 5.3665828704834,
+        "address": "48 Avenue Saint Jean 13002 Marseille",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1423",
+        "name": [
+          {
+            "text": "Montricher",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.3055305480957,
+        "lon": 5.39333200454712,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1424",
+        "name": [
+          {
+            "text": "Frères Barthélémy",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.2934455871582,
+        "lon": 5.38655996322632,
+        "address": "51, rue 3 Frères Barthélémy 13006 Marseille",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1425",
+        "name": [
+          {
+            "text": "Rouet-Turcat Méry",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.2805404663086,
+        "lon": 5.38969993591309,
+        "address": "95 rue du Rouet 13008 Marseille",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1426",
+        "name": [
+          {
+            "text": "Notre Dame Bonnefoy",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.2866706848145,
+        "lon": 5.3738431930542,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1427",
+        "name": [
+          {
+            "text": "Cours Gouffé",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.2852973937988,
+        "lon": 5.39082193374634,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1428",
+        "name": [
+          {
+            "text": "Lord Duveen",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.2753944396973,
+        "lon": 5.38454484939575,
+        "address": "35 Boulevard Lord Duveen 13008",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1429",
+        "name": [
+          {
+            "text": "Prado-Latil",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.2744026184082,
+        "lon": 5.39055919647217,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1430",
+        "name": [
+          {
+            "text": "Paradis Delibes",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.279857635498,
+        "lon": 5.38257122039795,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1431",
+        "name": [
+          {
+            "text": "Coteau - Taddei",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.286635,
+        "lon": 5.362672,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1432",
+        "name": [
+          {
+            "text": "Libération",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.3003768920898,
+        "lon": 5.38949918746948,
+        "address": "68 Boulevard de la Libération - 13001 MARSEILLE",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1433",
+        "name": [
+          {
+            "text": "Cours Franklin Roosevelt",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.2989702739557,
+        "lon": 5.38686076850341,
+        "address": "18 Cours Franklin Roosevelt 13001",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1434",
+        "name": [
+          {
+            "text": "Camas Jaubert",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.2975883483887,
+        "lon": 5.39358997344971,
+        "address": "47 rue du Camas 13005 Marseille",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1435",
+        "name": [
+          {
+            "text": "Berceau",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.2882843017578,
+        "lon": 5.39520406723022,
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1436",
+        "name": [
+          {
+            "text": "Toulon",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.2841606140137,
+        "lon": 5.39576482772827,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1437",
+        "name": [
+          {
+            "text": "Langeron",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.2905960083008,
+        "lon": 5.38861989974976,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1438",
+        "name": [
+          {
+            "text": "Liandier",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.2784156799316,
+        "lon": 5.39207696914673,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1439",
+        "name": [
+          {
+            "text": "Malmousque Kennedy",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.2824783325195,
+        "lon": 5.35065793991089,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1440",
+        "name": [
+          {
+            "text": "Boisson",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.3029861450195,
+        "lon": 5.40357494354248,
+        "address": "devant le 5, boulevard Boisson 13004",
+        "parking_type": "street_parking",
+        "capacity": 7,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1441",
+        "name": [
+          {
+            "text": "Deiss Chartreux",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.3118553161621,
+        "lon": 5.40144300460815,
+        "address": "à l'angle de la rue Edouard Deiss avec l'avenue des chartreux",
+        "parking_type": "street_parking",
+        "capacity": 6,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1442",
+        "name": [
+          {
+            "text": "Endoume",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.2848091125488,
+        "lon": 5.35921716690063,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1443",
+        "name": [
+          {
+            "text": "Place des Marseillaises",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.3014984130859,
+        "lon": 5.38104486465454,
+        "address": "6 Place des Marseillaises 13001 Marseille",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1444",
+        "name": [
+          {
+            "text": "Fourragère",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.3040084838867,
+        "lon": 5.42457485198975,
+        "address": "26 Avenue des Caillols 13012 MARSEILLE",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  5.422813335170402,
+                  43.30516188794777
+                ],
+                [
+                  5.426332393397941,
+                  43.30533365252193
+                ],
+                [
+                  5.426031985988273,
+                  43.30050844481419
+                ],
+                [
+                  5.424487033595695,
+                  43.30033666660671
+                ],
+                [
+                  5.422770419826164,
+                  43.30483397241302
+                ],
+                [
+                  5.422813335170402,
+                  43.30516188794777
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "1445",
+        "name": [
+          {
+            "text": "Mazargues FLEX",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.2479553222656,
+        "lon": 5.40100002288818,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  5.4031598274421215,
+                  43.24953211593509
+                ],
+                [
+                  5.403782598948794,
+                  43.24971094322595
+                ],
+                [
+                  5.404943177214051,
+                  43.250082211056544
+                ],
+                [
+                  5.404223288458056,
+                  43.250893948680456
+                ],
+                [
+                  5.403729013476095,
+                  43.251126620977246
+                ],
+                [
+                  5.403503634534616,
+                  43.251556466159144
+                ],
+                [
+                  5.401603162859768,
+                  43.25090055815828
+                ],
+                [
+                  5.401980528753096,
+                  43.25047492894811
+                ],
+                [
+                  5.399489376678442,
+                  43.24935286033905
+                ],
+                [
+                  5.398050024799883,
+                  43.24938466406795
+                ],
+                [
+                  5.397180387324564,
+                  43.24880223377926
+                ],
+                [
+                  5.399297446460675,
+                  43.247812873790245
+                ],
+                [
+                  5.399908990116071,
+                  43.24745338975313
+                ],
+                [
+                  5.400874937607471,
+                  43.2470664550363
+                ],
+                [
+                  5.400530528761739,
+                  43.24662947555581
+                ],
+                [
+                  5.401196010135514,
+                  43.24623162507875
+                ],
+                [
+                  5.402237514464042,
+                  43.24596681020358
+                ],
+                [
+                  5.402419537754011,
+                  43.24631240462604
+                ],
+                [
+                  5.403921574802354,
+                  43.24554652590954
+                ],
+                [
+                  5.405176892652176,
+                  43.24661708343975
+                ],
+                [
+                  5.404039812153245,
+                  43.248144394478096
+                ],
+                [
+                  5.4031598274421215,
+                  43.24953211593509
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "1446",
+        "name": [
+          {
+            "text": "Chutes Lavie",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.3091049194336,
+        "lon": 5.39666604995728,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1447",
+        "name": [
+          {
+            "text": "Françoise Duparc",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.301326751709,
+        "lon": 5.40083599090576,
+        "address": "22 BOULEVARD FRANCOISE DUPARC 13004 Marseille",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1448",
+        "name": [
+          {
+            "text": "Sakakini",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.2934684753418,
+        "lon": 5.40145397186279,
+        "address": "face au 99 Bd Sakakini 13005,  de l'autre coté du boulevard",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1449",
+        "name": [
+          {
+            "text": "Jean Moulin Timone",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.2892532348633,
+        "lon": 5.40017318725586,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1450",
+        "name": [
+          {
+            "text": "Marx Dormoy",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.302083,
+        "lon": 5.395585,
+        "address": "6 rue MARX DORMOY 13004  Marseille",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1452",
+        "name": [
+          {
+            "text": "Delphes Electrique FLEX",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.2847229,
+        "lon": 5.3882633,
+        "address": "43.2847229, 5.3882633",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  5.388139486312866,
+                  43.28536344960162
+                ],
+                [
+                  5.38779079914093,
+                  43.28437937735759
+                ],
+                [
+                  5.387152433395386,
+                  43.28400448850591
+                ],
+                [
+                  5.387452840805054,
+                  43.283758466441455
+                ],
+                [
+                  5.387989282608032,
+                  43.28413335680924
+                ],
+                [
+                  5.388059020042419,
+                  43.28419583831261
+                ],
+                [
+                  5.388493537902831,
+                  43.285269729121374
+                ],
+                [
+                  5.388139486312866,
+                  43.28536344960162
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "1453",
+        "name": [
+          {
+            "text": "Paradis Delibes Electrique FLEX",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.279857635498,
+        "lon": 5.38257122039795,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  5.381820201873779,
+                  43.28138410713025
+                ],
+                [
+                  5.382657051086425,
+                  43.27911900695115
+                ],
+                [
+                  5.385028123855591,
+                  43.27950954748096
+                ],
+                [
+                  5.383923053741455,
+                  43.28178244361519
+                ],
+                [
+                  5.381820201873779,
+                  43.28138410713025
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "1454",
+        "name": [
+          {
+            "text": "Lorgues Rabatau",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.2756118774414,
+        "lon": 5.39579200744629,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1455",
+        "name": [
+          {
+            "text": "Pol Lapeyre",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.292896270752,
+        "lon": 5.40907096862793,
+        "address": "1 place Pol Lapeyre 13005 Marseille",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1456",
+        "name": [
+          {
+            "text": "Barral Mazargues",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.2636756896973,
+        "lon": 5.39278507232666,
+        "address": "241 avenue de Mazargues 13008",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1457",
+        "name": [
+          {
+            "text": "Emile Sicard",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.271167755127,
+        "lon": 5.38593196868896,
+        "parking_type": "street_parking",
+        "capacity": 5,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1458",
+        "name": [
+          {
+            "text": "Paradis Electrique FLEX",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.287410736084,
+        "lon": 5.379310131073,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  5.378258228302001,
+                  43.28777279737689
+                ],
+                [
+                  5.380082130432129,
+                  43.28564851517485
+                ],
+                [
+                  5.380007028579712,
+                  43.285640705176924
+                ],
+                [
+                  5.381187200546265,
+                  43.28607806351554
+                ],
+                [
+                  5.380339622497559,
+                  43.28824918871613
+                ],
+                [
+                  5.378258228302001,
+                  43.28777279737689
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "1459",
+        "name": [
+          {
+            "text": "Prado-Périer Electrique FLEX",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.2791900634766,
+        "lon": 5.38792514801025,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  5.386894941329956,
+                  43.27979073511027
+                ],
+                [
+                  5.388118028640747,
+                  43.277252188590126
+                ],
+                [
+                  5.392409563064575,
+                  43.27841602768052
+                ],
+                [
+                  5.391454696655273,
+                  43.27935333156984
+                ],
+                [
+                  5.390483736991882,
+                  43.279818072727124
+                ],
+                [
+                  5.387844443321228,
+                  43.279325993744166
+                ],
+                [
+                  5.387474298477173,
+                  43.279970382081984
+                ],
+                [
+                  5.386894941329956,
+                  43.27979073511027
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "1460",
+        "name": [
+          {
+            "text": "Saint Barnabé FLEX",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.3039283752441,
+        "lon": 5.41629219055176,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  5.414714691278855,
+                  43.30478107207313
+                ],
+                [
+                  5.412697670099655,
+                  43.304593690810314
+                ],
+                [
+                  5.412912246820847,
+                  43.30039307590941
+                ],
+                [
+                  5.4177402230476535,
+                  43.301392505023095
+                ],
+                [
+                  5.4177402230476535,
+                  43.304218926551954
+                ],
+                [
+                  5.414714691278855,
+                  43.30478107207313
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "1461",
+        "name": [
+          {
+            "text": "Joliette Schuman",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.3043060302734,
+        "lon": 5.36714792251587,
+        "address": "64 AVENUE ROBERT SCHUMAN 13002 Marseille",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1462",
+        "name": [
+          {
+            "text": "Eugène Pierre Electrique Flex",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.297908782959,
+        "lon": 5.39069318771362,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  5.3892338275909415,
+                  43.298143227546106
+                ],
+                [
+                  5.38953423500061,
+                  43.29622623683445
+                ],
+                [
+                  5.393514633178711,
+                  43.29642926111533
+                ],
+                [
+                  5.3933000564575195,
+                  43.29779184884353
+                ],
+                [
+                  5.3924256563186646,
+                  43.29841652068876
+                ],
+                [
+                  5.390548110008239,
+                  43.29842823322455
+                ],
+                [
+                  5.3892338275909415,
+                  43.298143227546106
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "1466",
+        "name": [
+          {
+            "text": "National",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.30619117650944,
+        "lon": 5.3828526570840305,
+        "address": "93 Boulevard National 13003 Marseille\n",
+        "parking_type": "parking_lot",
+        "capacity": 10,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1467",
+        "name": [
+          {
+            "text": "Blanqui Virgile Marron  Électrique Flex",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.2888107299805,
+        "lon": 5.39119720458984,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  5.388830457599774,
+                  43.29237909542132
+                ],
+                [
+                  5.392499719532147,
+                  43.292191675935086
+                ],
+                [
+                  5.39241388884367,
+                  43.28938031433342
+                ],
+                [
+                  5.390525613697186,
+                  43.28959898045198
+                ],
+                [
+                  5.3888089999276545,
+                  43.290395543235775
+                ],
+                [
+                  5.388830457599774,
+                  43.29237909542132
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "1468",
+        "name": [
+          {
+            "text": "Corbusier Flex",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.2612533569336,
+        "lon": 5.39701986312866,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  5.396768451714081,
+                  43.26266333019089
+                ],
+                [
+                  5.394062332148991,
+                  43.26177459965504
+                ],
+                [
+                  5.395959268903113,
+                  43.25932569342393
+                ],
+                [
+                  5.398234266479221,
+                  43.25999709949815
+                ],
+                [
+                  5.396768451714081,
+                  43.26266333019089
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "1469",
+        "name": [
+          {
+            "text": "Baille",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.2879753112793,
+        "lon": 5.39179277420044,
+        "address": "126 BD BAILLE 13005 Marseille",
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1470",
+        "name": [
+          {
+            "text": "Goudard",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.2938919067383,
+        "lon": 5.39416599273682,
+        "address": "30 Rue Goudard 13005 Marseille",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1471",
+        "name": [
+          {
+            "text": "Jeanne d'Arc",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.2934265136719,
+        "lon": 5.40280294418335,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1472",
+        "name": [
+          {
+            "text": "Bruys",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.2968788146973,
+        "lon": 5.38867616653442,
+        "address": "12 Rue de Bruys 13005 Marseille",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1473",
+        "name": [
+          {
+            "text": "Vallier",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.2996520996094,
+        "lon": 5.40169620513916,
+        "address": "41 Avenue du Maréchal Foch 13004 Marseille",
+        "parking_type": "parking_lot",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1474",
+        "name": [
+          {
+            "text": "Saint Jean du Desert",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.29366,
+        "lon": 5.412231,
+        "address": "164 Chem. de Saint-Jean du Désert, 13005 Marseille",
+        "parking_type": "street_parking",
+        "capacity": 11,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1476",
+        "name": [
+          {
+            "text": "Boulevard Perier",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.278621673584,
+        "lon": 5.3802318572998,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1478",
+        "name": [
+          {
+            "text": "Granoux",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.298713684082,
+        "lon": 5.39810180664063,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1479",
+        "name": [
+          {
+            "text": "Camas George",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.29462,
+        "lon": 5.3978,
+        "address": "145 Rue du Camas 13005 Marseille",
+        "parking_type": "street_parking",
+        "capacity": 12,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1480",
+        "name": [
+          {
+            "text": "Clemenceau",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.2994003295898,
+        "lon": 5.39719486236572,
+        "address": "\n26 Boulevard George Clemenceau 13004\n",
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1481",
+        "name": [
+          {
+            "text": "Voltaire Electrique FLEX",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.3024864196777,
+        "lon": 5.38409614562988,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  5.381708086173774,
+                  43.30204951959524
+                ],
+                [
+                  5.381513953092735,
+                  43.299019772891256
+                ],
+                [
+                  5.390400934119242,
+                  43.303069866623275
+                ],
+                [
+                  5.388696877077649,
+                  43.30489075107667
+                ],
+                [
+                  5.381708086173774,
+                  43.30204951959524
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "1482",
+        "name": [
+          {
+            "text": "Sidi Brahim Electrique FLEX",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.2975196838379,
+        "lon": 5.40005922317505,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  5.394076887367305,
+                  43.29789340709897
+                ],
+                [
+                  5.396445850243424,
+                  43.2956686872036
+                ],
+                [
+                  5.401096440959719,
+                  43.29593883610411
+                ],
+                [
+                  5.401074607200542,
+                  43.29999887060126
+                ],
+                [
+                  5.398640143046009,
+                  43.29978435501397
+                ],
+                [
+                  5.398803896240793,
+                  43.29817943660896
+                ],
+                [
+                  5.394076887367305,
+                  43.29789340709897
+                ]
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

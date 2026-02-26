@@ -1,0 +1,1384 @@
+{
+  "last_updated": 1771749705,
+  "ttl": 60,
+  "version": "2.2",
+  "data": {
+    "stations": [
+      {
+        "station_id": "ch8cimdlc8te4d3h83l0",
+        "name": "Perrigny",
+        "lat": 47.82177,
+        "lon": 3.540143,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 7,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 7,
+          "4": 7,
+          "5": 0,
+          "6": 0,
+          "7": 7
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=ch8cimdlc8te4d3h83l0",
+          "ios": "todo://app?sid=ch8cimdlc8te4d3h83l0"
+        }
+      },
+      {
+        "station_id": "ch8cimllc8te4d3h8410",
+        "name": "Chevannes",
+        "lat": 47.75113,
+        "lon": 3.49012,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 7,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 7,
+          "4": 7,
+          "5": 0,
+          "6": 0,
+          "7": 7
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=ch8cimllc8te4d3h8410",
+          "ios": "todo://app?sid=ch8cimllc8te4d3h8410"
+        }
+      },
+      {
+        "station_id": "ch8cimtlc8te4d3h842g",
+        "name": "Gy-l’Évêque",
+        "lat": 47.72191,
+        "lon": 3.54784,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 6,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 6,
+          "4": 6,
+          "5": 0,
+          "6": 0,
+          "7": 6
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=ch8cimtlc8te4d3h842g",
+          "ios": "todo://app?sid=ch8cimtlc8te4d3h842g"
+        }
+      },
+      {
+        "station_id": "ch8cin5lc8te4d3h849g",
+        "name": "Vallan",
+        "lat": 47.74347,
+        "lon": 3.53738,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 9,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 9,
+          "4": 9,
+          "5": 0,
+          "6": 0,
+          "7": 9
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=ch8cin5lc8te4d3h849g",
+          "ios": "todo://app?sid=ch8cin5lc8te4d3h849g"
+        }
+      },
+      {
+        "station_id": "ch8cindlc8te4d3h84bg",
+        "name": "Vincelottes",
+        "lat": 47.7072,
+        "lon": 3.63937,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 2,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 2,
+          "4": 2,
+          "5": 0,
+          "6": 0,
+          "7": 2
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=ch8cindlc8te4d3h84bg",
+          "ios": "todo://app?sid=ch8cindlc8te4d3h84bg"
+        }
+      },
+      {
+        "station_id": "ch8cintlc8te4d3h84d0",
+        "name": "Escolives",
+        "lat": 47.71959,
+        "lon": 3.60628,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 4,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 4,
+          "4": 4,
+          "5": 0,
+          "6": 0,
+          "7": 4
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=ch8cintlc8te4d3h84d0",
+          "ios": "todo://app?sid=ch8cintlc8te4d3h84d0"
+        }
+      },
+      {
+        "station_id": "ch8cio5lc8te4d3h84jg",
+        "name": "Champs-sur-Yonne",
+        "lat": 47.73794,
+        "lon": 3.59831,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 10,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 10,
+          "4": 10,
+          "5": 0,
+          "6": 0,
+          "7": 10
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=ch8cio5lc8te4d3h84jg",
+          "ios": "todo://app?sid=ch8cio5lc8te4d3h84jg"
+        }
+      },
+      {
+        "station_id": "ch8ciodlc8te4d3h84m0",
+        "name": "Augy",
+        "lat": 47.76646,
+        "lon": 3.60988,
+        "is_virtual_station": false,
+        "capacity": 15,
+        "vehicle_type_capacity": {
+          "1": 14,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 14,
+          "4": 14,
+          "5": 0,
+          "6": 0,
+          "7": 14
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=ch8ciodlc8te4d3h84m0",
+          "ios": "todo://app?sid=ch8ciodlc8te4d3h84m0"
+        }
+      },
+      {
+        "station_id": "ch8ciollc8te4d3h84pg",
+        "name": "Saint-Bris-le-Vineux",
+        "lat": 47.74397,
+        "lon": 3.64688,
+        "is_virtual_station": false,
+        "capacity": 15,
+        "vehicle_type_capacity": {
+          "1": 8,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 8,
+          "4": 8,
+          "5": 0,
+          "6": 0,
+          "7": 8
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=ch8ciollc8te4d3h84pg",
+          "ios": "todo://app?sid=ch8ciollc8te4d3h84pg"
+        }
+      },
+      {
+        "station_id": "ch8ciotlc8te4d3h84t0",
+        "name": "Chitry",
+        "lat": 47.76275,
+        "lon": 3.70429,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 10,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 10,
+          "4": 10,
+          "5": 0,
+          "6": 0,
+          "7": 10
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=ch8ciotlc8te4d3h84t0",
+          "ios": "todo://app?sid=ch8ciotlc8te4d3h84t0"
+        }
+      },
+      {
+        "station_id": "ch8cipdlc8te4d3h84vg",
+        "name": "Quenne",
+        "lat": 47.77721,
+        "lon": 3.65021,
+        "is_virtual_station": false,
+        "capacity": 15,
+        "vehicle_type_capacity": {
+          "1": 12,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 12,
+          "4": 12,
+          "5": 0,
+          "6": 0,
+          "7": 12
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=ch8cipdlc8te4d3h84vg",
+          "ios": "todo://app?sid=ch8cipdlc8te4d3h84vg"
+        }
+      },
+      {
+        "station_id": "ch8cipllc8te4d3h854g",
+        "name": "Venoy",
+        "lat": 47.806,
+        "lon": 3.63748,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 4,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 4,
+          "4": 4,
+          "5": 0,
+          "6": 0,
+          "7": 4
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=ch8cipllc8te4d3h854g",
+          "ios": "todo://app?sid=ch8cipllc8te4d3h854g"
+        }
+      },
+      {
+        "station_id": "ch8ciptlc8te4d3h85fg",
+        "name": "Montigny-la-Resle",
+        "lat": 47.86509,
+        "lon": 3.6809,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 6,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 6,
+          "4": 6,
+          "5": 0,
+          "6": 0,
+          "7": 6
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "todo://app?sid=ch8ciptlc8te4d3h85fg",
+          "ios": "todo://app?sid=ch8ciptlc8te4d3h85fg"
+        }
+      },
+      {
+        "station_id": "ch8ciq5lc8te4d3h85k0",
+        "name": "Branches",
+        "lat": 47.88575,
+        "lon": 3.47941,
+        "is_virtual_station": false,
+        "capacity": 15,
+        "vehicle_type_capacity": {
+          "1": 12,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 12,
+          "4": 12,
+          "5": 0,
+          "6": 0,
+          "7": 12
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=ch8ciq5lc8te4d3h85k0",
+          "ios": "todo://app?sid=ch8ciq5lc8te4d3h85k0"
+        }
+      },
+      {
+        "station_id": "ch8ciqllc8te4d3h85sg",
+        "name": "Charbuy",
+        "lat": 47.83055,
+        "lon": 3.45952,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 3,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 3,
+          "4": 3,
+          "5": 0,
+          "6": 0,
+          "7": 3
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=ch8ciqllc8te4d3h85sg",
+          "ios": "todo://app?sid=ch8ciqllc8te4d3h85sg"
+        }
+      },
+      {
+        "station_id": "ch8ciqtlc8te4d3h8640",
+        "name": "Lindry",
+        "lat": 47.80007,
+        "lon": 3.41749,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 5,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 5,
+          "4": 5,
+          "5": 0,
+          "6": 0,
+          "7": 5
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=ch8ciqtlc8te4d3h8640",
+          "ios": "todo://app?sid=ch8ciqtlc8te4d3h8640"
+        }
+      },
+      {
+        "station_id": "ch8cir5lc8te4d3h86e0",
+        "name": "Villefargeau",
+        "lat": 47.78242,
+        "lon": 3.50411,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 8,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 8,
+          "4": 8,
+          "5": 0,
+          "6": 0,
+          "7": 8
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=ch8cir5lc8te4d3h86e0",
+          "ios": "todo://app?sid=ch8cir5lc8te4d3h86e0"
+        }
+      },
+      {
+        "station_id": "ch8cirdlc8te4d3h86j0",
+        "name": "Escamps",
+        "lat": 47.72884,
+        "lon": 3.47068,
+        "is_virtual_station": false,
+        "capacity": 15,
+        "vehicle_type_capacity": {
+          "1": 11,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 11,
+          "4": 11,
+          "5": 0,
+          "6": 0,
+          "7": 11
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=ch8cirdlc8te4d3h86j0",
+          "ios": "todo://app?sid=ch8cirdlc8te4d3h86j0"
+        }
+      },
+      {
+        "station_id": "ch8cirllc8te4d3h86m0",
+        "name": "Jussy",
+        "lat": 47.72143,
+        "lon": 3.58607,
+        "is_virtual_station": false,
+        "capacity": 15,
+        "vehicle_type_capacity": {
+          "1": 9,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 9,
+          "4": 9,
+          "5": 0,
+          "6": 0,
+          "7": 9
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=ch8cirllc8te4d3h86m0",
+          "ios": "todo://app?sid=ch8cirllc8te4d3h86m0"
+        }
+      },
+      {
+        "station_id": "ch8cirtlc8te4d3h86qg",
+        "name": "Coulanges-la-Vineuse",
+        "lat": 47.69993,
+        "lon": 3.58061,
+        "is_virtual_station": false,
+        "capacity": 15,
+        "vehicle_type_capacity": {
+          "1": 8,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 8,
+          "4": 8,
+          "5": 0,
+          "6": 0,
+          "7": 8
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=ch8cirtlc8te4d3h86qg",
+          "ios": "todo://app?sid=ch8cirtlc8te4d3h86qg"
+        }
+      },
+      {
+        "station_id": "ch8cis5lc8te4d3h86u0",
+        "name": "Vincelles",
+        "lat": 47.70396,
+        "lon": 3.6339,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 6,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 6,
+          "4": 6,
+          "5": 0,
+          "6": 0,
+          "7": 6
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=ch8cis5lc8te4d3h86u0",
+          "ios": "todo://app?sid=ch8cis5lc8te4d3h86u0"
+        }
+      },
+      {
+        "station_id": "ch8cisdlc8te4d3h8710",
+        "name": "Irancy",
+        "lat": 47.71457,
+        "lon": 3.66661,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 8,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 8,
+          "4": 8,
+          "5": 0,
+          "6": 0,
+          "7": 8
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=ch8cisdlc8te4d3h8710",
+          "ios": "todo://app?sid=ch8cisdlc8te4d3h8710"
+        }
+      },
+      {
+        "station_id": "ch8cisllc8te4d3h87ag",
+        "name": "Bleigny-le-Carreau",
+        "lat": 47.83416,
+        "lon": 3.68173,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 6,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 6,
+          "4": 6,
+          "5": 0,
+          "6": 0,
+          "7": 6
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=ch8cisllc8te4d3h87ag",
+          "ios": "todo://app?sid=ch8cisllc8te4d3h87ag"
+        }
+      },
+      {
+        "station_id": "ch8cistlc8te4d3h87h0",
+        "name": "Villeneuve-Saint-Salves",
+        "lat": 47.8542,
+        "lon": 3.65256,
+        "is_virtual_station": false,
+        "capacity": 15,
+        "vehicle_type_capacity": {
+          "1": 11,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 11,
+          "4": 11,
+          "5": 0,
+          "6": 0,
+          "7": 11
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=ch8cistlc8te4d3h87h0",
+          "ios": "todo://app?sid=ch8cistlc8te4d3h87h0"
+        }
+      },
+      {
+        "station_id": "ch8citdlc8te4d3h87ng",
+        "name": "Auxerre  Gare",
+        "lat": 47.79797,
+        "lon": 3.5851,
+        "is_virtual_station": false,
+        "capacity": 15,
+        "vehicle_type_capacity": {
+          "1": 11,
+          "10": 5,
+          "14": 0,
+          "15": 0,
+          "2": 11,
+          "4": 11,
+          "5": 0,
+          "6": 0,
+          "7": 11
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=ch8citdlc8te4d3h87ng",
+          "ios": "todo://app?sid=ch8citdlc8te4d3h87ng"
+        }
+      },
+      {
+        "station_id": "ch8citllc8te4d3h87t0",
+        "name": "Auxerre  Gambetta",
+        "lat": 47.79622,
+        "lon": 3.57934,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 10,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 10,
+          "4": 10,
+          "5": 0,
+          "6": 0,
+          "7": 10
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=ch8citllc8te4d3h87t0",
+          "ios": "todo://app?sid=ch8citllc8te4d3h87t0"
+        }
+      },
+      {
+        "station_id": "ch8cittlc8te4d3h883g",
+        "name": "Auxerre  Abbé Deschamps",
+        "lat": 47.78808,
+        "lon": 3.58498,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 3,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 3,
+          "4": 3,
+          "5": 0,
+          "6": 0,
+          "7": 3
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=ch8cittlc8te4d3h883g",
+          "ios": "todo://app?sid=ch8cittlc8te4d3h883g"
+        }
+      },
+      {
+        "station_id": "ch8ciu5lc8te4d3h8870",
+        "name": "Auxerre  Sainte-Geneviève",
+        "lat": 47.79793,
+        "lon": 3.55207,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 6,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 6,
+          "4": 6,
+          "5": 0,
+          "6": 0,
+          "7": 6
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=ch8ciu5lc8te4d3h8870",
+          "ios": "todo://app?sid=ch8ciu5lc8te4d3h8870"
+        }
+      },
+      {
+        "station_id": "ch8ciudlc8te4d3h88ag",
+        "name": "Auxerre  Hôpital",
+        "lat": 47.80236,
+        "lon": 3.55311,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 10,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 10,
+          "4": 10,
+          "5": 0,
+          "6": 0,
+          "7": 10
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=ch8ciudlc8te4d3h88ag",
+          "ios": "todo://app?sid=ch8ciudlc8te4d3h88ag"
+        }
+      },
+      {
+        "station_id": "ch8ciullc8te4d3h88h0",
+        "name": "Auxerre  Arquebuse",
+        "lat": 47.79243,
+        "lon": 3.56753,
+        "is_virtual_station": false,
+        "capacity": 15,
+        "vehicle_type_capacity": {
+          "1": 10,
+          "10": 5,
+          "14": 0,
+          "15": 0,
+          "2": 10,
+          "4": 10,
+          "5": 0,
+          "6": 0,
+          "7": 10
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=ch8ciullc8te4d3h88h0",
+          "ios": "todo://app?sid=ch8ciullc8te4d3h88h0"
+        }
+      },
+      {
+        "station_id": "ch8ciutlc8te4d3h88mg",
+        "name": "Auxerre  Porte de Paris",
+        "lat": 47.80062,
+        "lon": 3.56768,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 9,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 9,
+          "4": 9,
+          "5": 0,
+          "6": 0,
+          "7": 9
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=ch8ciutlc8te4d3h88mg",
+          "ios": "todo://app?sid=ch8ciutlc8te4d3h88mg"
+        }
+      },
+      {
+        "station_id": "ch8civ5lc8te4d3h88rg",
+        "name": "Auxerre  Cordeliers",
+        "lat": 47.79641,
+        "lon": 3.57015,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 8,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 8,
+          "4": 8,
+          "5": 0,
+          "6": 0,
+          "7": 8
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=ch8civ5lc8te4d3h88rg",
+          "ios": "todo://app?sid=ch8civ5lc8te4d3h88rg"
+        }
+      },
+      {
+        "station_id": "ch8civdlc8te4d3h88vg",
+        "name": "Auxerre  Champoulains",
+        "lat": 47.807076,
+        "lon": 3.580274,
+        "is_virtual_station": false,
+        "capacity": 15,
+        "vehicle_type_capacity": {
+          "1": 6,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 6,
+          "4": 6,
+          "5": 0,
+          "6": 0,
+          "7": 6
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=ch8civdlc8te4d3h88vg",
+          "ios": "todo://app?sid=ch8civdlc8te4d3h88vg"
+        }
+      },
+      {
+        "station_id": "ch8civllc8te4d3h8940",
+        "name": "Monéteau Terres du Canada",
+        "lat": 47.83658,
+        "lon": 3.58007,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 4,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 4,
+          "4": 4,
+          "5": 0,
+          "6": 0,
+          "7": 4
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=ch8civllc8te4d3h8940",
+          "ios": "todo://app?sid=ch8civllc8te4d3h8940"
+        }
+      },
+      {
+        "station_id": "ch8civtlc8te4d3h8970",
+        "name": "Monéteau  Centre",
+        "lat": 47.850513,
+        "lon": 3.578528,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 7,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 7,
+          "4": 7,
+          "5": 0,
+          "6": 0,
+          "7": 7
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=ch8civtlc8te4d3h8970",
+          "ios": "todo://app?sid=ch8civtlc8te4d3h8970"
+        }
+      },
+      {
+        "station_id": "ch8cj05lc8te4d3h89b0",
+        "name": "Monéteau  Macherins",
+        "lat": 47.84565,
+        "lon": 3.55379,
+        "is_virtual_station": false,
+        "capacity": 15,
+        "vehicle_type_capacity": {
+          "1": 13,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 13,
+          "4": 13,
+          "5": 0,
+          "6": 0,
+          "7": 13
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=ch8cj05lc8te4d3h89b0",
+          "ios": "todo://app?sid=ch8cj05lc8te4d3h89b0"
+        }
+      },
+      {
+        "station_id": "ch8cj0dlc8te4d3h89f0",
+        "name": "Appoigny  Centre",
+        "lat": 47.877178,
+        "lon": 3.52582,
+        "is_virtual_station": false,
+        "capacity": 30,
+        "vehicle_type_capacity": {
+          "1": 24,
+          "10": 14,
+          "14": 0,
+          "15": 0,
+          "2": 24,
+          "4": 24,
+          "5": 0,
+          "6": 0,
+          "7": 24
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=ch8cj0dlc8te4d3h89f0",
+          "ios": "todo://app?sid=ch8cj0dlc8te4d3h89f0"
+        }
+      },
+      {
+        "station_id": "ch8cj0llc8te4d3h89og",
+        "name": "Appoigny Espace culturel",
+        "lat": 47.869462,
+        "lon": 3.526572,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 5,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 5,
+          "4": 5,
+          "5": 0,
+          "6": 0,
+          "7": 5
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=ch8cj0llc8te4d3h89og",
+          "ios": "todo://app?sid=ch8cj0llc8te4d3h89og"
+        }
+      },
+      {
+        "station_id": "ch8cj0tlc8te4d3h8a00",
+        "name": "Saint-Georges-sur-Baulche  Eglise",
+        "lat": 47.80865,
+        "lon": 3.53456,
+        "is_virtual_station": true,
+        "capacity": 0,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=ch8cj0tlc8te4d3h8a00",
+          "ios": "todo://app?sid=ch8cj0tlc8te4d3h8a00"
+        }
+      },
+      {
+        "station_id": "ch8cj15lc8te4d3h8a90",
+        "name": "Saint-Georges-sur-Baulche  Place des Marronniers",
+        "lat": 47.800398,
+        "lon": 3.53148,
+        "is_virtual_station": false,
+        "capacity": 15,
+        "vehicle_type_capacity": {
+          "1": 6,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 6,
+          "4": 6,
+          "5": 0,
+          "6": 0,
+          "7": 6
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=ch8cj15lc8te4d3h8a90",
+          "ios": "todo://app?sid=ch8cj15lc8te4d3h8a90"
+        }
+      },
+      {
+        "station_id": "ch8cj1llc8te4d3h8adg",
+        "name": "Auxerre  Les Quais",
+        "lat": 47.7971,
+        "lon": 3.57504,
+        "is_virtual_station": false,
+        "capacity": 15,
+        "vehicle_type_capacity": {
+          "1": 9,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 9,
+          "4": 9,
+          "5": 0,
+          "6": 0,
+          "7": 9
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=ch8cj1llc8te4d3h8adg",
+          "ios": "todo://app?sid=ch8cj1llc8te4d3h8adg"
+        }
+      },
+      {
+        "station_id": "ch8cu95lc8te4d3hfvu0",
+        "name": "Gurgy",
+        "lat": 47.86477,
+        "lon": 3.55989,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 4,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 4,
+          "4": 4,
+          "5": 0,
+          "6": 0,
+          "7": 4
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=ch8cu95lc8te4d3hfvu0",
+          "ios": "todo://app?sid=ch8cu95lc8te4d3hfvu0"
+        }
+      },
+      {
+        "station_id": "cj5r0ob0nhco6k5fn5ig",
+        "name": "Auxerre IUT",
+        "lat": 47.78921,
+        "lon": 3.59213,
+        "is_virtual_station": true,
+        "capacity": 35,
+        "vehicle_type_capacity": {
+          "1": 35,
+          "10": 35,
+          "14": 0,
+          "15": 0,
+          "2": 35,
+          "4": 35,
+          "5": 0,
+          "6": 0,
+          "7": 35
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "todo://app?sid=cj5r0ob0nhco6k5fn5ig",
+          "ios": "todo://app?sid=cj5r0ob0nhco6k5fn5ig"
+        }
+      },
+      {
+        "station_id": "st_d1a1r4mrumbh8rh1rnog",
+        "name": "Auxerre Les Clairions",
+        "lat": 47.81514,
+        "lon": 3.57169,
+        "is_virtual_station": false,
+        "capacity": 15,
+        "vehicle_type_capacity": {
+          "1": 15,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 15,
+          "4": 15,
+          "5": 0,
+          "6": 0,
+          "7": 15
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "todo://app?sid=st_d1a1r4mrumbh8rh1rnog",
+          "ios": "todo://app?sid=st_d1a1r4mrumbh8rh1rnog"
+        }
+      },
+      {
+        "station_id": "st_d1a1siurumbh8rh1rq2g",
+        "name": "Venoy Egriselles",
+        "lat": 47.81027,
+        "lon": 3.6194,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 6,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 6,
+          "4": 6,
+          "5": 0,
+          "6": 0,
+          "7": 6
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "todo://app?sid=st_d1a1siurumbh8rh1rq2g",
+          "ios": "todo://app?sid=st_d1a1siurumbh8rh1rq2g"
+        }
+      },
+      {
+        "station_id": "st_d1a1tb6rumbh8rh1rr1g",
+        "name": "Auxerre Rive Droite",
+        "lat": 47.795,
+        "lon": 3.589,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 8,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 8,
+          "4": 8,
+          "5": 0,
+          "6": 0,
+          "7": 8
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "todo://app?sid=st_d1a1tb6rumbh8rh1rr1g",
+          "ios": "todo://app?sid=st_d1a1tb6rumbh8rh1rr1g"
+        }
+      },
+      {
+        "station_id": "st_d1a1tn6rumbh8rh1rrhg",
+        "name": "Auxerre Jonches",
+        "lat": 47.82583,
+        "lon": 3.58854,
+        "is_virtual_station": true,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 18,
+          "10": 18,
+          "14": 0,
+          "15": 0,
+          "2": 18,
+          "4": 18,
+          "5": 0,
+          "6": 0,
+          "7": 18
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "todo://app?sid=st_d1a1tn6rumbh8rh1rrhg",
+          "ios": "todo://app?sid=st_d1a1tn6rumbh8rh1rrhg"
+        }
+      },
+      {
+        "station_id": "st_d1a1vtsdlg9eg0lhako0",
+        "name": "Auxerre Laborde",
+        "lat": 47.82702,
+        "lon": 3.61539,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 6,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 6,
+          "4": 6,
+          "5": 0,
+          "6": 0,
+          "7": 6
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "todo://app?sid=st_d1a1vtsdlg9eg0lhako0",
+          "ios": "todo://app?sid=st_d1a1vtsdlg9eg0lhako0"
+        }
+      },
+      {
+        "station_id": "st_d1a20h4dlg9eg0lhallg",
+        "name": "Auxerre Les Chesnez",
+        "lat": 47.82364,
+        "lon": 3.55884,
+        "is_virtual_station": true,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 17,
+          "10": 17,
+          "14": 0,
+          "15": 0,
+          "2": 17,
+          "4": 17,
+          "5": 0,
+          "6": 0,
+          "7": 17
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "todo://app?sid=st_d1a20h4dlg9eg0lhallg",
+          "ios": "todo://app?sid=st_d1a20h4dlg9eg0lhallg"
+        }
+      },
+      {
+        "station_id": "st_d1a243sdlg9eg0lhar70",
+        "name": "Monéteau Rue des Isles",
+        "lat": 47.83033,
+        "lon": 3.57798,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 4,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 4,
+          "4": 4,
+          "5": 0,
+          "6": 0,
+          "7": 4
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=st_d1a243sdlg9eg0lhar70",
+          "ios": "todo://app?sid=st_d1a243sdlg9eg0lhar70"
+        }
+      },
+      {
+        "station_id": "st_d1a24vurumbh8rh1s660",
+        "name": "Auxerre Les Piedalloues",
+        "lat": 47.78199,
+        "lon": 3.57936,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 7,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 7,
+          "4": 7,
+          "5": 0,
+          "6": 0,
+          "7": 7
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "todo://app?sid=st_d1a24vurumbh8rh1s660",
+          "ios": "todo://app?sid=st_d1a24vurumbh8rh1s660"
+        }
+      },
+      {
+        "station_id": "st_d1a25akdlg9eg0lhatbg",
+        "name": "Auxerre Gare routière",
+        "lat": 47.8009,
+        "lon": 3.56676,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 10,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 10,
+          "4": 10,
+          "5": 0,
+          "6": 0,
+          "7": 10
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "todo://app?sid=st_d1a25akdlg9eg0lhatbg",
+          "ios": "todo://app?sid=st_d1a25akdlg9eg0lhatbg"
+        }
+      },
+      {
+        "station_id": "st_d1a25lcdlg9eg0lhatr0",
+        "name": "Auxerre Vaux",
+        "lat": 47.75524,
+        "lon": 3.59023,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 7,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 7,
+          "4": 7,
+          "5": 0,
+          "6": 0,
+          "7": 7
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "todo://app?sid=st_d1a25lcdlg9eg0lhatr0",
+          "ios": "todo://app?sid=st_d1a25lcdlg9eg0lhatr0"
+        }
+      },
+      {
+        "station_id": "st_d1a2606rumbh8rh1s7pg",
+        "name": "Saint-Georges-sur-Baulche Lorraine",
+        "lat": 47.79904,
+        "lon": 3.54151,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 4,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 4,
+          "4": 4,
+          "5": 0,
+          "6": 0,
+          "7": 4
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "todo://app?sid=st_d1a2606rumbh8rh1s7pg",
+          "ios": "todo://app?sid=st_d1a2606rumbh8rh1s7pg"
+        }
+      },
+      {
+        "station_id": "st_d1a2b5kdlg9eg0lhb7og",
+        "name": "Venoy La Brosse",
+        "lat": 47.79078,
+        "lon": 3.65181,
+        "is_virtual_station": true,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 17,
+          "10": 17,
+          "14": 0,
+          "15": 0,
+          "2": 17,
+          "4": 17,
+          "5": 0,
+          "6": 0,
+          "7": 17
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "todo://app?sid=st_d1a2b5kdlg9eg0lhb7og",
+          "ios": "todo://app?sid=st_d1a2b5kdlg9eg0lhb7og"
+        }
+      }
+    ]
+  }
+}

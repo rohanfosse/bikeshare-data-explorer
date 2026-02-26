@@ -1,0 +1,37 @@
+{
+  "last_updated": "2026-02-22T09:41:05.951+01:00",
+  "ttl": 300,
+  "version": "3.0",
+  "data": {
+    "stations": [
+      {
+        "station_id": "451",
+        "name": [
+          {
+            "text": "Gare Oloron",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.194606,
+        "lon": -0.611812,
+        "is_virtual_station": false,
+        "capacity": 6,
+        "is_charging_station": true
+      },
+      {
+        "station_id": "719",
+        "name": [
+          {
+            "text": "Gare Bedous",
+            "language": "fr"
+          }
+        ],
+        "lat": 42.9956,
+        "lon": -0.6034,
+        "is_virtual_station": false,
+        "capacity": 6,
+        "is_charging_station": true
+      }
+    ]
+  }
+}

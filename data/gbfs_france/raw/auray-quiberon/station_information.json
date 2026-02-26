@@ -1,0 +1,284 @@
+{
+  "last_updated": 1771749709,
+  "ttl": 60,
+  "version": "2.2",
+  "data": {
+    "stations": [
+      {
+        "station_id": "cqocpihmrgc3lc0gde50",
+        "name": "Gare Auray",
+        "lat": 47.679769,
+        "lon": -3.000994,
+        "is_virtual_station": false,
+        "capacity": 30,
+        "vehicle_type_capacity": {
+          "1": 23,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 23,
+          "4": 23,
+          "5": 0,
+          "6": 0,
+          "7": 23
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "todo://app?sid=cqocpihmrgc3lc0gde50",
+          "ios": "todo://app?sid=cqocpihmrgc3lc0gde50"
+        }
+      },
+      {
+        "station_id": "cqocpitlh8lv2r319lug",
+        "name": "Kériolet",
+        "lat": 47.667605,
+        "lon": -2.984011,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 17,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 17,
+          "4": 17,
+          "5": 0,
+          "6": 0,
+          "7": 17
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "todo://app?sid=cqocpitlh8lv2r319lug",
+          "ios": "todo://app?sid=cqocpitlh8lv2r319lug"
+        }
+      },
+      {
+        "station_id": "cqocpitlh8lv2r319m00",
+        "name": "Saint-Goustan",
+        "lat": 47.66675,
+        "lon": -2.97967,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 15,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 15,
+          "4": 15,
+          "5": 0,
+          "6": 0,
+          "7": 15
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "todo://app?sid=cqocpitlh8lv2r319m00",
+          "ios": "todo://app?sid=cqocpitlh8lv2r319m00"
+        }
+      },
+      {
+        "station_id": "cqocpitlh8lv2r319m1g",
+        "name": "Athéna",
+        "lat": 47.66561,
+        "lon": -2.98848,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 9,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 9,
+          "4": 9,
+          "5": 0,
+          "6": 0,
+          "7": 9
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "todo://app?sid=cqocpitlh8lv2r319m1g",
+          "ios": "todo://app?sid=cqocpitlh8lv2r319m1g"
+        }
+      },
+      {
+        "station_id": "cqocpipmrgc3lc0gde6g",
+        "name": "M.A.L.",
+        "lat": 47.67239,
+        "lon": -2.9971,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 3,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 3,
+          "4": 3,
+          "5": 0,
+          "6": 0,
+          "7": 3
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "todo://app?sid=cqocpipmrgc3lc0gde6g",
+          "ios": "todo://app?sid=cqocpipmrgc3lc0gde6g"
+        }
+      },
+      {
+        "station_id": "cqocpipmrgc3lc0gde80",
+        "name": "Skatepark Auray",
+        "lat": 47.670789,
+        "lon": -2.988584,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 7,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 7,
+          "4": 7,
+          "5": 0,
+          "6": 0,
+          "7": 7
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "todo://app?sid=cqocpipmrgc3lc0gde80",
+          "ios": "todo://app?sid=cqocpipmrgc3lc0gde80"
+        }
+      },
+      {
+        "station_id": "cqocpitlh8lv2r319m40",
+        "name": "Gare Saint-Anne - Pluneret",
+        "lat": 47.67869,
+        "lon": -2.96199,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 6,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 6,
+          "4": 6,
+          "5": 0,
+          "6": 0,
+          "7": 6
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "todo://app?sid=cqocpitlh8lv2r319m40",
+          "ios": "todo://app?sid=cqocpitlh8lv2r319m40"
+        }
+      },
+      {
+        "station_id": "cqocpj5lh8lv2r319m6g",
+        "name": "Bibliothèque de Pluneret",
+        "lat": 47.67393,
+        "lon": -2.95908,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 5,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 5,
+          "4": 5,
+          "5": 0,
+          "6": 0,
+          "7": 5
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "todo://app?sid=cqocpj5lh8lv2r319m6g",
+          "ios": "todo://app?sid=cqocpj5lh8lv2r319m6g"
+        }
+      },
+      {
+        "station_id": "cqocpj5lh8lv2r319m80",
+        "name": "Penhoët",
+        "lat": 47.68234,
+        "lon": -2.99769,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 6,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 6,
+          "4": 6,
+          "5": 0,
+          "6": 0,
+          "7": 6
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "todo://app?sid=cqocpj5lh8lv2r319m80",
+          "ios": "todo://app?sid=cqocpj5lh8lv2r319m80"
+        }
+      },
+      {
+        "station_id": "cqocpj5lh8lv2r319m9g",
+        "name": "Alre’o",
+        "lat": 47.66906,
+        "lon": -3.00889,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 13,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 13,
+          "4": 13,
+          "5": 0,
+          "6": 0,
+          "7": 13
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "todo://app?sid=cqocpj5lh8lv2r319m9g",
+          "ios": "todo://app?sid=cqocpj5lh8lv2r319m9g"
+        }
+      },
+      {
+        "station_id": "st_d60avfncp9is73bkr8t0",
+        "name": "Porte Océane",
+        "lat": 47.66444,
+        "lon": -3.00378,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 6,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 6,
+          "4": 6,
+          "5": 0,
+          "6": 0,
+          "7": 6
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=st_d60avfncp9is73bkr8t0",
+          "ios": "todo://app?sid=st_d60avfncp9is73bkr8t0"
+        }
+      }
+    ]
+  }
+}

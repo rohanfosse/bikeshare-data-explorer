@@ -1,0 +1,15 @@
+{
+  "last_updated": 1771749812,
+  "ttl": 0,
+  "version": "2.2",
+  "data": {
+    "stations": [
+      {
+        "station_id": "marseille",
+        "name": "Marseille",
+        "lat": 43.3909,
+        "lon": 5.4266
+      }
+    ]
+  }
+}

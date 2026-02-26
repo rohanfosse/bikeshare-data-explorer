@@ -1,0 +1,519 @@
+{
+  "data": {
+    "stations": [
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 48.273529,
+        "lon": 4.08491,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Marques Avenue"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://lemarcelavelo.ecovelo.mobi/#/station/stn_86QhhNAx4RB6jvgzTXPRvL"
+        },
+        "station_id": "stn_86QhhNAx4RB6jvgzTXPRvL"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 48.3004,
+        "lon": 4.0727,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Médiathèque Jacques-Chirac - Centre "
+          }
+        ],
+        "rental_uris": {
+          "web": "https://lemarcelavelo.ecovelo.mobi/#/station/stn_f9pHXeZSQJsmDyu6yRQL66"
+        },
+        "station_id": "stn_f9pHXeZSQJsmDyu6yRQL66"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 48.286856,
+        "lon": 4.086626,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Parc des Moulins"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://lemarcelavelo.ecovelo.mobi/#/station/stn_aBv4WGntMZehmHBcTJCC3e"
+        },
+        "station_id": "stn_aBv4WGntMZehmHBcTJCC3e"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 48.330267,
+        "lon": 4.100259,
+        "name": [
+          {
+            "language": "fr",
+            "text": "McArthur Glen"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://lemarcelavelo.ecovelo.mobi/#/station/stn_Jj4EEsGpfwmGWzsDVfcmu6"
+        },
+        "station_id": "stn_Jj4EEsGpfwmGWzsDVfcmu6"
+      },
+      {
+        "capacity": 20,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 48.295829,
+        "lon": 4.065445,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Pôle Gare"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://lemarcelavelo.ecovelo.mobi/#/station/stn_dFDe6YhzxBfRdz5pDqoVg2"
+        },
+        "station_id": "stn_dFDe6YhzxBfRdz5pDqoVg2"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 48.273796,
+        "lon": 4.068796,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Piscine des Chartreux"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://lemarcelavelo.ecovelo.mobi/#/station/stn_KRK2MjE6SFMVnd5cDNdAda"
+        },
+        "station_id": "stn_KRK2MjE6SFMVnd5cDNdAda"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 48.305981,
+        "lon": 4.063211,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Lycée Marie de Champagne"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://lemarcelavelo.ecovelo.mobi/#/station/stn_FQFsJncdNhcquC2E2b6oH3"
+        },
+        "station_id": "stn_FQFsJncdNhcquC2E2b6oH3"
+      },
+      {
+        "capacity": 18,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 48.29876,
+        "lon": 4.079949,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Campus-Cathédrale"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://lemarcelavelo.ecovelo.mobi/#/station/stn_PkLtJCYQWBuqEhYe52CtfG"
+        },
+        "station_id": "stn_PkLtJCYQWBuqEhYe52CtfG"
+      },
+      {
+        "capacity": 6,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 48.311153,
+        "lon": 4.030514,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Aqualuc"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://lemarcelavelo.ecovelo.mobi/#/station/stn_HxEjRdqvxVVLXqErZeZuLU"
+        },
+        "station_id": "stn_HxEjRdqvxVVLXqErZeZuLU"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 48.311124,
+        "lon": 4.06893,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Vassaules"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://lemarcelavelo.ecovelo.mobi/#/station/stn_eC2cVcsxvJZMBHxjmTNDMk"
+        },
+        "station_id": "stn_eC2cVcsxvJZMBHxjmTNDMk"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 48.303244,
+        "lon": 4.033927,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Mont-Saint-Loup"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://lemarcelavelo.ecovelo.mobi/#/station/stn_QkyGKgPWGqpfLg5hngmeE9"
+        },
+        "station_id": "stn_QkyGKgPWGqpfLg5hngmeE9"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 48.3125,
+        "lon": 4.0489,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Salengro - Mairie "
+          }
+        ],
+        "rental_uris": {
+          "web": "https://lemarcelavelo.ecovelo.mobi/#/station/stn_UxKQHRfGCEbV5nXekSEoQU"
+        },
+        "station_id": "stn_UxKQHRfGCEbV5nXekSEoQU"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 48.280285,
+        "lon": 4.06903,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Hôpital Simone Veil"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://lemarcelavelo.ecovelo.mobi/#/station/stn_ibQEsz8KCkx9AJ3F2AhghF"
+        },
+        "station_id": "stn_ibQEsz8KCkx9AJ3F2AhghF"
+      },
+      {
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 48.27313,
+        "lon": 4.092188,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Parc Grimont"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://lemarcelavelo.ecovelo.mobi/#/station/stn_m3YEFv5URnYDsQs2BSNrjt"
+        },
+        "station_id": "stn_m3YEFv5URnYDsQs2BSNrjt"
+      },
+      {
+        "capacity": 40,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 48.26893,
+        "lon": 4.078658,
+        "name": [
+          {
+            "language": "fr",
+            "text": "IUT - Technopole"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://lemarcelavelo.ecovelo.mobi/#/station/stn_Gef34M7tQ6vNeH6ZZQ5oDn"
+        },
+        "station_id": "stn_Gef34M7tQ6vNeH6ZZQ5oDn"
+      },
+      {
+        "capacity": 16,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 48.302689,
+        "lon": 4.085805,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Ecole de Design - Kléber"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://lemarcelavelo.ecovelo.mobi/#/station/stn_NSvtHp4nHM9cV4CiKXsapP"
+        },
+        "station_id": "stn_NSvtHp4nHM9cV4CiKXsapP"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 48.305825,
+        "lon": 4.050783,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Parc des Marots"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://lemarcelavelo.ecovelo.mobi/#/station/stn_AX6ohxVR6gkoeEagdba6ft"
+        },
+        "station_id": "stn_AX6ohxVR6gkoeEagdba6ft"
+      },
+      {
+        "capacity": 40,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 48.268866,
+        "lon": 4.06965,
+        "name": [
+          {
+            "language": "fr",
+            "text": "UTT - Complexe sportif Henri Terré"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://lemarcelavelo.ecovelo.mobi/#/station/stn_BzVR4rGRkHpe4FuZCH4S7g"
+        },
+        "station_id": "stn_BzVR4rGRkHpe4FuZCH4S7g"
+      },
+      {
+        "capacity": 16,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 48.293514,
+        "lon": 4.07929,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Complexe 3 Seine - Cinéma"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://lemarcelavelo.ecovelo.mobi/#/station/stn_GqQB5R3w8A4xwnrMCrk64o"
+        },
+        "station_id": "stn_GqQB5R3w8A4xwnrMCrk64o"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 48.28643,
+        "lon": 4.027609,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Mairie - La Rivière de Corps"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://lemarcelavelo.ecovelo.mobi/#/station/stn_ZwrXR9D6aQmfV76Nvp8n8i"
+        },
+        "station_id": "stn_ZwrXR9D6aQmfV76Nvp8n8i"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 48.2911,
+        "lon": 4.0709,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Parc des Expositions - Cube"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://lemarcelavelo.ecovelo.mobi/#/station/stn_GLaih5z9PEETUkykfbYpqz"
+        },
+        "station_id": "stn_GLaih5z9PEETUkykfbYpqz"
+      },
+      {
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 48.318,
+        "lon": 4.1041,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Le Moulinet"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://lemarcelavelo.ecovelo.mobi/#/station/stn_NE5RZA9ViD9n8tk2xttis7"
+        },
+        "station_id": "stn_NE5RZA9ViD9n8tk2xttis7"
+      },
+      {
+        "capacity": 20,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 48.269936,
+        "lon": 4.062496,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Ecoles d'Ingénieurs"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://lemarcelavelo.ecovelo.mobi/#/station/stn_g2QXv4VhN5Q9AxT3KnfwTT"
+        },
+        "station_id": "stn_g2QXv4VhN5Q9AxT3KnfwTT"
+      },
+      {
+        "capacity": 16,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 48.283823,
+        "lon": 4.078766,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Y Schools-Brossolette"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://lemarcelavelo.ecovelo.mobi/#/station/stn_D24cQFh782XGyCcJmNJe2S"
+        },
+        "station_id": "stn_D24cQFh782XGyCcJmNJe2S"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 48.2899,
+        "lon": 4.0669,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Voie verte des Viennes -Troyes Champagne Métropole "
+          }
+        ],
+        "rental_uris": {
+          "web": "https://lemarcelavelo.ecovelo.mobi/#/station/stn_kPbh9vTJAyc9ZsyzPXfkAX"
+        },
+        "station_id": "stn_kPbh9vTJAyc9ZsyzPXfkAX"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 48.307225,
+        "lon": 4.095788,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Stade de l'Aube"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://lemarcelavelo.ecovelo.mobi/#/station/stn_kafscg4v62p94uZSfLfNCu"
+        },
+        "station_id": "stn_kafscg4v62p94uZSfLfNCu"
+      },
+      {
+        "capacity": 20,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 48.297266,
+        "lon": 4.074002,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Mairie de Troyes - Office de tourisme "
+          }
+        ],
+        "rental_uris": {
+          "web": "https://lemarcelavelo.ecovelo.mobi/#/station/stn_FWBpxXvF3wobVJsWLrWgGQ"
+        },
+        "station_id": "stn_FWBpxXvF3wobVJsWLrWgGQ"
+      },
+      {
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 48.320442,
+        "lon": 4.064662,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Parc de Fouchy"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://lemarcelavelo.ecovelo.mobi/#/station/stn_ZAfUNrxMei3Cx2LFWtrzDA"
+        },
+        "station_id": "stn_ZAfUNrxMei3Cx2LFWtrzDA"
+      },
+      {
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 48.283055,
+        "lon": 4.052102,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Ile Germaine"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://lemarcelavelo.ecovelo.mobi/#/station/stn_GbpkJr6T6C4NAGAyxB2daZ"
+        },
+        "station_id": "stn_GbpkJr6T6C4NAGAyxB2daZ"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 48.294022,
+        "lon": 4.054226,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Place de Reichenbach"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://lemarcelavelo.ecovelo.mobi/#/station/stn_cFbDS7J5E8TMEjMkaRncGf"
+        },
+        "station_id": "stn_cFbDS7J5E8TMEjMkaRncGf"
+      }
+    ]
+  },
+  "last_updated": "2026-02-22T09:41:11+01:00",
+  "ttl": 0,
+  "version": "3.0"
+}

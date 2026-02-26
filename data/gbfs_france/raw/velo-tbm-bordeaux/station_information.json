@@ -1,0 +1,4509 @@
+{
+  "ttl": 3600,
+  "version": "3.0",
+  "data": {
+    "stations": [
+      {
+        "name": [
+          {
+            "text": "Meriadeck",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.83803,
+        "lon": -0.58437,
+        "address": "RUE CLAUDE BONNIER (STATION TRAMWAY) , BORDEAUX",
+        "capacity": 42,
+        "station_id": "1",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Saint-Bruno - Hôtel de Région",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.83784,
+        "lon": -0.59028,
+        "address": "RUE FRANÇOIS DE SOURDIS (CIMETIÈRE DE LA CHARTREUSE) , BORDEAUX",
+        "capacity": 20,
+        "station_id": "2",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Piscine Judaique",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.840813,
+        "lon": -0.593233,
+        "address": "PLACE DU CAPITAINE DU TERTRE , BORDEAUX",
+        "capacity": 26,
+        "station_id": "3",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Saint-Seurin",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.84221,
+        "lon": -0.58482,
+        "address": "PLACE VERCINGÉTORIX, (37 PLACE DES MARTYRS DE LA RÉSISTANCE), BORDEAUX",
+        "capacity": 20,
+        "station_id": "4",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Gambetta",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.840712,
+        "lon": -0.581124,
+        "address": "FACE AU 12-2 PLACE GAMBETTA , BORDEAUX",
+        "capacity": 39,
+        "station_id": "5",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Square Andre Lhote",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.83779,
+        "lon": -0.58166,
+        "address": "COURS D'ALBRET (SQUARE ANDRÉ LHOTE), BORDEAUX",
+        "capacity": 40,
+        "station_id": "6",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Palais de Justice",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.83594,
+        "lon": -0.58211,
+        "address": "18 Cours Maréchal Juin, Bordeaux",
+        "capacity": 17,
+        "station_id": "7",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Patinoire",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.83436,
+        "lon": -0.58825,
+        "address": "120 Cours Maréchal Juin, Bordeaux",
+        "capacity": 20,
+        "station_id": "8",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Gavinies",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.83303,
+        "lon": -0.59289,
+        "address": "206 Rue d'Ornano, Bordeaux",
+        "capacity": 19,
+        "station_id": "9",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Stade Chaban Delmas",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.83176,
+        "lon": -0.59868,
+        "address": "115 Boulevard Antoine Gautier, Bordeaux",
+        "capacity": 21,
+        "station_id": "10",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Cite Administrative",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.84166,
+        "lon": -0.5997,
+        "address": "108 Boulevard du Président Wilson, Bordeaux",
+        "capacity": 30,
+        "station_id": "11",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Grand Lebrun ",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.85115,
+        "lon": -0.60861,
+        "address": "24 Avenue Louis Barthou, Bordeaux",
+        "capacity": 15,
+        "station_id": "12",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Barrière Saint-Médard",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.84837,
+        "lon": -0.5981,
+        "address": "278 Boulevard du Président Wilson, Bordeaux",
+        "capacity": 20,
+        "station_id": "13",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Dubreuil Turenne",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.84819,
+        "lon": -0.59197,
+        "address": "75 Rue de Lyon, Bordeaux",
+        "capacity": 30,
+        "station_id": "14",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Lycée Camille Julian",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.844195,
+        "lon": -0.588766,
+        "address": "43 Rue Capdeville, Bordeaux",
+        "capacity": 12,
+        "station_id": "15",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Galin",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.84947,
+        "lon": -0.54525,
+        "address": "AVENUE THIERS (FACE AU PARC RELAIS) , BORDEAUX",
+        "capacity": 30,
+        "station_id": "16",
+        "post_code": "33100",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Palais Gallien",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.8469,
+        "lon": -0.58219,
+        "address": "1 Rue Emile Fourcand, Bordeaux",
+        "capacity": 14,
+        "station_id": "17",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Huguerie",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.84423,
+        "lon": -0.58164,
+        "address": "78 Rue du Palais Gallien, Bordeaux",
+        "capacity": 14,
+        "station_id": "18",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Tourny",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.84465,
+        "lon": -0.57745,
+        "address": "58 Allée de Tourny, Bordeaux",
+        "capacity": 30,
+        "station_id": "19",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Grands Hommes",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.84314,
+        "lon": -0.57724,
+        "address": "1 Place des Grands Hommes, Bordeaux",
+        "capacity": 31,
+        "station_id": "20",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Puy Paulin",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.84122,
+        "lon": -0.5756,
+        "address": "1 Place Puy Paulin, Bordeaux",
+        "capacity": 15,
+        "station_id": "21",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Hotel de Ville",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.83826,
+        "lon": -0.57648,
+        "address": "PL. PEY BERLAND  (TRÉMIE DE SORTIE DU PARKING), BORDEAUX",
+        "capacity": 30,
+        "station_id": "22",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Republique",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.83483,
+        "lon": -0.58019,
+        "address": "PLACE DE LA RÉPUBLIQUE , BORDEAUX",
+        "capacity": 19,
+        "station_id": "23",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Liberation",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.83325,
+        "lon": -0.58308,
+        "address": "9 Rue Léo Drouyn, Bordeaux",
+        "capacity": 16,
+        "station_id": "24",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Francois de Sourdis",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.831,
+        "lon": -0.58734,
+        "address": "97 Rue François de Sourdis, Bordeaux",
+        "capacity": 15,
+        "station_id": "25",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Xaintrailles",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.82797,
+        "lon": -0.59349,
+        "address": "247 Boulevard Maréchal Leclerc, Bordeaux",
+        "capacity": 16,
+        "station_id": "26",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Bordeaux II",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.82654,
+        "lon": -0.60184,
+        "address": "UNIVERSITÉ BORDEAUX II (MATERNITÉ PELLEGRIN), BORDEAUX",
+        "capacity": 20,
+        "station_id": "27",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Hopital Pellegrin",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.82986,
+        "lon": -0.60351,
+        "address": "PLACE AMÉLIE RABA LEON  (AU NIVEAU DE L'EFS), BORDEAUX",
+        "capacity": 32,
+        "station_id": "28",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "St Augustin",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.832736,
+        "lon": -0.60997,
+        "address": "PLACE DE L'EGLISE ST AUGUSTIN , BORDEAUX",
+        "capacity": 20,
+        "station_id": "29",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Place Mondesir",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.83838,
+        "lon": -0.61689,
+        "address": "PLACE MONDÉSIR (FACE À LA POSTE) , MERIGNAC",
+        "capacity": 18,
+        "station_id": "30",
+        "post_code": "33700",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Mairie de Caudéran",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.85175,
+        "lon": -0.61438,
+        "address": "FACE AU 7 RUE DE L'ÉGLISE , BORDEAUX",
+        "capacity": 16,
+        "station_id": "31",
+        "post_code": "33200",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Parc Bordelais",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.85261,
+        "lon": -0.59923,
+        "address": "67 Avenue Carnot, Bordeaux",
+        "capacity": 16,
+        "station_id": "32",
+        "post_code": "33200",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Barriere du Medoc",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.854092,
+        "lon": -0.593128,
+        "address": "6 Boulevard Pierre 1er, Bordeaux",
+        "capacity": 19,
+        "station_id": "33",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Arsenal",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.85379,
+        "lon": -0.58864,
+        "address": "17 Rue de Rivière, Bordeaux",
+        "capacity": 16,
+        "station_id": "34",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Croix de Seguey",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.85005,
+        "lon": -0.58547,
+        "address": "211 Rue Fondaudege, Bordeaux",
+        "capacity": 19,
+        "station_id": "35",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Longchamps",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.85005,
+        "lon": -0.582,
+        "address": "2 Place de Longchamps, Bordeaux",
+        "capacity": 18,
+        "station_id": "36",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Jardin Public",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.84849,
+        "lon": -0.57581,
+        "address": "60 Cours de Verdun, Bordeaux",
+        "capacity": 30,
+        "station_id": "37",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Fondaudege Museum",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.84641,
+        "lon": -0.5802,
+        "address": "16 Place Charles Gruet, Bordeaux",
+        "capacity": 15,
+        "station_id": "38",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Quinconces",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.84423,
+        "lon": -0.57434,
+        "address": "FACE AU 9 COURS DU 30 JUILLET BORDEAUX, BORDEAUX",
+        "capacity": 66,
+        "station_id": "39",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Grand Theatre",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.84293,
+        "lon": -0.5739,
+        "address": "RUE ESPRIT DES LOIS, BORDEAUX",
+        "capacity": 19,
+        "station_id": "40",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Place St Projet",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.83889,
+        "lon": -0.57466,
+        "address": "9 Rue des Trois Conils, Bordeaux",
+        "capacity": 18,
+        "station_id": "41",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Camille Jullian",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.83924,
+        "lon": -0.57203,
+        "address": "31 Rue du Pas Saint-Georges, Bordeaux",
+        "capacity": 19,
+        "station_id": "42",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "St Paul",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.83707,
+        "lon": -0.57279,
+        "address": "7 Rue Ravez, Bordeaux",
+        "capacity": 18,
+        "station_id": "43",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Musee d'Aquitaine",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.83606,
+        "lon": -0.57544,
+        "address": "16 Cours Pasteur, Bordeaux",
+        "capacity": 20,
+        "station_id": "44",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Place Ste Eulalie",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.83312,
+        "lon": -0.57695,
+        "address": "2 Place Sainte-Eulalie, Bordeaux",
+        "capacity": 20,
+        "station_id": "45",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Belcier Tram",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.822803,
+        "lon": -0.55293,
+        "address": "ALL. EUGÈNE DELACROIX, BORDEAUX",
+        "capacity": 20,
+        "station_id": "46",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Magendie",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.82789,
+        "lon": -0.58605,
+        "address": "212 Rue Fernand Audeguil, Bordeaux",
+        "capacity": 16,
+        "station_id": "47",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Barriere de Pessac",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.82578,
+        "lon": -0.58975,
+        "address": "50 Boulevard George V, Bordeaux",
+        "capacity": 18,
+        "station_id": "48",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Emile Zola",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.86329,
+        "lon": -0.59995,
+        "address": "43 Rue Emile Zola, Le Bouscat",
+        "capacity": 18,
+        "station_id": "49",
+        "post_code": "33110",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Mandron Godard",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.85999,
+        "lon": -0.58876,
+        "address": "14 BOULEVARD GODARD , BORDEAUX",
+        "capacity": 14,
+        "station_id": "50",
+        "post_code": "33300",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Ampère-Grand Parc",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.8625594,
+        "lon": -0.5832471,
+        "address": "159 BLVD GODARD , BORDEAUX",
+        "capacity": 20,
+        "station_id": "51",
+        "post_code": "33300",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Place de l'Europe",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.858902,
+        "lon": -0.581327,
+        "address": "COURS DE LUZE (FACE À LA MAIRIE ANNEXE) , BORDEAUX",
+        "capacity": 17,
+        "station_id": "52",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Parc Riviere",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.85417,
+        "lon": -0.58659,
+        "address": "FACE AU 230 RUE CAMILLE GODARD , BORDEAUX",
+        "capacity": 14,
+        "station_id": "53",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Rue St Vincent de Paul",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.82642,
+        "lon": -0.55732,
+        "address": "28 Rue Saint Vincent de Paul, Bordeaux",
+        "capacity": 44,
+        "station_id": "54",
+        "post_code": "33800",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Camille Godard",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.85462,
+        "lon": -0.57435,
+        "address": "35 Cours Evrard de Fayolle, Bordeaux",
+        "capacity": 16,
+        "station_id": "55",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Place Paul Doumer",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.85171,
+        "lon": -0.57427,
+        "address": "PLACE PAUL DOUMER , BORDEAUX",
+        "capacity": 19,
+        "station_id": "56",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Eglise St Louis",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.85155,
+        "lon": -0.57163,
+        "address": "FACE AU 9 RUE SICARD, BORDEAUX",
+        "capacity": 18,
+        "station_id": "57",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Chartrons",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.85321,
+        "lon": -0.56727,
+        "address": "FACE AU 73 QUAI DES CHARTRONS, BORDEAUX",
+        "capacity": 18,
+        "station_id": "58",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "CAPC",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.84978,
+        "lon": -0.57024,
+        "address": "17 Quai des Chartrons, Bordeaux",
+        "capacity": 18,
+        "station_id": "59",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Allees de Chartres",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.84718,
+        "lon": -0.57131,
+        "address": "FACE AU 1 ALLEES DE CHARTRES, BORDEAUX",
+        "capacity": 19,
+        "station_id": "60",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Parc aux Angeliques",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.84625,
+        "lon": -0.56495,
+        "address": "QUAI DE QUEYRIES / ALL. JEAN GIONO, BORDEAUX",
+        "capacity": 15,
+        "station_id": "61",
+        "post_code": "33100",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Cenon Gare",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.856476,
+        "lon": -0.533983,
+        "address": "AU BOUT DE LA RUE EDOUARD VAILLANT, CENON",
+        "capacity": 29,
+        "station_id": "62",
+        "post_code": "33150",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Parc Municipal",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.83028,
+        "lon": -0.52697,
+        "address": "10 Avenue du Président François Mitterrand, Floirac",
+        "capacity": 18,
+        "station_id": "63",
+        "post_code": "33270",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "La Benauge",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.8396,
+        "lon": -0.55645,
+        "address": "RUE HENRI DUNANT (SQUARE M-L. SUE), BORDEAUX",
+        "capacity": 18,
+        "station_id": "64",
+        "post_code": "33100",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Stalingrad",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.84034,
+        "lon": -0.55955,
+        "address": "7, 9 PLACE STALINGRAD, BORDEAUX",
+        "capacity": 56,
+        "station_id": "65",
+        "post_code": "33100",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Gare d'Orleans",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.84114,
+        "lon": -0.56224,
+        "address": "QUAI DE QUEYRIES (FACE A LA GARE D'ORLEANS), BORDEAUX",
+        "capacity": 20,
+        "station_id": "66",
+        "post_code": "33100",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Allee de Serr Abadie",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.84377,
+        "lon": -0.55751,
+        "address": "ALLEE DE SERR, BORDEAUX",
+        "capacity": 14,
+        "station_id": "67",
+        "post_code": "33100",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Jardin Botanique",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.84298,
+        "lon": -0.55573,
+        "address": "73 Avenue Thiers, Bordeaux",
+        "capacity": 17,
+        "station_id": "68",
+        "post_code": "33100",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Cours Le Rouzic",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.84299,
+        "lon": -0.55036,
+        "address": "5 Place Calixte Camelle, Bordeaux",
+        "capacity": 26,
+        "station_id": "69",
+        "post_code": "33100",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Buttiniere",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.86428,
+        "lon": -0.5242,
+        "address": "Pôle d'échange Buttinière, LORMONT",
+        "capacity": 20,
+        "station_id": "70",
+        "post_code": "33310",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Jean Zay",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.85418,
+        "lon": -0.51282,
+        "address": "AVENUE JEAN ZAY (STATION TRAMWAY), CENON",
+        "capacity": 23,
+        "station_id": "72",
+        "post_code": "33150",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Terres Neuves",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.815083,
+        "lon": -0.550901,
+        "address": "307 BOULEVARD J.J. BOSC, BEGLES",
+        "capacity": 20,
+        "station_id": "73",
+        "post_code": "33130",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Place du 14 juillet",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.8077,
+        "lon": -0.54821,
+        "address": "2 Rue Calixte Camelle, Bègles",
+        "capacity": 21,
+        "station_id": "74",
+        "post_code": "33130",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Begles Poste",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.807735,
+        "lon": -0.560024,
+        "address": "111 Avenue Lucien Lerousseau, Bègles",
+        "capacity": 17,
+        "station_id": "75",
+        "post_code": "33130",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Pont de la Maye",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.781742,
+        "lon": -0.566207,
+        "address": "564 Route de Toulouse, Villenave-d'Ornon",
+        "capacity": 20,
+        "station_id": "76",
+        "post_code": "33140",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Brazza",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.855067,
+        "lon": -0.550684,
+        "address": "Rue René Char , Bordeaux",
+        "capacity": 19,
+        "station_id": "77",
+        "post_code": "33100",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Bougnard",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.7939143,
+        "lon": -0.6350512,
+        "address": "AVENUE BOUGNARD (FACE AU P+R), PESSAC",
+        "capacity": 20,
+        "station_id": "78",
+        "post_code": "33600",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Niel",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.8507734,
+        "lon": -0.5594535,
+        "address": "87 Quai des Queyries, Bordeaux",
+        "capacity": 20,
+        "station_id": "79",
+        "post_code": "33100",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Gare Pessac Alouette",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.79319,
+        "lon": -0.657632,
+        "address": "30 AVENUE DU HAUT LEVEQUE, PESSAC",
+        "capacity": 17,
+        "station_id": "80",
+        "post_code": "33600",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Archives",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.8468,
+        "lon": -0.553741,
+        "address": "Rue de la Rotonde , Bordeaux",
+        "capacity": 19,
+        "station_id": "81",
+        "post_code": "33100",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "La Chataigneraie",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.792915,
+        "lon": -0.646629,
+        "address": "62 AVENUE DE CANEJAN, PESSAC",
+        "capacity": 20,
+        "station_id": "82",
+        "post_code": "33600",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Pessac Centre",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.80446,
+        "lon": -0.63267,
+        "address": "25 R. EUGENE ET MARC DULOUT, PESSAC",
+        "capacity": 21,
+        "station_id": "83",
+        "post_code": "33600",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Le Burck",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.81535,
+        "lon": -0.63444,
+        "address": "110 Avenue Pierre Mendès-France, Mérignac",
+        "capacity": 16,
+        "station_id": "84",
+        "post_code": "33700",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Merignac Quatre Chemins",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.83242,
+        "lon": -0.64594,
+        "address": "AVENUE DE LA MARNE (DEVANT LE P+R), Mérignac",
+        "capacity": 18,
+        "station_id": "85",
+        "post_code": "33700",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Merignac Soleil",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.8310417,
+        "lon": -0.6564076,
+        "address": "Mérignac soleil,33700,Mérignac, Avenue de la somme, MERIGNAC",
+        "capacity": 20,
+        "station_id": "86",
+        "post_code": "33700",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Thiers Benauge",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.846581,
+        "lon": -0.549923,
+        "address": "178 Avenue Thiers , Bordeaux",
+        "capacity": 20,
+        "station_id": "87",
+        "post_code": "33100",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Capeyron",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.85097,
+        "lon": -0.64475,
+        "address": "PLACE JEAN JAURES, MERIGNAC",
+        "capacity": 18,
+        "station_id": "88",
+        "post_code": "33700",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Merignac Centre",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.8416,
+        "lon": -0.646465,
+        "address": "CROISEMENT AV. VERDUN ET M LECLERC, MERIGNAC",
+        "capacity": 21,
+        "station_id": "89",
+        "post_code": "33700",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Fontaine d'Arlac",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.8265,
+        "lon": -0.62577,
+        "address": "Av. François Mitterrand (devant le P+R), Mérignac",
+        "capacity": 18,
+        "station_id": "90",
+        "post_code": "33700",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Maison Calixte Camelle",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.837453,
+        "lon": -0.556814,
+        "address": "35 Quai Deschamps, Bordeaux",
+        "capacity": 20,
+        "station_id": "91",
+        "post_code": "33100",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Promis",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.838768,
+        "lon": -0.551774,
+        "address": "35 Rue de Cénac , Bordeaux",
+        "capacity": 16,
+        "station_id": "92",
+        "post_code": "33100",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Place Florale",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.869026,
+        "lon": -0.636207,
+        "address": "3 Avenue de Picot, Eysines",
+        "capacity": 16,
+        "station_id": "93",
+        "post_code": "33320",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Carles Vernet",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.820244263423824,
+        "lon": -0.5500560964240234,
+        "address": "74 Rue Carle Vernet, Bordeaux",
+        "capacity": 20,
+        "station_id": "94",
+        "post_code": "33800",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Bruges Centre",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.88145,
+        "lon": -0.61337,
+        "address": "87 Avenue Charles de Gaulle, Bruges",
+        "capacity": 15,
+        "station_id": "95",
+        "post_code": "33520",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Les Aubiers",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.87389,
+        "lon": -0.57401,
+        "address": "Avenue de Laroque (derrière la station tram), Bordeaux",
+        "capacity": 23,
+        "station_id": "96",
+        "post_code": "33300",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Pont du Guit",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.824007,
+        "lon": -0.557663,
+        "address": "Rue Charles Domercq, Bordeaux",
+        "capacity": 21,
+        "station_id": "97",
+        "post_code": "33800",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Cap Sciences",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.86007,
+        "lon": -0.55447,
+        "address": "83 Quai de Bacalan, Bordeaux",
+        "capacity": 17,
+        "station_id": "98",
+        "post_code": "33300",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Les Hangars",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.857867,
+        "lon": -0.557801,
+        "address": "36 Quai de Bacalan, Bordeaux",
+        "capacity": 32,
+        "station_id": "99",
+        "post_code": "33300",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Cours du Médoc",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.8556,
+        "lon": -0.56319,
+        "address": "119 Quai des Chartrons, Bordeaux",
+        "capacity": 58,
+        "station_id": "100",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Place Jean Jaures",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.84295,
+        "lon": -0.57037,
+        "address": "Quai du Maréchal Lyautey, Bordeaux",
+        "capacity": 20,
+        "station_id": "101",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Place de la Bourse",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.8403,
+        "lon": -0.56914,
+        "address": "6 Quai de la Douane, Bordeaux",
+        "capacity": 39,
+        "station_id": "102",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Place du Palais",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.83779,
+        "lon": -0.57034,
+        "address": "40 Cours d'Alsace Et Lorraine, Bordeaux",
+        "capacity": 31,
+        "station_id": "103",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Grosse Cloche",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.83518,
+        "lon": -0.57205,
+        "address": "12 Place de la Ferme de Richemont, Bordeaux",
+        "capacity": 14,
+        "station_id": "104",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Rue du Mirail",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.83262,
+        "lon": -0.57097,
+        "address": "63 Rue du Mirail, Bordeaux",
+        "capacity": 20,
+        "station_id": "105",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Victoire",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.83064,
+        "lon": -0.57321,
+        "address": "23 Place de la Victoire, Bordeaux",
+        "capacity": 51,
+        "station_id": "106",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "St Nicolas",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.82751,
+        "lon": -0.57589,
+        "address": "Face au 20 Rue Brian, Bordeaux",
+        "capacity": 15,
+        "station_id": "107",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Bergonié",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.82471,
+        "lon": -0.57815,
+        "address": "Rue Grateloup, Bordeaux",
+        "capacity": 16,
+        "station_id": "108",
+        "post_code": "33800",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Barriere St Genes",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.82209,
+        "lon": -0.58178,
+        "address": "276 Cours de l'Argonne, Bordeaux",
+        "capacity": 35,
+        "station_id": "109",
+        "post_code": "33800",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Forum",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.81238,
+        "lon": -0.59103,
+        "address": "Angle Allée du 7ème Art / Cours de la Libération, Talence",
+        "capacity": 39,
+        "station_id": "110",
+        "post_code": "33400",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Peixotto",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.80681,
+        "lon": -0.59245,
+        "address": "Avenue Roul (Terminus bus), Talence",
+        "capacity": 40,
+        "station_id": "111",
+        "post_code": "33400",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Arts et Métiers",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.80591,
+        "lon": -0.60232,
+        "address": "Avenue des Facultés (Derrière la station de tram), Talence",
+        "capacity": 40,
+        "station_id": "112",
+        "post_code": "33400",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Ecole de Management",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.79688,
+        "lon": -0.60187,
+        "address": "Cours de la Libération (Devant BEM), Talence",
+        "capacity": 19,
+        "station_id": "113",
+        "post_code": "33400",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Compostelle",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.79313,
+        "lon": -0.60547,
+        "address": " Rue de Compostelle / Cours du Général de Gaulle, Gradignan",
+        "capacity": 26,
+        "station_id": "114",
+        "post_code": "33170",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "CREPS",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.801376,
+        "lon": -0.5971532,
+        "address": "Avenue de l'Université, Talence",
+        "capacity": 32,
+        "station_id": "115",
+        "post_code": "33400",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Montaigne Montesquieu",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.79667,
+        "lon": -0.61704,
+        "address": "Station tramway, Pessac",
+        "capacity": 39,
+        "station_id": "116",
+        "post_code": "33600",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Doyen Brus",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.80038,
+        "lon": -0.60986,
+        "address": "Rond-Point Avenue des Facultés, Pessac",
+        "capacity": 19,
+        "station_id": "117",
+        "post_code": "33600",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Place Ravezies",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.86694,
+        "lon": -0.57608,
+        "address": "Allée de Boutaut (Au niveau du P+R), Le Bouscat",
+        "capacity": 20,
+        "station_id": "118",
+        "post_code": "33110",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Grand Parc",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.8626,
+        "lon": -0.57576,
+        "address": "Avenue Émile Counord / Rue François Lévêque, Bordeaux",
+        "capacity": 20,
+        "station_id": "119",
+        "post_code": "33300",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Saint-Louis",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.86261,
+        "lon": -0.56718,
+        "address": "196 Cours Saint Louis, Bordeaux",
+        "capacity": 30,
+        "station_id": "120",
+        "post_code": "33300",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Médoc (Place Saint-Martial)",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.85891,
+        "lon": -0.56584,
+        "address": "30 Place Saint Martial, Bordeaux",
+        "capacity": 14,
+        "station_id": "121",
+        "post_code": "33300",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Gaussen",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.85849,
+        "lon": -0.56966,
+        "address": "77 Cours Saint Louis, Bordeaux",
+        "capacity": 16,
+        "station_id": "122",
+        "post_code": "33300",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Porte de Bourgogne",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.83779,
+        "lon": -0.56716,
+        "address": "42 Quai Richelieu, Bordeaux",
+        "capacity": 36,
+        "station_id": "123",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Parc des Sports",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.83387,
+        "lon": -0.56271,
+        "address": "8 Quai de la Monnaie, Bordeaux",
+        "capacity": 20,
+        "station_id": "124",
+        "post_code": "33800",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Sainte-Croix",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.83183,
+        "lon": -0.55966,
+        "address": "Quai Ste Croix, Devant le Conservatoire, Bordeaux",
+        "capacity": 30,
+        "station_id": "125",
+        "post_code": "33800",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Quai de Paludate",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.8267,
+        "lon": -0.54983,
+        "address": "82 Quai de Paludate, Bordeaux",
+        "capacity": 12,
+        "station_id": "126",
+        "post_code": "33800",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Gare Saint-Jean",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.8263,
+        "lon": -0.55707,
+        "address": "Rue St Vincent de Paul, Terminus bus, Bordeaux",
+        "capacity": 20,
+        "station_id": "127",
+        "post_code": "33800",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Sacre Coeur",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.82218,
+        "lon": -0.56308,
+        "address": "Place du Cardinal Donnet, Face au 112 rue Pelleport, Bordeaux",
+        "capacity": 16,
+        "station_id": "128",
+        "post_code": "33800",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Barriere de Bègles",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.81308,
+        "lon": -0.5642,
+        "address": "Parking du cinéma, Bègles",
+        "capacity": 17,
+        "station_id": "129",
+        "post_code": "33130",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Barriere de Toulouse",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.814476,
+        "lon": -0.570589,
+        "address": "8bis Boulevard Albert 1er, Bordeaux",
+        "capacity": 19,
+        "station_id": "130",
+        "post_code": "33800",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Nansouty",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.820258,
+        "lon": -0.5722051,
+        "address": "Place Nansouty, 238 Cours de l'Yser, Bordeaux",
+        "capacity": 17,
+        "station_id": "131",
+        "post_code": "33800",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Cours de la Somme",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.82628,
+        "lon": -0.57248,
+        "address": "118 Cours de la Somme, Bordeaux",
+        "capacity": 14,
+        "station_id": "132",
+        "post_code": "33800",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Capucins",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.82995,
+        "lon": -0.56812,
+        "address": "30 place des Capucins, Bordeaux",
+        "capacity": 19,
+        "station_id": "133",
+        "post_code": "33800",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Place du Maucaillou",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.8324361,
+        "lon": -0.5670693,
+        "address": "20 Place du Maucaillou, Bordeaux",
+        "capacity": 20,
+        "station_id": "134",
+        "post_code": "33800",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Saint-Michel",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.834797,
+        "lon": -0.564732,
+        "address": "Face au 7 Rue des Faures, Bordeaux",
+        "capacity": 20,
+        "station_id": "135",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Eglise Ste Croix",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.83131,
+        "lon": -0.56139,
+        "address": "Place Pierre Renaudel, Bordeaux",
+        "capacity": 18,
+        "station_id": "136",
+        "post_code": "33800",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Lycée Gustave Eiffel",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.828327,
+        "lon": -0.562299,
+        "address": "Angle du cours de la Marne, et du cours Barbey, Bordeaux",
+        "capacity": 24,
+        "station_id": "137",
+        "post_code": "33800",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Barbey",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.82656,
+        "lon": -0.56455,
+        "address": "9-10 Place Pierre Jacques Dormoy, Bordeaux",
+        "capacity": 20,
+        "station_id": "138",
+        "post_code": "33800",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Lycee Bremontier",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.824307,
+        "lon": -0.570524,
+        "address": "149 Cours de l'Yser, Bordeaux",
+        "capacity": 18,
+        "station_id": "139",
+        "post_code": "33800",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Charles Perrens",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.8230791,
+        "lon": -0.6006622,
+        "address": "120 Rue de la Bechade, Bordeaux",
+        "capacity": 19,
+        "station_id": "140",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Medoquine",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.818874,
+        "lon": -0.599919,
+        "address": "254 cours du Maréchal Gallieni, Bordeaux",
+        "capacity": 20,
+        "station_id": "141",
+        "post_code": "33400",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Bourranville",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.83947,
+        "lon": -0.629236,
+        "address": "En face 160 Avenue de Verdun, Mérignac",
+        "capacity": 20,
+        "station_id": "142",
+        "post_code": "33700",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Stade Stéhélin",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.85808,
+        "lon": -0.623341,
+        "address": "En face du 46 rue Domion, Bordeaux",
+        "capacity": 18,
+        "station_id": "143",
+        "post_code": "33200",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Jean Moulin",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.878494,
+        "lon": -0.58501,
+        "address": "92 Rue André Messager, Bruges",
+        "capacity": 18,
+        "station_id": "144",
+        "post_code": "33520",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Berges du Lac",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.87904,
+        "lon": -0.57057,
+        "address": "Cours du Québec, Bordeaux",
+        "capacity": 17,
+        "station_id": "145",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Palais des Congres",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.8889239,
+        "lon": -0.5677813,
+        "address": "Avenue Jean Gabriel Domergue, Bordeaux",
+        "capacity": 29,
+        "station_id": "146",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Parc des Expositions",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.8929695,
+        "lon": -0.5662245,
+        "address": "Allée Louis Ratabou, Bordeaux",
+        "capacity": 30,
+        "station_id": "147",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Amédée St-Germain",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.820936,
+        "lon": -0.560983,
+        "address": "82bis Rue Amédée Saint-Germain, Bordeaux",
+        "capacity": 20,
+        "station_id": "148",
+        "post_code": "33800",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Lauriers",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.87889,
+        "lon": -0.51783,
+        "address": "5-13 Avenue de la Résistance, Lormont",
+        "capacity": 20,
+        "station_id": "149",
+        "post_code": "33310",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Mandron",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.854864,
+        "lon": -0.58329,
+        "address": "19 Rue Ferdinand de Lesseps, Bordeaux",
+        "capacity": 16,
+        "station_id": "150",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Dravemont",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.84563,
+        "lon": -0.510532,
+        "address": "Rue Salvador Allende, Floirac",
+        "capacity": 20,
+        "station_id": "151",
+        "post_code": "33270",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Hopital Robert Picque",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.79967,
+        "lon": -0.569953,
+        "address": "349-351 ROUTE DE TOULOUSE, VILLENAVE D'ORNON",
+        "capacity": 20,
+        "station_id": "152",
+        "post_code": "33140",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Parc Sourreil",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.7923,
+        "lon": -0.581696,
+        "address": "FACE AU 325 CHEMIN DE LEYSOTTE, VILLENAVE D'ORNON",
+        "capacity": 20,
+        "station_id": "153",
+        "post_code": "33140",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Thouars",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.79209,
+        "lon": -0.591518,
+        "address": "221 Avenue de Thouars, Talence",
+        "capacity": 19,
+        "station_id": "154",
+        "post_code": "33400",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Village 6 IUT",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.791485,
+        "lon": -0.613107,
+        "address": "FACE 10 RUE DE NAUDET, GRADIGNAN",
+        "capacity": 23,
+        "station_id": "155",
+        "post_code": "33170",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Hotel de Ville Merignac",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.8443045,
+        "lon": -0.6589115,
+        "address": "FACE AU 39 RUE MAURICE UTRILLO, Mérignac",
+        "capacity": 20,
+        "station_id": "156",
+        "post_code": "33700",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Les Pins",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.85682,
+        "lon": -0.659829,
+        "address": "2 Rue Alphonse Daudet, Mérignac",
+        "capacity": 20,
+        "station_id": "157",
+        "post_code": "33700",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Lewis Brown",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.863208,
+        "lon": -0.561179,
+        "address": "120 Cours Edouard Vaillant, Bordeaux",
+        "capacity": 19,
+        "station_id": "158",
+        "post_code": "33300",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Camping International",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.897846,
+        "lon": -0.582511,
+        "address": "BOULEVARD JACQUES CHABAN-DELMAS , BRUGES",
+        "capacity": 24,
+        "station_id": "159",
+        "post_code": "33520",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Brandenburg",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.873741,
+        "lon": -0.545879,
+        "address": "223 Rue Achard, Bordeaux",
+        "capacity": 19,
+        "station_id": "160",
+        "post_code": "33300",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Place Buscaillet",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.870021,
+        "lon": -0.550576,
+        "address": "Place Adolphe Buscaillet, Bordeaux",
+        "capacity": 19,
+        "station_id": "161",
+        "post_code": "33300",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Gare de Begles",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.798195,
+        "lon": -0.551517,
+        "address": "14 AVENUE LÉNINE, BEGLES",
+        "capacity": 20,
+        "station_id": "162",
+        "post_code": "33130",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Lycee Vaclav Havel",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.785689,
+        "lon": -0.565509,
+        "address": "3 Avenue Danielle Mitterrand, Bègles",
+        "capacity": 20,
+        "station_id": "163",
+        "post_code": "33130",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Pont de Caudérès",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.8172117,
+        "lon": -0.5768853,
+        "address": "133 Boulevard du Président Franklin Roosevelt, Talence",
+        "capacity": 20,
+        "station_id": "164",
+        "post_code": "33400",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Barrière d’Arès",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.83633465,
+        "lon": -0.5987418,
+        "address": "Boulevard Antoine Gauthier, Bordeaux",
+        "capacity": 16,
+        "station_id": "165",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Centre commercial du Lac",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.88192,
+        "lon": -0.565221,
+        "address": "53 AVENUE DU LAC, BORDEAUX",
+        "capacity": 20,
+        "station_id": "166",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Barrière Judaïque",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.83924258046007,
+        "lon": -0.5990752083266996,
+        "address": "66 Boulevard du Président Wilson, Bordeaux",
+        "capacity": 20,
+        "station_id": "167",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Polyclinique Bordeaux Nord",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.864663,
+        "lon": -0.578664,
+        "address": "244 Boulevard Godard , Bordeaux",
+        "capacity": 19,
+        "station_id": "168",
+        "post_code": "33300",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "La Vache",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.8723969,
+        "lon": -0.5908097,
+        "address": "2 RUE LÉOPOLD LAPLANTE, BRUGES",
+        "capacity": 20,
+        "station_id": "169",
+        "post_code": "33520",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Faure-Brunet",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.866152,
+        "lon": -0.560843,
+        "address": "107 COURS DU RACCORDEMENT, BORDEAUX",
+        "capacity": 20,
+        "station_id": "170",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Place Amedee Larrieu",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.82993,
+        "lon": -0.581409,
+        "address": "Place Amédée Larrieu, Bordeaux",
+        "capacity": 20,
+        "station_id": "171",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "La Cite du Vin",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.86178,
+        "lon": -0.551499,
+        "address": "QUAI DE BACALAN, BORDEAUX",
+        "capacity": 27,
+        "station_id": "172",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Rue Achard",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.86749,
+        "lon": -0.5481,
+        "address": "RUE ACHARD 33000 , BORDEAUX",
+        "capacity": 20,
+        "station_id": "173",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Darwin",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.8491803,
+        "lon": -0.5624086,
+        "address": "QUAI DE QUEYRIES, BORDEAUX",
+        "capacity": 43,
+        "station_id": "174",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Arena",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.826054,
+        "lon": -0.531631,
+        "address": "PLACE MAYENSA , FLOIRAC",
+        "capacity": 20,
+        "station_id": "175",
+        "post_code": "33270",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Bassins à Flot",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.869064,
+        "lon": -0.556399,
+        "address": "4 Quai Hubert Prom, Bordeaux",
+        "capacity": 19,
+        "station_id": "176",
+        "post_code": "33300",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Cite numerique",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.813274,
+        "lon": -0.55517,
+        "address": "RUE MARC SANGNIER , BEGLES",
+        "capacity": 24,
+        "station_id": "177",
+        "post_code": "33130",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Jean Jaures",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.854004,
+        "lon": -0.537826,
+        "address": "12 Avenue Jean Jaurès, Cenon",
+        "capacity": 20,
+        "station_id": "178",
+        "post_code": "33150",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Naujac",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.8474,
+        "lon": -0.587664,
+        "address": "36 Rue Paulin, Bordeaux",
+        "capacity": 26,
+        "station_id": "179",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Sainte-Germaine",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.870798,
+        "lon": -0.613641,
+        "address": "Avenue Georges Clemenceau , Le Bouscat",
+        "capacity": 20,
+        "station_id": "180",
+        "post_code": "33110",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Mairie du Bouscat",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.866214,
+        "lon": -0.60529,
+        "address": "15-23 Avenue du 8 mai 1945 , LE BOUSCAT",
+        "capacity": 20,
+        "station_id": "181",
+        "post_code": "33110",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Hippodrome",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.873805,
+        "lon": -0.629383,
+        "address": "8 avenue de l'Hippodrome, LE BOUSCAT",
+        "capacity": 20,
+        "station_id": "182",
+        "post_code": "33110",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Place Maran",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.875335,
+        "lon": -0.553796,
+        "address": "517 Boulevard Alfred Daney , Bordeaux",
+        "capacity": 19,
+        "station_id": "183",
+        "post_code": "33300",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Lormont bas",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.877905,
+        "lon": -0.534293,
+        "address": "Quai Numa Sensine , Lormont",
+        "capacity": 20,
+        "station_id": "184",
+        "post_code": "33310",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Latule",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.869373,
+        "lon": -0.56634,
+        "address": "Boulevard Alfred Daney , Bordeaux",
+        "capacity": 20,
+        "station_id": "185",
+        "post_code": "33300",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Bagatelle",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.807389,
+        "lon": -0.574862,
+        "address": "163 Route de Toulouse, Talence",
+        "capacity": 20,
+        "station_id": "186",
+        "post_code": "33400",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Ecole Normale",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.8465,
+        "lon": -0.598372,
+        "address": "215 Boulevard du Président Wilson, Bordeaux",
+        "capacity": 20,
+        "station_id": "188",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Belvédère",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.834942,
+        "lon": -0.553021,
+        "address": "Quai Deschamps, Bordeaux",
+        "capacity": 19,
+        "station_id": "189",
+        "post_code": "33100",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Gare Routière Paludate",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.82909,
+        "lon": -0.554573,
+        "address": "32 Quai de Paludate, Bordeaux",
+        "capacity": 20,
+        "station_id": "190",
+        "post_code": "33800",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Gare de Caudéran",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.842422,
+        "lon": -0.627727,
+        "address": "55 Avenue de la Gare, Bordeaux",
+        "capacity": 20,
+        "station_id": "192",
+        "post_code": "33200",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Arena Pont",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.823917,
+        "lon": -0.532758,
+        "address": "quai de la souys, Floirac",
+        "capacity": 19,
+        "station_id": "194",
+        "post_code": "33270",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Simone Veil rive gauche",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.82014,
+        "lon": -0.54255,
+        "address": "46 Boulevard jean-jacques bosc, Bègles",
+        "capacity": 20,
+        "station_id": "196",
+        "post_code": "33130",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Roustaing",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.81681,
+        "lon": -0.58682,
+        "address": "18 Rue Roustaing, Talence",
+        "capacity": 16,
+        "station_id": "197",
+        "post_code": "33400",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Saint Amand",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.855215,
+        "lon": -0.614164,
+        "address": "162 Avenue du Général Leclerc , Bordeaux",
+        "capacity": 2,
+        "station_id": "199",
+        "post_code": "33200",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Le Grand Louis",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.861057,
+        "lon": -0.642196,
+        "address": "189 Avenue de la Libération, Mérignac",
+        "capacity": 15,
+        "station_id": "200",
+        "post_code": "33700",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Hôpital Suburbain",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.86736,
+        "lon": -0.617703,
+        "address": "84 Avenue Georges Clémenceau, Le Bouscat",
+        "capacity": 18,
+        "station_id": "201",
+        "post_code": "33110",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Calypso",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.860683,
+        "lon": -0.599533,
+        "address": "1 Rue Raymond Poincaré, Le Bouscat",
+        "capacity": 18,
+        "station_id": "202",
+        "post_code": "33110",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Caillou",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.860323,
+        "lon": -0.634148,
+        "address": "489 Avenue du Maréchal de Lattre de Tassigny, Bordeaux",
+        "capacity": 20,
+        "station_id": "206",
+        "post_code": "33200",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Gare de Talence Médoquine",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.816089,
+        "lon": -0.602903,
+        "address": "2008 Avenue de la Mission Haut Brion, Talence",
+        "capacity": 20,
+        "station_id": "207",
+        "post_code": "33400",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Unitec",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.79790884220275,
+        "lon": -0.6199639398210749,
+        "address": "160 Avenue du Docteur Albert Schweitzer, Pessac",
+        "capacity": 14,
+        "station_id": "209",
+        "post_code": "33600",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Clinique Mutualiste",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.805303,
+        "lon": -0.609875,
+        "address": "46 avenue du Dr Albert Schweitzer, Pessac",
+        "capacity": 18,
+        "station_id": "213",
+        "post_code": "33600",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Station Test Prod",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.802917002143,
+        "lon": -0.555855967363,
+        "address": "28 Rue Marcel Delattre, Bègles",
+        "capacity": 7,
+        "station_id": "219",
+        "post_code": "33130",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Belcier Gare",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.823285,
+        "lon": -0.554574,
+        "address": "Rue des Terres de Bordes, Angle de la rue Roullet, Bordeaux",
+        "capacity": 40,
+        "station_id": "251",
+        "post_code": "33800",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Borne itinérante 1",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.81999,
+        "lon": -0.54253,
+        "address": "56 Boulevard Jean-Jacques Bosc, Bègles",
+        "capacity": 0,
+        "station_id": "297",
+        "post_code": "33130",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Borne itinérante 2",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.81999,
+        "lon": -0.54251,
+        "address": "56 Boulevard Jean-Jacques Bosc, Bègles",
+        "capacity": 1,
+        "station_id": "298",
+        "post_code": "33130",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Station Prod BOSC",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.8199799583067,
+        "lon": -0.5423448575840326,
+        "address": "28 boulevard Jean Jacques Bosc, Bègles",
+        "capacity": 2,
+        "station_id": "299",
+        "post_code": "33130",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Ilot Gambetta",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.840874,
+        "lon": -0.581078,
+        "address": "1 Place Gambetta, Bordeaux",
+        "capacity": 5,
+        "station_id": "505",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Ilot Palais de justice",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.835862,
+        "lon": -0.582249,
+        "address": "3-27 Rue de Belfort, Bordeaux",
+        "capacity": 9,
+        "station_id": "507",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Ilots Quinconces",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.844354,
+        "lon": -0.574307,
+        "address": "Cours du 30 Juillet, Pavillon des Quinconces, Bordeaux",
+        "capacity": 10,
+        "station_id": "539",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Ilot Saint Paul",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.837550229143005,
+        "lon": -0.5727752725007731,
+        "address": "6 rue Ravez, Bordeaux",
+        "capacity": 5,
+        "station_id": "543",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Ilot Eglise St Louis",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.851519,
+        "lon": -0.571724,
+        "address": "FACE AU 9 RUE SICARD, BORDEAUX",
+        "capacity": 5,
+        "station_id": "557",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Ilot CAPC",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.850136,
+        "lon": -0.570166,
+        "address": "25 Quai des Chartrons, Bordeaux",
+        "capacity": 5,
+        "station_id": "559",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Ilot Parc aux Angéliques",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.846152,
+        "lon": -0.564846,
+        "address": "1 Rue Reignier, Bordeaux",
+        "capacity": 5,
+        "station_id": "561",
+        "post_code": "33100",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Ilot Allée de Serr Abadie",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.843856,
+        "lon": -0.55744,
+        "address": "1 Rue Abadie, Bègles",
+        "capacity": 5,
+        "station_id": "567",
+        "post_code": "33130",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Ilot Cap Sciences",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.860149,
+        "lon": -0.554283,
+        "address": "1 Quai de Bacalan, Bordeaux",
+        "capacity": 5,
+        "station_id": "598",
+        "post_code": "33300",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Ilot Les Hangars",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.857934,
+        "lon": -0.558128,
+        "address": "36 Quai de Bacalan, Bordeaux",
+        "capacity": 10,
+        "station_id": "599",
+        "post_code": "33300",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Ilot Grosse Cloche",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.8347927,
+        "lon": -0.5720756,
+        "address": "120 Cours Victor Hugo, Bordeaux",
+        "capacity": 5,
+        "station_id": "604",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Ilot Rue du Mirail",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.832614,
+        "lon": -0.571034,
+        "address": "60 Rue du Mirail, Bordeaux",
+        "capacity": 5,
+        "station_id": "605",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Ilot Victoire",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.830814,
+        "lon": -0.573234,
+        "address": "23 Place de la Victoire, Bordeaux",
+        "capacity": 5,
+        "station_id": "606",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Ilot Gare St-Jean",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.826202,
+        "lon": -0.557041,
+        "address": "1 Rue Saint Vincent de Paul, Bordeaux",
+        "capacity": 19,
+        "station_id": "627",
+        "post_code": "33800",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Ilot Barrière de Bègles",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.8131981,
+        "lon": -0.5642255,
+        "address": "Parking du cinéma , Bègles",
+        "capacity": 5,
+        "station_id": "629",
+        "post_code": "33130",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Ilot Capucins",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.8300854,
+        "lon": -0.5680272,
+        "address": "15 place des capucins, Bordeaux",
+        "capacity": 5,
+        "station_id": "633",
+        "post_code": "33800",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Ilot Cité du Vin",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.861715,
+        "lon": -0.55157,
+        "address": "13 Quai de Bacalan, Bordeaux",
+        "capacity": 9,
+        "station_id": "672",
+        "post_code": "33300",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Maison Ecocitoyenne",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.839295,
+        "lon": -0.567696,
+        "address": "Quai richelieu, Bordeaux",
+        "capacity": 0,
+        "station_id": "900",
+        "post_code": "33000",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Stalingrad Lion Bleu",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.840251,
+        "lon": -0.560255,
+        "address": "2 place de stalingrad, Bordeaux",
+        "capacity": 2,
+        "station_id": "901",
+        "post_code": "33100",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      },
+      {
+        "name": [
+          {
+            "text": "Cathédrale des sports",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.859553,
+        "lon": -0.543617,
+        "address": "Quai de Brazza, Bordeaux",
+        "capacity": 26,
+        "station_id": "903",
+        "post_code": "33100",
+        "rental_methods": [
+          "creditcard",
+          "phone"
+        ],
+        "is_virtual_station": false,
+        "is_charging_station": false
+      }
+    ]
+  },
+  "last_updated": "2026-02-22T08:43:26Z"
+}

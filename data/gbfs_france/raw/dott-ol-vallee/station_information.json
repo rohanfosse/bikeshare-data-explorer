@@ -1,0 +1,97 @@
+{
+  "data": {
+    "stations": [
+      {
+        "is_virtual_station": true,
+        "lat": 45.7654259,
+        "lon": 4.978373,
+        "name": "Parking 5",
+        "region_id": "16a416dc-75b2-4e9b-aee1-12de42f4f794",
+        "station_id": "ce7a93db-1ddb-410b-8a9e-ea5085dbed60",
+        "vehicle_capacity": {
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.768466,
+        "lon": 4.978522,
+        "name": "Accès travaux",
+        "region_id": "16a416dc-75b2-4e9b-aee1-12de42f4f794",
+        "station_id": "526b4b5d-e25c-48fd-bc64-19104629949c",
+        "vehicle_capacity": {
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.7678058,
+        "lon": 4.9817828,
+        "name": "Parking 3",
+        "region_id": "16a416dc-75b2-4e9b-aee1-12de42f4f794",
+        "station_id": "eb4a44df-0be5-4f36-bb6f-802fd43f35d0",
+        "vehicle_capacity": {
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.766685,
+        "lon": 4.982432,
+        "name": "Parking 2",
+        "region_id": "16a416dc-75b2-4e9b-aee1-12de42f4f794",
+        "station_id": "bb6604dc-eadb-4845-811a-405d6246a58c",
+        "vehicle_capacity": {
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.7673692,
+        "lon": 4.9814345,
+        "name": "Parking 4",
+        "region_id": "16a416dc-75b2-4e9b-aee1-12de42f4f794",
+        "station_id": "218df35a-d81c-431f-90f5-ccc454ef6338",
+        "vehicle_capacity": {
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.7663136,
+        "lon": 4.981859,
+        "name": "Parking 1",
+        "region_id": "16a416dc-75b2-4e9b-aee1-12de42f4f794",
+        "station_id": "314515d3-59a6-4477-90d9-2f774cc85760",
+        "vehicle_capacity": {
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.7638358,
+        "lon": 4.9813572,
+        "name": "Parking 7",
+        "region_id": "16a416dc-75b2-4e9b-aee1-12de42f4f794",
+        "station_id": "89171aae-f4bc-420b-b377-4338ed5a85d4",
+        "vehicle_capacity": {
+          "dott_scooter": 5
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.7672997,
+        "lon": 4.979759,
+        "name": "Parking 6",
+        "region_id": "16a416dc-75b2-4e9b-aee1-12de42f4f794",
+        "station_id": "086d87b9-d75b-4938-a421-1b1f09bea44c",
+        "vehicle_capacity": {
+          "dott_scooter": 5
+        }
+      }
+    ]
+  },
+  "last_updated": 1771749734,
+  "ttl": 0,
+  "version": "2.3"
+}

@@ -1,0 +1,1080 @@
+{
+  "data": {
+    "stations": [
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.203944,
+        "lon": 4.013,
+        "name": [
+          {
+            "language": "fr",
+            "text": "C Cial CHAMPFLEURY"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_Wj2oPcrcLugpT8J7GPeB5Z"
+        },
+        "station_id": "stn_Wj2oPcrcLugpT8J7GPeB5Z"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.267341,
+        "lon": 4.066467,
+        "name": [
+          {
+            "language": "fr",
+            "text": "ÉPINETTES"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_ifnaBUMx3fCAcyiqdRncw9"
+        },
+        "station_id": "stn_ifnaBUMx3fCAcyiqdRncw9"
+      },
+      {
+        "capacity": 20,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.249045,
+        "lon": 4.021072,
+        "name": [
+          {
+            "language": "fr",
+            "text": "COMÉDIE"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_359Ru7wNRJivQauAxCRYmQ"
+        },
+        "station_id": "stn_359Ru7wNRJivQauAxCRYmQ"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.214139,
+        "lon": 4.093889,
+        "name": [
+          {
+            "language": "fr",
+            "text": "TAISSY MAIRIE"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_RHVgyWn98R6qaheA5ZgVYz"
+        },
+        "station_id": "stn_RHVgyWn98R6qaheA5ZgVYz"
+      },
+      {
+        "capacity": 4,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.220695,
+        "lon": 4.030945,
+        "name": [
+          {
+            "language": "fr",
+            "text": "MURIGNY VAUBAN"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_AF3xAEKnA8c9ijRjg6Nw73"
+        },
+        "station_id": "stn_AF3xAEKnA8c9ijRjg6Nw73"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.246968,
+        "lon": 4.06393,
+        "name": [
+          {
+            "language": "fr",
+            "text": "THIOLETTES"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_gg6cGZzQShDmmv94fpUjSA"
+        },
+        "station_id": "stn_gg6cGZzQShDmmv94fpUjSA"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.250081,
+        "lon": 3.991564,
+        "name": [
+          {
+            "language": "fr",
+            "text": "TINQUEUX CENTRE "
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_E9J2GsUrWatAHHSzSwJC2x"
+        },
+        "station_id": "stn_E9J2GsUrWatAHHSzSwJC2x"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.247533,
+        "lon": 4.004259,
+        "name": [
+          {
+            "language": "fr",
+            "text": "TINQUEUX LA HAUBETTE"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_DTAgAVWqPKoAuURQrBYJhU"
+        },
+        "station_id": "stn_DTAgAVWqPKoAuURQrBYJhU"
+      },
+      {
+        "capacity": 16,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.215028,
+        "lon": 3.995119,
+        "name": [
+          {
+            "language": "fr",
+            "text": "GARE CHAMPAGNE TGV"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_gFDugsu9wS9yz8pyUhPusa"
+        },
+        "station_id": "stn_gFDugsu9wS9yz8pyUhPusa"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.25376,
+        "lon": 4.040646,
+        "name": [
+          {
+            "language": "fr",
+            "text": "PAUL JAMOT"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_fS3s4nDtBz5FzL2amTLNM6"
+        },
+        "station_id": "stn_fS3s4nDtBz5FzL2amTLNM6"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.244165,
+        "lon": 4.027232,
+        "name": [
+          {
+            "language": "fr",
+            "text": "RENÉ TYS - STADE"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_oAwBgmcoWancrtJ5tE3maX"
+        },
+        "station_id": "stn_oAwBgmcoWancrtJ5tE3maX"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.216328,
+        "lon": 3.997726,
+        "name": [
+          {
+            "language": "fr",
+            "text": "BEZANNES VILLAGE BY CA"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_ZSG7esutShqZwRcRGqSr4o"
+        },
+        "station_id": "stn_ZSG7esutShqZwRcRGqSr4o"
+      },
+      {
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.25396,
+        "lon": 3.98051,
+        "name": [
+          {
+            "language": "fr",
+            "text": "TINQUEUX BOUTREAUX"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_4qTczhHNCUHcisAJbTqqTB"
+        },
+        "station_id": "stn_4qTczhHNCUHcisAJbTqqTB"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.222106,
+        "lon": 4.096351,
+        "name": [
+          {
+            "language": "fr",
+            "text": "SAINT-LÉONARD"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_SGvV4LKWsGchJvrXYo7QNi"
+        },
+        "station_id": "stn_SGvV4LKWsGchJvrXYo7QNi"
+      },
+      {
+        "capacity": 4,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.251849,
+        "lon": 3.982585,
+        "name": [
+          {
+            "language": "fr",
+            "text": "TINQUEUX BOUCICAUT"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_8eDZvCMzEhapPKnGezzx3V"
+        },
+        "station_id": "stn_8eDZvCMzEhapPKnGezzx3V"
+      },
+      {
+        "capacity": 4,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.231231,
+        "lon": 4.018914,
+        "name": [
+          {
+            "language": "fr",
+            "text": "CHU MAISON BLANCHE"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_BaC3GGXGoYWyoHYLcowcib"
+        },
+        "station_id": "stn_BaC3GGXGoYWyoHYLcowcib"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.263671,
+        "lon": 4.056267,
+        "name": [
+          {
+            "language": "fr",
+            "text": "CIMETIÈRE DE L'EST"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_PMvzWzw3Ajo9ACHVrKZXSu"
+        },
+        "station_id": "stn_PMvzWzw3Ajo9ACHVrKZXSu"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.256319,
+        "lon": 4.026622,
+        "name": [
+          {
+            "language": "fr",
+            "text": "ERLON 2"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_Rh6VJnyp2UBSZC2SgXGpoT"
+        },
+        "station_id": "stn_Rh6VJnyp2UBSZC2SgXGpoT"
+      },
+      {
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.214556,
+        "lon": 4.051944,
+        "name": [
+          {
+            "language": "fr",
+            "text": "C Cial CORMONTREUIL"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_mdhoxKzERi7u7PFn9PMPbt"
+        },
+        "station_id": "stn_mdhoxKzERi7u7PFn9PMPbt"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.23805,
+        "lon": 4.03228,
+        "name": [
+          {
+            "language": "fr",
+            "text": "SAINTE-ANNE"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_VrvGS5wgqyeo6LzzwPFDnp"
+        },
+        "station_id": "stn_VrvGS5wgqyeo6LzzwPFDnp"
+      },
+      {
+        "capacity": 6,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.256913,
+        "lon": 4.026004,
+        "name": [
+          {
+            "language": "fr",
+            "text": "ERLON 1"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_w4pyQWnGY6n5D9qangEX5R"
+        },
+        "station_id": "stn_w4pyQWnGY6n5D9qangEX5R"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.27096,
+        "lon": 4.02483,
+        "name": [
+          {
+            "language": "fr",
+            "text": "LUTON"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_Jh5AaPm3uvU3BH8pPxHWyN"
+        },
+        "station_id": "stn_Jh5AaPm3uvU3BH8pPxHWyN"
+      },
+      {
+        "capacity": 6,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.21709,
+        "lon": 4.07833,
+        "name": [
+          {
+            "language": "fr",
+            "text": "TAISSY STADE"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_hK87NcuNGCTDsKBTkarcmn"
+        },
+        "station_id": "stn_hK87NcuNGCTDsKBTkarcmn"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.26067,
+        "lon": 4.04714,
+        "name": [
+          {
+            "language": "fr",
+            "text": "BROUETTE"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_5XudS8MCmYz4D7SCuEbhfj"
+        },
+        "station_id": "stn_5XudS8MCmYz4D7SCuEbhfj"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.23586,
+        "lon": 4.069883,
+        "name": [
+          {
+            "language": "fr",
+            "text": "HÔTEL MERCURE PARC DES EXPOSITIONS"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_f2gL3bgz4QGEvez9JvTdUR"
+        },
+        "station_id": "stn_f2gL3bgz4QGEvez9JvTdUR"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.244489,
+        "lon": 4.049336,
+        "name": [
+          {
+            "language": "fr",
+            "text": "GOURAUD"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_BAsFo5RR5jKFWCZaDmNfMZ"
+        },
+        "station_id": "stn_BAsFo5RR5jKFWCZaDmNfMZ"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.26486,
+        "lon": 4.00984,
+        "name": [
+          {
+            "language": "fr",
+            "text": "ALBERT 1er"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_8ng9yTJ7xf57YXgPTaho6k"
+        },
+        "station_id": "stn_8ng9yTJ7xf57YXgPTaho6k"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.213565,
+        "lon": 4.026161,
+        "name": [
+          {
+            "language": "fr",
+            "text": "MURIGNY RENÉ CLAIR"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_W3vHR3uEbubv39Cw8bYtC6"
+        },
+        "station_id": "stn_W3vHR3uEbubv39Cw8bYtC6"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.261215,
+        "lon": 4.031264,
+        "name": [
+          {
+            "language": "fr",
+            "text": "BOULINGRIN"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_dPEZZ8LN4SVHDDg8JXKyVW"
+        },
+        "station_id": "stn_dPEZZ8LN4SVHDDg8JXKyVW"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.241718,
+        "lon": 4.084909,
+        "name": [
+          {
+            "language": "fr",
+            "text": "C Cial REIMS VILLAGE"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_kVvKfKparMnmxeRUn7AXVE"
+        },
+        "station_id": "stn_kVvKfKparMnmxeRUn7AXVE"
+      },
+      {
+        "capacity": 20,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.257672,
+        "lon": 4.032076,
+        "name": [
+          {
+            "language": "fr",
+            "text": "HÔTEL DE VILLE"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_MNfExJLCsmKhZ3eKYHZiuE"
+        },
+        "station_id": "stn_MNfExJLCsmKhZ3eKYHZiuE"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.250247,
+        "lon": 3.97796,
+        "name": [
+          {
+            "language": "fr",
+            "text": "TINQUEUX CHAMP PAVEAU"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_Xr9y3k8odE5Dt3yNXuspjq"
+        },
+        "station_id": "stn_Xr9y3k8odE5Dt3yNXuspjq"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.24628,
+        "lon": 4.041828,
+        "name": [
+          {
+            "language": "fr",
+            "text": "MAISON DES ASSOCIATIONS"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_Bswwf8ePwmzdsFtjNvV4HM"
+        },
+        "station_id": "stn_Bswwf8ePwmzdsFtjNvV4HM"
+      },
+      {
+        "capacity": 16,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.261849,
+        "lon": 4.018463,
+        "name": [
+          {
+            "language": "fr",
+            "text": "ROMAINS"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_G5eFDd3KvJNWCXzvtt24Mu"
+        },
+        "station_id": "stn_G5eFDd3KvJNWCXzvtt24Mu"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.2652,
+        "lon": 4.026046,
+        "name": [
+          {
+            "language": "fr",
+            "text": "SAINT-THOMAS"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_5QFpUDtXcrQiEDtuMHjFpJ"
+        },
+        "station_id": "stn_5QFpUDtXcrQiEDtuMHjFpJ"
+      },
+      {
+        "capacity": 6,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.25313,
+        "lon": 4.054133,
+        "name": [
+          {
+            "language": "fr",
+            "text": "POMMERY - VERRIER"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_YqWfYLzVZPrfwHoCbc64Td"
+        },
+        "station_id": "stn_YqWfYLzVZPrfwHoCbc64Td"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.25718,
+        "lon": 4.04756,
+        "name": [
+          {
+            "language": "fr",
+            "text": "JULES FERRY"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_ko57qyVAw5bwexnZM8rpVD"
+        },
+        "station_id": "stn_ko57qyVAw5bwexnZM8rpVD"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.272615,
+        "lon": 4.06986,
+        "name": [
+          {
+            "language": "fr",
+            "text": "AFPA"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_RccEo2kiPhJeC8Zk4P6ar4"
+        },
+        "station_id": "stn_RccEo2kiPhJeC8Zk4P6ar4"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.25869,
+        "lon": 4.024563,
+        "name": [
+          {
+            "language": "fr",
+            "text": "GARE CENTRE 1"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_fobDYytLPSwNXnMBRTQuWd"
+        },
+        "station_id": "stn_fobDYytLPSwNXnMBRTQuWd"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.271534,
+        "lon": 4.043375,
+        "name": [
+          {
+            "language": "fr",
+            "text": "DOCKS RÉMOIS"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_HkSt4hCCUyvYVVxF9Cunoz"
+        },
+        "station_id": "stn_HkSt4hCCUyvYVVxF9Cunoz"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.250659,
+        "lon": 4.034954,
+        "name": [
+          {
+            "language": "fr",
+            "text": "JARD"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_ZPQi9pebDjZYLFtxwVAeFn"
+        },
+        "station_id": "stn_ZPQi9pebDjZYLFtxwVAeFn"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.24161,
+        "lon": 4.06162,
+        "name": [
+          {
+            "language": "fr",
+            "text": "MOULIN DE LA HOUSSE"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_j9ymeEuSMo59WZwGP8bxwe"
+        },
+        "station_id": "stn_j9ymeEuSMo59WZwGP8bxwe"
+      },
+      {
+        "capacity": 5,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.2616,
+        "lon": 4.02463,
+        "name": [
+          {
+            "language": "fr",
+            "text": "ROOSEVELT"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_anyz2t6LNz9HCSCDxhsneU"
+        },
+        "station_id": "stn_anyz2t6LNz9HCSCDxhsneU"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.271472,
+        "lon": 4.050667,
+        "name": [
+          {
+            "language": "fr",
+            "text": "BÉTHENY MAIRIE ANNEXE"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_eZDwbazC93UQF5nxcrwoHL"
+        },
+        "station_id": "stn_eZDwbazC93UQF5nxcrwoHL"
+      },
+      {
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.221103,
+        "lon": 4.041812,
+        "name": [
+          {
+            "language": "fr",
+            "text": "CORMONTREUIL ROUSSILLON"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_B3Jaufc7ekdJCaGwX3Vwmn"
+        },
+        "station_id": "stn_B3Jaufc7ekdJCaGwX3Vwmn"
+      },
+      {
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.284944,
+        "lon": 4.057944,
+        "name": [
+          {
+            "language": "fr",
+            "text": "BÉTHENY PLACE DES FLEURS"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_7XwL3nRVUW9pGoBSt4JCF5"
+        },
+        "station_id": "stn_7XwL3nRVUW9pGoBSt4JCF5"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.258907,
+        "lon": 4.02508,
+        "name": [
+          {
+            "language": "fr",
+            "text": "GARE CENTRE 2"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_mdUWtFgAo6o3LYTWN5JJrX"
+        },
+        "station_id": "stn_mdUWtFgAo6o3LYTWN5JJrX"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.261839,
+        "lon": 3.990168,
+        "name": [
+          {
+            "language": "fr",
+            "text": "SAINT-BRICE JACQUES BREL"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_TUUfvgU7hjvxbdVcmeYFXJ"
+        },
+        "station_id": "stn_TUUfvgU7hjvxbdVcmeYFXJ"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.275051,
+        "lon": 4.017486,
+        "name": [
+          {
+            "language": "fr",
+            "text": "BELGES"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_FknRGcFGQur5qxXqdsLAAh"
+        },
+        "station_id": "stn_FknRGcFGQur5qxXqdsLAAh"
+      },
+      {
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.261997,
+        "lon": 3.986006,
+        "name": [
+          {
+            "language": "fr",
+            "text": "SAINT-BRICE MAIRIE"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_Gcywbvi4XzKaHUfpShUEnW"
+        },
+        "station_id": "stn_Gcywbvi4XzKaHUfpShUEnW"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.252922,
+        "lon": 4.029226,
+        "name": [
+          {
+            "language": "fr",
+            "text": "CHAMPAGNE PARC AUTO"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_c7MzzG2YbFFsAH4TbvwRGU"
+        },
+        "station_id": "stn_c7MzzG2YbFFsAH4TbvwRGU"
+      },
+      {
+        "capacity": 3,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.22582,
+        "lon": 4.04263,
+        "name": [
+          {
+            "language": "fr",
+            "text": "CORMONTREUIL LOUVOIS"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_kFK8JufX3SbpBGYXASH4eQ"
+        },
+        "station_id": "stn_kFK8JufX3SbpBGYXASH4eQ"
+      },
+      {
+        "capacity": 36,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.252468,
+        "lon": 4.030602,
+        "name": [
+          {
+            "language": "fr",
+            "text": "CATHÉDRALE"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_zmiJ6izCt9yyjKQskFmSiW"
+        },
+        "station_id": "stn_zmiJ6izCt9yyjKQskFmSiW"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.243201,
+        "lon": 4.015587,
+        "name": [
+          {
+            "language": "fr",
+            "text": "PLANÉTARIUM"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_86VuTwczcMYKAQKaKANJAV"
+        },
+        "station_id": "stn_86VuTwczcMYKAQKaKANJAV"
+      },
+      {
+        "capacity": 16,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.234598,
+        "lon": 4.061538,
+        "name": [
+          {
+            "language": "fr",
+            "text": "PARC DES EXPOSITIONS"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_kdnjtWT9FfRqqCfKqf2UXE"
+        },
+        "station_id": "stn_kdnjtWT9FfRqqCfKqf2UXE"
+      },
+      {
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.28773,
+        "lon": 4.02395,
+        "name": [
+          {
+            "language": "fr",
+            "text": "C Cial LA NEUVILLETTE"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_EUzQkJXNtSgETYMQ9o2EvD"
+        },
+        "station_id": "stn_EUzQkJXNtSgETYMQ9o2EvD"
+      },
+      {
+        "capacity": 30,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.268447,
+        "lon": 4.035457,
+        "name": [
+          {
+            "language": "fr",
+            "text": "CARTONNERIE"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_e3kSaXFqYg89beH8wRE5s2"
+        },
+        "station_id": "stn_e3kSaXFqYg89beH8wRE5s2"
+      },
+      {
+        "capacity": 22,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.254913,
+        "lon": 4.026508,
+        "name": [
+          {
+            "language": "fr",
+            "text": "BUIRETTE"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_zGZ5Fcjtwee4HTo6EBMmBF"
+        },
+        "station_id": "stn_zGZ5Fcjtwee4HTo6EBMmBF"
+      },
+      {
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.254209,
+        "lon": 4.02227,
+        "name": [
+          {
+            "language": "fr",
+            "text": "LE MANÈGE"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_bGFP3HHsQPUaEZowwHfJTX"
+        },
+        "station_id": "stn_bGFP3HHsQPUaEZowwHfJTX"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.223912,
+        "lon": 4.053513,
+        "name": [
+          {
+            "language": "fr",
+            "text": "CORMONTREUIL MAIRIE"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_CHjjtr4QgLpQGSYiBoTKoo"
+        },
+        "station_id": "stn_CHjjtr4QgLpQGSYiBoTKoo"
+      },
+      {
+        "capacity": 30,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.237805,
+        "lon": 4.003819,
+        "name": [
+          {
+            "language": "fr",
+            "text": "CAMPUS CROIX ROUGE"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_4U8c4ND242889TBsG56coW"
+        },
+        "station_id": "stn_4U8c4ND242889TBsG56coW"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.263992,
+        "lon": 4.030282,
+        "name": [
+          {
+            "language": "fr",
+            "text": "RÉPUBLIQUE"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_BmUb4yy4P3ihfLr5GfDviQ"
+        },
+        "station_id": "stn_BmUb4yy4P3ihfLr5GfDviQ"
+      },
+      {
+        "capacity": 5,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.25178,
+        "lon": 4.04583,
+        "name": [
+          {
+            "language": "fr",
+            "text": "CLÉMENCEAU"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://zebullo.ecovelo.mobi/#/station/stn_U9xcptDQQUKr6pZTekcRkr"
+        },
+        "station_id": "stn_U9xcptDQQUKr6pZTekcRkr"
+      }
+    ]
+  },
+  "last_updated": "2026-02-22T09:44:46+01:00",
+  "ttl": 0,
+  "version": "3.0"
+}

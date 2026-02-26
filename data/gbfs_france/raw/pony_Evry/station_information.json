@@ -1,0 +1,1514 @@
+{
+  "data": {
+    "stations": [
+      {
+        "is_virtual_station": true,
+        "lat": 48.627611,
+        "lon": 2.43025,
+        "name": "Evry_parking_0",
+        "station_id": "Evry_parking_0"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.631861,
+        "lon": 2.428667,
+        "name": "Evry_parking_1",
+        "station_id": "Evry_parking_1"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.640111,
+        "lon": 2.430722,
+        "name": "Evry_parking_2",
+        "station_id": "Evry_parking_2"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.626,
+        "lon": 2.439917,
+        "name": "Evry_parking_3",
+        "station_id": "Evry_parking_3"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.623532,
+        "lon": 2.450926,
+        "name": "Evry_parking_4",
+        "station_id": "Evry_parking_4"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.620778,
+        "lon": 2.405972,
+        "name": "Evry_parking_5",
+        "station_id": "Evry_parking_5"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.614778,
+        "lon": 2.416278,
+        "name": "Evry_parking_7",
+        "station_id": "Evry_parking_7"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.615306,
+        "lon": 2.425,
+        "name": "Evry_parking_8",
+        "station_id": "Evry_parking_8"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.626028,
+        "lon": 2.424306,
+        "name": "Evry_parking_9",
+        "station_id": "Evry_parking_9"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.638167,
+        "lon": 2.419917,
+        "name": "Evry_parking_10",
+        "station_id": "Evry_parking_10"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.630694,
+        "lon": 2.415611,
+        "name": "Evry_parking_11",
+        "station_id": "Evry_parking_11"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.629952,
+        "lon": 2.416448,
+        "name": "Evry_parking_12",
+        "station_id": "Evry_parking_12"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.629833,
+        "lon": 2.416889,
+        "name": "Evry_parking_13",
+        "station_id": "Evry_parking_13"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.629,
+        "lon": 2.415306,
+        "name": "Evry_parking_14",
+        "station_id": "Evry_parking_14"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.629222,
+        "lon": 2.413361,
+        "name": "Evry_parking_15",
+        "station_id": "Evry_parking_15"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.62373,
+        "lon": 2.426648,
+        "name": "Evry_parking_16",
+        "station_id": "Evry_parking_16"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.62485,
+        "lon": 2.42814,
+        "name": "Evry_parking_17",
+        "station_id": "Evry_parking_17"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6361728,
+        "lon": 2.4078707,
+        "name": "Evry_parking_19",
+        "station_id": "Evry_parking_19"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.623738,
+        "lon": 2.4263701,
+        "name": "Evry_parking_20",
+        "station_id": "Evry_parking_20"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6353459,
+        "lon": 2.4382204,
+        "name": "Evry_parking_21",
+        "station_id": "Evry_parking_21"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6229958,
+        "lon": 2.4260954,
+        "name": "Evry_parking_22",
+        "station_id": "Evry_parking_22"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6234166,
+        "lon": 2.4234721,
+        "name": "Evry_parking_23",
+        "station_id": "Evry_parking_23"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6122933,
+        "lon": 2.4170182,
+        "name": "Evry_parking_24",
+        "station_id": "Evry_parking_24"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6118358,
+        "lon": 2.417446,
+        "name": "Evry_parking_25",
+        "station_id": "Evry_parking_25"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.621195,
+        "lon": 2.42775,
+        "name": "Evry_parking_26",
+        "station_id": "Evry_parking_26"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.62563,
+        "lon": 2.426968,
+        "name": "Evry_parking_27",
+        "station_id": "Evry_parking_27"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6385009,
+        "lon": 2.4339676,
+        "name": "Evry_parking_28",
+        "station_id": "Evry_parking_28"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.61869,
+        "lon": 2.433525,
+        "name": "Evry_parking_29",
+        "station_id": "Evry_parking_29"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.62831,
+        "lon": 2.43706,
+        "name": "Evry_parking_30",
+        "station_id": "Evry_parking_30"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.619793,
+        "lon": 2.42145,
+        "name": "Evry_parking_31",
+        "station_id": "Evry_parking_31"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.62149,
+        "lon": 2.45282,
+        "name": "Evry_parking_32",
+        "station_id": "Evry_parking_32"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.62199,
+        "lon": 2.45653,
+        "name": "Evry_parking_33",
+        "station_id": "Evry_parking_33"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6236262,
+        "lon": 2.403977,
+        "name": "Evry_parking_34",
+        "station_id": "Evry_parking_34"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.62408,
+        "lon": 2.45749,
+        "name": "Evry_parking_35",
+        "station_id": "Evry_parking_35"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.62443,
+        "lon": 2.44471,
+        "name": "Evry_parking_36",
+        "station_id": "Evry_parking_36"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.62525,
+        "lon": 2.45113,
+        "name": "Evry_parking_37",
+        "station_id": "Evry_parking_37"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.62817,
+        "lon": 2.42218,
+        "name": "Evry_parking_38",
+        "station_id": "Evry_parking_38"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6285511,
+        "lon": 2.4529137,
+        "name": "Evry_parking_40",
+        "station_id": "Evry_parking_40"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.63265,
+        "lon": 2.41317,
+        "name": "Evry_parking_41",
+        "station_id": "Evry_parking_41"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.633391,
+        "lon": 2.444252,
+        "name": "Evry_parking_42",
+        "station_id": "Evry_parking_42"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.63357,
+        "lon": 2.40862,
+        "name": "Evry_parking_43",
+        "station_id": "Evry_parking_43"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.634178,
+        "lon": 2.41209,
+        "name": "Evry_parking_44",
+        "station_id": "Evry_parking_44",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.63438,
+        "lon": 2.43415,
+        "name": "Evry_parking_45",
+        "station_id": "Evry_parking_45"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6369545,
+        "lon": 2.4415003,
+        "name": "Evry_parking_46",
+        "station_id": "Evry_parking_46"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.63529,
+        "lon": 2.4232,
+        "name": "Evry_parking_47",
+        "station_id": "Evry_parking_47"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6370817,
+        "lon": 2.4286423,
+        "name": "Evry_parking_48",
+        "station_id": "Evry_parking_48"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.63901,
+        "lon": 2.42113,
+        "name": "Evry_parking_49",
+        "station_id": "Evry_parking_49"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.642018,
+        "lon": 2.430578,
+        "name": "Evry_parking_50",
+        "station_id": "Evry_parking_50"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.64212,
+        "lon": 2.43213,
+        "name": "Evry_parking_51",
+        "station_id": "Evry_parking_51"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.61086,
+        "lon": 2.40211,
+        "name": "Evry_parking_52",
+        "station_id": "Evry_parking_52"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.61219,
+        "lon": 2.40444,
+        "name": "Evry_parking_53",
+        "station_id": "Evry_parking_53"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.61544,
+        "lon": 2.42136,
+        "name": "Evry_parking_54",
+        "station_id": "Evry_parking_54"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.61713,
+        "lon": 2.41391,
+        "name": "Evry_parking_55",
+        "station_id": "Evry_parking_55"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.61766,
+        "lon": 2.4438,
+        "name": "Evry_parking_56",
+        "station_id": "Evry_parking_56"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.618,
+        "lon": 2.41097,
+        "name": "Evry_parking_57",
+        "station_id": "Evry_parking_57"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.61902,
+        "lon": 2.44511,
+        "name": "Evry_parking_58",
+        "station_id": "Evry_parking_58"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.61911,
+        "lon": 2.40877,
+        "name": "Evry_parking_59",
+        "station_id": "Evry_parking_59"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.62025,
+        "lon": 2.41969,
+        "name": "Evry_parking_61",
+        "station_id": "Evry_parking_61"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.62191,
+        "lon": 2.45244,
+        "name": "Evry_parking_62",
+        "station_id": "Evry_parking_62"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.62246,
+        "lon": 2.45044,
+        "name": "Evry_parking_63",
+        "station_id": "Evry_parking_63"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.62288,
+        "lon": 2.41538,
+        "name": "Evry_parking_64",
+        "station_id": "Evry_parking_64"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.62294,
+        "lon": 2.428,
+        "name": "Evry_parking_65",
+        "station_id": "Evry_parking_65"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.62310800037816,
+        "lon": 2.4543209757606634,
+        "name": "Evry_parking_66",
+        "station_id": "Evry_parking_66"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.62397,
+        "lon": 2.44,
+        "name": "Evry_parking_69",
+        "station_id": "Evry_parking_69"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.62416,
+        "lon": 2.45619,
+        "name": "Evry_parking_70",
+        "station_id": "Evry_parking_70"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.62591,
+        "lon": 2.42777,
+        "name": "Evry_parking_71",
+        "station_id": "Evry_parking_71"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.62591,
+        "lon": 2.44808,
+        "name": "Evry_parking_72",
+        "station_id": "Evry_parking_72"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.62711,
+        "lon": 2.45925,
+        "name": "Evry_parking_75",
+        "station_id": "Evry_parking_75"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6277028,
+        "lon": 2.4538793,
+        "name": "Evry_parking_76",
+        "station_id": "Evry_parking_76"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.632806,
+        "lon": 2.4355081,
+        "name": "Evry_parking_77",
+        "station_id": "Evry_parking_77"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.63393,
+        "lon": 2.4373307,
+        "name": "Evry_parking_78",
+        "station_id": "Evry_parking_78"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6210936,
+        "lon": 2.4487331,
+        "name": "Evry_parking_79",
+        "station_id": "Evry_parking_79"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6186563,
+        "lon": 2.4466162,
+        "name": "Evry_parking_80",
+        "station_id": "Evry_parking_80"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6215,
+        "lon": 2.4389273,
+        "name": "Evry_parking_82",
+        "station_id": "Evry_parking_82"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6318574,
+        "lon": 2.4270511,
+        "name": "Evry_parking_84",
+        "station_id": "Evry_parking_84"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6361032,
+        "lon": 2.4468572,
+        "name": "Evry_parking_86",
+        "station_id": "Evry_parking_86"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.625304,
+        "lon": 2.424236,
+        "name": "Evry_parking_88",
+        "station_id": "Evry_parking_88",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6268328,
+        "lon": 2.4325581,
+        "name": "Evry_parking_89",
+        "station_id": "Evry_parking_89"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.622674,
+        "lon": 2.443875,
+        "name": "Evry_parking_90",
+        "station_id": "Evry_parking_90"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.62526,
+        "lon": 2.44606,
+        "name": "Evry_parking_93",
+        "station_id": "Evry_parking_93"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6272446,
+        "lon": 2.4181876,
+        "name": "Evry_parking_94",
+        "station_id": "Evry_parking_94"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.633319,
+        "lon": 2.443047,
+        "name": "Evry_parking_96",
+        "station_id": "Evry_parking_96"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.62627,
+        "lon": 2.42233,
+        "name": "Evry_parking_103",
+        "station_id": "Evry_parking_103"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.62863,
+        "lon": 2.44616,
+        "name": "Evry_parking_105",
+        "station_id": "Evry_parking_105"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.62944,
+        "lon": 2.43069,
+        "name": "Evry_parking_108",
+        "station_id": "Evry_parking_108"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.62988,
+        "lon": 2.44327,
+        "name": "Evry_parking_110",
+        "station_id": "Evry_parking_110"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6323,
+        "lon": 2.40899,
+        "name": "Evry_parking_113",
+        "station_id": "Evry_parking_113"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.63519,
+        "lon": 2.42972,
+        "name": "Evry_parking_115",
+        "station_id": "Evry_parking_115"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.63716,
+        "lon": 2.43497,
+        "name": "Evry_parking_116",
+        "station_id": "Evry_parking_116"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.63744,
+        "lon": 2.43416,
+        "name": "Evry_parking_117",
+        "station_id": "Evry_parking_117"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.63786,
+        "lon": 2.42422,
+        "name": "Evry_parking_118",
+        "station_id": "Evry_parking_118"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.63861,
+        "lon": 2.43777,
+        "name": "Evry_parking_119",
+        "station_id": "Evry_parking_119"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.64061,
+        "lon": 2.43308,
+        "name": "Evry_parking_122",
+        "station_id": "Evry_parking_122"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.64083,
+        "lon": 2.43519,
+        "name": "Evry_parking_123",
+        "station_id": "Evry_parking_123"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.64211,
+        "lon": 2.43721,
+        "name": "Evry_parking_124",
+        "station_id": "Evry_parking_124"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.64361,
+        "lon": 2.43597,
+        "name": "Evry_parking_125",
+        "station_id": "Evry_parking_125"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.63078,
+        "lon": 2.42106,
+        "name": "Evry_parking_126",
+        "station_id": "Evry_parking_126"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6357033,
+        "lon": 2.4288526,
+        "name": "Evry_parking_127",
+        "station_id": "Evry_parking_127"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6357192,
+        "lon": 2.4264554,
+        "name": "Evry_parking_128",
+        "station_id": "Evry_parking_128"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6370703,
+        "lon": 2.4245812,
+        "name": "Evry_parking_130",
+        "station_id": "Evry_parking_130"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6372639,
+        "lon": 2.4203218,
+        "name": "Evry_parking_131",
+        "station_id": "Evry_parking_131"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6351979,
+        "lon": 2.4198628,
+        "name": "Evry_parking_132",
+        "station_id": "Evry_parking_132"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6286023,
+        "lon": 2.4179638,
+        "name": "Evry_parking_133",
+        "station_id": "Evry_parking_133"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6250909,
+        "lon": 2.4254596,
+        "name": "Evry_parking_136",
+        "station_id": "Evry_parking_136"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.63431,
+        "lon": 2.42837,
+        "name": "Evry_parking_137",
+        "station_id": "Evry_parking_137"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.63259,
+        "lon": 2.43392,
+        "name": "Evry_parking_138",
+        "station_id": "Evry_parking_138"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6351,
+        "lon": 2.43814,
+        "name": "Evry_parking_140",
+        "station_id": "Evry_parking_140"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6229578,
+        "lon": 2.4257675,
+        "name": "Evry_parking_141",
+        "station_id": "Evry_parking_141"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6226989,
+        "lon": 2.4253544,
+        "name": "Evry_parking_142",
+        "station_id": "Evry_parking_142"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6223116,
+        "lon": 2.4262314,
+        "name": "Evry_parking_143",
+        "station_id": "Evry_parking_143"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6233971,
+        "lon": 2.4299404,
+        "name": "Evry_parking_144",
+        "station_id": "Evry_parking_144"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6205587,
+        "lon": 2.4068319,
+        "name": "Evry_parking_145",
+        "station_id": "Evry_parking_145"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.62782,
+        "lon": 2.44797,
+        "name": "Evry_parking_147",
+        "station_id": "Evry_parking_147"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.62756,
+        "lon": 2.44758,
+        "name": "Evry_parking_148",
+        "station_id": "Evry_parking_148"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6347,
+        "lon": 2.4396,
+        "name": "Evry_parking_149",
+        "station_id": "Evry_parking_149"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.62411,
+        "lon": 2.45203,
+        "name": "Evry_parking_150",
+        "station_id": "Evry_parking_150"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.62277,
+        "lon": 2.42352,
+        "name": "Evry_parking_151",
+        "station_id": "Evry_parking_151"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.62143,
+        "lon": 2.42833,
+        "name": "Evry_parking_152",
+        "station_id": "Evry_parking_152"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.63005,
+        "lon": 2.41268,
+        "name": "Evry_parking_153",
+        "station_id": "Evry_parking_153"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.63354,
+        "lon": 2.43258,
+        "name": "Evry_parking_154",
+        "station_id": "Evry_parking_154"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.62168,
+        "lon": 2.44127,
+        "name": "Pl_de_la_commune",
+        "station_id": "Pl_de_la_commune"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.62682,
+        "lon": 2.43061,
+        "name": "Blaise_pascal",
+        "station_id": "Blaise_pascal"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6333017,
+        "lon": 2.4427696,
+        "name": "Place_Rouillon",
+        "station_id": "Place_Rouillon"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6360115,
+        "lon": 2.4460368,
+        "name": "maison_de_quartier",
+        "station_id": "maison_de_quartier"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6362461,
+        "lon": 2.4461726,
+        "name": "mairie_annexe_du_village",
+        "station_id": "mairie_annexe_du_village"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.619857153310825,
+        "lon": 2.453966623227685,
+        "name": "Evry_parking_60",
+        "station_id": "Evry_parking_60"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.63809,
+        "lon": 2.43545,
+        "name": "Evry_parking_120",
+        "station_id": "Evry_parking_120"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.63469,
+        "lon": 2.45183,
+        "name": "Evry_parking_114",
+        "station_id": "Evry_parking_114"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.62356,
+        "lon": 2.45014,
+        "name": "Evry_parking_67",
+        "station_id": "Evry_parking_67"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.63416,
+        "lon": 2.42955,
+        "name": "Evry_parking_85",
+        "station_id": "Evry_parking_85"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.63152,
+        "lon": 2.43136,
+        "name": "Evry_parking_83",
+        "station_id": "Evry_parking_83"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.62591,
+        "lon": 2.43053,
+        "name": "Evry_parking_73",
+        "station_id": "Evry_parking_73"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.62674,
+        "lon": 2.42043,
+        "name": "Evry_parking_134",
+        "station_id": "Evry_parking_134"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.62614,
+        "lon": 2.42885,
+        "name": "Evry_parking_18",
+        "station_id": "Evry_parking_18"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.626938,
+        "lon": 2.430633,
+        "name": "Evry_parking_155",
+        "station_id": "Evry_parking_155"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.62093,
+        "lon": 2.44527,
+        "name": "Evry_parking_156",
+        "station_id": "Evry_parking_156"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.640848,
+        "lon": 2.432982,
+        "name": "Evry_parking_157",
+        "station_id": "Evry_parking_157"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.627577,
+        "lon": 2.430816,
+        "name": "Evry_parking_158",
+        "station_id": "Evry_parking_158"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.62328,
+        "lon": 2.43003,
+        "name": "Evry_parking_159",
+        "station_id": "Evry_parking_159"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.62922,
+        "lon": 2.434049,
+        "name": "Hotel_de_police",
+        "station_id": "Hotel_de_police"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6377997,
+        "lon": 2.4237278,
+        "name": "Evry_Parking_118",
+        "station_id": "Evry_Parking_118"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.62379,
+        "lon": 2.42907,
+        "name": "Evry_Parking_lambda",
+        "station_id": "Evry_Parking_lambda"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.63158831556542,
+        "lon": 2.4350146918936435,
+        "name": "Evry_parking_112",
+        "station_id": "Evry_parking_112"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.613234,
+        "lon": 2.429255,
+        "name": "evry_parking_BikeRack_universite_d_Evry_zidYTIZPTQ7",
+        "station_id": "evry_parking_BikeRack_universite_d_Evry_zidYTIZPTQ7"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6286987711298,
+        "lon": 2.4315644247741,
+        "name": "evry_parking_Rue_des_Mazieres_2_zidM4B51X75",
+        "station_id": "evry_parking_Rue_des_Mazieres_2_zidM4B51X75"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6247634035661,
+        "lon": 2.42904174375957,
+        "name": "evry_parking_Boulevard_des_Coquibus_zid1JPVOOX6",
+        "station_id": "evry_parking_Boulevard_des_Coquibus_zid1JPVOOX6"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.623498405274,
+        "lon": 2.42915626932005,
+        "name": "evry_parking_Cathedrale_zidF46V83EK",
+        "station_id": "evry_parking_Cathedrale_zidF46V83EK"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6304629146103,
+        "lon": 2.4305783373777,
+        "name": "evry_parking_Boulevard_de_l_Europe_zidWJAN9BSJ",
+        "station_id": "evry_parking_Boulevard_de_l_Europe_zidWJAN9BSJ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6196641321618,
+        "lon": 2.42882228789498,
+        "name": "evry_parking_Allee_Boissy_D_Anglas_zidYTT7G3NU",
+        "station_id": "evry_parking_Allee_Boissy_D_Anglas_zidYTT7G3NU"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6290336129119,
+        "lon": 2.43115007718796,
+        "name": "evry_parking_Rue_des_Mazieres_3_zidEA4NZSC3",
+        "station_id": "evry_parking_Rue_des_Mazieres_3_zidEA4NZSC3"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6253328138386,
+        "lon": 2.43005525653195,
+        "name": "evry_parking_Cours_Blaise_Pascal__zidD4VZOIGL",
+        "station_id": "evry_parking_Cours_Blaise_Pascal__zidD4VZOIGL"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6277093503747,
+        "lon": 2.43274890037658,
+        "name": "evry_parking_Rue_des_Mazieres_zidE1CXWJS9",
+        "station_id": "evry_parking_Rue_des_Mazieres_zidE1CXWJS9"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6229557735083,
+        "lon": 2.42910808794015,
+        "name": "evry_parking_Cours_Monseigneur_Romero_zidXESMML07",
+        "station_id": "evry_parking_Cours_Monseigneur_Romero_zidXESMML07"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.616226,
+        "lon": 2.435947,
+        "name": "evry_parking_Rue_de_l_Orge_zid1XW7HWQR",
+        "station_id": "evry_parking_Rue_de_l_Orge_zid1XW7HWQR"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6190377603966,
+        "lon": 2.43394658840704,
+        "name": "evry_parking_Place_des_Aunettes_zidN5LX768C",
+        "station_id": "evry_parking_Place_des_Aunettes_zidN5LX768C"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.618631618409,
+        "lon": 2.43309642325332,
+        "name": "evry_parking_Place_des_Aunettes_2_zidXHX968WS",
+        "station_id": "evry_parking_Place_des_Aunettes_2_zidXHX968WS"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.620256,
+        "lon": 2.428196,
+        "name": "evry_parking_Allee_Boissy_D_Anglas_2_zidD85J1ZIQ",
+        "station_id": "evry_parking_Allee_Boissy_D_Anglas_2_zidD85J1ZIQ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6219233357849,
+        "lon": 2.44170484413459,
+        "name": "evry_parking_Place_de_la_Commune_devant_le_G20_zidHITN9JQG",
+        "station_id": "evry_parking_Place_de_la_Commune_devant_le_G20_zidHITN9JQG"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6285061680841,
+        "lon": 2.45247704864521,
+        "name": "evry_parking_Centre_commercial_du_Mousseau_zid1HNCXE5F",
+        "station_id": "evry_parking_Centre_commercial_du_Mousseau_zid1HNCXE5F"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6372639026653,
+        "lon": 2.44190505828138,
+        "name": "evry_parking_Centre_commercial_de_Petit_Bourg_zid1LMXKF3G",
+        "station_id": "evry_parking_Centre_commercial_de_Petit_Bourg_zid1LMXKF3G"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6195316475466,
+        "lon": 2.44513795418553,
+        "name": "evry_parking_Place_des_Federes_zidHODIGNBF",
+        "station_id": "evry_parking_Place_des_Federes_zidHODIGNBF"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.625485,
+        "lon": 2.455881,
+        "name": "evry_parking_Rue_du_Bras_de_Fer_zid8ZTN8VND",
+        "station_id": "evry_parking_Rue_du_Bras_de_Fer_zid8ZTN8VND"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6219848487467,
+        "lon": 2.4405430422915,
+        "name": "evry_parking_Place_de_la_Commune_2_zidR8SGRAW3",
+        "station_id": "evry_parking_Place_de_la_Commune_2_zidR8SGRAW3"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6193818875037,
+        "lon": 2.44539229744199,
+        "name": "evry_parking_Place_des_Federes_2_zidTL08ODKO",
+        "station_id": "evry_parking_Place_des_Federes_2_zidTL08ODKO"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.632794,
+        "lon": 2.445258,
+        "name": "evry_parking_Boulevard_Aguado_zid9O4O59NM",
+        "station_id": "evry_parking_Boulevard_Aguado_zid9O4O59NM"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6343571272063,
+        "lon": 2.44269998169781,
+        "name": "evry_parking_Mairie_annexe_Aguado_zidPWNKSE1Z",
+        "station_id": "evry_parking_Mairie_annexe_Aguado_zidPWNKSE1Z"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6349006876774,
+        "lon": 2.43833400946419,
+        "name": "evry_parking_Place_Victor_Hugo_zid1ZZVPR1Z",
+        "station_id": "evry_parking_Place_Victor_Hugo_zid1ZZVPR1Z"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6377704811244,
+        "lon": 2.41998533895969,
+        "name": "evry_parking_Place_Camille_Guerin_zid7ACX010U",
+        "station_id": "evry_parking_Place_Camille_Guerin_zid7ACX010U"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.638518,
+        "lon": 2.421917,
+        "name": "evry_parking_Parvis_ecole_Bois_Guillaume_Dolto_zidVO3JPSPV",
+        "station_id": "evry_parking_Parvis_ecole_Bois_Guillaume_Dolto_zidVO3JPSPV"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.63435356442,
+        "lon": 2.42985395076413,
+        "name": "evry_parking_Place_Salvador_Allende_zidQ1F54TZ1",
+        "station_id": "evry_parking_Place_Salvador_Allende_zidQ1F54TZ1"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6384036641866,
+        "lon": 2.42940832470042,
+        "name": "evry_parking_Rue_Paul_Claudel_zidZRGVFYF3",
+        "station_id": "evry_parking_Rue_Paul_Claudel_zidZRGVFYF3"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6422750376798,
+        "lon": 2.43124873025851,
+        "name": "evry_parking_Place_Troisdorf_zidC0QNYC5K",
+        "station_id": "evry_parking_Place_Troisdorf_zidC0QNYC5K"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6305649394157,
+        "lon": 2.41421775623413,
+        "name": "evry_parking_Place_de_l_Orme_a_Martin_zidO9HC1UDD",
+        "station_id": "evry_parking_Place_de_l_Orme_a_Martin_zidO9HC1UDD"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.618479,
+        "lon": 2.403857,
+        "name": "evry_parking_Route_de_Versailles_zidTGEFZVY5",
+        "station_id": "evry_parking_Route_de_Versailles_zidTGEFZVY5"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.61528828845056,
+        "lon": 2.437217274239385,
+        "name": "evry_parking_Marquage_Louise_Michel_zid9Y84XH56",
+        "station_id": "evry_parking_Marquage_Louise_Michel_zid9Y84XH56"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.63541,
+        "lon": 2.4256,
+        "name": "evry_parking_Boulevard_des_Champs_Elysees_zidFEJ8EQUO",
+        "station_id": "evry_parking_Boulevard_des_Champs_Elysees_zidFEJ8EQUO"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.63645,
+        "lon": 2.42498,
+        "name": "evry_parking_Rue_Jean_Anouilh_zidUGYM5GWI",
+        "station_id": "evry_parking_Rue_Jean_Anouilh_zidUGYM5GWI"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.64118,
+        "lon": 2.42157,
+        "name": "evry_parking_11_rue_du_Bois_Sauvage_zidQAFKKQ1W",
+        "station_id": "evry_parking_11_rue_du_Bois_Sauvage_zidQAFKKQ1W"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.64288,
+        "lon": 2.42247,
+        "name": "evry_parking_5_rue_du_Bois_Sauvage_zidPYEYQP23",
+        "station_id": "evry_parking_5_rue_du_Bois_Sauvage_zidPYEYQP23"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.64128,
+        "lon": 2.42496,
+        "name": "evry_parking_12_rue_du_Bois_Guillaume_zid7VOZ0DS5",
+        "station_id": "evry_parking_12_rue_du_Bois_Guillaume_zid7VOZ0DS5"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.63881,
+        "lon": 2.42622,
+        "name": "evry_parking_Rue_du_Bois_Guillaume_zid92I6G0RQ",
+        "station_id": "evry_parking_Rue_du_Bois_Guillaume_zid92I6G0RQ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.63648,
+        "lon": 2.42766,
+        "name": "evry_parking_Rue_Jules_Vallee_zidUDFZUB1W",
+        "station_id": "evry_parking_Rue_Jules_Vallee_zidUDFZUB1W"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.63259,
+        "lon": 2.43216,
+        "name": "evry_parking_Rue_Pierre_et_Marie_Curie_zidUAOK70H9",
+        "station_id": "evry_parking_Rue_Pierre_et_Marie_Curie_zidUAOK70H9"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.63328,
+        "lon": 2.44095,
+        "name": "evry_parking_Allee_Georges_Clemenceau_zidBM7F7EF5",
+        "station_id": "evry_parking_Allee_Georges_Clemenceau_zidBM7F7EF5"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6296,
+        "lon": 2.45164,
+        "name": "evry_parking_21_avenue_du_Mousseau_zidVRBN6SXV",
+        "station_id": "evry_parking_21_avenue_du_Mousseau_zidVRBN6SXV"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.62909,
+        "lon": 2.45037,
+        "name": "evry_parking_13_rue_Claude_Debussy_zidW1WJAE7V",
+        "station_id": "evry_parking_13_rue_Claude_Debussy_zidW1WJAE7V"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6328,
+        "lon": 2.44524,
+        "name": "evry_parking_31_boulevard_Aguado_zidKX8PPJ6D",
+        "station_id": "evry_parking_31_boulevard_Aguado_zidKX8PPJ6D"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.62724,
+        "lon": 2.4557,
+        "name": "evry_parking_2_rue_des_vignes_zid12251AMY",
+        "station_id": "evry_parking_2_rue_des_vignes_zid12251AMY"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.61717,
+        "lon": 2.40796,
+        "name": "evry_parking_Rue_Paul_Puech_zidYHK840DV",
+        "station_id": "evry_parking_Rue_Paul_Puech_zidYHK840DV"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.61904,
+        "lon": 2.40141,
+        "name": "evry_parking_Rue_Emile_Biort_zid08F8ZAU4",
+        "station_id": "evry_parking_Rue_Emile_Biort_zid08F8ZAU4"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.62812,
+        "lon": 2.40672,
+        "name": "evry_parking_Avenue_du_bois_de_l_epine_zidGBXVJD3U",
+        "station_id": "evry_parking_Avenue_du_bois_de_l_epine_zidGBXVJD3U"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.62731,
+        "lon": 2.4096,
+        "name": "evry_parking_22_rue_Jean_Mermoz_zidBXANRJCL",
+        "station_id": "evry_parking_22_rue_Jean_Mermoz_zidBXANRJCL"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.62567,
+        "lon": 2.41292,
+        "name": "evry_parking_Rue_Jean_Mermoz_zidZBMA1EB4",
+        "station_id": "evry_parking_Rue_Jean_Mermoz_zidZBMA1EB4"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.61905,
+        "lon": 2.45058,
+        "name": "evry_parking_Rue_Henri_Auguste_Desbrueres_zidOIH9SACF",
+        "station_id": "evry_parking_Rue_Henri_Auguste_Desbrueres_zidOIH9SACF"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.62171,
+        "lon": 2.44693,
+        "name": "evry_parking_Boulevard_des_Coquibus_zidNZOMMON1",
+        "station_id": "evry_parking_Boulevard_des_Coquibus_zidNZOMMON1"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.62412,
+        "lon": 2.44527,
+        "name": "evry_parking_14_rue_Charles_Fourier_zidCBUTASIS",
+        "station_id": "evry_parking_14_rue_Charles_Fourier_zidCBUTASIS"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.62377,
+        "lon": 2.45224,
+        "name": "evry_parking_19_Boulevard_du_Marechal_de_Lattre_zidGWZGXI9K",
+        "station_id": "evry_parking_19_Boulevard_du_Marechal_de_Lattre_zidGWZGXI9K"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.61742,
+        "lon": 2.43946,
+        "name": "evry_parking_11_rue_de_l_Essonne_zidWDB5UV83",
+        "station_id": "evry_parking_11_rue_de_l_Essonne_zidWDB5UV83"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.61668,
+        "lon": 2.44031,
+        "name": "evry_parking_Boulevard_Louise_Michel_zidUGJ7DSYA",
+        "station_id": "evry_parking_Boulevard_Louise_Michel_zidUGJ7DSYA"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.61817,
+        "lon": 2.4388,
+        "name": "evry_parking_Mediatheque_zid7PDF3UX3",
+        "station_id": "evry_parking_Mediatheque_zid7PDF3UX3"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.61881,
+        "lon": 2.43669,
+        "name": "evry_parking_Rue_de_l_Essonne_zidOBEJ3VBR",
+        "station_id": "evry_parking_Rue_de_l_Essonne_zidOBEJ3VBR"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.61621,
+        "lon": 2.43596,
+        "name": "evry_parking_Rue_de_l_Orge_zidZI7KBPJK",
+        "station_id": "evry_parking_Rue_de_l_Orge_zidZI7KBPJK"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6174,
+        "lon": 2.43474,
+        "name": "evry_parking_40_rue_de_l_orge_zidTB1T2YLH",
+        "station_id": "evry_parking_40_rue_de_l_orge_zidTB1T2YLH"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.61446,
+        "lon": 2.43403,
+        "name": "evry_parking_Place_de_l_Yerres_zidO409Z538",
+        "station_id": "evry_parking_Place_de_l_Yerres_zidO409Z538"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.61714,
+        "lon": 2.43121,
+        "name": "evry_parking_77_rue_de_l_Essonne_zid9TQ8M1E8",
+        "station_id": "evry_parking_77_rue_de_l_Essonne_zid9TQ8M1E8"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.61893,
+        "lon": 2.42935,
+        "name": "evry_parking_20_24_allee_Boissy_d_Anglas_zidLWBT99WC",
+        "station_id": "evry_parking_20_24_allee_Boissy_d_Anglas_zidLWBT99WC"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.6236,
+        "lon": 2.42643,
+        "name": "evry_parking_Rue_Pere_Andre_Jarlan_zid1THGE3C5",
+        "station_id": "evry_parking_Rue_Pere_Andre_Jarlan_zid1THGE3C5"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.62238,
+        "lon": 2.41595,
+        "name": "evry_parking_Bois_Briard_zidCZY15C8V",
+        "station_id": "evry_parking_Bois_Briard_zidCZY15C8V",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.62563,
+        "lon": 2.40687,
+        "name": "evry_parking_Traite_de_rome_zid41CEBGI8",
+        "station_id": "evry_parking_Traite_de_rome_zid41CEBGI8",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.64547,
+        "lon": 2.43366,
+        "name": "evry_parking_Virtual_ecorne_Boeuf_zidE3RV9YFS",
+        "station_id": "evry_parking_Virtual_ecorne_Boeuf_zidE3RV9YFS",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.63243,
+        "lon": 2.41234,
+        "name": "evry_parking_marquis_de_raie_zidIWP44DD5",
+        "station_id": "evry_parking_marquis_de_raie_zidIWP44DD5",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.64794,
+        "lon": 2.43598,
+        "name": "evry_parking_Gare_zid2I0HBPLD",
+        "station_id": "evry_parking_Gare_zid2I0HBPLD",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      }
+    ]
+  },
+  "last_updated": 1771749832,
+  "ttl": 0,
+  "version": "2.2"
+}

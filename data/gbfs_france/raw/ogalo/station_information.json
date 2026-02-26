@@ -1,0 +1,383 @@
+{
+  "data": {
+    "stations": [
+      {
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.260122,
+        "lon": -0.065666,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Offard"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://ogalo.ecovelo.mobi/#/station/stn_XxGCY8422RGxZZ5Qzy9pZb"
+        },
+        "station_id": "stn_XxGCY8422RGxZZ5Qzy9pZb"
+      },
+      {
+        "capacity": 6,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.260892,
+        "lon": -0.089681,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Maréchaux"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://ogalo.ecovelo.mobi/#/station/stn_nYmaA5hTzDqRxrbjUpx4jo"
+        },
+        "station_id": "stn_nYmaA5hTzDqRxrbjUpx4jo"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.247677,
+        "lon": -0.059915,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Centre Hospitalier"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://ogalo.ecovelo.mobi/#/station/stn_WBz7FJiveUP53fSRusErSX"
+        },
+        "station_id": "stn_WBz7FJiveUP53fSRusErSX"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.24634,
+        "lon": -0.077,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Chemin Vert"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://ogalo.ecovelo.mobi/#/station/stn_NE99V5KhRkTNXJdnTHPUS8"
+        },
+        "station_id": "stn_NE99V5KhRkTNXJdnTHPUS8"
+      },
+      {
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.274975,
+        "lon": -0.078901,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Mairie de St-Lambert des Levées"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://ogalo.ecovelo.mobi/#/station/stn_J4aGax9PDC5VSieuQuMi7J"
+        },
+        "station_id": "stn_J4aGax9PDC5VSieuQuMi7J"
+      },
+      {
+        "capacity": 6,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.259398,
+        "lon": -0.078877,
+        "name": [
+          {
+            "language": "fr",
+            "text": "CV Orléans"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://ogalo.ecovelo.mobi/#/station/stn_nrwJaMwwFsDozCnotmDuHR"
+        },
+        "station_id": "stn_nrwJaMwwFsDozCnotmDuHR"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.259553,
+        "lon": -0.078581,
+        "name": [
+          {
+            "language": "fr",
+            "text": "F Roosevelt"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://ogalo.ecovelo.mobi/#/station/stn_JMMJn9xn7ZpYKLNguiDwWz"
+        },
+        "station_id": "stn_JMMJn9xn7ZpYKLNguiDwWz"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.25564,
+        "lon": -0.07201,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Château"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://ogalo.ecovelo.mobi/#/station/stn_Yt9TBrgeHgaxByLtS2Faar"
+        },
+        "station_id": "stn_Yt9TBrgeHgaxByLtS2Faar"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.2691,
+        "lon": -0.0712,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Gare SNCF"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://ogalo.ecovelo.mobi/#/station/stn_gKTN94sNpeuzE9wD96Pzr8"
+        },
+        "station_id": "stn_gKTN94sNpeuzE9wD96Pzr8"
+      },
+      {
+        "capacity": 6,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.251043,
+        "lon": -0.068435,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Jehan Alain"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://ogalo.ecovelo.mobi/#/station/stn_hL8bd88i6BiRvYjhtFUrkA"
+        },
+        "station_id": "stn_hL8bd88i6BiRvYjhtFUrkA"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.278152,
+        "lon": -0.064913,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Ecoparc"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://ogalo.ecovelo.mobi/#/station/stn_JZ68KWJxWFo3y3dkpuXLgV"
+        },
+        "station_id": "stn_JZ68KWJxWFo3y3dkpuXLgV"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.250091,
+        "lon": -0.089692,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Demarest"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://ogalo.ecovelo.mobi/#/station/stn_4KyuKWCxTBgWJdWEnEmXPX"
+        },
+        "station_id": "stn_4KyuKWCxTBgWJdWEnEmXPX"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.252039,
+        "lon": -0.080586,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Pôle Balzac"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://ogalo.ecovelo.mobi/#/station/stn_ZfbmmnmL74vSFDtnF7mqYi"
+        },
+        "station_id": "stn_ZfbmmnmL74vSFDtnF7mqYi"
+      },
+      {
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.261678,
+        "lon": -0.082586,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Chardonnet"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://ogalo.ecovelo.mobi/#/station/stn_Hx6bB3q9PNPNDmQBp6yEjE"
+        },
+        "station_id": "stn_Hx6bB3q9PNPNDmQBp6yEjE"
+      },
+      {
+        "capacity": 4,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.269344,
+        "lon": -0.080007,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Millocheau"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://ogalo.ecovelo.mobi/#/station/stn_CNows4Ei3uT5ZDFqPKfg5h"
+        },
+        "station_id": "stn_CNows4Ei3uT5ZDFqPKfg5h"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.255109,
+        "lon": -0.082287,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Médiathèque"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://ogalo.ecovelo.mobi/#/station/stn_52JJRYNLxj8wap3pMJ7uPY"
+        },
+        "station_id": "stn_52JJRYNLxj8wap3pMJ7uPY"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.260501,
+        "lon": -0.075906,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Hôtel de Ville"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://ogalo.ecovelo.mobi/#/station/stn_gfHyAfkKKNrCM6DXveKNs2"
+        },
+        "station_id": "stn_gfHyAfkKKNrCM6DXveKNs2"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.264184,
+        "lon": -0.10011,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Mairie de St-Hilaire St-Florent"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://ogalo.ecovelo.mobi/#/station/stn_SawuRtWBv36g828MsJuKA6"
+        },
+        "station_id": "stn_SawuRtWBv36g828MsJuKA6"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.240843,
+        "lon": -0.022734,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Mairie de Dampierre"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://ogalo.ecovelo.mobi/#/station/stn_baJYb8qoWv9MDu22CWmxFF"
+        },
+        "station_id": "stn_baJYb8qoWv9MDu22CWmxFF"
+      },
+      {
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.253826,
+        "lon": -0.064434,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Ardilliers"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://ogalo.ecovelo.mobi/#/station/stn_KuMWk9LHJJmW3sZxBx4mWi"
+        },
+        "station_id": "stn_KuMWk9LHJJmW3sZxBx4mWi"
+      },
+      {
+        "capacity": 6,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.237663,
+        "lon": -0.070434,
+        "name": [
+          {
+            "language": "fr",
+            "text": "ZA Clos Bonnet"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://ogalo.ecovelo.mobi/#/station/stn_XJNmxEMmFv3msCrzNsfRrf"
+        },
+        "station_id": "stn_XJNmxEMmFv3msCrzNsfRrf"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.264126,
+        "lon": -0.073227,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Les Ponts"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://ogalo.ecovelo.mobi/#/station/stn_CRNeDn46rHrTGUt9YUVE3F"
+        },
+        "station_id": "stn_CRNeDn46rHrTGUt9YUVE3F"
+      }
+    ]
+  },
+  "last_updated": "2026-02-22T09:39:38+01:00",
+  "ttl": 0,
+  "version": "3.0"
+}

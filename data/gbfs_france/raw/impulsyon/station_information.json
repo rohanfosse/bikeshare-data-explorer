@@ -1,0 +1,536 @@
+{
+  "data": {
+    "stations": [
+      {
+        "capacity": 6,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.679581,
+        "lon": -1.423063,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Garenne"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://impulsyon.ecovelo.mobi/#/station/stn_WpeKRVTycfB6jQWLGQmqbe"
+        },
+        "station_id": "stn_WpeKRVTycfB6jQWLGQmqbe"
+      },
+      {
+        "capacity": 6,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.665091,
+        "lon": -1.44944,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Eglise de Saint André"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://impulsyon.ecovelo.mobi/#/station/stn_T2HESCCxXyWgMtryT8w2Ka"
+        },
+        "station_id": "stn_T2HESCCxXyWgMtryT8w2Ka"
+      },
+      {
+        "capacity": 16,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.672046,
+        "lon": -1.435049,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Gare SNCF"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://impulsyon.ecovelo.mobi/#/station/stn_NCNKdQwjEYLMPNfhHH9QCK"
+        },
+        "station_id": "stn_NCNKdQwjEYLMPNfhHH9QCK"
+      },
+      {
+        "capacity": 6,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.663162,
+        "lon": -1.425239,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Jules Verne"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://impulsyon.ecovelo.mobi/#/station/stn_oSsVn4Se4aeEvFdtVZUec5"
+        },
+        "station_id": "stn_oSsVn4Se4aeEvFdtVZUec5"
+      },
+      {
+        "capacity": 6,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.68198,
+        "lon": -1.43469,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Olivier de Serre"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://impulsyon.ecovelo.mobi/#/station/stn_a2BM5JGRBA2GVAz7tPDuvL"
+        },
+        "station_id": "stn_a2BM5JGRBA2GVAz7tPDuvL"
+      },
+      {
+        "capacity": 2,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.671609,
+        "lon": -1.437083,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Gare Ouest"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://impulsyon.ecovelo.mobi/#/station/stn_3jguokMMduCF9v8rjX9dZJ"
+        },
+        "station_id": "stn_3jguokMMduCF9v8rjX9dZJ"
+      },
+      {
+        "capacity": 6,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.668225,
+        "lon": -1.418974,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Boulevard d'Italie"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://impulsyon.ecovelo.mobi/#/station/stn_AMw8k83GSkMJBuojjTgdtp"
+        },
+        "station_id": "stn_AMw8k83GSkMJBuojjTgdtp"
+      },
+      {
+        "capacity": 6,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.681281,
+        "lon": -1.440398,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Edison"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://impulsyon.ecovelo.mobi/#/station/stn_es3DX2un5FUaXjza4pygvV"
+        },
+        "station_id": "stn_es3DX2un5FUaXjza4pygvV"
+      },
+      {
+        "capacity": 6,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.670928,
+        "lon": -1.415833,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Deval"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://impulsyon.ecovelo.mobi/#/station/stn_dcS2gx4LJskFcP5GixjxHD"
+        },
+        "station_id": "stn_dcS2gx4LJskFcP5GixjxHD"
+      },
+      {
+        "capacity": 6,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.658456,
+        "lon": -1.412714,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Clinique St Charles"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://impulsyon.ecovelo.mobi/#/station/stn_ezpWWayMfB4eVMYHjarNyj"
+        },
+        "station_id": "stn_ezpWWayMfB4eVMYHjarNyj"
+      },
+      {
+        "capacity": 6,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.66104,
+        "lon": -1.404005,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Mairie du Bourg"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://impulsyon.ecovelo.mobi/#/station/stn_CY4Vkha8CmQzMoLgTUy48b"
+        },
+        "station_id": "stn_CY4Vkha8CmQzMoLgTUy48b"
+      },
+      {
+        "capacity": 6,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.680402,
+        "lon": -1.43051,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Jean Yole"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://impulsyon.ecovelo.mobi/#/station/stn_9QA4YD36So8VjgsVvVUfoq"
+        },
+        "station_id": "stn_9QA4YD36So8VjgsVvVUfoq"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.670675,
+        "lon": -1.424075,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Les Halles"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://impulsyon.ecovelo.mobi/#/station/stn_SZLFNxaFYJYXiHkQvG8aB2"
+        },
+        "station_id": "stn_SZLFNxaFYJYXiHkQvG8aB2"
+      },
+      {
+        "capacity": 6,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.668753,
+        "lon": -1.440597,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Place Coubertin"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://impulsyon.ecovelo.mobi/#/station/stn_K9JfhTjBYREJQPRhxHGAgG"
+        },
+        "station_id": "stn_K9JfhTjBYREJQPRhxHGAgG"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.667552,
+        "lon": -1.409697,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Moreau CHD"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://impulsyon.ecovelo.mobi/#/station/stn_HcEovA98ZKWoAL4j6ejcAL"
+        },
+        "station_id": "stn_HcEovA98ZKWoAL4j6ejcAL"
+      },
+      {
+        "capacity": 6,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.672891,
+        "lon": -1.41955,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Boulevard des Belges"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://impulsyon.ecovelo.mobi/#/station/stn_kPMMvvG5iP7urzvGEbvd3j"
+        },
+        "station_id": "stn_kPMMvvG5iP7urzvGEbvd3j"
+      },
+      {
+        "capacity": 16,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.676913,
+        "lon": -1.405435,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Courtaisière"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://impulsyon.ecovelo.mobi/#/station/stn_3HtRmaXZEbds75vYRrGbKq"
+        },
+        "station_id": "stn_3HtRmaXZEbds75vYRrGbKq"
+      },
+      {
+        "capacity": 6,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.700566,
+        "lon": -1.430677,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Flâneries"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://impulsyon.ecovelo.mobi/#/station/stn_TE57GpPgepTcuhTBoZK4zT"
+        },
+        "station_id": "stn_TE57GpPgepTcuhTBoZK4zT"
+      },
+      {
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.674793,
+        "lon": -1.428612,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Foch"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://impulsyon.ecovelo.mobi/#/station/stn_8m9iXCymPr6YZDogxhrhou"
+        },
+        "station_id": "stn_8m9iXCymPr6YZDogxhrhou"
+      },
+      {
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.671241,
+        "lon": -1.42667,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Napoléon - Dromadaire"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://impulsyon.ecovelo.mobi/#/station/stn_Bw2brPJUaZStPn8MyPcRtr"
+        },
+        "station_id": "stn_Bw2brPJUaZStPn8MyPcRtr"
+      },
+      {
+        "capacity": 6,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.687053,
+        "lon": -1.429866,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Etablières"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://impulsyon.ecovelo.mobi/#/station/stn_oYEokNi6JC6iezkyTAKDW7"
+        },
+        "station_id": "stn_oYEokNi6JC6iezkyTAKDW7"
+      },
+      {
+        "capacity": 6,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.670931,
+        "lon": -1.405524,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Newton"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://impulsyon.ecovelo.mobi/#/station/stn_LZei6s5BnTbJbj3DSUdKUG"
+        },
+        "station_id": "stn_LZei6s5BnTbJbj3DSUdKUG"
+      },
+      {
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.669869,
+        "lon": -1.427406,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Napoléon - Crocodile"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://impulsyon.ecovelo.mobi/#/station/stn_8mg3cp9NXYbEHsYk3q5azT"
+        },
+        "station_id": "stn_8mg3cp9NXYbEHsYk3q5azT"
+      },
+      {
+        "capacity": 6,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.668498,
+        "lon": -1.424542,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Cité Travot"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://impulsyon.ecovelo.mobi/#/station/stn_dxekBAtnFB73sgse2oyT3o"
+        },
+        "station_id": "stn_dxekBAtnFB73sgse2oyT3o"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.670189,
+        "lon": -1.447692,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Piscine patinoire"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://impulsyon.ecovelo.mobi/#/station/stn_QZmouAbP7ptcnq3UaMUPXV"
+        },
+        "station_id": "stn_QZmouAbP7ptcnq3UaMUPXV"
+      },
+      {
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.664783,
+        "lon": -1.423577,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Joffre"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://impulsyon.ecovelo.mobi/#/station/stn_gnvsYc9fSY9i8PnQdVf8An"
+        },
+        "station_id": "stn_gnvsYc9fSY9i8PnQdVf8An"
+      },
+      {
+        "capacity": 6,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.650765,
+        "lon": -1.438285,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Denant"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://impulsyon.ecovelo.mobi/#/station/stn_RdTMbMSzti7c7GnY8CQoAH"
+        },
+        "station_id": "stn_RdTMbMSzti7c7GnY8CQoAH"
+      },
+      {
+        "capacity": 6,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.659722,
+        "lon": -1.421333,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Lune"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://impulsyon.ecovelo.mobi/#/station/stn_PsWV28xPEZWJEPew7n6V7Z"
+        },
+        "station_id": "stn_PsWV28xPEZWJEPew7n6V7Z"
+      },
+      {
+        "capacity": 6,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.662339,
+        "lon": -1.434228,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Liberté"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://impulsyon.ecovelo.mobi/#/station/stn_gBiQBetR2sFQTFBirQN4G5"
+        },
+        "station_id": "stn_gBiQBetR2sFQTFBirQN4G5"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.669209,
+        "lon": -1.431433,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Place de la Vendée"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://impulsyon.ecovelo.mobi/#/station/stn_UrvV5EeWejd5vFSb72AbiU"
+        },
+        "station_id": "stn_UrvV5EeWejd5vFSb72AbiU"
+      },
+      {
+        "capacity": 6,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.684982,
+        "lon": -1.433766,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Monge"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://impulsyon.ecovelo.mobi/#/station/stn_b4GXHxcDiefpKsxbAPBzLW"
+        },
+        "station_id": "stn_b4GXHxcDiefpKsxbAPBzLW"
+      }
+    ]
+  },
+  "last_updated": "2026-02-22T09:42:40+01:00",
+  "ttl": 0,
+  "version": "3.0"
+}

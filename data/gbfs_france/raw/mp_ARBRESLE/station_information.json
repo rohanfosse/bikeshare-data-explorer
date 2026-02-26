@@ -1,0 +1,65 @@
+{
+  "last_updated": "2026-02-22T09:41:06.034+01:00",
+  "ttl": 300,
+  "version": "3.0",
+  "data": {
+    "stations": [
+      {
+        "station_id": "724",
+        "name": [
+          {
+            "text": "COURZIEU GIRAUDIERE",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.750038,
+        "lon": 4.54793,
+        "is_virtual_station": false,
+        "capacity": 5,
+        "is_charging_station": true
+      },
+      {
+        "station_id": "725",
+        "name": [
+          {
+            "text": "COURZIEU MAIRIE",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.742291,
+        "lon": 4.57027,
+        "is_virtual_station": false,
+        "capacity": 5,
+        "is_charging_station": true
+      },
+      {
+        "station_id": "726",
+        "name": [
+          {
+            "text": "DOMMARTIN FERME DU PROST",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.836468,
+        "lon": 4.71417,
+        "is_virtual_station": false,
+        "capacity": 5,
+        "is_charging_station": true
+      },
+      {
+        "station_id": "727",
+        "name": [
+          {
+            "text": "LENTILLY GARE DU CHARPENAY",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.816638,
+        "lon": 4.682263,
+        "is_virtual_station": false,
+        "capacity": 5,
+        "is_charging_station": true
+      }
+    ]
+  }
+}

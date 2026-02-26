@@ -1,0 +1,18 @@
+Station_Name,True_Neighborhood,Predicted_NoGPS,Predicted_WithGPS,Correct_NoGPS,Correct_WithGPS
+Les Arceaux,Centre,Centre,Centre,True,True
+Marie Caizergues,Centre,Croix d'Argent,Centre,False,True
+Plan Cabanes,Centre,Centre,Centre,True,True
+Rue Jules Ferry - Gare Saint-Roch,Centre,Centre,Centre,True,True
+Aiguelongue,Hôpitaux-Facultés,Centre,Centre,False,False
+Gambetta,Centre,Centre,Centre,True,True
+Sabines,Croix d'Argent,Prés d'Arènes,Croix d'Argent,False,True
+Pont de Lattes - Gare Saint-Roch,Centre,Centre,Centre,True,True
+Rondelet,Centre,Centre,Centre,True,True
+Hôtel de Ville,Prés d'Arènes,Centre,Centre,False,False
+Prés d'Arènes,Centre,Centre,Centre,True,True
+AtelierTAM,Hôpitaux-Facultés,Centre,Les Cévennes,False,False
+Nombre d'Or,Centre,Centre,Centre,True,True
+Place Viala,Les Cévennes,Centre,Centre,False,False
+Renouvier,Centre,Centre,Centre,True,True
+Pérols Etang de l'Or,OUTSIDE_MONTPELLIER,Centre,Centre,False,False
+Jardin de la Lironde,Port Marianne,Les Cévennes,Centre,False,False

@@ -1,0 +1,3024 @@
+{
+  "last_updated": "2026-02-22T09:38:04.3264104+01:00",
+  "ttl": 300,
+  "version": "3.0",
+  "data": {
+    "stations": [
+      {
+        "station_id": "355",
+        "name": [
+          {
+            "text": "Lyon 1er - Parking LPA Terreaux",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.767276763916,
+        "lon": 4.83393287658691,
+        "address": "Place des Terreaux",
+        "parking_type": "underground_parking",
+        "capacity": 12,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "356",
+        "name": [
+          {
+            "text": "Lyon 3ème - Part-Dieu Lac",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.757495880127,
+        "lon": 4.85519981384277,
+        "address": "10 rue Desaix",
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "357",
+        "name": [
+          {
+            "text": "Lyon 4ème - Parking LPA Gros Caillou",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7747077941895,
+        "lon": 4.83358192443848,
+        "address": "167 bis Boulevard de la Croix",
+        "parking_type": "underground_parking",
+        "capacity": 8,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "358",
+        "name": [
+          {
+            "text": "Lyon 5ème - Parking LPA Saint-Jean",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7625007629395,
+        "lon": 4.82940292358398,
+        "address": "Quai Romain Rolland",
+        "parking_type": "parking_lot",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "359",
+        "name": [
+          {
+            "text": "Lyon 2ème - Place Carnot",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7513160705566,
+        "lon": 4.82708883285522,
+        "address": "En face du 23 place Carnot",
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "360",
+        "name": [
+          {
+            "text": "Lyon 2ème - Parking LPA Cordeliers",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.76475348073606,
+        "lon": 4.837253882426185,
+        "address": "13 rue Antoine Sallès",
+        "parking_type": "parking_lot",
+        "capacity": 7,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "361",
+        "name": [
+          {
+            "text": "Lyon 7ème - Parking LPA Berthelot",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7462272644043,
+        "lon": 4.83664512634277,
+        "address": "99 rue de Marseille",
+        "parking_type": "parking_lot",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "362",
+        "name": [
+          {
+            "text": "Lyon 4ème - Parking LPA Croix Rousse",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7816200256348,
+        "lon": 4.83287000656128,
+        "address": "73 rue de Belfort",
+        "parking_type": "underground_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "363",
+        "name": [
+          {
+            "text": "Lyon 5ème - Parking LPA Saint-Georges",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7582931518555,
+        "lon": 4.82614183425903,
+        "address": "Place Benoît Crépu",
+        "parking_type": "underground_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "364",
+        "name": [
+          {
+            "text": "Lyon 3ème - Parking LPA Les Halles",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7628707885742,
+        "lon": 4.8513298034668,
+        "address": "156 rue Garibaldi",
+        "parking_type": "parking_lot",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "365",
+        "name": [
+          {
+            "text": "Lyon 3ème - Parking LPA La Fosse aux Ours",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7569236755371,
+        "lon": 4.84047508239746,
+        "address": "1Bis Place Antonin Jutard",
+        "parking_type": "underground_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "366",
+        "name": [
+          {
+            "text": "Lyon 2ème - Parking LPA Antonin Poncet",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7564239501953,
+        "lon": 4.8349928855896,
+        "address": "Place Antonin Poncet",
+        "parking_type": "underground_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "367",
+        "name": [
+          {
+            "text": "Lyon 6ème - Parking LPA Morand",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7677345275879,
+        "lon": 4.84173679351807,
+        "address": "Place Maréchal Lyautey",
+        "parking_type": "underground_parking",
+        "capacity": 7,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "368",
+        "name": [
+          {
+            "text": "Lyon 1er - Parking LPA Hotel de ville",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7679710388184,
+        "lon": 4.83765411376953,
+        "address": "Place Louis Pradel",
+        "parking_type": "underground_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "369",
+        "name": [
+          {
+            "text": "Lyon 2ème - Parking LPA Saint-Antoine",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7639503479004,
+        "lon": 4.83191013336182,
+        "address": "2 Quai Saint Antoine",
+        "parking_type": "underground_parking",
+        "capacity": 11,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "370",
+        "name": [
+          {
+            "text": "Lyon 3ème - Saxe-Servient",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.760899621382514,
+        "lon": 4.845887563621039,
+        "address": "8 rue DUNOIR",
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "371",
+        "name": [
+          {
+            "text": "Lyon 7ème - Jean Macé",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7434506709041,
+        "lon": 4.84151433435541,
+        "address": "3 rue de Gerland ",
+        "parking_type": "street_parking",
+        "capacity": 5,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "372",
+        "name": [
+          {
+            "text": "Lyon 2ème - Charlemagne",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7456398010254,
+        "lon": 4.82371807098389,
+        "address": "1 Rue Marc-Antoine Petit ",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "373",
+        "name": [
+          {
+            "text": "Lyon 5ème - Point du jour",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7567512282223,
+        "lon": 4.79669885192179,
+        "address": "1-4 rue des Aqueduc",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "374",
+        "name": [
+          {
+            "text": "Lyon 9ème - Valmy",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7749137878418,
+        "lon": 4.8053240776062,
+        "address": "6rue Michel Berthet",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "375",
+        "name": [
+          {
+            "text": "Lyon 9ème - Gare de Vaise",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7798652648926,
+        "lon": 4.80481290817261,
+        "address": "16 rue du 24 mars 1852",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "376",
+        "name": [
+          {
+            "text": "Lyon 9ème - Gorge de Loup",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.768009185791,
+        "lon": 4.8042049407959,
+        "address": "3 rue Louis Loucheur",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "377",
+        "name": [
+          {
+            "text": "Villeurbanne - Charpennes",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7708053588867,
+        "lon": 4.86436080932617,
+        "address": "25 Cours Emile Zola",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "378",
+        "name": [
+          {
+            "text": "Lyon 8ème - Bachut - Santy",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.734977722168,
+        "lon": 4.87047100067139,
+        "address": "20 avenue Paul Santy",
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "379",
+        "name": [
+          {
+            "text": "Lyon 7ème - Jean Jaurès",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7362670898438,
+        "lon": 4.8364520072937,
+        "address": "198 Avenue Jean Jaurès",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "380",
+        "name": [
+          {
+            "text": "Lyon 1er - Place Sathonay",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7690582275391,
+        "lon": 4.8306360244751,
+        "address": "5 place de Sathonay",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "381",
+        "name": [
+          {
+            "text": "Lyon 6ème - Brotteaux",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.766975402832,
+        "lon": 4.85894823074341,
+        "address": "4 Place Jules Ferry",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "382",
+        "name": [
+          {
+            "text": "Lyon 5ème - Saint Just",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7575149536133,
+        "lon": 4.8154149055481,
+        "address": "4 rue Jean Prevost",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "383",
+        "name": [
+          {
+            "text": "Lyon 8ème - Ambroise Courtois",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7452087402344,
+        "lon": 4.87101793289185,
+        "address": "18 Place Ambroise Courtois ",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "384",
+        "name": [
+          {
+            "text": "Villeurbanne - Maisons Neuves",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7564010620117,
+        "lon": 4.87835502624512,
+        "address": "3 rue Jean Jaurès à Villeurbanne",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "385",
+        "name": [
+          {
+            "text": "Bron - Centre",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.73298970162765,
+        "lon": 4.90842199325562,
+        "address": "Face au 5 rue Roger Salengro",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "388",
+        "name": [
+          {
+            "text": "Lyon 3ème - Albert Thomas",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7485566323811,
+        "lon": 4.86350572342669,
+        "address": "12 rue Saint-Théodore",
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "389",
+        "name": [
+          {
+            "text": "Lyon 3ème - Saxe-Gambetta",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7542894669573,
+        "lon": 4.84779357103675,
+        "address": "269 rue Vendôme 69003 Lyon",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "390",
+        "name": [
+          {
+            "text": "Tassin - Centre",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7616157531738,
+        "lon": 4.77861595153809,
+        "address": "119 Bis avenue Charles de Gaulle",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "391",
+        "name": [
+          {
+            "text": "Villeurbanne - La Doua",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7817192077637,
+        "lon": 4.87283515930176,
+        "address": "9 avenue Jean Capelle",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "392",
+        "name": [
+          {
+            "text": "Oullins - Médiathèque",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7169761657715,
+        "lon": 4.81219387054443,
+        "address": "Face au 5 rue de la République",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "393",
+        "name": [
+          {
+            "text": "Lyon 3ème - Parking LPA Villette P2",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7605400085449,
+        "lon": 4.8617000579834,
+        "address": "38 rue de la Villette",
+        "parking_type": "underground_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "394",
+        "name": [
+          {
+            "text": "Lyon 2ème - Parking LPA Marché Gare",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7419013977051,
+        "lon": 4.82317018508911,
+        "address": "77 Rue delandine",
+        "parking_type": "underground_parking",
+        "capacity": 8,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "396",
+        "name": [
+          {
+            "text": "Lyon 2ème - Gailleton",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7521018981934,
+        "lon": 4.83313608169556,
+        "address": "31 Quai Gailleton ",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "397",
+        "name": [
+          {
+            "text": "Lyon 6ème - Lycée du Parc",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7717361450195,
+        "lon": 4.85483598709106,
+        "address": "146 rue Sully",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "398",
+        "name": [
+          {
+            "text": "Lyon 6ème - Saxe Lafayette",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7647590637207,
+        "lon": 4.84481382369995,
+        "address": "31 avenue Maréchal de Saxe",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "399",
+        "name": [
+          {
+            "text": "Lyon 6ème - Créqui - Duquesne",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7725143432617,
+        "lon": 4.84542894363403,
+        "address": "49 rue de Créqui",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "400",
+        "name": [
+          {
+            "text": "Lyon 6ème - Lyautey - Foch",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7693290710449,
+        "lon": 4.84176111221313,
+        "address": "3 place Maréchal Lyautey",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "401",
+        "name": [
+          {
+            "text": "Lyon 7ème - Rue de l'Université",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7509595705111,
+        "lon": 4.83850384931658,
+        "address": "61 rue Pasteur ",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "402",
+        "name": [
+          {
+            "text": "Lyon 7ème - Place Saint Louis",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7493209838867,
+        "lon": 4.84754705429077,
+        "address": "57 rue de la Thibaudière",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "404",
+        "name": [
+          {
+            "text": "Lyon 7ème - Stade de Gerland",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7278480529785,
+        "lon": 4.83145523071289,
+        "address": "310 avenue Jean Jaurès",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "405",
+        "name": [
+          {
+            "text": "Lyon 8ème - Grand Trou",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7341349707857,
+        "lon": 4.85363416838877,
+        "address": "101 Rue Audibert et Lavirotte",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "406",
+        "name": [
+          {
+            "text": "Lyon 8ème - Grange-Blanche",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7421989440918,
+        "lon": 4.87780809402466,
+        "address": "17 Promenade Léa et Napoléon Bullukian",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "407",
+        "name": [
+          {
+            "text": "Lyon 8ème - Marius Berliet",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7409019,
+        "lon": 4.862730026,
+        "address": "76 rue Marius Berliet",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "408",
+        "name": [
+          {
+            "text": "Lyon 8ème - Mermoz - Moselle",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7322463989258,
+        "lon": 4.88310289382935,
+        "address": "Face au 9 rue Berthe Morisot",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "409",
+        "name": [
+          {
+            "text": "Lyon 8ème - Professeur Beauvisage",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7297248840332,
+        "lon": 4.86761808395386,
+        "address": "140 rue Professeur Beauvisage",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "410",
+        "name": [
+          {
+            "text": "Lyon 4ème - Boulevard de la Croix-Rousse",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7723731994629,
+        "lon": 4.81907081604004,
+        "address": "23 boulevard de la Croix-Rousse",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "411",
+        "name": [
+          {
+            "text": "Lyon 4ème - Place du Commandant Arnaud",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.77978515625,
+        "lon": 4.83581399917603,
+        "address": "11 place du Commandant Arnaud",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "412",
+        "name": [
+          {
+            "text": "Lyon 4ème - Philippe de Lassalle",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7793769836426,
+        "lon": 4.82055997848511,
+        "address": "60 rue Philippe De Lassalle",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "413",
+        "name": [
+          {
+            "text": "Lyon 4ème - Denfert-Rochereau",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.776252746582,
+        "lon": 4.82569599151611,
+        "address": "31 rue Denfert-Rochereau",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "414",
+        "name": [
+          {
+            "text": "Lyon 4ème - Hénon",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.779598236084,
+        "lon": 4.82707691192627,
+        "address": "44 rue Jacques-Louis Hénon",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "415",
+        "name": [
+          {
+            "text": "Lyon 4ème - Place de la Croix-Rousse",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7756291275445,
+        "lon": 4.83230113677423,
+        "address": "6 place de la Croix-Rousse",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "416",
+        "name": [
+          {
+            "text": "Lyon 4ème - Place des Tapis",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7746810913086,
+        "lon": 4.82951211929321,
+        "address": "2 place des Tapis",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "417",
+        "name": [
+          {
+            "text": "Lyon 8ème - Desgenettes",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7403134376318,
+        "lon": 4.88805978276929,
+        "address": "60 avenue Rockfeller",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "418",
+        "name": [
+          {
+            "text": "Lyon 3ème - Lacassagne",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7550415331963,
+        "lon": 4.86762267087692,
+        "address": "44 rue Turbil",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "419",
+        "name": [
+          {
+            "text": "Lyon 3ème - Lafayette - Baraban",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7636871337891,
+        "lon": 4.86833381652832,
+        "address": "300 cours Lafayette",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "420",
+        "name": [
+          {
+            "text": "Lyon 3ème - Liberté",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.759147644043,
+        "lon": 4.84202480316162,
+        "address": "12 rue de la Part-Dieu",
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "421",
+        "name": [
+          {
+            "text": "Lyon 3ème - Montchat-Lacassagne",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.748405456543,
+        "lon": 4.88099384307861,
+        "address": "11 cours Docteur Long",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "422",
+        "name": [
+          {
+            "text": "Lyon 2ème - Jacobins",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7602195739746,
+        "lon": 4.83369016647339,
+        "address": "9 Place des Jacobins",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "425",
+        "name": [
+          {
+            "text": "Lyon 9ème - Mangini - Muriers",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7920303344727,
+        "lon": 4.81847381591797,
+        "address": "22 rue Félix Mangini",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "426",
+        "name": [
+          {
+            "text": "Lyon 9ème - Saint-Rambert - Ile Barbe",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7978134155273,
+        "lon": 4.83028316497803,
+        "address": "Quai Sédaillan",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "428",
+        "name": [
+          {
+            "text": "Lyon 9ème - Vaise Bourbonnais",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7732963562012,
+        "lon": 4.8004150390625,
+        "address": "1 avenue Joannès Masset",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "429",
+        "name": [
+          {
+            "text": "Lyon 9ème - Vaise Industrie",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7866706848145,
+        "lon": 4.81151294708252,
+        "address": "15 rue Antonin Laborde",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "430",
+        "name": [
+          {
+            "text": "Lyon 3ème - Reconnaissance - Balzac",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7534856759936,
+        "lon": 4.88563099479783,
+        "address": "1 rue Bonnand",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "431",
+        "name": [
+          {
+            "text": "Lyon 3ème - Villette - Riboud",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7620829890599,
+        "lon": 4.8631834097962,
+        "address": "8 rue Riboud ",
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "432",
+        "name": [
+          {
+            "text": "Lyon 2ème - Ainay",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7541885375977,
+        "lon": 4.82631301879883,
+        "address": "24 rue Vaubecour",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "433",
+        "name": [
+          {
+            "text": "Lyon 2ème - Quai des Célestins",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.760158,
+        "lon": 4.83074,
+        "address": "9 Quai des Célestins",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "434",
+        "name": [
+          {
+            "text": "Lyon 2ème - Confluence Sud",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7390365600586,
+        "lon": 4.8149209022522,
+        "address": "42 rue Hrant Dink",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "435",
+        "name": [
+          {
+            "text": "Lyon 2ème - Edouard Herriot",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7619361877441,
+        "lon": 4.83408308029175,
+        "address": "70 rue du Président Edouard Herriot",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "436",
+        "name": [
+          {
+            "text": "Lyon 2ème - Grolée",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7611109476768,
+        "lon": 4.83649437110771,
+        "address": "3 rue Jussieu \n",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "437",
+        "name": [
+          {
+            "text": "Lyon 9ème - Champvert",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7640190124512,
+        "lon": 4.79293918609619,
+        "address": "17 rue Professeur Patel",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "438",
+        "name": [
+          {
+            "text": "Neuville sur Saône",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.8778255684905,
+        "lon": 4.84134552974297,
+        "address": "Parking de la Voûte (3 place de la Voûte)",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "439",
+        "name": [
+          {
+            "text": "Saint-Germain-au-Mont-d'Or",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.8835182189941,
+        "lon": 4.80379819869995,
+        "address": "7 chemin de la Mendillonne",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "440",
+        "name": [
+          {
+            "text": "Lyon 7ème - Girondins",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7407569885254,
+        "lon": 4.83380699157715,
+        "address": "5 rue Félix Brun",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "441",
+        "name": [
+          {
+            "text": "Lyon 6ème - Roosevelt - Boileau",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.769344329834,
+        "lon": 4.84904098510742,
+        "address": "3 Place Kléber",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "442",
+        "name": [
+          {
+            "text": "Lyon 1er - Place Colbert",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7728004455566,
+        "lon": 4.83425998687744,
+        "address": "4 place Colbert",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "443",
+        "name": [
+          {
+            "text": "Lyon 1er - Place Morel",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7718658447266,
+        "lon": 4.82619380950928,
+        "address": "47 rue des Chartreux",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "444",
+        "name": [
+          {
+            "text": "Lyon 1er - Bourse - Bât d'Argent",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7659149169922,
+        "lon": 4.83681201934814,
+        "address": "2 rue de la Bourse",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "445",
+        "name": [
+          {
+            "text": "Lyon 1er - Croix-Paquet",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7703819274902,
+        "lon": 4.83727598190308,
+        "address": "27 rue Royale 69001 LYON",
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "446",
+        "name": [
+          {
+            "text": "Lyon 1er - Quai Saint-Vincent - Subsistances",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7676658630371,
+        "lon": 4.81801414489746,
+        "address": "8 bis Quai Saint-Vincent",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "448",
+        "name": [
+          {
+            "text": "Lyon 1er - Tables Claudiennes",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7708549499512,
+        "lon": 4.83183908462524,
+        "address": "face au 10 rue des Tables Claudiennes",
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "450",
+        "name": [
+          {
+            "text": "Lyon 8ème - Paul Santy La Plaine",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7282981872559,
+        "lon": 4.87749290466309,
+        "address": "103 avenue Paul Santy",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "451",
+        "name": [
+          {
+            "text": "Lyon 7ème - Garibaldi",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7508404673022,
+        "lon": 4.85510159707475,
+        "address": "4 rue Victorien Sardou",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "452",
+        "name": [
+          {
+            "text": "Décines - Centre",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.771900177002,
+        "lon": 4.95566892623901,
+        "address": "Face 29 rue Emile Bertrand",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "453",
+        "name": [
+          {
+            "text": "Meyzieu - Gare",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.771369934082,
+        "lon": 4.9988169670105,
+        "address": "17 rue de la Gare",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "454",
+        "name": [
+          {
+            "text": "Lyon 9ème - La Duchère - Martinière",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.785472869873,
+        "lon": 4.79502010345459,
+        "address": "15 place de l'abbé Pierre  ",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "455",
+        "name": [
+          {
+            "text": "Champagne-au-Mont-d'Or",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7975022796652,
+        "lon": 4.78995426134665,
+        "address": "80 avenue de Lanessan 69410 Champagne au mont d'or",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "456",
+        "name": [
+          {
+            "text": "Lyon 5ème - Saint-Paul",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.765977912525,
+        "lon": 4.82823429460604,
+        "address": "1 rue de l'Angile",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "457",
+        "name": [
+          {
+            "text": "Lyon 5ème - Vieux-Lyon",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.760311126709,
+        "lon": 4.82636022567749,
+        "address": "2 rue Jean Carries",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "458",
+        "name": [
+          {
+            "text": "Lyon 5ème - Ménival",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7568893432617,
+        "lon": 4.78372716903687,
+        "address": "31 avenue de Ménival",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "459",
+        "name": [
+          {
+            "text": "Villeurbanne - Buers",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7748489379883,
+        "lon": 4.888023853302,
+        "address": "19 rue Louis Fort",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "460",
+        "name": [
+          {
+            "text": "Villeurbanne - Gratte-Ciel Nord",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7710451485516,
+        "lon": 4.88173968230606,
+        "address": "Face au 10 rue Branly",
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "461",
+        "name": [
+          {
+            "text": "Villeurbanne - Les Brosses",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7521743774414,
+        "lon": 4.91452598571777,
+        "address": "9 place de la Paix",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "462",
+        "name": [
+          {
+            "text": "Villeurbanne - Pôle Pixel",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7580337524414,
+        "lon": 4.89982604980469,
+        "address": "24 rue Emile Decorps",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "463",
+        "name": [
+          {
+            "text": "Fleurieu-sur-Saône",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.8621025085449,
+        "lon": 4.84530115127563,
+        "address": "36 Grande Rue",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "465",
+        "name": [
+          {
+            "text": "Saint-Fons - Gare",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7061157226563,
+        "lon": 4.85257482528687,
+        "address": "Avenue Diderot",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "466",
+        "name": [
+          {
+            "text": "Villeurbanne - Parking LPA Hotel de Ville",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7661552429199,
+        "lon": 4.87817907333374,
+        "address": "Rue Michel Servet",
+        "parking_type": "underground_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "467",
+        "name": [
+          {
+            "text": "Villeurbanne - République",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7711067199707,
+        "lon": 4.87170314788818,
+        "address": "93 Cours Emile Zola ",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "468",
+        "name": [
+          {
+            "text": "Sathonay-Camp",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.8224411879186,
+        "lon": 4.87259076988712,
+        "address": "Parking zone bleue face au 36 boulevard Castellane",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "469",
+        "name": [
+          {
+            "text": "Villeurbanne - Croix-Luizet",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7812271118164,
+        "lon": 4.88567018508911,
+        "address": "170 avenue Roger Salengro",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "470",
+        "name": [
+          {
+            "text": "Villeurbanne - Cusset",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.766300201416,
+        "lon": 4.90059423446655,
+        "address": "105 rue Pierre Voyant",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "471",
+        "name": [
+          {
+            "text": "Villeurbanne - Flachet",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7677116394043,
+        "lon": 4.88915300369263,
+        "address": "248 cours Emile Zola",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "472",
+        "name": [
+          {
+            "text": "Villeurbanne - Le Tonkin - Stalingrad",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7746391296387,
+        "lon": 4.85993719100952,
+        "address": "50 rue Louis Guérin",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "473",
+        "name": [
+          {
+            "text": "Villeurbanne - Place Wilson",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7745475769043,
+        "lon": 4.8678731918335,
+        "address": "57 avenue Condorcet",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "474",
+        "name": [
+          {
+            "text": "Villeurbanne - Saint Jean",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7785949707031,
+        "lon": 4.90250110626221,
+        "address": "11 petite rue du Roulet",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "476",
+        "name": [
+          {
+            "text": "Bron - Parc du Chêne",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.738697052002,
+        "lon": 4.92552185058594,
+        "address": "25 avenue François Mitterrand",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "477",
+        "name": [
+          {
+            "text": "Villeurbanne - Grand Clément",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7598991394043,
+        "lon": 4.8906455039978,
+        "address": "5 rue Frappaz",
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "478",
+        "name": [
+          {
+            "text": "Saint-Priest - Centre",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.6945190429688,
+        "lon": 4.9397439956665,
+        "address": "13 boulevard Edouard Herriot",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "480",
+        "name": [
+          {
+            "text": "Vénissieux - Hôtel de Ville",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.696601867,
+        "lon": 4.8844289779,
+        "address": "1 avenue Marcel Houel",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "481",
+        "name": [
+          {
+            "text": "Oullins - Centre",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7141494750977,
+        "lon": 4.80735921859741,
+        "address": "Face au 3 rue J.J. Rousseau",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "482",
+        "name": [
+          {
+            "text": "Vénissieux - Moulin à Vent",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7260208129883,
+        "lon": 4.85813283920288,
+        "address": "34 rue Vaillant Couturier",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "483",
+        "name": [
+          {
+            "text": "Vénissieux - Grand Parilly",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7189598083496,
+        "lon": 4.88718700408936,
+        "address": "17 avenue Jules Guesde",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "485",
+        "name": [
+          {
+            "text": "Craponne",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7473945617676,
+        "lon": 4.72350311279297,
+        "address": "84 avenue Edouard Millaud",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "486",
+        "name": [
+          {
+            "text": "Marcy - Centre",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7817306518555,
+        "lon": 4.70608901977539,
+        "address": "Parking - Square de Weissach",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "487",
+        "name": [
+          {
+            "text": "Francheville le Bas",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.73828125,
+        "lon": 4.77383661270142,
+        "address": "Place de l'Europe",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "488",
+        "name": [
+          {
+            "text": "Saint-Genis-Laval",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.6977729797363,
+        "lon": 4.79540395736694,
+        "address": "8 rue des écoles",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "492",
+        "name": [
+          {
+            "text": "Lyon 5ème - Ste Irénée",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7549247741699,
+        "lon": 4.81255102157593,
+        "address": "6 place Ste Irénée",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "493",
+        "name": [
+          {
+            "text": "Vaulx-en-Velin - Centre ville",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.778450012207,
+        "lon": 4.91778993606567,
+        "address": "25 rue Rabelais",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "495",
+        "name": [
+          {
+            "text": "Vaulx-en-Velin - Village",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.786247253418,
+        "lon": 4.92418813705444,
+        "address": "1 rue Victor Hugo",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "496",
+        "name": [
+          {
+            "text": "Vaulx-en-Velin - La Soie",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.76132771389691,
+        "lon": 4.9237091923525265,
+        "address": "3 avenue des Canuts\n",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "498",
+        "name": [
+          {
+            "text": "Lyon 6ème - Parking LPA Cité Internationale P2",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7858543395996,
+        "lon": 4.85670804977417,
+        "address": "22 Quai Charles de Gaulle",
+        "parking_type": "underground_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "499",
+        "name": [
+          {
+            "text": "Lyon 3ème - Place Danton",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7549591064453,
+        "lon": 4.85785007476807,
+        "address": "84 rue du Pensionnat",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "500",
+        "name": [
+          {
+            "text": "Lyon 3ème - Place Sainte-Anne",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7569198608398,
+        "lon": 4.86544418334961,
+        "address": "228 rue Paul Bert",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "501",
+        "name": [
+          {
+            "text": "Couzon-au-Mont-d'Or",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.846752166748,
+        "lon": 4.83180713653564,
+        "address": "Avenue du Général de Gaulle",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "503",
+        "name": [
+          {
+            "text": "Lyon 3ème - Place de la Ferrandière",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7598304748535,
+        "lon": 4.87035322189331,
+        "address": "5bis place de la Ferrandière",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "504",
+        "name": [
+          {
+            "text": "Lyon 3ème - Place Voltaire",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7565994262695,
+        "lon": 4.84835004806519,
+        "address": "216 rue de Créqui",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "505",
+        "name": [
+          {
+            "text": "Lyon 7ème - Sébastien Gryphe - Thibaudière",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7512817382813,
+        "lon": 4.84325122833252,
+        "address": "4 rue de la Thibaudière",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "506",
+        "name": [
+          {
+            "text": "Lyon 7ème - Chevreul - Garibaldi",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7454376220703,
+        "lon": 4.84784078598022,
+        "address": "98 rue Chevreul",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "507",
+        "name": [
+          {
+            "text": "Lyon 4ème - Pont Churchill",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7782287597656,
+        "lon": 4.84052610397339,
+        "address": "35 cours d'Herbouville",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "508",
+        "name": [
+          {
+            "text": "Lyon 7ème - Gerland - Debourg",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7303733825684,
+        "lon": 4.83661794662476,
+        "address": "7 rue Simon Fryd",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1115",
+        "name": [
+          {
+            "text": "Lyon 2ème - Parking LPA République",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7601890563965,
+        "lon": 4.83660221099854,
+        "address": "Rue Childebert",
+        "parking_type": "underground_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1116",
+        "name": [
+          {
+            "text": "Lyon 6ème - Bugeaud - Garibaldi",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7666893005371,
+        "lon": 4.85126781463623,
+        "address": "89 rue Bugeaud",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1117",
+        "name": [
+          {
+            "text": "Sainte-Foy - Place St Luc",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7494049072266,
+        "lon": 4.80109977722168,
+        "address": "10 boulevard des Provinces",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1118",
+        "name": [
+          {
+            "text": "Lyon 2ème - Charité - Auguste Comte",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7548332214355,
+        "lon": 4.83118009567261,
+        "address": "15 rue Auguste Comte",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1119",
+        "name": [
+          {
+            "text": "Lyon 5ème - Quai Pierre Scize",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7667045593262,
+        "lon": 4.82036113739014,
+        "address": "57 quai Pierre Scize",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1120",
+        "name": [
+          {
+            "text": "Lyon 5ème - Valdo - Witkowski",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7501182556152,
+        "lon": 4.78543996810913,
+        "address": "2 rue Georges Martin Witkowski",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1121",
+        "name": [
+          {
+            "text": "Lyon 5ème - Radisson - Jaricot",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7598342895508,
+        "lon": 4.81683111190796,
+        "address": "23 rue Roger Radisson",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1122",
+        "name": [
+          {
+            "text": "Lyon 5ème - Place Gerson",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7670364379883,
+        "lon": 4.82711791992188,
+        "address": "3 place Gerson",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1123",
+        "name": [
+          {
+            "text": "Lyon 5ème - Joliot Curie",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7537994384766,
+        "lon": 4.77618980407715,
+        "address": "125 rue Joliot Curie",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1124",
+        "name": [
+          {
+            "text": "Lyon 5ème - Charcot-Castors",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7546882629395,
+        "lon": 4.80659818649292,
+        "address": "40 rue du Commandant Charcot",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1125",
+        "name": [
+          {
+            "text": "Lyon 1er - Bon Pasteur",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7725257873535,
+        "lon": 4.83108806610107,
+        "address": "38 rue du Bon Pasteur",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1126",
+        "name": [
+          {
+            "text": "Lyon 1er - Chartreux",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.772216796875,
+        "lon": 4.82263803482056,
+        "address": "12 rue des Chartreux",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1127",
+        "name": [
+          {
+            "text": "Lyon 1er - Crimée",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7734527587891,
+        "lon": 4.82815217971802,
+        "address": "9 rue de Crimée",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1128",
+        "name": [
+          {
+            "text": "Lyon 1er - Pierre Dupont - Poudrière",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7698593139648,
+        "lon": 4.81722688674927,
+        "address": "2 rue Pierre Dupont",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1129",
+        "name": [
+          {
+            "text": "Lyon 1er - Place Rouville",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7696266174316,
+        "lon": 4.82601404190063,
+        "address": "6 place Rouville",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1130",
+        "name": [
+          {
+            "text": "Lyon 1er - Rambaud - Thimonnier",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.767635345459,
+        "lon": 4.8292407989502,
+        "address": "2 rue Thimonnier",
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1131",
+        "name": [
+          {
+            "text": "Lyon 7ème - Ayasse  - Yves Farge",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7358436584473,
+        "lon": 4.82754898071289,
+        "address": "136 rue du Commandant Ayasse",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1132",
+        "name": [
+          {
+            "text": "Lyon 7ème - Duguesclin - Rachais",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7514877319336,
+        "lon": 4.85054779052734,
+        "address": "324 rue Duguesclin",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1133",
+        "name": [
+          {
+            "text": "Lyon 7ème - Jean Vallier",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7329025268555,
+        "lon": 4.83895111083984,
+        "address": "118 rue Jean Vallier",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1134",
+        "name": [
+          {
+            "text": "Lyon 7ème - Place Jules Guesde",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7480850219727,
+        "lon": 4.83889579772949,
+        "address": "33 rue Jaboulay",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1135",
+        "name": [
+          {
+            "text": "Lyon 7ème - Rue Montesquieu",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7540740966797,
+        "lon": 4.83936786651611,
+        "address": "3 rue Montesquieu",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1136",
+        "name": [
+          {
+            "text": "Lyon 7ème - Rue Rochette",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7477264404297,
+        "lon": 4.84419584274292,
+        "address": "31 rue Elie Rochette",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1137",
+        "name": [
+          {
+            "text": "Lyon 7ème - Simone Iff - EM Lyon",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7408332824707,
+        "lon": 4.83875799179077,
+        "address": "rue Simone Iff ",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1138",
+        "name": [
+          {
+            "text": "Lyon 4ème - Grande rue de la Croix-Rousse",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.778263092041,
+        "lon": 4.83222770690918,
+        "address": "41 Grande rue de la Croix-Rousse",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1139",
+        "name": [
+          {
+            "text": "Lyon 4ème - Place Millaud",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7740898132324,
+        "lon": 4.82297229766846,
+        "address": "5 rue Bely",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1140",
+        "name": [
+          {
+            "text": "Lyon 4ème - Quai Gillet-Pont Clémenceau",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7755012512207,
+        "lon": 4.81059312820435,
+        "address": "rue des Entrepôts",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1141",
+        "name": [
+          {
+            "text": "Lyon 1er - Imbert-Colomès",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7715530395508,
+        "lon": 4.83464431762695,
+        "address": "31 rue Imbert-Colomès ",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1142",
+        "name": [
+          {
+            "text": "Lyon 1er - Bodin",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7733917236328,
+        "lon": 4.83554410934448,
+        "address": "face au 10bis rue Bodin",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1143",
+        "name": [
+          {
+            "text": "La Mulatière - Fontanières",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7268295288086,
+        "lon": 4.81177711486816,
+        "address": " 277 chemin de Fontanières",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1144",
+        "name": [
+          {
+            "text": "Saint-Genis-Laval - Hôpitaux Sud",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7006187438965,
+        "lon": 4.80424880981445,
+        "address": "39 rue Angélique du Coudray",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1145",
+        "name": [
+          {
+            "text": "Lyon 6ème - Bellecombe-Viabert",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7663879394531,
+        "lon": 4.86482715606689,
+        "address": "25 rue Saint-Geneviève",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1146",
+        "name": [
+          {
+            "text": "Lyon 6ème - Musée Guimet",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7738647460938,
+        "lon": 4.84946298599243,
+        "address": "62 rue Lieutenant Colonel Prévost",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1147",
+        "name": [
+          {
+            "text": "Lyon 6ème - Vitton-Béranger",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.770149230957,
+        "lon": 4.8598952293396,
+        "address": "92 cours Vitton",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1148",
+        "name": [
+          {
+            "text": "Lyon 6ème - Vauban-Récamier",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7660942077637,
+        "lon": 4.85628509521484,
+        "address": "136 rue Vauban",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1149",
+        "name": [
+          {
+            "text": "Lyon 6ème - Créqui-Roosevelt",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7686195373535,
+        "lon": 4.84606599807739,
+        "address": "86 rue de Créqui",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1150",
+        "name": [
+          {
+            "text": "Lyon 6ème - Masséna",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7698516845703,
+        "lon": 4.85418081283569,
+        "address": "41 rue Masséna",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1152",
+        "name": [
+          {
+            "text": "Lyon 3ème - Place Guichard-Bourse du Travail",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7596015930176,
+        "lon": 4.84753274917603,
+        "address": "65 rue de la Part-Dieu",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1153",
+        "name": [
+          {
+            "text": "Lyon 3ème - Garibaldi-Chaponnay",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7586402893066,
+        "lon": 4.85196018218994,
+        "address": "131 rue Chaponnay",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1154",
+        "name": [
+          {
+            "text": "Lyon 3ème - Masséna-Deruelle",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7632751464844,
+        "lon": 4.85526371002197,
+        "address": "123 rue Masséna",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1155",
+        "name": [
+          {
+            "text": "Lyon 3ème - Archives départementales",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7536125183105,
+        "lon": 4.86152744293213,
+        "address": "20 rue du Général Mouton-Duvernet",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1156",
+        "name": [
+          {
+            "text": "Lyon 3ème - Sans-Souci",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7497596740723,
+        "lon": 4.86853408813477,
+        "address": " 25 rue Sisley",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1157",
+        "name": [
+          {
+            "text": "Lyon 3ème - Docteur Rebatel",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7502784729004,
+        "lon": 4.87370586395264,
+        "address": "8 rue du Docteur Rebatel",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1158",
+        "name": [
+          {
+            "text": "Lyon 3ème - Docteur Long-Vitton",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7529602050781,
+        "lon": 4.89495897293091,
+        "address": "179 cours Docteur Long",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1159",
+        "name": [
+          {
+            "text": "Lyon 8ème - Antoine Lumière",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7412185668945,
+        "lon": 4.86837577819824,
+        "address": "30 rue Antoine Lumière",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1160",
+        "name": [
+          {
+            "text": "Lyon 8ème - Mermoz-Californie",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7329216003418,
+        "lon": 4.87777709960938,
+        "address": "4 boulevard Edmond Michelet",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1161",
+        "name": [
+          {
+            "text": "Lyon 8ème - Etats-Unis - Cazeneuve",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7345581054688,
+        "lon": 4.86376476287842,
+        "address": "63 boulevard des Etats-Unis",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1162",
+        "name": [
+          {
+            "text": "Lyon 9ème - Observance",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7683334350586,
+        "lon": 4.80956172943115,
+        "address": "59 Montée de l'Observance",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1165",
+        "name": [
+          {
+            "text": "Lyon 9ème - Marietton - Pont SNCF",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7761192321777,
+        "lon": 4.80092573165894,
+        "address": "32 rue du 24 mars 1852",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1166",
+        "name": [
+          {
+            "text": "Lyon 9ème - Masaryk",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7787246704102,
+        "lon": 4.80669403076172,
+        "address": "Face au 8 rue Masaryk",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1167",
+        "name": [
+          {
+            "text": "Lyon 9ème - Sergent Berthet",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.771197,
+        "lon": 4.805164,
+        "address": "30 rue du Sergent Berthet",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1171",
+        "name": [
+          {
+            "text": "Lyon 2ème - Place Bellecour",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7573204040527,
+        "lon": 4.82868337631226,
+        "address": "20 rue du Plat",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1172",
+        "name": [
+          {
+            "text": "Lyon 2ème - Franklin",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7517547607422,
+        "lon": 4.83093595504761,
+        "address": "54 rue de la Charité",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1173",
+        "name": [
+          {
+            "text": "Lyon 2ème - Claudius Collonge",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7479438781738,
+        "lon": 4.82084894180298,
+        "address": "17 rue Claudius Collonge",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1174",
+        "name": [
+          {
+            "text": "Villeurbanne - La Soie",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7612380981445,
+        "lon": 4.91832971572876,
+        "address": "12 rue Olympe de Gouge",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1175",
+        "name": [
+          {
+            "text": "Villeurbanne - Gare de Villeurbanne",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7558670043945,
+        "lon": 4.89086198806763,
+        "address": "54 Boulevard Honoré de Balzac",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1176",
+        "name": [
+          {
+            "text": "Villeurbanne - Tonkin Nord",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7788314819336,
+        "lon": 4.86510181427002,
+        "address": "2 rue du Tonkin",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1177",
+        "name": [
+          {
+            "text": "Villeurbanne - Tolstoi-Papillon",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7613220214844,
+        "lon": 4.88301420211792,
+        "address": "36 rue du Dr Fleury Pierre Papillon ",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1178",
+        "name": [
+          {
+            "text": "Villeurbanne - Salengro",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7766189575195,
+        "lon": 4.87301158905029,
+        "address": "24 rue Spréafico ",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1179",
+        "name": [
+          {
+            "text": "Villeurbanne - Totem",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7648506164551,
+        "lon": 4.87397289276123,
+        "address": "68 cours de la République",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1180",
+        "name": [
+          {
+            "text": "Saint-Genis-les-Ollières",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7571258544922,
+        "lon": 4.72653341293335,
+        "address": "4 rue Marius Poncet",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1181",
+        "name": [
+          {
+            "text": "Lyon 4ème - Cours d'Herbouville",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7749214172363,
+        "lon": 4.83886432647705,
+        "address": "8 cours d'Herbouville",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1182",
+        "name": [
+          {
+            "text": "Lyon 4ème - Dumont D'Urville",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7777709960938,
+        "lon": 4.83615064620972,
+        "address": "12 rue Dumont d'Urville",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1183",
+        "name": [
+          {
+            "text": "Lyon 8ème - Jet d'Eau",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7399864196777,
+        "lon": 4.85940170288086,
+        "address": "95 avenue de l'Europe",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1215",
+        "name": [
+          {
+            "text": "Lyon 7ème - Parking LPA Tony Garnier",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7294037755253,
+        "lon": 4.822984540817,
+        "address": "14 Rue Jonas Salk, 69007 Lyon",
+        "parking_type": "underground_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1220",
+        "name": [
+          {
+            "text": "Rillieux - Ville Nouvelle",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.8186711697248,
+        "lon": 4.90485922584167,
+        "address": "83 avenue de l'Europe \nRillieux-la-Pape ",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1700",
+        "name": [
+          {
+            "text": "Lyon 3ème - Parking LPA P1 Béraudier",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.7595338787898,
+        "lon": 4.85854527084181,
+        "address": "Parking LPA Béraudier \nEntrée véhicule  au 47 bis Boulevard Marius Vivier Merle\nEntrée piéton : Place Béraudier (Haute), suivre la signalétique Parking P1 Béraudier",
+        "parking_type": "underground_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      }
+    ]
+  }
+}

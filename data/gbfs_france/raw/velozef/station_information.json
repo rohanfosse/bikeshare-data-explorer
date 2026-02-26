@@ -1,0 +1,1009 @@
+{
+  "last_updated": 1771749880,
+  "ttl": 60,
+  "version": "2.2",
+  "data": {
+    "stations": [
+      {
+        "station_id": "cirqbhsg3q5td18hqi80",
+        "name": "Liberté",
+        "lat": 48.39009,
+        "lon": -4.48533,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 10,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 10,
+          "4": 10,
+          "5": 0,
+          "6": 0,
+          "7": 10
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=cirqbhsg3q5td18hqi80",
+          "ios": "todo://app?sid=cirqbhsg3q5td18hqi80"
+        }
+      },
+      {
+        "station_id": "cirqbicg3q5td18hqisg",
+        "name": "Gares",
+        "lat": 48.38774,
+        "lon": -4.48065,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 8,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 8,
+          "4": 8,
+          "5": 0,
+          "6": 0,
+          "7": 8
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=cirqbicg3q5td18hqisg",
+          "ios": "todo://app?sid=cirqbicg3q5td18hqisg"
+        }
+      },
+      {
+        "station_id": "cirqbisg3q5td18hqjj0",
+        "name": "Jean Moulin",
+        "lat": 48.38613,
+        "lon": -4.49311,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 9,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 9,
+          "4": 9,
+          "5": 0,
+          "6": 0,
+          "7": 9
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=cirqbisg3q5td18hqjj0",
+          "ios": "todo://app?sid=cirqbisg3q5td18hqjj0"
+        }
+      },
+      {
+        "station_id": "cirqbjkg3q5td18hqkbg",
+        "name": "Parc à Chaînes",
+        "lat": 48.38349,
+        "lon": -4.48555,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 5,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 5,
+          "4": 5,
+          "5": 0,
+          "6": 0,
+          "7": 5
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=cirqbjkg3q5td18hqkbg",
+          "ios": "todo://app?sid=cirqbjkg3q5td18hqkbg"
+        }
+      },
+      {
+        "station_id": "cirqbjsg3q5td18hqkt0",
+        "name": "Saint-Martin",
+        "lat": 48.39527,
+        "lon": -4.47989,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 6,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 6,
+          "4": 6,
+          "5": 0,
+          "6": 0,
+          "7": 6
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=cirqbjsg3q5td18hqkt0",
+          "ios": "todo://app?sid=cirqbjsg3q5td18hqkt0"
+        }
+      },
+      {
+        "station_id": "cirqbksg3q5td18hqlf0",
+        "name": "Albert 1er",
+        "lat": 48.39703,
+        "lon": -4.48726,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 4,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 4,
+          "4": 4,
+          "5": 0,
+          "6": 0,
+          "7": 4
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=cirqbksg3q5td18hqlf0",
+          "ios": "todo://app?sid=cirqbksg3q5td18hqlf0"
+        }
+      },
+      {
+        "station_id": "cirqblkg3q5td18hqm7g",
+        "name": "Recouvrance",
+        "lat": 48.38409,
+        "lon": -4.49962,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 5,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 5,
+          "4": 5,
+          "5": 0,
+          "6": 0,
+          "7": 5
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=cirqblkg3q5td18hqm7g",
+          "ios": "todo://app?sid=cirqblkg3q5td18hqm7g"
+        }
+      },
+      {
+        "station_id": "cirqbmcg3q5td18hqmt0",
+        "name": "Ateliers",
+        "lat": 48.39013,
+        "lon": -4.49878,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 3,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 3,
+          "4": 3,
+          "5": 0,
+          "6": 0,
+          "7": 3
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=cirqbmcg3q5td18hqmt0",
+          "ios": "todo://app?sid=cirqbmcg3q5td18hqmt0"
+        }
+      },
+      {
+        "station_id": "cirqbmkg3q5td18hqn8g",
+        "name": "Cosmao Prétot",
+        "lat": 48.38296,
+        "lon": -4.51715,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 8,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 8,
+          "4": 8,
+          "5": 0,
+          "6": 0,
+          "7": 8
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=cirqbmkg3q5td18hqn8g",
+          "ios": "todo://app?sid=cirqbmkg3q5td18hqn8g"
+        }
+      },
+      {
+        "station_id": "cirqbn4g3q5td18hqnfg",
+        "name": "Université Est",
+        "lat": 48.40056,
+        "lon": -4.49866,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=cirqbn4g3q5td18hqnfg",
+          "ios": "todo://app?sid=cirqbn4g3q5td18hqnfg"
+        }
+      },
+      {
+        "station_id": "cirqbnkg3q5td18hqnn0",
+        "name": "Patinoire",
+        "lat": 48.4047,
+        "lon": -4.50944,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 4,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 4,
+          "4": 4,
+          "5": 0,
+          "6": 0,
+          "7": 4
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=cirqbnkg3q5td18hqnn0",
+          "ios": "todo://app?sid=cirqbnkg3q5td18hqnn0"
+        }
+      },
+      {
+        "station_id": "cirqbo4g3q5td18hqo20",
+        "name": "Kérinou",
+        "lat": 48.40333,
+        "lon": -4.48904,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 7,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 7,
+          "4": 7,
+          "5": 0,
+          "6": 0,
+          "7": 7
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=cirqbo4g3q5td18hqo20",
+          "ios": "todo://app?sid=cirqbo4g3q5td18hqo20"
+        }
+      },
+      {
+        "station_id": "cirqbokg3q5td18hqob0",
+        "name": "Place des F.F.I.",
+        "lat": 48.4148,
+        "lon": -4.4918,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=cirqbokg3q5td18hqob0",
+          "ios": "todo://app?sid=cirqbokg3q5td18hqob0"
+        }
+      },
+      {
+        "station_id": "cirqbp4g3q5td18hqol0",
+        "name": "Place de Strasbourg",
+        "lat": 48.40177,
+        "lon": -4.46853,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 5,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 5,
+          "4": 5,
+          "5": 0,
+          "6": 0,
+          "7": 5
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=cirqbp4g3q5td18hqol0",
+          "ios": "todo://app?sid=cirqbp4g3q5td18hqol0"
+        }
+      },
+      {
+        "station_id": "cirqbpkg3q5td18hqp1g",
+        "name": "Europe",
+        "lat": 48.41234,
+        "lon": -4.46954,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 3,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 3,
+          "4": 3,
+          "5": 0,
+          "6": 0,
+          "7": 3
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=cirqbpkg3q5td18hqp1g",
+          "ios": "todo://app?sid=cirqbpkg3q5td18hqp1g"
+        }
+      },
+      {
+        "station_id": "cirqbq4g3q5td18hqph0",
+        "name": "D'Estrées",
+        "lat": 48.39475,
+        "lon": -4.46298,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 8,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 8,
+          "4": 8,
+          "5": 0,
+          "6": 0,
+          "7": 8
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=cirqbq4g3q5td18hqph0",
+          "ios": "todo://app?sid=cirqbq4g3q5td18hqph0"
+        }
+      },
+      {
+        "station_id": "cirqbqcg3q5td18hqplg",
+        "name": "Saint-Marc",
+        "lat": 48.39814,
+        "lon": -4.45378,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 2,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 2,
+          "4": 2,
+          "5": 0,
+          "6": 0,
+          "7": 2
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=cirqbqcg3q5td18hqplg",
+          "ios": "todo://app?sid=cirqbqcg3q5td18hqplg"
+        }
+      },
+      {
+        "station_id": "cirqbqsg3q5td18hqq00",
+        "name": "Port de Plaisance",
+        "lat": 48.39561,
+        "lon": -4.43432,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 7,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 7,
+          "4": 7,
+          "5": 0,
+          "6": 0,
+          "7": 7
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=cirqbqsg3q5td18hqq00",
+          "ios": "todo://app?sid=cirqbqsg3q5td18hqq00"
+        }
+      },
+      {
+        "station_id": "cirqbrcg3q5td18hqq5g",
+        "name": "Vali Hir",
+        "lat": 48.38702,
+        "lon": -4.52728,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 2,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 2,
+          "4": 2,
+          "5": 0,
+          "6": 0,
+          "7": 2
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=cirqbrcg3q5td18hqq5g",
+          "ios": "todo://app?sid=cirqbrcg3q5td18hqq5g"
+        }
+      },
+      {
+        "station_id": "cirqbskg3q5td18hqqmg",
+        "name": "Saint-Pierre",
+        "lat": 48.3797,
+        "lon": -4.53644,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 2,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 2,
+          "4": 2,
+          "5": 0,
+          "6": 0,
+          "7": 2
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=cirqbskg3q5td18hqqmg",
+          "ios": "todo://app?sid=cirqbskg3q5td18hqqmg"
+        }
+      },
+      {
+        "station_id": "cirqbucg3q5td18hqst0",
+        "name": "Porte de Plouzané",
+        "lat": 48.37655,
+        "lon": -4.55336,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 3,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 3,
+          "4": 3,
+          "5": 0,
+          "6": 0,
+          "7": 3
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=cirqbucg3q5td18hqst0",
+          "ios": "todo://app?sid=cirqbucg3q5td18hqst0"
+        }
+      },
+      {
+        "station_id": "cirqbusg3q5td18hqtbg",
+        "name": "CHU La Cavale",
+        "lat": 48.39988,
+        "lon": -4.52989,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=cirqbusg3q5td18hqtbg",
+          "ios": "todo://app?sid=cirqbusg3q5td18hqtbg"
+        }
+      },
+      {
+        "station_id": "cirqbvsg3q5td18hqua0",
+        "name": "Plage de Sainte-Anne",
+        "lat": 48.3621,
+        "lon": -4.55422,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 9,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 9,
+          "4": 9,
+          "5": 0,
+          "6": 0,
+          "7": 9
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=cirqbvsg3q5td18hqua0",
+          "ios": "todo://app?sid=cirqbvsg3q5td18hqua0"
+        }
+      },
+      {
+        "station_id": "cirqc0cg3q5td18hquug",
+        "name": "PLOUZANÉ  Technopôle",
+        "lat": 48.3604,
+        "lon": -4.57034,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 2,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 2,
+          "4": 2,
+          "5": 0,
+          "6": 0,
+          "7": 2
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=cirqc0cg3q5td18hquug",
+          "ios": "todo://app?sid=cirqc0cg3q5td18hquug"
+        }
+      },
+      {
+        "station_id": "cirqc14g3q5td18hqvj0",
+        "name": "PLOUZANÉ  Mairie",
+        "lat": 48.37986,
+        "lon": -4.60064,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 3,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 3,
+          "4": 3,
+          "5": 0,
+          "6": 0,
+          "7": 3
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=cirqc14g3q5td18hqvj0",
+          "ios": "todo://app?sid=cirqc14g3q5td18hqvj0"
+        }
+      },
+      {
+        "station_id": "cirqc1sg3q5td18hr090",
+        "name": "PLOUZANÉ  Bourg",
+        "lat": 48.3815,
+        "lon": -4.62096,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 6,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 6,
+          "4": 6,
+          "5": 0,
+          "6": 0,
+          "7": 6
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=cirqc1sg3q5td18hr090",
+          "ios": "todo://app?sid=cirqc1sg3q5td18hr090"
+        }
+      },
+      {
+        "station_id": "cirqc2cg3q5td18hr120",
+        "name": "GUIPAVAS  Spadium Parc",
+        "lat": 48.39731,
+        "lon": -4.42296,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 10,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 10,
+          "4": 10,
+          "5": 0,
+          "6": 0,
+          "7": 10
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=cirqc2cg3q5td18hr120",
+          "ios": "todo://app?sid=cirqc2cg3q5td18hr120"
+        }
+      },
+      {
+        "station_id": "cirqc2kg3q5td18hr1gg",
+        "name": "Relecq-Kerhuon Mairie ",
+        "lat": 48.40779,
+        "lon": -4.39688,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 3,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 3,
+          "4": 3,
+          "5": 0,
+          "6": 0,
+          "7": 3
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=cirqc2kg3q5td18hr1gg",
+          "ios": "todo://app?sid=cirqc2kg3q5td18hr1gg"
+        }
+      },
+      {
+        "station_id": "cirqc34g3q5td18hr1tg",
+        "name": "LE RELECQ-KERHUON  La Corniche ",
+        "lat": 48.39739,
+        "lon": -4.3853,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 6,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 6,
+          "4": 6,
+          "5": 0,
+          "6": 0,
+          "7": 6
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=cirqc34g3q5td18hr1tg",
+          "ios": "todo://app?sid=cirqc34g3q5td18hr1tg"
+        }
+      },
+      {
+        "station_id": "st_d52j4s7qvltc7388p4jg",
+        "name": "Pilier rouge",
+        "lat": 48.39842,
+        "lon": -4.47424,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 9,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 9,
+          "4": 9,
+          "5": 0,
+          "6": 0,
+          "7": 9
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=st_d52j4s7qvltc7388p4jg",
+          "ios": "todo://app?sid=st_d52j4s7qvltc7388p4jg"
+        }
+      },
+      {
+        "station_id": "st_d52j5dco7dgs73ca64r0",
+        "name": "Musée de la Marine",
+        "lat": 48.38287,
+        "lon": -4.4919,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 10,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 10,
+          "4": 10,
+          "5": 0,
+          "6": 0,
+          "7": 10
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=st_d52j5dco7dgs73ca64r0",
+          "ios": "todo://app?sid=st_d52j5dco7dgs73ca64r0"
+        }
+      },
+      {
+        "station_id": "st_d52j5hso7dgs73ca64tg",
+        "name": "Dupuy de Lôme",
+        "lat": 48.39057,
+        "lon": -4.50917,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 6,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 6,
+          "4": 6,
+          "5": 0,
+          "6": 0,
+          "7": 6
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=st_d52j5hso7dgs73ca64tg",
+          "ios": "todo://app?sid=st_d52j5hso7dgs73ca64tg"
+        }
+      },
+      {
+        "station_id": "st_d52j5n63bdvs73crb6c0",
+        "name": "Porte Gouesnou",
+        "lat": 48.4309,
+        "lon": -4.46743,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=st_d52j5n63bdvs73crb6c0",
+          "ios": "todo://app?sid=st_d52j5n63bdvs73crb6c0"
+        }
+      },
+      {
+        "station_id": "st_d52j60ko7dgs73ca65e0",
+        "name": "BOHARS  Bourg",
+        "lat": 48.42827,
+        "lon": -4.51467,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 10,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 10,
+          "4": 10,
+          "5": 0,
+          "6": 0,
+          "7": 10
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=st_d52j60ko7dgs73ca65e0",
+          "ios": "todo://app?sid=st_d52j60ko7dgs73ca65e0"
+        }
+      },
+      {
+        "station_id": "st_d52j69co7dgs73ca65tg",
+        "name": "PLOUGASTEL-DAOULAS Mairie",
+        "lat": 48.37273,
+        "lon": -4.37028,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 4,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 4,
+          "4": 4,
+          "5": 0,
+          "6": 0,
+          "7": 4
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=st_d52j69co7dgs73ca65tg",
+          "ios": "todo://app?sid=st_d52j69co7dgs73ca65tg"
+        }
+      },
+      {
+        "station_id": "st_d52j6h4o7dgs73ca6680",
+        "name": "ISEN",
+        "lat": 48.40579,
+        "lon": -4.49677,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 10,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 10,
+          "4": 10,
+          "5": 0,
+          "6": 0,
+          "7": 10
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=st_d52j6h4o7dgs73ca6680",
+          "ios": "todo://app?sid=st_d52j6h4o7dgs73ca6680"
+        }
+      },
+      {
+        "station_id": "st_d52j6kl4faec738fgu8g",
+        "name": "Kerangoff",
+        "lat": 48.38141,
+        "lon": -4.50938,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 10,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 10,
+          "4": 10,
+          "5": 0,
+          "6": 0,
+          "7": 10
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=st_d52j6kl4faec738fgu8g",
+          "ios": "todo://app?sid=st_d52j6kl4faec738fgu8g"
+        }
+      },
+      {
+        "station_id": "st_d52j6o2ebjgc73d7avv0",
+        "name": "Porte  de GUIPAVAS ",
+        "lat": 48.41882,
+        "lon": -4.44434,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 6,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 6,
+          "4": 6,
+          "5": 0,
+          "6": 0,
+          "7": 6
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=st_d52j6o2ebjgc73d7avv0",
+          "ios": "todo://app?sid=st_d52j6o2ebjgc73d7avv0"
+        }
+      },
+      {
+        "station_id": "st_d52j72nqvltc7388p6mg",
+        "name": "CHU Morvan",
+        "lat": 48.39214,
+        "lon": -4.48761,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 9,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 9,
+          "4": 9,
+          "5": 0,
+          "6": 0,
+          "7": 9
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "todo://app?sid=st_d52j72nqvltc7388p6mg",
+          "ios": "todo://app?sid=st_d52j72nqvltc7388p6mg"
+        }
+      },
+      {
+        "station_id": "st_d52j7e2ebjgc73d7b0ig",
+        "name": "PLOUGASTEL-DAOULAS Roc'h Kerezen",
+        "lat": 48.38291,
+        "lon": -4.37837,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 6,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 6,
+          "4": 6,
+          "5": 0,
+          "6": 0,
+          "7": 6
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=st_d52j7e2ebjgc73d7b0ig",
+          "ios": "todo://app?sid=st_d52j7e2ebjgc73d7b0ig"
+        }
+      }
+    ]
+  }
+}

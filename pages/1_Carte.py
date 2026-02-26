@@ -30,6 +30,13 @@ df = load_stations()
 
 # ── Sidebar — filtres ─────────────────────────────────────────────────────────
 with st.sidebar:
+    st.markdown("## Navigation")
+    st.page_link("app.py",                   label="Accueil")
+    st.page_link("pages/1_Carte.py",         label="Carte des stations")
+    st.page_link("pages/2_Villes.py",        label="Comparaison des villes")
+    st.page_link("pages/3_Distributions.py", label="Distributions statistiques")
+    st.page_link("pages/4_Export.py",        label="Export des données")
+    st.divider()
     st.header("Filtres et options")
 
     all_cities = sorted(df["city"].unique())

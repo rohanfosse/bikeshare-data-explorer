@@ -1,0 +1,143 @@
+﻿source,system_id,title,city,gbfs_url,region,department,n_stations,status
+MobilityData,altervelo,Altervelo Libre-service,"Saint-Pierre, L'Étang-Salé & Saint-Louis",https://api.gbfs.v3.0.ecovelo.mobi/altervelo/gbfs.json,La Réunion,La Réunion,31,ok
+MobilityData,auray-quiberon,AQTA,Auray,https://gbfs.partners.fifteen.eu/gbfs/auray-quiberon/gbfs.json,Bretagne,Morbihan,11,ok
+MobilityData,auto-en-velay,Auto-en-Velay,Allègre,https://backend.citiz.fr/public/provider/23/gbfs/3.0/gbfs.json,Auvergne-Rhône-Alpes,Haute-Loire,9,ok
+MobilityData,auxrmlevelo,AuxR_M le vélo,Auxerre,https://gbfs.partners.fifteen.eu/gbfs/2.2/auxerre/en/gbfs.json,Bourgogne-Franche-Comté,Yonne,55,ok
+MobilityData,bird-ajaccio,Bird Ajaccio,Ajaccio,https://mds.bird.co/gbfs/v2/public/ajaccio/gbfs.json,Corse,Corse-du-Sud,32,ok
+MobilityData,bird-bordeaux,Bird Bordeaux,Bordeaux,https://mds.bird.co/gbfs/v2/public/bordeaux/gbfs.json,Nouvelle-Aquitaine,Gironde,3152,ok
+MobilityData,bird-castres,Bird Castres,Castres,https://mds.bird.co/gbfs/v2/public/castres/gbfs.json,Occitanie,Tarn,0,too_small
+MobilityData,bird-chalonsenchampagne,Bird Chalonsenchampagne,Châlons-en-Champagne,https://mds.bird.co/gbfs/v2/public/chalonsenchampagne/gbfs.json,Grand Est,Marne,0,too_small
+MobilityData,bird-dieppe,Bird Dieppe,Dieppe,https://mds.bird.co/gbfs/v2/public/dieppe/gbfs.json,Normandie,Seine-Maritime,0,too_small
+MobilityData,bird-draguignan,Bird Draguignan,Draguignan,https://mds.bird.co/gbfs/v2/public/draguignan/gbfs.json,Provence-Alpes-Côte d'Azur,Var,63,ok
+MobilityData,bird-epron,Bird Epron,Epron,https://mds.bird.co/gbfs/v2/public/epron/gbfs.json,Normandie,Calvados,0,too_small
+MobilityData,bird-gap,Bird Gap,Gap,https://mds.bird.co/gbfs/v2/public/gap/gbfs.json,Provence-Alpes-Côte d'Azur,Hautes-Alpes,50,ok
+MobilityData,bird-herouvillesaintclair,Bird Herouvillesaintclair,Herouville-Saint-Clair,https://mds.bird.co/gbfs/v2/public/herouvillesaintclair/gbfs.json,Normandie,Calvados,0,too_small
+MobilityData,bird-larochesuryon,Bird Larochesuryon,La Roche-sur-Yon,https://mds.bird.co/gbfs/v2/public/larochesuryon/gbfs.json,Pays de la Loire,Vendée,69,ok
+MobilityData,bird-laval,Bird Laval,Laval,https://mds.bird.co/gbfs/v2/public/laval/gbfs.json,Pays de la Loire,Mayenne,83,ok
+MobilityData,bird-marseille,Bird Marseille,Marseille,https://mds.bird.co/gbfs/v2/public/marseille/gbfs.json,Provence-Alpes-Côte d'Azur,Bouches-du-Rhône,803,ok
+MobilityData,bird-millau,Bird Millau,Millau,https://mds.bird.co/gbfs/v2/public/millau/gbfs.json,Occitanie,Aveyron,76,ok
+MobilityData,bird-montlucon,Bird Montlucon,Montluçon,https://mds.bird.co/gbfs/v2/public/montlucon/gbfs.json,Auvergne-Rhône-Alpes,Allier,63,ok
+MobilityData,bird-ouistreham,Bird Ouistreham,Ouistreham,https://mds.bird.co/gbfs/v2/public/ouistreham/gbfs.json,Normandie,Calvados,0,too_small
+MobilityData,bird-sarreguemines,Bird Sarreguemines,Sarreguemines,https://mds.bird.co/gbfs/v2/public/sarreguemines/gbfs.json,Grand Est,Moselle,65,ok
+MobilityData,bird-vichy,Bird Vichy,Vichy,https://mds.bird.co/gbfs/v2/public/vichy/gbfs.json,Auvergne-Rhône-Alpes,Allier,46,ok
+MobilityData,CVelo_FR_Clermont-Ferrand,C-Vélo,Clermont-Ferrand,https://clermontferrand.publicbikesystem.net/customer/gbfs/v3.0/,Auvergne-Rhône-Alpes,Puy-de-Dôme,82,ok
+MobilityData,calivelo,CaliVélo,Libourne,https://api.gbfs.v3.0.ecovelo.mobi/calivelo/gbfs.json,Nouvelle-Aquitaine,Gironde,66,ok
+MobilityData,capcotentin,CapCotentin,Cherbourg-en-Cotentin,https://api.gbfs.v3.0.ecovelo.mobi/capcotentin/gbfs.json,Normandie,Manche,49,ok
+MobilityData,mp_CHATELLERAULT,CHATELLERAULT,Châtellerault,https://www.mobility-parc.net/gbfs/v3/CHATELLERAULT/gbfs.json,Nouvelle-Aquitaine,Vienne,13,ok
+MobilityData,choletbus,Choletbus 2 Roues,Cholet,https://api.gbfs.v3.0.ecovelo.mobi/choletbus/gbfs.json,Pays de la Loire,Maine-et-Loire,16,ok
+MobilityData,citedia_services,Citédia Services,Rennes,https://backend.citiz.fr/public/provider/22/gbfs/3.0/gbfs.json,Bretagne,Ille-et-Vilaine,2,too_small
+MobilityData,citiz_alpes_loire,Citiz Alpes Loire,Grenoble,https://backend.citiz.fr/public/provider/5/gbfs/v3.0/gbfs.json,Auvergne-Rhône-Alpes,Isère,408,ok
+MobilityData,citiz_angers,Citiz Angers,Angers,https://backend.citiz.fr/public/provider/7/gbfs/v3.0/gbfs.json,Pays de la Loire,Maine-et-Loire,26,ok
+MobilityData,aupa,Citiz AUPA,Bayonne,https://backend.citiz.fr/public/provider/20/gbfs/v3.0/gbfs.json,Nouvelle-Aquitaine,Pyrénées-Atlantiques,8,ok
+MobilityData,citiz_bfc,Citiz BFC,Besançon,https://backend.citiz.fr/public/provider/2/gbfs/v3.0/gbfs.json,Bourgogne-Franche-Comté,Doubs,56,ok
+MobilityData,citiz_developpement,Citiz Développement,France,https://backend.citiz.fr/public/provider/12/gbfs/3.0/gbfs.json,National,National,55,ok
+MobilityData,citiz_gironde,Citiz Gironde,Bordeaux,https://backend.citiz.fr/public/provider/4/gbfs/v3.0/gbfs.json,Nouvelle-Aquitaine,Gironde,99,ok
+MobilityData,citiz_grand_est,Citiz Grand Est,Strasbourg,https://backend.citiz.fr/public/provider/1/gbfs/v3.0/gbfs.json,Grand Est,Bas-Rhin,285,ok
+MobilityData,citiz_grand_poitiers,Citiz Grand Poitiers,Poitiers,https://backend.citiz.fr/public/provider/9/gbfs/v3.0/gbfs.json,Nouvelle-Aquitaine,Vienne,22,ok
+MobilityData,citiz_la_rochelle,Citiz La Rochelle,La Rochelle,https://backend.citiz.fr/public/provider/18/gbfs/v3.0/gbfs.json,Nouvelle-Aquitaine,Charente-Maritime,24,ok
+MobilityData,citiz_lille_arras,Citiz Lille Arras,Lille,https://backend.citiz.fr/public/provider/16/gbfs/v3.0/gbfs.json,Hauts-de-France,Nord,77,ok
+MobilityData,citiz_metropole_lyon,Citiz Métropole Lyon,Lyon,https://backend.citiz.fr/public/provider/3/gbfs/v3.0/gbfs.json,Auvergne-Rhône-Alpes,Rhône,201,ok
+MobilityData,citiz_nantes,Citiz Nantes,Nantes,https://backend.citiz.fr/public/provider/15/gbfs/v3.0/gbfs.json,Pays de la Loire,Loire-Atlantique,41,ok
+MobilityData,citiz_occitanie,Citiz Occitanie,Toulouse,https://backend.citiz.fr/public/provider/8/gbfs/v3.0/gbfs.json,Occitanie,Haute-Garonne,128,ok
+MobilityData,citiz_provence,Citiz Provence,Marseille,https://backend.citiz.fr/public/provider/6/gbfs/v3.0/gbfs.json,Provence-Alpes-Côte d'Azur,Bouches-du-Rhône,98,ok
+MobilityData,citiz_rennes_metropole,Citiz Rennes Métropole,Rennes,https://backend.citiz.fr/public/provider/19/gbfs/v3.0/gbfs.json,Bretagne,Ille-et-Vilaine,55,ok
+MobilityData,cyclam,Cycl'AM,Ardenne Métropole,https://api.gbfs.v3.0.ecovelo.mobi/cyclam/gbfs.json,Grand Est,Ardennes,34,ok
+MobilityData,cyclolibre,Cyclolibre,Carcassonne,https://api.gbfs.v3.0.ecovelo.mobi/cyclolibre/gbfs.json,Occitanie,Aude,10,ok
+MobilityData,cyclovis,Cyclovis,Soissons,https://api.gbfs.v3.0.ecovelo.mobi/cyclovis/gbfs.json,Hauts-de-France,Aisne,28,ok
+MobilityData,donkey_brest,Donkey Republic Brest,Brest,https://stables.donkey.bike/api/public/gbfs/2/donkey_brest/gbfs.json,Bretagne,Finistère,75,ok
+MobilityData,donkey_valenciennes,Donkey Republic Valenciennes,Valenciennes,https://stables.donkey.bike/api/public/gbfs/2/donkey_valenciennes/gbfs.json,Hauts-de-France,Nord,40,ok
+MobilityData,dott-bordeaux,Dott Bordeaux,Bordeaux,https://gbfs.api.ridedott.com/public/v2/bordeaux/gbfs.json,Nouvelle-Aquitaine,Gironde,3449,ok
+MobilityData,dott-bourgoin-jallieu,Dott Bourgoin Jallieu,Bourgoin-Jallieu,https://gbfs.api.ridedott.com/public/v2/bourgoin-jallieu/gbfs.json,Auvergne-Rhône-Alpes,Isère,69,ok
+MobilityData,dott-gpseo,Dott Gpseo,Grand Paris Seine et Oise,https://gbfs.api.ridedott.com/public/v2/gpseo/gbfs.json,Île-de-France,Yvelines,351,ok
+MobilityData,dott-lyon,Dott Lyon,Lyon,https://gbfs.api.ridedott.com/public/v2/lyon/gbfs.json,Auvergne-Rhône-Alpes,Rhône,1404,ok
+MobilityData,dott-ol-vallee,Dott Ol-Vallee,Ol-Vallee,https://gbfs.api.ridedott.com/public/v2/ol-vallee/gbfs.json,Auvergne-Rhône-Alpes,Rhône,8,ok
+MobilityData,dott-paris,Dott Paris,Paris,https://gbfs.api.ridedott.com/public/v2/paris/gbfs.json,Île-de-France,Paris,14747,ok
+MobilityData,dott-siemu,Dott SIEMU,Marne-la-Vallée,https://gbfs.api.ridedott.com/public/v2/siemu/gbfs.json,Île-de-France,Seine-et-Marne,117,ok
+MobilityData,dott-tignes,Dott Tignes,Tignes,https://gbfs.api.ridedott.com/public/v2/tignes/gbfs.json,Auvergne-Rhône-Alpes,Savoie,0,no_si_url
+MobilityData,dott-versailles-grand-parc,Dott Versailles Grand-Parc,Versailles,https://gbfs.api.ridedott.com/public/v2/versailles-grand-parc/gbfs.json,Île-de-France,Yvelines,79,ok
+MobilityData,mp_GEVAUDAN,Gévaudan,Gévaudan,https://www.mobility-parc.net/gbfs/v3/GEVAUDAN/gbfs.json,Occitanie,Lozère,2,too_small
+MobilityData,idecycle_pau,IDEcycle (Pau),PAU,https://gbfs.partners.fifteen.eu/gbfs/2.2/pau/en/gbfs.json,Nouvelle-Aquitaine,Pyrénées-Atlantiques,40,ok
+MobilityData,impulsyon,Impulsyon,La Roche-sur-Yon,https://api.gbfs.v3.0.ecovelo.mobi/impulsyon/gbfs.json,Pays de la Loire,Vendée,31,ok
+MobilityData,karu,Karu'Vélo,Pointe-à-Pitre,https://api.gbfs.v3.0.ecovelo.mobi/karu/gbfs.json,Guadeloupe,Guadeloupe,14,ok
+MobilityData,knot_strasbourg,Knot Strasbourg,Strasbourg,https://api.knotcity.io/gbfs/v3/strasbourg/gbfs.json,Grand Est,Bas-Rhin,25,ok
+MobilityData,labaule,La Baule,La Baule,https://api.gbfs.v3.0.ecovelo.mobi/labaule/gbfs.json,Pays de la Loire,Loire-Atlantique,14,ok
+MobilityData,lemarcel,Le Marcel,Troyes,https://api.gbfs.v3.0.ecovelo.mobi/lemarcel/gbfs.json,Grand Est,Aube,30,ok
+MobilityData,velo-tbm-bordeaux,Le Vélo par TBM,Bordeaux,https://bdx.mecatran.com/utw/ws/gbfs/bordeaux/v3/gbfs.json?apiKey=opendata-bordeaux-metropole-flux-gtfs-rt,Nouvelle-Aquitaine,Gironde,225,ok
+MobilityData,le_velo_star,LE vélo STAR,Rennes,https://eu.ftp.opendatasoft.com/star/gbfs/gbfs.json,Bretagne,Ille-et-Vilaine,57,ok
+MobilityData,84b174c4-eb74-5d07-bdeb-27f4215d2aa9,Leo and Go,Lyon,https://download.data.grandlyon.com/files/rdata/lag_leoandgo.disponibilite/gbfs.json,Auvergne-Rhône-Alpes,Rhône,0,fetch_error
+MobilityData,petitesreines,Les Petites Reines,Les Sables-d'Olonne,https://api.gbfs.v3.0.ecovelo.mobi/petitesreines/gbfs.json,Pays de la Loire,Vendée,16,ok
+MobilityData,levelo_inurba_marseille,levélo - Marseille,Marseille,https://gbfs.omega.fifteen.eu/gbfs/2.2/marseille/en/gbfs.json,Provence-Alpes-Côte d'Azur,Bouches-du-Rhône,221,ok
+MobilityData,libelo,Libélo,Valence,https://valence.publicbikesystem.net/customer/gbfs/v3.0/,Auvergne-Rhône-Alpes,Drôme,68,ok
+MobilityData,lime_marseille,Lime Marseille,Marseille,https://data.lime.bike/api/partners/v2/gbfs/marseille/gbfs.json,Provence-Alpes-Côte d'Azur,Bouches-du-Rhône,1,too_small
+MobilityData,lime_paris,Lime Paris,Paris,https://data.lime.bike/api/partners/v2/gbfs/paris/gbfs.json,Île-de-France,Paris,1,too_small
+MobilityData,inurba-rouen,LOVELO Libre-service,Rouen,https://gbfs.urbansharing.com/lovelolibreservice.fr/gbfs.json,Normandie,Seine-Maritime,131,ok
+MobilityData,nantes,Naolib,Nantes,https://api.cyclocity.fr/contracts/nantes/gbfs/gbfs.json,Pays de la Loire,Loire-Atlantique,124,ok
+MobilityData,chantrerie,Naolib Micromob',Chantrerie,https://api.gbfs.v3.0.ecovelo.mobi/chantrerie/gbfs.json,Pays de la Loire,Loire-Atlantique,16,ok
+MobilityData,ogalo,Ogalo,Montreuil-Bellay,https://backend.citiz.fr/public/provider/21/gbfs/3.0/gbfs.json,Pays de la Loire,Maine-et-Loire,6,ok
+MobilityData,ogalo,Ogalo Cyclette,Saumur,https://api.gbfs.v3.0.ecovelo.mobi/ogalo/gbfs.json,Pays de la Loire,Maine-et-Loire,22,ok
+MobilityData,mp_OLORON,OLORON,Oloron-Sainte-Marie,https://www.mobility-parc.net/gbfs/v3/OLORON/gbfs.json,Nouvelle-Aquitaine,Pyrénées-Atlantiques,2,too_small
+MobilityData,Optymo_FR_Belfort,Optymo Belfort,Belfort,https://data.optymo.fr/vls/gbfs.json,Bourgogne-Franche-Comté,Territoire de Belfort,32,ok
+MobilityData,Optymo_Belfort_ALS,Optymo Belfort Auto libre-service,Belfort,https://data.optymo.fr/als/gbfs.json,Bourgogne-Franche-Comté,Territoire de Belfort,52,ok
+MobilityData,mp_ARBRESLE,PAYS DE L'ARBRESLE - VEL'PAR,Courzieu,https://www.mobility-parc.net/gbfs/v3/ARBRESLE/gbfs.json,Auvergne-Rhône-Alpes,Rhône,4,ok
+MobilityData,perivelo,Périvélo,Périgueux,https://api.gbfs.v3.0.ecovelo.mobi/perivelo/gbfs.json,Nouvelle-Aquitaine,Dordogne,3,ok
+MobilityData,pony_Angers,Pony Angers,Angers,https://gbfs.getapony.com/v1/angers/en/gbfs.json?key=AIzaSyBMkR2fCYvZZC22Ls5A5wJQRwDERao07Nc,Pays de la Loire,Maine-et-Loire,1223,ok
+MobilityData,pony_Basque_Country,Pony Basque Country,Basque Country,https://gbfs.getapony.com/v1/basque_country/en/gbfs.json?key=AIzaSyBMkR2fCYvZZC22Ls5A5wJQRwDERao07Nc,Nouvelle-Aquitaine,Pyrénées-Atlantiques,497,ok
+MobilityData,pony_Beauvais,Pony Beauvais,Beauvais,https://gbfs.getapony.com/v1/beauvais/en/gbfs.json?key=AIzaSyBMkR2fCYvZZC22Ls5A5wJQRwDERao07Nc,Hauts-de-France,Oise,62,ok
+MobilityData,pony_bordeaux,Pony Bordeaux,Bordeaux,https://gbfs.getapony.com/v1/bordeaux/en/gbfs.json?key=AIzaSyBMkR2fCYvZZC22Ls5A5wJQRwDERao07Nc,Nouvelle-Aquitaine,Gironde,2996,ok
+MobilityData,pony_Bourges,Pony Bourges,Bourges,https://gbfs.getapony.com/v1/bourges/en/gbfs.json?key=AIzaSyBMkR2fCYvZZC22Ls5A5wJQRwDERao07Nc,Centre-Val de Loire,Cher,377,ok
+MobilityData,pony_Evry,Pony Evry,Evry,https://gbfs.getapony.com/v1/evry/en/gbfs.json?key=AIzaSyBMkR2fCYvZZC22Ls5A5wJQRwDERao07Nc,Île-de-France,Essonne,212,ok
+MobilityData,pony_Herouville,Pony Herouville,Herouville-Saint-Clair,https://gbfs.getapony.com/v1/herouville/en/gbfs.json?key=AIzaSyBMkR2fCYvZZC22Ls5A5wJQRwDERao07Nc,Normandie,Calvados,209,ok
+MobilityData,pony_La_Roche_Sur_Yon,Pony La Roche-sur-Yon,La Roche-sur-Yon,https://gbfs.getapony.com/v1/la_roche_sur_yon/en/gbfs.json?key=AIzaSyBMkR2fCYvZZC22Ls5A5wJQRwDERao07Nc,Pays de la Loire,Vendée,81,ok
+MobilityData,pony_Limoges,Pony Limoges,Limoges,https://gbfs.getapony.com/v1/limoges/en/gbfs.json?key=AIzaSyBMkR2fCYvZZC22Ls5A5wJQRwDERao07Nc,Nouvelle-Aquitaine,Haute-Vienne,154,ok
+MobilityData,pony_Lorient,Pony Lorient,Lorient,https://gbfs.getapony.com/v1/lorient/en/gbfs.json?key=AIzaSyBMkR2fCYvZZC22Ls5A5wJQRwDERao07Nc,Bretagne,Morbihan,203,ok
+MobilityData,pony_Nice,Pony Nice,"Nice, FR",https://gbfs.getapony.com/v1/nice/en/gbfs.json?key=AIzaSyBMkR2fCYvZZC22Ls5A5wJQRwDERao07Nc,Provence-Alpes-Côte d'Azur,Alpes-Maritimes,412,ok
+MobilityData,pony_paris,Pony Paris,Paris,https://gbfs.getapony.com/v1/paris/en/gbfs.json?key=AIzaSyBMkR2fCYvZZC22Ls5A5wJQRwDERao07Nc,Île-de-France,Paris,3617,ok
+MobilityData,pony_Perpignan,Pony Perpignan,Perpignan,https://gbfs.getapony.com/v1/perpignan/en/gbfs.json?key=AIzaSyBMkR2fCYvZZC22Ls5A5wJQRwDERao07Nc,Occitanie,Pyrénées-Orientales,1030,ok
+MobilityData,pony_poitiers,Pony Poitiers,Poitiers,https://gbfs.getapony.com/v1/poitiers/en/gbfs.json?key=AIzaSyBMkR2fCYvZZC22Ls5A5wJQRwDERao07Nc,Nouvelle-Aquitaine,Vienne,393,ok
+MobilityData,mp_VASSIVIERE,Porte de Vassivière,Eymoutiers,https://www.mobility-parc.net/gbfs/v3/VASSIVIERE/gbfs.json,Nouvelle-Aquitaine,Haute-Vienne,1,too_small
+MobilityData,rhoule,Rhoule,Piriac-sur-Mer,https://api.gbfs.v3.0.ecovelo.mobi/rhoule/gbfs.json,Pays de la Loire,Loire-Atlantique,2,too_small
+MobilityData,beb,Rubis'Velo,Bourg-en-Bresse,https://api.gbfs.v3.0.ecovelo.mobi/beb/gbfs.json,Auvergne-Rhône-Alpes,Ain,45,ok
+MobilityData,semo,Semo Vélo,Louviers,https://api.gbfs.v3.0.ecovelo.mobi/semo/gbfs.json,Normandie,Eure,40,ok
+MobilityData,tempovelo,Tempovelo,Agen,https://api.gbfs.v3.0.ecovelo.mobi/tempovelo/gbfs.json,Nouvelle-Aquitaine,Lot-et-Garonne,16,ok
+MobilityData,ti_velo,Ti Vélo,Landerneau,https://gbfs.partners.fifteen.eu/gbfs/2.2/landerneau/en/gbfs.json,Bretagne,Finistère,14,ok
+MobilityData,tlpmobilites,TLP Mobilites,Tarbes,https://api.gbfs.v3.0.ecovelo.mobi/tlpmobilites/gbfs.json,Occitanie,Hautes-Pyrénées,13,ok
+MobilityData,twisto_velolib_caen,Twisto Vélolib,Caen,https://gbfs.partners.fifteen.eu/gbfs/2.2/caen/en/gbfs.json,Normandie,Calvados,75,ok
+MobilityData,mp_OSSAU,VALLEE D'OSSAU,Arundy,https://www.mobility-parc.net/gbfs/v3/OSSAU/gbfs.json,Nouvelle-Aquitaine,Pyrénées-Atlantiques,3,ok
+MobilityData,v_lille,V'lille,Lille,https://media.ilevia.fr/opendata/gbfs.json,Hauts-de-France,Nord,268,ok
+MobilityData,amiens,Velam,Amiens,https://api.cyclocity.fr/contracts/amiens/gbfs/gbfs.json,Hauts-de-France,Somme,45,ok
+MobilityData,calais,Velect'in,Calais,https://api.gbfs.v3.0.ecovelo.mobi/calais/gbfs.json,Hauts-de-France,Pas-de-Calais,9,ok
+MobilityData,calais-velos,Vel’in,Calais,https://stce.transdev-hdf.fr/gbfs/,Hauts-de-France,Pas-de-Calais,80,ok
+MobilityData,vernouvelo,Vernou Vélo,Vernou-en-Sologne,https://api.gbfs.v3.0.ecovelo.mobi/vernouvelo/gbfs.json,Centre-Val de Loire,Loir-et-Cher,1,too_small
+MobilityData,vertuose,Vertuose,Longwy,https://api.gbfs.v3.0.ecovelo.mobi/vertuose/gbfs.json,Grand Est,Meurthe-et-Moselle,39,ok
+MobilityData,vilvolt_epinal,Vilvolt,Épinal,https://gbfs.partners.fifteen.eu/gbfs/epinal/gbfs.json,Grand Est,Vosges,105,ok
+MobilityData,vivelo,Vivélo,Vichy,https://gbfs.partners.fifteen.eu/gbfs/vichy/gbfs.json,Auvergne-Rhône-Alpes,Allier,8,ok
+MobilityData,voi_Grenoble,Voi Grenoble,Grenoble,https://api.voiapp.io/gbfs/fr/6bb6b5dc-1cda-4da7-9216-d3023a0bc54a/v2/358/gbfs.json,Auvergne-Rhône-Alpes,Isère,697,ok
+MobilityData,voi_Le_Havre,Voi Le Havre,Le Havre,https://api.voiapp.io/gbfs/fr/6bb6b5dc-1cda-4da7-9216-d3023a0bc54a/v2/336/gbfs.json,Normandie,Seine-Maritime,470,ok
+MobilityData,voi_Marseille,Voi Marseille,Marseille,https://api.voiapp.io/gbfs/fr/6bb6b5dc-1cda-4da7-9216-d3023a0bc54a/v2/66/gbfs.json,Provence-Alpes-Côte d'Azur,Bouches-du-Rhône,1268,ok
+MobilityData,voi_SQY,Voi Saint-Quentin-en-Yvelines,Saint-Quentin-en-Yvelines,https://api.voiapp.io/gbfs/fr/6bb6b5dc-1cda-4da7-9216-d3023a0bc54a/v2/355/gbfs.json,Île-de-France,Yvelines,382,ok
+MobilityData,nextbike_ae,Vélhop - Strasbourg,"Strasbourg, FR",https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ae/gbfs.json,Grand Est,Bas-Rhin,39,ok
+MobilityData,Paris,Vélib' Metropole,Paris,https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/gbfs.json,Île-de-France,Paris,1507,ok
+MobilityData,velibeo,Vélibéo,Brive-la-Gaillarde,https://api.gbfs.v3.0.ecovelo.mobi/velibeo/gbfs.json,Nouvelle-Aquitaine,Corrèze,26,ok
+MobilityData,velivert_saint_etienne,Vélivert,Saint-Étienne,https://api.saint-etienne-metropole.fr/velivert/api/gbfs/gbfs.json,Auvergne-Rhône-Alpes,Loire,97,ok
+MobilityData,velodaqui,Vélo d'Aqui,Argelès-sur-Mer,https://api.gbfs.v3.0.ecovelo.mobi/velodaqui/gbfs.json,Occitanie,Pyrénées-Orientales,6,ok
+MobilityData,tanlib,Vélo Tanlib,Niort,https://api.gbfs.v3.0.ecovelo.mobi/tanlib/gbfs.json,Nouvelle-Aquitaine,Deux-Sèvres,51,ok
+MobilityData,saintbrieuc,Vélo'Baie,Saint-Brieuc,https://gbfs.partners.fifteen.eu/gbfs/2.2/saintbrieuc/en/gbfs.json,Bretagne,Côtes-d'Armor,12,ok
+MobilityData,velocite,Vélo'Cité,Laon,https://api.gbfs.v3.0.ecovelo.mobi/velocite/gbfs.json,Hauts-de-France,Aisne,19,ok
+MobilityData,grand-est,Velo Fluo Grand-Est,Grand Est,https://gbfs.partners.fifteen.eu/gbfs/2.2/velo-fluo/en/gbfs.json,Grand Est,Multi-départements,52,ok
+MobilityData,lyon,Vélo'v,Lyon,https://api.cyclocity.fr/contracts/lyon/gbfs/gbfs.json,Auvergne-Rhône-Alpes,Rhône,452,ok
+MobilityData,mp_LASCAUX,VELO VEZERE LASCAUX,Lascaux,https://www.mobility-parc.net/gbfs/v3/LASCAUX/gbfs.json,Nouvelle-Aquitaine,Dordogne,5,ok
+MobilityData,cergy,VélO2,Cergy-Pontoise,https://api.cyclocity.fr/contracts/cergy/gbfs/gbfs.json,Île-de-France,Val-d'Oise,45,ok
+MobilityData,nextbike_ah,VélO2,FR,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ah/gbfs.json,National,National,49,ok
+MobilityData,besancon,VéloCité,Besançon,https://api.cyclocity.fr/contracts/besancon/gbfs/gbfs.json,Bourgogne-Franche-Comté,Doubs,33,ok
+MobilityData,nextbike_af,VéloCité Mulhouse,Mulhouse,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_af/gbfs.json,Grand Est,Haut-Rhin,60,ok
+MobilityData,velo-modalis,VéloModalis - TERRA,Royan,https://gbfs.partners.fifteen.eu/gbfs/2.2/velo-modalis/en/gbfs.json,Nouvelle-Aquitaine,Charente-Maritime,8,ok
+MobilityData,velonecy60minutes_annecy,Vélonecy,Annecy,https://gbfs.partners.fifteen.eu/gbfs/2.2/annecy/en/gbfs.json,Auvergne-Rhône-Alpes,Haute-Savoie,80,ok
+MobilityData,velopop,Vélopop,Avignon,https://gbfs.partners.fifteen.eu/gbfs/avignon/gbfs.json,Provence-Alpes-Côte d'Azur,Vaucluse,29,ok
+MobilityData,nancy,VélOstan'lib,Nancy,https://api.cyclocity.fr/contracts/nancy/gbfs/gbfs.json,Grand Est,Meurthe-et-Moselle,37,ok
+MobilityData,velozef,VéloZef,Brest,https://gbfs.partners.fifteen.eu/gbfs/2.2/brest/en/gbfs.json,Bretagne,Finistère,40,ok
+MobilityData,velyceo,VélYcéo,Saint-Nazaire,https://api.gbfs.v3.0.ecovelo.mobi/velyceo/gbfs.json,Pays de la Loire,Loire-Atlantique,5,ok
+MobilityData,toulouse,VélÔToulouse,Toulouse,https://api.cyclocity.fr/contracts/toulouse/gbfs/gbfs.json,Occitanie,Haute-Garonne,434,ok
+MobilityData,zebullo,Zebullo,Reims,https://api.gbfs.v3.0.ecovelo.mobi/zebullo/gbfs.json,Grand Est,Marne,63,ok
+Manuel,montpellier,Vélomagg,Montpellier,https://gbfs.theta.fifteen.eu/gbfs/2.2/montpellier/en/gbfs.json,Occitanie,Hérault,56,ok
+Manuel,dijon,Velodi,Dijon,https://data.metropole-dijon.fr/gbfs/gbfs.json,Bourgogne-Franche-Comté,Côte-d'Or,40,ok
+Manuel,mvelo_plus_grenoble,Mvélo+,Grenoble,local_grenoble_gbfs.json,Auvergne-Rhône-Alpes,Isère,15,ok

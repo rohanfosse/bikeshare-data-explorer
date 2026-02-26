@@ -1,0 +1,457 @@
+{
+  "last_updated": 1771749809,
+  "ttl": 60,
+  "version": "2.2",
+  "data": {
+    "stations": [
+      {
+        "station_id": "st_d18jdckdlg9eg0lfmqig",
+        "name": "1re armée",
+        "lat": 47.65436,
+        "lon": 6.84679,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d18jdckdlg9eg0lfmqig)",
+          "ios": "%!(EXTRA string=st_d18jdckdlg9eg0lfmqig)"
+        }
+      },
+      {
+        "station_id": "st_d18jdcmrumbh8rh03r6g",
+        "name": "ATRIA",
+        "lat": 47.64138,
+        "lon": 6.86266,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d18jdcmrumbh8rh03r6g)",
+          "ios": "%!(EXTRA string=st_d18jdcmrumbh8rh03r6g)"
+        }
+      },
+      {
+        "station_id": "st_d18jdckdlg9eg0lfmqo0",
+        "name": "Bavilliers",
+        "lat": 47.62062,
+        "lon": 6.83386,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d18jdckdlg9eg0lfmqo0)",
+          "ios": "%!(EXTRA string=st_d18jdckdlg9eg0lfmqo0)"
+        }
+      },
+      {
+        "station_id": "st_d18jdcmrumbh8rh03ra0",
+        "name": "Bibliothèque",
+        "lat": 47.6392,
+        "lon": 6.85591,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d18jdcmrumbh8rh03ra0)",
+          "ios": "%!(EXTRA string=st_d18jdcmrumbh8rh03ra0)"
+        }
+      },
+      {
+        "station_id": "st_d18jdcurumbh8rh03rcg",
+        "name": "Bohn",
+        "lat": 47.64824,
+        "lon": 6.84691,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d18jdcurumbh8rh03rcg)",
+          "ios": "%!(EXTRA string=st_d18jdcurumbh8rh03rcg)"
+        }
+      },
+      {
+        "station_id": "st_d18jdcsdlg9eg0lfmqvg",
+        "name": "Carnot",
+        "lat": 47.63796,
+        "lon": 6.85854,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d18jdcsdlg9eg0lfmqvg)",
+          "ios": "%!(EXTRA string=st_d18jdcsdlg9eg0lfmqvg)"
+        }
+      },
+      {
+        "station_id": "st_d18jdcurumbh8rh03re0",
+        "name": "Conservatoire",
+        "lat": 47.63872,
+        "lon": 6.84971,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d18jdcurumbh8rh03re0)",
+          "ios": "%!(EXTRA string=st_d18jdcurumbh8rh03re0)"
+        }
+      },
+      {
+        "station_id": "st_d18jdcurumbh8rh03rgg",
+        "name": "Corbis",
+        "lat": 47.63739,
+        "lon": 6.85762,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d18jdcurumbh8rh03rgg)",
+          "ios": "%!(EXTRA string=st_d18jdcurumbh8rh03rgg)"
+        }
+      },
+      {
+        "station_id": "st_d18jdcurumbh8rh03rk0",
+        "name": "Courbet",
+        "lat": 47.65411,
+        "lon": 6.85542,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d18jdcurumbh8rh03rk0)",
+          "ios": "%!(EXTRA string=st_d18jdcurumbh8rh03rk0)"
+        }
+      },
+      {
+        "station_id": "st_d18jdd4dlg9eg0lfmr80",
+        "name": "Essert Carrières",
+        "lat": 47.6348,
+        "lon": 6.82918,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d18jdd4dlg9eg0lfmr80)",
+          "ios": "%!(EXTRA string=st_d18jdd4dlg9eg0lfmr80)"
+        }
+      },
+      {
+        "station_id": "st_d18jdd4dlg9eg0lfmrbg",
+        "name": "Essert Mairie",
+        "lat": 47.63298,
+        "lon": 6.81808,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d18jdd4dlg9eg0lfmrbg)",
+          "ios": "%!(EXTRA string=st_d18jdd4dlg9eg0lfmrbg)"
+        }
+      },
+      {
+        "station_id": "st_d18jdd6rumbh8rh03rog",
+        "name": "Étang des Forges",
+        "lat": 47.65291,
+        "lon": 6.86432,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d18jdd6rumbh8rh03rog)",
+          "ios": "%!(EXTRA string=st_d18jdd6rumbh8rh03rog)"
+        }
+      },
+      {
+        "station_id": "st_d18jdd4dlg9eg0lfmrf0",
+        "name": "Gare",
+        "lat": 47.63381,
+        "lon": 6.85381,
+        "is_virtual_station": false,
+        "capacity": 40,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d18jdd4dlg9eg0lfmrf0)",
+          "ios": "%!(EXTRA string=st_d18jdd4dlg9eg0lfmrf0)"
+        }
+      },
+      {
+        "station_id": "st_d18jdd6rumbh8rh03ru0",
+        "name": "Laurencie",
+        "lat": 47.63864,
+        "lon": 6.87466,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d18jdd6rumbh8rh03ru0)",
+          "ios": "%!(EXTRA string=st_d18jdd6rumbh8rh03ru0)"
+        }
+      },
+      {
+        "station_id": "st_d18jdd6rumbh8rh03s0g",
+        "name": "Kennedy",
+        "lat": 47.63389,
+        "lon": 6.83999,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d18jdd6rumbh8rh03s0g)",
+          "ios": "%!(EXTRA string=st_d18jdd6rumbh8rh03s0g)"
+        }
+      },
+      {
+        "station_id": "st_d18jdd4dlg9eg0lfmrlg",
+        "name": "Madrid",
+        "lat": 47.63479,
+        "lon": 6.8455,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d18jdd4dlg9eg0lfmrlg)",
+          "ios": "%!(EXTRA string=st_d18jdd4dlg9eg0lfmrlg)"
+        }
+      },
+      {
+        "station_id": "st_d18jdd4dlg9eg0lfmrq0",
+        "name": "Maison du Peuple",
+        "lat": 47.64129,
+        "lon": 6.85206,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d18jdd4dlg9eg0lfmrq0)",
+          "ios": "%!(EXTRA string=st_d18jdd4dlg9eg0lfmrq0)"
+        }
+      },
+      {
+        "station_id": "st_d18jddcdlg9eg0lfmrtg",
+        "name": "Marché des Vosges",
+        "lat": 47.65194,
+        "lon": 6.8506,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d18jddcdlg9eg0lfmrtg)",
+          "ios": "%!(EXTRA string=st_d18jddcdlg9eg0lfmrtg)"
+        }
+      },
+      {
+        "station_id": "st_d18jddcdlg9eg0lfms10",
+        "name": "Multiplexe",
+        "lat": 47.62876,
+        "lon": 6.86185,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d18jddcdlg9eg0lfms10)",
+          "ios": "%!(EXTRA string=st_d18jddcdlg9eg0lfms10)"
+        }
+      },
+      {
+        "station_id": "st_d18jddcdlg9eg0lfms5g",
+        "name": "Offemont Mairie",
+        "lat": 47.66336,
+        "lon": 6.87899,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d18jddcdlg9eg0lfms5g)",
+          "ios": "%!(EXTRA string=st_d18jddcdlg9eg0lfms5g)"
+        }
+      },
+      {
+        "station_id": "st_d18jdderumbh8rh03s60",
+        "name": "Offemont Romaine",
+        "lat": 47.66092,
+        "lon": 6.87056,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d18jdderumbh8rh03s60)",
+          "ios": "%!(EXTRA string=st_d18jdderumbh8rh03s60)"
+        }
+      },
+      {
+        "station_id": "st_d18jdderumbh8rh03s8g",
+        "name": "Pépinière",
+        "lat": 47.6265,
+        "lon": 6.85379,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d18jdderumbh8rh03s8g)",
+          "ios": "%!(EXTRA string=st_d18jdderumbh8rh03s8g)"
+        }
+      },
+      {
+        "station_id": "st_d18jdderumbh8rh03sb0",
+        "name": "Rabin",
+        "lat": 47.64166,
+        "lon": 6.85692,
+        "is_virtual_station": false,
+        "capacity": 40,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d18jdderumbh8rh03sb0)",
+          "ios": "%!(EXTRA string=st_d18jdderumbh8rh03sb0)"
+        }
+      },
+      {
+        "station_id": "st_d18jddmrumbh8rh03sfg",
+        "name": "République",
+        "lat": 47.63988,
+        "lon": 6.86089,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d18jddmrumbh8rh03sfg)",
+          "ios": "%!(EXTRA string=st_d18jddmrumbh8rh03sfg)"
+        }
+      },
+      {
+        "station_id": "st_d18jddkdlg9eg0lfmsgg",
+        "name": "Sainte-Thérèse",
+        "lat": 47.64081,
+        "lon": 6.83815,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d18jddkdlg9eg0lfmsgg)",
+          "ios": "%!(EXTRA string=st_d18jddkdlg9eg0lfmsgg)"
+        }
+      },
+      {
+        "station_id": "st_d18jddkdlg9eg0lfmsk0",
+        "name": "Sevenans UTBM",
+        "lat": 47.58828,
+        "lon": 6.86643,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d18jddkdlg9eg0lfmsk0)",
+          "ios": "%!(EXTRA string=st_d18jddkdlg9eg0lfmsk0)"
+        }
+      },
+      {
+        "station_id": "st_d18jddkdlg9eg0lfmsng",
+        "name": "Techn'hom Étang",
+        "lat": 47.64354,
+        "lon": 6.84501,
+        "is_virtual_station": false,
+        "capacity": 30,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d18jddkdlg9eg0lfmsng)",
+          "ios": "%!(EXTRA string=st_d18jddkdlg9eg0lfmsng)"
+        }
+      },
+      {
+        "station_id": "st_d18jddkdlg9eg0lfmsq0",
+        "name": "Techn'hom Découverte",
+        "lat": 47.65182,
+        "lon": 6.83705,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d18jddkdlg9eg0lfmsq0)",
+          "ios": "%!(EXTRA string=st_d18jddkdlg9eg0lfmsq0)"
+        }
+      },
+      {
+        "station_id": "st_d18jddkdlg9eg0lfmssg",
+        "name": "Techn'hom IUT",
+        "lat": 47.64299,
+        "lon": 6.84141,
+        "is_virtual_station": false,
+        "capacity": 40,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d18jddkdlg9eg0lfmssg)",
+          "ios": "%!(EXTRA string=st_d18jddkdlg9eg0lfmssg)"
+        }
+      },
+      {
+        "station_id": "st_d18jddmrumbh8rh03ss0",
+        "name": "Valdoie Mairie",
+        "lat": 47.66525,
+        "lon": 6.84141,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d18jddmrumbh8rh03ss0)",
+          "ios": "%!(EXTRA string=st_d18jddmrumbh8rh03ss0)"
+        }
+      },
+      {
+        "station_id": "st_d18jddmrumbh8rh03sug",
+        "name": "Valdoie Turenne",
+        "lat": 47.66799,
+        "lon": 6.84171,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d18jddmrumbh8rh03sug)",
+          "ios": "%!(EXTRA string=st_d18jddmrumbh8rh03sug)"
+        }
+      },
+      {
+        "station_id": "st_d18njfsdlg9eg0lfroig",
+        "name": "RTTB ",
+        "lat": 47.622756,
+        "lon": 6.857001,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d18njfsdlg9eg0lfroig)",
+          "ios": "%!(EXTRA string=st_d18njfsdlg9eg0lfroig)"
+        }
+      }
+    ]
+  }
+}

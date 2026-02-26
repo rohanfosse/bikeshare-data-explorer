@@ -1,0 +1,774 @@
+{
+  "data": {
+    "stations": [
+      {
+        "capacity": 20,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.215232,
+        "lon": 5.243156,
+        "name": [
+          {
+            "language": "fr",
+            "text": "ALIMENTEC"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://rubis.ecovelo.mobi/#/station/stn_i54qoygUP7z5hJHjwrMbd5"
+        },
+        "station_id": "stn_i54qoygUP7z5hJHjwrMbd5"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.19376,
+        "lon": 5.23892,
+        "name": [
+          {
+            "language": "fr",
+            "text": "CHARMETTES"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://rubis.ecovelo.mobi/#/station/stn_FSzFwoeeyxPj3yhnh8EXgs"
+        },
+        "station_id": "stn_FSzFwoeeyxPj3yhnh8EXgs"
+      },
+      {
+        "capacity": 20,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.203172,
+        "lon": 5.222353,
+        "name": [
+          {
+            "language": "fr",
+            "text": "PREFECTURE"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://rubis.ecovelo.mobi/#/station/stn_qwXUybg7rDaLBjPXBUyhZD"
+        },
+        "station_id": "stn_qwXUybg7rDaLBjPXBUyhZD"
+      },
+      {
+        "capacity": 14,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.188702,
+        "lon": 5.227953,
+        "name": [
+          {
+            "language": "fr",
+            "text": "VENNES MONTESQUIEU"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://rubis.ecovelo.mobi/#/station/stn_dj7UN9e6ZJnDZC69VHcTQ8"
+        },
+        "station_id": "stn_dj7UN9e6ZJnDZC69VHcTQ8"
+      },
+      {
+        "capacity": 5,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.199861,
+        "lon": 5.240333,
+        "name": [
+          {
+            "language": "fr",
+            "text": "CHARLES DE GAULLE"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://rubis.ecovelo.mobi/#/station/stn_FZC2aip5hHS3qYpKg9T9Du"
+        },
+        "station_id": "stn_FZC2aip5hHS3qYpKg9T9Du"
+      },
+      {
+        "capacity": 16,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.188325,
+        "lon": 5.246255,
+        "name": [
+          {
+            "language": "fr",
+            "text": "EKINOX AINTEREXPO"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://rubis.ecovelo.mobi/#/station/stn_xTfqpwziuBfQswsgipKP5S"
+        },
+        "station_id": "stn_xTfqpwziuBfQswsgipKP5S"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.207888,
+        "lon": 5.225295,
+        "name": [
+          {
+            "language": "fr",
+            "text": "GRENOUILLÈRE"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://rubis.ecovelo.mobi/#/station/stn_4HwUQG7k8FnJfNGCZeyRtm"
+        },
+        "station_id": "stn_4HwUQG7k8FnJfNGCZeyRtm"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.195334,
+        "lon": 5.230033,
+        "name": [
+          {
+            "language": "fr",
+            "text": "ROND-POINT DU STAND"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://rubis.ecovelo.mobi/#/station/stn_5SA4Cqgkki9Jeo4KiPhyRE"
+        },
+        "station_id": "stn_5SA4Cqgkki9Jeo4KiPhyRE"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.207706,
+        "lon": 5.243918,
+        "name": [
+          {
+            "language": "fr",
+            "text": "DÎMES"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://rubis.ecovelo.mobi/#/station/stn_buAPCbc9ZEqRRLzb62S2BH"
+        },
+        "station_id": "stn_buAPCbc9ZEqRRLzb62S2BH"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.193516,
+        "lon": 5.213746,
+        "name": [
+          {
+            "language": "fr",
+            "text": "BERTHELOT"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://rubis.ecovelo.mobi/#/station/stn_iuNAzDxs8Fgk9ZzmfhX6g4"
+        },
+        "station_id": "stn_iuNAzDxs8Fgk9ZzmfhX6g4"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.2532,
+        "lon": 5.216583,
+        "name": [
+          {
+            "language": "fr",
+            "text": "VIRIAT MAIRIE"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://rubis.ecovelo.mobi/#/station/stn_eiPoNiqhbHKcbQScMhQBxU"
+        },
+        "station_id": "stn_eiPoNiqhbHKcbQScMhQBxU"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.222191,
+        "lon": 5.22017,
+        "name": [
+          {
+            "language": "fr",
+            "text": "D'ARSONVAL JACQUARD"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://rubis.ecovelo.mobi/#/station/stn_w98W8hFbJZftNnBuPCHUiS"
+        },
+        "station_id": "stn_w98W8hFbJZftNnBuPCHUiS"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.201285,
+        "lon": 5.203496,
+        "name": [
+          {
+            "language": "fr",
+            "text": "PRINTEMPS"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://rubis.ecovelo.mobi/#/station/stn_GsraQRPFZUb7SsUKNH75Yb"
+        },
+        "station_id": "stn_GsraQRPFZUb7SsUKNH75Yb"
+      },
+      {
+        "capacity": 5,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.220638,
+        "lon": 5.244305,
+        "name": [
+          {
+            "language": "fr",
+            "text": "CAP EMERAUDE"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://rubis.ecovelo.mobi/#/station/stn_Q4Pypv7NxfAhZxXojQBwb8"
+        },
+        "station_id": "stn_Q4Pypv7NxfAhZxXojQBwb8"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.187456,
+        "lon": 5.232564,
+        "name": [
+          {
+            "language": "fr",
+            "text": "CENTRE HIPPIQUE"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://rubis.ecovelo.mobi/#/station/stn_cFaqAP33AfCJW3VQaRdV9h"
+        },
+        "station_id": "stn_cFaqAP33AfCJW3VQaRdV9h"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.199472,
+        "lon": 5.213822,
+        "name": [
+          {
+            "language": "fr",
+            "text": "PELOUX GARE"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://rubis.ecovelo.mobi/#/station/stn_gQdDcewhgmHSvQsamZyRup"
+        },
+        "station_id": "stn_gQdDcewhgmHSvQsamZyRup"
+      },
+      {
+        "capacity": 5,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.208034,
+        "lon": 5.232121,
+        "name": [
+          {
+            "language": "fr",
+            "text": "CHALLES"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://rubis.ecovelo.mobi/#/station/stn_4dax8kj2eMnmVJyoZW2aCo"
+        },
+        "station_id": "stn_4dax8kj2eMnmVJyoZW2aCo"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.206982,
+        "lon": 5.197834,
+        "name": [
+          {
+            "language": "fr",
+            "text": "VIARDS"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://rubis.ecovelo.mobi/#/station/stn_Ha3qvxYZmqxoT8uMn58kYE"
+        },
+        "station_id": "stn_Ha3qvxYZmqxoT8uMn58kYE"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.210975,
+        "lon": 5.23227,
+        "name": [
+          {
+            "language": "fr",
+            "text": "MÉDIATHÈQUE CÉSAIRE"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://rubis.ecovelo.mobi/#/station/stn_V4ZGw2ncvXdpGd44AuwMaA"
+        },
+        "station_id": "stn_V4ZGw2ncvXdpGd44AuwMaA"
+      },
+      {
+        "capacity": 30,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.200167,
+        "lon": 5.215235,
+        "name": [
+          {
+            "language": "fr",
+            "text": "SEMARD GARE"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://rubis.ecovelo.mobi/#/station/stn_Aefw2G5pb2sEez6VJJ2XLM"
+        },
+        "station_id": "stn_Aefw2G5pb2sEez6VJJ2XLM"
+      },
+      {
+        "capacity": 14,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.222685,
+        "lon": 5.21093,
+        "name": [
+          {
+            "language": "fr",
+            "text": "HÔPITAL FLEYRIAT"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://rubis.ecovelo.mobi/#/station/stn_NomrKtxQMxJH7Q6BPigBhn"
+        },
+        "station_id": "stn_NomrKtxQMxJH7Q6BPigBhn"
+      },
+      {
+        "capacity": 20,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.207245,
+        "lon": 5.227796,
+        "name": [
+          {
+            "language": "fr",
+            "text": "CARRE AMIOT"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://rubis.ecovelo.mobi/#/station/stn_9ojn8aksrJxn2EzZeziQK8"
+        },
+        "station_id": "stn_9ojn8aksrJxn2EzZeziQK8"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.219496,
+        "lon": 5.227898,
+        "name": [
+          {
+            "language": "fr",
+            "text": "CUVIER"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://rubis.ecovelo.mobi/#/station/stn_SLrs7somiMGSAdCxSLXzdG"
+        },
+        "station_id": "stn_SLrs7somiMGSAdCxSLXzdG"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.238528,
+        "lon": 5.228655,
+        "name": [
+          {
+            "language": "fr",
+            "text": "PERRINCHE"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://rubis.ecovelo.mobi/#/station/stn_jyjuq9eYHz2rHWDMJzDdJB"
+        },
+        "station_id": "stn_jyjuq9eYHz2rHWDMJzDdJB"
+      },
+      {
+        "capacity": 16,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.200372,
+        "lon": 5.225872,
+        "name": [
+          {
+            "language": "fr",
+            "text": "QUARTIER DES LYCÉES"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://rubis.ecovelo.mobi/#/station/stn_Ym3vNDmHEGRNTv3zEN8LnB"
+        },
+        "station_id": "stn_Ym3vNDmHEGRNTv3zEN8LnB"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.201835,
+        "lon": 5.231876,
+        "name": [
+          {
+            "language": "fr",
+            "text": "COLLÈGE DE BROU"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://rubis.ecovelo.mobi/#/station/stn_g5PZw3HNB8AN6nbmveQ3vY"
+        },
+        "station_id": "stn_g5PZw3HNB8AN6nbmveQ3vY"
+      },
+      {
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.200404,
+        "lon": 5.215106,
+        "name": [
+          {
+            "language": "fr",
+            "text": "GARE - DÉPOSE MINUTE"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://rubis.ecovelo.mobi/#/station/stn_XrgPNaXaNRnx3twP4wDXSg"
+        },
+        "station_id": "stn_XrgPNaXaNRnx3twP4wDXSg"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.204571,
+        "lon": 5.227636,
+        "name": [
+          {
+            "language": "fr",
+            "text": "BONS ENFANTS"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://rubis.ecovelo.mobi/#/station/stn_bsV7y7e28cSxCJ5pVxi9DJ"
+        },
+        "station_id": "stn_bsV7y7e28cSxCJ5pVxi9DJ"
+      },
+      {
+        "capacity": 14,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.206465,
+        "lon": 5.224615,
+        "name": [
+          {
+            "language": "fr",
+            "text": "THÉÂTRE"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://rubis.ecovelo.mobi/#/station/stn_WCjcYmMQ756kG4zonrmv7G"
+        },
+        "station_id": "stn_WCjcYmMQ756kG4zonrmv7G"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.228019,
+        "lon": 5.229935,
+        "name": [
+          {
+            "language": "fr",
+            "text": "CPA"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://rubis.ecovelo.mobi/#/station/stn_mjDF4N5H3AiHmVmojZqscr"
+        },
+        "station_id": "stn_mjDF4N5H3AiHmVmojZqscr"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.210404,
+        "lon": 5.221091,
+        "name": [
+          {
+            "language": "fr",
+            "text": "PONT DES CHÈVRES"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://rubis.ecovelo.mobi/#/station/stn_MdmcRn6GqzAZtbnga8vvhE"
+        },
+        "station_id": "stn_MdmcRn6GqzAZtbnga8vvhE"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.185043,
+        "lon": 5.207366,
+        "name": [
+          {
+            "language": "fr",
+            "text": "TYRANDES"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://rubis.ecovelo.mobi/#/station/stn_Qa6MHogCuAeSBjGx9BUxFk"
+        },
+        "station_id": "stn_Qa6MHogCuAeSBjGx9BUxFk"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.192202,
+        "lon": 5.25701,
+        "name": [
+          {
+            "language": "fr",
+            "text": "BOUVENT"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://rubis.ecovelo.mobi/#/station/stn_gfb5P9r4iymiXbzC4NTJnP"
+        },
+        "station_id": "stn_gfb5P9r4iymiXbzC4NTJnP"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.194838,
+        "lon": 5.272543,
+        "name": [
+          {
+            "language": "fr",
+            "text": "ALAGNIER"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://rubis.ecovelo.mobi/#/station/stn_QgVjDYKACbc4Y9VwPSDbqv"
+        },
+        "station_id": "stn_QgVjDYKACbc4Y9VwPSDbqv"
+      },
+      {
+        "capacity": 14,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.209399,
+        "lon": 5.238691,
+        "name": [
+          {
+            "language": "fr",
+            "text": "CENTRE NAUTIQUE"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://rubis.ecovelo.mobi/#/station/stn_DWc8CkYrzrP2JhCUnWhiUH"
+        },
+        "station_id": "stn_DWc8CkYrzrP2JhCUnWhiUH"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.195781,
+        "lon": 5.220953,
+        "name": [
+          {
+            "language": "fr",
+            "text": "JULES FERRY"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://rubis.ecovelo.mobi/#/station/stn_kDuZpTH9aWUgomZ3RniHCK"
+        },
+        "station_id": "stn_kDuZpTH9aWUgomZ3RniHCK"
+      },
+      {
+        "capacity": 20,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.214696,
+        "lon": 5.215282,
+        "name": [
+          {
+            "language": "fr",
+            "text": "LA NEUVE"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://rubis.ecovelo.mobi/#/station/stn_oaF5iS3vLidywXxPb2bToP"
+        },
+        "station_id": "stn_oaF5iS3vLidywXxPb2bToP"
+      },
+      {
+        "capacity": 5,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.2115,
+        "lon": 5.254027,
+        "name": [
+          {
+            "language": "fr",
+            "text": "CLINIQUE CONVERT"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://rubis.ecovelo.mobi/#/station/stn_nbhyDutvZUCtXL3y2bVWGu"
+        },
+        "station_id": "stn_nbhyDutvZUCtXL3y2bVWGu"
+      },
+      {
+        "capacity": 20,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.207774,
+        "lon": 5.220277,
+        "name": [
+          {
+            "language": "fr",
+            "text": "CHARITE UNIVERSITE"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://rubis.ecovelo.mobi/#/station/stn_LCaWDpTiZn4omsyEZWwjQ3"
+        },
+        "station_id": "stn_LCaWDpTiZn4omsyEZWwjQ3"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.18083,
+        "lon": 5.20404,
+        "name": [
+          {
+            "language": "fr",
+            "text": "PERONNAS MAIRIE"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://rubis.ecovelo.mobi/#/station/stn_M4SdB3Dut9Z98r3oeEW6pM"
+        },
+        "station_id": "stn_M4SdB3Dut9Z98r3oeEW6pM"
+      },
+      {
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.20071,
+        "lon": 5.21881,
+        "name": [
+          {
+            "language": "fr",
+            "text": "PARC DE LA MADELEINE"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://rubis.ecovelo.mobi/#/station/stn_mdSGmPUp23ZsD9SXFhWb9c"
+        },
+        "station_id": "stn_mdSGmPUp23ZsD9SXFhWb9c"
+      },
+      {
+        "capacity": 5,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.205916,
+        "lon": 5.234435,
+        "name": [
+          {
+            "language": "fr",
+            "text": "MAQUIS"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://rubis.ecovelo.mobi/#/station/stn_YiqzcTZL6rAaPBAvCNmxbc"
+        },
+        "station_id": "stn_YiqzcTZL6rAaPBAvCNmxbc"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.203367,
+        "lon": 5.24346,
+        "name": [
+          {
+            "language": "fr",
+            "text": "CROIX-BLANCHE"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://rubis.ecovelo.mobi/#/station/stn_6JRBFXmyrmbeNN4j6QkXZ7"
+        },
+        "station_id": "stn_6JRBFXmyrmbeNN4j6QkXZ7"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.20249,
+        "lon": 5.191376,
+        "name": [
+          {
+            "language": "fr",
+            "text": "SAINT-DENIS CENTRE"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://rubis.ecovelo.mobi/#/station/stn_Lm3VNhCDCCWGie5594UZKD"
+        },
+        "station_id": "stn_Lm3VNhCDCCWGie5594UZKD"
+      },
+      {
+        "capacity": 14,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.1985,
+        "lon": 5.234872,
+        "name": [
+          {
+            "language": "fr",
+            "text": "MONASTERE DE BROU"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://rubis.ecovelo.mobi/#/station/stn_ViBLmfEJLVoQ2DheSsMpo5"
+        },
+        "station_id": "stn_ViBLmfEJLVoQ2DheSsMpo5"
+      }
+    ]
+  },
+  "last_updated": "2026-02-22T09:42:07+01:00",
+  "ttl": 0,
+  "version": "3.0"
+}

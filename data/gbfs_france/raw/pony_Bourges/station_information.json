@@ -1,0 +1,2714 @@
+{
+  "data": {
+    "stations": [
+      {
+        "is_virtual_station": true,
+        "lat": 47.081787,
+        "lon": 2.411534,
+        "name": "Bourges_parking_0",
+        "station_id": "Bourges_parking_0"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.077789,
+        "lon": 2.392658,
+        "name": "Bourges_parking_1",
+        "station_id": "Bourges_parking_1"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.091946,
+        "lon": 2.398657,
+        "name": "Bourges_parking_3",
+        "station_id": "Bourges_parking_3"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.086777,
+        "lon": 2.389293,
+        "name": "Bourges_parking_8",
+        "station_id": "Bourges_parking_8"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.087803,
+        "lon": 2.390285,
+        "name": "Bourges_parking_9",
+        "station_id": "Bourges_parking_9"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.088242,
+        "lon": 2.397401,
+        "name": "Bourges_parking_10",
+        "station_id": "Bourges_parking_10"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.079895,
+        "lon": 2.401619,
+        "name": "Bourges_parking_11",
+        "station_id": "Bourges_parking_11"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.08366,
+        "lon": 2.397698,
+        "name": "Bourges_parking_12",
+        "station_id": "Bourges_parking_12"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.086597,
+        "lon": 2.392707,
+        "name": "Bourges_parking_13",
+        "station_id": "Bourges_parking_13"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.084377,
+        "lon": 2.3832,
+        "name": "Bourges_parking_14",
+        "station_id": "Bourges_parking_14"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.084293,
+        "lon": 2.382807,
+        "name": "Bourges_parking_15",
+        "station_id": "Bourges_parking_15"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.083984,
+        "lon": 2.383367,
+        "name": "Bourges_parking_16",
+        "station_id": "Bourges_parking_16"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.078247,
+        "lon": 2.394439,
+        "name": "Bourges_parking_17",
+        "station_id": "Bourges_parking_17"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.06282,
+        "lon": 2.400062,
+        "name": "Bourges_parking_20",
+        "station_id": "Bourges_parking_20"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.077297,
+        "lon": 2.390232,
+        "name": "Bourges_parking_21",
+        "station_id": "Bourges_parking_21"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.082516,
+        "lon": 2.400431,
+        "name": "Bourges_parking_22",
+        "station_id": "Bourges_parking_22"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.080425,
+        "lon": 2.391431,
+        "name": "Bourges_parking_23",
+        "station_id": "Bourges_parking_23"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.092194,
+        "lon": 2.40036,
+        "name": "Bourges_parking_25",
+        "station_id": "Bourges_parking_25"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.076622,
+        "lon": 2.40056,
+        "name": "Bourges_parking_26",
+        "station_id": "Bourges_parking_26"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.086578,
+        "lon": 2.396047,
+        "name": "Bourges_parking_27",
+        "station_id": "Bourges_parking_27"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.084343,
+        "lon": 2.395481,
+        "name": "Bourges_parking_28",
+        "station_id": "Bourges_parking_28"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.063683,
+        "lon": 2.39852,
+        "name": "Bourges_parking_29",
+        "station_id": "Bourges_parking_29"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.105278,
+        "lon": 2.412745,
+        "name": "Bourges_parking_30",
+        "station_id": "Bourges_parking_30"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0811,
+        "lon": 2.39784,
+        "name": "Bourges_parking_31",
+        "station_id": "Bourges_parking_31"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.101275,
+        "lon": 2.397861,
+        "name": "Bourges_parking_33",
+        "station_id": "Bourges_parking_33"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.101282,
+        "lon": 2.397855,
+        "name": "Bourges_parking_34",
+        "station_id": "Bourges_parking_34"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.094191,
+        "lon": 2.393454,
+        "name": "Bourges_parking_35",
+        "station_id": "Bourges_parking_35"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.094081,
+        "lon": 2.394551,
+        "name": "Bourges_parking_36",
+        "station_id": "Bourges_parking_36"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.080978,
+        "lon": 2.407236,
+        "name": "Bourges_parking_37",
+        "station_id": "Bourges_parking_37"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.082534,
+        "lon": 2.414241,
+        "name": "Bourges_parking_38",
+        "station_id": "Bourges_parking_38"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0828476,
+        "lon": 2.416036,
+        "name": "Bourges_parking_39",
+        "station_id": "Bourges_parking_39"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.081644,
+        "lon": 2.402949,
+        "name": "Bourges_parking_40",
+        "station_id": "Bourges_parking_40"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.084045,
+        "lon": 2.399453,
+        "name": "Bourges_parking_41",
+        "station_id": "Bourges_parking_41"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.085498,
+        "lon": 2.395049,
+        "name": "Bourges_parking_42",
+        "station_id": "Bourges_parking_42"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.083321,
+        "lon": 2.397907,
+        "name": "Bourges_parking_43",
+        "station_id": "Bourges_parking_43"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.083071,
+        "lon": 2.396249,
+        "name": "Bourges_parking_44",
+        "station_id": "Bourges_parking_44"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0829766,
+        "lon": 2.3962734,
+        "name": "Bourges_parking_45",
+        "station_id": "Bourges_parking_45"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.081578,
+        "lon": 2.398058,
+        "name": "Bourges_parking_48",
+        "station_id": "Bourges_parking_48"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.08052,
+        "lon": 2.398451,
+        "name": "Bourges_parking_49",
+        "station_id": "Bourges_parking_49"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.085471,
+        "lon": 2.393922,
+        "name": "Bourges_parking_50",
+        "station_id": "Bourges_parking_50"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.085626,
+        "lon": 2.393239,
+        "name": "Bourges_parking_51",
+        "station_id": "Bourges_parking_51"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0844009,
+        "lon": 2.3927631,
+        "name": "Bourges_parking_52",
+        "station_id": "Bourges_parking_52"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.088038,
+        "lon": 2.393076,
+        "name": "Bourges_parking_53",
+        "station_id": "Bourges_parking_53"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.086522,
+        "lon": 2.394526,
+        "name": "Bourges_parking_54",
+        "station_id": "Bourges_parking_54"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.08231,
+        "lon": 2.389357,
+        "name": "Bourges_parking_55",
+        "station_id": "Bourges_parking_55"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.079323,
+        "lon": 2.424123,
+        "name": "Bourges_parking_56",
+        "station_id": "Bourges_parking_56"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.087643,
+        "lon": 2.390863,
+        "name": "Bourges_parking_58",
+        "station_id": "Bourges_parking_58"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.088219,
+        "lon": 2.394407,
+        "name": "Bourges_parking_59",
+        "station_id": "Bourges_parking_59"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.082947,
+        "lon": 2.386848,
+        "name": "Bourges_parking_60",
+        "station_id": "Bourges_parking_60"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.078918,
+        "lon": 2.403031,
+        "name": "Bourges_parking_62",
+        "station_id": "Bourges_parking_62"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.097584,
+        "lon": 2.394802,
+        "name": "Bourges_parking_64",
+        "station_id": "Bourges_parking_64"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.084026,
+        "lon": 2.39415,
+        "name": "Bourges_parking_65",
+        "station_id": "Bourges_parking_65"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.076759,
+        "lon": 2.403918,
+        "name": "Bourges_parking_66",
+        "station_id": "Bourges_parking_66"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.105286,
+        "lon": 2.405007,
+        "name": "Bourges_parking_67",
+        "station_id": "Bourges_parking_67"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.085655,
+        "lon": 2.39137,
+        "name": "Bourges_parking_68",
+        "station_id": "Bourges_parking_68"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.101242,
+        "lon": 2.398441,
+        "name": "Bourges_parking_69",
+        "station_id": "Bourges_parking_69"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.108032,
+        "lon": 2.406105,
+        "name": "Bourges_parking_70",
+        "station_id": "Bourges_parking_70"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.080845,
+        "lon": 2.397053,
+        "name": "Bourges_parking_71",
+        "station_id": "Bourges_parking_71"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.073296,
+        "lon": 2.406314,
+        "name": "Bourges_parking_72",
+        "station_id": "Bourges_parking_72"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.105606,
+        "lon": 2.403776,
+        "name": "Bourges_parking_73",
+        "station_id": "Bourges_parking_73"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.069031,
+        "lon": 2.395379,
+        "name": "Bourges_parking_74",
+        "station_id": "Bourges_parking_74"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.069138,
+        "lon": 2.395375,
+        "name": "Bourges_parking_75",
+        "station_id": "Bourges_parking_75"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.087063,
+        "lon": 2.387296,
+        "name": "Bourges_parking_76",
+        "station_id": "Bourges_parking_76"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.09022739795946,
+        "lon": 2.3985606518784515,
+        "name": "Bourges_parking_77",
+        "station_id": "Bourges_parking_77"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.103775,
+        "lon": 2.410724,
+        "name": "Bourges_parking_78",
+        "station_id": "Bourges_parking_78"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.103298,
+        "lon": 2.409894,
+        "name": "Bourges_parking_79",
+        "station_id": "Bourges_parking_79"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.08557,
+        "lon": 2.40054,
+        "name": "Bourges_parking_80",
+        "station_id": "Bourges_parking_80"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.088123,
+        "lon": 2.396752,
+        "name": "Bourges_parking_81",
+        "station_id": "Bourges_parking_81"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.089539,
+        "lon": 2.395125,
+        "name": "Bourges_parking_82",
+        "station_id": "Bourges_parking_82"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.087231,
+        "lon": 2.398028,
+        "name": "Bourges_parking_83",
+        "station_id": "Bourges_parking_83"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.080815,
+        "lon": 2.416944,
+        "name": "Bourges_parking_86",
+        "station_id": "Bourges_parking_86"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.081401,
+        "lon": 2.418904,
+        "name": "Bourges_parking_88",
+        "station_id": "Bourges_parking_88"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.081947,
+        "lon": 2.414948,
+        "name": "Bourges_parking_89",
+        "station_id": "Bourges_parking_89"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.081915,
+        "lon": 2.414896,
+        "name": "Bourges_parking_90",
+        "station_id": "Bourges_parking_90"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.079317,
+        "lon": 2.424256,
+        "name": "Bourges_parking_91",
+        "station_id": "Bourges_parking_91"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.076649,
+        "lon": 2.418754,
+        "name": "Bourges_parking_92",
+        "station_id": "Bourges_parking_92"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.077993,
+        "lon": 2.402187,
+        "name": "Bourges_parking_93",
+        "station_id": "Bourges_parking_93"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.078961,
+        "lon": 2.398515,
+        "name": "Bourges_parking_94",
+        "station_id": "Bourges_parking_94"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.079002,
+        "lon": 2.398641,
+        "name": "Bourges_parking_95",
+        "station_id": "Bourges_parking_95"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0759836,
+        "lon": 2.3961769,
+        "name": "Bourges_parking_96",
+        "station_id": "Bourges_parking_96"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.094914,
+        "lon": 2.39523,
+        "name": "Bourges_parking_97",
+        "station_id": "Bourges_parking_97"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.094857,
+        "lon": 2.395215,
+        "name": "Bourges_parking_98",
+        "station_id": "Bourges_parking_98"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.094924,
+        "lon": 2.395292,
+        "name": "Bourges_parking_99",
+        "station_id": "Bourges_parking_99"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.063701,
+        "lon": 2.397813,
+        "name": "Bourges_parking_100",
+        "station_id": "Bourges_parking_100"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.063648,
+        "lon": 2.397572,
+        "name": "Bourges_parking_101",
+        "station_id": "Bourges_parking_101"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.063722,
+        "lon": 2.39799,
+        "name": "Bourges_parking_102",
+        "station_id": "Bourges_parking_102"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.084292,
+        "lon": 2.395245,
+        "name": "Bourges_parking_103",
+        "station_id": "Bourges_parking_103"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.080786,
+        "lon": 2.398697,
+        "name": "Bourges_parking_104",
+        "station_id": "Bourges_parking_104"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.080786,
+        "lon": 2.398697,
+        "name": "Bourges_parking_105",
+        "station_id": "Bourges_parking_105"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.1003039,
+        "lon": 2.4157695,
+        "name": "Bourges_parking_106",
+        "station_id": "Bourges_parking_106"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.088497,
+        "lon": 2.4002327,
+        "name": "Bourges_parking_107",
+        "station_id": "Bourges_parking_107"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.082678,
+        "lon": 2.384681,
+        "name": "Bourges_parking_108",
+        "station_id": "Bourges_parking_108"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.100304,
+        "lon": 2.41577,
+        "name": "Bourges_parking_109",
+        "station_id": "Bourges_parking_109"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0744829,
+        "lon": 2.4083398,
+        "name": "Bourges_parking_110",
+        "station_id": "Bourges_parking_110"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0740954,
+        "lon": 2.414111,
+        "name": "Bourges_parking_111",
+        "station_id": "Bourges_parking_111"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0782813,
+        "lon": 2.4097697,
+        "name": "Bourges_parking_112",
+        "station_id": "Bourges_parking_112"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0717589,
+        "lon": 2.4117884,
+        "name": "Bourges_parking_114",
+        "station_id": "Bourges_parking_114"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.072588,
+        "lon": 2.411007,
+        "name": "Bourges_parking_115",
+        "station_id": "Bourges_parking_115",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0724282,
+        "lon": 2.4107527,
+        "name": "Bourges_parking_116",
+        "station_id": "Bourges_parking_116"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0733936,
+        "lon": 2.4096369,
+        "name": "Bourges_parking_117",
+        "station_id": "Bourges_parking_117"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.075161,
+        "lon": 2.4047124,
+        "name": "Bourges_parking_118",
+        "station_id": "Bourges_parking_118"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0728904,
+        "lon": 2.3984883,
+        "name": "Bourges_parking_119",
+        "station_id": "Bourges_parking_119"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.075624,
+        "lon": 2.3992783,
+        "name": "Bourges_parking_120",
+        "station_id": "Bourges_parking_120"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0781329,
+        "lon": 2.388017,
+        "name": "Bourges_parking_121",
+        "station_id": "Bourges_parking_121"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.076722,
+        "lon": 2.3863064,
+        "name": "Bourges_parking_122",
+        "station_id": "Bourges_parking_122"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0795266,
+        "lon": 2.384774,
+        "name": "Bourges_parking_123",
+        "station_id": "Bourges_parking_123"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0783153,
+        "lon": 2.4162617,
+        "name": "Bourges_parking_124",
+        "station_id": "Bourges_parking_124"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0794149,
+        "lon": 2.4202595,
+        "name": "Bourges_parking_125",
+        "station_id": "Bourges_parking_125"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0837772,
+        "lon": 2.419129,
+        "name": "Bourges_parking_126",
+        "station_id": "Bourges_parking_126"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.089859,
+        "lon": 2.4216337,
+        "name": "Bourges_parking_127",
+        "station_id": "Bourges_parking_127"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.104906,
+        "lon": 2.4254841,
+        "name": "Bourges_parking_128",
+        "station_id": "Bourges_parking_128"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.102013,
+        "lon": 2.4187215,
+        "name": "Bourges_parking_129",
+        "station_id": "Bourges_parking_129"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.1010965,
+        "lon": 2.4171604,
+        "name": "Bourges_parking_130",
+        "station_id": "Bourges_parking_130"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.1006408,
+        "lon": 2.4165688,
+        "name": "Bourges_parking_131",
+        "station_id": "Bourges_parking_131"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0981786,
+        "lon": 2.411777,
+        "name": "Bourges_parking_132",
+        "station_id": "Bourges_parking_132"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0975199,
+        "lon": 2.4132326,
+        "name": "Bourges_parking_133",
+        "station_id": "Bourges_parking_133"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.1062533,
+        "lon": 2.411308,
+        "name": "Bourges_parking_134",
+        "station_id": "Bourges_parking_134"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.1052228,
+        "lon": 2.4108507,
+        "name": "Bourges_parking_135",
+        "station_id": "Bourges_parking_135"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0983005,
+        "lon": 2.4057721,
+        "name": "Bourges_parking_136",
+        "station_id": "Bourges_parking_136"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0966526,
+        "lon": 2.405021,
+        "name": "Bourges_parking_137",
+        "station_id": "Bourges_parking_137"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.1076943,
+        "lon": 2.419159,
+        "name": "Bourges_parking_138",
+        "station_id": "Bourges_parking_138"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.1002952,
+        "lon": 2.4002458,
+        "name": "Bourges_parking_139",
+        "station_id": "Bourges_parking_139"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.1011415,
+        "lon": 2.4003034,
+        "name": "Bourges_parking_140",
+        "station_id": "Bourges_parking_140"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.063646,
+        "lon": 2.400026,
+        "name": "Bourges_parking_141",
+        "station_id": "Bourges_parking_141"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.066331,
+        "lon": 2.399333,
+        "name": "Bourges_parking_142",
+        "station_id": "Bourges_parking_142"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.067142,
+        "lon": 2.398885,
+        "name": "Bourges_parking_143",
+        "station_id": "Bourges_parking_143"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.070675,
+        "lon": 2.399295,
+        "name": "Bourges_parking_144",
+        "station_id": "Bourges_parking_144"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.071084,
+        "lon": 2.397235,
+        "name": "Bourges_parking_145",
+        "station_id": "Bourges_parking_145"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.073646,
+        "lon": 2.40236,
+        "name": "Bourges_parking_146",
+        "station_id": "Bourges_parking_146"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0744982,
+        "lon": 2.4116027,
+        "name": "Bourges_parking_147",
+        "station_id": "Bourges_parking_147"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.074991,
+        "lon": 2.412051,
+        "name": "Bourges_parking_148",
+        "station_id": "Bourges_parking_148"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0754895,
+        "lon": 2.4112216,
+        "name": "Bourges_parking_149",
+        "station_id": "Bourges_parking_149"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0768512,
+        "lon": 2.4071371,
+        "name": "Bourges_parking_150",
+        "station_id": "Bourges_parking_150"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0758822,
+        "lon": 2.4061082,
+        "name": "Bourges_parking_151",
+        "station_id": "Bourges_parking_151"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.081746,
+        "lon": 2.405596,
+        "name": "Bourges_parking_152",
+        "station_id": "Bourges_parking_152"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.082995,
+        "lon": 2.404033,
+        "name": "Bourges_parking_153",
+        "station_id": "Bourges_parking_153"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.084203,
+        "lon": 2.4026823,
+        "name": "Bourges_parking_154",
+        "station_id": "Bourges_parking_154"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.083877,
+        "lon": 2.405953,
+        "name": "Bourges_parking_155",
+        "station_id": "Bourges_parking_155"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.080925,
+        "lon": 2.423392,
+        "name": "Bourges_parking_156",
+        "station_id": "Bourges_parking_156"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.088186,
+        "lon": 2.401653,
+        "name": "Bourges_parking_157",
+        "station_id": "Bourges_parking_157"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.086894,
+        "lon": 2.3989828,
+        "name": "Bourges_parking_158",
+        "station_id": "Bourges_parking_158"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0713621,
+        "lon": 2.3880867,
+        "name": "Bourges_parking_159",
+        "station_id": "Bourges_parking_159"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0722779,
+        "lon": 2.3871624,
+        "name": "Bourges_parking_160",
+        "station_id": "Bourges_parking_160"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0757481,
+        "lon": 2.3843087,
+        "name": "Bourges_parking_161",
+        "station_id": "Bourges_parking_161"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.080912,
+        "lon": 2.383254,
+        "name": "Bourges_parking_162",
+        "station_id": "Bourges_parking_162"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0949948,
+        "lon": 2.4243721,
+        "name": "Bourges_parking_163",
+        "station_id": "Bourges_parking_163"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0944272,
+        "lon": 2.4122359,
+        "name": "Bourges_parking_165",
+        "station_id": "Bourges_parking_165"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0938676,
+        "lon": 2.4033774,
+        "name": "Bourges_parking_166",
+        "station_id": "Bourges_parking_166"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0853046,
+        "lon": 2.3949102,
+        "name": "Bourges_parking_167",
+        "station_id": "Bourges_parking_167"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0937663,
+        "lon": 2.3945495,
+        "name": "Bourges_parking_168",
+        "station_id": "Bourges_parking_168"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0635114,
+        "lon": 2.3983051,
+        "name": "Bourges_parking_169",
+        "station_id": "Bourges_parking_169"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0793536,
+        "lon": 2.3985474,
+        "name": "Bourges_parking_170",
+        "station_id": "Bourges_parking_170"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0846745,
+        "lon": 2.3913758,
+        "name": "Bourges_parking_171",
+        "station_id": "Bourges_parking_171"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0869643,
+        "lon": 2.3962117,
+        "name": "Bourges_parking_172",
+        "station_id": "Bourges_parking_172"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0995416,
+        "lon": 2.4188089,
+        "name": "Bourges_parking_173",
+        "station_id": "Bourges_parking_173"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.08149,
+        "lon": 2.39284,
+        "name": "Bourges_parking_174",
+        "station_id": "Bourges_parking_174"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.08166,
+        "lon": 2.39302,
+        "name": "Bourges_parking_175",
+        "station_id": "Bourges_parking_175"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.08211,
+        "lon": 2.39284,
+        "name": "Bourges_parking_176",
+        "station_id": "Bourges_parking_176"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.08363,
+        "lon": 2.3907,
+        "name": "Bourges_parking_177",
+        "station_id": "Bourges_parking_177"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.08848,
+        "lon": 2.39301,
+        "name": "AV_Jean_Jaures",
+        "station_id": "AV_Jean_Jaures"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.085649,
+        "lon": 2.398446,
+        "name": "Pl_Gordaine",
+        "station_id": "Pl_Gordaine"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.064642,
+        "lon": 2.398029,
+        "name": "Rue_Raymond_Boisde",
+        "station_id": "Rue_Raymond_Boisde"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.10489,
+        "lon": 2.405599,
+        "name": "Poste_Chancellerie",
+        "station_id": "Poste_Chancellerie"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.09322,
+        "lon": 2.42232,
+        "name": "Bourges_parking_6",
+        "station_id": "Bourges_parking_6"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0723445,
+        "lon": 2.3947962,
+        "name": "Bourges_camping",
+        "station_id": "Bourges_camping"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0778656,
+        "lon": 2.3925767,
+        "name": "Bourges_blv_Lamarck",
+        "station_id": "Bourges_blv_Lamarck"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0772674,
+        "lon": 2.3901295,
+        "name": "Bourges_Edmond_Jongleux",
+        "station_id": "Bourges_Edmond_Jongleux"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.081,
+        "lon": 2.41486,
+        "name": "Bourges_parking_85",
+        "station_id": "Bourges_parking_85"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.081204,
+        "lon": 2.414674,
+        "name": "Bourges_parking_84",
+        "station_id": "Bourges_parking_84"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.07011,
+        "lon": 2.37644,
+        "name": "Point_119",
+        "station_id": "Point_119"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.07264,
+        "lon": 2.37999,
+        "name": "Point_120",
+        "station_id": "Point_120"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.07222,
+        "lon": 2.38334,
+        "name": "16_Rue_Buffon",
+        "station_id": "16_Rue_Buffon"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.070420168205345,
+        "lon": 2.3818286769862014,
+        "name": "82_Rue_Diderot",
+        "station_id": "82_Rue_Diderot"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.098543,
+        "lon": 2.416904,
+        "name": "63_av_de_Lattre_de_Tassigny",
+        "station_id": "63_av_de_Lattre_de_Tassigny"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.080295,
+        "lon": 2.379023,
+        "name": "All_beauregard",
+        "station_id": "All_beauregard"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.058136,
+        "lon": 2.403301,
+        "name": "rue_lazenay",
+        "station_id": "rue_lazenay"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.098844,
+        "lon": 2.406482,
+        "name": "Pharmacie_de_Paris",
+        "station_id": "Pharmacie_de_Paris"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.100159,
+        "lon": 2.40716,
+        "name": "Bourges_parking_178",
+        "station_id": "Bourges_parking_178"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.10195,
+        "lon": 2.40837,
+        "name": "Bourges_parking_179",
+        "station_id": "Bourges_parking_179"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.10361,
+        "lon": 2.40514,
+        "name": "Bourges_parking_180",
+        "station_id": "Bourges_parking_180"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.10161,
+        "lon": 2.40502,
+        "name": "Bourges_parking_181",
+        "station_id": "Bourges_parking_181"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.100989,
+        "lon": 2.404731,
+        "name": "Bourges_parking_182",
+        "station_id": "Bourges_parking_182"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.098621,
+        "lon": 2.404798,
+        "name": "Bourges_parking_183",
+        "station_id": "Bourges_parking_183"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.09938649953558,
+        "lon": 2.4024889715692868,
+        "name": "Poincarré",
+        "station_id": "Poincarré"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.102183,
+        "lon": 2.401148,
+        "name": "Bourges_parking_184",
+        "station_id": "Bourges_parking_184"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.101705,
+        "lon": 2.400176,
+        "name": "Bourges_parking_185",
+        "station_id": "Bourges_parking_185"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.1041,
+        "lon": 2.39867,
+        "name": "Bourges_parking_186",
+        "station_id": "Bourges_parking_186"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.103416,
+        "lon": 2.396757,
+        "name": "Bourges_parking_187",
+        "station_id": "Bourges_parking_187"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.097831,
+        "lon": 2.394966,
+        "name": "Bourges_parking_188",
+        "station_id": "Bourges_parking_188"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.096679,
+        "lon": 2.394794,
+        "name": "Bourges_parking_189",
+        "station_id": "Bourges_parking_189"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0963,
+        "lon": 2.39283,
+        "name": "Bourges_parking_190",
+        "station_id": "Bourges_parking_190"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.09897,
+        "lon": 2.39613,
+        "name": "Bourges_parking_191",
+        "station_id": "Bourges_parking_191"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.098738,
+        "lon": 2.4007,
+        "name": "Bourges_parking_192",
+        "station_id": "Bourges_parking_192"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.096486,
+        "lon": 2.410913,
+        "name": "Bourges_parking_193",
+        "station_id": "Bourges_parking_193"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.097503,
+        "lon": 2.410045,
+        "name": "Bourges_parking_194",
+        "station_id": "Bourges_parking_194"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.098768,
+        "lon": 2.409084,
+        "name": "Bourges_parking_195",
+        "station_id": "Bourges_parking_195"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.095075,
+        "lon": 2.405485,
+        "name": "Bourges_parking_196",
+        "station_id": "Bourges_parking_196"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.098194,
+        "lon": 2.408384,
+        "name": "Mallarmé",
+        "station_id": "Mallarmé"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.10174,
+        "lon": 2.41527,
+        "name": "Bourges_parking_197",
+        "station_id": "Bourges_parking_197"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.1024,
+        "lon": 2.41575,
+        "name": "Bourges_parking_198",
+        "station_id": "Bourges_parking_198"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.101279,
+        "lon": 2.412181,
+        "name": "Bourges_parking_199",
+        "station_id": "Bourges_parking_199"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.100771,
+        "lon": 2.40969,
+        "name": "Bourges_parking_200",
+        "station_id": "Bourges_parking_200"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.100077,
+        "lon": 2.41063,
+        "name": "Bourges_parking_201",
+        "station_id": "Bourges_parking_201"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.103974,
+        "lon": 2.414976,
+        "name": "Bourges_parking_202",
+        "station_id": "Bourges_parking_202"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.10482,
+        "lon": 2.41162,
+        "name": "Houdin",
+        "station_id": "Houdin"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.10459,
+        "lon": 2.412649,
+        "name": "Houdin_2",
+        "station_id": "Houdin_2"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.10507,
+        "lon": 2.41162,
+        "name": "Houdin_3",
+        "station_id": "Houdin_3"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.10440508715772,
+        "lon": 2.4130825902868263,
+        "name": "Stendhal",
+        "station_id": "Stendhal"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.10903,
+        "lon": 2.414392,
+        "name": "Bourges_parking_203",
+        "station_id": "Bourges_parking_203"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.100837,
+        "lon": 2.422343,
+        "name": "Bourges_parking_204",
+        "station_id": "Bourges_parking_204"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.1016,
+        "lon": 2.424422,
+        "name": "Bourges_parking_205",
+        "station_id": "Bourges_parking_205"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.1016,
+        "lon": 2.424422,
+        "name": "Bourges_parking_206",
+        "station_id": "Bourges_parking_206"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.102427,
+        "lon": 2.426867,
+        "name": "Bourges_parking_207",
+        "station_id": "Bourges_parking_207"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.103749,
+        "lon": 2.423384,
+        "name": "Bourges_parking_208",
+        "station_id": "Bourges_parking_208"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.10682,
+        "lon": 2.3998,
+        "name": "Bourges_parking_209",
+        "station_id": "Bourges_parking_209"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.10734,
+        "lon": 2.39998,
+        "name": "Bourges_parking_210",
+        "station_id": "Bourges_parking_210"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.10843,
+        "lon": 2.40005,
+        "name": "Bourges_parking_211",
+        "station_id": "Bourges_parking_211"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.11332,
+        "lon": 2.40616,
+        "name": "Bourges_parking_212",
+        "station_id": "Bourges_parking_212"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.11577,
+        "lon": 2.41136,
+        "name": "Bourges_parking_213",
+        "station_id": "Bourges_parking_213"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.11633,
+        "lon": 2.4124,
+        "name": "Bourges_parking_214",
+        "station_id": "Bourges_parking_214"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.11781,
+        "lon": 2.41407,
+        "name": "Bourges_parking_215",
+        "station_id": "Bourges_parking_215"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.11813,
+        "lon": 2.41446,
+        "name": "Bourges_parking_216",
+        "station_id": "Bourges_parking_216"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.11837,
+        "lon": 2.41497,
+        "name": "Bourges_parking_217",
+        "station_id": "Bourges_parking_217"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.11083,
+        "lon": 2.41268,
+        "name": "Bourges_parking_218",
+        "station_id": "Bourges_parking_218"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.11059,
+        "lon": 2.41201,
+        "name": "Bourges_parking_219",
+        "station_id": "Bourges_parking_219"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.10978,
+        "lon": 2.41034,
+        "name": "Bourges_parking_220",
+        "station_id": "Bourges_parking_220"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.10911,
+        "lon": 2.40983,
+        "name": "Bourges_parking_221",
+        "station_id": "Bourges_parking_221"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.10868,
+        "lon": 2.4077,
+        "name": "Bourges_parking_222",
+        "station_id": "Bourges_parking_222"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.12176,
+        "lon": 2.40886,
+        "name": "Bourges_parking_223",
+        "station_id": "Bourges_parking_223"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.12198,
+        "lon": 2.40823,
+        "name": "Bourges_parking_224",
+        "station_id": "Bourges_parking_224"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.12331,
+        "lon": 2.40754,
+        "name": "Bourges_parking_225",
+        "station_id": "Bourges_parking_225"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.1245,
+        "lon": 2.40391,
+        "name": "Bourges_parking_226",
+        "station_id": "Bourges_parking_226"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.12411,
+        "lon": 2.40296,
+        "name": "Bourges_parking_227",
+        "station_id": "Bourges_parking_227"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.11802,
+        "lon": 2.40418,
+        "name": "Bourges_parking_228",
+        "station_id": "Bourges_parking_228"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.11844,
+        "lon": 2.40384,
+        "name": "Bourges_parking_229",
+        "station_id": "Bourges_parking_229"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.11716,
+        "lon": 2.40195,
+        "name": "Bourges_parking_230",
+        "station_id": "Bourges_parking_230"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.11313,
+        "lon": 2.40161,
+        "name": "Bourges_parking_231",
+        "station_id": "Bourges_parking_231"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.07432,
+        "lon": 2.41941,
+        "name": "Bourges_parking_232",
+        "station_id": "Bourges_parking_232"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0728,
+        "lon": 2.42116,
+        "name": "Bourges_parking_233",
+        "station_id": "Bourges_parking_233"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.06886,
+        "lon": 2.37447,
+        "name": "Bourges_parking_234",
+        "station_id": "Bourges_parking_234"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.06843,
+        "lon": 2.37398,
+        "name": "Bourges_parking_235",
+        "station_id": "Bourges_parking_235"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.06832,
+        "lon": 2.37416,
+        "name": "Bourges_parking_236",
+        "station_id": "Bourges_parking_236"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.06483,
+        "lon": 2.36942,
+        "name": "Bourges_parking_237",
+        "station_id": "Bourges_parking_237"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.06418,
+        "lon": 2.36859,
+        "name": "Bourges_parking_238",
+        "station_id": "Bourges_parking_238"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.06418,
+        "lon": 2.36859,
+        "name": "Bourges_parking_239",
+        "station_id": "Bourges_parking_239"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.06235,
+        "lon": 2.36596,
+        "name": "Bourges_parking_240",
+        "station_id": "Bourges_parking_240"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.06241,
+        "lon": 2.36829,
+        "name": "Bourges_parking_242",
+        "station_id": "Bourges_parking_242"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.07004,
+        "lon": 2.39033,
+        "name": "Bourges_parking_243",
+        "station_id": "Bourges_parking_243"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.06551,
+        "lon": 2.39053,
+        "name": "Bourges_parking_244",
+        "station_id": "Bourges_parking_244"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0628,
+        "lon": 2.39068,
+        "name": "Bourges_parking_245",
+        "station_id": "Bourges_parking_245"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.06044,
+        "lon": 2.39043,
+        "name": "Bourges_parking_246",
+        "station_id": "Bourges_parking_246"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0576,
+        "lon": 2.39117,
+        "name": "Bourges_parking_247",
+        "station_id": "Bourges_parking_247"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.05887,
+        "lon": 2.39081,
+        "name": "Bourges_parking_248",
+        "station_id": "Bourges_parking_248"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.05486,
+        "lon": 2.39191,
+        "name": "Bourges_parking_249",
+        "station_id": "Bourges_parking_249"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0532,
+        "lon": 2.39249,
+        "name": "Bourges_parking_250",
+        "station_id": "Bourges_parking_250"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.05223,
+        "lon": 2.39294,
+        "name": "Bourges_parking_251",
+        "station_id": "Bourges_parking_251"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.05398,
+        "lon": 2.39474,
+        "name": "Bourges_parking_252",
+        "station_id": "Bourges_parking_252"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.05509,
+        "lon": 2.39458,
+        "name": "Bourges_parking_253",
+        "station_id": "Bourges_parking_253"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.05626,
+        "lon": 2.3938,
+        "name": "Bourges_parking_254",
+        "station_id": "Bourges_parking_254"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.05879,
+        "lon": 2.3947,
+        "name": "Bourges_parking_255",
+        "station_id": "Bourges_parking_255"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.05967,
+        "lon": 2.39383,
+        "name": "Bourges_parking_256",
+        "station_id": "Bourges_parking_256"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.06091,
+        "lon": 2.392,
+        "name": "Bourges_parking_257",
+        "station_id": "Bourges_parking_257"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.06014,
+        "lon": 2.40172,
+        "name": "Bourges_parking_258",
+        "station_id": "Bourges_parking_258"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.05803,
+        "lon": 2.40326,
+        "name": "Bourges_parking_259",
+        "station_id": "Bourges_parking_259"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.05571,
+        "lon": 2.40484,
+        "name": "Bourges_parking_260",
+        "station_id": "Bourges_parking_260"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.05361,
+        "lon": 2.40559,
+        "name": "Bourges_parking_261",
+        "station_id": "Bourges_parking_261"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.05165,
+        "lon": 2.40677,
+        "name": "Bourges_parking_262",
+        "station_id": "Bourges_parking_262"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.05062,
+        "lon": 2.40694,
+        "name": "Bourges_parking_263",
+        "station_id": "Bourges_parking_263"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.08027,
+        "lon": 2.37913,
+        "name": "Bourges_parking_264",
+        "station_id": "Bourges_parking_264"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.07631,
+        "lon": 2.37871,
+        "name": "Bourges_parking_265",
+        "station_id": "Bourges_parking_265"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.07628,
+        "lon": 2.37726,
+        "name": "Bourges_parking_266",
+        "station_id": "Bourges_parking_266"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.07626,
+        "lon": 2.37686,
+        "name": "Bourges_parking_267",
+        "station_id": "Bourges_parking_267"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.07674,
+        "lon": 2.37735,
+        "name": "Bourges_parking_268",
+        "station_id": "Bourges_parking_268"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.07744,
+        "lon": 2.37819,
+        "name": "Bourges_parking_269",
+        "station_id": "Bourges_parking_269"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0781,
+        "lon": 2.37946,
+        "name": "Bourges_parking_270",
+        "station_id": "Bourges_parking_270"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0789,
+        "lon": 2.38148,
+        "name": "Bourges_parking_271",
+        "station_id": "Bourges_parking_271"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.07491,
+        "lon": 2.37892,
+        "name": "Bourges_parking_272",
+        "station_id": "Bourges_parking_272"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.06871,
+        "lon": 2.37996,
+        "name": "Bourges_parking_273",
+        "station_id": "Bourges_parking_273"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.06702,
+        "lon": 2.37975,
+        "name": "Bourges_parking_274",
+        "station_id": "Bourges_parking_274"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.06624,
+        "lon": 2.37942,
+        "name": "Bourges_parking_275",
+        "station_id": "Bourges_parking_275"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.06581,
+        "lon": 2.37898,
+        "name": "Bourges_parking_276",
+        "station_id": "Bourges_parking_276"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.06396,
+        "lon": 2.38336,
+        "name": "Bourges_parking_277",
+        "station_id": "Bourges_parking_277"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.06491,
+        "lon": 2.38335,
+        "name": "Bourges_parking_278",
+        "station_id": "Bourges_parking_278"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.06267,
+        "lon": 2.38597,
+        "name": "Bourges_parking_279",
+        "station_id": "Bourges_parking_279"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.06683,
+        "lon": 2.3811,
+        "name": "Bourges_parking_280",
+        "station_id": "Bourges_parking_280"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.083034,
+        "lon": 2.394847,
+        "name": "Bourges_parking_24",
+        "station_id": "Bourges_parking_24"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.084743,
+        "lon": 2.396515,
+        "name": "Bourges_parking_ijuguyjf",
+        "station_id": "Bourges_parking_ijuguyjf"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0970115,
+        "lon": 2.3887196,
+        "name": "bourges_parking_Parking_Principal_zidKLHLPFIW",
+        "station_id": "bourges_parking_Parking_Principal_zidKLHLPFIW"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0978676,
+        "lon": 2.383702,
+        "name": "bourges_parking_Point_5_zidOUS41CU8",
+        "station_id": "bourges_parking_Point_5_zidOUS41CU8"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0983038,
+        "lon": 2.3826453,
+        "name": "bourges_parking_Point_6_zidFW0XZ21X",
+        "station_id": "bourges_parking_Point_6_zidFW0XZ21X"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.1025496,
+        "lon": 2.3810305,
+        "name": "bourges_parking_Point_7_zid2YJ6LA2U",
+        "station_id": "bourges_parking_Point_7_zid2YJ6LA2U"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.1048438,
+        "lon": 2.3900016,
+        "name": "bourges_parking_Point_8_zidEE2FRU9F",
+        "station_id": "bourges_parking_Point_8_zidEE2FRU9F"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0996792,
+        "lon": 2.3836367,
+        "name": "bourges_parking_Point_9_zidSSXDY5OE",
+        "station_id": "bourges_parking_Point_9_zidSSXDY5OE"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.1004697,
+        "lon": 2.3832169,
+        "name": "bourges_parking_Point_10_zidKNQJFJ1E",
+        "station_id": "bourges_parking_Point_10_zidKNQJFJ1E"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.093263,
+        "lon": 2.385684,
+        "name": "44 Prés le roi",
+        "station_id": "44 Prés le roi"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0804917,
+        "lon": 2.4149259,
+        "name": "bourges_parking_470804917_24149259_zidZBAP1RIC",
+        "station_id": "bourges_parking_470804917_24149259_zidZBAP1RIC"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0806029,
+        "lon": 2.4146805,
+        "name": "bourges_parking_470806029_24146805_zidJ9TLOD8L",
+        "station_id": "bourges_parking_470806029_24146805_zidJ9TLOD8L"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0806677,
+        "lon": 2.4159599,
+        "name": "bourges_parking_470806677_24159599_zidY0PGYMB6",
+        "station_id": "bourges_parking_470806677_24159599_zidY0PGYMB6"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0914471,
+        "lon": 2.4193287,
+        "name": "bourges_parking_470914471_24193287_zidDFY2AQ96",
+        "station_id": "bourges_parking_470914471_24193287_zidDFY2AQ96"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0925788,
+        "lon": 2.4209716,
+        "name": "bourges_parking_470925788_24209716_zid4YLB254T",
+        "station_id": "bourges_parking_470925788_24209716_zid4YLB254T"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0933859,
+        "lon": 2.4211939,
+        "name": "bourges_parking_470933859_24211939_zidQP4OPLTZ",
+        "station_id": "bourges_parking_470933859_24211939_zidQP4OPLTZ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0933247,
+        "lon": 2.4203071,
+        "name": "bourges_parking_470933247_24203071_zidUTO7OF72",
+        "station_id": "bourges_parking_470933247_24203071_zidUTO7OF72"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0944119,
+        "lon": 2.4226211,
+        "name": "bourges_parking_470944119_24226211_zidJQ3THPLF",
+        "station_id": "bourges_parking_470944119_24226211_zidJQ3THPLF"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.09168340310336,
+        "lon": 2.399835006225164,
+        "name": "BikeRack Coubertin",
+        "station_id": "BikeRack Coubertin"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.08195,
+        "lon": 2.39534,
+        "name": "bourges_parking_BikeRack_Marcel_Plaisant_zidEMJLLR3I",
+        "station_id": "bourges_parking_BikeRack_Marcel_Plaisant_zidEMJLLR3I"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.07173,
+        "lon": 2.37873,
+        "name": "Av__Marcel_Haegelen",
+        "station_id": "Av__Marcel_Haegelen"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.06958,
+        "lon": 2.37602,
+        "name": "141_Av__Marcel_Haegelen",
+        "station_id": "141_Av__Marcel_Haegelen"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.07017,
+        "lon": 2.38164,
+        "name": "3_Av__des_Frères_Voisin",
+        "station_id": "3_Av__des_Frères_Voisin"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.06978,
+        "lon": 2.37794,
+        "name": "30_Av__des_Frères_Voisin",
+        "station_id": "30_Av__des_Frères_Voisin"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0745,
+        "lon": 2.38292,
+        "name": "31_Av__Marcel_Haegelen",
+        "station_id": "31_Av__Marcel_Haegelen"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.07129,
+        "lon": 2.37725,
+        "name": "bourges_parking_BikeRack_Carrefour_market_zidHXKMT4EV",
+        "station_id": "bourges_parking_BikeRack_Carrefour_market_zidHXKMT4EV",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.06967,
+        "lon": 2.41425,
+        "name": "bourges_parking_Virtual_Musee_ecole_militaire_zid2Q1QYA6D",
+        "station_id": "bourges_parking_Virtual_Musee_ecole_militaire_zid2Q1QYA6D",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.06941,
+        "lon": 2.41455,
+        "name": "bourges_parking_Virtual_Musee_Ecole_militaire_2_zid13OTCYXN",
+        "station_id": "bourges_parking_Virtual_Musee_Ecole_militaire_2_zid13OTCYXN",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.06901,
+        "lon": 2.41502,
+        "name": "bourges_parking_9_Dun_sur_Auron_zidCY58O24E",
+        "station_id": "bourges_parking_9_Dun_sur_Auron_zidCY58O24E",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.06845,
+        "lon": 2.41534,
+        "name": "bourges_parking_92_Val_D_auron_zidXAL7PGJV",
+        "station_id": "bourges_parking_92_Val_D_auron_zidXAL7PGJV",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.06763,
+        "lon": 2.41635,
+        "name": "bourges_parking_112_dun_bis_zid0H3C27E2",
+        "station_id": "bourges_parking_112_dun_bis_zid0H3C27E2",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.07229,
+        "lon": 2.4109,
+        "name": "bourges_parking_Virtual_4_dun_sur_Auron_zid6PYG8YW7",
+        "station_id": "bourges_parking_Virtual_4_dun_sur_Auron_zid6PYG8YW7",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.09212,
+        "lon": 2.39361,
+        "name": "bourges_parking_BikeRack_Tribunal_zidB70R84LD",
+        "station_id": "bourges_parking_BikeRack_Tribunal_zidB70R84LD",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.08622,
+        "lon": 2.39937,
+        "name": "bourges_parking_BikeRack_1_Saint_bonnet_zid0OSL2SS0",
+        "station_id": "bourges_parking_BikeRack_1_Saint_bonnet_zid0OSL2SS0",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.08628,
+        "lon": 2.39939,
+        "name": "bourges_parking_BikeRack_2_Saint_Bonnet_zid780S1G3Q",
+        "station_id": "bourges_parking_BikeRack_2_Saint_Bonnet_zid780S1G3Q",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0761,
+        "lon": 2.40531,
+        "name": "bourges_parking_BikeRack_47_Baffier_zidOW7JU9VG",
+        "station_id": "bourges_parking_BikeRack_47_Baffier_zidOW7JU9VG",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.08206,
+        "lon": 2.39387,
+        "name": "bourges_parking_BikeRack_Arene_zidAG73VW9G",
+        "station_id": "bourges_parking_BikeRack_Arene_zidAG73VW9G",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.07986,
+        "lon": 2.40326,
+        "name": "bourges_parking_BikeRack_Rollinat_zidUFZY7ZTB",
+        "station_id": "bourges_parking_BikeRack_Rollinat_zidUFZY7ZTB",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.07782,
+        "lon": 2.39783,
+        "name": "bourges_parking_BikeRack_Castel__zidI2YVWGFC",
+        "station_id": "bourges_parking_BikeRack_Castel__zidI2YVWGFC",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0884,
+        "lon": 2.39829,
+        "name": "bourges_parking_BikeRack_7___11_Novembre__zidJKLIR5JN",
+        "station_id": "bourges_parking_BikeRack_7___11_Novembre__zidJKLIR5JN",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.08232,
+        "lon": 2.38569,
+        "name": "bourges_parking_BikeRack_Palais_des_sports_zidNUN4S4DL",
+        "station_id": "bourges_parking_BikeRack_Palais_des_sports_zidNUN4S4DL",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.08376,
+        "lon": 2.42715,
+        "name": "bourges_parking_Virtual_LEP_zid7K3JM1WL",
+        "station_id": "bourges_parking_Virtual_LEP_zid7K3JM1WL"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.08378,
+        "lon": 2.43266,
+        "name": "bourges_parking_Virtual_Gadeau_zidSLRJ8CRD",
+        "station_id": "bourges_parking_Virtual_Gadeau_zidSLRJ8CRD"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.08389,
+        "lon": 2.43523,
+        "name": "bourges_parking_Virtual_Plan_et_coo_zidW5G934H3",
+        "station_id": "bourges_parking_Virtual_Plan_et_coo_zidW5G934H3"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.08382,
+        "lon": 2.44002,
+        "name": "bourges_parking_Virtual_Miterrand_zidYJ9REITY",
+        "station_id": "bourges_parking_Virtual_Miterrand_zidYJ9REITY"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.08004,
+        "lon": 2.43383,
+        "name": "bourges_parking_Virtual_Cartier_zid38ST05K8",
+        "station_id": "bourges_parking_Virtual_Cartier_zid38ST05K8"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.08071,
+        "lon": 2.43624,
+        "name": "bourges_parking_Virtual_Pignoux_zidQU60MV2G",
+        "station_id": "bourges_parking_Virtual_Pignoux_zidQU60MV2G"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.07921,
+        "lon": 2.43302,
+        "name": "bourges_parking_Virtual_Tabarly_zidE89RO3XI",
+        "station_id": "bourges_parking_Virtual_Tabarly_zidE89RO3XI"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.07891,
+        "lon": 2.42591,
+        "name": "bourges_parking_Virtual_Bigarelles_zid0OIS7LZZ",
+        "station_id": "bourges_parking_Virtual_Bigarelles_zid0OIS7LZZ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.07693,
+        "lon": 2.42882,
+        "name": "bourges_parking_Virtual_Sorel_zidH6WDCP78",
+        "station_id": "bourges_parking_Virtual_Sorel_zidH6WDCP78"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.06374,
+        "lon": 2.42093,
+        "name": "bourges_parking_Virtual_Pijolin_zid4KDHOXPS",
+        "station_id": "bourges_parking_Virtual_Pijolin_zid4KDHOXPS"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.06185,
+        "lon": 2.42284,
+        "name": "bourges_parking_Virtual_Justices_zidK6Q3FE51",
+        "station_id": "bourges_parking_Virtual_Justices_zidK6Q3FE51"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.05953,
+        "lon": 2.42129,
+        "name": "bourges_parking_Virtual_Sport_des_justices_zidHID3IVGD",
+        "station_id": "bourges_parking_Virtual_Sport_des_justices_zidHID3IVGD"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.05937,
+        "lon": 2.42063,
+        "name": "bourges_parking_Virtual_Rotee_zidD65ZNG35",
+        "station_id": "bourges_parking_Virtual_Rotee_zidD65ZNG35"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.05893,
+        "lon": 2.41617,
+        "name": "bourges_parking_Virtual_Gionne_zidRPQLEAVZ",
+        "station_id": "bourges_parking_Virtual_Gionne_zidRPQLEAVZ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.06237,
+        "lon": 2.42024,
+        "name": "bourges_parking_Virtual_Braque_zidKHMGU0Z1",
+        "station_id": "bourges_parking_Virtual_Braque_zidKHMGU0Z1"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.06381,
+        "lon": 2.41564,
+        "name": "bourges_parking_Virtual_Touraine_zidQ4GFQVH7",
+        "station_id": "bourges_parking_Virtual_Touraine_zidQ4GFQVH7"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.06291,
+        "lon": 2.41374,
+        "name": "bourges_parking_Virtual_Nivernais_zid5E23NFNM",
+        "station_id": "bourges_parking_Virtual_Nivernais_zid5E23NFNM"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.06468,
+        "lon": 2.41393,
+        "name": "bourges_parking_Virtual_Fileuses_zid5UC991KP",
+        "station_id": "bourges_parking_Virtual_Fileuses_zid5UC991KP"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.06645,
+        "lon": 2.41409,
+        "name": "bourges_parking_Virtual_Artillerie_zidOJS7EXD6",
+        "station_id": "bourges_parking_Virtual_Artillerie_zidOJS7EXD6"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.06896,
+        "lon": 2.41174,
+        "name": "bourges_parking_BikeRack_Parc_zidUODG0HYD",
+        "station_id": "bourges_parking_BikeRack_Parc_zidUODG0HYD"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.06799,
+        "lon": 2.40703,
+        "name": "bourges_parking_Virtual_Proudhon_zidCJBND5T9",
+        "station_id": "bourges_parking_Virtual_Proudhon_zidCJBND5T9"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.06675,
+        "lon": 2.40741,
+        "name": "bourges_parking_Virtual_Provence_zid2NNICBR2",
+        "station_id": "bourges_parking_Virtual_Provence_zid2NNICBR2"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.06864,
+        "lon": 2.40523,
+        "name": "bourges_parking_Virtual_Garcin_zidROOYLYB2",
+        "station_id": "bourges_parking_Virtual_Garcin_zidROOYLYB2"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.06252,
+        "lon": 2.4062,
+        "name": "bourges_parking_Virtual_Labonne_zidY1QA641X",
+        "station_id": "bourges_parking_Virtual_Labonne_zidY1QA641X"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.06156,
+        "lon": 2.40802,
+        "name": "bourges_parking_Virtual_Bourdelle_zidSSKOTQ7K",
+        "station_id": "bourges_parking_Virtual_Bourdelle_zidSSKOTQ7K"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.05688,
+        "lon": 2.40724,
+        "name": "bourges_parking_Virtual_Boyer_zid76JPXYM6",
+        "station_id": "bourges_parking_Virtual_Boyer_zid76JPXYM6"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.05857,
+        "lon": 2.40627,
+        "name": "bourges_parking_Virtual_Gillet_zidQDCQPTHH",
+        "station_id": "bourges_parking_Virtual_Gillet_zidQDCQPTHH"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.05615,
+        "lon": 2.41014,
+        "name": "bourges_parking_Virtual_Fresnay_zidWNCZ741J",
+        "station_id": "bourges_parking_Virtual_Fresnay_zidWNCZ741J"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.05385,
+        "lon": 2.41875,
+        "name": "bourges_parking_Virtual_Schneider_zidEEWQ6WQ9",
+        "station_id": "bourges_parking_Virtual_Schneider_zidEEWQ6WQ9"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.06156,
+        "lon": 2.40941,
+        "name": "bourges_parking_Virtual_Picasso_zidJN75JIHD",
+        "station_id": "bourges_parking_Virtual_Picasso_zidJN75JIHD"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.05993,
+        "lon": 2.40397,
+        "name": "bourges_parking_Virtual_Francois_rude_zid6O0EWWJP",
+        "station_id": "bourges_parking_Virtual_Francois_rude_zid6O0EWWJP"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.08208,
+        "lon": 2.36396,
+        "name": "bourges_parking_Virtual_Berlioz_zidGSRWWT4Q",
+        "station_id": "bourges_parking_Virtual_Berlioz_zidGSRWWT4Q"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.07607,
+        "lon": 2.36739,
+        "name": "bourges_parking_Virtual_La_chapelle_zid2KACRTRI",
+        "station_id": "bourges_parking_Virtual_La_chapelle_zid2KACRTRI"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.07624,
+        "lon": 2.36151,
+        "name": "bourges_parking_BikeRack_Aldi_Nord_Ouest_zidRRL9MSV6",
+        "station_id": "bourges_parking_BikeRack_Aldi_Nord_Ouest_zidRRL9MSV6"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0757,
+        "lon": 2.36198,
+        "name": "bourges_parking_Virtual_Polo_zidJUKTHW9F",
+        "station_id": "bourges_parking_Virtual_Polo_zidJUKTHW9F"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.07605,
+        "lon": 2.37255,
+        "name": "bourges_parking_Virtual_Beauregard_zidYQ1Q1NDV",
+        "station_id": "bourges_parking_Virtual_Beauregard_zidYQ1Q1NDV"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0844,
+        "lon": 2.3817,
+        "name": "bourges_parking_BikeRack_Depond_zidRDYRMXZV",
+        "station_id": "bourges_parking_BikeRack_Depond_zidRDYRMXZV",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.09545,
+        "lon": 2.42725,
+        "name": "bourges_parking_Virtal_faraday_zidAFJQ7RGT",
+        "station_id": "bourges_parking_Virtal_faraday_zidAFJQ7RGT"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.09535,
+        "lon": 2.43065,
+        "name": "bourges_parking_Virtual_Feu_Vert_zidI4AUVRDZ",
+        "station_id": "bourges_parking_Virtual_Feu_Vert_zidI4AUVRDZ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.09489,
+        "lon": 2.43806,
+        "name": "bourges_parking_BikeRack_Orchestra_zid4R6WJZUB",
+        "station_id": "bourges_parking_BikeRack_Orchestra_zid4R6WJZUB"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.09487,
+        "lon": 2.43692,
+        "name": "bourges_parking_BikeRack_Optic_2000_zidJ1RJ16LP",
+        "station_id": "bourges_parking_BikeRack_Optic_2000_zidJ1RJ16LP"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.09633,
+        "lon": 2.44016,
+        "name": "bourges_parking_BikeRack_Burger_King_zidH0H0482T",
+        "station_id": "bourges_parking_BikeRack_Burger_King_zidH0H0482T"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.09648,
+        "lon": 2.43712,
+        "name": "bourges_parking_BikeRack_Basic_Fit_zidGEWEAYEZ",
+        "station_id": "bourges_parking_BikeRack_Basic_Fit_zidGEWEAYEZ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.09771,
+        "lon": 2.42749,
+        "name": "bourges_parking_Virtual_Planton_zidPHSV5IX1",
+        "station_id": "bourges_parking_Virtual_Planton_zidPHSV5IX1"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.09699,
+        "lon": 2.42846,
+        "name": "bourges_parking_Virtual_Archimede_zidD73IXYL6",
+        "station_id": "bourges_parking_Virtual_Archimede_zidD73IXYL6"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.0961,
+        "lon": 2.43135,
+        "name": "bourges_parking_BikeRack_Faradey_zidTA4A7RC3",
+        "station_id": "bourges_parking_BikeRack_Faradey_zidTA4A7RC3"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.09593,
+        "lon": 2.43272,
+        "name": "bourges_parking_Virtual_Rent_A_Car_zidNFE4FNQA",
+        "station_id": "bourges_parking_Virtual_Rent_A_Car_zidNFE4FNQA"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.09756,
+        "lon": 2.4319,
+        "name": "bourges_parking_Virtual_Einstein_zidYXL6C2PB",
+        "station_id": "bourges_parking_Virtual_Einstein_zidYXL6C2PB",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.08073,
+        "lon": 2.36433,
+        "name": "bourges_parking_BikeRack_Intermarche_Ouest_zidSOBUN3CV",
+        "station_id": "bourges_parking_BikeRack_Intermarche_Ouest_zidSOBUN3CV",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.10299,
+        "lon": 2.41453,
+        "name": "bourges_parking_BikeRack_Gobjoncs_zidJ1BNLH1B",
+        "station_id": "bourges_parking_BikeRack_Gobjoncs_zidJ1BNLH1B",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 47.08332,
+        "lon": 2.38371,
+        "name": "bourges_parking_Le_prado_zidN0CUGXMO",
+        "station_id": "bourges_parking_Le_prado_zidN0CUGXMO",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      }
+    ]
+  },
+  "last_updated": 1771749831,
+  "ttl": 0,
+  "version": "2.2"
+}

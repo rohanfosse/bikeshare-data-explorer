@@ -1,0 +1,1861 @@
+departure_station,arrival_station,count,avg_count
+001 Rue Jules Ferry - Gare Saint-Roch,001 Rue Jules Ferry - Gare Saint-Roch,57,0.07723577235772358
+001 Rue Jules Ferry - Gare Saint-Roch,002 ComÃ©die,3,0.0040650406504065045
+001 Rue Jules Ferry - Gare Saint-Roch,003 Esplanade,2,0.0027100271002710027
+001 Rue Jules Ferry - Gare Saint-Roch,004 HÃ´tel de Ville,14,0.018970189701897018
+001 Rue Jules Ferry - Gare Saint-Roch,005 Corum,2,0.0027100271002710027
+001 Rue Jules Ferry - Gare Saint-Roch,006 Place Albert 1er - St Charles,5,0.006775067750677507
+001 Rue Jules Ferry - Gare Saint-Roch,008 Halles Castellane,1,0.0013550135501355014
+001 Rue Jules Ferry - Gare Saint-Roch,009 Observatoire,6,0.008130081300813009
+001 Rue Jules Ferry - Gare Saint-Roch,010 Rondelet,4,0.005420054200542005
+001 Rue Jules Ferry - Gare Saint-Roch,011 Plan Cabanes,3,0.0040650406504065045
+001 Rue Jules Ferry - Gare Saint-Roch,012 Boutonnet,18,0.024390243902439025
+001 Rue Jules Ferry - Gare Saint-Roch,016 Antigone centre,5,0.006775067750677507
+001 Rue Jules Ferry - Gare Saint-Roch,017 MÃ©diathÃ¨que Emile Zola,29,0.03929539295392954
+001 Rue Jules Ferry - Gare Saint-Roch,018 Nombre d'Or,1,0.0013550135501355014
+001 Rue Jules Ferry - Gare Saint-Roch,019 Louis Blanc,4,0.005420054200542005
+001 Rue Jules Ferry - Gare Saint-Roch,020 Gambetta,4,0.005420054200542005
+001 Rue Jules Ferry - Gare Saint-Roch,021 Port Marianne,19,0.025745257452574527
+001 Rue Jules Ferry - Gare Saint-Roch,024 CitÃ© Mion,6,0.008130081300813009
+001 Rue Jules Ferry - Gare Saint-Roch,025 Nouveau Saint-Roch,10,0.013550135501355014
+001 Rue Jules Ferry - Gare Saint-Roch,026 Renouvier,1,0.0013550135501355014
+001 Rue Jules Ferry - Gare Saint-Roch,028 Saint-Denis,1,0.0013550135501355014
+001 Rue Jules Ferry - Gare Saint-Roch,029 Richter,17,0.023035230352303523
+001 Rue Jules Ferry - Gare Saint-Roch,030 Charles Flahault,2,0.0027100271002710027
+001 Rue Jules Ferry - Gare Saint-Roch,031 Voltaire,8,0.01084010840108401
+001 Rue Jules Ferry - Gare Saint-Roch,032 PrÃ©s d'ArÃ¨nes,1,0.0013550135501355014
+001 Rue Jules Ferry - Gare Saint-Roch,033 Garcia Lorca,10,0.013550135501355014
+001 Rue Jules Ferry - Gare Saint-Roch,034 Vert Bois,2,0.0027100271002710027
+001 Rue Jules Ferry - Gare Saint-Roch,035 Malbosc,1,0.0013550135501355014
+001 Rue Jules Ferry - Gare Saint-Roch,036 Occitanie,9,0.012195121951219513
+001 Rue Jules Ferry - Gare Saint-Roch,037 FacdesSciences,18,0.024390243902439025
+001 Rue Jules Ferry - Gare Saint-Roch,038 Fac de Lettres,7,0.009485094850948509
+001 Rue Jules Ferry - Gare Saint-Roch,040 Jeu de Mail des AbbÃ©s,2,0.0027100271002710027
+001 Rue Jules Ferry - Gare Saint-Roch,041 EuromÃ©decine,1,0.0013550135501355014
+001 Rue Jules Ferry - Gare Saint-Roch,042 Marie Caizergues,1,0.0013550135501355014
+001 Rue Jules Ferry - Gare Saint-Roch,043 Sabines,2,0.0027100271002710027
+001 Rue Jules Ferry - Gare Saint-Roch,044 Celleneuve,4,0.005420054200542005
+001 Rue Jules Ferry - Gare Saint-Roch,046 PÃ¨re Soulas,5,0.006775067750677507
+001 Rue Jules Ferry - Gare Saint-Roch,047 Place Viala,2,0.0027100271002710027
+001 Rue Jules Ferry - Gare Saint-Roch,048 HÃ´tel du DÃ©partement,2,0.0027100271002710027
+001 Rue Jules Ferry - Gare Saint-Roch,049 Tonnelles,3,0.0040650406504065045
+001 Rue Jules Ferry - Gare Saint-Roch,050 Parvis Jules Ferry - Gare Saint-Roch,4,0.005420054200542005
+001 Rue Jules Ferry - Gare Saint-Roch,051 Pont de Lattes - Gare Saint-Roch,4,0.005420054200542005
+001 Rue Jules Ferry - Gare Saint-Roch,053 Deux Ponts - Gare Saint-Roch,2,0.0027100271002710027
+001 Rue Jules Ferry - Gare Saint-Roch,054 Providence - Ovalie,1,0.0013550135501355014
+001 Rue Jules Ferry - Gare Saint-Roch,055 PÃ©rols Etang de l'Or,2,0.0027100271002710027
+001 Rue Jules Ferry - Gare Saint-Roch,056 Albert 1er - CathÃ©drale,1,0.0013550135501355014
+001 Rue Jules Ferry - Gare Saint-Roch,057 Saint-Guilhem - Courreau,2,0.0027100271002710027
+002 ComÃ©die,001 Rue Jules Ferry - Gare Saint-Roch,3,0.0040650406504065045
+002 ComÃ©die,002 ComÃ©die,166,0.22493224932249323
+002 ComÃ©die,003 Esplanade,2,0.0027100271002710027
+002 ComÃ©die,004 HÃ´tel de Ville,7,0.009485094850948509
+002 ComÃ©die,005 Corum,7,0.009485094850948509
+002 ComÃ©die,006 Place Albert 1er - St Charles,17,0.023035230352303523
+002 ComÃ©die,008 Halles Castellane,1,0.0013550135501355014
+002 ComÃ©die,009 Observatoire,5,0.006775067750677507
+002 ComÃ©die,010 Rondelet,12,0.016260162601626018
+002 ComÃ©die,011 Plan Cabanes,9,0.012195121951219513
+002 ComÃ©die,012 Boutonnet,69,0.09349593495934959
+002 ComÃ©die,013 Emile Combes,1,0.0013550135501355014
+002 ComÃ©die,014 Beaux-Arts,4,0.005420054200542005
+002 ComÃ©die,015 Les Aubes,8,0.01084010840108401
+002 ComÃ©die,016 Antigone centre,13,0.017615176151761516
+002 ComÃ©die,017 MÃ©diathÃ¨que Emile Zola,27,0.036585365853658534
+002 ComÃ©die,018 Nombre d'Or,5,0.006775067750677507
+002 ComÃ©die,019 Louis Blanc,5,0.006775067750677507
+002 ComÃ©die,020 Gambetta,2,0.0027100271002710027
+002 ComÃ©die,021 Port Marianne,6,0.008130081300813009
+002 ComÃ©die,022 Clemenceau,2,0.0027100271002710027
+002 ComÃ©die,023 Les Arceaux,5,0.006775067750677507
+002 ComÃ©die,024 CitÃ© Mion,2,0.0027100271002710027
+002 ComÃ©die,025 Nouveau Saint-Roch,7,0.009485094850948509
+002 ComÃ©die,028 Saint-Denis,4,0.005420054200542005
+002 ComÃ©die,029 Richter,12,0.016260162601626018
+002 ComÃ©die,030 Charles Flahault,14,0.018970189701897018
+002 ComÃ©die,031 Voltaire,5,0.006775067750677507
+002 ComÃ©die,032 PrÃ©s d'ArÃ¨nes,7,0.009485094850948509
+002 ComÃ©die,033 Garcia Lorca,7,0.009485094850948509
+002 ComÃ©die,034 Vert Bois,17,0.023035230352303523
+002 ComÃ©die,035 Malbosc,5,0.006775067750677507
+002 ComÃ©die,036 Occitanie,53,0.07181571815718157
+002 ComÃ©die,037 FacdesSciences,51,0.06910569105691057
+002 ComÃ©die,038 Fac de Lettres,29,0.03929539295392954
+002 ComÃ©die,039 Aiguelongue,12,0.016260162601626018
+002 ComÃ©die,040 Jeu de Mail des AbbÃ©s,1,0.0013550135501355014
+002 ComÃ©die,041 EuromÃ©decine,2,0.0027100271002710027
+002 ComÃ©die,042 Marie Caizergues,12,0.016260162601626018
+002 ComÃ©die,043 Sabines,6,0.008130081300813009
+002 ComÃ©die,044 Celleneuve,5,0.006775067750677507
+002 ComÃ©die,045 Jardin de la Lironde,5,0.006775067750677507
+002 ComÃ©die,046 PÃ¨re Soulas,11,0.014905149051490514
+002 ComÃ©die,047 Place Viala,2,0.0027100271002710027
+002 ComÃ©die,048 HÃ´tel du DÃ©partement,6,0.008130081300813009
+002 ComÃ©die,049 Tonnelles,10,0.013550135501355014
+002 ComÃ©die,050 Parvis Jules Ferry - Gare Saint-Roch,1,0.0013550135501355014
+002 ComÃ©die,054 Providence - Ovalie,4,0.005420054200542005
+002 ComÃ©die,055 PÃ©rols Etang de l'Or,6,0.008130081300813009
+002 ComÃ©die,056 Albert 1er - CathÃ©drale,1,0.0013550135501355014
+002 ComÃ©die,057 Saint-Guilhem - Courreau,3,0.0040650406504065045
+002 ComÃ©die,059 Sud De France,1,0.0013550135501355014
+002 ComÃ©die,060 Comedie Baudin,1,0.0013550135501355014
+003 Esplanade,002 ComÃ©die,4,0.005420054200542005
+003 Esplanade,003 Esplanade,57,0.07723577235772358
+003 Esplanade,004 HÃ´tel de Ville,3,0.0040650406504065045
+003 Esplanade,005 Corum,2,0.0027100271002710027
+003 Esplanade,006 Place Albert 1er - St Charles,10,0.013550135501355014
+003 Esplanade,007 Foch,2,0.0027100271002710027
+003 Esplanade,008 Halles Castellane,2,0.0027100271002710027
+003 Esplanade,010 Rondelet,1,0.0013550135501355014
+003 Esplanade,011 Plan Cabanes,1,0.0013550135501355014
+003 Esplanade,012 Boutonnet,20,0.02710027100271003
+003 Esplanade,014 Beaux-Arts,4,0.005420054200542005
+003 Esplanade,016 Antigone centre,8,0.01084010840108401
+003 Esplanade,017 MÃ©diathÃ¨que Emile Zola,10,0.013550135501355014
+003 Esplanade,018 Nombre d'Or,4,0.005420054200542005
+003 Esplanade,019 Louis Blanc,3,0.0040650406504065045
+003 Esplanade,021 Port Marianne,2,0.0027100271002710027
+003 Esplanade,023 Les Arceaux,2,0.0027100271002710027
+003 Esplanade,025 Nouveau Saint-Roch,5,0.006775067750677507
+003 Esplanade,028 Saint-Denis,1,0.0013550135501355014
+003 Esplanade,029 Richter,1,0.0013550135501355014
+003 Esplanade,030 Charles Flahault,2,0.0027100271002710027
+003 Esplanade,032 PrÃ©s d'ArÃ¨nes,1,0.0013550135501355014
+003 Esplanade,033 Garcia Lorca,2,0.0027100271002710027
+003 Esplanade,034 Vert Bois,1,0.0013550135501355014
+003 Esplanade,036 Occitanie,31,0.04200542005420054
+003 Esplanade,037 FacdesSciences,31,0.04200542005420054
+003 Esplanade,038 Fac de Lettres,15,0.02032520325203252
+003 Esplanade,039 Aiguelongue,11,0.014905149051490514
+003 Esplanade,040 Jeu de Mail des AbbÃ©s,2,0.0027100271002710027
+003 Esplanade,041 EuromÃ©decine,2,0.0027100271002710027
+003 Esplanade,042 Marie Caizergues,3,0.0040650406504065045
+003 Esplanade,043 Sabines,3,0.0040650406504065045
+003 Esplanade,044 Celleneuve,2,0.0027100271002710027
+003 Esplanade,045 Jardin de la Lironde,1,0.0013550135501355014
+003 Esplanade,046 PÃ¨re Soulas,3,0.0040650406504065045
+003 Esplanade,047 Place Viala,1,0.0013550135501355014
+003 Esplanade,048 HÃ´tel du DÃ©partement,2,0.0027100271002710027
+003 Esplanade,049 Tonnelles,1,0.0013550135501355014
+003 Esplanade,050 Parvis Jules Ferry - Gare Saint-Roch,1,0.0013550135501355014
+003 Esplanade,053 Deux Ponts - Gare Saint-Roch,1,0.0013550135501355014
+003 Esplanade,054 Providence - Ovalie,2,0.0027100271002710027
+003 Esplanade,057 Saint-Guilhem - Courreau,1,0.0013550135501355014
+004 HÃ´tel de Ville,002 ComÃ©die,1,0.0013550135501355014
+004 HÃ´tel de Ville,003 Esplanade,4,0.005420054200542005
+004 HÃ´tel de Ville,004 HÃ´tel de Ville,33,0.044715447154471545
+004 HÃ´tel de Ville,005 Corum,1,0.0013550135501355014
+004 HÃ´tel de Ville,006 Place Albert 1er - St Charles,5,0.006775067750677507
+004 HÃ´tel de Ville,008 Halles Castellane,3,0.0040650406504065045
+004 HÃ´tel de Ville,010 Rondelet,2,0.0027100271002710027
+004 HÃ´tel de Ville,011 Plan Cabanes,1,0.0013550135501355014
+004 HÃ´tel de Ville,012 Boutonnet,2,0.0027100271002710027
+004 HÃ´tel de Ville,013 Emile Combes,1,0.0013550135501355014
+004 HÃ´tel de Ville,016 Antigone centre,1,0.0013550135501355014
+004 HÃ´tel de Ville,017 MÃ©diathÃ¨que Emile Zola,2,0.0027100271002710027
+004 HÃ´tel de Ville,018 Nombre d'Or,4,0.005420054200542005
+004 HÃ´tel de Ville,019 Louis Blanc,4,0.005420054200542005
+004 HÃ´tel de Ville,021 Port Marianne,4,0.005420054200542005
+004 HÃ´tel de Ville,022 Clemenceau,2,0.0027100271002710027
+004 HÃ´tel de Ville,023 Les Arceaux,1,0.0013550135501355014
+004 HÃ´tel de Ville,025 Nouveau Saint-Roch,4,0.005420054200542005
+004 HÃ´tel de Ville,026 Renouvier,1,0.0013550135501355014
+004 HÃ´tel de Ville,029 Richter,1,0.0013550135501355014
+004 HÃ´tel de Ville,030 Charles Flahault,2,0.0027100271002710027
+004 HÃ´tel de Ville,031 Voltaire,2,0.0027100271002710027
+004 HÃ´tel de Ville,032 PrÃ©s d'ArÃ¨nes,13,0.017615176151761516
+004 HÃ´tel de Ville,033 Garcia Lorca,17,0.023035230352303523
+004 HÃ´tel de Ville,037 FacdesSciences,1,0.0013550135501355014
+004 HÃ´tel de Ville,038 Fac de Lettres,3,0.0040650406504065045
+004 HÃ´tel de Ville,039 Aiguelongue,2,0.0027100271002710027
+004 HÃ´tel de Ville,042 Marie Caizergues,1,0.0013550135501355014
+004 HÃ´tel de Ville,043 Sabines,2,0.0027100271002710027
+004 HÃ´tel de Ville,044 Celleneuve,6,0.008130081300813009
+004 HÃ´tel de Ville,045 Jardin de la Lironde,1,0.0013550135501355014
+004 HÃ´tel de Ville,047 Place Viala,3,0.0040650406504065045
+004 HÃ´tel de Ville,050 Parvis Jules Ferry - Gare Saint-Roch,1,0.0013550135501355014
+004 HÃ´tel de Ville,055 PÃ©rols Etang de l'Or,3,0.0040650406504065045
+004 HÃ´tel de Ville,056 Albert 1er - CathÃ©drale,1,0.0013550135501355014
+004 HÃ´tel de Ville,057 Saint-Guilhem - Courreau,3,0.0040650406504065045
+005 Corum,001 Rue Jules Ferry - Gare Saint-Roch,2,0.0027100271002710027
+005 Corum,002 ComÃ©die,1,0.0013550135501355014
+005 Corum,004 HÃ´tel de Ville,2,0.0027100271002710027
+005 Corum,005 Corum,94,0.12737127371273713
+005 Corum,006 Place Albert 1er - St Charles,22,0.02981029810298103
+005 Corum,008 Halles Castellane,2,0.0027100271002710027
+005 Corum,009 Observatoire,1,0.0013550135501355014
+005 Corum,010 Rondelet,1,0.0013550135501355014
+005 Corum,011 Plan Cabanes,3,0.0040650406504065045
+005 Corum,012 Boutonnet,60,0.08130081300813008
+005 Corum,013 Emile Combes,2,0.0027100271002710027
+005 Corum,014 Beaux-Arts,7,0.009485094850948509
+005 Corum,015 Les Aubes,2,0.0027100271002710027
+005 Corum,016 Antigone centre,9,0.012195121951219513
+005 Corum,017 MÃ©diathÃ¨que Emile Zola,14,0.018970189701897018
+005 Corum,019 Louis Blanc,14,0.018970189701897018
+005 Corum,020 Gambetta,1,0.0013550135501355014
+005 Corum,021 Port Marianne,15,0.02032520325203252
+005 Corum,022 Clemenceau,2,0.0027100271002710027
+005 Corum,023 Les Arceaux,7,0.009485094850948509
+005 Corum,024 CitÃ© Mion,1,0.0013550135501355014
+005 Corum,025 Nouveau Saint-Roch,3,0.0040650406504065045
+005 Corum,029 Richter,1,0.0013550135501355014
+005 Corum,030 Charles Flahault,7,0.009485094850948509
+005 Corum,031 Voltaire,3,0.0040650406504065045
+005 Corum,032 PrÃ©s d'ArÃ¨nes,1,0.0013550135501355014
+005 Corum,033 Garcia Lorca,10,0.013550135501355014
+005 Corum,034 Vert Bois,10,0.013550135501355014
+005 Corum,035 Malbosc,10,0.013550135501355014
+005 Corum,036 Occitanie,94,0.12737127371273713
+005 Corum,037 FacdesSciences,68,0.0921409214092141
+005 Corum,038 Fac de Lettres,32,0.04336043360433604
+005 Corum,039 Aiguelongue,22,0.02981029810298103
+005 Corum,040 Jeu de Mail des AbbÃ©s,3,0.0040650406504065045
+005 Corum,041 EuromÃ©decine,4,0.005420054200542005
+005 Corum,042 Marie Caizergues,10,0.013550135501355014
+005 Corum,043 Sabines,1,0.0013550135501355014
+005 Corum,044 Celleneuve,1,0.0013550135501355014
+005 Corum,046 PÃ¨re Soulas,4,0.005420054200542005
+005 Corum,048 HÃ´tel du DÃ©partement,1,0.0013550135501355014
+005 Corum,049 Tonnelles,2,0.0027100271002710027
+005 Corum,050 Parvis Jules Ferry - Gare Saint-Roch,1,0.0013550135501355014
+005 Corum,056 Albert 1er - CathÃ©drale,1,0.0013550135501355014
+006 Place Albert 1er - St Charles,001 Rue Jules Ferry - Gare Saint-Roch,1,0.0013550135501355014
+006 Place Albert 1er - St Charles,002 ComÃ©die,7,0.009485094850948509
+006 Place Albert 1er - St Charles,003 Esplanade,2,0.0027100271002710027
+006 Place Albert 1er - St Charles,004 HÃ´tel de Ville,4,0.005420054200542005
+006 Place Albert 1er - St Charles,005 Corum,6,0.008130081300813009
+006 Place Albert 1er - St Charles,006 Place Albert 1er - St Charles,228,0.3089430894308943
+006 Place Albert 1er - St Charles,008 Halles Castellane,1,0.0013550135501355014
+006 Place Albert 1er - St Charles,009 Observatoire,6,0.008130081300813009
+006 Place Albert 1er - St Charles,010 Rondelet,2,0.0027100271002710027
+006 Place Albert 1er - St Charles,011 Plan Cabanes,2,0.0027100271002710027
+006 Place Albert 1er - St Charles,012 Boutonnet,141,0.1910569105691057
+006 Place Albert 1er - St Charles,013 Emile Combes,2,0.0027100271002710027
+006 Place Albert 1er - St Charles,014 Beaux-Arts,2,0.0027100271002710027
+006 Place Albert 1er - St Charles,015 Les Aubes,4,0.005420054200542005
+006 Place Albert 1er - St Charles,016 Antigone centre,6,0.008130081300813009
+006 Place Albert 1er - St Charles,017 MÃ©diathÃ¨que Emile Zola,20,0.02710027100271003
+006 Place Albert 1er - St Charles,018 Nombre d'Or,1,0.0013550135501355014
+006 Place Albert 1er - St Charles,019 Louis Blanc,4,0.005420054200542005
+006 Place Albert 1er - St Charles,021 Port Marianne,7,0.009485094850948509
+006 Place Albert 1er - St Charles,023 Les Arceaux,1,0.0013550135501355014
+006 Place Albert 1er - St Charles,027 Odysseum,1,0.0013550135501355014
+006 Place Albert 1er - St Charles,028 Saint-Denis,4,0.005420054200542005
+006 Place Albert 1er - St Charles,029 Richter,5,0.006775067750677507
+006 Place Albert 1er - St Charles,030 Charles Flahault,11,0.014905149051490514
+006 Place Albert 1er - St Charles,031 Voltaire,2,0.0027100271002710027
+006 Place Albert 1er - St Charles,032 PrÃ©s d'ArÃ¨nes,3,0.0040650406504065045
+006 Place Albert 1er - St Charles,033 Garcia Lorca,3,0.0040650406504065045
+006 Place Albert 1er - St Charles,034 Vert Bois,14,0.018970189701897018
+006 Place Albert 1er - St Charles,035 Malbosc,19,0.025745257452574527
+006 Place Albert 1er - St Charles,036 Occitanie,195,0.26422764227642276
+006 Place Albert 1er - St Charles,037 FacdesSciences,120,0.16260162601626016
+006 Place Albert 1er - St Charles,038 Fac de Lettres,68,0.0921409214092141
+006 Place Albert 1er - St Charles,039 Aiguelongue,6,0.008130081300813009
+006 Place Albert 1er - St Charles,040 Jeu de Mail des AbbÃ©s,3,0.0040650406504065045
+006 Place Albert 1er - St Charles,041 EuromÃ©decine,14,0.018970189701897018
+006 Place Albert 1er - St Charles,042 Marie Caizergues,12,0.016260162601626018
+006 Place Albert 1er - St Charles,043 Sabines,4,0.005420054200542005
+006 Place Albert 1er - St Charles,044 Celleneuve,4,0.005420054200542005
+006 Place Albert 1er - St Charles,045 Jardin de la Lironde,1,0.0013550135501355014
+006 Place Albert 1er - St Charles,046 PÃ¨re Soulas,27,0.036585365853658534
+006 Place Albert 1er - St Charles,047 Place Viala,4,0.005420054200542005
+006 Place Albert 1er - St Charles,048 HÃ´tel du DÃ©partement,2,0.0027100271002710027
+006 Place Albert 1er - St Charles,049 Tonnelles,3,0.0040650406504065045
+006 Place Albert 1er - St Charles,050 Parvis Jules Ferry - Gare Saint-Roch,3,0.0040650406504065045
+006 Place Albert 1er - St Charles,051 Pont de Lattes - Gare Saint-Roch,2,0.0027100271002710027
+006 Place Albert 1er - St Charles,055 PÃ©rols Etang de l'Or,1,0.0013550135501355014
+006 Place Albert 1er - St Charles,056 Albert 1er - CathÃ©drale,2,0.0027100271002710027
+007 Foch,001 Rue Jules Ferry - Gare Saint-Roch,2,0.0027100271002710027
+007 Foch,002 ComÃ©die,1,0.0013550135501355014
+007 Foch,006 Place Albert 1er - St Charles,10,0.013550135501355014
+007 Foch,007 Foch,31,0.04200542005420054
+007 Foch,008 Halles Castellane,1,0.0013550135501355014
+007 Foch,011 Plan Cabanes,1,0.0013550135501355014
+007 Foch,012 Boutonnet,9,0.012195121951219513
+007 Foch,018 Nombre d'Or,1,0.0013550135501355014
+007 Foch,019 Louis Blanc,1,0.0013550135501355014
+007 Foch,021 Port Marianne,2,0.0027100271002710027
+007 Foch,023 Les Arceaux,2,0.0027100271002710027
+007 Foch,029 Richter,1,0.0013550135501355014
+007 Foch,030 Charles Flahault,6,0.008130081300813009
+007 Foch,032 PrÃ©s d'ArÃ¨nes,1,0.0013550135501355014
+007 Foch,033 Garcia Lorca,1,0.0013550135501355014
+007 Foch,034 Vert Bois,2,0.0027100271002710027
+007 Foch,035 Malbosc,3,0.0040650406504065045
+007 Foch,036 Occitanie,29,0.03929539295392954
+007 Foch,037 FacdesSciences,9,0.012195121951219513
+007 Foch,038 Fac de Lettres,16,0.02168021680216802
+007 Foch,039 Aiguelongue,4,0.005420054200542005
+007 Foch,041 EuromÃ©decine,1,0.0013550135501355014
+007 Foch,042 Marie Caizergues,1,0.0013550135501355014
+007 Foch,043 Sabines,1,0.0013550135501355014
+007 Foch,044 Celleneuve,3,0.0040650406504065045
+007 Foch,046 PÃ¨re Soulas,7,0.009485094850948509
+007 Foch,047 Place Viala,12,0.016260162601626018
+007 Foch,049 Tonnelles,2,0.0027100271002710027
+007 Foch,056 Albert 1er - CathÃ©drale,2,0.0027100271002710027
+008 Halles Castellane,001 Rue Jules Ferry - Gare Saint-Roch,2,0.0027100271002710027
+008 Halles Castellane,002 ComÃ©die,5,0.006775067750677507
+008 Halles Castellane,004 HÃ´tel de Ville,4,0.005420054200542005
+008 Halles Castellane,005 Corum,7,0.009485094850948509
+008 Halles Castellane,006 Place Albert 1er - St Charles,10,0.013550135501355014
+008 Halles Castellane,008 Halles Castellane,40,0.05420054200542006
+008 Halles Castellane,009 Observatoire,2,0.0027100271002710027
+008 Halles Castellane,012 Boutonnet,24,0.032520325203252036
+008 Halles Castellane,014 Beaux-Arts,3,0.0040650406504065045
+008 Halles Castellane,015 Les Aubes,1,0.0013550135501355014
+008 Halles Castellane,016 Antigone centre,3,0.0040650406504065045
+008 Halles Castellane,017 MÃ©diathÃ¨que Emile Zola,15,0.02032520325203252
+008 Halles Castellane,018 Nombre d'Or,6,0.008130081300813009
+008 Halles Castellane,019 Louis Blanc,2,0.0027100271002710027
+008 Halles Castellane,021 Port Marianne,1,0.0013550135501355014
+008 Halles Castellane,022 Clemenceau,1,0.0013550135501355014
+008 Halles Castellane,023 Les Arceaux,2,0.0027100271002710027
+008 Halles Castellane,024 CitÃ© Mion,4,0.005420054200542005
+008 Halles Castellane,026 Renouvier,4,0.005420054200542005
+008 Halles Castellane,028 Saint-Denis,1,0.0013550135501355014
+008 Halles Castellane,029 Richter,3,0.0040650406504065045
+008 Halles Castellane,030 Charles Flahault,8,0.01084010840108401
+008 Halles Castellane,031 Voltaire,5,0.006775067750677507
+008 Halles Castellane,032 PrÃ©s d'ArÃ¨nes,2,0.0027100271002710027
+008 Halles Castellane,033 Garcia Lorca,2,0.0027100271002710027
+008 Halles Castellane,034 Vert Bois,2,0.0027100271002710027
+008 Halles Castellane,035 Malbosc,3,0.0040650406504065045
+008 Halles Castellane,036 Occitanie,30,0.04065040650406504
+008 Halles Castellane,037 FacdesSciences,23,0.03116531165311653
+008 Halles Castellane,038 Fac de Lettres,5,0.006775067750677507
+008 Halles Castellane,039 Aiguelongue,1,0.0013550135501355014
+008 Halles Castellane,040 Jeu de Mail des AbbÃ©s,3,0.0040650406504065045
+008 Halles Castellane,041 EuromÃ©decine,1,0.0013550135501355014
+008 Halles Castellane,042 Marie Caizergues,4,0.005420054200542005
+008 Halles Castellane,043 Sabines,1,0.0013550135501355014
+008 Halles Castellane,044 Celleneuve,3,0.0040650406504065045
+008 Halles Castellane,045 Jardin de la Lironde,2,0.0027100271002710027
+008 Halles Castellane,046 PÃ¨re Soulas,6,0.008130081300813009
+008 Halles Castellane,047 Place Viala,7,0.009485094850948509
+008 Halles Castellane,048 HÃ´tel du DÃ©partement,1,0.0013550135501355014
+008 Halles Castellane,050 Parvis Jules Ferry - Gare Saint-Roch,1,0.0013550135501355014
+008 Halles Castellane,051 Pont de Lattes - Gare Saint-Roch,1,0.0013550135501355014
+008 Halles Castellane,053 Deux Ponts - Gare Saint-Roch,2,0.0027100271002710027
+008 Halles Castellane,060 Comedie Baudin,2,0.0027100271002710027
+009 Observatoire,001 Rue Jules Ferry - Gare Saint-Roch,4,0.005420054200542005
+009 Observatoire,002 ComÃ©die,5,0.006775067750677507
+009 Observatoire,004 HÃ´tel de Ville,8,0.01084010840108401
+009 Observatoire,005 Corum,1,0.0013550135501355014
+009 Observatoire,006 Place Albert 1er - St Charles,6,0.008130081300813009
+009 Observatoire,008 Halles Castellane,1,0.0013550135501355014
+009 Observatoire,009 Observatoire,130,0.17615176151761516
+009 Observatoire,011 Plan Cabanes,3,0.0040650406504065045
+009 Observatoire,012 Boutonnet,35,0.04742547425474255
+009 Observatoire,014 Beaux-Arts,2,0.0027100271002710027
+009 Observatoire,016 Antigone centre,12,0.016260162601626018
+009 Observatoire,017 MÃ©diathÃ¨que Emile Zola,28,0.037940379403794036
+009 Observatoire,018 Nombre d'Or,6,0.008130081300813009
+009 Observatoire,019 Louis Blanc,5,0.006775067750677507
+009 Observatoire,020 Gambetta,3,0.0040650406504065045
+009 Observatoire,021 Port Marianne,10,0.013550135501355014
+009 Observatoire,022 Clemenceau,1,0.0013550135501355014
+009 Observatoire,023 Les Arceaux,4,0.005420054200542005
+009 Observatoire,025 Nouveau Saint-Roch,8,0.01084010840108401
+009 Observatoire,026 Renouvier,2,0.0027100271002710027
+009 Observatoire,028 Saint-Denis,1,0.0013550135501355014
+009 Observatoire,029 Richter,5,0.006775067750677507
+009 Observatoire,030 Charles Flahault,12,0.016260162601626018
+009 Observatoire,031 Voltaire,9,0.012195121951219513
+009 Observatoire,032 PrÃ©s d'ArÃ¨nes,5,0.006775067750677507
+009 Observatoire,033 Garcia Lorca,7,0.009485094850948509
+009 Observatoire,034 Vert Bois,9,0.012195121951219513
+009 Observatoire,035 Malbosc,7,0.009485094850948509
+009 Observatoire,036 Occitanie,61,0.08265582655826559
+009 Observatoire,037 FacdesSciences,38,0.051490514905149054
+009 Observatoire,038 Fac de Lettres,11,0.014905149051490514
+009 Observatoire,039 Aiguelongue,5,0.006775067750677507
+009 Observatoire,040 Jeu de Mail des AbbÃ©s,10,0.013550135501355014
+009 Observatoire,041 EuromÃ©decine,6,0.008130081300813009
+009 Observatoire,042 Marie Caizergues,9,0.012195121951219513
+009 Observatoire,043 Sabines,2,0.0027100271002710027
+009 Observatoire,044 Celleneuve,6,0.008130081300813009
+009 Observatoire,045 Jardin de la Lironde,6,0.008130081300813009
+009 Observatoire,046 PÃ¨re Soulas,6,0.008130081300813009
+009 Observatoire,047 Place Viala,4,0.005420054200542005
+009 Observatoire,048 HÃ´tel du DÃ©partement,5,0.006775067750677507
+009 Observatoire,049 Tonnelles,7,0.009485094850948509
+009 Observatoire,050 Parvis Jules Ferry - Gare Saint-Roch,4,0.005420054200542005
+009 Observatoire,051 Pont de Lattes - Gare Saint-Roch,1,0.0013550135501355014
+009 Observatoire,053 Deux Ponts - Gare Saint-Roch,2,0.0027100271002710027
+009 Observatoire,054 Providence - Ovalie,4,0.005420054200542005
+009 Observatoire,055 PÃ©rols Etang de l'Or,7,0.009485094850948509
+009 Observatoire,057 Saint-Guilhem - Courreau,7,0.009485094850948509
+009 Observatoire,060 Comedie Baudin,1,0.0013550135501355014
+010 Rondelet,001 Rue Jules Ferry - Gare Saint-Roch,4,0.005420054200542005
+010 Rondelet,003 Esplanade,1,0.0013550135501355014
+010 Rondelet,004 HÃ´tel de Ville,3,0.0040650406504065045
+010 Rondelet,005 Corum,1,0.0013550135501355014
+010 Rondelet,006 Place Albert 1er - St Charles,2,0.0027100271002710027
+010 Rondelet,008 Halles Castellane,2,0.0027100271002710027
+010 Rondelet,009 Observatoire,2,0.0027100271002710027
+010 Rondelet,010 Rondelet,51,0.06910569105691057
+010 Rondelet,011 Plan Cabanes,1,0.0013550135501355014
+010 Rondelet,012 Boutonnet,6,0.008130081300813009
+010 Rondelet,014 Beaux-Arts,1,0.0013550135501355014
+010 Rondelet,015 Les Aubes,1,0.0013550135501355014
+010 Rondelet,016 Antigone centre,2,0.0027100271002710027
+010 Rondelet,017 MÃ©diathÃ¨que Emile Zola,2,0.0027100271002710027
+010 Rondelet,018 Nombre d'Or,3,0.0040650406504065045
+010 Rondelet,019 Louis Blanc,1,0.0013550135501355014
+010 Rondelet,020 Gambetta,1,0.0013550135501355014
+010 Rondelet,021 Port Marianne,6,0.008130081300813009
+010 Rondelet,025 Nouveau Saint-Roch,8,0.01084010840108401
+010 Rondelet,026 Renouvier,1,0.0013550135501355014
+010 Rondelet,028 Saint-Denis,1,0.0013550135501355014
+010 Rondelet,029 Richter,1,0.0013550135501355014
+010 Rondelet,030 Charles Flahault,1,0.0013550135501355014
+010 Rondelet,031 Voltaire,5,0.006775067750677507
+010 Rondelet,032 PrÃ©s d'ArÃ¨nes,14,0.018970189701897018
+010 Rondelet,033 Garcia Lorca,3,0.0040650406504065045
+010 Rondelet,034 Vert Bois,2,0.0027100271002710027
+010 Rondelet,036 Occitanie,13,0.017615176151761516
+010 Rondelet,037 FacdesSciences,6,0.008130081300813009
+010 Rondelet,038 Fac de Lettres,6,0.008130081300813009
+010 Rondelet,039 Aiguelongue,1,0.0013550135501355014
+010 Rondelet,041 EuromÃ©decine,5,0.006775067750677507
+010 Rondelet,043 Sabines,15,0.02032520325203252
+010 Rondelet,046 PÃ¨re Soulas,1,0.0013550135501355014
+010 Rondelet,047 Place Viala,1,0.0013550135501355014
+010 Rondelet,049 Tonnelles,2,0.0027100271002710027
+010 Rondelet,050 Parvis Jules Ferry - Gare Saint-Roch,2,0.0027100271002710027
+010 Rondelet,054 Providence - Ovalie,4,0.005420054200542005
+010 Rondelet,057 Saint-Guilhem - Courreau,1,0.0013550135501355014
+011 Plan Cabanes,001 Rue Jules Ferry - Gare Saint-Roch,2,0.0027100271002710027
+011 Plan Cabanes,002 ComÃ©die,4,0.005420054200542005
+011 Plan Cabanes,003 Esplanade,1,0.0013550135501355014
+011 Plan Cabanes,004 HÃ´tel de Ville,2,0.0027100271002710027
+011 Plan Cabanes,005 Corum,1,0.0013550135501355014
+011 Plan Cabanes,006 Place Albert 1er - St Charles,5,0.006775067750677507
+011 Plan Cabanes,010 Rondelet,1,0.0013550135501355014
+011 Plan Cabanes,011 Plan Cabanes,43,0.058265582655826556
+011 Plan Cabanes,012 Boutonnet,12,0.016260162601626018
+011 Plan Cabanes,014 Beaux-Arts,3,0.0040650406504065045
+011 Plan Cabanes,016 Antigone centre,7,0.009485094850948509
+011 Plan Cabanes,017 MÃ©diathÃ¨que Emile Zola,10,0.013550135501355014
+011 Plan Cabanes,018 Nombre d'Or,2,0.0027100271002710027
+011 Plan Cabanes,020 Gambetta,2,0.0027100271002710027
+011 Plan Cabanes,021 Port Marianne,5,0.006775067750677507
+011 Plan Cabanes,022 Clemenceau,1,0.0013550135501355014
+011 Plan Cabanes,023 Les Arceaux,2,0.0027100271002710027
+011 Plan Cabanes,025 Nouveau Saint-Roch,2,0.0027100271002710027
+011 Plan Cabanes,026 Renouvier,3,0.0040650406504065045
+011 Plan Cabanes,027 Odysseum,2,0.0027100271002710027
+011 Plan Cabanes,029 Richter,1,0.0013550135501355014
+011 Plan Cabanes,030 Charles Flahault,2,0.0027100271002710027
+011 Plan Cabanes,031 Voltaire,2,0.0027100271002710027
+011 Plan Cabanes,032 PrÃ©s d'ArÃ¨nes,2,0.0027100271002710027
+011 Plan Cabanes,033 Garcia Lorca,3,0.0040650406504065045
+011 Plan Cabanes,034 Vert Bois,3,0.0040650406504065045
+011 Plan Cabanes,035 Malbosc,1,0.0013550135501355014
+011 Plan Cabanes,036 Occitanie,6,0.008130081300813009
+011 Plan Cabanes,037 FacdesSciences,10,0.013550135501355014
+011 Plan Cabanes,038 Fac de Lettres,6,0.008130081300813009
+011 Plan Cabanes,039 Aiguelongue,5,0.006775067750677507
+011 Plan Cabanes,043 Sabines,4,0.005420054200542005
+011 Plan Cabanes,044 Celleneuve,25,0.03387533875338753
+011 Plan Cabanes,045 Jardin de la Lironde,1,0.0013550135501355014
+011 Plan Cabanes,046 PÃ¨re Soulas,8,0.01084010840108401
+011 Plan Cabanes,047 Place Viala,11,0.014905149051490514
+011 Plan Cabanes,048 HÃ´tel du DÃ©partement,21,0.028455284552845527
+011 Plan Cabanes,049 Tonnelles,36,0.04878048780487805
+011 Plan Cabanes,050 Parvis Jules Ferry - Gare Saint-Roch,2,0.0027100271002710027
+011 Plan Cabanes,054 Providence - Ovalie,5,0.006775067750677507
+011 Plan Cabanes,057 Saint-Guilhem - Courreau,2,0.0027100271002710027
+012 Boutonnet,001 Rue Jules Ferry - Gare Saint-Roch,1,0.0013550135501355014
+012 Boutonnet,002 ComÃ©die,17,0.023035230352303523
+012 Boutonnet,003 Esplanade,1,0.0013550135501355014
+012 Boutonnet,004 HÃ´tel de Ville,2,0.0027100271002710027
+012 Boutonnet,005 Corum,9,0.012195121951219513
+012 Boutonnet,006 Place Albert 1er - St Charles,45,0.06097560975609756
+012 Boutonnet,007 Foch,2,0.0027100271002710027
+012 Boutonnet,009 Observatoire,5,0.006775067750677507
+012 Boutonnet,010 Rondelet,1,0.0013550135501355014
+012 Boutonnet,011 Plan Cabanes,9,0.012195121951219513
+012 Boutonnet,012 Boutonnet,158,0.2140921409214092
+012 Boutonnet,014 Beaux-Arts,2,0.0027100271002710027
+012 Boutonnet,016 Antigone centre,14,0.018970189701897018
+012 Boutonnet,017 MÃ©diathÃ¨que Emile Zola,12,0.016260162601626018
+012 Boutonnet,018 Nombre d'Or,1,0.0013550135501355014
+012 Boutonnet,019 Louis Blanc,35,0.04742547425474255
+012 Boutonnet,020 Gambetta,2,0.0027100271002710027
+012 Boutonnet,021 Port Marianne,2,0.0027100271002710027
+012 Boutonnet,023 Les Arceaux,4,0.005420054200542005
+012 Boutonnet,024 CitÃ© Mion,1,0.0013550135501355014
+012 Boutonnet,025 Nouveau Saint-Roch,2,0.0027100271002710027
+012 Boutonnet,026 Renouvier,2,0.0027100271002710027
+012 Boutonnet,028 Saint-Denis,5,0.006775067750677507
+012 Boutonnet,029 Richter,8,0.01084010840108401
+012 Boutonnet,030 Charles Flahault,5,0.006775067750677507
+012 Boutonnet,031 Voltaire,4,0.005420054200542005
+012 Boutonnet,032 PrÃ©s d'ArÃ¨nes,5,0.006775067750677507
+012 Boutonnet,033 Garcia Lorca,3,0.0040650406504065045
+012 Boutonnet,034 Vert Bois,15,0.02032520325203252
+012 Boutonnet,035 Malbosc,4,0.005420054200542005
+012 Boutonnet,036 Occitanie,111,0.15040650406504066
+012 Boutonnet,037 FacdesSciences,66,0.08943089430894309
+012 Boutonnet,038 Fac de Lettres,17,0.023035230352303523
+012 Boutonnet,039 Aiguelongue,3,0.0040650406504065045
+012 Boutonnet,040 Jeu de Mail des AbbÃ©s,3,0.0040650406504065045
+012 Boutonnet,041 EuromÃ©decine,9,0.012195121951219513
+012 Boutonnet,042 Marie Caizergues,2,0.0027100271002710027
+012 Boutonnet,043 Sabines,3,0.0040650406504065045
+012 Boutonnet,044 Celleneuve,1,0.0013550135501355014
+012 Boutonnet,045 Jardin de la Lironde,1,0.0013550135501355014
+012 Boutonnet,046 PÃ¨re Soulas,3,0.0040650406504065045
+012 Boutonnet,047 Place Viala,1,0.0013550135501355014
+012 Boutonnet,048 HÃ´tel du DÃ©partement,1,0.0013550135501355014
+012 Boutonnet,049 Tonnelles,4,0.005420054200542005
+012 Boutonnet,050 Parvis Jules Ferry - Gare Saint-Roch,3,0.0040650406504065045
+012 Boutonnet,051 Pont de Lattes - Gare Saint-Roch,1,0.0013550135501355014
+012 Boutonnet,053 Deux Ponts - Gare Saint-Roch,5,0.006775067750677507
+012 Boutonnet,054 Providence - Ovalie,1,0.0013550135501355014
+012 Boutonnet,055 PÃ©rols Etang de l'Or,1,0.0013550135501355014
+012 Boutonnet,056 Albert 1er - CathÃ©drale,9,0.012195121951219513
+012 Boutonnet,057 Saint-Guilhem - Courreau,3,0.0040650406504065045
+013 Emile Combes,001 Rue Jules Ferry - Gare Saint-Roch,4,0.005420054200542005
+013 Emile Combes,003 Esplanade,3,0.0040650406504065045
+013 Emile Combes,004 HÃ´tel de Ville,2,0.0027100271002710027
+013 Emile Combes,005 Corum,4,0.005420054200542005
+013 Emile Combes,006 Place Albert 1er - St Charles,2,0.0027100271002710027
+013 Emile Combes,008 Halles Castellane,4,0.005420054200542005
+013 Emile Combes,012 Boutonnet,8,0.01084010840108401
+013 Emile Combes,013 Emile Combes,24,0.032520325203252036
+013 Emile Combes,014 Beaux-Arts,1,0.0013550135501355014
+013 Emile Combes,019 Louis Blanc,6,0.008130081300813009
+013 Emile Combes,022 Clemenceau,1,0.0013550135501355014
+013 Emile Combes,025 Nouveau Saint-Roch,2,0.0027100271002710027
+013 Emile Combes,026 Renouvier,1,0.0013550135501355014
+013 Emile Combes,028 Saint-Denis,1,0.0013550135501355014
+013 Emile Combes,031 Voltaire,1,0.0013550135501355014
+013 Emile Combes,033 Garcia Lorca,1,0.0013550135501355014
+013 Emile Combes,036 Occitanie,9,0.012195121951219513
+013 Emile Combes,037 FacdesSciences,9,0.012195121951219513
+013 Emile Combes,038 Fac de Lettres,12,0.016260162601626018
+013 Emile Combes,039 Aiguelongue,12,0.016260162601626018
+013 Emile Combes,040 Jeu de Mail des AbbÃ©s,1,0.0013550135501355014
+013 Emile Combes,042 Marie Caizergues,4,0.005420054200542005
+013 Emile Combes,045 Jardin de la Lironde,2,0.0027100271002710027
+014 Beaux-Arts,001 Rue Jules Ferry - Gare Saint-Roch,2,0.0027100271002710027
+014 Beaux-Arts,002 ComÃ©die,1,0.0013550135501355014
+014 Beaux-Arts,004 HÃ´tel de Ville,2,0.0027100271002710027
+014 Beaux-Arts,005 Corum,1,0.0013550135501355014
+014 Beaux-Arts,006 Place Albert 1er - St Charles,1,0.0013550135501355014
+014 Beaux-Arts,009 Observatoire,1,0.0013550135501355014
+014 Beaux-Arts,011 Plan Cabanes,1,0.0013550135501355014
+014 Beaux-Arts,012 Boutonnet,2,0.0027100271002710027
+014 Beaux-Arts,014 Beaux-Arts,17,0.023035230352303523
+014 Beaux-Arts,016 Antigone centre,6,0.008130081300813009
+014 Beaux-Arts,017 MÃ©diathÃ¨que Emile Zola,2,0.0027100271002710027
+014 Beaux-Arts,021 Port Marianne,1,0.0013550135501355014
+014 Beaux-Arts,026 Renouvier,1,0.0013550135501355014
+014 Beaux-Arts,027 Odysseum,1,0.0013550135501355014
+014 Beaux-Arts,029 Richter,7,0.009485094850948509
+014 Beaux-Arts,031 Voltaire,1,0.0013550135501355014
+014 Beaux-Arts,034 Vert Bois,2,0.0027100271002710027
+014 Beaux-Arts,036 Occitanie,8,0.01084010840108401
+014 Beaux-Arts,037 FacdesSciences,2,0.0027100271002710027
+014 Beaux-Arts,039 Aiguelongue,6,0.008130081300813009
+014 Beaux-Arts,040 Jeu de Mail des AbbÃ©s,3,0.0040650406504065045
+014 Beaux-Arts,043 Sabines,1,0.0013550135501355014
+014 Beaux-Arts,046 PÃ¨re Soulas,1,0.0013550135501355014
+014 Beaux-Arts,053 Deux Ponts - Gare Saint-Roch,1,0.0013550135501355014
+014 Beaux-Arts,056 Albert 1er - CathÃ©drale,1,0.0013550135501355014
+014 Beaux-Arts,057 Saint-Guilhem - Courreau,3,0.0040650406504065045
+015 Les Aubes,002 ComÃ©die,3,0.0040650406504065045
+015 Les Aubes,004 HÃ´tel de Ville,1,0.0013550135501355014
+015 Les Aubes,005 Corum,2,0.0027100271002710027
+015 Les Aubes,006 Place Albert 1er - St Charles,1,0.0013550135501355014
+015 Les Aubes,008 Halles Castellane,1,0.0013550135501355014
+015 Les Aubes,012 Boutonnet,1,0.0013550135501355014
+015 Les Aubes,015 Les Aubes,4,0.005420054200542005
+015 Les Aubes,017 MÃ©diathÃ¨que Emile Zola,1,0.0013550135501355014
+015 Les Aubes,018 Nombre d'Or,1,0.0013550135501355014
+015 Les Aubes,023 Les Arceaux,1,0.0013550135501355014
+015 Les Aubes,024 CitÃ© Mion,2,0.0027100271002710027
+015 Les Aubes,027 Odysseum,1,0.0013550135501355014
+015 Les Aubes,029 Richter,1,0.0013550135501355014
+015 Les Aubes,030 Charles Flahault,1,0.0013550135501355014
+015 Les Aubes,032 PrÃ©s d'ArÃ¨nes,1,0.0013550135501355014
+015 Les Aubes,033 Garcia Lorca,1,0.0013550135501355014
+015 Les Aubes,035 Malbosc,1,0.0013550135501355014
+015 Les Aubes,036 Occitanie,1,0.0013550135501355014
+015 Les Aubes,037 FacdesSciences,1,0.0013550135501355014
+015 Les Aubes,046 PÃ¨re Soulas,2,0.0027100271002710027
+016 Antigone centre,001 Rue Jules Ferry - Gare Saint-Roch,15,0.02032520325203252
+016 Antigone centre,002 ComÃ©die,42,0.056910569105691054
+016 Antigone centre,003 Esplanade,9,0.012195121951219513
+016 Antigone centre,004 HÃ´tel de Ville,4,0.005420054200542005
+016 Antigone centre,005 Corum,15,0.02032520325203252
+016 Antigone centre,006 Place Albert 1er - St Charles,64,0.08672086720867209
+016 Antigone centre,007 Foch,7,0.009485094850948509
+016 Antigone centre,008 Halles Castellane,18,0.024390243902439025
+016 Antigone centre,009 Observatoire,29,0.03929539295392954
+016 Antigone centre,010 Rondelet,8,0.01084010840108401
+016 Antigone centre,011 Plan Cabanes,16,0.02168021680216802
+016 Antigone centre,012 Boutonnet,53,0.07181571815718157
+016 Antigone centre,013 Emile Combes,9,0.012195121951219513
+016 Antigone centre,014 Beaux-Arts,4,0.005420054200542005
+016 Antigone centre,015 Les Aubes,1,0.0013550135501355014
+016 Antigone centre,016 Antigone centre,159,0.21544715447154472
+016 Antigone centre,017 MÃ©diathÃ¨que Emile Zola,5,0.006775067750677507
+016 Antigone centre,018 Nombre d'Or,15,0.02032520325203252
+016 Antigone centre,019 Louis Blanc,21,0.028455284552845527
+016 Antigone centre,020 Gambetta,6,0.008130081300813009
+016 Antigone centre,021 Port Marianne,3,0.0040650406504065045
+016 Antigone centre,022 Clemenceau,5,0.006775067750677507
+016 Antigone centre,023 Les Arceaux,8,0.01084010840108401
+016 Antigone centre,024 CitÃ© Mion,3,0.0040650406504065045
+016 Antigone centre,025 Nouveau Saint-Roch,8,0.01084010840108401
+016 Antigone centre,026 Renouvier,1,0.0013550135501355014
+016 Antigone centre,028 Saint-Denis,5,0.006775067750677507
+016 Antigone centre,029 Richter,2,0.0027100271002710027
+016 Antigone centre,030 Charles Flahault,3,0.0040650406504065045
+016 Antigone centre,031 Voltaire,5,0.006775067750677507
+016 Antigone centre,032 PrÃ©s d'ArÃ¨nes,1,0.0013550135501355014
+016 Antigone centre,033 Garcia Lorca,3,0.0040650406504065045
+016 Antigone centre,034 Vert Bois,5,0.006775067750677507
+016 Antigone centre,035 Malbosc,9,0.012195121951219513
+016 Antigone centre,036 Occitanie,54,0.07317073170731707
+016 Antigone centre,037 FacdesSciences,47,0.06368563685636856
+016 Antigone centre,038 Fac de Lettres,13,0.017615176151761516
+016 Antigone centre,039 Aiguelongue,6,0.008130081300813009
+016 Antigone centre,040 Jeu de Mail des AbbÃ©s,5,0.006775067750677507
+016 Antigone centre,042 Marie Caizergues,8,0.01084010840108401
+016 Antigone centre,043 Sabines,4,0.005420054200542005
+016 Antigone centre,044 Celleneuve,2,0.0027100271002710027
+016 Antigone centre,045 Jardin de la Lironde,5,0.006775067750677507
+016 Antigone centre,046 PÃ¨re Soulas,5,0.006775067750677507
+016 Antigone centre,047 Place Viala,7,0.009485094850948509
+016 Antigone centre,048 HÃ´tel du DÃ©partement,4,0.005420054200542005
+016 Antigone centre,049 Tonnelles,8,0.01084010840108401
+016 Antigone centre,050 Parvis Jules Ferry - Gare Saint-Roch,10,0.013550135501355014
+016 Antigone centre,051 Pont de Lattes - Gare Saint-Roch,14,0.018970189701897018
+016 Antigone centre,053 Deux Ponts - Gare Saint-Roch,2,0.0027100271002710027
+016 Antigone centre,055 PÃ©rols Etang de l'Or,3,0.0040650406504065045
+016 Antigone centre,056 Albert 1er - CathÃ©drale,3,0.0040650406504065045
+016 Antigone centre,057 Saint-Guilhem - Courreau,7,0.009485094850948509
+016 Antigone centre,060 Comedie Baudin,5,0.006775067750677507
+016 Antigone centre,098 AtelierTAM,1,0.0013550135501355014
+017 MÃ©diathÃ¨que Emile Zola,001 Rue Jules Ferry - Gare Saint-Roch,25,0.03387533875338753
+017 MÃ©diathÃ¨que Emile Zola,002 ComÃ©die,61,0.08265582655826559
+017 MÃ©diathÃ¨que Emile Zola,003 Esplanade,19,0.025745257452574527
+017 MÃ©diathÃ¨que Emile Zola,004 HÃ´tel de Ville,5,0.006775067750677507
+017 MÃ©diathÃ¨que Emile Zola,005 Corum,33,0.044715447154471545
+017 MÃ©diathÃ¨que Emile Zola,006 Place Albert 1er - St Charles,86,0.11653116531165311
+017 MÃ©diathÃ¨que Emile Zola,007 Foch,7,0.009485094850948509
+017 MÃ©diathÃ¨que Emile Zola,008 Halles Castellane,26,0.03523035230352303
+017 MÃ©diathÃ¨que Emile Zola,009 Observatoire,38,0.051490514905149054
+017 MÃ©diathÃ¨que Emile Zola,010 Rondelet,33,0.044715447154471545
+017 MÃ©diathÃ¨que Emile Zola,011 Plan Cabanes,30,0.04065040650406504
+017 MÃ©diathÃ¨que Emile Zola,012 Boutonnet,128,0.17344173441734417
+017 MÃ©diathÃ¨que Emile Zola,013 Emile Combes,7,0.009485094850948509
+017 MÃ©diathÃ¨que Emile Zola,014 Beaux-Arts,12,0.016260162601626018
+017 MÃ©diathÃ¨que Emile Zola,015 Les Aubes,5,0.006775067750677507
+017 MÃ©diathÃ¨que Emile Zola,016 Antigone centre,8,0.01084010840108401
+017 MÃ©diathÃ¨que Emile Zola,017 MÃ©diathÃ¨que Emile Zola,222,0.3008130081300813
+017 MÃ©diathÃ¨que Emile Zola,018 Nombre d'Or,32,0.04336043360433604
+017 MÃ©diathÃ¨que Emile Zola,019 Louis Blanc,62,0.08401084010840108
+017 MÃ©diathÃ¨que Emile Zola,020 Gambetta,17,0.023035230352303523
+017 MÃ©diathÃ¨que Emile Zola,021 Port Marianne,2,0.0027100271002710027
+017 MÃ©diathÃ¨que Emile Zola,022 Clemenceau,7,0.009485094850948509
+017 MÃ©diathÃ¨que Emile Zola,023 Les Arceaux,6,0.008130081300813009
+017 MÃ©diathÃ¨que Emile Zola,024 CitÃ© Mion,1,0.0013550135501355014
+017 MÃ©diathÃ¨que Emile Zola,025 Nouveau Saint-Roch,20,0.02710027100271003
+017 MÃ©diathÃ¨que Emile Zola,026 Renouvier,5,0.006775067750677507
+017 MÃ©diathÃ¨que Emile Zola,028 Saint-Denis,31,0.04200542005420054
+017 MÃ©diathÃ¨que Emile Zola,029 Richter,2,0.0027100271002710027
+017 MÃ©diathÃ¨que Emile Zola,030 Charles Flahault,21,0.028455284552845527
+017 MÃ©diathÃ¨que Emile Zola,031 Voltaire,5,0.006775067750677507
+017 MÃ©diathÃ¨que Emile Zola,032 PrÃ©s d'ArÃ¨nes,15,0.02032520325203252
+017 MÃ©diathÃ¨que Emile Zola,033 Garcia Lorca,18,0.024390243902439025
+017 MÃ©diathÃ¨que Emile Zola,034 Vert Bois,13,0.017615176151761516
+017 MÃ©diathÃ¨que Emile Zola,035 Malbosc,13,0.017615176151761516
+017 MÃ©diathÃ¨que Emile Zola,036 Occitanie,104,0.14092140921409213
+017 MÃ©diathÃ¨que Emile Zola,037 FacdesSciences,100,0.13550135501355012
+017 MÃ©diathÃ¨que Emile Zola,038 Fac de Lettres,46,0.06233062330623306
+017 MÃ©diathÃ¨que Emile Zola,039 Aiguelongue,13,0.017615176151761516
+017 MÃ©diathÃ¨que Emile Zola,040 Jeu de Mail des AbbÃ©s,15,0.02032520325203252
+017 MÃ©diathÃ¨que Emile Zola,041 EuromÃ©decine,9,0.012195121951219513
+017 MÃ©diathÃ¨que Emile Zola,042 Marie Caizergues,15,0.02032520325203252
+017 MÃ©diathÃ¨que Emile Zola,043 Sabines,11,0.014905149051490514
+017 MÃ©diathÃ¨que Emile Zola,044 Celleneuve,3,0.0040650406504065045
+017 MÃ©diathÃ¨que Emile Zola,045 Jardin de la Lironde,6,0.008130081300813009
+017 MÃ©diathÃ¨que Emile Zola,046 PÃ¨re Soulas,13,0.017615176151761516
+017 MÃ©diathÃ¨que Emile Zola,047 Place Viala,7,0.009485094850948509
+017 MÃ©diathÃ¨que Emile Zola,048 HÃ´tel du DÃ©partement,1,0.0013550135501355014
+017 MÃ©diathÃ¨que Emile Zola,049 Tonnelles,8,0.01084010840108401
+017 MÃ©diathÃ¨que Emile Zola,050 Parvis Jules Ferry - Gare Saint-Roch,23,0.03116531165311653
+017 MÃ©diathÃ¨que Emile Zola,051 Pont de Lattes - Gare Saint-Roch,23,0.03116531165311653
+017 MÃ©diathÃ¨que Emile Zola,053 Deux Ponts - Gare Saint-Roch,2,0.0027100271002710027
+017 MÃ©diathÃ¨que Emile Zola,054 Providence - Ovalie,5,0.006775067750677507
+017 MÃ©diathÃ¨que Emile Zola,055 PÃ©rols Etang de l'Or,2,0.0027100271002710027
+017 MÃ©diathÃ¨que Emile Zola,056 Albert 1er - CathÃ©drale,7,0.009485094850948509
+017 MÃ©diathÃ¨que Emile Zola,057 Saint-Guilhem - Courreau,21,0.028455284552845527
+017 MÃ©diathÃ¨que Emile Zola,060 Comedie Baudin,2,0.0027100271002710027
+017 MÃ©diathÃ¨que Emile Zola,098 AtelierTAM,1,0.0013550135501355014
+018 Nombre d'Or,001 Rue Jules Ferry - Gare Saint-Roch,1,0.0013550135501355014
+018 Nombre d'Or,002 ComÃ©die,11,0.014905149051490514
+018 Nombre d'Or,003 Esplanade,18,0.024390243902439025
+018 Nombre d'Or,004 HÃ´tel de Ville,13,0.017615176151761516
+018 Nombre d'Or,005 Corum,7,0.009485094850948509
+018 Nombre d'Or,006 Place Albert 1er - St Charles,11,0.014905149051490514
+018 Nombre d'Or,007 Foch,3,0.0040650406504065045
+018 Nombre d'Or,008 Halles Castellane,5,0.006775067750677507
+018 Nombre d'Or,009 Observatoire,9,0.012195121951219513
+018 Nombre d'Or,010 Rondelet,1,0.0013550135501355014
+018 Nombre d'Or,011 Plan Cabanes,11,0.014905149051490514
+018 Nombre d'Or,012 Boutonnet,26,0.03523035230352303
+018 Nombre d'Or,013 Emile Combes,1,0.0013550135501355014
+018 Nombre d'Or,014 Beaux-Arts,3,0.0040650406504065045
+018 Nombre d'Or,015 Les Aubes,1,0.0013550135501355014
+018 Nombre d'Or,016 Antigone centre,8,0.01084010840108401
+018 Nombre d'Or,017 MÃ©diathÃ¨que Emile Zola,33,0.044715447154471545
+018 Nombre d'Or,018 Nombre d'Or,106,0.14363143631436315
+018 Nombre d'Or,019 Louis Blanc,12,0.016260162601626018
+018 Nombre d'Or,020 Gambetta,2,0.0027100271002710027
+018 Nombre d'Or,021 Port Marianne,10,0.013550135501355014
+018 Nombre d'Or,025 Nouveau Saint-Roch,5,0.006775067750677507
+018 Nombre d'Or,027 Odysseum,1,0.0013550135501355014
+018 Nombre d'Or,029 Richter,17,0.023035230352303523
+018 Nombre d'Or,031 Voltaire,6,0.008130081300813009
+018 Nombre d'Or,033 Garcia Lorca,1,0.0013550135501355014
+018 Nombre d'Or,034 Vert Bois,2,0.0027100271002710027
+018 Nombre d'Or,035 Malbosc,2,0.0027100271002710027
+018 Nombre d'Or,036 Occitanie,32,0.04336043360433604
+018 Nombre d'Or,037 FacdesSciences,32,0.04336043360433604
+018 Nombre d'Or,038 Fac de Lettres,7,0.009485094850948509
+018 Nombre d'Or,039 Aiguelongue,8,0.01084010840108401
+018 Nombre d'Or,041 EuromÃ©decine,1,0.0013550135501355014
+018 Nombre d'Or,042 Marie Caizergues,1,0.0013550135501355014
+018 Nombre d'Or,043 Sabines,4,0.005420054200542005
+018 Nombre d'Or,044 Celleneuve,1,0.0013550135501355014
+018 Nombre d'Or,045 Jardin de la Lironde,9,0.012195121951219513
+018 Nombre d'Or,046 PÃ¨re Soulas,1,0.0013550135501355014
+018 Nombre d'Or,047 Place Viala,2,0.0027100271002710027
+018 Nombre d'Or,048 HÃ´tel du DÃ©partement,1,0.0013550135501355014
+018 Nombre d'Or,049 Tonnelles,3,0.0040650406504065045
+018 Nombre d'Or,050 Parvis Jules Ferry - Gare Saint-Roch,2,0.0027100271002710027
+018 Nombre d'Or,051 Pont de Lattes - Gare Saint-Roch,5,0.006775067750677507
+018 Nombre d'Or,056 Albert 1er - CathÃ©drale,1,0.0013550135501355014
+018 Nombre d'Or,057 Saint-Guilhem - Courreau,6,0.008130081300813009
+018 Nombre d'Or,061 Jean de Beins,1,0.0013550135501355014
+018 Nombre d'Or,098 AtelierTAM,1,0.0013550135501355014
+019 Louis Blanc,001 Rue Jules Ferry - Gare Saint-Roch,3,0.0040650406504065045
+019 Louis Blanc,002 ComÃ©die,2,0.0027100271002710027
+019 Louis Blanc,004 HÃ´tel de Ville,6,0.008130081300813009
+019 Louis Blanc,005 Corum,13,0.017615176151761516
+019 Louis Blanc,006 Place Albert 1er - St Charles,42,0.056910569105691054
+019 Louis Blanc,009 Observatoire,5,0.006775067750677507
+019 Louis Blanc,010 Rondelet,6,0.008130081300813009
+019 Louis Blanc,011 Plan Cabanes,1,0.0013550135501355014
+019 Louis Blanc,012 Boutonnet,77,0.1043360433604336
+019 Louis Blanc,013 Emile Combes,1,0.0013550135501355014
+019 Louis Blanc,014 Beaux-Arts,4,0.005420054200542005
+019 Louis Blanc,015 Les Aubes,3,0.0040650406504065045
+019 Louis Blanc,016 Antigone centre,17,0.023035230352303523
+019 Louis Blanc,017 MÃ©diathÃ¨que Emile Zola,19,0.025745257452574527
+019 Louis Blanc,018 Nombre d'Or,1,0.0013550135501355014
+019 Louis Blanc,019 Louis Blanc,110,0.14905149051490515
+019 Louis Blanc,020 Gambetta,1,0.0013550135501355014
+019 Louis Blanc,021 Port Marianne,8,0.01084010840108401
+019 Louis Blanc,023 Les Arceaux,2,0.0027100271002710027
+019 Louis Blanc,025 Nouveau Saint-Roch,5,0.006775067750677507
+019 Louis Blanc,028 Saint-Denis,2,0.0027100271002710027
+019 Louis Blanc,029 Richter,4,0.005420054200542005
+019 Louis Blanc,030 Charles Flahault,8,0.01084010840108401
+019 Louis Blanc,031 Voltaire,3,0.0040650406504065045
+019 Louis Blanc,032 PrÃ©s d'ArÃ¨nes,6,0.008130081300813009
+019 Louis Blanc,033 Garcia Lorca,4,0.005420054200542005
+019 Louis Blanc,034 Vert Bois,17,0.023035230352303523
+019 Louis Blanc,035 Malbosc,8,0.01084010840108401
+019 Louis Blanc,036 Occitanie,114,0.15447154471544716
+019 Louis Blanc,037 FacdesSciences,96,0.13008130081300814
+019 Louis Blanc,038 Fac de Lettres,45,0.06097560975609756
+019 Louis Blanc,039 Aiguelongue,4,0.005420054200542005
+019 Louis Blanc,040 Jeu de Mail des AbbÃ©s,10,0.013550135501355014
+019 Louis Blanc,041 EuromÃ©decine,6,0.008130081300813009
+019 Louis Blanc,042 Marie Caizergues,7,0.009485094850948509
+019 Louis Blanc,043 Sabines,1,0.0013550135501355014
+019 Louis Blanc,044 Celleneuve,1,0.0013550135501355014
+019 Louis Blanc,045 Jardin de la Lironde,2,0.0027100271002710027
+019 Louis Blanc,046 PÃ¨re Soulas,4,0.005420054200542005
+019 Louis Blanc,047 Place Viala,5,0.006775067750677507
+019 Louis Blanc,048 HÃ´tel du DÃ©partement,8,0.01084010840108401
+019 Louis Blanc,049 Tonnelles,4,0.005420054200542005
+019 Louis Blanc,050 Parvis Jules Ferry - Gare Saint-Roch,1,0.0013550135501355014
+019 Louis Blanc,051 Pont de Lattes - Gare Saint-Roch,3,0.0040650406504065045
+019 Louis Blanc,056 Albert 1er - CathÃ©drale,3,0.0040650406504065045
+019 Louis Blanc,059 Sud De France,1,0.0013550135501355014
+020 Gambetta,002 ComÃ©die,2,0.0027100271002710027
+020 Gambetta,004 HÃ´tel de Ville,3,0.0040650406504065045
+020 Gambetta,005 Corum,2,0.0027100271002710027
+020 Gambetta,010 Rondelet,2,0.0027100271002710027
+020 Gambetta,011 Plan Cabanes,6,0.008130081300813009
+020 Gambetta,012 Boutonnet,3,0.0040650406504065045
+020 Gambetta,016 Antigone centre,2,0.0027100271002710027
+020 Gambetta,018 Nombre d'Or,4,0.005420054200542005
+020 Gambetta,019 Louis Blanc,2,0.0027100271002710027
+020 Gambetta,020 Gambetta,24,0.032520325203252036
+020 Gambetta,021 Port Marianne,5,0.006775067750677507
+020 Gambetta,023 Les Arceaux,2,0.0027100271002710027
+020 Gambetta,027 Odysseum,1,0.0013550135501355014
+020 Gambetta,029 Richter,2,0.0027100271002710027
+020 Gambetta,030 Charles Flahault,6,0.008130081300813009
+020 Gambetta,031 Voltaire,3,0.0040650406504065045
+020 Gambetta,033 Garcia Lorca,1,0.0013550135501355014
+020 Gambetta,035 Malbosc,1,0.0013550135501355014
+020 Gambetta,036 Occitanie,6,0.008130081300813009
+020 Gambetta,037 FacdesSciences,11,0.014905149051490514
+020 Gambetta,038 Fac de Lettres,1,0.0013550135501355014
+020 Gambetta,044 Celleneuve,9,0.012195121951219513
+020 Gambetta,046 PÃ¨re Soulas,3,0.0040650406504065045
+020 Gambetta,047 Place Viala,4,0.005420054200542005
+020 Gambetta,048 HÃ´tel du DÃ©partement,6,0.008130081300813009
+020 Gambetta,049 Tonnelles,15,0.02032520325203252
+020 Gambetta,051 Pont de Lattes - Gare Saint-Roch,2,0.0027100271002710027
+020 Gambetta,054 Providence - Ovalie,2,0.0027100271002710027
+021 Port Marianne,001 Rue Jules Ferry - Gare Saint-Roch,5,0.006775067750677507
+021 Port Marianne,002 ComÃ©die,1,0.0013550135501355014
+021 Port Marianne,004 HÃ´tel de Ville,5,0.006775067750677507
+021 Port Marianne,005 Corum,6,0.008130081300813009
+021 Port Marianne,006 Place Albert 1er - St Charles,35,0.04742547425474255
+021 Port Marianne,009 Observatoire,3,0.0040650406504065045
+021 Port Marianne,010 Rondelet,3,0.0040650406504065045
+021 Port Marianne,011 Plan Cabanes,4,0.005420054200542005
+021 Port Marianne,012 Boutonnet,5,0.006775067750677507
+021 Port Marianne,017 MÃ©diathÃ¨que Emile Zola,4,0.005420054200542005
+021 Port Marianne,018 Nombre d'Or,8,0.01084010840108401
+021 Port Marianne,019 Louis Blanc,4,0.005420054200542005
+021 Port Marianne,020 Gambetta,1,0.0013550135501355014
+021 Port Marianne,021 Port Marianne,43,0.058265582655826556
+021 Port Marianne,022 Clemenceau,5,0.006775067750677507
+021 Port Marianne,023 Les Arceaux,1,0.0013550135501355014
+021 Port Marianne,025 Nouveau Saint-Roch,6,0.008130081300813009
+021 Port Marianne,026 Renouvier,1,0.0013550135501355014
+021 Port Marianne,028 Saint-Denis,6,0.008130081300813009
+021 Port Marianne,031 Voltaire,3,0.0040650406504065045
+021 Port Marianne,033 Garcia Lorca,2,0.0027100271002710027
+021 Port Marianne,036 Occitanie,4,0.005420054200542005
+021 Port Marianne,037 FacdesSciences,2,0.0027100271002710027
+021 Port Marianne,038 Fac de Lettres,1,0.0013550135501355014
+021 Port Marianne,039 Aiguelongue,2,0.0027100271002710027
+021 Port Marianne,042 Marie Caizergues,1,0.0013550135501355014
+021 Port Marianne,043 Sabines,2,0.0027100271002710027
+021 Port Marianne,044 Celleneuve,6,0.008130081300813009
+021 Port Marianne,046 PÃ¨re Soulas,2,0.0027100271002710027
+021 Port Marianne,047 Place Viala,2,0.0027100271002710027
+021 Port Marianne,048 HÃ´tel du DÃ©partement,2,0.0027100271002710027
+021 Port Marianne,055 PÃ©rols Etang de l'Or,12,0.016260162601626018
+021 Port Marianne,098 AtelierTAM,1,0.0013550135501355014
+022 Clemenceau,002 ComÃ©die,3,0.0040650406504065045
+022 Clemenceau,005 Corum,4,0.005420054200542005
+022 Clemenceau,006 Place Albert 1er - St Charles,1,0.0013550135501355014
+022 Clemenceau,011 Plan Cabanes,2,0.0027100271002710027
+022 Clemenceau,012 Boutonnet,3,0.0040650406504065045
+022 Clemenceau,017 MÃ©diathÃ¨que Emile Zola,1,0.0013550135501355014
+022 Clemenceau,018 Nombre d'Or,1,0.0013550135501355014
+022 Clemenceau,020 Gambetta,1,0.0013550135501355014
+022 Clemenceau,022 Clemenceau,8,0.01084010840108401
+022 Clemenceau,023 Les Arceaux,2,0.0027100271002710027
+022 Clemenceau,026 Renouvier,2,0.0027100271002710027
+022 Clemenceau,028 Saint-Denis,2,0.0027100271002710027
+022 Clemenceau,029 Richter,1,0.0013550135501355014
+022 Clemenceau,031 Voltaire,3,0.0040650406504065045
+022 Clemenceau,032 PrÃ©s d'ArÃ¨nes,1,0.0013550135501355014
+022 Clemenceau,035 Malbosc,1,0.0013550135501355014
+022 Clemenceau,036 Occitanie,8,0.01084010840108401
+022 Clemenceau,037 FacdesSciences,7,0.009485094850948509
+022 Clemenceau,038 Fac de Lettres,3,0.0040650406504065045
+022 Clemenceau,043 Sabines,4,0.005420054200542005
+022 Clemenceau,047 Place Viala,1,0.0013550135501355014
+022 Clemenceau,049 Tonnelles,2,0.0027100271002710027
+022 Clemenceau,054 Providence - Ovalie,5,0.006775067750677507
+022 Clemenceau,056 Albert 1er - CathÃ©drale,1,0.0013550135501355014
+022 Clemenceau,057 Saint-Guilhem - Courreau,2,0.0027100271002710027
+023 Les Arceaux,002 ComÃ©die,1,0.0013550135501355014
+023 Les Arceaux,006 Place Albert 1er - St Charles,3,0.0040650406504065045
+023 Les Arceaux,008 Halles Castellane,1,0.0013550135501355014
+023 Les Arceaux,011 Plan Cabanes,3,0.0040650406504065045
+023 Les Arceaux,012 Boutonnet,15,0.02032520325203252
+023 Les Arceaux,018 Nombre d'Or,1,0.0013550135501355014
+023 Les Arceaux,019 Louis Blanc,4,0.005420054200542005
+023 Les Arceaux,023 Les Arceaux,32,0.04336043360433604
+023 Les Arceaux,025 Nouveau Saint-Roch,1,0.0013550135501355014
+023 Les Arceaux,030 Charles Flahault,5,0.006775067750677507
+023 Les Arceaux,031 Voltaire,1,0.0013550135501355014
+023 Les Arceaux,032 PrÃ©s d'ArÃ¨nes,1,0.0013550135501355014
+023 Les Arceaux,035 Malbosc,1,0.0013550135501355014
+023 Les Arceaux,036 Occitanie,10,0.013550135501355014
+023 Les Arceaux,037 FacdesSciences,8,0.01084010840108401
+023 Les Arceaux,038 Fac de Lettres,10,0.013550135501355014
+023 Les Arceaux,039 Aiguelongue,1,0.0013550135501355014
+023 Les Arceaux,044 Celleneuve,10,0.013550135501355014
+023 Les Arceaux,046 PÃ¨re Soulas,14,0.018970189701897018
+023 Les Arceaux,047 Place Viala,14,0.018970189701897018
+023 Les Arceaux,048 HÃ´tel du DÃ©partement,2,0.0027100271002710027
+023 Les Arceaux,049 Tonnelles,6,0.008130081300813009
+023 Les Arceaux,054 Providence - Ovalie,1,0.0013550135501355014
+024 CitÃ© Mion,001 Rue Jules Ferry - Gare Saint-Roch,3,0.0040650406504065045
+024 CitÃ© Mion,002 ComÃ©die,1,0.0013550135501355014
+024 CitÃ© Mion,006 Place Albert 1er - St Charles,5,0.006775067750677507
+024 CitÃ© Mion,009 Observatoire,1,0.0013550135501355014
+024 CitÃ© Mion,012 Boutonnet,2,0.0027100271002710027
+024 CitÃ© Mion,015 Les Aubes,1,0.0013550135501355014
+024 CitÃ© Mion,018 Nombre d'Or,2,0.0027100271002710027
+024 CitÃ© Mion,021 Port Marianne,1,0.0013550135501355014
+024 CitÃ© Mion,024 CitÃ© Mion,15,0.02032520325203252
+024 CitÃ© Mion,028 Saint-Denis,6,0.008130081300813009
+024 CitÃ© Mion,029 Richter,4,0.005420054200542005
+024 CitÃ© Mion,032 PrÃ©s d'ArÃ¨nes,1,0.0013550135501355014
+024 CitÃ© Mion,033 Garcia Lorca,5,0.006775067750677507
+024 CitÃ© Mion,036 Occitanie,3,0.0040650406504065045
+024 CitÃ© Mion,037 FacdesSciences,2,0.0027100271002710027
+024 CitÃ© Mion,038 Fac de Lettres,2,0.0027100271002710027
+024 CitÃ© Mion,044 Celleneuve,1,0.0013550135501355014
+024 CitÃ© Mion,045 Jardin de la Lironde,1,0.0013550135501355014
+024 CitÃ© Mion,049 Tonnelles,1,0.0013550135501355014
+024 CitÃ© Mion,055 PÃ©rols Etang de l'Or,1,0.0013550135501355014
+024 CitÃ© Mion,057 Saint-Guilhem - Courreau,4,0.005420054200542005
+025 Nouveau Saint-Roch,001 Rue Jules Ferry - Gare Saint-Roch,4,0.005420054200542005
+025 Nouveau Saint-Roch,002 ComÃ©die,1,0.0013550135501355014
+025 Nouveau Saint-Roch,004 HÃ´tel de Ville,1,0.0013550135501355014
+025 Nouveau Saint-Roch,005 Corum,3,0.0040650406504065045
+025 Nouveau Saint-Roch,006 Place Albert 1er - St Charles,6,0.008130081300813009
+025 Nouveau Saint-Roch,008 Halles Castellane,1,0.0013550135501355014
+025 Nouveau Saint-Roch,009 Observatoire,3,0.0040650406504065045
+025 Nouveau Saint-Roch,010 Rondelet,3,0.0040650406504065045
+025 Nouveau Saint-Roch,011 Plan Cabanes,5,0.006775067750677507
+025 Nouveau Saint-Roch,012 Boutonnet,6,0.008130081300813009
+025 Nouveau Saint-Roch,013 Emile Combes,5,0.006775067750677507
+025 Nouveau Saint-Roch,014 Beaux-Arts,1,0.0013550135501355014
+025 Nouveau Saint-Roch,016 Antigone centre,4,0.005420054200542005
+025 Nouveau Saint-Roch,017 MÃ©diathÃ¨que Emile Zola,4,0.005420054200542005
+025 Nouveau Saint-Roch,018 Nombre d'Or,2,0.0027100271002710027
+025 Nouveau Saint-Roch,020 Gambetta,1,0.0013550135501355014
+025 Nouveau Saint-Roch,021 Port Marianne,5,0.006775067750677507
+025 Nouveau Saint-Roch,022 Clemenceau,3,0.0040650406504065045
+025 Nouveau Saint-Roch,023 Les Arceaux,1,0.0013550135501355014
+025 Nouveau Saint-Roch,025 Nouveau Saint-Roch,42,0.056910569105691054
+025 Nouveau Saint-Roch,028 Saint-Denis,5,0.006775067750677507
+025 Nouveau Saint-Roch,029 Richter,5,0.006775067750677507
+025 Nouveau Saint-Roch,030 Charles Flahault,2,0.0027100271002710027
+025 Nouveau Saint-Roch,031 Voltaire,3,0.0040650406504065045
+025 Nouveau Saint-Roch,032 PrÃ©s d'ArÃ¨nes,4,0.005420054200542005
+025 Nouveau Saint-Roch,033 Garcia Lorca,2,0.0027100271002710027
+025 Nouveau Saint-Roch,034 Vert Bois,1,0.0013550135501355014
+025 Nouveau Saint-Roch,035 Malbosc,1,0.0013550135501355014
+025 Nouveau Saint-Roch,036 Occitanie,8,0.01084010840108401
+025 Nouveau Saint-Roch,037 FacdesSciences,2,0.0027100271002710027
+025 Nouveau Saint-Roch,038 Fac de Lettres,2,0.0027100271002710027
+025 Nouveau Saint-Roch,039 Aiguelongue,3,0.0040650406504065045
+025 Nouveau Saint-Roch,040 Jeu de Mail des AbbÃ©s,1,0.0013550135501355014
+025 Nouveau Saint-Roch,041 EuromÃ©decine,5,0.006775067750677507
+025 Nouveau Saint-Roch,043 Sabines,36,0.04878048780487805
+025 Nouveau Saint-Roch,044 Celleneuve,1,0.0013550135501355014
+025 Nouveau Saint-Roch,046 PÃ¨re Soulas,3,0.0040650406504065045
+025 Nouveau Saint-Roch,047 Place Viala,1,0.0013550135501355014
+025 Nouveau Saint-Roch,049 Tonnelles,1,0.0013550135501355014
+025 Nouveau Saint-Roch,050 Parvis Jules Ferry - Gare Saint-Roch,3,0.0040650406504065045
+025 Nouveau Saint-Roch,054 Providence - Ovalie,2,0.0027100271002710027
+025 Nouveau Saint-Roch,056 Albert 1er - CathÃ©drale,1,0.0013550135501355014
+025 Nouveau Saint-Roch,057 Saint-Guilhem - Courreau,8,0.01084010840108401
+026 Renouvier,001 Rue Jules Ferry - Gare Saint-Roch,4,0.005420054200542005
+026 Renouvier,002 ComÃ©die,1,0.0013550135501355014
+026 Renouvier,005 Corum,1,0.0013550135501355014
+026 Renouvier,006 Place Albert 1er - St Charles,1,0.0013550135501355014
+026 Renouvier,008 Halles Castellane,2,0.0027100271002710027
+026 Renouvier,011 Plan Cabanes,1,0.0013550135501355014
+026 Renouvier,012 Boutonnet,9,0.012195121951219513
+026 Renouvier,016 Antigone centre,2,0.0027100271002710027
+026 Renouvier,017 MÃ©diathÃ¨que Emile Zola,4,0.005420054200542005
+026 Renouvier,018 Nombre d'Or,2,0.0027100271002710027
+026 Renouvier,021 Port Marianne,2,0.0027100271002710027
+026 Renouvier,025 Nouveau Saint-Roch,1,0.0013550135501355014
+026 Renouvier,026 Renouvier,14,0.018970189701897018
+026 Renouvier,030 Charles Flahault,2,0.0027100271002710027
+026 Renouvier,031 Voltaire,2,0.0027100271002710027
+026 Renouvier,032 PrÃ©s d'ArÃ¨nes,2,0.0027100271002710027
+026 Renouvier,036 Occitanie,4,0.005420054200542005
+026 Renouvier,037 FacdesSciences,2,0.0027100271002710027
+026 Renouvier,038 Fac de Lettres,2,0.0027100271002710027
+026 Renouvier,040 Jeu de Mail des AbbÃ©s,1,0.0013550135501355014
+026 Renouvier,043 Sabines,1,0.0013550135501355014
+026 Renouvier,046 PÃ¨re Soulas,2,0.0027100271002710027
+026 Renouvier,047 Place Viala,4,0.005420054200542005
+026 Renouvier,049 Tonnelles,5,0.006775067750677507
+027 Odysseum,002 ComÃ©die,1,0.0013550135501355014
+027 Odysseum,004 HÃ´tel de Ville,1,0.0013550135501355014
+027 Odysseum,017 MÃ©diathÃ¨que Emile Zola,2,0.0027100271002710027
+027 Odysseum,025 Nouveau Saint-Roch,1,0.0013550135501355014
+027 Odysseum,027 Odysseum,1,0.0013550135501355014
+027 Odysseum,055 PÃ©rols Etang de l'Or,1,0.0013550135501355014
+028 Saint-Denis,001 Rue Jules Ferry - Gare Saint-Roch,2,0.0027100271002710027
+028 Saint-Denis,002 ComÃ©die,3,0.0040650406504065045
+028 Saint-Denis,004 HÃ´tel de Ville,4,0.005420054200542005
+028 Saint-Denis,005 Corum,1,0.0013550135501355014
+028 Saint-Denis,006 Place Albert 1er - St Charles,17,0.023035230352303523
+028 Saint-Denis,008 Halles Castellane,2,0.0027100271002710027
+028 Saint-Denis,009 Observatoire,4,0.005420054200542005
+028 Saint-Denis,010 Rondelet,7,0.009485094850948509
+028 Saint-Denis,011 Plan Cabanes,10,0.013550135501355014
+028 Saint-Denis,012 Boutonnet,18,0.024390243902439025
+028 Saint-Denis,015 Les Aubes,3,0.0040650406504065045
+028 Saint-Denis,016 Antigone centre,8,0.01084010840108401
+028 Saint-Denis,017 MÃ©diathÃ¨que Emile Zola,8,0.01084010840108401
+028 Saint-Denis,018 Nombre d'Or,1,0.0013550135501355014
+028 Saint-Denis,019 Louis Blanc,3,0.0040650406504065045
+028 Saint-Denis,021 Port Marianne,3,0.0040650406504065045
+028 Saint-Denis,022 Clemenceau,2,0.0027100271002710027
+028 Saint-Denis,023 Les Arceaux,3,0.0040650406504065045
+028 Saint-Denis,024 CitÃ© Mion,4,0.005420054200542005
+028 Saint-Denis,025 Nouveau Saint-Roch,15,0.02032520325203252
+028 Saint-Denis,028 Saint-Denis,61,0.08265582655826559
+028 Saint-Denis,029 Richter,4,0.005420054200542005
+028 Saint-Denis,030 Charles Flahault,6,0.008130081300813009
+028 Saint-Denis,031 Voltaire,2,0.0027100271002710027
+028 Saint-Denis,032 PrÃ©s d'ArÃ¨nes,10,0.013550135501355014
+028 Saint-Denis,033 Garcia Lorca,4,0.005420054200542005
+028 Saint-Denis,034 Vert Bois,4,0.005420054200542005
+028 Saint-Denis,035 Malbosc,1,0.0013550135501355014
+028 Saint-Denis,036 Occitanie,33,0.044715447154471545
+028 Saint-Denis,037 FacdesSciences,20,0.02710027100271003
+028 Saint-Denis,038 Fac de Lettres,5,0.006775067750677507
+028 Saint-Denis,039 Aiguelongue,2,0.0027100271002710027
+028 Saint-Denis,042 Marie Caizergues,4,0.005420054200542005
+028 Saint-Denis,043 Sabines,9,0.012195121951219513
+028 Saint-Denis,044 Celleneuve,6,0.008130081300813009
+028 Saint-Denis,046 PÃ¨re Soulas,9,0.012195121951219513
+028 Saint-Denis,047 Place Viala,3,0.0040650406504065045
+028 Saint-Denis,048 HÃ´tel du DÃ©partement,1,0.0013550135501355014
+028 Saint-Denis,049 Tonnelles,12,0.016260162601626018
+028 Saint-Denis,050 Parvis Jules Ferry - Gare Saint-Roch,1,0.0013550135501355014
+028 Saint-Denis,053 Deux Ponts - Gare Saint-Roch,1,0.0013550135501355014
+028 Saint-Denis,054 Providence - Ovalie,6,0.008130081300813009
+028 Saint-Denis,057 Saint-Guilhem - Courreau,2,0.0027100271002710027
+029 Richter,005 Corum,4,0.005420054200542005
+029 Richter,006 Place Albert 1er - St Charles,5,0.006775067750677507
+029 Richter,008 Halles Castellane,1,0.0013550135501355014
+029 Richter,012 Boutonnet,4,0.005420054200542005
+029 Richter,017 MÃ©diathÃ¨que Emile Zola,2,0.0027100271002710027
+029 Richter,018 Nombre d'Or,3,0.0040650406504065045
+029 Richter,019 Louis Blanc,2,0.0027100271002710027
+029 Richter,022 Clemenceau,2,0.0027100271002710027
+029 Richter,023 Les Arceaux,5,0.006775067750677507
+029 Richter,024 CitÃ© Mion,1,0.0013550135501355014
+029 Richter,025 Nouveau Saint-Roch,4,0.005420054200542005
+029 Richter,028 Saint-Denis,2,0.0027100271002710027
+029 Richter,029 Richter,20,0.02710027100271003
+029 Richter,031 Voltaire,1,0.0013550135501355014
+029 Richter,036 Occitanie,1,0.0013550135501355014
+029 Richter,037 FacdesSciences,5,0.006775067750677507
+029 Richter,038 Fac de Lettres,1,0.0013550135501355014
+029 Richter,040 Jeu de Mail des AbbÃ©s,3,0.0040650406504065045
+029 Richter,042 Marie Caizergues,1,0.0013550135501355014
+029 Richter,043 Sabines,2,0.0027100271002710027
+029 Richter,044 Celleneuve,10,0.013550135501355014
+029 Richter,049 Tonnelles,3,0.0040650406504065045
+029 Richter,051 Pont de Lattes - Gare Saint-Roch,1,0.0013550135501355014
+029 Richter,055 PÃ©rols Etang de l'Or,4,0.005420054200542005
+029 Richter,057 Saint-Guilhem - Courreau,8,0.01084010840108401
+029 Richter,060 Comedie Baudin,2,0.0027100271002710027
+030 Charles Flahault,001 Rue Jules Ferry - Gare Saint-Roch,2,0.0027100271002710027
+030 Charles Flahault,002 ComÃ©die,1,0.0013550135501355014
+030 Charles Flahault,003 Esplanade,1,0.0013550135501355014
+030 Charles Flahault,006 Place Albert 1er - St Charles,1,0.0013550135501355014
+030 Charles Flahault,007 Foch,3,0.0040650406504065045
+030 Charles Flahault,008 Halles Castellane,1,0.0013550135501355014
+030 Charles Flahault,009 Observatoire,2,0.0027100271002710027
+030 Charles Flahault,010 Rondelet,3,0.0040650406504065045
+030 Charles Flahault,011 Plan Cabanes,3,0.0040650406504065045
+030 Charles Flahault,012 Boutonnet,6,0.008130081300813009
+030 Charles Flahault,013 Emile Combes,2,0.0027100271002710027
+030 Charles Flahault,014 Beaux-Arts,1,0.0013550135501355014
+030 Charles Flahault,018 Nombre d'Or,1,0.0013550135501355014
+030 Charles Flahault,019 Louis Blanc,1,0.0013550135501355014
+030 Charles Flahault,020 Gambetta,1,0.0013550135501355014
+030 Charles Flahault,023 Les Arceaux,5,0.006775067750677507
+030 Charles Flahault,025 Nouveau Saint-Roch,1,0.0013550135501355014
+030 Charles Flahault,026 Renouvier,2,0.0027100271002710027
+030 Charles Flahault,029 Richter,2,0.0027100271002710027
+030 Charles Flahault,030 Charles Flahault,20,0.02710027100271003
+030 Charles Flahault,032 PrÃ©s d'ArÃ¨nes,2,0.0027100271002710027
+030 Charles Flahault,034 Vert Bois,2,0.0027100271002710027
+030 Charles Flahault,036 Occitanie,27,0.036585365853658534
+030 Charles Flahault,037 FacdesSciences,16,0.02168021680216802
+030 Charles Flahault,038 Fac de Lettres,1,0.0013550135501355014
+030 Charles Flahault,041 EuromÃ©decine,2,0.0027100271002710027
+030 Charles Flahault,042 Marie Caizergues,1,0.0013550135501355014
+030 Charles Flahault,047 Place Viala,2,0.0027100271002710027
+030 Charles Flahault,053 Deux Ponts - Gare Saint-Roch,1,0.0013550135501355014
+030 Charles Flahault,057 Saint-Guilhem - Courreau,4,0.005420054200542005
+031 Voltaire,001 Rue Jules Ferry - Gare Saint-Roch,6,0.008130081300813009
+031 Voltaire,002 ComÃ©die,5,0.006775067750677507
+031 Voltaire,004 HÃ´tel de Ville,5,0.006775067750677507
+031 Voltaire,005 Corum,3,0.0040650406504065045
+031 Voltaire,006 Place Albert 1er - St Charles,3,0.0040650406504065045
+031 Voltaire,008 Halles Castellane,2,0.0027100271002710027
+031 Voltaire,009 Observatoire,6,0.008130081300813009
+031 Voltaire,010 Rondelet,2,0.0027100271002710027
+031 Voltaire,011 Plan Cabanes,5,0.006775067750677507
+031 Voltaire,012 Boutonnet,15,0.02032520325203252
+031 Voltaire,016 Antigone centre,1,0.0013550135501355014
+031 Voltaire,017 MÃ©diathÃ¨que Emile Zola,4,0.005420054200542005
+031 Voltaire,019 Louis Blanc,5,0.006775067750677507
+031 Voltaire,021 Port Marianne,13,0.017615176151761516
+031 Voltaire,025 Nouveau Saint-Roch,3,0.0040650406504065045
+031 Voltaire,026 Renouvier,1,0.0013550135501355014
+031 Voltaire,028 Saint-Denis,2,0.0027100271002710027
+031 Voltaire,029 Richter,8,0.01084010840108401
+031 Voltaire,031 Voltaire,32,0.04336043360433604
+031 Voltaire,033 Garcia Lorca,1,0.0013550135501355014
+031 Voltaire,035 Malbosc,1,0.0013550135501355014
+031 Voltaire,036 Occitanie,6,0.008130081300813009
+031 Voltaire,037 FacdesSciences,3,0.0040650406504065045
+031 Voltaire,038 Fac de Lettres,2,0.0027100271002710027
+031 Voltaire,039 Aiguelongue,3,0.0040650406504065045
+031 Voltaire,040 Jeu de Mail des AbbÃ©s,1,0.0013550135501355014
+031 Voltaire,042 Marie Caizergues,1,0.0013550135501355014
+031 Voltaire,043 Sabines,13,0.017615176151761516
+031 Voltaire,044 Celleneuve,4,0.005420054200542005
+031 Voltaire,045 Jardin de la Lironde,7,0.009485094850948509
+031 Voltaire,047 Place Viala,2,0.0027100271002710027
+031 Voltaire,048 HÃ´tel du DÃ©partement,2,0.0027100271002710027
+031 Voltaire,049 Tonnelles,10,0.013550135501355014
+031 Voltaire,050 Parvis Jules Ferry - Gare Saint-Roch,3,0.0040650406504065045
+031 Voltaire,051 Pont de Lattes - Gare Saint-Roch,2,0.0027100271002710027
+031 Voltaire,053 Deux Ponts - Gare Saint-Roch,1,0.0013550135501355014
+031 Voltaire,054 Providence - Ovalie,2,0.0027100271002710027
+031 Voltaire,055 PÃ©rols Etang de l'Or,3,0.0040650406504065045
+031 Voltaire,057 Saint-Guilhem - Courreau,4,0.005420054200542005
+032 PrÃ©s d'ArÃ¨nes,004 HÃ´tel de Ville,3,0.0040650406504065045
+032 PrÃ©s d'ArÃ¨nes,005 Corum,1,0.0013550135501355014
+032 PrÃ©s d'ArÃ¨nes,006 Place Albert 1er - St Charles,24,0.032520325203252036
+032 PrÃ©s d'ArÃ¨nes,007 Foch,1,0.0013550135501355014
+032 PrÃ©s d'ArÃ¨nes,010 Rondelet,2,0.0027100271002710027
+032 PrÃ©s d'ArÃ¨nes,011 Plan Cabanes,4,0.005420054200542005
+032 PrÃ©s d'ArÃ¨nes,012 Boutonnet,9,0.012195121951219513
+032 PrÃ©s d'ArÃ¨nes,017 MÃ©diathÃ¨que Emile Zola,1,0.0013550135501355014
+032 PrÃ©s d'ArÃ¨nes,021 Port Marianne,3,0.0040650406504065045
+032 PrÃ©s d'ArÃ¨nes,023 Les Arceaux,1,0.0013550135501355014
+032 PrÃ©s d'ArÃ¨nes,025 Nouveau Saint-Roch,6,0.008130081300813009
+032 PrÃ©s d'ArÃ¨nes,026 Renouvier,6,0.008130081300813009
+032 PrÃ©s d'ArÃ¨nes,028 Saint-Denis,3,0.0040650406504065045
+032 PrÃ©s d'ArÃ¨nes,030 Charles Flahault,7,0.009485094850948509
+032 PrÃ©s d'ArÃ¨nes,031 Voltaire,2,0.0027100271002710027
+032 PrÃ©s d'ArÃ¨nes,032 PrÃ©s d'ArÃ¨nes,15,0.02032520325203252
+032 PrÃ©s d'ArÃ¨nes,033 Garcia Lorca,1,0.0013550135501355014
+032 PrÃ©s d'ArÃ¨nes,036 Occitanie,5,0.006775067750677507
+032 PrÃ©s d'ArÃ¨nes,037 FacdesSciences,5,0.006775067750677507
+032 PrÃ©s d'ArÃ¨nes,041 EuromÃ©decine,2,0.0027100271002710027
+032 PrÃ©s d'ArÃ¨nes,044 Celleneuve,2,0.0027100271002710027
+032 PrÃ©s d'ArÃ¨nes,049 Tonnelles,1,0.0013550135501355014
+032 PrÃ©s d'ArÃ¨nes,051 Pont de Lattes - Gare Saint-Roch,2,0.0027100271002710027
+032 PrÃ©s d'ArÃ¨nes,053 Deux Ponts - Gare Saint-Roch,2,0.0027100271002710027
+032 PrÃ©s d'ArÃ¨nes,056 Albert 1er - CathÃ©drale,3,0.0040650406504065045
+032 PrÃ©s d'ArÃ¨nes,057 Saint-Guilhem - Courreau,4,0.005420054200542005
+033 Garcia Lorca,001 Rue Jules Ferry - Gare Saint-Roch,3,0.0040650406504065045
+033 Garcia Lorca,004 HÃ´tel de Ville,8,0.01084010840108401
+033 Garcia Lorca,005 Corum,3,0.0040650406504065045
+033 Garcia Lorca,006 Place Albert 1er - St Charles,20,0.02710027100271003
+033 Garcia Lorca,008 Halles Castellane,1,0.0013550135501355014
+033 Garcia Lorca,010 Rondelet,1,0.0013550135501355014
+033 Garcia Lorca,011 Plan Cabanes,2,0.0027100271002710027
+033 Garcia Lorca,012 Boutonnet,7,0.009485094850948509
+033 Garcia Lorca,014 Beaux-Arts,3,0.0040650406504065045
+033 Garcia Lorca,016 Antigone centre,3,0.0040650406504065045
+033 Garcia Lorca,017 MÃ©diathÃ¨que Emile Zola,11,0.014905149051490514
+033 Garcia Lorca,018 Nombre d'Or,1,0.0013550135501355014
+033 Garcia Lorca,019 Louis Blanc,4,0.005420054200542005
+033 Garcia Lorca,021 Port Marianne,5,0.006775067750677507
+033 Garcia Lorca,024 CitÃ© Mion,2,0.0027100271002710027
+033 Garcia Lorca,025 Nouveau Saint-Roch,2,0.0027100271002710027
+033 Garcia Lorca,028 Saint-Denis,2,0.0027100271002710027
+033 Garcia Lorca,029 Richter,3,0.0040650406504065045
+033 Garcia Lorca,030 Charles Flahault,2,0.0027100271002710027
+033 Garcia Lorca,031 Voltaire,2,0.0027100271002710027
+033 Garcia Lorca,032 PrÃ©s d'ArÃ¨nes,3,0.0040650406504065045
+033 Garcia Lorca,033 Garcia Lorca,34,0.04607046070460705
+033 Garcia Lorca,036 Occitanie,5,0.006775067750677507
+033 Garcia Lorca,037 FacdesSciences,3,0.0040650406504065045
+033 Garcia Lorca,038 Fac de Lettres,2,0.0027100271002710027
+033 Garcia Lorca,042 Marie Caizergues,4,0.005420054200542005
+033 Garcia Lorca,043 Sabines,4,0.005420054200542005
+033 Garcia Lorca,044 Celleneuve,8,0.01084010840108401
+033 Garcia Lorca,046 PÃ¨re Soulas,2,0.0027100271002710027
+033 Garcia Lorca,049 Tonnelles,4,0.005420054200542005
+033 Garcia Lorca,057 Saint-Guilhem - Courreau,1,0.0013550135501355014
+034 Vert Bois,004 HÃ´tel de Ville,2,0.0027100271002710027
+034 Vert Bois,005 Corum,5,0.006775067750677507
+034 Vert Bois,006 Place Albert 1er - St Charles,2,0.0027100271002710027
+034 Vert Bois,007 Foch,1,0.0013550135501355014
+034 Vert Bois,009 Observatoire,1,0.0013550135501355014
+034 Vert Bois,012 Boutonnet,5,0.006775067750677507
+034 Vert Bois,019 Louis Blanc,4,0.005420054200542005
+034 Vert Bois,025 Nouveau Saint-Roch,1,0.0013550135501355014
+034 Vert Bois,029 Richter,1,0.0013550135501355014
+034 Vert Bois,033 Garcia Lorca,1,0.0013550135501355014
+034 Vert Bois,034 Vert Bois,21,0.028455284552845527
+034 Vert Bois,035 Malbosc,2,0.0027100271002710027
+034 Vert Bois,036 Occitanie,7,0.009485094850948509
+034 Vert Bois,037 FacdesSciences,12,0.016260162601626018
+034 Vert Bois,046 PÃ¨re Soulas,1,0.0013550135501355014
+034 Vert Bois,047 Place Viala,2,0.0027100271002710027
+034 Vert Bois,049 Tonnelles,1,0.0013550135501355014
+034 Vert Bois,056 Albert 1er - CathÃ©drale,2,0.0027100271002710027
+035 Malbosc,006 Place Albert 1er - St Charles,3,0.0040650406504065045
+035 Malbosc,011 Plan Cabanes,1,0.0013550135501355014
+035 Malbosc,012 Boutonnet,3,0.0040650406504065045
+035 Malbosc,016 Antigone centre,1,0.0013550135501355014
+035 Malbosc,019 Louis Blanc,1,0.0013550135501355014
+035 Malbosc,022 Clemenceau,2,0.0027100271002710027
+035 Malbosc,025 Nouveau Saint-Roch,4,0.005420054200542005
+035 Malbosc,026 Renouvier,4,0.005420054200542005
+035 Malbosc,028 Saint-Denis,1,0.0013550135501355014
+035 Malbosc,030 Charles Flahault,1,0.0013550135501355014
+035 Malbosc,031 Voltaire,2,0.0027100271002710027
+035 Malbosc,035 Malbosc,21,0.028455284552845527
+035 Malbosc,036 Occitanie,6,0.008130081300813009
+035 Malbosc,037 FacdesSciences,2,0.0027100271002710027
+035 Malbosc,038 Fac de Lettres,2,0.0027100271002710027
+035 Malbosc,039 Aiguelongue,1,0.0013550135501355014
+035 Malbosc,044 Celleneuve,1,0.0013550135501355014
+035 Malbosc,046 PÃ¨re Soulas,3,0.0040650406504065045
+035 Malbosc,047 Place Viala,1,0.0013550135501355014
+035 Malbosc,053 Deux Ponts - Gare Saint-Roch,3,0.0040650406504065045
+035 Malbosc,056 Albert 1er - CathÃ©drale,1,0.0013550135501355014
+036 Occitanie,001 Rue Jules Ferry - Gare Saint-Roch,1,0.0013550135501355014
+036 Occitanie,002 ComÃ©die,8,0.01084010840108401
+036 Occitanie,003 Esplanade,1,0.0013550135501355014
+036 Occitanie,005 Corum,6,0.008130081300813009
+036 Occitanie,006 Place Albert 1er - St Charles,28,0.037940379403794036
+036 Occitanie,008 Halles Castellane,2,0.0027100271002710027
+036 Occitanie,009 Observatoire,4,0.005420054200542005
+036 Occitanie,010 Rondelet,1,0.0013550135501355014
+036 Occitanie,011 Plan Cabanes,7,0.009485094850948509
+036 Occitanie,012 Boutonnet,31,0.04200542005420054
+036 Occitanie,013 Emile Combes,1,0.0013550135501355014
+036 Occitanie,014 Beaux-Arts,1,0.0013550135501355014
+036 Occitanie,016 Antigone centre,5,0.006775067750677507
+036 Occitanie,017 MÃ©diathÃ¨que Emile Zola,5,0.006775067750677507
+036 Occitanie,018 Nombre d'Or,4,0.005420054200542005
+036 Occitanie,019 Louis Blanc,18,0.024390243902439025
+036 Occitanie,021 Port Marianne,1,0.0013550135501355014
+036 Occitanie,022 Clemenceau,2,0.0027100271002710027
+036 Occitanie,023 Les Arceaux,4,0.005420054200542005
+036 Occitanie,025 Nouveau Saint-Roch,9,0.012195121951219513
+036 Occitanie,028 Saint-Denis,3,0.0040650406504065045
+036 Occitanie,030 Charles Flahault,6,0.008130081300813009
+036 Occitanie,031 Voltaire,1,0.0013550135501355014
+036 Occitanie,032 PrÃ©s d'ArÃ¨nes,1,0.0013550135501355014
+036 Occitanie,034 Vert Bois,10,0.013550135501355014
+036 Occitanie,035 Malbosc,15,0.02032520325203252
+036 Occitanie,036 Occitanie,79,0.1070460704607046
+036 Occitanie,037 FacdesSciences,23,0.03116531165311653
+036 Occitanie,038 Fac de Lettres,10,0.013550135501355014
+036 Occitanie,039 Aiguelongue,2,0.0027100271002710027
+036 Occitanie,041 EuromÃ©decine,14,0.018970189701897018
+036 Occitanie,042 Marie Caizergues,3,0.0040650406504065045
+036 Occitanie,043 Sabines,7,0.009485094850948509
+036 Occitanie,044 Celleneuve,4,0.005420054200542005
+036 Occitanie,046 PÃ¨re Soulas,3,0.0040650406504065045
+036 Occitanie,048 HÃ´tel du DÃ©partement,2,0.0027100271002710027
+036 Occitanie,049 Tonnelles,3,0.0040650406504065045
+036 Occitanie,050 Parvis Jules Ferry - Gare Saint-Roch,5,0.006775067750677507
+036 Occitanie,056 Albert 1er - CathÃ©drale,1,0.0013550135501355014
+036 Occitanie,057 Saint-Guilhem - Courreau,2,0.0027100271002710027
+036 Occitanie,060 Comedie Baudin,1,0.0013550135501355014
+037 FacdesSciences,002 ComÃ©die,2,0.0027100271002710027
+037 FacdesSciences,003 Esplanade,1,0.0013550135501355014
+037 FacdesSciences,004 HÃ´tel de Ville,1,0.0013550135501355014
+037 FacdesSciences,005 Corum,4,0.005420054200542005
+037 FacdesSciences,006 Place Albert 1er - St Charles,24,0.032520325203252036
+037 FacdesSciences,007 Foch,1,0.0013550135501355014
+037 FacdesSciences,009 Observatoire,1,0.0013550135501355014
+037 FacdesSciences,011 Plan Cabanes,12,0.016260162601626018
+037 FacdesSciences,012 Boutonnet,9,0.012195121951219513
+037 FacdesSciences,016 Antigone centre,2,0.0027100271002710027
+037 FacdesSciences,017 MÃ©diathÃ¨que Emile Zola,3,0.0040650406504065045
+037 FacdesSciences,018 Nombre d'Or,3,0.0040650406504065045
+037 FacdesSciences,019 Louis Blanc,13,0.017615176151761516
+037 FacdesSciences,021 Port Marianne,1,0.0013550135501355014
+037 FacdesSciences,022 Clemenceau,1,0.0013550135501355014
+037 FacdesSciences,023 Les Arceaux,3,0.0040650406504065045
+037 FacdesSciences,025 Nouveau Saint-Roch,1,0.0013550135501355014
+037 FacdesSciences,026 Renouvier,5,0.006775067750677507
+037 FacdesSciences,028 Saint-Denis,4,0.005420054200542005
+037 FacdesSciences,029 Richter,1,0.0013550135501355014
+037 FacdesSciences,030 Charles Flahault,4,0.005420054200542005
+037 FacdesSciences,031 Voltaire,4,0.005420054200542005
+037 FacdesSciences,033 Garcia Lorca,6,0.008130081300813009
+037 FacdesSciences,034 Vert Bois,5,0.006775067750677507
+037 FacdesSciences,035 Malbosc,5,0.006775067750677507
+037 FacdesSciences,036 Occitanie,46,0.06233062330623306
+037 FacdesSciences,037 FacdesSciences,61,0.08265582655826559
+037 FacdesSciences,038 Fac de Lettres,4,0.005420054200542005
+037 FacdesSciences,039 Aiguelongue,4,0.005420054200542005
+037 FacdesSciences,041 EuromÃ©decine,2,0.0027100271002710027
+037 FacdesSciences,042 Marie Caizergues,2,0.0027100271002710027
+037 FacdesSciences,043 Sabines,2,0.0027100271002710027
+037 FacdesSciences,046 PÃ¨re Soulas,2,0.0027100271002710027
+037 FacdesSciences,047 Place Viala,3,0.0040650406504065045
+037 FacdesSciences,048 HÃ´tel du DÃ©partement,6,0.008130081300813009
+037 FacdesSciences,050 Parvis Jules Ferry - Gare Saint-Roch,4,0.005420054200542005
+037 FacdesSciences,057 Saint-Guilhem - Courreau,3,0.0040650406504065045
+038 Fac de Lettres,002 ComÃ©die,1,0.0013550135501355014
+038 Fac de Lettres,003 Esplanade,1,0.0013550135501355014
+038 Fac de Lettres,004 HÃ´tel de Ville,4,0.005420054200542005
+038 Fac de Lettres,005 Corum,2,0.0027100271002710027
+038 Fac de Lettres,006 Place Albert 1er - St Charles,6,0.008130081300813009
+038 Fac de Lettres,009 Observatoire,5,0.006775067750677507
+038 Fac de Lettres,011 Plan Cabanes,5,0.006775067750677507
+038 Fac de Lettres,012 Boutonnet,2,0.0027100271002710027
+038 Fac de Lettres,016 Antigone centre,5,0.006775067750677507
+038 Fac de Lettres,019 Louis Blanc,9,0.012195121951219513
+038 Fac de Lettres,020 Gambetta,1,0.0013550135501355014
+038 Fac de Lettres,021 Port Marianne,3,0.0040650406504065045
+038 Fac de Lettres,022 Clemenceau,1,0.0013550135501355014
+038 Fac de Lettres,023 Les Arceaux,2,0.0027100271002710027
+038 Fac de Lettres,024 CitÃ© Mion,2,0.0027100271002710027
+038 Fac de Lettres,025 Nouveau Saint-Roch,2,0.0027100271002710027
+038 Fac de Lettres,026 Renouvier,1,0.0013550135501355014
+038 Fac de Lettres,028 Saint-Denis,4,0.005420054200542005
+038 Fac de Lettres,029 Richter,3,0.0040650406504065045
+038 Fac de Lettres,030 Charles Flahault,5,0.006775067750677507
+038 Fac de Lettres,034 Vert Bois,1,0.0013550135501355014
+038 Fac de Lettres,035 Malbosc,3,0.0040650406504065045
+038 Fac de Lettres,036 Occitanie,14,0.018970189701897018
+038 Fac de Lettres,037 FacdesSciences,4,0.005420054200542005
+038 Fac de Lettres,038 Fac de Lettres,39,0.052845528455284556
+038 Fac de Lettres,039 Aiguelongue,1,0.0013550135501355014
+038 Fac de Lettres,040 Jeu de Mail des AbbÃ©s,3,0.0040650406504065045
+038 Fac de Lettres,041 EuromÃ©decine,1,0.0013550135501355014
+038 Fac de Lettres,043 Sabines,2,0.0027100271002710027
+038 Fac de Lettres,046 PÃ¨re Soulas,2,0.0027100271002710027
+038 Fac de Lettres,048 HÃ´tel du DÃ©partement,2,0.0027100271002710027
+038 Fac de Lettres,053 Deux Ponts - Gare Saint-Roch,1,0.0013550135501355014
+038 Fac de Lettres,056 Albert 1er - CathÃ©drale,1,0.0013550135501355014
+039 Aiguelongue,004 HÃ´tel de Ville,1,0.0013550135501355014
+039 Aiguelongue,005 Corum,3,0.0040650406504065045
+039 Aiguelongue,006 Place Albert 1er - St Charles,2,0.0027100271002710027
+039 Aiguelongue,009 Observatoire,1,0.0013550135501355014
+039 Aiguelongue,010 Rondelet,3,0.0040650406504065045
+039 Aiguelongue,011 Plan Cabanes,2,0.0027100271002710027
+039 Aiguelongue,012 Boutonnet,1,0.0013550135501355014
+039 Aiguelongue,017 MÃ©diathÃ¨que Emile Zola,1,0.0013550135501355014
+039 Aiguelongue,025 Nouveau Saint-Roch,1,0.0013550135501355014
+039 Aiguelongue,026 Renouvier,2,0.0027100271002710027
+039 Aiguelongue,031 Voltaire,3,0.0040650406504065045
+039 Aiguelongue,032 PrÃ©s d'ArÃ¨nes,1,0.0013550135501355014
+039 Aiguelongue,035 Malbosc,2,0.0027100271002710027
+039 Aiguelongue,036 Occitanie,2,0.0027100271002710027
+039 Aiguelongue,037 FacdesSciences,7,0.009485094850948509
+039 Aiguelongue,038 Fac de Lettres,7,0.009485094850948509
+039 Aiguelongue,039 Aiguelongue,11,0.014905149051490514
+039 Aiguelongue,040 Jeu de Mail des AbbÃ©s,1,0.0013550135501355014
+039 Aiguelongue,042 Marie Caizergues,1,0.0013550135501355014
+039 Aiguelongue,043 Sabines,3,0.0040650406504065045
+039 Aiguelongue,047 Place Viala,1,0.0013550135501355014
+039 Aiguelongue,048 HÃ´tel du DÃ©partement,1,0.0013550135501355014
+039 Aiguelongue,060 Comedie Baudin,1,0.0013550135501355014
+040 Jeu de Mail des AbbÃ©s,002 ComÃ©die,1,0.0013550135501355014
+040 Jeu de Mail des AbbÃ©s,003 Esplanade,1,0.0013550135501355014
+040 Jeu de Mail des AbbÃ©s,004 HÃ´tel de Ville,4,0.005420054200542005
+040 Jeu de Mail des AbbÃ©s,005 Corum,3,0.0040650406504065045
+040 Jeu de Mail des AbbÃ©s,007 Foch,2,0.0027100271002710027
+040 Jeu de Mail des AbbÃ©s,008 Halles Castellane,1,0.0013550135501355014
+040 Jeu de Mail des AbbÃ©s,010 Rondelet,1,0.0013550135501355014
+040 Jeu de Mail des AbbÃ©s,011 Plan Cabanes,5,0.006775067750677507
+040 Jeu de Mail des AbbÃ©s,012 Boutonnet,1,0.0013550135501355014
+040 Jeu de Mail des AbbÃ©s,013 Emile Combes,1,0.0013550135501355014
+040 Jeu de Mail des AbbÃ©s,016 Antigone centre,1,0.0013550135501355014
+040 Jeu de Mail des AbbÃ©s,017 MÃ©diathÃ¨que Emile Zola,2,0.0027100271002710027
+040 Jeu de Mail des AbbÃ©s,018 Nombre d'Or,2,0.0027100271002710027
+040 Jeu de Mail des AbbÃ©s,019 Louis Blanc,5,0.006775067750677507
+040 Jeu de Mail des AbbÃ©s,021 Port Marianne,1,0.0013550135501355014
+040 Jeu de Mail des AbbÃ©s,025 Nouveau Saint-Roch,2,0.0027100271002710027
+040 Jeu de Mail des AbbÃ©s,026 Renouvier,2,0.0027100271002710027
+040 Jeu de Mail des AbbÃ©s,029 Richter,2,0.0027100271002710027
+040 Jeu de Mail des AbbÃ©s,031 Voltaire,1,0.0013550135501355014
+040 Jeu de Mail des AbbÃ©s,032 PrÃ©s d'ArÃ¨nes,2,0.0027100271002710027
+040 Jeu de Mail des AbbÃ©s,034 Vert Bois,1,0.0013550135501355014
+040 Jeu de Mail des AbbÃ©s,036 Occitanie,5,0.006775067750677507
+040 Jeu de Mail des AbbÃ©s,038 Fac de Lettres,1,0.0013550135501355014
+040 Jeu de Mail des AbbÃ©s,039 Aiguelongue,1,0.0013550135501355014
+040 Jeu de Mail des AbbÃ©s,040 Jeu de Mail des AbbÃ©s,15,0.02032520325203252
+040 Jeu de Mail des AbbÃ©s,042 Marie Caizergues,1,0.0013550135501355014
+041 EuromÃ©decine,005 Corum,2,0.0027100271002710027
+041 EuromÃ©decine,009 Observatoire,1,0.0013550135501355014
+041 EuromÃ©decine,010 Rondelet,1,0.0013550135501355014
+041 EuromÃ©decine,012 Boutonnet,4,0.005420054200542005
+041 EuromÃ©decine,019 Louis Blanc,2,0.0027100271002710027
+041 EuromÃ©decine,036 Occitanie,4,0.005420054200542005
+041 EuromÃ©decine,037 FacdesSciences,3,0.0040650406504065045
+041 EuromÃ©decine,038 Fac de Lettres,1,0.0013550135501355014
+041 EuromÃ©decine,039 Aiguelongue,2,0.0027100271002710027
+041 EuromÃ©decine,041 EuromÃ©decine,5,0.006775067750677507
+041 EuromÃ©decine,042 Marie Caizergues,1,0.0013550135501355014
+041 EuromÃ©decine,049 Tonnelles,2,0.0027100271002710027
+041 EuromÃ©decine,056 Albert 1er - CathÃ©drale,1,0.0013550135501355014
+042 Marie Caizergues,005 Corum,1,0.0013550135501355014
+042 Marie Caizergues,007 Foch,1,0.0013550135501355014
+042 Marie Caizergues,008 Halles Castellane,1,0.0013550135501355014
+042 Marie Caizergues,012 Boutonnet,8,0.01084010840108401
+042 Marie Caizergues,013 Emile Combes,1,0.0013550135501355014
+042 Marie Caizergues,015 Les Aubes,1,0.0013550135501355014
+042 Marie Caizergues,019 Louis Blanc,5,0.006775067750677507
+042 Marie Caizergues,023 Les Arceaux,1,0.0013550135501355014
+042 Marie Caizergues,025 Nouveau Saint-Roch,2,0.0027100271002710027
+042 Marie Caizergues,028 Saint-Denis,1,0.0013550135501355014
+042 Marie Caizergues,030 Charles Flahault,4,0.005420054200542005
+042 Marie Caizergues,031 Voltaire,1,0.0013550135501355014
+042 Marie Caizergues,032 PrÃ©s d'ArÃ¨nes,1,0.0013550135501355014
+042 Marie Caizergues,034 Vert Bois,3,0.0040650406504065045
+042 Marie Caizergues,035 Malbosc,3,0.0040650406504065045
+042 Marie Caizergues,036 Occitanie,12,0.016260162601626018
+042 Marie Caizergues,037 FacdesSciences,7,0.009485094850948509
+042 Marie Caizergues,038 Fac de Lettres,6,0.008130081300813009
+042 Marie Caizergues,039 Aiguelongue,1,0.0013550135501355014
+042 Marie Caizergues,042 Marie Caizergues,12,0.016260162601626018
+042 Marie Caizergues,043 Sabines,2,0.0027100271002710027
+042 Marie Caizergues,044 Celleneuve,1,0.0013550135501355014
+042 Marie Caizergues,046 PÃ¨re Soulas,1,0.0013550135501355014
+042 Marie Caizergues,048 HÃ´tel du DÃ©partement,4,0.005420054200542005
+042 Marie Caizergues,056 Albert 1er - CathÃ©drale,1,0.0013550135501355014
+042 Marie Caizergues,057 Saint-Guilhem - Courreau,3,0.0040650406504065045
+042 Marie Caizergues,098 AtelierTAM,1,0.0013550135501355014
+043 Sabines,001 Rue Jules Ferry - Gare Saint-Roch,7,0.009485094850948509
+043 Sabines,002 ComÃ©die,5,0.006775067750677507
+043 Sabines,003 Esplanade,7,0.009485094850948509
+043 Sabines,004 HÃ´tel de Ville,2,0.0027100271002710027
+043 Sabines,005 Corum,2,0.0027100271002710027
+043 Sabines,006 Place Albert 1er - St Charles,5,0.006775067750677507
+043 Sabines,008 Halles Castellane,4,0.005420054200542005
+043 Sabines,009 Observatoire,1,0.0013550135501355014
+043 Sabines,010 Rondelet,5,0.006775067750677507
+043 Sabines,011 Plan Cabanes,8,0.01084010840108401
+043 Sabines,012 Boutonnet,13,0.017615176151761516
+043 Sabines,013 Emile Combes,1,0.0013550135501355014
+043 Sabines,014 Beaux-Arts,1,0.0013550135501355014
+043 Sabines,016 Antigone centre,2,0.0027100271002710027
+043 Sabines,020 Gambetta,1,0.0013550135501355014
+043 Sabines,021 Port Marianne,1,0.0013550135501355014
+043 Sabines,022 Clemenceau,3,0.0040650406504065045
+043 Sabines,023 Les Arceaux,6,0.008130081300813009
+043 Sabines,024 CitÃ© Mion,4,0.005420054200542005
+043 Sabines,025 Nouveau Saint-Roch,12,0.016260162601626018
+043 Sabines,026 Renouvier,2,0.0027100271002710027
+043 Sabines,028 Saint-Denis,3,0.0040650406504065045
+043 Sabines,029 Richter,2,0.0027100271002710027
+043 Sabines,031 Voltaire,2,0.0027100271002710027
+043 Sabines,032 PrÃ©s d'ArÃ¨nes,7,0.009485094850948509
+043 Sabines,033 Garcia Lorca,2,0.0027100271002710027
+043 Sabines,034 Vert Bois,1,0.0013550135501355014
+043 Sabines,035 Malbosc,1,0.0013550135501355014
+043 Sabines,036 Occitanie,13,0.017615176151761516
+043 Sabines,037 FacdesSciences,13,0.017615176151761516
+043 Sabines,038 Fac de Lettres,5,0.006775067750677507
+043 Sabines,039 Aiguelongue,1,0.0013550135501355014
+043 Sabines,040 Jeu de Mail des AbbÃ©s,1,0.0013550135501355014
+043 Sabines,042 Marie Caizergues,1,0.0013550135501355014
+043 Sabines,043 Sabines,37,0.05013550135501355
+043 Sabines,044 Celleneuve,9,0.012195121951219513
+043 Sabines,045 Jardin de la Lironde,1,0.0013550135501355014
+043 Sabines,046 PÃ¨re Soulas,4,0.005420054200542005
+043 Sabines,047 Place Viala,3,0.0040650406504065045
+043 Sabines,048 HÃ´tel du DÃ©partement,1,0.0013550135501355014
+043 Sabines,049 Tonnelles,2,0.0027100271002710027
+043 Sabines,050 Parvis Jules Ferry - Gare Saint-Roch,6,0.008130081300813009
+043 Sabines,051 Pont de Lattes - Gare Saint-Roch,5,0.006775067750677507
+043 Sabines,053 Deux Ponts - Gare Saint-Roch,6,0.008130081300813009
+043 Sabines,054 Providence - Ovalie,1,0.0013550135501355014
+043 Sabines,055 PÃ©rols Etang de l'Or,2,0.0027100271002710027
+043 Sabines,057 Saint-Guilhem - Courreau,4,0.005420054200542005
+044 Celleneuve,001 Rue Jules Ferry - Gare Saint-Roch,3,0.0040650406504065045
+044 Celleneuve,002 ComÃ©die,1,0.0013550135501355014
+044 Celleneuve,006 Place Albert 1er - St Charles,1,0.0013550135501355014
+044 Celleneuve,007 Foch,1,0.0013550135501355014
+044 Celleneuve,009 Observatoire,1,0.0013550135501355014
+044 Celleneuve,011 Plan Cabanes,6,0.008130081300813009
+044 Celleneuve,018 Nombre d'Or,2,0.0027100271002710027
+044 Celleneuve,019 Louis Blanc,1,0.0013550135501355014
+044 Celleneuve,023 Les Arceaux,1,0.0013550135501355014
+044 Celleneuve,024 CitÃ© Mion,2,0.0027100271002710027
+044 Celleneuve,031 Voltaire,1,0.0013550135501355014
+044 Celleneuve,032 PrÃ©s d'ArÃ¨nes,1,0.0013550135501355014
+044 Celleneuve,034 Vert Bois,1,0.0013550135501355014
+044 Celleneuve,037 FacdesSciences,2,0.0027100271002710027
+044 Celleneuve,039 Aiguelongue,1,0.0013550135501355014
+044 Celleneuve,041 EuromÃ©decine,1,0.0013550135501355014
+044 Celleneuve,042 Marie Caizergues,1,0.0013550135501355014
+044 Celleneuve,044 Celleneuve,8,0.01084010840108401
+044 Celleneuve,046 PÃ¨re Soulas,1,0.0013550135501355014
+044 Celleneuve,049 Tonnelles,2,0.0027100271002710027
+044 Celleneuve,056 Albert 1er - CathÃ©drale,1,0.0013550135501355014
+044 Celleneuve,057 Saint-Guilhem - Courreau,2,0.0027100271002710027
+045 Jardin de la Lironde,002 ComÃ©die,1,0.0013550135501355014
+045 Jardin de la Lironde,005 Corum,5,0.006775067750677507
+045 Jardin de la Lironde,008 Halles Castellane,1,0.0013550135501355014
+045 Jardin de la Lironde,011 Plan Cabanes,1,0.0013550135501355014
+045 Jardin de la Lironde,012 Boutonnet,3,0.0040650406504065045
+045 Jardin de la Lironde,014 Beaux-Arts,1,0.0013550135501355014
+045 Jardin de la Lironde,021 Port Marianne,1,0.0013550135501355014
+045 Jardin de la Lironde,023 Les Arceaux,3,0.0040650406504065045
+045 Jardin de la Lironde,029 Richter,1,0.0013550135501355014
+045 Jardin de la Lironde,030 Charles Flahault,1,0.0013550135501355014
+045 Jardin de la Lironde,037 FacdesSciences,2,0.0027100271002710027
+045 Jardin de la Lironde,045 Jardin de la Lironde,8,0.01084010840108401
+045 Jardin de la Lironde,061 Jean de Beins,1,0.0013550135501355014
+046 PÃ¨re Soulas,001 Rue Jules Ferry - Gare Saint-Roch,4,0.005420054200542005
+046 PÃ¨re Soulas,002 ComÃ©die,1,0.0013550135501355014
+046 PÃ¨re Soulas,006 Place Albert 1er - St Charles,3,0.0040650406504065045
+046 PÃ¨re Soulas,009 Observatoire,6,0.008130081300813009
+046 PÃ¨re Soulas,011 Plan Cabanes,4,0.005420054200542005
+046 PÃ¨re Soulas,012 Boutonnet,2,0.0027100271002710027
+046 PÃ¨re Soulas,018 Nombre d'Or,1,0.0013550135501355014
+046 PÃ¨re Soulas,019 Louis Blanc,6,0.008130081300813009
+046 PÃ¨re Soulas,023 Les Arceaux,3,0.0040650406504065045
+046 PÃ¨re Soulas,024 CitÃ© Mion,2,0.0027100271002710027
+046 PÃ¨re Soulas,025 Nouveau Saint-Roch,3,0.0040650406504065045
+046 PÃ¨re Soulas,026 Renouvier,1,0.0013550135501355014
+046 PÃ¨re Soulas,028 Saint-Denis,3,0.0040650406504065045
+046 PÃ¨re Soulas,029 Richter,3,0.0040650406504065045
+046 PÃ¨re Soulas,031 Voltaire,5,0.006775067750677507
+046 PÃ¨re Soulas,034 Vert Bois,3,0.0040650406504065045
+046 PÃ¨re Soulas,035 Malbosc,5,0.006775067750677507
+046 PÃ¨re Soulas,036 Occitanie,11,0.014905149051490514
+046 PÃ¨re Soulas,037 FacdesSciences,9,0.012195121951219513
+046 PÃ¨re Soulas,038 Fac de Lettres,3,0.0040650406504065045
+046 PÃ¨re Soulas,039 Aiguelongue,4,0.005420054200542005
+046 PÃ¨re Soulas,041 EuromÃ©decine,2,0.0027100271002710027
+046 PÃ¨re Soulas,042 Marie Caizergues,1,0.0013550135501355014
+046 PÃ¨re Soulas,043 Sabines,1,0.0013550135501355014
+046 PÃ¨re Soulas,044 Celleneuve,1,0.0013550135501355014
+046 PÃ¨re Soulas,046 PÃ¨re Soulas,18,0.024390243902439025
+046 PÃ¨re Soulas,048 HÃ´tel du DÃ©partement,2,0.0027100271002710027
+046 PÃ¨re Soulas,049 Tonnelles,2,0.0027100271002710027
+046 PÃ¨re Soulas,053 Deux Ponts - Gare Saint-Roch,1,0.0013550135501355014
+047 Place Viala,001 Rue Jules Ferry - Gare Saint-Roch,1,0.0013550135501355014
+047 Place Viala,002 ComÃ©die,1,0.0013550135501355014
+047 Place Viala,004 HÃ´tel de Ville,2,0.0027100271002710027
+047 Place Viala,005 Corum,1,0.0013550135501355014
+047 Place Viala,006 Place Albert 1er - St Charles,1,0.0013550135501355014
+047 Place Viala,007 Foch,1,0.0013550135501355014
+047 Place Viala,009 Observatoire,1,0.0013550135501355014
+047 Place Viala,011 Plan Cabanes,1,0.0013550135501355014
+047 Place Viala,018 Nombre d'Or,2,0.0027100271002710027
+047 Place Viala,019 Louis Blanc,1,0.0013550135501355014
+047 Place Viala,020 Gambetta,1,0.0013550135501355014
+047 Place Viala,025 Nouveau Saint-Roch,1,0.0013550135501355014
+047 Place Viala,028 Saint-Denis,1,0.0013550135501355014
+047 Place Viala,031 Voltaire,1,0.0013550135501355014
+047 Place Viala,035 Malbosc,1,0.0013550135501355014
+047 Place Viala,036 Occitanie,3,0.0040650406504065045
+047 Place Viala,039 Aiguelongue,1,0.0013550135501355014
+047 Place Viala,040 Jeu de Mail des AbbÃ©s,1,0.0013550135501355014
+047 Place Viala,042 Marie Caizergues,6,0.008130081300813009
+047 Place Viala,043 Sabines,1,0.0013550135501355014
+047 Place Viala,047 Place Viala,6,0.008130081300813009
+047 Place Viala,050 Parvis Jules Ferry - Gare Saint-Roch,1,0.0013550135501355014
+048 HÃ´tel du DÃ©partement,006 Place Albert 1er - St Charles,1,0.0013550135501355014
+048 HÃ´tel du DÃ©partement,011 Plan Cabanes,1,0.0013550135501355014
+048 HÃ´tel du DÃ©partement,016 Antigone centre,1,0.0013550135501355014
+048 HÃ´tel du DÃ©partement,028 Saint-Denis,1,0.0013550135501355014
+048 HÃ´tel du DÃ©partement,036 Occitanie,2,0.0027100271002710027
+048 HÃ´tel du DÃ©partement,041 EuromÃ©decine,1,0.0013550135501355014
+048 HÃ´tel du DÃ©partement,047 Place Viala,1,0.0013550135501355014
+048 HÃ´tel du DÃ©partement,048 HÃ´tel du DÃ©partement,7,0.009485094850948509
+048 HÃ´tel du DÃ©partement,057 Saint-Guilhem - Courreau,1,0.0013550135501355014
+049 Tonnelles,004 HÃ´tel de Ville,1,0.0013550135501355014
+049 Tonnelles,005 Corum,1,0.0013550135501355014
+049 Tonnelles,009 Observatoire,2,0.0027100271002710027
+049 Tonnelles,011 Plan Cabanes,1,0.0013550135501355014
+049 Tonnelles,012 Boutonnet,1,0.0013550135501355014
+049 Tonnelles,016 Antigone centre,1,0.0013550135501355014
+049 Tonnelles,018 Nombre d'Or,7,0.009485094850948509
+049 Tonnelles,021 Port Marianne,1,0.0013550135501355014
+049 Tonnelles,022 Clemenceau,1,0.0013550135501355014
+049 Tonnelles,024 CitÃ© Mion,1,0.0013550135501355014
+049 Tonnelles,025 Nouveau Saint-Roch,1,0.0013550135501355014
+049 Tonnelles,028 Saint-Denis,3,0.0040650406504065045
+049 Tonnelles,029 Richter,1,0.0013550135501355014
+049 Tonnelles,031 Voltaire,3,0.0040650406504065045
+049 Tonnelles,037 FacdesSciences,1,0.0013550135501355014
+049 Tonnelles,043 Sabines,2,0.0027100271002710027
+049 Tonnelles,046 PÃ¨re Soulas,1,0.0013550135501355014
+049 Tonnelles,047 Place Viala,2,0.0027100271002710027
+049 Tonnelles,048 HÃ´tel du DÃ©partement,3,0.0040650406504065045
+049 Tonnelles,049 Tonnelles,8,0.01084010840108401
+049 Tonnelles,050 Parvis Jules Ferry - Gare Saint-Roch,1,0.0013550135501355014
+049 Tonnelles,057 Saint-Guilhem - Courreau,5,0.006775067750677507
+050 Parvis Jules Ferry - Gare Saint-Roch,001 Rue Jules Ferry - Gare Saint-Roch,2,0.0027100271002710027
+050 Parvis Jules Ferry - Gare Saint-Roch,003 Esplanade,2,0.0027100271002710027
+050 Parvis Jules Ferry - Gare Saint-Roch,004 HÃ´tel de Ville,4,0.005420054200542005
+050 Parvis Jules Ferry - Gare Saint-Roch,005 Corum,3,0.0040650406504065045
+050 Parvis Jules Ferry - Gare Saint-Roch,006 Place Albert 1er - St Charles,4,0.005420054200542005
+050 Parvis Jules Ferry - Gare Saint-Roch,010 Rondelet,6,0.008130081300813009
+050 Parvis Jules Ferry - Gare Saint-Roch,011 Plan Cabanes,3,0.0040650406504065045
+050 Parvis Jules Ferry - Gare Saint-Roch,012 Boutonnet,3,0.0040650406504065045
+050 Parvis Jules Ferry - Gare Saint-Roch,015 Les Aubes,1,0.0013550135501355014
+050 Parvis Jules Ferry - Gare Saint-Roch,016 Antigone centre,2,0.0027100271002710027
+050 Parvis Jules Ferry - Gare Saint-Roch,017 MÃ©diathÃ¨que Emile Zola,8,0.01084010840108401
+050 Parvis Jules Ferry - Gare Saint-Roch,018 Nombre d'Or,1,0.0013550135501355014
+050 Parvis Jules Ferry - Gare Saint-Roch,019 Louis Blanc,1,0.0013550135501355014
+050 Parvis Jules Ferry - Gare Saint-Roch,020 Gambetta,5,0.006775067750677507
+050 Parvis Jules Ferry - Gare Saint-Roch,021 Port Marianne,5,0.006775067750677507
+050 Parvis Jules Ferry - Gare Saint-Roch,022 Clemenceau,1,0.0013550135501355014
+050 Parvis Jules Ferry - Gare Saint-Roch,024 CitÃ© Mion,1,0.0013550135501355014
+050 Parvis Jules Ferry - Gare Saint-Roch,025 Nouveau Saint-Roch,12,0.016260162601626018
+050 Parvis Jules Ferry - Gare Saint-Roch,026 Renouvier,1,0.0013550135501355014
+050 Parvis Jules Ferry - Gare Saint-Roch,028 Saint-Denis,1,0.0013550135501355014
+050 Parvis Jules Ferry - Gare Saint-Roch,029 Richter,3,0.0040650406504065045
+050 Parvis Jules Ferry - Gare Saint-Roch,030 Charles Flahault,4,0.005420054200542005
+050 Parvis Jules Ferry - Gare Saint-Roch,031 Voltaire,2,0.0027100271002710027
+050 Parvis Jules Ferry - Gare Saint-Roch,032 PrÃ©s d'ArÃ¨nes,8,0.01084010840108401
+050 Parvis Jules Ferry - Gare Saint-Roch,033 Garcia Lorca,5,0.006775067750677507
+050 Parvis Jules Ferry - Gare Saint-Roch,034 Vert Bois,2,0.0027100271002710027
+050 Parvis Jules Ferry - Gare Saint-Roch,035 Malbosc,1,0.0013550135501355014
+050 Parvis Jules Ferry - Gare Saint-Roch,036 Occitanie,17,0.023035230352303523
+050 Parvis Jules Ferry - Gare Saint-Roch,037 FacdesSciences,13,0.017615176151761516
+050 Parvis Jules Ferry - Gare Saint-Roch,038 Fac de Lettres,14,0.018970189701897018
+050 Parvis Jules Ferry - Gare Saint-Roch,039 Aiguelongue,3,0.0040650406504065045
+050 Parvis Jules Ferry - Gare Saint-Roch,041 EuromÃ©decine,1,0.0013550135501355014
+050 Parvis Jules Ferry - Gare Saint-Roch,042 Marie Caizergues,1,0.0013550135501355014
+050 Parvis Jules Ferry - Gare Saint-Roch,043 Sabines,9,0.012195121951219513
+050 Parvis Jules Ferry - Gare Saint-Roch,045 Jardin de la Lironde,2,0.0027100271002710027
+050 Parvis Jules Ferry - Gare Saint-Roch,046 PÃ¨re Soulas,3,0.0040650406504065045
+050 Parvis Jules Ferry - Gare Saint-Roch,048 HÃ´tel du DÃ©partement,2,0.0027100271002710027
+050 Parvis Jules Ferry - Gare Saint-Roch,049 Tonnelles,2,0.0027100271002710027
+050 Parvis Jules Ferry - Gare Saint-Roch,050 Parvis Jules Ferry - Gare Saint-Roch,50,0.06775067750677506
+050 Parvis Jules Ferry - Gare Saint-Roch,055 PÃ©rols Etang de l'Or,1,0.0013550135501355014
+051 Pont de Lattes - Gare Saint-Roch,001 Rue Jules Ferry - Gare Saint-Roch,1,0.0013550135501355014
+051 Pont de Lattes - Gare Saint-Roch,002 ComÃ©die,2,0.0027100271002710027
+051 Pont de Lattes - Gare Saint-Roch,003 Esplanade,2,0.0027100271002710027
+051 Pont de Lattes - Gare Saint-Roch,004 HÃ´tel de Ville,4,0.005420054200542005
+051 Pont de Lattes - Gare Saint-Roch,005 Corum,1,0.0013550135501355014
+051 Pont de Lattes - Gare Saint-Roch,006 Place Albert 1er - St Charles,5,0.006775067750677507
+051 Pont de Lattes - Gare Saint-Roch,007 Foch,2,0.0027100271002710027
+051 Pont de Lattes - Gare Saint-Roch,008 Halles Castellane,1,0.0013550135501355014
+051 Pont de Lattes - Gare Saint-Roch,009 Observatoire,4,0.005420054200542005
+051 Pont de Lattes - Gare Saint-Roch,012 Boutonnet,15,0.02032520325203252
+051 Pont de Lattes - Gare Saint-Roch,016 Antigone centre,3,0.0040650406504065045
+051 Pont de Lattes - Gare Saint-Roch,017 MÃ©diathÃ¨que Emile Zola,13,0.017615176151761516
+051 Pont de Lattes - Gare Saint-Roch,018 Nombre d'Or,4,0.005420054200542005
+051 Pont de Lattes - Gare Saint-Roch,019 Louis Blanc,4,0.005420054200542005
+051 Pont de Lattes - Gare Saint-Roch,020 Gambetta,1,0.0013550135501355014
+051 Pont de Lattes - Gare Saint-Roch,021 Port Marianne,8,0.01084010840108401
+051 Pont de Lattes - Gare Saint-Roch,022 Clemenceau,1,0.0013550135501355014
+051 Pont de Lattes - Gare Saint-Roch,023 Les Arceaux,3,0.0040650406504065045
+051 Pont de Lattes - Gare Saint-Roch,024 CitÃ© Mion,2,0.0027100271002710027
+051 Pont de Lattes - Gare Saint-Roch,026 Renouvier,1,0.0013550135501355014
+051 Pont de Lattes - Gare Saint-Roch,027 Odysseum,3,0.0040650406504065045
+051 Pont de Lattes - Gare Saint-Roch,028 Saint-Denis,1,0.0013550135501355014
+051 Pont de Lattes - Gare Saint-Roch,029 Richter,9,0.012195121951219513
+051 Pont de Lattes - Gare Saint-Roch,031 Voltaire,8,0.01084010840108401
+051 Pont de Lattes - Gare Saint-Roch,033 Garcia Lorca,2,0.0027100271002710027
+051 Pont de Lattes - Gare Saint-Roch,034 Vert Bois,3,0.0040650406504065045
+051 Pont de Lattes - Gare Saint-Roch,036 Occitanie,5,0.006775067750677507
+051 Pont de Lattes - Gare Saint-Roch,037 FacdesSciences,11,0.014905149051490514
+051 Pont de Lattes - Gare Saint-Roch,038 Fac de Lettres,2,0.0027100271002710027
+051 Pont de Lattes - Gare Saint-Roch,040 Jeu de Mail des AbbÃ©s,1,0.0013550135501355014
+051 Pont de Lattes - Gare Saint-Roch,041 EuromÃ©decine,1,0.0013550135501355014
+051 Pont de Lattes - Gare Saint-Roch,042 Marie Caizergues,2,0.0027100271002710027
+051 Pont de Lattes - Gare Saint-Roch,044 Celleneuve,1,0.0013550135501355014
+051 Pont de Lattes - Gare Saint-Roch,048 HÃ´tel du DÃ©partement,2,0.0027100271002710027
+051 Pont de Lattes - Gare Saint-Roch,049 Tonnelles,2,0.0027100271002710027
+051 Pont de Lattes - Gare Saint-Roch,051 Pont de Lattes - Gare Saint-Roch,29,0.03929539295392954
+051 Pont de Lattes - Gare Saint-Roch,055 PÃ©rols Etang de l'Or,3,0.0040650406504065045
+051 Pont de Lattes - Gare Saint-Roch,057 Saint-Guilhem - Courreau,2,0.0027100271002710027
+051 Pont de Lattes - Gare Saint-Roch,060 Comedie Baudin,2,0.0027100271002710027
+053 Deux Ponts - Gare Saint-Roch,003 Esplanade,1,0.0013550135501355014
+053 Deux Ponts - Gare Saint-Roch,004 HÃ´tel de Ville,3,0.0040650406504065045
+053 Deux Ponts - Gare Saint-Roch,005 Corum,1,0.0013550135501355014
+053 Deux Ponts - Gare Saint-Roch,008 Halles Castellane,1,0.0013550135501355014
+053 Deux Ponts - Gare Saint-Roch,009 Observatoire,3,0.0040650406504065045
+053 Deux Ponts - Gare Saint-Roch,010 Rondelet,1,0.0013550135501355014
+053 Deux Ponts - Gare Saint-Roch,014 Beaux-Arts,1,0.0013550135501355014
+053 Deux Ponts - Gare Saint-Roch,016 Antigone centre,1,0.0013550135501355014
+053 Deux Ponts - Gare Saint-Roch,021 Port Marianne,2,0.0027100271002710027
+053 Deux Ponts - Gare Saint-Roch,024 CitÃ© Mion,1,0.0013550135501355014
+053 Deux Ponts - Gare Saint-Roch,025 Nouveau Saint-Roch,2,0.0027100271002710027
+053 Deux Ponts - Gare Saint-Roch,030 Charles Flahault,2,0.0027100271002710027
+053 Deux Ponts - Gare Saint-Roch,032 PrÃ©s d'ArÃ¨nes,2,0.0027100271002710027
+053 Deux Ponts - Gare Saint-Roch,033 Garcia Lorca,5,0.006775067750677507
+053 Deux Ponts - Gare Saint-Roch,034 Vert Bois,1,0.0013550135501355014
+053 Deux Ponts - Gare Saint-Roch,036 Occitanie,1,0.0013550135501355014
+053 Deux Ponts - Gare Saint-Roch,037 FacdesSciences,1,0.0013550135501355014
+053 Deux Ponts - Gare Saint-Roch,038 Fac de Lettres,2,0.0027100271002710027
+053 Deux Ponts - Gare Saint-Roch,039 Aiguelongue,1,0.0013550135501355014
+053 Deux Ponts - Gare Saint-Roch,044 Celleneuve,4,0.005420054200542005
+053 Deux Ponts - Gare Saint-Roch,047 Place Viala,1,0.0013550135501355014
+053 Deux Ponts - Gare Saint-Roch,053 Deux Ponts - Gare Saint-Roch,10,0.013550135501355014
+053 Deux Ponts - Gare Saint-Roch,055 PÃ©rols Etang de l'Or,2,0.0027100271002710027
+053 Deux Ponts - Gare Saint-Roch,057 Saint-Guilhem - Courreau,1,0.0013550135501355014
+054 Providence - Ovalie,003 Esplanade,1,0.0013550135501355014
+054 Providence - Ovalie,004 HÃ´tel de Ville,1,0.0013550135501355014
+054 Providence - Ovalie,005 Corum,1,0.0013550135501355014
+054 Providence - Ovalie,006 Place Albert 1er - St Charles,1,0.0013550135501355014
+054 Providence - Ovalie,009 Observatoire,1,0.0013550135501355014
+054 Providence - Ovalie,011 Plan Cabanes,6,0.008130081300813009
+054 Providence - Ovalie,023 Les Arceaux,1,0.0013550135501355014
+054 Providence - Ovalie,026 Renouvier,4,0.005420054200542005
+054 Providence - Ovalie,030 Charles Flahault,17,0.023035230352303523
+054 Providence - Ovalie,031 Voltaire,3,0.0040650406504065045
+054 Providence - Ovalie,034 Vert Bois,1,0.0013550135501355014
+054 Providence - Ovalie,036 Occitanie,2,0.0027100271002710027
+054 Providence - Ovalie,042 Marie Caizergues,4,0.005420054200542005
+054 Providence - Ovalie,044 Celleneuve,2,0.0027100271002710027
+054 Providence - Ovalie,047 Place Viala,5,0.006775067750677507
+054 Providence - Ovalie,054 Providence - Ovalie,12,0.016260162601626018
+054 Providence - Ovalie,057 Saint-Guilhem - Courreau,1,0.0013550135501355014
+055 PÃ©rols Etang de l'Or,001 Rue Jules Ferry - Gare Saint-Roch,1,0.0013550135501355014
+055 PÃ©rols Etang de l'Or,012 Boutonnet,1,0.0013550135501355014
+055 PÃ©rols Etang de l'Or,016 Antigone centre,2,0.0027100271002710027
+055 PÃ©rols Etang de l'Or,017 MÃ©diathÃ¨que Emile Zola,1,0.0013550135501355014
+055 PÃ©rols Etang de l'Or,019 Louis Blanc,1,0.0013550135501355014
+055 PÃ©rols Etang de l'Or,021 Port Marianne,4,0.005420054200542005
+055 PÃ©rols Etang de l'Or,026 Renouvier,1,0.0013550135501355014
+055 PÃ©rols Etang de l'Or,029 Richter,3,0.0040650406504065045
+055 PÃ©rols Etang de l'Or,031 Voltaire,1,0.0013550135501355014
+055 PÃ©rols Etang de l'Or,033 Garcia Lorca,1,0.0013550135501355014
+055 PÃ©rols Etang de l'Or,037 FacdesSciences,5,0.006775067750677507
+055 PÃ©rols Etang de l'Or,038 Fac de Lettres,4,0.005420054200542005
+055 PÃ©rols Etang de l'Or,043 Sabines,1,0.0013550135501355014
+055 PÃ©rols Etang de l'Or,044 Celleneuve,1,0.0013550135501355014
+055 PÃ©rols Etang de l'Or,051 Pont de Lattes - Gare Saint-Roch,6,0.008130081300813009
+055 PÃ©rols Etang de l'Or,055 PÃ©rols Etang de l'Or,5,0.006775067750677507
+056 Albert 1er - CathÃ©drale,001 Rue Jules Ferry - Gare Saint-Roch,2,0.0027100271002710027
+056 Albert 1er - CathÃ©drale,002 ComÃ©die,1,0.0013550135501355014
+056 Albert 1er - CathÃ©drale,004 HÃ´tel de Ville,2,0.0027100271002710027
+056 Albert 1er - CathÃ©drale,005 Corum,1,0.0013550135501355014
+056 Albert 1er - CathÃ©drale,006 Place Albert 1er - St Charles,15,0.02032520325203252
+056 Albert 1er - CathÃ©drale,007 Foch,2,0.0027100271002710027
+056 Albert 1er - CathÃ©drale,012 Boutonnet,32,0.04336043360433604
+056 Albert 1er - CathÃ©drale,015 Les Aubes,2,0.0027100271002710027
+056 Albert 1er - CathÃ©drale,017 MÃ©diathÃ¨que Emile Zola,1,0.0013550135501355014
+056 Albert 1er - CathÃ©drale,018 Nombre d'Or,2,0.0027100271002710027
+056 Albert 1er - CathÃ©drale,019 Louis Blanc,5,0.006775067750677507
+056 Albert 1er - CathÃ©drale,022 Clemenceau,1,0.0013550135501355014
+056 Albert 1er - CathÃ©drale,025 Nouveau Saint-Roch,1,0.0013550135501355014
+056 Albert 1er - CathÃ©drale,026 Renouvier,1,0.0013550135501355014
+056 Albert 1er - CathÃ©drale,027 Odysseum,1,0.0013550135501355014
+056 Albert 1er - CathÃ©drale,030 Charles Flahault,3,0.0040650406504065045
+056 Albert 1er - CathÃ©drale,031 Voltaire,1,0.0013550135501355014
+056 Albert 1er - CathÃ©drale,033 Garcia Lorca,1,0.0013550135501355014
+056 Albert 1er - CathÃ©drale,034 Vert Bois,9,0.012195121951219513
+056 Albert 1er - CathÃ©drale,035 Malbosc,7,0.009485094850948509
+056 Albert 1er - CathÃ©drale,036 Occitanie,40,0.05420054200542006
+056 Albert 1er - CathÃ©drale,037 FacdesSciences,41,0.05555555555555555
+056 Albert 1er - CathÃ©drale,038 Fac de Lettres,32,0.04336043360433604
+056 Albert 1er - CathÃ©drale,039 Aiguelongue,3,0.0040650406504065045
+056 Albert 1er - CathÃ©drale,040 Jeu de Mail des AbbÃ©s,1,0.0013550135501355014
+056 Albert 1er - CathÃ©drale,041 EuromÃ©decine,1,0.0013550135501355014
+056 Albert 1er - CathÃ©drale,042 Marie Caizergues,3,0.0040650406504065045
+056 Albert 1er - CathÃ©drale,043 Sabines,2,0.0027100271002710027
+056 Albert 1er - CathÃ©drale,044 Celleneuve,2,0.0027100271002710027
+056 Albert 1er - CathÃ©drale,046 PÃ¨re Soulas,1,0.0013550135501355014
+056 Albert 1er - CathÃ©drale,047 Place Viala,2,0.0027100271002710027
+056 Albert 1er - CathÃ©drale,056 Albert 1er - CathÃ©drale,33,0.044715447154471545
+056 Albert 1er - CathÃ©drale,057 Saint-Guilhem - Courreau,1,0.0013550135501355014
+056 Albert 1er - CathÃ©drale,098 AtelierTAM,1,0.0013550135501355014
+057 Saint-Guilhem - Courreau,001 Rue Jules Ferry - Gare Saint-Roch,1,0.0013550135501355014
+057 Saint-Guilhem - Courreau,003 Esplanade,1,0.0013550135501355014
+057 Saint-Guilhem - Courreau,004 HÃ´tel de Ville,3,0.0040650406504065045
+057 Saint-Guilhem - Courreau,005 Corum,1,0.0013550135501355014
+057 Saint-Guilhem - Courreau,006 Place Albert 1er - St Charles,28,0.037940379403794036
+057 Saint-Guilhem - Courreau,008 Halles Castellane,1,0.0013550135501355014
+057 Saint-Guilhem - Courreau,009 Observatoire,2,0.0027100271002710027
+057 Saint-Guilhem - Courreau,011 Plan Cabanes,1,0.0013550135501355014
+057 Saint-Guilhem - Courreau,012 Boutonnet,62,0.08401084010840108
+057 Saint-Guilhem - Courreau,013 Emile Combes,3,0.0040650406504065045
+057 Saint-Guilhem - Courreau,014 Beaux-Arts,2,0.0027100271002710027
+057 Saint-Guilhem - Courreau,015 Les Aubes,1,0.0013550135501355014
+057 Saint-Guilhem - Courreau,016 Antigone centre,1,0.0013550135501355014
+057 Saint-Guilhem - Courreau,017 MÃ©diathÃ¨que Emile Zola,8,0.01084010840108401
+057 Saint-Guilhem - Courreau,019 Louis Blanc,2,0.0027100271002710027
+057 Saint-Guilhem - Courreau,020 Gambetta,1,0.0013550135501355014
+057 Saint-Guilhem - Courreau,022 Clemenceau,1,0.0013550135501355014
+057 Saint-Guilhem - Courreau,023 Les Arceaux,2,0.0027100271002710027
+057 Saint-Guilhem - Courreau,024 CitÃ© Mion,1,0.0013550135501355014
+057 Saint-Guilhem - Courreau,025 Nouveau Saint-Roch,8,0.01084010840108401
+057 Saint-Guilhem - Courreau,026 Renouvier,4,0.005420054200542005
+057 Saint-Guilhem - Courreau,028 Saint-Denis,4,0.005420054200542005
+057 Saint-Guilhem - Courreau,030 Charles Flahault,13,0.017615176151761516
+057 Saint-Guilhem - Courreau,031 Voltaire,3,0.0040650406504065045
+057 Saint-Guilhem - Courreau,032 PrÃ©s d'ArÃ¨nes,5,0.006775067750677507
+057 Saint-Guilhem - Courreau,033 Garcia Lorca,1,0.0013550135501355014
+057 Saint-Guilhem - Courreau,034 Vert Bois,7,0.009485094850948509
+057 Saint-Guilhem - Courreau,035 Malbosc,5,0.006775067750677507
+057 Saint-Guilhem - Courreau,036 Occitanie,40,0.05420054200542006
+057 Saint-Guilhem - Courreau,037 FacdesSciences,41,0.05555555555555555
+057 Saint-Guilhem - Courreau,038 Fac de Lettres,16,0.02168021680216802
+057 Saint-Guilhem - Courreau,039 Aiguelongue,1,0.0013550135501355014
+057 Saint-Guilhem - Courreau,040 Jeu de Mail des AbbÃ©s,3,0.0040650406504065045
+057 Saint-Guilhem - Courreau,042 Marie Caizergues,4,0.005420054200542005
+057 Saint-Guilhem - Courreau,043 Sabines,5,0.006775067750677507
+057 Saint-Guilhem - Courreau,044 Celleneuve,3,0.0040650406504065045
+057 Saint-Guilhem - Courreau,046 PÃ¨re Soulas,14,0.018970189701897018
+057 Saint-Guilhem - Courreau,047 Place Viala,9,0.012195121951219513
+057 Saint-Guilhem - Courreau,048 HÃ´tel du DÃ©partement,2,0.0027100271002710027
+057 Saint-Guilhem - Courreau,049 Tonnelles,8,0.01084010840108401
+057 Saint-Guilhem - Courreau,050 Parvis Jules Ferry - Gare Saint-Roch,1,0.0013550135501355014
+057 Saint-Guilhem - Courreau,051 Pont de Lattes - Gare Saint-Roch,3,0.0040650406504065045
+057 Saint-Guilhem - Courreau,054 Providence - Ovalie,1,0.0013550135501355014
+057 Saint-Guilhem - Courreau,056 Albert 1er - CathÃ©drale,4,0.005420054200542005
+057 Saint-Guilhem - Courreau,057 Saint-Guilhem - Courreau,56,0.07588075880758807
+057 Saint-Guilhem - Courreau,060 Comedie Baudin,1,0.0013550135501355014
+059 Sud De France,023 Les Arceaux,1,0.0013550135501355014
+059 Sud De France,031 Voltaire,1,0.0013550135501355014
+060 Comedie Baudin,002 ComÃ©die,3,0.0040650406504065045
+060 Comedie Baudin,005 Corum,1,0.0013550135501355014
+060 Comedie Baudin,009 Observatoire,2,0.0027100271002710027
+060 Comedie Baudin,010 Rondelet,1,0.0013550135501355014
+060 Comedie Baudin,011 Plan Cabanes,1,0.0013550135501355014
+060 Comedie Baudin,012 Boutonnet,13,0.017615176151761516
+060 Comedie Baudin,013 Emile Combes,1,0.0013550135501355014
+060 Comedie Baudin,016 Antigone centre,4,0.005420054200542005
+060 Comedie Baudin,017 MÃ©diathÃ¨que Emile Zola,5,0.006775067750677507
+060 Comedie Baudin,019 Louis Blanc,3,0.0040650406504065045
+060 Comedie Baudin,025 Nouveau Saint-Roch,1,0.0013550135501355014
+060 Comedie Baudin,026 Renouvier,1,0.0013550135501355014
+060 Comedie Baudin,029 Richter,3,0.0040650406504065045
+060 Comedie Baudin,030 Charles Flahault,3,0.0040650406504065045
+060 Comedie Baudin,031 Voltaire,1,0.0013550135501355014
+060 Comedie Baudin,034 Vert Bois,4,0.005420054200542005
+060 Comedie Baudin,036 Occitanie,13,0.017615176151761516
+060 Comedie Baudin,037 FacdesSciences,6,0.008130081300813009
+060 Comedie Baudin,038 Fac de Lettres,2,0.0027100271002710027
+060 Comedie Baudin,039 Aiguelongue,2,0.0027100271002710027
+060 Comedie Baudin,040 Jeu de Mail des AbbÃ©s,1,0.0013550135501355014
+060 Comedie Baudin,042 Marie Caizergues,1,0.0013550135501355014
+060 Comedie Baudin,045 Jardin de la Lironde,3,0.0040650406504065045
+060 Comedie Baudin,046 PÃ¨re Soulas,2,0.0027100271002710027
+060 Comedie Baudin,048 HÃ´tel du DÃ©partement,2,0.0027100271002710027
+060 Comedie Baudin,049 Tonnelles,2,0.0027100271002710027
+060 Comedie Baudin,051 Pont de Lattes - Gare Saint-Roch,1,0.0013550135501355014
+060 Comedie Baudin,060 Comedie Baudin,12,0.016260162601626018
+061 Jean de Beins,005 Corum,1,0.0013550135501355014
+061 Jean de Beins,012 Boutonnet,2,0.0027100271002710027
+061 Jean de Beins,015 Les Aubes,1,0.0013550135501355014
+061 Jean de Beins,017 MÃ©diathÃ¨que Emile Zola,2,0.0027100271002710027
+061 Jean de Beins,018 Nombre d'Or,2,0.0027100271002710027
+061 Jean de Beins,019 Louis Blanc,1,0.0013550135501355014
+061 Jean de Beins,020 Gambetta,1,0.0013550135501355014
+061 Jean de Beins,021 Port Marianne,1,0.0013550135501355014
+061 Jean de Beins,026 Renouvier,2,0.0027100271002710027
+061 Jean de Beins,029 Richter,2,0.0027100271002710027
+061 Jean de Beins,034 Vert Bois,1,0.0013550135501355014
+061 Jean de Beins,036 Occitanie,3,0.0040650406504065045
+061 Jean de Beins,037 FacdesSciences,4,0.005420054200542005
+061 Jean de Beins,039 Aiguelongue,1,0.0013550135501355014
+061 Jean de Beins,045 Jardin de la Lironde,2,0.0027100271002710027
+061 Jean de Beins,046 PÃ¨re Soulas,2,0.0027100271002710027
+061 Jean de Beins,060 Comedie Baudin,1,0.0013550135501355014
+061 Jean de Beins,061 Jean de Beins,3,0.0040650406504065045

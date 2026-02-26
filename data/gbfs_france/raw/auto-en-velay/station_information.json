@@ -1,0 +1,136 @@
+{
+  "last_updated": "2026-02-22T09:39:50.8811483+01:00",
+  "ttl": 300,
+  "version": "3.0",
+  "data": {
+    "stations": [
+      {
+        "station_id": "1624",
+        "name": [
+          {
+            "text": "Le Puy en Velay - Place de la Libération",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.0476951599121,
+        "lon": 3.87671399116516,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1625",
+        "name": [
+          {
+            "text": "Le Puy en Velay - Gare",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.0427513122559,
+        "lon": 3.89158701896667,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1626",
+        "name": [
+          {
+            "text": "Saint-Paulien - Rue de l'Anyade",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.1355781555176,
+        "lon": 3.8118109703064,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1627",
+        "name": [
+          {
+            "text": "La Chaise-Dieu - Pablo Picasso",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.3165092468262,
+        "lon": 3.69661903381348,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1628",
+        "name": [
+          {
+            "text": "Mairie d'Arsac",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.9913597106934,
+        "lon": 3.94336009025574,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1629",
+        "name": [
+          {
+            "text": "Lavoûte - Gare",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.1210136413574,
+        "lon": 3.90729808807373,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1630",
+        "name": [
+          {
+            "text": "Allègre - Maison de santé",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.1963768005371,
+        "lon": 3.71032190322876,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1631",
+        "name": [
+          {
+            "text": " Craponne - Place de la Poste",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.3319625854492,
+        "lon": 3.84580707550049,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1778",
+        "name": [
+          {
+            "text": "Craponne place de la gare ",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.333852984632,
+        "lon": 3.851244032314,
+        "address": "1 place de la gare ",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      }
+    ]
+  }
+}

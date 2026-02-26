@@ -1,0 +1,6492 @@
+{
+  "last_updated": "2026-02-22T09:42:18.5801548+01:00",
+  "ttl": 300,
+  "version": "3.0",
+  "data": {
+    "stations": [
+      {
+        "station_id": "715",
+        "name": [
+          {
+            "text": "SNCF Gare du Clapier - Augustin Dupré",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.43770980834961,
+        "lon": 4.380849838256836,
+        "address": "17 Avenue Augustin Dupré",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "716",
+        "name": [
+          {
+            "text": "Grüner [Station électrique]",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.44015884399414,
+        "lon": 4.399269104003906,
+        "address": "14 Rue de la Montat, 42023 Saint-Étienne",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "717",
+        "name": [
+          {
+            "text": "Avenue de Cran (20)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.90580368041992,
+        "lon": 6.118441104888916,
+        "address": "20 avenue de Cran, 74000 Annecy",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "718",
+        "name": [
+          {
+            "text": "Place des Romains-Sports",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.90885543823242,
+        "lon": 6.121918201446533,
+        "address": "1 avenue du parc des Sports 74000 ANNECY",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "719",
+        "name": [
+          {
+            "text": "SNCF Gare d'Annecy - Glières",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.900306701660156,
+        "lon": 6.122179985046387,
+        "address": "3-5 Rue des Glières, 74000 Annecy",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "720",
+        "name": [
+          {
+            "text": "Denfert Rochereau",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.188438415527344,
+        "lon": 5.716395854949951,
+        "address": "25 Rue Colonel Denfert Rochereau, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "721",
+        "name": [
+          {
+            "text": "SNCF Gare de Chambéry",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.57099914550781,
+        "lon": 5.919000148773193,
+        "address": "62 Avenue du Maréchal Leclerc, 73000 Chambéry",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "722",
+        "name": [
+          {
+            "text": "Albert 1er de Belgique",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.181339263916016,
+        "lon": 5.731815814971924,
+        "address": "15 Avenue Général Champon, 38100 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "723",
+        "name": [
+          {
+            "text": "Berriat (145)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.18865966796875,
+        "lon": 5.707364082336426,
+        "address": "145 Cours Berriat, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "724",
+        "name": [
+          {
+            "text": "CAF Alliés",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.16953659057617,
+        "lon": 5.7301530838012695,
+        "address": "3 Rue des Alliés, 38100 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "725",
+        "name": [
+          {
+            "text": "Mairie de St-Martin-d'Hères",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.18357467651367,
+        "lon": 5.754867076873779,
+        "address": "138 avenue Ambroise Croizat,  38400 Saint-Martin-d'Hères",
+        "parking_type": "street_parking",
+        "capacity": 5,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "726",
+        "name": [
+          {
+            "text": "Bir Hakeim",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.18862533569336,
+        "lon": 5.736615180969238,
+        "address": "7 Place Bir Hakeim, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "727",
+        "name": [
+          {
+            "text": "Randon",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.19882583618164,
+        "lon": 5.738570213317871,
+        "address": "23 Rue Ravier Piquet, 38000 Grenoble ",
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "728",
+        "name": [
+          {
+            "text": "Victor Hugo",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.188377380371094,
+        "lon": 5.724421977996826,
+        "address": "10-12 Place Victor Hugo, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "729",
+        "name": [
+          {
+            "text": "Felix Viallet",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.19078063964844,
+        "lon": 5.719250202178955,
+        "address": "28 Av Felix Viallet, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "730",
+        "name": [
+          {
+            "text": "Bonne",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.1827507019043,
+        "lon": 5.724483013153076,
+        "address": "24 Allée Henri Frenay, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 5,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "731",
+        "name": [
+          {
+            "text": "Joseph Vallier - Station Mobile",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.18007278442383,
+        "lon": 5.713033199310303,
+        "address": "15 Bd Joseph Vallier, 38000 Greonble",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "732",
+        "name": [
+          {
+            "text": "Apvril",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.18622589111328,
+        "lon": 5.729885101318359,
+        "address": "Place d'Apvril, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "733",
+        "name": [
+          {
+            "text": "Général Ferrié (20)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.17863464355469,
+        "lon": 5.723887920379639,
+        "address": "20 Rue Général Ferrié, 38100 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "734",
+        "name": [
+          {
+            "text": "Dominique Villars",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.1899528503418,
+        "lon": 5.733720779418945,
+        "address": "1 Rue Dominique Villars, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "735",
+        "name": [
+          {
+            "text": "MC2",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.1717414855957,
+        "lon": 5.732699871063232,
+        "address": "47 Avenue Marcelin Berthelot, 38100 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "736",
+        "name": [
+          {
+            "text": "Mérande  Pôle Emploi",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.569400787353516,
+        "lon": 5.93310022354126,
+        "address": "72 Rue Paulette Besson, 73000 Chambéry",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "737",
+        "name": [
+          {
+            "text": "Belgrade",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.19185256958008,
+        "lon": 5.72507905960083,
+        "address": "5 Rue de Belgrade, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "738",
+        "name": [
+          {
+            "text": "SNCF Gare de Grenoble - Schuman",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.191524505615234,
+        "lon": 5.713467121124268,
+        "address": "15bis Rue de la Frise, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "739",
+        "name": [
+          {
+            "text": "Premol",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.163963317871094,
+        "lon": 5.7281928062438965,
+        "address": "22 Rue de Village, 38100 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "740",
+        "name": [
+          {
+            "text": "Espace Brun - Biscuiterie",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.185035705566406,
+        "lon": 5.750250816345215,
+        "address": "7 Rue de la Halle, 38400 Saint-Martin-d'Hères",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "741",
+        "name": [
+          {
+            "text": "SNCF Gare de Grenoble - Parvis",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.19214630126953,
+        "lon": 5.715692043304443,
+        "address": "17 rue de l'Isère, 38000 Grenoble ",
+        "parking_type": "street_parking",
+        "capacity": 5,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "742",
+        "name": [
+          {
+            "text": "Marval (1)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.18452072143555,
+        "lon": 5.720987796783447,
+        "address": "1 Place Jacqueline Marval, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "743",
+        "name": [
+          {
+            "text": "Fontainades",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.189178466796875,
+        "lon": 5.698843955993652,
+        "address": "13 Rue Gabriel Péri, 38600 Fontaine",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "744",
+        "name": [
+          {
+            "text": "Lavalette - musée",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.19390106201172,
+        "lon": 5.731983184814453,
+        "address": "16 Place de Lavalette, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 7,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "745",
+        "name": [
+          {
+            "text": "Pierre Semard",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.19301986694336,
+        "lon": 5.708963871002197,
+        "address": "53A Rue Pierre Semard, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "746",
+        "name": [
+          {
+            "text": "Calmette",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.18077850341797,
+        "lon": 5.706614017486572,
+        "address": "34-40 Rue Docteur Calmette, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "748",
+        "name": [
+          {
+            "text": "St Bruno",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.1861457824707,
+        "lon": 5.713963985443115,
+        "address": "Place St Bruno, 38000 Grenoble ",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "749",
+        "name": [
+          {
+            "text": "Echirolles Cinéma",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.14796829223633,
+        "lon": 5.718113899230957,
+        "address": "2 Rue Albert Londres, 38130 Échirolles",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "750",
+        "name": [
+          {
+            "text": "Hebert",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.189918518066406,
+        "lon": 5.73530912399292,
+        "address": "9 Rue Hébert, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "751",
+        "name": [
+          {
+            "text": "CPAM Liberation (90)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.17131042480469,
+        "lon": 5.7132039070129395,
+        "address": "90 Cours de la Libération et du Général de Gaulle, 38100 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "752",
+        "name": [
+          {
+            "text": "Sainte Claire - Rue de la gare",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.89882278442383,
+        "lon": 6.122069835662842,
+        "address": "18 Rue de la Gare, 74000 Annecy",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "753",
+        "name": [
+          {
+            "text": "Stade - Piscine découverte",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.572898864746094,
+        "lon": 5.9105048179626465,
+        "address": "32 Av. Alsace Lorraine, 73000 Chambéry",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "754",
+        "name": [
+          {
+            "text": "SNCF Gare de Chambéry - Poste du Verney",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.570045471191406,
+        "lon": 5.917666912078857,
+        "address": "1 square Paul Vidal, 73000 Chambéry",
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "755",
+        "name": [
+          {
+            "text": "La Poste",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.5973014831543,
+        "lon": 5.876500129699707,
+        "address": "134 Rue des Allobroges, 73290 La Motte-Servolex",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "756",
+        "name": [
+          {
+            "text": "Savoie Technolac",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.64339828491211,
+        "lon": 5.867400169372559,
+        "address": "16 Avenue du Lac du Bourget, 73374 Le Bourget-du-Lac",
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "757",
+        "name": [
+          {
+            "text": "Rue des Fleurs - Jean Jaurès",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.56890106201172,
+        "lon": 5.91349983215332,
+        "address": "118 Rue des Fleurs, 73000 Chambéry",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "758",
+        "name": [
+          {
+            "text": "Carré Curial",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.563499450683594,
+        "lon": 5.921999931335449,
+        "address": "26 Place Monge, 73000 Chambéry",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "760",
+        "name": [
+          {
+            "text": "Hôtel de ville",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.68827438354492,
+        "lon": 5.915513038635254,
+        "address": "1 Place Maurice Mollard, 73100 Aix-les-Bains",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "761",
+        "name": [
+          {
+            "text": "Parking P+R",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.55989074707031,
+        "lon": 5.897286891937256,
+        "address": "40 Route de Lyon, 73160 Cognin",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "762",
+        "name": [
+          {
+            "text": "Chambéry le Haut, FORUM",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.592010498046875,
+        "lon": 5.919422149658203,
+        "address": "1 place du Forum, 73000 Chambéry",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "763",
+        "name": [
+          {
+            "text": "Bd Marechal Joffre-park hotel",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.183929443359375,
+        "lon": 5.732211112976074,
+        "address": "1-3 Boulevard Maréchal Joffre",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "765",
+        "name": [
+          {
+            "text": "CHU",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.20170593261719,
+        "lon": 5.742667198181152,
+        "address": "29 av Maquis du Grésivaudan, 38700 La Tronche",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "766",
+        "name": [
+          {
+            "text": "Jean Moulin",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.43736267089844,
+        "lon": 4.3929619789123535,
+        "address": "Place Jean Moulin,  42000 Saint Étienne",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "767",
+        "name": [
+          {
+            "text": "Eugene delacroix",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.19746183618164,
+        "lon": 5.736316113317871,
+        "address": "4 Rue Eugène Delacroix, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "768",
+        "name": [
+          {
+            "text": "CEA Entrée principale",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.201080322265625,
+        "lon": 5.705545902252197,
+        "address": "17 Av. des Martyrs, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "769",
+        "name": [
+          {
+            "text": "Ampere, Cémoi",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.18497085571289,
+        "lon": 5.705740928649902,
+        "address": "37 Rue Ampère, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "771",
+        "name": [
+          {
+            "text": "Fiancey Prédieu",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.22429275512695,
+        "lon": 5.688334941864014,
+        "address": "2 Rue du 19 Mars 1962, 38120 Saint-Egrève",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "772",
+        "name": [
+          {
+            "text": "Mayencin",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.18757247924805,
+        "lon": 5.776234149932861,
+        "address": "4 Rue du Mayencin, 38400 Saint-Martin-d'Hères",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "773",
+        "name": [
+          {
+            "text": "Victor Hugo (8) T&B",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.188961029052734,
+        "lon": 5.7236409187316895,
+        "address": "8 Place Victor Hugo, 38000 Grenoble ",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "774",
+        "name": [
+          {
+            "text": "Aigle",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.182960510253906,
+        "lon": 5.71851921081543,
+        "address": "44 Rue de Turenne, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 5,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "775",
+        "name": [
+          {
+            "text": "Les Granges",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.15681838989258,
+        "lon": 5.72735595703125,
+        "address": "Rue d'Alsace",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "776",
+        "name": [
+          {
+            "text": "Mairie de Seyssinet",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.18004608154297,
+        "lon": 5.695526123046875,
+        "address": "Place Edmond Aguiard, 38170 Seyssinet-Pariset",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "777",
+        "name": [
+          {
+            "text": "Narvik",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.182708740234375,
+        "lon": 5.728264808654785,
+        "address": "2-6 Rue de Narvik, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "778",
+        "name": [
+          {
+            "text": "Balay",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.44371032714844,
+        "lon": 4.386653900146484,
+        "address": "22 rue Balay, 42000 Saint-Étienne ",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "779",
+        "name": [
+          {
+            "text": "Stalingrad",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.17940139770508,
+        "lon": 5.726298809051514,
+        "address": "35 Rue de Stalingrad, 38100 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "780",
+        "name": [
+          {
+            "text": "Parc du Pilat Place Abbé Vincent",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.41761779785156,
+        "lon": 4.671284198760986,
+        "address": "Place Abbé Vincent,  42410 Pélussin",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "781",
+        "name": [
+          {
+            "text": "Place des Romains - Avenue du Stand",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.908023834228516,
+        "lon": 6.1215500831604,
+        "address": "3 Av. des Îles, 74000 Annecy",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "782",
+        "name": [
+          {
+            "text": "SNCF Gare de Grenoble - GEM",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.18977355957031,
+        "lon": 5.71316385269165,
+        "address": "21 Rue Pierre Semard, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 5,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "783",
+        "name": [
+          {
+            "text": "Alsace Lorraine",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.189640045166016,
+        "lon": 5.717625141143799,
+        "address": "14 Rue Colonel Denfert Rochereau, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "784",
+        "name": [
+          {
+            "text": "Emile Augier",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.19019317626953,
+        "lon": 5.722134113311768,
+        "address": "5 Rue Emile Augier, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "785",
+        "name": [
+          {
+            "text": "Bouchayer Viallet",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.18444061279297,
+        "lon": 5.704965114593506,
+        "address": "20 Rue Victor Lastella, 38000 Grenoble ",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "786",
+        "name": [
+          {
+            "text": "Place République",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.1822624206543,
+        "lon": 5.792633056640625,
+        "address": "Place de la République, 38610 Gières",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "787",
+        "name": [
+          {
+            "text": "SNCF Gare de Pontcharra",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.43408203125,
+        "lon": 6.008092880249023,
+        "address": "1 Av. de la Gare, 38530 Pontcharra",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "788",
+        "name": [
+          {
+            "text": "Belle étoile",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.27195739746094,
+        "lon": 5.893124103546143,
+        "address": "1585  Rue de Belledonne, 38920 Crolles",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "789",
+        "name": [
+          {
+            "text": "Le Prisme",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.16637420654297,
+        "lon": 5.690347194671631,
+        "address": "89 Avenue de Grenoble, 38180 Seyssins",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "790",
+        "name": [
+          {
+            "text": "SNCF Gare de Voiron",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.364358,
+        "lon": 5.594132,
+        "address": "16 Av. Léon et Joanny Tardy, 38500 Voiron",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "791",
+        "name": [
+          {
+            "text": "Tourmaline",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.362318,
+        "lon": 5.593707,
+        "address": "10 Rue Alban et Émilienne Fagot, 38500 Voiron",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "792",
+        "name": [
+          {
+            "text": "Clos des fleurs",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.19766616821289,
+        "lon": 5.712434768676758,
+        "address": "12 Rue du Villard de Lans, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "793",
+        "name": [
+          {
+            "text": "Blanche Monier",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.19660568237305,
+        "lon": 5.738699913024902,
+        "address": "32-34 Rue Blanche Monier, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "794",
+        "name": [
+          {
+            "text": "Henri Bordeaux N°15 DDT 74",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.91008758544922,
+        "lon": 6.133563995361328,
+        "address": "14 Rue Henry Bordeaux, 74000 Annecy",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "795",
+        "name": [
+          {
+            "text": "DEMOBOX (Réservé Citiz)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.18806037580172,
+        "lon": 5.719697557630965,
+        "parking_type": "street_parking",
+        "capacity": 100,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "796",
+        "name": [
+          {
+            "text": "Bajatière",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.17866134643555,
+        "lon": 5.736018180847168,
+        "address": "41 Avenue Jean Perrot, 38100 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "797",
+        "name": [
+          {
+            "text": "Jeanne d'arc",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.181846618652344,
+        "lon": 5.744770050048828,
+        "address": " 61-65 Avenue Jeanne d'Arc, 38100 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "798",
+        "name": [
+          {
+            "text": "Esplanade - Jardin des Dauphins",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.1934814453125,
+        "lon": 5.720405101776123,
+        "address": "48 Quai de France, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "800",
+        "name": [
+          {
+            "text": "Avenue de Saint-simond (3) - prés riants en travaux ",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.694454193115234,
+        "lon": 5.910085201263428,
+        "address": "1-5 Rue des Prés Riants, 73100 Aix-les-Bains",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "801",
+        "name": [
+          {
+            "text": "Jaurès - Covet",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.56692886352539,
+        "lon": 5.915060997009277,
+        "address": "114-162 Rue des Écoles, 73000 Chambéry",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "802",
+        "name": [
+          {
+            "text": "Carrefour de la Trousse",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.572078704833984,
+        "lon": 5.959740161895752,
+        "address": "Avenue de Chambéry, 73490 La Ravoire ",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "803",
+        "name": [
+          {
+            "text": "Agence Citiz",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.188018798828125,
+        "lon": 5.7199578285217285,
+        "address": "36-40 cours Berriat, 38000 Grenoble, devant nos nouveaux bureaux d'accueil ",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "804",
+        "name": [
+          {
+            "text": "Villard de Lans",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.07051086425781,
+        "lon": 5.554580211639404,
+        "address": "Parking Croix Margot, 38250 Villard de Lans. Sur le parking de la CCMV.",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "805",
+        "name": [
+          {
+            "text": "Lans en Vercors",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.12971878051758,
+        "lon": 5.583407878875732,
+        "address": "A l'angle de la voie du tram et de l'Avenue Léopold Fabre, 38250 Lans en Vercors.",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "806",
+        "name": [
+          {
+            "text": "Lakanal",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.18640899658203,
+        "lon": 5.723215103149414,
+        "address": "12 Rue Lakanal, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "807",
+        "name": [
+          {
+            "text": "Malraux CCI [Station électrique]",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.185707092285156,
+        "lon": 5.729337215423584,
+        "address": "1 Place André Malraux, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "808",
+        "name": [
+          {
+            "text": "SNCF Gare de Vienne",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.52147674560547,
+        "lon": 4.872756004333496,
+        "address": "2 rue Emile Romanet, 38200 Vienne",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "809",
+        "name": [
+          {
+            "text": "Petit Jean",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.18311309814453,
+        "lon": 5.783907890319824,
+        "address": "7-9 Rue du Petit Jean, 38610 Gières",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "810",
+        "name": [
+          {
+            "text": "SNCF Gare de Bourgoin-Jallieu Parking Charges",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.58316,
+        "lon": 5.27374,
+        "address": "5 avenue de Charges  38300 Bourgoin-Jaillieu (Parking Charges payant) La plaque immatriculation est détecté pour l'ouverture de la barrière. ",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "811",
+        "name": [
+          {
+            "text": "SNCF Gare d'Annecy Sortie Nord",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.90311813354492,
+        "lon": 6.122211933135986,
+        "address": "1 Avenue Berthollet, 74000 Annecy",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "812",
+        "name": [
+          {
+            "text": "SNCF Gare de Châteaucreux",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.44269943237305,
+        "lon": 4.401658058166504,
+        "address": "6 Esplanade de France, 42964 Saint-Etienne",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "813",
+        "name": [
+          {
+            "text": "SNCF Gare de Montmélian",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.5029411315918,
+        "lon": 6.0434370040893555,
+        "address": "2 Avenue de la Gare, 73800 Montmélian",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "814",
+        "name": [
+          {
+            "text": "SNCF Gare de St Egrève St Robert",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.23568344116211,
+        "lon": 5.67151403427124,
+        "address": "3 Rue des Bonnais, 38120 Saint-Égrève",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "815",
+        "name": [
+          {
+            "text": "Antarès Saint Germain",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.51367950439453,
+        "lon": 4.864808082580566,
+        "address": "30 Avenue Général Leclerc, 38200 Vienne",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "816",
+        "name": [
+          {
+            "text": "SNCF Gare d'Aix-les-Bains - Avenue Charles de Gaulle (18)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.688263,
+        "lon": 5.910197,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "817",
+        "name": [
+          {
+            "text": "Allobroges Pierre Cot",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.57294845581055,
+        "lon": 5.915555000305176,
+        "address": "303 Quai des Allobroges, 73000 Chambéry ",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "818",
+        "name": [
+          {
+            "text": "Bonne [Station électrique]",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.18352127075195,
+        "lon": 5.721443176269531,
+        "address": "11 Rue Marceau, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "819",
+        "name": [
+          {
+            "text": "Eléphants Astrée CCI",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.566253662109375,
+        "lon": 5.923520088195801,
+        "address": "1-3 Rue Jean Moulin, 73000 Chambéry ",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "820",
+        "name": [
+          {
+            "text": "Fontaine-Cachin",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.1948356628418,
+        "lon": 5.687298774719238,
+        "address": "52 Bis Mail Marcel Cachin, 38600 Fontaine",
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "821",
+        "name": [
+          {
+            "text": "Pont de Vence",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.230384826660156,
+        "lon": 5.68335485458374,
+        "address": "1 Avenue de la Monta, 38120 Saint-Egrève",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "822",
+        "name": [
+          {
+            "text": "Nicolas Chorier",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.18478012084961,
+        "lon": 5.709795951843262,
+        "address": "59 Rue Nicolas Chorier, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "823",
+        "name": [
+          {
+            "text": "Piscine Buisson Rond",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.565582275390625,
+        "lon": 5.937188148498535,
+        "address": "Parking de la piscine de Buisson Rond rue Sainte Rose à proximité de la place handicapé",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "824",
+        "name": [
+          {
+            "text": "Cité du Design",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.451534271240234,
+        "lon": 4.38675594329834,
+        "address": "10 Rue Salvador Dali, 42000 Saint-Étienne",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "825",
+        "name": [
+          {
+            "text": "Parc Technologique - Mercure",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.62696838378906,
+        "lon": 5.16733980178833,
+        "address": "20 rue Condorcet, 38090 Villefontaine",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "826",
+        "name": [
+          {
+            "text": "Saint Pierre (CCI)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.52357864379883,
+        "lon": 4.8712849617004395,
+        "address": "Place Saint-Pierre, 38200 Vienne",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "828",
+        "name": [
+          {
+            "text": "Rue Porte de la Buisse",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.36593,
+        "lon": 5.59519,
+        "address": "5 Place de la Porte de la Buisse\n38500 Voiron",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "829",
+        "name": [
+          {
+            "text": "Desaix - Commandant GILOT",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.181549072265625,
+        "lon": 5.721517086029053,
+        "address": "2 Rue Commandant Gilot, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "830",
+        "name": [
+          {
+            "text": "Joseph Fourrier",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.190025329589844,
+        "lon": 5.7362141609191895,
+        "address": "1 rue Joseph Fourrier, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "831",
+        "name": [
+          {
+            "text": "Haxo (6)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.18740463256836,
+        "lon": 5.734235763549805,
+        "address": " 6 rue Haxo, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "832",
+        "name": [
+          {
+            "text": "Mallifaud",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.18069839477539,
+        "lon": 5.728859901428223,
+        "address": "54 rue Mallifaud, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "833",
+        "name": [
+          {
+            "text": "Hotel de ville",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.18623352050781,
+        "lon": 5.735168933868408,
+        "address": "11 Boulevard Jean Pain, 38021 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "834",
+        "name": [
+          {
+            "text": "Place Diéderichs (CAF)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.59024429321289,
+        "lon": 5.280710220336914,
+        "address": "Pl. Charles Diéderichs, 38300 Bourgoin-Jallieu",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "835",
+        "name": [
+          {
+            "text": "Joseph Chanrion",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.18935775756836,
+        "lon": 5.736892223358154,
+        "address": "10-12 Rue Joseph Chanrion, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "836",
+        "name": [
+          {
+            "text": "CEA Cambridge",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.20261764526367,
+        "lon": 5.704329013824463,
+        "address": "27 rue Winston Churchill, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "837",
+        "name": [
+          {
+            "text": "Frédéric Dard",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.591087341308594,
+        "lon": 5.275057792663574,
+        "address": "53 Avenue Frédéric Dard, 38300 Bourgoin-Jallieu",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "838",
+        "name": [
+          {
+            "text": "Jules Ferry",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.18193817138672,
+        "lon": 5.735709190368652,
+        "address": "10B Rue Jules Ferry, 38100 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "839",
+        "name": [
+          {
+            "text": "SNCF Gare de Chambéry - Cassine (Q-Park)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.57078170776367,
+        "lon": 5.920917987823486,
+        "address": "92 Chemin de la Cassine, 73000 Chambéry",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "840",
+        "name": [
+          {
+            "text": "CRAN GEVRIER Passerelles Papeteries",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.90739059448242,
+        "lon": 6.1039252281188965,
+        "address": "Rue des Passerelles, 74960 Cran-Gevrier",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "841",
+        "name": [
+          {
+            "text": "Centre Bourg",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.564212799072266,
+        "lon": 5.944493770599365,
+        "address": "60 Route d'Apremont, 73000 Barberaz",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "842",
+        "name": [
+          {
+            "text": "Vaugelas",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.56669616699219,
+        "lon": 5.917846202850342,
+        "address": "27 Rue Marcoz, 73000 Chambéry",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "843",
+        "name": [
+          {
+            "text": "Cité du Design-Mixeur",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.44944381713867,
+        "lon": 4.385979175567627,
+        "address": "5 rue Javelin Pagnon, 42000 St Etienne",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "845",
+        "name": [
+          {
+            "text": "Bellevue - Vallin Fier",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.91954040527344,
+        "lon": 6.124137878417969,
+        "address": "2-4 Boulevard Bellevue, 74000 Annecy ",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "846",
+        "name": [
+          {
+            "text": "Place Porte Reine",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.56416702270508,
+        "lon": 5.920472145080566,
+        "address": "Place Porte Reine, 73000 Chambéry",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "847",
+        "name": [
+          {
+            "text": "Place Attache Aux Boeufs",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.44189453125,
+        "lon": 4.389369010925293,
+        "address": "2 Rue Berthon, 42000 Saint-Étienne",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "848",
+        "name": [
+          {
+            "text": "SNCF Gare d'Annemasse - AGGLO",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.19600296020508,
+        "lon": 6.230897903442383,
+        "address": "11 rue Émile Zola, 74100 Annemasse",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "849",
+        "name": [
+          {
+            "text": "Archamps Communauté Communes du Genevois",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.13878631591797,
+        "lon": 6.118277072906494,
+        "address": "60 Rue Douglas Engelbart, 74160 Archamps",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "850",
+        "name": [
+          {
+            "text": "Irvoy-Violettes",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.18043518066406,
+        "lon": 5.713015079498291,
+        "address": "28 Rue Irvoy, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "851",
+        "name": [
+          {
+            "text": "Conservatoire Massenet",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.4303092956543,
+        "lon": 4.395176887512207,
+        "address": "32 Rue des Francs Maçons, 42100 Saint-Étienne",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "852",
+        "name": [
+          {
+            "text": "Jean Plotton",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.43979263305664,
+        "lon": 4.384103775024414,
+        "address": "Place Jean Ploton, 42000 Saint-Étienne",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "853",
+        "name": [
+          {
+            "text": "Grand Sablon",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.199437,
+        "lon": 5.750443,
+        "address": "19 avenue de l'Obiou, 38700 La Tronche",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "854",
+        "name": [
+          {
+            "text": "Campus Tréfilerie",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.42621994018555,
+        "lon": 4.391089916229248,
+        "address": "35 Rue du Onze Novembre, 42100 Saint-Étienne",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "855",
+        "name": [
+          {
+            "text": "Hôtel de Ville Amédée VIII de Savoie",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.14446572983697,
+        "lon": 6.080736844115906,
+        "address": "5 Rue Amédée VIII de Savoie, 74160 Saint-Julien-en-Genevois, France",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "856",
+        "name": [
+          {
+            "text": "Montmélian - avenue de Savoie",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.50214385986328,
+        "lon": 6.051830768585205,
+        "address": "73800 Montmélian",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "857",
+        "name": [
+          {
+            "text": "Centre ville",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.33235549926758,
+        "lon": 6.060834884643555,
+        "address": "Rue Alexandre Reverchon, 01170 Gex",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "858",
+        "name": [
+          {
+            "text": "Mérande Saint François",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.56893539428711,
+        "lon": 5.928140163421631,
+        "address": "6 Avenue Dr Desfrançois, 73000 Chambéry \n",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "859",
+        "name": [
+          {
+            "text": "Pole Bus",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.93088912963867,
+        "lon": 4.894877910614014,
+        "address": "760 Avenue Félix Faure, 26000 Valence",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "860",
+        "name": [
+          {
+            "text": "Edouard Herriot",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.934661865234375,
+        "lon": 4.894474983215332,
+        "address": "34 avenue du Pdt Edouard Herriot, 26000 VALENCE",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "861",
+        "name": [
+          {
+            "text": "Gare  SNCF TGV ROVALTAIN",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.988541,
+        "lon": 4.97625,
+        "address": "7 Avenue de la Gare, 26320 Alixan ",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "862",
+        "name": [
+          {
+            "text": "SNCF Gare de St-Julien-en-Genevois - Place du Crêt",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.14380645751953,
+        "lon": 6.082779884338379,
+        "address": "4 Place du Crêt, 74160 Saint-Julien-en-Genevois",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "863",
+        "name": [
+          {
+            "text": "Avenue des Ducs",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.56739807128906,
+        "lon": 5.924088001251221,
+        "address": "7-1 Avenue des Ducs de Savoie, 73000 Chambéry",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "864",
+        "name": [
+          {
+            "text": "Guilbaud, Ponsard-Bajatiere",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.177608489990234,
+        "lon": 5.74052095413208,
+        "address": "15 Chemin Guilbaud, 38100 Grenoble, France",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "865",
+        "name": [
+          {
+            "text": "Casemate",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.198174,
+        "lon": 5.732391,
+        "address": "Place Saint-Laurent, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "866",
+        "name": [
+          {
+            "text": "Ecole des Mines Fauriel [Station électrique]",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.42277908325195,
+        "lon": 4.409433841705322,
+        "address": "101 Cours Fauriel, 42100 Saint-Étienne",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "867",
+        "name": [
+          {
+            "text": "Thiers (53)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.184200286865234,
+        "lon": 5.71917200088501,
+        "address": "53 Rue Thiers, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "868",
+        "name": [
+          {
+            "text": "Charles Testoud",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.18429183959961,
+        "lon": 5.718997955322266,
+        "address": "8 Rue Charles Testoud, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "869",
+        "name": [
+          {
+            "text": "Edouard REY",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.19118881225586,
+        "lon": 5.722932815551758,
+        "address": "14 Bd Édouard Rey, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "870",
+        "name": [
+          {
+            "text": "SNCF Gare de Bonneville",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.07796096801758,
+        "lon": 6.416598796844482,
+        "address": "268 Avenue de la Gare, 74130 Bonneville",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "871",
+        "name": [
+          {
+            "text": "Place de l'Eglise",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.078590393066406,
+        "lon": 6.409546852111816,
+        "address": "196 Rue des Grandes Chambrettes, 74130 Bonneville",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "872",
+        "name": [
+          {
+            "text": "Quai de France (8)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.193565368652344,
+        "lon": 5.722860813140869,
+        "address": "8 Quai de France, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "873",
+        "name": [
+          {
+            "text": "Telepherique",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.19296646118164,
+        "lon": 5.725295066833496,
+        "address": "7 Quai Stéphane Jay, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 0,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "874",
+        "name": [
+          {
+            "text": "Gare SNCF Romans sortie Sud",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.048702239990234,
+        "lon": 5.0494818687438965,
+        "address": "Place Carnot, 26100 Romans-sur-Isère",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "875",
+        "name": [
+          {
+            "text": "Bellevue",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.415977478027344,
+        "lon": 4.394111156463623,
+        "address": "15 Place Bellevue, 42100 Saint-Étienne",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "876",
+        "name": [
+          {
+            "text": "Mairie d'Ambilly",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.195823669433594,
+        "lon": 6.222959995269775,
+        "address": "2 Rue de la Paix, 74100 Ambilly ",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "877",
+        "name": [
+          {
+            "text": "Mairie d'Eybens",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.147911071777344,
+        "lon": 5.7510881423950195,
+        "address": "170 Avenue Jean Jaurès, 38320 Eybens",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "878",
+        "name": [
+          {
+            "text": "Odyssée - La poste",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.153690338134766,
+        "lon": 5.749575138092041,
+        "address": "8 Rue Pierre Mendès France, 38320 Eybens",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "879",
+        "name": [
+          {
+            "text": "Bd Marechal Leclerc",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.192691802978516,
+        "lon": 5.736846923828125,
+        "address": "40 Boulevard Maréchal Leclerc, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "880",
+        "name": [
+          {
+            "text": "Champs Elysées-Eaux Claires",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.178401947021484,
+        "lon": 5.709994792938232,
+        "address": "1 Bis Rue des Champs Elysées, 38100 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "881",
+        "name": [
+          {
+            "text": "Bd Marechal Joffre-Humanis",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.18400192260742,
+        "lon": 5.731959819793701,
+        "address": "4 Boulevard Maréchal Joffre, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "882",
+        "name": [
+          {
+            "text": "Jean Achard",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.18941879272461,
+        "lon": 5.729272842407227,
+        "address": "3 Place Jean Achard, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "883",
+        "name": [
+          {
+            "text": "Jean Prevost",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.185066,
+        "lon": 5.715158,
+        "address": "23 Rue Jean Prévost, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "885",
+        "name": [
+          {
+            "text": "Avenue de l'Europe",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.221534729003906,
+        "lon": 5.812664985656738,
+        "address": "1323 Avenue de l'Europe, 38330 Montbonnot-Saint-Martin",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "886",
+        "name": [
+          {
+            "text": "COUR SEAS (réservée aux salariés SEAS)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.57059860229492,
+        "lon": 5.913247108459473,
+        "address": "Rue du Bon Pasteur, 73000 Chambéry",
+        "parking_type": "street_parking",
+        "capacity": 15,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "887",
+        "name": [
+          {
+            "text": "Général Ferrié (13)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.17909622192383,
+        "lon": 5.723886013031006,
+        "address": "13 Rue Général Ferrié, 38100 Grenoble, France",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "888",
+        "name": [
+          {
+            "text": "Place Route de l'église",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.8318353,
+        "lon": 6.162168,
+        "address": "5458 Route du Centre, 74410 Saint-Jorioz ",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "890",
+        "name": [
+          {
+            "text": "Les rigoles",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.940128326416016,
+        "lon": 6.139876842498779,
+        "address": "300 Route du Parmelan, 74370 Argonay, France",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "891",
+        "name": [
+          {
+            "text": "Muret",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.22633743286133,
+        "lon": 5.686428070068359,
+        "address": "19 Route de Grenoble, 38120 Saint-Egrève",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "892",
+        "name": [
+          {
+            "text": "Sauvegarde-Comte Vert",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.57085418701172,
+        "lon": 5.913637161254883,
+        "address": "177 Avenue du Comte Vert, 73000 Chambéry",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "893",
+        "name": [
+          {
+            "text": "Mairie d'Epagny",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.937747955322266,
+        "lon": 6.09090518951416,
+        "address": "143 Rue de la République, 74330 Epagny",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "894",
+        "name": [
+          {
+            "text": "Mairie de Metz Tessy",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.939632415771484,
+        "lon": 6.105289936065674,
+        "address": "Chemin du Clocher, 74330 Metz-Tessy",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "895",
+        "name": [
+          {
+            "text": "Ville -Rue du 08 mai 1945",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.19119644165039,
+        "lon": 6.233670234680176,
+        "address": "1 Rue du 8 Mai, 74100 Annemasse",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "896",
+        "name": [
+          {
+            "text": "Espace Aragon",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.23838424682617,
+        "lon": 5.888640880584717,
+        "address": "19 Boulevard Jules Ferry, 38190 Villard-Bonnot",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "897",
+        "name": [
+          {
+            "text": "Gare SNCF de Valence",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.928157806396484,
+        "lon": 4.892560958862305,
+        "address": "37 rue Denis Papin, 26000 Valence",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "898",
+        "name": [
+          {
+            "text": "Champ Rochas-Aiguinards",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.2088637988381,
+        "lon": 5.76289036490968,
+        "address": "Rue champs Rochas au croisement avec rue des Aiguinards, 38240 Meylan",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "899",
+        "name": [
+          {
+            "text": "Plaine Fleurie",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.20638656616211,
+        "lon": 5.756903171539307,
+        "address": "19 Avenue de la Plaine Fleurie, 38240 Meylan .",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "900",
+        "name": [
+          {
+            "text": "Clinique Belledonne",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.18598556518555,
+        "lon": 5.759891033172607,
+        "address": "68-92 Avenue Gabriel Péri, 38400 Saint-Martin-d'Hères",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "901",
+        "name": [
+          {
+            "text": "Verdun-Aiguinards",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.205668,
+        "lon": 5.76518,
+        "address": "16 avenue de Verdun, au croisement avec la rue des Ayguinards, 38240 Meylan",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "903",
+        "name": [
+          {
+            "text": "ENISE",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.4291877746582,
+        "lon": 4.422457218170166,
+        "address": "58 Rue Jean Parot, 42100 Saint-Étienne",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "904",
+        "name": [
+          {
+            "text": "Mairie de Meylan",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.209468841552734,
+        "lon": 5.778988838195801,
+        "address": "4 avenue du Vercors, 38240 Meylan",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "905",
+        "name": [
+          {
+            "text": "SNCF Gare de Thonon - Jean Blanchard",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.3695469,
+        "lon": 6.4811723,
+        "address": "26 Rue Jean Blanchard, 74200 Thonon-les-Bains",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "906",
+        "name": [
+          {
+            "text": "Seynod - Le Polyèdre",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.88789367675781,
+        "lon": 6.10151481628418,
+        "address": "4 Imp. Saint-Jean, 74600 Annecy",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "907",
+        "name": [
+          {
+            "text": "Jean Jaurès",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.045589447021484,
+        "lon": 5.056350231170654,
+        "address": "84 Av. Gambetta, 26100 Romans-sur-Isère",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "908",
+        "name": [
+          {
+            "text": "Marcoz Lanfrey",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.56884002685547,
+        "lon": 5.914440155029297,
+        "address": "366 Rue Marcoz, 73000 Chambéry",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "909",
+        "name": [
+          {
+            "text": "Maison neuve",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.165225982666016,
+        "lon": 5.742527008056641,
+        "address": "D5, 38320 Eybens",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "910",
+        "name": [
+          {
+            "text": "Palluel",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.25455093383789,
+        "lon": 5.662350177764893,
+        "address": "Rue de Palluel, 38120 Fontanil-Cornillon",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "911",
+        "name": [
+          {
+            "text": "Grand Pré",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.172298431396484,
+        "lon": 5.693999767303467,
+        "address": "152-160 Avenue Victor Hugo, 38170 Seyssinet",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "912",
+        "name": [
+          {
+            "text": "Maconnais Hauts de Chambéry",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.59311294555664,
+        "lon": 5.918089866638184,
+        "address": "270-486 Rue du Mâconnais, 73000 Chambéry",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "913",
+        "name": [
+          {
+            "text": "Place du Vercors",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.81676483154297,
+        "lon": 5.747974872589111,
+        "address": "Place du Vercors devant le garage Renault",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "914",
+        "name": [
+          {
+            "text": "Mairie de Sevrier",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.86467742919922,
+        "lon": 6.140315055847168,
+        "address": "2000 Rte d'Albertville, 74320 Sévrier",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "916",
+        "name": [
+          {
+            "text": "Arpège 1 Pl. du Théatre",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.67439651489258,
+        "lon": 6.391451835632324,
+        "address": "3 Rue Jacques Porraz, 73200 Albertville",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "917",
+        "name": [
+          {
+            "text": "Avenue de la gare SNCF",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.863525,
+        "lon": 5.947626,
+        "address": "Av. de la Gare, 74150 Rumilly",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "918",
+        "name": [
+          {
+            "text": "République Pôle Emploi",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.12272262573242,
+        "lon": 5.697378158569336,
+        "address": "5 Rue de la République, 38800 Le Pont-de-Claix",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "919",
+        "name": [
+          {
+            "text": "SNCF Gare de Gières",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.18506622314453,
+        "lon": 5.785429954528809,
+        "address": "20 Rue de la Gare, 38610 Gières",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "920",
+        "name": [
+          {
+            "text": "Arande",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.14104080200195,
+        "lon": 6.079351902008057,
+        "address": "20 Grand Rue, 74160 Saint Julien en Genevois",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "921",
+        "name": [
+          {
+            "text": "SNCF Gare d'Annemasse - Émile Zola",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.19744110107422,
+        "lon": 6.234039783477783,
+        "address": "20 Av. Émile Zola, 74100 Annemasse",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "922",
+        "name": [
+          {
+            "text": "SNCF Gare de Goncelin",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.34184646606445,
+        "lon": 5.974249839782715,
+        "address": "Pl. de la Gare, 38570 Goncelin",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "923",
+        "name": [
+          {
+            "text": "Boigne",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.588470458984375,
+        "lon": 5.882865905761719,
+        "address": "1265 Av. Costa de Beauregard, 73290 La Motte-Servolex",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "933",
+        "name": [
+          {
+            "text": "SNCF Gare d'Aix-les-Bains - PDT Wilson",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.6862678527832,
+        "lon": 5.910041809082031,
+        "address": "603 Bd Président Wilson, 73100 Aix-les-Bains",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "934",
+        "name": [
+          {
+            "text": "Mairie de Sassenage",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.20670700073242,
+        "lon": 5.662520885467529,
+        "address": "2-4 Rue de la République, 38360 Sassenage",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "935",
+        "name": [
+          {
+            "text": "Vaucanson - Banque",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.18864822387695,
+        "lon": 5.728724002838135,
+        "address": " 1 Place Vaucanson, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "936",
+        "name": [
+          {
+            "text": "L'Etoile - SNCF",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.1374626159668,
+        "lon": 5.702258110046387,
+        "address": "94 Cours Saint-André, 38800 Le Pont-de-Claix",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "937",
+        "name": [
+          {
+            "text": "Mairie de Poisat",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.15894317626953,
+        "lon": 5.759376049041748,
+        "address": "38320 Poisat",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "939",
+        "name": [
+          {
+            "text": "Parc du Pilat 2 rue Benay",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.41902542114258,
+        "lon": 4.666982173919678,
+        "address": "27 Rue Benay, 42410 Pélussin",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "940",
+        "name": [
+          {
+            "text": "CEA Marie-Louise Paris [Station électrique]",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.2022532,
+        "lon": 5.7047082,
+        "address": "82bis avenue des Martyrs 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "941",
+        "name": [
+          {
+            "text": "Les Burgondes",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.14706802368164,
+        "lon": 6.08771276473999,
+        "address": "18 Av. de Mossingen, 74160 Saint-Julien-en-Genevois",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "942",
+        "name": [
+          {
+            "text": "Mairie de Poisy",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.92180633544922,
+        "lon": 6.062557220458984,
+        "address": "74330 Poisy",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "943",
+        "name": [
+          {
+            "text": "Gymnase Colette Besson",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.176517486572266,
+        "lon": 5.766047954559326,
+        "address": "25 Rue Alphonse Daudet, 38400 Saint-Martin-d'Hères",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "944",
+        "name": [
+          {
+            "text": "Marceau (15)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.18333053588867,
+        "lon": 5.721500873565674,
+        "address": "15 rue Marceau 38000 Grenoble\n",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "945",
+        "name": [
+          {
+            "text": "Thiers (42)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.184852600097656,
+        "lon": 5.719723224639893,
+        "address": "42 rue Thiers 38000 Grenoble ",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "946",
+        "name": [
+          {
+            "text": "Liberation (66)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.17402648925781,
+        "lon": 5.714091777801514,
+        "address": "66 cours de la libération\n",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "947",
+        "name": [
+          {
+            "text": "SNCF Gare d'Albertville",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.672489166259766,
+        "lon": 6.383090019226074,
+        "address": "6 Av. Général de Gaulle, 73200 Albertville",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "954",
+        "name": [
+          {
+            "text": "Verdun- Préfecture",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.189056396484375,
+        "lon": 5.733027935028076,
+        "address": "13 place de Verdun  38000 Grenoble ",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "965",
+        "name": [
+          {
+            "text": "Technopole-Rue Tournefort",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.4593620300293,
+        "lon": 4.3953328132629395,
+        "address": "1-7 Rue Tournefort, 42000 Saint-Étienne",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "966",
+        "name": [
+          {
+            "text": "Malakoff",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.188968658447266,
+        "lon": 5.738432884216309,
+        "address": "5-7 Rue Malakoff 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "967",
+        "name": [
+          {
+            "text": "Grand Annecy parking [Station électrique]",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.911109924316406,
+        "lon": 6.115499973297119,
+        "address": "46 Av. des Îles, 74000 Annecy",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "968",
+        "name": [
+          {
+            "text": "Jourdies",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.07297134399414,
+        "lon": 6.377273082733154,
+        "address": "130, avenue des Jourdies,  Saint Pierre de Faucigny",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "969",
+        "name": [
+          {
+            "text": "10 Rue du Printemps",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.56458282470703,
+        "lon": 5.941652774810791,
+        "address": "10 Rue du Printemps, 73000 Barberaz",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "970",
+        "name": [
+          {
+            "text": "SNCF Gare de Gières [Alizé - Cahors 22kW]",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.184749603271484,
+        "lon": 5.7845048904418945,
+        "address": "Gare de Grenoble Université Gières, 38610 Gières",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "972",
+        "name": [
+          {
+            "text": "Hôtel de Ville",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.23268508911133,
+        "lon": 5.679622173309326,
+        "address": "1 Rue des Mails, 38120 Saint-Egrève",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "974",
+        "name": [
+          {
+            "text": "Mairie de Bluffy",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.86831283569336,
+        "lon": 6.218371868133545,
+        "address": "Route de Bluffy, 74290 Bluffy",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "975",
+        "name": [
+          {
+            "text": "Palanka",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.19142150878906,
+        "lon": 5.724064826965332,
+        "address": "1 rue Palanka 38000Grenoble ",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "976",
+        "name": [
+          {
+            "text": "Nelson Mandela-Duboin",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.14280319213867,
+        "lon": 6.073307991027832,
+        "address": "74160 Saint-Julien-en-Genevois",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "977",
+        "name": [
+          {
+            "text": "Paul Dijon",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.1849365234375,
+        "lon": 5.720738887786865,
+        "address": "1 rue Paul Dijon 38000 Grenoble ",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "978",
+        "name": [
+          {
+            "text": "CEA Minatec",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.195831298828125,
+        "lon": 5.710597038269043,
+        "address": "75 Rue Félix Esclangon, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "979",
+        "name": [
+          {
+            "text": "Place Martin Luther King",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.19843292236328,
+        "lon": 6.237949848175049,
+        "address": "Rue du Docteur Francis Baud, Annemasse",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "980",
+        "name": [
+          {
+            "text": "CEA Oxford-Schneider",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.20735168457031,
+        "lon": 5.69858980178833,
+        "address": "160 avenue des Martyrs 38000 Grenoble ",
+        "parking_type": "street_parking",
+        "capacity": 5,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "981",
+        "name": [
+          {
+            "text": "CEA - Avenue des Martyrs (66)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.2010612487793,
+        "lon": 5.706210136413574,
+        "address": "66 avenue des martyrs 38000 Grenoble \n",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "982",
+        "name": [
+          {
+            "text": "20 rue des Tilleuls",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.568878173828125,
+        "lon": 5.949667930603027,
+        "address": "20 Rue des Tilleuls, 73000 Barberaz",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "983",
+        "name": [
+          {
+            "text": "John Kennedy (17)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.174842834472656,
+        "lon": 5.718245983123779,
+        "address": "17 Rue John Kennedy, 38100 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "984",
+        "name": [
+          {
+            "text": " Place Paul Doumer",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.04070281982422,
+        "lon": 5.048768997192383,
+        "address": "10 Rue du Dr Eynard, à l'angle de la Place Paul Doumer, 26300 Bourg de Péage ",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "985",
+        "name": [
+          {
+            "text": "Esclangon",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.19279479980469,
+        "lon": 5.70834493637085,
+        "address": "30 rue  Félix Esclangon",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "987",
+        "name": [
+          {
+            "text": "Châteauvert",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.92485427856445,
+        "lon": 4.895219802856445,
+        "address": "2, rue Christophe Colomb, 26000 Valence",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "988",
+        "name": [
+          {
+            "text": "Square Sylvestre",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.92478942871094,
+        "lon": 4.888360977172852,
+        "address": "124, Avenue Victor Hugo, 26000 Valence",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "989",
+        "name": [
+          {
+            "text": "Digonnet",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.930763244628906,
+        "lon": 4.892383098602295,
+        "address": "3 Rue Digonnet, 26000 Valence",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "990",
+        "name": [
+          {
+            "text": "Manouchian",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.933982849121094,
+        "lon": 4.8932671546936035,
+        "address": "6 rue Belle Image, 26000 Valence",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "991",
+        "name": [
+          {
+            "text": "Vaucanson",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.18805694580078,
+        "lon": 5.727797985076904,
+        "address": " 1, Place Dr Léon Martin, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "992",
+        "name": [
+          {
+            "text": "Bouchayer-Viallet [Station électrique]",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.18437957763672,
+        "lon": 5.704103946685791,
+        "address": "9, rue Lastella - 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "993",
+        "name": [
+          {
+            "text": "CEA - Avenue des Martyrs (74)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.20151138305664,
+        "lon": 5.705632209777832,
+        "address": "74 avenue des martyrs 38000 Grenoble ",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "994",
+        "name": [
+          {
+            "text": "Môle [Station électrique]",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.134708404541016,
+        "lon": 6.2687249183654785,
+        "address": "163, rue du Môle, 74930 Reignier-Esery",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "995",
+        "name": [
+          {
+            "text": "CEA Metrovélo",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.202789306640625,
+        "lon": 5.704309940338135,
+        "address": "27 rue Winston Churchill 38000 Grenoble ",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "996",
+        "name": [
+          {
+            "text": "Place de l'Eglise - Reignier",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.1383171081543,
+        "lon": 6.270181179046631,
+        "address": "90, rue des Ecoles, 74930 Reignier-Esery",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "997",
+        "name": [
+          {
+            "text": "SNCF Gare la Roche sur Foron [Station électrique]",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.06819152832031,
+        "lon": 6.3036208152771,
+        "address": "352, Av de la Gare 74800, La Roche sur Foron",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "998",
+        "name": [
+          {
+            "text": "Mairie de La Roche-sur-Foron",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.06697082519531,
+        "lon": 6.311892986297607,
+        "address": "Rue Andrevetan - 74800 La Roche sur Foron",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "999",
+        "name": [
+          {
+            "text": "Carmagnole",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.179771423339844,
+        "lon": 5.764589786529541,
+        "address": "38400 Saint-Martin-d'Hères",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1001",
+        "name": [
+          {
+            "text": "Couvent Sainte Cécile",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.19089126586914,
+        "lon": 5.73299503326416,
+        "address": " 4 rue Dominique Villars, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1002",
+        "name": [
+          {
+            "text": "André Rivoire (27)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.177406311035156,
+        "lon": 5.713344097137451,
+        "address": "27 Rue André Rivoire, 38100 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1003",
+        "name": [
+          {
+            "text": "Parc & Villages Falaise [Station électrique]",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.20376968383789,
+        "lon": 5.661940097808838,
+        "address": "19, avenue de la Falaise, Sassenage",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1004",
+        "name": [
+          {
+            "text": "Libération (8)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.17960739135742,
+        "lon": 5.715962886810303,
+        "address": "8, Cours de la Libération, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1005",
+        "name": [
+          {
+            "text": "Bd Marechal foch (51)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.18031311035156,
+        "lon": 5.718860149383545,
+        "address": "51 Bd Marechal Foch, 38100 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1006",
+        "name": [
+          {
+            "text": "Bd Maréchal Foch (2)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.18178939819336,
+        "lon": 5.726500034332275,
+        "address": "2, Avenue Marechal Foch 3800 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1007",
+        "name": [
+          {
+            "text": "Général de Gaulle (918)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.22859191894531,
+        "lon": 5.804712772369385,
+        "address": "896-950 D1090, 38330 Montbonnot-Saint-Martin",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1008",
+        "name": [
+          {
+            "text": "Parking Sirand",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.29578,
+        "lon": 5.63764,
+        "address": "64 Avenue Honoré de Balzac\n38340 Voreppe",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1010",
+        "name": [
+          {
+            "text": "SNCF Gare de Grenoble - Moulin de Canel",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.1903190612793,
+        "lon": 5.7167558670043945,
+        "address": "2, rue du Moulin de Canel - 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 5,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1011",
+        "name": [
+          {
+            "text": "Louis le Cardonnel (13)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.1790771484375,
+        "lon": 5.715044975280762,
+        "address": "2 Rue Louis le Cardonnel, 38100 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1012",
+        "name": [
+          {
+            "text": "École Saint François La Salle - Jean Jaures",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.66912841796875,
+        "lon": 6.38990592956543,
+        "address": "2 Rue des Fleurs, 73200 Albertville",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1013",
+        "name": [
+          {
+            "text": "Victor Hugo - Lamartine",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.1881217956543,
+        "lon": 5.724667072296143,
+        "address": "1 Rue Lamartine, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 5,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1014",
+        "name": [
+          {
+            "text": "Dupanloup",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.903629302978516,
+        "lon": 6.1333699226379395,
+        "address": "7 rue DUPANLOUP",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1015",
+        "name": [
+          {
+            "text": "Meythet-Hôtel de Ville",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.91578674316406,
+        "lon": 6.092559814453125,
+        "address": "6 rue de l'aérodrome",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1016",
+        "name": [
+          {
+            "text": "Docteur Hermite",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.1817626953125,
+        "lon": 5.708475112915039,
+        "address": "27 Rue du Dr Hermite, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1017",
+        "name": [
+          {
+            "text": "SNCF Gare de Chambéry - Maréchal Leclerc (168)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.570396423339844,
+        "lon": 5.917302131652832,
+        "address": "168, avenue Maréchal Leclerc, Chambéry",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1018",
+        "name": [
+          {
+            "text": "Jean Girard Madoux (32)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.56922912597656,
+        "lon": 5.911548137664795,
+        "address": "32, rue Jean Girard Madoux, Chambéry",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1019",
+        "name": [
+          {
+            "text": "Mérande (19)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.57181930541992,
+        "lon": 5.927979946136475,
+        "address": "19 avenue de Mérande, Chambéry",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1021",
+        "name": [
+          {
+            "text": "Pierre de Coubertin",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.57797622680664,
+        "lon": 5.910171985626221,
+        "address": "76 Avenue du Grand Verger 73000 Chambéry\nFrance",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1022",
+        "name": [
+          {
+            "text": "Mairie de Guilherand-Granges ",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.9326517,
+        "lon": 4.872346813051061,
+        "address": "70 Rue Christophe Colomb, 07500 Guilherand-Granges",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1023",
+        "name": [
+          {
+            "text": "Ursules (11)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.43523406982422,
+        "lon": 4.387628078460693,
+        "address": "10-22 Pl. des Ursules, 42000 Saint-Étienne ",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1024",
+        "name": [
+          {
+            "text": "CEA - Avenue des Martyrs (71)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.207725524902344,
+        "lon": 5.696967124938965,
+        "address": "71, avenue des Martyrs, Grenoble.",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1025",
+        "name": [
+          {
+            "text": "MC2-Paul Claudel",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.17169952392578,
+        "lon": 3.73281621932983,
+        "address": "Avenue Paul Claudel, le long du parking MC2",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1027",
+        "name": [
+          {
+            "text": "Véhicules hors-circuit  (Les véhicules sur cette station ne sont pas reservable.)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.56626892089844,
+        "lon": 5.920363426208496,
+        "parking_type": "street_parking",
+        "capacity": 103,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1028",
+        "name": [
+          {
+            "text": "Hôtel de Ville [Station électrique]",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.191139221191406,
+        "lon": 5.688819885253906,
+        "address": "Rue Aristide Briand, Fontaine",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1029",
+        "name": [
+          {
+            "text": "CEA - Avenue des Martyrs (142)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.20355987548828,
+        "lon": 5.702527046203613,
+        "address": "142 avenue des Martyrs, Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1030",
+        "name": [
+          {
+            "text": "Le Prisme - Parking P+R",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.16481399536133,
+        "lon": 5.691401958465576,
+        "address": "8 Allée Roger Rahon, Seyssins",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1031",
+        "name": [
+          {
+            "text": "Granier Béalières (37)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.21110153198242,
+        "lon": 5.78668212890625,
+        "address": "37 Av. du Granier, 38240 Meylan ",
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1032",
+        "name": [
+          {
+            "text": "La Bruyère (66)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.16657257080078,
+        "lon": 5.73121976852417,
+        "address": "66 Avenue La Bruyère, Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1033",
+        "name": [
+          {
+            "text": "SNCF Gare de Grenoble - Louis Weil",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.19179153442383,
+        "lon": 5.713210105895996,
+        "address": "4 Avenue Doyen Louis Weil, Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1034",
+        "name": [
+          {
+            "text": "Quais de France (48)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.193424224853516,
+        "lon": 5.720718860626221,
+        "address": "48 Quais de France, Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1035",
+        "name": [
+          {
+            "text": "Régiment du génie",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.183998107910156,
+        "lon": 5.730682849884033,
+        "address": "Rue du 4eme Régiment du génie, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1036",
+        "name": [
+          {
+            "text": "Square des fusillés (7)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.188133239746094,
+        "lon": 5.705016136169434,
+        "address": "7 Square des fusillés, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 7,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1037",
+        "name": [
+          {
+            "text": "Irvoy (5)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.18247604370117,
+        "lon": 5.715929985046387,
+        "address": "5 Rue Irvoy, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 5,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1038",
+        "name": [
+          {
+            "text": "André Argouges",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.17780303955078,
+        "lon": 5.744287967681885,
+        "address": "11 Rue André Argouges, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1039",
+        "name": [
+          {
+            "text": "Nestor Cornier (2)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.181392669677734,
+        "lon": 5.727839946746826,
+        "address": "2 Rue Nestor Cornier, 38100 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1040",
+        "name": [
+          {
+            "text": "Alliés (66)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.171535,
+        "lon": 5.725148,
+        "address": "66 Rue des Alliés, 38100 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1041",
+        "name": [
+          {
+            "text": "Marval (2)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.18479537963867,
+        "lon": 5.720832824707031,
+        "address": "2 Pl. Jacqueline Marval, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1042",
+        "name": [
+          {
+            "text": "Bd Clémenceau (65)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.18232345581055,
+        "lon": 5.735527038574219,
+        "address": "65 boulevard Clemenceau 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1043",
+        "name": [
+          {
+            "text": "Général Ferrié (66)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.17573165893555,
+        "lon": 5.724915027618408,
+        "address": "66 rue Général Ferrié 38000 Grenoble ",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1044",
+        "name": [
+          {
+            "text": "Haxo",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.186737060546875,
+        "lon": 5.73476505279541,
+        "address": "8 rue Haxo 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1045",
+        "name": [
+          {
+            "text": "Jean Perrot (76)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.1754264831543,
+        "lon": 5.737610816955566,
+        "address": "76 avenue Jean Perrot 38000 Grenoble ",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1046",
+        "name": [
+          {
+            "text": "Malherbe - Pascal",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.16908264160156,
+        "lon": 5.73330020904541,
+        "address": "40 avenue Malherbe 38000 Grenoble ",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1047",
+        "name": [
+          {
+            "text": "Malherbe (2)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.170616149902344,
+        "lon": 5.739439964294434,
+        "address": "2 avenue Malherbe 38000 Grenoble ",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1048",
+        "name": [
+          {
+            "text": "Diables Bleus",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.18339920043945,
+        "lon": 5.732905864715576,
+        "address": "3 Boulevard des Diables Bleus 38000 Grenoble ",
+        "parking_type": "street_parking",
+        "capacity": 6,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1049",
+        "name": [
+          {
+            "text": "Gambetta (55)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.183135986328125,
+        "lon": 5.726740837097168,
+        "address": "55 Boulevard Gambetta 38000 Grenoble ",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1050",
+        "name": [
+          {
+            "text": "Biollay",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.559730529785156,
+        "lon": 5.9030561447143555,
+        "address": "30 Rue Jean Mermoz, 73000 Chambéry",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1051",
+        "name": [
+          {
+            "text": "Karben - Parking P+R",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.24273681640625,
+        "lon": 5.669486045837402,
+        "address": "15 Rte de Lyon, 38120 Saint-Egrève",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1052",
+        "name": [
+          {
+            "text": "Mairie de Ferney-Voltaire",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.2557954,
+        "lon": 6.1077925,
+        "address": "2 Av. Voltaire, 01210 Ferney-Voltaire",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1053",
+        "name": [
+          {
+            "text": "Henri Barbusse (16) [Station électrique]",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.15702438354492,
+        "lon": 5.736069202423096,
+        "address": "6 rue Henri Barbusse 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1054",
+        "name": [
+          {
+            "text": "Grand Sablon [Alizé - Cahors 7kW]",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.19974136352539,
+        "lon": 5.750401020050049,
+        "address": "17 avenue de l'Obiou, 38700 La Tronche",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1055",
+        "name": [
+          {
+            "text": "Jean Achard [Station électrique]",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.18941879272461,
+        "lon": 5.729272842407227,
+        "address": "3 Place Jean Achard, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1056",
+        "name": [
+          {
+            "text": "Vaucanson [Station électrique]",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.18805694580078,
+        "lon": 5.727797985076904,
+        "address": "1, Place Docteur Léon Martin, 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1057",
+        "name": [
+          {
+            "text": "Malraux-CCI",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.185707092285156,
+        "lon": 5.729337215423584,
+        "address": "1 Place André Malraux, 38000 Grenoble ",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1058",
+        "name": [
+          {
+            "text": "Crêt de roc [Station électrique]",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.44343948364258,
+        "lon": 4.390779972076416,
+        "address": "38 Rue Pascal Tavernier, 42000 Saint-Étienne",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1059",
+        "name": [
+          {
+            "text": "Hôtel de ville",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.19097900390625,
+        "lon": 5.688849925994873,
+        "address": "Av. Aristide Briand, 38600 Fontaine",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1060",
+        "name": [
+          {
+            "text": "Hôpital - Grand Port",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.697486877441406,
+        "lon": 5.906736850738525,
+        "address": "55 Av. du Grand Port, 73100 Aix-les-Bains",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1061",
+        "name": [
+          {
+            "text": "Place Charles de Gaulle (4)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.325631,
+        "lon": 5.56451606750488,
+        "address": "4 Pl. Charles de Gaulle, 38430 Moirans",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1062",
+        "name": [
+          {
+            "text": "SNCF Gare de St-Pierre-en-Faucigny",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.05913543701172,
+        "lon": 6.375274181365967,
+        "address": "93 Av. de la Gare, 74800 Saint-Pierre-en-Faucigny",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1065",
+        "name": [
+          {
+            "text": "Hôtel de Ville - Parking P+R",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.17982864379883,
+        "lon": 5.695913791656494,
+        "address": "13 Rue Lamartine, 38170 Seyssinet-Pariset",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1066",
+        "name": [
+          {
+            "text": "Etienne Grappe - Parking P+R [Alizé - Total 22kW]",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.1720085144043,
+        "lon": 5.7577691078186035,
+        "address": "61 Av. Potié, 38400 Saint-Martin-d'Hères",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1067",
+        "name": [
+          {
+            "text": "Nouveau Monde",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.059173583984375,
+        "lon": 6.574643135070801,
+        "address": "Av. du Nouveau Monde, 74300 Cluses",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1068",
+        "name": [
+          {
+            "text": "Mairie de Saint-Genis-Pouilly",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.2433878,
+        "lon": 6.0261986,
+        "address": "94 Av. de la République, 01630 Saint-Genis-Pouilly\n",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1069",
+        "name": [
+          {
+            "text": "André Jacques - La Falaise",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.56278610229492,
+        "lon": 5.926486968994141,
+        "address": "95 Rue André Jacques, 73000 Chambéry",
+        "parking_type": "street_parking",
+        "capacity": 5,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1071",
+        "name": [
+          {
+            "text": "Les Prémices - Mont Blanc",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.06597900390625,
+        "lon": 6.301929950714111,
+        "address": "131 Rue du Mont Blanc, 74800 La Roche-sur-Foron",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1072",
+        "name": [
+          {
+            "text": "Robespierre",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.172630310058594,
+        "lon": 5.750949859619141,
+        "address": "20-26 chemin Robespierre 38000 Grenoble \n",
+        "parking_type": "street_parking",
+        "capacity": 6,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1073",
+        "name": [
+          {
+            "text": "Parking du Globe- Rue Fontaine",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.356468200683594,
+        "lon": 6.138835906982422,
+        "address": "115-17 Rue Fontaine, 01220 Divonne-les-Bains",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1074",
+        "name": [
+          {
+            "text": "Pierre et Marie Curie (89)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.59438705444336,
+        "lon": 5.871445178985596,
+        "address": "122-164 Rue Pierre et Marie Curie, 73290 La Motte-Servolex",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1075",
+        "name": [
+          {
+            "text": "Briffaut",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.91986083984375,
+        "lon": 4.918159008026123,
+        "address": "98 Rue Georges Méliès, 26000 Valence",
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1076",
+        "name": [
+          {
+            "text": "Latour Maubourg",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.93363571166992,
+        "lon": 4.903223037719727,
+        "address": "72 Av. de Romans, 26000 Valence",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1077",
+        "name": [
+          {
+            "text": "Refuge",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.92789840698242,
+        "lon": 4.894247055053711,
+        "address": "14 Rue du Refuge, 26000 Valence",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1078",
+        "name": [
+          {
+            "text": "Quarante cinquième  parallèle",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.996962,
+        "lon": 4.982023,
+        "address": "24 Rue Brillat-Savarin, 26300 Châteauneuf-sur-Isère",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1079",
+        "name": [
+          {
+            "text": "Parking du Musée de Grenoble - 1er étage entrée Maréchal Randon",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.1949348449707,
+        "lon": 5.733129024505615,
+        "address": "50 Avenue Marechal Randon 38000 Grenoble ",
+        "parking_type": "parking_lot",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1081",
+        "name": [
+          {
+            "text": "Pole Bus 2",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.930938720703125,
+        "lon": 4.894877910614014,
+        "address": "Face au 37 Av. Félix Faure, 26000 Valence",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1083",
+        "name": [
+          {
+            "text": "Parking de l'église",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.205810546875,
+        "lon": 5.743854999542236,
+        "address": "7 Chem. de l'Église, 38700 la tronche",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1084",
+        "name": [
+          {
+            "text": "Libération (34)",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.91271209716797,
+        "lon": 4.888573169708252,
+        "address": "34 Av. de la Libération, 26000 Valence",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1085",
+        "name": [
+          {
+            "text": "Parking Barnave",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.23903,
+        "lon": 5.675657,
+        "address": "27-19 Av. de l'Europe, 38120 Saint-Egrève",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1086",
+        "name": [
+          {
+            "text": "Balleydier - Providence",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.89693832397461,
+        "lon": 6.130770206451416,
+        "address": "Côté pair depuis l'avenue des Trésums",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1087",
+        "name": [
+          {
+            "text": "Rue des Martinets",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.1807861328125,
+        "lon": 5.790831089019775,
+        "address": "Rue des Martinets, 38610 Gières.",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1089",
+        "name": [
+          {
+            "text": "SNCF Place de la Gare ",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.985107421875,
+        "lon": 4.7208781242370605,
+        "address": "1 Pl. de la Gare, Villefranche-sur-Saône",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1090",
+        "name": [
+          {
+            "text": "Hôtel de ville Villefranche",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.98885726928711,
+        "lon": 4.715095043182373,
+        "address": "218 Bd Jean Jaurès, Villefranche-sur-Saône",
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1098",
+        "name": [
+          {
+            "text": "Montjay",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.57019805908203,
+        "lon": 5.909002780914307,
+        "address": "39, Chemin de Montjay - 73000 Chambery ",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1100",
+        "name": [
+          {
+            "text": "Macornet",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.567466735839844,
+        "lon": 5.920587062835693,
+        "address": "48 Rue Macornet, 73000 Chambéry",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1102",
+        "name": [
+          {
+            "text": "Mairie du Veyrier-du-Lac",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.8815399,
+        "lon": 6.1776103,
+        "address": "14-20 Rte de la Tournette, 74290 Veyrier-du-Lac",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1109",
+        "name": [
+          {
+            "text": "Chemin des sources (10-12)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.206991,
+        "lon": 5.771719,
+        "address": "/!\\ Merci de garer la voiture dans le parking du 10-12  Chemin des Sources  /!\\\n",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1187",
+        "name": [
+          {
+            "text": "Place Saint-Bruno",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.366952,
+        "lon": 5.592531,
+        "address": "1 place Saint Bruno 38500 Voiron",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1190",
+        "name": [
+          {
+            "text": "Cloches (2)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.9104946,
+        "lon": 6.1366612,
+        "address": "2 Chemin des cloches ",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1196",
+        "name": [
+          {
+            "text": "Place du Commerce ",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.5785098,
+        "lon": 5.9559659,
+        "address": "Place du Commerce  - Saint Alban Leysse",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1209",
+        "name": [
+          {
+            "text": "Rue Jean Jaurès (15)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.90338,
+        "lon": 6.12759,
+        "address": "15 rue Jean Jaurès 74000 Annecy",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1210",
+        "name": [
+          {
+            "text": "Bissy (Mairie de)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.5761949,
+        "lon": 5.8985953,
+        "address": "536 Av. Général Cartier, 73000 Chambéry",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1211",
+        "name": [
+          {
+            "text": "SNCF Gare de Voiron [Station électrique]",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.364315,
+        "lon": 5.594211,
+        "address": "Avenue Léon et Joanny Tardy, 38500 Voiron ",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1212",
+        "name": [
+          {
+            "text": "Pringy - Pré Billy (Station électrique)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.941692,
+        "lon": 6.122529,
+        "address": "4 rue du Goléron 74370 Annecy ",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1213",
+        "name": [
+          {
+            "text": "Mairie de Jacob-Bellecombette",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.555338,
+        "lon": 5.9119903,
+        "address": "Rue de la Mairie, 73000 Jacob-Bellecombette",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1214",
+        "name": [
+          {
+            "text": "Asiaticus (22)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.520557,
+        "lon": 4.870002,
+        "address": "22 boulevard Asiaticus Vienne",
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1222",
+        "name": [
+          {
+            "text": "AlpEspace",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.4804802,
+        "lon": 6.0324548,
+        "address": "Parking situé entre la Voie Christophe Colomb et Jean-François Champolion",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": true
+      },
+      {
+        "station_id": "1245",
+        "name": [
+          {
+            "text": "Mairie Poisat [Station électrique]",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.15894317626953,
+        "lon": 5.759376049041748,
+        "address": "Av. Henri Dunant, 38320 Poisat",
+        "parking_type": "street_parking",
+        "capacity": 0,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1246",
+        "name": [
+          {
+            "text": "Louis Néel",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.217636,
+        "lon": 5.808716,
+        "address": "90 rue Louis Néel, Montbonnot-Saint-Martin 38330",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1247",
+        "name": [
+          {
+            "text": "Plan-de-Ville",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.34314727783203,
+        "lon": 5.814146041870117,
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1266",
+        "name": [
+          {
+            "text": "La monta ",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.237999,
+        "lon": 5.688417,
+        "address": "3 Avenue Médecin général viallet 38120 Saint-Egrève.",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1268",
+        "name": [
+          {
+            "text": "Parking des Dralis",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.5761943,
+        "lon": 5.940615,
+        "address": "Parking des Dralis- Rue Longefand",
+        "parking_type": "street_parking",
+        "capacity": 0,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  5.940181322906795,
+                  45.57611163610211
+                ],
+                [
+                  5.940224238251033,
+                  45.575830019073855
+                ],
+                [
+                  5.940454908226314,
+                  45.57582250926709
+                ],
+                [
+                  5.940615840767207,
+                  45.57588258769301
+                ],
+                [
+                  5.940648027275386,
+                  45.57606282258507
+                ],
+                [
+                  5.940674849365535,
+                  45.576179223978755
+                ],
+                [
+                  5.940921612594905,
+                  45.576329418968896
+                ],
+                [
+                  5.940910883758845,
+                  45.576370722520764
+                ],
+                [
+                  5.940680213783565,
+                  45.576329418968896
+                ],
+                [
+                  5.940449543808284,
+                  45.57629938000302
+                ],
+                [
+                  5.940374441955867,
+                  45.57622052764108
+                ],
+                [
+                  5.940181322906795,
+                  45.57611163610211
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "1497",
+        "name": [
+          {
+            "text": "SNCF Route de riottier (249)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.98432,
+        "lon": 4.72173,
+        "address": "249 route de riottier 69400 Villefranche ",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1498",
+        "name": [
+          {
+            "text": "Rue roncevaux (201)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.99503,
+        "lon": 4.71673,
+        "address": "201 rue Roncevaux 69400 Villefranche",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1500",
+        "name": [
+          {
+            "text": "Pont Rouge - Grand Port  ",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.70419,
+        "lon": 5.898338,
+        "address": "151, Avenue du Grand Port",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1501",
+        "name": [
+          {
+            "text": "Robert Barrier - Grand Port",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.703514,
+        "lon": 5.886598,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1533",
+        "name": [
+          {
+            "text": "Rue de Genève (39)",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.1930073,
+        "lon": 6.2271244,
+        "address": "39, rue de Genève à Annemasse",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1534",
+        "name": [
+          {
+            "text": "Ecole Choudy- Pass. Garibaldi",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.6963515,
+        "lon": 5.8958767,
+        "address": "70, Passage Garibaldi à Aix-Les-Bains",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1543",
+        "name": [
+          {
+            "text": "Jean Monard",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.6862988,
+        "lon": 5.9163382,
+        "address": "3 Rue jean Monard 73100 Aix-les bains ",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1544",
+        "name": [
+          {
+            "text": "Baye - Avenue de Saint-Simond",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.70788,
+        "lon": 5.915588,
+        "address": "181 Av. De Saint Simond\n",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1548",
+        "name": [
+          {
+            "text": "Mairie Varces",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.08689,
+        "lon": 5.681695,
+        "address": "16 Rue Jean Jaurès, Varces-Allières-et-Risset ",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1549",
+        "name": [
+          {
+            "text": "Paul Héroult",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.146381,
+        "lon": 5.714161,
+        "address": "35 Rue Paul Héroult Echirolles",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1553",
+        "name": [
+          {
+            "text": "SNCF Gare de Sallanches",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.936473,
+        "lon": 6.6358779,
+        "address": "126, rue Jeanne d'Arc, 74700 Sallanches",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1554",
+        "name": [
+          {
+            "text": "Parking Antoine Pissard",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.93788,
+        "lon": 6.629606,
+        "address": "26, rue François Gex à Sallanches (Parling Antoine Pissard)",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1558",
+        "name": [
+          {
+            "text": "Quinzaine",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.150977,
+        "lon": 5.706318,
+        "address": "46 Cr Jean Jaurès, 38130 Échirolles",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1559",
+        "name": [
+          {
+            "text": "Estacade Parking",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.188774,
+        "lon": 5.7169488,
+        "address": "21 RUE DU COLONEL DENFERT ROCHEREAU",
+        "parking_type": "parking_lot",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1616",
+        "name": [
+          {
+            "text": "Rue du Vieux Pont",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.0594547,
+        "lon": 6.528983,
+        "address": "247, Rue du Vieux Pont, Marnaz",
+        "parking_type": "street_parking",
+        "capacity": 0,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  6.530853283362941,
+                  46.059630278646075
+                ],
+                [
+                  6.530735266166285,
+                  46.059499993799264
+                ],
+                [
+                  6.530649435477809,
+                  46.05939576570048
+                ],
+                [
+                  6.530649435477809,
+                  46.05931759449725
+                ],
+                [
+                  6.530826461272792,
+                  46.059258035411
+                ],
+                [
+                  6.530976664977626,
+                  46.05919103136217
+                ],
+                [
+                  6.531051766830043,
+                  46.05927664763236
+                ],
+                [
+                  6.5311161398464,
+                  46.059388320828745
+                ],
+                [
+                  6.531550657706813,
+                  46.05939204326473
+                ],
+                [
+                  6.5316579460674085,
+                  46.05948138165319
+                ],
+                [
+                  6.531797420936183,
+                  46.05964516832328
+                ],
+                [
+                  6.53162575955923,
+                  46.059745673539396
+                ],
+                [
+                  6.53137363191183,
+                  46.05984245616718
+                ],
+                [
+                  6.531196606116847,
+                  46.05987223540314
+                ],
+                [
+                  6.531078588920192,
+                  46.05987223540314
+                ],
+                [
+                  6.530992758231715,
+                  46.05976800800702
+                ],
+                [
+                  6.530853283362941,
+                  46.059630278646075
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "1622",
+        "name": [
+          {
+            "text": "Place Théophile Vallet",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.93911,
+        "lon": 6.70712,
+        "address": "Place Théophile Vallet - 74190 Passy",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1623",
+        "name": [
+          {
+            "text": "SNCF Gare du Fayet",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.90581,
+        "lon": 6.700545,
+        "address": "Parking du valléen, rue des écoles, 74170 Saint-Gervais-les-Bains",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1645",
+        "name": [
+          {
+            "text": "Parking Espace Bellevarde",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.55093,
+        "lon": 5.98314,
+        "address": "Emplacement le plus a gauche du parking (proche de la départemental)",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1650",
+        "name": [
+          {
+            "text": "Ruelle des jardins",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.256054,
+        "lon": 6.109914,
+        "address": "1 Ruelle des Jardins",
+        "parking_type": "street_parking",
+        "capacity": 0,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1651",
+        "name": [
+          {
+            "text": "SNCF - Berthollet ( 6, avenue)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.9036805,
+        "lon": 6.1218505,
+        "address": "6, Avenue Berthollet à Annecy ",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1669",
+        "name": [
+          {
+            "text": "Stendhal-APEI ",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.5717027,
+        "lon": 5.9057435,
+        "address": "APEI- SITE RYVIERAZ - Situé entre le 90 et le 108 rue Stendhal - Chambéry",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1670",
+        "name": [
+          {
+            "text": "parking hoche ",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.18619,
+        "lon": 5.72669,
+        "address": "3 rue François Raoult ",
+        "parking_type": "parking_lot",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1682",
+        "name": [
+          {
+            "text": "Bibliothèque République [Alizé - eTotem 7kW]",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.182648311530066,
+        "lon": 5.793985434555542,
+        "address": " 9 Rue Jean-Jaurès, 38610 Gières",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1693",
+        "name": [
+          {
+            "text": "Ampere (40)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.181873,
+        "lon": 5.705466,
+        "address": "40 rue Ampère",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1694",
+        "name": [
+          {
+            "text": "Centre bourg FLEX",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.564212799072266,
+        "lon": 5.944493770599365,
+        "address": "60 Route d'Apremont, 73000 Barberaz    \nParking gratuit. Se garer sur le parking du Centre bourg",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1695",
+        "name": [
+          {
+            "text": "Bibliothèque Universitaire [Alizé - eTotem 22kW]",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.1916079,
+        "lon": 5.7690523,
+        "address": "1001 Av. Centrale, 38400 Saint-Martin-d'Hères",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1698",
+        "name": [
+          {
+            "text": "Parking des cristaux",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.89588,
+        "lon": 6.64419,
+        "address": "Parking des Cristaux\nRte de Sallanches, 74920 Combloux",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1699",
+        "name": [
+          {
+            "text": "Côte Rousse",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.5896,
+        "lon": 5.92344,
+        "address": "180 rue du Genevois à Chambéry ",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  5.922790297218015,
+                  45.590680624572656
+                ],
+                [
+                  5.922425516791989,
+                  45.59045538952091
+                ],
+                [
+                  5.92315507764404,
+                  45.589471852537486
+                ],
+                [
+                  5.923734434791257,
+                  45.589606996045106
+                ],
+                [
+                  5.923316010184934,
+                  45.59018510626569
+                ],
+                [
+                  5.923197992988278,
+                  45.59038031096946
+                ],
+                [
+                  5.92364860410278,
+                  45.59053797581151
+                ],
+                [
+                  5.923487671561887,
+                  45.59095090544166
+                ],
+                [
+                  5.923112162299802,
+                  45.590958413225
+                ],
+                [
+                  5.922790297218015,
+                  45.590680624572656
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "1702",
+        "name": [
+          {
+            "text": "ArchParc",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.1362094,
+        "lon": 6.1227001,
+        "address": "212 Rue Ada Byron 74160 Archamps",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  6.121801478904656,
+                  46.136580735126124
+                ],
+                [
+                  6.123491270584038,
+                  46.13612723136094
+                ],
+                [
+                  6.124403221649102,
+                  46.13590047807776
+                ],
+                [
+                  6.124204738182,
+                  46.13560309530756
+                ],
+                [
+                  6.123421533149651,
+                  46.13579267700914
+                ],
+                [
+                  6.121533258003167,
+                  46.13627963878064
+                ],
+                [
+                  6.121801478904656,
+                  46.136580735126124
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "1703",
+        "name": [
+          {
+            "text": "Louis Vidon",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.296068,
+        "lon": 4.561777,
+        "address": "Place Louis Vidon",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1705",
+        "name": [
+          {
+            "text": "La Dent du Chat (630)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.63449,
+        "lon": 5.865928,
+        "address": "630, Allée de la Dent du Chat - 73290 La Motte Servolex\n",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1706",
+        "name": [
+          {
+            "text": "Gare",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.245819,
+        "lon": 5.831056,
+        "address": "1235 route de Chambéry, Saint Ismier",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1707",
+        "name": [
+          {
+            "text": "CEA Marie louise ",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.2022532,
+        "lon": 5.7047082,
+        "address": "82bis avenue des Martyrs 38000 Grenoble",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1708",
+        "name": [
+          {
+            "text": "Etienne BOISSON [Station électrique]",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.444712,
+        "lon": 4.383253,
+        "address": "23 Rue Etienne Boisson",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1709",
+        "name": [
+          {
+            "text": "Rue Muller (10)",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.109931,
+        "lon": 4.732269,
+        "address": "10 rue Muller 69220 Belleville en Beaujolais",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  4.732491787708741,
+                  46.11047131399678
+                ],
+                [
+                  4.732148464954835,
+                  46.11001015721054
+                ],
+                [
+                  4.73201971892212,
+                  46.109742386983385
+                ],
+                [
+                  4.73201971892212,
+                  46.109519244133715
+                ],
+                [
+                  4.732148464954835,
+                  46.10937048173206
+                ],
+                [
+                  4.732706364429933,
+                  46.10928122409833
+                ],
+                [
+                  4.732899483479005,
+                  46.10945973922124
+                ],
+                [
+                  4.732920941151124,
+                  46.10971263465563
+                ],
+                [
+                  4.732963856495362,
+                  46.10993577672237
+                ],
+                [
+                  4.733071144855958,
+                  46.110188669972615
+                ],
+                [
+                  4.732942398823243,
+                  46.11041181011214
+                ],
+                [
+                  4.732491787708741,
+                  46.11047131399678
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "1710",
+        "name": [
+          {
+            "text": "Rue du Beaujolais (9)",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.107677,
+        "lon": 4.747779,
+        "address": "9 rue du Beaujolais 69220 Belleville en Beaujolais",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  4.747399401725456,
+                  46.1078998268993
+                ],
+                [
+                  4.748177242339775,
+                  46.107691553305635
+                ],
+                [
+                  4.748402547897026,
+                  46.107620888871836
+                ],
+                [
+                  4.748236250938103,
+                  46.10723409247139
+                ],
+                [
+                  4.747597885192558,
+                  46.10725640772209
+                ],
+                [
+                  4.747029256881401,
+                  46.10734566863467
+                ],
+                [
+                  4.747399401725456,
+                  46.1078998268993
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "1711",
+        "name": [
+          {
+            "text": "Rue de la Blanchisserie",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.1065434,
+        "lon": 4.7519163,
+        "address": "12, rue de la Blanchisserie ",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  4.752679630300833,
+                  46.107316208573096
+                ],
+                [
+                  4.752486511251761,
+                  46.10715256336887
+                ],
+                [
+                  4.752711816809012,
+                  46.10670625579711
+                ],
+                [
+                  4.753033681890799,
+                  46.106289698803295
+                ],
+                [
+                  4.753237529775931,
+                  46.105888015863826
+                ],
+                [
+                  4.753334089300467,
+                  46.1057987525909
+                ],
+                [
+                  4.753462835333182,
+                  46.105865700059134
+                ],
+                [
+                  4.753065868398978,
+                  46.10651285472716
+                ],
+                [
+                  4.752808376333548,
+                  46.106825271502906
+                ],
+                [
+                  4.75275473215325,
+                  46.10698891767878
+                ],
+                [
+                  4.752872749349906,
+                  46.10707074058455
+                ],
+                [
+                  4.752679630300833,
+                  46.107316208573096
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "1713",
+        "name": [
+          {
+            "text": "La Revirée",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.2109389,
+        "lon": 5.7660959,
+        "address": "28 chemin de la revirée 38240 Meylan",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1718",
+        "name": [
+          {
+            "text": "Mairie",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.5869,
+        "lon": 5.99596,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1719",
+        "name": [
+          {
+            "text": "Mairie de Thonon-les-Bains",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.3729816,
+        "lon": 6.478167,
+        "address": "6 Pl. de l'Hôtel de ville",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1721",
+        "name": [
+          {
+            "text": "Parking Louis Blanc",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.988771,
+        "lon": 4.722479,
+        "address": "16 Rue René Cassin, 69400 Villefranche-sur-Saône",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1732",
+        "name": [
+          {
+            "text": "Les Magnolias",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.325173,
+        "lon": 5.577084,
+        "address": "90 Rte de la Gare, 38430 Moirans, Résidence Les Magnolias",
+        "parking_type": "parking_lot",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1769",
+        "name": [
+          {
+            "text": "  Parking de l'église",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.56957,
+        "lon": 5.981737,
+        "address": " 23 Chemin du Four banal, Barby",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1770",
+        "name": [
+          {
+            "text": "VRM Médiathèque",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.93335,
+        "lon": 4.903815,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1773",
+        "name": [
+          {
+            "text": "Place du temple ",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.525326,
+        "lon": 4.8742383,
+        "address": "23 place Charles de Gaulle, Vienne 38200",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1774",
+        "name": [
+          {
+            "text": "SNCF",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.47274,
+        "lon": 4.51689,
+        "address": "2 Square Auguste Gravier, Saint-Chamond ",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1775",
+        "name": [
+          {
+            "text": "Chavanelle",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.436302,
+        "lon": 4.391469,
+        "address": "4 Place Antonin Moine, Saint-Étienne",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1776",
+        "name": [
+          {
+            "text": "Gare SNCF de Cluses",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.060333,
+        "lon": 6.582798,
+        "address": "stationnement a cote de la  Gare SNCF ",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1781",
+        "name": [
+          {
+            "text": "Rue des Ecoles",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.648787,
+        "lon": 5.858799,
+        "address": "Parking de la Rue des Ecoles 73370   Le Bourget-du-lac ",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1784",
+        "name": [
+          {
+            "text": "Pringy - Pré Billy",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.94000194058712,
+        "lon": 6.120387766649236,
+        "address": "44 Rue du Goléron, 74370 Annecy, France",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1795",
+        "name": [
+          {
+            "text": "Mairie de Barby",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.57211,
+        "lon": 5.97774,
+        "address": "16 avenue de Salins 73230 BARBY",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1796",
+        "name": [
+          {
+            "text": "SNCF Gare de Bellegarde sur Valserine",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.110143,
+        "lon": 5.826976,
+        "address": "3 Av. de la Gare, 01200 Valserhône, France",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1797",
+        "name": [
+          {
+            "text": "Parking de la gare",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.554565,
+        "lon": 6.6499975,
+        "address": "227 avenue de la gare Aime - La plagne",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1803",
+        "name": [
+          {
+            "text": "borne électrique village",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.826425,
+        "lon": 5.622144,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1804",
+        "name": [
+          {
+            "text": "Gare SNCF Roman sortie  Nord",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.0493,
+        "lon": 5.05073,
+        "address": "Parking Delay\n21 Rue de Delay\nRomans-sur-Isère, Auvergne-Rhône-Alpes",
+        "parking_type": "parking_lot",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1813",
+        "name": [
+          {
+            "text": "Jacob (141)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.56212,
+        "lon": 5.91335,
+        "address": "141 chemin de Jacob 73000 Chambéry",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1814",
+        "name": [
+          {
+            "text": "Jules Ferry (1)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.56611,
+        "lon": 5.92952,
+        "address": "1 rue Jules Ferry 73000 Chambéry ",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1815",
+        "name": [
+          {
+            "text": "Quai de la rize (82)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.5675,
+        "lon": 5.93258,
+        "address": "82 Quai de la rize 73000 Chambéry ",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1817",
+        "name": [
+          {
+            "text": "Chamrousse (6)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.179484982593,
+        "lon": 5.725284025876,
+        "address": " 6 rue de Chamrousse ",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1818",
+        "name": [
+          {
+            "text": "Eaux claires (44)",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.1740556,
+        "lon": 5.7068089,
+        "address": "44 rue des Eaux Claires \n38100 Grenoble ",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1819",
+        "name": [
+          {
+            "text": "Piscine Intercommunale",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.1507671347531,
+        "lon": 5.83745740553181,
+        "address": "10 Rte du Bouloud, 38410 Saint-Martin-d'Uriage",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1820",
+        "name": [
+          {
+            "text": "Paul Louis Merlin électrique ",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.209109,
+        "lon": 5.771024,
+        "address": "2 Chemin des sources - borne électrique Schneider électrique -",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1826",
+        "name": [
+          {
+            "text": "Parking de l'Arcade",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.291698,
+        "lon": 5.634256,
+        "address": "Parking de l'Arcade, 38340 Voreppe",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      }
+    ]
+  }
+}

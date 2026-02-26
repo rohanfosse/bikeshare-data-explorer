@@ -1,0 +1,689 @@
+{
+  "last_updated": 1771749748,
+  "ttl": 60,
+  "version": "2.2",
+  "data": {
+    "stations": [
+      {
+        "station_id": "st_d3d596embtds73dja920",
+        "name": "Gare ",
+        "lat": 43.29187,
+        "lon": -0.36974,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 9
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d3d596embtds73dja920)",
+          "ios": "%!(EXTRA string=st_d3d596embtds73dja920)"
+        }
+      },
+      {
+        "station_id": "st_d3d596mmbtds73b4hmj0",
+        "name": "Clemenceau",
+        "lat": 43.29628,
+        "lon": -0.36862,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 5
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d3d596mmbtds73b4hmj0)",
+          "ios": "%!(EXTRA string=st_d3d596mmbtds73b4hmj0)"
+        }
+      },
+      {
+        "station_id": "st_d3d596mmbtds73dja94g",
+        "name": "Lycée St John Perse",
+        "lat": 43.31888,
+        "lon": -0.36415,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 19
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d3d596mmbtds73dja94g)",
+          "ios": "%!(EXTRA string=st_d3d596mmbtds73dja94g)"
+        }
+      },
+      {
+        "station_id": "st_d3d596mmbtds73dja980",
+        "name": "Université Sud ",
+        "lat": 43.3116,
+        "lon": -0.36505,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 5
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d3d596mmbtds73dja980)",
+          "ios": "%!(EXTRA string=st_d3d596mmbtds73dja980)"
+        }
+      },
+      {
+        "station_id": "st_d3d596mmbtds73b4hmog",
+        "name": "Funiculaire",
+        "lat": 43.29339,
+        "lon": -0.37138,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 10
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d3d596mmbtds73b4hmog)",
+          "ios": "%!(EXTRA string=st_d3d596mmbtds73b4hmog)"
+        }
+      },
+      {
+        "station_id": "st_d3d596mmbtds73b4hmr0",
+        "name": "Parc des Expositions",
+        "lat": 43.30552,
+        "lon": -0.37722,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 4
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d3d596mmbtds73b4hmr0)",
+          "ios": "%!(EXTRA string=st_d3d596mmbtds73b4hmr0)"
+        }
+      },
+      {
+        "station_id": "st_d3d596mmbtds73dja9cg",
+        "name": "Massé",
+        "lat": 43.31477,
+        "lon": -0.35696,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 2
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d3d596mmbtds73dja9cg)",
+          "ios": "%!(EXTRA string=st_d3d596mmbtds73dja9cg)"
+        }
+      },
+      {
+        "station_id": "st_d3d596umbtds73b4hmug",
+        "name": "Lyautey-Alsace Lorraine",
+        "lat": 43.30445,
+        "lon": -0.36716,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 6
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d3d596umbtds73b4hmug)",
+          "ios": "%!(EXTRA string=st_d3d596umbtds73b4hmug)"
+        }
+      },
+      {
+        "station_id": "st_d3d596umbtds73b4hn10",
+        "name": "Verdun",
+        "lat": 43.29897,
+        "lon": -0.37503,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 10
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d3d596umbtds73b4hn10)",
+          "ios": "%!(EXTRA string=st_d3d596umbtds73b4hn10)"
+        }
+      },
+      {
+        "station_id": "st_d3d596umbtds73dja9h0",
+        "name": "Édouard VII",
+        "lat": 43.30129,
+        "lon": -0.35823,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 9
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d3d596umbtds73dja9h0)",
+          "ios": "%!(EXTRA string=st_d3d596umbtds73dja9h0)"
+        }
+      },
+      {
+        "station_id": "st_d3d596umbtds73dja9kg",
+        "name": "Saragosse",
+        "lat": 43.30788,
+        "lon": -0.35799,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 8
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d3d596umbtds73dja9kg)",
+          "ios": "%!(EXTRA string=st_d3d596umbtds73dja9kg)"
+        }
+      },
+      {
+        "station_id": "st_d3d596umbtds73dja9n0",
+        "name": "Halles-Médiathèque",
+        "lat": 43.3,
+        "lon": -0.36811,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 4
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d3d596umbtds73dja9n0)",
+          "ios": "%!(EXTRA string=st_d3d596umbtds73dja9n0)"
+        }
+      },
+      {
+        "station_id": "st_d3d596umbtds73dja9pg",
+        "name": "Lilas-CPAM",
+        "lat": 43.3053,
+        "lon": -0.35108,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 8
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d3d596umbtds73dja9pg)",
+          "ios": "%!(EXTRA string=st_d3d596umbtds73dja9pg)"
+        }
+      },
+      {
+        "station_id": "st_d3d596umbtds73dja9s0",
+        "name": "Barthou-Beaumont",
+        "lat": 43.29477,
+        "lon": -0.36535,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 8
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d3d596umbtds73dja9s0)",
+          "ios": "%!(EXTRA string=st_d3d596umbtds73dja9s0)"
+        }
+      },
+      {
+        "station_id": "st_d3d596umbtds73b4hn7g",
+        "name": "Place d'Espagne-Bosquet",
+        "lat": 43.2984,
+        "lon": -0.36668,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 10
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d3d596umbtds73b4hn7g)",
+          "ios": "%!(EXTRA string=st_d3d596umbtds73b4hn7g)"
+        }
+      },
+      {
+        "station_id": "st_d3d5976mbtds73dja9ug",
+        "name": "Stades du Hameau",
+        "lat": 43.30664,
+        "lon": -0.32711,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 5
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d3d5976mbtds73dja9ug)",
+          "ios": "%!(EXTRA string=st_d3d5976mbtds73dja9ug)"
+        }
+      },
+      {
+        "station_id": "st_d3d5976mbtds73b4hnc0",
+        "name": "Hôpital François Mitterrand",
+        "lat": 43.324658,
+        "lon": -0.34772,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 5
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d3d5976mbtds73b4hnc0)",
+          "ios": "%!(EXTRA string=st_d3d5976mbtds73b4hnc0)"
+        }
+      },
+      {
+        "station_id": "st_d3d5976mbtds73djaa20",
+        "name": "Jaï Alaï",
+        "lat": 43.33269,
+        "lon": -0.36713,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 6
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d3d5976mbtds73djaa20)",
+          "ios": "%!(EXTRA string=st_d3d5976mbtds73djaa20)"
+        }
+      },
+      {
+        "station_id": "st_d3d5976mbtds73b4hnfg",
+        "name": "Foirail",
+        "lat": 43.30368,
+        "lon": -0.37041,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 10
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d3d5976mbtds73b4hnfg)",
+          "ios": "%!(EXTRA string=st_d3d5976mbtds73b4hnfg)"
+        }
+      },
+      {
+        "station_id": "st_d3d5976mbtds73djaa5g",
+        "name": "Catherine de Bourbon",
+        "lat": 43.32109,
+        "lon": -0.35941,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 8
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d3d5976mbtds73djaa5g)",
+          "ios": "%!(EXTRA string=st_d3d5976mbtds73djaa5g)"
+        }
+      },
+      {
+        "station_id": "st_d3d597embtds73b4hnj0",
+        "name": "Hédas",
+        "lat": 43.29639,
+        "lon": -0.37303,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 9
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d3d597embtds73b4hnj0)",
+          "ios": "%!(EXTRA string=st_d3d597embtds73b4hnj0)"
+        }
+      },
+      {
+        "station_id": "st_d3d597embtds73djaa90",
+        "name": "Porte des Pyrénées",
+        "lat": 43.30635,
+        "lon": -0.33437,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 7
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d3d597embtds73djaa90)",
+          "ios": "%!(EXTRA string=st_d3d597embtds73djaa90)"
+        }
+      },
+      {
+        "station_id": "st_d3d597embtds73b4hnmg",
+        "name": "14 juillet",
+        "lat": 43.29151,
+        "lon": -0.37867,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 5
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d3d597embtds73b4hnmg)",
+          "ios": "%!(EXTRA string=st_d3d597embtds73b4hnmg)"
+        }
+      },
+      {
+        "station_id": "st_d3d597embtds73djaadg",
+        "name": "Mairie de Billère",
+        "lat": 43.30186,
+        "lon": -0.39555,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 6
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d3d597embtds73djaadg)",
+          "ios": "%!(EXTRA string=st_d3d597embtds73djaadg)"
+        }
+      },
+      {
+        "station_id": "st_d3d597embtds73djaah0",
+        "name": "J. Gois",
+        "lat": 43.31492,
+        "lon": -0.38461,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 5
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d3d597embtds73djaah0)",
+          "ios": "%!(EXTRA string=st_d3d597embtds73djaah0)"
+        }
+      },
+      {
+        "station_id": "st_d3d597embtds73b4hnp0",
+        "name": "Lacaoü",
+        "lat": 43.30987,
+        "lon": -0.38821,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 10
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d3d597embtds73b4hnp0)",
+          "ios": "%!(EXTRA string=st_d3d597embtds73b4hnp0)"
+        }
+      },
+      {
+        "station_id": "st_d3d597embtds73djaalg",
+        "name": "Montgolfier",
+        "lat": 43.30679,
+        "lon": -0.42038,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 5
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d3d597embtds73djaalg)",
+          "ios": "%!(EXTRA string=st_d3d597embtds73djaalg)"
+        }
+      },
+      {
+        "station_id": "st_d3d597mmbtds73djaan0",
+        "name": "Médiathèque - Chambaud",
+        "lat": 43.3209,
+        "lon": -0.39278,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 7
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d3d597mmbtds73djaan0)",
+          "ios": "%!(EXTRA string=st_d3d597mmbtds73djaan0)"
+        }
+      },
+      {
+        "station_id": "st_d3d597mmbtds73b4hnvg",
+        "name": "Piscine Aqualons",
+        "lat": 43.32456,
+        "lon": -0.39214,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 4
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d3d597mmbtds73b4hnvg)",
+          "ios": "%!(EXTRA string=st_d3d597mmbtds73b4hnvg)"
+        }
+      },
+      {
+        "station_id": "st_d3d597umbtds73b4ho20",
+        "name": "Lescar Soleil",
+        "lat": 43.32037,
+        "lon": -0.43435,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 3
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d3d597umbtds73b4ho20)",
+          "ios": "%!(EXTRA string=st_d3d597umbtds73b4ho20)"
+        }
+      },
+      {
+        "station_id": "st_d3d597umbtds73djaarg",
+        "name": "Beneharnum",
+        "lat": 43.33072,
+        "lon": -0.43503,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 5
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d3d597umbtds73djaarg)",
+          "ios": "%!(EXTRA string=st_d3d597umbtds73djaarg)"
+        }
+      },
+      {
+        "station_id": "st_d3d597umbtds73b4ho5g",
+        "name": "Simin Palay",
+        "lat": 43.33641,
+        "lon": -0.4385,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 5
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d3d597umbtds73b4ho5g)",
+          "ios": "%!(EXTRA string=st_d3d597umbtds73b4ho5g)"
+        }
+      },
+      {
+        "station_id": "st_d3d597umbtds73b4ho80",
+        "name": "Mairie de Jurançon",
+        "lat": 43.28711,
+        "lon": -0.39006,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 3
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d3d597umbtds73b4ho80)",
+          "ios": "%!(EXTRA string=st_d3d597umbtds73b4ho80)"
+        }
+      },
+      {
+        "station_id": "st_d3d597umbtds73djab10",
+        "name": "Guynemer",
+        "lat": 43.29235,
+        "lon": -0.39669,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 9
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d3d597umbtds73djab10)",
+          "ios": "%!(EXTRA string=st_d3d597umbtds73djab10)"
+        }
+      },
+      {
+        "station_id": "st_d3d597umbtds73djab4g",
+        "name": "Le Camp",
+        "lat": 43.30058,
+        "lon": -0.29945,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 2
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d3d597umbtds73djab4g)",
+          "ios": "%!(EXTRA string=st_d3d597umbtds73djab4g)"
+        }
+      },
+      {
+        "station_id": "st_d3d597umbtds73b4hoag",
+        "name": "Château - Groupe scolaire",
+        "lat": 43.29066,
+        "lon": -0.31073,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 5
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d3d597umbtds73b4hoag)",
+          "ios": "%!(EXTRA string=st_d3d597umbtds73b4hoag)"
+        }
+      },
+      {
+        "station_id": "st_d3d5986mbtds73djab80",
+        "name": "Balavoine",
+        "lat": 43.28943,
+        "lon": -0.35203,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 1
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d3d5986mbtds73djab80)",
+          "ios": "%!(EXTRA string=st_d3d5986mbtds73djab80)"
+        }
+      },
+      {
+        "station_id": "st_d3d5986mbtds73b4hoe0",
+        "name": "Gelos - Mairie",
+        "lat": 43.28487,
+        "lon": -0.37087,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 5
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d3d5986mbtds73b4hoe0)",
+          "ios": "%!(EXTRA string=st_d3d5986mbtds73b4hoe0)"
+        }
+      },
+      {
+        "station_id": "st_d3d5986mbtds73b4hogg",
+        "name": "Val Riant",
+        "lat": 43.28429,
+        "lon": -0.37483,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 5
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d3d5986mbtds73b4hogg)",
+          "ios": "%!(EXTRA string=st_d3d5986mbtds73b4hogg)"
+        }
+      },
+      {
+        "station_id": "st_d3d5986mbtds73b4hoi0",
+        "name": "Lezons",
+        "lat": 43.2801,
+        "lon": -0.35594,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 5
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "%!(EXTRA string=st_d3d5986mbtds73b4hoi0)",
+          "ios": "%!(EXTRA string=st_d3d5986mbtds73b4hoi0)"
+        }
+      }
+    ]
+  }
+}

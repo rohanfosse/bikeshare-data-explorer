@@ -1,0 +1,230 @@
+{
+  "data": {
+    "stations": [
+      {
+        "capacity": 20,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 43.22496,
+        "lon": 0.05291,
+        "name": [
+          {
+            "language": "fr",
+            "text": "ENI"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://tlpmobilites.ecovelo.mobi//#/station/stn_jbVr3e93VuuktSwhKMnmPD"
+        },
+        "station_id": "stn_jbVr3e93VuuktSwhKMnmPD"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 43.099919,
+        "lon": -0.042722,
+        "name": [
+          {
+            "language": "fr",
+            "text": "LOURDES - GARE SNCF"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://tlpmobilites.ecovelo.mobi//#/station/stn_8RozFQ8gCa7h7hCt8aPX4G"
+        },
+        "station_id": "stn_8RozFQ8gCa7h7hCt8aPX4G"
+      },
+      {
+        "capacity": 4,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 43.241137,
+        "lon": 0.078746,
+        "name": [
+          {
+            "language": "fr",
+            "text": "ARSENAL"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://tlpmobilites.ecovelo.mobi//#/station/stn_52WTVWCTZQavmchc4rSBV3"
+        },
+        "station_id": "stn_52WTVWCTZQavmchc4rSBV3"
+      },
+      {
+        "capacity": 20,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 43.093316,
+        "lon": -0.046362,
+        "name": [
+          {
+            "language": "fr",
+            "text": "HALLES"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://tlpmobilites.ecovelo.mobi//#/station/stn_Kun5xkYRyBtajiaQapPW4X"
+        },
+        "station_id": "stn_Kun5xkYRyBtajiaQapPW4X"
+      },
+      {
+        "capacity": 4,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 43.232674,
+        "lon": 0.065189,
+        "name": [
+          {
+            "language": "fr",
+            "text": "PRADEAU"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://tlpmobilites.ecovelo.mobi//#/station/stn_gGCMEZLSGZvac5sS6n5w4L"
+        },
+        "station_id": "stn_gGCMEZLSGZvac5sS6n5w4L"
+      },
+      {
+        "capacity": 4,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 43.083858,
+        "lon": -0.044205,
+        "name": [
+          {
+            "language": "fr",
+            "text": "PIC DU JER"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://tlpmobilites.ecovelo.mobi//#/station/stn_NFyf3iRrQVGWwXbncTH959"
+        },
+        "station_id": "stn_NFyf3iRrQVGWwXbncTH959"
+      },
+      {
+        "capacity": 20,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 43.231537,
+        "lon": 0.084342,
+        "name": [
+          {
+            "language": "fr",
+            "text": "MARCADIEU"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://tlpmobilites.ecovelo.mobi//#/station/stn_8wpUmH2FA2xwdzrrEGGwGy"
+        },
+        "station_id": "stn_8wpUmH2FA2xwdzrrEGGwGy"
+      },
+      {
+        "capacity": 20,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 43.23128,
+        "lon": 0.07468,
+        "name": [
+          {
+            "language": "fr",
+            "text": "BRAUHAUBAN"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://tlpmobilites.ecovelo.mobi//#/station/stn_6SCLAWAyK6TKN6kJXDG3RK"
+        },
+        "station_id": "stn_6SCLAWAyK6TKN6kJXDG3RK"
+      },
+      {
+        "capacity": 16,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 43.2396,
+        "lon": 0.06944,
+        "name": [
+          {
+            "language": "fr",
+            "text": "TARBES - GARE SNCF"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://tlpmobilites.ecovelo.mobi//#/station/stn_3a29mR4YNT4jtnY7qyWhXw"
+        },
+        "station_id": "stn_3a29mR4YNT4jtnY7qyWhXw"
+      },
+      {
+        "capacity": 4,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 43.105778,
+        "lon": -0.078028,
+        "name": [
+          {
+            "language": "fr",
+            "text": "LAC DE LOURDES"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://tlpmobilites.ecovelo.mobi//#/station/stn_HpDo9WUocBeDBKbNBJVkNG"
+        },
+        "station_id": "stn_HpDo9WUocBeDBKbNBJVkNG"
+      },
+      {
+        "capacity": 16,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 43.23332,
+        "lon": 0.07343,
+        "name": [
+          {
+            "language": "fr",
+            "text": "VERDUN"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://tlpmobilites.ecovelo.mobi//#/station/stn_8w2F2bTSSTN4FiLd8DReyM"
+        },
+        "station_id": "stn_8w2F2bTSSTN4FiLd8DReyM"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 43.102404,
+        "lon": -0.042747,
+        "name": [
+          {
+            "language": "fr",
+            "text": "PISCINE / ROBERT HOSSEIN"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://tlpmobilites.ecovelo.mobi//#/station/stn_5BXybgcYEno8qHUwyxiuZR"
+        },
+        "station_id": "stn_5BXybgcYEno8qHUwyxiuZR"
+      },
+      {
+        "capacity": 14,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 43.095033,
+        "lon": -0.052399,
+        "name": [
+          {
+            "language": "fr",
+            "text": "PONT VIEUX"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://tlpmobilites.ecovelo.mobi//#/station/stn_Ck2UKsemF2ZGcE2MHoZDBn"
+        },
+        "station_id": "stn_Ck2UKsemF2ZGcE2MHoZDBn"
+      }
+    ]
+  },
+  "last_updated": "2026-02-22T09:41:11+01:00",
+  "ttl": 0,
+  "version": "3.0"
+}

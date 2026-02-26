@@ -1,0 +1,351 @@
+{
+  "last_updated": "2026-02-22T09:42:11.6811775+01:00",
+  "ttl": 300,
+  "version": "3.0",
+  "data": {
+    "stations": [
+      {
+        "station_id": "1503",
+        "name": [
+          {
+            "text": "ARSENAL",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.1595916748047,
+        "lon": -1.1486599445343,
+        "parking_type": "parking_lot",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1504",
+        "name": [
+          {
+            "text": "PREFECTURE",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.1569938659668,
+        "lon": -1.15671098232269,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1505",
+        "name": [
+          {
+            "text": "GARE",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.1524963378906,
+        "lon": -1.14764201641083,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1506",
+        "name": [
+          {
+            "text": "VERDUN",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.1629219055176,
+        "lon": -1.15442299842834,
+        "parking_type": "parking_lot",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1507",
+        "name": [
+          {
+            "text": "PISCINE",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.1688003540039,
+        "lon": -1.15388202667236,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1508",
+        "name": [
+          {
+            "text": "SAINT MAURICE",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.164584,
+        "lon": -1.17569,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1509",
+        "name": [
+          {
+            "text": "TECHNOFORUM",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.1481895446777,
+        "lon": -1.153529047966,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1510",
+        "name": [
+          {
+            "text": "AYTRE",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.1336784362793,
+        "lon": -1.11550199985504,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1511",
+        "name": [
+          {
+            "text": "MINIMES",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.1407661437988,
+        "lon": -1.16580295562744,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1512",
+        "name": [
+          {
+            "text": "OFFICE DE TOURISME",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.1552200317383,
+        "lon": -1.14956498146057,
+        "address": "Quai de la Georgette // Face à l'Office du Tourisme",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1513",
+        "name": [
+          {
+            "text": "CORDELIERS - (Arceaux => télécommande)",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.1628074645996,
+        "lon": -1.1458740234375,
+        "address": "6 place des Cordeliers 17000 La Rochelle",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1514",
+        "name": [
+          {
+            "text": "LA PALLICE",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.1632270812988,
+        "lon": -1.20761299133301,
+        "address": "Au croisement de la Rue Troussier et de la Rue Eugène Dor",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1515",
+        "name": [
+          {
+            "text": "PUILBOREAU",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.1874046325684,
+        "lon": -1.11854302883148,
+        "address": "A côté du poste de Police. Face au 36 Rue de la République 17138 Puilboreau",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1516",
+        "name": [
+          {
+            "text": "PERIGNY",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.1543884277344,
+        "lon": -1.09546101093292,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1517",
+        "name": [
+          {
+            "text": "LAFOND",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.1740798950195,
+        "lon": -1.14560401439667,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1518",
+        "name": [
+          {
+            "text": "SAUTEL",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.1664199829102,
+        "lon": -1.13756000995636,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1519",
+        "name": [
+          {
+            "text": "ATLANTECH - Code armoire : C3104",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.1848754882813,
+        "lon": -1.14567899703979,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1520",
+        "name": [
+          {
+            "text": "LA GENETTE",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.159854888916,
+        "lon": -1.16636502742767,
+        "address": "70 avenue Jean Guiton",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1521",
+        "name": [
+          {
+            "text": "LAGORD - OISEAUX DE MER",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.183967590332,
+        "lon": -1.15605795383453,
+        "parking_type": "parking_lot",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1523",
+        "name": [
+          {
+            "text": "EIGSI",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.1402130126953,
+        "lon": -1.15376496315002,
+        "parking_type": "parking_lot",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1524",
+        "name": [
+          {
+            "text": "VILLENEUVE LES SALINES",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.1522178649902,
+        "lon": -1.1238659620285,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1525",
+        "name": [
+          {
+            "text": "MEDIATHEQUE",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.1534652709961,
+        "lon": -1.15525197982788,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1526",
+        "name": [
+          {
+            "text": "MARCHE DE PORT NEUF",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.1593856811523,
+        "lon": -1.18002200126648,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1642",
+        "name": [
+          {
+            "text": "TASDON",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.148510140712844,
+        "lon": -1.144076419792335,
+        "address": "Place des Britanniques 17000 La Rochelle",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      }
+    ]
+  }
+}

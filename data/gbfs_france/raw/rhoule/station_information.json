@@ -1,0 +1,43 @@
+{
+  "data": {
+    "stations": [
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.381067,
+        "lon": -2.543188,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Capitainerie du port de Piriac"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://rhoule.ecovelo.mobi/#/station/stn_T55SMQjR8qwbZuP4EtvNoh"
+        },
+        "station_id": "stn_T55SMQjR8qwbZuP4EtvNoh"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.34508,
+        "lon": -2.512193,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Capitainerie du port de La Turballe"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://rhoule.ecovelo.mobi/#/station/stn_atpGbsxKYNQsjHEaLAbAGn"
+        },
+        "station_id": "stn_atpGbsxKYNQsjHEaLAbAGn"
+      }
+    ]
+  },
+  "last_updated": "2026-02-22T09:41:11+01:00",
+  "ttl": 0,
+  "version": "3.0"
+}

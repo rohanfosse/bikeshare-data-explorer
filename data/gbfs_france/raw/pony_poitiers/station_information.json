@@ -1,0 +1,2859 @@
+{
+  "data": {
+    "stations": [
+      {
+        "is_virtual_station": true,
+        "lat": 46.56809,
+        "lon": 0.389222,
+        "name": "poitiers_parking_Abris_Appuis_velos6489_zidQOWWYZ8W",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6489_zidQOWWYZ8W"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.588652486130194,
+        "lon": 0.37119171882039464,
+        "name": "poitiers_parking_Abris_Appuis_velos6681_zid64T019O7",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6681_zid64T019O7"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.584088,
+        "lon": 0.344325,
+        "name": "poitiers_parking_Abris_Appuis_velos6608_zidHH4D0DSG",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6608_zidHH4D0DSG"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.589352327718494,
+        "lon": 0.3446270701055051,
+        "name": "poitiers_parking_Abris_Appuis_velos6524_zid59DRY983",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6524_zid59DRY983"
+      },
+      {
+        "capacity": 5,
+        "is_virtual_station": true,
+        "lat": 46.582941,
+        "lon": 0.344161,
+        "name": "poitiers_parking_Abris_Appuis_velos6587_zidOUY26AOY",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6587_zidOUY26AOY"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.568472,
+        "lon": 0.386086,
+        "name": "poitiers_parking_Abris_Appuis_velos6758_zidUWVL958Z",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6758_zidUWVL958Z"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.581572,
+        "lon": 0.375327,
+        "name": "poitiers_parking_Abris_Appuis_velos6706_zidC6115KLL",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6706_zidC6115KLL"
+      },
+      {
+        "capacity": 5,
+        "is_virtual_station": true,
+        "lat": 46.565327,
+        "lon": 0.35704,
+        "name": "poitiers_parking_Abris_Appuis_velos6423_zidBCNLJL73",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6423_zidBCNLJL73"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.570145,
+        "lon": 0.381188,
+        "name": "poitiers_parking_Abris_Appuis_velos6710_zidJK3Z28KF",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6710_zidJK3Z28KF"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.575365,
+        "lon": 0.383331,
+        "name": "poitiers_parking_Abris_Appuis_velos6408_zidJ0SDZPL5",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6408_zidJ0SDZPL5"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.567288,
+        "lon": 0.380626,
+        "name": "poitiers_parking_Abris_Appuis_velos6341_zid3Y7HFH6Q",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6341_zid3Y7HFH6Q"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.568254,
+        "lon": 0.380718,
+        "name": "poitiers_parking_Abris_Appuis_velos6340_zidSKVV9FSD",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6340_zidSKVV9FSD"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.591226,
+        "lon": 0.352586,
+        "name": "poitiers_parking_Abris_Appuis_velos6702_zidNHYZ09SE",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6702_zidNHYZ09SE"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.550106,
+        "lon": 0.297314,
+        "name": "poitiers_parking_Abris_Appuis_velos6645_zidSCAIMGCK",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6645_zidSCAIMGCK"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.563347,
+        "lon": 0.385356,
+        "name": "poitiers_parking_Abris_Appuis_velos6344_zid1S6TR1RY",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6344_zid1S6TR1RY"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.590201283956134,
+        "lon": 0.3397194552469169,
+        "name": "poitiers_parking_Abris_Appuis_velos6539_zidBYVI4WOK",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6539_zidBYVI4WOK"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.583325,
+        "lon": 0.338521,
+        "name": "poitiers_parking_Abris_Appuis_velos6526_zidLHM5MJUL",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6526_zidLHM5MJUL"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.582222,
+        "lon": 0.366452,
+        "name": "poitiers_parking_Abris_Appuis_velos6352_zidR100HWR3",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6352_zidR100HWR3"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.569145,
+        "lon": 0.380216,
+        "name": "poitiers_parking_Abris_Appuis_velos6339_zidPYLWHL1T",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6339_zidPYLWHL1T"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.571371,
+        "lon": 0.370673,
+        "name": "poitiers_parking_Abris_Appuis_velos6369_zidB94X3T8C",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6369_zidB94X3T8C"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.567662,
+        "lon": 0.383379,
+        "name": "poitiers_parking_Abris_Appuis_velos6404_zidH4E4736C",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6404_zidH4E4736C"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.582796,
+        "lon": 0.381161,
+        "name": "poitiers_parking_Abris_Appuis_velos6505_zidHW97I87Q",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6505_zidHW97I87Q"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.566877,
+        "lon": 0.384103,
+        "name": "poitiers_parking_Abris_Appuis_velos6669_zidZB7LRVEB",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6669_zidZB7LRVEB"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.590058,
+        "lon": 0.404936,
+        "name": "poitiers_parking_Abris_Appuis_velos6476_zid91UZSEZX",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6476_zid91UZSEZX"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.565247,
+        "lon": 0.385884,
+        "name": "poitiers_parking_Abris_Appuis_velos6759_zid6GAN0T5P",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6759_zid6GAN0T5P"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.553454,
+        "lon": 0.39084,
+        "name": "poitiers_parking_Abris_Appuis_velos6394_zidBSVE4M1Y",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6394_zidBSVE4M1Y"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.569896,
+        "lon": 0.383419,
+        "name": "poitiers_parking_Abris_Appuis_velos6430_zidHINA9XGO",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6430_zidHINA9XGO"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.584871,
+        "lon": 0.350105,
+        "name": "poitiers_parking_Abris_Appuis_velos6742_zidSKSEOVA2",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6742_zidSKSEOVA2"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.59008,
+        "lon": 0.380083,
+        "name": "poitiers_parking_Abris_Appuis_velos6414_zidL20JAX30",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6414_zidL20JAX30"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.57904032099799,
+        "lon": 0.35240639405079677,
+        "name": "poitiers_parking_Abris_Appuis_velos6588_zidOX9BVDT6",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6588_zidOX9BVDT6"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.565485,
+        "lon": 0.313211,
+        "name": "poitiers_parking_Abris_Appuis_velos6384_zidT9FFU3T6",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6384_zidT9FFU3T6"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.565947,
+        "lon": 0.379955,
+        "name": "poitiers_parking_Abris_Appuis_velos6731_zidCT7ZCJUJ",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6731_zidCT7ZCJUJ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.580427,
+        "lon": 0.338453,
+        "name": "poitiers_parking_Abris_Appuis_velos6592_zidTT493WVS",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6592_zidTT493WVS"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.580055,
+        "lon": 0.340282,
+        "name": "poitiers_parking_Abris_Appuis_velos6573_zidNBUBE7CY",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6573_zidNBUBE7CY"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.590524,
+        "lon": 0.32307,
+        "name": "poitiers_parking_Abris_Appuis_velos6364_zidJLGI1FF3",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6364_zidJLGI1FF3"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.579458,
+        "lon": 0.347368,
+        "name": "poitiers_parking_Abris_Appuis_velos6564_zid95LP1GRR",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6564_zid95LP1GRR"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.568451,
+        "lon": 0.382951,
+        "name": "poitiers_parking_Abris_Appuis_velos6427_zid2YQ186OK",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6427_zid2YQ186OK"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.578366,
+        "lon": 0.339786,
+        "name": "poitiers_parking_Abris_Appuis_velos6685_zid5W3Q8NXJ",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6685_zid5W3Q8NXJ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.579886,
+        "lon": 0.347642,
+        "name": "poitiers_parking_Abris_Appuis_velos6534_zidA80FBPZT",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6534_zidA80FBPZT"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.590401,
+        "lon": 0.343949,
+        "name": "poitiers_parking_Abris_Appuis_velos6584_zid7WA55MSQ",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6584_zid7WA55MSQ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.558551,
+        "lon": 0.311742,
+        "name": "poitiers_parking_Abris_Appuis_velos6383_zidKENO5ZVG",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6383_zidKENO5ZVG"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.589372,
+        "lon": 0.356754,
+        "name": "poitiers_parking_Abris_Appuis_velos6347_zid1XUD3818",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6347_zid1XUD3818"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.593289,
+        "lon": 0.352065,
+        "name": "poitiers_parking_Abris_Appuis_velos6707_zidNNNZ2TQL",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6707_zidNNNZ2TQL"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.565514,
+        "lon": 0.313181,
+        "name": "poitiers_parking_Abris_Appuis_velos6649_zidCD8I3AAL",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6649_zidCD8I3AAL"
+      },
+      {
+        "capacity": 5,
+        "is_virtual_station": true,
+        "lat": 46.58121,
+        "lon": 0.339184,
+        "name": "poitiers_parking_Abris_Appuis_velos6570_zidXUCMLRYQ",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6570_zidXUCMLRYQ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.588382,
+        "lon": 0.371597,
+        "name": "poitiers_parking_Abris_Appuis_velos6351_zidYZR33SPG",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6351_zidYZR33SPG"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.590597,
+        "lon": 0.38017,
+        "name": "poitiers_parking_Abris_Appuis_velos6415_zidP7KSXXKK",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6415_zidP7KSXXKK"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.572738,
+        "lon": 0.35893,
+        "name": "poitiers_parking_Abris_Appuis_velos6368_zidN0G2VF56",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6368_zidN0G2VF56"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.575846,
+        "lon": 0.338376,
+        "name": "poitiers_parking_Abris_Appuis_velos6667_zidK7I1RMEB",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6667_zidK7I1RMEB"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.570515,
+        "lon": 0.370498,
+        "name": "poitiers_parking_Abris_Appuis_velos6375_zid8X81KKK6",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6375_zid8X81KKK6"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.57273,
+        "lon": 0.338941,
+        "name": "poitiers_parking_Abris_Appuis_velos6718_zid9TNYIUH7",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6718_zid9TNYIUH7"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.58922,
+        "lon": 0.358526,
+        "name": "poitiers_parking_Abris_Appuis_velos6433_zidKYGWQVMS",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6433_zidKYGWQVMS"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.580579,
+        "lon": 0.335715,
+        "name": "poitiers_parking_Abris_Appuis_velos6593_zidC62FQEIR",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6593_zidC62FQEIR"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.576271,
+        "lon": 0.33477,
+        "name": "poitiers_parking_Abris_Appuis_velos6547_zidISKPJ32R",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6547_zidISKPJ32R"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.57307,
+        "lon": 0.321997,
+        "name": "poitiers_parking_Abris_Appuis_velos6390_zidHFYRHAPF",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6390_zidHFYRHAPF"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.575192,
+        "lon": 0.329085,
+        "name": "poitiers_parking_Abris_Appuis_velos6530_zidTIX7GUP6",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6530_zidTIX7GUP6"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.582079,
+        "lon": 0.33949,
+        "name": "poitiers_parking_Abris_Appuis_velos6607_zidS12LS4VJ",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6607_zidS12LS4VJ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.57113,
+        "lon": 0.382016,
+        "name": "poitiers_parking_Abris_Appuis_velos6405_zid8X6LC0GS",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6405_zid8X6LC0GS"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.590209,
+        "lon": 0.379791,
+        "name": "poitiers_parking_Abris_Appuis_velos6413_zid9S2CT5FC",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6413_zid9S2CT5FC"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.569406,
+        "lon": 0.383236,
+        "name": "poitiers_parking_Abris_Appuis_velos6429_zidX9NMJ44B",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6429_zidX9NMJ44B"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.574735,
+        "lon": 0.377864,
+        "name": "poitiers_parking_Abris_Appuis_velos6371_zid5OHKX3MZ",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6371_zid5OHKX3MZ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.565002,
+        "lon": 0.380881,
+        "name": "poitiers_parking_Abris_Appuis_velos6343_zidHT8OZG6E",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6343_zidHT8OZG6E"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.552533,
+        "lon": 0.300555,
+        "name": "poitiers_parking_Abris_Appuis_velos6647_zidEZ8VHSSD",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6647_zidEZ8VHSSD"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.579253,
+        "lon": 0.347249,
+        "name": "poitiers_parking_Abris_Appuis_velos6552_zidOP2CRAVX",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6552_zidOP2CRAVX"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.568583,
+        "lon": 0.387875,
+        "name": "poitiers_parking_Abris_Appuis_velos6336_zidQ2B6EZQB",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6336_zidQ2B6EZQB"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.566178,
+        "lon": 0.368505,
+        "name": "poitiers_parking_Abris_Appuis_velos6376_zidTDURU09R",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6376_zidTDURU09R"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.57971190951111,
+        "lon": 0.33935123327399785,
+        "name": "poitiers_parking_Abris_Appuis_velos6589_zid9MEZM357",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6589_zid9MEZM357"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.578976,
+        "lon": 0.346084,
+        "name": "poitiers_parking_Abris_Appuis_velos6597_zidT0SWOT8B",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6597_zidT0SWOT8B"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.574397,
+        "lon": 0.374135,
+        "name": "poitiers_parking_Abris_Appuis_velos6633_zidD9ZKK47R",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6633_zidD9ZKK47R"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.578454,
+        "lon": 0.339787,
+        "name": "poitiers_parking_Abris_Appuis_velos6558_zid5G7UUWMF",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6558_zid5G7UUWMF"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.585061,
+        "lon": 0.350923,
+        "name": "poitiers_parking_Abris_Appuis_velos6535_zid3494NBJL",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6535_zid3494NBJL"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.566095,
+        "lon": 0.385445,
+        "name": "poitiers_parking_Abris_Appuis_velos6668_zidF1TOG8FE",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6668_zidF1TOG8FE"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.59063,
+        "lon": 0.380179,
+        "name": "poitiers_parking_Abris_Appuis_velos6684_zid6EFNVUBM",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6684_zid6EFNVUBM"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.599833,
+        "lon": 0.324564,
+        "name": "poitiers_parking_Abris_Appuis_velos6420_zidPPARSBS0",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6420_zidPPARSBS0"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.591242,
+        "lon": 0.35252,
+        "name": "poitiers_parking_Abris_Appuis_velos6440_zidLNNZ6ZCA",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6440_zidLNNZ6ZCA"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.578635,
+        "lon": 0.339889,
+        "name": "poitiers_parking_Abris_Appuis_velos6686_zid5H49RBVZ",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6686_zid5H49RBVZ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.565599,
+        "lon": 0.358945,
+        "name": "poitiers_parking_Abris_Appuis_velos6673_zid55H6IB2X",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6673_zid55H6IB2X"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.5905864983417,
+        "lon": 0.3243841790147789,
+        "name": "poitiers_parking_Abris_Appuis_velos6362_zid5L5HZFKG",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6362_zid5L5HZFKG"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.60993403407936,
+        "lon": 0.34523548472568605,
+        "name": "poitiers_parking_Abris_Appuis_velos6657_zidAGULXZF9",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6657_zidAGULXZF9"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.565036,
+        "lon": 0.310612,
+        "name": "poitiers_parking_Abris_Appuis_velos6648_zidX2MCDKTZ",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6648_zidX2MCDKTZ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.591307,
+        "lon": 0.380913,
+        "name": "poitiers_parking_Abris_Appuis_velos6417_zidEUNELOGX",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6417_zidEUNELOGX"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.589355,
+        "lon": 0.359678,
+        "name": "poitiers_parking_Abris_Appuis_velos6348_zidZMAOBW7Z",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6348_zidZMAOBW7Z"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.545812,
+        "lon": 0.314474,
+        "name": "poitiers_parking_Abris_Appuis_velos6462_zidU7SHF0C9",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6462_zidU7SHF0C9"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.581635,
+        "lon": 0.338674,
+        "name": "poitiers_parking_Abris_Appuis_velos6522_zid9JYRKS1R",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6522_zid9JYRKS1R"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.593348,
+        "lon": 0.326722,
+        "name": "poitiers_parking_Abris_Appuis_velos6367_zidKSNC2GV8",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6367_zidKSNC2GV8"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.582699,
+        "lon": 0.334158,
+        "name": "poitiers_parking_Abris_Appuis_velos6691_zidUHGECK0M",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6691_zidUHGECK0M"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.57834595270497,
+        "lon": 0.31993743676753233,
+        "name": "poitiers_parking_Abris_Appuis_velos6387_zidCO2LK5MV",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6387_zidCO2LK5MV"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.569297,
+        "lon": 0.382964,
+        "name": "poitiers_parking_Abris_Appuis_velos6757_zid4Q3L1I81",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6757_zid4Q3L1I81"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.589329,
+        "lon": 0.342526,
+        "name": "poitiers_parking_Abris_Appuis_velos6563_zidUUXWBHXO",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6563_zidUUXWBHXO"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.59126771993633,
+        "lon": 0.3594425813703645,
+        "name": "poitiers_parking_Abris_Appuis_velos6439_zidTAKWNDL3",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6439_zidTAKWNDL3"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.586684,
+        "lon": 0.32649,
+        "name": "poitiers_parking_Abris_Appuis_velos6459_zidBX0C1NIQ",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6459_zidBX0C1NIQ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.554539,
+        "lon": 0.308886,
+        "name": "poitiers_parking_Abris_Appuis_velos6460_zidGBSLUKWF",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6460_zidGBSLUKWF"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.580883,
+        "lon": 0.373713,
+        "name": "poitiers_parking_Abris_Appuis_velos6703_zid0A0HL96Y",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6703_zid0A0HL96Y"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.570103,
+        "lon": 0.381231,
+        "name": "poitiers_parking_Abris_Appuis_velos6752_zid23CJI67J",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6752_zid23CJI67J"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.58853,
+        "lon": 0.341359,
+        "name": "poitiers_parking_Abris_Appuis_velos6561_zid09446E6W",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6561_zid09446E6W"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.58224539363545,
+        "lon": 0.3705940066125879,
+        "name": "poitiers_parking_Abris_Appuis_velos6353_zidA2U2TXLY",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6353_zidA2U2TXLY"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.567997,
+        "lon": 0.389034,
+        "name": "poitiers_parking_Abris_Appuis_velos6431_zidD9A3CXU6",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6431_zidD9A3CXU6"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.581479,
+        "lon": 0.375342,
+        "name": "poitiers_parking_Abris_Appuis_velos6704_zidQXELH9KN",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6704_zidQXELH9KN"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.583864,
+        "lon": 0.354233,
+        "name": "poitiers_parking_Abris_Appuis_velos6569_zidG2C174XV",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6569_zidG2C174XV"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.593712,
+        "lon": 0.335143,
+        "name": "poitiers_parking_Abris_Appuis_velos6355_zidRLFZKHXE",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6355_zidRLFZKHXE"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.578981,
+        "lon": 0.320079,
+        "name": "poitiers_parking_Abris_Appuis_velos6714_zidTPDV8H1C",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6714_zidTPDV8H1C"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.569034,
+        "lon": 0.386971,
+        "name": "poitiers_parking_Abris_Appuis_velos6760_zidSCLF4MMK",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6760_zidSCLF4MMK"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.567532,
+        "lon": 0.381726,
+        "name": "poitiers_parking_Abris_Appuis_velos6426_zidQ44PMRT6",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6426_zidQ44PMRT6"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.582442,
+        "lon": 0.337338,
+        "name": "poitiers_parking_Abris_Appuis_velos6755_zidC7QEGTZE",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6755_zidC7QEGTZE"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.591213,
+        "lon": 0.385175,
+        "name": "poitiers_parking_Abris_Appuis_velos6419_zid5SOIQ20B",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6419_zid5SOIQ20B"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.566848,
+        "lon": 0.343375,
+        "name": "poitiers_parking_Abris_Appuis_velos6382_zidAM8VGXGP",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6382_zidAM8VGXGP"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.566205,
+        "lon": 0.378198,
+        "name": "poitiers_parking_Abris_Appuis_velos6342_zidCT4C4FNA",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6342_zidCT4C4FNA"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.569123,
+        "lon": 0.376228,
+        "name": "poitiers_parking_Abris_Appuis_velos6370_zidH2XR74RE",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6370_zidH2XR74RE"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.590866,
+        "lon": 0.380397,
+        "name": "poitiers_parking_Abris_Appuis_velos6416_zid0CB8GHWJ",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6416_zid0CB8GHWJ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.584827,
+        "lon": 0.336622,
+        "name": "poitiers_parking_Abris_Appuis_velos6576_zidR84YTZKL",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6576_zidR84YTZKL"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.57646,
+        "lon": 0.33862,
+        "name": "poitiers_parking_Abris_Appuis_velos6577_zidSAMKSV9A",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6577_zidSAMKSV9A"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.613842,
+        "lon": 0.347952,
+        "name": "poitiers_parking_Abris_Appuis_velos6655_zid74V7X1DP",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6655_zid74V7X1DP"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.586352,
+        "lon": 0.338408,
+        "name": "poitiers_parking_Abris_Appuis_velos6720_zidWRAE4SNW",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6720_zidWRAE4SNW"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.574867,
+        "lon": 0.373405,
+        "name": "poitiers_parking_Abris_Appuis_velos6629_zidQT9K53QQ",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6629_zidQT9K53QQ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.589575,
+        "lon": 0.359832,
+        "name": "poitiers_parking_Abris_Appuis_velos6698_zidYMW4D1UK",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6698_zidYMW4D1UK"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.584115,
+        "lon": 0.343892,
+        "name": "poitiers_parking_Abris_Appuis_velos6541_zidVD0EQ2CD",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6541_zidVD0EQ2CD"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.569677771928156,
+        "lon": 0.3717967567900571,
+        "name": "poitiers_parking_Abris_Appuis_velos6500_zid5CBGX0JA",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6500_zid5CBGX0JA"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.565464,
+        "lon": 0.341559,
+        "name": "poitiers_parking_Abris_Appuis_velos6379_zid60SDOQ26",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6379_zid60SDOQ26"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.592233,
+        "lon": 0.32129,
+        "name": "poitiers_parking_Abris_Appuis_velos6457_zidSP490FR2",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6457_zidSP490FR2"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.568079,
+        "lon": 0.38987,
+        "name": "poitiers_parking_Abris_Appuis_velos6400_zid9I7LMBLL",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6400_zid9I7LMBLL"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.586128,
+        "lon": 0.381281,
+        "name": "poitiers_parking_Abris_Appuis_velos6412_zidT3MHLRRX",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6412_zidT3MHLRRX"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.56663,
+        "lon": 0.343874,
+        "name": "poitiers_parking_Abris_Appuis_velos6381_zidMTBNCTWW",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6381_zidMTBNCTWW"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.590136,
+        "lon": 0.325402,
+        "name": "poitiers_parking_Abris_Appuis_velos6358_zid7JDJ0402",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6358_zid7JDJ0402"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.571378,
+        "lon": 0.38138,
+        "name": "poitiers_parking_Abris_Appuis_velos6406_zidHZAE84S8",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6406_zidHZAE84S8"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.558148,
+        "lon": 0.312046,
+        "name": "poitiers_parking_Abris_Appuis_velos6461_zidDUH29NE9",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6461_zidDUH29NE9"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.588987,
+        "lon": 0.327038,
+        "name": "poitiers_parking_Abris_Appuis_velos6357_zid2XQA2HWS",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6357_zid2XQA2HWS"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.569978,
+        "lon": 0.381226,
+        "name": "poitiers_parking_Abris_Appuis_velos6338_zid5BXN07HC",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6338_zid5BXN07HC"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.55133722452857,
+        "lon": 0.30098728027482036,
+        "name": "poitiers_parking_Abris_Appuis_velos6646_zidR4D8MZ8E",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6646_zidR4D8MZ8E"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.599785,
+        "lon": 0.32446,
+        "name": "poitiers_parking_Abris_Appuis_velos6499_zidUWWHFJ7I",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6499_zidUWWHFJ7I"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.57877,
+        "lon": 0.336468,
+        "name": "poitiers_parking_Abris_Appuis_velos6712_zid9L5VKY1H",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6712_zid9L5VKY1H"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.580879,
+        "lon": 0.374289,
+        "name": "poitiers_parking_Abris_Appuis_velos6354_zidSMXSUJQT",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6354_zidSMXSUJQT"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.568176,
+        "lon": 0.384884,
+        "name": "poitiers_parking_Abris_Appuis_velos6337_zidRIQNSG8G",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6337_zidRIQNSG8G"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.592334,
+        "lon": 0.382588,
+        "name": "poitiers_parking_Abris_Appuis_velos6418_zidV36HEBJF",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6418_zidV36HEBJF"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.569074,
+        "lon": 0.386976,
+        "name": "poitiers_parking_Abris_Appuis_velos6761_zidU4VAGVS6",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6761_zidU4VAGVS6"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.56848,
+        "lon": 0.386678,
+        "name": "poitiers_parking_Abris_Appuis_velos6335_zidF6UGI938",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6335_zidF6UGI938"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.590877,
+        "lon": 0.322658,
+        "name": "poitiers_parking_Abris_Appuis_velos6365_zidSLN59MA8",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6365_zidSLN59MA8"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.561199,
+        "lon": 0.378963,
+        "name": "poitiers_parking_Abris_Appuis_velos6332_zidPDY7KZK7",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6332_zidPDY7KZK7"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.566976,
+        "lon": 0.385491,
+        "name": "poitiers_parking_Abris_Appuis_velos6670_zidHB3QRKXN",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6670_zidHB3QRKXN"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.565818,
+        "lon": 0.38326,
+        "name": "poitiers_parking_Abris_Appuis_velos6403_zidRVOC4V03",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6403_zidRVOC4V03"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.578619,
+        "lon": 0.32025,
+        "name": "poitiers_parking_Abris_Appuis_velos6700_zid167I6XBQ",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6700_zid167I6XBQ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.574891,
+        "lon": 0.379037,
+        "name": "poitiers_parking_Abris_Appuis_velos6372_zid1UNNIJ1K",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6372_zid1UNNIJ1K"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.582067,
+        "lon": 0.352726,
+        "name": "poitiers_parking_Abris_Appuis_velos6544_zid4XW1J1K8",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6544_zid4XW1J1K8"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.57115,
+        "lon": 0.370462,
+        "name": "poitiers_parking_Abris_Appuis_velos6624_zidPBEICC3W",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6624_zidPBEICC3W"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.589591,
+        "lon": 0.382823,
+        "name": "poitiers_parking_Abris_Appuis_velos6604_zid67NB02RJ",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6604_zid67NB02RJ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.587317,
+        "lon": 0.330376,
+        "name": "poitiers_parking_Abris_Appuis_velos6733_zidTAZGYXHU",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6733_zidTAZGYXHU"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.58057485579611,
+        "lon": 0.33764625591147457,
+        "name": "poitiers_parking_Abris_Appuis_velos6568_zidDNHHX3CP",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6568_zidDNHHX3CP"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.571898,
+        "lon": 0.362029,
+        "name": "poitiers_parking_Abris_Appuis_velos6316_zidAU6NVPPE",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6316_zidAU6NVPPE"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.57117448671938,
+        "lon": 0.3788792193904862,
+        "name": "poitiers_parking_Abris_Appuis_velos6743_zidCEUNBGQZ",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6743_zidCEUNBGQZ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.579289,
+        "lon": 0.348949,
+        "name": "poitiers_parking_Abris_Appuis_velos6585_zid670OOTES",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6585_zid670OOTES"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.58870523123759,
+        "lon": 0.3595551663118302,
+        "name": "poitiers_parking_Abris_Appuis_velos6350_zidF4B5LXZ0",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6350_zidF4B5LXZ0"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.580810139765454,
+        "lon": 0.3757922353103181,
+        "name": "poitiers_parking_Abris_Appuis_velos6498_zidAAUUBVOY",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6498_zidAAUUBVOY"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.58906,
+        "lon": 0.34313,
+        "name": "poitiers_parking_Abris_Appuis_velos6527_zidSHLS5YOD",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6527_zidSHLS5YOD"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.588662,
+        "lon": 0.33925,
+        "name": "poitiers_parking_Abris_Appuis_velos6613_zid2UTLQ52V",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6613_zid2UTLQ52V"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.591682,
+        "lon": 0.32183,
+        "name": "poitiers_parking_Abris_Appuis_velos6455_zid1A69DJGJ",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6455_zid1A69DJGJ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.599724,
+        "lon": 0.324343,
+        "name": "poitiers_parking_Abris_Appuis_velos6306_zidOVJNJUK7",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6306_zidOVJNJUK7"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.581512,
+        "lon": 0.375625,
+        "name": "poitiers_parking_Abris_Appuis_velos6705_zidUAX7I8AX",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6705_zidUAX7I8AX"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.583175,
+        "lon": 0.338442,
+        "name": "poitiers_parking_Abris_Appuis_velos6603_zid18AMBWS0",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6603_zid18AMBWS0"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.571614,
+        "lon": 0.369851,
+        "name": "poitiers_parking_Abris_Appuis_velos6636_zidFKKXNM52",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6636_zidFKKXNM52"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.599825,
+        "lon": 0.32368,
+        "name": "poitiers_parking_Abris_Appuis_velos6621_zidDEQCNWA5",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6621_zidDEQCNWA5"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.58812,
+        "lon": 0.380865,
+        "name": "poitiers_parking_Abris_Appuis_velos6411_zid66E8KL9E",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6411_zid66E8KL9E"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.576791,
+        "lon": 0.343066,
+        "name": "poitiers_parking_Abris_Appuis_velos6651_zid5H4GKK7E",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6651_zid5H4GKK7E"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.57921387451317,
+        "lon": 0.3389165229740909,
+        "name": "poitiers_parking_Abris_Appuis_velos6523_zidBHDBLA2X",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6523_zidBHDBLA2X"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.583954,
+        "lon": 0.332558,
+        "name": "poitiers_parking_Abris_Appuis_velos6567_zidW9MRERBQ",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6567_zidW9MRERBQ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.570183,
+        "lon": 0.387637,
+        "name": "poitiers_parking_Abris_Appuis_velos6401_zidTD18VKPV",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6401_zidTD18VKPV"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.558121,
+        "lon": 0.312149,
+        "name": "poitiers_parking_Abris_Appuis_velos6641_zidIPU7KIYQ",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6641_zidIPU7KIYQ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.555765,
+        "lon": 0.394747,
+        "name": "poitiers_parking_Abris_Appuis_velos6307_zid06J06YIH",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6307_zid06J06YIH"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.579231,
+        "lon": 0.346174,
+        "name": "poitiers_parking_Abris_Appuis_velos6602_zidJTX6RWI5",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6602_zidJTX6RWI5"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.576956,
+        "lon": 0.334321,
+        "name": "poitiers_parking_Abris_Appuis_velos6601_zidM5F4L7L0",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6601_zidM5F4L7L0"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.582166,
+        "lon": 0.33983,
+        "name": "poitiers_parking_Abris_Appuis_velos6538_zidGQZTSR04",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6538_zidGQZTSR04"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.568685,
+        "lon": 0.386227,
+        "name": "poitiers_parking_Abris_Appuis_velos6428_zidIB7LZBRA",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6428_zidIB7LZBRA"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.58941,
+        "lon": 0.334352,
+        "name": "poitiers_parking_Abris_Appuis_velos6356_zidFYJ3ASPA",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6356_zidFYJ3ASPA"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.570039,
+        "lon": 0.381251,
+        "name": "poitiers_parking_Abris_Appuis_velos6753_zidE3KURX9R",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6753_zidE3KURX9R"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.56363,
+        "lon": 0.36145,
+        "name": "poitiers_parking_Abris_Appuis_velos6769_zid9T84UR4E",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6769_zid9T84UR4E"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.57787325959694,
+        "lon": 0.34976977406288895,
+        "name": "poitiers_parking_Abris_Appuis_velos6617_zidLYEGDU4C",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6617_zidLYEGDU4C"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.585745,
+        "lon": 0.37858,
+        "name": "poitiers_parking_Abris_Appuis_velos6409_zidTNK3HR7P",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6409_zidTNK3HR7P"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.576488,
+        "lon": 0.338099,
+        "name": "poitiers_parking_Abris_Appuis_velos6525_zidTFXK1NGO",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6525_zidTFXK1NGO"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.588047,
+        "lon": 0.381376,
+        "name": "poitiers_parking_Abris_Appuis_velos6410_zid8OD3OXHM",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6410_zid8OD3OXHM"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.5654939,
+        "lon": 0.3436781,
+        "name": "poitiers_parking_Abris_Appuis_velos6378_zidCC60BS7A",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6378_zidCC60BS7A"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.600706,
+        "lon": 0.323731,
+        "name": "poitiers_parking_Abris_Appuis_velos6675_zid4O9SOTJC",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6675_zid4O9SOTJC"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.569069,
+        "lon": 0.376936,
+        "name": "poitiers_parking_Abris_Appuis_velos6424_zidGH6UY4OQ",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6424_zidGH6UY4OQ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.577563,
+        "lon": 0.347697,
+        "name": "poitiers_parking_Abris_Appuis_velos6521_zidGARLCXTP",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6521_zidGARLCXTP"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.560269,
+        "lon": 0.31444,
+        "name": "poitiers_parking_Abris_Appuis_velos6699_zidJMV5MUL9",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6699_zidJMV5MUL9"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.57834613151459,
+        "lon": 0.31975153393098205,
+        "name": "poitiers_parking_Abris_Appuis_velos6388_zidCSUM9J50",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6388_zidCSUM9J50"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.584245,
+        "lon": 0.344063,
+        "name": "poitiers_parking_Abris_Appuis_velos6559_zidMDL65T2D",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6559_zidMDL65T2D"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.591531,
+        "lon": 0.351926,
+        "name": "poitiers_parking_Abris_Appuis_velos6441_zidCGM5RVW1",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6441_zidCGM5RVW1"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.578996,
+        "lon": 0.344045,
+        "name": "poitiers_parking_Abris_Appuis_velos6580_zidF70UY4PQ",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6580_zidF70UY4PQ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.584858,
+        "lon": 0.343662,
+        "name": "poitiers_parking_Abris_Appuis_velos6730_zidQ5PK0J3Q",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6730_zidQ5PK0J3Q"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.59028,
+        "lon": 0.379802,
+        "name": "poitiers_parking_Abris_Appuis_velos6683_zidPCV7DU9P",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6683_zidPCV7DU9P"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.566847,
+        "lon": 0.384187,
+        "name": "poitiers_parking_Abris_Appuis_velos6402_zid6JPKGBLE",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6402_zid6JPKGBLE"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.577963,
+        "lon": 0.340259,
+        "name": "poitiers_parking_Abris_Appuis_velos6540_zidNQQS77YK",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6540_zidNQQS77YK"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.579851,
+        "lon": 0.341056,
+        "name": "poitiers_parking_Abris_Appuis_velos6713_zidYVYEV0YW",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6713_zidYVYEV0YW"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.576466,
+        "lon": 0.33855,
+        "name": "poitiers_parking_Abris_Appuis_velos6575_zid93UIDO9L",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6575_zid93UIDO9L"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.555471,
+        "lon": 0.39287,
+        "name": "poitiers_parking_Abris_Appuis_velos6393_zidECB0VJY5",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6393_zidECB0VJY5"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.598333,
+        "lon": 0.32222,
+        "name": "poitiers_parking_Abris_Appuis_velos6620_zid0HGIV6NJ",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6620_zid0HGIV6NJ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.569034,
+        "lon": 0.386989,
+        "name": "poitiers_parking_Abris_Appuis_velos6766_zidZ2OCYIWO",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6766_zidZ2OCYIWO"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.566907,
+        "lon": 0.385585,
+        "name": "poitiers_parking_Abris_Appuis_velos6756_zidR6CD9DJB",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6756_zidR6CD9DJB"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.57677,
+        "lon": 0.333999,
+        "name": "poitiers_parking_Abris_Appuis_velos6615_zidR8K509IF",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6615_zidR8K509IF"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.576083,
+        "lon": 0.338483,
+        "name": "poitiers_parking_Abris_Appuis_velos6744_zidFVFQ05GC",
+        "station_id": "poitiers_parking_Abris_Appuis_velos6744_zidFVFQ05GC"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.581994,
+        "lon": 0.333526,
+        "name": "poitiers_parking_DOZ___Gare_Le_Parvis_zidESG856BA",
+        "station_id": "poitiers_parking_DOZ___Gare_Le_Parvis_zidESG856BA"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.583303,
+        "lon": 0.332317,
+        "name": "poitiers_parking_DOZ___La_Gare_Maillochon_zidWDW4VNGA",
+        "station_id": "poitiers_parking_DOZ___La_Gare_Maillochon_zidWDW4VNGA"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.580443,
+        "lon": 0.341131,
+        "name": "poitiers_parking_DOZ___Place_Marechal_Leclerc___Rue_Claveurier_zid1MUJL4J6",
+        "station_id": "poitiers_parking_DOZ___Place_Marechal_Leclerc___Rue_Claveurier_zid1MUJL4J6"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.5837141,
+        "lon": 0.3448604,
+        "name": "poitiers_parking_DOZ___Marche_Notre_Dame_zid25J066CL",
+        "station_id": "poitiers_parking_DOZ___Marche_Notre_Dame_zid25J066CL"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.585628,
+        "lon": 0.342653,
+        "name": "poitiers_parking_DOZ___Place_de_la_Liberte_zidLHYINOK8",
+        "station_id": "poitiers_parking_DOZ___Place_de_la_Liberte_zidLHYINOK8"
+      },
+      {
+        "capacity": 9,
+        "is_virtual_station": true,
+        "lat": 46.583135,
+        "lon": 0.34116,
+        "name": "Place Alphone Lepetit",
+        "station_id": "poitiers_parking_DOZ___Place_Alphonse_Lepetit_zidJ1LIG5YZ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.580953,
+        "lon": 0.355557,
+        "name": "poitiers_parking_DOZ___Brigade_d_infanterie_de_Marine_zidMJI0MPNS",
+        "station_id": "poitiers_parking_DOZ___Brigade_d_infanterie_de_Marine_zidMJI0MPNS"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.58051602653733,
+        "lon": 0.3482765820024587,
+        "name": "poitiers_parking_DOZ___Place_de_la_Cathedrale_zid0IZD4KVS",
+        "station_id": "poitiers_parking_DOZ___Place_de_la_Cathedrale_zid0IZD4KVS"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.580941,
+        "lon": 0.336031,
+        "name": "poitiers_parking_DOZ___Place_Aristide_Briand_zidIVPR72N6",
+        "station_id": "poitiers_parking_DOZ___Place_Aristide_Briand_zidIVPR72N6"
+      },
+      {
+        "capacity": 3,
+        "is_virtual_station": true,
+        "lat": 46.580549,
+        "lon": 0.344697,
+        "name": "poitiers_parking_DOZ___Rue_Arsene_Orillard_zid8YI8RXZB",
+        "station_id": "poitiers_parking_DOZ___Rue_Arsene_Orillard_zid8YI8RXZB"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.586685,
+        "lon": 0.340182,
+        "name": "poitiers_parking_DOZ___Bibliotheque_universitaire_Michel_Foucault_zidM3S6MYCV",
+        "station_id": "poitiers_parking_DOZ___Bibliotheque_universitaire_Michel_Foucault_zidM3S6MYCV"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.586659,
+        "lon": 0.343821,
+        "name": "poitiers_parking_DOZ___Conservatoire_zid1EHPZL5I",
+        "station_id": "poitiers_parking_DOZ___Conservatoire_zid1EHPZL5I"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.560851,
+        "lon": 0.378139,
+        "name": "poitiers_parking_DOZ___Faculte_de_de_Medecine_zid1IXW9WUX",
+        "station_id": "poitiers_parking_DOZ___Faculte_de_de_Medecine_zid1IXW9WUX"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.571392,
+        "lon": 0.378992,
+        "name": "poitiers_parking_DOZ___Campus___Allee_Jeanne_Chauvin_zid21M7OQHX",
+        "station_id": "poitiers_parking_DOZ___Campus___Allee_Jeanne_Chauvin_zid21M7OQHX"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.5727239,
+        "lon": 0.3709597,
+        "name": "poitiers_parking_DOZ___Beaulieu_zidJ87B13HO",
+        "station_id": "poitiers_parking_DOZ___Beaulieu_zidJ87B13HO"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.59028,
+        "lon": 0.324035,
+        "name": "poitiers_parking_DOZ___Mairie_de_quartier_Ouest___Rue_Rique_Avoine_zidV28FU7K1",
+        "station_id": "poitiers_parking_DOZ___Mairie_de_quartier_Ouest___Rue_Rique_Avoine_zidV28FU7K1"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.566006,
+        "lon": 0.3121615,
+        "name": "poitiers_parking_DOZ___Bellejouanne_zid8X56XSP0",
+        "station_id": "poitiers_parking_DOZ___Bellejouanne_zid8X56XSP0"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.584455,
+        "lon": 0.341883,
+        "name": "poitiers_parking_DOZ___Place_Charles_VII_zidXK3UB7MA",
+        "station_id": "poitiers_parking_DOZ___Place_Charles_VII_zidXK3UB7MA"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.5981958,
+        "lon": 0.3330844,
+        "name": "Bike rack Olivier de serres",
+        "station_id": "Bike rack Olivier de serres"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.5815611,
+        "lon": 0.3417932,
+        "name": "Marquage Paul Guillon",
+        "station_id": "Marquage Paul Guillon"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.584128,
+        "lon": 0.354717,
+        "name": "BikeRack Montbernage",
+        "station_id": "BikeRack Montbernage"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.565021329750024,
+        "lon": 0.3398427699705498,
+        "name": "Bikerack Gaultier",
+        "station_id": "Bikerack Gaultier"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.58787,
+        "lon": 0.345251,
+        "name": "Marquage troubadour",
+        "station_id": "Marquage troubadour"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.588911,
+        "lon": 0.360778,
+        "name": "Marquage Kennedy",
+        "station_id": "Marquage Kennedy"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.575823,
+        "lon": 0.329615,
+        "name": "AppuiVélo_48 bd Pont Achard",
+        "station_id": "AppuiVélo_48 bd Pont Achard"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.578386,
+        "lon": 0.331673,
+        "name": "AppuiVélos_57 BD Pont-Achard",
+        "station_id": "AppuiVélos_57 BD Pont-Achard"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.567858,
+        "lon": 0.332483,
+        "name": "Virtual Fernand Léger",
+        "station_id": "Virtual Fernand Léger"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.54752,
+        "lon": 0.30014,
+        "name": "BikeRack Mcdo Sud Poitiers",
+        "station_id": "BikeRack Mcdo Sud Poitiers"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.60168,
+        "lon": 0.325105,
+        "name": "BikeRack mcdo demi-lune",
+        "station_id": "BikeRack mcdo demi-lune"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.57109692964088,
+        "lon": 0.3253770915017749,
+        "name": "BikeRack Libération",
+        "station_id": "BikeRack Libération"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.57517,
+        "lon": 0.331709,
+        "name": "poitiers_parking_zidCEC6O9PP",
+        "station_id": "poitiers_parking_zidCEC6O9PP"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.575425,
+        "lon": 0.33759,
+        "name": "poitiers_parking_zidUH227WTA",
+        "station_id": "poitiers_parking_zidUH227WTA"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.57769,
+        "lon": 0.336126,
+        "name": "poitiers_parking_zidM6MPW2SS",
+        "station_id": "poitiers_parking_zidM6MPW2SS"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.576896,
+        "lon": 0.33944,
+        "name": "poitiers_parking_zid3MPRCCR9",
+        "station_id": "poitiers_parking_zid3MPRCCR9"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.57781,
+        "lon": 0.340619,
+        "name": "poitiers_parking_zidSX10SY47",
+        "station_id": "poitiers_parking_zidSX10SY47"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.57953,
+        "lon": 0.345004,
+        "name": "poitiers_parking_zidS5I6RPIV",
+        "station_id": "poitiers_parking_zidS5I6RPIV"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.577005,
+        "lon": 0.337005,
+        "name": "poitiers_parking_zid0UZO5ZAU",
+        "station_id": "poitiers_parking_zid0UZO5ZAU"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.577456,
+        "lon": 0.344141,
+        "name": "poitiers_parking_zid0SGMGQ3E",
+        "station_id": "poitiers_parking_zid0SGMGQ3E"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.582565,
+        "lon": 0.340423,
+        "name": "poitiers_parking_zidZ22WUBH3",
+        "station_id": "poitiers_parking_zidZ22WUBH3"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.581853,
+        "lon": 0.337563,
+        "name": "poitiers_parking_zidL5F8ZBPG",
+        "station_id": "poitiers_parking_zidL5F8ZBPG"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.581996,
+        "lon": 0.348736,
+        "name": "poitiers_parking_zidHG7G1QY8",
+        "station_id": "poitiers_parking_zidHG7G1QY8"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.58721,
+        "lon": 0.341243,
+        "name": "poitiers_parking_zidBORMIOWB",
+        "station_id": "poitiers_parking_zidBORMIOWB"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.583881,
+        "lon": 0.3461,
+        "name": "poitiers_parking_zidWDHN0BS0",
+        "station_id": "poitiers_parking_zidWDHN0BS0"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.587768,
+        "lon": 0.341471,
+        "name": "poitiers_parking_zidGGTSQRNJ",
+        "station_id": "poitiers_parking_zidGGTSQRNJ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.587835,
+        "lon": 0.340506,
+        "name": "poitiers_parking_zidILD4GIQ2",
+        "station_id": "poitiers_parking_zidILD4GIQ2"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.582866,
+        "lon": 0.336199,
+        "name": "poitiers_parking_zidMLENT4J5",
+        "station_id": "poitiers_parking_zidMLENT4J5"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.584911,
+        "lon": 0.340361,
+        "name": "poitiers_parking_zidSA0824IF",
+        "station_id": "poitiers_parking_zidSA0824IF"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.577559,
+        "lon": 0.339367,
+        "name": "poitiers_parking_zid8WSAMUQ1",
+        "station_id": "poitiers_parking_zid8WSAMUQ1"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.582029,
+        "lon": 0.338059,
+        "name": "poitiers_parking_zidJZMV09UH",
+        "station_id": "poitiers_parking_zidJZMV09UH"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.56651624458826,
+        "lon": 0.3886293333750547,
+        "name": "BikeRack Marcel Doré",
+        "station_id": "BikeRack Marcel Doré"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.59509,
+        "lon": 0.36382,
+        "name": "BikeRack Pépinière 1",
+        "station_id": "BikeRack Pépinière 1"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.59393,
+        "lon": 0.36353,
+        "name": "BikeRack Pépinière 2",
+        "station_id": "BikeRack Pépinière 2"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.59372,
+        "lon": 0.3638,
+        "name": "BikeRack Pépinière 3",
+        "station_id": "BikeRack Pépinière 3"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.55472138181088,
+        "lon": 0.39309600157911373,
+        "name": "BikeRack Pinel",
+        "station_id": "BikeRack Pinel"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.55351083238408,
+        "lon": 0.39563527348909233,
+        "name": "BikeRack URC",
+        "station_id": "BikeRack URC"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.552358,
+        "lon": 0.395562,
+        "name": "BikeRack Hopital de jour",
+        "station_id": "BikeRack Hopital de jour"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.551577,
+        "lon": 0.392141,
+        "name": "BikeRack Van Gogh",
+        "station_id": "BikeRack Van Gogh"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.55119261006027,
+        "lon": 0.3915194354631083,
+        "name": "BikeRack Amadeus",
+        "station_id": "BikeRack Amadeus"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.5893372284596,
+        "lon": 0.3693399646349473,
+        "name": "BikeRack Super U",
+        "station_id": "BikeRack Super U"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.5896767258156,
+        "lon": 0.3699454251256725,
+        "name": "Marquage Vélo Super U",
+        "station_id": "Marquage Vélo Super U"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.568416,
+        "lon": 0.354761,
+        "name": "poitiers_parking_8_Rue_du_Pontreau_zidSFMUTUWO",
+        "station_id": "poitiers_parking_8_Rue_du_Pontreau_zidSFMUTUWO"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.567942,
+        "lon": 0.356333,
+        "name": "poitiers_parking_25_Rue_du_Pontreau_zid9CPEHRNO",
+        "station_id": "poitiers_parking_25_Rue_du_Pontreau_zid9CPEHRNO"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.57001,
+        "lon": 0.348102,
+        "name": "poitiers_parking_42_Rue_Jean_Richard_Bloch_zidJH10XIDC",
+        "station_id": "poitiers_parking_42_Rue_Jean_Richard_Bloch_zidJH10XIDC",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.572498,
+        "lon": 0.35769,
+        "name": "poitiers_parking_4_Rue_Paul_Painleve_zid2BAT5DG7",
+        "station_id": "poitiers_parking_4_Rue_Paul_Painleve_zid2BAT5DG7"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.56661,
+        "lon": 0.344212,
+        "name": "poitiers_parking_129_Rue_du_Faubourg_Saint_Cyprien_zid7H3W5WNI",
+        "station_id": "poitiers_parking_129_Rue_du_Faubourg_Saint_Cyprien_zid7H3W5WNI"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.587605,
+        "lon": 0.374571,
+        "name": "poitiers_parking_9_Av_Louis_Michel_le_Peletier_zidTNQTOMG6",
+        "station_id": "poitiers_parking_9_Av_Louis_Michel_le_Peletier_zidTNQTOMG6"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.56816,
+        "lon": 0.355678,
+        "name": "poitiers_parking_10_rue_du_Pontreau_zidNH5MY7BS",
+        "station_id": "poitiers_parking_10_rue_du_Pontreau_zidNH5MY7BS"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.565444,
+        "lon": 0.341218,
+        "name": "poitiers_parking_2_rue_des_gravieres_zidWUNVOTYQ",
+        "station_id": "poitiers_parking_2_rue_des_gravieres_zidWUNVOTYQ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.56545778251261,
+        "lon": 0.3304187023330684,
+        "name": "poitiers_parking_58_Rue_de_la_Merigotte_zidF4WC6J5B",
+        "station_id": "poitiers_parking_58_Rue_de_la_Merigotte_zidF4WC6J5B",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.570301,
+        "lon": 0.345133,
+        "name": "poitiers_parking_20_Rue_de_Beausite_zidE725M8OI",
+        "station_id": "poitiers_parking_20_Rue_de_Beausite_zidE725M8OI"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.609982,
+        "lon": 0.330847,
+        "name": "poitiers_parking_19_Rue_Marcelin_Berthelot_zidM3DJOD0P",
+        "station_id": "poitiers_parking_19_Rue_Marcelin_Berthelot_zidM3DJOD0P"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.564743,
+        "lon": 0.338546,
+        "name": "poitiers_parking_Rue_Normandie_Niemen_zidZH47ASWB",
+        "station_id": "poitiers_parking_Rue_Normandie_Niemen_zidZH47ASWB"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.563134,
+        "lon": 0.30776,
+        "name": "BikeRack Loti",
+        "station_id": "BikeRack Loti"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.729082,
+        "lon": 0.44133,
+        "name": "poitiers_parking_Beaumont_Gare_zid89W2ZMPK",
+        "station_id": "poitiers_parking_Beaumont_Gare_zid89W2ZMPK"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.737233,
+        "lon": 0.42949,
+        "name": "poitiers_parking_Beaumont_Place_du_11_Nov_zid3HVSSG8K",
+        "station_id": "poitiers_parking_Beaumont_Place_du_11_Nov_zid3HVSSG8K"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.721926,
+        "lon": 0.456118,
+        "name": "poitiers_parking_Beaumont_Lac_zidJRZNQ844",
+        "station_id": "poitiers_parking_Beaumont_Lac_zidJRZNQ844"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.696646,
+        "lon": 0.426244,
+        "name": "poitiers_parking_Beaumont_Pharmacie_zidJP3CRVL1",
+        "station_id": "poitiers_parking_Beaumont_Pharmacie_zidJP3CRVL1"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.703322,
+        "lon": 0.421244,
+        "name": "poitiers_parking_Dissay_Gare_zidNJ2MX6ED",
+        "station_id": "poitiers_parking_Dissay_Gare_zidNJ2MX6ED"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.698811,
+        "lon": 0.427736,
+        "name": "poitiers_parking_Dissay_Chateau_zidJBI4TBMZ",
+        "station_id": "poitiers_parking_Dissay_Chateau_zidJBI4TBMZ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.704568,
+        "lon": 0.405932,
+        "name": "poitiers_parking_Dissay_Zone_economique_zidZI36URQ3",
+        "station_id": "poitiers_parking_Dissay_Zone_economique_zidZI36URQ3"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.698438,
+        "lon": 0.426167,
+        "name": "poitiers_parking_Dissay_Camping_zidA9BC9YMO",
+        "station_id": "poitiers_parking_Dissay_Camping_zidA9BC9YMO"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.715157,
+        "lon": 0.455721,
+        "name": "poitiers_parking_Beaumont_La_Poste_City_stade_zidIMTO1IOZ",
+        "station_id": "poitiers_parking_Beaumont_La_Poste_City_stade_zidIMTO1IOZ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.55834950376716,
+        "lon": 0.28819848213819316,
+        "name": "poitiers_parking_Vouneuil_Place_des_Tilleuls_zidIZ41WEL9",
+        "station_id": "poitiers_parking_Vouneuil_Place_des_Tilleuls_zidIZ41WEL9"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.562604,
+        "lon": 0.295288,
+        "name": "poitiers_parking_Vouneuil_Zone_virtuelle___test__zidWOCX2YH1",
+        "station_id": "poitiers_parking_Vouneuil_Zone_virtuelle___test__zidWOCX2YH1"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.577682,
+        "lon": 0.272297,
+        "name": "poitiers_parking_Vouneuil_R2B_zidFKKQAQKS",
+        "station_id": "poitiers_parking_Vouneuil_R2B_zidFKKQAQKS"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.703085,
+        "lon": 0.417776,
+        "name": "poitiers_parking_Dissay_Gymnase_zid6K92XLA3",
+        "station_id": "poitiers_parking_Dissay_Gymnase_zid6K92XLA3"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.575715,
+        "lon": 0.276687,
+        "name": "poitiers_parking_Vouneuil_Trot_In_Poitou_zidS2L9JUW5",
+        "station_id": "poitiers_parking_Vouneuil_Trot_In_Poitou_zidS2L9JUW5"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.573286,
+        "lon": 0.273054,
+        "name": "poitiers_parking_Vouneuil_Arceaux_mairie_zidQXR9AGUV",
+        "station_id": "poitiers_parking_Vouneuil_Arceaux_mairie_zidQXR9AGUV"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.60595493469948,
+        "lon": 0.2765537417822589,
+        "name": "poitiers_parking_Vouneuil_Boulangerie_Chevallier_zid48BT2U2W",
+        "station_id": "poitiers_parking_Vouneuil_Boulangerie_Chevallier_zid48BT2U2W"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.60573,
+        "lon": 0.274542,
+        "name": "poitiers_parking_Vouneuil_Point_Ecole_Jacques_Yves_Cousteau_zidG861ZM48",
+        "station_id": "poitiers_parking_Vouneuil_Point_Ecole_Jacques_Yves_Cousteau_zidG861ZM48"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.577484,
+        "lon": 0.275477,
+        "name": "poitiers_parking_Vouneuil_Ecole_Camille_Desmoulins_zidNM3MZ072",
+        "station_id": "poitiers_parking_Vouneuil_Ecole_Camille_Desmoulins_zidNM3MZ072"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.543067,
+        "lon": 0.410011,
+        "name": "poitiers_parking_Mignaloux_22_Place_des_Acacias_zidFHMPGE9I",
+        "station_id": "poitiers_parking_Mignaloux_22_Place_des_Acacias_zidFHMPGE9I"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.526097,
+        "lon": 0.411396,
+        "name": "poitiers_parking_Mignaloux_Gare_zidB1OVDOAR",
+        "station_id": "poitiers_parking_Mignaloux_Gare_zidB1OVDOAR"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.541343755769915,
+        "lon": 0.41434642955458745,
+        "name": "poitiers_parking_Mignaloux_Place_de_la_mairie_zidQVOO5AQF",
+        "station_id": "poitiers_parking_Mignaloux_Place_de_la_mairie_zidQVOO5AQF"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.541299,
+        "lon": 0.41548,
+        "name": "poitiers_parking_Mignaloux_Centre_Ville_zidGA9FBXW6",
+        "station_id": "poitiers_parking_Mignaloux_Centre_Ville_zidGA9FBXW6"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.565329775693044,
+        "lon": 0.40177378718606876,
+        "name": "poitiers_parking_Mignaloux_Breuil_l_abbesse_zidBNSR8U7A",
+        "station_id": "poitiers_parking_Mignaloux_Breuil_l_abbesse_zidBNSR8U7A"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.541287,
+        "lon": 0.416028,
+        "name": "poitiers_parking_Mignaloux_Bar_tabac_zidBKII33GR",
+        "station_id": "poitiers_parking_Mignaloux_Bar_tabac_zidBKII33GR"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.540614,
+        "lon": 0.403205,
+        "name": "poitiers_parking_Mignaloux_Zone_industriel_zid7BTNAHB4",
+        "station_id": "poitiers_parking_Mignaloux_Zone_industriel_zid7BTNAHB4"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.539972,
+        "lon": 0.412126,
+        "name": "poitiers_parking_Mignaloux_Espace_jeune_zidJ2LEZOVH",
+        "station_id": "poitiers_parking_Mignaloux_Espace_jeune_zidJ2LEZOVH"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.576414,
+        "lon": 0.303877,
+        "name": "poitiers_parking_Biard_parking_Gymnase_zidRGAZQ70U",
+        "station_id": "poitiers_parking_Biard_parking_Gymnase_zidRGAZQ70U"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.573325,
+        "lon": 0.310182,
+        "name": "poitiers_parking_Biard_Rue_des_Cedres_zid0S3C4QQB",
+        "station_id": "poitiers_parking_Biard_Rue_des_Cedres_zid0S3C4QQB"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.578895,
+        "lon": 0.31392,
+        "name": "poitiers_parking_Biard_Rue_Nungesser_zidW500Q4EY",
+        "station_id": "poitiers_parking_Biard_Rue_Nungesser_zidW500Q4EY"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.598745580395615,
+        "lon": 0.3033972158590323,
+        "name": "poitiers_parking_Biard_Route_de_Larnay_zidZHT87LW5",
+        "station_id": "poitiers_parking_Biard_Route_de_Larnay_zidZHT87LW5"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.597337,
+        "lon": 0.28161,
+        "name": "poitiers_parking_Biard_Zone_des_Bournalieres_zidG60KTJE7",
+        "station_id": "poitiers_parking_Biard_Zone_des_Bournalieres_zidG60KTJE7"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.576405469426426,
+        "lon": 0.30750459039339856,
+        "name": "poitiers_parking_Biard_Fournil_de_Biard_zidNM7IZG5I",
+        "station_id": "poitiers_parking_Biard_Fournil_de_Biard_zidNM7IZG5I"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.595889,
+        "lon": 0.280073,
+        "name": "poitiers_parking_Biard_Rue_du_Fief_des_Poiriers_zidX4RQNC3N",
+        "station_id": "poitiers_parking_Biard_Rue_du_Fief_des_Poiriers_zidX4RQNC3N"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.595887,
+        "lon": 0.310426,
+        "name": "poitiers_parking_Biard_Avenue_Marcel_Dassault_zidEA26KTKH",
+        "station_id": "poitiers_parking_Biard_Avenue_Marcel_Dassault_zidEA26KTKH"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.57637,
+        "lon": 0.30452,
+        "name": "poitiers_parking_Biard_BasketBall_playground_zidED84NZ8R",
+        "station_id": "poitiers_parking_Biard_BasketBall_playground_zidED84NZ8R"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.578399,
+        "lon": 0.305312,
+        "name": "poitiers_parking_Biard_37_rue_des_ecoles_zid1VL4T2ZB",
+        "station_id": "poitiers_parking_Biard_37_rue_des_ecoles_zid1VL4T2ZB"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.650952,
+        "lon": 0.375495,
+        "name": "poitiers_parking_Chasseneuil_Mairie_zid7CAZ8R3T",
+        "station_id": "poitiers_parking_Chasseneuil_Mairie_zid7CAZ8R3T"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.576604,
+        "lon": 0.307113,
+        "name": "poitiers_parking_Biard_Rue_des_Alisiers_zidKMGFU59L",
+        "station_id": "poitiers_parking_Biard_Rue_des_Alisiers_zidKMGFU59L"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.657404,
+        "lon": 0.378195,
+        "name": "poitiers_parking_Chasseneuil_1_rue_du_stade_zidNSVF9MBS",
+        "station_id": "poitiers_parking_Chasseneuil_1_rue_du_stade_zidNSVF9MBS"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.669578,
+        "lon": 0.376809,
+        "name": "poitiers_parking_Chasseneuil_Gare_Futuroscope_zidO37A0GEY",
+        "station_id": "poitiers_parking_Chasseneuil_Gare_Futuroscope_zidO37A0GEY"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.652508,
+        "lon": 0.373956,
+        "name": "poitiers_parking_Chasseneuil_Place_de_la_Gare_zidEGJ0EK6E",
+        "station_id": "poitiers_parking_Chasseneuil_Place_de_la_Gare_zidEGJ0EK6E"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.642301,
+        "lon": 0.358354,
+        "name": "poitiers_parking_Chasseneuil_18_rue_des_Philambins_zidHL9MNEFS",
+        "station_id": "poitiers_parking_Chasseneuil_18_rue_des_Philambins_zidHL9MNEFS"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.662004,
+        "lon": 0.359952,
+        "name": "poitiers_parking_Chasseneuil_ISAE_zidC18XKAQK",
+        "station_id": "poitiers_parking_Chasseneuil_ISAE_zidC18XKAQK"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.658639,
+        "lon": 0.361672,
+        "name": "poitiers_parking_Chasseneuil_Faculte_des_Sciences_zidMKF5725U",
+        "station_id": "poitiers_parking_Chasseneuil_Faculte_des_Sciences_zidMKF5725U"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.657487,
+        "lon": 0.370577,
+        "name": "poitiers_parking_Chasseneuil_3_Avenue_des_Temps_Modernes_zidT2JV2UUU",
+        "station_id": "poitiers_parking_Chasseneuil_3_Avenue_des_Temps_Modernes_zidT2JV2UUU"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.646824,
+        "lon": 0.369879,
+        "name": "poitiers_parking_Chasseneuil_7_rue_du_Maraudeau_zid1HD1P82K",
+        "station_id": "poitiers_parking_Chasseneuil_7_rue_du_Maraudeau_zid1HD1P82K"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.64931,
+        "lon": 0.357967,
+        "name": "poitiers_parking_Chasseneuil_Zone_commerciale_zid9USVUJ6Q",
+        "station_id": "poitiers_parking_Chasseneuil_Zone_commerciale_zid9USVUJ6Q"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.664041,
+        "lon": 0.367557,
+        "name": "poitiers_parking_Chasseneuil_Futuroscope_Arena_zidYFHMJW3F",
+        "station_id": "poitiers_parking_Chasseneuil_Futuroscope_Arena_zidYFHMJW3F"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.655156,
+        "lon": 0.36025,
+        "name": "poitiers_parking_Chasseneuil_6_Rue_Alexander_Graham_Bell_zidVLOP6LOR",
+        "station_id": "poitiers_parking_Chasseneuil_6_Rue_Alexander_Graham_Bell_zidVLOP6LOR"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.64918,
+        "lon": 0.369476,
+        "name": "poitiers_parking_Chasseneuil_9_Rue_des_Groseillers_zidUS553YIV",
+        "station_id": "poitiers_parking_Chasseneuil_9_Rue_des_Groseillers_zidUS553YIV"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.645777,
+        "lon": 0.364143,
+        "name": "poitiers_parking_Chasseneuil_6_Avenue_de_Lajana_zid7SMUXPZQ",
+        "station_id": "poitiers_parking_Chasseneuil_6_Avenue_de_Lajana_zid7SMUXPZQ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.661912,
+        "lon": 0.373333,
+        "name": "poitiers_parking_Chasseneuil_2_Allee_des_Freres_Montgolfier_zidLG02Z6OK",
+        "station_id": "poitiers_parking_Chasseneuil_2_Allee_des_Freres_Montgolfier_zidLG02Z6OK"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.666653,
+        "lon": 0.368943,
+        "name": "poitiers_parking_Chasseneuil_Auchan_zidBB2S6H2V",
+        "station_id": "poitiers_parking_Chasseneuil_Auchan_zidBB2S6H2V"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.667233,
+        "lon": 0.358676,
+        "name": "poitiers_parking_Chasseneuil_Boulevard_Descartes__zidRVBYFSAL",
+        "station_id": "poitiers_parking_Chasseneuil_Boulevard_Descartes__zidRVBYFSAL"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.652658,
+        "lon": 0.367244,
+        "name": "poitiers_parking_Chasseneuil_21_rue_du_Commerce_zidBNJO0WTV",
+        "station_id": "poitiers_parking_Chasseneuil_21_rue_du_Commerce_zidBNJO0WTV"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.660536,
+        "lon": 0.365599,
+        "name": "poitiers_parking_Chasseneuil_Arret_bus_Palais_des_Congres_zidT9PLI8MC",
+        "station_id": "poitiers_parking_Chasseneuil_Arret_bus_Palais_des_Congres_zidT9PLI8MC"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.53410346825477,
+        "lon": 0.26670188023909985,
+        "name": "poitiers_parking_Place_de_la_Mairie_zidADZC8VBE",
+        "station_id": "poitiers_parking_Place_de_la_Mairie_zidADZC8VBE"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.5411931,
+        "lon": 0.2633995,
+        "name": "poitiers_parking_Quartier_des_Grandes_Chaumes_zid62B8UXH1",
+        "station_id": "poitiers_parking_Quartier_des_Grandes_Chaumes_zid62B8UXH1"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.5388759,
+        "lon": 0.2694904,
+        "name": "poitiers_parking_Point_3_zidDAXRJRDW",
+        "station_id": "poitiers_parking_Point_3_zidDAXRJRDW"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.538098,
+        "lon": 0.2610282,
+        "name": "poitiers_parking_Point_1_zidF9ZKNZMT",
+        "station_id": "poitiers_parking_Point_1_zidF9ZKNZMT"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.5365545,
+        "lon": 0.2576152,
+        "name": "poitiers_parking_53_route_de_Beruges__zidDHRLT7KU",
+        "station_id": "poitiers_parking_53_route_de_Beruges__zidDHRLT7KU"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.5436952,
+        "lon": 0.2813056,
+        "name": "poitiers_parking_Point_4_zidPY05R5QS",
+        "station_id": "poitiers_parking_Point_4_zidPY05R5QS"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.529299,
+        "lon": 0.2795374,
+        "name": "poitiers_parking_Point_1_zidOUAUNKWZ",
+        "station_id": "poitiers_parking_Point_1_zidOUAUNKWZ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.5289774,
+        "lon": 0.2800823,
+        "name": "poitiers_parking_Arceaux_cinema_zid18LZN9WN",
+        "station_id": "poitiers_parking_Arceaux_cinema_zid18LZN9WN"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.53085650718492,
+        "lon": 0.262310065264847,
+        "name": "BikeRack Béruges",
+        "station_id": "BikeRack Béruges"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.531308,
+        "lon": 0.262291,
+        "name": "BikeRack Poste Fontaine",
+        "station_id": "BikeRack Poste Fontaine"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.592785546968486,
+        "lon": 0.38334726199511404,
+        "name": "BikeRack Couthon",
+        "station_id": "BikeRack Couthon"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.57486,
+        "lon": 0.33944,
+        "name": "poitiers_parking_BikeRack_Ilot_Tison_1_zidQF1VAGBW",
+        "station_id": "poitiers_parking_BikeRack_Ilot_Tison_1_zidQF1VAGBW"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.54489749434396,
+        "lon": 0.25105530145125887,
+        "name": "poitiers_parking_Trois_Thuets_zidDYVGLPI3",
+        "station_id": "poitiers_parking_Trois_Thuets_zidDYVGLPI3"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.5701464423805,
+        "lon": 0.3843923497723021,
+        "name": "poitiers_parking_Virtual_Lefebvre_temp_zidZ9A19RVX",
+        "station_id": "poitiers_parking_Virtual_Lefebvre_temp_zidZ9A19RVX"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.561469,
+        "lon": 0.38412,
+        "name": "poitiers_parking_Internat_de_medecine_zid29G3BQ0Y",
+        "station_id": "poitiers_parking_Internat_de_medecine_zid29G3BQ0Y"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.557445,
+        "lon": 0.384335,
+        "name": "poitiers_parking_CCV_cote_IRFPS_nephrologie_zid3MCB3218",
+        "station_id": "poitiers_parking_CCV_cote_IRFPS_nephrologie_zid3MCB3218"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.557399,
+        "lon": 0.386855,
+        "name": "poitiers_parking_CCV_cote_urgences_CCV_zidSXLBX2UW",
+        "station_id": "poitiers_parking_CCV_cote_urgences_CCV_zidSXLBX2UW"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.56548495661343,
+        "lon": 0.37356652761752873,
+        "name": "poitiers_parking_BikeRack_Coop_zidI62LGLCY",
+        "station_id": "poitiers_parking_BikeRack_Coop_zidI62LGLCY"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.558198,
+        "lon": 0.343861,
+        "name": "poitiers_parking_SB_1_zidG9T9H64D",
+        "station_id": "poitiers_parking_SB_1_zidG9T9H64D"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.555103,
+        "lon": 0.333509,
+        "name": "poitiers_parking_SB_2_zidDW1DF9CO",
+        "station_id": "poitiers_parking_SB_2_zidDW1DF9CO"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.552628,
+        "lon": 0.323031,
+        "name": "poitiers_parking_SB_4_zid5WDPO9MA",
+        "station_id": "poitiers_parking_SB_4_zid5WDPO9MA"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.56311926057567,
+        "lon": 0.3640793721290997,
+        "name": "poitiers_parking_SB_5_zidUGHH5IRC",
+        "station_id": "poitiers_parking_SB_5_zidUGHH5IRC"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.54953,
+        "lon": 0.34101,
+        "name": "poitiers_parking_SB_6_zidIVMC1DED",
+        "station_id": "poitiers_parking_SB_6_zidIVMC1DED"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.5491,
+        "lon": 0.34133,
+        "name": "poitiers_parking_SB_7_zidL17TMOMT",
+        "station_id": "poitiers_parking_SB_7_zidL17TMOMT"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.54949,
+        "lon": 0.34156,
+        "name": "poitiers_parking_SB_8_zid5WPZ27Y0",
+        "station_id": "poitiers_parking_SB_8_zid5WPZ27Y0"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.54976,
+        "lon": 0.34245,
+        "name": "poitiers_parking_SB_9_zidT3O89B3B",
+        "station_id": "poitiers_parking_SB_9_zidT3O89B3B"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.54984,
+        "lon": 0.34205,
+        "name": "poitiers_parking_SB_10_zidNVTWZC6G",
+        "station_id": "poitiers_parking_SB_10_zidNVTWZC6G"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.559181,
+        "lon": 0.329717,
+        "name": "poitiers_parking_SB_12_zidL6N9JYH0",
+        "station_id": "poitiers_parking_SB_12_zidL6N9JYH0"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.558894,
+        "lon": 0.344242,
+        "name": "poitiers_parking_La_Hune_zidGTMXGX38",
+        "station_id": "poitiers_parking_La_Hune_zidGTMXGX38"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.555502,
+        "lon": 0.332572,
+        "name": "poitiers_parking_L_Ermitage_zidOP8TVHW2",
+        "station_id": "poitiers_parking_L_Ermitage_zidOP8TVHW2"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.548673,
+        "lon": 0.319997,
+        "name": "poitiers_parking_CFA_zid4RELT4KA",
+        "station_id": "poitiers_parking_CFA_zid4RELT4KA"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.559448,
+        "lon": 0.361456,
+        "name": "poitiers_parking_36_Rue_Eric_Tabarly_zidKCOX2KPE",
+        "station_id": "poitiers_parking_36_Rue_Eric_Tabarly_zidKCOX2KPE"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.549937,
+        "lon": 0.348415,
+        "name": "poitiers_parking_Rue_des_Buis_zidF3TI4HO8",
+        "station_id": "poitiers_parking_Rue_des_Buis_zidF3TI4HO8"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.545736,
+        "lon": 0.330627,
+        "name": "poitiers_parking_SB_13_zidDXM3JVNZ",
+        "station_id": "poitiers_parking_SB_13_zidDXM3JVNZ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.54978,
+        "lon": 0.33784,
+        "name": "poitiers_parking_Point_1_zid62Y6SRYE",
+        "station_id": "poitiers_parking_Point_1_zid62Y6SRYE"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.59217,
+        "lon": 0.36464,
+        "name": "poitiers_parking_BikeRack_Ecole_daudet_zidSJS9RL25",
+        "station_id": "poitiers_parking_BikeRack_Ecole_daudet_zidSJS9RL25",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.58542,
+        "lon": 0.31117,
+        "name": "poitiers_parking_BikeRack_Aeroport_zidW6MSFNLK",
+        "station_id": "poitiers_parking_BikeRack_Aeroport_zidW6MSFNLK",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.58461,
+        "lon": 0.31392,
+        "name": "poitiers_parking__Marquage_Aeroport_zid2RLIQXPV",
+        "station_id": "poitiers_parking__Marquage_Aeroport_zid2RLIQXPV",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.57752,
+        "lon": 0.35531,
+        "name": "poitiers_parking_BikeRack_Dunes_zid5F35PXK6",
+        "station_id": "poitiers_parking_BikeRack_Dunes_zid5F35PXK6",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.56563,
+        "lon": 0.34968,
+        "name": "poitiers_parking_Marquage_Place_de_France_zidEWSB2OT3",
+        "station_id": "poitiers_parking_Marquage_Place_de_France_zidEWSB2OT3",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.56941,
+        "lon": 0.3688,
+        "name": "poitiers_parking_marquage59ruelaganterie_zid6VFJ36QQ",
+        "station_id": "poitiers_parking_marquage59ruelaganterie_zid6VFJ36QQ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.56617,
+        "lon": 0.31899,
+        "name": "poitiers_parking_Marquage_127AvedelaLiberation_zid1A23L2S1",
+        "station_id": "poitiers_parking_Marquage_127AvedelaLiberation_zid1A23L2S1"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.56788,
+        "lon": 0.31795,
+        "name": "poitiers_parking_BikeRack_Abbe_Epee_zid2NZ1JETN",
+        "station_id": "poitiers_parking_BikeRack_Abbe_Epee_zid2NZ1JETN",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.56394,
+        "lon": 0.38317,
+        "name": "poitiers_parking_BikeRack_sante_universitaire_zidWJRARMHZ",
+        "station_id": "poitiers_parking_BikeRack_sante_universitaire_zidWJRARMHZ",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.60176,
+        "lon": 0.30346,
+        "name": "poitiers_parking_Marquage_Colbert_zidHSSH3FHU",
+        "station_id": "poitiers_parking_Marquage_Colbert_zidHSSH3FHU",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.57421,
+        "lon": 0.3451,
+        "name": "poitiers_parking_BikeRack_Promenade_Cours_zidQ5OURHMY",
+        "station_id": "poitiers_parking_BikeRack_Promenade_Cours_zidQ5OURHMY",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.57459,
+        "lon": 0.37202,
+        "name": "poitiers_parking_BikeRack_Action_zidQA6E8OQ0",
+        "station_id": "poitiers_parking_BikeRack_Action_zidQA6E8OQ0",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.57456,
+        "lon": 0.34654,
+        "name": "poitiers_parking_BikeRack_12_pont_cyprien_zid7VMQYXDV",
+        "station_id": "poitiers_parking_BikeRack_12_pont_cyprien_zid7VMQYXDV",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.57743,
+        "lon": 0.33226,
+        "name": "poitiers_parking_BikeRack_Saint_Hilaire_zidGWXWLBIJ",
+        "station_id": "poitiers_parking_BikeRack_Saint_Hilaire_zidGWXWLBIJ",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.58207,
+        "lon": 0.34145,
+        "name": "poitiers_parking_BikeRack_Grande_ecole_zid6EK4U3SK",
+        "station_id": "poitiers_parking_BikeRack_Grande_ecole_zid6EK4U3SK",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.576265458436566,
+        "lon": 0.3531959308505796,
+        "name": "poitiers_parking_BikeRack_1_pont_neuf_zidSUVOSKUM",
+        "station_id": "poitiers_parking_BikeRack_1_pont_neuf_zidSUVOSKUM",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.55822675275021,
+        "lon": 0.38218579160995436,
+        "name": "poitiers_parking_spot_jean_bernard_zidUNHECI5I",
+        "station_id": "poitiers_parking_spot_jean_bernard_zidUNHECI5I",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.61293,
+        "lon": 0.34109,
+        "name": "poitiers_parking_Parking_poitiers_bonnetiers_zidV4ZY346F",
+        "station_id": "poitiers_parking_Parking_poitiers_bonnetiers_zidV4ZY346F",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.56423,
+        "lon": 0.34017,
+        "name": "poitiers_parking_BikeRack_Gaultier_zidOJET7KS9",
+        "station_id": "poitiers_parking_BikeRack_Gaultier_zidOJET7KS9",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.56461,
+        "lon": 0.34009,
+        "name": "poitiers_parking_BikeRack_Rue_Gaultier_zidQ3071ZX0",
+        "station_id": "poitiers_parking_BikeRack_Rue_Gaultier_zidQ3071ZX0",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "capacity": 2,
+        "is_virtual_station": true,
+        "lat": 46.58304,
+        "lon": 0.34833,
+        "name": "poitiers_parking_BikeRack_Minimes_zidMVU2EAGU",
+        "station_id": "poitiers_parking_BikeRack_Minimes_zidMVU2EAGU",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.58132,
+        "lon": 0.35201,
+        "name": "poitiers_parking_BikeRack_20_grand_rue_zidOKDJQEIY",
+        "station_id": "poitiers_parking_BikeRack_20_grand_rue_zidOKDJQEIY",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.58052,
+        "lon": 0.35556,
+        "name": "poitiers_parking_Parking_Rack_Brigade_zidAZ8EJLV4",
+        "station_id": "poitiers_parking_Parking_Rack_Brigade_zidAZ8EJLV4",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.59857,
+        "lon": 0.31246,
+        "name": "poitiers_parking_LocaKase_Poitiers_zidBVQLJ5NR",
+        "station_id": "poitiers_parking_LocaKase_Poitiers_zidBVQLJ5NR",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.56995,
+        "lon": 0.35041,
+        "name": "poitiers_parking_Marquage_Ronsard_zidA0FQ06H2",
+        "station_id": "poitiers_parking_Marquage_Ronsard_zidA0FQ06H2",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.57289,
+        "lon": 0.39262,
+        "name": "poitiers_parking_Virtual_VilleSalem_zid5YTJWT4O",
+        "station_id": "poitiers_parking_Virtual_VilleSalem_zid5YTJWT4O",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.55386,
+        "lon": 0.39348,
+        "name": "poitiers_parking_Centre_Social_zidPSNGIXF5",
+        "station_id": "poitiers_parking_Centre_Social_zidPSNGIXF5",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.58387,
+        "lon": 0.3438,
+        "name": "poitiers_parking_office_de_tourisme_zidWSMUCQRO",
+        "station_id": "poitiers_parking_office_de_tourisme_zidWSMUCQRO",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.56075,
+        "lon": 0.37195,
+        "name": "poitiers_parking_victor_schoelcher_zidFJK690GM",
+        "station_id": "poitiers_parking_victor_schoelcher_zidFJK690GM",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.5729,
+        "lon": 0.3666,
+        "name": "poitiers_parking_Pierre_levee_zidWGOAPNHX",
+        "station_id": "poitiers_parking_Pierre_levee_zidWGOAPNHX",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.57838,
+        "lon": 0.31997,
+        "name": "poitiers_parking_Virtual_Leopolrd_Senghor_zidLSWB3NY1",
+        "station_id": "poitiers_parking_Virtual_Leopolrd_Senghor_zidLSWB3NY1",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      }
+    ]
+  },
+  "last_updated": 1771749841,
+  "ttl": 0,
+  "version": "2.2"
+}

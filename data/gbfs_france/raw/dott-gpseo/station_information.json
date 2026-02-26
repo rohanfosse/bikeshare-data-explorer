@@ -1,0 +1,4221 @@
+{
+  "data": {
+    "stations": [
+      {
+        "is_virtual_station": true,
+        "lat": 48.9253696,
+        "lon": 2.0443637,
+        "name": "POI43 Albert Joly",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "a08295b5-b476-460c-89c6-a0d2136a0a5c",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9249124,
+        "lon": 2.0305978,
+        "name": "POI52 Œillets",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "398bdad0-2802-4725-a9ee-5994923ec254",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.000208,
+        "lon": 1.6870732,
+        "name": "MLJ22 Maison médicale",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "f31a4b08-5d2c-435f-91b4-76087fd2fd88",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9661431,
+        "lon": 1.7216139,
+        "name": "MLV28 Toucques",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "12c117e3-9607-404d-8c0b-6e5e2d467bd4",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.00402941,
+        "lon": 2.088443243,
+        "name": "CSH07 De Gaulle",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "583d6c3c-c32f-43a1-8524-e42fbb3d212c",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.969153,
+        "lon": 2.042543,
+        "name": "AND03 Marottes",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "2a338994-ba61-46d4-ab46-7889899d4c74",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9206399,
+        "lon": 2.0357789,
+        "name": "POI46 Dr. Schweizer",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "c7480c80-889d-470b-adda-bdc449add21c",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9398754,
+        "lon": 2.0222652,
+        "name": "CSP16 M. Berteaux",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "84bb28d9-cf05-4b84-aff2-1339c80cf9d0",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9200561,
+        "lon": 2.0268018,
+        "name": "POI12 Blanche",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "cfd7fa7c-f549-4d5d-81e5-9595eb7d0730",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.00599946,
+        "lon": 1.69376364,
+        "name": "MLJ03 Aviron",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "42ef1495-735c-48ee-a63c-141526d7f6e8",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.93056,
+        "lon": 2.0364469,
+        "name": "POI07 Meissonier",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "569df499-245b-426f-9b51-8ea3ece16458",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9361372,
+        "lon": 2.0566674,
+        "name": "POI41 Stade",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "255cf059-fa32-4f63-8bed-c1c8ee1749c0",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.999592,
+        "lon": 2.107059,
+        "name": "CSH30 Clément",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "64cc9bb8-d91d-4ec3-99bf-6869c974562c",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9239424,
+        "lon": 2.034714,
+        "name": "POI26 Michel de l'Hôpital",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "c3095409-5bba-4a5c-ab27-30d5140c6948",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9917701,
+        "lon": 1.7415363,
+        "name": "LIM06 Chasse 2",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "7e4c303e-7cef-4f2d-92c4-eb1349345780",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.967011,
+        "lon": 2.045744,
+        "name": "AND05 Leclerc",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "179dba87-a7e2-49a7-8080-374d108349d4",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.94762462,
+        "lon": 2.03974575,
+        "name": "CSP29 Saint-Pierre",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "cda7101a-e425-4874-bbdf-080303a2a7b8",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9328038,
+        "lon": 2.0389006,
+        "name": "POI57 Gare de Poissy - Seine",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "64c86e9a-12bb-4f0d-b32b-860e4ea61acc",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9190091,
+        "lon": 2.0336348,
+        "name": "POI55 Aigremont",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "7aba4485-e0d9-4d6b-aa22-cd99aa0879c8",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.003026,
+        "lon": 2.083431,
+        "name": "CSH12 Loge Mathieu",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "ca17ca32-5c4c-4398-a0cc-e07464000dc8",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9878032,
+        "lon": 2.0819042,
+        "name": "CSH61 Ile du Bac",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "a86a79c5-c6e4-4744-bcc2-d5c489b5f884",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.97533,
+        "lon": 1.71442,
+        "name": "MLV17 Parc de la Vallée",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "6d9c0df5-924e-4a9a-aed1-a635ec6545ac",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9477526,
+        "lon": 2.0628377,
+        "name": "POI64 Lycée Charles de Gaulle",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "21cc547d-204b-45e2-95ca-a21fbc77a108",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9946471,
+        "lon": 1.7440181,
+        "name": "LIM16 Stade",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "238ea108-c899-40fa-99f3-127b632585f4",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9668267,
+        "lon": 1.7142926,
+        "name": "MLV19 Francis James",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "00ff130c-80d2-4a13-8f14-f2970d3ee550",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9870953,
+        "lon": 1.7058316,
+        "name": "MLV26 Salengro",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "307abd93-257d-43a0-8629-e0d7eb242d74",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.99192883,
+        "lon": 2.115286913,
+        "name": "CSH24 Gaillon",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "b3d548f1-ce1f-4246-8ba0-049cbd5cd48c",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.98840483,
+        "lon": 1.70324904,
+        "name": "MLV31 Gare",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "f3c5d923-9db7-416f-a431-613be30900e0",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9905285,
+        "lon": 1.7103844,
+        "name": "MLJ08 Strasbourg",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "4d83b39d-c71c-41e1-862a-2e191ac364b8",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9880335,
+        "lon": 1.9011512,
+        "name": "LMX40 Jaurès",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "92b0b40e-5c6b-43da-a428-be79b91ce4c4",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9964778,
+        "lon": 1.7479327,
+        "name": "LIM15 Meunières",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "31b24413-6022-4ed6-8cf5-26f8cac97134",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.98824,
+        "lon": 1.671391,
+        "name": "BUC02 Centre commercial",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "87d61b6a-52d6-4a40-b57c-4d5477b81090",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.000152,
+        "lon": 2.082497,
+        "name": "CSH11 Damme",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "3eb59d1d-1831-4184-9e8e-3f13a85db364",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.003811,
+        "lon": 2.108661,
+        "name": "CSH39 Foch",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "24329319-bd25-456a-b635-4173d08882c4",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.0064304,
+        "lon": 1.9077518,
+        "name": "MEY01 L'église",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "be131b35-b7f0-46b9-9819-8c68b342e308",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9895044,
+        "lon": 1.7045604,
+        "name": "MLJ21 Gare Mantes-la-Jolie Nord",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "0328b320-8801-476d-a749-057d10c43d14",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.00427,
+        "lon": 1.6790981,
+        "name": "MLJ02 Aqualude",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "5e802b62-4379-4ef8-9746-1b7b5f6379c0",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9834486,
+        "lon": 1.9133841,
+        "name": "LMX25 Lefaucheux",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "08e76e9e-4217-473c-9b79-bacce6d1a87c",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9300188,
+        "lon": 2.041798,
+        "name": "POI17B Général de Gaulle/Paix",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "0dc1dc5c-0850-4990-9189-0a280ce3dbc8",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9951308,
+        "lon": 1.7323492,
+        "name": "LIM11 Clemenceau",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "d32e639a-2a7a-4ac6-9628-77b8845dd648",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.995266,
+        "lon": 2.108656,
+        "name": "CSH25 Moulin",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "710b18f0-ea90-435b-8ea5-af6243d2f38c",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.002834,
+        "lon": 2.119534,
+        "name": "CSH42 Pincerais",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "a1dac480-30da-4323-ae99-be60e5aacff4",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9967467,
+        "lon": 1.6921071,
+        "name": "MLJ13 Stade",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "cd473dd3-a611-449e-b782-d3fbdc8e577c",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9239072,
+        "lon": 2.0400687,
+        "name": "POI44 Paul Poret",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "4b284acf-86f9-45d7-818e-8d35ce8e572c",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.980665,
+        "lon": 1.9083912,
+        "name": "LMX53 Mars",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "56122b4c-eb1f-4f0a-aedb-d10e32dd4e1c",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9858675,
+        "lon": 1.8951219,
+        "name": "LMX28 Jaurès",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "091cf551-c567-406f-94cf-6ab7cde894b4",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.98671542,
+        "lon": 1.927037395,
+        "name": "LMX22 Croix Verte",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "c601eac7-b15f-435a-9bae-b13284908cc8",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9945678,
+        "lon": 1.7061462,
+        "name": "MLJ31 Toutain",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "99157604-a5ea-4264-add1-3e5579347c74",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9838048,
+        "lon": 1.9097329,
+        "name": "LMX49 Vilain",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "1ac36a26-01f8-4279-b22a-25494d60e140",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.005434,
+        "lon": 2.10475,
+        "name": "CSH36 Broutin",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "95400a79-0bf3-42a8-8610-f35e83a6c0c8",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.007401,
+        "lon": 1.897071,
+        "name": "HAR03 Beaumont",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "0767d5d3-7bb5-449f-b203-c8e0782bb4c4",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9827052,
+        "lon": 1.6944091,
+        "name": "MLV30 G. Degrond",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "3747f709-907d-4090-804b-3dc557889bd0",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9868427,
+        "lon": 1.9067278,
+        "name": "LMX26 Lagrange",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "167c2825-63b8-4e0b-8a54-ec937d3c4e54",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9723754,
+        "lon": 1.7130136,
+        "name": "MLV25 Houdan",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "897aaf68-9754-47a1-a0ae-713c0a1e498c",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.0015996,
+        "lon": 1.7216791,
+        "name": "LIM26 Vinaver 2",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "efb7254a-081b-4f0b-b0c6-aaa418f72dd4",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9824043,
+        "lon": 1.9233778,
+        "name": "LMX09 Thomas",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "42eaef8d-c2af-4a94-8d09-cc9c588509a4",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9986182,
+        "lon": 1.7250334,
+        "name": "LIM24 Vinaver 1",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "91bf2bdc-1e96-4981-9f89-21cd8ca29a6c",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9325852,
+        "lon": 2.0423043,
+        "name": "POI20 JC Mary",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "4a2e57b1-2670-49bb-816b-c2124dc23a08",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.992761,
+        "lon": 2.088156,
+        "name": "CSH16 Nonnains",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "9f29df3d-fde5-4eef-b7e3-9c6e866f4c38",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.998265,
+        "lon": 2.104956,
+        "name": "CSH20 Pasteur",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "ed2cabbf-884c-4dd1-b377-5b06d87d0e10",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9696957,
+        "lon": 1.7172886,
+        "name": "MLV07 Ferme des Pierres",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "4911de22-e5c6-41a2-9d5b-12eb95673abc",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9301266,
+        "lon": 2.0485733,
+        "name": "POI42 Pasteur",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "6800e396-ac3c-4f38-9446-0a9e64f39ea8",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9258107,
+        "lon": 2.0401146,
+        "name": "POI08 Capucines",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "69b59bad-6f37-45f7-8725-d2c02733c974",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9996838,
+        "lon": 1.6742465,
+        "name": "MLJ27 CTM",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "00e899dc-a2c5-4c87-87e5-046a6df6a590",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.00105249,
+        "lon": 2.090853378,
+        "name": "CSH06 Briand",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "ae6760ae-d02a-43e3-8db9-a7c0659eb660",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9963057,
+        "lon": 1.6857541,
+        "name": "MLJ20 Pascal",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "ee64df7d-b5e4-4d20-b50f-036397a091ac",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9289263,
+        "lon": 2.041569,
+        "name": "POI35 Cep",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "98f8e082-0a07-4294-8c45-93790eb34288",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.993281,
+        "lon": 2.094221,
+        "name": "CSH18 Mairie",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "bbb0e001-0608-494f-8eea-57710f68dc30",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.0020588,
+        "lon": 1.6941791,
+        "name": "MLJ01 Garennes",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "44a32ff5-5db2-4b84-9509-e3277a812aa4",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9826228,
+        "lon": 1.8930674,
+        "name": "LMX45 Descartes",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "84e08c8b-0848-489b-8568-0d0e53c96e50",
+        "vehicle_capacity": {
+          "dott_bicycle": 0,
+          "dott_scooter": 0
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9954013,
+        "lon": 1.7257503,
+        "name": "LIM23 Pavillons",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "d38b9b26-fcb4-4c4e-aa1c-fdd382971124",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9945648,
+        "lon": 1.9151804,
+        "name": "LMX11 Roch",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "7bad49c8-751b-478a-a7db-413a8d8dc608",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9224981,
+        "lon": 2.0357396,
+        "name": "POI03 Villiers",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "6baec86a-b068-41c1-bc4a-cd0af66011bc",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9978984,
+        "lon": 1.7099142,
+        "name": "MLJ18 Tabu",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "90d85bf5-ed3d-448e-9d8d-9d0a9d525674",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9514841,
+        "lon": 2.045121,
+        "name": "CSP22 Île de la dérivation",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "a510f231-827b-47db-9b47-3ab95c5346e4",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.92740862,
+        "lon": 2.043362492,
+        "name": "POI10 Mairie",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "b59752b1-f35d-418c-92ec-c6c7347b48e4",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9187727,
+        "lon": 2.0130969,
+        "name": "POI50 Monts Chauvets",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "6e912707-2428-442c-8cb2-ef5e80c7e3f0",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9885828,
+        "lon": 1.9111406,
+        "name": "LMX37 Briand",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "5816cf44-ce01-4e52-aaa0-6526be4db7a4",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9897254,
+        "lon": 1.7393003,
+        "name": "LIM05 Chasse 1",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "98192b08-eee2-4f08-b0a4-875ab0eeda24",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.974664,
+        "lon": 2.049594,
+        "name": "AND01 Gare",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "cca4a594-328d-4bd9-9d1e-439f84a11648",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9934065,
+        "lon": 1.9124166,
+        "name": "LMX47 Dunant",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "cd3b31c5-257d-4b72-8350-b960d2bc81c4",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9216603,
+        "lon": 2.0276637,
+        "name": "POI28 Centre social",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "c999136c-bd98-47a9-9287-980fb2b770c0",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9203795,
+        "lon": 2.0389271,
+        "name": "POI23 Saint-Barthélémy",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "a6a3f487-0f71-4f20-af6b-a589c2a4ef54",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.95104,
+        "lon": 2.038319,
+        "name": "CSP30 Louis Armand",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "319bd02b-9c20-4316-a18f-d025ac3241c0",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.94626635,
+        "lon": 2.032844634,
+        "name": "CSP21 Quartier Pissefontaine",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "3134e916-d9c7-4a73-9bb5-4aa9e0b6b658",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.976115,
+        "lon": 2.047431,
+        "name": "AND07 Triel",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "86868912-9e63-4131-b64b-4b7059c954ec",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9347855,
+        "lon": 2.062539,
+        "name": "POI38 Rose",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "bdee4037-554d-420d-9483-3047c4871748",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.995,
+        "lon": 1.9278867,
+        "name": "LMX41 Graviers",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "3fba0898-ad10-45a6-9fbc-475f37117500",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9814272,
+        "lon": 1.9127682,
+        "name": "LMX29 Rousseau",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "b6568cad-a0e7-4ec7-aa0f-0b0440326c24",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.999324,
+        "lon": 2.086251,
+        "name": "CSH10 Murgets",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "94218da1-9b92-4ccd-bb6e-30abae196dec",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.939584,
+        "lon": 2.0583519,
+        "name": "POI63 Piscine",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "569935f6-508d-4210-86b4-e8f479e21f5c",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.00124217,
+        "lon": 1.905578676,
+        "name": "MEY02 Tennis Île Belle",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "de7cf53f-1908-42c1-98a1-70b724c25a60",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9980184,
+        "lon": 1.7099753,
+        "name": "MLJ05 IUT",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "d54323a8-d191-45eb-9516-f78be86c9cdc",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.991226,
+        "lon": 1.720136,
+        "name": "MLJ29 Étape",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "ae6e95aa-83d7-4488-8934-8d6e5a6d48d0",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9980322,
+        "lon": 1.7191142,
+        "name": "MLJ24 Île aux Dames",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "696ce4b5-08ec-4355-b73e-084163c22f44",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9322723,
+        "lon": 2.0557272,
+        "name": "POI36 Sainte-Anne",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "6d5016b4-d9b3-4097-82bb-d5d0de2ec3e4",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.000797,
+        "lon": 2.101942,
+        "name": "CSH37 Foch",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "3c682ee9-81e3-4901-a469-b86269134a50",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9932449,
+        "lon": 1.9197772,
+        "name": "LMX35 Coquetiers",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "310697db-0388-4f6f-982f-d5227ef95390",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9880269,
+        "lon": 1.7113965,
+        "name": "MLJ33 Sous-préfecture",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "23d165f1-7145-468e-8a0a-14b2d0bbc854",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.984281,
+        "lon": 2.063896,
+        "name": "AND18 Cygnes",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "4cdf7492-06f1-4497-8870-6aab38ac2174",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.99141746,
+        "lon": 2.082959245,
+        "name": "CSH04 MJC",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "b0cd1899-67a1-485b-ae87-2c758aa121f0",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9893468,
+        "lon": 1.8943124,
+        "name": "LMX39 Mermoz",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "b65692ac-b0d4-4e95-9b6b-67d455568148",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.0072244,
+        "lon": 1.9261763,
+        "name": "MEY05 Centre Gilbert Raby",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "a195061a-d35f-4294-9522-d88291a25264",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9931934,
+        "lon": 1.9036008,
+        "name": "LMX17 Curien",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "aab32663-c38c-42e7-b0a1-55ae01846390",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9859026,
+        "lon": 1.9116021,
+        "name": "LMX19 Commissariat",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "aa531074-22da-4d06-b45e-2365b27ecd2c",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9202693,
+        "lon": 2.0320136,
+        "name": "POI22 Maréchal Lyautey",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "3db365cb-c131-4184-a458-b92b8937b254",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.989511,
+        "lon": 2.059585,
+        "name": "AND21 Verdun",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "c49f2663-c5a3-44d8-b4bb-0d38054529e8",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.980963,
+        "lon": 1.680172,
+        "name": "BUC10 Aureines",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "6fdc7da0-215e-43c5-b2b4-62de8a542e30",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9920458,
+        "lon": 1.7350545,
+        "name": "LIM08 Mairie",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "1e380585-bd0e-4c1f-88a4-408e080cdd78",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9956186,
+        "lon": 1.9013899,
+        "name": "LMX33 La Haye",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "a0016ee6-0daa-48ce-bc1f-be50abc86488",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.009639,
+        "lon": 2.119873,
+        "name": "CSH55 Chemin vert",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "c7be733b-7da7-4af2-b44b-68708e050ba8",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9978321,
+        "lon": 1.6770234,
+        "name": "MLJ19 Croix Rouge",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "b3a920ab-c9de-4782-b82c-a6436ba604d4",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.0008396,
+        "lon": 1.7436638,
+        "name": "LIM17 Fontaine",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "61d706ed-be64-487a-8e9a-580c12d8402c",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.975587,
+        "lon": 2.053701,
+        "name": "AND22 Monet",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "6e5f5a9d-8da2-470a-b276-241b3f4a0aac",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.0130787,
+        "lon": 1.9245978,
+        "name": "MEY18 Claude Monet",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "85194705-cf71-4594-a13e-8534167f6654",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.98475,
+        "lon": 2.060506,
+        "name": "AND23 Infroit",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "d4add84d-b1e9-4d63-87ae-ccc62e11bdec",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.97952,
+        "lon": 2.054168,
+        "name": "AND09 Coutayes",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "a34f2ea5-12ed-41c0-8902-00efead2bdc8",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.93671641,
+        "lon": 2.014650817,
+        "name": "CSP28 Maison des Insectes",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "d66ed7a1-895d-41eb-9623-86f96d156134",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.919104,
+        "lon": 2.0354985,
+        "name": "POI13 Corneille",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "3a84906d-9ae5-4971-b3c2-d90359d65a4c",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9860904,
+        "lon": 1.9150893,
+        "name": "LMX24 République",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "db3aeebd-086a-4bcf-8be1-09d3a9b4f4ec",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.965606,
+        "lon": 2.042672,
+        "name": "AND04 Stade",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "32977ada-a8d6-4941-b042-4399de9dbc04",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9822987,
+        "lon": 1.9177568,
+        "name": "LMX56 Dolto",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "18c38187-43cb-4501-b8e8-c2c840094cd4",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9904652,
+        "lon": 1.9206632,
+        "name": "LMX43 Perrons",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "dad5dd92-d2d1-4338-b8ed-fef744bcecd0",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.985433,
+        "lon": 1.9024725,
+        "name": "LMX48 Macherus",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "75e9e096-13a4-4e32-8a57-b1e0f12ec230",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9908809,
+        "lon": 1.9155257,
+        "name": "LMX23 Poissy",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "e3a8ce95-806d-4946-883a-97cb35c0e640",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.007689,
+        "lon": 2.0836265,
+        "name": "CSH49 Cayennes",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "0b937032-05d0-4378-bcb2-a1e281bbc3e8",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9379194,
+        "lon": 2.0169603,
+        "name": "CSP20 Saint Honoré",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "c79c4326-76bd-4814-a230-991b979d5a28",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9458972,
+        "lon": 2.0378909,
+        "name": "CSP04 Accueil des villes françaises",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "4e708fa4-3087-44ae-bbf4-9ebc64590d18",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9492688,
+        "lon": 2.044087424,
+        "name": "CSP31 Stade",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "f571b489-057d-4ab1-9fb3-2ed289b8567c",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.0045099,
+        "lon": 1.6954146,
+        "name": "MLJ04 Garennes",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "3f61d5e0-20af-4d20-b8e2-e3a29f4bdb40",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9299601,
+        "lon": 2.0356846,
+        "name": "POI21 Frémont",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "c9981ea1-458c-442e-a3bf-52dcca7ad900",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9306358,
+        "lon": 2.0407553,
+        "name": "POI58 Général de Gaulle",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "68623174-bbd8-49f4-86eb-c72b1ee8ce68",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.994406,
+        "lon": 1.9102104,
+        "name": "LMX04 Doumer",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "4163b1d8-9caa-408b-a304-8ea95d50b260",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.022964,
+        "lon": 1.917071,
+        "name": "TES02 Menneton",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "cb00a226-a4e0-471b-9518-9ded0d0bad78",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9328296,
+        "lon": 2.0501426,
+        "name": "POI34 Devaux",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "5f6b5e89-d6b3-42fa-bd27-671ba336c4dc",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.0111653,
+        "lon": 1.9189897,
+        "name": "MEY06 Tulipes",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "a98cd421-6312-4ba6-a23e-52507b564f70",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9517078,
+        "lon": 2.0422374,
+        "name": "CSP17 Route d'Andrésy",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "1b5418df-3a99-4447-8e8e-a754bb2300c8",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.93969859,
+        "lon": 2.018068675,
+        "name": "CSP27 Chapelle",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "204e1182-e9b4-4859-9752-ee3706d5219c",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9975617,
+        "lon": 1.9171463,
+        "name": "LMX10 Renoir",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "f251da2e-a721-478c-88a1-6d7cc1cc1430",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.009256,
+        "lon": 1.916341,
+        "name": "MEY12 Paradis",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "0851a53a-01b0-4156-843b-2dd593108664",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.005651,
+        "lon": 2.090003,
+        "name": "CSH08 Centre aquatique",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "5b0b03ac-e3c8-442a-baf0-9f0639ee95a8",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.988624,
+        "lon": 1.9140516,
+        "name": "LMX03 Médiathèque",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "9142663c-6546-49ec-95ed-47928a9c3c50",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9766648,
+        "lon": 1.9193332,
+        "name": "LMX06 Blériot",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "c769953c-1b09-4979-8ee2-65e871249cc0",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.998045,
+        "lon": 2.091583,
+        "name": "CSH05 Repos",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "5c6eaf38-6254-454c-8c46-1730d0ad896c",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9992758,
+        "lon": 1.7035227,
+        "name": "MLJ16 Braunstein",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "e0e4090f-1755-46d9-bd1a-fb8479eb8100",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9430791,
+        "lon": 2.0195626,
+        "name": "CSP07 Vanderbilt",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "4aa51162-d1ec-4113-9290-db053c84a624",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.97295,
+        "lon": 2.044471,
+        "name": "AND06 Allende",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "0c394776-952d-4368-b7dd-7af298730e64",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9237263,
+        "lon": 2.0430749,
+        "name": "POI25 Grands champs",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "c4f1bccb-40ca-45a8-853d-951d7058cc18",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.0063962,
+        "lon": 1.9121419,
+        "name": "MEY19 Annonciades",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "4aa0cc92-9e14-443b-97c2-939a52bdf338",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.00800193,
+        "lon": 2.115378094,
+        "name": "CSH35 Limousines",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "b9b5c821-920d-4ef0-8aa4-31962b392f04",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9220564,
+        "lon": 2.0289992,
+        "name": "POI29 Racine",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "39ae310c-e6c9-46c2-a1cf-a09be5e6d798",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9891986,
+        "lon": 1.8981548,
+        "name": "LMX46 Picasso",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "cca96e94-75d8-42c9-9386-9124da25b5b4",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9926566,
+        "lon": 1.7159777,
+        "name": "MLJ32 Abattoirs",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "3a6b52d6-034d-4397-833c-2a53a7d976f4",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.994754,
+        "lon": 2.102483,
+        "name": "CSH21 Richard",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "df8115ec-8841-437a-a93f-2342b2762130",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.006779,
+        "lon": 2.099154,
+        "name": "CSH34 Cimetière",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "4dc1eb5e-6944-4e0c-83ce-3254e18c622c",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9865442,
+        "lon": 1.9209108,
+        "name": "LMX27 République",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "0c98950c-dbe7-49a9-9ebc-4097ab0e1374",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9890935,
+        "lon": 1.924321,
+        "name": "LMX42 Croix Verte",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "26f3b072-e746-41cf-ba74-b6d94ae0c024",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.0038711,
+        "lon": 1.913709,
+        "name": "MEY04 Arquebuse",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "6e19bc49-96c2-49a0-a23c-54e048e34af0",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.99217574,
+        "lon": 2.075633003,
+        "name": "CSH53 Gare haute",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "53cd6c6f-d60e-453b-8316-76cd74995b24",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9929569,
+        "lon": 1.7224973,
+        "name": "MLJ23 Tarably",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "f35a1a20-c54f-4b4f-8c86-66c37634c4f4",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.0041331,
+        "lon": 2.0770192,
+        "name": "CSH50 Cinéma",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "04618f7b-aa2f-4aba-84b5-4413e1e71ca4",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.98974,
+        "lon": 2.065809,
+        "name": "AND14 Foch",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "c112fd36-76b0-49ab-8060-4e8e15004cac",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9285468,
+        "lon": 2.048878,
+        "name": "POI14 Pirmasens",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "9b59fd2b-483d-4f51-8036-2cac8b709340",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9877669,
+        "lon": 1.7415139,
+        "name": "LIM04 Wilson",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "49628ae4-8774-4a07-ab02-e9728432f3b8",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.979205,
+        "lon": 2.058432,
+        "name": "AND19 Marché",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "6a34ac30-1938-46db-874a-7a76b9431788",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9457808,
+        "lon": 2.0658352,
+        "name": "POI65 Technoparc",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "dce0b0a7-c572-4478-8761-da9c7e90c708",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.0090636,
+        "lon": 1.9052954,
+        "name": "MEY11 Tessancourt",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "f38b8946-5cb4-4e4f-88e4-4246a819f120",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9980228,
+        "lon": 1.7013258,
+        "name": "MLJ12 Gassicourt",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "3e5d8fd5-2b85-4beb-aaa4-aa5067498d20",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9433506,
+        "lon": 2.0348783,
+        "name": "CSP06 Hôtel de ville",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "25dc0580-b4f1-429a-831b-c5aa76526b04",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.977471,
+        "lon": 2.056888,
+        "name": "AND20 Leclerc",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "74e92641-3b65-4a21-86e3-a81cb892ef98",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.92674739,
+        "lon": 2.051823987,
+        "name": "POI37 Bruyère",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "f2078aa6-a461-4e70-88d3-bc2a0b6cde84",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9864408,
+        "lon": 1.7539835,
+        "name": "LIM27 Tellier",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "303e5145-1604-4f22-ac0a-3efdacfbc980",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9859864,
+        "lon": 1.9124797,
+        "name": "LMX36 République",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "7eca2f88-7e8e-44c3-8a89-959bda909288",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.012119,
+        "lon": 1.9180047,
+        "name": "MEY17 Paradis",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "3a1740c8-fa96-489d-9822-e0c89466cdcc",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9288532,
+        "lon": 2.0385092,
+        "name": "POI16 Maison centrale",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "5201cee5-1143-42d3-b51a-334908dd1bc0",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9239653,
+        "lon": 2.0291045,
+        "name": "POI19 Blanche",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "1512d68c-eb66-49c9-b05e-3a20379d0138",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9813473,
+        "lon": 1.7016755,
+        "name": "MLV13 Bibliothèque",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "00e9df71-b89c-477a-9c45-c69e8d891638",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.999598,
+        "lon": 2.077769,
+        "name": "CSH51 Péri",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "6f91cd2f-aaf8-48e5-93e7-d6d11d573ce8",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9847974,
+        "lon": 1.6963518,
+        "name": "MLV24 Place du Commerce",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "49d45086-3af4-45b3-9fe1-6736afa5e040",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.010078,
+        "lon": 2.122584,
+        "name": "CSH57 Justice",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "b5901749-eb0d-4191-9811-fc18ea12dcdc",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.005062,
+        "lon": 2.111167,
+        "name": "CSH40 Foch",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "5ee1a5ab-58eb-421e-9ecc-2438ea8dd9a8",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9781554,
+        "lon": 1.9213719,
+        "name": "LMX20 Thomas",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "617947ea-2971-4ea4-acda-94f7b2c3694c",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.008724,
+        "lon": 2.111597,
+        "name": "CSH47 Beausite",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "9d6d8e4f-8747-41c2-8b5b-c7d8aceeb950",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9928258,
+        "lon": 1.9088836,
+        "name": "LMX07 Carnot",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "26e1d2d0-5751-4ab6-a86d-94fa7642bb94",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.972408,
+        "lon": 1.921783,
+        "name": "LMX57 Allende",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "e20478dc-e410-4e21-b54a-5931c4f978b4",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.018504,
+        "lon": 1.920382,
+        "name": "TES05 Vieille Route",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "83c9eca0-49a2-4960-a1d3-4d197571b434",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9783247,
+        "lon": 1.7216201,
+        "name": "MLV20 Chantereine",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "c3b94bb8-2e3a-4e4d-8cae-ff24a830a5a0",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.0048741,
+        "lon": 1.9102119,
+        "name": "MEY03 Brigitte Gros",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "20eb5744-bbf0-408d-8834-9ac0af50d124",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.98727,
+        "lon": 2.057982,
+        "name": "AND11 Robaresses",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "a5eafa9c-2481-4e62-97d6-7283f10e6820",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9782461,
+        "lon": 1.7007734,
+        "name": "MLV33 Merisiers",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "5a66ebf7-51f7-4945-bce5-d4429741193c",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9915224,
+        "lon": 1.911026,
+        "name": "LMX50 Gambetta",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "f3aae5b9-927d-4e63-a857-6c4dc3ac7594",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.004542,
+        "lon": 2.11728,
+        "name": "CSH43 Henri",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "6a64b7f7-56a0-47db-84d6-175593611bac",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.004901,
+        "lon": 2.115377,
+        "name": "CSH41 Ney",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "021578ed-8a60-496d-8edc-79baec583564",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.984418,
+        "lon": 1.707584,
+        "name": "MLV11 Sacré-Cœur",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "70b88b7e-f3e9-4393-a982-13fdb26c13cc",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.00169244,
+        "lon": 2.086298199,
+        "name": "CSH13 Lornage",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "af1797ed-1139-42b1-b963-df68eec25a28",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.0042381,
+        "lon": 1.9071234,
+        "name": "MEY22 Vexin",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "3089e250-b6b1-45fb-a8c3-55305a199290",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.990206,
+        "lon": 2.053935,
+        "name": "AND125 Thymerais",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "6c204ea9-798b-467d-9d46-d188f74692b4",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9836386,
+        "lon": 1.7480166,
+        "name": "LIM01 Gare sud",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "72078f12-ef6a-4d63-b02c-8ea254604014",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9283167,
+        "lon": 2.0417545,
+        "name": "POI11 Ursulines",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "f7160ed1-a0d1-4dc7-ae0e-d82fcb9ee6cc",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.99138059,
+        "lon": 2.093522599,
+        "name": "CSH62 René Albert",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "45cec7f1-eed5-4489-a3be-7b436df91d8c",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.002518,
+        "lon": 2.105758,
+        "name": "CSH38 Foch",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "327c4dc9-4c94-4f55-93e2-6aa3221d8a88",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.0111272,
+        "lon": 1.9239172,
+        "name": "MEY07 Traversière",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "f77d99e8-8d52-4aa9-82b3-c401e3c387bc",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.976794,
+        "lon": 1.7065242,
+        "name": "MLV02 Gymnase Joffre",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "d7835918-6a8a-48d9-8c9f-35520511b8e4",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9960486,
+        "lon": 1.6838286,
+        "name": "MLJ17 A. Lavoisier",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "ed5ded4f-6d8d-4669-a453-22af00f77988",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9987231,
+        "lon": 1.7418202,
+        "name": "LIM13 Source",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "7865854b-8d26-4efa-b661-7444245ba3c0",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9373359,
+        "lon": 2.0554553,
+        "name": "POI62 C. Vanpoulle",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "0136a3b1-60d4-48b5-bb90-57d580fa47d8",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.013806,
+        "lon": 1.9201874,
+        "name": "MEY20 Pontoise",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "08f276b2-46a1-416c-b9a9-f64cd6f64d68",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9363786,
+        "lon": 2.0348301,
+        "name": "CSP10 Clinique Saint Louis",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "556cad15-c43b-49eb-b718-8b58840128ac",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.001669,
+        "lon": 1.6974067,
+        "name": "MLJ30 Braunstein",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "909e4441-91c2-449e-a48a-a45902e5007c",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9297093,
+        "lon": 2.0323512,
+        "name": "POI53 Piscine",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "36060c02-22f8-4cb6-89e3-8a24857efc14",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9339515,
+        "lon": 2.0531123,
+        "name": "POI66 Robespierre",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "4e6f2a02-cbc7-476a-87a0-5a8ea48cef60",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9286367,
+        "lon": 2.0452531,
+        "name": "POI15 Victor Hugo",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "739998e5-a683-4825-9c89-bc2e00b1b0c8",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.00955676,
+        "lon": 2.09020702,
+        "name": "CSH58 Gymnase",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "758a2b76-6de5-4cc5-b72c-0d603642a498",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.99663867,
+        "lon": 2.098628988,
+        "name": "CSH01 Gare sud",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "cc5e781f-9b7d-4004-a5e8-591c436e8b28",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9974643,
+        "lon": 1.7380991,
+        "name": "LIM14 Briand",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "0f757825-7d7c-465a-a1a3-4c6993bc7b4c",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.990442,
+        "lon": 2.057988,
+        "name": "AND12 Piscine",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "5a6e61eb-9cd0-4c8c-80f4-22fa73c2cf70",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.006014,
+        "lon": 1.889107,
+        "name": "HAR04 Gloriettes",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "14e4702f-0241-4391-a9a4-39d4acc67300",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.990884,
+        "lon": 2.052076,
+        "name": "AND126 Penthièvre",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "b2248157-6bb0-457b-babc-955a07056670",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.011704,
+        "lon": 1.907707,
+        "name": "TES01 Pavillon",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "32ad4149-9f52-4f2b-88bc-da4910f70ca4",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.995266,
+        "lon": 2.09059,
+        "name": "CSH19 Pontoise",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "e423d39d-e09f-4e9b-bb32-3b6c3a26df9c",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9931712,
+        "lon": 1.9164992,
+        "name": "LMX38 Chardonnerets",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "72b613a0-916f-4deb-bacd-fe3508832edc",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.994932,
+        "lon": 2.113607,
+        "name": "CSH28 Bournouviers",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "06e94331-5457-433d-a751-c5b687a23544",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9818848,
+        "lon": 1.9158362,
+        "name": "LMX54 Rousseau",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "21ccef8b-7c17-49c1-88b8-54f4a175db14",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9974084,
+        "lon": 1.9110581,
+        "name": "LMX13 Faure",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "805a9700-68d8-4f00-b885-d7dd9c8d8924",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9773102,
+        "lon": 1.7281038,
+        "name": "MLV08 Maupomet",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "56dc49eb-524b-4996-957d-44418adabda0",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9852854,
+        "lon": 1.7167885,
+        "name": "MLJ35 Saint-Jacques",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "5c3000b3-a216-4e4f-ab7b-38c4e0471050",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9298794,
+        "lon": 2.0576801,
+        "name": "POI32 Bruyère",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "a69c5627-0f6e-4a45-89c0-ed246a653384",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9253825,
+        "lon": 2.0346804,
+        "name": "POI18 Blanche",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "c1c91750-5189-470c-9c19-2a8ea82b92d4",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.997681,
+        "lon": 2.098323,
+        "name": "CSH02 Gare nord",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "235cace8-0ea8-47e2-b1c2-a75a4db0ec50",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9275228,
+        "lon": 2.0457537,
+        "name": "POI33 Grand marché",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "475b8966-ed27-49bc-ba6d-248076922618",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9763972,
+        "lon": 1.709602446,
+        "name": "MLV12 Salle Jacques Brel",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "59cc39c5-4c3c-4f1c-8e0e-3baef518cfb8",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9799425,
+        "lon": 1.7116332,
+        "name": "MLV05 CCAS",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "c2f7b152-a820-41ad-a84c-f62287758abc",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.0063187,
+        "lon": 1.9062705,
+        "name": "MEY21 Viaduc",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "88ad0ac5-1480-4cd5-aec1-15dab285d778",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.91786797,
+        "lon": 2.023330738,
+        "name": "POI51 Centre hospitalier",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "3c24e562-6f05-415c-9f27-de1e0dbcb768",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9484459,
+        "lon": 2.0370992,
+        "name": "CSP01 Saint-Exupéry",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "491c8205-8b1c-4cb2-aa16-866e25f20e94",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.993986,
+        "lon": 2.077126,
+        "name": "CSH56 Gallieni",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "389b3752-1108-41e3-bda3-4bfa1a0128f4",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.0110486,
+        "lon": 1.9158949,
+        "name": "MEY14 Paradis",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "4f2d7bce-041a-4f13-a403-00efb9a75fd8",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.920581,
+        "lon": 2.0316809,
+        "name": "POI54 Brazza",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "52b2cead-027a-4858-a05a-df247565bb34",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9980901,
+        "lon": 1.9226832,
+        "name": "LMX34 Verneuil",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "20cbf10b-778f-4ee1-b7bf-559969e9d634",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.943986,
+        "lon": 2.031277,
+        "name": "CSP24 Clemenceau",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "43364a7b-c130-4d2f-b839-86506007f628",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9910501,
+        "lon": 1.7209995,
+        "name": "MLJ28 Cordeliers",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "93a41440-ec7c-4418-8af3-259fc07309d4",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.991299,
+        "lon": 1.684774,
+        "name": "BUC05 Piquettes",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "4f4a425a-2488-4a8a-8070-3e8b04c22280",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.007087,
+        "lon": 2.124709,
+        "name": "CSH46 De Gaulle",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "32a4e322-b487-4cf5-9ae2-01a236eb6268",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.99794,
+        "lon": 1.95817,
+        "name": "VER01 Base de loisir",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "3caec465-b048-4be6-8406-0a49338beb28",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.006008,
+        "lon": 2.11918,
+        "name": "CSH44 Guen",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "c3512c08-5688-43cd-a3ab-3f1cb00ed710",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9932451,
+        "lon": 1.7297918,
+        "name": "LIM10 Eglise",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "7ac5e4c7-0a29-4412-a4ee-d24f77180864",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9772524,
+        "lon": 1.9116324,
+        "name": "LMX31 Pléiades",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "7e6e423c-a64a-4182-bdbf-08c8e096e9a4",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.971584,
+        "lon": 2.049908,
+        "name": "AND02 Cigogne",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "236bacbb-313a-4324-a197-a2a9969a2370",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9936049,
+        "lon": 1.6784808,
+        "name": "BUC04 Closeaux",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "b1f6805a-c7ce-4c32-9781-218fed857c60",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9755245,
+        "lon": 1.9148705,
+        "name": "LMX30 Pléiades",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "12a1bcce-e681-4eaf-9649-dad1436dfc00",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.0045499,
+        "lon": 1.7333991,
+        "name": "LIM21 Dominicains",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "c5556dee-21ef-4399-a829-42b3dda204c0",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9892324,
+        "lon": 1.7338479,
+        "name": "LIM09 Coutures",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "b55d2d1f-bf5c-4268-bc33-051abd92e0e4",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.991987,
+        "lon": 2.106522,
+        "name": "CSH23 Noue",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "001b0cc7-b0f3-4a93-a10a-07969822dce0",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.98883372,
+        "lon": 2.075175445,
+        "name": "CSH54 Gare Conflans fin d'Oise",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "02aeeb80-c556-4aa3-b1ce-c6dcc2f93a5c",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.92692864,
+        "lon": 2.055038267,
+        "name": "POI30 M. Bastié",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "21582112-df6a-487d-b2ca-0f49e7a98e98",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.005688,
+        "lon": 2.093445,
+        "name": "CSH09 Carnot",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "4b55b5ce-f270-4c0b-91b7-87f833cf2fa0",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.00919,
+        "lon": 2.095162,
+        "name": "CSH48 Glaises",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "550ba963-56b4-47a2-ad17-921f3ea09354",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9935354,
+        "lon": 1.6975046,
+        "name": "MLJ06 Guesde",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "d8bf026c-e4a4-492b-9339-da092cd4305c",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9787116,
+        "lon": 1.9158948,
+        "name": "LMX02 Brossolette",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "43c0e86f-d491-4956-bc3e-7ce6c65b56cc",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9371059,
+        "lon": 2.0221214,
+        "name": "CSP14 Bretagne",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "62840240-bebc-485b-802c-e1bbda758550",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.002712,
+        "lon": 2.112151,
+        "name": "CSH59 Conservatoire",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "080bfb99-bf5d-478d-a9a6-cd089757a154",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9947743,
+        "lon": 1.678464,
+        "name": "MLJ15 Mosquée",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "ad6198e3-2f1a-4d71-b097-9a0c5baa9284",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9961469,
+        "lon": 1.7137313,
+        "name": "MLJ11 Maison des syndicats",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "17d3686d-0a82-48ea-8875-7276a357b30c",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9775822,
+        "lon": 1.7141784,
+        "name": "MLV09 Mairie",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "addeee61-0687-47cd-b02c-6861b4d59290",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9347808,
+        "lon": 2.0477028,
+        "name": "POI48 Près",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "d40ab76d-1ada-47c6-8ace-6c443c1b8410",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.0032592,
+        "lon": 1.9099476,
+        "name": "MEY16 Centre hospitalier",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "a05c115d-6828-449f-851d-019201d9a14c",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9894,
+        "lon": 1.71836,
+        "name": "MLJ07 Notre-Dame",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "f64a2ee7-0057-42c4-9317-bac094173098",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9956183,
+        "lon": 2.087861583,
+        "name": "CSH15 Alsace",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "50441278-ec99-42c6-b0cd-c3156c74a8d0",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9496256,
+        "lon": 2.0380892,
+        "name": "CSP13 A. Quennet",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "6b51df01-a670-48cb-a056-d6af9c88cb6c",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.98047062,
+        "lon": 1.671977203,
+        "name": "BUC13 Mairie",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "2df19e5c-87a5-45a4-934f-d5600926c6b4",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9837484,
+        "lon": 1.7160037,
+        "name": "MLJ14 Gare Mantes Station",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "34767053-b624-4125-9074-67710dec6c18",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.99716,
+        "lon": 1.7292994,
+        "name": "LIM19 Duvivier",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "c48cbb7d-a7e4-403b-bd65-d2c6bac29968",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.99171656,
+        "lon": 1.913626576,
+        "name": "LMX55 Gare Bis",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "2ae56a84-850c-4c04-ab42-dbeab7a0cabc",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9884928,
+        "lon": 1.7477186,
+        "name": "LIM03 Lafarge",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "22f618e6-3c12-4ed8-a091-9f729cc6e5dc",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9761629,
+        "lon": 1.9167374,
+        "name": "LMX05 Blériot",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "2f04d391-cedc-42c2-acd4-5e1bbc5163a4",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9204094,
+        "lon": 2.0213638,
+        "name": "POI27 Champ Gaillard",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "53bdf3ea-c8ef-4914-bb29-1f29ac1e1d8c",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.986718,
+        "lon": 1.695207,
+        "name": "BUC07 Gennes",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "364a9c67-698f-4a7d-8967-a9eddf4b06cc",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9224137,
+        "lon": 2.0246968,
+        "name": "POI01 Part Dieu",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "189e047e-3772-4786-88ed-d21915325064",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9732542,
+        "lon": 1.7189418,
+        "name": "MLV29 Mauldre",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "6ece2f1b-5334-45dc-a562-a598931a1810",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.92939235,
+        "lon": 2.042706865,
+        "name": "POI17 Général de Gaulle",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "eeae1fc7-0c46-420c-8ad0-abea98460230",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9922324,
+        "lon": 1.8959027,
+        "name": "LMX16 Pont Galon",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "2158af35-b70c-4793-af23-9e262cd63584",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9307278,
+        "lon": 2.0526172,
+        "name": "POI61 Maréchal Foch",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "e2d22a36-31a9-4f1d-a88e-941a01458664",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9960014,
+        "lon": 1.6758236,
+        "name": "MLJ26 Butte Verte",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "2477e3d9-c76a-4263-8d16-530d659714e4",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9905473,
+        "lon": 1.9120118,
+        "name": "LMX18 Tillon",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "874af108-4c1f-4970-a7b1-076e9b3556ac",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9397436,
+        "lon": 2.0312875,
+        "name": "CSP02 Reine Blanche",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "8ba9d553-665c-4376-86ed-7ca6efa969f4",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.015159,
+        "lon": 1.897545,
+        "name": "HAR05 Verdun",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "bdae899e-0019-4eb3-852a-f2d6290f5114",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.94317164,
+        "lon": 2.02912442,
+        "name": "CSP26 Reine Blanche",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "9c7b5bc5-f250-4922-b833-ab07889b65c8",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9343058,
+        "lon": 2.0582932,
+        "name": "POI39 Maréchal Foch",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "7b48fda9-7ed3-47ef-ba2f-28b5d03a0990",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9846961,
+        "lon": 1.7457995,
+        "name": "LIM02 Gare nord",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "1a204faf-b049-4b6d-8a06-905d2ccabc34",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9644432,
+        "lon": 1.7149004,
+        "name": "MLV01 Gymnase Guimier",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "9cc367a4-e9fc-4cc5-ae22-d9b8599bf740",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9807753,
+        "lon": 1.8949609,
+        "name": "LMX44 Descartes",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "7ec07577-de29-4432-9fb4-ab51411531c0",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.974667,
+        "lon": 1.7080162,
+        "name": "MLV14 Collège Les Plaisances",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "90553aa0-70e8-420e-b6c0-6a50add25e20",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.007857,
+        "lon": 2.122083,
+        "name": "CSH45 Chemin vert",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "219887df-9d6f-4c98-a6c5-b22728dce074",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.0090106,
+        "lon": 1.9261259,
+        "name": "MEY15 Grand sentier",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "4a25b995-4c49-4e9e-ad2e-24d82ef274b4",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.0056148,
+        "lon": 1.902089,
+        "name": "HAR01 Gare ouest",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "4a736874-f8de-4f75-8252-44d399110180",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9806296,
+        "lon": 1.7156962,
+        "name": "MLV03 Houdan",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "25a30fde-66b3-455d-b98f-c7a0271375e0",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.989837,
+        "lon": 1.679577,
+        "name": "BUC01 Communauté",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "e2e58f1b-d5e0-473d-848f-1f084012a184",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9413482,
+        "lon": 2.0338415,
+        "name": "CSP23 Le Parc",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "531f1ec4-a20c-4aed-b3a4-2dc48f246a0c",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.001242,
+        "lon": 2.109743,
+        "name": "CSH31 Clément",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "f08691a8-fbd9-42ba-9e2f-80cb957e7b2c",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.002033,
+        "lon": 2.094748,
+        "name": "CSH33 Croix rouge",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "6dadc5ac-34d1-48d5-af4b-ca27c6181df0",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9419526,
+        "lon": 2.0108861,
+        "name": "CSP08 Port Saint Louis",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "239acdd4-6367-4858-9539-252dc0d820e8",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9243124,
+        "lon": 2.0525571,
+        "name": "POI06 Lefebvre",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "0f63a5e6-17e0-4d49-a397-928705e9c040",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.0009421,
+        "lon": 1.7271891,
+        "name": "LIM25 Moussets",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "7bbe9ebc-41a2-433b-84d3-6d89c3122c74",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9770621,
+        "lon": 1.9232981,
+        "name": "LMX21 Satie",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "064c01da-078b-4772-afda-f333523e277c",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9403944,
+        "lon": 2.0599681,
+        "name": "POI31 Saint-Sébastien",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "113f5ef0-bed3-45e6-a910-ea672e12840c",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.003694,
+        "lon": 2.099357,
+        "name": "CSH32 Roches",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "0371a6d3-c8f6-4dcb-9699-5a54d9a1441c",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.993253,
+        "lon": 2.109008,
+        "name": "CSH22 Bellevue",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "d1e0e2cc-7270-418c-8385-d5d7dfa1eb54",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9451244,
+        "lon": 2.0243194,
+        "name": "CSP05 Parc de la Fosse",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "9d335508-3bc5-4931-8615-c047ca97b544",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.0069559,
+        "lon": 1.9192855,
+        "name": "MEY08 Annonciades",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "a8e0f588-35f8-4807-9d33-8d6840076820",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9889902,
+        "lon": 1.7444591,
+        "name": "LIM07 Claies",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "a0f2600d-d3d5-40c8-89bc-b80183158380",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9390942,
+        "lon": 2.0347537,
+        "name": "CSP12 Jean Monet",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "c551816d-a2c3-4757-bb79-77b584c99f70",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.98306993,
+        "lon": 1.677859725,
+        "name": "BUC09 Plaine des Sports Obreja",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "7878fd28-439f-4ee9-ad8b-65e2c5268934",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.0095933,
+        "lon": 1.9079941,
+        "name": "MEY10 Pontoise",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "006a5452-90fb-49de-ba1a-d8a3e4809874",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9873545,
+        "lon": 1.7231139,
+        "name": "MLJ09 Club bouliste",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "cf1a0db4-2688-4be3-842a-98fbf16ea164",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.95427161,
+        "lon": 2.042433679,
+        "name": "CSP25 Route d'Andrésy",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "64a11976-534d-4e59-9e52-9272eb5e1ae4",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9893795,
+        "lon": 1.7150241,
+        "name": "MLJ10 Hôtel de ville",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "b8bc13d7-4896-4a13-a165-35c18c6a843c",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9946111,
+        "lon": 1.9184668,
+        "name": "LMX12 Croix Rouge",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "9dd2180d-b2c4-4411-9ac1-b1e2729be594",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.994229,
+        "lon": 1.736255,
+        "name": "LIM12 Chemins",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "79b031cd-3434-4de4-8343-3a377f588590",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9325588,
+        "lon": 2.0413784,
+        "name": "POI59 Gare de Poissy - Ville",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "5966555b-8f72-4a1d-856d-22ecc1444f08",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.022825,
+        "lon": 1.923414,
+        "name": "TES04 Marèche",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "c4b97c3c-3939-41f7-9982-2deac43aaf54",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.997328,
+        "lon": 2.075995,
+        "name": "CSH52 Français",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "b500d4c4-25cd-4d84-9d94-f949e72bf1c4",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.987871,
+        "lon": 1.699122,
+        "name": "BUC08 Grande Halle",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "9d9d8764-c72e-4407-a2a4-ce57d2ac83f0",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.980479,
+        "lon": 1.9114267,
+        "name": "LMX52 Bugatti",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "ca1bf938-67da-48d4-a02e-9f5cea816d10",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9294299,
+        "lon": 2.0532156,
+        "name": "POI04 Fauvettes",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "f43246f4-7e87-4512-878b-570af7c3cc18",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9754648,
+        "lon": 1.7031375,
+        "name": "MLV06 Augustin Serre",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "e8c6d705-c578-4d2d-a084-e73564f3a320",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9490753,
+        "lon": 2.0331283,
+        "name": "CSP19 Alsace",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "85eaf037-03d6-45b6-82c1-c8e7a5cccc40",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9999246,
+        "lon": 1.684369,
+        "name": "MLJ25 Ronsard",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "ab22dc86-abeb-4c41-ac07-420d4df602b0",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.98147629,
+        "lon": 2.061132779,
+        "name": "AND17 Embarcadère",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "f1cd82f5-64b5-4113-bc9f-da3cf5e0ee8c",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.980541,
+        "lon": 1.7088822,
+        "name": "MLV18 Association",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "2274a7a9-5721-4df6-870a-51cf867a1a6c",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.987824,
+        "lon": 2.064481,
+        "name": "AND13 Pasteur",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "25d165b4-a5e5-47bb-aa18-96bbf23979dc",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9484025,
+        "lon": 2.0352567,
+        "name": "CSP03 Collège Claude Monet",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "ccf975c7-dee6-413c-b093-c0444cd8775c",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9990606,
+        "lon": 1.9132859,
+        "name": "LMX32 Leroy",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "f4b162d3-894a-46c9-a5f2-407bb9983318",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9824961,
+        "lon": 1.7207679,
+        "name": "MLJ34 Coteau",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "606ca8a2-f099-481c-9b53-849c90333ae4",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.983882,
+        "lon": 1.7008273,
+        "name": "MLV10 Mecavenir",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "2f286eb5-8b7d-4bad-bd32-6a4c5ca3599c",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.987538,
+        "lon": 1.687638,
+        "name": "BUC06 Métiers",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "8bdc8743-a4e4-4f6a-974a-deed1a120c1c",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9905882,
+        "lon": 1.9086792,
+        "name": "LMX51 Jaurès",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "e696bddc-ceee-4aaa-9f6e-a0f5de68bde0",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.986943,
+        "lon": 2.060022,
+        "name": "AND10 Gare Maurecourt",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "9f382fe0-0979-4d32-bdb3-8513ef1918b4",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.025074,
+        "lon": 1.921062,
+        "name": "TES03 Condécourt",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "ea7032ca-f134-452f-a9cd-f7e5d33c256c",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.0055159,
+        "lon": 1.9040231,
+        "name": "HAR02 Gare est",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "7f14589b-29a0-434f-89c8-6cf296dbed88",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9966383,
+        "lon": 1.9056685,
+        "name": "LMX15 Gros Murs",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "964c8c85-221a-48ed-aef4-212c90d9f948",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9307185,
+        "lon": 2.0451634,
+        "name": "POI05 Devaux",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "31ddcb6c-1a20-4f3b-9f63-20d0c3d37b7c",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9333935,
+        "lon": 2.0436075,
+        "name": "POI60 Stellantis",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "de450993-85cd-4299-9f33-75a819c128a4",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9785254,
+        "lon": 1.9189626,
+        "name": "LMX08 Bastié",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "4312fc4c-8664-4c0f-862c-82aa57ab0e10",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9655836,
+        "lon": 1.7086384,
+        "name": "MLV04 Tennis",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "770bca12-c4ab-4581-a71b-772b2ee9e900",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9758656,
+        "lon": 1.7130627,
+        "name": "MLV15 La Ravine",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "7993c265-b046-4a3a-bcec-f048e1995d58",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9376588,
+        "lon": 2.0189141,
+        "name": "CSP18 La Chapelle",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "49e15a31-1416-4a96-88d3-58fbc78ae7b8",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9960553,
+        "lon": 1.9092946,
+        "name": "LMX14 Verdun",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "5d193a10-a372-4ba4-94f0-ba8e6abc6e1c",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.9830169,
+        "lon": 1.7163214,
+        "name": "MLV34 Gare Mantes Station",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "e0d514bb-8834-4620-abbf-9f4ce7da2840",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.997329,
+        "lon": 2.112352,
+        "name": "CSH26 Côtes",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "e8bf57c1-d87d-49e8-8013-2d2bcb4d6bf0",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.0099925,
+        "lon": 1.9126392,
+        "name": "MEY13 Cottages",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "1f04efaa-5cdd-4843-988d-7ad6ad726418",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 48.991532,
+        "lon": 1.673643,
+        "name": "BUC03 Var",
+        "region_id": "938f6441-b498-477a-812b-695e89b3db98",
+        "station_id": "1f9f2092-1e52-4a51-86c6-c8e88dfd0498",
+        "vehicle_capacity": {
+          "dott_bicycle": 10,
+          "dott_scooter": 10
+        }
+      }
+    ]
+  },
+  "last_updated": 1771749788,
+  "ttl": 0,
+  "version": "2.3"
+}

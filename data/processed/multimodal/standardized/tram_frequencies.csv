@@ -1,0 +1,21 @@
+frequency_id,tram_line,time_period,frequency_minutes,services_per_hour,source,data_created,last_updated,data_version
+FREQ001,1,"Peak Hours (7-9am, 5-7pm)",5,12.0,TAM_Public_Schedule_2024,2025-12-16 09:57:43,2025-12-16 10:11:13,1.0
+FREQ002,1,Off-Peak (9am-5pm),8,7.5,TAM_Public_Schedule_2024,2025-12-16 09:57:43,2025-12-16 10:11:13,1.0
+FREQ003,1,Evening (7-11pm),10,6.0,TAM_Public_Schedule_2024,2025-12-16 09:57:43,2025-12-16 10:11:13,1.0
+FREQ004,1,Weekend,8,7.5,TAM_Public_Schedule_2024,2025-12-16 09:57:43,2025-12-16 10:11:13,1.0
+FREQ005,2,"Peak Hours (7-9am, 5-7pm)",5,12.0,TAM_Public_Schedule_2024,2025-12-16 09:57:43,2025-12-16 10:11:13,1.0
+FREQ006,2,Off-Peak (9am-5pm),8,7.5,TAM_Public_Schedule_2024,2025-12-16 09:57:43,2025-12-16 10:11:13,1.0
+FREQ007,2,Evening (7-11pm),10,6.0,TAM_Public_Schedule_2024,2025-12-16 09:57:43,2025-12-16 10:11:13,1.0
+FREQ008,2,Weekend,8,7.5,TAM_Public_Schedule_2024,2025-12-16 09:57:43,2025-12-16 10:11:13,1.0
+FREQ009,3,"Peak Hours (7-9am, 5-7pm)",6,10.0,TAM_Public_Schedule_2024,2025-12-16 09:57:43,2025-12-16 10:11:13,1.0
+FREQ010,3,Off-Peak (9am-5pm),10,6.0,TAM_Public_Schedule_2024,2025-12-16 09:57:43,2025-12-16 10:11:13,1.0
+FREQ011,3,Evening (7-11pm),12,5.0,TAM_Public_Schedule_2024,2025-12-16 09:57:43,2025-12-16 10:11:13,1.0
+FREQ012,3,Weekend,10,6.0,TAM_Public_Schedule_2024,2025-12-16 09:57:43,2025-12-16 10:11:13,1.0
+FREQ013,4,"Peak Hours (7-9am, 5-7pm)",6,10.0,TAM_Public_Schedule_2024,2025-12-16 09:57:43,2025-12-16 10:11:13,1.0
+FREQ014,4,Off-Peak (9am-5pm),10,6.0,TAM_Public_Schedule_2024,2025-12-16 09:57:43,2025-12-16 10:11:13,1.0
+FREQ015,4,Evening (7-11pm),12,5.0,TAM_Public_Schedule_2024,2025-12-16 09:57:43,2025-12-16 10:11:13,1.0
+FREQ016,4,Weekend,10,6.0,TAM_Public_Schedule_2024,2025-12-16 09:57:43,2025-12-16 10:11:13,1.0
+FREQ017,5,"Peak Hours (7-9am, 5-7pm)",8,7.5,TAM_Public_Schedule_2024,2025-12-16 09:57:43,2025-12-16 10:11:13,1.0
+FREQ018,5,Off-Peak (9am-5pm),12,5.0,TAM_Public_Schedule_2024,2025-12-16 09:57:43,2025-12-16 10:11:13,1.0
+FREQ019,5,Evening (7-11pm),15,4.0,TAM_Public_Schedule_2024,2025-12-16 09:57:43,2025-12-16 10:11:13,1.0
+FREQ020,5,Weekend,12,5.0,TAM_Public_Schedule_2024,2025-12-16 09:57:43,2025-12-16 10:11:13,1.0

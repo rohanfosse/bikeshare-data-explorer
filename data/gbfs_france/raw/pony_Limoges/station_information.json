@@ -1,0 +1,1115 @@
+{
+  "data": {
+    "stations": [
+      {
+        "is_virtual_station": true,
+        "lat": 45.91471,
+        "lon": 1.29957,
+        "name": "limoges_parking_Mairie_Beaune_Les_Mines_zidH3FFWIIE",
+        "station_id": "limoges_parking_Mairie_Beaune_Les_Mines_zidH3FFWIIE"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.86159,
+        "lon": 1.27909,
+        "name": "limoges_parking_Zenith_Limoges_zidOGTCQL5S",
+        "station_id": "limoges_parking_Zenith_Limoges_zidOGTCQL5S"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.83664,
+        "lon": 1.2793,
+        "name": "limoges_parking_119_avenue_des_Casseaux_zidBPM8U34L",
+        "station_id": "limoges_parking_119_avenue_des_Casseaux_zidBPM8U34L"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.82576,
+        "lon": 1.27047,
+        "name": "limoges_parking_2_D941_zidV63VCNME",
+        "station_id": "limoges_parking_2_D941_zidV63VCNME"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.85492,
+        "lon": 1.2661,
+        "name": "limoges_parking_235_avenue_du_General_Leclerc_zidO38EDMIY",
+        "station_id": "limoges_parking_235_avenue_du_General_Leclerc_zidO38EDMIY"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.84528,
+        "lon": 1.27704,
+        "name": "limoges_parking_Pr_Aristide_Briand_zidQV89LG0E",
+        "station_id": "limoges_parking_Pr_Aristide_Briand_zidQV89LG0E"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.84275,
+        "lon": 1.28498,
+        "name": "limoges_parking_Rue_Henri_Bergson_zidE5V1X0HK",
+        "station_id": "limoges_parking_Rue_Henri_Bergson_zidE5V1X0HK"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.8709,
+        "lon": 1.30024,
+        "name": "limoges_parking_Parking_relais_Fougeras_zidD63LOSR6",
+        "station_id": "limoges_parking_Parking_relais_Fougeras_zidD63LOSR6"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.87891,
+        "lon": 1.29929,
+        "name": "limoges_parking_54_Avenue_de_Beaubreuil_zidE1AWLQTK",
+        "station_id": "limoges_parking_54_Avenue_de_Beaubreuil_zidE1AWLQTK"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.84772,
+        "lon": 1.24849,
+        "name": "limoges_parking_49_rue_des_Tuilieres_zidGC4N3VP3",
+        "station_id": "limoges_parking_49_rue_des_Tuilieres_zidGC4N3VP3"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.84996,
+        "lon": 1.24757,
+        "name": "limoges_parking_2_Rue_Denis_Papin_zidKU0L3WN4",
+        "station_id": "limoges_parking_2_Rue_Denis_Papin_zidKU0L3WN4"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.84117,
+        "lon": 1.27081,
+        "name": "limoges_parking_Place_Montplaisir_zidTFWYESH9",
+        "station_id": "limoges_parking_Place_Montplaisir_zidTFWYESH9"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.85293,
+        "lon": 1.25921,
+        "name": "limoges_parking_2_Bd_du_Vigenal_zidHT1WN111",
+        "station_id": "limoges_parking_2_Bd_du_Vigenal_zidHT1WN111"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.85549,
+        "lon": 1.25924,
+        "name": "limoges_parking_5_rue_Charles_Sylvestre_zidDOBCKL6T",
+        "station_id": "limoges_parking_5_rue_Charles_Sylvestre_zidDOBCKL6T"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.83766,
+        "lon": 1.22977,
+        "name": "limoges_parking_Avenue_du_president_Vincent_Auriol_zidXLM3JI5H",
+        "station_id": "limoges_parking_Avenue_du_president_Vincent_Auriol_zidXLM3JI5H"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.84175,
+        "lon": 1.23058,
+        "name": "limoges_parking_37_avenue_du_President_Rene_Coty_zidNCU29HWI",
+        "station_id": "limoges_parking_37_avenue_du_President_Rene_Coty_zidNCU29HWI"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.82771,
+        "lon": 1.22629,
+        "name": "limoges_parking_23_bd_du_Mas_Bouyol_zidL1AESR57",
+        "station_id": "limoges_parking_23_bd_du_Mas_Bouyol_zidL1AESR57"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.82904,
+        "lon": 1.2271,
+        "name": "limoges_parking_Rue_du_Puy_Las_Rodas_zidBF1VRBV4",
+        "station_id": "limoges_parking_Rue_du_Puy_Las_Rodas_zidBF1VRBV4"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.83428,
+        "lon": 1.22636,
+        "name": "limoges_parking_Bd_du_Mas_Bouyol_zidIYM5NRMC",
+        "station_id": "limoges_parking_Bd_du_Mas_Bouyol_zidIYM5NRMC"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.83914,
+        "lon": 1.2118,
+        "name": "limoges_parking_65_avenue_de_Landouge_zid7FGZX3Z4",
+        "station_id": "limoges_parking_65_avenue_de_Landouge_zid7FGZX3Z4"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.83655,
+        "lon": 1.22908,
+        "name": "limoges_parking_Bd_de_la_Borie_zid0VI85TWV",
+        "station_id": "limoges_parking_Bd_de_la_Borie_zid0VI85TWV"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.82936,
+        "lon": 1.24451,
+        "name": "limoges_parking_2_rue_du_Clos_Rocher_zidDAEL47Y5",
+        "station_id": "limoges_parking_2_rue_du_Clos_Rocher_zidDAEL47Y5"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.82324,
+        "lon": 1.22277,
+        "name": "limoges_parking_Avenue_de_Grodno_zidYTRJ8MPX",
+        "station_id": "limoges_parking_Avenue_de_Grodno_zidYTRJ8MPX"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.82294,
+        "lon": 1.21855,
+        "name": "limoges_parking_4_rue_Alexandre_Ribot_zid4NCY6ZEQ",
+        "station_id": "limoges_parking_4_rue_Alexandre_Ribot_zid4NCY6ZEQ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.82995,
+        "lon": 1.21808,
+        "name": "limoges_parking_1_rue_des_Fregates_zidQR4D5CFV",
+        "station_id": "limoges_parking_1_rue_des_Fregates_zidQR4D5CFV"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.81378,
+        "lon": 1.28255,
+        "name": "limoges_parking_Pr_St_Lazare_zidO06JJQSK",
+        "station_id": "limoges_parking_Pr_St_Lazare_zidO06JJQSK"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.82489,
+        "lon": 1.26008,
+        "name": "limoges_parking_Rue_Francois_Mitterand_zidXPCZQLG7",
+        "station_id": "limoges_parking_Rue_Francois_Mitterand_zidXPCZQLG7"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.81706,
+        "lon": 1.24833,
+        "name": "limoges_parking_27_rue_Charles_le_Gendre_zid11DD3SRI",
+        "station_id": "limoges_parking_27_rue_Charles_le_Gendre_zid11DD3SRI"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.81447,
+        "lon": 1.24111,
+        "name": "limoges_parking_14_rue_du_Docteur_Raymond_Marcland_zid0DV23MV4",
+        "station_id": "limoges_parking_14_rue_du_Docteur_Raymond_Marcland_zid0DV23MV4"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.8111,
+        "lon": 1.23884,
+        "name": "limoges_parking_Avenue_du_professeur_Joseph_de_Leobardy_zidW9X2038P",
+        "station_id": "limoges_parking_Avenue_du_professeur_Joseph_de_Leobardy_zidW9X2038P"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.83082,
+        "lon": 1.26577,
+        "name": "limoges_parking_41_rue_des_Penitents_Blancs_zidAH7SGK7W",
+        "station_id": "limoges_parking_41_rue_des_Penitents_Blancs_zidAH7SGK7W"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.83594,
+        "lon": 1.26633,
+        "name": "limoges_parking_Gare_Limoges_zid85EO5PGI",
+        "station_id": "limoges_parking_Gare_Limoges_zid85EO5PGI"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.83716,
+        "lon": 1.25958,
+        "name": "limoges_parking_46_Rue_de_Chateauroux_zidSTD5M12C",
+        "station_id": "limoges_parking_46_Rue_de_Chateauroux_zidSTD5M12C"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.83528,
+        "lon": 1.26066,
+        "name": "limoges_parking_54_Cr_Gay_Lussac_zidIX6T4061",
+        "station_id": "limoges_parking_54_Cr_Gay_Lussac_zidIX6T4061"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.83277,
+        "lon": 1.25814,
+        "name": "limoges_parking_6_Place_Stalingrad_zidJ0MHS221",
+        "station_id": "limoges_parking_6_Place_Stalingrad_zidJ0MHS221"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.83237,
+        "lon": 1.25733,
+        "name": "limoges_parking_12_Rue_Daniel_Lamaziere_zidNVCEYR5L",
+        "station_id": "limoges_parking_12_Rue_Daniel_Lamaziere_zidNVCEYR5L"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.8316,
+        "lon": 1.25861,
+        "name": "limoges_parking_43_rue_Jean_Jaures_zidLOJBWBK5",
+        "station_id": "limoges_parking_43_rue_Jean_Jaures_zidLOJBWBK5"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.83131,
+        "lon": 1.25599,
+        "name": "limoges_parking_33_Rue_Turgot_zidBOUPCNCM",
+        "station_id": "limoges_parking_33_Rue_Turgot_zidBOUPCNCM"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.8314,
+        "lon": 1.25412,
+        "name": "limoges_parking_Pl__Winston_Churchill_zid7ZUSP5U7",
+        "station_id": "limoges_parking_Pl__Winston_Churchill_zid7ZUSP5U7"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.83014,
+        "lon": 1.2554,
+        "name": "limoges_parking_Place_d_Aine_zid6Z6X6R43",
+        "station_id": "limoges_parking_Place_d_Aine_zid6Z6X6R43"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.83157,
+        "lon": 1.26261,
+        "name": "limoges_parking_18_Boulevard_Georges_Perin_zidS55D61N1",
+        "station_id": "limoges_parking_18_Boulevard_Georges_Perin_zidS55D61N1"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.8328743539496,
+        "lon": 1.263354262594175,
+        "name": "limoges_parking_2_Rue_d_Isly_zidS633XZHC",
+        "station_id": "limoges_parking_2_Rue_d_Isly_zidS633XZHC"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.83012,
+        "lon": 1.26276,
+        "name": "limoges_parking_12_Boulevard_Georges_Perin_zid8DFYB0YB",
+        "station_id": "limoges_parking_12_Boulevard_Georges_Perin_zid8DFYB0YB"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.82807,
+        "lon": 1.26124,
+        "name": "limoges_parking_10_Boulevard_Louis_Blanc_zid9GPEDYI2",
+        "station_id": "limoges_parking_10_Boulevard_Louis_Blanc_zid9GPEDYI2"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.82684,
+        "lon": 1.26088,
+        "name": "limoges_parking_Mairie_zid0V1ZHO8L",
+        "station_id": "limoges_parking_Mairie_zid0V1ZHO8L"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.82619,
+        "lon": 1.26288,
+        "name": "limoges_parking_4_place_des_Jacobins_zid2TGGE2BI",
+        "station_id": "limoges_parking_4_place_des_Jacobins_zid2TGGE2BI"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.82744,
+        "lon": 1.2637,
+        "name": "limoges_parking_20_rue_Gabriel_Peri_zidATVSRLIQ",
+        "station_id": "limoges_parking_20_rue_Gabriel_Peri_zidATVSRLIQ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.82903,
+        "lon": 1.26414,
+        "name": "limoges_parking_22_boulevard_de_la_cite_zidJU7C3G02",
+        "station_id": "limoges_parking_22_boulevard_de_la_cite_zidJU7C3G02"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.83515,
+        "lon": 1.26872,
+        "name": "limoges_parking_8_avenue_de_Locarno_zid5TJ7PTM0",
+        "station_id": "limoges_parking_8_avenue_de_Locarno_zid5TJ7PTM0"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.83577,
+        "lon": 1.27077,
+        "name": "limoges_parking_45_avenue_des_Coutures_zidNQZ0T29T",
+        "station_id": "limoges_parking_45_avenue_des_Coutures_zidNQZ0T29T"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.84085,
+        "lon": 1.27837,
+        "name": "limoges_parking_52_rue_du_Puy_Imbert_zidS220PLK7",
+        "station_id": "limoges_parking_52_rue_du_Puy_Imbert_zidS220PLK7"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.83068,
+        "lon": 1.27008,
+        "name": "limoges_parking_23_boulevard_des_Petites_Carmes_zid9ONDRR2T",
+        "station_id": "limoges_parking_23_boulevard_des_Petites_Carmes_zid9ONDRR2T"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.83185,
+        "lon": 1.27071,
+        "name": "limoges_parking_8_Rue_du_Masgoulet_zid9CN6D794",
+        "station_id": "limoges_parking_8_Rue_du_Masgoulet_zid9CN6D794"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.83103,
+        "lon": 1.27283,
+        "name": "limoges_parking_Rue_Victor_Duruy_zidUGIZ1220",
+        "station_id": "limoges_parking_Rue_Victor_Duruy_zidUGIZ1220"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.82863,
+        "lon": 1.27208,
+        "name": "limoges_parking_Pont_Saint_Etienne_zid8HBZY24H",
+        "station_id": "limoges_parking_Pont_Saint_Etienne_zid8HBZY24H"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.82514,
+        "lon": 1.27748,
+        "name": "limoges_parking_Av__de_Lattre_de_Tassigny_zidAMNV8K4I",
+        "station_id": "limoges_parking_Av__de_Lattre_de_Tassigny_zidAMNV8K4I"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.82257,
+        "lon": 1.28538,
+        "name": "limoges_parking_Centre_culturel_John_Lennon_zidUZHRLHXG",
+        "station_id": "limoges_parking_Centre_culturel_John_Lennon_zidUZHRLHXG"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.81961,
+        "lon": 1.28569,
+        "name": "limoges_parking_Lycee_Marcel_Pagnol_zidDJ9TPZV8",
+        "station_id": "limoges_parking_Lycee_Marcel_Pagnol_zidDJ9TPZV8"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.80532,
+        "lon": 1.27996,
+        "name": "limoges_parking_Avenue_du_President_Kennedy_zidEFQ254SG",
+        "station_id": "limoges_parking_Avenue_du_President_Kennedy_zidEFQ254SG"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.80831,
+        "lon": 1.27464,
+        "name": "limoges_parking_16_rue_Hubert_Curien_zid16W63RYZ",
+        "station_id": "limoges_parking_16_rue_Hubert_Curien_zid16W63RYZ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.81844,
+        "lon": 1.27231,
+        "name": "limoges_parking_Rue_Saint_Anne_zid6UALKVOM",
+        "station_id": "limoges_parking_Rue_Saint_Anne_zid6UALKVOM"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.816432,
+        "lon": 1.260358,
+        "name": "limoges_parking_90_rue_de_Nexon_zid6KXAPZIU",
+        "station_id": "limoges_parking_90_rue_de_Nexon_zid6KXAPZIU"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.82503,
+        "lon": 1.25606,
+        "name": "limoges_parking_25_rue_Ferdinand_Buisson_zidE16J67XW",
+        "station_id": "limoges_parking_25_rue_Ferdinand_Buisson_zidE16J67XW"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.82362,
+        "lon": 1.2529,
+        "name": "limoges_parking_25_rue_de_Nazareth_zidPY62VTM9",
+        "station_id": "limoges_parking_25_rue_de_Nazareth_zidPY62VTM9"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.82243,
+        "lon": 1.25155,
+        "name": "limoges_parking_90_Avenue_Ernest_Ruben_zidUWIERNQ6",
+        "station_id": "limoges_parking_90_Avenue_Ernest_Ruben_zidUWIERNQ6"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.81409,
+        "lon": 1.2283,
+        "name": "limoges_parking_Pr_La_Cornue_zidU14EVA72",
+        "station_id": "limoges_parking_Pr_La_Cornue_zidU14EVA72"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.81859,
+        "lon": 1.23942,
+        "name": "limoges_parking_4_rue_de_la_Conque_zidJ6TQH4XB",
+        "station_id": "limoges_parking_4_rue_de_la_Conque_zidJ6TQH4XB"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.81929,
+        "lon": 1.23522,
+        "name": "limoges_parking_41_rue_de_la_Conque_zidZKPLS2Q2",
+        "station_id": "limoges_parking_41_rue_de_la_Conque_zidZKPLS2Q2"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.82264,
+        "lon": 1.23961,
+        "name": "limoges_parking_49_avenue_de_Naugeat_zid1AR4A677",
+        "station_id": "limoges_parking_49_avenue_de_Naugeat_zid1AR4A677"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.82611,
+        "lon": 1.25074,
+        "name": "limoges_parking_3_rue_des_Penitents_Rouges_zidXRBJF4JJ",
+        "station_id": "limoges_parking_3_rue_des_Penitents_Rouges_zidXRBJF4JJ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.82626,
+        "lon": 1.247,
+        "name": "limoges_parking_10_cours_Jean_Penicaud_zidLQZQR4FI",
+        "station_id": "limoges_parking_10_cours_Jean_Penicaud_zidLQZQR4FI"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.827,
+        "lon": 1.24732,
+        "name": "limoges_parking_14_rue_Pierre_Courteys_zidWSGOH83E",
+        "station_id": "limoges_parking_14_rue_Pierre_Courteys_zidWSGOH83E"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.82971,
+        "lon": 1.24732,
+        "name": "limoges_parking_30_rue_Francois_Perrin_zid9V7FRVO3",
+        "station_id": "limoges_parking_30_rue_Francois_Perrin_zid9V7FRVO3"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.82661,
+        "lon": 1.24302,
+        "name": "limoges_parking_57_rue_de_la_Brasserie_zid3JWTAPQ9",
+        "station_id": "limoges_parking_57_rue_de_la_Brasserie_zid3JWTAPQ9"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.82456,
+        "lon": 1.23457,
+        "name": "limoges_parking_Rue_d_Isle_zidJDYFT0T4",
+        "station_id": "limoges_parking_Rue_d_Isle_zidJDYFT0T4"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.82786,
+        "lon": 1.23583,
+        "name": "limoges_parking_80_rue_Clos_Augier_zid2K8LPVSO",
+        "station_id": "limoges_parking_80_rue_Clos_Augier_zid2K8LPVSO"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.82974,
+        "lon": 1.23259,
+        "name": "limoges_parking_3_rue_Philippe_de_Commines_zidGVIFAZK7",
+        "station_id": "limoges_parking_3_rue_Philippe_de_Commines_zidGVIFAZK7"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.83161,
+        "lon": 1.23613,
+        "name": "limoges_parking_172_rue_Armand_Dutreix_zidU90JCFVY",
+        "station_id": "limoges_parking_172_rue_Armand_Dutreix_zidU90JCFVY"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.833,
+        "lon": 1.23173,
+        "name": "limoges_parking_232_rue_Armand_Dutreix_zid1O9WSG3B",
+        "station_id": "limoges_parking_232_rue_Armand_Dutreix_zid1O9WSG3B"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.83386,
+        "lon": 1.2291,
+        "name": "limoges_parking_270_rue_Armand_Dutreix_zid0ZE8LIOQ",
+        "station_id": "limoges_parking_270_rue_Armand_Dutreix_zid0ZE8LIOQ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.84287,
+        "lon": 1.19358,
+        "name": "limoges_parking_Parvis_Eglise_Landouge_zidLRUR3XON",
+        "station_id": "limoges_parking_Parvis_Eglise_Landouge_zidLRUR3XON"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.83937,
+        "lon": 1.22576,
+        "name": "limoges_parking_21_rue_Jean_le_Bail_zid6AX4YKC9",
+        "station_id": "limoges_parking_21_rue_Jean_le_Bail_zid6AX4YKC9"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.83372,
+        "lon": 1.25003,
+        "name": "limoges_parking_29_Av__Saint_Surin_zidGYNTMKGC",
+        "station_id": "limoges_parking_29_Av__Saint_Surin_zidGYNTMKGC"
+      },
+      {
+        "capacity": 6,
+        "is_virtual_station": true,
+        "lat": 45.83398,
+        "lon": 1.252,
+        "name": "limoges_parking_6_rue_Bernard_Palissy_zidLI3R7M4R",
+        "station_id": "limoges_parking_6_rue_Bernard_Palissy_zidLI3R7M4R"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.835,
+        "lon": 1.24849,
+        "name": "limoges_parking_8_Rue_Jean_Baptiste_Blanc_zid63Q93OVP",
+        "station_id": "limoges_parking_8_Rue_Jean_Baptiste_Blanc_zid63Q93OVP"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.83504,
+        "lon": 1.25376,
+        "name": "limoges_parking_9_rue_Deverrine_zidJ1LIBDON",
+        "station_id": "limoges_parking_9_rue_Deverrine_zidJ1LIBDON"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.83865,
+        "lon": 1.24749,
+        "name": "limoges_parking_4_Rue_Villaris_zidIN1RPB1L",
+        "station_id": "limoges_parking_4_Rue_Villaris_zidIN1RPB1L"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.83925,
+        "lon": 1.2451,
+        "name": "limoges_parking_94_Av__des_Ruchoux_zid562DQYT2",
+        "station_id": "limoges_parking_94_Av__des_Ruchoux_zid562DQYT2"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.84299,
+        "lon": 1.24231,
+        "name": "limoges_parking_15_Rue_Edouard_Michaud_zidWIYVXXPU",
+        "station_id": "limoges_parking_15_Rue_Edouard_Michaud_zidWIYVXXPU"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.84593,
+        "lon": 1.23181,
+        "name": "limoges_parking_47_rue_du_Marechal_Foch_zidIEA6QSCV",
+        "station_id": "limoges_parking_47_rue_du_Marechal_Foch_zidIEA6QSCV"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.84819,
+        "lon": 1.23264,
+        "name": "limoges_parking_33_allee_du_Moulin_Rabaud_zid57FT3Z3E",
+        "station_id": "limoges_parking_33_allee_du_Moulin_Rabaud_zid57FT3Z3E"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.8434,
+        "lon": 1.24573,
+        "name": "limoges_parking_130_Av__Montjovis_zidJ3MUDRV8",
+        "station_id": "limoges_parking_130_Av__Montjovis_zidJ3MUDRV8"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.84448,
+        "lon": 1.24877,
+        "name": "limoges_parking_118_Av__Emile_Labussiere_zidNCVZ1SX3",
+        "station_id": "limoges_parking_118_Av__Emile_Labussiere_zidNCVZ1SX3"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.85306,
+        "lon": 1.24417,
+        "name": "limoges_parking_139_Rue_de_Bellac_zidAATKM0ER",
+        "station_id": "limoges_parking_139_Rue_de_Bellac_zidAATKM0ER"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.85272,
+        "lon": 1.25246,
+        "name": "limoges_parking_20_Av__Pierre_Traversat_87100_Limoges_zid345PV0NU",
+        "station_id": "limoges_parking_20_Av__Pierre_Traversat_87100_Limoges_zid345PV0NU"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.84874,
+        "lon": 1.25439,
+        "name": "limoges_parking_Rue_Maryse_Bastie_zidOXFM16G8",
+        "station_id": "limoges_parking_Rue_Maryse_Bastie_zidOXFM16G8"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.84572,
+        "lon": 1.25642,
+        "name": "limoges_parking_33_Rue_Jean_Pouyat_zidWGKO2F0Y",
+        "station_id": "limoges_parking_33_Rue_Jean_Pouyat_zidWGKO2F0Y"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.84409,
+        "lon": 1.25962,
+        "name": "limoges_parking_73_avenue_du_General_Leclerc_zidPUOWZZSI",
+        "station_id": "limoges_parking_73_avenue_du_General_Leclerc_zidPUOWZZSI"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.84027,
+        "lon": 1.25564,
+        "name": "limoges_parking_22_Rue_du_Crucifix_zidLLJG56L1",
+        "station_id": "limoges_parking_22_Rue_du_Crucifix_zidLLJG56L1"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.83848,
+        "lon": 1.25278,
+        "name": "limoges_parking_58_Rue_Bobillot_zidG81IKTKP",
+        "station_id": "limoges_parking_58_Rue_Bobillot_zidG81IKTKP"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.83919,
+        "lon": 1.25533,
+        "name": "limoges_parking_36_Rue_Encombe_Vineuse_zid6BERSV5M",
+        "station_id": "limoges_parking_36_Rue_Encombe_Vineuse_zid6BERSV5M"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.839,
+        "lon": 1.25806,
+        "name": "limoges_parking_71_Av__Garibaldi_zidJW150T87",
+        "station_id": "limoges_parking_71_Av__Garibaldi_zidJW150T87"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.83888,
+        "lon": 1.25985,
+        "name": "limoges_parking_27_Rue_Hoche_87100_Limoges_zidFMYREGOJ",
+        "station_id": "limoges_parking_27_Rue_Hoche_87100_Limoges_zidFMYREGOJ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.8401,
+        "lon": 1.25815,
+        "name": "limoges_parking_6_Pl__Sadi_Carnot_zidC33E3DKX",
+        "station_id": "limoges_parking_6_Pl__Sadi_Carnot_zidC33E3DKX"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.84364,
+        "lon": 1.26279,
+        "name": "limoges_parking_Rue_Andre_Antoine_zidU06C8IEL",
+        "station_id": "limoges_parking_Rue_Andre_Antoine_zidU06C8IEL"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.84617,
+        "lon": 1.26308,
+        "name": "limoges_parking_46_Rue_Emile_Zola_zid6FTS4A5X",
+        "station_id": "limoges_parking_46_Rue_Emile_Zola_zid6FTS4A5X"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.84729,
+        "lon": 1.25856,
+        "name": "limoges_parking_29_Av__de_Louyat_zidA1J601IJ",
+        "station_id": "limoges_parking_29_Av__de_Louyat_zidA1J601IJ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.85632,
+        "lon": 1.27055,
+        "name": "limoges_parking_Bd_Robert_Schuman_zid1MF36AKU",
+        "station_id": "limoges_parking_Bd_Robert_Schuman_zid1MF36AKU"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.85553,
+        "lon": 1.27309,
+        "name": "limoges_parking_Parking_Rene_Blanchot_zidF4BMBHN0",
+        "station_id": "limoges_parking_Parking_Rene_Blanchot_zidF4BMBHN0"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.85138,
+        "lon": 1.26485,
+        "name": "limoges_parking_204_Av__du_General_Leclerc_zidP42MINVR",
+        "station_id": "limoges_parking_204_Av__du_General_Leclerc_zidP42MINVR"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.84913,
+        "lon": 1.26815,
+        "name": "limoges_parking_14_rue_Henri_Farman_zid3UICZKRD",
+        "station_id": "limoges_parking_14_rue_Henri_Farman_zid3UICZKRD"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.84801,
+        "lon": 1.27201,
+        "name": "limoges_parking_74_rue_de_la_bregere_zid7PRNJT5P",
+        "station_id": "limoges_parking_74_rue_de_la_bregere_zid7PRNJT5P"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.84484,
+        "lon": 1.27384,
+        "name": "limoges_parking_33_rue_de_la_Bregere_zidGQQ6ZEVK",
+        "station_id": "limoges_parking_33_rue_de_la_Bregere_zidGQQ6ZEVK"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.85156,
+        "lon": 1.29736,
+        "name": "limoges_parking_Lycee_Hotelier_zidURAA37SA",
+        "station_id": "limoges_parking_Lycee_Hotelier_zidURAA37SA"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.86052,
+        "lon": 1.29375,
+        "name": "limoges_parking_Ester_2_zidXI52J2GA",
+        "station_id": "limoges_parking_Ester_2_zidXI52J2GA"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.86088,
+        "lon": 1.29218,
+        "name": "limoges_parking_Ester_1_zidWCVUD95O",
+        "station_id": "limoges_parking_Ester_1_zidWCVUD95O"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.87313,
+        "lon": 1.28991,
+        "name": "limoges_parking_Parking_du_stade_Sable_gris_zidA9FGXWOV",
+        "station_id": "limoges_parking_Parking_du_stade_Sable_gris_zidA9FGXWOV"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.86443,
+        "lon": 1.28859,
+        "name": "limoges_parking_11_rue_Jules_Raimu_zidWI8A9ZNV",
+        "station_id": "limoges_parking_11_rue_Jules_Raimu_zidWI8A9ZNV"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.82449,
+        "lon": 1.2257,
+        "name": "limoges_parking_310_Francois_Perrin_zidZKTJ0B2U",
+        "station_id": "limoges_parking_310_Francois_Perrin_zidZKTJ0B2U"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.80627,
+        "lon": 1.22611,
+        "name": "limoges_parking_12_Rue_Jean_Jaures_zidQG3CUPYR",
+        "station_id": "limoges_parking_12_Rue_Jean_Jaures_zidQG3CUPYR"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.80792,
+        "lon": 1.22284,
+        "name": "limoges_parking_Rue_du_19_Mars_1962_zid2MUP9NY7",
+        "station_id": "limoges_parking_Rue_du_19_Mars_1962_zid2MUP9NY7"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.80924,
+        "lon": 1.21793,
+        "name": "limoges_parking_Avenue_du_Chateau_zid2Q7574XJ",
+        "station_id": "limoges_parking_Avenue_du_Chateau_zid2Q7574XJ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.80459,
+        "lon": 1.22278,
+        "name": "limoges_parking_Rue_La_Chapelle_zidYS3S1NE1",
+        "station_id": "limoges_parking_Rue_La_Chapelle_zidYS3S1NE1"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.82625,
+        "lon": 1.28786,
+        "name": "limoges_parking_Rue_des_Chataigniers__zidRLJ8T7CJ",
+        "station_id": "limoges_parking_Rue_des_Chataigniers__zidRLJ8T7CJ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.83704,
+        "lon": 1.29478,
+        "name": "limoges_parking_Rond_point_Jean_Baptiste_Corot_zidUT7XCNDK",
+        "station_id": "limoges_parking_Rond_point_Jean_Baptiste_Corot_zidUT7XCNDK"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.82768,
+        "lon": 1.29141,
+        "name": "limoges_parking_Espaces_verts_Leonard_Limosin_zid8ZOR9VB5",
+        "station_id": "limoges_parking_Espaces_verts_Leonard_Limosin_zid8ZOR9VB5"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.83923,
+        "lon": 1.31097,
+        "name": "limoges_parking_Rue_Turgot_zid48D4TLFO",
+        "station_id": "limoges_parking_Rue_Turgot_zid48D4TLFO"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.83647,
+        "lon": 1.30857,
+        "name": "limoges_parking_Parking_Jean_Cocteau_zidUSORY4X2",
+        "station_id": "limoges_parking_Parking_Jean_Cocteau_zidUSORY4X2"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.82785,
+        "lon": 1.30574,
+        "name": "limoges_parking_Pierre_Cot_zid3MGXLTFG",
+        "station_id": "limoges_parking_Pierre_Cot_zid3MGXLTFG"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.85875,
+        "lon": 1.23525,
+        "name": "limoges_parking_2_Rue_du_Moulin_Rabaud_zid44H913PO",
+        "station_id": "limoges_parking_2_Rue_du_Moulin_Rabaud_zid44H913PO"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.86368,
+        "lon": 1.23766,
+        "name": "limoges_parking_Allee_de_l_Hippodrome_zidXYGKT14Y",
+        "station_id": "limoges_parking_Allee_de_l_Hippodrome_zidXYGKT14Y"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.86612,
+        "lon": 1.24211,
+        "name": "limoges_parking_18_Rue_Auguste_Renoir_zidHD0O8R57",
+        "station_id": "limoges_parking_18_Rue_Auguste_Renoir_zidHD0O8R57"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.868,
+        "lon": 1.23503,
+        "name": "limoges_parking_Rue_de_Bel_Font_zidF4T5MVN8",
+        "station_id": "limoges_parking_Rue_de_Bel_Font_zidF4T5MVN8"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.87715,
+        "lon": 1.23825,
+        "name": "limoges_parking_Place_du_8_mai_1945_zid6H0BQLUH",
+        "station_id": "limoges_parking_Place_du_8_mai_1945_zid6H0BQLUH"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.87982,
+        "lon": 1.23857,
+        "name": "limoges_parking_Avenue_de_la_Gare_zidWUPEXSOD",
+        "station_id": "limoges_parking_Avenue_de_la_Gare_zidWUPEXSOD"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.88431,
+        "lon": 1.24226,
+        "name": "limoges_parking_21_rue_de_Pompadour_zidRPFSY6CG",
+        "station_id": "limoges_parking_21_rue_de_Pompadour_zidRPFSY6CG"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.86501,
+        "lon": 1.32392,
+        "name": "limoges_parking_Pharmacie_Goncalves_zidW0VSZX8A",
+        "station_id": "limoges_parking_Pharmacie_Goncalves_zidW0VSZX8A"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.86825,
+        "lon": 1.3168,
+        "name": "limoges_parking_Avenue_de_Lattre_de_Tassigny_zidSOFRSBB7",
+        "station_id": "limoges_parking_Avenue_de_Lattre_de_Tassigny_zidSOFRSBB7"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.87173,
+        "lon": 1.31199,
+        "name": "limoges_parking_1_rue_du_Chatenet_zid9S0KM6T9",
+        "station_id": "limoges_parking_1_rue_du_Chatenet_zid9S0KM6T9"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.87306,
+        "lon": 1.32957,
+        "name": "limoges_parking_Rue_Pierre_Mendes_France_zidK5XN0Z63",
+        "station_id": "limoges_parking_Rue_Pierre_Mendes_France_zidK5XN0Z63"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.87069,
+        "lon": 1.33322,
+        "name": "limoges_parking_Parking_La_Sabliere_zid0G5OW6UD",
+        "station_id": "limoges_parking_Parking_La_Sabliere_zid0G5OW6UD"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.8132,
+        "lon": 1.2333,
+        "name": "limoges_parking_Marquage_Luther_King_zidYIEP5OE5",
+        "station_id": "limoges_parking_Marquage_Luther_King_zidYIEP5OE5",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.8176,
+        "lon": 1.23209,
+        "name": "limoges_parking_Marquage_Camille_Guerin_zidSNH5E1XQ",
+        "station_id": "limoges_parking_Marquage_Camille_Guerin_zidSNH5E1XQ",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.81144,
+        "lon": 1.23477,
+        "name": "limoges_parking_CHU_limoges_zidE1PHUK5S",
+        "station_id": "limoges_parking_CHU_limoges_zidE1PHUK5S",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.83782,
+        "lon": 1.23918,
+        "name": "limoges_parking_Marquage_Mariveau_zidCYTXQY1Z",
+        "station_id": "limoges_parking_Marquage_Mariveau_zidCYTXQY1Z",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.81148,
+        "lon": 1.28205,
+        "name": "limoges_parking_Hotel_be_guest_zidQAKRBK0W",
+        "station_id": "limoges_parking_Hotel_be_guest_zidQAKRBK0W",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.83698,
+        "lon": 1.30747,
+        "name": "limoges_parking_BikeRack_PL_commerce_Panazol_zid763EZUUF",
+        "station_id": "limoges_parking_BikeRack_PL_commerce_Panazol_zid763EZUUF",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.82321,
+        "lon": 1.27241,
+        "name": "limoges_parking_clement_zidR1BAT21N",
+        "station_id": "limoges_parking_clement_zidR1BAT21N",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.82063,
+        "lon": 1.23865,
+        "name": "limoges_parking_Vanteau_zid34M8U2P6",
+        "station_id": "limoges_parking_Vanteau_zid34M8U2P6",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.8339,
+        "lon": 1.2615,
+        "name": "limoges_parking_Cours_Bugeaud_zidUEIMP2HE",
+        "station_id": "limoges_parking_Cours_Bugeaud_zidUEIMP2HE"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.83847,
+        "lon": 1.25875,
+        "name": "limoges_parking_Martial_Pradesh_zid2P7YMF39",
+        "station_id": "limoges_parking_Martial_Pradesh_zid2P7YMF39"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.83685,
+        "lon": 1.30766,
+        "name": "limoges_parking_Place_du_commerce_zidNO03DW2Y",
+        "station_id": "limoges_parking_Place_du_commerce_zidNO03DW2Y"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.8626,
+        "lon": 1.27839,
+        "name": "limoges_parking_Zenith_de_Limoges_zid65TW0060",
+        "station_id": "limoges_parking_Zenith_de_Limoges_zid65TW0060"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 45.81564,
+        "lon": 1.26899,
+        "name": "limoges_parking_31_Pompidou_zidD9QA3PHI",
+        "station_id": "limoges_parking_31_Pompidou_zidD9QA3PHI",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      }
+    ]
+  },
+  "last_updated": 1771749835,
+  "ttl": 0,
+  "version": "2.2"
+}

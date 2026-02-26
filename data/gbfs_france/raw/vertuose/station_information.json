@@ -1,0 +1,672 @@
+{
+  "data": {
+    "stations": [
+      {
+        "capacity": 16,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.45907,
+        "lon": 5.926294,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Cantebonne - Libération"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://vertuose.ecovelo.mobi/#/station/stn_8AY3ymdaszZRGtDptBDLWo"
+        },
+        "station_id": "stn_8AY3ymdaszZRGtDptBDLWo"
+      },
+      {
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.499978,
+        "lon": 5.78744,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Mexy - La Forchette"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://vertuose.ecovelo.mobi/#/station/stn_3jriagryTdpyPgte6UoFpr"
+        },
+        "station_id": "stn_3jriagryTdpyPgte6UoFpr"
+      },
+      {
+        "capacity": 16,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.534232,
+        "lon": 5.787506,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Maison de la Formation"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://vertuose.ecovelo.mobi/#/station/stn_7xeaLkxMcwt7enWiwApa6q"
+        },
+        "station_id": "stn_7xeaLkxMcwt7enWiwApa6q"
+      },
+      {
+        "capacity": 6,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.471946,
+        "lon": 5.697376,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Mairie d'Ugny"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://vertuose.ecovelo.mobi/#/station/stn_4UNCGFRX7GkhnwyvCHe9ui"
+        },
+        "station_id": "stn_4UNCGFRX7GkhnwyvCHe9ui"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.510777,
+        "lon": 5.8063,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Saint Charles"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://vertuose.ecovelo.mobi/#/station/stn_oQeh99et9isUKoNZuysA87"
+        },
+        "station_id": "stn_oQeh99et9isUKoNZuysA87"
+      },
+      {
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.48347,
+        "lon": 5.70132,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Mairie de Cons-la-Granville"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://vertuose.ecovelo.mobi/#/station/stn_fdCx8mL55GHoBYQtdPx4Ty"
+        },
+        "station_id": "stn_fdCx8mL55GHoBYQtdPx4Ty"
+      },
+      {
+        "capacity": 20,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.512969,
+        "lon": 5.769733,
+        "name": [
+          {
+            "language": "fr",
+            "text": "PEM - Gare"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://vertuose.ecovelo.mobi/#/station/stn_7ETnNmt9zunEbfMeBNkBEq"
+        },
+        "station_id": "stn_7ETnNmt9zunEbfMeBNkBEq"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.493119,
+        "lon": 5.872935,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Mairie Hussigny"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://vertuose.ecovelo.mobi/#/station/stn_XksfU4u3kxpxdEk5E6PDsv"
+        },
+        "station_id": "stn_XksfU4u3kxpxdEk5E6PDsv"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.53156,
+        "lon": 5.822829,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Mairie Saulnes"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://vertuose.ecovelo.mobi/#/station/stn_mcdUPpzGZH8jViMwXcxV4W"
+        },
+        "station_id": "stn_mcdUPpzGZH8jViMwXcxV4W"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.473448,
+        "lon": 5.907301,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Mairie Thil"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://vertuose.ecovelo.mobi/#/station/stn_AXnobqdVpcDMZZmVYRHEvF"
+        },
+        "station_id": "stn_AXnobqdVpcDMZZmVYRHEvF"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.518792,
+        "lon": 5.784818,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Mairie Herserange"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://vertuose.ecovelo.mobi/#/station/stn_EzGAWLAtCSkNSncUqyKDk9"
+        },
+        "station_id": "stn_EzGAWLAtCSkNSncUqyKDk9"
+      },
+      {
+        "capacity": 6,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.44558,
+        "lon": 5.83488,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Morfontaine Cités"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://vertuose.ecovelo.mobi/#/station/stn_KwHdPcvvS9SHH6BeE4vxgm"
+        },
+        "station_id": "stn_KwHdPcvvS9SHH6BeE4vxgm"
+      },
+      {
+        "capacity": 6,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.445402,
+        "lon": 5.77956,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Mairie de Laix"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://vertuose.ecovelo.mobi/#/station/stn_AENHPRoM4957JVWXsY3dDB"
+        },
+        "station_id": "stn_AENHPRoM4957JVWXsY3dDB"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.484096,
+        "lon": 5.743929,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Mairie Cutry"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://vertuose.ecovelo.mobi/#/station/stn_F5yyWgTxmMvkYVGe8TRRpr"
+        },
+        "station_id": "stn_F5yyWgTxmMvkYVGe8TRRpr"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.544013,
+        "lon": 5.786115,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Mairie Mont-Saint-Martin"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://vertuose.ecovelo.mobi/#/station/stn_HRXKnguQuzbY7Kz8r8yHvs"
+        },
+        "station_id": "stn_HRXKnguQuzbY7Kz8r8yHvs"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.521475,
+        "lon": 5.71752,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Cosnes et Romain - Salle Polyvalente"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://vertuose.ecovelo.mobi/#/station/stn_dgWSrfBTohLeo6AujUU8ZX"
+        },
+        "station_id": "stn_dgWSrfBTohLeo6AujUU8ZX"
+      },
+      {
+        "capacity": 16,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.522513,
+        "lon": 5.755382,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Crous"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://vertuose.ecovelo.mobi/#/station/stn_Qh5qzZ5Ybnd2mtTppJyMEv"
+        },
+        "station_id": "stn_Qh5qzZ5Ybnd2mtTppJyMEv"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.491924,
+        "lon": 5.751921,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Heumont - Collège Brossolette"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://vertuose.ecovelo.mobi/#/station/stn_jnVnLZ95cwuafvugkCdXi2"
+        },
+        "station_id": "stn_jnVnLZ95cwuafvugkCdXi2"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.488679,
+        "lon": 5.804326,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Mairie Haucourt"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://vertuose.ecovelo.mobi/#/station/stn_gLSQYNUfY4iteGKhc7rpkN"
+        },
+        "station_id": "stn_gLSQYNUfY4iteGKhc7rpkN"
+      },
+      {
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.501368,
+        "lon": 5.781252,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Mexy - Ecole"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://vertuose.ecovelo.mobi/#/station/stn_hPFppQTaCaoBnPxztJnJWm"
+        },
+        "station_id": "stn_hPFppQTaCaoBnPxztJnJWm"
+      },
+      {
+        "capacity": 16,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.470791,
+        "lon": 5.930203,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Mairie Villerupt"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://vertuose.ecovelo.mobi/#/station/stn_SrCJdXw6a37yB9xTN3Qx5Z"
+        },
+        "station_id": "stn_SrCJdXw6a37yB9xTN3Qx5Z"
+      },
+      {
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.472626,
+        "lon": 5.766933,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Mairie de Chenières"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://vertuose.ecovelo.mobi/#/station/stn_bZRzDMGvfQeTTButLCvNVa"
+        },
+        "station_id": "stn_bZRzDMGvfQeTTButLCvNVa"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.500529,
+        "lon": 5.73182,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Mairie Lexy"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://vertuose.ecovelo.mobi/#/station/stn_UySM53CxnVRJyF4bm5n3Qd"
+        },
+        "station_id": "stn_UySM53CxnVRJyF4bm5n3Qd"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.463592,
+        "lon": 5.88588,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Tiercelet - Le Parc"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://vertuose.ecovelo.mobi/#/station/stn_gxWBVTSNJ2dE8iwF9VixuB"
+        },
+        "station_id": "stn_gxWBVTSNJ2dE8iwF9VixuB"
+      },
+      {
+        "capacity": 16,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.527768,
+        "lon": 5.753703,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Plaine des Jeux"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://vertuose.ecovelo.mobi/#/station/stn_GxL2UNienH6FNgYsTunedf"
+        },
+        "station_id": "stn_GxL2UNienH6FNgYsTunedf"
+      },
+      {
+        "capacity": 6,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.502363,
+        "lon": 5.818045,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Moulaine"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://vertuose.ecovelo.mobi/#/station/stn_bu4NvxzMpieKMjxz7XhZJ5"
+        },
+        "station_id": "stn_bu4NvxzMpieKMjxz7XhZJ5"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.5006,
+        "lon": 5.74679,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Agglomération Grand Longwy"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://vertuose.ecovelo.mobi/#/station/stn_8V97eD6mb8mMxMaZ6kWvZQ"
+        },
+        "station_id": "stn_8V97eD6mb8mMxMaZ6kWvZQ"
+      },
+      {
+        "capacity": 6,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.50815,
+        "lon": 5.79541,
+        "name": [
+          {
+            "language": "fr",
+            "text": "ZAC de Mexy"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://vertuose.ecovelo.mobi/#/station/stn_X5XqfEfS59vy2PWqxSvNgD"
+        },
+        "station_id": "stn_X5XqfEfS59vy2PWqxSvNgD"
+      },
+      {
+        "capacity": 20,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.514071,
+        "lon": 5.757451,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Pôle Aquatique"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://vertuose.ecovelo.mobi/#/station/stn_VAkzEnFq7p2h74s6pz95k9"
+        },
+        "station_id": "stn_VAkzEnFq7p2h74s6pz95k9"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.515835,
+        "lon": 5.767309,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Récollets"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://vertuose.ecovelo.mobi/#/station/stn_SA8rsNknk9hAqFETTKqkDg"
+        },
+        "station_id": "stn_SA8rsNknk9hAqFETTKqkDg"
+      },
+      {
+        "capacity": 20,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.52276,
+        "lon": 5.760593,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Lycée Mézières"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://vertuose.ecovelo.mobi/#/station/stn_HeVwkHziqNDaiZGqod6Vws"
+        },
+        "station_id": "stn_HeVwkHziqNDaiZGqod6Vws"
+      },
+      {
+        "capacity": 6,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.519352,
+        "lon": 5.796552,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Herserange Village"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://vertuose.ecovelo.mobi/#/station/stn_KwBWn6w4JvknfekDu4YPo6"
+        },
+        "station_id": "stn_KwBWn6w4JvknfekDu4YPo6"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.532874,
+        "lon": 5.7958,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Mairie Longlaville"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://vertuose.ecovelo.mobi/#/station/stn_7ta7f9kNZSEByG6mwYcsgk"
+        },
+        "station_id": "stn_7ta7f9kNZSEByG6mwYcsgk"
+      },
+      {
+        "capacity": 16,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.518329,
+        "lon": 5.752867,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Médiathèque"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://vertuose.ecovelo.mobi/#/station/stn_Zg5Mu4eFaLLjTFGVLwomy2"
+        },
+        "station_id": "stn_Zg5Mu4eFaLLjTFGVLwomy2"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.472874,
+        "lon": 5.826258,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Villers Centre"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://vertuose.ecovelo.mobi/#/station/stn_MkHe4QYTrScQNoYMLS3csP"
+        },
+        "station_id": "stn_MkHe4QYTrScQNoYMLS3csP"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.534112,
+        "lon": 5.684076,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Gorcy - Eglise"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://vertuose.ecovelo.mobi/#/station/stn_TXndX8aLnsq4MQd7eDRZLV"
+        },
+        "station_id": "stn_TXndX8aLnsq4MQd7eDRZLV"
+      },
+      {
+        "capacity": 6,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.532951,
+        "lon": 5.715235,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Vaux Warnimont"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://vertuose.ecovelo.mobi/#/station/stn_etqBMVLAGMhhnpfiG5r3ST"
+        },
+        "station_id": "stn_etqBMVLAGMhhnpfiG5r3ST"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.50052,
+        "lon": 5.755852,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Mairie Rehon"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://vertuose.ecovelo.mobi/#/station/stn_HePMuUprFJtTG2bUA5ybdk"
+        },
+        "station_id": "stn_HePMuUprFJtTG2bUA5ybdk"
+      },
+      {
+        "capacity": 6,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.443971,
+        "lon": 5.810089,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Morfontaine Village"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://vertuose.ecovelo.mobi/#/station/stn_mJ8LbJnf38xVNEGQCVwQbg"
+        },
+        "station_id": "stn_mJ8LbJnf38xVNEGQCVwQbg"
+      }
+    ]
+  },
+  "last_updated": "2026-02-22T09:41:19+01:00",
+  "ttl": 0,
+  "version": "3.0"
+}

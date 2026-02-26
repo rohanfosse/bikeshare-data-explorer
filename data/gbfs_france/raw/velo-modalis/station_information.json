@@ -1,0 +1,209 @@
+{
+  "last_updated": 1771749870,
+  "ttl": 60,
+  "version": "2.2",
+  "data": {
+    "stations": [
+      {
+        "station_id": "ciaq8q0k59geca2m8a90",
+        "name": "Gare SNCF Jarnac",
+        "lat": 45.6715,
+        "lon": -0.17791,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 8,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 8,
+          "4": 8,
+          "5": 0,
+          "6": 0,
+          "7": 8
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "todo://app?sid=ciaq8q0k59geca2m8a90",
+          "ios": "todo://app?sid=ciaq8q0k59geca2m8a90"
+        }
+      },
+      {
+        "station_id": "ciaq8qgk59geca2m8am0",
+        "name": "Gare SNCF Cognac",
+        "lat": 45.684779,
+        "lon": -0.325847,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 3,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 3,
+          "4": 3,
+          "5": 0,
+          "6": 0,
+          "7": 3
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=ciaq8qgk59geca2m8am0",
+          "ios": "todo://app?sid=ciaq8qgk59geca2m8am0"
+        }
+      },
+      {
+        "station_id": "ciaq8r0k59geca2m8b00",
+        "name": "Cognac Borderies",
+        "lat": 45.68983,
+        "lon": -0.35108,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 1,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 1,
+          "4": 1,
+          "5": 0,
+          "6": 0,
+          "7": 1
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=ciaq8r0k59geca2m8b00",
+          "ios": "todo://app?sid=ciaq8r0k59geca2m8b00"
+        }
+      },
+      {
+        "station_id": "ciaq8s0k59geca2m8bog",
+        "name": "Cognac Le Castel",
+        "lat": 45.67451,
+        "lon": -0.31143,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 6,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 6,
+          "4": 6,
+          "5": 0,
+          "6": 0,
+          "7": 6
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=ciaq8s0k59geca2m8bog",
+          "ios": "todo://app?sid=ciaq8s0k59geca2m8bog"
+        }
+      },
+      {
+        "station_id": "ciaq8sok59geca2m8ce0",
+        "name": "Cognac X'eau",
+        "lat": 45.68884,
+        "lon": -0.3071,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 8,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 8,
+          "4": 8,
+          "5": 0,
+          "6": 0,
+          "7": 8
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=ciaq8sok59geca2m8ce0",
+          "ios": "todo://app?sid=ciaq8sok59geca2m8ce0"
+        }
+      },
+      {
+        "station_id": "ciaq8tok59geca2m8d10",
+        "name": "Cognac Pôle Gambetta",
+        "lat": 45.69224,
+        "lon": -0.3286,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 3,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 3,
+          "4": 3,
+          "5": 0,
+          "6": 0,
+          "7": 3
+        },
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "todo://app?sid=ciaq8tok59geca2m8d10",
+          "ios": "todo://app?sid=ciaq8tok59geca2m8d10"
+        }
+      },
+      {
+        "station_id": "coo9albqpgo2l1lc2ct0",
+        "name": "Cognac Ancien Hôpital ",
+        "lat": 45.6792,
+        "lon": -0.3361,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 2,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 2,
+          "4": 2,
+          "5": 0,
+          "6": 0,
+          "7": 2
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "todo://app?sid=coo9albqpgo2l1lc2ct0",
+          "ios": "todo://app?sid=coo9albqpgo2l1lc2ct0"
+        }
+      },
+      {
+        "station_id": "st_d2vuo314mrmajg30nncg",
+        "name": "Jarnac - Place du Château ",
+        "lat": 45.67922,
+        "lon": -0.17386,
+        "is_virtual_station": false,
+        "capacity": 10,
+        "vehicle_type_capacity": {
+          "1": 7,
+          "10": 0,
+          "14": 0,
+          "15": 0,
+          "2": 7,
+          "4": 7,
+          "5": 0,
+          "6": 0,
+          "7": 7
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "todo://app?sid=st_d2vuo314mrmajg30nncg",
+          "ios": "todo://app?sid=st_d2vuo314mrmajg30nncg"
+        }
+      }
+    ]
+  }
+}

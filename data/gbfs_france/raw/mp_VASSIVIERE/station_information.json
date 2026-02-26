@@ -1,0 +1,23 @@
+{
+  "last_updated": "2026-02-22T09:41:06.108+01:00",
+  "ttl": 300,
+  "version": "3.0",
+  "data": {
+    "stations": [
+      {
+        "station_id": "748",
+        "name": [
+          {
+            "text": "Porte de Vassiviere",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.73968,
+        "lon": 1.74136,
+        "is_virtual_station": false,
+        "capacity": 5,
+        "is_charging_station": true
+      }
+    ]
+  }
+}

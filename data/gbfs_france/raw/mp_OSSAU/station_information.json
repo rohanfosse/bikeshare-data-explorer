@@ -1,0 +1,51 @@
+{
+  "last_updated": "2026-02-22T09:41:06.195+01:00",
+  "ttl": 300,
+  "version": "3.0",
+  "data": {
+    "stations": [
+      {
+        "station_id": "745",
+        "name": [
+          {
+            "text": "Arudy",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.10392,
+        "lon": -0.42827,
+        "is_virtual_station": false,
+        "capacity": 7,
+        "is_charging_station": true
+      },
+      {
+        "station_id": "746",
+        "name": [
+          {
+            "text": "Gare de Buzy",
+            "language": "fr"
+          }
+        ],
+        "lat": 43.14744,
+        "lon": -0.456001,
+        "is_virtual_station": false,
+        "capacity": 7,
+        "is_charging_station": true
+      },
+      {
+        "station_id": "747",
+        "name": [
+          {
+            "text": "Laruns",
+            "language": "fr"
+          }
+        ],
+        "lat": 42.984947,
+        "lon": -0.427595,
+        "is_virtual_station": false,
+        "capacity": 7,
+        "is_charging_station": true
+      }
+    ]
+  }
+}

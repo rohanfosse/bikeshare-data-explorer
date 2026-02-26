@@ -1,0 +1,17 @@
+{
+  "export_datetime": "2026-02-18T13:01:01.231304",
+  "export_dir": "c:\\Users\\Rohan\\OneDrive - Cesi\\Bureau\\CESI\\BikeShare-Graph-Forecasting\\data\\processed\\flow_analysis\\paper_ready_outputs",
+  "exported_files": [
+    "c:\\Users\\Rohan\\OneDrive - Cesi\\Bureau\\CESI\\BikeShare-Graph-Forecasting\\data\\processed\\flow_analysis\\paper_ready_outputs\\conductance_by_quartier.csv",
+    "c:\\Users\\Rohan\\OneDrive - Cesi\\Bureau\\CESI\\BikeShare-Graph-Forecasting\\data\\processed\\flow_analysis\\paper_ready_outputs\\sensitivity_partitions.csv",
+    "c:\\Users\\Rohan\\OneDrive - Cesi\\Bureau\\CESI\\BikeShare-Graph-Forecasting\\data\\processed\\flow_analysis\\paper_ready_outputs\\temporal_protocol_n_to_n1.csv",
+    "c:\\Users\\Rohan\\OneDrive - Cesi\\Bureau\\CESI\\BikeShare-Graph-Forecasting\\data\\processed\\flow_analysis\\paper_ready_outputs\\advanced_global_stats_loo.csv",
+    "c:\\Users\\Rohan\\OneDrive - Cesi\\Bureau\\CESI\\BikeShare-Graph-Forecasting\\data\\processed\\flow_analysis\\paper_ready_outputs\\advanced_per_class_stats_loo.csv",
+    "c:\\Users\\Rohan\\OneDrive - Cesi\\Bureau\\CESI\\BikeShare-Graph-Forecasting\\data\\processed\\flow_analysis\\paper_ready_outputs\\advanced_topk_stats_holdout.csv",
+    "c:\\Users\\Rohan\\OneDrive - Cesi\\Bureau\\CESI\\BikeShare-Graph-Forecasting\\data\\processed\\flow_analysis\\paper_ready_outputs\\figure_conductance.png",
+    "c:\\Users\\Rohan\\OneDrive - Cesi\\Bureau\\CESI\\BikeShare-Graph-Forecasting\\data\\processed\\flow_analysis\\paper_ready_outputs\\figure_sensitivity_ari.png",
+    "c:\\Users\\Rohan\\OneDrive - Cesi\\Bureau\\CESI\\BikeShare-Graph-Forecasting\\data\\processed\\flow_analysis\\paper_ready_outputs\\figure_temporal_protocol.png",
+    "c:\\Users\\Rohan\\OneDrive - Cesi\\Bureau\\CESI\\BikeShare-Graph-Forecasting\\data\\processed\\flow_analysis\\paper_ready_outputs\\figure_advanced_confusion_matrices.png",
+    "c:\\Users\\Rohan\\OneDrive - Cesi\\Bureau\\CESI\\BikeShare-Graph-Forecasting\\data\\processed\\flow_analysis\\paper_ready_outputs\\figure_advanced_pca_true_vs_pred.png"
+  ]
+}

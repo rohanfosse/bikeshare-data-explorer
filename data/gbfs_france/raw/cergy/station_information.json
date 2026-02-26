@@ -1,0 +1,369 @@
+{
+  "last_updated": 1771741851,
+  "ttl": 300,
+  "version": "2.3",
+  "data": {
+    "stations": [
+      {
+        "station_id": "53001",
+        "name": "PON01 - RUE SERE-DEPOIN (CB)",
+        "lat": 49.047619,
+        "lon": 2.096823,
+        "address": "Place du General de Gaulle devant la Gare - 95300 PONTOISE",
+        "capacity": 20
+      },
+      {
+        "station_id": "53002",
+        "name": "PON02 - PLACE DE LA LIBÉRATION",
+        "lat": 49.044395,
+        "lon": 2.090632,
+        "address": "Place de la Libération côté avenue de Verdun - 95300 PONTOISE",
+        "capacity": 20
+      },
+      {
+        "station_id": "53003",
+        "name": "PON03 - UNIVERSITÉ ST MARTIN",
+        "lat": 49.043583,
+        "lon": 2.084808,
+        "address": "Avenue François Mitterand côté boulevard du Port - 95300 PONTOISE",
+        "capacity": 20
+      },
+      {
+        "station_id": "53004",
+        "name": "PON04 - LA PALETTE",
+        "lat": 49.032141,
+        "lon": 2.087802,
+        "address": "BD DE L'OISE ANGLE RUE DE LA PALETTE",
+        "capacity": 20
+      },
+      {
+        "station_id": "50001",
+        "name": "CER01 - GARE LES HAUTS DE CERGY(CB)",
+        "lat": 49.048246,
+        "lon": 2.011238,
+        "address": "PLACE DES 3 GARES - 95000 CERGY",
+        "capacity": 29
+      },
+      {
+        "station_id": "56401",
+        "name": "COU01 - LA LOUVIERE (CB)",
+        "lat": 49.045223,
+        "lon": 2.002507,
+        "address": "Boulevard des chasseurs angle boulevard Sainte Apolline - 95400 COURDIMANCHE",
+        "capacity": 15
+      },
+      {
+        "station_id": "50002",
+        "name": "CER02 - AVENUE DU HAZAY",
+        "lat": 49.046868,
+        "lon": 2.01362,
+        "address": "Avenue du Hazay angle rue de la Destinée - 95000 CERGY",
+        "capacity": 24
+      },
+      {
+        "station_id": "50003",
+        "name": "CER03 - LES ESSARTS (CB)",
+        "lat": 49.042318,
+        "lon": 2.01958,
+        "address": "AVENUE DES ESSARTS ANGLE BOULEVARD DE L'OISE - 95000 CERGY",
+        "capacity": 24
+      },
+      {
+        "station_id": "50004",
+        "name": "CER04 - LE BON TEMPS",
+        "lat": 49.052785,
+        "lon": 2.017956,
+        "address": "AVENUE DU BON TEMPS ANGLE AVENUE DU HAZAY - 95000 CERGY",
+        "capacity": 15
+      },
+      {
+        "station_id": "50005",
+        "name": "CER05 - MOULIN A VENT",
+        "lat": 49.049401,
+        "lon": 2.017075,
+        "address": "AVENUE DU HAZAY ANGLE RUE DE L'AISSELETTE - 95000 CERGY",
+        "capacity": 20
+      },
+      {
+        "station_id": "50006",
+        "name": "CER06 - LE CHAT PERCHÉ",
+        "lat": 49.048957,
+        "lon": 2.026947,
+        "address": "AVENUE DE LA BELLE HEAUMIÈRE ANGLE SQUARE DE L'ECHIQUIER - 95000 CERGY",
+        "capacity": 16
+      },
+      {
+        "station_id": "50007",
+        "name": "CER07 -  PARC ST-CHRISTOPHE",
+        "lat": 49.042999,
+        "lon": 2.029687,
+        "address": "AVENUE DE L'ENTREPRISE ANGLE ROND POINT DU CÈDRE - 95000 CERGY",
+        "capacity": 14
+      },
+      {
+        "station_id": "50008",
+        "name": "CER08 - AXE MAJEUR (CB)",
+        "lat": 49.044092,
+        "lon": 2.036546,
+        "address": "RUE DE L'ESPLANADE DE PARIS ANGLE BOULEVARD DE L'OISE - 95000 CERGY",
+        "capacity": 17
+      },
+      {
+        "station_id": "50009",
+        "name": "CER09 - RUE DU BRULOIR",
+        "lat": 49.027239,
+        "lon": 2.077178,
+        "address": "88, RUE DU BRÛLOIR ANGLE RUE DES TOULEUSES POURPRES - 95000 CERGY",
+        "capacity": 11
+      },
+      {
+        "station_id": "50010",
+        "name": "CER10 - GARE CERGY AXE MAJ HORLOGE (CB)",
+        "lat": 49.0493,
+        "lon": 2.035223,
+        "address": "RUE DES PAS PERDUS - 95000 CERGY",
+        "capacity": 28
+      },
+      {
+        "station_id": "50011",
+        "name": "CER11 - PLACE DE L'HOTEL DE VILLE (CB)",
+        "lat": 49.051599,
+        "lon": 2.036105,
+        "address": "RUE DES GÉMEAUX - 95000 CERGY",
+        "capacity": 22
+      },
+      {
+        "station_id": "50012",
+        "name": "CER12 - PLACE DU HAUT-GENCY",
+        "lat": 49.046588,
+        "lon": 2.04512,
+        "address": "PLACE DU HAUT DE GENCY ANGLE RUE DES VENDANGES PROCHAINES - 95000 CERGY",
+        "capacity": 21
+      },
+      {
+        "station_id": "50013",
+        "name": "CER13 - ROND-POINT DES RAIES",
+        "lat": 49.044831,
+        "lon": 2.053462,
+        "address": "ALLÉE DU BELVÉDÈRE ANGLE ROND POINT DES RAIES - 95000 CERGY",
+        "capacity": 20
+      },
+      {
+        "station_id": "50014",
+        "name": "CER14 - AVENUE DU NORD",
+        "lat": 49.043224,
+        "lon": 2.060405,
+        "address": "AVENUE DU NORD ANGLE ALLÉE DES ACACIAS - 95000 CERGY",
+        "capacity": 20
+      },
+      {
+        "station_id": "50015",
+        "name": "CER15 - PLACE DES LINANDES (CB)",
+        "lat": 49.043284,
+        "lon": 2.068934,
+        "address": "PLACE DES LINANDES - 95000 CERGY",
+        "capacity": 18
+      },
+      {
+        "station_id": "50016",
+        "name": "CER16 - UNIVERSITÉ LES CHÊNES (CB)",
+        "lat": 49.038874,
+        "lon": 2.076405,
+        "address": "RUE DES CHÊNES D'OR ANGLE BOULEVARD DU PORT - 95000 CERGY",
+        "capacity": 30
+      },
+      {
+        "station_id": "50017",
+        "name": "CER17 - CERGY VILLAGE CENTRE",
+        "lat": 49.035511,
+        "lon": 2.061921,
+        "address": "RUE NATIONALE ANGLE RUE LEVÈQUE - 95000 CERGY",
+        "capacity": 14
+      },
+      {
+        "station_id": "50018",
+        "name": "CER18 - PORT CERGY (CB)",
+        "lat": 49.031214,
+        "lon": 2.061506,
+        "address": "BOULEVARD DU PORT ANGLE RUE JEAN BART - 95000 CERGY",
+        "capacity": 27
+      },
+      {
+        "station_id": "50019",
+        "name": "CER19 - RUE DES LILAS",
+        "lat": 49.034625,
+        "lon": 2.067596,
+        "address": "RUE DES LILAS ANGLE BOULEVARD DU PORT 95000 CERGY",
+        "capacity": 16
+      },
+      {
+        "station_id": "50020",
+        "name": "CONSEIL GÉNÉRAL",
+        "lat": 49.032107,
+        "lon": 2.074345,
+        "address": "AVENUE DU PARC ANGLE BOULEVARD DE L'HAUTIL - 95000 CERGY",
+        "capacity": 18
+      },
+      {
+        "station_id": "50021",
+        "name": "CER21 - DALLE PIÉTONNE GRAND CENTRE",
+        "lat": 49.03632,
+        "lon": 2.079568,
+        "address": "BOULEVARD DE L'OISE / RUE DE LA GARE - 95000 CERGY",
+        "capacity": 20
+      },
+      {
+        "station_id": "56101",
+        "name": "ERA01 - LA DANNE",
+        "lat": 49.02421,
+        "lon": 2.103268,
+        "address": "BOULEVARD CHARLES DE GAULLE ANGLE BOULEVARD JACQUES DUCLOS 95600 - ERAGNY",
+        "capacity": 10
+      },
+      {
+        "station_id": "50022",
+        "name": "CER22 - GARE CERGY GRAND CENTRE (CB)",
+        "lat": 49.036655,
+        "lon": 2.080189,
+        "address": "BOULEVARD DE L'OISE / RUE DE LA GARE - 95000 CERGY",
+        "capacity": 20
+      },
+      {
+        "station_id": "56102",
+        "name": "ERA02 - CHARLES DE GAULLE",
+        "lat": 49.023065,
+        "lon": 2.11046,
+        "address": "AVENUE FERNAND CHATELAIN ANGLE RUE DE PIERRELAYE 95600 - ERAGNY",
+        "capacity": 15
+      },
+      {
+        "station_id": "50023",
+        "name": "CER23 - LES TOULEUSES",
+        "lat": 49.030665,
+        "lon": 2.083067,
+        "address": "AVENUE DU SUD - 95000 CERGY",
+        "capacity": 20
+      },
+      {
+        "station_id": "56103",
+        "name": "ERA03 - GARE D'ERAGNY (CB)",
+        "lat": 49.018057,
+        "lon": 2.091026,
+        "address": "RUE DES BELLES HÂTES ANGLE BOULEVARD DES AVIATEURS ALLIÉS 95600 - ERAGNY",
+        "capacity": 20
+      },
+      {
+        "station_id": "50024",
+        "name": "CER24 - CROIX PETIT",
+        "lat": 49.038058,
+        "lon": 2.070534,
+        "address": "Rue des petits prés  95000 CERGY",
+        "capacity": 18
+      },
+      {
+        "station_id": "56104",
+        "name": "ERA04 - LA CHALLE (CB)",
+        "lat": 49.017697,
+        "lon": 2.099417,
+        "address": "PLACE DE LA CHALLE ANGLE RUE DE LA CHALLE ORANGE 95600 - ERAGNY",
+        "capacity": 23
+      },
+      {
+        "station_id": "50025",
+        "name": "CER25 - ARENICE",
+        "lat": 49.050988,
+        "lon": 2.057324,
+        "address": "ROUTE D14, DEVANT LE COMPLEXE SPORTIF ARENICE",
+        "capacity": 20
+      },
+      {
+        "station_id": "56105",
+        "name": "ERA05- BAS NOYER (CB)",
+        "lat": 49.03223,
+        "lon": 2.101656,
+        "address": "RUE DU BAS NOYER DEVANT CENTRE COMMERCIAL ART DE VIVRE - ERAGNY",
+        "capacity": 18
+      },
+      {
+        "station_id": "50026",
+        "name": "CER26 - BEAUX SOLEILS",
+        "lat": 49.051104,
+        "lon": 2.069419,
+        "address": "Chaussée Jules César, 95520 Osny",
+        "capacity": 20
+      },
+      {
+        "station_id": "56106",
+        "name": "ERA06 - CENTRE TECHNIQUE MUNICIPAL",
+        "lat": 49.011216,
+        "lon": 2.098463,
+        "address": "Rue de l'Ambassadeur angle rue des Anglais - 95610 ERAGNY",
+        "capacity": 12
+      },
+      {
+        "station_id": "50027",
+        "name": "CER27 - MARJOBERTS",
+        "lat": 49.041233,
+        "lon": 2.075956,
+        "address": "7 Rue des Chauffours, 95000 Cergy",
+        "capacity": 20
+      },
+      {
+        "station_id": "53101",
+        "name": "SOA01 - PLACE CARNOT (CB)",
+        "lat": 49.047781,
+        "lon": 2.103038,
+        "address": "Place Carnot côté quai de l'Ecluse ou halage - 95310 SAINT OUEN L'AUMONE",
+        "capacity": 19
+      },
+      {
+        "station_id": "53102",
+        "name": "SOA02 - GARE SOA CENTRE",
+        "lat": 49.046249,
+        "lon": 2.10571,
+        "address": "Av du Général Leclerc / rue du 8 mai 1945 - 95310 SAINT OUEN L'AUMONE",
+        "capacity": 19
+      },
+      {
+        "station_id": "50101",
+        "name": "PÔLE GARE (CB)",
+        "lat": 49.014534,
+        "lon": 2.078945,
+        "address": "CHEMIN DE CERGY DEVANT LA GARE - 95010 NEUVILLE",
+        "capacity": 19
+      },
+      {
+        "station_id": "54901",
+        "name": "VAU01 - PLACE DU RDV (CB)",
+        "lat": 49.032934,
+        "lon": 2.020312,
+        "address": "Place du Rendez-Vous côté avenue Louis Lecoin - 95490 VAUREAL",
+        "capacity": 15
+      },
+      {
+        "station_id": "54902",
+        "name": "VAU02 - MAIRIE CROIX-LIEU(CB)",
+        "lat": 49.030106,
+        "lon": 2.021573,
+        "address": "Rond Point de la Croix Lieu côté avenue Gandhi - 95490 VAUREAL",
+        "capacity": 26
+      },
+      {
+        "station_id": "54904",
+        "name": "VAU04 - MENDES FRANCE",
+        "lat": 49.023837,
+        "lon": 2.022595,
+        "address": "MAIL MENDES FRANCE ANGLE BOULEVARD DE L'OISE - 95490 VAUREAL",
+        "capacity": 18
+      },
+      {
+        "station_id": "54905",
+        "name": "VAU05 - LES TOUPETS",
+        "lat": 49.023163,
+        "lon": 2.029486,
+        "address": "MAIL MENDES FRANCE ANGLE AVENUE DE LA REVOLUTION FRANCAISE - 95490 VAUREAL",
+        "capacity": 22
+      }
+    ]
+  }
+}

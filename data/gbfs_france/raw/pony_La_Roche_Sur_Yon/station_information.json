@@ -1,0 +1,639 @@
+{
+  "data": {
+    "stations": [
+      {
+        "is_virtual_station": true,
+        "lat": 46.6691965,
+        "lon": -1.4314423,
+        "name": "la_roche_sur_yon_parking_99_Boulevard_Aristide_Briand_zidTWYZXFGK",
+        "station_id": "la_roche_sur_yon_parking_99_Boulevard_Aristide_Briand_zidTWYZXFGK"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.670702,
+        "lon": -1.4291923,
+        "name": "la_roche_sur_yon_parking_2_Place_du_theatre_zid8QSHZOEH",
+        "station_id": "la_roche_sur_yon_parking_2_Place_du_theatre_zid8QSHZOEH"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.6698751,
+        "lon": -1.427454,
+        "name": "la_roche_sur_yon_parking_Place_Napoleon_Ouest_zid0XFX2X17",
+        "station_id": "la_roche_sur_yon_parking_Place_Napoleon_Ouest_zid0XFX2X17"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.6710637,
+        "lon": -1.4244897,
+        "name": "la_roche_sur_yon_parking_Place_du_8_Mai_1945_zid8D4XLNS2",
+        "station_id": "la_roche_sur_yon_parking_Place_du_8_Mai_1945_zid8D4XLNS2"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.6695295,
+        "lon": -1.4244576,
+        "name": "la_roche_sur_yon_parking_22_Rue_des_Halles_zidT4TCXUHM",
+        "station_id": "la_roche_sur_yon_parking_22_Rue_des_Halles_zidT4TCXUHM"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.6709297,
+        "lon": -1.4184593,
+        "name": "la_roche_sur_yon_parking_34_Boulevard_d_Italie_zid9RFI0W8D",
+        "station_id": "la_roche_sur_yon_parking_34_Boulevard_d_Italie_zid9RFI0W8D"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.6672936,
+        "lon": -1.4194779,
+        "name": "la_roche_sur_yon_parking_Boulevard_d_Italie_zidK7W8ETQZ",
+        "station_id": "la_roche_sur_yon_parking_Boulevard_d_Italie_zidK7W8ETQZ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.670932,
+        "lon": -1.4158357,
+        "name": "la_roche_sur_yon_parking_Boulevard_Rivoli_Sud_zidSSWXBVAB",
+        "station_id": "la_roche_sur_yon_parking_Boulevard_Rivoli_Sud_zidSSWXBVAB"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.6753509,
+        "lon": -1.4265617,
+        "name": "la_roche_sur_yon_parking_28_Boulevard_d_Angleterre_zidOBFJJDSK",
+        "station_id": "la_roche_sur_yon_parking_28_Boulevard_d_Angleterre_zidOBFJJDSK"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.6666393,
+        "lon": -1.4197712,
+        "name": "la_roche_sur_yon_parking_130_Bd_d_Italie_zidUBY5E9U6",
+        "station_id": "la_roche_sur_yon_parking_130_Bd_d_Italie_zidUBY5E9U6"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.6647842,
+        "lon": -1.4235783,
+        "name": "la_roche_sur_yon_parking_Blvd_des_Etats_Unis_zidJM5M5Q1S",
+        "station_id": "la_roche_sur_yon_parking_Blvd_des_Etats_Unis_zidJM5M5Q1S"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.6645769,
+        "lon": -1.4293392,
+        "name": "la_roche_sur_yon_parking_212_Bd_Aristide_Briand_zid3H2D032C",
+        "station_id": "la_roche_sur_yon_parking_212_Bd_Aristide_Briand_zid3H2D032C"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.6720573,
+        "lon": -1.4350517,
+        "name": "la_roche_sur_yon_parking_Place_Estienne_d_Orves_zidSXL5M9N7",
+        "station_id": "la_roche_sur_yon_parking_Place_Estienne_d_Orves_zidSXL5M9N7"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.671611,
+        "lon": -1.436972,
+        "name": "la_roche_sur_yon_parking_Bld_Marechal_Leclerc_zid7UIR681Q",
+        "station_id": "la_roche_sur_yon_parking_Bld_Marechal_Leclerc_zid7UIR681Q"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.6774804,
+        "lon": -1.4300003,
+        "name": "la_roche_sur_yon_parking_1_place_du_point_du_Jour_zidP7OBVN3W",
+        "station_id": "la_roche_sur_yon_parking_1_place_du_point_du_Jour_zidP7OBVN3W"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.6796662,
+        "lon": -1.4230351,
+        "name": "la_roche_sur_yon_parking_19_Rue_d_Iena_zidD47HDCY9",
+        "station_id": "la_roche_sur_yon_parking_19_Rue_d_Iena_zidD47HDCY9"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.67487,
+        "lon": -1.41608,
+        "name": "la_roche_sur_yon_parking_61_Bd_Rivoli_zidDR25DA4G",
+        "station_id": "la_roche_sur_yon_parking_61_Bd_Rivoli_zidDR25DA4G"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.673147,
+        "lon": -1.4098304,
+        "name": "la_roche_sur_yon_parking_Rdpt_du_Dr_Zamenhof_zidNA7GCP3U",
+        "station_id": "la_roche_sur_yon_parking_Rdpt_du_Dr_Zamenhof_zidNA7GCP3U"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.667708,
+        "lon": -1.40976,
+        "name": "la_roche_sur_yon_parking_Bld_Stephane_Moreau_zid71TFGB9D",
+        "station_id": "la_roche_sur_yon_parking_Bld_Stephane_Moreau_zid71TFGB9D"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.6641032,
+        "lon": -1.4106534,
+        "name": "la_roche_sur_yon_parking_Bld_Stephane_Moreau_zidL37FRZH0",
+        "station_id": "la_roche_sur_yon_parking_Bld_Stephane_Moreau_zidL37FRZH0"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.6597,
+        "lon": -1.42132,
+        "name": "la_roche_sur_yon_parking_101_Rue_du_Marechal_Juin_zidDLCENXNA",
+        "station_id": "la_roche_sur_yon_parking_101_Rue_du_Marechal_Juin_zidDLCENXNA"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.658709,
+        "lon": -1.433923,
+        "name": "la_roche_sur_yon_parking_Rue_Chaptal_zidOX4XX2I4",
+        "station_id": "la_roche_sur_yon_parking_Rue_Chaptal_zidOX4XX2I4",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.66484802217273,
+        "lon": -1.4327758919681537,
+        "name": "la_roche_sur_yon_parking_23_Av_de_Lattre_de_Tassigny_zidU01R0VMV",
+        "station_id": "la_roche_sur_yon_parking_23_Av_de_Lattre_de_Tassigny_zidU01R0VMV",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.668783,
+        "lon": -1.440625,
+        "name": "la_roche_sur_yon_parking_Place_Pierre_de_Coubertin_zid0G0OS45M",
+        "station_id": "la_roche_sur_yon_parking_Place_Pierre_de_Coubertin_zid0G0OS45M",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.6668487,
+        "lon": -1.4418199,
+        "name": "la_roche_sur_yon_parking_2_Rue_de_la_Paix_zidF1X6FFQH",
+        "station_id": "la_roche_sur_yon_parking_2_Rue_de_la_Paix_zidF1X6FFQH"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.670581,
+        "lon": -1.4411997,
+        "name": "la_roche_sur_yon_parking_Rue_de_Reaumur_zidAX13UVAB",
+        "station_id": "la_roche_sur_yon_parking_Rue_de_Reaumur_zidAX13UVAB"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.670086560812884,
+        "lon": -1.4477697321549967,
+        "name": "la_roche_sur_yon_parking_Impasse_des_Olympiades_zidHSB3G4OY",
+        "station_id": "la_roche_sur_yon_parking_Impasse_des_Olympiades_zidHSB3G4OY"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.677892,
+        "lon": -1.4381653,
+        "name": "la_roche_sur_yon_parking_Rue_Pierre_Bacqua_zidD8M5M7Z5",
+        "station_id": "la_roche_sur_yon_parking_Rue_Pierre_Bacqua_zidD8M5M7Z5"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.68125797918531,
+        "lon": -1.4403490740228682,
+        "name": "la_roche_sur_yon_parking_Rue_d_Aizenay_zidRL9ZO7NJ",
+        "station_id": "la_roche_sur_yon_parking_Rue_d_Aizenay_zidRL9ZO7NJ",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.6819932,
+        "lon": -1.4347222,
+        "name": "la_roche_sur_yon_parking_Boulevard_Sully_zidS5WDQG97",
+        "station_id": "la_roche_sur_yon_parking_Boulevard_Sully_zidS5WDQG97"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.68716,
+        "lon": -1.4298607,
+        "name": "la_roche_sur_yon_parking_Avenue_Alienor_Aquitaine_zidSAOD0UI0",
+        "station_id": "la_roche_sur_yon_parking_Avenue_Alienor_Aquitaine_zidSAOD0UI0"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.6866685,
+        "lon": -1.4272041,
+        "name": "la_roche_sur_yon_parking_Rue_Benjamin_Franklin_zidX88S05EZ",
+        "station_id": "la_roche_sur_yon_parking_Rue_Benjamin_Franklin_zidX88S05EZ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.6851975,
+        "lon": -1.4227956,
+        "name": "la_roche_sur_yon_parking_Rue_Emile_Romanet_zidY2EWNLY8",
+        "station_id": "la_roche_sur_yon_parking_Rue_Emile_Romanet_zidY2EWNLY8"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.6807553,
+        "lon": -1.4167984,
+        "name": "la_roche_sur_yon_parking_Rdpt_Waldeck_Rousseau_zid6AI44W9J",
+        "station_id": "la_roche_sur_yon_parking_Rdpt_Waldeck_Rousseau_zid6AI44W9J"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.6788036,
+        "lon": -1.4089813,
+        "name": "la_roche_sur_yon_parking_Bld_Gaston_Deferre_zidM0WW1FGJ",
+        "station_id": "la_roche_sur_yon_parking_Bld_Gaston_Deferre_zidM0WW1FGJ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.67685700049232,
+        "lon": -1.405389341750543,
+        "name": "la_roche_sur_yon_parking_Blvd_Gaston_Deferre_zidTQWMM6VD",
+        "station_id": "la_roche_sur_yon_parking_Blvd_Gaston_Deferre_zidTQWMM6VD"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.6761488,
+        "lon": -1.4048429,
+        "name": "la_roche_sur_yon_parking_Rdpt_Victor_Basch_zidYCT4Q7UB",
+        "station_id": "la_roche_sur_yon_parking_Rdpt_Victor_Basch_zidYCT4Q7UB"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.6709322,
+        "lon": -1.4055307,
+        "name": "la_roche_sur_yon_parking_Rue_Newton_zidD09A393S",
+        "station_id": "la_roche_sur_yon_parking_Rue_Newton_zidD09A393S"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.6658863,
+        "lon": -1.3987155,
+        "name": "la_roche_sur_yon_parking_75_rue_Guillerot_zid6DLBUT8I",
+        "station_id": "la_roche_sur_yon_parking_75_rue_Guillerot_zid6DLBUT8I"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.6573787,
+        "lon": -1.4041453,
+        "name": "la_roche_sur_yon_parking_80_rue_Emile_Bauman_zidRC9OEYJF",
+        "station_id": "la_roche_sur_yon_parking_80_rue_Emile_Bauman_zidRC9OEYJF"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.6544633,
+        "lon": -1.4094167,
+        "name": "la_roche_sur_yon_parking_Rue_Francois_Truffaud_zidM1XVXL59",
+        "station_id": "la_roche_sur_yon_parking_Rue_Francois_Truffaud_zidM1XVXL59"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.658748,
+        "lon": -1.41275,
+        "name": "la_roche_sur_yon_parking_Rdpt_du_Coteau_zidGAUZ11PM",
+        "station_id": "la_roche_sur_yon_parking_Rdpt_du_Coteau_zidGAUZ11PM",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.654043,
+        "lon": -1.41738,
+        "name": "la_roche_sur_yon_parking_Blvd_Jean_Reiller_zid1SMLX35R",
+        "station_id": "la_roche_sur_yon_parking_Blvd_Jean_Reiller_zid1SMLX35R"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.6459817,
+        "lon": -1.4198927,
+        "name": "la_roche_sur_yon_parking_Rue_Georges_Mazurelle_zidSLAULXQG",
+        "station_id": "la_roche_sur_yon_parking_Rue_Georges_Mazurelle_zidSLAULXQG"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.6439912,
+        "lon": -1.4266827,
+        "name": "la_roche_sur_yon_parking_Chemin_des_Alisiers_zidHK44839L",
+        "station_id": "la_roche_sur_yon_parking_Chemin_des_Alisiers_zidHK44839L"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.645869,
+        "lon": -1.432955,
+        "name": "la_roche_sur_yon_parking_Rdpt_des_Buissonnets_zid4U0DSFSJ",
+        "station_id": "la_roche_sur_yon_parking_Rdpt_des_Buissonnets_zid4U0DSFSJ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.6504846,
+        "lon": -1.434144,
+        "name": "la_roche_sur_yon_parking_Rdpt_du_Dr_Larrey_zidS2H28Q2U",
+        "station_id": "la_roche_sur_yon_parking_Rdpt_du_Dr_Larrey_zidS2H28Q2U"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.6459034,
+        "lon": -1.4346496,
+        "name": "la_roche_sur_yon_parking_Rue_Nicolas_Baudin_zid89QBRZH2",
+        "station_id": "la_roche_sur_yon_parking_Rue_Nicolas_Baudin_zid89QBRZH2"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.6463589,
+        "lon": -1.4366667,
+        "name": "la_roche_sur_yon_parking_Rdpt_Elisabeth_Camus_Berlin_zid3ZBK2Z8U",
+        "station_id": "la_roche_sur_yon_parking_Rdpt_Elisabeth_Camus_Berlin_zid3ZBK2Z8U"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.6507216,
+        "lon": -1.4382287,
+        "name": "la_roche_sur_yon_parking_Rue_Duchesne_de_Denant_zidUEAUSAWB",
+        "station_id": "la_roche_sur_yon_parking_Rue_Duchesne_de_Denant_zidUEAUSAWB"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.655051,
+        "lon": -1.4500083,
+        "name": "la_roche_sur_yon_parking_Chemin_de_l_Ornay_zidVOKGY2FK",
+        "station_id": "la_roche_sur_yon_parking_Chemin_de_l_Ornay_zidVOKGY2FK"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.657632,
+        "lon": -1.4419167,
+        "name": "la_roche_sur_yon_parking_Rue_du_Commerce_zidBZOME9Q1",
+        "station_id": "la_roche_sur_yon_parking_Rue_du_Commerce_zidBZOME9Q1"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.6581875,
+        "lon": -1.4482494,
+        "name": "la_roche_sur_yon_parking_Rue_de_Montreal_zidSFATI54V",
+        "station_id": "la_roche_sur_yon_parking_Rue_de_Montreal_zidSFATI54V"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.659981,
+        "lon": -1.4574973,
+        "name": "la_roche_sur_yon_parking_Rue_Pauline_Lezardiere_zid6FMKG9ZJ",
+        "station_id": "la_roche_sur_yon_parking_Rue_Pauline_Lezardiere_zid6FMKG9ZJ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.665073,
+        "lon": -1.449084,
+        "name": "la_roche_sur_yon_parking_Place_Bonin_zidBDM8VYC8",
+        "station_id": "la_roche_sur_yon_parking_Place_Bonin_zidBDM8VYC8",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.6659282,
+        "lon": -1.4568117,
+        "name": "la_roche_sur_yon_parking_Rue_Maison_Neuve_zidUDKYADE4",
+        "station_id": "la_roche_sur_yon_parking_Rue_Maison_Neuve_zidUDKYADE4"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.6676784,
+        "lon": -1.4546489,
+        "name": "la_roche_sur_yon_parking_Rue_du_Commandant_Raynal_zidK5BD72EY",
+        "station_id": "la_roche_sur_yon_parking_Rue_du_Commandant_Raynal_zidK5BD72EY"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.6875284,
+        "lon": -1.446094,
+        "name": "la_roche_sur_yon_parking_Rdpt_Livingstone_zidYKIZM49Y",
+        "station_id": "la_roche_sur_yon_parking_Rdpt_Livingstone_zidYKIZM49Y"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.6903512,
+        "lon": -1.4457733,
+        "name": "la_roche_sur_yon_parking_Rue_Robert_Dauger_zid8U616LOJ",
+        "station_id": "la_roche_sur_yon_parking_Rue_Robert_Dauger_zid8U616LOJ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.6931351,
+        "lon": -1.4471376,
+        "name": "la_roche_sur_yon_parking_Rue_Robert_Dauger_zid761PQ33L",
+        "station_id": "la_roche_sur_yon_parking_Rue_Robert_Dauger_zid761PQ33L"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.6903653,
+        "lon": -1.4306204,
+        "name": "la_roche_sur_yon_parking_Impasse_Philippe_Lebon_zidU0UITR2Z",
+        "station_id": "la_roche_sur_yon_parking_Impasse_Philippe_Lebon_zidU0UITR2Z"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.696018,
+        "lon": -1.4320337,
+        "name": "la_roche_sur_yon_parking_Rue_Philippe_Lebon_zidTPYHQJ2A",
+        "station_id": "la_roche_sur_yon_parking_Rue_Philippe_Lebon_zidTPYHQJ2A"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.6928057,
+        "lon": -1.432675,
+        "name": "la_roche_sur_yon_parking_Rue_Philippe_Lebon_zidQYNKSLPE",
+        "station_id": "la_roche_sur_yon_parking_Rue_Philippe_Lebon_zidQYNKSLPE"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.6564473,
+        "lon": -1.3940677,
+        "name": "la_roche_sur_yon_parking_La_Noue_zidDUZQ70BQ",
+        "station_id": "la_roche_sur_yon_parking_La_Noue_zidDUZQ70BQ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.6971736,
+        "lon": -1.425417,
+        "name": "la_roche_sur_yon_parking_Rue_Francois_Cevert_zid9SNBNBPR",
+        "station_id": "la_roche_sur_yon_parking_Rue_Francois_Cevert_zid9SNBNBPR"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.689797,
+        "lon": -1.43821,
+        "name": "la_roche_sur_yon_parking_Rdpt_Charles_Sorin_zidSFAOV0Z5",
+        "station_id": "la_roche_sur_yon_parking_Rdpt_Charles_Sorin_zidSFAOV0Z5",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.67478,
+        "lon": -1.42861,
+        "name": "la_roche_sur_yon_parking_Marechal_Ney_zid1IR8M766",
+        "station_id": "la_roche_sur_yon_parking_Marechal_Ney_zid1IR8M766"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.66238,
+        "lon": -1.43426,
+        "name": "la_roche_sur_yon_parking_TrottiRack_Pl_Liberte_zidRBDWQBKS",
+        "station_id": "la_roche_sur_yon_parking_TrottiRack_Pl_Liberte_zidRBDWQBKS",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.6611,
+        "lon": -1.40388,
+        "name": "la_roche_sur_yon_parking_trottirack_farman_zidLDLOGE4E",
+        "station_id": "la_roche_sur_yon_parking_trottirack_farman_zidLDLOGE4E",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.67106,
+        "lon": -1.42722,
+        "name": "la_roche_sur_yon_parking_trottiRack_26_napoleon_zidE8ZHPV6C",
+        "station_id": "la_roche_sur_yon_parking_trottiRack_26_napoleon_zidE8ZHPV6C",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.68039,
+        "lon": -1.43048,
+        "name": "la_roche_sur_yon_parking_TrottiRack_Jean_Yole_zidFPTFSNCG",
+        "station_id": "la_roche_sur_yon_parking_TrottiRack_Jean_Yole_zidFPTFSNCG",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.67018,
+        "lon": -1.42617,
+        "name": "la_roche_sur_yon_parking_trottiRack_12_napoleon__zidSTX1A1NH",
+        "station_id": "la_roche_sur_yon_parking_trottiRack_12_napoleon__zidSTX1A1NH",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.67284,
+        "lon": -1.41958,
+        "name": "la_roche_sur_yon_parking_TrottiRack_17_BD_belge_zidE53RN8S4",
+        "station_id": "la_roche_sur_yon_parking_TrottiRack_17_BD_belge_zidE53RN8S4",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.6849,
+        "lon": -1.43385,
+        "name": "la_roche_sur_yon_parking_TrottiRack_Monge_zidSXF4V49O",
+        "station_id": "la_roche_sur_yon_parking_TrottiRack_Monge_zidSXF4V49O",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.66144,
+        "lon": -1.43919,
+        "name": "la_roche_sur_yon_parking_Marquage_Ampere_zidCBRM1UX7",
+        "station_id": "la_roche_sur_yon_parking_Marquage_Ampere_zidCBRM1UX7",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.66322,
+        "lon": -1.42521,
+        "name": "la_roche_sur_yon_parking_Trottirack_saintbrandiere_zidBOZEYB72",
+        "station_id": "la_roche_sur_yon_parking_Trottirack_saintbrandiere_zidBOZEYB72",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.66813,
+        "lon": -1.41909,
+        "name": "la_roche_sur_yon_parking_Marquage_Bd_Italie_zidVP9XL9YO",
+        "station_id": "la_roche_sur_yon_parking_Marquage_Bd_Italie_zidVP9XL9YO",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.66847,
+        "lon": -1.42457,
+        "name": "la_roche_sur_yon_parking_Marquage_12_Regiment_infanterie_zidTBJ9BKBK",
+        "station_id": "la_roche_sur_yon_parking_Marquage_12_Regiment_infanterie_zidTBJ9BKBK",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.67394,
+        "lon": -1.44188,
+        "name": "la_roche_sur_yon_parking_Parking_arago_zidZLZ2STU5",
+        "station_id": "la_roche_sur_yon_parking_Parking_arago_zidZLZ2STU5",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.6718,
+        "lon": -1.42244,
+        "name": "la_roche_sur_yon_parking_Parking_sadi_carnot_zidS2VMGBSC",
+        "station_id": "la_roche_sur_yon_parking_Parking_sadi_carnot_zidS2VMGBSC",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 46.70053,
+        "lon": -1.43064,
+        "name": "la_roche_sur_yon_parking_Parking_centre_co_flanerie_zid4W7I3SNI",
+        "station_id": "la_roche_sur_yon_parking_Parking_centre_co_flanerie_zid4W7I3SNI",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      }
+    ]
+  },
+  "last_updated": 1771749834,
+  "ttl": 0,
+  "version": "2.2"
+}

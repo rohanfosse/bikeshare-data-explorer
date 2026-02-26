@@ -1,0 +1,15 @@
+{
+  "last_updated": 1771749814,
+  "ttl": 0,
+  "version": "2.2",
+  "data": {
+    "stations": [
+      {
+        "station_id": "paris",
+        "name": "Paris",
+        "lat": 48.829,
+        "lon": 2.3898
+      }
+    ]
+  }
+}

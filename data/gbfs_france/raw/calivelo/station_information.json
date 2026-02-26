@@ -1,0 +1,1131 @@
+{
+  "data": {
+    "stations": [
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 45.055792,
+        "lon": -0.099944,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Lac des Nauves"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_bE8SHEQRa5rnLSuzpqoxJs"
+        },
+        "station_id": "stn_bE8SHEQRa5rnLSuzpqoxJs"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 45.014289,
+        "lon": -0.013095,
+        "name": [
+          {
+            "language": "fr",
+            "text": "ZA Barry"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_BDpSTh72injTtEk6RgTo6a"
+        },
+        "station_id": "stn_BDpSTh72injTtEk6RgTo6a"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 45.015187,
+        "lon": -0.030809,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Camps-sur-L'Isle Bourg"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_QLN7zAKQiwEmt55VEGffib"
+        },
+        "station_id": "stn_QLN7zAKQiwEmt55VEGffib"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.977125,
+        "lon": -0.199592,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Gare de Saint Denis de Pile"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_mXYTDZrJEqgXzg34zuPFAw"
+        },
+        "station_id": "stn_mXYTDZrJEqgXzg34zuPFAw"
+      },
+      {
+        "capacity": 20,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.919694,
+        "lon": -0.361691,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Mairie d'Izon"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_fugNfjfsP7BSUSfP5tf9cs"
+        },
+        "station_id": "stn_fugNfjfsP7BSUSfP5tf9cs"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.909098,
+        "lon": -0.320506,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Saint-Pardon"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_a8DX8JMMBRi3abjSAhHnBd"
+        },
+        "station_id": "stn_a8DX8JMMBRi3abjSAhHnBd"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.907864,
+        "lon": -0.232752,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Stade Moueix"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_49bijtC2qzLZSu3XfBX4TU"
+        },
+        "station_id": "stn_49bijtC2qzLZSu3XfBX4TU"
+      },
+      {
+        "capacity": 40,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.916206,
+        "lon": -0.236396,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Gare"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_AUqV7Gyx2ABoggShbJCLmV"
+        },
+        "station_id": "stn_AUqV7Gyx2ABoggShbJCLmV"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.937502,
+        "lon": -0.235049,
+        "name": [
+          {
+            "language": "fr",
+            "text": "CCI - Campus du Lac"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_iaD4W3N5ufw746zhVVeG58"
+        },
+        "station_id": "stn_iaD4W3N5ufw746zhVVeG58"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.915908,
+        "lon": -0.247701,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Les Deux Tours"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_FVDvN8vYwkQjuqQTruKYPi"
+        },
+        "station_id": "stn_FVDvN8vYwkQjuqQTruKYPi"
+      },
+      {
+        "capacity": 3,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.822382,
+        "lon": -0.289458,
+        "name": [
+          {
+            "language": "fr",
+            "text": "St-Quentin-de-Baron City Stade"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_deUsiLwUcWZn5QxFHWiEVX"
+        },
+        "station_id": "stn_deUsiLwUcWZn5QxFHWiEVX"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.921031,
+        "lon": -0.238632,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Saint Ferdinand"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_TdnmxuT9EyZ9BvkHB4K23Q"
+        },
+        "station_id": "stn_TdnmxuT9EyZ9BvkHB4K23Q"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.943404,
+        "lon": -0.235418,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Ballastière"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_eLqKbPQK2QNRkDh5x9khk2"
+        },
+        "station_id": "stn_eLqKbPQK2QNRkDh5x9khk2"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.91435,
+        "lon": -0.231462,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Place de l'Epinette"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_b7KRt5yiTUYoingokiSSAN"
+        },
+        "station_id": "stn_b7KRt5yiTUYoingokiSSAN"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 45.014019,
+        "lon": -0.000826,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Mairie de Saint Seurin sur l'Isle"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_7ZnpEEQcNSs9huUJgUKeEg"
+        },
+        "station_id": "stn_7ZnpEEQcNSs9huUJgUKeEg"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 45.041616,
+        "lon": -0.120065,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Collège H de Navarre"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_oVEGQVpdEcHqUZg4Ymngaf"
+        },
+        "station_id": "stn_oVEGQVpdEcHqUZg4Ymngaf"
+      },
+      {
+        "capacity": 3,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.817925,
+        "lon": -0.287017,
+        "name": [
+          {
+            "language": "fr",
+            "text": "St-Quentin-de-Baron Mairie"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_WQynm4fLcx9UVdUgPBjrr3"
+        },
+        "station_id": "stn_WQynm4fLcx9UVdUgPBjrr3"
+      },
+      {
+        "capacity": 16,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.947069,
+        "lon": -0.244052,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Les Dagueys"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_BS59Qi5eaK8L6zfRkHh8RJ"
+        },
+        "station_id": "stn_BS59Qi5eaK8L6zfRkHh8RJ"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.910015,
+        "lon": -0.258221,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Port du Noyer"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_cKMsrs93MRMoXUPdUXYyxa"
+        },
+        "station_id": "stn_cKMsrs93MRMoXUPdUXYyxa"
+      },
+      {
+        "capacity": 5,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.897454,
+        "lon": -0.208713,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Carré"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_a7e4o4B7mADcTs5YfA78zs"
+        },
+        "station_id": "stn_a7e4o4B7mADcTs5YfA78zs"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.905751,
+        "lon": -0.241766,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Lycée Jean Monnet"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_HFSUNKZTVDTkBqFttWbsUD"
+        },
+        "station_id": "stn_HFSUNKZTVDTkBqFttWbsUD"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 45.015595,
+        "lon": -0.064156,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Gendarmerie de Saint Médard de Guizières"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_CXyv68ApnoWFrB9aWhYd58"
+        },
+        "station_id": "stn_CXyv68ApnoWFrB9aWhYd58"
+      },
+      {
+        "capacity": 14,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.944156,
+        "lon": -0.243346,
+        "name": [
+          {
+            "language": "fr",
+            "text": "La Calinésie "
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_ZGs3mTkzE7ZvuqXs2usQqD"
+        },
+        "station_id": "stn_ZGs3mTkzE7ZvuqXs2usQqD"
+      },
+      {
+        "capacity": 14,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.913109,
+        "lon": -0.247638,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Pont de Bordeaux"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_Hx8cXUc24DpCxYNw9M7YKt"
+        },
+        "station_id": "stn_Hx8cXUc24DpCxYNw9M7YKt"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.953647,
+        "lon": -0.235864,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Les Billaux - Mairie"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_PHePGmA8jxBYykfA2456ti"
+        },
+        "station_id": "stn_PHePGmA8jxBYykfA2456ti"
+      },
+      {
+        "capacity": 15,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.902581,
+        "lon": -0.235017,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Collège Marguerite Duras"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_mvHZij7ZNbq7r9y7iFyQTa"
+        },
+        "station_id": "stn_mvHZij7ZNbq7r9y7iFyQTa"
+      },
+      {
+        "capacity": 16,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.915353,
+        "lon": -0.23497,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Parc de l'Epinette"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_MCB5gLfLFNBafRB2kznwns"
+        },
+        "station_id": "stn_MCB5gLfLFNBafRB2kznwns"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.995172,
+        "lon": -0.200594,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Camille Claudel"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_YXRCu7SLhpz6TEVGyD5Vd2"
+        },
+        "station_id": "stn_YXRCu7SLhpz6TEVGyD5Vd2"
+      },
+      {
+        "capacity": 5,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 45.022226,
+        "lon": -0.148537,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Abzac - Rochereau "
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_DYGroo4T67nKqrfL4bK3Ac"
+        },
+        "station_id": "stn_DYGroo4T67nKqrfL4bK3Ac"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.913933,
+        "lon": -0.391558,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Gare d'Izon"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_mErQanrTT3iRF62HjVt3zG"
+        },
+        "station_id": "stn_mErQanrTT3iRF62HjVt3zG"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 45.040188,
+        "lon": -0.185608,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Guîtres Bourg"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_FanLXyRLCo7u2LVSKHEqyi"
+        },
+        "station_id": "stn_FanLXyRLCo7u2LVSKHEqyi"
+      },
+      {
+        "capacity": 5,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 45.069798,
+        "lon": -0.097607,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Les Peintures Mairie"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_mj6mk7fgmcRN4CedvKJias"
+        },
+        "station_id": "stn_mj6mk7fgmcRN4CedvKJias"
+      },
+      {
+        "capacity": 5,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.990109,
+        "lon": -0.236142,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Savignac de l'isle Mairie"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_PaxiLeLbdbN4iKhDwmUQNW"
+        },
+        "station_id": "stn_PaxiLeLbdbN4iKhDwmUQNW"
+      },
+      {
+        "capacity": 16,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.911051,
+        "lon": -0.240786,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Place Joffre"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_Q3fbY8mVTtqoGJgcnqZGgz"
+        },
+        "station_id": "stn_Q3fbY8mVTtqoGJgcnqZGgz"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.989033,
+        "lon": -0.204766,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Ecole Anne Frank"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_M96BrYgbi2C8fqYGKJxMYY"
+        },
+        "station_id": "stn_M96BrYgbi2C8fqYGKJxMYY"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.91067,
+        "lon": -0.355212,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Anglumeau"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_eiFspZYytBA8Z29cgxqSHi"
+        },
+        "station_id": "stn_eiFspZYytBA8Z29cgxqSHi"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.9095,
+        "lon": -0.22534,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Cruzeau"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_2iouYN9k7qTdmnHBQ6MKmg"
+        },
+        "station_id": "stn_2iouYN9k7qTdmnHBQ6MKmg"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 45.040475,
+        "lon": -0.128675,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Mairie de Coutras"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_mh827kbccwHGtt87QDdv66"
+        },
+        "station_id": "stn_mh827kbccwHGtt87QDdv66"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.905553,
+        "lon": -0.214081,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Vercors"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_jD3ZXBpuzqTvgJrd88ctw6"
+        },
+        "station_id": "stn_jD3ZXBpuzqTvgJrd88ctw6"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.919859,
+        "lon": -0.230355,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Hopital R Boulin"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_Xv4QH3Qa2QZpwCiVrniegi"
+        },
+        "station_id": "stn_Xv4QH3Qa2QZpwCiVrniegi"
+      },
+      {
+        "capacity": 3,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.845323,
+        "lon": -0.332381,
+        "name": [
+          {
+            "language": "fr",
+            "text": "St-Germain-du-Puch - Beaupied"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_W9Qm5jC3JAdgWyfbAWYopG"
+        },
+        "station_id": "stn_W9Qm5jC3JAdgWyfbAWYopG"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 45.015581,
+        "lon": -0.127788,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Abzac Bourg"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_hygsYuKxNbxBVbLEX5ryX2"
+        },
+        "station_id": "stn_hygsYuKxNbxBVbLEX5ryX2"
+      },
+      {
+        "capacity": 14,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 45.045781,
+        "lon": -0.120642,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Coutras - Centre Commercial"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_JuPEdxxRGXZR3AXWHsqwcy"
+        },
+        "station_id": "stn_JuPEdxxRGXZR3AXWHsqwcy"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 45.015241,
+        "lon": -0.048906,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Gare de Saint Médard de Guizières"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_WLHwc32nSHxmpExsZDBBnJ"
+        },
+        "station_id": "stn_WLHwc32nSHxmpExsZDBBnJ"
+      },
+      {
+        "capacity": 5,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.841934,
+        "lon": -0.288591,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Nérigean Mairie"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_3kDgNVaMuZSXSgPbGyuvuy"
+        },
+        "station_id": "stn_3kDgNVaMuZSXSgPbGyuvuy"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 45.01164,
+        "lon": -0.001771,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Gare de Saint Seurin sur l'Isle"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_g54UNdXK8HLxSku2pJH5jR"
+        },
+        "station_id": "stn_g54UNdXK8HLxSku2pJH5jR"
+      },
+      {
+        "capacity": 5,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 45.007144,
+        "lon": -0.224881,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Bonzac - Place du moulin"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_YQASzmC8gduTWTTq85XU6g"
+        },
+        "station_id": "stn_YQASzmC8gduTWTTq85XU6g"
+      },
+      {
+        "capacity": 16,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.916318,
+        "lon": -0.240177,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Place Decazes"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_L7iA3hPPRrG4mGd8SVSddS"
+        },
+        "station_id": "stn_L7iA3hPPRrG4mGd8SVSddS"
+      },
+      {
+        "capacity": 14,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 45.037692,
+        "lon": -0.123338,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Les Grands Champs"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_2ThsQ4epWbPkFEqkKhsey4"
+        },
+        "station_id": "stn_2ThsQ4epWbPkFEqkKhsey4"
+      },
+      {
+        "capacity": 14,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.927532,
+        "lon": -0.239617,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Avenue Foch"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_3bgHVw2tWgDYKh2RvCSgTv"
+        },
+        "station_id": "stn_3bgHVw2tWgDYKh2RvCSgTv"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.911111,
+        "lon": -0.325399,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Le Paradis"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_GXekWchd5p3zFa7pM7nrwA"
+        },
+        "station_id": "stn_GXekWchd5p3zFa7pM7nrwA"
+      },
+      {
+        "capacity": 20,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.89744,
+        "lon": -0.316972,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Gare de Vayres"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_AgPRhUa74vPoLzPWyqUxMe"
+        },
+        "station_id": "stn_AgPRhUa74vPoLzPWyqUxMe"
+      },
+      {
+        "capacity": 5,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.859388,
+        "lon": -0.256984,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Génissac Bourg"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_fxsZRPwSeskPcBJzp7K4D8"
+        },
+        "station_id": "stn_fxsZRPwSeskPcBJzp7K4D8"
+      },
+      {
+        "capacity": 3,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.855971,
+        "lon": -0.323412,
+        "name": [
+          {
+            "language": "fr",
+            "text": "St-Germain-du-Puch - Salle communale"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_ep6m9csgxYL6vu5CtYE5w4"
+        },
+        "station_id": "stn_ep6m9csgxYL6vu5CtYE5w4"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.914245,
+        "lon": -0.244773,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Mairie de Libourne"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_VXc5kQWccvdR26HgMXNiqV"
+        },
+        "station_id": "stn_VXc5kQWccvdR26HgMXNiqV"
+      },
+      {
+        "capacity": 20,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.905681,
+        "lon": -0.227446,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Peyronneau"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_dXnJKQoq5SNVBHAaqEVpVe"
+        },
+        "station_id": "stn_dXnJKQoq5SNVBHAaqEVpVe"
+      },
+      {
+        "capacity": 20,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.898709,
+        "lon": -0.227078,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Hôpital Garderose - IFSI"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_eMFiLgapCEDhpAeSZemcfd"
+        },
+        "station_id": "stn_eMFiLgapCEDhpAeSZemcfd"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.917833,
+        "lon": -0.24097,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Lycée Max Linder"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_k9Z9iQuy6vNdJtCHjaPVvQ"
+        },
+        "station_id": "stn_k9Z9iQuy6vNdJtCHjaPVvQ"
+      },
+      {
+        "capacity": 14,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 45.036716,
+        "lon": -0.131649,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Gare de Coutras"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_KTXq2tQ6iQ97n5z4WJkne3"
+        },
+        "station_id": "stn_KTXq2tQ6iQ97n5z4WJkne3"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.934728,
+        "lon": -0.242167,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Le Pintey"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_adri429cdRJeBr9NDx8E72"
+        },
+        "station_id": "stn_adri429cdRJeBr9NDx8E72"
+      },
+      {
+        "capacity": 16,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.902419,
+        "lon": -0.220432,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Charles de Gaulle"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_guKEzaXRNybHM6fxS8UdxM"
+        },
+        "station_id": "stn_guKEzaXRNybHM6fxS8UdxM"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.991811,
+        "lon": -0.205632,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Jardin public"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_jbYj2a9paC47jGh34d3kay"
+        },
+        "station_id": "stn_jbYj2a9paC47jGh34d3kay"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 45.051613,
+        "lon": -0.11348,
+        "name": [
+          {
+            "language": "fr",
+            "text": "ZA Palard"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_MsWRwNgiy7Z6vgETXDuaxR"
+        },
+        "station_id": "stn_MsWRwNgiy7Z6vgETXDuaxR"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.88453,
+        "lon": -0.284234,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Mairie d'Arveyres"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_PFSx5y3ErbTNHhV6aqHQmk"
+        },
+        "station_id": "stn_PFSx5y3ErbTNHhV6aqHQmk"
+      },
+      {
+        "capacity": 5,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 44.865261,
+        "lon": -0.288817,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Cadarsac Lac"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_TSDLR5AZRrPVZR4j56y43b"
+        },
+        "station_id": "stn_TSDLR5AZRrPVZR4j56y43b"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 45.036079,
+        "lon": -0.10037,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Eygreteau"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://calivelo.ecovelo.mobi/#/station/stn_Z2hDvJmVw2NKU58mz9V9Ec"
+        },
+        "station_id": "stn_Z2hDvJmVw2NKU58mz9V9Ec"
+      }
+    ]
+  },
+  "last_updated": "2026-02-22T09:40:59+01:00",
+  "ttl": 0,
+  "version": "3.0"
+}

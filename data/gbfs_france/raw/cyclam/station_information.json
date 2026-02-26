@@ -1,0 +1,587 @@
+{
+  "data": {
+    "stations": [
+      {
+        "capacity": 14,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.739365,
+        "lon": 4.722574,
+        "name": [
+          {
+            "language": "fr",
+            "text": "CMZ - Campus"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclam.ecovelo.mobi/#/station/stn_mrmS3MLdmGbVWuUNnAWrbJ"
+        },
+        "station_id": "stn_mrmS3MLdmGbVWuUNnAWrbJ"
+      },
+      {
+        "capacity": 4,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.752337,
+        "lon": 4.728094,
+        "name": [
+          {
+            "language": "fr",
+            "text": "CMZ - Place Marceau"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclam.ecovelo.mobi/#/station/stn_B6i6mLrCGbaRLdSrhUcsUh"
+        },
+        "station_id": "stn_B6i6mLrCGbaRLdSrhUcsUh"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.69505,
+        "lon": 4.94438,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Sedan - Le Lac Centre Social"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclam.ecovelo.mobi/#/station/stn_NNsYhazJzZCaos7RPxzMXs"
+        },
+        "station_id": "stn_NNsYhazJzZCaos7RPxzMXs"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.70118,
+        "lon": 4.94835,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Sedan - Château"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclam.ecovelo.mobi/#/station/stn_jzKN7KEXg4XthBUK6Cam6n"
+        },
+        "station_id": "stn_jzKN7KEXg4XthBUK6Cam6n"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.763257,
+        "lon": 4.696632,
+        "name": [
+          {
+            "language": "fr",
+            "text": "CMZ - Hôpital Manchester"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclam.ecovelo.mobi/#/station/stn_gVBp3evqdHULacQG5EaKQy"
+        },
+        "station_id": "stn_gVBp3evqdHULacQG5EaKQy"
+      },
+      {
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.753853,
+        "lon": 4.697875,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Prix-Lès-Mézières"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclam.ecovelo.mobi/#/station/stn_878GZGkD8tLKLu7wqMLvFy"
+        },
+        "station_id": "stn_878GZGkD8tLKLu7wqMLvFy"
+      },
+      {
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.786021,
+        "lon": 4.713055,
+        "name": [
+          {
+            "language": "fr",
+            "text": "CMZ - Joliot Curie"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclam.ecovelo.mobi/#/station/stn_gV4WRRJV95juTjxahyQqaK"
+        },
+        "station_id": "stn_gV4WRRJV95juTjxahyQqaK"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.772879,
+        "lon": 4.73003,
+        "name": [
+          {
+            "language": "fr",
+            "text": "CMZ - Lycée Chanzy"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclam.ecovelo.mobi/#/station/stn_XTKcvmztG5PHXsMhJYLsQG"
+        },
+        "station_id": "stn_XTKcvmztG5PHXsMhJYLsQG"
+      },
+      {
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.735406,
+        "lon": 4.783628,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Lumes Mairie"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclam.ecovelo.mobi/#/station/stn_7d7Jt5ZnkeiYy6cLWTMmgG"
+        },
+        "station_id": "stn_7d7Jt5ZnkeiYy6cLWTMmgG"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.814351,
+        "lon": 4.743956,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Nouzonville - Centre culturel"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclam.ecovelo.mobi/#/station/stn_9BFwmmygW6Cx3bq9ux39Qs"
+        },
+        "station_id": "stn_9BFwmmygW6Cx3bq9ux39Qs"
+      },
+      {
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.763643,
+        "lon": 4.770851,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Saint-Laurent - Mairie"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclam.ecovelo.mobi/#/station/stn_eM7E8W7wiHytonAKMifViq"
+        },
+        "station_id": "stn_eM7E8W7wiHytonAKMifViq"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.76156,
+        "lon": 4.710807,
+        "name": [
+          {
+            "language": "fr",
+            "text": "CMZ - St Julien"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclam.ecovelo.mobi/#/station/stn_MoNXJofas6Chh9PSSThwk5"
+        },
+        "station_id": "stn_MoNXJofas6Chh9PSSThwk5"
+      },
+      {
+        "capacity": 5,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.773297,
+        "lon": 4.72191,
+        "name": [
+          {
+            "language": "fr",
+            "text": "CMZ - Place Ducale"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclam.ecovelo.mobi/#/station/stn_hHEbz87qGCsKDkjSDWFpJ4"
+        },
+        "station_id": "stn_hHEbz87qGCsKDkjSDWFpJ4"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.695062,
+        "lon": 4.930776,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Sedan - Gare SNCF"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclam.ecovelo.mobi/#/station/stn_gV8j2HSW4odpRP7VWMVA3j"
+        },
+        "station_id": "stn_gV8j2HSW4odpRP7VWMVA3j"
+      },
+      {
+        "capacity": 4,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.797414,
+        "lon": 4.67588,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Damouzy Mairie"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclam.ecovelo.mobi/#/station/stn_Xw6EBreiFb4ycyLQauz3eJ"
+        },
+        "station_id": "stn_Xw6EBreiFb4ycyLQauz3eJ"
+      },
+      {
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.779128,
+        "lon": 4.694074,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Warcq Bellevue du Nord"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclam.ecovelo.mobi/#/station/stn_W4Z3hQ7unYaCBwnyqxAJqu"
+        },
+        "station_id": "stn_W4Z3hQ7unYaCBwnyqxAJqu"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.69626,
+        "lon": 4.91591,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Sedan - Maison Claude Georgin"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclam.ecovelo.mobi/#/station/stn_PnvQdQ6mEDsE6mrJhzDMMa"
+        },
+        "station_id": "stn_PnvQdQ6mEDsE6mrJhzDMMa"
+      },
+      {
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.689629,
+        "lon": 4.959769,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Balan Mairie"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclam.ecovelo.mobi/#/station/stn_9A7kPJo2KAEErpZFBWy6Yr"
+        },
+        "station_id": "stn_9A7kPJo2KAEErpZFBWy6Yr"
+      },
+      {
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.67562,
+        "lon": 4.977076,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Bazeilles Mairie"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclam.ecovelo.mobi/#/station/stn_ZKCsqAqZhJTMU7zyWrUh7N"
+        },
+        "station_id": "stn_ZKCsqAqZhJTMU7zyWrUh7N"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.775025,
+        "lon": 4.719151,
+        "name": [
+          {
+            "language": "fr",
+            "text": "CMZ - Nevers"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclam.ecovelo.mobi/#/station/stn_J3ph8f8hgUnpWvbJXj993c"
+        },
+        "station_id": "stn_J3ph8f8hgUnpWvbJXj993c"
+      },
+      {
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.71168,
+        "lon": 4.91348,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Glaire Mairie"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclam.ecovelo.mobi/#/station/stn_UyrDCGDoUV5JeUC2G6k8zj"
+        },
+        "station_id": "stn_UyrDCGDoUV5JeUC2G6k8zj"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.779548,
+        "lon": 4.720643,
+        "name": [
+          {
+            "language": "fr",
+            "text": "CMZ - Mont Olympe"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclam.ecovelo.mobi/#/station/stn_3YvWZviK55jwzpP4bBMEhE"
+        },
+        "station_id": "stn_3YvWZviK55jwzpP4bBMEhE"
+      },
+      {
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.6853,
+        "lon": 4.94107,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Wadelincourt Mairie"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclam.ecovelo.mobi/#/station/stn_B6QbwVk2o7QXTTJhj2CH5W"
+        },
+        "station_id": "stn_B6QbwVk2o7QXTTJhj2CH5W"
+      },
+      {
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.689815,
+        "lon": 4.901857,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Sedan - Frénois"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclam.ecovelo.mobi/#/station/stn_JZj7HtjtZxsDEhg3X9vgYg"
+        },
+        "station_id": "stn_JZj7HtjtZxsDEhg3X9vgYg"
+      },
+      {
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.690658,
+        "lon": 4.838965,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Dom-le-Mesnil Pont-à-Bar"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclam.ecovelo.mobi/#/station/stn_fEiSWZMZFm4XXPzGD5Y6nJ"
+        },
+        "station_id": "stn_fEiSWZMZFm4XXPzGD5Y6nJ"
+      },
+      {
+        "capacity": 14,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.768415,
+        "lon": 4.724588,
+        "name": [
+          {
+            "language": "fr",
+            "text": "CMZ - Gare SNCF"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclam.ecovelo.mobi/#/station/stn_nCMHZbYn42JJrui2dED5Nw"
+        },
+        "station_id": "stn_nCMHZbYn42JJrui2dED5Nw"
+      },
+      {
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.742971,
+        "lon": 4.747106,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Villers-Semeuse Mairie"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclam.ecovelo.mobi/#/station/stn_SrSwXTbnyTgsTX75cLsB7A"
+        },
+        "station_id": "stn_SrSwXTbnyTgsTX75cLsB7A"
+      },
+      {
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.748141,
+        "lon": 4.714099,
+        "name": [
+          {
+            "language": "fr",
+            "text": "CMZ - Lycée Charles de Gonzague"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclam.ecovelo.mobi/#/station/stn_bnkVyvdZojf5Z7veJaLMFk"
+        },
+        "station_id": "stn_bnkVyvdZojf5Z7veJaLMFk"
+      },
+      {
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.698343,
+        "lon": 4.775153,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Flize - Mairie"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclam.ecovelo.mobi/#/station/stn_euJxA4J2Zsn2j7WYDEKtGv"
+        },
+        "station_id": "stn_euJxA4J2Zsn2j7WYDEKtGv"
+      },
+      {
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.773881,
+        "lon": 4.743587,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Montcy-Notre-Dame Mairie"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclam.ecovelo.mobi/#/station/stn_QdX8gEHyuBbzYL4UaR99KV"
+        },
+        "station_id": "stn_QdX8gEHyuBbzYL4UaR99KV"
+      },
+      {
+        "capacity": 5,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.742581,
+        "lon": 4.729051,
+        "name": [
+          {
+            "language": "fr",
+            "text": "CMZ - Val de Vence"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclam.ecovelo.mobi/#/station/stn_dbL5ta4SRc2DtoNwyowSxg"
+        },
+        "station_id": "stn_dbL5ta4SRc2DtoNwyowSxg"
+      },
+      {
+        "capacity": 14,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.760651,
+        "lon": 4.720122,
+        "name": [
+          {
+            "language": "fr",
+            "text": "CMZ - Préfecture"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclam.ecovelo.mobi/#/station/stn_KPCFxrMBvJXBhMFUxtgiMR"
+        },
+        "station_id": "stn_KPCFxrMBvJXBhMFUxtgiMR"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.70322,
+        "lon": 4.94332,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Sedan - Mairie"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclam.ecovelo.mobi/#/station/stn_6Mz4MPtUcyqN2GyeoB4EdP"
+        },
+        "station_id": "stn_6Mz4MPtUcyqN2GyeoB4EdP"
+      },
+      {
+        "capacity": 6,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.755402,
+        "lon": 4.717517,
+        "name": [
+          {
+            "language": "fr",
+            "text": "CMZ - 91EME RI"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://cyclam.ecovelo.mobi/#/station/stn_4Pg9CecUkLCJ6HjLfcCRs4"
+        },
+        "station_id": "stn_4Pg9CecUkLCJ6HjLfcCRs4"
+      }
+    ]
+  },
+  "last_updated": "2026-02-22T09:40:04+01:00",
+  "ttl": 0,
+  "version": "3.0"
+}

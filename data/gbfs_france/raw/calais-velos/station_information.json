@@ -1,0 +1,808 @@
+{
+  "last_updated": 1771749855,
+  "ttl": 60,
+  "data": {
+    "stations": [
+      {
+        "station_id": "1",
+        "name": "01+%3a+Lafayette",
+        "lat": 50.9466094970703,
+        "lon": 1.85830295085907,
+        "capacity": 15,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "2",
+        "name": "02+%3a+Th%c3%a9%c3%a2tre",
+        "lat": 50.9473774202641,
+        "lon": 1.85376906394959,
+        "capacity": 21,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "3",
+        "name": "03+%3a+H%c3%b4tel+de+ville",
+        "lat": 50.9520355054771,
+        "lon": 1.8536337018013,
+        "capacity": 15,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "4",
+        "name": "04+%3a+Gare+SNCF",
+        "lat": 50.9533029460493,
+        "lon": 1.85127753019333,
+        "capacity": 27,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "5",
+        "name": "05+%3a+Richelieu",
+        "lat": 50.9550028886556,
+        "lon": 1.85020510761714,
+        "capacity": 15,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "6",
+        "name": "06+%3a+Place+d%27Armes",
+        "lat": 50.9589183596869,
+        "lon": 1.84906929731369,
+        "capacity": 15,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "7",
+        "name": "07+%3a+Pluviose",
+        "lat": 50.9649064024566,
+        "lon": 1.84339304455427,
+        "capacity": 15,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "8",
+        "name": "08+%3a+Milieu+de+Digue",
+        "lat": 50.9628729738197,
+        "lon": 1.83556111129514,
+        "capacity": 18,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "9",
+        "name": "09+%3a+Eglise+de+Bl%c3%a9riot",
+        "lat": 50.9583526562474,
+        "lon": 1.825364112854,
+        "capacity": 18,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "10",
+        "name": "10+%3a+Camping+de+Bl%c3%a9riot",
+        "lat": 50.9569432001999,
+        "lon": 1.81282911347807,
+        "capacity": 12,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "11",
+        "name": "11+%3a+Base+de+voile",
+        "lat": 50.9550331587248,
+        "lon": 1.79970151085512,
+        "capacity": 12,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "12",
+        "name": "12+%3a+CC+La+Fran%c3%a7aise",
+        "lat": 50.9433964178014,
+        "lon": 1.80812895298004,
+        "capacity": 12,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "13",
+        "name": "13+%3a+P%c3%b4le+administratif",
+        "lat": 50.9522424870569,
+        "lon": 1.85908508300781,
+        "capacity": 9,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "14",
+        "name": "14+%3a+Cit%c3%a9+de+la+dentelle",
+        "lat": 50.950728811046,
+        "lon": 1.85985445976257,
+        "capacity": 9,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "15",
+        "name": "15+%3a+Universit%c3%a9",
+        "lat": 50.9523598376241,
+        "lon": 1.87945222854614,
+        "capacity": 24,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "16",
+        "name": "16+%3a+Lyc%c3%a9e+Berthelot",
+        "lat": 50.9466848356169,
+        "lon": 1.84154238445686,
+        "capacity": 24,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "17",
+        "name": "17+%3a+Mogador",
+        "lat": 50.9453559552617,
+        "lon": 1.83079586977108,
+        "capacity": 9,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "18",
+        "name": "18+%3a+Piscine+patinoire+Ic%c3%a9o",
+        "lat": 50.9565148165846,
+        "lon": 1.89700184380163,
+        "capacity": 15,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "22",
+        "name": "19+%3a+Matelote",
+        "lat": 50.9624105936573,
+        "lon": 1.85085642241523,
+        "capacity": 12,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "23",
+        "name": "20+%3a+IUT",
+        "lat": 50.9505649039663,
+        "lon": 1.88238769769669,
+        "capacity": 15,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "25",
+        "name": "21+%3a+Coubertin",
+        "lat": 50.9559561784671,
+        "lon": 1.83498778056332,
+        "capacity": 24,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "26",
+        "name": "22+%3a+Diderot",
+        "lat": 50.9555243302275,
+        "lon": 1.86364758353069,
+        "capacity": 9,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "27",
+        "name": "23+%3a+Condorcet",
+        "lat": 50.9496350646981,
+        "lon": 1.86348625134656,
+        "capacity": 15,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "28",
+        "name": "24+%3a+Nation",
+        "lat": 50.945401921718,
+        "lon": 1.86732449244687,
+        "capacity": 15,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "29",
+        "name": "25+%3a+Copernic",
+        "lat": 50.9393852948121,
+        "lon": 1.86540134858319,
+        "capacity": 15,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "30",
+        "name": "26+%3a+Joffre",
+        "lat": 50.9401920813758,
+        "lon": 1.8459187881274,
+        "capacity": 12,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "31",
+        "name": "27+%3a+Montr%c3%a9al",
+        "lat": 50.9324556498209,
+        "lon": 1.8563659922404,
+        "capacity": 12,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "32",
+        "name": "28+%3a+Coquelles+-+Charles+de+Gaulle",
+        "lat": 50.9348912396195,
+        "lon": 1.79945300652613,
+        "capacity": 9,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "33",
+        "name": "29+%3a+Sangatte+-+Mairie",
+        "lat": 50.9471777173877,
+        "lon": 1.75813257096669,
+        "capacity": 9,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "34",
+        "name": "30+%3a+Coulogne+-+Eglise",
+        "lat": 50.9255868504724,
+        "lon": 1.88726830311214,
+        "capacity": 12,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "35",
+        "name": "31+%3a+Coulogne+-+Marronniers",
+        "lat": 50.9265328935458,
+        "lon": 1.86913984827697,
+        "capacity": 9,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "36",
+        "name": "32+%3a+Marck+-+Mairie",
+        "lat": 50.9493547867323,
+        "lon": 1.95565135132266,
+        "capacity": 6,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "37",
+        "name": "33+%3a+Marck+-+Stade",
+        "lat": 50.9531683032271,
+        "lon": 1.9350127191467,
+        "capacity": 12,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "38",
+        "name": "34+%3a+Marck+-+Schweitzer",
+        "lat": 50.9473503982859,
+        "lon": 1.93305470656583,
+        "capacity": 12,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "39",
+        "name": "35+%3a+H%c3%b4pital",
+        "lat": 50.9402747757518,
+        "lon": 1.89299583435059,
+        "capacity": 9,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "40",
+        "name": "36+%3a+Conservatoire",
+        "lat": 50.9493393563634,
+        "lon": 1.84845882627997,
+        "capacity": 12,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "41",
+        "name": "37+%3a+Marcel+Doret",
+        "lat": 50.9543492457749,
+        "lon": 1.9109285633716,
+        "capacity": 6,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "42",
+        "name": "38+%3a+Dryades",
+        "lat": 50.9557841911549,
+        "lon": 1.92873451836597,
+        "capacity": 9,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "44",
+        "name": "39+%3a++Gare+des+Fontinettes",
+        "lat": 50.9406381545956,
+        "lon": 1.8501793127507,
+        "capacity": 9,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "45",
+        "name": "40+%3a+Camping+de+Calais",
+        "lat": 50.9591177158904,
+        "lon": 1.83207213878632,
+        "capacity": 9,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "46",
+        "name": "41+%3a+Quai+de+la+Loire",
+        "lat": 50.9630246477014,
+        "lon": 1.86262754766244,
+        "capacity": 9,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "47",
+        "name": "42+%3a+Terminal+Transmanche",
+        "lat": 50.9665196007155,
+        "lon": 1.86257956495888,
+        "capacity": 6,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "48",
+        "name": "43+%3a+Gavet",
+        "lat": 50.9609090851795,
+        "lon": 1.84776674956083,
+        "capacity": 9,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "49",
+        "name": "46+%3a+L%c3%a9onard+De+Vinci",
+        "lat": 50.9544833077322,
+        "lon": 1.89189612865448,
+        "capacity": 15,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "50",
+        "name": "45+%3a+N.+Niemen",
+        "lat": 50.9542196998674,
+        "lon": 1.90216401284113,
+        "capacity": 9,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "51",
+        "name": "47+%3a+D%c3%a9troit",
+        "lat": 50.9391749469231,
+        "lon": 1.8746679497533,
+        "capacity": 18,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "53",
+        "name": "44+%3a+Garennes",
+        "lat": 50.9678605017257,
+        "lon": 1.89620947974424,
+        "capacity": 6,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "55",
+        "name": "48+%3a+Renoir",
+        "lat": 50.9461702012479,
+        "lon": 1.89117445545082,
+        "capacity": 12,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "57",
+        "name": "49+%3a+Banc+Valois",
+        "lat": 50.8910715553636,
+        "lon": 1.88117527116469,
+        "capacity": 9,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "58",
+        "name": "50+%3a+Pont+%c3%a0+Vaches",
+        "lat": 50.8836023507373,
+        "lon": 1.90332148587345,
+        "capacity": 9,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "59",
+        "name": "51+%3a+Jean+Bosco",
+        "lat": 50.8701098699214,
+        "lon": 1.86920730972497,
+        "capacity": 12,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "60",
+        "name": "52+%3a+4+Vents",
+        "lat": 50.8653360130927,
+        "lon": 1.869189370252,
+        "capacity": 12,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "61",
+        "name": "53+%3a+Batelage",
+        "lat": 50.8726165096897,
+        "lon": 1.86981648511812,
+        "capacity": 12,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "62",
+        "name": "54+%3a+Terminal+Ferry",
+        "lat": 50.9733580640891,
+        "lon": 1.87746327540954,
+        "capacity": 6,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "63",
+        "name": "55+%3a+Eglise+des+Hemmes",
+        "lat": 50.9824278011226,
+        "lon": 1.96719002752833,
+        "capacity": 6,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "64",
+        "name": "56+%3a+Mairie+de+Nielles",
+        "lat": 50.9082635868911,
+        "lon": 1.83837175718369,
+        "capacity": 6,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "65",
+        "name": "57+%3a+Sainte+Marguerite",
+        "lat": 50.9084494422403,
+        "lon": 1.82474803794179,
+        "capacity": 6,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "66",
+        "name": "58+%3a+Eglise+de+Frethun",
+        "lat": 50.9171379802201,
+        "lon": 1.82425953982947,
+        "capacity": 9,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "67",
+        "name": "59+%3a+Briqueterie",
+        "lat": 50.9036220299626,
+        "lon": 1.81601668274417,
+        "capacity": 9,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "68",
+        "name": "60+%3a+Mairie+Les+Attaques",
+        "lat": 50.9085056855888,
+        "lon": 1.93391487580794,
+        "capacity": 9,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "69",
+        "name": "61+%3a+Chemin+du+Contre+Halage",
+        "lat": 50.8946704631148,
+        "lon": 1.96524338641251,
+        "capacity": 6,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "70",
+        "name": "62+%3a+Bergenias",
+        "lat": 50.9093555962046,
+        "lon": 1.8766926311877,
+        "capacity": 9,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "72",
+        "name": "64+%3a+Julien+Denis",
+        "lat": 50.9460977513688,
+        "lon": 1.88140577073954,
+        "capacity": 9,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "73",
+        "name": "65+%3a+Valmy",
+        "lat": 50.9465696292165,
+        "lon": 1.86175279102016,
+        "capacity": 9,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "74",
+        "name": "66+%3a+M%c3%a9diath%c3%a8que",
+        "lat": 50.9496993616027,
+        "lon": 1.85696949511488,
+        "capacity": 9,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "75",
+        "name": "67+%3a+Jean+Mac%c3%a9",
+        "lat": 50.9571570580386,
+        "lon": 1.85349113390094,
+        "capacity": 9,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "76",
+        "name": "68+%3a+Saint+Pierre+Halte",
+        "lat": 50.939290040966,
+        "lon": 1.87970949681654,
+        "capacity": 9,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "78",
+        "name": "70+%3a+Greuze",
+        "lat": 50.9493475921992,
+        "lon": 1.89033738040405,
+        "capacity": 12,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "79",
+        "name": "71+%3a+Bitche",
+        "lat": 50.9598586856503,
+        "lon": 1.87439230139014,
+        "capacity": 9,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "80",
+        "name": "72+%3a+Les+Oyats",
+        "lat": 50.9614891625709,
+        "lon": 1.87812213832021,
+        "capacity": 6,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "81",
+        "name": "73+%3a+Mairie+de+Saint-Tricat",
+        "lat": 50.8934422561243,
+        "lon": 1.83070108158598,
+        "capacity": 6,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "82",
+        "name": "74+%3a+Rue+du+Marais",
+        "lat": 50.9022339858169,
+        "lon": 1.84993764548306,
+        "capacity": 6,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "83",
+        "name": "76+%3a+Coll%c3%a8ge+de+Bl%c3%a9riot",
+        "lat": 50.9563441771291,
+        "lon": 1.81604004343008,
+        "capacity": 9,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "84",
+        "name": "75+%3a+Eglise+de+Sangatte",
+        "lat": 50.944325887152,
+        "lon": 1.74683710382423,
+        "capacity": 0,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "85",
+        "name": "77+%3a+Le+Fort+Vert",
+        "lat": 50.9679728163768,
+        "lon": 1.93763369976552,
+        "capacity": 6,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "86",
+        "name": "78+%3a+Forum+Gambetta",
+        "lat": 50.9472279899091,
+        "lon": 1.8506142331101,
+        "capacity": 0,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "87",
+        "name": "79+%3a+All%c3%a9e+des+Bleuets",
+        "lat": 50.9176201531889,
+        "lon": 1.87576725560378,
+        "capacity": 6,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "88",
+        "name": "80+%3a+All%c3%a9e+des+Lys",
+        "lat": 50.9121141594658,
+        "lon": 1.87926064722504,
+        "capacity": 6,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "89",
+        "name": "81+%3a+Cit%c3%a9+Europe",
+        "lat": 50.9339123613844,
+        "lon": 1.81109916275372,
+        "capacity": 0,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      },
+      {
+        "station_id": "90",
+        "name": "82+%3a+Sapins",
+        "lat": 50.9251330751316,
+        "lon": 1.80828616525195,
+        "capacity": 9,
+        "region_id": "",
+        "rental_methods": [],
+        "has_kiosk": false
+      }
+    ]
+  }
+}

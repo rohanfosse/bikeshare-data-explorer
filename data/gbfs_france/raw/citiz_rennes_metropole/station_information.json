@@ -1,0 +1,798 @@
+{
+  "last_updated": "2026-02-22T09:38:50.7982947+01:00",
+  "ttl": 300,
+  "version": "3.0",
+  "data": {
+    "stations": [
+      {
+        "station_id": "1561",
+        "name": [
+          {
+            "text": "Anatole France",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.1183967590332,
+        "lon": -1.68923699855804,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1562",
+        "name": [
+          {
+            "text": "Antrain",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.1225415,
+        "lon": -1.6694257,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1563",
+        "name": [
+          {
+            "text": "Beaulieu-Université",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.1226501464844,
+        "lon": -1.63911497592926,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1564",
+        "name": [
+          {
+            "text": "Beauregard",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.1286736,
+        "lon": -1.6981094,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1565",
+        "name": [
+          {
+            "text": "Bourg l'Evêque",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.1132583618164,
+        "lon": -1.69348001480103,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1566",
+        "name": [
+          {
+            "text": "Croix Saint-Hélier",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.1031379699707,
+        "lon": -1.66221594810486,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1567",
+        "name": [
+          {
+            "text": "Chézy-Dinan",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.1133613586426,
+        "lon": -1.68616497516632,
+        "parking_type": "underground_parking",
+        "capacity": 5,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1568",
+        "name": [
+          {
+            "text": "Cimetière de l'Est",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.103946685791,
+        "lon": -1.64966905117035,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1569",
+        "name": [
+          {
+            "text": "Liberté",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.1072196960449,
+        "lon": -1.67457401752472,
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1570",
+        "name": [
+          {
+            "text": "Clemenceau",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.0923194885254,
+        "lon": -1.67423903942108,
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1571",
+        "name": [
+          {
+            "text": "Cleunay",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.1004295349121,
+        "lon": -1.70731198787689,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1572",
+        "name": [
+          {
+            "text": "Colombier",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.1048812866211,
+        "lon": -1.68047904968262,
+        "parking_type": "underground_parking",
+        "capacity": 5,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1573",
+        "name": [
+          {
+            "text": "Jules Ferry",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.1185989379883,
+        "lon": -1.66943001747131,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1574",
+        "name": [
+          {
+            "text": "Gare Sud",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.1020698547363,
+        "lon": -1.67322504520416,
+        "parking_type": "underground_parking",
+        "capacity": 9,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1575",
+        "name": [
+          {
+            "text": "Henri Fréville",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.0873336791992,
+        "lon": -1.67429101467133,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1576",
+        "name": [
+          {
+            "text": "Place Hoche",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.1154594421387,
+        "lon": -1.67703497409821,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1577",
+        "name": [
+          {
+            "text": "Jacques Cartier",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.0981140136719,
+        "lon": -1.67526996135712,
+        "parking_type": "street_parking",
+        "capacity": 5,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1578",
+        "name": [
+          {
+            "text": "Kléber",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.1108322143555,
+        "lon": -1.67315101623535,
+        "parking_type": "underground_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1579",
+        "name": [
+          {
+            "text": "La Poterie",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.0879898071289,
+        "lon": -1.64679896831512,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1580",
+        "name": [
+          {
+            "text": "Laënnec",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.1067810058594,
+        "lon": -1.66600298881531,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1581",
+        "name": [
+          {
+            "text": "Le Mail",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.1085145,
+        "lon": -1.6932245,
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1582",
+        "name": [
+          {
+            "text": "La Criée",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.1085548400879,
+        "lon": -1.67966604232788,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1583",
+        "name": [
+          {
+            "text": "Mabilais",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.1063652038574,
+        "lon": -1.69394397735596,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1584",
+        "name": [
+          {
+            "text": "Metz/Sévigné",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.1160622,
+        "lon": -1.6583656,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1585",
+        "name": [
+          {
+            "text": "Puits Mauger",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.1056671142578,
+        "lon": -1.68368697166443,
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1587",
+        "name": [
+          {
+            "text": "Rue de Fougères",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.1231304,
+        "lon": -1.6601153,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1588",
+        "name": [
+          {
+            "text": "Rue de Lorient",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.1091003417969,
+        "lon": -1.70828700065613,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1589",
+        "name": [
+          {
+            "text": "Sainte-Thérèse",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.0949058532715,
+        "lon": -1.66395401954651,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1590",
+        "name": [
+          {
+            "text": "Saint-Malo",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.118448,
+        "lon": -1.680527,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1591",
+        "name": [
+          {
+            "text": "Sergent Maginot",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.1099624633789,
+        "lon": -1.65945899486542,
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1592",
+        "name": [
+          {
+            "text": "Villejean-Université",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.1210823059082,
+        "lon": -1.70505905151367,
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1593",
+        "name": [
+          {
+            "text": "Station test",
+            "language": "fr"
+          }
+        ],
+        "lat": 0,
+        "lon": 0,
+        "parking_type": "street_parking",
+        "capacity": 150,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1594",
+        "name": [
+          {
+            "text": "Pigeon Blanc",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.090233,
+        "lon": -1.692578,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1595",
+        "name": [
+          {
+            "text": "Les Gayeulles",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.1294441223145,
+        "lon": -1.65735697746277,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1596",
+        "name": [
+          {
+            "text": "Saint-Martin",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.125846862793,
+        "lon": -1.6855880022049,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1597",
+        "name": [
+          {
+            "text": "Triangle",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.0860557556152,
+        "lon": -1.66108202934265,
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1598",
+        "name": [
+          {
+            "text": "La Courrouze",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.0969390869141,
+        "lon": -1.6992199420929,
+        "parking_type": "parking_lot",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1599",
+        "name": [
+          {
+            "text": "Gares",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.1044502258301,
+        "lon": -1.67172002792358,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1600",
+        "name": [
+          {
+            "text": "Cesson-Sévigné - Via Silva",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.1314392089844,
+        "lon": -1.62113702297211,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1601",
+        "name": [
+          {
+            "text": "Saint Jacques-Gaîté",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.0929374694824,
+        "lon": -1.70229995250702,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1602",
+        "name": [
+          {
+            "text": "Rochester",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.128246,
+        "lon": -1.662526,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1603",
+        "name": [
+          {
+            "text": "Armorique",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.1299781799316,
+        "lon": -1.67606294155121,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1604",
+        "name": [
+          {
+            "text": "Semprun",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.1100082397461,
+        "lon": -1.64638996124268,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1605",
+        "name": [
+          {
+            "text": "Champs Manceaux",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.0903396606445,
+        "lon": -1.68231105804443,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1606",
+        "name": [
+          {
+            "text": "Léon Bourgeois",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.0982208251953,
+        "lon": -1.6560389995575,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1607",
+        "name": [
+          {
+            "text": "Chantepie - Mairie",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.0888175964355,
+        "lon": -1.62045800685883,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1608",
+        "name": [
+          {
+            "text": "Cesson-Sévigné - Sports et Nature",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.1146850585938,
+        "lon": -1.61047697067261,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1609",
+        "name": [
+          {
+            "text": "Carsat",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.0954895019531,
+        "lon": -1.63740801811218,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1610",
+        "name": [
+          {
+            "text": "Chambre d'Agriculture",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.1145973205566,
+        "lon": -1.71540403366089,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1646",
+        "name": [
+          {
+            "text": "Saint-Grégoire - Forge",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.152012,
+        "lon": -1.685136,
+        "address": "3 Rue de la Duchesse Anne",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1653",
+        "name": [
+          {
+            "text": "Joliot-Curie - Chateaubriand",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.125128,
+        "lon": -1.651675,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1683",
+        "name": [
+          {
+            "text": "Pilate",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.093845,
+        "lon": -1.69075,
+        "address": "265 Rue de Nantes",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1748",
+        "name": [
+          {
+            "text": "République - Saint-Germain",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.10935,
+        "lon": -1.675827,
+        "address": "3 Rue Toullier, 35000 Rennes",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1749",
+        "name": [
+          {
+            "text": "Les Lices",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.11122,
+        "lon": -1.685982,
+        "address": "16 Quai Saint Cast",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1805",
+        "name": [
+          {
+            "text": "Saint-Erblon - Mairie",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.018021,
+        "lon": -1.651122,
+        "address": "3 Rue de la Mairie",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1821",
+        "name": [
+          {
+            "text": "Combes",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.0936992,
+        "lon": -1.672566,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      }
+    ]
+  }
+}

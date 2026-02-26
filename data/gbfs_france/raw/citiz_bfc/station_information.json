@@ -1,0 +1,847 @@
+{
+  "last_updated": "2026-02-22T09:39:52.6599723+01:00",
+  "ttl": 300,
+  "version": "3.0",
+  "data": {
+    "stations": [
+      {
+        "station_id": "1",
+        "name": [
+          {
+            "text": "Marulaz",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.239565,
+        "lon": 6.015821,
+        "address": "26 rue Marulaz",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "2",
+        "name": [
+          {
+            "text": "Mouillère",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.240181,
+        "lon": 6.033936,
+        "address": "3 allée de l'île aux moineaux \n",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "3",
+        "name": [
+          {
+            "text": "Gare-Viotte",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.24745559692383,
+        "lon": 6.021071910858154,
+        "address": "parking Nord de la gare (sortie Rue de Vesoul)",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "4",
+        "name": [
+          {
+            "text": "Leclerc",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.2424201965332,
+        "lon": 6.014591217041016,
+        "address": "1 place du maréchal Leclerc",
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "5",
+        "name": [
+          {
+            "text": "Chaprais",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.248504638671875,
+        "lon": 6.029687881469727,
+        "address": "53 rue de Belfort \n25000 Besançon",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "6",
+        "name": [
+          {
+            "text": "Marché Beaux Arts",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.24116897583008,
+        "lon": 6.0236101150512695,
+        "address": "6, avenue Elisée Cusenier",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "7",
+        "name": [
+          {
+            "text": "Bersot",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.23893356323242,
+        "lon": 6.029554843902588,
+        "address": "55 rue Bersot",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "8",
+        "name": [
+          {
+            "text": "Granvelle",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.23534393310547,
+        "lon": 6.0250067710876465,
+        "address": "10 rue de la préfecture",
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "9",
+        "name": [
+          {
+            "text": "St Jacques",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.23491668701172,
+        "lon": 6.021111965179443,
+        "address": "Parking rue de l'Orme de Chamars, Station Vélocité.",
+        "parking_type": "street_parking",
+        "capacity": 5,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "10",
+        "name": [
+          {
+            "text": "City",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.23464584350586,
+        "lon": 6.015480041503906,
+        "address": "Quai Bugnet ( 4 rue Gabriel Plançon ) ",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "11",
+        "name": [
+          {
+            "text": "Témis",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.251548767089844,
+        "lon": 5.999666213989258,
+        "address": "4 avenue des Montboucons, à côté des places de Taxi ",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "12",
+        "name": [
+          {
+            "text": "Flore",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.24567794799805,
+        "lon": 6.027897834777832,
+        "address": "3 place Flore",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "13",
+        "name": [
+          {
+            "text": "Tristan Bernard",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.247283935546875,
+        "lon": 6.036759853363037,
+        "address": "22 boulevard Diderot",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "14",
+        "name": [
+          {
+            "text": "1er mai",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.31517028808594,
+        "lon": 5.030196189880371,
+        "address": "Place du 1er mai\n",
+        "parking_type": "street_parking",
+        "capacity": 5,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "15",
+        "name": [
+          {
+            "text": "Auditorium",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.329078674316406,
+        "lon": 5.051084995269775,
+        "address": "Avenue de Marbotte\n",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "16",
+        "name": [
+          {
+            "text": "Cordeliers",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.318695068359375,
+        "lon": 5.040654182434082,
+        "address": "Rue Pasteur, 1ère place à gauche dans le sens de la Circulation",
+        "parking_type": "street_parking",
+        "capacity": 5,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "17",
+        "name": [
+          {
+            "text": "Drapeau",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.33347702026367,
+        "lon": 5.044248104095459,
+        "address": "Parking plein air sur le côté du Grand Dijon",
+        "parking_type": "parking_lot",
+        "capacity": 6,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "18",
+        "name": [
+          {
+            "text": "Gare Dijon",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.32366943359375,
+        "lon": 5.028045177459717,
+        "address": "Cour de la Gare",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "19",
+        "name": [
+          {
+            "text": "Monge",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.316383361816406,
+        "lon": 5.030896186828613,
+        "address": "Rue Vêques",
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "21",
+        "name": [
+          {
+            "text": "Théâtre",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.32173,
+        "lon": 5.043464,
+        "address": "3-5 Rue Lamonnoye",
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "22",
+        "name": [
+          {
+            "text": "Trémouille",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.32661819458008,
+        "lon": 5.042525291442871,
+        "address": "2 rue Joseph Tissot",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "23",
+        "name": [
+          {
+            "text": "Mission Mobilité",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.62691116333008,
+        "lon": 5.226586818695068,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "24",
+        "name": [
+          {
+            "text": "Rivotte",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.2337760925293,
+        "lon": 6.0341081619262695,
+        "address": "3 Faubourg Rivotte\n",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "25",
+        "name": [
+          {
+            "text": "Place du 30",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.321590423583984,
+        "lon": 5.053609848022461,
+        "address": "6 boulevard de Strasbourg",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "26",
+        "name": [
+          {
+            "text": "Quetigny",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.3137092590332,
+        "lon": 5.111464977264404,
+        "address": "Place Centrale, parking supermarché",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "27",
+        "name": [
+          {
+            "text": "Hauts-du-Chazal",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.22306823730469,
+        "lon": 5.95644998550415,
+        "address": "12 Rue Milleret\n",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "28",
+        "name": [
+          {
+            "text": "Saint-Ferjeux",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.23012924194336,
+        "lon": 5.992489814758301,
+        "address": "118 Rue de Dole, face Immeuble Le Major\n",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "29",
+        "name": [
+          {
+            "text": "Tilleuls",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.26005554199219,
+        "lon": 6.046000003814697,
+        "address": "Place des Tilleuls, face aux commerces",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "30",
+        "name": [
+          {
+            "text": "Voltaire",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.31414031982422,
+        "lon": 5.050908088684082,
+        "address": "29 Boulevard Voltaire \nprès école -Face Maison d'Arrêt ",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "31",
+        "name": [
+          {
+            "text": "Junot",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.339839935302734,
+        "lon": 5.0453200340271,
+        "address": "72 avenue du Drapeau (devant le Crédit Agricole)",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "32",
+        "name": [
+          {
+            "text": "Mairie",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.23545837402344,
+        "lon": 6.022098064422607,
+        "address": "2 Rue Mégevand",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "33",
+        "name": [
+          {
+            "text": "Parking Flore",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.93895,
+        "lon": 5.877139,
+        "address": "2 place Flore (proche Mairie)",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "34",
+        "name": [
+          {
+            "text": "Saint-Claude - Place de la Halle",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.38628,
+        "lon": 5.864762,
+        "address": "Place de la Halle 39200 Saint-Claude\n\n\n",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "35",
+        "name": [
+          {
+            "text": "Lajoux-Maison du Parc",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.374664306640625,
+        "lon": 5.97393798828125,
+        "address": "Maison du Parc  : 29 Le Village - 39310 Lajoux\n",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "36",
+        "name": [
+          {
+            "text": "Morez - Quai Jobez",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.52098,
+        "lon": 6.021495,
+        "address": "12 quai Jobez \n",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "37",
+        "name": [
+          {
+            "text": "Moirans Station",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.43438720703125,
+        "lon": 5.726367950439453,
+        "parking_type": "street_parking",
+        "capacity": 0,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "38",
+        "name": [
+          {
+            "text": "Victor Hugo",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.3306884765625,
+        "lon": 5.022916793823242,
+        "address": "84 avenue Victor Hugo",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "39",
+        "name": [
+          {
+            "text": "Branly",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.22813415527344,
+        "lon": 5.9693169593811035,
+        "address": "Rue Branly, devant les bureaux Keolis",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "40",
+        "name": [
+          {
+            "text": "Grette",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.22977828979492,
+        "lon": 6.0107741355896,
+        "address": "14 Rue de la Grette\n",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "41",
+        "name": [
+          {
+            "text": "Place du Jura",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.23121429284662,
+        "lon": 6.026266382438243,
+        "address": "Place De Lattre de Tassigny\n\n",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "42",
+        "name": [
+          {
+            "text": "Montmuzard",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.32714080810547,
+        "lon": 5.0624098777771,
+        "address": "Quartier Montmuzard\n50 Avenue Marechal Lyautey (tram 1 et bus L3)",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "62",
+        "name": [
+          {
+            "text": "Nation",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.34660720825195,
+        "lon": 5.045435905456543,
+        "address": "72 avenue de Langres",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "63",
+        "name": [
+          {
+            "text": "Jaurès",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.308921813964844,
+        "lon": 5.0253400802612305,
+        "address": "54 avenue Jean Jaurès",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "64",
+        "name": [
+          {
+            "text": "Saint-Claude",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.25544357299805,
+        "lon": 6.016624927520752,
+        "address": "9 Rue Jean Wyrsch, 25000 Besançon",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "65",
+        "name": [
+          {
+            "text": "Mallarmé",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.244773864746094,
+        "lon": 5.9987568855285645,
+        "address": "13 rue Mallarmé\n",
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "509",
+        "name": [
+          {
+            "text": "Palais des Sports",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.331493,
+        "lon": 5.056527,
+        "address": "13 rue Léon  Mauris",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "540",
+        "name": [
+          {
+            "text": "Fontaine d'Ouche",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.31908,
+        "lon": 5.001763,
+        "address": "30 boulevard Gaston Bachelard - Dijon\n",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1538",
+        "name": [
+          {
+            "text": "Parc Colombière",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.30226,
+        "lon": 5.049159,
+        "address": "Cour du parc\n",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1539",
+        "name": [
+          {
+            "text": "Champollion",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.33131,
+        "lon": 5.068263,
+        "address": "6 Place des savoirs/ devant Mairie Annexe (Grésilles)",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1540",
+        "name": [
+          {
+            "text": "Marmier",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.241202,
+        "lon": 6.006686,
+        "address": "7 Rue Xavier Marmier",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1541",
+        "name": [
+          {
+            "text": "Vareilles",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.242576,
+        "lon": 6.046021,
+        "address": "19 chemin des Vareilles",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1611",
+        "name": [
+          {
+            "text": "Les Oiseaux",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.254205,
+        "lon": 6.035422,
+        "address": "Rue Pierre Semard",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1652",
+        "name": [
+          {
+            "text": "Morteau Gare",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.05389,
+        "lon": 6.604601,
+        "address": "Gare de Morteau, avenue de la Gare 25500 Morteau\n\n47.054131, 6.604736",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1685",
+        "name": [
+          {
+            "text": "Hôtel de Ville - Décentralisation",
+            "language": "fr"
+          }
+        ],
+        "lat": 46.951515,
+        "lon": 4.299424,
+        "address": "Parking Rue de la Décentralisation\n",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1733",
+        "name": [
+          {
+            "text": "Le Parc-Larrey",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.315114120749506,
+        "lon": 5.014912387033068,
+        "address": "54 Rue de Larrey (Résidence Le Parc : Allée des Abeilles)",
+        "parking_type": "parking_lot",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1823",
+        "name": [
+          {
+            "text": "Mirande",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.317134,
+        "lon": 5.062938,
+        "address": "106B rue de Mirande - 21000 Dijon ",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,1475 @@
+{
+  "data": {
+    "stations": [
+      {
+        "is_virtual_station": true,
+        "lat": 49.189397,
+        "lon": -0.331259,
+        "name": "Herouville_parking_0",
+        "station_id": "Herouville_parking_0"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.191656,
+        "lon": -0.328356,
+        "name": "Herouville_parking_1",
+        "station_id": "Herouville_parking_1"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.194234,
+        "lon": -0.33059,
+        "name": "Herouville_parking_2",
+        "station_id": "Herouville_parking_2"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.194199,
+        "lon": -0.323526,
+        "name": "Herouville_parking_3",
+        "station_id": "Herouville_parking_3"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.201939,
+        "lon": -0.322069,
+        "name": "Herouville_parking_4",
+        "station_id": "Herouville_parking_4"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.196947,
+        "lon": -0.335172,
+        "name": "Herouville_parking_5",
+        "station_id": "Herouville_parking_5"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.199693,
+        "lon": -0.337282,
+        "name": "Herouville_parking_6",
+        "station_id": "Herouville_parking_6"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.201674,
+        "lon": -0.33549,
+        "name": "Herouville_parking_7",
+        "station_id": "Herouville_parking_7"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.204073,
+        "lon": -0.330898,
+        "name": "Herouville_parking_8",
+        "station_id": "Herouville_parking_8"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.204408,
+        "lon": -0.327979,
+        "name": "Herouville_parking_9",
+        "station_id": "Herouville_parking_9"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.198456,
+        "lon": -0.336589,
+        "name": "Herouville_parking_10",
+        "station_id": "Herouville_parking_10"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.205982,
+        "lon": -0.337178,
+        "name": "Herouville_parking_11",
+        "station_id": "Herouville_parking_11"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.202689,
+        "lon": -0.340663,
+        "name": "Herouville_parking_12",
+        "station_id": "Herouville_parking_12"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.205699,
+        "lon": -0.342509,
+        "name": "Herouville_parking_13",
+        "station_id": "Herouville_parking_13"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.197578,
+        "lon": -0.332337,
+        "name": "Herouville_parking_14",
+        "station_id": "Herouville_parking_14"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.199609,
+        "lon": -0.327703,
+        "name": "Herouville_parking_15",
+        "station_id": "Herouville_parking_15"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.205872,
+        "lon": -0.334778,
+        "name": "Herouville_parking_16",
+        "station_id": "Herouville_parking_16"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.21716621065628,
+        "lon": -0.3545958969579951,
+        "name": "Herouville_parking_17",
+        "station_id": "Herouville_parking_17"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.21415,
+        "lon": -0.3527,
+        "name": "Herouville_parking_18",
+        "station_id": "Herouville_parking_18"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.213088,
+        "lon": -0.342922,
+        "name": "Herouville_parking_19",
+        "station_id": "Herouville_parking_19"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.210212,
+        "lon": -0.336351,
+        "name": "Herouville_parking_20",
+        "station_id": "Herouville_parking_20"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.209794,
+        "lon": -0.350408,
+        "name": "Herouville_parking_22",
+        "station_id": "Herouville_parking_22"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.213584,
+        "lon": -0.346105,
+        "name": "Herouville_parking_23",
+        "station_id": "Herouville_parking_23"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.202522,
+        "lon": -0.345399,
+        "name": "Herouville_parking_24",
+        "station_id": "Herouville_parking_24"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.201774,
+        "lon": -0.326599,
+        "name": "Herouville_parking_25",
+        "station_id": "Herouville_parking_25"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.20508,
+        "lon": -0.331083,
+        "name": "Herouville_parking_26",
+        "station_id": "Herouville_parking_26"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.20633,
+        "lon": -0.330411,
+        "name": "Herouville_parking_27",
+        "station_id": "Herouville_parking_27"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.205922,
+        "lon": -0.325947,
+        "name": "Herouville_parking_28",
+        "station_id": "Herouville_parking_28"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.209533,
+        "lon": -0.327053,
+        "name": "Herouville_parking_29",
+        "station_id": "Herouville_parking_29"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.205123,
+        "lon": -0.339927,
+        "name": "Herouville_parking_30",
+        "station_id": "Herouville_parking_30"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.202703,
+        "lon": -0.336379,
+        "name": "Herouville_parking_31",
+        "station_id": "Herouville_parking_31"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.201554,
+        "lon": -0.332258,
+        "name": "Herouville_parking_32",
+        "station_id": "Herouville_parking_32"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.205029,
+        "lon": -0.334039,
+        "name": "Herouville_parking_33",
+        "station_id": "Herouville_parking_33"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.207947,
+        "lon": -0.339499,
+        "name": "Herouville_parking_34",
+        "station_id": "Herouville_parking_34"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.19908,
+        "lon": -0.338387,
+        "name": "Herouville_parking_35",
+        "station_id": "Herouville_parking_35"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.220236,
+        "lon": -0.343137,
+        "name": "Herouville_parking_36",
+        "station_id": "Herouville_parking_36"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.216952,
+        "lon": -0.345581,
+        "name": "Herouville_parking_37",
+        "station_id": "Herouville_parking_37"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.20312,
+        "lon": -0.33274,
+        "name": "Herouville_parking_38",
+        "station_id": "Herouville_parking_38"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.20341,
+        "lon": -0.33087,
+        "name": "Herouville_parking_39",
+        "station_id": "Herouville_parking_39"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.20358,
+        "lon": -0.33223,
+        "name": "Herouville_parking_40",
+        "station_id": "Herouville_parking_40"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.205665,
+        "lon": -0.350775,
+        "name": "Herouville_parking_41",
+        "station_id": "Herouville_parking_41"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.21858,
+        "lon": -0.34022,
+        "name": "Herouville_parking_42",
+        "station_id": "Herouville_parking_42"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.2165,
+        "lon": -0.34053,
+        "name": "Herouville_parking_43",
+        "station_id": "Herouville_parking_43"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.21304,
+        "lon": -0.34329,
+        "name": "Herouville_parking_44",
+        "station_id": "Herouville_parking_44"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.2144,
+        "lon": -0.34363,
+        "name": "Herouville_parking_45",
+        "station_id": "Herouville_parking_45"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.2173,
+        "lon": -0.34762,
+        "name": "Herouville_parking_46",
+        "station_id": "Herouville_parking_46"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.21994,
+        "lon": -0.34823,
+        "name": "Herouville_parking_47",
+        "station_id": "Herouville_parking_47"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.21785,
+        "lon": -0.3512,
+        "name": "Herouville_parking_48",
+        "station_id": "Herouville_parking_48"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.21405,
+        "lon": -0.35281,
+        "name": "Herouville_parking_49",
+        "station_id": "Herouville_parking_49"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.21413,
+        "lon": -0.35547,
+        "name": "Herouville_parking_50",
+        "station_id": "Herouville_parking_50"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.20895,
+        "lon": -0.35513,
+        "name": "Herouville_parking_51",
+        "station_id": "Herouville_parking_51"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.210774,
+        "lon": -0.356236,
+        "name": "Herouville_parking_52",
+        "station_id": "Herouville_parking_52"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.20364,
+        "lon": -0.34291,
+        "name": "Herouville_parking_53",
+        "station_id": "Herouville_parking_53"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.20506,
+        "lon": -0.33989,
+        "name": "Herouville_parking_54",
+        "station_id": "Herouville_parking_54"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.20266,
+        "lon": -0.33544,
+        "name": "Herouville_parking_55",
+        "station_id": "Herouville_parking_55"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.1995,
+        "lon": -0.34064,
+        "name": "Herouville_parking_56",
+        "station_id": "Herouville_parking_56"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.20357,
+        "lon": -0.34495,
+        "name": "Herouville_parking_57",
+        "station_id": "Herouville_parking_57"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.207,
+        "lon": -0.34108,
+        "name": "Herouville_parking_58",
+        "station_id": "Herouville_parking_58"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.20586,
+        "lon": -0.33724,
+        "name": "Herouville_parking_59",
+        "station_id": "Herouville_parking_59"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.20858,
+        "lon": -0.33302,
+        "name": "Herouville_parking_60",
+        "station_id": "Herouville_parking_60"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.20787,
+        "lon": -0.33492,
+        "name": "Herouville_parking_61",
+        "station_id": "Herouville_parking_61"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.20934,
+        "lon": -0.3264,
+        "name": "Herouville_parking_63",
+        "station_id": "Herouville_parking_63"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.21213,
+        "lon": -0.3305,
+        "name": "Herouville_parking_64",
+        "station_id": "Herouville_parking_64"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.21222,
+        "lon": -0.33062,
+        "name": "Herouville_parking_65",
+        "station_id": "Herouville_parking_65"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.20892,
+        "lon": -0.33153,
+        "name": "Herouville_parking_66",
+        "station_id": "Herouville_parking_66"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.2056,
+        "lon": -0.32793,
+        "name": "Herouville_parking_67",
+        "station_id": "Herouville_parking_67"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.20656,
+        "lon": -0.32709,
+        "name": "Herouville_parking_68",
+        "station_id": "Herouville_parking_68"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.20135,
+        "lon": -0.33238,
+        "name": "Herouville_parking_69",
+        "station_id": "Herouville_parking_69"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.19935,
+        "lon": -0.32922,
+        "name": "Herouville_parking_70",
+        "station_id": "Herouville_parking_70"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.20203,
+        "lon": -0.32788,
+        "name": "Herouville_parking_71",
+        "station_id": "Herouville_parking_71"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.20097,
+        "lon": -0.33196,
+        "name": "Herouville_parking_72",
+        "station_id": "Herouville_parking_72"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.20029,
+        "lon": -0.33293,
+        "name": "Herouville_parking_73",
+        "station_id": "Herouville_parking_73"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.19928,
+        "lon": -0.33492,
+        "name": "Herouville_parking_74",
+        "station_id": "Herouville_parking_74"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.19825,
+        "lon": -0.33693,
+        "name": "Herouville_parking_75",
+        "station_id": "Herouville_parking_75"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.19693,
+        "lon": -0.33535,
+        "name": "Herouville_parking_76",
+        "station_id": "Herouville_parking_76"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.19743,
+        "lon": -0.33249,
+        "name": "Herouville_parking_77",
+        "station_id": "Herouville_parking_77"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.1954,
+        "lon": -0.32729,
+        "name": "Herouville_parking_78",
+        "station_id": "Herouville_parking_78"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.18963,
+        "lon": -0.3312,
+        "name": "Herouville_parking_79",
+        "station_id": "Herouville_parking_79"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.19162,
+        "lon": -0.3284,
+        "name": "Herouville_parking_80",
+        "station_id": "Herouville_parking_80"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.19534,
+        "lon": -0.32612,
+        "name": "Herouville_parking_81",
+        "station_id": "Herouville_parking_81"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.19446,
+        "lon": -0.32337,
+        "name": "Herouville_parking_82",
+        "station_id": "Herouville_parking_82"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.18641,
+        "lon": -0.33263,
+        "name": "Herouville_parking_83",
+        "station_id": "Herouville_parking_83"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.18956,
+        "lon": -0.33454,
+        "name": "Herouville_parking_84",
+        "station_id": "Herouville_parking_84"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.18843,
+        "lon": -0.33458,
+        "name": "Herouville_parking_85",
+        "station_id": "Herouville_parking_85"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.19208,
+        "lon": -0.33277,
+        "name": "Herouville_parking_86",
+        "station_id": "Herouville_parking_86"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.19704,
+        "lon": -0.32649,
+        "name": "Herouville_parking_87",
+        "station_id": "Herouville_parking_87"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.19976,
+        "lon": -0.32399,
+        "name": "Herouville_parking_88",
+        "station_id": "Herouville_parking_88"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.20691,
+        "lon": -0.31818,
+        "name": "Herouville_parking_89",
+        "station_id": "Herouville_parking_89"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.19935,
+        "lon": -0.32922,
+        "name": "Herouville_parking_90",
+        "station_id": "Herouville_parking_90"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.19795,
+        "lon": -0.339978,
+        "name": "Herouville_parking_91",
+        "station_id": "Herouville_parking_91"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.198849,
+        "lon": -0.338566,
+        "name": "Herouville_parking_92",
+        "station_id": "Herouville_parking_92"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.199082,
+        "lon": -0.338096,
+        "name": "Herouville_parking_93",
+        "station_id": "Herouville_parking_93"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.199223,
+        "lon": -0.337641,
+        "name": "Herouville_parking_94",
+        "station_id": "Herouville_parking_94"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.200299,
+        "lon": -0.337465,
+        "name": "Herouville_parking_95",
+        "station_id": "Herouville_parking_95"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.200775,
+        "lon": -0.337362,
+        "name": "Herouville_parking_96",
+        "station_id": "Herouville_parking_96"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.214305,
+        "lon": -0.351845,
+        "name": "Herouville_parking_97",
+        "station_id": "Herouville_parking_97"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.215745,
+        "lon": -0.349516,
+        "name": "Herouville_parking_98",
+        "station_id": "Herouville_parking_98"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.206881,
+        "lon": -0.335691,
+        "name": "Herouville_parking_99",
+        "station_id": "Herouville_parking_99"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.203392,
+        "lon": -0.330311,
+        "name": "Herouville_parking_100",
+        "station_id": "Herouville_parking_100"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.204638,
+        "lon": -0.342302,
+        "name": "Herouville_parking_101",
+        "station_id": "Herouville_parking_101"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.207505,
+        "lon": -0.318813,
+        "name": "Herouville_parking_102",
+        "station_id": "Herouville_parking_102"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.203382,
+        "lon": -0.332154,
+        "name": "Herouville_parking_103",
+        "station_id": "Herouville_parking_103"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.203242,
+        "lon": -0.334958,
+        "name": "Herouville_parking_104",
+        "station_id": "Herouville_parking_104"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.200084,
+        "lon": -0.332802,
+        "name": "Herouville_parking_105",
+        "station_id": "Herouville_parking_105"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.200598,
+        "lon": -0.337399,
+        "name": "Herouville_parking_106",
+        "station_id": "Herouville_parking_106"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.200814,
+        "lon": -0.331996,
+        "name": "Herouville_parking_107",
+        "station_id": "Herouville_parking_107"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.20058,
+        "lon": -0.331798,
+        "name": "Herouville_parking_108",
+        "station_id": "Herouville_parking_108"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.203505,
+        "lon": -0.33592,
+        "name": "Herouville_parking_109",
+        "station_id": "Herouville_parking_109"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.203034,
+        "lon": -0.336094,
+        "name": "Herouville_parking_110",
+        "station_id": "Herouville_parking_110"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.202615,
+        "lon": -0.334836,
+        "name": "Herouville_parking_111",
+        "station_id": "Herouville_parking_111"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.202615,
+        "lon": -0.334849,
+        "name": "Herouville_parking_112",
+        "station_id": "Herouville_parking_112"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.20266,
+        "lon": -0.335901,
+        "name": "Herouville_parking_113",
+        "station_id": "Herouville_parking_113"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.202465,
+        "lon": -0.335911,
+        "name": "Herouville_parking_114",
+        "station_id": "Herouville_parking_114"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.2029,
+        "lon": -0.332737,
+        "name": "Herouville_parking_115",
+        "station_id": "Herouville_parking_115"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.202978,
+        "lon": -0.333427,
+        "name": "Herouville_parking_116",
+        "station_id": "Herouville_parking_116"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.203438,
+        "lon": -0.333819,
+        "name": "Herouville_parking_117",
+        "station_id": "Herouville_parking_117"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.202204,
+        "lon": -0.335568,
+        "name": "Herouville_parking_118",
+        "station_id": "Herouville_parking_118"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.202414,
+        "lon": -0.337,
+        "name": "Herouville_parking_119",
+        "station_id": "Herouville_parking_119"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.20242,
+        "lon": -0.336998,
+        "name": "Herouville_parking_120",
+        "station_id": "Herouville_parking_120"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.201758,
+        "lon": -0.337163,
+        "name": "Herouville_parking_121",
+        "station_id": "Herouville_parking_121"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.201633,
+        "lon": -0.337195,
+        "name": "Herouville_parking_122",
+        "station_id": "Herouville_parking_122"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.20146,
+        "lon": -0.337231,
+        "name": "Herouville_parking_123",
+        "station_id": "Herouville_parking_123"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.201134,
+        "lon": -0.337285,
+        "name": "Herouville_parking_124",
+        "station_id": "Herouville_parking_124"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.201045,
+        "lon": -0.337309,
+        "name": "Herouville_parking_125",
+        "station_id": "Herouville_parking_125"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.198517,
+        "lon": -0.337346,
+        "name": "Herouville_parking_126",
+        "station_id": "Herouville_parking_126"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.20261,
+        "lon": -0.33207,
+        "name": "Herouville_parking_127",
+        "station_id": "Herouville_parking_127"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.207923,
+        "lon": -0.335708,
+        "name": "Herouville_parking_128",
+        "station_id": "Herouville_parking_128"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.205405,
+        "lon": -0.337559,
+        "name": "Herouville_parking_129",
+        "station_id": "Herouville_parking_129"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.203718,
+        "lon": -0.345801,
+        "name": "Herouville_parking_130",
+        "station_id": "Herouville_parking_130"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.203144,
+        "lon": -0.345503,
+        "name": "Herouville_parking_131",
+        "station_id": "Herouville_parking_131"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.202819,
+        "lon": -0.345498,
+        "name": "Herouville_parking_132",
+        "station_id": "Herouville_parking_132"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.200701,
+        "lon": -0.332054,
+        "name": "Herouville_parking_134",
+        "station_id": "Herouville_parking_134"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.200623,
+        "lon": -0.332211,
+        "name": "Herouville_parking_135",
+        "station_id": "Herouville_parking_135"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.193793,
+        "lon": -0.330926,
+        "name": "Herouville_parking_136",
+        "station_id": "Herouville_parking_136"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.188463,
+        "lon": -0.334615,
+        "name": "Herouville_parking_137",
+        "station_id": "Herouville_parking_137"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.205514,
+        "lon": -0.328145,
+        "name": "Herouville_parking_138",
+        "station_id": "Herouville_parking_138"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.205547,
+        "lon": -0.325781,
+        "name": "Herouville_parking_139",
+        "station_id": "Herouville_parking_139"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.198234,
+        "lon": -0.337198,
+        "name": "Herouville_parking_141",
+        "station_id": "Herouville_parking_141"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.20532,
+        "lon": -0.330888,
+        "name": "Herouville_parking_142",
+        "station_id": "Herouville_parking_142"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.211943,
+        "lon": -0.330728,
+        "name": "Herouville_parking_143",
+        "station_id": "Herouville_parking_143"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.201631,
+        "lon": -0.333821,
+        "name": "Herouville_parking_144",
+        "station_id": "Herouville_parking_144"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.201628,
+        "lon": -0.333821,
+        "name": "Herouville_parking_145",
+        "station_id": "Herouville_parking_145"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.201624,
+        "lon": -0.333822,
+        "name": "Herouville_parking_146",
+        "station_id": "Herouville_parking_146"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.198341,
+        "lon": -0.33856,
+        "name": "Herouville_parking_147",
+        "station_id": "Herouville_parking_147"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.207898,
+        "lon": -0.335296,
+        "name": "Herouville_parking_148",
+        "station_id": "Herouville_parking_148"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.200239,
+        "lon": -0.339811,
+        "name": "Herouville_parking_149",
+        "station_id": "Herouville_parking_149"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.200236,
+        "lon": -0.339796,
+        "name": "Herouville_parking_150",
+        "station_id": "Herouville_parking_150"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.194495,
+        "lon": -0.32311,
+        "name": "Herouville_parking_151",
+        "station_id": "Herouville_parking_151"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.201969,
+        "lon": -0.345567,
+        "name": "Herouville_parking_152",
+        "station_id": "Herouville_parking_152"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.2026162,
+        "lon": -0.3320001,
+        "name": "Herouville_parking_21",
+        "station_id": "Herouville_parking_21"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.2007456,
+        "lon": -0.3436134,
+        "name": "Herouville_parking_133",
+        "station_id": "Herouville_parking_133"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.203633,
+        "lon": -0.32997,
+        "name": "Rack_Pl_Saint_Clair",
+        "station_id": "Rack_Pl_Saint_Clair"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.2780988,
+        "lon": -0.2688816,
+        "name": "Herouville_5_allee_des_rossignols",
+        "station_id": "Herouville_5_allee_des_rossignols"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.279824,
+        "lon": -0.263317,
+        "name": "Herouville_28_rue_Saint_Exupery",
+        "station_id": "Herouville_28_rue_Saint_Exupery"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.2821221,
+        "lon": -0.2668091,
+        "name": "Herouville_5_rue_Pauline_Rolland",
+        "station_id": "Herouville_5_rue_Pauline_Rolland"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.2796883,
+        "lon": -0.2600503,
+        "name": "Herouville_2_rue_du_Hamel",
+        "station_id": "Herouville_2_rue_du_Hamel"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.281483,
+        "lon": -0.2572601,
+        "name": "Herouville_18_avenue_de_la_marne",
+        "station_id": "Herouville_18_avenue_de_la_marne"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.278863,
+        "lon": -0.2508845,
+        "name": "Herouville_1_D84",
+        "station_id": "Herouville_1_D84"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.279414,
+        "lon": -0.2545801,
+        "name": "Herouville_13_avenue_du_Valpre",
+        "station_id": "Herouville_13_avenue_du_Valpre"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.2797506,
+        "lon": -0.2573873,
+        "name": "Herouville_43_avenue_du_Marechal_Foch",
+        "station_id": "Herouville_43_avenue_du_Marechal_Foch"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.2848693,
+        "lon": -0.2536541,
+        "name": "Herouville_49_boulevard_Charles_Poullain",
+        "station_id": "Herouville_49_boulevard_Charles_Poullain"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.2875487,
+        "lon": -0.2506456,
+        "name": "Herouville_133_Avenue_de_la_Heve",
+        "station_id": "Herouville_133_Avenue_de_la_Heve"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.2833978,
+        "lon": -0.2531181,
+        "name": "Herouville_85_avenue_de_la_redoute",
+        "station_id": "Herouville_85_avenue_de_la_redoute"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.2869074,
+        "lon": -0.2609695,
+        "name": "Herouville_26_boulevard_de_France",
+        "station_id": "Herouville_26_boulevard_de_France"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.2881497,
+        "lon": -0.2557568,
+        "name": "Herouville_19_boulevard_maritime",
+        "station_id": "Herouville_19_boulevard_maritime"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.2858918,
+        "lon": -0.256332,
+        "name": "Herouville_21_Boulevard_Charles_Poullain",
+        "station_id": "Herouville_21_Boulevard_Charles_Poullain"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.2900379,
+        "lon": -0.2617974,
+        "name": "Herouville_13_boulevard_Aristide_Briand",
+        "station_id": "Herouville_13_boulevard_Aristide_Briand"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.2858308,
+        "lon": -0.2653162,
+        "name": "Herouville_61_route_de_lion",
+        "station_id": "Herouville_61_route_de_lion"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.2899719,
+        "lon": -0.2647154,
+        "name": "Herouville_31_Boulevard_Winston_Churchill",
+        "station_id": "Herouville_31_Boulevard_Winston_Churchill"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.2872563,
+        "lon": -0.2692238,
+        "name": "Herouville_1_Avenue_Pierre_Corneille",
+        "station_id": "Herouville_1_Avenue_Pierre_Corneille"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.2883719,
+        "lon": -0.2671264,
+        "name": "Herouville_90_Boulevard_de_France",
+        "station_id": "Herouville_90_Boulevard_de_France"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.2903969,
+        "lon": -0.267657,
+        "name": "Herouville_38_Avenue_Pierre_Corneille",
+        "station_id": "Herouville_38_Avenue_Pierre_Corneille"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.2899249,
+        "lon": -0.2711569,
+        "name": "Herouville_23_Avenue_Rollon",
+        "station_id": "Herouville_23_Avenue_Rollon"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.2879422,
+        "lon": -0.2718926,
+        "name": "Herouville_131_Route_de_Lion",
+        "station_id": "Herouville_131_Route_de_Lion"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.2912379,
+        "lon": -0.2730115,
+        "name": "Herouville_86_Avenue_Casimir_Delavigne",
+        "station_id": "Herouville_86_Avenue_Casimir_Delavigne"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.2880632,
+        "lon": -0.2747934,
+        "name": "Herouville_49_Rue_Alexandre_Georges",
+        "station_id": "Herouville_49_Rue_Alexandre_Georges"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.2901989,
+        "lon": -0.2758526,
+        "name": "Herouville_159_Boulevard_de_France",
+        "station_id": "Herouville_159_Boulevard_de_France"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.2918467,
+        "lon": -0.2777662,
+        "name": "Herouville_109_Boulevard_Marechal_Joffre",
+        "station_id": "Herouville_109_Boulevard_Marechal_Joffre"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.2768311,
+        "lon": -0.2710633,
+        "name": "Herouville_2_Rue_des_Eperviers",
+        "station_id": "Herouville_2_Rue_des_Eperviers"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.2815069,
+        "lon": -0.270672,
+        "name": "Herouville_19_Avenue_du_Bois",
+        "station_id": "Herouville_19_Avenue_du_Bois"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.2759684,
+        "lon": -0.2553279,
+        "name": "Herouville_8_rue_du_Bief",
+        "station_id": "Herouville_8_rue_du_Bief"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.2760305,
+        "lon": -0.2581423,
+        "name": "Herouville_4_Avenue_Michel_Cabieu",
+        "station_id": "Herouville_4_Avenue_Michel_Cabieu"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.2746263,
+        "lon": -0.2618642,
+        "name": "Herouville_4_rue_du_Pasteur_Martin_Luther",
+        "station_id": "Herouville_4_rue_du_Pasteur_Martin_Luther"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.2676063,
+        "lon": -0.2585189,
+        "name": "Herouville_RD84_Avenue_du_Grand_Large",
+        "station_id": "Herouville_RD84_Avenue_du_Grand_Large"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.2709384,
+        "lon": -0.2548896,
+        "name": "Herouville_Quai_Jean_Charcot",
+        "station_id": "Herouville_Quai_Jean_Charcot"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.2763087,
+        "lon": -0.252,
+        "name": "Herouville_23_rue_Jean_Bart",
+        "station_id": "Herouville_23_rue_Jean_Bart"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.2587884,
+        "lon": -0.2647795,
+        "name": "Herouville_7_Chemin_du_Maresquier",
+        "station_id": "Herouville_7_Chemin_du_Maresquier"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.2602506,
+        "lon": -0.2607324,
+        "name": "Herouville_4_Rue_des_Roches",
+        "station_id": "Herouville_4_Rue_des_Roches"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.289086,
+        "lon": -0.2569714,
+        "name": "Herouville_Piscine_",
+        "station_id": "Herouville_Piscine_"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.2878266,
+        "lon": -0.2581411,
+        "name": "Herouville_Square_Alfred_Thomas",
+        "station_id": "Herouville_Square_Alfred_Thomas"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.2854169,
+        "lon": -0.260707,
+        "name": "Herouville_Place_du_Marche",
+        "station_id": "Herouville_Place_du_Marche"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.288546,
+        "lon": -0.2519674,
+        "name": "Herouville_Roller_parc",
+        "station_id": "Herouville_Roller_parc"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.2916178,
+        "lon": -0.2708808,
+        "name": "Herouville_Ouistreham_Plage",
+        "station_id": "Herouville_Ouistreham_Plage"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.29088,
+        "lon": -0.26611,
+        "name": "Aristide Briand",
+        "station_id": "Aristide Briand"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.275267,
+        "lon": -0.247,
+        "name": "port de plaisance",
+        "station_id": "port de plaisance"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.20590746705572,
+        "lon": -0.3572033088252943,
+        "name": "Marquage CHU",
+        "station_id": "Marquage CHU"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.20953814192482,
+        "lon": -0.35520993154520025,
+        "name": "BikeRack Bloch",
+        "station_id": "BikeRack Bloch"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.20936587889433,
+        "lon": -0.35542533444082536,
+        "name": "BikeRack Bloch 2",
+        "station_id": "BikeRack Bloch 2"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.20336690902621,
+        "lon": -0.33212387934671334,
+        "name": "BikeRack la poste",
+        "station_id": "BikeRack la poste"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.20368,
+        "lon": -0.35984,
+        "name": "Marquage CHU 2",
+        "station_id": "Marquage CHU 2"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.20946,
+        "lon": -0.36576,
+        "name": "BikeRack Carrefour Caen",
+        "station_id": "BikeRack Carrefour Caen"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.20998,
+        "lon": -0.36172,
+        "name": "BikeRack Mcdo Caen Nord",
+        "station_id": "BikeRack Mcdo Caen Nord"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.278859,
+        "lon": -0.247682,
+        "name": "herouville_parking_Centre_Nautique_Ouistreham_zidY4F51SPQ",
+        "station_id": "herouville_parking_Centre_Nautique_Ouistreham_zidY4F51SPQ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.29202789866645,
+        "lon": -0.27292014612877363,
+        "name": "BikeRack Aristide Briand",
+        "station_id": "BikeRack Aristide Briand"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.194643387562806,
+        "lon": -0.32631778106859843,
+        "name": "herouville_parking_Parking_Pl_canadien_zidDS6VMCTX",
+        "station_id": "herouville_parking_Parking_Pl_canadien_zidDS6VMCTX"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.26796177782128,
+        "lon": -0.26138589322948874,
+        "name": "herouville_parking_BikeRack_Mcdo_sud_zidOU1NA0YN",
+        "station_id": "herouville_parking_BikeRack_Mcdo_sud_zidOU1NA0YN"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.267933119130305,
+        "lon": -0.25925016389553346,
+        "name": "herouville_parking_BikeRack_Carrefour_zidK8TVCXUD",
+        "station_id": "herouville_parking_BikeRack_Carrefour_zidK8TVCXUD"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.21291508181062,
+        "lon": -0.3501865767007459,
+        "name": "herouville_parking_BikeRack_Laboratoire_Gilbert_zidTWX3HMF9",
+        "station_id": "herouville_parking_BikeRack_Laboratoire_Gilbert_zidTWX3HMF9"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 49.19876,
+        "lon": -0.33599,
+        "name": "herouville_parking_BikeRack_1002_BD_grand_parc_zidIS8UQ163",
+        "station_id": "herouville_parking_BikeRack_1002_BD_grand_parc_zidIS8UQ163",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      }
+    ]
+  },
+  "last_updated": 1771749833,
+  "ttl": 0,
+  "version": "2.2"
+}

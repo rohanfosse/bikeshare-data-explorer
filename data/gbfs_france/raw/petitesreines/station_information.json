@@ -1,0 +1,281 @@
+{
+  "data": {
+    "stations": [
+      {
+        "capacity": 16,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.493685,
+        "lon": -1.779314,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Promenade G Clemenceau"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://lespetitesreines.ecovelo.mobi/#/station/stn_WShtvrrGUPuwfyMwudxanq"
+        },
+        "station_id": "stn_WShtvrrGUPuwfyMwudxanq"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.50457,
+        "lon": -1.738507,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Mairie annexe du Château"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://lespetitesreines.ecovelo.mobi/#/station/stn_8EsuYc3j2ANRrKZSytw9ZY"
+        },
+        "station_id": "stn_8EsuYc3j2ANRrKZSytw9ZY"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.498101,
+        "lon": -1.783496,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Hôtel de Ville"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://lespetitesreines.ecovelo.mobi/#/station/stn_3dCHbnGjdfZDA6HnysT9ne"
+        },
+        "station_id": "stn_3dCHbnGjdfZDA6HnysT9ne"
+      },
+      {
+        "capacity": 16,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.499407,
+        "lon": -1.796536,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Capitainerie"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://lespetitesreines.ecovelo.mobi/#/station/stn_ewDBhLb7fJNpCHEuFHVJve"
+        },
+        "station_id": "stn_ewDBhLb7fJNpCHEuFHVJve"
+      },
+      {
+        "capacity": 16,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.493947,
+        "lon": -1.792037,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Atlantes"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://lespetitesreines.ecovelo.mobi/#/station/stn_QNWmWvA4Ujt82BktR6xMRQ"
+        },
+        "station_id": "stn_QNWmWvA4Ujt82BktR6xMRQ"
+      },
+      {
+        "capacity": 16,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.502896,
+        "lon": -1.787348,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Vendée Globe"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://lespetitesreines.ecovelo.mobi/#/station/stn_iy98aWStjxyC4vdxjnWH6a"
+        },
+        "station_id": "stn_iy98aWStjxyC4vdxjnWH6a"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.497534,
+        "lon": -1.786487,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Poissonnerie Pilote"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://lespetitesreines.ecovelo.mobi/#/station/stn_fCLNn9M7C8Fv5AGz7GQRhw"
+        },
+        "station_id": "stn_fCLNn9M7C8Fv5AGz7GQRhw"
+      },
+      {
+        "capacity": 16,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.480291,
+        "lon": -1.760459,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Tanchet"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://lespetitesreines.ecovelo.mobi/#/station/stn_ZiFXksTqaNp88suFxpfYyd"
+        },
+        "station_id": "stn_ZiFXksTqaNp88suFxpfYyd"
+      },
+      {
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.534065,
+        "lon": -1.773386,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Parc de la Jarrie"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://lespetitesreines.ecovelo.mobi/#/station/stn_kkFYQQWiqNYTP3RkYuyJjc"
+        },
+        "station_id": "stn_kkFYQQWiqNYTP3RkYuyJjc"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.499366,
+        "lon": -1.782289,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Parking Centre Ville Gare"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://lespetitesreines.ecovelo.mobi/#/station/stn_DLcGJSbgifAY6yorqV4bMG"
+        },
+        "station_id": "stn_DLcGJSbgifAY6yorqV4bMG"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.4941,
+        "lon": -1.795737,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Arundel"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://lespetitesreines.ecovelo.mobi/#/station/stn_DrFNJLVBNq2fvtDmbPSdFR"
+        },
+        "station_id": "stn_DrFNJLVBNq2fvtDmbPSdFR"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.499629,
+        "lon": -1.780419,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Gare SNCF"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://lespetitesreines.ecovelo.mobi/#/station/stn_TSuXtUachq4sypXypks3tf"
+        },
+        "station_id": "stn_TSuXtUachq4sypXypks3tf"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.488249,
+        "lon": -1.76916,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Présidents"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://lespetitesreines.ecovelo.mobi/#/station/stn_VpKVb6bPZjCv6kLqCa6sMC"
+        },
+        "station_id": "stn_VpKVb6bPZjCv6kLqCa6sMC"
+      },
+      {
+        "capacity": 20,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.506008,
+        "lon": -1.789133,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Sablière"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://lespetitesreines.ecovelo.mobi/#/station/stn_5yWzGs2UHbKi8Q6xiHoJNC"
+        },
+        "station_id": "stn_5yWzGs2UHbKi8Q6xiHoJNC"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.476981,
+        "lon": -1.74523,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Bourg de la Pironnière"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://lespetitesreines.ecovelo.mobi/#/station/stn_na372TXSoj9ue4SoWqicjD"
+        },
+        "station_id": "stn_na372TXSoj9ue4SoWqicjD"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 46.496168,
+        "lon": -1.79482,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Passeur Quai Guiné"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://lespetitesreines.ecovelo.mobi/#/station/stn_hdPPKmCbHUCYvUvgBueLe3"
+        },
+        "station_id": "stn_hdPPKmCbHUCYvUvgBueLe3"
+      }
+    ]
+  },
+  "last_updated": "2026-02-22T09:41:25+01:00",
+  "ttl": 0,
+  "version": "3.0"
+}

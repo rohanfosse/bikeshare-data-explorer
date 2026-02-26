@@ -1,0 +1,1094 @@
+{
+  "last_updated": 1771749788,
+  "ttl": 300,
+  "version": "2.3",
+  "data": {
+    "stations": [
+      {
+        "station_id": "1",
+        "name": "PRÉFECTURE",
+        "lat": 47.21984,
+        "lon": -1.554891,
+        "address": "Place du Port Communeau",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 33
+      },
+      {
+        "station_id": "2",
+        "name": "HÔTEL DE VILLE",
+        "lat": 47.218572,
+        "lon": -1.553484,
+        "address": "29, rue de Strasbourg",
+        "capacity": 20
+      },
+      {
+        "station_id": "3",
+        "name": "STRASBOURG",
+        "lat": 47.21682,
+        "lon": -1.551979,
+        "address": "4, rue des Carmélites - Place Tirant Lo Blanc",
+        "capacity": 15
+      },
+      {
+        "station_id": "4",
+        "name": "MOULIN",
+        "lat": 47.216668,
+        "lon": -1.554385,
+        "address": "18, rue du Moulin",
+        "capacity": 12
+      },
+      {
+        "station_id": "5",
+        "name": "BROSSARD",
+        "lat": 47.218837,
+        "lon": -1.556749,
+        "address": "12, Allée Duquesne",
+        "capacity": 18
+      },
+      {
+        "station_id": "6",
+        "name": "PLACE DU CIRQUE",
+        "lat": 47.217597,
+        "lon": -1.556938,
+        "address": "7, allée Duquesne",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 21
+      },
+      {
+        "station_id": "8",
+        "name": "BOUCHERIE",
+        "lat": 47.216201,
+        "lon": -1.557112,
+        "address": "4, rue de la Boucherie",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 24
+      },
+      {
+        "station_id": "9",
+        "name": "GUÉPIN",
+        "lat": 47.215815,
+        "lon": -1.559017,
+        "address": "Angle rue du Calvaire / Rue Guépin",
+        "capacity": 14
+      },
+      {
+        "station_id": "10",
+        "name": "PICASSO",
+        "lat": 47.216207,
+        "lon": -1.533796,
+        "address": "12, mail Pablo Picasso",
+        "capacity": 40
+      },
+      {
+        "station_id": "11",
+        "name": "CALVAIRE",
+        "lat": 47.215579,
+        "lon": -1.560675,
+        "address": "8, rue du Calvaire - Place des Volontaires de la Défense Passive",
+        "capacity": 15
+      },
+      {
+        "station_id": "12",
+        "name": "DELORME",
+        "lat": 47.215158,
+        "lon": -1.563901,
+        "address": "1, boulevard Gabriel Guist'Hau - Place Delorme",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 20
+      },
+      {
+        "station_id": "13",
+        "name": "BRETAGNE SUD",
+        "lat": 47.216788,
+        "lon": -1.559161,
+        "address": "3, rue Pierre Chereau",
+        "capacity": 20
+      },
+      {
+        "station_id": "14",
+        "name": "SAINT FÉLIX",
+        "lat": 47.230334,
+        "lon": -1.556133,
+        "address": "35, Boulevard Amiral Courbet",
+        "capacity": 14
+      },
+      {
+        "station_id": "15",
+        "name": "ARISTIDE BRIAND",
+        "lat": 47.217185,
+        "lon": -1.562987,
+        "address": "Place Aristide Briand",
+        "capacity": 17
+      },
+      {
+        "station_id": "16",
+        "name": "ÉDOUARD NORMAND",
+        "lat": 47.219028,
+        "lon": -1.563419,
+        "address": "Face au 7, place Edouard Normand",
+        "capacity": 15
+      },
+      {
+        "station_id": "17",
+        "name": "SAINTE ÉLISABETH",
+        "lat": 47.219214,
+        "lon": -1.56157,
+        "address": "4, place Sainte Elisabeth",
+        "capacity": 14
+      },
+      {
+        "station_id": "18",
+        "name": "VIARME",
+        "lat": 47.221429,
+        "lon": -1.563308,
+        "address": "23, place Viarme",
+        "capacity": 14
+      },
+      {
+        "station_id": "19",
+        "name": "SAINT SIMILIEN",
+        "lat": 47.219854,
+        "lon": -1.558921,
+        "address": "1, place Saint Similien",
+        "capacity": 15
+      },
+      {
+        "station_id": "20",
+        "name": "BOUFFAY",
+        "lat": 47.214301,
+        "lon": -1.552782,
+        "address": "7, allée du Port Maillard - Cours Franklin Roosevelt",
+        "capacity": 15
+      },
+      {
+        "station_id": "21",
+        "name": "TALENSAC SUD",
+        "lat": 47.221143,
+        "lon": -1.556476,
+        "address": "6, rue Talensac",
+        "capacity": 16
+      },
+      {
+        "station_id": "23",
+        "name": "BUAT",
+        "lat": 47.227145,
+        "lon": -1.542405,
+        "address": "118, rue de Coulmiers",
+        "capacity": 11
+      },
+      {
+        "station_id": "24",
+        "name": "VERSAILLES",
+        "lat": 47.224515,
+        "lon": -1.553712,
+        "address": "25, quai de Versailles - Ile de Versailles",
+        "capacity": 15
+      },
+      {
+        "station_id": "25",
+        "name": "DALBY",
+        "lat": 47.223919,
+        "lon": -1.530096,
+        "address": "61, boulevard Ernest Dalby",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 18
+      },
+      {
+        "station_id": "26",
+        "name": "GUIST'HAU SUD",
+        "lat": 47.216828,
+        "lon": -1.567005,
+        "address": "30, boulevard Gabriel Guist'Hau - Rue Harouys",
+        "capacity": 15
+      },
+      {
+        "station_id": "27",
+        "name": "GUIST'HAU NORD",
+        "lat": 47.21793,
+        "lon": -1.569172,
+        "address": "42, boulevard Gabriel Guist'Hau",
+        "capacity": 15
+      },
+      {
+        "station_id": "28",
+        "name": "CARRIÈRE MISERY",
+        "lat": 47.200072,
+        "lon": -1.579904,
+        "address": "Rue Joseph Cholet",
+        "capacity": 16
+      },
+      {
+        "station_id": "29",
+        "name": "DUGUAY TROUIN",
+        "lat": 47.212696,
+        "lon": -1.557306,
+        "address": "18, allée Duguay Trouin",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 26
+      },
+      {
+        "station_id": "30",
+        "name": "COMMERCE",
+        "lat": 47.213888,
+        "lon": -1.555505,
+        "address": "Place du Commerce - Cours Franklin Roosevelt",
+        "capacity": 33
+      },
+      {
+        "station_id": "31",
+        "name": "BOURSE",
+        "lat": 47.212083,
+        "lon": -1.559087,
+        "address": "Allée de la Bourse - Boulevard des Nations-Unies",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 22
+      },
+      {
+        "station_id": "32",
+        "name": "FOCH",
+        "lat": 47.219248,
+        "lon": -1.550185,
+        "address": "Place Foch",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 14
+      },
+      {
+        "station_id": "33",
+        "name": "RACINE",
+        "lat": 47.213523,
+        "lon": -1.563141,
+        "address": "5, rue Racine",
+        "capacity": 15
+      },
+      {
+        "station_id": "34",
+        "name": "MÉDIATHÈQUE",
+        "lat": 47.210887,
+        "lon": -1.561745,
+        "address": "24, quai de la Fosse",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 25
+      },
+      {
+        "station_id": "35",
+        "name": "JEAN V",
+        "lat": 47.212369,
+        "lon": -1.564973,
+        "address": "Rue Pierre Louis Athénas",
+        "capacity": 15
+      },
+      {
+        "station_id": "36",
+        "name": "ALGER",
+        "lat": 47.210549,
+        "lon": -1.567368,
+        "address": "10, rue d'Alger",
+        "capacity": 15
+      },
+      {
+        "station_id": "37",
+        "name": "FÉLIX ÉBOUÉ",
+        "lat": 47.211465,
+        "lon": -1.556825,
+        "address": "1, allée de l'Île Gloriette",
+        "capacity": 27
+      },
+      {
+        "station_id": "38",
+        "name": "RICORDEAU",
+        "lat": 47.212108,
+        "lon": -1.553049,
+        "address": "Place Alexis-Ricordeau - Chaussée de la Madeleine",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 40
+      },
+      {
+        "station_id": "39",
+        "name": "QUAI MONCOUSU",
+        "lat": 47.209407,
+        "lon": -1.555233,
+        "address": "1, quai Moncousu - Pont Haudaudine",
+        "capacity": 24
+      },
+      {
+        "station_id": "40",
+        "name": "MADELEINE",
+        "lat": 47.208805,
+        "lon": -1.550412,
+        "address": "Quai Moncousu - Pont Général Audibert",
+        "capacity": 21
+      },
+      {
+        "station_id": "41",
+        "name": "BRUNELIÈRE",
+        "lat": 47.208905,
+        "lon": -1.56823,
+        "address": "88, quai de la Fosse",
+        "capacity": 18
+      },
+      {
+        "station_id": "42",
+        "name": "GARE MARITIME",
+        "lat": 47.206598,
+        "lon": -1.57261,
+        "address": "Quai Ernest Renaud - Place Jacksonville",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 31
+      },
+      {
+        "station_id": "43",
+        "name": "MACHINE DE L'ÎLE",
+        "lat": 47.206727,
+        "lon": -1.565034,
+        "address": "2 bis, boulevard Léon Bureau",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 36
+      },
+      {
+        "station_id": "44",
+        "name": "PALAIS DE JUSTICE",
+        "lat": 47.208317,
+        "lon": -1.561173,
+        "address": "19, quai François Mitterand - 1, rue Olympe de Gouges",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 31
+      },
+      {
+        "station_id": "45",
+        "name": "PRAIRIE AU DUC",
+        "lat": 47.204784,
+        "lon": -1.558923,
+        "address": "25, boulevard de la Prairie au Duc",
+        "capacity": 13
+      },
+      {
+        "station_id": "46",
+        "name": "RÉPUBLIQUE",
+        "lat": 47.205324,
+        "lon": -1.555183,
+        "address": "3, place de la République",
+        "capacity": 26
+      },
+      {
+        "station_id": "47",
+        "name": "MARTYRS NANTAIS",
+        "lat": 47.206933,
+        "lon": -1.548169,
+        "address": "1, boulevard des Martyrs Nantais de la Résistance",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 27
+      },
+      {
+        "station_id": "48",
+        "name": "VERDUN",
+        "lat": 47.217505,
+        "lon": -1.55185,
+        "address": "15, rue de Verdun",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 14
+      },
+      {
+        "station_id": "49",
+        "name": "DUCHESSE ANNE",
+        "lat": 47.2167,
+        "lon": -1.547253,
+        "address": "2, place de la Duchesse Anne",
+        "capacity": 15
+      },
+      {
+        "station_id": "50",
+        "name": "CHÂTEAU",
+        "lat": 47.21515,
+        "lon": -1.550226,
+        "address": "7, rue des Etats",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 16
+      },
+      {
+        "station_id": "51",
+        "name": "TABARLY",
+        "lat": 47.214195,
+        "lon": -1.529736,
+        "address": "5, boulevard de Berlin",
+        "capacity": 20
+      },
+      {
+        "station_id": "52",
+        "name": "BACO",
+        "lat": 47.214328,
+        "lon": -1.548751,
+        "address": "8, allée Baco",
+        "capacity": 15
+      },
+      {
+        "station_id": "53",
+        "name": "OLIVETTES",
+        "lat": 47.211736,
+        "lon": -1.549886,
+        "address": "10, rue des Olivettes",
+        "capacity": 15
+      },
+      {
+        "station_id": "54",
+        "name": "CITÉ INTERNATIONALE DES CONGRÈS",
+        "lat": 47.21318,
+        "lon": -1.544953,
+        "address": "2, rue de Jemmapes - 2, avenue Jean-Claude Bonduelle",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 34
+      },
+      {
+        "station_id": "55",
+        "name": "MAGELLAN",
+        "lat": 47.210781,
+        "lon": -1.544298,
+        "address": "11, rue de Belfort",
+        "capacity": 17
+      },
+      {
+        "station_id": "56",
+        "name": "VINCENT GACHE",
+        "lat": 47.206799,
+        "lon": -1.541778,
+        "address": "9, rue François Albert",
+        "capacity": 15
+      },
+      {
+        "station_id": "57",
+        "name": "GAËTAN RONDEAU",
+        "lat": 47.205396,
+        "lon": -1.537582,
+        "address": "20, rue Gaëtan Rondeau",
+        "capacity": 20
+      },
+      {
+        "station_id": "58",
+        "name": "PALAIS DES SPORTS",
+        "lat": 47.208465,
+        "lon": -1.536657,
+        "address": "8,rue André Tardieu",
+        "capacity": 15
+      },
+      {
+        "station_id": "59",
+        "name": "STADE SAUPIN",
+        "lat": 47.213682,
+        "lon": -1.540181,
+        "address": "35, quai de Malakoff",
+        "capacity": 24
+      },
+      {
+        "station_id": "60",
+        "name": "GARE DE NANTES NORD",
+        "lat": 47.217212,
+        "lon": -1.543517,
+        "address": "27 boulevard Stalingrad",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 40
+      },
+      {
+        "station_id": "61",
+        "name": "LIEU UNIQUE",
+        "lat": 47.215394,
+        "lon": -1.546825,
+        "address": "23, quai Ferdinand Favre",
+        "capacity": 15
+      },
+      {
+        "station_id": "62",
+        "name": "GARE DE NANTES NORD 2",
+        "lat": 47.218103,
+        "lon": -1.541751,
+        "address": "22-23 boulevard de Stalingrad",
+        "capacity": 40
+      },
+      {
+        "station_id": "63",
+        "name": "JARDIN DES PLANTES",
+        "lat": 47.219834,
+        "lon": -1.544719,
+        "address": "Rue Stanislas Baudry  - face rue Georges Clémenceau",
+        "capacity": 15
+      },
+      {
+        "station_id": "64",
+        "name": "SAINT CLÉMENT",
+        "lat": 47.221785,
+        "lon": -1.547099,
+        "address": "24, rue du Maréchal Joffre",
+        "capacity": 10
+      },
+      {
+        "station_id": "65",
+        "name": "COURS SULLY",
+        "lat": 47.222587,
+        "lon": -1.551666,
+        "address": "9, cours Sully",
+        "capacity": 15
+      },
+      {
+        "station_id": "66",
+        "name": "CHANZY",
+        "lat": 47.22543,
+        "lon": -1.548,
+        "address": "Face au 23, avenue Chanzy",
+        "capacity": 15
+      },
+      {
+        "station_id": "67",
+        "name": "WALDECK ROUSSEAU",
+        "lat": 47.227775,
+        "lon": -1.552148,
+        "address": "Place Waldeck Rousseau - Pont Général de la Motte Rouge",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 22
+      },
+      {
+        "station_id": "68",
+        "name": "LIVET",
+        "lat": 47.224068,
+        "lon": -1.545212,
+        "address": "65, rue Dufour",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 15
+      },
+      {
+        "station_id": "69",
+        "name": "MANUFACTURE",
+        "lat": 47.219216,
+        "lon": -1.535847,
+        "address": "11 bis, boulevard Stalingrad",
+        "capacity": 15
+      },
+      {
+        "station_id": "70",
+        "name": "GARE DE NANTES SUD",
+        "lat": 47.215505,
+        "lon": -1.542844,
+        "address": "Quai de Malakoff - Canal Saint-Félix",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 70
+      },
+      {
+        "station_id": "71",
+        "name": "TALENSAC NORD",
+        "lat": 47.221854,
+        "lon": -1.558941,
+        "address": "18, rue Talensac - 26, rue de Bel Air",
+        "capacity": 14
+      },
+      {
+        "station_id": "72",
+        "name": "BELLAMY-GUÉ MOREAU",
+        "lat": 47.228626,
+        "lon": -1.561806,
+        "address": "138, rue Paul Bellamy",
+        "capacity": 15
+      },
+      {
+        "station_id": "73",
+        "name": "SARRADIN",
+        "lat": 47.220882,
+        "lon": -1.570439,
+        "address": "4, place Emile Sarradin",
+        "capacity": 13
+      },
+      {
+        "station_id": "74",
+        "name": "CANCLAUX",
+        "lat": 47.214334,
+        "lon": -1.574925,
+        "address": "8, place Canclaux",
+        "capacity": 15
+      },
+      {
+        "station_id": "75",
+        "name": "LAMORICIÈRE",
+        "lat": 47.212309,
+        "lon": -1.571369,
+        "address": "14 bis, rue Lamoricière - Place Beaumanoir",
+        "capacity": 15
+      },
+      {
+        "station_id": "76",
+        "name": "RENÉ BOUHIER",
+        "lat": 47.209429,
+        "lon": -1.570515,
+        "address": "8, place René Bouhier",
+        "capacity": 15
+      },
+      {
+        "station_id": "77",
+        "name": "ÉCOLE D'ARCHITECTURE",
+        "lat": 47.207606,
+        "lon": -1.557532,
+        "address": "6, quai François Mitterrand",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 32
+      },
+      {
+        "station_id": "78",
+        "name": "DE GAULLE",
+        "lat": 47.208444,
+        "lon": -1.540514,
+        "address": "7, rue Françoise Giroud - Boulevard Général de Gaulle",
+        "capacity": 21
+      },
+      {
+        "station_id": "79",
+        "name": "MALAKOFF",
+        "lat": 47.213395,
+        "lon": -1.536954,
+        "address": "15, quai de Malakoff",
+        "capacity": 15
+      },
+      {
+        "station_id": "80",
+        "name": "VICTOR HUGO",
+        "lat": 47.204003,
+        "lon": -1.551548,
+        "address": "25, boulevard Victor Hugo - 28, boulevard Gustave Roch",
+        "capacity": 15
+      },
+      {
+        "station_id": "82",
+        "name": "SÉBILLEAU",
+        "lat": 47.206758,
+        "lon": -1.533118,
+        "address": "120, rue Dr Jules Sébilleau",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 16
+      },
+      {
+        "station_id": "83",
+        "name": "MILLERAND",
+        "lat": 47.2082,
+        "lon": -1.53018,
+        "address": "9, boulevard Alexandre Millerand - 28, boulevard Georges Pompidou",
+        "capacity": 14
+      },
+      {
+        "station_id": "84",
+        "name": "RÉGION",
+        "lat": 47.210742,
+        "lon": -1.525933,
+        "address": "Rue de la Loire - place Gaston Defferre",
+        "capacity": 22
+      },
+      {
+        "station_id": "85",
+        "name": "BEL AIR",
+        "lat": 47.226394,
+        "lon": -1.560023,
+        "address": "102, rue Paul Bellamy",
+        "capacity": 14
+      },
+      {
+        "station_id": "86",
+        "name": "HAUTS PAVÉS",
+        "lat": 47.225471,
+        "lon": -1.567502,
+        "address": "Rue de Berry - Rue des Hauts Pavés",
+        "capacity": 16
+      },
+      {
+        "station_id": "87",
+        "name": "ANATOLE FRANCE",
+        "lat": 47.223605,
+        "lon": -1.571374,
+        "address": "41, rue Alexandre Dumas - Place Anatole France",
+        "capacity": 15
+      },
+      {
+        "station_id": "88",
+        "name": "MELLINET",
+        "lat": 47.211501,
+        "lon": -1.577175,
+        "address": "1, boulevard Allard - Place Général Mellinet",
+        "capacity": 15
+      },
+      {
+        "station_id": "89",
+        "name": "SAINT-AIGNAN",
+        "lat": 47.207439,
+        "lon": -1.578689,
+        "address": "65, boulevard Saint-Aignan",
+        "capacity": 14
+      },
+      {
+        "station_id": "90",
+        "name": "PROCÉ",
+        "lat": 47.224195,
+        "lon": -1.576613,
+        "address": "Angle boulevard Gaston Serpette - Boulevard Auguste Pageot",
+        "capacity": 15
+      },
+      {
+        "station_id": "91",
+        "name": "ROND POINT DE VANNES",
+        "lat": 47.229581,
+        "lon": -1.572115,
+        "address": "65, boulevard Lelasseur",
+        "capacity": 15
+      },
+      {
+        "station_id": "92",
+        "name": "ROND POINT DE RENNES",
+        "lat": 47.233028,
+        "lon": -1.566059,
+        "address": "Angle boulevard Lelasseur - Rue Paul Bellamy",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 14
+      },
+      {
+        "station_id": "93",
+        "name": "FACULTÉS",
+        "lat": 47.246298,
+        "lon": -1.555309,
+        "address": "A l'angle route de la Jonelière -  Boulevard Guy Mollet",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 40
+      },
+      {
+        "station_id": "94",
+        "name": "PETIT PORT",
+        "lat": 47.243264,
+        "lon": -1.556345,
+        "address": "Boulevard du Petit Port - place du 8 mai 1945",
+        "capacity": 20
+      },
+      {
+        "station_id": "95",
+        "name": "MICHELET",
+        "lat": 47.235158,
+        "lon": -1.556322,
+        "address": "50, boulevard Michelet",
+        "capacity": 26
+      },
+      {
+        "station_id": "96",
+        "name": "TORTIÈRE",
+        "lat": 47.235335,
+        "lon": -1.549222,
+        "address": "Pont de la Tortière - boulevard Eugène Orieux",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 16
+      },
+      {
+        "station_id": "97",
+        "name": "SAINT DONATIEN",
+        "lat": 47.229088,
+        "lon": -1.540293,
+        "address": "Place du 51ème Régiment d'Artillerie",
+        "capacity": 19
+      },
+      {
+        "station_id": "98",
+        "name": "HUIT MAI",
+        "lat": 47.189212,
+        "lon": -1.550828,
+        "address": "Avenue de la Libération - rue Eugène Pottier - REZÉ",
+        "capacity": 15
+      },
+      {
+        "station_id": "99",
+        "name": "ST JACQUES",
+        "lat": 47.195899,
+        "lon": -1.536541,
+        "address": "Rue Saint Jacques",
+        "capacity": 15
+      },
+      {
+        "station_id": "100",
+        "name": "GRÉNERAIE",
+        "lat": 47.199923,
+        "lon": -1.534718,
+        "address": "Parc de la Gréneraie - NANTES",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 20
+      },
+      {
+        "station_id": "101",
+        "name": "PIRMIL",
+        "lat": 47.196531,
+        "lon": -1.541568,
+        "address": "13, rue Esnoul des Châtelets",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 28
+      },
+      {
+        "station_id": "102",
+        "name": "GARE DE PONT ROUSSEAU",
+        "lat": 47.19316,
+        "lon": -1.549212,
+        "address": "Rue de la Gare - REZÉ",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 24
+      },
+      {
+        "station_id": "103",
+        "name": "GRUE JAUNE",
+        "lat": 47.204879,
+        "lon": -1.569191,
+        "address": "Grue Jaune - Face au mail des Chantiers",
+        "capacity": 21
+      },
+      {
+        "station_id": "104",
+        "name": "ANTILLES",
+        "lat": 47.202685,
+        "lon": -1.572277,
+        "address": "20, quai des Antilles",
+        "capacity": 24
+      },
+      {
+        "station_id": "105",
+        "name": "HANGAR À BANANES",
+        "lat": 47.199408,
+        "lon": -1.573184,
+        "address": "Boulevard des Antilles - quai Président Wilson - Grue Titan Grise",
+        "capacity": 15
+      },
+      {
+        "station_id": "106",
+        "name": "GARENNES",
+        "lat": 47.202127,
+        "lon": -1.5787,
+        "address": "2, rue des Garennes",
+        "capacity": 15
+      },
+      {
+        "station_id": "107",
+        "name": "MOUTONNERIE",
+        "lat": 47.219901,
+        "lon": -1.532947,
+        "address": "Rue Francisco Ferrer",
+        "capacity": 15
+      },
+      {
+        "station_id": "108",
+        "name": "BONNE GARDE",
+        "lat": 47.197217,
+        "lon": -1.532105,
+        "address": "Face 97, rue Bonne Garde",
+        "capacity": 24
+      },
+      {
+        "station_id": "109",
+        "name": "CLOS TOREAU",
+        "lat": 47.19426,
+        "lon": -1.529313,
+        "address": "Face 31, boulevard Emile Gabory",
+        "capacity": 21
+      },
+      {
+        "station_id": "110",
+        "name": "AUDITORIUM",
+        "lat": 47.185402,
+        "lon": -1.554025,
+        "address": "1, avenue de Bretagne - REZÉ",
+        "capacity": 20
+      },
+      {
+        "station_id": "111",
+        "name": "DIDEROT",
+        "lat": 47.184491,
+        "lon": -1.562532,
+        "address": "Avenue de la Vendée - Face à l'Espace Diderot - REZÉ",
+        "capacity": 21
+      },
+      {
+        "station_id": "112",
+        "name": "TRENTEMOULT SABLIERES",
+        "lat": 47.190767,
+        "lon": -1.585519,
+        "address": "Rue de la Californie, 44400 REZE",
+        "capacity": 15
+      },
+      {
+        "station_id": "113",
+        "name": "MAIRIE DE REZÉ",
+        "lat": 47.191117,
+        "lon": -1.569362,
+        "address": "Place Jean-Baptiste Daviais - REZÉ",
+        "capacity": 21
+      },
+      {
+        "station_id": "114",
+        "name": "ATOUTSUD",
+        "lat": 47.194493,
+        "lon": -1.570365,
+        "address": "Angle rue de l'Abbé Grégoire - avenue Maréchal de Tassigny - REZÉ",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 25
+      },
+      {
+        "station_id": "115",
+        "name": "TRENTEMOULT",
+        "lat": 47.195308,
+        "lon": -1.581806,
+        "address": "Face 11, quai Marcel Boissard - Trentemoult - REZÉ",
+        "capacity": 26
+      },
+      {
+        "station_id": "116",
+        "name": "LIBERTÉ",
+        "lat": 47.198124,
+        "lon": -1.588395,
+        "address": "Rond-Point de Louisiane",
+        "capacity": 20
+      },
+      {
+        "station_id": "117",
+        "name": "MAIRIE DE CHANTENAY",
+        "lat": 47.20656,
+        "lon": -1.58785,
+        "address": "Place de la Liberté",
+        "capacity": 15
+      },
+      {
+        "station_id": "118",
+        "name": "ÉGALITÉ",
+        "lat": 47.209661,
+        "lon": -1.589002,
+        "address": "Boulevard Léon Jouhaux",
+        "capacity": 14
+      },
+      {
+        "station_id": "119",
+        "name": "ZOLA",
+        "lat": 47.213859,
+        "lon": -1.586108,
+        "address": "Place Emile Zola",
+        "capacity": 25
+      },
+      {
+        "station_id": "120",
+        "name": "ROND-POINT DE PARIS",
+        "lat": 47.234853,
+        "lon": -1.534981,
+        "address": "16, boulevard Jules Verne",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 30
+      },
+      {
+        "station_id": "121",
+        "name": "VICTOR RICHARD",
+        "lat": 47.228614,
+        "lon": -1.533329,
+        "address": "12, place Victor Richard",
+        "capacity": 15
+      },
+      {
+        "station_id": "122",
+        "name": "MITRIE",
+        "lat": 47.22865,
+        "lon": -1.526193,
+        "address": "5, route de Sainte Luce",
+        "capacity": 15
+      },
+      {
+        "station_id": "123",
+        "name": "TRARIEUX",
+        "lat": 47.225957,
+        "lon": -1.522334,
+        "address": "3, place Gabriel Trarieux",
+        "capacity": 20
+      },
+      {
+        "station_id": "124",
+        "name": "PAS ENCHANTÉS",
+        "lat": 47.205239,
+        "lon": -1.522726,
+        "address": "Boulevard des Pas Enchantés - SAINT-SÉBASTIEN-SUR-LOIRE",
+        "capacity": 25
+      },
+      {
+        "station_id": "125",
+        "name": "PLACIS",
+        "lat": 47.199378,
+        "lon": -1.520481,
+        "address": "Avenue de la Martellière - SAINT-SÉBASTIEN-SUR-LOIRE",
+        "capacity": 18
+      },
+      {
+        "station_id": "126",
+        "name": "GARE DE CHANTENAY",
+        "lat": 47.19773,
+        "lon": -1.594891,
+        "address": "7, boulevard Maréchal Alphonse Juin",
+        "capacity": 16
+      },
+      {
+        "station_id": "127",
+        "name": "P+R BAS DE CHANTENAY",
+        "lat": 47.195955,
+        "lon": -1.59119,
+        "address": "P+R Bas Chantenay, boulevard de Chantenay 44100 NANTES",
+        "capacity": 15
+      }
+    ]
+  }
+}

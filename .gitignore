@@ -4,3 +4,15 @@ __pycache__/
 .venv/
 .DS_Store
 .streamlit/secrets.toml
+cache
+
+# Bases de données SQLite
+*.db
+*.db-shm
+*.db-wal
+
+# Données brutes Vélomagg (trop volumineuses pour git)
+data/raw/TAM_MMM_*.csv
+
+# Données traitées volumineuses (> 50 MB)
+data/processed/TAM_MMM_*

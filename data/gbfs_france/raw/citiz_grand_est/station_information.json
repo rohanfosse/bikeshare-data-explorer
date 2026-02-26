@@ -1,0 +1,4713 @@
+{
+  "last_updated": "2026-02-22T09:42:42.0694881+01:00",
+  "ttl": 300,
+  "version": "3.0",
+  "data": {
+    "stations": [
+      {
+        "station_id": "66",
+        "name": [
+          {
+            "text": "Les Halles P2  (Gare)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.58684539794922,
+        "lon": 7.742034912109375,
+        "parking_type": "underground_parking",
+        "capacity": 8,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "67",
+        "name": [
+          {
+            "text": "Londres (Esplanade)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.579185485839844,
+        "lon": 7.770557880401611,
+        "parking_type": "parking_lot",
+        "capacity": 5,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "68",
+        "name": [
+          {
+            "text": "Rotonde (Cronenbourg)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.5912971496582,
+        "lon": 7.725094795227051,
+        "parking_type": "parking_lot",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "69",
+        "name": [
+          {
+            "text": "Rives de l'Aar",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.599754333496094,
+        "lon": 7.753936767578125,
+        "parking_type": "parking_lot",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "70",
+        "name": [
+          {
+            "text": "Austerlitz (Bourse)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.578216552734375,
+        "lon": 7.751718044281006,
+        "parking_type": "underground_parking",
+        "capacity": 8,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "71",
+        "name": [
+          {
+            "text": "Ste Aurélie (Gare)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.582916259765625,
+        "lon": 7.732975006103516,
+        "parking_type": "parking_lot",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "72",
+        "name": [
+          {
+            "text": "Ciarus (Tribunal)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.58945083618164,
+        "lon": 7.746956825256348,
+        "parking_type": "underground_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "73",
+        "name": [
+          {
+            "text": "Centre - Cours de l'Illiade",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.527000427246094,
+        "lon": 7.710024833679199,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "74",
+        "name": [
+          {
+            "text": "Gare - 17 Novembre",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.742942810058594,
+        "lon": 7.341014862060547,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "75",
+        "name": [
+          {
+            "text": "Gare de Sélestat",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.260353088378906,
+        "lon": 7.443867206573486,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "76",
+        "name": [
+          {
+            "text": "Gruber (Koenigshoffen)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.579063415527344,
+        "lon": 7.710916996002197,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "77",
+        "name": [
+          {
+            "text": "Nordfeld",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.75276565551758,
+        "lon": 7.345475196838379,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "78",
+        "name": [
+          {
+            "text": "Turenne (Contades)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.58934783935547,
+        "lon": 7.756655216217041,
+        "parking_type": "street_parking",
+        "capacity": 5,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "79",
+        "name": [
+          {
+            "text": "Place Kléber (Grande-île)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.58327865600586,
+        "lon": 7.746674060821533,
+        "parking_type": "underground_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "80",
+        "name": [
+          {
+            "text": "Wodli (Gare)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.5871467590332,
+        "lon": 7.736742973327637,
+        "parking_type": "parking_lot",
+        "capacity": 7,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "81",
+        "name": [
+          {
+            "text": "Boecklin (Robertsau)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.59812545776367,
+        "lon": 7.776947021484375,
+        "parking_type": "parking_lot",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "82",
+        "name": [
+          {
+            "text": "Gare Ouest - Rue du Tir",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.07369613647461,
+        "lon": 7.346710205078125,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "83",
+        "name": [
+          {
+            "text": "Broglie (Grande-île)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.58550262451172,
+        "lon": 7.749701023101807,
+        "parking_type": "underground_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "84",
+        "name": [
+          {
+            "text": "Petite France Ste Marguerite (Gare)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.58057403564453,
+        "lon": 7.736602783203125,
+        "parking_type": "underground_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "85",
+        "name": [
+          {
+            "text": "Schluthfeld (Neudorf)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.56834,
+        "lon": 7.752224,
+        "parking_type": "street_parking",
+        "capacity": 6,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "86",
+        "name": [
+          {
+            "text": "Colonne",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.540095,
+        "lon": 7.737027,
+        "parking_type": "parking_lot",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "87",
+        "name": [
+          {
+            "text": "Tauler (Orangerie)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.58828353881836,
+        "lon": 7.770202159881592,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "88",
+        "name": [
+          {
+            "text": "Mairie de Schiltigheim",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.606563568115234,
+        "lon": 7.749570846557617,
+        "parking_type": "street_parking",
+        "capacity": 6,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "89",
+        "name": [
+          {
+            "text": "Gare de Saverne",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.74445343017578,
+        "lon": 7.3628082275390625,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "91",
+        "name": [
+          {
+            "text": "Quai du Sable",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.42317581176758,
+        "lon": 7.664728164672852,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "92",
+        "name": [
+          {
+            "text": "Gare d'Erstein",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.42298126220703,
+        "lon": 7.638957977294922,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "93",
+        "name": [
+          {
+            "text": "Ballon",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.751930236816406,
+        "lon": 7.33689022064209,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "94",
+        "name": [
+          {
+            "text": "Gare de Haguenau",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.8135986328125,
+        "lon": 7.783785820007324,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "95",
+        "name": [
+          {
+            "text": "Barberousse",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.81691360473633,
+        "lon": 7.788443088531494,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "96",
+        "name": [
+          {
+            "text": "Bruche (Montagne Verte)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.57146453857422,
+        "lon": 7.711936950683594,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "97",
+        "name": [
+          {
+            "text": "Place de Bordeaux (Contades)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.593528747558594,
+        "lon": 7.757688045501709,
+        "parking_type": "street_parking",
+        "capacity": 5,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "98",
+        "name": [
+          {
+            "text": "Place du Marché (Neudorf)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.5665168762207,
+        "lon": 7.759884834289551,
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "99",
+        "name": [
+          {
+            "text": "République Palais du Rhin (Tribunal)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.58697509765625,
+        "lon": 7.752626895904541,
+        "parking_type": "street_parking",
+        "capacity": 5,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "100",
+        "name": [
+          {
+            "text": "Ponts Couverts (Gare)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.581581,
+        "lon": 7.737955,
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "101",
+        "name": [
+          {
+            "text": "Gutenberg (Grande-île)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.58127212524414,
+        "lon": 7.7484002113342285,
+        "parking_type": "underground_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "102",
+        "name": [
+          {
+            "text": "Jean Jaurès (Neudorf)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.56731414794922,
+        "lon": 7.773693084716797,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "103",
+        "name": [
+          {
+            "text": "Gare d'Obernai",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.46196365356445,
+        "lon": 7.488636016845703,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "104",
+        "name": [
+          {
+            "text": "Palais des sports",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.738346099853516,
+        "lon": 7.317275047302246,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "105",
+        "name": [
+          {
+            "text": "Gare de Molsheim",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.53721618652344,
+        "lon": 7.5008392333984375,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "106",
+        "name": [
+          {
+            "text": "St Laurent",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.613426208496094,
+        "lon": 7.75164794921875,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "107",
+        "name": [
+          {
+            "text": "Place d'Islande (Esplanade)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.58026123046875,
+        "lon": 7.776356220245361,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "108",
+        "name": [
+          {
+            "text": "St Michel (Gare)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.581966400146484,
+        "lon": 7.735983848571777,
+        "parking_type": "street_parking",
+        "capacity": 6,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "109",
+        "name": [
+          {
+            "text": "Concorde",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.608612060546875,
+        "lon": 7.734739780426025,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "110",
+        "name": [
+          {
+            "text": "Prévert",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.60173034667969,
+        "lon": 7.738532066345215,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "112",
+        "name": [
+          {
+            "text": "Parc de l'Etoile (Neudorf)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.57258224487305,
+        "lon": 7.752986907958984,
+        "parking_type": "street_parking",
+        "capacity": 7,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "113",
+        "name": [
+          {
+            "text": "Place Arnold (Orangerie)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.585018157958984,
+        "lon": 7.771204948425293,
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "114",
+        "name": [
+          {
+            "text": "Brant Université (Orangerie)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.58580017089844,
+        "lon": 7.761969089508057,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "115",
+        "name": [
+          {
+            "text": "Buffon - Porte Haute",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.74781036376953,
+        "lon": 7.331164836883545,
+        "parking_type": "parking_lot",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "116",
+        "name": [
+          {
+            "text": "Landsberg (Neudorf)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.570220947265625,
+        "lon": 7.76400089263916,
+        "parking_type": "street_parking",
+        "capacity": 5,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "117",
+        "name": [
+          {
+            "text": "CTO",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.53816223144531,
+        "lon": 7.725081920623779,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "118",
+        "name": [
+          {
+            "text": "Malraux",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.52337646484375,
+        "lon": 7.7212090492248535,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  7.720973734645731,
+                  48.525849184414675
+                ],
+                [
+                  7.721166853694803,
+                  48.52525231755901
+                ],
+                [
+                  7.721445803432352,
+                  48.52472650045346
+                ],
+                [
+                  7.72148871877659,
+                  48.52452754120613
+                ],
+                [
+                  7.721402888088114,
+                  48.524072774277364
+                ],
+                [
+                  7.7204802081869905,
+                  48.52194099986703
+                ],
+                [
+                  7.72073770025242,
+                  48.52189836346365
+                ],
+                [
+                  7.721789126186258,
+                  48.524214889381255
+                ],
+                [
+                  7.721789126186258,
+                  48.524584386785115
+                ],
+                [
+                  7.721596007137186,
+                  48.52505336037729
+                ],
+                [
+                  7.72125268438328,
+                  48.52570707389658
+                ],
+                [
+                  7.721274142055399,
+                  48.525920239524176
+                ],
+                [
+                  7.720973734645731,
+                  48.525849184414675
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "119",
+        "name": [
+          {
+            "text": "Kibitzenau (Neuhof)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.555809020996094,
+        "lon": 7.766678810119629,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  7.766085241671559,
+                  48.55350014471557
+                ],
+                [
+                  7.766492937441822,
+                  48.55348594144225
+                ],
+                [
+                  7.766836260195729,
+                  48.556553755898015
+                ],
+                [
+                  7.766900633212086,
+                  48.55692301731683
+                ],
+                [
+                  7.766900633212086,
+                  48.557221264956674
+                ],
+                [
+                  7.766492937441822,
+                  48.55705083794921
+                ],
+                [
+                  7.766342733736988,
+                  48.55669577983961
+                ],
+                [
+                  7.764669035311695,
+                  48.55608507406193
+                ],
+                [
+                  7.763746355410572,
+                  48.555204508567286
+                ],
+                [
+                  7.762952421542164,
+                  48.554536972898624
+                ],
+                [
+                  7.763081167574879,
+                  48.55415349097817
+                ],
+                [
+                  7.7662139877042735,
+                  48.55433813078419
+                ],
+                [
+                  7.766085241671559,
+                  48.55350014471557
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "120",
+        "name": [
+          {
+            "text": "CCI (Meinau)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.555076599121094,
+        "lon": 7.745204925537109,
+        "parking_type": "parking_lot",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "121",
+        "name": [
+          {
+            "text": "Oberlin (Contades)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.589664459228516,
+        "lon": 7.751916885375977,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "122",
+        "name": [
+          {
+            "text": "Place des Dragons",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.739662170410156,
+        "lon": 7.361268997192383,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "123",
+        "name": [
+          {
+            "text": "Ypres (Conseil des XV)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.58564376831055,
+        "lon": 7.780213832855225,
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "124",
+        "name": [
+          {
+            "text": "Trois rois",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.744171142578125,
+        "lon": 7.3333740234375,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "125",
+        "name": [
+          {
+            "text": "Mairie de Hoenheim",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.62127685546875,
+        "lon": 7.755435943603516,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "126",
+        "name": [
+          {
+            "text": "Graviere (Neudorf)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.56150817871094,
+        "lon": 7.7640461921691895,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "127",
+        "name": [
+          {
+            "text": "Arte (Wacken)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.59344482421875,
+        "lon": 7.766025066375732,
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "129",
+        "name": [
+          {
+            "text": "E3 - Londres",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.61026382446289,
+        "lon": 7.711759090423584,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "130",
+        "name": [
+          {
+            "text": "Rodolphe Reuss (Neuhof)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.545213,
+        "lon": 7.766744,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  7.765776139648062,
+                  48.54459170597887
+                ],
+                [
+                  7.765851241500479,
+                  48.544456750965516
+                ],
+                [
+                  7.766473513991934,
+                  48.54489002631037
+                ],
+                [
+                  7.767460566909414,
+                  48.545728154974576
+                ],
+                [
+                  7.767460566909414,
+                  48.545877312010774
+                ],
+                [
+                  7.766602260024649,
+                  48.54534460629143
+                ],
+                [
+                  7.765840512664419,
+                  48.545209653285674
+                ],
+                [
+                  7.765743953139883,
+                  48.545188344883464
+                ],
+                [
+                  7.765776139648062,
+                  48.54459170597887
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "131",
+        "name": [
+          {
+            "text": "Hôtel de ville d'Ostwald",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.550777435302734,
+        "lon": 7.71115779876709,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "132",
+        "name": [
+          {
+            "text": "Roethig (Montagne Verte)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.563934,
+        "lon": 7.708525,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "133",
+        "name": [
+          {
+            "text": "Gare - Musée des Etoffes",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.74364471435547,
+        "lon": 7.344240188598633,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "134",
+        "name": [
+          {
+            "text": "Laiterie (Gare)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.57500457763672,
+        "lon": 7.730104923248291,
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "135",
+        "name": [
+          {
+            "text": "Hoenheim - Gare",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.62744903564453,
+        "lon": 7.758407115936279,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "136",
+        "name": [
+          {
+            "text": "Poteries Tram (Poteries)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.5832633972168,
+        "lon": 7.691351890563965,
+        "parking_type": "parking_lot",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "137",
+        "name": [
+          {
+            "text": "Rivetoile (Neudorf)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.573116302490234,
+        "lon": 7.762228012084961,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "138",
+        "name": [
+          {
+            "text": "Gare de Saint-Louis",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.59095764160156,
+        "lon": 7.556440830230713,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "139",
+        "name": [
+          {
+            "text": "St Thomas (Grande-île)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.57903289794922,
+        "lon": 7.745954990386963,
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "140",
+        "name": [
+          {
+            "text": "Bateliers (Krutenau)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.58099365234375,
+        "lon": 7.75630521774292,
+        "parking_type": "underground_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "141",
+        "name": [
+          {
+            "text": "Brasserie (Cronenbourg)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.5941047668457,
+        "lon": 7.716079235076904,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "142",
+        "name": [
+          {
+            "text": "E3 - Vienne",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.61240005493164,
+        "lon": 7.717436790466309,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "143",
+        "name": [
+          {
+            "text": "Ziegelau (Neudorf)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.56533432006836,
+        "lon": 7.767844200134277,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "144",
+        "name": [
+          {
+            "text": "St Florent (Cronenbourg)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.595706939697266,
+        "lon": 7.722667217254639,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "145",
+        "name": [
+          {
+            "text": "Place du Soleil (Krutenau)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.57870101928711,
+        "lon": 7.759953022003174,
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "146",
+        "name": [
+          {
+            "text": "St Nicolas aux Ondes (Krutenau)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.581424713134766,
+        "lon": 7.762584209442139,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "147",
+        "name": [
+          {
+            "text": "Adelshoffen",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.60833740234375,
+        "lon": 7.749967098236084,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  7.750565998721863,
+                  48.60992435188256
+                ],
+                [
+                  7.750104658771302,
+                  48.608094140891325
+                ],
+                [
+                  7.751574509311463,
+                  48.607980637250066
+                ],
+                [
+                  7.75365590350702,
+                  48.60803738910258
+                ],
+                [
+                  7.755125754047181,
+                  48.607810381309854
+                ],
+                [
+                  7.755222313571717,
+                  48.609796664896166
+                ],
+                [
+                  7.750726931262757,
+                  48.60995272672457
+                ],
+                [
+                  7.750565998721863,
+                  48.60992435188256
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "148",
+        "name": [
+          {
+            "text": "Pont de l'Europe (Port du Rhin)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.5716552734375,
+        "lon": 7.79533576965332,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "149",
+        "name": [
+          {
+            "text": "Mélanie (Robertsau)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.603206634521484,
+        "lon": 7.783641815185547,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "150",
+        "name": [
+          {
+            "text": "Palerme (Esplanade)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.57562255859375,
+        "lon": 7.763755798339844,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "151",
+        "name": [
+          {
+            "text": "Rome (Esplanade)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.57732391357422,
+        "lon": 7.768857002258301,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "152",
+        "name": [
+          {
+            "text": "Marne Anvers (Orangerie)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.58466720581055,
+        "lon": 7.77360200881958,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "153",
+        "name": [
+          {
+            "text": "Golbéry (Orangerie)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.58699417114258,
+        "lon": 7.766240119934082,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  7.766768614549604,
+                  48.585357679808595
+                ],
+                [
+                  7.767927328844038,
+                  48.58684806206874
+                ],
+                [
+                  7.766318003435102,
+                  48.587316458844484
+                ],
+                [
+                  7.769729773302045,
+                  48.58848033506637
+                ],
+                [
+                  7.769708315629926,
+                  48.58760033356538
+                ],
+                [
+                  7.769429365892377,
+                  48.58632288476361
+                ],
+                [
+                  7.769150416154829,
+                  48.585272513780474
+                ],
+                [
+                  7.7688285510730415,
+                  48.584747320102444
+                ],
+                [
+                  7.766768614549604,
+                  48.585357679808595
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "154",
+        "name": [
+          {
+            "text": "Black Swans (Neudorf)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.57380294799805,
+        "lon": 7.766585826873779,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "155",
+        "name": [
+          {
+            "text": "Danube (Neudorf)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.5734977722168,
+        "lon": 7.768025875091553,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "156",
+        "name": [
+          {
+            "text": "Chanoine Collin",
+            "language": "fr"
+          }
+        ],
+        "lat": 49.12053680419922,
+        "lon": 6.17729377746582,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "157",
+        "name": [
+          {
+            "text": "Comédie",
+            "language": "fr"
+          }
+        ],
+        "lat": 49.121788024902344,
+        "lon": 6.174746036529541,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "158",
+        "name": [
+          {
+            "text": "Dupont des Loges",
+            "language": "fr"
+          }
+        ],
+        "lat": 49.115028381347656,
+        "lon": 6.174856185913086,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "159",
+        "name": [
+          {
+            "text": "Place de Chambre",
+            "language": "fr"
+          }
+        ],
+        "lat": 49.120582580566406,
+        "lon": 6.1748127937316895,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "160",
+        "name": [
+          {
+            "text": "Place du Roi George",
+            "language": "fr"
+          }
+        ],
+        "lat": 49.11088943481445,
+        "lon": 6.171677112579346,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "161",
+        "name": [
+          {
+            "text": "St Simplice",
+            "language": "fr"
+          }
+        ],
+        "lat": 49.11643981933594,
+        "lon": 6.17979097366333,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "162",
+        "name": [
+          {
+            "text": "Commanderie",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.685691833496094,
+        "lon": 6.167262077331543,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "163",
+        "name": [
+          {
+            "text": "Craffe",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.6984748840332,
+        "lon": 6.177745819091797,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "164",
+        "name": [
+          {
+            "text": "Dombasle",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.69193649291992,
+        "lon": 6.17822790145874,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "165",
+        "name": [
+          {
+            "text": "Driant",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.692236,
+        "lon": 6.187766,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "166",
+        "name": [
+          {
+            "text": "Gare - Maginot",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.689736,
+        "lon": 6.177596,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "167",
+        "name": [
+          {
+            "text": "Mon Désert",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.683433532714844,
+        "lon": 6.1739301681518555,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "168",
+        "name": [
+          {
+            "text": "Vélodrome",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.665653228759766,
+        "lon": 6.166554927825928,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "170",
+        "name": [
+          {
+            "text": "Baggersee",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.54469299316406,
+        "lon": 7.737936973571777,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "171",
+        "name": [
+          {
+            "text": "Sablon - Belchamps",
+            "language": "fr"
+          }
+        ],
+        "lat": 49.105342864990234,
+        "lon": 6.175780773162842,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "172",
+        "name": [
+          {
+            "text": "Gare de Bar-le-Duc",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.77296447753906,
+        "lon": 5.1669111251831055,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "173",
+        "name": [
+          {
+            "text": "Place Reggio",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.773246,
+        "lon": 5.158985,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "174",
+        "name": [
+          {
+            "text": "St Vincent",
+            "language": "fr"
+          }
+        ],
+        "lat": 49.123924255371094,
+        "lon": 6.172266960144043,
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "175",
+        "name": [
+          {
+            "text": "Place Haslinger",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.08176040649414,
+        "lon": 7.35908317565918,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "176",
+        "name": [
+          {
+            "text": "St Joseph",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.08226013183594,
+        "lon": 7.347602844238281,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "177",
+        "name": [
+          {
+            "text": "Gare de Benfeld",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.37482452392578,
+        "lon": 7.5862040519714355,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "178",
+        "name": [
+          {
+            "text": "Mairie de Lingolsheim ",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.55571746826172,
+        "lon": 7.682474136352539,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "179",
+        "name": [
+          {
+            "text": "Parc d'Innovation - 7 Hotel",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.523399353027344,
+        "lon": 7.73866081237793,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "180",
+        "name": [
+          {
+            "text": "Berne (Bourse)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.5771369934082,
+        "lon": 7.755503177642822,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "181",
+        "name": [
+          {
+            "text": "Porte de l'Hôpital (Grande-île)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.57752990722656,
+        "lon": 7.749499797821045,
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "182",
+        "name": [
+          {
+            "text": "Heyritz (Neudorf)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.57312774658203,
+        "lon": 7.749137878417969,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "183",
+        "name": [
+          {
+            "text": "Belfort (Neudorf)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.570777893066406,
+        "lon": 7.7502970695495605,
+        "parking_type": "street_parking",
+        "capacity": 6,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "184",
+        "name": [
+          {
+            "text": "Polygone Baldner (Neudorf)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.56932067871094,
+        "lon": 7.756916046142578,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "185",
+        "name": [
+          {
+            "text": "St Aloïse (Neudorf)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.564361572265625,
+        "lon": 7.761331081390381,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "186",
+        "name": [
+          {
+            "text": "Les Halles Friesé  (Tribunal)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.58900451660156,
+        "lon": 7.741882801055908,
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "187",
+        "name": [
+          {
+            "text": "St Léon (Tribunal)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.58928680419922,
+        "lon": 7.7492289543151855,
+        "parking_type": "street_parking",
+        "capacity": 5,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "188",
+        "name": [
+          {
+            "text": "Ehrmann (Contades)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.59135437011719,
+        "lon": 7.755242824554443,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "189",
+        "name": [
+          {
+            "text": "Arquebusiers (Contades)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.5920524597168,
+        "lon": 7.7595977783203125,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "190",
+        "name": [
+          {
+            "text": "Pontonniers (Tribunal)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.5841178894043,
+        "lon": 7.756669998168945,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "191",
+        "name": [
+          {
+            "text": "République TNS (Tribunal)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.58646774291992,
+        "lon": 7.756095886230469,
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "192",
+        "name": [
+          {
+            "text": "Andlau (Gare)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.57756805419922,
+        "lon": 7.731740951538086,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "193",
+        "name": [
+          {
+            "text": "Kageneck (Gare)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.58396530151367,
+        "lon": 7.738564968109131,
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "194",
+        "name": [
+          {
+            "text": "Place du Cygne (Grande-île)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.57831954956055,
+        "lon": 7.739441871643066,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "195",
+        "name": [
+          {
+            "text": "Rives du Bohrie - Roselière",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.5494384765625,
+        "lon": 7.701807975769043,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "196",
+        "name": [
+          {
+            "text": "Rives du Bohrie - Crèche",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.55192565917969,
+        "lon": 7.706169128417969,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "197",
+        "name": [
+          {
+            "text": "Muse - Amphithéatre",
+            "language": "fr"
+          }
+        ],
+        "lat": 49.10567855834961,
+        "lon": 6.181794166564941,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "199",
+        "name": [
+          {
+            "text": "Nouvelle Ville - Coeur Impérial",
+            "language": "fr"
+          }
+        ],
+        "lat": 49.10590362548828,
+        "lon": 6.168351173400879,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "200",
+        "name": [
+          {
+            "text": "Austerlitz (Bourse) - électrique",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.57777786254883,
+        "lon": 7.751948833465576,
+        "parking_type": "parking_lot",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "201",
+        "name": [
+          {
+            "text": "Fonderie",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.739261627197266,
+        "lon": 7.33082389831543,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "202",
+        "name": [
+          {
+            "text": "Cité Administrative",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.755401611328125,
+        "lon": 7.333731174468994,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "203",
+        "name": [
+          {
+            "text": "République - Joffre",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.74557876586914,
+        "lon": 7.342142105102539,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "204",
+        "name": [
+          {
+            "text": "Dornach",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.74665069580078,
+        "lon": 7.307722091674805,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "205",
+        "name": [
+          {
+            "text": "Queuleu - Plantières",
+            "language": "fr"
+          }
+        ],
+        "lat": 49.111629486083984,
+        "lon": 6.190110206604004,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "206",
+        "name": [
+          {
+            "text": "Foulons (Montagne Verte)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.57392883300781,
+        "lon": 7.726622104644775,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "207",
+        "name": [
+          {
+            "text": "Siège enfants",
+            "language": "fr"
+          }
+        ],
+        "lat": 71.170911,
+        "lon": 25.7831,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "208",
+        "name": [
+          {
+            "text": "Grand Coeur",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.68482971191406,
+        "lon": 6.182030200958252,
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "209",
+        "name": [
+          {
+            "text": "Hôtel de Ville de Nancy",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.69248962402344,
+        "lon": 6.183746814727783,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "211",
+        "name": [
+          {
+            "text": "Village by CA",
+            "language": "fr"
+          }
+        ],
+        "lat": 49.21620178222656,
+        "lon": 3.999169111251831,
+        "parking_type": "parking_lot",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "212",
+        "name": [
+          {
+            "text": "Mairie de La Wantzenau",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.657678,
+        "lon": 7.827566,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "213",
+        "name": [
+          {
+            "text": "Atelier rue du Nord",
+            "language": "fr"
+          }
+        ],
+        "lat": 71.170911,
+        "lon": 25.7831,
+        "parking_type": "street_parking",
+        "capacity": 50,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "214",
+        "name": [
+          {
+            "text": "22 Novembre (Grande-île)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.58283233642578,
+        "lon": 7.7428388595581055,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "215",
+        "name": [
+          {
+            "text": "Gare de Châlons-en-Champagne",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.955379486083984,
+        "lon": 4.346189975738525,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "216",
+        "name": [
+          {
+            "text": "Monseigneur Tissier",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.957008361816406,
+        "lon": 4.364614963531494,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "220",
+        "name": [
+          {
+            "text": "Com. Com. Vallée de Villé",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.337528228759766,
+        "lon": 7.288344860076904,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "221",
+        "name": [
+          {
+            "text": "atelier Lorraine",
+            "language": "fr"
+          }
+        ],
+        "lat": 71.170911,
+        "lon": 25.7831,
+        "parking_type": "street_parking",
+        "capacity": 10,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "223",
+        "name": [
+          {
+            "text": "Hôtel de Ville de Reims",
+            "language": "fr"
+          }
+        ],
+        "lat": 49.2587646,
+        "lon": 4.0314822,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "225",
+        "name": [
+          {
+            "text": "Aristide Briand",
+            "language": "fr"
+          }
+        ],
+        "lat": 49.2572025,
+        "lon": 4.0384959,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "226",
+        "name": [
+          {
+            "text": "Godinot",
+            "language": "fr"
+          }
+        ],
+        "lat": 49.253966,
+        "lon": 4.037178,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "227",
+        "name": [
+          {
+            "text": "Poittevin",
+            "language": "fr"
+          }
+        ],
+        "lat": 49.249629974365234,
+        "lon": 4.029541969299316,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "228",
+        "name": [
+          {
+            "text": "Jeanne d'Arc",
+            "language": "fr"
+          }
+        ],
+        "lat": 49.2528938,
+        "lon": 4.0267537,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "229",
+        "name": [
+          {
+            "text": "Champagne-Ardenne TGV - Reims Bezannes",
+            "language": "fr"
+          }
+        ],
+        "lat": 49.216434478759766,
+        "lon": 3.994946002960205,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "230",
+        "name": [
+          {
+            "text": "Gare d'Epinal",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.1782112121582,
+        "lon": 6.441915035247803,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "232",
+        "name": [
+          {
+            "text": "Gare de Sarrebourg",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.738189697265625,
+        "lon": 7.0533127784729,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "237",
+        "name": [
+          {
+            "text": "Gare - François de Curel",
+            "language": "fr"
+          }
+        ],
+        "lat": 49.1113166809082,
+        "lon": 6.176890850067139,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "238",
+        "name": [
+          {
+            "text": "Gare - Les Arènes",
+            "language": "fr"
+          }
+        ],
+        "lat": 49.10681,
+        "lon": 6.17817,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "239",
+        "name": [
+          {
+            "text": "Lezay Marnesia (Grande-île)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.584266662597656,
+        "lon": 7.755518913269043,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "240",
+        "name": [
+          {
+            "text": "Place de la Liberté",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.6060676574707,
+        "lon": 7.753698825836182,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "241",
+        "name": [
+          {
+            "text": "Schutzenberger",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.59953308105469,
+        "lon": 7.746726989746094,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "242",
+        "name": [
+          {
+            "text": "St Nicolas (Grande-île)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.57561111450195,
+        "lon": 7.749866962432861,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "243",
+        "name": [
+          {
+            "text": "Plaque d'immatriculation",
+            "language": "fr"
+          }
+        ],
+        "lat": 71.170911,
+        "lon": 25.7831,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "244",
+        "name": [
+          {
+            "text": "Carte Mobizen Communauto",
+            "language": "fr"
+          }
+        ],
+        "lat": 71.170911,
+        "lon": 25.7831,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "245",
+        "name": [
+          {
+            "text": "Mairie de Rixheim",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.74381637573242,
+        "lon": 7.397079944610596,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "246",
+        "name": [
+          {
+            "text": "Place du 18 Juin",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.74644470214844,
+        "lon": 7.400091171264648,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "247",
+        "name": [
+          {
+            "text": "Porte Blanche (Gare)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.579612731933594,
+        "lon": 7.731630802154541,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "248",
+        "name": [
+          {
+            "text": "Palais des Fêtes (Tribunal)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.59066390991211,
+        "lon": 7.749019145965576,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "249",
+        "name": [
+          {
+            "text": "Musau (Neudorf)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.567893981933594,
+        "lon": 7.768152236938477,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "250",
+        "name": [
+          {
+            "text": "Chaînes & chaussettes",
+            "language": "fr"
+          }
+        ],
+        "lat": 71.170911,
+        "lon": 25.7831,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "251",
+        "name": [
+          {
+            "text": "Adrien Zeller (Wacken)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.59872817993164,
+        "lon": 7.7620439529418945,
+        "address": "Place Adrien Zeller - 67000 STRASBOURG",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "252",
+        "name": [
+          {
+            "text": "Prestige Auto",
+            "language": "fr"
+          }
+        ],
+        "lat": 71.170911,
+        "lon": 25.7831,
+        "parking_type": "street_parking",
+        "capacity": 50,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "253",
+        "name": [
+          {
+            "text": "Michel Ange (Elsau)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.56489562988281,
+        "lon": 7.7280659675598145,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "254",
+        "name": [
+          {
+            "text": "Accessoires",
+            "language": "fr"
+          }
+        ],
+        "lat": 0.0001,
+        "lon": 0.0001,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "255",
+        "name": [
+          {
+            "text": "KRA",
+            "language": "fr"
+          }
+        ],
+        "lat": 71.170911,
+        "lon": 25.7831,
+        "address": "11 rue La Fayette - 67100 Strasbourg",
+        "parking_type": "street_parking",
+        "capacity": 30,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "256",
+        "name": [
+          {
+            "text": "Grisanti",
+            "language": "fr"
+          }
+        ],
+        "lat": 71.170911,
+        "lon": 25.7831,
+        "parking_type": "street_parking",
+        "capacity": 5,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "258",
+        "name": [
+          {
+            "text": "Véhicules en vente - suivi",
+            "language": "fr"
+          }
+        ],
+        "lat": 71.170911,
+        "lon": 25.7831,
+        "address": "7-9, Rte de la Wantzenau, 67800 Hœnheim",
+        "parking_type": "parking_lot",
+        "capacity": 100,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "259",
+        "name": [
+          {
+            "text": "Porte Jeune",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.7507209777832,
+        "lon": 7.341012954711914,
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "260",
+        "name": [
+          {
+            "text": "Prairies du Canal",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.52821731567383,
+        "lon": 7.7272210121154785,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "261",
+        "name": [
+          {
+            "text": "Papeterie (Robertsau)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.61094665527344,
+        "lon": 7.781879901885986,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "262",
+        "name": [
+          {
+            "text": "Renaissance Lejeune (Robertsau)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.61261749267578,
+        "lon": 7.787964820861816,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "264",
+        "name": [
+          {
+            "text": "Stade - Rue de la Paix",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.60762405395508,
+        "lon": 7.6860737800598145,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "265",
+        "name": [
+          {
+            "text": "Ecole Bauernhof",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.578922271728516,
+        "lon": 7.689611911773682,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "266",
+        "name": [
+          {
+            "text": "Spielmann (Bourse)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.575897216796875,
+        "lon": 7.752699851989746,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "267",
+        "name": [
+          {
+            "text": "Mozart (Orangerie)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.58729553222656,
+        "lon": 7.7751641273498535,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "268",
+        "name": [
+          {
+            "text": "Gare Est - Place de la Gare",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.07313919067383,
+        "lon": 7.347904205322266,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "269",
+        "name": [
+          {
+            "text": "Grenouillère",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.077213287353516,
+        "lon": 7.364284038543701,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "270",
+        "name": [
+          {
+            "text": "Jean Macé (Meinau)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.55618667602539,
+        "lon": 7.749269962310791,
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "271",
+        "name": [
+          {
+            "text": "Parc des Romains (Koenigshoffen)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.58112335205078,
+        "lon": 7.723570823669434,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "345",
+        "name": [
+          {
+            "text": "Bibliothèque Humaniste",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.261619567871094,
+        "lon": 7.454178810119629,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "346",
+        "name": [
+          {
+            "text": "Poincaré",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.25677490234375,
+        "lon": 7.455870151519775,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "347",
+        "name": [
+          {
+            "text": "St Rémi",
+            "language": "fr"
+          }
+        ],
+        "lat": 49.245106,
+        "lon": 4.039134,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "348",
+        "name": [
+          {
+            "text": "Jules Ferry",
+            "language": "fr"
+          }
+        ],
+        "lat": 49.25696563720703,
+        "lon": 4.0476298332214355,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "353",
+        "name": [
+          {
+            "text": "Gare - Clairmarais",
+            "language": "fr"
+          }
+        ],
+        "lat": 49.2604052,
+        "lon": 4.0223113,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "510",
+        "name": [
+          {
+            "text": "Tanneurs",
+            "language": "fr"
+          }
+        ],
+        "lat": 49.11972427368164,
+        "lon": 6.182138919830322,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "511",
+        "name": [
+          {
+            "text": "Sablon - Lothaire",
+            "language": "fr"
+          }
+        ],
+        "lat": 49.10007858276367,
+        "lon": 6.177295207977295,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "513",
+        "name": [
+          {
+            "text": "Vergers",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.651939392089844,
+        "lon": 7.754096984863281,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "523",
+        "name": [
+          {
+            "text": "Temple",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.58700942993164,
+        "lon": 7.563029766082764,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "527",
+        "name": [
+          {
+            "text": "Rue Nationale",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.61556625366211,
+        "lon": 7.755352020263672,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "528",
+        "name": [
+          {
+            "text": "St Antoine (Cronenbourg)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.597862243652344,
+        "lon": 7.709183216094971,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "529",
+        "name": [
+          {
+            "text": "Faubourg de Pierre (Tribunal)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.58806610107422,
+        "lon": 7.746009826660156,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "530",
+        "name": [
+          {
+            "text": "Place de Haguenau (Tribunal)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.591400146484375,
+        "lon": 7.743856906890869,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "531",
+        "name": [
+          {
+            "text": "Capucins (Koenigshoffen)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.57801055908203,
+        "lon": 7.702110767364502,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  7.701369045418676,
+                  48.57952732278615
+                ],
+                [
+                  7.7015728933038075,
+                  48.578682655901424
+                ],
+                [
+                  7.701551435631688,
+                  48.57851230120598
+                ],
+                [
+                  7.701358316582616,
+                  48.578256768086405
+                ],
+                [
+                  7.702173708123143,
+                  48.57805801921148
+                ],
+                [
+                  7.7039439660729725,
+                  48.57800833187065
+                ],
+                [
+                  7.7048666459740955,
+                  48.57799413547859
+                ],
+                [
+                  7.704469679039891,
+                  48.579080147958265
+                ],
+                [
+                  7.705124138039525,
+                  48.57918661851419
+                ],
+                [
+                  7.704984663170751,
+                  48.579733163837666
+                ],
+                [
+                  7.704845188301976,
+                  48.579775751536786
+                ],
+                [
+                  7.704158542794164,
+                  48.57975445769171
+                ],
+                [
+                  7.703611372155126,
+                  48.57971896793
+                ],
+                [
+                  7.703225134056981,
+                  48.57971896793
+                ],
+                [
+                  7.702935455483373,
+                  48.57971896793
+                ],
+                [
+                  7.702313182991918,
+                  48.5796408903665
+                ],
+                [
+                  7.701369045418676,
+                  48.57952732278615
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "532",
+        "name": [
+          {
+            "text": "Pfister (Meinau)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.55231857299805,
+        "lon": 7.751869201660156,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "533",
+        "name": [
+          {
+            "text": "Tanneries (Montagne Verte)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.56123733520508,
+        "lon": 7.694112777709961,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "534",
+        "name": [
+          {
+            "text": "Lazaret (Neudorf)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.5640754699707,
+        "lon": 7.755199909210205,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "535",
+        "name": [
+          {
+            "text": "Gare de Vendenheim",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.66572189331055,
+        "lon": 7.716842174530029,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "536",
+        "name": [
+          {
+            "text": "Rieth (Cronenbourg)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.60131072998047,
+        "lon": 7.723369121551514,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "537",
+        "name": [
+          {
+            "text": "Place Godefroy de Bouillon",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.692138671875,
+        "lon": 6.1679182052612305,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "538",
+        "name": [
+          {
+            "text": "ARTEM",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.673797607421875,
+        "lon": 6.171402931213379,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "539",
+        "name": [
+          {
+            "text": "Rives de Meurthe",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.69144821166992,
+        "lon": 6.198552131652832,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "544",
+        "name": [
+          {
+            "text": "Mairie de Laxou",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.68448257446289,
+        "lon": 6.152822971343994,
+        "parking_type": "street_parking",
+        "capacity": 0,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "598",
+        "name": [
+          {
+            "text": "Entremont",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.75310134887695,
+        "lon": 7.382413864135742,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "599",
+        "name": [
+          {
+            "text": "Place de la Nation",
+            "language": "fr"
+          }
+        ],
+        "lat": 49.100433349609375,
+        "lon": 6.155196189880371,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "600",
+        "name": [
+          {
+            "text": "Jardin Botanique",
+            "language": "fr"
+          }
+        ],
+        "lat": 49.103179931640625,
+        "lon": 6.161269187927246,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1096",
+        "name": [
+          {
+            "text": "Gare de Bischwiller",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.76598358154297,
+        "lon": 7.851359844207764,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1097",
+        "name": [
+          {
+            "text": "Gare de Brumath",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.7327766418457,
+        "lon": 7.70081090927124,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1099",
+        "name": [
+          {
+            "text": "Gare de Barr",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.402405,
+        "lon": 7.45634,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1107",
+        "name": [
+          {
+            "text": "Clos Romane",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.49917984008789,
+        "lon": 7.482209205627441,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1188",
+        "name": [
+          {
+            "text": "Aigle",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.6126139405449,
+        "lon": 7.7604402568797,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1224",
+        "name": [
+          {
+            "text": "Boeuf Rouge",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.587413,
+        "lon": 7.667334,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1226",
+        "name": [
+          {
+            "text": "Gare de Bischheim",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.611933,
+        "lon": 7.742592,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1227",
+        "name": [
+          {
+            "text": "E3 - La Haye",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.611846,
+        "lon": 7.706371,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1228",
+        "name": [
+          {
+            "text": "Bitche (Contades)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.59118,
+        "lon": 7.75327,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1229",
+        "name": [
+          {
+            "text": "Sandre (Robertsau)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.5965193,
+        "lon": 7.7901201,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1230",
+        "name": [
+          {
+            "text": "Jardin des 2 Rives (Port du Rhin)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.570461,
+        "lon": 7.796017,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1231",
+        "name": [
+          {
+            "text": "Eisenhower (Tribunal)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.586728,
+        "lon": 7.760133,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1232",
+        "name": [
+          {
+            "text": "Cassin (Orangerie)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.583403,
+        "lon": 7.771239,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1233",
+        "name": [
+          {
+            "text": "Baldung Grien (Contades)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.5897,
+        "lon": 7.75415,
+        "parking_type": "street_parking",
+        "capacity": 4,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1234",
+        "name": [
+          {
+            "text": "Sélestat (Neudorf)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.565772,
+        "lon": 7.76263,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1235",
+        "name": [
+          {
+            "text": "Citadelle (Neudorf)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.570879,
+        "lon": 7.779754,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1236",
+        "name": [
+          {
+            "text": "Neufeld (Neudorf)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.568068,
+        "lon": 7.755297,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1237",
+        "name": [
+          {
+            "text": "Metzeral (Neudorf)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.57065,
+        "lon": 7.769964,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1238",
+        "name": [
+          {
+            "text": "Carmes (Neudorf)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.5705734598372,
+        "lon": 7.75873782174918,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1239",
+        "name": [
+          {
+            "text": "Marbach (Grande-île)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.58496,
+        "lon": 7.74516,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1240",
+        "name": [
+          {
+            "text": "Clarisses (Grande-île)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.58603,
+        "lon": 7.75003,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1241",
+        "name": [
+          {
+            "text": "Ducs d'Alsace (Cronenbourg)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.589938,
+        "lon": 7.715288,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1242",
+        "name": [
+          {
+            "text": "St Gothard (Krutenau)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.578913,
+        "lon": 7.75649,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1243",
+        "name": [
+          {
+            "text": "Lucerne (Krutenau)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.577557,
+        "lon": 7.758235,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1249",
+        "name": [
+          {
+            "text": "Carrosserie Grand Est",
+            "language": "fr"
+          }
+        ],
+        "lat": 71.170911,
+        "lon": 25.7831,
+        "address": "7 route de la Wantzenau - 67800 Hœnheim",
+        "parking_type": "street_parking",
+        "capacity": 10,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1264",
+        "name": [
+          {
+            "text": "Général Leclerc",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.074065,
+        "lon": 7.354389,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1265",
+        "name": [
+          {
+            "text": "Edouard Benes",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.075913,
+        "lon": 7.341959,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1557",
+        "name": [
+          {
+            "text": "Eureka - Fraternité",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.574064,
+        "lon": 7.547373,
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1648",
+        "name": [
+          {
+            "text": "Mairie de Chatenois ",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.271373,
+        "lon": 7.399371,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1654",
+        "name": [
+          {
+            "text": "Autre garage",
+            "language": "fr"
+          }
+        ],
+        "lat": 71.170911,
+        "lon": 25.7831,
+        "address": "Rue de la maintenance 67000 Strasbourg",
+        "parking_type": "parking_lot",
+        "capacity": 10,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1676",
+        "name": [
+          {
+            "text": "STEP (Cronenbourg) - Ouverture prochaine",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.603001,
+        "lon": 7.723765,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1714",
+        "name": [
+          {
+            "text": "Coop (Port du Rhin)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.574742,
+        "lon": 7.791475,
+        "parking_type": "parking_lot",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1734",
+        "name": [
+          {
+            "text": "Malteries ",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.601293,
+        "lon": 7.74282,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1735",
+        "name": [
+          {
+            "text": "Vieux Cronenbourg  (Cronenbourg) - FLEX",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.59677,
+        "lon": 7.7204,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  7.719043802250356,
+                  48.597618794344726
+                ],
+                [
+                  7.718271326054067,
+                  48.596150016696306
+                ],
+                [
+                  7.719601701725454,
+                  48.59595843385476
+                ],
+                [
+                  7.7200308551678365,
+                  48.59694472294808
+                ],
+                [
+                  7.721050094593496,
+                  48.59642674618479
+                ],
+                [
+                  7.721468519199819,
+                  48.59643384179275
+                ],
+                [
+                  7.721876214970083,
+                  48.5976116989032
+                ],
+                [
+                  7.721897672642202,
+                  48.597753607544774
+                ],
+                [
+                  7.720717500675649,
+                  48.59802678077403
+                ],
+                [
+                  7.720653127659292,
+                  48.59811902067846
+                ],
+                [
+                  7.720964263905019,
+                  48.598260927894884
+                ],
+                [
+                  7.722165893543691,
+                  48.5986015035879
+                ],
+                [
+                  7.721715282429189,
+                  48.59877179057336
+                ],
+                [
+                  7.720299076069326,
+                  48.59816159288525
+                ],
+                [
+                  7.719043802250356,
+                  48.597618794344726
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "1736",
+        "name": [
+          {
+            "text": "Général Frère (Tribunal)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.5887865,
+        "lon": 7.752417,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1737",
+        "name": [
+          {
+            "text": "Thiergarten (Gare) ",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.585079,
+        "lon": 7.737745,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1738",
+        "name": [
+          {
+            "text": "Kembs (Neudorf) ",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.5680362,
+        "lon": 7.7647157,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1739",
+        "name": [
+          {
+            "text": "Quartier des Quinze (Conseil des XV) ",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.588782,
+        "lon": 7.782882,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1740",
+        "name": [
+          {
+            "text": "Jardiniers (Robertsau) ",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.599737,
+        "lon": 7.783258,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1741",
+        "name": [
+          {
+            "text": "Jardin de la Résistance - FLEX",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.60897,
+        "lon": 7.74622,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  7.744458563223686,
+                  48.61054511155199
+                ],
+                [
+                  7.744522936240044,
+                  48.609381743602825
+                ],
+                [
+                  7.744758970633354,
+                  48.60840279126984
+                ],
+                [
+                  7.7448018859775924,
+                  48.608175785119684
+                ],
+                [
+                  7.748642809286919,
+                  48.60755151294504
+                ],
+                [
+                  7.74787033309063,
+                  48.60905542826717
+                ],
+                [
+                  7.747484094992485,
+                  48.610701171067255
+                ],
+                [
+                  7.744458563223686,
+                  48.61054511155199
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "1742",
+        "name": [
+          {
+            "text": "Aubepine (Robertsau) - FLEX",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.60611,
+        "lon": 7.77052,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  7.771787501478258,
+                  48.60804450030901
+                ],
+                [
+                  7.769534445905748,
+                  48.60510750860247
+                ],
+                [
+                  7.769834853315416,
+                  48.60502237586087
+                ],
+                [
+                  7.772109366560045,
+                  48.60794518453926
+                ],
+                [
+                  7.771787501478258,
+                  48.60804450030901
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "1743",
+        "name": [
+          {
+            "text": "Marché Gare (Cronenbourg) - FLEX",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.5982365,
+        "lon": 7.7363596,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  7.736747003932991,
+                  48.5988779632594
+                ],
+                [
+                  7.736242748638191,
+                  48.598303243590834
+                ],
+                [
+                  7.73553464545826,
+                  48.59852319880423
+                ],
+                [
+                  7.735405899425545,
+                  48.598395482990476
+                ],
+                [
+                  7.7381095661125565,
+                  48.597501463252975
+                ],
+                [
+                  7.73828122748951,
+                  48.597501463252975
+                ],
+                [
+                  7.738367058177986,
+                  48.59759370411665
+                ],
+                [
+                  7.736457325359383,
+                  48.598211004022744
+                ],
+                [
+                  7.73702595367054,
+                  48.598807010567675
+                ],
+                [
+                  7.736747003932991,
+                  48.5988779632594
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "1744",
+        "name": [
+          {
+            "text": "Rotterdam (Conseil des XV) - FLEX",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.58162,
+        "lon": 7.7815,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  7.77875448116502,
+                  48.58325835185066
+                ],
+                [
+                  7.779022702066509,
+                  48.58175366839333
+                ],
+                [
+                  7.779698618738262,
+                  48.5814768585395
+                ],
+                [
+                  7.781629809228985,
+                  48.58138458825135
+                ],
+                [
+                  7.782198437540142,
+                  48.58171108236065
+                ],
+                [
+                  7.783475169031231,
+                  48.583627418310414
+                ],
+                [
+                  7.783164032785503,
+                  48.58367710012805
+                ],
+                [
+                  7.7817370975895805,
+                  48.581966598018546
+                ],
+                [
+                  7.781404503671734,
+                  48.581611714811515
+                ],
+                [
+                  7.780621298639385,
+                  48.58166849629205
+                ],
+                [
+                  7.779838093607037,
+                  48.58175366839333
+                ],
+                [
+                  7.779355295984356,
+                  48.58187432862441
+                ],
+                [
+                  7.779129990427105,
+                  48.58288928269592
+                ],
+                [
+                  7.779044159738628,
+                  48.583350618718235
+                ],
+                [
+                  7.77875448116502,
+                  48.58325835185066
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "1745",
+        "name": [
+          {
+            "text": "Meuse TGV - Centre d'Affaires Coeur de Meuse",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.97766,
+        "lon": 5.269761,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1752",
+        "name": [
+          {
+            "text": "Gare de Mundolsheim",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.64508,
+        "lon": 7.720331,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1753",
+        "name": [
+          {
+            "text": "7 Arpents",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.631176,
+        "lon": 7.74008,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1754",
+        "name": [
+          {
+            "text": "Eglise Protestante - Vernois Mangold",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.547033,
+        "lon": 7.709008,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1755",
+        "name": [
+          {
+            "text": "Wihrel",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.556896,
+        "lon": 7.713229,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1756",
+        "name": [
+          {
+            "text": "Duntzenheim (Cronenbourg)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.599147,
+        "lon": 7.702486,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1757",
+        "name": [
+          {
+            "text": "Bonnes Gens (Tribunal) - Ouverture prochaine",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.588441,
+        "lon": 7.743637,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  7.742722444265371,
+                  48.586966167906716
+                ],
+                [
+                  7.743709497182851,
+                  48.58845650273186
+                ],
+                [
+                  7.745554856985097,
+                  48.58876875779269
+                ],
+                [
+                  7.7446536347560935,
+                  48.59047193325009
+                ],
+                [
+                  7.742293290822988,
+                  48.58985453877987
+                ],
+                [
+                  7.741853408544546,
+                  48.58799521331598
+                ],
+                [
+                  7.742668800085073,
+                  48.58690939237765
+                ],
+                [
+                  7.742722444265371,
+                  48.586966167906716
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "1758",
+        "name": [
+          {
+            "text": "Colette (Poteries)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.587035,
+        "lon": 7.698482,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1759",
+        "name": [
+          {
+            "text": "Rue de la Tour (Koenigshoffen)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.579265,
+        "lon": 7.719036,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1760",
+        "name": [
+          {
+            "text": "Besançon (Neudorf)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.570297,
+        "lon": 7.754501,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1761",
+        "name": [
+          {
+            "text": "Orbey (Neudorf)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.564103,
+        "lon": 7.773315,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1762",
+        "name": [
+          {
+            "text": "Klebsau (Neuhof)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.540208,
+        "lon": 7.768346,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1764",
+        "name": [
+          {
+            "text": "Geiler (Orangerie)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.586461,
+        "lon": 7.769153,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1765",
+        "name": [
+          {
+            "text": "Stoeber (Orangerie)",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.591087,
+        "lon": 7.768482,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1766",
+        "name": [
+          {
+            "text": "Finkwiller (Grande-île) - Ouverture prochaine",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.579322,
+        "lon": 7.741154,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  7.741279367424947,
+                  48.579201759011056
+                ],
+                [
+                  7.741070155121785,
+                  48.57941469938635
+                ],
+                [
+                  7.740828756310445,
+                  48.57946793434004
+                ],
+                [
+                  7.739986542679769,
+                  48.57941469938635
+                ],
+                [
+                  7.739814881302816,
+                  48.579357915373976
+                ],
+                [
+                  7.73995972058962,
+                  48.57919820999721
+                ],
+                [
+                  7.739589575745565,
+                  48.57899236676731
+                ],
+                [
+                  7.7399168052453815,
+                  48.57872973798117
+                ],
+                [
+                  7.740163568474752,
+                  48.57888234676622
+                ],
+                [
+                  7.740549806572896,
+                  48.5789959157956
+                ],
+                [
+                  7.741021875359517,
+                  48.579010111906356
+                ],
+                [
+                  7.741252545334798,
+                  48.578988817738754
+                ],
+                [
+                  7.741649512269002,
+                  48.57890719001319
+                ],
+                [
+                  7.742244962670308,
+                  48.57879007174195
+                ],
+                [
+                  7.742303971268636,
+                  48.5789959157956
+                ],
+                [
+                  7.741890911080342,
+                  48.57903850411585
+                ],
+                [
+                  7.741531495072347,
+                  48.579130778686626
+                ],
+                [
+                  7.741279367424947,
+                  48.579201759011056
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "1767",
+        "name": [
+          {
+            "text": "Gare de Schirmeck - La Broque",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.479806,
+        "lon": 7.216428,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1788",
+        "name": [
+          {
+            "text": "Aimé Morot - Ouverture prochaine",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.699531,
+        "lon": 6.165873,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1789",
+        "name": [
+          {
+            "text": "Carnot - Ouverture prochaine",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.6943944,
+        "lon": 6.1777319,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1790",
+        "name": [
+          {
+            "text": "Porte St Nicolas - Ouverture prochaine",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.6856227,
+        "lon": 6.1858656,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1791",
+        "name": [
+          {
+            "text": "Saurupt - Clinchant - Ouverture prochaine",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.6775369,
+        "lon": 6.1810864,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1792",
+        "name": [
+          {
+            "text": "Mésanges - Ouverture Automne 2026",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.086235,
+        "lon": 7.33145,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1793",
+        "name": [
+          {
+            "text": "Fleischhauer - Ouverture Automne 2026",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.08513,
+        "lon": 7.357924,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1794",
+        "name": [
+          {
+            "text": "Porte de Bâle - Ouverture Automne 2026",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.073061,
+        "lon": 7.359478,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1798",
+        "name": [
+          {
+            "text": "Mairie de Malzéville - Ouverture prochaine",
+            "language": "fr"
+          }
+        ],
+        "lat": 48.708692,
+        "lon": 6.183208,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1825",
+        "name": [
+          {
+            "text": "MyCampus - Technopôle - Ouverture prochaine",
+            "language": "fr"
+          }
+        ],
+        "lat": 49.103962,
+        "lon": 6.226315,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1827",
+        "name": [
+          {
+            "text": "Laon - St Thomas - Ouverture prochaine",
+            "language": "fr"
+          }
+        ],
+        "lat": 49.2652222762639,
+        "lon": 4.02583044277637,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1828",
+        "name": [
+          {
+            "text": "Langlet",
+            "language": "fr"
+          }
+        ],
+        "lat": 49.257442001673,
+        "lon": 4.02896122018329,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1829",
+        "name": [
+          {
+            "text": "Barbatre",
+            "language": "fr"
+          }
+        ],
+        "lat": 49.250107196979,
+        "lon": 4.0389158192257,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      }
+    ]
+  }
+}

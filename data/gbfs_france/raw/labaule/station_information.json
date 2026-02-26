@@ -1,0 +1,247 @@
+{
+  "data": {
+    "stations": [
+      {
+        "capacity": 24,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.273505,
+        "lon": -2.357153,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Avenue de Lyon"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://labaule.ecovelo.mobi/#/station/stn_FYzjSchw5WebNfC29HbynC"
+        },
+        "station_id": "stn_FYzjSchw5WebNfC29HbynC"
+      },
+      {
+        "capacity": 26,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.278531,
+        "lon": -2.371645,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Lajarrige"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://labaule.ecovelo.mobi/#/station/stn_fv6USpF5eaURGAb3tzxFGV"
+        },
+        "station_id": "stn_fv6USpF5eaURGAb3tzxFGV"
+      },
+      {
+        "capacity": 16,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.27489,
+        "lon": -2.33422,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Maison du Guézy"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://labaule.ecovelo.mobi/#/station/stn_W9vqzCWzYwN4MAPeXjrgb5"
+        },
+        "station_id": "stn_W9vqzCWzYwN4MAPeXjrgb5"
+      },
+      {
+        "capacity": 24,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.282494,
+        "lon": -2.392458,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Place Leclerc"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://labaule.ecovelo.mobi/#/station/stn_8GQ2WYuVcPcVa8HBS6cSPW"
+        },
+        "station_id": "stn_8GQ2WYuVcPcVa8HBS6cSPW"
+      },
+      {
+        "capacity": 16,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.282673,
+        "lon": -2.409418,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Atlantia"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://labaule.ecovelo.mobi/#/station/stn_8fsJjh5CSjLcaizTGFqZxx"
+        },
+        "station_id": "stn_8fsJjh5CSjLcaizTGFqZxx"
+      },
+      {
+        "capacity": 34,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.288053,
+        "lon": -2.389138,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Gare"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://labaule.ecovelo.mobi/#/station/stn_ByMgR4YjNtTLvZyCf2WwsB"
+        },
+        "station_id": "stn_ByMgR4YjNtTLvZyCf2WwsB"
+      },
+      {
+        "capacity": 16,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.274502,
+        "lon": -2.423632,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Quai Rageot de la Touche"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://labaule.ecovelo.mobi/#/station/stn_mWmH7ZUGm9dCRB2j6XkbXE"
+        },
+        "station_id": "stn_mWmH7ZUGm9dCRB2j6XkbXE"
+      },
+      {
+        "capacity": 20,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.280603,
+        "lon": -2.40592,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Casino Barrière"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://labaule.ecovelo.mobi/#/station/stn_P2iaZbKLL8mu35Murn7Psa"
+        },
+        "station_id": "stn_P2iaZbKLL8mu35Murn7Psa"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.281629,
+        "lon": -2.363243,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Parc des Dryades"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://labaule.ecovelo.mobi/#/station/stn_h4zEpY6M2Urbqq3bDh4BWL"
+        },
+        "station_id": "stn_h4zEpY6M2Urbqq3bDh4BWL"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.29455,
+        "lon": -2.35909,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Eglise d'Escoublac"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://labaule.ecovelo.mobi/#/station/stn_gYz6VVkfwAyHzsjCknvG9H"
+        },
+        "station_id": "stn_gYz6VVkfwAyHzsjCknvG9H"
+      },
+      {
+        "capacity": 16,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.290781,
+        "lon": -2.39625,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Place des Salines"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://labaule.ecovelo.mobi/#/station/stn_KqKVxyQ99TcSkfC7HXbYzT"
+        },
+        "station_id": "stn_KqKVxyQ99TcSkfC7HXbYzT"
+      },
+      {
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.288008,
+        "lon": -2.353676,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Aérodrome"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://labaule.ecovelo.mobi/#/station/stn_WaCbjYmTn5ybqfQW7epcLz"
+        },
+        "station_id": "stn_WaCbjYmTn5ybqfQW7epcLz"
+      },
+      {
+        "capacity": 20,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.281508,
+        "lon": -2.379587,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Aquabaule"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://labaule.ecovelo.mobi/#/station/stn_bvGphyiixSXByLVSw3h86Z"
+        },
+        "station_id": "stn_bvGphyiixSXByLVSw3h86Z"
+      },
+      {
+        "capacity": 16,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.27166,
+        "lon": -2.34485,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Mairie Annexe du Guézy"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://labaule.ecovelo.mobi/#/station/stn_WEMpofPk3uNNrYCA2Uoagq"
+        },
+        "station_id": "stn_WEMpofPk3uNNrYCA2Uoagq"
+      }
+    ]
+  },
+  "last_updated": "2026-02-22T09:38:40+01:00",
+  "ttl": 0,
+  "version": "3.0"
+}

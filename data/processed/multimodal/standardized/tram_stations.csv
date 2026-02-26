@@ -1,0 +1,232 @@
+tram_id,tram_name,latitude,longitude,tram_line,network,operator,shelter,bench,osm_id,source,data_retrieved,last_updated,data_version
+TR0001,Croix d'Argent,43.5925048,3.8664382,42115,TaM,TaM,unknown,unknown,38460665,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0002,Corum,43.6142561,3.881957,41131,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,60025037,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0003,Louis Blanc - Agora de la Danse,43.6147274,3.8782032,41129,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,60025046,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0004,Stade Philippidès,43.6189067,3.8694871,41125,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,60025062,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0005,Saint-Éloi,43.6269229,3.8657829,41121,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,60025069,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0006,Malbosc - Domaine d'Ô,43.6346401,3.8332043,41245,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,60025122,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0007,Rives du Lez,43.6040961,3.8948979,41145,TaM,TaM,unknown,unknown,60722751,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0008,Moularès (Hôtel de Ville),43.6005714,3.8955449,41147,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,60732076,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0009,Comédie,43.6084079,3.8797702,41133,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,60939764,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0010,Gare Saint-Roch,43.6056584,3.8801992,41135,TaM,TaM,unknown,unknown,61094962,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0011,Albert 1er - Saint-Charles,43.6164538,3.8741502,41127,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,61103414,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0012,Corum,43.6144182,3.8818054,42141,TaM,TaM,unknown,unknown,70972317,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0013,Aiguelongue,43.626274,3.8833184,42147,TaM,TaM,unknown,unknown,74943027,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0014,Charles de Gaulle,43.6285691,3.8976846,42219,TaM,TaM,unknown,unknown,101499645,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0015,Saint-Lazare,43.6267745,3.8887704,42149,TaM,TaM,unknown,unknown,119409072,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0016,Boutonnet  - Cité des Arts,43.6224984,3.8681444,41123,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,126601804,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0017,Jeu de Mail des Abbés,43.6204816,3.8840706,42145,TaM,TaM,unknown,unknown,148694939,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0018,Beaux-Arts,43.6170502,3.8835972,42143,TaM,TaM,unknown,unknown,224660817,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0019,Place Carnot,43.6036345,3.8842954,42129,TaM,TaM,unknown,unknown,231389156,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0020,Voltaire,43.6037049,3.8892253,42131,TaM,TaM,unknown,unknown,231389166,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0021,Rives du Lez - Consuls de Mer,43.603993,3.8940022,42133,TaM,TaM,unknown,unknown,231454791,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0022,Les Aubes,43.6139508,3.8883314,42231,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,231454841,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0023,Saint-Cléophas,43.594954,3.8760145,42121,TaM,TaM,unknown,unknown,231529652,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0024,Mas Drevon,43.5955627,3.8679574,42117,TaM,TaM,unknown,unknown,231532087,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0025,Saint-Jean-de-Védas Centre,43.5748738,3.8306564,42101,TaM,TaM,unknown,unknown,231578457,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0026,Saint-Jean-le-Sec,43.5708282,3.8379052,42103,TaM,TaM,unknown,unknown,231578469,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0027,La Condamine,43.5719919,3.8444363,42105,TaM,TaM,unknown,unknown,231578480,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0028,Sabines,43.583879,3.8601051,42111,TaM,TaM,unknown,unknown,231578510,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0029,Pompignane,43.6125111,3.8949065,42233,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,250677074,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0030,Antigone,43.6086092,3.8866898,41139,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,265410397,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0031,Léon Blum,43.6088993,3.8902941,41141,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,267847611,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0032,Place de l'Europe,43.6072981,3.8939097,41143,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,267929741,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0033,Victoire 2,43.5752209,3.8499642,42107,TaM,TaM,unknown,unknown,279249812,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0034,Rondelet,43.6030665,3.8761818,42125,TaM,TaM,unknown,unknown,279556951,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0035,Port Marianne,43.6016281,3.8997688,41149,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,281177110,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0036,Place de France,43.6037495,3.9157023,41261,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,281177205,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0037,Lemasson,43.59358,3.8731927,42119,TaM,TaM,unknown,unknown,281259064,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0038,Villeneuve d'Angoulême,43.5888673,3.865695,42113,TaM,TaM,unknown,unknown,281259065,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0039,Stade de la Mosson,43.6211235,3.8173578,41263,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,281570631,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0040,Jacou,43.6545596,3.9128047,42169,TaM,TaM,unknown,unknown,308531607,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0041,Via Domitia,43.6468218,3.9294517,42165,TaM,TaM,unknown,unknown,308734763,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0042,Aube Rouge,43.638641,3.9248354,42163,TaM,TaM,unknown,unknown,308735605,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0043,Millénaire,43.6033557,3.9100221,41153,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,317827428,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0044,Mondial 98,43.6027649,3.9041182,41151,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,317827455,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0045,Université Montpellier - Triolet,43.6291563,3.8616709,41119,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,317829490,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0046,Hôpital Lapeyronie,43.6316941,3.8525865,41239,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,317829573,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0047,Occitanie - Hôpitaux-Facultés,43.6347952,3.8483979,41241,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,317829604,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0048,Château d'Ô,43.6316074,3.8430532,41243,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,317830323,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0049,Euromédecine,43.6389849,3.8276286,41247,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,317830790,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0050,Hauts de Massane,43.6362734,3.8226703,41249,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,317830908,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0051,Saint-Paul,43.6306907,3.8210039,41251,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,317831067,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0052,Halles de la Paillade,43.6275357,3.8174933,41253,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,317831124,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0053,Nouveau Saint-Roch,43.5994208,3.8756775,42123,TaM,TaM,unknown,unknown,350510758,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0054,Georges Pompidou,43.6493853,3.9209977,42167,TaM,TaM,unknown,unknown,368004431,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0055,Notre-Dame de Sablassou,43.6342577,3.9223924,42159,TaM,TaM,unknown,unknown,945144528,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0056,Centurions,43.6327809,3.9156202,42213,TaM,TaM,unknown,unknown,945144532,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0057,La Galine,43.6314427,3.9089161,42215,TaM,TaM,unknown,unknown,945144547,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0058,Clairval,43.6301628,3.9025061,42217,TaM,TaM,unknown,unknown,945144550,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0059,Odysseum,43.603795,3.9204329,41201,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,947038576,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0060,Gare Saint-Roch République,43.6051723,3.8797962,43231,TaM,TaM,unknown,unknown,1253673426,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0061,Georges Frêche - Hôtel de ville,43.5994093,3.8949293,43217,TaM,TaM,unknown,unknown,1325372165,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0062,Mosson,43.6161429,3.8196447,43103,TaM,TaM,unknown,unknown,1325390524,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0063,Pergola,43.6174105,3.8397593,43111,TaM,TaM,unknown,unknown,1433104540,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0064,Pérols Étang de l'Or,43.5579423,3.9636059,43157,TaM,TaM,unknown,unknown,1503531720,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0065,Écopôle,43.5779836,3.9352762,43151,TaM,TaM,unknown,unknown,1503531737,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0066,Tonnelles,43.6134871,3.8397933,43113,TaM,TaM,unknown,unknown,1504387689,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0067,Jules Guesde,43.6113243,3.8467949,43115,TaM,TaM,unknown,unknown,1504405475,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0068,Astruc,43.6102597,3.855048,43117,TaM,TaM,unknown,unknown,1504405479,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0069,La Rauze,43.5935375,3.8958178,43219,TaM,TaM,unknown,unknown,1506442723,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0070,Garcia Lorca,43.5911314,3.8909614,44105,TaM,TaM,unknown,unknown,1506442726,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0071,Observatoire,43.606427,3.8766896,43233,TaM,TaM,unknown,unknown,1506452485,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0072,Plan Cabanes,43.6085497,3.8680755,43121,TaM,TaM,unknown,unknown,1506452489,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0073,Hôtel du Département,43.6220087,3.8351279,43109,TaM,TaM,unknown,unknown,1506744094,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0074,Pilory,43.6195923,3.8321502,43107,TaM,TaM,unknown,unknown,1506752860,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0075,Celleneuve,43.6156769,3.8259015,43105,TaM,TaM,unknown,unknown,1506752868,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0076,Parc Expo,43.5728456,3.9457963,43153,TaM,TaM,unknown,unknown,1508371545,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0077,Boirargues,43.5827358,3.9256144,43209,TaM,TaM,unknown,unknown,1508371563,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0078,Pérols - Centre,43.5654383,3.9573953,43203,TaM,TaM,unknown,unknown,1508371591,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0079,Saint-Jean-de-Védas Centre,43.5749282,3.8307161,42269,TaM,TaM,unknown,unknown,1540197414,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0080,Saint-Jean-le-Sec,43.5708971,3.837919,42267,TaM,TaM,unknown,unknown,1540200957,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0081,Sabines,43.5837056,3.8602074,42259,TaM,TaM,unknown,unknown,1540210571,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0082,Villeneuve d'Angoulême,43.5887133,3.8656566,42257,TaM,TaM,unknown,unknown,1547362409,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0083,Croix d'Argent,43.5923385,3.8664466,42255,TaM,TaM,unknown,unknown,1547373347,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0084,Mas Drevon,43.5954543,3.8677984,42253,TaM,TaM,unknown,unknown,1547375469,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0085,Saint-Cléophas,43.5948469,3.8758854,42249,TaM,TaM,unknown,unknown,1547384911,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0086,Lemasson,43.5936982,3.8730593,42251,TaM,TaM,unknown,unknown,1547384953,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0087,Nouveau Saint-Roch,43.5992903,3.8756446,42247,TaM,TaM,unknown,unknown,1547396442,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0088,Rondelet,43.6031345,3.8759259,42245,TaM,TaM,unknown,unknown,1547396457,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0089,Jacou,43.6544887,3.9128035,42201,TaM,TaM,unknown,unknown,1547402817,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0090,Georges Pompidou,43.6492338,3.9210436,42203,TaM,TaM,unknown,unknown,1547404590,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0091,Via Domitia,43.6466173,3.9294866,42205,TaM,TaM,unknown,unknown,1547411650,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0092,Aube Rouge,43.6384876,3.9248573,42207,TaM,TaM,unknown,unknown,1547420308,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0093,Notre-Dame de Sablassou,43.6342103,3.9221379,42211,TaM,TaM,unknown,unknown,1547429119,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0094,Centurions,43.6327881,3.9158063,42157,TaM,TaM,unknown,unknown,1547440719,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0095,La Galine,43.6314509,3.90911,42155,TaM,TaM,unknown,unknown,1547443496,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0096,Clairval,43.6301681,3.9026917,42153,TaM,TaM,unknown,unknown,1547447278,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0097,Charles de Gaulle,43.628648,3.8978384,42151,TaM,TaM,unknown,unknown,1547454806,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0098,Observatoire,43.6063438,3.8768143,43125,TaM,TaM,unknown,unknown,1585675583,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0099,La Rauze,43.5935183,3.8960726,43139,TaM,TaM,unknown,unknown,1623916533,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0100,Saint-Martin - Le Jam,43.5921013,3.8804566,43133,TaM,TaM,unknown,unknown,1623916618,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0101,Georges Frêche - Hôtel de ville,43.5994861,3.8950854,43141,TaM,TaM,unknown,unknown,1623916826,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0102,Gambetta,43.6055891,3.8739545,43123,TaM,TaM,unknown,unknown,1675121446,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0103,Gambetta - Chaptal,43.6062372,3.8727299,43235,TaM,TaM,unknown,unknown,1675121448,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0104,Cougourlude,43.5713259,3.9141537,43261,TaM,TaM,unknown,unknown,1680725835,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0105,Pablo Picasso,43.5979503,3.9035259,43213,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,1680783342,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0106,Pablo Picasso,43.5975961,3.9035645,43145,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,1680783344,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0107,Gare Saint-Roch République,43.6052424,3.8797132,43127,TaM,TaM,unknown,unknown,1680783345,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0108,Garcia Lorca,43.5912294,3.8911652,44201,TaM,TaM,unknown,unknown,1681472362,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0109,Arceaux,43.609864,3.8624768,43119,TaM,TaM,unknown,unknown,1682209623,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0110,Restanque,43.590299,3.8852278,43135,TaM,TaM,unknown,unknown,1934914134,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0111,Restanque,43.5904199,3.8849928,43223,TaM,TaM,unknown,unknown,1934914135,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0112,Cougourlude,43.5713482,3.9139627,43161,TaM,TaM,unknown,unknown,2187320583,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0113,Comédie,43.6083781,3.8798137,41223,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,2305432920,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0114,Gare Saint-Roch,43.6056635,3.8802526,41221,TaM,TaM,unknown,unknown,2305432922,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0115,Celleneuve,43.6154832,3.8258568,43253,TaM,TaM,unknown,unknown,2564554951,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0116,Saint-Martin - Le Jam,43.5922458,3.8802527,43225,TaM,TaM,unknown,unknown,2564674976,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0117,Moularès (Hôtel de Ville),43.6006479,3.8955356,41209,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,2565144095,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0118,Mondial 98,43.6027593,3.903967,41205,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,2572111087,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0119,Jules Guesde,43.6114471,3.8466375,43243,TaM,TaM,unknown,unknown,2575419127,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0120,Hôtel du Département,43.6219189,3.8349511,43249,TaM,TaM,unknown,unknown,2575419150,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0121,Pergola,43.6182507,3.8391413,43247,TaM,TaM,unknown,unknown,2575419210,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0122,Pilory,43.6195151,3.8319619,43251,TaM,TaM,unknown,unknown,2575419232,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0123,Astruc,43.610261,3.8548,43241,TaM,TaM,unknown,unknown,2575419253,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0124,Rives du Lez,43.6043283,3.8948981,41211,TaM,TaM,unknown,unknown,2575586331,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0125,Place de l'Europe,43.6073923,3.8939694,41213,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,2575586432,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0126,Place de France,43.6037388,3.9157934,41161,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,2575611355,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0127,Odysseum,43.6038356,3.9203673,41155,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,2575611364,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0128,Malbosc - Domaine d'Ô,43.6345296,3.833307,41111,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,2577354970,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0129,Hauts de Massane,43.6364094,3.822705,41107,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,2577355001,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0130,Saint-Paul,43.6306548,3.8212159,41105,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,2577355086,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0131,Occitanie - Hôpitaux-Facultés,43.634628,3.8484797,41115,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,2577880057,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0132,Château d'Ô,43.6316307,3.8430936,41113,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,2998606177,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0133,Hôpital Lapeyronie,43.6316751,3.8525608,41117,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,2998606178,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0134,Aiguelongue,43.6262919,3.8830851,42223,TaM,TaM,unknown,unknown,3118400912,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0135,Beaux-Arts,43.6169338,3.8834353,42227,TaM,TaM,unknown,unknown,3118400913,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0136,Corum,43.6141886,3.881667,41225,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,3118400914,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0137,Corum,43.6144479,3.8821386,42229,TaM,TaM,unknown,unknown,3118400915,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0138,Jeu de Mail des Abbés,43.6203407,3.884074,42225,TaM,TaM,unknown,unknown,3118400916,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0139,Louis Blanc - Agora de la Danse,43.6147682,3.8780174,41227,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,3118400917,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0140,Albert 1er - Saint-Charles,43.6166028,3.8739949,41229,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,3118400918,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0141,Saint-Lazare,43.6267545,3.8885806,42221,TaM,TaM,unknown,unknown,3118402938,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0142,Les Aubes,43.61399,3.8881044,42139,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,3118523797,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0143,Pompignane,43.6126573,3.8949896,42137,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,3118523798,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0144,Du Guesclin,43.6071804,3.8833017,41138,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,3118564775,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0145,Antigone,43.6084999,3.8866241,41217,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,3119065612,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0146,Du Guesclin,43.6070636,3.8831972,41218,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,3119065613,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0147,Léon Blum,43.6089494,3.8900989,41215,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,3119065614,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0148,Boirargues,43.5826143,3.9257823,43149,TaM,TaM,unknown,unknown,3119254607,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0149,Parc Expo,43.5729444,3.9456566,43205,TaM,TaM,unknown,unknown,3119254608,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0150,Pérols - Centre,43.5653949,3.9573136,43155,TaM,TaM,unknown,unknown,3119255451,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0151,Écopôle,43.5781392,3.9350421,43207,TaM,TaM,unknown,unknown,3119255452,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0152,Place Carnot,43.6037618,3.8842324,42241,TaM,TaM,unknown,unknown,3122456979,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0153,Voltaire,43.6037185,3.8889694,42239,TaM,TaM,unknown,unknown,3122456986,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0154,Millénaire,43.6033754,3.90986,41203,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,3122483715,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0155,Halles de la Paillade,43.627657,3.817535,41103,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,3123033194,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0156,Plan Cabanes,43.6085626,3.8681304,43237,TaM,TaM,unknown,unknown,3123033195,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0157,Arceaux,43.6100217,3.8615025,43239,TaM,TaM,unknown,unknown,3123033218,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0158,Stade de la Mosson,43.6213447,3.8174028,41163,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,3123039811,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0159,Tonnelles,43.6135181,3.8395235,43245,TaM,TaM,unknown,unknown,3123039812,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0160,Boutonnet  - Cité des Arts,43.6226771,3.868106,41233,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,3123093631,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0161,Euromédecine,43.6390018,3.8277875,41109,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,3123093632,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0162,Saint-Éloi,43.6270802,3.8656448,41235,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,3123093685,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0163,Stade Philippidès,43.6190802,3.8695186,41231,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,3123093686,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0164,Université Montpellier - Triolet,43.6291152,3.8614592,41237,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,3123093687,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0165,Victoire 2,43.5751577,3.8497681,42263,TaM,TaM,unknown,unknown,3124581464,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0166,Port Marianne,43.601566,3.8994636,41207,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,3124627562,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0167,Pérols Étang de l'Or,43.5579564,3.9636474,43201,TaM,TaM,unknown,unknown,3124627566,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0168,Place Carnot,43.6037042,3.8842576,Unknown,TAM,Transports de l'agglomération de Montpellier,unknown,unknown,3124636918,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0169,Rives du Lez - Consuls de Mer,43.6040207,3.8938614,42237,TaM,TaM,unknown,unknown,3124636922,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0170,Juvignac,43.6174206,3.8099711,43101,TaM,TaM,unknown,unknown,3124664050,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0171,Juvignac,43.6175115,3.810219,43257,TaM,TaM,unknown,unknown,3124664051,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0172,Mosson,43.6163397,3.8196588,43255,TaM,TaM,unknown,unknown,3124664054,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0173,Hôpital Lapeyronie,43.6316849,3.8525756,Unknown,TAM,Transports de l'agglomération de Montpellier,unknown,unknown,3124667075,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0174,Aiguelongue,43.626303,3.8832003,Unknown,TAM,Transports de l'agglomération de Montpellier,unknown,unknown,3124671372,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0175,Jeu de Mail des Abbés,43.6204066,3.8840474,Unknown,TAM,Transports de l'agglomération de Montpellier,unknown,unknown,3124671375,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0176,Mosson,43.6162684,3.8197433,41255,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,3124678226,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0177,Mosson,43.6162888,3.8198414,41101,TaM,Transports de l'agglomération de Montpellier,unknown,unknown,3124678227,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0178,Lattes Centre,43.570666,3.9052229,43259,TaM,TaM,unknown,unknown,3127567487,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0179,Lattes Centre,43.570728,3.9051692,43163,TaM,TaM,unknown,unknown,3127567488,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0180,Peyrou - Arc de Triomphe,43.6117993,3.8723484,44103,TaM,TaM,unknown,unknown,3728561514,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0181,Saint-Guilhem - Courreau,43.6081132,3.8735064,44204,TaM,TaM,unknown,unknown,3728561636,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0182,Saint-Guilhem - Courreau,43.6081284,3.8735437,44104,TaM,TaM,unknown,unknown,4345616053,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0183,Peyrou - Arc de Triomphe,43.611415,3.8722575,44203,TaM,TaM,unknown,unknown,4345616056,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0184,Albert 1er - Jardin des Plantes,43.6148176,3.8737832,44102,TaM,TaM,unknown,unknown,4345616072,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0185,Albert 1er - Jardin des Plantes,43.6148246,3.873733,44202,TaM,TaM,unknown,unknown,4345616073,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0186,Aiguelongue,43.6262633,3.8832078,Unknown,TAM,Transports de l'agglomération de Montpellier,unknown,unknown,6568530983,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0187,Jeu de Mail des Abbés,43.6204139,3.8840985,Unknown,TAM,Transports de l'agglomération de Montpellier,unknown,unknown,6568557590,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0188,La Condamine,43.5719914,3.8444352,42265,TaM,TaM,unknown,unknown,7726926817,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0189,Garcia Lorca,43.5912508,3.8911346,44106,TaM,TaM,unknown,unknown,8719434195,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0190,Garcia Lorca,43.5911121,3.8909953,44205,TaM,TaM,unknown,unknown,8719434196,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0191,Saint-Éloi - Docteur Pezet,43.6271136,3.8667078,Unknown,TaM,TAM,unknown,unknown,11808212951,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0192,Saint-Éloi - Docteur Pezet,43.6270892,3.866745,Unknown,TaM,TAM,unknown,unknown,11808212967,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0193,Grés de Montpellier,43.5929583,3.8235234,Unknown,TaM,TAM,unknown,unknown,11885076554,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0194,Grés de Montpellier,43.5929292,3.8235291,Unknown,TaM,TAM,unknown,unknown,11885076555,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0195,Parc des Bouisses,43.5930453,3.8295247,Unknown,TaM,TAM,unknown,unknown,11885076556,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0196,Parc des Bouisses,43.593016,3.8295406,Unknown,TaM,TAM,unknown,unknown,11885076557,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0197,Parc Font-Colombe,43.5953475,3.8373379,Unknown,TaM,TAM,unknown,unknown,11885076558,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0198,Parc Font-Colombe,43.595321,3.8373188,Unknown,TaM,TAM,unknown,unknown,11885076559,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0199,Parc Bagatelle,43.5936321,3.8423537,Unknown,TaM,TAM,unknown,unknown,11885076560,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0200,Parc Bagatelle,43.59361,3.8423408,Unknown,TaM,TAM,unknown,unknown,11885076561,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0201,Ovalie,43.5914283,3.8476585,Unknown,TaM,TAM,unknown,unknown,11885076562,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0202,Ovalie,43.5913962,3.8476693,Unknown,TaM,TAM,unknown,unknown,11885076563,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0203,Yves du Manoir,43.5950116,3.8499415,Unknown,TaM,TAM,unknown,unknown,11885076564,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0204,Yves du Manoir,43.5950044,3.8499088,Unknown,TaM,TAM,unknown,unknown,11885076565,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0205,Estanove,43.6007437,3.849339,Unknown,TaM,TAM,unknown,unknown,11885076566,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0206,Estanove,43.600708,3.8493414,Unknown,TaM,TAM,unknown,unknown,11885076567,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0207,Chamberte - Les Roses,43.6026834,3.8546567,Unknown,TaM,TAM,unknown,unknown,11885076568,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0208,Chamberte - Les Roses,43.6026687,3.8546741,Unknown,TaM,TAM,unknown,unknown,11885078569,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0209,Cité Créative - Parc Montcalm,43.6016487,3.8621399,Unknown,TaM,TAM,unknown,unknown,11885078570,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0210,Cité Créative - Parc Montcalm,43.6016123,3.8621132,Unknown,TaM,TAM,unknown,unknown,11885078571,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0211,Place du 8 Mai 1945,43.6012443,3.8679343,Unknown,TaM,TAM,unknown,unknown,11885078572,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0212,Place du 8 Mai 1945,43.6012189,3.8679665,Unknown,TaM,TAM,unknown,unknown,11885078573,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0213,Parc Clemenceau,43.6031532,3.8717667,Unknown,TaM,TAM,unknown,unknown,11885078574,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0214,Parc Clemenceau,43.6033971,3.8721461,Unknown,TaM,TAM,unknown,unknown,11885078575,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0215,Gambetta - Saint-Denis,43.6050726,3.8745319,Unknown,TaM,TAM,unknown,unknown,11885078576,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0216,Université Paul Valéry,43.6298936,3.8696428,Unknown,TaM,TAM,unknown,unknown,11885078578,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0217,Université Paul Valéry,43.6299011,3.8696786,Unknown,TaM,TAM,unknown,unknown,11885078579,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0218,Pôle Chimie Balard,43.634003,3.8679177,Unknown,TaM,TAM,unknown,unknown,11885078580,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0219,Pôle Chimie Balard,43.6340036,3.8679627,Unknown,TaM,TAM,unknown,unknown,11885078581,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0220,CNRS - Zoo de Lunaret,43.6382048,3.8658981,Unknown,TaM,TAM,unknown,unknown,11885078582,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0221,CNRS - Zoo de Lunaret,43.6381895,3.8658642,Unknown,TaM,TAM,unknown,unknown,11885078583,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0222,Plan des 4 Seigneurs,43.64435,3.8612841,Unknown,TaM,TAM,unknown,unknown,11885078584,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0223,Plan des 4 Seigneurs,43.6443746,3.861258,Unknown,TaM,TAM,unknown,unknown,11885078585,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0224,Agropolis,43.6459852,3.8685554,Unknown,TaM,TAM,unknown,unknown,11885078586,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0225,Agropolis,43.6459799,3.8685852,Unknown,TaM,TAM,unknown,unknown,11885078587,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0226,Montferrier-sur-Lez,43.6514109,3.8673637,Unknown,TaM,TAM,unknown,unknown,11885078588,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0227,Montferrier-sur-Lez,43.6513773,3.867372,Unknown,TaM,TAM,unknown,unknown,11885078589,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0228,Clapiers,43.6536272,3.8727181,Unknown,TaM,TAM,unknown,unknown,11885078590,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0229,Clapiers,43.6536115,3.8727724,Unknown,TaM,TAM,unknown,unknown,11885078591,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0230,Gare Sud de France,43.5969149,3.9222649,Unknown,TaM,TAM,unknown,unknown,11891384902,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0
+TR0231,Gare Sud de France,43.5968999,3.9222244,Unknown,TaM,TAM,unknown,unknown,11891384903,OpenStreetMap,2025-12-16 09:57:42,2025-12-16 10:11:13,1.0

@@ -1,0 +1,79 @@
+{
+  "last_updated": "2026-02-22T09:41:06.299+01:00",
+  "ttl": 300,
+  "version": "3.0",
+  "data": {
+    "stations": [
+      {
+        "station_id": "278",
+        "name": [
+          {
+            "text": "Les Eyzies",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.936116,
+        "lon": 1.01297,
+        "is_virtual_station": false,
+        "capacity": 5,
+        "is_charging_station": true
+      },
+      {
+        "station_id": "312",
+        "name": [
+          {
+            "text": "Rouffignac",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.0473,
+        "lon": 0.9781,
+        "is_virtual_station": false,
+        "capacity": 3,
+        "is_charging_station": true
+      },
+      {
+        "station_id": "361",
+        "name": [
+          {
+            "text": "Le Bugue",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.9182,
+        "lon": 0.9275,
+        "is_virtual_station": false,
+        "capacity": 5,
+        "is_charging_station": true
+      },
+      {
+        "station_id": "388",
+        "name": [
+          {
+            "text": "Montignac",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.0642,
+        "lon": 1.163,
+        "is_virtual_station": false,
+        "capacity": 5,
+        "is_charging_station": true
+      },
+      {
+        "station_id": "767",
+        "name": [
+          {
+            "text": "Saint Leon Sur Vezere",
+            "language": "fr"
+          }
+        ],
+        "lat": 45.01137,
+        "lon": 1.08914,
+        "is_virtual_station": false,
+        "capacity": 5,
+        "is_charging_station": true
+      }
+    ]
+  }
+}

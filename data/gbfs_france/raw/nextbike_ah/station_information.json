@@ -1,0 +1,744 @@
+{
+  "last_updated": 1771749811,
+  "ttl": 60,
+  "data": {
+    "stations": [
+      {
+        "station_id": "538503732",
+        "name": "Mairie Croix-Lieu",
+        "short_name": "62458",
+        "lat": 49.030008,
+        "lon": 2.021742,
+        "region_id": "1154",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=538503732",
+          "ios": "https://app.nextbike.net/station?id=538503732",
+          "web": "https://nxtb.it/p/538503732"
+        },
+        "is_virtual_station": false,
+        "capacity": 12
+      },
+      {
+        "station_id": "538505104",
+        "name": "Mendès France",
+        "short_name": "62459",
+        "lat": 49.023832,
+        "lon": 2.022351,
+        "region_id": "1154",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=538505104",
+          "ios": "https://app.nextbike.net/station?id=538505104",
+          "web": "https://nxtb.it/p/538505104"
+        },
+        "is_virtual_station": false,
+        "capacity": 10
+      },
+      {
+        "station_id": "538515415",
+        "name": "Place du Rendez-vous",
+        "short_name": "62457",
+        "lat": 49.033241,
+        "lon": 2.019695,
+        "region_id": "1154",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=538515415",
+          "ios": "https://app.nextbike.net/station?id=538515415",
+          "web": "https://nxtb.it/p/538515415"
+        },
+        "is_virtual_station": false,
+        "capacity": 10
+      },
+      {
+        "station_id": "538516101",
+        "name": "La Louvière",
+        "short_name": "62427",
+        "lat": 49.045472,
+        "lon": 2.00308,
+        "region_id": "1155",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=538516101",
+          "ios": "https://app.nextbike.net/station?id=538516101",
+          "web": "https://nxtb.it/p/538516101"
+        },
+        "is_virtual_station": false,
+        "capacity": 11
+      },
+      {
+        "station_id": "538311260",
+        "name": "Gare de Neuville Université",
+        "short_name": "62440",
+        "lat": 49.014546,
+        "lon": 2.078947,
+        "region_id": "1156",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=538311260",
+          "ios": "https://app.nextbike.net/station?id=538311260",
+          "web": "https://nxtb.it/p/538311260"
+        },
+        "is_virtual_station": false,
+        "capacity": 20
+      },
+      {
+        "station_id": "538314122",
+        "name": "Ile-de-Loisirs",
+        "short_name": "62441",
+        "lat": 49.026439,
+        "lon": 2.050383,
+        "region_id": "1156",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=538314122",
+          "ios": "https://app.nextbike.net/station?id=538314122",
+          "web": "https://nxtb.it/p/538314122"
+        },
+        "is_virtual_station": false,
+        "capacity": 25
+      },
+      {
+        "station_id": "538310586",
+        "name": "Gare d'Eragny",
+        "short_name": "62431",
+        "lat": 49.017927,
+        "lon": 2.090981,
+        "region_id": "1157",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=538310586",
+          "ios": "https://app.nextbike.net/station?id=538310586",
+          "web": "https://nxtb.it/p/538310586"
+        },
+        "is_virtual_station": false,
+        "capacity": 20
+      },
+      {
+        "station_id": "538507418",
+        "name": "Charles De Gaulle",
+        "short_name": "62430",
+        "lat": 49.023025,
+        "lon": 2.110541,
+        "region_id": "1157",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=538507418",
+          "ios": "https://app.nextbike.net/station?id=538507418",
+          "web": "https://nxtb.it/p/538507418"
+        },
+        "is_virtual_station": false,
+        "capacity": 10
+      },
+      {
+        "station_id": "538510189",
+        "name": "La Challe",
+        "short_name": "62432",
+        "lat": 49.017516,
+        "lon": 2.099712,
+        "region_id": "1157",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=538510189",
+          "ios": "https://app.nextbike.net/station?id=538510189",
+          "web": "https://nxtb.it/p/538510189"
+        },
+        "is_virtual_station": false,
+        "capacity": 18
+      },
+      {
+        "station_id": "538516569",
+        "name": "Art de Vivre",
+        "short_name": "62433",
+        "lat": 49.032301,
+        "lon": 2.101753,
+        "region_id": "1157",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=538516569",
+          "ios": "https://app.nextbike.net/station?id=538516569",
+          "web": "https://nxtb.it/p/538516569"
+        },
+        "is_virtual_station": false,
+        "capacity": 16
+      },
+      {
+        "station_id": "538520248",
+        "name": "Miramène",
+        "short_name": "62435",
+        "lat": 49.031366,
+        "lon": 2.099148,
+        "region_id": "1157",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=538520248",
+          "ios": "https://app.nextbike.net/station?id=538520248",
+          "web": "https://nxtb.it/p/538520248"
+        },
+        "is_virtual_station": false,
+        "capacity": 11
+      },
+      {
+        "station_id": "538315264",
+        "name": "Gare de Liesse",
+        "short_name": "62455",
+        "lat": 49.03375,
+        "lon": 2.127801,
+        "region_id": "1158",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=538315264",
+          "ios": "https://app.nextbike.net/station?id=538315264",
+          "web": "https://nxtb.it/p/538315264"
+        },
+        "is_virtual_station": false,
+        "capacity": 20
+      },
+      {
+        "station_id": "538512955",
+        "name": "Mairie / Gare Saint-Ouen-L'Aumône Centre",
+        "short_name": "62454",
+        "lat": 49.045365,
+        "lon": 2.106907,
+        "region_id": "1158",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=538512955",
+          "ios": "https://app.nextbike.net/station?id=538512955",
+          "web": "https://nxtb.it/p/538512955"
+        },
+        "is_virtual_station": false,
+        "capacity": 20
+      },
+      {
+        "station_id": "538514907",
+        "name": "Place Carnot",
+        "short_name": "62453",
+        "lat": 49.047686,
+        "lon": 2.102584,
+        "region_id": "1158",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=538514907",
+          "ios": "https://app.nextbike.net/station?id=538514907",
+          "web": "https://nxtb.it/p/538514907"
+        },
+        "is_virtual_station": false,
+        "capacity": 13
+      },
+      {
+        "station_id": "538510823",
+        "name": "Rue de la Marèche",
+        "short_name": "62439",
+        "lat": 49.02593,
+        "lon": 1.982002,
+        "region_id": "1159",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=538510823",
+          "ios": "https://app.nextbike.net/station?id=538510823",
+          "web": "https://nxtb.it/p/538510823"
+        },
+        "is_virtual_station": false,
+        "capacity": 7
+      },
+      {
+        "station_id": "538314485",
+        "name": "Gare d'Osny",
+        "short_name": "62443",
+        "lat": 49.062826,
+        "lon": 2.057729,
+        "region_id": "1160",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=538314485",
+          "ios": "https://app.nextbike.net/station?id=538314485",
+          "web": "https://nxtb.it/p/538314485"
+        },
+        "is_virtual_station": false,
+        "capacity": 15
+      },
+      {
+        "station_id": "538511148",
+        "name": "Sainte-Marie",
+        "short_name": "62442",
+        "lat": 49.074429,
+        "lon": 2.075023,
+        "region_id": "1160",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=538511148",
+          "ios": "https://app.nextbike.net/station?id=538511148",
+          "web": "https://nxtb.it/p/538511148"
+        },
+        "is_virtual_station": false,
+        "capacity": 6
+      },
+      {
+        "station_id": "538518266",
+        "name": "Beaux soleils",
+        "short_name": "62424",
+        "lat": 49.051086,
+        "lon": 2.069491,
+        "region_id": "1160",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=538518266",
+          "ios": "https://app.nextbike.net/station?id=538518266",
+          "web": "https://nxtb.it/p/538518266"
+        },
+        "is_virtual_station": false,
+        "capacity": 11
+      },
+      {
+        "station_id": "538315750",
+        "name": "Croix Saint-Jacques",
+        "short_name": "62437",
+        "lat": 49.011967,
+        "lon": 2.053045,
+        "region_id": "1161",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=538315750",
+          "ios": "https://app.nextbike.net/station?id=538315750",
+          "web": "https://nxtb.it/p/538315750"
+        },
+        "is_virtual_station": false,
+        "capacity": 10
+      },
+      {
+        "station_id": "538514305",
+        "name": "Place du Bien-être",
+        "short_name": "62436",
+        "lat": 49.010438,
+        "lon": 2.041857,
+        "region_id": "1161",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=538514305",
+          "ios": "https://app.nextbike.net/station?id=538514305",
+          "web": "https://nxtb.it/p/538514305"
+        },
+        "is_virtual_station": false,
+        "capacity": 11
+      },
+      {
+        "station_id": "538306450",
+        "name": "Tribunal",
+        "short_name": "62449",
+        "lat": 49.051776,
+        "lon": 2.098766,
+        "region_id": "1162",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=538306450",
+          "ios": "https://app.nextbike.net/station?id=538306450",
+          "web": "https://nxtb.it/p/538306450"
+        },
+        "is_virtual_station": false,
+        "capacity": 14
+      },
+      {
+        "station_id": "538307128",
+        "name": "Hôpital",
+        "short_name": "62450",
+        "lat": 49.063937,
+        "lon": 2.093907,
+        "region_id": "1162",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=538307128",
+          "ios": "https://app.nextbike.net/station?id=538307128",
+          "web": "https://nxtb.it/p/538307128"
+        },
+        "is_virtual_station": false,
+        "capacity": 18
+      },
+      {
+        "station_id": "538312139",
+        "name": "Place de la Libération",
+        "short_name": "62446",
+        "lat": 49.044397,
+        "lon": 2.090616,
+        "region_id": "1162",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=538312139",
+          "ios": "https://app.nextbike.net/station?id=538312139",
+          "web": "https://nxtb.it/p/538312139"
+        },
+        "is_virtual_station": false,
+        "capacity": 18
+      },
+      {
+        "station_id": "538313103",
+        "name": "Université Saint-Martin",
+        "short_name": "62447",
+        "lat": 49.043671,
+        "lon": 2.085438,
+        "region_id": "1162",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=538313103",
+          "ios": "https://app.nextbike.net/station?id=538313103",
+          "web": "https://nxtb.it/p/538313103"
+        },
+        "is_virtual_station": false,
+        "capacity": 15
+      },
+      {
+        "station_id": "538313635",
+        "name": "La Palette",
+        "short_name": "62448",
+        "lat": 49.033147,
+        "lon": 2.085854,
+        "region_id": "1162",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=538313635",
+          "ios": "https://app.nextbike.net/station?id=538313635",
+          "web": "https://nxtb.it/p/538313635"
+        },
+        "is_virtual_station": false,
+        "capacity": 20
+      },
+      {
+        "station_id": "538520633",
+        "name": "Louvrais",
+        "short_name": "62451",
+        "lat": 49.058751,
+        "lon": 2.089538,
+        "region_id": "1162",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=538520633",
+          "ios": "https://app.nextbike.net/station?id=538520633",
+          "web": "https://nxtb.it/p/538520633"
+        },
+        "is_virtual_station": false,
+        "capacity": 15
+      },
+      {
+        "station_id": "563254368",
+        "name": "Gare de Pontoise",
+        "short_name": "62460",
+        "lat": 49.047383,
+        "lon": 2.095191,
+        "region_id": "1162",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=563254368",
+          "ios": "https://app.nextbike.net/station?id=563254368",
+          "web": "https://nxtb.it/p/563254368"
+        },
+        "is_virtual_station": false,
+        "capacity": 20
+      },
+      {
+        "station_id": "538291138",
+        "name": "Gare Cergy Axe Majeur Horloge",
+        "short_name": "62408",
+        "lat": 49.049277,
+        "lon": 2.034589,
+        "region_id": "1163",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=538291138",
+          "ios": "https://app.nextbike.net/station?id=538291138",
+          "web": "https://nxtb.it/p/538291138"
+        },
+        "is_virtual_station": false,
+        "capacity": 20
+      },
+      {
+        "station_id": "538294013",
+        "name": "Place des Linandes",
+        "short_name": "62413",
+        "lat": 49.043275,
+        "lon": 2.068996,
+        "region_id": "1163",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=538294013",
+          "ios": "https://app.nextbike.net/station?id=538294013",
+          "web": "https://nxtb.it/p/538294013"
+        },
+        "is_virtual_station": false,
+        "capacity": 13
+      },
+      {
+        "station_id": "538295343",
+        "name": "Université Les Chênes",
+        "short_name": "62414",
+        "lat": 49.038861,
+        "lon": 2.076362,
+        "region_id": "1163",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=538295343",
+          "ios": "https://app.nextbike.net/station?id=538295343",
+          "web": "https://nxtb.it/p/538295343"
+        },
+        "is_virtual_station": false,
+        "capacity": 20
+      },
+      {
+        "station_id": "538296108",
+        "name": "Cergy Village Centre",
+        "short_name": "62415",
+        "lat": 49.03558,
+        "lon": 2.061958,
+        "region_id": "1163",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=538296108",
+          "ios": "https://app.nextbike.net/station?id=538296108",
+          "web": "https://nxtb.it/p/538296108"
+        },
+        "is_virtual_station": false,
+        "capacity": 14
+      },
+      {
+        "station_id": "538296760",
+        "name": "Port Cergy",
+        "short_name": "62416",
+        "lat": 49.031269,
+        "lon": 2.061418,
+        "region_id": "1163",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=538296760",
+          "ios": "https://app.nextbike.net/station?id=538296760",
+          "web": "https://nxtb.it/p/538296760"
+        },
+        "is_virtual_station": false,
+        "capacity": 15
+      },
+      {
+        "station_id": "538297712",
+        "name": "Rue des Lilas",
+        "short_name": "62417",
+        "lat": 49.034614,
+        "lon": 2.067624,
+        "region_id": "1163",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=538297712",
+          "ios": "https://app.nextbike.net/station?id=538297712",
+          "web": "https://nxtb.it/p/538297712"
+        },
+        "is_virtual_station": false,
+        "capacity": 14
+      },
+      {
+        "station_id": "538299532",
+        "name": "Conseil Départemental",
+        "short_name": "62418",
+        "lat": 49.032127,
+        "lon": 2.074354,
+        "region_id": "1163",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=538299532",
+          "ios": "https://app.nextbike.net/station?id=538299532",
+          "web": "https://nxtb.it/p/538299532"
+        },
+        "is_virtual_station": false,
+        "capacity": 18
+      },
+      {
+        "station_id": "538300023",
+        "name": "Dalle piétonne Grand Centre",
+        "short_name": "62419",
+        "lat": 49.036336,
+        "lon": 2.079618,
+        "region_id": "1163",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=538300023",
+          "ios": "https://app.nextbike.net/station?id=538300023",
+          "web": "https://nxtb.it/p/538300023"
+        },
+        "is_virtual_station": false,
+        "capacity": 20
+      },
+      {
+        "station_id": "538304777",
+        "name": "Gare Cergy Grand Centre",
+        "short_name": "62420",
+        "lat": 49.036416,
+        "lon": 2.080491,
+        "region_id": "1163",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=538304777",
+          "ios": "https://app.nextbike.net/station?id=538304777",
+          "web": "https://nxtb.it/p/538304777"
+        },
+        "is_virtual_station": false,
+        "capacity": 20
+      },
+      {
+        "station_id": "538305588",
+        "name": "Croix-Petit",
+        "short_name": "62422",
+        "lat": 49.037987,
+        "lon": 2.070494,
+        "region_id": "1163",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=538305588",
+          "ios": "https://app.nextbike.net/station?id=538305588",
+          "web": "https://nxtb.it/p/538305588"
+        },
+        "is_virtual_station": false,
+        "capacity": 18
+      },
+      {
+        "station_id": "538308479",
+        "name": "Gare Les Hauts de Cergy",
+        "short_name": "62401",
+        "lat": 49.048408,
+        "lon": 2.011518,
+        "region_id": "1163",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=538308479",
+          "ios": "https://app.nextbike.net/station?id=538308479",
+          "web": "https://nxtb.it/p/538308479"
+        },
+        "is_virtual_station": false,
+        "capacity": 20
+      },
+      {
+        "station_id": "538316157",
+        "name": "Les Essarts",
+        "short_name": "62403",
+        "lat": 49.042333,
+        "lon": 2.019554,
+        "region_id": "1163",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=538316157",
+          "ios": "https://app.nextbike.net/station?id=538316157",
+          "web": "https://nxtb.it/p/538316157"
+        },
+        "is_virtual_station": false,
+        "capacity": 20
+      },
+      {
+        "station_id": "538316774",
+        "name": "Place du Haut de Gency",
+        "short_name": "62410",
+        "lat": 49.046589,
+        "lon": 2.045104,
+        "region_id": "1163",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=538316774",
+          "ios": "https://app.nextbike.net/station?id=538316774",
+          "web": "https://nxtb.it/p/538316774"
+        },
+        "is_virtual_station": false,
+        "capacity": 16
+      },
+      {
+        "station_id": "538317059",
+        "name": "Avenue du Nord",
+        "short_name": "62412",
+        "lat": 49.043109,
+        "lon": 2.060277,
+        "region_id": "1163",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=538317059",
+          "ios": "https://app.nextbike.net/station?id=538317059",
+          "web": "https://nxtb.it/p/538317059"
+        },
+        "is_virtual_station": false,
+        "capacity": 20
+      },
+      {
+        "station_id": "538503466",
+        "name": "Les Touleuses",
+        "short_name": "62421",
+        "lat": 49.030779,
+        "lon": 2.083579,
+        "region_id": "1163",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=538503466",
+          "ios": "https://app.nextbike.net/station?id=538503466",
+          "web": "https://nxtb.it/p/538503466"
+        },
+        "is_virtual_station": false,
+        "capacity": 16
+      },
+      {
+        "station_id": "538505938",
+        "name": "Avenue du Hazay",
+        "short_name": "62402",
+        "lat": 49.046868,
+        "lon": 2.01366,
+        "region_id": "1163",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=538505938",
+          "ios": "https://app.nextbike.net/station?id=538505938",
+          "web": "https://nxtb.it/p/538505938"
+        },
+        "is_virtual_station": false,
+        "capacity": 15
+      },
+      {
+        "station_id": "538513301",
+        "name": "Axe Majeur",
+        "short_name": "62407",
+        "lat": 49.044091,
+        "lon": 2.036569,
+        "region_id": "1163",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=538513301",
+          "ios": "https://app.nextbike.net/station?id=538513301",
+          "web": "https://nxtb.it/p/538513301"
+        },
+        "is_virtual_station": false,
+        "capacity": 16
+      },
+      {
+        "station_id": "538515849",
+        "name": "Place de l'Hôtel de Ville",
+        "short_name": "62409",
+        "lat": 49.051616,
+        "lon": 2.036035,
+        "region_id": "1163",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=538515849",
+          "ios": "https://app.nextbike.net/station?id=538515849",
+          "web": "https://nxtb.it/p/538515849"
+        },
+        "is_virtual_station": false,
+        "capacity": 14
+      },
+      {
+        "station_id": "538516881",
+        "name": "Le Bon Temps",
+        "short_name": "62404",
+        "lat": 49.052808,
+        "lon": 2.017985,
+        "region_id": "1163",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=538516881",
+          "ios": "https://app.nextbike.net/station?id=538516881",
+          "web": "https://nxtb.it/p/538516881"
+        },
+        "is_virtual_station": false,
+        "capacity": 12
+      },
+      {
+        "station_id": "538517154",
+        "name": "Le Chat Perché",
+        "short_name": "62405",
+        "lat": 49.048944,
+        "lon": 2.026942,
+        "region_id": "1163",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=538517154",
+          "ios": "https://app.nextbike.net/station?id=538517154",
+          "web": "https://nxtb.it/p/538517154"
+        },
+        "is_virtual_station": false,
+        "capacity": 13
+      },
+      {
+        "station_id": "538517540",
+        "name": "Parc Saint-Christophe",
+        "short_name": "62406",
+        "lat": 49.043026,
+        "lon": 2.029623,
+        "region_id": "1163",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=538517540",
+          "ios": "https://app.nextbike.net/station?id=538517540",
+          "web": "https://nxtb.it/p/538517540"
+        },
+        "is_virtual_station": false,
+        "capacity": 10
+      },
+      {
+        "station_id": "538517834",
+        "name": "Aren'Ice",
+        "short_name": "62423",
+        "lat": 49.051233,
+        "lon": 2.054882,
+        "region_id": "1163",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=538517834",
+          "ios": "https://app.nextbike.net/station?id=538517834",
+          "web": "https://nxtb.it/p/538517834"
+        },
+        "is_virtual_station": false,
+        "capacity": 15
+      }
+    ]
+  },
+  "version": "2.3"
+}

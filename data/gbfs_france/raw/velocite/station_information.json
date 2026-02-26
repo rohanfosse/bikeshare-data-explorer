@@ -1,0 +1,406 @@
+{
+  "data": {
+    "stations": [
+      {
+        "capacity": 14,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.56417,
+        "lon": 3.624066,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Cathédrale"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://velocite.ecovelo.mobi/#/station/stn_MCaxmsuKkBG389dZz787by"
+        },
+        "station_id": "stn_MCaxmsuKkBG389dZz787by"
+      },
+      {
+        "capacity": 4,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.537871,
+        "lon": 3.553049,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Mons en Laonnois"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://velocite.ecovelo.mobi/#/station/stn_Kc8vUag6KrxuGZnLdTCNoN"
+        },
+        "station_id": "stn_Kc8vUag6KrxuGZnLdTCNoN"
+      },
+      {
+        "capacity": 5,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.580014,
+        "lon": 3.654167,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Parc du Champ du Roy"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://velocite.ecovelo.mobi/#/station/stn_WPoMEwDgMiyx6aVWaGsTTi"
+        },
+        "station_id": "stn_WPoMEwDgMiyx6aVWaGsTTi"
+      },
+      {
+        "capacity": 14,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.562186,
+        "lon": 3.610976,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Hôpital"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://velocite.ecovelo.mobi/#/station/stn_43DVt6wTBhyZLphtqzv2QZ"
+        },
+        "station_id": "stn_43DVt6wTBhyZLphtqzv2QZ"
+      },
+      {
+        "capacity": 14,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.570243,
+        "lon": 3.624236,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Gare"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://velocite.ecovelo.mobi/#/station/stn_LyAw6zmtNkzaVT46uDtVyP"
+        },
+        "station_id": "stn_LyAw6zmtNkzaVT46uDtVyP"
+      },
+      {
+        "capacity": 2,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.524122,
+        "lon": 3.66454,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Bruyères-et-Montbérault"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://velocite.ecovelo.mobi/#/station/stn_oC8deMNaUPa2ArrAvRqPWp"
+        },
+        "station_id": "stn_oC8deMNaUPa2ArrAvRqPWp"
+      },
+      {
+        "capacity": 14,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.573814,
+        "lon": 3.629433,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Cité des cheminots"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://velocite.ecovelo.mobi/#/station/stn_iFR3PbLn9EDw8EgZMatUaX"
+        },
+        "station_id": "stn_iFR3PbLn9EDw8EgZMatUaX"
+      },
+      {
+        "capacity": 4,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.57321,
+        "lon": 3.683503,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Athies-sous-Laon"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://velocite.ecovelo.mobi/#/station/stn_QdiBmy7f2PPyBFBiv5mFoV"
+        },
+        "station_id": "stn_QdiBmy7f2PPyBFBiv5mFoV"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.567535,
+        "lon": 3.6521,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Le Dôme"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://velocite.ecovelo.mobi/#/station/stn_6vRZzhwV6Frrv4ZTbUwBMv"
+        },
+        "station_id": "stn_6vRZzhwV6Frrv4ZTbUwBMv"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.556976,
+        "lon": 3.602895,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Parc Foch"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://velocite.ecovelo.mobi/#/station/stn_dCJKCLWk9WMgoBRyBEbSdm"
+        },
+        "station_id": "stn_dCJKCLWk9WMgoBRyBEbSdm"
+      },
+      {
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.549591,
+        "lon": 3.61703,
+        "name": [
+          {
+            "language": "fr",
+            "text": "CPAM"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://velocite.ecovelo.mobi/#/station/stn_3kUZMHxF4oaWxjzoWCHwGi"
+        },
+        "station_id": "stn_3kUZMHxF4oaWxjzoWCHwGi"
+      },
+      {
+        "capacity": 6,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.564273,
+        "lon": 3.629273,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Cité administrative"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://velocite.ecovelo.mobi/#/station/stn_kbvUx3ihxdtMvHinHaR3RE"
+        },
+        "station_id": "stn_kbvUx3ihxdtMvHinHaR3RE"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.559278,
+        "lon": 3.632693,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Palais des sports"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://velocite.ecovelo.mobi/#/station/stn_6ANAkLu7Sth2cRr5sZUeUs"
+        },
+        "station_id": "stn_6ANAkLu7Sth2cRr5sZUeUs"
+      },
+      {
+        "capacity": 14,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.569729,
+        "lon": 3.603282,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Montreuil"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://velocite.ecovelo.mobi/#/station/stn_NJv6V5jKFLvH2UwNumeEcj"
+        },
+        "station_id": "stn_NJv6V5jKFLvH2UwNumeEcj"
+      },
+      {
+        "capacity": 14,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.565284,
+        "lon": 3.621067,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Hôtel de ville"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://velocite.ecovelo.mobi/#/station/stn_i8HmDy6M2a2zhGng2MWeAo"
+        },
+        "station_id": "stn_i8HmDy6M2a2zhGng2MWeAo"
+      },
+      {
+        "capacity": 7,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.55922,
+        "lon": 3.612743,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Cité Etudiante"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://velocite.ecovelo.mobi/#/station/stn_EvBPTc3ZfAxrmkeKJygest"
+        },
+        "station_id": "stn_EvBPTc3ZfAxrmkeKJygest"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.54873,
+        "lon": 3.629486,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Place d'Ardon"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://velocite.ecovelo.mobi/#/station/stn_SqbJXYUjdFKnibD7kA6WCQ"
+        },
+        "station_id": "stn_SqbJXYUjdFKnibD7kA6WCQ"
+      },
+      {
+        "capacity": 14,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 49.570072,
+        "lon": 3.634175,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Place du Marché"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://velocite.ecovelo.mobi/#/station/stn_6LzhHqoRKj5NzjcH86usdh"
+        },
+        "station_id": "stn_6LzhHqoRKj5NzjcH86usdh"
+      },
+      {
+        "capacity": 0,
+        "is_valet_station": false,
+        "is_virtual_station": true,
+        "lat": 49.559048,
+        "lon": 3.601686,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Conservatoire"
+          }
+        ],
+        "station_area": {
+          "coordinates": [
+            [
+              [
+                [
+                  3.601515,
+                  49.559111
+                ],
+                [
+                  3.601523,
+                  49.559062
+                ],
+                [
+                  3.601562,
+                  49.559055
+                ],
+                [
+                  3.601582,
+                  49.559042
+                ],
+                [
+                  3.601591,
+                  49.559033
+                ],
+                [
+                  3.601598,
+                  49.559021
+                ],
+                [
+                  3.6016,
+                  49.559015
+                ],
+                [
+                  3.601659,
+                  49.559011
+                ],
+                [
+                  3.601702,
+                  49.559007
+                ],
+                [
+                  3.60174,
+                  49.559004
+                ],
+                [
+                  3.601804,
+                  49.558998
+                ],
+                [
+                  3.601857,
+                  49.55899
+                ],
+                [
+                  3.601897,
+                  49.558982
+                ],
+                [
+                  3.601961,
+                  49.559096
+                ],
+                [
+                  3.601874,
+                  49.559211
+                ],
+                [
+                  3.601513,
+                  49.559143
+                ],
+                [
+                  3.601515,
+                  49.559111
+                ]
+              ]
+            ]
+          ],
+          "type": "MultiPolygon"
+        },
+        "station_id": "zn_cFWRPw4gFQM5Vfqz8WgauK"
+      }
+    ]
+  },
+  "last_updated": "2026-02-22T09:42:39+01:00",
+  "ttl": 0,
+  "version": "3.0"
+}

@@ -1,0 +1,281 @@
+{
+  "data": {
+    "stations": [
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.23788,
+        "lon": -1.63661,
+        "name": [
+          {
+            "language": "fr",
+            "text": "ICO"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://micromob.naolib.fr//#/station/stn_avoa2KKnKJjbE46aqkMjVR"
+        },
+        "station_id": "stn_avoa2KKnKJjbE46aqkMjVR"
+      },
+      {
+        "capacity": 14,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.291591,
+        "lon": -1.520897,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Brégeonnière"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://micromob.naolib.fr//#/station/stn_BNiuRpgTxxTyZcJKKxrFrF"
+        },
+        "station_id": "stn_BNiuRpgTxxTyZcJKKxrFrF"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.280833,
+        "lon": -1.513882,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Polytech "
+          }
+        ],
+        "rental_uris": {
+          "web": "https://micromob.naolib.fr//#/station/stn_6XdPj7yz4piwdnhfHaXJhZ"
+        },
+        "station_id": "stn_6XdPj7yz4piwdnhfHaXJhZ"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.2249,
+        "lon": -1.64668,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Restaurant interentreprises"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://micromob.naolib.fr//#/station/stn_5hULajDnT58G6ACrSc4vjv"
+        },
+        "station_id": "stn_5hULajDnT58G6ACrSc4vjv"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.23536,
+        "lon": -1.64072,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Hôpital Laënnec"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://micromob.naolib.fr//#/station/stn_GCVfTgam79fmAWPpLFf2iZ"
+        },
+        "station_id": "stn_GCVfTgam79fmAWPpLFf2iZ"
+      },
+      {
+        "capacity": 14,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.286134,
+        "lon": -1.517117,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Sophie Germain"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://micromob.naolib.fr//#/station/stn_FKimgARahCEbYqqJrftMxK"
+        },
+        "station_id": "stn_FKimgARahCEbYqqJrftMxK"
+      },
+      {
+        "capacity": 14,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.292727,
+        "lon": -1.501587,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Savaudière"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://micromob.naolib.fr//#/station/stn_455ZbXPXwjy22FLGv6uDfu"
+        },
+        "station_id": "stn_455ZbXPXwjy22FLGv6uDfu"
+      },
+      {
+        "capacity": 25,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.22248,
+        "lon": -1.63939,
+        "name": [
+          {
+            "language": "fr",
+            "text": "François Mitterrand "
+          }
+        ],
+        "rental_uris": {
+          "web": "https://micromob.naolib.fr//#/station/stn_FL3FXoryGVaJJBMLG55zPi"
+        },
+        "station_id": "stn_FL3FXoryGVaJJBMLG55zPi"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.293749,
+        "lon": -1.526717,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Ponton Gachet "
+          }
+        ],
+        "rental_uris": {
+          "web": "https://micromob.naolib.fr//#/station/stn_S9MP3aW2Mzt4rXSB5YpKXV"
+        },
+        "station_id": "stn_S9MP3aW2Mzt4rXSB5YpKXV"
+      },
+      {
+        "capacity": 14,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.293391,
+        "lon": -1.523894,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Gachet "
+          }
+        ],
+        "rental_uris": {
+          "web": "https://micromob.naolib.fr//#/station/stn_LTPy4vR2oHQoHaRKpjLphh"
+        },
+        "station_id": "stn_LTPy4vR2oHQoHaRKpjLphh"
+      },
+      {
+        "capacity": 10,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.289252,
+        "lon": -1.522587,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Ecole Vétérinaire"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://micromob.naolib.fr//#/station/stn_h2UfLN8AhMrUYPahDrBq9E"
+        },
+        "station_id": "stn_h2UfLN8AhMrUYPahDrBq9E"
+      },
+      {
+        "capacity": 17,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.23131,
+        "lon": -1.63146,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Armor"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://micromob.naolib.fr//#/station/stn_C6F4uFyxygeZsEqF796Unf"
+        },
+        "station_id": "stn_C6F4uFyxygeZsEqF796Unf"
+      },
+      {
+        "capacity": 7,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.22724,
+        "lon": -1.65058,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Rivaudière"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://micromob.naolib.fr//#/station/stn_2Qd7WGJMVp9KRRsqTpjjyK"
+        },
+        "station_id": "stn_2Qd7WGJMVp9KRRsqTpjjyK"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.23723,
+        "lon": -1.63076,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Bergerie"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://micromob.naolib.fr//#/station/stn_Sr73jS9WQwJUHqJtQYNuvM"
+        },
+        "station_id": "stn_Sr73jS9WQwJUHqJtQYNuvM"
+      },
+      {
+        "capacity": 12,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.21632,
+        "lon": -1.64594,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Grimm"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://micromob.naolib.fr//#/station/stn_9q3PLieSibiHVDLWG7ZE5s"
+        },
+        "station_id": "stn_9q3PLieSibiHVDLWG7ZE5s"
+      },
+      {
+        "capacity": 27,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.281852,
+        "lon": -1.516902,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Chantrerie Grandes Ecoles"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://micromob.naolib.fr//#/station/stn_HLXAjXYpLesL67S3qXsgdx"
+        },
+        "station_id": "stn_HLXAjXYpLesL67S3qXsgdx"
+      }
+    ]
+  },
+  "last_updated": "2026-02-22T09:42:07+01:00",
+  "ttl": 0,
+  "version": "3.0"
+}

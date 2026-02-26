@@ -1,0 +1,584 @@
+{
+  "version": "3.0",
+  "last_updated": "2026-02-22T08:43:22.705Z",
+  "ttl": 0,
+  "data": {
+    "stations": [
+      {
+        "station_id": "29",
+        "name": [
+          {
+            "language": "en",
+            "text": "CeA"
+          }
+        ],
+        "lat": 48.578955,
+        "lon": 7.738928,
+        "station_opening_hours": "24/7",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "is_virtual_station": false,
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "https://qr.knot.city?c=29",
+          "ios": "https://qr.knot.city?c=29"
+        }
+      },
+      {
+        "station_id": "32",
+        "name": [
+          {
+            "language": "en",
+            "text": "Vauban"
+          }
+        ],
+        "lat": 48.577909,
+        "lon": 7.734814,
+        "station_opening_hours": "24/7",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "is_virtual_station": false,
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "https://qr.knot.city?c=32",
+          "ios": "https://qr.knot.city?c=32"
+        }
+      },
+      {
+        "station_id": "39",
+        "name": [
+          {
+            "language": "en",
+            "text": "Capitainerie"
+          }
+        ],
+        "lat": 48.576687,
+        "lon": 7.787709,
+        "station_opening_hours": "24/7",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "is_virtual_station": false,
+        "capacity": 4,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "https://qr.knot.city?c=39",
+          "ios": "https://qr.knot.city?c=39"
+        }
+      },
+      {
+        "station_id": "40",
+        "name": [
+          {
+            "language": "en",
+            "text": "Coopérative"
+          }
+        ],
+        "lat": 48.574735,
+        "lon": 7.793153,
+        "station_opening_hours": "24/7",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "is_virtual_station": false,
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "https://qr.knot.city?c=40",
+          "ios": "https://qr.knot.city?c=40"
+        }
+      },
+      {
+        "station_id": "42",
+        "name": [
+          {
+            "language": "en",
+            "text": "UTAMS"
+          }
+        ],
+        "lat": 48.553333,
+        "lon": 7.694815,
+        "station_opening_hours": "24/7",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "is_virtual_station": false,
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "https://qr.knot.city?c=42",
+          "ios": "https://qr.knot.city?c=42"
+        }
+      },
+      {
+        "station_id": "46",
+        "name": [
+          {
+            "language": "en",
+            "text": "Gutenberg"
+          }
+        ],
+        "lat": 48.581411,
+        "lon": 7.74841,
+        "station_opening_hours": "24/7",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "is_virtual_station": false,
+        "capacity": 4,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "https://qr.knot.city?c=46",
+          "ios": "https://qr.knot.city?c=46"
+        }
+      },
+      {
+        "station_id": "47",
+        "name": [
+          {
+            "language": "en",
+            "text": "Petite France"
+          }
+        ],
+        "lat": 48.579825,
+        "lon": 7.736471,
+        "station_opening_hours": "24/7",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "is_virtual_station": false,
+        "capacity": 4,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "https://qr.knot.city?c=47",
+          "ios": "https://qr.knot.city?c=47"
+        }
+      },
+      {
+        "station_id": "48",
+        "name": [
+          {
+            "language": "en",
+            "text": "Broglie - Parking vélo Parcus"
+          }
+        ],
+        "lat": 48.585408,
+        "lon": 7.74936,
+        "station_opening_hours": "24/7",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "is_virtual_station": false,
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "https://qr.knot.city?c=48",
+          "ios": "https://qr.knot.city?c=48"
+        }
+      },
+      {
+        "station_id": "50",
+        "name": [
+          {
+            "language": "en",
+            "text": "Austerlitz"
+          }
+        ],
+        "lat": 48.578208,
+        "lon": 7.751748,
+        "station_opening_hours": "24/7",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "is_virtual_station": false,
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "https://qr.knot.city?c=50",
+          "ios": "https://qr.knot.city?c=50"
+        }
+      },
+      {
+        "station_id": "51",
+        "name": [
+          {
+            "language": "en",
+            "text": "Saint Nicolas"
+          }
+        ],
+        "lat": 48.575477,
+        "lon": 7.749952,
+        "station_opening_hours": "24/7",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "is_virtual_station": false,
+        "capacity": 4,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "https://qr.knot.city?c=51",
+          "ios": "https://qr.knot.city?c=51"
+        }
+      },
+      {
+        "station_id": "52",
+        "name": [
+          {
+            "language": "en",
+            "text": "Étoile P2 cinéma"
+          }
+        ],
+        "lat": 48.573165,
+        "lon": 7.7626,
+        "station_opening_hours": "24/7",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "is_virtual_station": false,
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "https://qr.knot.city?c=52",
+          "ios": "https://qr.knot.city?c=52"
+        }
+      },
+      {
+        "station_id": "55",
+        "name": [
+          {
+            "language": "en",
+            "text": "Verdon"
+          }
+        ],
+        "lat": 48.550802,
+        "lon": 7.736725,
+        "station_opening_hours": "24/7",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "is_virtual_station": false,
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "https://qr.knot.city?c=55",
+          "ios": "https://qr.knot.city?c=55"
+        }
+      },
+      {
+        "station_id": "56",
+        "name": [
+          {
+            "language": "en",
+            "text": "Marché gare"
+          }
+        ],
+        "lat": 48.597572,
+        "lon": 7.734185,
+        "station_opening_hours": "24/7",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "is_virtual_station": false,
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "https://qr.knot.city?c=56",
+          "ios": "https://qr.knot.city?c=56"
+        }
+      },
+      {
+        "station_id": "69",
+        "name": [
+          {
+            "language": "en",
+            "text": "Halles P3"
+          }
+        ],
+        "lat": 48.588,
+        "lon": 7.740428,
+        "station_opening_hours": "24/7",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "is_virtual_station": false,
+        "capacity": 16,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "https://qr.knot.city?c=69",
+          "ios": "https://qr.knot.city?c=69"
+        }
+      },
+      {
+        "station_id": "87",
+        "name": [
+          {
+            "language": "en",
+            "text": "Campus Illkirch"
+          }
+        ],
+        "lat": 48.52895,
+        "lon": 7.73285,
+        "station_opening_hours": "24/7",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "is_virtual_station": false,
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "https://qr.knot.city?c=87",
+          "ios": "https://qr.knot.city?c=87"
+        }
+      },
+      {
+        "station_id": "88",
+        "name": [
+          {
+            "language": "en",
+            "text": "Rives-de-l'Aar"
+          }
+        ],
+        "lat": 48.599907,
+        "lon": 7.754291,
+        "station_opening_hours": "24/7",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "is_virtual_station": false,
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "https://qr.knot.city?c=88",
+          "ios": "https://qr.knot.city?c=88"
+        }
+      },
+      {
+        "station_id": "89",
+        "name": [
+          {
+            "language": "en",
+            "text": "Hoenheim gare"
+          }
+        ],
+        "lat": 48.628146,
+        "lon": 7.758705,
+        "station_opening_hours": "24/7",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "is_virtual_station": false,
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "https://qr.knot.city?c=89",
+          "ios": "https://qr.knot.city?c=89"
+        }
+      },
+      {
+        "station_id": "90",
+        "name": [
+          {
+            "language": "en",
+            "text": "Espace Européen de l'entreprise"
+          }
+        ],
+        "lat": 48.616256,
+        "lon": 7.719454,
+        "station_opening_hours": "24/7",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "is_virtual_station": false,
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "https://qr.knot.city?c=90",
+          "ios": "https://qr.knot.city?c=90"
+        }
+      },
+      {
+        "station_id": "91",
+        "name": [
+          {
+            "language": "en",
+            "text": "Gare aux marchandises"
+          }
+        ],
+        "lat": 48.592304,
+        "lon": 7.733137,
+        "station_opening_hours": "24/7",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "is_virtual_station": false,
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "https://qr.knot.city?c=91",
+          "ios": "https://qr.knot.city?c=91"
+        }
+      },
+      {
+        "station_id": "95",
+        "name": [
+          {
+            "language": "en",
+            "text": "Sainte Aurélie Gare Quais"
+          }
+        ],
+        "lat": 48.582697,
+        "lon": 7.732618,
+        "station_opening_hours": "24/7",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "is_virtual_station": false,
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "https://qr.knot.city?c=95",
+          "ios": "https://qr.knot.city?c=95"
+        }
+      },
+      {
+        "station_id": "96",
+        "name": [
+          {
+            "language": "en",
+            "text": "Rivétoile"
+          }
+        ],
+        "lat": 48.573193,
+        "lon": 7.76132,
+        "station_opening_hours": "24/7",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "is_virtual_station": false,
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "https://qr.knot.city?c=96",
+          "ios": "https://qr.knot.city?c=96"
+        }
+      },
+      {
+        "station_id": "100",
+        "name": [
+          {
+            "language": "en",
+            "text": "La plage"
+          }
+        ],
+        "lat": 48.576238,
+        "lon": 7.755494,
+        "station_opening_hours": "24/7",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "is_virtual_station": false,
+        "capacity": 4,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "https://qr.knot.city?c=100",
+          "ios": "https://qr.knot.city?c=100"
+        }
+      },
+      {
+        "station_id": "101",
+        "name": [
+          {
+            "language": "en",
+            "text": "Wacken - FG Raiffeisen"
+          }
+        ],
+        "lat": 48.599865,
+        "lon": 7.758156,
+        "station_opening_hours": "24/7",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "is_virtual_station": false,
+        "capacity": 16,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "https://qr.knot.city?c=101",
+          "ios": "https://qr.knot.city?c=101"
+        }
+      },
+      {
+        "station_id": "103",
+        "name": [
+          {
+            "language": "en",
+            "text": "Parlement"
+          }
+        ],
+        "lat": 48.59885,
+        "lon": 7.766174,
+        "station_opening_hours": "24/7",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "is_virtual_station": false,
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "https://qr.knot.city?c=103",
+          "ios": "https://qr.knot.city?c=103"
+        }
+      },
+      {
+        "station_id": "186",
+        "name": [
+          {
+            "language": "en",
+            "text": "AFPA Strasbourg"
+          }
+        ],
+        "lat": 48.556701,
+        "lon": 7.767788,
+        "station_opening_hours": "24/7",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "is_virtual_station": false,
+        "capacity": 8,
+        "is_valet_station": false,
+        "is_charging_station": true,
+        "rental_uris": {
+          "android": "https://qr.knot.city?c=186",
+          "ios": "https://qr.knot.city?c=186"
+        }
+      }
+    ]
+  }
+}

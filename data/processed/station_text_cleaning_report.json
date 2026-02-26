@@ -1,0 +1,26 @@
+{
+  "trips_input": "data\\processed\\TAM_MMM_CoursesVelomagg_5years_cleaned.csv",
+  "stations_input": "data\\processed\\stations_with_official_quartiers.csv",
+  "trips_output": "data\\processed\\TAM_MMM_CoursesVelomagg_5years_cleaned.csv",
+  "stations_output": "data\\processed\\stations_with_official_quartiers.csv",
+  "stats": {
+    "trip_stations_before": 65,
+    "trip_stations_after": 65,
+    "mapped_before": 55,
+    "mapped_after": 55,
+    "unknown_before": 10,
+    "unknown_after": 10
+  },
+  "unknown_stations_after": [
+    "clemenceau",
+    "esplanade",
+    "odysseum",
+    "perolsetangdelor",
+    "perolsetangor",
+    "saintdenis",
+    "smoove",
+    "smoovetest",
+    "stationsav",
+    "stationsavsmoove"
+  ]
+}

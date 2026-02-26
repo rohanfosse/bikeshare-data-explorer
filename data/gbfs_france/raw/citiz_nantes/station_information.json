@@ -1,0 +1,1547 @@
+{
+  "last_updated": "2026-02-22T09:39:02.2711283+01:00",
+  "ttl": 300,
+  "version": "3.0",
+  "data": {
+    "stations": [
+      {
+        "station_id": "557",
+        "name": [
+          {
+            "text": "[FLEX] Rue Parmentier",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.2272201,
+        "lon": -1.5255259,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  -1.5250489598051287,
+                  47.229639180957946
+                ],
+                [
+                  -1.5264437084928728,
+                  47.2287794801289
+                ],
+                [
+                  -1.5228602772489763,
+                  47.226433445905556
+                ],
+                [
+                  -1.5217230206266619,
+                  47.22599628519452
+                ],
+                [
+                  -1.5191910153166033,
+                  47.226579165341384
+                ],
+                [
+                  -1.5204141026273943,
+                  47.228269481522
+                ],
+                [
+                  -1.5214869862333513,
+                  47.229843175717846
+                ],
+                [
+                  -1.5250489598051287,
+                  47.229639180957946
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "560",
+        "name": [
+          {
+            "text": "Jean Jaurès",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.21929168701172,
+        "lon": -1.5616710186004639,
+        "address": "Place Ste Elisabeth, Nantes",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "562",
+        "name": [
+          {
+            "text": "Hôtel de Ville",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.2175721,
+        "lon": -1.5540924,
+        "address": "Place de l'hôtel de ville",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "564",
+        "name": [
+          {
+            "text": "Monteil",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.21409225463867,
+        "lon": -1.548691987991333,
+        "address": "2 rue Monteil, Nantes",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "565",
+        "name": [
+          {
+            "text": "Racine",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.21427917480469,
+        "lon": -1.5653200149536133,
+        "address": "23 rue Racine, Nantes",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "566",
+        "name": [
+          {
+            "text": "Gare Sud",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.2145881652832,
+        "lon": -1.5413049459457397,
+        "address": "43 quai Malakoff, Nantes",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "567",
+        "name": [
+          {
+            "text": "Tripode",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.206687927246094,
+        "lon": -1.539991855621338,
+        "address": "1 bd Vincent Gâche, Nantes",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "568",
+        "name": [
+          {
+            "text": "Chantiers Navals",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.20903015136719,
+        "lon": -1.5684700012207031,
+        "address": "Face au 1 rue Charles Brunellière, Nantes",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "569",
+        "name": [
+          {
+            "text": "Canclaux",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.21453094482422,
+        "lon": -1.5731899738311768,
+        "address": "27-29 rue de Gigant, Nantes",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "570",
+        "name": [
+          {
+            "text": "Talensac",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.221282958984375,
+        "lon": -1.5566190481185913,
+        "address": "6 rue Talensac, Nantes",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "572",
+        "name": [
+          {
+            "text": "[FLEX] Fadwan Touqan",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.16913986206055,
+        "lon": -1.541059970855713,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  -1.5427422523498535,
+                  47.16884873509233
+                ],
+                [
+                  -1.541229486465454,
+                  47.16797346068832
+                ],
+                [
+                  -1.5405428409576416,
+                  47.168527802818915
+                ],
+                [
+                  -1.5406930446624754,
+                  47.169964689038956
+                ],
+                [
+                  -1.541529893875122,
+                  47.17055547869475
+                ],
+                [
+                  -1.542023420333862,
+                  47.1703439621658
+                ],
+                [
+                  -1.5427422523498535,
+                  47.16884873509233
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "576",
+        "name": [
+          {
+            "text": "[FLEX] Forum",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.2529296875,
+        "lon": -1.6164289712905884,
+        "parking_type": "street_parking",
+        "capacity": 10,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  -1.6164666857071741,
+                  47.25300030621039
+                ],
+                [
+                  -1.617121144706808,
+                  47.25277819469942
+                ],
+                [
+                  -1.6174483742066248,
+                  47.25265075324795
+                ],
+                [
+                  -1.6177970613785608,
+                  47.25242864027095
+                ],
+                [
+                  -1.6175127472229822,
+                  47.25233396888283
+                ],
+                [
+                  -1.617244526321493,
+                  47.2525196702922
+                ],
+                [
+                  -1.6168100084610804,
+                  47.25266531800078
+                ],
+                [
+                  -1.6165310587235315,
+                  47.25274178288744
+                ],
+                [
+                  -1.6163111175843103,
+                  47.252876506466734
+                ],
+                [
+                  -1.6164666857071741,
+                  47.25300030621039
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "577",
+        "name": [
+          {
+            "text": "Solaris",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.217376708984375,
+        "lon": -1.626358985900879,
+        "address": "10 chemin du Vigneau, St Herblain",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": true
+      },
+      {
+        "station_id": "578",
+        "name": [
+          {
+            "text": "Bd Mendès France",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.17744064331055,
+        "lon": -1.5287890434265137,
+        "address": "1 boulevard Mendès France, Rezé",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": true
+      },
+      {
+        "station_id": "579",
+        "name": [
+          {
+            "text": "Facultés",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.24791,
+        "lon": -1.55241,
+        "address": "13 Route de la Jonelière, Nantes",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "580",
+        "name": [
+          {
+            "text": "[FLEX] Mauvoisins",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.19057083129883,
+        "lon": -1.5243699550628662,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  -1.5243637561798093,
+                  47.19168829620956
+                ],
+                [
+                  -1.526273488998413,
+                  47.19102483324265
+                ],
+                [
+                  -1.5260803699493408,
+                  47.19088630696117
+                ],
+                [
+                  -1.5253186225891113,
+                  47.19022283396854
+                ],
+                [
+                  -1.5246641635894775,
+                  47.189668718300034
+                ],
+                [
+                  -1.524052619934082,
+                  47.18915834348733
+                ],
+                [
+                  -1.5237522125244138,
+                  47.18935520292507
+                ],
+                [
+                  -1.5231084823608398,
+                  47.18970517345602
+                ],
+                [
+                  -1.5214884281158447,
+                  47.19071132587826
+                ],
+                [
+                  -1.5243637561798093,
+                  47.19168829620956
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "582",
+        "name": [
+          {
+            "text": "[FLEX] Jules Verne",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.24586868286133,
+        "lon": -1.5180820226669312,
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  -1.517667957393627,
+                  47.246118931892056
+                ],
+                [
+                  -1.518799770954388,
+                  47.2459202249197
+                ],
+                [
+                  -1.5180647426067537,
+                  47.24426430449725
+                ],
+                [
+                  -1.517531359204611,
+                  47.24349593983956
+                ],
+                [
+                  -1.517388256340638,
+                  47.2435665945263
+                ],
+                [
+                  -1.5178500883113202,
+                  47.24424222520821
+                ],
+                [
+                  -1.5170435085321117,
+                  47.245169547409006
+                ],
+                [
+                  -1.5164125549957248,
+                  47.24566411261134
+                ],
+                [
+                  -1.5152352087052634,
+                  47.24587165199125
+                ],
+                [
+                  -1.5155474331359926,
+                  47.246732710943405
+                ],
+                [
+                  -1.5165816765625095,
+                  47.24654725327463
+                ],
+                [
+                  -1.5171280693155609,
+                  47.24622490863888
+                ],
+                [
+                  -1.5175703872592976,
+                  47.24614101039825
+                ],
+                [
+                  -1.517225639449805,
+                  47.24516513162726
+                ],
+                [
+                  -1.5173036955582688,
+                  47.245098894860234
+                ],
+                [
+                  -1.517667957393627,
+                  47.246118931892056
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "585",
+        "name": [
+          {
+            "text": "Joffre",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.222224397163195,
+        "lon": -1.5490817185651458,
+        "address": "16 allée de la Reine Margot, Nantes",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "586",
+        "name": [
+          {
+            "text": "Petit Chantilly - rue de la Paix",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.25288772583008,
+        "lon": -1.5931930541992188,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": true
+      },
+      {
+        "station_id": "587",
+        "name": [
+          {
+            "text": "[FLEX] CRAPA Île de Nantes",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.20712661743164,
+        "lon": -1.526576042175293,
+        "address": "Rue du Cherche Midi, Nantes",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  -1.527367072603937,
+                  47.208505055386155
+                ],
+                [
+                  -1.5271157184304514,
+                  47.20803876621807
+                ],
+                [
+                  -1.5277344363961731,
+                  47.20792711890775
+                ],
+                [
+                  -1.5276764315877074,
+                  47.207795768829385
+                ],
+                [
+                  -1.5270287112163885,
+                  47.20792055141138
+                ],
+                [
+                  -1.526622677551842,
+                  47.20701422914101
+                ],
+                [
+                  -1.526429328186822,
+                  47.207007661531634
+                ],
+                [
+                  -1.524476499607033,
+                  47.2084656508263
+                ],
+                [
+                  -1.5248438633992123,
+                  47.209122389668636
+                ],
+                [
+                  -1.527367072603937,
+                  47.208505055386155
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "588",
+        "name": [
+          {
+            "text": "[FLEX] Zola",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.2139868,
+        "lon": -1.5912593,
+        "address": "Rue des Renardières, Nantes",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  -1.5974315017441865,
+                  47.213484259835774
+                ],
+                [
+                  -1.5972383826951142,
+                  47.213163597359696
+                ],
+                [
+                  -1.5943845123032685,
+                  47.21363001486575
+                ],
+                [
+                  -1.5919597953538056,
+                  47.213600863891806
+                ],
+                [
+                  -1.5893205016831513,
+                  47.21354256189585
+                ],
+                [
+                  -1.5884192794541474,
+                  47.21240566016317
+                ],
+                [
+                  -1.5880471612056923,
+                  47.211688579336716
+                ],
+                [
+                  -1.5878969575008584,
+                  47.21170315535127
+                ],
+                [
+                  -1.5883369549936388,
+                  47.21282551775921
+                ],
+                [
+                  -1.5867276295847033,
+                  47.21316075789345
+                ],
+                [
+                  -1.5870280369943712,
+                  47.21392597199953
+                ],
+                [
+                  -1.58722568222883,
+                  47.21417663914103
+                ],
+                [
+                  -1.5875046319663788,
+                  47.21414748846755
+                ],
+                [
+                  -1.5869360036552216,
+                  47.21328753639135
+                ],
+                [
+                  -1.5884165830314423,
+                  47.21295229705853
+                ],
+                [
+                  -1.5888671941459442,
+                  47.21363006134696
+                ],
+                [
+                  -1.5874188012779022,
+                  47.21393614560568
+                ],
+                [
+                  -1.5875690049827362,
+                  47.214140200796685
+                ],
+                [
+                  -1.5893929071128632,
+                  47.21383411771573
+                ],
+                [
+                  -1.5901117391288544,
+                  47.213761240531305
+                ],
+                [
+                  -1.5906267232597138,
+                  47.21379767913604
+                ],
+                [
+                  -1.5901010102927948,
+                  47.21450458311339
+                ],
+                [
+                  -1.5893856396468142,
+                  47.21504292772852
+                ],
+                [
+                  -1.5885487904341677,
+                  47.21535629133713
+                ],
+                [
+                  -1.5886238922865847,
+                  47.21550204122181
+                ],
+                [
+                  -1.5895465721877078,
+                  47.21518867847449
+                ],
+                [
+                  -1.5902010311873416,
+                  47.214700411898605
+                ],
+                [
+                  -1.590662371137903,
+                  47.21428501739172
+                ],
+                [
+                  -1.5908769478590945,
+                  47.213811317930485
+                ],
+                [
+                  -1.5932501214362071,
+                  47.213923487568536
+                ],
+                [
+                  -1.5943444627142833,
+                  47.21396721375742
+                ],
+                [
+                  -1.5952134984351085,
+                  47.21374858245241
+                ],
+                [
+                  -1.5974315017441865,
+                  47.213484259835774
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "591",
+        "name": [
+          {
+            "text": "Tour d'Auvergne",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.206485748291016,
+        "lon": -1.5566539764404297,
+        "address": "2b place François II, Nantes",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "593",
+        "name": [
+          {
+            "text": "Mitrie",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.229244232177734,
+        "lon": -1.5271174907684326,
+        "address": "13 bd des Poilus, Nantes",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "595",
+        "name": [
+          {
+            "text": "Picasso",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.21482849121094,
+        "lon": -1.537498950958252,
+        "address": "24-26 mail Picasso, Nantes",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1093",
+        "name": [
+          {
+            "text": "[FLEX] Rue du Cher",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.21503448486328,
+        "lon": -1.5343658924102783,
+        "address": "Rue du Cher, Nantes",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  -1.5376206606903597,
+                  47.21490948413949
+                ],
+                [
+                  -1.537813779739432,
+                  47.2143993520901
+                ],
+                [
+                  -1.5371700495758578,
+                  47.2138600643019
+                ],
+                [
+                  -1.534316179184012,
+                  47.21371430990418
+                ],
+                [
+                  -1.5338870257416293,
+                  47.21502608506174
+                ],
+                [
+                  -1.5350457400360629,
+                  47.21607548182464
+                ],
+                [
+                  -1.5376206606903597,
+                  47.21490948413949
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "1101",
+        "name": [
+          {
+            "text": "Croissant",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.240562438964844,
+        "lon": -1.530603289604187,
+        "address": "119 bd Jules Verne à Nantes",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1195",
+        "name": [
+          {
+            "text": "Bois St Louis",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.24672489488311,
+        "lon": -1.5836366721717712,
+        "address": "Place devant la maison située au 56 rue du Taillis à Orvault",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  -1.5836000190951882,
+                  47.246737583603014
+                ],
+                [
+                  -1.58364896940971,
+                  47.246716189226596
+                ],
+                [
+                  -1.5835939841249047,
+                  47.24666566204802
+                ],
+                [
+                  -1.5835389988400994,
+                  47.246691608443044
+                ],
+                [
+                  -1.5836000190951882,
+                  47.246737583603014
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "1204",
+        "name": [
+          {
+            "text": "[FLEX] Baugerie",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.20458953848091,
+        "lon": -1.518553457610549,
+        "address": "Périmètre de stationnement proche rue de la Baugerie à St Sébastien sur Loire (voir carte dans appli)",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  -1.520444747643599,
+                  47.203790006865816
+                ],
+                [
+                  -1.520240899758467,
+                  47.203607779212135
+                ],
+                [
+                  -1.5182238785792679,
+                  47.2046282460103
+                ],
+                [
+                  -1.5169042317439407,
+                  47.204919804347114
+                ],
+                [
+                  -1.5163356034327835,
+                  47.204963537959394
+                ],
+                [
+                  -1.5164536206294388,
+                  47.205138472048105
+                ],
+                [
+                  -1.5172046391536087,
+                  47.20580175856053
+                ],
+                [
+                  -1.517494317727217,
+                  47.205765314461985
+                ],
+                [
+                  -1.5170007912684769,
+                  47.20511660531855
+                ],
+                [
+                  -1.5184491841365189,
+                  47.20479589224975
+                ],
+                [
+                  -1.519543525414595,
+                  47.20428566291692
+                ],
+                [
+                  -1.520444747643599,
+                  47.203790006865816
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "1205",
+        "name": [
+          {
+            "text": "Auchan - St Herblain",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.247438535519265,
+        "lon": -1.6073997720846278,
+        "address": "325 route de Vannes à St Herblain, parking Auchan",
+        "parking_type": "street_parking",
+        "capacity": 3,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  -1.5401825208322464,
+                  47.196925583855176
+                ],
+                [
+                  -1.5401734847562238,
+                  47.1969529834106
+                ],
+                [
+                  -1.5384730472622152,
+                  47.196287519380775
+                ],
+                [
+                  -1.5387432027961836,
+                  47.19604543218509
+                ],
+                [
+                  -1.5377361634903366,
+                  47.19400547853715
+                ],
+                [
+                  -1.5375651568159299,
+                  47.19400547853715
+                ],
+                [
+                  -1.5366090216507473,
+                  47.194588820484284
+                ],
+                [
+                  -1.5359615876823511,
+                  47.19474308431913
+                ],
+                [
+                  -1.536264284083387,
+                  47.19566865791191
+                ],
+                [
+                  -1.5401068467313053,
+                  47.197022708711785
+                ],
+                [
+                  -1.5401825208322464,
+                  47.196925583855176
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "1250",
+        "name": [
+          {
+            "text": "Beauséjour",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.23713280359039,
+        "lon": -1.5852828435325248,
+        "address": "120 route de Vannes, Nantes",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1261",
+        "name": [
+          {
+            "text": "[FLEX] Hôtel Dieu",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.21243006571337,
+        "lon": -1.5560777621252915,
+        "address": "A proximité de la rue des Olivettes, Nantes",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  -1.552868894624606,
+                  47.21222497973112
+                ],
+                [
+                  -1.5511951961993131,
+                  47.21011143659304
+                ],
+                [
+                  -1.5505300083636198,
+                  47.209371271080194
+                ],
+                [
+                  -1.5483198681353483,
+                  47.20967737991895
+                ],
+                [
+                  -1.5472898998736295,
+                  47.2102604394863
+                ],
+                [
+                  -1.5477619686602506,
+                  47.211091288294966
+                ],
+                [
+                  -1.547976545381442,
+                  47.2120241556564
+                ],
+                [
+                  -1.5492210903643522,
+                  47.21359833212061
+                ],
+                [
+                  -1.5504656353472623,
+                  47.212986157936896
+                ],
+                [
+                  -1.5506802120684537,
+                  47.2128112497293
+                ],
+                [
+                  -1.552868894624606,
+                  47.21222497973112
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "1267",
+        "name": [
+          {
+            "text": "[FLEX] Haluchère",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.249184885434765,
+        "lon": -1.5204877529985674,
+        "address": "A proximité du 206 Bd Jules Verne, Nantes",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  -1.5195280030733826,
+                  47.250359214560504
+                ],
+                [
+                  -1.5235191300875428,
+                  47.246936238469175
+                ],
+                [
+                  -1.519742579794574,
+                  47.245872885970805
+                ],
+                [
+                  -1.5195280030733826,
+                  47.24630988273188
+                ],
+                [
+                  -1.5195280030733826,
+                  47.24671774312294
+                ],
+                [
+                  -1.5209012940890076,
+                  47.24783934300538
+                ],
+                [
+                  -1.5216308549410584,
+                  47.24789760728541
+                ],
+                [
+                  -1.5222316697603944,
+                  47.24747518980306
+                ],
+                [
+                  -1.5224247888094666,
+                  47.2477665125652
+                ],
+                [
+                  -1.5210300401217225,
+                  47.24893178759107
+                ],
+                [
+                  -1.5205579713351014,
+                  47.24869873463681
+                ],
+                [
+                  -1.5191417649752381,
+                  47.25005513430485
+                ],
+                [
+                  -1.5195280030733826,
+                  47.250359214560504
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "1502",
+        "name": [
+          {
+            "text": "[FLEX] Procé",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.226858705601686,
+        "lon": -1.57813707226883,
+        "address": "Zone à proximité de la rue Branly - périmètre à voir dans l'appli",
+        "parking_type": "street_parking",
+        "capacity": 0,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  -1.5773444757235855,
+                  47.228471698253195
+                ],
+                [
+                  -1.578031121231398,
+                  47.227859695782286
+                ],
+                [
+                  -1.5790181741488785,
+                  47.22485786705097
+                ],
+                [
+                  -1.5783959016574234,
+                  47.22474128774886
+                ],
+                [
+                  -1.5777092561496109,
+                  47.22495987373
+                ],
+                [
+                  -1.5767436609042496,
+                  47.228034554352185
+                ],
+                [
+                  -1.5773444757235855,
+                  47.228471698253195
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "1527",
+        "name": [
+          {
+            "text": "Coeur Boisé",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.268033,
+        "lon": -1.51063,
+        "address": "Rue René Rivet",
+        "parking_type": "street_parking",
+        "capacity": 2,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  -1.5109670938353474,
+                  47.27083404107833
+                ],
+                [
+                  -1.5111667379543405,
+                  47.27056759352428
+                ],
+                [
+                  -1.5126694943335508,
+                  47.26838711607985
+                ],
+                [
+                  -1.5128931251167046,
+                  47.268033179204366
+                ],
+                [
+                  -1.5106109305122288,
+                  47.26681261500781
+                ],
+                [
+                  -1.5089645758864947,
+                  47.268010832981616
+                ],
+                [
+                  -1.5114843172841574,
+                  47.269547632919796
+                ],
+                [
+                  -1.510624147188821,
+                  47.270734091278314
+                ],
+                [
+                  -1.5109670938353474,
+                  47.27083404107833
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "1530",
+        "name": [
+          {
+            "text": "8 Mai",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.18989590834666,
+        "lon": -1.5508649436311162,
+        "address": "en face du 67 avenue de la Libération, Rezé",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1547",
+        "name": [
+          {
+            "text": "Le Cardo",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.26198375763297,
+        "lon": -1.5844317948190731,
+        "address": "Esplanade du Cardo, Orvault. Place située à côté de l'entrée du P+R Le Cardo",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1671",
+        "name": [
+          {
+            "text": "[FLEX] Babonneau ",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.2077112,
+        "lon": -1.5764446,
+        "address": "Rue Babonneau, 44100 Nantes ",
+        "parking_type": "street_parking",
+        "capacity": 0,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  -1.578657051651473,
+                  47.20740652447455
+                ],
+                [
+                  -1.5788394418644858,
+                  47.20712226844175
+                ],
+                [
+                  -1.5738183465886069,
+                  47.20709311389069
+                ],
+                [
+                  -1.5741509405064535,
+                  47.20849251426489
+                ],
+                [
+                  -1.578657051651473,
+                  47.20740652447455
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "1697",
+        "name": [
+          {
+            "text": "Prairie au Duc",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.2039501,
+        "lon": -1.568309,
+        "address": "90 boulevard de la Prairie au Duc, Nantes\nDevant la maison de l'Europe",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1701",
+        "name": [
+          {
+            "text": "Flex Bignon",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.2494923,
+        "lon": -1.5998671,
+        "address": "Avenue de la Morlière",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  -1.568734520895248,
+                  47.20386439512819
+                ],
+                [
+                  -1.5686757023529196,
+                  47.20387131142641
+                ],
+                [
+                  -1.5685603275192932,
+                  47.20388207011064
+                ],
+                [
+                  -1.5684166745400603,
+                  47.20389667117851
+                ],
+                [
+                  -1.5684268546717988,
+                  47.20394815912306
+                ],
+                [
+                  -1.5687469632794375,
+                  47.20391972548822
+                ],
+                [
+                  -1.568734520895248,
+                  47.20386439512819
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "station_id": "1717",
+        "name": [
+          {
+            "text": "Mairie d'Indre",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.2004267,
+        "lon": -1.6692036,
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": false
+      },
+      {
+        "station_id": "1822",
+        "name": [
+          {
+            "text": "[FLEX] Saint Jacques",
+            "language": "fr"
+          }
+        ],
+        "lat": 47.1963288,
+        "lon": -1.5384296,
+        "address": "Zone, rues : Saint Jacques, Frères Louis, Ledru Rollin, Jeannine, Hèlene Boucher",
+        "parking_type": "street_parking",
+        "capacity": 1,
+        "is_virtual_station": true,
+        "station_area": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  -1.5401825208322464,
+                  47.196925583855176
+                ],
+                [
+                  -1.5401734847562238,
+                  47.1969529834106
+                ],
+                [
+                  -1.5384730472622152,
+                  47.196287519380775
+                ],
+                [
+                  -1.5387432027961836,
+                  47.19604543218509
+                ],
+                [
+                  -1.5377361634903366,
+                  47.19400547853715
+                ],
+                [
+                  -1.5375651568159299,
+                  47.19400547853715
+                ],
+                [
+                  -1.5366090216507473,
+                  47.194588820484284
+                ],
+                [
+                  -1.5359615876823511,
+                  47.19474308431913
+                ],
+                [
+                  -1.536264284083387,
+                  47.19566865791191
+                ],
+                [
+                  -1.5401068467313053,
+                  47.197022708711785
+                ],
+                [
+                  -1.5401825208322464,
+                  47.196925583855176
+                ]
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

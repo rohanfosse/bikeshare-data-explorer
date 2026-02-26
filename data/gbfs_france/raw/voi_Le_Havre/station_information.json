@@ -1,0 +1,3769 @@
+{
+  "last_updated": 1771749861,
+  "ttl": 21600,
+  "version": "2.3",
+  "data": {
+    "stations": [
+      {
+        "station_id": "e4610062-6294-4b7c-83e4-1601b4dd6157",
+        "name": "TV_080",
+        "lat": 49.518265,
+        "lon": 0.069768,
+        "is_virtual_station": true,
+        "capacity": 11
+      },
+      {
+        "station_id": "b72851b3-0d1f-49f7-883c-0fcb52184756",
+        "name": "T_124",
+        "lat": 49.48713,
+        "lon": 0.11212,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "a798c106-2104-4c11-ad07-e306563255ff",
+        "name": "TV_067",
+        "lat": 49.52385,
+        "lon": 0.125518,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "1c3f9ccf-80ed-4d71-bef7-36611e351314",
+        "name": "TV_105",
+        "lat": 49.50301,
+        "lon": 0.09478,
+        "is_virtual_station": true,
+        "capacity": 10
+      },
+      {
+        "station_id": "715a3020-eba6-417f-a01b-f53338146562",
+        "name": "TV_002",
+        "lat": 49.516533,
+        "lon": 0.168909,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "b4340a2b-9ed0-4109-86bc-40d38301a4ad",
+        "name": "TV_062",
+        "lat": 49.526447,
+        "lon": 0.104172,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "42f10026-4cae-4b44-9e13-9f68782c5f70",
+        "name": "TV_020",
+        "lat": 49.497926,
+        "lon": 0.163257,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "011d6cc1-3631-4dbf-8213-2a90382c9a70",
+        "name": "TV_022",
+        "lat": 49.500017,
+        "lon": 0.16119,
+        "is_virtual_station": true,
+        "capacity": 10
+      },
+      {
+        "station_id": "70eb6d7a-4750-44a3-8bd4-b6ddfaf8e507",
+        "name": "T_042",
+        "lat": 49.50039,
+        "lon": 0.10566,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "8cd7183d-634f-4cad-9cf9-8ab9879aa26c",
+        "name": "T_030",
+        "lat": 49.504285,
+        "lon": 0.130516,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "178d2d77-cfac-49d3-bf3d-cc4a8f5a0836",
+        "name": "TV_004",
+        "lat": 49.51057,
+        "lon": 0.175051,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "d6faed91-48b7-4f34-bcf6-6bf583a1c081",
+        "name": "TV_044",
+        "lat": 49.557137,
+        "lon": 0.118262,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "cfa10d44-c460-4aa9-b3e2-de81e57b6599",
+        "name": "TV_112",
+        "lat": 49.49974,
+        "lon": 0.09239,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "abb310c9-e971-4ab3-83b0-bd2bfefd503d",
+        "name": "TV_101",
+        "lat": 49.50339,
+        "lon": 0.10709,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "6892a8e8-1fd2-48a2-8d5c-4e59ec634b57",
+        "name": "TV_111",
+        "lat": 49.501401,
+        "lon": 0.16975,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "0ddd0e25-f31e-4f67-8ab5-d8546520cdc4",
+        "name": "TV_078",
+        "lat": 49.520375,
+        "lon": 0.080127,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "32d32722-455f-479b-a609-0d083a73c18d",
+        "name": "TV_007",
+        "lat": 49.507048,
+        "lon": 0.169253,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "7c1bfe9c-d28a-4561-865a-28fc3a6526ba",
+        "name": "TV_141",
+        "lat": 49.524107,
+        "lon": 0.129634,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "61ee3dcc-60b4-4d29-aca3-1efb55aa15da",
+        "name": "TV_008",
+        "lat": 49.509183,
+        "lon": 0.163277,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "976cf36f-1803-4fc7-8541-7ec9c2ea3014",
+        "name": "TV_093",
+        "lat": 49.510861,
+        "lon": 0.096989,
+        "is_virtual_station": true,
+        "capacity": 10
+      },
+      {
+        "station_id": "f043d10b-1db4-46f5-b4b9-c98224483785",
+        "name": "TV_087",
+        "lat": 49.51001,
+        "lon": 0.118308,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "5c13b883-2856-4f8c-9d04-182ec1f94714",
+        "name": "T_044",
+        "lat": 49.50089,
+        "lon": 0.11291,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "b096300b-9068-42ce-a0fb-efd39850be8c",
+        "name": "TV_061",
+        "lat": 49.526281,
+        "lon": 0.100239,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "2d7f7362-1f3f-4b7e-affb-126ab476cf98",
+        "name": "TV_095",
+        "lat": 49.510633,
+        "lon": 0.109886,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "e5db88ad-21c4-4fcf-b570-c56a7d1a05e9",
+        "name": "TV_106",
+        "lat": 49.502161,
+        "lon": 0.098831,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "1cd73920-5a05-4e5a-a040-1906d630d4e4",
+        "name": "TV_154",
+        "lat": 49.487366,
+        "lon": 0.114427,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "7d7f5d60-e996-47f5-b441-22934702445f",
+        "name": "TV_094",
+        "lat": 49.510735,
+        "lon": 0.102795,
+        "is_virtual_station": true,
+        "capacity": 10
+      },
+      {
+        "station_id": "39daafdd-4910-466d-adaa-7283c9570dc5",
+        "name": "TV_136",
+        "lat": 49.47896,
+        "lon": 0.156224,
+        "is_virtual_station": true,
+        "capacity": 10
+      },
+      {
+        "station_id": "5a7e9b53-0027-4509-969e-555987619c68",
+        "name": "TV_108",
+        "lat": 49.502357,
+        "lon": 0.172907,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "1b89b160-a0cd-4a39-ba22-3d805356fce9",
+        "name": "TV_012",
+        "lat": 49.506265,
+        "lon": 0.160661,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "f3ae87bb-4206-4ed9-bdf6-399f75ed8f24",
+        "name": "TV_026",
+        "lat": 49.490073,
+        "lon": 0.14968,
+        "is_virtual_station": true,
+        "capacity": 10
+      },
+      {
+        "station_id": "5659cdbe-f328-489d-9589-ea5e0eb15710",
+        "name": "TV_083",
+        "lat": 49.515481,
+        "lon": 0.105208,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "27d63df1-6860-4567-85d5-f089468ce119",
+        "name": "TV_009",
+        "lat": 49.509381,
+        "lon": 0.158258,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "711a1eb8-6c44-46f9-a636-9dc50c1e7cd0",
+        "name": "TV_013",
+        "lat": 49.502309,
+        "lon": 0.161832,
+        "is_virtual_station": true,
+        "capacity": 10
+      },
+      {
+        "station_id": "a36f766b-4a34-4a3e-a048-fa033e334136",
+        "name": "TV_069",
+        "lat": 49.521324,
+        "lon": 0.122048,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "e88b4c16-28a2-4d89-b2b7-bddc36265f14",
+        "name": "TV_138",
+        "lat": 49.513988,
+        "lon": 0.161648,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "13a2a9e0-ad0e-44d4-871a-0becbc687236",
+        "name": "TV_079",
+        "lat": 49.521094,
+        "lon": 0.073581,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "33d6cf7d-23bd-46bc-8666-836c691d22b5",
+        "name": "TV_068",
+        "lat": 49.520992,
+        "lon": 0.129223,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "1537aae5-b273-4fd6-a705-6b47891d1649",
+        "name": "TV_030",
+        "lat": 49.489298,
+        "lon": 0.154275,
+        "is_virtual_station": true,
+        "capacity": 10
+      },
+      {
+        "station_id": "e513d060-84d4-4969-9759-9ed7af5d7a55",
+        "name": "TV_071",
+        "lat": 49.520155,
+        "lon": 0.111816,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "460a6a74-7b83-4e2d-99d3-d530fb55ee4a",
+        "name": "TV_104",
+        "lat": 49.50926,
+        "lon": 0.08836,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "21e3980e-f034-48f1-a8c8-6f2a8dd8d2fd",
+        "name": "TV_107",
+        "lat": 49.496204,
+        "lon": 0.157367,
+        "is_virtual_station": true,
+        "capacity": 10
+      },
+      {
+        "station_id": "117214fa-a9a6-4c71-91bd-47bbea5415cd",
+        "name": "TV_084",
+        "lat": 49.517861,
+        "lon": 0.105763,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "14ae1474-7242-41c0-b517-71a13dfafeb4",
+        "name": "TV_103",
+        "lat": 49.50627,
+        "lon": 0.09464,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "67732d34-4112-4d15-8b06-541db0044034",
+        "name": "TV_073",
+        "lat": 49.518841,
+        "lon": 0.116046,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "3fbd5784-e2eb-4ebd-bdb6-eb5d7e04c4c6",
+        "name": "T_172",
+        "lat": 49.49644,
+        "lon": 0.14697,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "a1fe5a04-b752-4ffe-9921-69addb779959",
+        "name": "TV_065",
+        "lat": 49.525868,
+        "lon": 0.115308,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "7c0bb7dc-2d78-4c25-905d-a1e3d5455c6d",
+        "name": "TV_005",
+        "lat": 49.51044,
+        "lon": 0.1698,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "d3a85413-8b62-42ff-af93-a822cb1004ea",
+        "name": "T_007",
+        "lat": 49.48455,
+        "lon": 0.130899,
+        "is_virtual_station": true,
+        "capacity": 10
+      },
+      {
+        "station_id": "4bd1a805-ecb2-470c-8916-5e5a1cc567c3",
+        "name": "T_038",
+        "lat": 49.50091,
+        "lon": 0.09128,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "3ebfdfee-ea9e-40c8-8794-eb154596269b",
+        "name": "TV_092",
+        "lat": 49.511636,
+        "lon": 0.089607,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "ce3f5ea1-c133-46b1-976b-4553a2fcacbd",
+        "name": "TV_027",
+        "lat": 49.487119,
+        "lon": 0.14584,
+        "is_virtual_station": true,
+        "capacity": 10
+      },
+      {
+        "station_id": "e802bad7-aa44-4233-b24e-817735e3e112",
+        "name": "TV_085",
+        "lat": 49.513076,
+        "lon": 0.111281,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "61e0b9f0-56fc-44b3-ba14-c3721820e48c",
+        "name": "TV_001",
+        "lat": 49.514233,
+        "lon": 0.164148,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "f2406c3d-e8f6-4cf1-96ba-ad2a518e6a78",
+        "name": "V_146",
+        "lat": 49.490007,
+        "lon": 0.106206,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "57968a05-44a3-4f7a-81cf-fdce9ed6fe3c",
+        "name": "V_141",
+        "lat": 49.485053,
+        "lon": 0.105833,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "fc67ad89-9b99-4189-b7ec-b9849dd20c21",
+        "name": "V_015",
+        "lat": 49.487761,
+        "lon": 0.113858,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "7732699c-ff52-4932-b34c-564354e7b850",
+        "name": "TV_144",
+        "lat": 49.492607,
+        "lon": 0.139849,
+        "is_virtual_station": true,
+        "capacity": 20
+      },
+      {
+        "station_id": "26589b61-315b-4bf0-9c60-1e93a5ef548b",
+        "name": "T_196",
+        "lat": 49.489756,
+        "lon": 0.116297,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "f131e332-f5c2-46c0-91b6-ff8d60562980",
+        "name": "T_129",
+        "lat": 49.48624,
+        "lon": 0.10468,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "435abca1-a2c1-4e28-8fac-b366d54a5597",
+        "name": "T_113",
+        "lat": 49.49153,
+        "lon": 0.11443,
+        "is_virtual_station": true,
+        "capacity": 20
+      },
+      {
+        "station_id": "5f87040d-42da-4876-92e4-4fd607070a09",
+        "name": "T_177",
+        "lat": 49.488791,
+        "lon": 0.115762,
+        "is_virtual_station": true,
+        "capacity": 10
+      },
+      {
+        "station_id": "20b47805-d205-4e52-9429-0446540928c2",
+        "name": "T_009",
+        "lat": 49.488514,
+        "lon": 0.130377,
+        "is_virtual_station": true,
+        "capacity": 20
+      },
+      {
+        "station_id": "d72ed679-b7bd-4ed4-b9c3-e770c033ddd7",
+        "name": "T_106",
+        "lat": 49.49254,
+        "lon": 0.10527,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "27edfaa3-69fe-4442-a2ee-93500706d733",
+        "name": "T_184",
+        "lat": 49.48856,
+        "lon": 0.108025,
+        "is_virtual_station": true,
+        "capacity": 10
+      },
+      {
+        "station_id": "b892e81c-def8-4000-b681-939b478c0266",
+        "name": "TV_014",
+        "lat": 49.50415,
+        "lon": 0.156947,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "510d9f17-8f8d-4915-8301-cef5613116ce",
+        "name": "T_188",
+        "lat": 49.495229,
+        "lon": 0.094471,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "a836d912-6323-4d50-91ab-c1d9d0eb13fc",
+        "name": "V_023",
+        "lat": 49.488337,
+        "lon": 0.107419,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "ad4f238c-5e97-4202-8c9c-52395fa32087",
+        "name": "T_195",
+        "lat": 49.488087,
+        "lon": 0.125094,
+        "is_virtual_station": true,
+        "capacity": 20
+      },
+      {
+        "station_id": "89de9231-a90a-4d3e-8d13-32fe53353d52",
+        "name": "V_003",
+        "lat": 49.497527,
+        "lon": 0.092073,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "a73d5306-740d-4b33-8776-930275f60e99",
+        "name": "V_184",
+        "lat": 49.488623,
+        "lon": 0.107711,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "81966524-364c-485c-b8ce-d6d874cda8d7",
+        "name": "T_043",
+        "lat": 49.50103,
+        "lon": 0.11025,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "b25ad848-d911-4ed5-91e9-5d4065aa16e2",
+        "name": "T_061",
+        "lat": 49.49795,
+        "lon": 0.11177,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "e66f3c32-ffaa-4355-bd6b-92d248a286bd",
+        "name": "TV_035",
+        "lat": 49.504434,
+        "lon": 0.144097,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "9ee433e9-6f57-48ec-a9ed-8465755fe19e",
+        "name": "T_084",
+        "lat": 49.494391,
+        "lon": 0.10671,
+        "is_virtual_station": true,
+        "capacity": 20
+      },
+      {
+        "station_id": "d8754226-2b56-4ce5-b1e1-587739aed7b0",
+        "name": "T_108",
+        "lat": 49.492104,
+        "lon": 0.110954,
+        "is_virtual_station": true,
+        "capacity": 10
+      },
+      {
+        "station_id": "45b2ad5c-dbda-4bfe-bf06-e4108cfaff6f",
+        "name": "T_121",
+        "lat": 49.488864,
+        "lon": 0.113502,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "9dce8141-3448-4261-8278-9ab678654cd4",
+        "name": "TV_028",
+        "lat": 49.50196,
+        "lon": 0.08675,
+        "is_virtual_station": true,
+        "capacity": 10
+      },
+      {
+        "station_id": "3e417248-d275-4845-8464-86ffe5dee4b5",
+        "name": "V_195",
+        "lat": 49.488075,
+        "lon": 0.125038,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "1ed986e6-fe6b-4a0b-af9b-cbcc41e78ff9",
+        "name": "V_060",
+        "lat": 49.494047,
+        "lon": 0.108881,
+        "is_virtual_station": true,
+        "capacity": 4
+      },
+      {
+        "station_id": "348d3654-640b-4d34-b13c-eb98bb6bc207",
+        "name": "T_003",
+        "lat": 49.4888,
+        "lon": 0.105088,
+        "is_virtual_station": true,
+        "capacity": 20
+      },
+      {
+        "station_id": "3d7e764f-d698-49bd-81e6-f3826e5f0274",
+        "name": "T_083",
+        "lat": 49.49399,
+        "lon": 0.10887,
+        "is_virtual_station": true,
+        "capacity": 4
+      },
+      {
+        "station_id": "99a31b83-945e-481f-a89f-85f4d54917cc",
+        "name": "V_188",
+        "lat": 49.495256,
+        "lon": 0.094522,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "387d6bd2-2195-4be2-b4c7-c76fc58ab0ba",
+        "name": "V_004",
+        "lat": 49.495639,
+        "lon": 0.093485,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "e2c9f734-27d7-476a-b9fa-e07d0c2f47b3",
+        "name": "V_017",
+        "lat": 49.488644,
+        "lon": 0.111434,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "60c11731-d0c4-4c1b-ad11-6955d47f2eaf",
+        "name": "T_135",
+        "lat": 49.489849,
+        "lon": 0.131503,
+        "is_virtual_station": true,
+        "capacity": 20
+      },
+      {
+        "station_id": "4967b82b-c423-43c0-999c-58af079152e3",
+        "name": "V_093",
+        "lat": 49.501003,
+        "lon": 0.110103,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "925bc217-8e39-40f4-bf69-278cc78339b5",
+        "name": "V_058",
+        "lat": 49.494458,
+        "lon": 0.106715,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "531c215f-7663-4311-884a-955568e1eb5c",
+        "name": "T_094",
+        "lat": 49.489514,
+        "lon": 0.097745,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "c2d870c1-6e5a-4dc6-9f89-4baf870253d1",
+        "name": "V_170",
+        "lat": 49.484351,
+        "lon": 0.102811,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "a9809d7f-a976-4c31-afaf-ce98afee1040",
+        "name": "T_087",
+        "lat": 49.49306,
+        "lon": 0.10199,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "8fd08a89-a85e-4e60-bff3-853c3669e301",
+        "name": "V_059",
+        "lat": 49.494535,
+        "lon": 0.108444,
+        "is_virtual_station": true,
+        "capacity": 6
+      },
+      {
+        "station_id": "3b6e8482-b672-4b7e-9863-b5dfb53eb0c3",
+        "name": "V_087",
+        "lat": 49.491148,
+        "lon": 0.131354,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "d86c85f9-7f0e-4c7a-b870-619734826a0d",
+        "name": "V_034",
+        "lat": 49.493141,
+        "lon": 0.101793,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "093d1925-274b-4883-9a0f-77d519381658",
+        "name": "T_026",
+        "lat": 49.5043,
+        "lon": 0.134533,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "dafbfaac-ebe2-4c53-b074-1a0a5c10d6b2",
+        "name": "T_091",
+        "lat": 49.49351,
+        "lon": 0.09616,
+        "is_virtual_station": true,
+        "capacity": 20
+      },
+      {
+        "station_id": "69556fb9-843a-4f65-a6ee-3a07b219c587",
+        "name": "T_086",
+        "lat": 49.49378,
+        "lon": 0.10368,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "c61db78f-b221-4c64-abcc-77d15e3f6ae6",
+        "name": "TV_117",
+        "lat": 49.514387,
+        "lon": 0.156157,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "25ce970f-ca94-429c-8052-875c393cd32e",
+        "name": "TV_131",
+        "lat": 49.518789,
+        "lon": 0.174341,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "1d2ad390-f368-481d-9c21-23b9dc6255e1",
+        "name": "V_035",
+        "lat": 49.491188,
+        "lon": 0.107116,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "f602b901-e715-448e-95be-bc45b4e85bd7",
+        "name": "T_073",
+        "lat": 49.501596,
+        "lon": 0.125968,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "05553e69-a4e1-4e9f-b1a8-e02777f60651",
+        "name": "T_126",
+        "lat": 49.48828,
+        "lon": 0.10741,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "9b21455b-93a1-41bb-8902-e119a2b0a983",
+        "name": "V_169",
+        "lat": 49.501147,
+        "lon": 0.087545,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "dcfc1a07-a557-43e0-87dd-5c9ce591ea8c",
+        "name": "T_011",
+        "lat": 49.490084,
+        "lon": 0.126513,
+        "is_virtual_station": true,
+        "capacity": 20
+      },
+      {
+        "station_id": "6bd6494a-72ac-4ccf-89ba-33ddca596af0",
+        "name": "V_036",
+        "lat": 49.491472,
+        "lon": 0.107357,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "5b542198-d449-4f7a-b8b4-d94d35476732",
+        "name": "V_053",
+        "lat": 49.495436,
+        "lon": 0.09981,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "0dd481b0-4b26-4168-9a03-356dfb97774d",
+        "name": "TV_096",
+        "lat": 49.507111,
+        "lon": 0.107514,
+        "is_virtual_station": true,
+        "capacity": 10
+      },
+      {
+        "station_id": "26dfbd63-5667-4f77-80dc-21cebe9b7794",
+        "name": "T_104",
+        "lat": 49.491209,
+        "lon": 0.107042,
+        "is_virtual_station": true,
+        "capacity": 20
+      },
+      {
+        "station_id": "3a6ee5a6-1868-4249-9a63-99d2e7c99726",
+        "name": "V_032",
+        "lat": 49.491863,
+        "lon": 0.103803,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "30c5f5a8-b725-4f99-ab27-c1bc92cda9b6",
+        "name": "T_145",
+        "lat": 49.488857,
+        "lon": 0.127721,
+        "is_virtual_station": true,
+        "capacity": 20
+      },
+      {
+        "station_id": "f70a3966-63b6-446d-9753-b83c9974dc6b",
+        "name": "V_080",
+        "lat": 49.490043,
+        "lon": 0.126385,
+        "is_virtual_station": true,
+        "capacity": 10
+      },
+      {
+        "station_id": "8f11bfbe-4727-4a8d-a0a5-4823b305354b",
+        "name": "T_099",
+        "lat": 49.491863,
+        "lon": 0.103731,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "f0e949c6-a7fe-4acc-9710-ddd84db97adf",
+        "name": "TV_113",
+        "lat": 49.490756,
+        "lon": 0.105059,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "b5785cd8-3d56-4fce-afed-7cb3ea19b134",
+        "name": "TV_118",
+        "lat": 49.512446,
+        "lon": 0.160587,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "79e33ef8-df6c-4db4-9c7e-0c8ccf5a0ec4",
+        "name": "T_101",
+        "lat": 49.490513,
+        "lon": 0.104092,
+        "is_virtual_station": true,
+        "capacity": 20
+      },
+      {
+        "station_id": "a93c7fcc-8e85-412c-96ba-41bdc2c1a072",
+        "name": "V_063",
+        "lat": 49.491478,
+        "lon": 0.114163,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "336386fc-42a9-448b-b0a7-1bc4e4884a73",
+        "name": "T_082",
+        "lat": 49.49454,
+        "lon": 0.10857,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "dd55de31-9922-48bd-b317-07ac2fafe4f6",
+        "name": "V_095",
+        "lat": 49.497961,
+        "lon": 0.111846,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "4257a35c-29d3-47a9-9239-cec7c7002d5e",
+        "name": "TV_139",
+        "lat": 49.495955,
+        "lon": 0.096752,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "435cddb6-2844-4641-a63f-a243b6961d36",
+        "name": "V_007",
+        "lat": 49.489521,
+        "lon": 0.09784,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "bbd85dc5-cb85-496d-ac9c-73b963238752",
+        "name": "V_039",
+        "lat": 49.493704,
+        "lon": 0.103869,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "ed6e55b3-d8ce-450a-bd76-90fde50e8aaa",
+        "name": "V_138",
+        "lat": 49.485788,
+        "lon": 0.108564,
+        "is_virtual_station": true,
+        "capacity": 10
+      },
+      {
+        "station_id": "4546736c-d7a3-4eed-ac2e-2b9692918c0c",
+        "name": "T_031",
+        "lat": 49.503813,
+        "lon": 0.125461,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "3c4b90f2-7fbd-48bb-a347-c50cb17f6c9e",
+        "name": "V_005",
+        "lat": 49.493523,
+        "lon": 0.096337,
+        "is_virtual_station": true,
+        "capacity": 10
+      },
+      {
+        "station_id": "4c6a1f92-fc30-4edc-b266-9d6efcd7fbe3",
+        "name": "T_103",
+        "lat": 49.489854,
+        "lon": 0.105167,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "b6df63b4-4d12-47d3-969d-3a5bf5848896",
+        "name": "TV_115",
+        "lat": 49.503626,
+        "lon": 0.123792,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "08503afb-4cfd-45a2-a067-b21a5209faa8",
+        "name": "V_029",
+        "lat": 49.491804,
+        "lon": 0.101906,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "97f81782-1654-4340-bf7a-598c19263401",
+        "name": "V_048",
+        "lat": 49.489887,
+        "lon": 0.131674,
+        "is_virtual_station": true,
+        "capacity": 20
+      },
+      {
+        "station_id": "5443fb05-b5b3-4367-8cde-fddac2a39054",
+        "name": "V_122",
+        "lat": 49.503799,
+        "lon": 0.125375,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "04fb7344-8434-41e5-a5ea-914584c90141",
+        "name": "V_038",
+        "lat": 49.492435,
+        "lon": 0.108366,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "a35955b7-5389-4b9c-85b6-6e7d4b92b9cb",
+        "name": "T_045",
+        "lat": 49.49743,
+        "lon": 0.09216,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "f03c0a75-ffcc-4084-b68b-e5747ae35661",
+        "name": "T_139",
+        "lat": 49.485762,
+        "lon": 0.108475,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "ed118a6f-9f69-425f-9530-fd5e93a23b6b",
+        "name": "V_196",
+        "lat": 49.489793,
+        "lon": 0.116343,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "863ca1a4-b328-4b6c-bc5f-064270cf22d4",
+        "name": "T_035",
+        "lat": 49.50207,
+        "lon": 0.08547,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "974a7a90-a4b0-4b86-a75e-83559e8c66d0",
+        "name": "V_024",
+        "lat": 49.489181,
+        "lon": 0.108056,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "b9313683-9fd8-47e7-8bf7-e08a53d0c502",
+        "name": "TV_146",
+        "lat": 49.502828,
+        "lon": 0.130545,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "9e1f8947-c265-46a7-be73-b1a1d6582c1e",
+        "name": "T_123",
+        "lat": 49.4878,
+        "lon": 0.11366,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "09371bae-7a28-454e-ba28-bc699cd9ae28",
+        "name": "V_120",
+        "lat": 49.504273,
+        "lon": 0.13452,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "795797d3-17a4-4e97-af66-2b4a7f5c7881",
+        "name": "V_185",
+        "lat": 49.487337,
+        "lon": 0.106631,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "0cb53019-e85a-4385-bf48-13145cb222df",
+        "name": "V_008",
+        "lat": 49.48864,
+        "lon": 0.09808,
+        "is_virtual_station": true,
+        "capacity": 10
+      },
+      {
+        "station_id": "b8032024-54ac-43b5-ab00-4b3270db3e79",
+        "name": "T_012",
+        "lat": 49.491179,
+        "lon": 0.131337,
+        "is_virtual_station": true,
+        "capacity": 20
+      },
+      {
+        "station_id": "00ec1f92-3469-4700-87a6-a2c9c5e519eb",
+        "name": "TV_116",
+        "lat": 49.503033,
+        "lon": 0.120483,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "4a5133d4-74ae-42c6-bf7f-6623e0ad4f25",
+        "name": "T_056",
+        "lat": 49.49551,
+        "lon": 0.09973,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "75d4107d-0db5-431c-b996-6659809bbef7",
+        "name": "V_037",
+        "lat": 49.49295,
+        "lon": 0.1054,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "45bd49ee-3709-47fb-872b-b0ad27d56da6",
+        "name": "V_061",
+        "lat": 49.492254,
+        "lon": 0.111162,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "a71d43dc-7ee9-420f-a679-d74f6dcdcf00",
+        "name": "T_054",
+        "lat": 49.495228,
+        "lon": 0.102457,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "c2c653e1-dc6f-4048-943d-1906e71bf624",
+        "name": "V_040",
+        "lat": 49.495229,
+        "lon": 0.102378,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "d228508a-112f-4081-833b-6aae6a23d7e3",
+        "name": "T_127",
+        "lat": 49.4868,
+        "lon": 0.10715,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "a149bcf4-5b38-48f8-b392-bff17342ab71",
+        "name": "V_086",
+        "lat": 49.488526,
+        "lon": 0.13043,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "26a1fefc-31da-4e09-a14f-b96120fee7d7",
+        "name": "T_125",
+        "lat": 49.48925,
+        "lon": 0.10776,
+        "is_virtual_station": true,
+        "capacity": 10
+      },
+      {
+        "station_id": "a6f30624-4e41-46c1-bc46-1e74670ac053",
+        "name": "V_013",
+        "lat": 49.486739,
+        "lon": 0.107145,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "0a7e3b4f-e407-41b4-8bd3-7f6225f78e3d",
+        "name": "T_025",
+        "lat": 49.502463,
+        "lon": 0.134098,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "9a36bb23-7a1b-48fc-bd8b-721744428c93",
+        "name": "V_081",
+        "lat": 49.487434,
+        "lon": 0.125527,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "50e3ba10-080a-47b1-a78b-cad969dbe664",
+        "name": "V_057",
+        "lat": 49.49486,
+        "lon": 0.105295,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "ac70362f-e9a7-46fe-82df-de6923ce4986",
+        "name": "V_177",
+        "lat": 49.488824,
+        "lon": 0.115815,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "b8307c22-6b76-4cfc-bd6f-0aa06a55fb5a",
+        "name": "T_008",
+        "lat": 49.487463,
+        "lon": 0.125659,
+        "is_virtual_station": true,
+        "capacity": 20
+      },
+      {
+        "station_id": "0d3b7883-54b7-4e60-adc6-9fb4aaf1decc",
+        "name": "T_107",
+        "lat": 49.492449,
+        "lon": 0.108224,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "164dabbd-6551-425f-b5ed-a5e16648060d",
+        "name": "V_164",
+        "lat": 49.491892,
+        "lon": 0.126695,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "a3daadee-9207-4a64-b2d8-61cdf3751b28",
+        "name": "T_136",
+        "lat": 49.492147,
+        "lon": 0.132998,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "bf7108a1-e5a1-4781-9066-a71e8a4a6bfc",
+        "name": "V_088",
+        "lat": 49.492217,
+        "lon": 0.132927,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "3d9b21ca-f373-43d8-9319-1776cd02b772",
+        "name": "TV_034",
+        "lat": 49.506194,
+        "lon": 0.143798,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "42ada374-e8aa-480e-bc33-1f20269786ce",
+        "name": "T_034",
+        "lat": 49.50245,
+        "lon": 0.11814,
+        "is_virtual_station": true,
+        "capacity": 10
+      },
+      {
+        "station_id": "48adea8e-5b92-4591-8369-529ec286720c",
+        "name": "T_133",
+        "lat": 49.48778,
+        "lon": 0.10163,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "c1681a9e-191a-4cbc-8df9-b4e97578d185",
+        "name": "TV_102",
+        "lat": 49.50562,
+        "lon": 0.10156,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "202896ba-d962-472d-a62f-0284a7b2cc11",
+        "name": "TV_036",
+        "lat": 49.500794,
+        "lon": 0.144397,
+        "is_virtual_station": true,
+        "capacity": 10
+      },
+      {
+        "station_id": "c46d2571-1e16-427c-9e29-e0a5a44c6495",
+        "name": "TV_006",
+        "lat": 49.50743,
+        "lon": 0.176768,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "5ddbe1ab-a708-463c-aa9a-8fb8d96f537b",
+        "name": "V_116",
+        "lat": 49.499095,
+        "lon": 0.128566,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "32a3a422-1560-45c8-9a2c-839390f8b8f0",
+        "name": "TV_031",
+        "lat": 49.498544,
+        "lon": 0.133037,
+        "is_virtual_station": true,
+        "capacity": 10
+      },
+      {
+        "station_id": "83e7693f-10af-48fa-9ca1-e79475c8c713",
+        "name": "TV_018",
+        "lat": 49.498886,
+        "lon": 0.171438,
+        "is_virtual_station": true,
+        "capacity": 90
+      },
+      {
+        "station_id": "8ecbf0d1-203b-4996-bc88-ea73e3e98502",
+        "name": "T_072",
+        "lat": 49.498353,
+        "lon": 0.122867,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "2de83df8-0ca7-4767-a296-4b950cb96f85",
+        "name": "V_091",
+        "lat": 49.498368,
+        "lon": 0.105789,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "2480a9dc-b2a7-4e59-96c0-6f2a10b4e9b8",
+        "name": "TV_074",
+        "lat": 49.515529,
+        "lon": 0.12107,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "34eac6c3-4192-4ec8-a3e7-038ae20fb6f2",
+        "name": "TV_089",
+        "lat": 49.512269,
+        "lon": 0.126107,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "68b3d291-4448-4126-a6c1-52cb96195b5f",
+        "name": "T_050",
+        "lat": 49.49727,
+        "lon": 0.10337,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "90cb5a50-985b-4ea5-8887-95b045b7dbef",
+        "name": "TV_024",
+        "lat": 49.501285,
+        "lon": 0.149882,
+        "is_virtual_station": true,
+        "capacity": 10
+      },
+      {
+        "station_id": "8681c347-4956-4201-97a2-a036dd77448e",
+        "name": "T_116",
+        "lat": 49.49234,
+        "lon": 0.11913,
+        "is_virtual_station": true,
+        "capacity": 20
+      },
+      {
+        "station_id": "db16e77f-ea0e-43ad-8821-09848657cbf6",
+        "name": "V_098",
+        "lat": 49.498204,
+        "lon": 0.113197,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "dc3ac697-3c9a-4406-a4f3-717b6ee5af59",
+        "name": "TV_076",
+        "lat": 49.522772,
+        "lon": 0.092383,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "4876eec0-fb6a-4bd8-95e1-3661dd07c304",
+        "name": "V_067",
+        "lat": 49.490913,
+        "lon": 0.11889,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "23d37b72-8fb7-49c8-b8b4-95e9b57a98a6",
+        "name": "T_120",
+        "lat": 49.49086,
+        "lon": 0.11888,
+        "is_virtual_station": true,
+        "capacity": 10
+      },
+      {
+        "station_id": "d8fcba97-41a5-404d-ba62-63fa9a6fde82",
+        "name": "TV_059",
+        "lat": 49.531619,
+        "lon": 0.092765,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "675955db-55a0-4859-b309-6ac634215131",
+        "name": "V_021",
+        "lat": 49.491327,
+        "lon": 0.100885,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "466d2c2e-edbe-4e2d-8eba-a13454ec84c1",
+        "name": "V_043",
+        "lat": 49.495644,
+        "lon": 0.096555,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "658e6e69-fd11-4cd8-8d23-d5c522661747",
+        "name": "V_082",
+        "lat": 49.484472,
+        "lon": 0.130759,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "2312a1bb-92b6-424b-adb3-99fa5482e24e",
+        "name": "V_019",
+        "lat": 49.489322,
+        "lon": 0.101849,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "b0884c5d-5882-465d-89af-72b492fa3583",
+        "name": "T_170",
+        "lat": 49.501179,
+        "lon": 0.08749,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "8daf4e8d-0da0-46dc-b056-f0cbf62fb20b",
+        "name": "V_014",
+        "lat": 49.487067,
+        "lon": 0.112208,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "b441bf7f-fa3a-4797-aea2-319434920530",
+        "name": "V_113",
+        "lat": 49.497412,
+        "lon": 0.125767,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "913b112a-7663-4405-a784-52b644b002bf",
+        "name": "V_049",
+        "lat": 49.49918,
+        "lon": 0.094701,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "8cc35722-1361-4484-8277-172ab190b242",
+        "name": "T_069",
+        "lat": 49.5013,
+        "lon": 0.12015,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "fbb2c9ef-1a3f-46b6-a1a5-11e0c60f76f4",
+        "name": "T_023",
+        "lat": 49.500145,
+        "lon": 0.129745,
+        "is_virtual_station": true,
+        "capacity": 20
+      },
+      {
+        "station_id": "989154fc-57e2-4cd7-a8e6-51cdc2dbb0a3",
+        "name": "TV_015",
+        "lat": 49.504725,
+        "lon": 0.150771,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "a11f5db4-d304-4c7d-bad4-17cd75b9f610",
+        "name": "V_072",
+        "lat": 49.493756,
+        "lon": 0.114369,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "f4f1bfb6-caf8-41fb-a4b2-ddea1621846f",
+        "name": "V_135",
+        "lat": 49.508689,
+        "lon": 0.137354,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "f355c265-32c2-4eb9-85b0-4c65db546966",
+        "name": "V_006",
+        "lat": 49.492825,
+        "lon": 0.096301,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "8c52b9f9-9fea-4cfd-b60d-997680e29367",
+        "name": "TV_066",
+        "lat": 49.525132,
+        "lon": 0.122383,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "35982cd9-42ed-4a7a-8fe0-c2835b0e623c",
+        "name": "TV_051",
+        "lat": 49.555778,
+        "lon": 0.129371,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "9755024f-048c-4815-94f5-eda7524ad5b6",
+        "name": "TV_110",
+        "lat": 49.506065,
+        "lon": 0.181519,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "f16ac7ea-a3f3-48d0-aa4f-999c837b9613",
+        "name": "TV_148",
+        "lat": 49.52925,
+        "lon": 0.114916,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "1cb4379b-c52a-4091-834d-85605c188668",
+        "name": "V_168",
+        "lat": 49.494848,
+        "lon": 0.116219,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "a16249a9-a18d-4340-a59e-365d5e4e0be2",
+        "name": "V_089",
+        "lat": 49.491343,
+        "lon": 0.133254,
+        "is_virtual_station": true,
+        "capacity": 10
+      },
+      {
+        "station_id": "b03236e6-7e13-40f9-8a07-5cdb64fc6afd",
+        "name": "T_019",
+        "lat": 49.496632,
+        "lon": 0.127724,
+        "is_virtual_station": true,
+        "capacity": 20
+      },
+      {
+        "station_id": "0341abe8-5ffb-44aa-b694-65dc95a96789",
+        "name": "T_024",
+        "lat": 49.496577,
+        "lon": 0.13433,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "72547b6c-2cd1-44ba-afd0-a12d87eff8ce",
+        "name": "T_006",
+        "lat": 49.485068,
+        "lon": 0.135505,
+        "is_virtual_station": true,
+        "capacity": 20
+      },
+      {
+        "station_id": "3281dd02-72c5-4cf2-935c-10d27135c796",
+        "name": "V_105",
+        "lat": 49.495249,
+        "lon": 0.126643,
+        "is_virtual_station": true,
+        "capacity": 10
+      },
+      {
+        "station_id": "544ad5bc-30f7-4373-a4f8-f6d57b9c870c",
+        "name": "V_077",
+        "lat": 49.493378,
+        "lon": 0.12508,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "b63a8371-53ef-4ec9-a1b0-39821ee64b7f",
+        "name": "T_013",
+        "lat": 49.493436,
+        "lon": 0.125124,
+        "is_virtual_station": true,
+        "capacity": 20
+      },
+      {
+        "station_id": "eb0a8995-e436-42af-8eae-65c913b890a7",
+        "name": "T_005",
+        "lat": 49.487793,
+        "lon": 0.134454,
+        "is_virtual_station": true,
+        "capacity": 20
+      },
+      {
+        "station_id": "4df01f4d-00c7-460a-8ac4-b8f3545cbf58",
+        "name": "V_106",
+        "lat": 49.495787,
+        "lon": 0.127731,
+        "is_virtual_station": true,
+        "capacity": 10
+      },
+      {
+        "station_id": "eaa4f7c4-35bb-4b7e-937f-39bec272b38e",
+        "name": "TV_150",
+        "lat": 49.492026,
+        "lon": 0.113159,
+        "is_virtual_station": true,
+        "capacity": 10
+      },
+      {
+        "station_id": "21f62f08-58ee-4f08-aea6-9d7bf9057834",
+        "name": "TV_143",
+        "lat": 49.49403,
+        "lon": 0.151946,
+        "is_virtual_station": true,
+        "capacity": 10
+      },
+      {
+        "station_id": "4fa149b4-80d4-4ce7-9f50-76a1517f6c81",
+        "name": "TV_135",
+        "lat": 49.4811,
+        "lon": 0.16268,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "e9134165-bd44-4476-816b-81e9868dd638",
+        "name": "TV_137",
+        "lat": 49.480527,
+        "lon": 0.163843,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "956e5bda-9732-4af8-adee-0733e6291874",
+        "name": "V_133",
+        "lat": 49.507803,
+        "lon": 0.133865,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "9c35dba1-9701-459a-b0b9-5cca38c2e320",
+        "name": "TV_091",
+        "lat": 49.51396,
+        "lon": 0.130022,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "060801bd-a7de-47bb-872a-1a805d05885b",
+        "name": "TV_152",
+        "lat": 49.493287,
+        "lon": 0.111115,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "f2eaf471-811d-4db8-822c-69ea63cb0dfb",
+        "name": "TV_098",
+        "lat": 49.507277,
+        "lon": 0.12287,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "42b21755-983f-471f-a2db-bb6f4120eec6",
+        "name": "TV_049",
+        "lat": 49.551593,
+        "lon": 0.131419,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "a9ee74df-a23b-4057-b88e-fd8ded28269d",
+        "name": "T_098",
+        "lat": 49.4921,
+        "lon": 0.10193,
+        "is_virtual_station": true,
+        "capacity": 10
+      },
+      {
+        "station_id": "26479e3e-191e-4b03-9cd3-ed5422af8459",
+        "name": "TV_039",
+        "lat": 49.574736,
+        "lon": 0.114798,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "b1d63085-bead-4563-809f-bad7c6bd6547",
+        "name": "TV_053",
+        "lat": 49.542384,
+        "lon": 0.118947,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "d1993454-bdbf-4806-afb8-a06a97a55975",
+        "name": "V_099",
+        "lat": 49.495292,
+        "lon": 0.114043,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "c92904cf-fb0e-4bce-8bd4-20a8e9a78666",
+        "name": "TV_086",
+        "lat": 49.511371,
+        "lon": 0.115315,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "be5c0dad-d6c5-412d-8e1b-9c6db9d4f51c",
+        "name": "TV_021",
+        "lat": 49.498923,
+        "lon": 0.162103,
+        "is_virtual_station": true,
+        "capacity": 10
+      },
+      {
+        "station_id": "74acc3a5-0633-4b2c-a281-b5286b61a9d3",
+        "name": "TV_124",
+        "lat": 49.520617,
+        "lon": 0.159527,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "3157ad20-f40d-47b6-8cc3-7aaac56e4de2",
+        "name": "TV_127",
+        "lat": 49.524258,
+        "lon": 0.156943,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "3c6a5669-7d0a-4cf3-beb1-7136cea9f9ab",
+        "name": "V_001",
+        "lat": 49.502034,
+        "lon": 0.085598,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "086cc942-05c9-47b3-9360-17f70b6ac6ba",
+        "name": "V_018",
+        "lat": 49.487727,
+        "lon": 0.10169,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "31c05c9e-f9f9-4ca5-892b-29796b2222d3",
+        "name": "T_037",
+        "lat": 49.49952,
+        "lon": 0.08979,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "ba096984-6a40-49b6-9368-f612342c8986",
+        "name": "V_187",
+        "lat": 49.499165,
+        "lon": 0.090217,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "10da5edd-e808-4018-a39b-e07cb854a7d3",
+        "name": "T_175",
+        "lat": 49.483889,
+        "lon": 0.131236,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "57ef1491-8a70-4c69-9556-40d812043b1f",
+        "name": "V_171",
+        "lat": 49.496491,
+        "lon": 0.146951,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "02392ecb-c05a-48f2-bfe7-00e70e1a8142",
+        "name": "T_076",
+        "lat": 49.4974,
+        "lon": 0.12569,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "4ffa9fce-8cb1-4b28-bd89-04be7e879d6d",
+        "name": "TV_121",
+        "lat": 49.518089,
+        "lon": 0.15752,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "93c96896-91f1-418c-b023-59436a5d345c",
+        "name": "T_118",
+        "lat": 49.49457,
+        "lon": 0.12018,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "0deaa65c-3c93-46b5-8563-4219850d6bf8",
+        "name": "T_115",
+        "lat": 49.493704,
+        "lon": 0.117617,
+        "is_virtual_station": true,
+        "capacity": 10
+      },
+      {
+        "station_id": "0afb5a24-72eb-4598-ba03-fbb3858a31e6",
+        "name": "V_132",
+        "lat": 49.502487,
+        "lon": 0.11806,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "c5914416-6f29-4943-847a-6e8d286401a2",
+        "name": "T_020",
+        "lat": 49.497944,
+        "lon": 0.128591,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "15e69fb6-d6ad-49f3-bac5-b0f152200e7a",
+        "name": "T_059",
+        "lat": 49.49553,
+        "lon": 0.09352,
+        "is_virtual_station": true,
+        "capacity": 20
+      },
+      {
+        "station_id": "b7edd752-bd45-46e2-a890-aa58357ab42d",
+        "name": "TV_038",
+        "lat": 49.577457,
+        "lon": 0.121871,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "ff711058-0785-49cc-9550-38dc5af1d932",
+        "name": "V_065",
+        "lat": 49.492944,
+        "lon": 0.112443,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "681721df-76d0-4e20-9840-b2f4c04ead5a",
+        "name": "T_028",
+        "lat": 49.50871,
+        "lon": 0.13726,
+        "is_virtual_station": true,
+        "capacity": 10
+      },
+      {
+        "station_id": "77bb5ff6-7a7d-4149-a9bc-2c9d606b65f4",
+        "name": "V_166",
+        "lat": 49.498393,
+        "lon": 0.127871,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "b94688a2-918a-4aab-acc3-9cd90c726a5f",
+        "name": "TV_032",
+        "lat": 49.50034,
+        "lon": 0.135746,
+        "is_virtual_station": true,
+        "capacity": 20
+      },
+      {
+        "station_id": "c22f6b4a-8163-4dc8-a7d4-cc85d95c1e76",
+        "name": "V_074",
+        "lat": 49.492341,
+        "lon": 0.119196,
+        "is_virtual_station": true,
+        "capacity": 20
+      },
+      {
+        "station_id": "32e597f6-8ccd-467c-8961-3741695248c9",
+        "name": "V_112",
+        "lat": 49.499286,
+        "lon": 0.121924,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "00921e43-a414-4b7a-a33d-dc685dc5a27f",
+        "name": "V_125",
+        "lat": 49.49912,
+        "lon": 0.118023,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "ef63fae2-e88c-4b21-82e7-5a432e47c895",
+        "name": "V_096",
+        "lat": 49.497214,
+        "lon": 0.113159,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "364ca7b2-451c-41d5-b118-7b3b583b71fa",
+        "name": "T_206",
+        "lat": 49.487494,
+        "lon": 0.10961,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "2b68dbc1-84bb-4463-9345-313768d39dca",
+        "name": "T_171",
+        "lat": 49.484348,
+        "lon": 0.102723,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "9d9fcdf2-4978-47f6-a6cf-16c598d87bc5",
+        "name": "T_068",
+        "lat": 49.50093,
+        "lon": 0.11852,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "07cd30ec-d7fd-4167-ae6a-de40762a9417",
+        "name": "TV_166",
+        "lat": 49.522167,
+        "lon": 0.102637,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "82b135bb-124b-422a-8088-070ef0816cf8",
+        "name": "T_049",
+        "lat": 49.49674,
+        "lon": 0.10074,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "f8d98dc2-fbc5-4482-b5d2-c469dc426f85",
+        "name": "T_110",
+        "lat": 49.492954,
+        "lon": 0.112375,
+        "is_virtual_station": true,
+        "capacity": 10
+      },
+      {
+        "station_id": "6141781d-44dd-4363-b3cf-28d6084a7aa5",
+        "name": "T_131",
+        "lat": 49.48517,
+        "lon": 0.10212,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "90438799-a05c-4c14-a126-2a7b0fb0c497",
+        "name": "TV_019",
+        "lat": 49.499513,
+        "lon": 0.166272,
+        "is_virtual_station": true,
+        "capacity": 60
+      },
+      {
+        "station_id": "e0fdcd3c-867e-4974-98dc-19bf8c365522",
+        "name": "TV_017",
+        "lat": 49.508925,
+        "lon": 0.146706,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "92904ed3-1ab9-424d-9d6e-160828e5d835",
+        "name": "V_123",
+        "lat": 49.495759,
+        "lon": 0.11905,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "8c3b8d56-ddbb-41c9-a978-9602db9218e3",
+        "name": "T_064",
+        "lat": 49.49816,
+        "lon": 0.11321,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "c420536e-a7fa-455f-9c1d-2fa4361a2aa7",
+        "name": "V_075",
+        "lat": 49.492276,
+        "lon": 0.11991,
+        "is_virtual_station": true,
+        "capacity": 20
+      },
+      {
+        "station_id": "44e19d8b-aecb-4bdc-aea9-bcfaaf86ecec",
+        "name": "TV_081",
+        "lat": 49.51691,
+        "lon": 0.092915,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "7dd52ba6-320e-4ece-9b25-f2f2037d1ab5",
+        "name": "V_079",
+        "lat": 49.489343,
+        "lon": 0.124869,
+        "is_virtual_station": true,
+        "capacity": 20
+      },
+      {
+        "station_id": "6c19a9db-1903-4bc1-b9e0-8eba3abdee17",
+        "name": "T_041",
+        "lat": 49.49853,
+        "lon": 0.10067,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "1b2d8c51-1c05-479b-a041-0320b482303d",
+        "name": "T_016",
+        "lat": 49.494627,
+        "lon": 0.12553,
+        "is_virtual_station": true,
+        "capacity": 20
+      },
+      {
+        "station_id": "7e8e15f7-b062-4acc-93f7-39b365505b77",
+        "name": "V_101",
+        "lat": 49.497534,
+        "lon": 0.115441,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "96e7b50d-deae-4e35-88fc-f2c129d252f9",
+        "name": "TV_075",
+        "lat": 49.522006,
+        "lon": 0.101447,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "d9962a06-5887-4db9-a847-87e896d29ac4",
+        "name": "T_075",
+        "lat": 49.49843,
+        "lon": 0.125379,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "50a2cdde-df8d-4140-bc4c-adf404780276",
+        "name": "TV_016",
+        "lat": 49.50714,
+        "lon": 0.151423,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "787f6a09-a021-4711-81ba-02671ae51186",
+        "name": "TV_010",
+        "lat": 49.512337,
+        "lon": 0.150393,
+        "is_virtual_station": true,
+        "capacity": 10
+      },
+      {
+        "station_id": "61d4ac1e-6883-4f5e-ba75-5f52f6993b31",
+        "name": "V_114",
+        "lat": 49.498445,
+        "lon": 0.125647,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "0e825716-af6e-475b-8a44-872d2028f0e0",
+        "name": "V_111",
+        "lat": 49.499261,
+        "lon": 0.121039,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "3a3a2fe3-f4d3-4c62-946b-dce793ac060e",
+        "name": "TV_029",
+        "lat": 49.483172,
+        "lon": 0.138762,
+        "is_virtual_station": true,
+        "capacity": 10
+      },
+      {
+        "station_id": "e4859579-2b1c-4920-a508-71a67160c1ec",
+        "name": "V_097",
+        "lat": 49.497623,
+        "lon": 0.113211,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "b85422b5-5d80-46e8-837c-fa76abe7674d",
+        "name": "V_009",
+        "lat": 49.485195,
+        "lon": 0.102178,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "87a83ec5-bc17-4cab-aa22-11b6e25290dc",
+        "name": "T_085",
+        "lat": 49.49489,
+        "lon": 0.10526,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "0f798550-acc1-46fc-bc2b-7340785cb6a6",
+        "name": "T_039",
+        "lat": 49.49921,
+        "lon": 0.09472,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "3ef53565-2ec7-4090-a9c5-2fd125fc0752",
+        "name": "T_070",
+        "lat": 49.499194,
+        "lon": 0.121098,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "ca3cbdd7-1d88-4332-a4ba-d02b0f701791",
+        "name": "T_051",
+        "lat": 49.49839,
+        "lon": 0.10559,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "1eb4cf75-46e5-4498-bada-a37b07043fe4",
+        "name": "T_112",
+        "lat": 49.493791,
+        "lon": 0.114371,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "513fa45a-3805-49cb-8f88-de302cc8b61d",
+        "name": "T_001",
+        "lat": 49.489,
+        "lon": 0.139793,
+        "is_virtual_station": true,
+        "capacity": 20
+      },
+      {
+        "station_id": "5d025d9e-b1c0-43e5-b174-f659cc596a2f",
+        "name": "V_193",
+        "lat": 49.492134,
+        "lon": 0.097861,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "b6205220-c357-42c9-8237-9357499e7226",
+        "name": "TV_160",
+        "lat": 49.505657,
+        "lon": 0.099519,
+        "is_virtual_station": true,
+        "capacity": 20
+      },
+      {
+        "station_id": "382f4cd7-8366-4fb3-adfe-7b2e45e92797",
+        "name": "V_179",
+        "lat": 49.496326,
+        "lon": 0.12681,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "70171cf0-5d8e-4fdf-83ab-651955a2cd3c",
+        "name": "T_142",
+        "lat": 49.485067,
+        "lon": 0.105778,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "1ee7cb24-3b66-4256-a7e3-5bbe8c794a7a",
+        "name": "T_032",
+        "lat": 49.491244,
+        "lon": 0.10374,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "f11bc985-d867-497e-85f8-5204150a3920",
+        "name": "T_194",
+        "lat": 49.490873,
+        "lon": 0.097933,
+        "is_virtual_station": true,
+        "capacity": 10
+      },
+      {
+        "station_id": "a4b11bb6-9406-41fd-b42c-e5cc886bf424",
+        "name": "V_119",
+        "lat": 49.502449,
+        "lon": 0.134533,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "d962c78f-ce35-478d-a277-b46900b9bd1d",
+        "name": "V_129",
+        "lat": 49.501578,
+        "lon": 0.125903,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "d62a7f21-73d4-4003-ba5e-4df79a8448b4",
+        "name": "T_047",
+        "lat": 49.49726,
+        "lon": 0.09521,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "da1f42e5-eb41-4149-a465-e019dbac82a2",
+        "name": "T_081",
+        "lat": 49.495085,
+        "lon": 0.111258,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "0f86e4b4-7e77-417f-832a-3130439a0176",
+        "name": "T_134",
+        "lat": 49.48934,
+        "lon": 0.1019,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "83bb53bf-26ad-4d40-9f71-05adaf66f091",
+        "name": "T_182",
+        "lat": 49.499832,
+        "lon": 0.124025,
+        "is_virtual_station": true,
+        "capacity": 10
+      },
+      {
+        "station_id": "85ee4f83-72f0-427c-9f21-0ea9f5a23309",
+        "name": "T_187",
+        "lat": 49.499134,
+        "lon": 0.090247,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "dbd76062-359f-4eec-bc3e-26aa9e337296",
+        "name": "T_181",
+        "lat": 49.498344,
+        "lon": 0.126933,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "f1748d47-591f-4a57-9e33-929ae83f2d29",
+        "name": "V_041",
+        "lat": 49.494476,
+        "lon": 0.099669,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "e9d5bcdf-c453-4241-9f9d-dd5be2a3a717",
+        "name": "V_020",
+        "lat": 49.490668,
+        "lon": 0.100665,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "a37aa8c3-7eb6-4f18-9202-b5124df9b667",
+        "name": "V_068",
+        "lat": 49.496656,
+        "lon": 0.106428,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "f8f33757-6a38-48e4-9b39-43fb06513bd1",
+        "name": "V_194",
+        "lat": 49.49101,
+        "lon": 0.098128,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "464a938d-0778-4a50-b85b-04c303137c30",
+        "name": "V_176",
+        "lat": 49.489307,
+        "lon": 0.105968,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "83416746-1357-4890-8a60-ffb98b6b83fe",
+        "name": "T_186",
+        "lat": 49.496916,
+        "lon": 0.120604,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "101b2c50-b405-4b4c-8841-67f63900f51e",
+        "name": "T_096",
+        "lat": 49.491332,
+        "lon": 0.100819,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "ae6d81c9-e8b2-4563-aef2-f8f72a8ee22c",
+        "name": "V_181",
+        "lat": 49.49849,
+        "lon": 0.127016,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "078000c2-db38-46ca-a40f-f9947134c676",
+        "name": "T_197",
+        "lat": 49.490698,
+        "lon": 0.139641,
+        "is_virtual_station": true,
+        "capacity": 10
+      },
+      {
+        "station_id": "14566e30-935c-4bb3-8696-2655450430e9",
+        "name": "V_197",
+        "lat": 49.490713,
+        "lon": 0.139777,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "ba7d7d19-1ff4-4631-843d-a61d202c9b40",
+        "name": "TV_153",
+        "lat": 49.500011,
+        "lon": 0.103958,
+        "is_virtual_station": true,
+        "capacity": 20
+      },
+      {
+        "station_id": "d95711db-c025-49bf-95b3-a79a23548fe2",
+        "name": "TV_122",
+        "lat": 49.519822,
+        "lon": 0.157816,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "3e9e6e47-683c-4698-8c25-dd3dc325d08f",
+        "name": "T_185",
+        "lat": 49.487387,
+        "lon": 0.106889,
+        "is_virtual_station": true,
+        "capacity": 10
+      },
+      {
+        "station_id": "51767401-54db-48cc-896f-bb2f6677121e",
+        "name": "T_092",
+        "lat": 49.49285,
+        "lon": 0.09627,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "03f90cdc-28bc-4260-8c42-b4296d9c4923",
+        "name": "T_063",
+        "lat": 49.49759,
+        "lon": 0.11322,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "a42c01f4-ef42-4635-93bd-52c4809aca8b",
+        "name": "TV_132",
+        "lat": 49.507913,
+        "lon": 0.184248,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "3974c108-b9d2-4b99-aa35-53e4ed85921c",
+        "name": "T_021",
+        "lat": 49.499043,
+        "lon": 0.128586,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "a1c87a64-ea76-46ab-94b7-0fbae53c36dc",
+        "name": "TV_097",
+        "lat": 49.505625,
+        "lon": 0.116088,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "6b1c55c7-2b75-4642-a070-f92f74563d52",
+        "name": "TV_011",
+        "lat": 49.504795,
+        "lon": 0.165736,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "f2181925-61f0-4155-b335-1f61d6d0891e",
+        "name": "TV_090",
+        "lat": 49.511512,
+        "lon": 0.127302,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "5d015547-7393-4f2c-b67f-56b369b30bf6",
+        "name": "T_122",
+        "lat": 49.488571,
+        "lon": 0.111461,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "570ded61-234c-4ec8-afbc-0349be484017",
+        "name": "Voi Store",
+        "lat": 49.49557,
+        "lon": 0.108686,
+        "is_virtual_station": true,
+        "capacity": 1
+      },
+      {
+        "station_id": "02509371-3a7a-4ca4-aabb-914202c837fc",
+        "name": "V_126",
+        "lat": 49.500943,
+        "lon": 0.118586,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "1c539c4e-ca85-41bb-b3a3-b1fc3b16ec82",
+        "name": "T_057",
+        "lat": 49.495667,
+        "lon": 0.096281,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "9f0b20b8-bb8b-411a-b14f-5daa792f465a",
+        "name": "T_137",
+        "lat": 49.489931,
+        "lon": 0.103066,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "9fb7f827-9d5e-4361-95eb-4a3f68d59a72",
+        "name": "V_124",
+        "lat": 49.497762,
+        "lon": 0.119086,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "8b78da33-cb4c-4172-ad87-c13780ae1a5f",
+        "name": "T_067",
+        "lat": 49.4978,
+        "lon": 0.119067,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "4f559c3d-20a2-4d7a-8011-a1f2fe6963e7",
+        "name": "V_066",
+        "lat": 49.492492,
+        "lon": 0.117075,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "59a59869-dbc7-454e-a43e-ed739cd23055",
+        "name": "TV_142",
+        "lat": 49.498142,
+        "lon": 0.146027,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "a1649077-670a-4af9-b1a3-3eb1a80d0831",
+        "name": "TV_072",
+        "lat": 49.520636,
+        "lon": 0.114507,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "583db745-f2b4-49e6-825f-c55f5c3c4fc4",
+        "name": "T_022",
+        "lat": 49.49974,
+        "lon": 0.130009,
+        "is_virtual_station": true,
+        "capacity": 20
+      },
+      {
+        "station_id": "6cc66d20-16ce-4c2b-9a29-86bdb963b455",
+        "name": "T_018",
+        "lat": 49.49579,
+        "lon": 0.127789,
+        "is_virtual_station": true,
+        "capacity": 20
+      },
+      {
+        "station_id": "6a500793-d95a-43f8-916f-878cf7a749cb",
+        "name": "V_051",
+        "lat": 49.497338,
+        "lon": 0.097676,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "c5d4a93b-e50d-49c9-a84e-a5e56dc9afde",
+        "name": "V_055",
+        "lat": 49.497258,
+        "lon": 0.103316,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "a1128008-064c-42b1-b377-58a6afd7b415",
+        "name": "V_104",
+        "lat": 49.494671,
+        "lon": 0.125568,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "ed3065c6-094f-4a78-a134-b0ecec2f8b4b",
+        "name": "V_118",
+        "lat": 49.500162,
+        "lon": 0.129686,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "4909a513-744b-4787-b4d0-10a6c3219a20",
+        "name": "V_030",
+        "lat": 49.492201,
+        "lon": 0.101843,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "f526f8be-4a60-4805-8386-7425e3e96bff",
+        "name": "V_052",
+        "lat": 49.498553,
+        "lon": 0.100559,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "ffd7f257-de6c-4515-a0a4-33a3bf5dc066",
+        "name": "T_010",
+        "lat": 49.489425,
+        "lon": 0.124835,
+        "is_virtual_station": true,
+        "capacity": 20
+      },
+      {
+        "station_id": "16f60a77-affe-46cc-a3f3-ec3bca4e1102",
+        "name": "T_169",
+        "lat": 49.494896,
+        "lon": 0.116208,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "9c954f37-1aa4-4183-9a15-9752dfc4c96b",
+        "name": "V_109",
+        "lat": 49.497351,
+        "lon": 0.123595,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "e040805c-0843-4f55-8957-59439b8bf242",
+        "name": "V_110",
+        "lat": 49.498307,
+        "lon": 0.122873,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "6932bb4f-0a4f-4ef3-a979-de47ad5ac925",
+        "name": "T_080",
+        "lat": 49.495352,
+        "lon": 0.113809,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "44aa64f9-88a6-4977-8cc8-5973595f7caa",
+        "name": "V_100",
+        "lat": 49.49552,
+        "lon": 0.116071,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "d45ffd8b-4066-4770-8ba5-0e4e4b92eaf5",
+        "name": "TV_140",
+        "lat": 49.51309,
+        "lon": 0.178721,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "41bf33f4-a225-451d-b8d9-9c4d31133284",
+        "name": "TV_040",
+        "lat": 49.572494,
+        "lon": 0.130494,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "515acb47-c834-43c6-8d4d-1f403eedc88a",
+        "name": "TV_109",
+        "lat": 49.507804,
+        "lon": 0.179979,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "8ce93110-8c8f-4e44-97a3-64aef3f0491f",
+        "name": "T_015",
+        "lat": 49.492811,
+        "lon": 0.123017,
+        "is_virtual_station": true,
+        "capacity": 20
+      },
+      {
+        "station_id": "4b7e59fa-15a0-47a1-90d5-7676869fc8a9",
+        "name": "V_078",
+        "lat": 49.492817,
+        "lon": 0.122953,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "4b62f4e7-1981-44db-ad5d-a36c4f1402c8",
+        "name": "TV_060",
+        "lat": 49.525842,
+        "lon": 0.09082,
+        "is_virtual_station": true,
+        "capacity": 10
+      },
+      {
+        "station_id": "c28eb37f-e1c6-443c-9c03-8266859a1a4c",
+        "name": "TV_054",
+        "lat": 49.544128,
+        "lon": 0.085599,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "ff48fe1b-df4b-44b6-8c4d-0c910e810d4c",
+        "name": "TV_003",
+        "lat": 49.515437,
+        "lon": 0.173629,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "b7d1c788-f8df-422d-8910-c068e045b86a",
+        "name": "Atelier MPZ",
+        "lat": 49.480643,
+        "lon": 0.151157,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "bcaed73d-32f9-4006-9a30-85dfe731b953",
+        "name": "V_012",
+        "lat": 49.487366,
+        "lon": 0.105733,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "11642bae-acae-4384-bd37-d0fc670f7fae",
+        "name": "T_004",
+        "lat": 49.491352,
+        "lon": 0.133296,
+        "is_virtual_station": true,
+        "capacity": 20
+      },
+      {
+        "station_id": "6f832b7a-8570-49fb-aac3-e09729459463",
+        "name": "T_017",
+        "lat": 49.495299,
+        "lon": 0.126678,
+        "is_virtual_station": true,
+        "capacity": 20
+      },
+      {
+        "station_id": "aa0fa5f5-c3a9-4501-84b3-f6d4b8b5b179",
+        "name": "V_108",
+        "lat": 49.496277,
+        "lon": 0.131533,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "3d8e5c3f-443c-4bf6-bec1-e18f5dde9c6c",
+        "name": "TV_025",
+        "lat": 49.490544,
+        "lon": 0.147274,
+        "is_virtual_station": true,
+        "capacity": 20
+      },
+      {
+        "station_id": "9478a8f9-a2b5-49dc-8fba-2c4a9ad0fa15",
+        "name": "TV_158",
+        "lat": 49.486099,
+        "lon": 0.141129,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "7b7b5ba6-de46-41ba-9db6-5782d59fa5f8",
+        "name": "T_165",
+        "lat": 49.491927,
+        "lon": 0.126703,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "b2e8d125-a1a2-47a3-a0b9-d841dd26b2ac",
+        "name": "V_069",
+        "lat": 49.496382,
+        "lon": 0.108158,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "673e13a6-1430-4c2b-90b9-4dfbd7839b92",
+        "name": "V_056",
+        "lat": 49.496598,
+        "lon": 0.103521,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "4b415642-c6da-4598-aabf-fe94da64012e",
+        "name": "V_134",
+        "lat": 49.508742,
+        "lon": 0.135825,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "e76aa553-8286-4616-9e21-75744299f0f4",
+        "name": "TV_056",
+        "lat": 49.543132,
+        "lon": 0.091355,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "2cc88ae0-9895-4c0c-95ec-8ae30f8ab3b4",
+        "name": "V_011",
+        "lat": 49.487466,
+        "lon": 0.104237,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "5f171222-ec28-4f1c-8e57-1b39bd3477d2",
+        "name": "TV_043",
+        "lat": 49.556082,
+        "lon": 0.106054,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "1ed08acc-ea50-4e20-b3c1-d270ccf3f8a8",
+        "name": "TV_042",
+        "lat": 49.566156,
+        "lon": 0.115053,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "3feafe13-4402-422f-96b9-81c2c859799a",
+        "name": "TV_064",
+        "lat": 49.529939,
+        "lon": 0.104557,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "0ef5e2f9-8d13-4a15-b480-656eeabe569d",
+        "name": "T_079",
+        "lat": 49.495785,
+        "lon": 0.116071,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "b4022a99-c0ae-4031-8bad-bbb227f6b525",
+        "name": "V_121",
+        "lat": 49.504295,
+        "lon": 0.130593,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "f160b1f8-9e4e-40cc-9795-7ee79e78cbe3",
+        "name": "T_130",
+        "lat": 49.48743,
+        "lon": 0.10391,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "552cf3ef-4c28-48a5-a4e3-073092e706a6",
+        "name": "V_115",
+        "lat": 49.497755,
+        "lon": 0.128216,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "0ce36854-bca2-409d-9700-09f45993afc4",
+        "name": "V_103",
+        "lat": 49.495088,
+        "lon": 0.122198,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "fefc0fb7-4d42-42db-a123-cc3b1429f196",
+        "name": "TV_047",
+        "lat": 49.553083,
+        "lon": 0.11443,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "06479c3a-d983-4ecf-aa41-beebfd8ca183",
+        "name": "TV_077",
+        "lat": 49.520251,
+        "lon": 0.088038,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "37071c12-eda6-4d79-93f6-5e789f3d2f8a",
+        "name": "V_117",
+        "lat": 49.499768,
+        "lon": 0.130034,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "54082ffb-95f4-49c8-b69c-0c12c8af5d58",
+        "name": "T_105",
+        "lat": 49.491462,
+        "lon": 0.10743,
+        "is_virtual_station": true,
+        "capacity": 20
+      },
+      {
+        "station_id": "a8aaeb1a-05c0-402d-b0cf-2b1ba6d7982c",
+        "name": "TV_164",
+        "lat": 49.488627,
+        "lon": 0.114561,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "1194f8e7-fc9b-4ea8-81fc-167d2e55e3ac",
+        "name": "T_132",
+        "lat": 49.48853,
+        "lon": 0.098119,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "6b3a2b99-7240-4ad1-afcb-a23c1cf5c04d",
+        "name": "TV_114",
+        "lat": 49.49826,
+        "lon": 0.094163,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "d790696e-d135-4ced-93d4-07206af428b0",
+        "name": "TV_033",
+        "lat": 49.506037,
+        "lon": 0.142395,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "60bce5f1-08f0-4514-8c09-cff8a9abb90d",
+        "name": "T_077",
+        "lat": 49.49734,
+        "lon": 0.12351,
+        "is_virtual_station": true,
+        "capacity": 20
+      },
+      {
+        "station_id": "2d1409ed-775b-47b2-875e-906e9fe47084",
+        "name": "V_054",
+        "lat": 49.496678,
+        "lon": 0.100603,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "574d3d32-0554-4d53-a403-5002a30ee1b9",
+        "name": "V_073",
+        "lat": 49.493659,
+        "lon": 0.117716,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "1ba89559-dd65-4172-9c8b-2b83beae8e32",
+        "name": "T_062",
+        "lat": 49.497267,
+        "lon": 0.11321,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "c25df967-9419-4e43-af93-1a15e5b31637",
+        "name": "V_025",
+        "lat": 49.488704,
+        "lon": 0.105202,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "df6ed62c-ac8a-4d7c-907c-42d54ff53f6e",
+        "name": "T_167",
+        "lat": 49.498386,
+        "lon": 0.127788,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "d07e4d68-2a8e-4eb0-b781-d8192a96da2f",
+        "name": "V_045",
+        "lat": 49.49726,
+        "lon": 0.095276,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "f97e002f-1dd0-4344-a96b-80ea9c976007",
+        "name": "T_078",
+        "lat": 49.49595,
+        "lon": 0.11897,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "4b5a1f24-d279-4711-a5b1-099033111f2a",
+        "name": "TV_070",
+        "lat": 49.522601,
+        "lon": 0.114079,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "7ed64ff5-0246-4259-a534-53a87496a71b",
+        "name": "T_065",
+        "lat": 49.49759,
+        "lon": 0.1155,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "f37da706-9678-4854-ad45-21fd51e99f75",
+        "name": "V_090",
+        "lat": 49.493879,
+        "lon": 0.138476,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "ce0fa92e-d4bb-40ba-833e-e42de2a431ed",
+        "name": "TV_100",
+        "lat": 49.509363,
+        "lon": 0.128148,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "1f6b58d5-b192-4486-af9a-b55625245735",
+        "name": "V_042",
+        "lat": 49.494534,
+        "lon": 0.097698,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "9b431bb8-a54a-4621-9fa3-0fddfd28b087",
+        "name": "T_066",
+        "lat": 49.49911,
+        "lon": 0.11795,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "e4bf7acd-b819-438e-bf46-dcece5f73426",
+        "name": "TV_063",
+        "lat": 49.529821,
+        "lon": 0.103656,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "cd5f92fd-8121-4ebf-9376-7e13e924e362",
+        "name": "V_027",
+        "lat": 49.490437,
+        "lon": 0.104081,
+        "is_virtual_station": true,
+        "capacity": 10
+      },
+      {
+        "station_id": "bc95ff02-e3dd-42b8-ae5f-b8c8d4b9338d",
+        "name": "T_002",
+        "lat": 49.49392,
+        "lon": 0.138451,
+        "is_virtual_station": true,
+        "capacity": 20
+      },
+      {
+        "station_id": "50e98d2d-315e-48fd-8882-057d719a2b39",
+        "name": "V_047",
+        "lat": 49.500885,
+        "lon": 0.091356,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "0d65882a-f0a0-484c-b887-2d3a0880da65",
+        "name": "T_071",
+        "lat": 49.4993,
+        "lon": 0.121995,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "88194d8e-1537-42bd-b646-636cfe1e2eeb",
+        "name": "V_186",
+        "lat": 49.496909,
+        "lon": 0.120444,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "fbc5dd2c-cc3f-4418-9b81-3fc4bd8a0400",
+        "name": "V_022",
+        "lat": 49.492517,
+        "lon": 0.099043,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "80737a24-4508-4024-a190-0a1a869810f3",
+        "name": "T_114",
+        "lat": 49.49248,
+        "lon": 0.11693,
+        "is_virtual_station": true,
+        "capacity": 20
+      },
+      {
+        "station_id": "605b3c80-ecd4-4f77-871f-05d595a8b0a5",
+        "name": "V_010",
+        "lat": 49.486255,
+        "lon": 0.10475,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "c73284c2-0d3c-4f0c-8665-e93d2e01f52a",
+        "name": "TV_134",
+        "lat": 49.480527,
+        "lon": 0.158218,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "35992422-719a-4942-bf9a-a75d61de533c",
+        "name": "TV_037",
+        "lat": 49.579899,
+        "lon": 0.119204,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "a0cc8886-2e84-49f8-bb60-18d3e079ddad",
+        "name": "T_128",
+        "lat": 49.48747,
+        "lon": 0.10583,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "903c9f45-8dc0-42e3-ab35-c7f8448576db",
+        "name": "T_060",
+        "lat": 49.4964,
+        "lon": 0.11051,
+        "is_virtual_station": true,
+        "capacity": 20
+      },
+      {
+        "station_id": "d571ef2d-5cf7-4932-a62b-a45462081c3c",
+        "name": "V_206",
+        "lat": 49.487528,
+        "lon": 0.109705,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "7a57eac3-e2d9-4343-939a-b13ec4a5e524",
+        "name": "T_048",
+        "lat": 49.497316,
+        "lon": 0.097763,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "9f5194dd-70ee-4dd6-b73b-d1eac67c771d",
+        "name": "T_090",
+        "lat": 49.49455,
+        "lon": 0.09717,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "97cf9e82-f822-4e91-9693-d887b6e8e589",
+        "name": "TV_145",
+        "lat": 49.499477,
+        "lon": 0.110778,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "f8a26ee1-0725-4e92-a33c-3ff61afb7219",
+        "name": "TV_046",
+        "lat": 49.554615,
+        "lon": 0.11477,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "0190060e-8370-431c-9d57-e4e2cbfd874a",
+        "name": "TV_045",
+        "lat": 49.555537,
+        "lon": 0.116717,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "56523403-f756-41d0-b988-77b2a8a5b619",
+        "name": "T_014",
+        "lat": 49.492128,
+        "lon": 0.124899,
+        "is_virtual_station": true,
+        "capacity": 20
+      },
+      {
+        "station_id": "9a62cd50-af8a-4650-b235-e61c7e04fd3a",
+        "name": "TV_099",
+        "lat": 49.507326,
+        "lon": 0.126034,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "2c2f3b4b-0940-497d-a279-23b10445eb9a",
+        "name": "T_119",
+        "lat": 49.495071,
+        "lon": 0.122132,
+        "is_virtual_station": true,
+        "capacity": 10
+      },
+      {
+        "station_id": "5a861b3a-8eab-4c96-a072-3570b488a0de",
+        "name": "V_076",
+        "lat": 49.492158,
+        "lon": 0.124971,
+        "is_virtual_station": true,
+        "capacity": 20
+      },
+      {
+        "station_id": "d20f6880-8b64-4b83-b8d0-519ea4580cec",
+        "name": "TV_041",
+        "lat": 49.563858,
+        "lon": 0.148036,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "adf68688-c08a-4588-926e-f6ad83a77900",
+        "name": "T_040",
+        "lat": 49.4989,
+        "lon": 0.09718,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "4ab16972-7a91-4643-9c2b-e1a2a4aa0bbb",
+        "name": "TV_058",
+        "lat": 49.535036,
+        "lon": 0.104801,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "7c0ea257-5bfe-4050-bad9-467a7494ccae",
+        "name": "TV_149",
+        "lat": 49.499953,
+        "lon": 0.126943,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "55cadcd1-fe45-4e23-8400-7d565cc892ba",
+        "name": "TV_082",
+        "lat": 49.518402,
+        "lon": 0.096552,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "65b7fe94-7d04-4dd6-b90f-f81c55a61998",
+        "name": "V_002",
+        "lat": 49.499608,
+        "lon": 0.089688,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "0ca71788-542c-40b4-ac3c-88d207ba4c27",
+        "name": "V_127",
+        "lat": 49.501241,
+        "lon": 0.120475,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "65d7a614-2484-4325-9d98-cdacab820e78",
+        "name": "TV_050",
+        "lat": 49.553916,
+        "lon": 0.132084,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "bcacda7c-2b7f-4ceb-a800-5bba0d27264a",
+        "name": "V_070",
+        "lat": 49.496365,
+        "lon": 0.11051,
+        "is_virtual_station": true,
+        "capacity": 10
+      },
+      {
+        "station_id": "ca238970-7495-4b14-8737-7a610fbd080c",
+        "name": "V_092",
+        "lat": 49.500474,
+        "lon": 0.106293,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "4839f5a3-cfb4-4e01-9047-b6ce5f8990c2",
+        "name": "T_052",
+        "lat": 49.49638,
+        "lon": 0.10795,
+        "is_virtual_station": true,
+        "capacity": 20
+      },
+      {
+        "station_id": "61b7861a-f4ed-482e-9d1e-3aea473fa0c4",
+        "name": "TV_057",
+        "lat": 49.535751,
+        "lon": 0.100296,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "36e8d697-fa94-4497-8af8-12099b644767",
+        "name": "V_102",
+        "lat": 49.494582,
+        "lon": 0.120259,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "f4ac6db1-5376-4f85-8b1c-ead576110968",
+        "name": "T_027",
+        "lat": 49.5087,
+        "lon": 0.13585,
+        "is_virtual_station": true,
+        "capacity": 10
+      },
+      {
+        "station_id": "405f697b-daab-446b-a5cc-24511c5ff710",
+        "name": "V_183",
+        "lat": 49.495346,
+        "lon": 0.113412,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "98683548-5d37-40c5-b03c-12539c23e1b5",
+        "name": "TV_088",
+        "lat": 49.510942,
+        "lon": 0.12036,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "e3ab9b99-67b8-42f9-937b-0867df66487f",
+        "name": "T_088",
+        "lat": 49.49318,
+        "lon": 0.10065,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "a5f60105-f486-4d26-9b34-29319a18da81",
+        "name": "TV_147",
+        "lat": 49.510498,
+        "lon": 0.183662,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "fd077d3b-b370-473c-a83c-0f4211338440",
+        "name": "V_085",
+        "lat": 49.489052,
+        "lon": 0.139828,
+        "is_virtual_station": true,
+        "capacity": 10
+      },
+      {
+        "station_id": "05ead355-a6c9-4e61-9018-d5fcde70e1a4",
+        "name": "V_050",
+        "lat": 49.498836,
+        "lon": 0.09732,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "96fcce6c-7e91-4c00-bf96-f794595e81ff",
+        "name": "V_033",
+        "lat": 49.493182,
+        "lon": 0.100577,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "dcca9c36-7253-4a82-92b6-dd5da0c060a0",
+        "name": "T_117",
+        "lat": 49.49227,
+        "lon": 0.119996,
+        "is_virtual_station": true,
+        "capacity": 20
+      },
+      {
+        "station_id": "45766167-b3f0-4910-bc8a-b68a5a86a8fc",
+        "name": "TV_048",
+        "lat": 49.549618,
+        "lon": 0.11854,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "2f697ce6-8343-4b84-9e5d-d0e72ad83572",
+        "name": "T_055",
+        "lat": 49.49647,
+        "lon": 0.10336,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "eaf41c88-0c85-47b8-a3eb-f47af9935246",
+        "name": "TV_052",
+        "lat": 49.546304,
+        "lon": 0.109543,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "ba68ab92-7714-4f90-8306-726255cb7530",
+        "name": "T_029",
+        "lat": 49.507811,
+        "lon": 0.133802,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "9f19b4bd-fb07-485b-ad75-446123384d58",
+        "name": "T_198",
+        "lat": 49.489879,
+        "lon": 0.119819,
+        "is_virtual_station": true,
+        "capacity": 20
+      },
+      {
+        "station_id": "90cbe3de-8e09-4c4d-837e-96a5f14933c0",
+        "name": "V_198",
+        "lat": 49.48987,
+        "lon": 0.119869,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "91f2a0ba-0e24-403c-ade7-04fcd2b2c004",
+        "name": "T_179",
+        "lat": 49.49629,
+        "lon": 0.126784,
+        "is_virtual_station": true,
+        "capacity": 20
+      },
+      {
+        "station_id": "65e5f819-03f0-4e60-865b-975e6b50bd0e",
+        "name": "T_193",
+        "lat": 49.492288,
+        "lon": 0.097617,
+        "is_virtual_station": true,
+        "capacity": 20
+      },
+      {
+        "station_id": "a8c5873a-e472-434c-8835-b515a6099981",
+        "name": "T_089",
+        "lat": 49.49454,
+        "lon": 0.09949,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "a529d84c-e480-4376-9d4f-e8ef40cd7fd0",
+        "name": "T_095",
+        "lat": 49.49067,
+        "lon": 0.10073,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "fee53778-ec0a-4d69-a5b2-32de53aa015a",
+        "name": "T_176",
+        "lat": 49.489305,
+        "lon": 0.106169,
+        "is_virtual_station": true,
+        "capacity": 10
+      },
+      {
+        "station_id": "51bd0e59-7ac3-4980-b11d-ac27dd5283e5",
+        "name": "T_192",
+        "lat": 49.49143,
+        "lon": 0.116958,
+        "is_virtual_station": true,
+        "capacity": 10
+      },
+      {
+        "station_id": "06460966-e126-420e-a63c-e07522272298",
+        "name": "V_071",
+        "lat": 49.495045,
+        "lon": 0.11128,
+        "is_virtual_station": true,
+        "capacity": 10
+      },
+      {
+        "station_id": "c0b4bfcf-6693-4eac-95bb-b4140db66549",
+        "name": "T_199",
+        "lat": 49.495862,
+        "lon": 0.146483,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "ac639bd7-dd5a-47f0-bcd9-892a484c693e",
+        "name": "V_199",
+        "lat": 49.495874,
+        "lon": 0.146556,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "57680207-e95b-46af-9887-173c2ee6df73",
+        "name": "T_053",
+        "lat": 49.49661,
+        "lon": 0.1067,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "ee4ec663-8127-4b38-9a26-18779c21aebd",
+        "name": "T_100",
+        "lat": 49.491122,
+        "lon": 0.103195,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "26db4ae9-bd3d-4c61-b9ba-702fb98e088e",
+        "name": "V_175",
+        "lat": 49.483874,
+        "lon": 0.131312,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "667d7327-7b9e-446e-b037-8f6719998c46",
+        "name": "TV_156",
+        "lat": 49.502308,
+        "lon": 0.103639,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "7d5a5aff-31cd-4e23-b3d5-8abdd4fd0553",
+        "name": "TV_190",
+        "lat": 49.492365,
+        "lon": 0.121677,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "0a7efb7b-364f-4dcb-9984-8290e3bc5264",
+        "name": "T_093",
+        "lat": 49.49249,
+        "lon": 0.09898,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "eaf2d533-b47b-4a32-8518-ec610486918c",
+        "name": "V_192",
+        "lat": 49.492089,
+        "lon": 0.11546,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "b54cdd53-5468-4460-91e6-4bb01869cca5",
+        "name": "V_028",
+        "lat": 49.49118,
+        "lon": 0.103716,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "78329f47-ce80-43d7-985c-d9017fcdcc86",
+        "name": "T_183",
+        "lat": 49.4951,
+        "lon": 0.113028,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "57f66d9d-d2e6-40d0-9e50-ec42d2f76dee",
+        "name": "T_097",
+        "lat": 49.49192,
+        "lon": 0.10202,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "c4eb01b3-bda0-4375-9a38-0a2d44f109ed",
+        "name": "TV_165",
+        "lat": 49.485242,
+        "lon": 0.133839,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "f222458e-fa87-4dc9-badb-6c0e8e219989",
+        "name": "TV_161",
+        "lat": 49.48653,
+        "lon": 0.134419,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "a48d0bdc-8b4b-40ab-8b8d-840042aa6086",
+        "name": "TV_157",
+        "lat": 49.48584,
+        "lon": 0.129981,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "64762c19-090f-469a-bf33-1c4a3021ebc1",
+        "name": "T_180",
+        "lat": 49.4858,
+        "lon": 0.133981,
+        "is_virtual_station": true,
+        "capacity": 10
+      },
+      {
+        "station_id": "4911a106-4357-4a71-8efd-5789b119ceff",
+        "name": "V_180",
+        "lat": 49.485698,
+        "lon": 0.134032,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "4b58c6d5-dd49-4573-af5a-e7d0900a7d05",
+        "name": "TV_130",
+        "lat": 49.522263,
+        "lon": 0.163026,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "dec080aa-0123-41a6-8014-e08a60fe5018",
+        "name": "V_182",
+        "lat": 49.499801,
+        "lon": 0.124266,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "5242036d-8cb6-486d-b4df-bb99e718bc21",
+        "name": "TV_125",
+        "lat": 49.518339,
+        "lon": 0.155978,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "860b2f75-3414-4e0f-a85c-e144ede2a54a",
+        "name": "V_016",
+        "lat": 49.488744,
+        "lon": 0.113356,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "c4454c86-3343-4d84-980e-c1d330f88949",
+        "name": "T_147",
+        "lat": 49.49,
+        "lon": 0.10631,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "097d70dc-8d9d-4696-9b5d-096490bd2e5b",
+        "name": "V_144",
+        "lat": 49.488903,
+        "lon": 0.127884,
+        "is_virtual_station": true,
+        "capacity": 7
+      }
+    ]
+  }
+}

@@ -1,0 +1,3065 @@
+{
+  "last_updated": 1771749863,
+  "ttl": 21600,
+  "version": "2.3",
+  "data": {
+    "stations": [
+      {
+        "station_id": "c1719799-0eee-4639-8258-3d058be2203e",
+        "name": "BoisdArcy_005",
+        "lat": 48.8059,
+        "lon": 2.011959,
+        "is_virtual_station": true,
+        "capacity": 3
+      },
+      {
+        "station_id": "1a61442b-0ae9-4b3b-9d42-4cacf16b942b",
+        "name": "Fontenay_008",
+        "lat": 48.814815,
+        "lon": 2.045824,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "d766d79c-99a6-4ce3-8ea0-7e2c373bd2fa",
+        "name": "Saint-Cyr-l'Ecole_014",
+        "lat": 48.79902,
+        "lon": 2.071759,
+        "is_virtual_station": true,
+        "capacity": 9
+      },
+      {
+        "station_id": "75073412-db3c-496f-b9fa-ec832ffe31e3",
+        "name": "Saint-Cyr-l'Ecole_021",
+        "lat": 48.81368,
+        "lon": 2.07812,
+        "is_virtual_station": true,
+        "capacity": 6
+      },
+      {
+        "station_id": "13c400ff-763a-4cb1-a957-c0005959133c",
+        "name": "Saint-Cyr-l'Ecole_022",
+        "lat": 48.79521,
+        "lon": 2.05422,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "6ab0b237-6ff3-47e8-904b-1a759462f675",
+        "name": "Saint-Cyr-l'Ecole_017",
+        "lat": 48.80664,
+        "lon": 2.068439,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "ae736527-d047-42ce-8756-826d9667d051",
+        "name": "Saint-Cyr-l'Ecole_016",
+        "lat": 48.80508,
+        "lon": 2.064569,
+        "is_virtual_station": true,
+        "capacity": 6
+      },
+      {
+        "station_id": "5e33f667-5e83-43a7-b5da-277f54799a7c",
+        "name": "Saint-Cyr-l'Ecole_009",
+        "lat": 48.80043,
+        "lon": 2.06454,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "64473268-2753-463b-b900-db8c4ef5d227",
+        "name": "Saint-Cyr-l'Ecole_013",
+        "lat": 48.79425,
+        "lon": 2.07164,
+        "is_virtual_station": true,
+        "capacity": 6
+      },
+      {
+        "station_id": "5f448a88-5df9-44a0-8d22-698b0547f37a",
+        "name": "Saint-Cyr-l'Ecole_019",
+        "lat": 48.80729,
+        "lon": 2.062399,
+        "is_virtual_station": true,
+        "capacity": 6
+      },
+      {
+        "station_id": "119bb8c3-4efe-4c9e-95c6-11a47fa78def",
+        "name": "Saint-Cyr-l'Ecole_015",
+        "lat": 48.80318,
+        "lon": 2.072639,
+        "is_virtual_station": true,
+        "capacity": 6
+      },
+      {
+        "station_id": "63925056-5a01-422f-87b3-9a6145e316bd",
+        "name": "Saint-Cyr-l'Ecole_010",
+        "lat": 48.79822,
+        "lon": 2.063429,
+        "is_virtual_station": true,
+        "capacity": 6
+      },
+      {
+        "station_id": "f86b6561-9180-40d5-8215-1b66713caaec",
+        "name": "Saint-Cyr-l'Ecole_002",
+        "lat": 48.80959,
+        "lon": 2.06235,
+        "is_virtual_station": true,
+        "capacity": 6
+      },
+      {
+        "station_id": "10f665e9-c1a0-45fd-ac48-fa4482f47b7d",
+        "name": "Saint-Cyr-l'Ecole_008",
+        "lat": 48.8025,
+        "lon": 2.06142,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "08d8c499-eeaa-425b-88a4-9973df210bed",
+        "name": "Saint-Cyr-l'Ecole_001",
+        "lat": 48.80937,
+        "lon": 2.05544,
+        "is_virtual_station": true,
+        "capacity": 6
+      },
+      {
+        "station_id": "f8f8847f-8774-4995-adff-9fdf58fb4280",
+        "name": "Saint-Cyr-l'Ecole_011",
+        "lat": 48.79724,
+        "lon": 2.0571,
+        "is_virtual_station": true,
+        "capacity": 6
+      },
+      {
+        "station_id": "4d323c52-d9cc-4c84-aa40-0491c80cc87d",
+        "name": "Saint-Cyr-l'Ecole_012",
+        "lat": 48.79489,
+        "lon": 2.06398,
+        "is_virtual_station": true,
+        "capacity": 12
+      },
+      {
+        "station_id": "b441158b-6144-4877-b5fc-d564bbdd41bb",
+        "name": "Saint-Cyr-l'Ecole_004",
+        "lat": 48.8048,
+        "lon": 2.05641,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "c59b7cde-4396-4b12-b236-6733eb2d568e",
+        "name": "Saint-Cyr-l'Ecole_018",
+        "lat": 48.80584,
+        "lon": 2.07453,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "190aafa6-6e1c-42b8-8349-72f25f64d8ef",
+        "name": "Saint-Cyr-l'Ecole_007",
+        "lat": 48.80226,
+        "lon": 2.05619,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "e1bf513f-0899-4d4f-80be-4e635054e201",
+        "name": "Saint-Cyr-l'Ecole_006",
+        "lat": 48.80071,
+        "lon": 2.05961,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "2e2cd504-8754-4f0d-ab20-afb2609bc964",
+        "name": "Saint-Cyr-l'Ecole_003",
+        "lat": 48.80714,
+        "lon": 2.0598,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "93106c9a-510b-4f17-9dc6-cd54a6cdc6ab",
+        "name": "BoisdArcy_007",
+        "lat": 48.806455,
+        "lon": 2.016223,
+        "is_virtual_station": true,
+        "capacity": 3
+      },
+      {
+        "station_id": "71cf332c-0c82-4f23-8055-d4ce9ef908d7",
+        "name": "Trappes_039",
+        "lat": 48.779106,
+        "lon": 2.008573,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "0a47c365-c6eb-41b1-95c4-e27ca77cf09e",
+        "name": "Plaisir_036",
+        "lat": 48.826306,
+        "lon": 1.959796,
+        "is_virtual_station": true,
+        "capacity": 3
+      },
+      {
+        "station_id": "31eaf538-d6ef-4126-97a2-bfd66be3c4b4",
+        "name": "Montigny_051",
+        "lat": 48.78969,
+        "lon": 2.034593,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "15577600-1765-41ad-bd76-de3329d290c5",
+        "name": "Trappes_038",
+        "lat": 48.773211,
+        "lon": 1.994473,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "fe24b07e-8810-4494-a48e-15b64f6ed282",
+        "name": "BoisdArcy_021",
+        "lat": 48.801282,
+        "lon": 2.040379,
+        "is_virtual_station": true,
+        "capacity": 3
+      },
+      {
+        "station_id": "74c8e1ac-c449-4dc9-a57b-e875670d1173",
+        "name": "Montigny_003",
+        "lat": 48.78936,
+        "lon": 2.034905,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "5933e772-cb3a-4fcc-bf48-79b737b31db6",
+        "name": "BoisdArcy_004",
+        "lat": 48.803375,
+        "lon": 2.011257,
+        "is_virtual_station": true,
+        "capacity": 3
+      },
+      {
+        "station_id": "9dd00441-2435-4051-b5ba-00f050724f78",
+        "name": "BoisdArcy_002",
+        "lat": 48.801341,
+        "lon": 2.006889,
+        "is_virtual_station": true,
+        "capacity": 3
+      },
+      {
+        "station_id": "33d8780c-40be-4a76-8e50-40e37206aaf9",
+        "name": "BoisdArcy_009",
+        "lat": 48.803421,
+        "lon": 2.018436,
+        "is_virtual_station": true,
+        "capacity": 3
+      },
+      {
+        "station_id": "6178c86e-1147-436a-bea2-71db8d3eb31a",
+        "name": "Fontenay_006",
+        "lat": 48.810995,
+        "lon": 2.044698,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "53260bd8-2a28-4586-97ee-249245f5466e",
+        "name": "BoisdArcy_015",
+        "lat": 48.798952,
+        "lon": 2.023546,
+        "is_virtual_station": true,
+        "capacity": 3
+      },
+      {
+        "station_id": "22fc5823-dafe-4c45-a958-2c1672a8ff29",
+        "name": "BoisdArcy_008",
+        "lat": 48.805329,
+        "lon": 2.017663,
+        "is_virtual_station": true,
+        "capacity": 3
+      },
+      {
+        "station_id": "ce3e03b2-a353-45d2-905f-9bf250cd3446",
+        "name": "Fontenay_007",
+        "lat": 48.81174,
+        "lon": 2.040946,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "39a168a7-46ed-4513-a40b-054f78791253",
+        "name": "Coignières_004",
+        "lat": 48.741869,
+        "lon": 1.916387,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "daccf71c-948e-490e-a9c2-71aa5fc66260",
+        "name": "BoisdArcy_023",
+        "lat": 48.799535,
+        "lon": 2.038299,
+        "is_virtual_station": true,
+        "capacity": 3
+      },
+      {
+        "station_id": "4b56999c-b918-47cf-a0a6-f6986582fed4",
+        "name": "BoisdArcy_001",
+        "lat": 48.803917,
+        "lon": 2.004706,
+        "is_virtual_station": true,
+        "capacity": 3
+      },
+      {
+        "station_id": "027a6047-1e2d-4d63-8681-07c58678c7dc",
+        "name": "BoisdArcy_019",
+        "lat": 48.80443,
+        "lon": 2.03703,
+        "is_virtual_station": true,
+        "capacity": 3
+      },
+      {
+        "station_id": "462ef8c7-2d16-4d02-86f2-2b79619889dc",
+        "name": "Saint-Cyr-l'Ecole_005",
+        "lat": 48.804538,
+        "lon": 2.052572,
+        "is_virtual_station": true,
+        "capacity": 6
+      },
+      {
+        "station_id": "7c38e541-52c4-4280-91e1-2a2be03e50e8",
+        "name": "Saint-Cyr-l'Ecole_020",
+        "lat": 48.799942,
+        "lon": 2.066433,
+        "is_virtual_station": true,
+        "capacity": 6
+      },
+      {
+        "station_id": "cdb9918b-72da-42d6-a4ad-099a649250ab",
+        "name": "Saint-Cyr-l'Ecole_023",
+        "lat": 48.799533,
+        "lon": 2.070425,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "78aff43e-948a-4f72-b8ec-c90df4962021",
+        "name": "Élancourt_025",
+        "lat": 48.764975,
+        "lon": 1.96584,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "aa32ba0b-5717-4063-8d64-2f0fa2351ecd",
+        "name": "Guyancourt _049",
+        "lat": 48.780781,
+        "lon": 2.044733,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "079806fb-2dd2-46bd-beda-265ea8307247",
+        "name": "Plaisir_016",
+        "lat": 48.823221,
+        "lon": 1.944731,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "dc97e258-4c93-4645-821a-b36e5554d9a0",
+        "name": "Maurepas_008",
+        "lat": 48.763714,
+        "lon": 1.945352,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "a1981234-6dbc-484b-b8b8-44a83a510b0c",
+        "name": "Fontenay_010",
+        "lat": 48.810725,
+        "lon": 2.052406,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "538cbfa1-5b88-4f7f-8b9a-a0dfbd2c0ac3",
+        "name": "Fontenay_002",
+        "lat": 48.807523,
+        "lon": 2.040459,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "ff485108-c317-472f-aa30-88301d6fdd81",
+        "name": "BoisdArcy_016",
+        "lat": 48.798846,
+        "lon": 2.029847,
+        "is_virtual_station": true,
+        "capacity": 3
+      },
+      {
+        "station_id": "760ab9ae-49f5-46a5-9bb2-94a71064022c",
+        "name": "Coignières_003",
+        "lat": 48.739351,
+        "lon": 1.909279,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "d6a869a7-b973-4a4d-a750-b1843f4df0ac",
+        "name": "Verrière_007",
+        "lat": 48.750605,
+        "lon": 1.948629,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "dbf08ebb-ba68-4a70-ab74-4e514f173466",
+        "name": "Voisins_016",
+        "lat": 48.761218,
+        "lon": 2.054056,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "234ea665-0619-4095-b997-b8d4789a87a0",
+        "name": "Coignières_012",
+        "lat": 48.756658,
+        "lon": 1.934054,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "fe487623-6821-4278-8a12-7e2d1bd22bbc",
+        "name": "Clayes_007",
+        "lat": 48.822401,
+        "lon": 1.981544,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "1569a72f-49e1-4407-b568-f3f2e5de5f6c",
+        "name": "Montigny_020",
+        "lat": 48.76271,
+        "lon": 2.03433,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "ba7a9f97-be01-4ef3-9636-a5b8d2303b3e",
+        "name": "Verrière_004",
+        "lat": 48.758696,
+        "lon": 1.959153,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "001fcbe3-b0ec-478f-a79f-f56e2b338063",
+        "name": "Trappes_002",
+        "lat": 48.776536,
+        "lon": 1.987222,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "6a3a2db4-b911-4747-8ecd-ad7adf4d9935",
+        "name": "Trappes_010",
+        "lat": 48.768391,
+        "lon": 1.996118,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "8b94b1b3-fb1e-4150-8d36-befe62b532e1",
+        "name": "Villepreux_008",
+        "lat": 48.834723,
+        "lon": 1.990869,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "02375d2c-04d2-428f-afa4-38be8a2110be",
+        "name": "Coignières_006",
+        "lat": 48.747416,
+        "lon": 1.930029,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "d01b72eb-caee-4efb-8e0b-b645e5a0b01f",
+        "name": "Maurepas_002",
+        "lat": 48.761656,
+        "lon": 1.942777,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "36991984-fb28-4226-9136-f16f0e5c4c72",
+        "name": "Voisins_019",
+        "lat": 48.758747,
+        "lon": 2.054684,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "d03f1451-53ce-46cf-8afe-2f3d3523aab2",
+        "name": "Montigny_041",
+        "lat": 48.775535,
+        "lon": 2.030568,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "b8a43191-b5e6-472c-924f-d302b71c1148",
+        "name": "Trappes_037",
+        "lat": 48.774795,
+        "lon": 2.005904,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "f8b4e1a5-0af5-478e-9176-47f5a07cf28b",
+        "name": "Trappes_030",
+        "lat": 48.77364,
+        "lon": 1.984506,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "d91d5b64-2b27-448c-9339-194070faaaa2",
+        "name": "Élancourt_015",
+        "lat": 48.795391,
+        "lon": 1.968147,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "3ea12513-0de3-48c7-8985-0c96452ffc5d",
+        "name": "Élancourt_027",
+        "lat": 48.768508,
+        "lon": 1.964078,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "93b67cb2-5d78-43a3-8e85-d9666ae7f2af",
+        "name": "Villepreux_010",
+        "lat": 48.830621,
+        "lon": 2.004964,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "72985526-a952-4b35-824c-0b05de9f23a2",
+        "name": "Montigny_043",
+        "lat": 48.773492,
+        "lon": 2.015815,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "5a2f48ec-c5ae-4948-9ffc-fd7a7b11097b",
+        "name": "Montigny_047",
+        "lat": 48.768346,
+        "lon": 2.023457,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "fa7b5c60-d281-4db3-b477-9bf8a28e278f",
+        "name": "Plaisir_001",
+        "lat": 48.82598,
+        "lon": 1.967782,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "05a686c8-c4c3-4f1b-9d4e-9c1ccb05f0f5",
+        "name": "Magny_008",
+        "lat": 48.718088,
+        "lon": 2.096499,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "a2aebac7-23b5-4b70-82f2-3d0313b5bd02",
+        "name": "Voisins_004",
+        "lat": 48.754794,
+        "lon": 2.060378,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "467e43e4-c773-4ead-b40b-6866fcab1551",
+        "name": "Montigny_049",
+        "lat": 48.769851,
+        "lon": 2.037715,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "13f81785-351c-476c-bfd0-89a273b5c3fc",
+        "name": "Élancourt_021",
+        "lat": 48.777323,
+        "lon": 1.958775,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "5232818e-3e59-423d-96a2-d318fe569338",
+        "name": "Montigny_025",
+        "lat": 48.783674,
+        "lon": 2.04147,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "10a918a4-3229-44ec-9602-63e0bb42d929",
+        "name": "Villepreux_007",
+        "lat": 48.827134,
+        "lon": 2.0011,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "a554aa33-d268-4daf-b9f6-5a57e365b5c9",
+        "name": "Maurepas_014",
+        "lat": 48.764526,
+        "lon": 1.943962,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "cae8b625-f7be-4ddb-8a01-13b1cd72d783",
+        "name": "Élancourt_016",
+        "lat": 48.791699,
+        "lon": 1.971825,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "f9b459b1-0e7e-4093-889c-2307023863cc",
+        "name": "Clayes_011",
+        "lat": 48.819921,
+        "lon": 1.999373,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "6506239b-e09f-404a-8802-999df0e7cf49",
+        "name": "Guyancourt _011",
+        "lat": 48.772429,
+        "lon": 2.06723,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "1273e5bd-65c7-4c72-96c6-e379cfc5acef",
+        "name": "Maurepas_001",
+        "lat": 48.764796,
+        "lon": 1.934477,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "cd629e08-e112-49f1-b1ef-aa83db5e6990",
+        "name": "Montigny_045",
+        "lat": 48.765569,
+        "lon": 2.017841,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "e85fc2df-c2af-4aa2-95b3-201efac353f1",
+        "name": "Voisins_020",
+        "lat": 48.75605,
+        "lon": 2.055742,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "ea2b403a-23b6-431b-8987-56c2dc9ce2e0",
+        "name": "Voisins_007",
+        "lat": 48.758122,
+        "lon": 2.039069,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "a069ad9b-5c6c-458f-9f16-6c0ee7dda05e",
+        "name": "Montigny_001",
+        "lat": 48.788543,
+        "lon": 2.043603,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "c407cde6-82ff-462a-af1e-4cf555205ab3",
+        "name": "Fontenay_009",
+        "lat": 48.813705,
+        "lon": 2.055809,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "ff223455-d76a-4196-947c-21a2faa01ceb",
+        "name": "Montigny_027",
+        "lat": 48.787863,
+        "lon": 2.043969,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "abb8a2dc-c025-480c-a50f-bfc96c5bf862",
+        "name": "Élancourt_030",
+        "lat": 48.772264,
+        "lon": 1.948825,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "67a1ffc5-bd9e-475a-8810-0b8330b9d8ce",
+        "name": "Maurepas_020",
+        "lat": 48.777219,
+        "lon": 1.900625,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "8ce033e4-4ecd-4e28-9355-e4f1b1bae078",
+        "name": "Guyancourt _037",
+        "lat": 48.783158,
+        "lon": 2.058477,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "aeeb81f5-3ab3-420e-bf9d-1e4b9baf8f22",
+        "name": "Trappes_025",
+        "lat": 48.786104,
+        "lon": 1.982025,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "e6b033e3-ba1b-4839-a86b-073d2af447b5",
+        "name": "Verrière_010",
+        "lat": 48.758599,
+        "lon": 1.964322,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "03c9e8bd-59fa-4482-9774-86bfcce995bb",
+        "name": "Fontenay_003",
+        "lat": 48.808851,
+        "lon": 2.045715,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "85b5fd8e-02ae-4fea-8a51-c4cc8714f9b0",
+        "name": "Montigny_014",
+        "lat": 48.775389,
+        "lon": 2.015609,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "2764c659-d491-44db-a82b-210f4509a0ca",
+        "name": "Coignières_001",
+        "lat": 48.743745,
+        "lon": 1.921209,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "0bc9c223-a0fe-420e-8028-d4e1815fd45c",
+        "name": "Élancourt_004",
+        "lat": 48.76747,
+        "lon": 1.95262,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "8faa2f48-ad75-4c4f-8106-fb41eeb5f43b",
+        "name": "Élancourt_012",
+        "lat": 48.779618,
+        "lon": 1.957902,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "d019df90-2830-4ae5-8383-fcf21ca05299",
+        "name": "Élancourt_024",
+        "lat": 48.774792,
+        "lon": 1.939496,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "a36150e9-7dac-4908-80e1-0f1552ae01ef",
+        "name": "Élancourt_003",
+        "lat": 48.768777,
+        "lon": 1.948698,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "8e0f55df-cb46-4b4b-80dd-c7c5b4eeb7d2",
+        "name": "Montigny_053",
+        "lat": 48.78576,
+        "lon": 2.04264,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "5634c0de-5cc4-45b8-bc18-88e801f9955c",
+        "name": "Guyancourt _020",
+        "lat": 48.787799,
+        "lon": 2.056252,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "27879ed1-7b21-4747-bd66-1c565a8312d1",
+        "name": "Coignières_007",
+        "lat": 48.747434,
+        "lon": 1.920086,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "cd582e5c-64a2-44c8-a597-bb941c775460",
+        "name": "Montigny_023",
+        "lat": 48.787918,
+        "lon": 2.04694,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "10e77071-2bb6-4ba0-a019-5019097e8b0a",
+        "name": "Voisins_010",
+        "lat": 48.756758,
+        "lon": 2.051934,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "d0791517-5619-4f5c-9fd8-aeedc1889962",
+        "name": "Trappes_008",
+        "lat": 48.777343,
+        "lon": 2.004881,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "ead18f1a-cce8-4324-9fe4-67c7c83e9d6d",
+        "name": "Montigny_021",
+        "lat": 48.785579,
+        "lon": 2.046237,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "b620b68c-af68-4078-8c3f-6f098ff7a818",
+        "name": "Montigny_005",
+        "lat": 48.783163,
+        "lon": 2.046814,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "9d140510-ede0-4197-b0d0-6decfcc63818",
+        "name": "Montigny_046",
+        "lat": 48.765907,
+        "lon": 2.021194,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "b2ac80ab-ea54-4097-aac7-2fc7a3eb5c77",
+        "name": "Trappes_004",
+        "lat": 48.784665,
+        "lon": 1.986118,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "9f247f8f-cd22-4510-8e51-f7ccf6a7c66f",
+        "name": "Guyancourt _013",
+        "lat": 48.763852,
+        "lon": 2.063034,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "0d4890a6-2ac4-4072-bae6-c3c2aeba8d10",
+        "name": "Plaisir_017",
+        "lat": 48.818189,
+        "lon": 1.944024,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "57f4a4e8-61cd-4e6e-9cfe-988625518bb0",
+        "name": "BoisdArcy_010",
+        "lat": 48.801739,
+        "lon": 2.018868,
+        "is_virtual_station": true,
+        "capacity": 3
+      },
+      {
+        "station_id": "bee3f947-bb25-4b92-b316-4b23bb5ff8e6",
+        "name": "Coignières_008",
+        "lat": 48.757063,
+        "lon": 1.930878,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "0835dc96-9a6e-495a-9796-546c95a23ad5",
+        "name": "Plaisir_015",
+        "lat": 48.825511,
+        "lon": 1.944856,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "8e6d16b9-0eef-4316-908c-9819d573187e",
+        "name": "Plaisir_034",
+        "lat": 48.795765,
+        "lon": 1.954133,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "64b32992-f13f-487e-ac86-746c2137bcff",
+        "name": "Guyancourt _047",
+        "lat": 48.762906,
+        "lon": 2.083314,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "53e60207-cc8a-4003-83a3-ebb976af2e37",
+        "name": "Guyancourt _042",
+        "lat": 48.781888,
+        "lon": 2.066463,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "40a84e63-3cbf-480e-8b97-6047f74d1821",
+        "name": "Maurepas_028",
+        "lat": 48.765668,
+        "lon": 1.909081,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "f32268a4-89e5-4184-a93d-667152539df0",
+        "name": "Coignières_009",
+        "lat": 48.757656,
+        "lon": 1.935368,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "cf6395c1-5fb6-484b-8ad6-357951e77da8",
+        "name": "Plaisir_010",
+        "lat": 48.817348,
+        "lon": 1.946915,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "dce185a6-261e-4e17-a833-e05e8145f2cb",
+        "name": "Guyancourt _026",
+        "lat": 48.777278,
+        "lon": 2.046771,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "4635702f-5e5b-4607-a721-7963448c64df",
+        "name": "Guyancourt _029",
+        "lat": 48.772538,
+        "lon": 2.078909,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "16bbb12e-13b3-4602-ad4d-73847f99547d",
+        "name": "Montigny_034",
+        "lat": 48.768684,
+        "lon": 2.051273,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "110c9d3f-10d9-4416-b102-8a777503abad",
+        "name": "Guyancourt _044",
+        "lat": 48.774864,
+        "lon": 2.090066,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "7c45c6a8-2648-47a3-959f-60f311001ffe",
+        "name": "Élancourt_031",
+        "lat": 48.768889,
+        "lon": 1.953326,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "966b7d3c-91f3-4342-8437-be7d51e0376f",
+        "name": "Trappes_028",
+        "lat": 48.792244,
+        "lon": 1.98069,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "43497e02-23cc-4bf5-a035-82cf4eb9ec15",
+        "name": "Verrière_008",
+        "lat": 48.755691,
+        "lon": 1.947368,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "21c36b52-26f7-47d5-87a5-e29a8779d054",
+        "name": "Montigny_037",
+        "lat": 48.769377,
+        "lon": 2.040178,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "a2880b83-ab16-4e5a-8591-c596b2c0ff15",
+        "name": "Voisins_015",
+        "lat": 48.759251,
+        "lon": 2.029608,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "c975894b-89b3-4fba-b60d-5c364b308e59",
+        "name": "Trappes_009",
+        "lat": 48.775239,
+        "lon": 2.006673,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "650c2d0a-e482-43f6-b107-e6e9c2b0135b",
+        "name": "Guyancourt _022",
+        "lat": 48.786038,
+        "lon": 2.055905,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "af62bcf7-d71f-493d-9256-202b057217c3",
+        "name": "Clayes_010",
+        "lat": 48.827906,
+        "lon": 1.991734,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "907a1118-15b2-43a5-9a6c-82596730e1ae",
+        "name": "Élancourt_006",
+        "lat": 48.793478,
+        "lon": 1.972275,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "ce4a3d7e-45fb-4444-93b1-b01331a75440",
+        "name": "Maurepas_007",
+        "lat": 48.761515,
+        "lon": 1.950602,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "90d33bd2-db92-4843-8d2e-c1f89e4d9977",
+        "name": "Plaisir_011",
+        "lat": 48.800992,
+        "lon": 1.981799,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "70846245-eb18-43a6-ae8d-4ccb10a96853",
+        "name": "Voisins_005",
+        "lat": 48.755217,
+        "lon": 2.0436,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "47d8004d-8e93-434d-8d6e-ebed4b8ebe0f",
+        "name": "Trappes_034",
+        "lat": 48.782564,
+        "lon": 1.976663,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "86cba37e-aa38-4121-8635-f5636b429582",
+        "name": "BoisdArcy_014",
+        "lat": 48.8014,
+        "lon": 2.025245,
+        "is_virtual_station": true,
+        "capacity": 3
+      },
+      {
+        "station_id": "7f5532a5-98ba-4d8b-9595-6ea0761e7233",
+        "name": "BoisdArcy_006",
+        "lat": 48.804783,
+        "lon": 2.013821,
+        "is_virtual_station": true,
+        "capacity": 3
+      },
+      {
+        "station_id": "64ef3b06-5f93-4aff-9de3-7376a1c5408f",
+        "name": "Clayes_001",
+        "lat": 48.821582,
+        "lon": 1.97284,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "8d8f33c2-c595-4176-8b81-dfe39cab6732",
+        "name": "Plaisir_023",
+        "lat": 48.821262,
+        "lon": 1.965792,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "db502626-d54b-4823-98d8-d73b66908499",
+        "name": "Clayes_002",
+        "lat": 48.823705,
+        "lon": 1.990929,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "82eeaf6d-5c7d-48dc-ae6b-ce8e924f94f6",
+        "name": "Magny_017",
+        "lat": 48.71943,
+        "lon": 2.076744,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "0b5bd815-5a38-4502-bd1b-e675987ff8a8",
+        "name": "Clayes_006",
+        "lat": 48.8231,
+        "lon": 1.976213,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "2e8640d8-04e0-4a6b-bf6f-acea817439a7",
+        "name": "Montigny_006",
+        "lat": 48.78677,
+        "lon": 2.048657,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "bcc8385d-732b-455c-a86c-ebf2b9b8162e",
+        "name": "Coignières_010",
+        "lat": 48.756901,
+        "lon": 1.938111,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "33643c6d-0f99-47fe-8bf1-5c6a2fec6e3b",
+        "name": "Verrière_011",
+        "lat": 48.760202,
+        "lon": 1.965337,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "4462cbb1-cdc7-4290-ab60-f73499e53835",
+        "name": "Coignières_002",
+        "lat": 48.750455,
+        "lon": 1.9187,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "aa961f27-4217-4c7a-8581-1ba82347bb19",
+        "name": "Guyancourt _010",
+        "lat": 48.774373,
+        "lon": 2.075333,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "b452253c-f606-425a-bc60-444ff5ff8a00",
+        "name": "Trappes_006",
+        "lat": 48.780146,
+        "lon": 1.990582,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "bd0bd05f-d1b5-4f8d-8876-a2e70bab3a59",
+        "name": "Trappes_003",
+        "lat": 48.784093,
+        "lon": 1.98513,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "8f2e5acf-13f0-4fb0-a7c2-58606ccc05d2",
+        "name": "Maurepas_024",
+        "lat": 48.761795,
+        "lon": 1.917698,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "78b82780-9fc8-4639-b89b-64e1f2da2de4",
+        "name": "Montigny_024",
+        "lat": 48.785024,
+        "lon": 2.044782,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "51f60c75-dae5-4476-b0c8-2a37e4f18365",
+        "name": "Trappes_020",
+        "lat": 48.777517,
+        "lon": 1.981106,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "569d0d5d-6cd6-4e66-9964-65013c11a14c",
+        "name": "Guyancourt _019",
+        "lat": 48.785623,
+        "lon": 2.053176,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "d353ad34-f0bb-47a2-a157-cef76d29ee46",
+        "name": "Guyancourt _035",
+        "lat": 48.764699,
+        "lon": 2.068248,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "ff08398c-1d58-4142-af60-3be3e204b575",
+        "name": "Montigny_039",
+        "lat": 48.773904,
+        "lon": 2.036363,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "4a5f6a67-af1c-4359-9d58-7adea3955f31",
+        "name": "Montigny_033",
+        "lat": 48.773578,
+        "lon": 2.045681,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "1b90e3d6-7529-4e82-8afe-cc5fe6b90cb7",
+        "name": "Magny_006",
+        "lat": 48.721672,
+        "lon": 2.091618,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "11f7848b-57bd-4404-a902-930d2c6e627c",
+        "name": "Montigny_015",
+        "lat": 48.767799,
+        "lon": 2.04046,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "475fe7d3-22c5-41f6-a33f-2b93255f45f0",
+        "name": "Trappes_005",
+        "lat": 48.780843,
+        "lon": 1.979829,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "f013c926-fe42-43f0-a7db-810899e94871",
+        "name": "Montigny_044",
+        "lat": 48.769305,
+        "lon": 2.017875,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "7fa18764-aa71-4f2d-95cb-ca4f98a42fb8",
+        "name": "Villepreux_001",
+        "lat": 48.829592,
+        "lon": 1.994937,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "964a8d53-3ced-4697-8cd5-6e5e05ab5573",
+        "name": "Élancourt_026",
+        "lat": 48.770327,
+        "lon": 1.962164,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "67ce2bc5-73e6-41dc-98a8-afe40750ceb9",
+        "name": "Trappes_029",
+        "lat": 48.773983,
+        "lon": 1.980672,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "be304058-d3cd-471f-97fb-52649e6a9e8d",
+        "name": "Trappes_019",
+        "lat": 48.778154,
+        "lon": 1.996875,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "b61f91d4-63bf-4380-9082-b21f38097e67",
+        "name": "Maurepas_029",
+        "lat": 48.766334,
+        "lon": 1.905486,
+        "is_virtual_station": true,
+        "capacity": 11
+      },
+      {
+        "station_id": "e2508645-2846-49d9-b540-ee77e8e32b3c",
+        "name": "Maurepas_018",
+        "lat": 48.763118,
+        "lon": 1.92216,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "240bfa2f-bc8a-4434-ad29-a5bfa7a1858f",
+        "name": "Guyancourt _033",
+        "lat": 48.77037,
+        "lon": 2.06955,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "c2167e48-12d2-4af2-b3df-3a4238bed5f0",
+        "name": "Guyancourt _015",
+        "lat": 48.765141,
+        "lon": 2.060394,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "dd383c6f-fe6a-4e2e-b62d-21c909e0875e",
+        "name": "Guyancourt _028",
+        "lat": 48.76849,
+        "lon": 2.060446,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "90e7c01f-a305-401a-881d-59ca6b835771",
+        "name": "Guyancourt _014",
+        "lat": 48.784575,
+        "lon": 2.065099,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "e9c7b18f-af6f-44b0-a36a-d724aa1d7fc4",
+        "name": "Verrière_006",
+        "lat": 48.755798,
+        "lon": 1.943999,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "ea93219c-d29b-4acb-90a3-55832f747f40",
+        "name": "Montigny_016",
+        "lat": 48.768132,
+        "lon": 2.052696,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "0a069582-749d-45dd-a694-1867097889cc",
+        "name": "Montigny_030",
+        "lat": 48.778825,
+        "lon": 2.032722,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "68dfb86c-417f-4bc2-93c1-3c95d1b9abce",
+        "name": "Trappes_007",
+        "lat": 48.775603,
+        "lon": 1.999451,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "2a1537b0-78f6-4fd8-aba7-8c7af3e8e627",
+        "name": "Plaisir_024",
+        "lat": 48.823241,
+        "lon": 1.958802,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "38ff8ca2-0c00-4ea6-948c-4be2274952dc",
+        "name": "Élancourt_029",
+        "lat": 48.770192,
+        "lon": 1.952681,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "6338323d-8068-4198-966b-6b4b1e0cd55f",
+        "name": "Plaisir_021",
+        "lat": 48.818653,
+        "lon": 1.966094,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "455a9db2-bf5b-4df0-bbb6-7755ff3b93f7",
+        "name": "Guyancourt _039",
+        "lat": 48.770381,
+        "lon": 2.078774,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "d61b4985-983b-4eab-b733-db1c95a038be",
+        "name": "Guyancourt _007",
+        "lat": 48.771204,
+        "lon": 2.070536,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "79849e6b-5284-4f77-abb1-fbea550f4c02",
+        "name": "Magny_010",
+        "lat": 48.720015,
+        "lon": 2.088353,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "bed025bb-01a9-40b3-abf9-7dc60367e500",
+        "name": "Plaisir_018",
+        "lat": 48.816411,
+        "lon": 1.948322,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "90a6fe1c-f041-44ef-975d-22d93d9b97b1",
+        "name": "Clayes_008",
+        "lat": 48.829505,
+        "lon": 1.983013,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "28c4409a-2d80-498d-b724-78a067005cd4",
+        "name": "Montigny_054",
+        "lat": 48.767114,
+        "lon": 2.026116,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "c62d496f-502c-46b9-9b04-05cb9a0db9f9",
+        "name": "Plaisir_025",
+        "lat": 48.824585,
+        "lon": 1.964533,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "e67541a5-49aa-4c2f-886a-894b6a84b61a",
+        "name": "Montigny_011",
+        "lat": 48.780696,
+        "lon": 2.042202,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "67b14b9f-8604-4324-96e7-ab35d1231a28",
+        "name": "Montigny_040",
+        "lat": 48.76986,
+        "lon": 2.034239,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "b32c44d8-016c-4ad5-9a4d-36d35e9ef3c8",
+        "name": "Élancourt_033",
+        "lat": 48.766392,
+        "lon": 1.950359,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "672e48b4-346d-44c1-9efd-37ffe1e87240",
+        "name": "Plaisir_033",
+        "lat": 48.802504,
+        "lon": 1.966124,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "532f5562-7b7c-48f8-a828-21b3c5046093",
+        "name": "Élancourt_001",
+        "lat": 48.770478,
+        "lon": 1.9701,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "387f86cf-79ae-441f-bb55-8ffd6986ad8a",
+        "name": "Trappes_015",
+        "lat": 48.77766,
+        "lon": 1.987012,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "12a05179-3f16-4728-88b7-633a34b25528",
+        "name": "Plaisir_007",
+        "lat": 48.823934,
+        "lon": 1.952741,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "86d0a1d4-d7a4-4d5c-92f2-96aba2aaf99c",
+        "name": "Élancourt_017",
+        "lat": 48.794577,
+        "lon": 1.970338,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "ee0ecf82-3dbc-4ea2-ab93-f28b97ee2709",
+        "name": "Maurepas_009",
+        "lat": 48.761536,
+        "lon": 1.945163,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "29dd31c4-16a7-4c8f-ab3f-a1193d855765",
+        "name": "Clayes_003",
+        "lat": 48.826002,
+        "lon": 1.987819,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "2d0b751b-9235-452f-a511-c0935a9238cf",
+        "name": "Montigny_042",
+        "lat": 48.777018,
+        "lon": 2.021938,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "2dbbcf0c-c4d7-47c8-8df6-efd0385481ce",
+        "name": "Montigny_036",
+        "lat": 48.767594,
+        "lon": 2.032188,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "11424a1e-9223-4a82-83c5-fd4cbe181252",
+        "name": "Trappes_026",
+        "lat": 48.784735,
+        "lon": 1.972864,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "adfec80c-dc22-4ae5-ade7-104f209faf23",
+        "name": "Maurepas_015",
+        "lat": 48.76944,
+        "lon": 1.941305,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "90b4952d-4664-4590-80eb-d7127570a195",
+        "name": "Maurepas_013",
+        "lat": 48.765927,
+        "lon": 1.918017,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "3282780e-02ef-4f5e-80cd-e2336b55ef29",
+        "name": "Élancourt_028",
+        "lat": 48.765531,
+        "lon": 1.959666,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "f7522ceb-333f-40bc-8742-d9f8c3a27f08",
+        "name": "Plaisir_028",
+        "lat": 48.798223,
+        "lon": 1.953592,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "b65209ae-cfb0-4e00-b5c8-c706f16399cd",
+        "name": "Élancourt_014",
+        "lat": 48.796208,
+        "lon": 1.973591,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "3304cf1d-6aa1-402c-87d2-cc0d02b75743",
+        "name": "Voisins_017",
+        "lat": 48.763641,
+        "lon": 2.050577,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "8617b5a0-c511-415a-ab81-c43e0f250c5f",
+        "name": "Villepreux_002",
+        "lat": 48.830106,
+        "lon": 2.001188,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "b61aba1d-6552-42a4-a79d-19b5a5ffa992",
+        "name": "Trappes_022",
+        "lat": 48.783102,
+        "lon": 1.987604,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "c19262e2-ff4a-41ac-949d-78a8363e06c9",
+        "name": "Voisins_012",
+        "lat": 48.760811,
+        "lon": 2.046174,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "380b1dd7-7592-4b68-97fc-79eb139d8ce0",
+        "name": "Voisins_008",
+        "lat": 48.76646,
+        "lon": 2.056067,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "59eb3d62-bbf7-4fea-b797-74f03e6fbf6b",
+        "name": "Magny_002",
+        "lat": 48.718395,
+        "lon": 2.102395,
+        "is_virtual_station": true,
+        "capacity": 18
+      },
+      {
+        "station_id": "a43c2a3a-7cf5-4086-a91b-a13188b708e0",
+        "name": "Plaisir_030",
+        "lat": 48.792617,
+        "lon": 1.960461,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "f3c8e8a9-1b30-488a-b061-c6a89858a4f5",
+        "name": "Guyancourt _030",
+        "lat": 48.767653,
+        "lon": 2.077547,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "1ecd8961-8779-4b44-a3aa-eccd5a9c9d08",
+        "name": "BoisdArcy_017",
+        "lat": 48.800911,
+        "lon": 2.031104,
+        "is_virtual_station": true,
+        "capacity": 3
+      },
+      {
+        "station_id": "417250ef-1fd5-411b-9c7d-56275755b8ca",
+        "name": "BoisdArcy_003",
+        "lat": 48.80098,
+        "lon": 2.011124,
+        "is_virtual_station": true,
+        "capacity": 3
+      },
+      {
+        "station_id": "dedbe80f-8234-43ae-9d01-e5ec561f1e20",
+        "name": "Montigny_013",
+        "lat": 48.769159,
+        "lon": 2.02728,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "67a23ed2-2bf9-450b-a20f-21aca1ee8ea3",
+        "name": "BoisdArcy_022",
+        "lat": 48.799981,
+        "lon": 2.036925,
+        "is_virtual_station": true,
+        "capacity": 3
+      },
+      {
+        "station_id": "ce3f707f-60c7-4de6-9f00-93581f3cf4f0",
+        "name": "Trappes_012",
+        "lat": 48.762001,
+        "lon": 1.980851,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "585ee403-6f9f-4f1e-a647-ac9b53220fc2",
+        "name": "Guyancourt _034",
+        "lat": 48.764773,
+        "lon": 2.075177,
+        "is_virtual_station": true,
+        "capacity": 12
+      },
+      {
+        "station_id": "7155e47f-2fc1-4dd3-9657-290f0f56d87b",
+        "name": "Maurepas_004",
+        "lat": 48.772687,
+        "lon": 1.939747,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "991770c3-20d4-497c-9b08-f4883ef1b5ec",
+        "name": "Guyancourt _012",
+        "lat": 48.769405,
+        "lon": 2.062069,
+        "is_virtual_station": true,
+        "capacity": 12
+      },
+      {
+        "station_id": "6c7a20cf-e01d-4e52-923d-9017e7018427",
+        "name": "BoisdArcy_018",
+        "lat": 48.804244,
+        "lon": 2.031454,
+        "is_virtual_station": true,
+        "capacity": 3
+      },
+      {
+        "station_id": "c02fd4e6-2822-4845-bae3-d50cd7673a3b",
+        "name": "Plaisir_022",
+        "lat": 48.819597,
+        "lon": 1.967933,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "d3bb400e-7372-4b11-96c0-8748d143e9d4",
+        "name": "Montigny_032",
+        "lat": 48.775022,
+        "lon": 2.042206,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "49affeaf-bd36-4129-b4cc-e380e009d4bd",
+        "name": "Magny_012",
+        "lat": 48.745129,
+        "lon": 2.029423,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "c686c120-1270-4666-a63e-1836a81b1d94",
+        "name": "Trappes_018",
+        "lat": 48.778726,
+        "lon": 1.987352,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "7468a506-7b3d-452e-aeef-b21672e17532",
+        "name": "Voisins_009",
+        "lat": 48.755886,
+        "lon": 2.054028,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "913e9f26-12d5-4a93-b13f-fe0a103680b6",
+        "name": "Magny_014",
+        "lat": 48.74133,
+        "lon": 2.057643,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "f0e07352-5f20-4d4d-bbe8-0d9774b5b863",
+        "name": "Clayes_009",
+        "lat": 48.82461,
+        "lon": 1.99245,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "3d984bd1-e109-4022-9ac8-79c0ed00900a",
+        "name": "Élancourt_010",
+        "lat": 48.797991,
+        "lon": 1.97564,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "81e53dd9-74b9-4560-8058-167dd8400338",
+        "name": "Clayes_012",
+        "lat": 48.819872,
+        "lon": 1.987782,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "16638ace-f259-4847-bc4f-45d04206c9b9",
+        "name": "Voisins_006",
+        "lat": 48.7591,
+        "lon": 2.050101,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "21ad8dd0-b654-4fbb-85d2-bd53bb50081c",
+        "name": "Plaisir_003",
+        "lat": 48.82669,
+        "lon": 1.948706,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "4d80d16a-fb9e-4ca1-a4f7-89e3a34e3b2c",
+        "name": "Plaisir_008",
+        "lat": 48.821368,
+        "lon": 1.953703,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "3b85824d-ba9c-4d84-ab92-f49a1f709997",
+        "name": "Plaisir_026",
+        "lat": 48.806967,
+        "lon": 1.947659,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "2c3837c1-52e8-4ae0-bc84-a7424285f20e",
+        "name": "Montigny_022",
+        "lat": 48.787198,
+        "lon": 2.045488,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "ab76ab3e-8920-4c11-9261-25e433d5ddad",
+        "name": "Montigny_010",
+        "lat": 48.779513,
+        "lon": 2.035162,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "c9c57541-f584-44dc-ade1-4668746e9c58",
+        "name": "Maurepas_010",
+        "lat": 48.766272,
+        "lon": 1.940156,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "afec1868-261d-4149-83c9-82581c061c27",
+        "name": "Élancourt_007",
+        "lat": 48.79574,
+        "lon": 1.981928,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "248af471-57c3-4690-b757-2f1dc7428d90",
+        "name": "Montigny_002",
+        "lat": 48.787599,
+        "lon": 2.042155,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "e730c64e-cf9e-4008-845b-8035be09439d",
+        "name": "Élancourt_002",
+        "lat": 48.770259,
+        "lon": 1.945661,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "ece7ecbb-5e2f-43f5-bd22-5c2ba24dcc1a",
+        "name": "Trappes_011",
+        "lat": 48.766157,
+        "lon": 1.99077,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "6ff89288-513a-4a4c-a657-c73e9082d195",
+        "name": "Montigny_012",
+        "lat": 48.770179,
+        "lon": 2.025227,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "09accf15-2230-4dfe-9562-dcda07582fcb",
+        "name": "Magny_003",
+        "lat": 48.751533,
+        "lon": 2.06787,
+        "is_virtual_station": true,
+        "capacity": 13
+      },
+      {
+        "station_id": "34593a1b-9922-4a53-aa3e-1db923baef13",
+        "name": "Verrière_002",
+        "lat": 48.755021,
+        "lon": 1.944142,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "d8b08c2a-d77e-409b-bd2c-c8cc7c42d334",
+        "name": "Voisins_014",
+        "lat": 48.759997,
+        "lon": 2.034857,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "4934387b-cb51-4953-a526-3300f52fc15a",
+        "name": "Magny_016",
+        "lat": 48.724525,
+        "lon": 2.083254,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "41cef8ef-52b4-487a-9885-07f3101c5163",
+        "name": "Guyancourt _025",
+        "lat": 48.778778,
+        "lon": 2.045017,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "65ef5f02-b5e6-4ee6-80f1-bc926eafb6d3",
+        "name": "Guyancourt _024",
+        "lat": 48.781513,
+        "lon": 2.053338,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "be3b2a17-853f-4ff1-8aac-774fe70de061",
+        "name": "Magny_009",
+        "lat": 48.721312,
+        "lon": 2.096737,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "750512c0-4a9d-4ef4-a5be-74f733b4c24e",
+        "name": "Plaisir_036_Rack",
+        "lat": 48.820566,
+        "lon": 1.922267,
+        "is_virtual_station": true,
+        "capacity": 6
+      },
+      {
+        "station_id": "e4ea0ff9-cf2d-46bb-8dd2-8b335cf11db5",
+        "name": "Coignières_013",
+        "lat": 48.753491,
+        "lon": 1.917376,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "5df3a9f9-d9cf-4054-aef8-6f7ed61d4660",
+        "name": "Verrière_009",
+        "lat": 48.752114,
+        "lon": 1.957178,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "10022964-8068-4384-8d7d-0f0bd5dee6ba",
+        "name": "Plaisir_019",
+        "lat": 48.819632,
+        "lon": 1.956855,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "8f314e5c-ae5b-484b-beeb-0d54bf563cfc",
+        "name": "Trappes_016",
+        "lat": 48.777056,
+        "lon": 1.98549,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "ce0df293-a4e1-4b12-a562-cbfd18fe3aee",
+        "name": "Guyancourt _002",
+        "lat": 48.788907,
+        "lon": 2.053138,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "0e6fad4c-0324-406d-9b3d-c2565322dcd0",
+        "name": "Montigny_052",
+        "lat": 48.787283,
+        "lon": 2.041475,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "07f3c443-677e-46bb-b900-f63bf5793aa2",
+        "name": "Magny_007",
+        "lat": 48.724031,
+        "lon": 2.0916,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "45cb84a0-2c3e-4be9-9851-a3a2ec036107",
+        "name": "Magny_011",
+        "lat": 48.722253,
+        "lon": 2.080219,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "6fa3f8de-d351-4b81-8011-1c5c247058e9",
+        "name": "Guyancourt _003",
+        "lat": 48.784755,
+        "lon": 2.058546,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "e124abbd-1af6-4898-8060-e0be7e8ff3bc",
+        "name": "Trappes_013",
+        "lat": 48.776359,
+        "lon": 1.990818,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "711adaa7-66bb-4ed6-b4b5-6c0d899623fd",
+        "name": "Élancourt_011",
+        "lat": 48.763561,
+        "lon": 1.954527,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "17e887bc-93f7-46c5-af6c-d1a43af4c121",
+        "name": "Fontenay_005",
+        "lat": 48.811534,
+        "lon": 2.049798,
+        "is_virtual_station": true,
+        "capacity": 7
+      },
+      {
+        "station_id": "73c5bfd6-9d6c-4070-a850-e3e412e498c3",
+        "name": "Coignières_005",
+        "lat": 48.747523,
+        "lon": 1.917384,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "db0769ce-bf4a-4f12-9f48-4079b8da4567",
+        "name": "Trappes_017",
+        "lat": 48.778765,
+        "lon": 1.985455,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "0def8754-bcfa-4131-a53d-503974e95396",
+        "name": "Guyancourt _001",
+        "lat": 48.788132,
+        "lon": 2.051359,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "db904bc6-1f59-488a-87a2-3c3fe36e4ec6",
+        "name": "Élancourt_018",
+        "lat": 48.781139,
+        "lon": 1.966305,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "d78a565c-1da3-463e-b4e3-ef887fd8dc8b",
+        "name": "Montigny_004",
+        "lat": 48.791302,
+        "lon": 2.035409,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "f8521edd-15fe-4841-b7b4-9e6eab6313ad",
+        "name": "Guyancourt _036",
+        "lat": 48.782506,
+        "lon": 2.059564,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "0133f51e-e916-42b2-ae77-c5fb6420ed9a",
+        "name": "Magny_005",
+        "lat": 48.72323,
+        "lon": 2.089389,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "7cd6af5f-d7f5-46b2-8794-8a247c7dfa9e",
+        "name": "Villepreux_005",
+        "lat": 48.824165,
+        "lon": 1.999315,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "d370f8db-37c3-433c-9af9-a0bf84ce874e",
+        "name": "Plaisir_013",
+        "lat": 48.830179,
+        "lon": 1.953944,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "a3b48ab5-58f5-4be7-b7fe-925955bd56e1",
+        "name": "Guyancourt _045",
+        "lat": 48.786073,
+        "lon": 2.051278,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "3943c05d-c66c-48d4-831e-abcd17e70038",
+        "name": "Guyancourt _008",
+        "lat": 48.766872,
+        "lon": 2.079157,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "0eb9224d-2dfd-4ef9-b4af-4bfbea06a229",
+        "name": "Montigny_029",
+        "lat": 48.791258,
+        "lon": 2.042987,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "a57c3bf2-6e97-46f4-b024-94135498c35b",
+        "name": "Maurepas_005",
+        "lat": 48.768171,
+        "lon": 1.941473,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "8e539f36-852e-45f3-a59f-b6f3d1d57b02",
+        "name": "Montigny_050",
+        "lat": 48.76433,
+        "lon": 2.020865,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "306de816-9b9e-4b7b-b767-e09137759220",
+        "name": "Voisins_003",
+        "lat": 48.760431,
+        "lon": 2.062244,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "912ec18e-04fe-4597-a9d9-1c98323a8f4e",
+        "name": "Montigny_031",
+        "lat": 48.781127,
+        "lon": 2.037389,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "eeef996b-1300-44ba-bfaf-dd61c7cea00e",
+        "name": "Montigny_026",
+        "lat": 48.786318,
+        "lon": 2.044436,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "aba4bd08-364d-42e0-a34b-f4ae89b10ec5",
+        "name": "Coignières_011",
+        "lat": 48.756689,
+        "lon": 1.936537,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "8959e412-1ecd-4769-ba88-aaf2f22367bb",
+        "name": "Plaisir_029",
+        "lat": 48.804337,
+        "lon": 1.964035,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "6ea065b6-aae3-46ef-b928-42813c5406b7",
+        "name": "Maurepas_026",
+        "lat": 48.762718,
+        "lon": 1.918383,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "e6161bec-067a-4c4d-af8e-0d3e13a680bd",
+        "name": "Villepreux_012",
+        "lat": 48.833909,
+        "lon": 2.010847,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "fc5f977a-e27a-4af9-ac6b-50495509648d",
+        "name": "Guyancourt _048",
+        "lat": 48.764992,
+        "lon": 2.068633,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "c36613f8-0f96-4dd5-8ce1-624765b2c0d5",
+        "name": "Montigny_019",
+        "lat": 48.76809,
+        "lon": 2.017264,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "e1d08147-2dff-459e-b812-e207ad894ef5",
+        "name": "Fontenay_004",
+        "lat": 48.808885,
+        "lon": 2.052791,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "47f68d2e-c65c-4a6e-9b8a-e7c4090ed300",
+        "name": "Guyancourt _027",
+        "lat": 48.767107,
+        "lon": 2.067467,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "362e73e8-90b9-41a2-b08d-4482c24486a2",
+        "name": "Voisins_021",
+        "lat": 48.76382,
+        "lon": 2.044104,
+        "is_virtual_station": true,
+        "capacity": 10
+      },
+      {
+        "station_id": "85f5b91a-ef82-42f4-a9d6-f440e9c4e719",
+        "name": "Élancourt_005",
+        "lat": 48.790515,
+        "lon": 1.973981,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "96f518b2-d099-4c01-ad8d-9e8219df6da8",
+        "name": "Guyancourt _016",
+        "lat": 48.789091,
+        "lon": 2.049542,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "70f4c2c9-be85-45d4-8c2e-79cb3ff5f2e7",
+        "name": "Guyancourt _046",
+        "lat": 48.784958,
+        "lon": 2.050774,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "b75e6307-8de2-43f1-9e19-92762738c6b8",
+        "name": "Plaisir_005",
+        "lat": 48.828309,
+        "lon": 1.945193,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "d0a40cda-f337-4457-8b49-780440e7dd56",
+        "name": "Voisins_001",
+        "lat": 48.763007,
+        "lon": 2.055359,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "a57a6b35-62ec-4ca4-98ee-33f4347a867c",
+        "name": "Clayes_004",
+        "lat": 48.827088,
+        "lon": 1.976442,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "403ba9c9-3624-4ee4-a8df-427a4cfbdac8",
+        "name": "Magny_004",
+        "lat": 48.74391,
+        "lon": 2.083413,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "288f12fa-b234-4082-bf04-2af1aa944644",
+        "name": "Montigny_048",
+        "lat": 48.770306,
+        "lon": 2.029903,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "72cbda4c-9be3-458d-ad62-385c1c7afc9e",
+        "name": "Magny_001",
+        "lat": 48.728534,
+        "lon": 2.08095,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "c5e2ba9e-bcff-4cb7-8735-521265dafb29",
+        "name": "Maurepas_006",
+        "lat": 48.764909,
+        "lon": 1.929494,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "dc069654-af9c-4426-9304-b971c0595501",
+        "name": "Guyancourt _041",
+        "lat": 48.776697,
+        "lon": 2.075324,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "92ca2bba-9378-4fc0-a662-8ec2793a25aa",
+        "name": "Élancourt_019",
+        "lat": 48.766358,
+        "lon": 1.967817,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "d0728d69-77b8-4496-9b6d-969da231d42c",
+        "name": "Plaisir_002",
+        "lat": 48.821456,
+        "lon": 1.96216,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "b82d737e-69d1-4b7e-8581-f4b0a0ecf455",
+        "name": "BoisdArcy_013",
+        "lat": 48.806493,
+        "lon": 2.006683,
+        "is_virtual_station": true,
+        "capacity": 3
+      },
+      {
+        "station_id": "13f1c52b-9dad-40ff-b19f-677c03e462b1",
+        "name": "Guyancourt _017",
+        "lat": 48.787285,
+        "lon": 2.050598,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "c3d91cdd-d1be-4c81-8c08-9d50a3636d44",
+        "name": "Élancourt_023",
+        "lat": 48.775837,
+        "lon": 1.945903,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "89d352fd-384d-4557-9e00-b9828c3f82e9",
+        "name": "Guyancourt _006",
+        "lat": 48.780296,
+        "lon": 2.043587,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "5f00b51b-6965-4f61-bf8d-2ccd1aeeed20",
+        "name": "Montigny_018",
+        "lat": 48.765131,
+        "lon": 2.037945,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "58c3df89-d2ad-48ef-be6f-72427d123af8",
+        "name": "Verrière_001",
+        "lat": 48.755071,
+        "lon": 1.955317,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "2ed4ca6c-baea-4f81-840b-50d42336ae81",
+        "name": "Montigny_038",
+        "lat": 48.77272,
+        "lon": 2.040439,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "67c95606-c142-42a5-8acd-d2defacbe3c8",
+        "name": "Clayes_015",
+        "lat": 48.826827,
+        "lon": 1.981939,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "6ee18750-5518-4340-88d5-a8c340b44219",
+        "name": "Guyancourt _018",
+        "lat": 48.787186,
+        "lon": 2.054956,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "8beebbe6-2883-4346-b109-7a9bf9050c6b",
+        "name": "Voisins_018",
+        "lat": 48.753933,
+        "lon": 2.051305,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "f359be16-e071-4609-9cd6-ee756797b340",
+        "name": "Plaisir_027",
+        "lat": 48.821118,
+        "lon": 1.929947,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "a3a832d9-0a11-49d4-b41a-caea128f8fd7",
+        "name": "Trappes_027",
+        "lat": 48.787815,
+        "lon": 1.973203,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "484b791e-4076-4aea-b1ba-19c38b9f44d0",
+        "name": "Montigny_035",
+        "lat": 48.765099,
+        "lon": 2.029089,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "58cdba26-49d2-4f40-82fd-2ee5a4fefe44",
+        "name": "Montigny_007",
+        "lat": 48.784324,
+        "lon": 2.039785,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "4da776c8-35c4-461b-99f7-d64ddf52e4b5",
+        "name": "Trappes_035",
+        "lat": 48.769423,
+        "lon": 2.004047,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "c2f760c2-c04b-496c-af36-05b7cd4be01f",
+        "name": "Guyancourt _021",
+        "lat": 48.786682,
+        "lon": 2.053672,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "9d180f27-2fb6-446c-932c-b44c892d9cc3",
+        "name": "Montigny_008",
+        "lat": 48.783901,
+        "lon": 2.042821,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "305238e7-8e94-4213-8c2f-62ef0a4cd02a",
+        "name": "Villepreux_011",
+        "lat": 48.830713,
+        "lon": 2.000981,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "b6776ddf-7102-4e15-be8e-ad000094be61",
+        "name": "Villepreux_009",
+        "lat": 48.834839,
+        "lon": 1.99587,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "8c8e3556-3aa8-472b-8a50-3e498947af85",
+        "name": "Verrière_005",
+        "lat": 48.757675,
+        "lon": 1.957482,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "dd171d44-f920-43cc-8c2a-9c20c6b7b042",
+        "name": "Clayes_013",
+        "lat": 48.822183,
+        "lon": 1.988924,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "b131854c-d539-45a9-b601-e0e1a2f466ce",
+        "name": "Trappes_033",
+        "lat": 48.771307,
+        "lon": 1.980407,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "9b3fa260-dd2c-4d45-b2c3-f8b8c2c615b2",
+        "name": "Guyancourt _023",
+        "lat": 48.782805,
+        "lon": 2.055428,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "259ce6ef-d2fa-4ee7-baed-472405fc14b9",
+        "name": "Guyancourt _038",
+        "lat": 48.77267,
+        "lon": 2.061275,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "7dad4a82-01bb-4dad-ba05-fc02a95f50e0",
+        "name": "Voisins_002",
+        "lat": 48.761146,
+        "lon": 2.060233,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "04785b30-7fa7-4622-9ae1-95ebe982ff13",
+        "name": "Trappes_036",
+        "lat": 48.770099,
+        "lon": 2.00762,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "89e71928-df5f-45dc-9dbe-ede16e3794f9",
+        "name": "Guyancourt _032",
+        "lat": 48.777591,
+        "lon": 2.068555,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "e0fdb81d-ca08-4ae8-847e-5559a2d08389",
+        "name": "Maurepas_022",
+        "lat": 48.758634,
+        "lon": 1.924797,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "37280f88-2353-436f-b742-b88711657104",
+        "name": "Trappes_001",
+        "lat": 48.774346,
+        "lon": 2.006411,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "ec96d0ec-611a-4cf1-a22f-6c6e8c664bdf",
+        "name": "Magny_015",
+        "lat": 48.733745,
+        "lon": 2.07151,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "d60e5b13-0d0e-41bf-a7a9-5561253a61b5",
+        "name": "Montigny_017",
+        "lat": 48.771696,
+        "lon": 2.044133,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "a823abb0-9650-4cff-a134-cb429ac5da0b",
+        "name": "Guyancourt _009",
+        "lat": 48.767339,
+        "lon": 2.070911,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "8bc78e07-c316-4ed8-b066-b86fbb7b762c",
+        "name": "Élancourt_013",
+        "lat": 48.794311,
+        "lon": 1.976294,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "37a933cf-517f-40e9-a720-d7f4870c12b7",
+        "name": "Voisins_011",
+        "lat": 48.757104,
+        "lon": 2.05602,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "d955aed1-1637-4e9f-8f3d-ee4a0bfb642f",
+        "name": "Plaisir_012",
+        "lat": 48.830652,
+        "lon": 1.960245,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "366d227e-8a31-4dfc-a379-b9893700269d",
+        "name": "Villepreux_004",
+        "lat": 48.833692,
+        "lon": 2.004658,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "63c5e6cb-5e47-4d08-8420-0faf878be79d",
+        "name": "Élancourt_020",
+        "lat": 48.772007,
+        "lon": 1.961538,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "dbe7008e-003d-4aa4-a7f6-e14a79a7b7f8",
+        "name": "Clayes_014",
+        "lat": 48.821578,
+        "lon": 1.987011,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "551d2669-a084-4782-99d2-1857a3019aa6",
+        "name": "Guyancourt _004",
+        "lat": 48.783537,
+        "lon": 2.052465,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "121d19aa-5351-49d9-933f-bd36c8955e11",
+        "name": "BoisdArcy_020",
+        "lat": 48.803154,
+        "lon": 2.040886,
+        "is_virtual_station": true,
+        "capacity": 3
+      },
+      {
+        "station_id": "153a4abe-db6b-40a1-b55e-1aee440249e6",
+        "name": "Élancourt_022",
+        "lat": 48.774919,
+        "lon": 1.95409,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "846c3074-fe34-484e-8744-80edea851e8b",
+        "name": "Verrière_003",
+        "lat": 48.751438,
+        "lon": 1.941634,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "8868aea7-80b2-40ed-943c-33b979a4bb24",
+        "name": "Magny_013",
+        "lat": 48.738883,
+        "lon": 2.037179,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "1ba277f5-9d0a-46a1-8317-ba4488face51",
+        "name": "Montigny_028",
+        "lat": 48.789743,
+        "lon": 2.041972,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "16d0081c-b99c-4f24-81d1-fd4031f0b2dc",
+        "name": "Maurepas_011",
+        "lat": 48.763389,
+        "lon": 1.938295,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "2ed492aa-cc72-449c-b8ef-8309ed5c728b",
+        "name": "Élancourt_008",
+        "lat": 48.79239,
+        "lon": 1.974987,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "e8bd02f0-509e-4c77-9f27-360b21b00f47",
+        "name": "Trappes_024",
+        "lat": 48.781726,
+        "lon": 1.987754,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "9c342185-7e0c-4e04-b18f-bb27105f9fe1",
+        "name": "Clayes_005",
+        "lat": 48.824145,
+        "lon": 1.992814,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "0f9f1347-9e03-4e8a-8f28-f7cb86aa00f9",
+        "name": "Maurepas_003",
+        "lat": 48.760822,
+        "lon": 1.944372,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "15c6c38f-3238-4315-ad70-6b021fa7ce7b",
+        "name": "Maurepas_017",
+        "lat": 48.768669,
+        "lon": 1.907981,
+        "is_virtual_station": true,
+        "capacity": 11
+      },
+      {
+        "station_id": "e81d7062-b903-428c-b492-50c94aa69224",
+        "name": "Guyancourt _043",
+        "lat": 48.761009,
+        "lon": 2.064534,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "ec18415f-0f17-4ed3-afdb-772cbf405cd5",
+        "name": "Trappes_032",
+        "lat": 48.780282,
+        "lon": 1.975415,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "85d7c9a6-1554-4248-a4b5-86855be5f265",
+        "name": "Plaisir_020",
+        "lat": 48.818528,
+        "lon": 1.962782,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "5b1eb2e2-94c3-426d-9117-eb8e44e0df1f",
+        "name": "Plaisir_035",
+        "lat": 48.830593,
+        "lon": 1.968834,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "4f05594a-7a9a-41e6-980e-919256b83657",
+        "name": "Maurepas_027",
+        "lat": 48.767428,
+        "lon": 1.920928,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "74e33322-aa3f-45b3-ac12-79a28678a4fe",
+        "name": "Plaisir_032",
+        "lat": 48.802831,
+        "lon": 1.969351,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "ab35c734-0087-47d0-8903-3c7c18fb173a",
+        "name": "Trappes_031",
+        "lat": 48.773541,
+        "lon": 1.986802,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "a4d0175e-20c2-47ab-87a6-b696a2431da0",
+        "name": "Trappes_021",
+        "lat": 48.782559,
+        "lon": 1.983699,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "b8d14c29-0f0e-4ecb-aa29-67d7844cb449",
+        "name": "Montigny_009",
+        "lat": 48.7788,
+        "lon": 2.041414,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "b0580dfb-1001-4393-aaac-31586e6fff4b",
+        "name": "Fontenay_001",
+        "lat": 48.806012,
+        "lon": 2.04191,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "9bf2e6cb-ad1b-4555-885e-bde08c9cde30",
+        "name": "Élancourt_009",
+        "lat": 48.792112,
+        "lon": 1.965799,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "a1f9db32-9f70-46f5-9111-0acc8aa9d0dc",
+        "name": "BoisdArcy_011",
+        "lat": 48.799269,
+        "lon": 2.019229,
+        "is_virtual_station": true,
+        "capacity": 3
+      },
+      {
+        "station_id": "f0a4af19-3826-44e5-b182-a98e7254c832",
+        "name": "Guyancourt _031",
+        "lat": 48.774377,
+        "lon": 2.063839,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "26b8b3c9-9d97-4261-98d5-891bad09a9f4",
+        "name": "Trappes_014",
+        "lat": 48.778542,
+        "lon": 1.990643,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "69eb806e-1d19-480c-aae5-7e82631ff58c",
+        "name": "Villepreux_006",
+        "lat": 48.817692,
+        "lon": 2.002046,
+        "is_virtual_station": true,
+        "capacity": 15
+      },
+      {
+        "station_id": "4dbe39f9-bde6-4dfd-b6e3-5617bf054484",
+        "name": "Maurepas_021",
+        "lat": 48.758694,
+        "lon": 1.919722,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "828bd4b0-7bef-49b3-ba64-57c75410fc98",
+        "name": "Villepreux_003",
+        "lat": 48.82763,
+        "lon": 1.999342,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "d1ddb07c-ffde-4380-b586-95b35a3b9620",
+        "name": "Plaisir_031",
+        "lat": 48.803195,
+        "lon": 1.97516,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "eda97552-6606-4e7b-985b-78ff7472b80f",
+        "name": "Plaisir_009",
+        "lat": 48.820064,
+        "lon": 1.944419,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "9a0176a5-00f8-41c3-96e2-405ce49f6753",
+        "name": "Maurepas_012",
+        "lat": 48.767721,
+        "lon": 1.930101,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "25a6eb71-cb3c-4e71-9d9c-46defd46a8e9",
+        "name": "Maurepas_016",
+        "lat": 48.761062,
+        "lon": 1.935257,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "72ec0943-9794-464a-9eae-49b85f708c36",
+        "name": "Maurepas_019",
+        "lat": 48.776333,
+        "lon": 1.906952,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "1be7e856-6f3d-4ff4-9a62-58c5a6e16c12",
+        "name": "Maurepas_025",
+        "lat": 48.762153,
+        "lon": 1.917968,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "27311902-06e3-4886-b6f1-b453985a1dc3",
+        "name": "Plaisir_006",
+        "lat": 48.828976,
+        "lon": 1.949181,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "ff052943-2234-45e6-bcbf-c6f0f5e8d522",
+        "name": "Trappes_023",
+        "lat": 48.779939,
+        "lon": 1.987645,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "609d3e0f-d62f-4212-b07b-186d89391610",
+        "name": "Guyancourt _040",
+        "lat": 48.776632,
+        "lon": 2.059446,
+        "is_virtual_station": true,
+        "capacity": 5
+      },
+      {
+        "station_id": "1bfcc278-7cae-4dbd-9acc-90e57e67614c",
+        "name": "BoisdArcy_012",
+        "lat": 48.801868,
+        "lon": 2.021745,
+        "is_virtual_station": true,
+        "capacity": 3
+      },
+      {
+        "station_id": "dfa6c340-dc82-4368-84a4-adc1440d5dcc",
+        "name": "Élancourt_032",
+        "lat": 48.767505,
+        "lon": 1.955998,
+        "is_virtual_station": true,
+        "capacity": 8
+      },
+      {
+        "station_id": "21345bfd-2497-4b93-9057-92ad8e850cd9",
+        "name": "Maurepas_023",
+        "lat": 48.761361,
+        "lon": 1.913939,
+        "is_virtual_station": true,
+        "capacity": 8
+      }
+    ]
+  }
+}

@@ -30,6 +30,13 @@ cities = city_stats(df)
 
 # ── Sidebar ───────────────────────────────────────────────────────────────────
 with st.sidebar:
+    st.markdown("## Navigation")
+    st.page_link("app.py",                   label="Accueil")
+    st.page_link("pages/1_Carte.py",         label="Carte des stations")
+    st.page_link("pages/2_Villes.py",        label="Comparaison des villes")
+    st.page_link("pages/3_Distributions.py", label="Distributions statistiques")
+    st.page_link("pages/4_Export.py",        label="Export des données")
+    st.divider()
     st.header("Paramètres")
     n_top = st.slider("Nombre de villes", min_value=5, max_value=40, value=20, step=5)
     metric_key = st.selectbox(
@@ -63,9 +70,12 @@ col_tab, col_chart = st.columns([2, 3])
 
 with col_tab:
     st.subheader(f"Top {n_top} — {meta['label']}")
+    extra_cols = [
+        c for c in ["infra_cyclable_pct", "baac_accidents_cyclistes", "gtfs_heavy_stops_300m"]
+        if c != metric_key
+    ]
     display = cities_sorted.head(n_top)[
-        ["city", "n_stations", metric_key,
-         "infra_cyclable_pct", "baac_accidents_cyclistes", "gtfs_heavy_stops_300m"]
+        ["city", "n_stations", metric_key] + extra_cols
     ].rename(columns={
         "city": "Ville",
         "n_stations": "Stations",

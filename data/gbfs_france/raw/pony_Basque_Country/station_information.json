@@ -1,0 +1,3704 @@
+{
+  "data": {
+    "stations": [
+      {
+        "is_virtual_station": true,
+        "lat": 43.503063,
+        "lon": -1.506118,
+        "name": "basque_country_parking_71940_zidOZVJACQ6",
+        "station_id": "basque_country_parking_71940_zidOZVJACQ6"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.502376,
+        "lon": -1.506975,
+        "name": "basque_country_parking_71948_zid5VBEI9Q5",
+        "station_id": "basque_country_parking_71948_zid5VBEI9Q5"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.485599,
+        "lon": -1.513958,
+        "name": "basque_country_parking_71956_zidGWUY4IN6",
+        "station_id": "basque_country_parking_71956_zidGWUY4IN6"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.502332,
+        "lon": -1.507232,
+        "name": "basque_country_parking_71950_zid36IJELX2",
+        "station_id": "basque_country_parking_71950_zid36IJELX2"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.485533,
+        "lon": -1.514022,
+        "name": "basque_country_parking_71955_zidH42M7MTH",
+        "station_id": "basque_country_parking_71955_zidH42M7MTH"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.485723,
+        "lon": -1.513988,
+        "name": "basque_country_parking_71957_zidYDDB4WOL",
+        "station_id": "basque_country_parking_71957_zidYDDB4WOL"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.484473,
+        "lon": -1.532343,
+        "name": "basque_country_parking_71958_zidJXZAYZ6M",
+        "station_id": "basque_country_parking_71958_zidJXZAYZ6M"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.485525,
+        "lon": -1.531587,
+        "name": "basque_country_parking_71960_zidZHKVPX6E",
+        "station_id": "basque_country_parking_71960_zidZHKVPX6E"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.485386,
+        "lon": -1.513216,
+        "name": "basque_country_parking_71799_zid71EMBS74",
+        "station_id": "basque_country_parking_71799_zid71EMBS74"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.483155,
+        "lon": -1.503476,
+        "name": "basque_country_parking_71842_zidTO94DCBM",
+        "station_id": "basque_country_parking_71842_zidTO94DCBM"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.487658,
+        "lon": -1.535815,
+        "name": "basque_country_parking_71852_zidN9UJBE0H",
+        "station_id": "basque_country_parking_71852_zidN9UJBE0H"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.480537,
+        "lon": -1.511325,
+        "name": "basque_country_parking_71810_zid76T5OEM2",
+        "station_id": "basque_country_parking_71810_zid76T5OEM2"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.495369,
+        "lon": -1.529656,
+        "name": "basque_country_parking_71865_zid2J4MN618",
+        "station_id": "basque_country_parking_71865_zid2J4MN618"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.497129,
+        "lon": -1.507358,
+        "name": "basque_country_parking_71835_zidR3PJGWZQ",
+        "station_id": "basque_country_parking_71835_zidR3PJGWZQ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.511077,
+        "lon": -1.506018,
+        "name": "basque_country_parking_71905_zidPCSQ0OQA",
+        "station_id": "basque_country_parking_71905_zidPCSQ0OQA"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.488374,
+        "lon": -1.512401,
+        "name": "basque_country_parking_71826_zidD1MJB5PI",
+        "station_id": "basque_country_parking_71826_zidD1MJB5PI"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.511055,
+        "lon": -1.505858,
+        "name": "basque_country_parking_71906_zid0E2L01IN",
+        "station_id": "basque_country_parking_71906_zid0E2L01IN"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.483363,
+        "lon": -1.511337,
+        "name": "basque_country_parking_71805_zidUOT8RQA4",
+        "station_id": "basque_country_parking_71805_zidUOT8RQA4"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.501912,
+        "lon": -1.524185,
+        "name": "basque_country_parking_71946_zidR1F97AR7",
+        "station_id": "basque_country_parking_71946_zidR1F97AR7"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.50324,
+        "lon": -1.505635,
+        "name": "basque_country_parking_71941_zidLL76XKYY",
+        "station_id": "basque_country_parking_71941_zidLL76XKYY"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.482778,
+        "lon": -1.513414,
+        "name": "basque_country_parking_71813_zidDCY1X6QH",
+        "station_id": "basque_country_parking_71813_zidDCY1X6QH"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.480497,
+        "lon": -1.511265,
+        "name": "basque_country_parking_71809_zidLC1XPM11",
+        "station_id": "basque_country_parking_71809_zidLC1XPM11"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.482805,
+        "lon": -1.516122,
+        "name": "basque_country_parking_71793_zidN1HX3XKF",
+        "station_id": "basque_country_parking_71793_zidN1HX3XKF"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.495166,
+        "lon": -1.51811,
+        "name": "basque_country_parking_71937_zid3GGMPGIT",
+        "station_id": "basque_country_parking_71937_zid3GGMPGIT"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.495379,
+        "lon": -1.529793,
+        "name": "basque_country_parking_71866_zidJBF33M3Y",
+        "station_id": "basque_country_parking_71866_zidJBF33M3Y"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.487545,
+        "lon": -1.536526,
+        "name": "basque_country_parking_71942_zid1VOB5VXB",
+        "station_id": "basque_country_parking_71942_zid1VOB5VXB"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.487501,
+        "lon": -1.536807,
+        "name": "basque_country_parking_71943_zid2SXK6KJ6",
+        "station_id": "basque_country_parking_71943_zid2SXK6KJ6"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.511682,
+        "lon": -1.499987,
+        "name": "basque_country_parking_71902_zid3M5IOEWK",
+        "station_id": "basque_country_parking_71902_zid3M5IOEWK"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.482644,
+        "lon": -1.521664,
+        "name": "basque_country_parking_71849_zidUNB5KA8I",
+        "station_id": "basque_country_parking_71849_zidUNB5KA8I"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.513098,
+        "lon": -1.504968,
+        "name": "basque_country_parking_71965_zidPZYSTH4U",
+        "station_id": "basque_country_parking_71965_zidPZYSTH4U"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.496913,
+        "lon": -1.538478,
+        "name": "basque_country_parking_71967_zidZFYSISYN",
+        "station_id": "basque_country_parking_71967_zidZFYSISYN"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.483329,
+        "lon": -1.518089,
+        "name": "basque_country_parking_71848_zidI0IHRQQN",
+        "station_id": "basque_country_parking_71848_zidI0IHRQQN"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.494494,
+        "lon": -1.510023,
+        "name": "basque_country_parking_71915_zidBOZ9LRG3",
+        "station_id": "basque_country_parking_71915_zidBOZ9LRG3"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.488834,
+        "lon": -1.509588,
+        "name": "basque_country_parking_71831_zid60P3P6TO",
+        "station_id": "basque_country_parking_71831_zid60P3P6TO"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.505583,
+        "lon": -1.505835,
+        "name": "basque_country_parking_71907_zidF7Z41BEE",
+        "station_id": "basque_country_parking_71907_zidF7Z41BEE"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.480991,
+        "lon": -1.533725,
+        "name": "basque_country_parking_71850_zidPLWN3LEH",
+        "station_id": "basque_country_parking_71850_zidPLWN3LEH"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.493047,
+        "lon": -1.544765,
+        "name": "basque_country_parking_71853_zidI2EN5051",
+        "station_id": "basque_country_parking_71853_zidI2EN5051"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.484173,
+        "lon": -1.511623,
+        "name": "basque_country_parking_71804_zidM93R8I7O",
+        "station_id": "basque_country_parking_71804_zidM93R8I7O"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.471823,
+        "lon": -1.526811,
+        "name": "basque_country_parking_71843_zidDAJE52YL",
+        "station_id": "basque_country_parking_71843_zidDAJE52YL"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.481016,
+        "lon": -1.511604,
+        "name": "basque_country_parking_71811_zidH36H8Q2J",
+        "station_id": "basque_country_parking_71811_zidH36H8Q2J"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.494849,
+        "lon": -1.529838,
+        "name": "basque_country_parking_71868_zid0ME5S7GK",
+        "station_id": "basque_country_parking_71868_zid0ME5S7GK"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.481777,
+        "lon": -1.515427,
+        "name": "basque_country_parking_71791_zidUXJGT61A",
+        "station_id": "basque_country_parking_71791_zidUXJGT61A"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.501719,
+        "lon": -1.526978,
+        "name": "basque_country_parking_71913_zid9ENA8VQU",
+        "station_id": "basque_country_parking_71913_zid9ENA8VQU"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.484131,
+        "lon": -1.512442,
+        "name": "basque_country_parking_71803_zidHKH4WY9W",
+        "station_id": "basque_country_parking_71803_zidHKH4WY9W"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.490185,
+        "lon": -1.511554,
+        "name": "basque_country_parking_71827_zidF7W36DC0",
+        "station_id": "basque_country_parking_71827_zidF7W36DC0"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.486246,
+        "lon": -1.515098,
+        "name": "basque_country_parking_71798_zidSZK045HZ",
+        "station_id": "basque_country_parking_71798_zidSZK045HZ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.485047,
+        "lon": -1.512967,
+        "name": "basque_country_parking_71800_zidJV7P8DPP",
+        "station_id": "basque_country_parking_71800_zidJV7P8DPP"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.489619,
+        "lon": -1.511201,
+        "name": "basque_country_parking_71828_zidFS6B3EKQ",
+        "station_id": "basque_country_parking_71828_zidFS6B3EKQ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.483259,
+        "lon": -1.510892,
+        "name": "basque_country_parking_71807_zid92DBH5YD",
+        "station_id": "basque_country_parking_71807_zid92DBH5YD"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.481291,
+        "lon": -1.51537,
+        "name": "basque_country_parking_71815_zidT19SH0Y0",
+        "station_id": "basque_country_parking_71815_zidT19SH0Y0"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.495946,
+        "lon": -1.530548,
+        "name": "basque_country_parking_71919_zidW7VGQ0OT",
+        "station_id": "basque_country_parking_71919_zidW7VGQ0OT"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.483493,
+        "lon": -1.511456,
+        "name": "basque_country_parking_71806_zidXP6RV7SO",
+        "station_id": "basque_country_parking_71806_zidXP6RV7SO"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.489808,
+        "lon": -1.510511,
+        "name": "basque_country_parking_71829_zid69HDY2ZM",
+        "station_id": "basque_country_parking_71829_zid69HDY2ZM"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.500544,
+        "lon": -1.494972,
+        "name": "basque_country_parking_71863_zid68IWTIOE",
+        "station_id": "basque_country_parking_71863_zid68IWTIOE"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.517762,
+        "lon": -1.50169,
+        "name": "basque_country_parking_71897_zidAAP5QEXV",
+        "station_id": "basque_country_parking_71897_zidAAP5QEXV"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.489199,
+        "lon": -1.509952,
+        "name": "basque_country_parking_71830_zidHUSZJHJN",
+        "station_id": "basque_country_parking_71830_zidHUSZJHJN"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.50188,
+        "lon": -1.527238,
+        "name": "basque_country_parking_71914_zidMO502ZWC",
+        "station_id": "basque_country_parking_71914_zidMO502ZWC"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.497312,
+        "lon": -1.507363,
+        "name": "basque_country_parking_71834_zidM80XK6B7",
+        "station_id": "basque_country_parking_71834_zidM80XK6B7"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.483925,
+        "lon": -1.513581,
+        "name": "basque_country_parking_71794_zidJKH6N0C7",
+        "station_id": "basque_country_parking_71794_zidJKH6N0C7"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.500221,
+        "lon": -1.512008,
+        "name": "basque_country_parking_71912_zidOJAKJ0JD",
+        "station_id": "basque_country_parking_71912_zidOJAKJ0JD"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.481619,
+        "lon": -1.509093,
+        "name": "basque_country_parking_71839_zidXV82ERLN",
+        "station_id": "basque_country_parking_71839_zidXV82ERLN"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.481261,
+        "lon": -1.509947,
+        "name": "basque_country_parking_71808_zidB2F3MJ8P",
+        "station_id": "basque_country_parking_71808_zidB2F3MJ8P"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.497203,
+        "lon": -1.507047,
+        "name": "basque_country_parking_71836_zidCFED8ZUR",
+        "station_id": "basque_country_parking_71836_zidCFED8ZUR"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.484875,
+        "lon": -1.513319,
+        "name": "basque_country_parking_71797_zidCIRXK9GE",
+        "station_id": "basque_country_parking_71797_zidCIRXK9GE"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.484722,
+        "lon": -1.51314,
+        "name": "basque_country_parking_71796_zid34CZ9468",
+        "station_id": "basque_country_parking_71796_zid34CZ9468"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.495076,
+        "lon": -1.518004,
+        "name": "basque_country_parking_71938_zidCCZEBEIM",
+        "station_id": "basque_country_parking_71938_zidCCZEBEIM"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.487193,
+        "lon": -1.536878,
+        "name": "basque_country_parking_71951_zidUQE7RA1H",
+        "station_id": "basque_country_parking_71951_zidUQE7RA1H"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.497952,
+        "lon": -1.530724,
+        "name": "basque_country_parking_71939_zidHT24ZE1M",
+        "station_id": "basque_country_parking_71939_zidHT24ZE1M"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.482377,
+        "lon": -1.513106,
+        "name": "basque_country_parking_71964_zidAWNW6PAP",
+        "station_id": "basque_country_parking_71964_zidAWNW6PAP"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.5051,
+        "lon": -1.503524,
+        "name": "basque_country_parking_71970_zid9SDZ6CT7",
+        "station_id": "basque_country_parking_71970_zid9SDZ6CT7"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.482958,
+        "lon": -1.512953,
+        "name": "basque_country_parking_71972_zidAYYUQDBV",
+        "station_id": "basque_country_parking_71972_zidAYYUQDBV"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.500802,
+        "lon": -1.511104,
+        "name": "basque_country_parking_71911_zidBR862O00",
+        "station_id": "basque_country_parking_71911_zidBR862O00"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.496005,
+        "lon": -1.530503,
+        "name": "basque_country_parking_71928_zidS7D20JCH",
+        "station_id": "basque_country_parking_71928_zidS7D20JCH"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48113,
+        "lon": -1.509815,
+        "name": "basque_country_parking_71812_zidPO91ITQA",
+        "station_id": "basque_country_parking_71812_zidPO91ITQA"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.512308,
+        "lon": -1.499981,
+        "name": "basque_country_parking_71901_zid0EVKMU86",
+        "station_id": "basque_country_parking_71901_zid0EVKMU86"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48084,
+        "lon": -1.515302,
+        "name": "basque_country_parking_71816_zidJK2EMQ0A",
+        "station_id": "basque_country_parking_71816_zidJK2EMQ0A"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.503508,
+        "lon": -1.536044,
+        "name": "basque_country_parking_71882_zidQ70IT7VE",
+        "station_id": "basque_country_parking_71882_zidQ70IT7VE"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.482275,
+        "lon": -1.51329,
+        "name": "basque_country_parking_71814_zidL00U47VC",
+        "station_id": "basque_country_parking_71814_zidL00U47VC"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.50159,
+        "lon": -1.513079,
+        "name": "basque_country_parking_71910_zidE6JSMO7N",
+        "station_id": "basque_country_parking_71910_zidE6JSMO7N"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.510035,
+        "lon": -1.499574,
+        "name": "basque_country_parking_71903_zidO8TZD4QR",
+        "station_id": "basque_country_parking_71903_zidO8TZD4QR"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48456,
+        "lon": -1.512327,
+        "name": "basque_country_parking_71802_zidDI3K3ZI3",
+        "station_id": "basque_country_parking_71802_zidDI3K3ZI3"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49222,
+        "lon": -1.503582,
+        "name": "basque_country_parking_71916_zid5DGJCE9C",
+        "station_id": "basque_country_parking_71916_zid5DGJCE9C"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.483343,
+        "lon": -1.519214,
+        "name": "basque_country_parking_71918_zid9148N3FY",
+        "station_id": "basque_country_parking_71918_zid9148N3FY"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.497139,
+        "lon": -1.507954,
+        "name": "basque_country_parking_71832_zidMGE2M8LV",
+        "station_id": "basque_country_parking_71832_zidMGE2M8LV"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.518639,
+        "lon": -1.501733,
+        "name": "basque_country_parking_71896_zidPANAXKD9",
+        "station_id": "basque_country_parking_71896_zidPANAXKD9"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.480356,
+        "lon": -1.515986,
+        "name": "basque_country_parking_71817_zidPJL4BN6S",
+        "station_id": "basque_country_parking_71817_zidPJL4BN6S"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.502561,
+        "lon": -1.534564,
+        "name": "basque_country_parking_71883_zid8D0QEWQZ",
+        "station_id": "basque_country_parking_71883_zid8D0QEWQZ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.505533,
+        "lon": -1.505819,
+        "name": "basque_country_parking_71908_zidG82W48CV",
+        "station_id": "basque_country_parking_71908_zidG82W48CV"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.482062,
+        "lon": -1.514995,
+        "name": "basque_country_parking_71790_zid1QAH5OU7",
+        "station_id": "basque_country_parking_71790_zid1QAH5OU7"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.494282,
+        "lon": -1.528881,
+        "name": "basque_country_parking_71870_zidTIM9US8D",
+        "station_id": "basque_country_parking_71870_zidTIM9US8D"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.484356,
+        "lon": -1.513507,
+        "name": "basque_country_parking_71795_zidNX132QTB",
+        "station_id": "basque_country_parking_71795_zidNX132QTB"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.503509,
+        "lon": -1.51157,
+        "name": "basque_country_parking_71909_zid5GKQHH5H",
+        "station_id": "basque_country_parking_71909_zid5GKQHH5H"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.482932,
+        "lon": -1.519038,
+        "name": "basque_country_parking_71862_zid9IR1X0IX",
+        "station_id": "basque_country_parking_71862_zid9IR1X0IX"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.497015,
+        "lon": -1.507691,
+        "name": "basque_country_parking_71833_zidBGLMQ7VR",
+        "station_id": "basque_country_parking_71833_zidBGLMQ7VR"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.494359,
+        "lon": -1.528884,
+        "name": "basque_country_parking_71869_zidDIOO66AD",
+        "station_id": "basque_country_parking_71869_zidDIOO66AD"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.487577,
+        "lon": -1.53545,
+        "name": "basque_country_parking_71851_zidQ158KWLG",
+        "station_id": "basque_country_parking_71851_zidQ158KWLG"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.483339,
+        "lon": -1.516898,
+        "name": "basque_country_parking_71837_zidM733MMPE",
+        "station_id": "basque_country_parking_71837_zidM733MMPE"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48241,
+        "lon": -1.505105,
+        "name": "basque_country_parking_71841_zid88C6KPHC",
+        "station_id": "basque_country_parking_71841_zid88C6KPHC"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.496191,
+        "lon": -1.530159,
+        "name": "basque_country_parking_71930_zid4EFEFJ5B",
+        "station_id": "basque_country_parking_71930_zid4EFEFJ5B"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.482411,
+        "lon": -1.505361,
+        "name": "basque_country_parking_71840_zid7XP6Q934",
+        "station_id": "basque_country_parking_71840_zid7XP6Q934"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.530159,
+        "lon": -1.521028,
+        "name": "basque_country_parking_Plage_de_la_Digue_zidTXV7OI7N",
+        "station_id": "basque_country_parking_Plage_de_la_Digue_zidTXV7OI7N"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.558522,
+        "lon": -1.49853,
+        "name": "basque_country_parking_Plage_du_Metro_zidX6XZMZV2",
+        "station_id": "basque_country_parking_Plage_du_Metro_zidX6XZMZV2"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.552668,
+        "lon": -1.458286,
+        "name": "basque_country_parking_PR_Garros_zidL72HF8G4",
+        "station_id": "basque_country_parking_PR_Garros_zidL72HF8G4"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.54611,
+        "lon": -1.492573,
+        "name": "basque_country_parking_Pole_Technologique_Jean_Bertin_zidDS8EFCVB",
+        "station_id": "basque_country_parking_Pole_Technologique_Jean_Bertin_zidDS8EFCVB"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.551279,
+        "lon": -1.490912,
+        "name": "basque_country_parking_Stade_intercommunal__zidS5CYPSR3",
+        "station_id": "basque_country_parking_Stade_intercommunal__zidS5CYPSR3"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.541372,
+        "lon": -1.483725,
+        "name": "basque_country_parking_Square_Albert_Mora_zid2I782BS5",
+        "station_id": "basque_country_parking_Square_Albert_Mora_zid2I782BS5"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.538942,
+        "lon": -1.488522,
+        "name": "basque_country_parking_Ecole_municipale_de_Musique_zidORQ9XONA",
+        "station_id": "basque_country_parking_Ecole_municipale_de_Musique_zidORQ9XONA"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.532089,
+        "lon": -1.492735,
+        "name": "basque_country_parking_Cite_des_Forges_de_l_Adour_zidC4ZTKZTS",
+        "station_id": "basque_country_parking_Cite_des_Forges_de_l_Adour_zidC4ZTKZTS"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.540872,
+        "lon": -1.460718,
+        "name": "basque_country_parking_Hotel_de_Ville_zidVV694XOO",
+        "station_id": "basque_country_parking_Hotel_de_Ville_zidVV694XOO"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.538259,
+        "lon": -1.461032,
+        "name": "basque_country_parking_La_Fraternelle_zidY1SJQC6U",
+        "station_id": "basque_country_parking_La_Fraternelle_zidY1SJQC6U"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.533555,
+        "lon": -1.452498,
+        "name": "basque_country_parking_Felix_Concarret_zidTYG8WY68",
+        "station_id": "basque_country_parking_Felix_Concarret_zidTYG8WY68"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.430918,
+        "lon": -1.597703,
+        "name": "basque_country_parking_Zirlinga_zidUTZ2P1EN",
+        "station_id": "basque_country_parking_Zirlinga_zidUTZ2P1EN"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.439585,
+        "lon": -1.577746,
+        "name": "basque_country_parking_Pkg_Petit_Fronton_zidT2QS4NZA",
+        "station_id": "basque_country_parking_Pkg_Petit_Fronton_zidT2QS4NZA"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.495014,
+        "lon": -1.542959,
+        "name": "basque_country_parking_Boulevard_de_la_Mer_zidA2SZNT3I",
+        "station_id": "basque_country_parking_Boulevard_de_la_Mer_zidA2SZNT3I"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.436393,
+        "lon": -1.595552,
+        "name": "basque_country_parking_Plage_du_centre_zid12EOGLPB",
+        "station_id": "basque_country_parking_Plage_du_centre_zid12EOGLPB"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.440049,
+        "lon": -1.589446,
+        "name": "basque_country_parking_Centre_bourg_zidPB88AL7E",
+        "station_id": "basque_country_parking_Centre_bourg_zidPB88AL7E"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.427189,
+        "lon": -1.603416,
+        "name": "basque_country_parking_Parlementia_zidCMEUHWAK",
+        "station_id": "basque_country_parking_Parlementia_zidCMEUHWAK"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.438833,
+        "lon": -1.569358,
+        "name": "basque_country_parking_Parking_relais_Burruntz_zidHC8SV9CV",
+        "station_id": "basque_country_parking_Parking_relais_Burruntz_zidHC8SV9CV"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.430427,
+        "lon": -1.591062,
+        "name": "basque_country_parking_Kirolak_zidKRVV0JXP",
+        "station_id": "basque_country_parking_Kirolak_zidKRVV0JXP"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.489879,
+        "lon": -1.506188,
+        "name": "basque_country_parking_95_Rue_de_Jouanetote___Anglet_zidBYE3V31F",
+        "station_id": "basque_country_parking_95_Rue_de_Jouanetote___Anglet_zidBYE3V31F"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.493661,
+        "lon": -1.510203,
+        "name": "basque_country_parking_Courbois_zidU0I5OPVI",
+        "station_id": "basque_country_parking_Courbois_zidU0I5OPVI"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.495508,
+        "lon": -1.530236,
+        "name": "basque_country_parking_Rue_Eugene_Labaste_zidUFGJJ7NN",
+        "station_id": "basque_country_parking_Rue_Eugene_Labaste_zidUFGJJ7NN"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48619379335082,
+        "lon": -1.5141437374494795,
+        "name": "basque_country_parking_Place_Lamothe_zidC0DUYZGG",
+        "station_id": "basque_country_parking_Place_Lamothe_zidC0DUYZGG"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.487513,
+        "lon": -1.513515,
+        "name": "basque_country_parking_32_rue_d_Augeron_zidZIOYY4D5",
+        "station_id": "basque_country_parking_32_rue_d_Augeron_zidZIOYY4D5"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.516135,
+        "lon": -1.501694,
+        "name": "basque_country_parking_La_Becasse_zidFSAS93T9",
+        "station_id": "basque_country_parking_La_Becasse_zidFSAS93T9"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.480747,
+        "lon": -1.530137,
+        "name": "basque_country_parking_1_allee_Pierre_Cazaux_zid56UNTKAE",
+        "station_id": "basque_country_parking_1_allee_Pierre_Cazaux_zid56UNTKAE"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.509319,
+        "lon": -1.530292,
+        "name": "basque_country_parking_Plage_Madrague_zidDH0K0ZTY",
+        "station_id": "basque_country_parking_Plage_Madrague_zidDH0K0ZTY"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.520566,
+        "lon": -1.524094,
+        "name": "basque_country_parking_Plage_des_Cavaliers_zidI43EZTNB",
+        "station_id": "basque_country_parking_Plage_des_Cavaliers_zidI43EZTNB"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.504025,
+        "lon": -1.537943,
+        "name": "basque_country_parking_Plage_de_la_Marinella_zid8VHHFJSR",
+        "station_id": "basque_country_parking_Plage_de_la_Marinella_zid8VHHFJSR"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.50156027584523,
+        "lon": -1.5394482900875617,
+        "name": "basque_country_parking_Sables_d_Or_zid5ZA1GO4O",
+        "station_id": "basque_country_parking_Sables_d_Or_zid5ZA1GO4O"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.382344,
+        "lon": -1.669172,
+        "name": "basque_country_parking_Residence_Baignol_zidB0BWI1KZ",
+        "station_id": "basque_country_parking_Residence_Baignol_zidB0BWI1KZ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.389918,
+        "lon": -1.683979,
+        "name": "basque_country_parking_Socoa_zidFDX5FIS8",
+        "station_id": "basque_country_parking_Socoa_zidFDX5FIS8"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.38148,
+        "lon": -1.664822,
+        "name": "basque_country_parking_Ciboure_Marinela_zidNMRGKN1A",
+        "station_id": "basque_country_parking_Ciboure_Marinela_zidNMRGKN1A"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.529211,
+        "lon": -1.47364,
+        "name": "basque_country_parking_La_Gargale_zid67CKNPFP",
+        "station_id": "basque_country_parking_La_Gargale_zid67CKNPFP"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.527832,
+        "lon": -1.487965,
+        "name": "basque_country_parking_17_D78___Boucau___a_voir_zidEI4WIGKO",
+        "station_id": "basque_country_parking_17_D78___Boucau___a_voir_zidEI4WIGKO"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.52499,
+        "lon": -1.485229,
+        "name": "basque_country_parking_Mairie_Boucau_zidABMQN3K1",
+        "station_id": "basque_country_parking_Mairie_Boucau_zidABMQN3K1"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.518416,
+        "lon": -1.478007,
+        "name": "basque_country_parking_37_Rue_Raymond_et_Marcel_Glize_zidHEIU8F1K",
+        "station_id": "basque_country_parking_37_Rue_Raymond_et_Marcel_Glize_zidHEIU8F1K"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.468444,
+        "lon": -1.497872,
+        "name": "basque_country_parking_2_Rue_du_Colonel_Melville_Lynch_zid7YFE7H9M",
+        "station_id": "basque_country_parking_2_Rue_du_Colonel_Melville_Lynch_zid7YFE7H9M"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.372631,
+        "lon": -1.657965,
+        "name": "basque_country_parking_Zaldi_Xurito_zidQ4PE6YTT",
+        "station_id": "basque_country_parking_Zaldi_Xurito_zidQ4PE6YTT"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48606,
+        "lon": -1.520339,
+        "name": "basque_country_parking_29_Rue_des_5_Cantons___Anglet_zidDMUR1PL0",
+        "station_id": "basque_country_parking_29_Rue_des_5_Cantons___Anglet_zidDMUR1PL0"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.527106,
+        "lon": -1.455056,
+        "name": "basque_country_parking_Point_virtuel_zidXJ3Z33XE",
+        "station_id": "basque_country_parking_Point_virtuel_zidXJ3Z33XE"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.383246,
+        "lon": -1.690347,
+        "name": "basque_country_parking_Lycee_Maritime_zid9ULAT5HI",
+        "station_id": "basque_country_parking_Lycee_Maritime_zid9ULAT5HI"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.482648,
+        "lon": -1.515667,
+        "name": "basque_country_parking_Mairie_Anglet_zid39EO4IEE",
+        "station_id": "basque_country_parking_Mairie_Anglet_zid39EO4IEE"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.557933,
+        "lon": -1.497853,
+        "name": "basque_country_parking_Point_virtuel_zid26RKLMJN",
+        "station_id": "basque_country_parking_Point_virtuel_zid26RKLMJN"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.516637,
+        "lon": -1.429172,
+        "name": "basque_country_parking_Salle_biarrotte_zidN36VLV5U",
+        "station_id": "basque_country_parking_Salle_biarrotte_zidN36VLV5U"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.494321,
+        "lon": -1.52852,
+        "name": "basque_country_parking_Parking_Paul_Courbin_zidLK92LR2V",
+        "station_id": "basque_country_parking_Parking_Paul_Courbin_zidLK92LR2V"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.475784,
+        "lon": -1.510364,
+        "name": "basque_country_parking_Montaury___Cantau___Arkinova_zidODLRLUXQ",
+        "station_id": "basque_country_parking_Montaury___Cantau___Arkinova_zidODLRLUXQ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.503692,
+        "lon": -1.495268,
+        "name": "basque_country_parking_23_Av_de_l_Adour_zid9VQXP0PB",
+        "station_id": "basque_country_parking_23_Av_de_l_Adour_zid9VQXP0PB"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.490987,
+        "lon": -1.473674,
+        "name": "basque_country_parking_Musee_Basque_zid5WAD9BX8",
+        "station_id": "basque_country_parking_Musee_Basque_zid5WAD9BX8"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.492263,
+        "lon": -1.487002,
+        "name": "basque_country_parking_Avenue_Dubrocq_zidQK1HUM5V",
+        "station_id": "basque_country_parking_Avenue_Dubrocq_zidQK1HUM5V"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.479185,
+        "lon": -1.455669,
+        "name": "basque_country_parking_Belharra_zidO2PP4QA1",
+        "station_id": "basque_country_parking_Belharra_zidO2PP4QA1"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.506799,
+        "lon": -1.485687,
+        "name": "basque_country_parking_Avenue_Dr_Camille_Delvaille_zidGVA22ACI",
+        "station_id": "basque_country_parking_Avenue_Dr_Camille_Delvaille_zidGVA22ACI"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.493421,
+        "lon": -1.491897,
+        "name": "basque_country_parking_Forum_zidBGJ2NGMG",
+        "station_id": "basque_country_parking_Forum_zidBGJ2NGMG"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.485926,
+        "lon": -1.491141,
+        "name": "basque_country_parking_Av_Marechal_Soult_zid7YGM1YHB",
+        "station_id": "basque_country_parking_Av_Marechal_Soult_zid7YGM1YHB"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.486804,
+        "lon": -1.487766,
+        "name": "basque_country_parking_Av_Sergent_Capmas_zidS7YTO1IX",
+        "station_id": "basque_country_parking_Av_Sergent_Capmas_zidS7YTO1IX"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.484758,
+        "lon": -1.476047,
+        "name": "basque_country_parking_Lauga_zidRS5NLZ93",
+        "station_id": "basque_country_parking_Lauga_zidRS5NLZ93"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.505823,
+        "lon": -1.475276,
+        "name": "basque_country_parking_Chem_de_Laharie_zidQUY9406Z",
+        "station_id": "basque_country_parking_Chem_de_Laharie_zidQUY9406Z"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.481689,
+        "lon": -1.486774,
+        "name": "basque_country_parking_Conservatoire_zidSD1XCIW3",
+        "station_id": "basque_country_parking_Conservatoire_zidSD1XCIW3"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.485173,
+        "lon": -1.473213,
+        "name": "basque_country_parking_Glain_zid7K9NYYHS",
+        "station_id": "basque_country_parking_Glain_zid7K9NYYHS"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.507888,
+        "lon": -1.464096,
+        "name": "basque_country_parking_Rue_de_Codry_zidJZUZRDPK",
+        "station_id": "basque_country_parking_Rue_de_Codry_zidJZUZRDPK"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.499775,
+        "lon": -1.454387,
+        "name": "basque_country_parking_Gascons_zidEYPENC1I",
+        "station_id": "basque_country_parking_Gascons_zidEYPENC1I"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.497236,
+        "lon": -1.459625,
+        "name": "basque_country_parking_Jean_Fontan_zidFOBK8PSZ",
+        "station_id": "basque_country_parking_Jean_Fontan_zidFOBK8PSZ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.503362,
+        "lon": -1.467789,
+        "name": "basque_country_parking_Matras_zidAMIU6XMJ",
+        "station_id": "basque_country_parking_Matras_zidAMIU6XMJ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.499604,
+        "lon": -1.461554,
+        "name": "basque_country_parking_Avenue_du_Dr_Maurice_Delay_zid5XOFV4MW",
+        "station_id": "basque_country_parking_Avenue_du_Dr_Maurice_Delay_zid5XOFV4MW"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.505599,
+        "lon": -1.463534,
+        "name": "basque_country_parking_Chemin_du_Grand_Hargous__zid7X0AVPLN",
+        "station_id": "basque_country_parking_Chemin_du_Grand_Hargous__zid7X0AVPLN"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.500081,
+        "lon": -1.452442,
+        "name": "basque_country_parking_Centre_aquatique_zidVIYR9DON",
+        "station_id": "basque_country_parking_Centre_aquatique_zidVIYR9DON"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.496226,
+        "lon": -1.470464,
+        "name": "Gare de Bayonne",
+        "station_id": "basque_country_parking_Bayonne_gare_zid2LNRL8HT",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.468191,
+        "lon": -1.491569,
+        "name": "basque_country_parking_Forge_Adour_zidRJ68AZD6",
+        "station_id": "basque_country_parking_Forge_Adour_zidRJ68AZD6"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.47915,
+        "lon": -1.498726,
+        "name": "basque_country_parking_Polo_Beyris_zidJATD4X1I",
+        "station_id": "basque_country_parking_Polo_Beyris_zidJATD4X1I"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.506723,
+        "lon": -1.430917,
+        "name": "basque_country_parking_Seque_zid5XXP9S28",
+        "station_id": "basque_country_parking_Seque_zid5XXP9S28"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.488301,
+        "lon": -1.456842,
+        "name": "basque_country_parking_St_Frederic_zidZBA11BAT",
+        "station_id": "basque_country_parking_St_Frederic_zidZBA11BAT"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.491904,
+        "lon": -1.463558,
+        "name": "basque_country_parking_Bd_Jean_Jaures_zid75IBJGAS",
+        "station_id": "basque_country_parking_Bd_Jean_Jaures_zid75IBJGAS"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.498419,
+        "lon": -1.436438,
+        "name": "basque_country_parking_Chemin_de_Sanguinat_zid5GS1JGC8",
+        "station_id": "basque_country_parking_Chemin_de_Sanguinat_zid5GS1JGC8"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.483784,
+        "lon": -1.466239,
+        "name": "basque_country_parking_Cam_de_Prats_zidZ5Y7E9HT",
+        "station_id": "basque_country_parking_Cam_de_Prats_zidZ5Y7E9HT"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.493889,
+        "lon": -1.475084,
+        "name": "basque_country_parking_Mairie_zidJCGRTGHU",
+        "station_id": "basque_country_parking_Mairie_zidJCGRTGHU"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.485382,
+        "lon": -1.494689,
+        "name": "basque_country_parking_Saint_Armand_zidSSCP490R",
+        "station_id": "basque_country_parking_Saint_Armand_zidSSCP490R"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.47705,
+        "lon": -1.483855,
+        "name": "basque_country_parking_Marracq_zidQC2I6LAY",
+        "station_id": "basque_country_parking_Marracq_zidQC2I6LAY"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.420742,
+        "lon": -1.615738,
+        "name": "basque_country_parking_Chemin_du_Trinquet_zidYDGGGZ0S",
+        "station_id": "basque_country_parking_Chemin_du_Trinquet_zidYDGGGZ0S"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.418506,
+        "lon": -1.611838,
+        "name": "basque_country_parking_Chemin_Baldareta_Bidea_zid9OQZ5IFW",
+        "station_id": "basque_country_parking_Chemin_Baldareta_Bidea_zid9OQZ5IFW"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.425979,
+        "lon": -1.608584,
+        "name": "basque_country_parking_Gare_zid51J8JYFK",
+        "station_id": "basque_country_parking_Gare_zid51J8JYFK"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.420539,
+        "lon": -1.605748,
+        "name": "basque_country_parking_Adrien_Lahourcade_zidC87RA82T",
+        "station_id": "basque_country_parking_Adrien_Lahourcade_zidC87RA82T"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.417378,
+        "lon": -1.60479,
+        "name": "basque_country_parking_Mendi_Alde_zidSJ7R2TRS",
+        "station_id": "basque_country_parking_Mendi_Alde_zidSJ7R2TRS"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.445893,
+        "lon": -1.545102,
+        "name": "basque_country_parking_Lore_Landa_zidQ9AQK9FF",
+        "station_id": "basque_country_parking_Lore_Landa_zidQ9AQK9FF"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.39463,
+        "lon": -1.660061,
+        "name": "basque_country_parking_66_Boulevard_Thiers_zidYTBIF6OZ",
+        "station_id": "basque_country_parking_66_Boulevard_Thiers_zidYTBIF6OZ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.393636,
+        "lon": -1.659737,
+        "name": "basque_country_parking_55_Boulevard_Thiers_zidZAR2N2ND",
+        "station_id": "basque_country_parking_55_Boulevard_Thiers_zidZAR2N2ND"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.39054,
+        "lon": -1.657179,
+        "name": "basque_country_parking_66_boulevard_Victor_Hugo_zidOVTIDUPO",
+        "station_id": "basque_country_parking_66_boulevard_Victor_Hugo_zidOVTIDUPO"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.386191,
+        "lon": -1.660817,
+        "name": "basque_country_parking_Gare_zidZATMA4IB",
+        "station_id": "basque_country_parking_Gare_zidZATMA4IB"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.38298,
+        "lon": -1.655773,
+        "name": "basque_country_parking_Place_d_Espagne_zid0BHH6CXM",
+        "station_id": "basque_country_parking_Place_d_Espagne_zid0BHH6CXM"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.397214,
+        "lon": -1.636286,
+        "name": "basque_country_parking_Ametzague_zidUWOAIU5I",
+        "station_id": "basque_country_parking_Ametzague_zidUWOAIU5I"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.393132,
+        "lon": -1.651591,
+        "name": "basque_country_parking_Jai_Alai_zidWAU5L2Q0",
+        "station_id": "basque_country_parking_Jai_Alai_zidWAU5L2Q0"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.37518,
+        "lon": -1.638071,
+        "name": "basque_country_parking_Chantaco_zidJWS9EBFQ",
+        "station_id": "basque_country_parking_Chantaco_zidJWS9EBFQ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.346918,
+        "lon": -1.771748,
+        "name": "basque_country_parking_Autoport_zidQS8TZWKY",
+        "station_id": "basque_country_parking_Autoport_zidQS8TZWKY"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.343879,
+        "lon": -1.765096,
+        "name": "basque_country_parking_Denentzat_zid9SGSY532",
+        "station_id": "basque_country_parking_Denentzat_zid9SGSY532"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.35267,
+        "lon": -1.77624,
+        "name": "basque_country_parking_Piscine_zidAAPR5286",
+        "station_id": "basque_country_parking_Piscine_zidAAPR5286"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.353555,
+        "lon": -1.781138,
+        "name": "basque_country_parking_Hendaye_gare_zid3O5QAV6M",
+        "station_id": "basque_country_parking_Hendaye_gare_zid3O5QAV6M"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.370461,
+        "lon": -1.78382,
+        "name": "basque_country_parking_Capitainerie_zidEY21XML6",
+        "station_id": "basque_country_parking_Capitainerie_zidEY21XML6"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.359839,
+        "lon": -1.775434,
+        "name": "basque_country_parking_Gaztelu_Zahar_zidN9UUEDX2",
+        "station_id": "basque_country_parking_Gaztelu_Zahar_zidN9UUEDX2"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.37434,
+        "lon": -1.76871,
+        "name": "basque_country_parking_Office_de_tourisme_zidNVMBACO2",
+        "station_id": "basque_country_parking_Office_de_tourisme_zidNVMBACO2"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.37569,
+        "lon": -1.7628,
+        "name": "basque_country_parking_Surf_Club_zidITBDI6QE",
+        "station_id": "basque_country_parking_Surf_Club_zidITBDI6QE"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.371154,
+        "lon": -1.750536,
+        "name": "basque_country_parking_Dongoxenia_zidTLCXKT27",
+        "station_id": "basque_country_parking_Dongoxenia_zidTLCXKT27"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.528848,
+        "lon": -1.495067,
+        "name": "basque_country_parking_Boulodrome_zidHKTTGT43",
+        "station_id": "basque_country_parking_Boulodrome_zidHKTTGT43"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.36224,
+        "lon": -1.69942,
+        "name": "basque_country_parking_Office_de_tourisme_zidFYSO86Z0",
+        "station_id": "basque_country_parking_Office_de_tourisme_zidFYSO86Z0"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.333719,
+        "lon": -1.68759,
+        "name": "basque_country_parking_Venta_Amatxi_zidX86NHHI2",
+        "station_id": "basque_country_parking_Venta_Amatxi_zidX86NHHI2"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.348181,
+        "lon": -1.689642,
+        "name": "basque_country_parking_Berreota_zidEOL5BL14",
+        "station_id": "basque_country_parking_Berreota_zidEOL5BL14"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.370188,
+        "lon": -1.76432,
+        "name": "basque_country_parking_Gare_des_deux_jumeaux_zidIGBTVHJD",
+        "station_id": "basque_country_parking_Gare_des_deux_jumeaux_zidIGBTVHJD"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.362777,
+        "lon": -1.758731,
+        "name": "basque_country_parking_Orio_zidBY6X6HUD",
+        "station_id": "basque_country_parking_Orio_zidBY6X6HUD"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.360757,
+        "lon": -1.69912,
+        "name": "basque_country_parking_Osasuna_zidF06BF5UM",
+        "station_id": "basque_country_parking_Osasuna_zidF06BF5UM"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.335218,
+        "lon": -1.668092,
+        "name": "basque_country_parking_Olhette_zid5JIGCURB",
+        "station_id": "basque_country_parking_Olhette_zid5JIGCURB"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.37476,
+        "lon": -1.673897,
+        "name": "basque_country_parking_Camieta_zidCE47C1U9",
+        "station_id": "basque_country_parking_Camieta_zidCE47C1U9"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.386731,
+        "lon": -1.688689,
+        "name": "basque_country_parking_VVF_zid2MZD6K44",
+        "station_id": "basque_country_parking_VVF_zid2MZD6K44"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.363743,
+        "lon": -1.6994,
+        "name": "basque_country_parking_Salle_polyvalente_zidHXTVODYJ",
+        "station_id": "basque_country_parking_Salle_polyvalente_zidHXTVODYJ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.344604,
+        "lon": -1.762275,
+        "name": "basque_country_parking_Bidassoa_zidGA456EW4",
+        "station_id": "basque_country_parking_Bidassoa_zidGA456EW4"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.336875,
+        "lon": -1.660402,
+        "name": "basque_country_parking_Harginbaita_zid1BDMZNJ3",
+        "station_id": "basque_country_parking_Harginbaita_zid1BDMZNJ3"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.34763,
+        "lon": -1.756827,
+        "name": "basque_country_parking_Chemin_de_Larrekobidea_zidZP2TT4SD",
+        "station_id": "basque_country_parking_Chemin_de_Larrekobidea_zidZP2TT4SD"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.363066,
+        "lon": -1.694122,
+        "name": "basque_country_parking_Stade_zidEMXX4XR0",
+        "station_id": "basque_country_parking_Stade_zidEMXX4XR0"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.47698,
+        "lon": -1.447587,
+        "name": "basque_country_parking_Parking_covoiturage_Saint_Pierre_d_Irube_zidKU58WMUH",
+        "station_id": "basque_country_parking_Parking_covoiturage_Saint_Pierre_d_Irube_zidKU58WMUH"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.473741,
+        "lon": -1.453059,
+        "name": "basque_country_parking_Irube_Centre_zidLFTEGLFR",
+        "station_id": "basque_country_parking_Irube_Centre_zidLFTEGLFR"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.37297,
+        "lon": -1.77405,
+        "name": "Palmier",
+        "station_id": "Palmier"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.398684,
+        "lon": -1.64234,
+        "name": "basque_country_parking_St_Jean_Luz_Ilargia_zidBILT1MX8",
+        "station_id": "basque_country_parking_St_Jean_Luz_Ilargia_zidBILT1MX8"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.482005,
+        "lon": -1.445411,
+        "name": "Ametzondo shopping centre",
+        "station_id": "Ametzondo shopping centre"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.500229,
+        "lon": -1.542493,
+        "name": "basque_country_parking_71875_zidWBY289QT",
+        "station_id": "basque_country_parking_71875_zidWBY289QT"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.498617,
+        "lon": -1.543723,
+        "name": "basque_country_parking_71873_zidEJMXEESU",
+        "station_id": "basque_country_parking_71873_zidEJMXEESU"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.503858,
+        "lon": -1.538071,
+        "name": "basque_country_parking_71880_zid659767T2",
+        "station_id": "basque_country_parking_71880_zid659767T2"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.515482,
+        "lon": -1.501352,
+        "name": "basque_country_parking_71900_zidHS0OMI8Y",
+        "station_id": "basque_country_parking_71900_zidHS0OMI8Y"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.513912,
+        "lon": -1.530821,
+        "name": "basque_country_parking_71888_zid5BY0Z56F",
+        "station_id": "basque_country_parking_71888_zid5BY0Z56F"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.51641,
+        "lon": -1.527394,
+        "name": "basque_country_parking_71889_zidEJKV8AAV",
+        "station_id": "basque_country_parking_71889_zidEJKV8AAV"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49773,
+        "lon": -1.54404,
+        "name": "basque_country_parking_71861_zidFR3IWFLG",
+        "station_id": "basque_country_parking_71861_zidFR3IWFLG"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.521028,
+        "lon": -1.525212,
+        "name": "basque_country_parking_71890_zidDMBNXIGU",
+        "station_id": "basque_country_parking_71890_zidDMBNXIGU"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49424,
+        "lon": -1.5461,
+        "name": "basque_country_parking_71857_zid5D7PX4JC",
+        "station_id": "basque_country_parking_71857_zid5D7PX4JC"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49513,
+        "lon": -1.54295,
+        "name": "basque_country_parking_71855_zidSCUQKPYF",
+        "station_id": "basque_country_parking_71855_zidSCUQKPYF"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.499608,
+        "lon": -1.54278,
+        "name": "basque_country_parking_71874_zidSJBLZLCX",
+        "station_id": "basque_country_parking_71874_zidSJBLZLCX"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.515564,
+        "lon": -1.501196,
+        "name": "basque_country_parking_71899_zid7N42N82H",
+        "station_id": "basque_country_parking_71899_zid7N42N82H"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49518,
+        "lon": -1.54296,
+        "name": "basque_country_parking_71856_zidD1N7CSH6",
+        "station_id": "basque_country_parking_71856_zidD1N7CSH6"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.493984,
+        "lon": -1.546531,
+        "name": "basque_country_parking_71982_zidG1FOR46O",
+        "station_id": "basque_country_parking_71982_zidG1FOR46O"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.526403,
+        "lon": -1.519486,
+        "name": "basque_country_parking_71892_zid40OOBCSE",
+        "station_id": "basque_country_parking_71892_zid40OOBCSE"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.494989,
+        "lon": -1.542952,
+        "name": "basque_country_parking_71854_zidYO3IBMHR",
+        "station_id": "basque_country_parking_71854_zidYO3IBMHR"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.501958,
+        "lon": -1.539953,
+        "name": "basque_country_parking_71879_zidPXKNPJ6Z",
+        "station_id": "basque_country_parking_71879_zidPXKNPJ6Z"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.526457,
+        "lon": -1.519833,
+        "name": "basque_country_parking_71893_zidOV5O1XD7",
+        "station_id": "basque_country_parking_71893_zidOV5O1XD7"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.500764,
+        "lon": -1.540814,
+        "name": "basque_country_parking_71876_zidAHB6HALT",
+        "station_id": "basque_country_parking_71876_zidAHB6HALT"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.505975,
+        "lon": -1.53671,
+        "name": "basque_country_parking_71881_zidRPEEF1ZT",
+        "station_id": "basque_country_parking_71881_zidRPEEF1ZT"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.526773,
+        "lon": -1.523069,
+        "name": "basque_country_parking_71975_zidL62V4CWQ",
+        "station_id": "basque_country_parking_71975_zidL62V4CWQ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.525981,
+        "lon": -1.521971,
+        "name": "basque_country_parking_71847_zid2E7EHAFF",
+        "station_id": "basque_country_parking_71847_zid2E7EHAFF"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.510448,
+        "lon": -1.534133,
+        "name": "basque_country_parking_71885_zidQ6XTPU5A",
+        "station_id": "basque_country_parking_71885_zidQ6XTPU5A"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.503588,
+        "lon": -1.538221,
+        "name": "basque_country_parking_71980_zidRN72AOVG",
+        "station_id": "basque_country_parking_71980_zidRN72AOVG"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.497409,
+        "lon": -1.543523,
+        "name": "basque_country_parking_71859_zidYKPPF42O",
+        "station_id": "basque_country_parking_71859_zidYKPPF42O"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49767,
+        "lon": -1.5441,
+        "name": "basque_country_parking_71860_zidX2RQXXOJ",
+        "station_id": "basque_country_parking_71860_zidX2RQXXOJ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.516658,
+        "lon": -1.501795,
+        "name": "basque_country_parking_71898_zid488X4WN1",
+        "station_id": "basque_country_parking_71898_zid488X4WN1"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.501067,
+        "lon": -1.540549,
+        "name": "basque_country_parking_71878_zidKQKSG559",
+        "station_id": "basque_country_parking_71878_zidKQKSG559"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.500974,
+        "lon": -1.540957,
+        "name": "basque_country_parking_71877_zid0TTQHJJU",
+        "station_id": "basque_country_parking_71877_zid0TTQHJJU"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.474167,
+        "lon": -1.500455,
+        "name": "basque_country_parking_71992_zidFQAUUX8R",
+        "station_id": "basque_country_parking_71992_zidFQAUUX8R"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.494255,
+        "lon": -1.545995,
+        "name": "basque_country_parking_71983_zidTDCCASQR",
+        "station_id": "basque_country_parking_71983_zidTDCCASQR"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.510116,
+        "lon": -1.53444,
+        "name": "basque_country_parking_71977_zidYTY4BI4L",
+        "station_id": "basque_country_parking_71977_zidYTY4BI4L"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.516121,
+        "lon": -1.501663,
+        "name": "basque_country_parking_71984_zidE6UZMIQ8",
+        "station_id": "basque_country_parking_71984_zidE6UZMIQ8"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.482087,
+        "lon": -1.507059,
+        "name": "basque_country_parking_71985_zidMK0ZL4X2",
+        "station_id": "basque_country_parking_71985_zidMK0ZL4X2"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.4053261,
+        "lon": -1.627612,
+        "name": "basque_country_parking_CC_Saint_jean_de_luz_zid8Y46PDE9",
+        "station_id": "basque_country_parking_CC_Saint_jean_de_luz_zid8Y46PDE9"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.3991691,
+        "lon": -1.639574,
+        "name": "basque_country_parking_Mcdo___Saint_jean_de_luz_zidN3QAGFRJ",
+        "station_id": "basque_country_parking_Mcdo___Saint_jean_de_luz_zidN3QAGFRJ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.3975086,
+        "lon": -1.6394765,
+        "name": "basque_country_parking_Polyclinique__Saint_jean_de_luz_zidO631HUMA",
+        "station_id": "basque_country_parking_Polyclinique__Saint_jean_de_luz_zidO631HUMA"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.46940524802017,
+        "lon": -1.445915061597669,
+        "name": "Route des Cimes",
+        "station_id": "basque_country_parking_Marquage_Rte_des_cimes_zidMLDKB8Z7"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48686193351656,
+        "lon": -1.499805450140412,
+        "name": "basque_country_parking_BikeRack_BAB_2_zid0C04DZRU",
+        "station_id": "basque_country_parking_BikeRack_BAB_2_zid0C04DZRU"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48493711688136,
+        "lon": -1.5024788913235883,
+        "name": "basque_country_parking_BikeRack_Leclerc_Anglet_zidHIKZ4H2T",
+        "station_id": "basque_country_parking_BikeRack_Leclerc_Anglet_zidHIKZ4H2T"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.485652,
+        "lon": -1.501831,
+        "name": "basque_country_parking_BikeRack_Boulanger_Anglet_zid30FIOMLF",
+        "station_id": "basque_country_parking_BikeRack_Boulanger_Anglet_zid30FIOMLF"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49713,
+        "lon": -1.45801,
+        "name": "basque_country_parking_Bayonne_Marquage_sainte_croix___zidPTF6M75P",
+        "station_id": "basque_country_parking_Bayonne_Marquage_sainte_croix___zidPTF6M75P"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.435111,
+        "lon": -1.582639,
+        "name": "basque_country_parking_Camping_Oyam_zidPEUMI18M",
+        "station_id": "basque_country_parking_Camping_Oyam_zidPEUMI18M"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.447774,
+        "lon": -1.573954,
+        "name": "basque_country_parking_BikeRack_Intermarche_Bidart_zidGQB0A1JS",
+        "station_id": "basque_country_parking_BikeRack_Intermarche_Bidart_zidGQB0A1JS"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48362681554686,
+        "lon": -1.5677603997765233,
+        "name": "basque_country_parking_Esplanade_des_anciens_combattants__zidEUQ6XFV8",
+        "station_id": "basque_country_parking_Esplanade_des_anciens_combattants__zidEUQ6XFV8"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.47915,
+        "lon": -1.559048,
+        "name": "basque_country_parking_42_avenue_Carnot_zidH7KJSU1A",
+        "station_id": "basque_country_parking_42_avenue_Carnot_zidH7KJSU1A"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.476417,
+        "lon": -1.548222,
+        "name": "basque_country_parking_2_boulevard_de_Cascais_zid7V2B1OS5",
+        "station_id": "basque_country_parking_2_boulevard_de_Cascais_zid7V2B1OS5",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48387,
+        "lon": -1.558855,
+        "name": "basque_country_parking_23_boulevard_du_General_de_Gaulle_zidV7OLV21P",
+        "station_id": "basque_country_parking_23_boulevard_du_General_de_Gaulle_zidV7OLV21P"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.482698,
+        "lon": -1.558756,
+        "name": "basque_country_parking_8_avenue_Edouard_VII__zidN1EBGNHE",
+        "station_id": "basque_country_parking_8_avenue_Edouard_VII__zidN1EBGNHE",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.493472,
+        "lon": -1.553369,
+        "name": "basque_country_parking_Esplanade_Elisabeth_II__zidD1AUSYOQ",
+        "station_id": "basque_country_parking_Esplanade_Elisabeth_II__zidD1AUSYOQ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.485398,
+        "lon": -1.539931,
+        "name": "basque_country_parking_12_rue_de_l_Estagnas_zidK3U04GCE",
+        "station_id": "basque_country_parking_12_rue_de_l_Estagnas_zidK3U04GCE"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.478452,
+        "lon": -1.554802,
+        "name": "basque_country_parking_Avenue_Charles_Floquet_zidRUM8FQMQ",
+        "station_id": "basque_country_parking_Avenue_Charles_Floquet_zidRUM8FQMQ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.488392,
+        "lon": -1.553173,
+        "name": "basque_country_parking_32_avenue_de_l_Imperatrice_zid86DAUDRK",
+        "station_id": "basque_country_parking_32_avenue_de_l_Imperatrice_zid86DAUDRK"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.462312,
+        "lon": -1.552621,
+        "name": "basque_country_parking_2_rue_Francis_James_zidZOVGQ5YM",
+        "station_id": "basque_country_parking_2_rue_Francis_James_zidZOVGQ5YM"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.485467,
+        "lon": -1.54596,
+        "name": "basque_country_parking_3_rue_du_8_mai_1945_zidVD2VLY6Y",
+        "station_id": "basque_country_parking_3_rue_du_8_mai_1945_zidVD2VLY6Y"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.459534,
+        "lon": -1.541776,
+        "name": "basque_country_parking_3_rue_Luis_Mariano_zidACINT79V",
+        "station_id": "basque_country_parking_3_rue_Luis_Mariano_zidACINT79V"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.459869,
+        "lon": -1.547993,
+        "name": "basque_country_parking_2_rue_des_Mouettes_zidSPPS8V13",
+        "station_id": "basque_country_parking_2_rue_des_Mouettes_zidSPPS8V13"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.4662,
+        "lon": -1.57312,
+        "name": "basque_country_parking_Moulin_de_Chabiague_zid9AX1O0NC",
+        "station_id": "basque_country_parking_Moulin_de_Chabiague_zid9AX1O0NC",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.459605,
+        "lon": -1.546472,
+        "name": "basque_country_parking_16_Allee_du_Moura_zidL9COLS6B",
+        "station_id": "basque_country_parking_16_Allee_du_Moura_zidL9COLS6B"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.470644,
+        "lon": -1.560478,
+        "name": "basque_country_parking_Place_des_Resistants_rue_de_Petricot_zid5FPZMR77",
+        "station_id": "basque_country_parking_Place_des_Resistants_rue_de_Petricot_zid5FPZMR77"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.466235,
+        "lon": -1.538118,
+        "name": "basque_country_parking_Parking_Itary_zidMQ1M1IXB",
+        "station_id": "basque_country_parking_Parking_Itary_zidMQ1M1IXB"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48214,
+        "lon": -1.567665,
+        "name": "basque_country_parking_3_Esplanade_du_Port_Vieux__zidIX1APV0J",
+        "station_id": "basque_country_parking_3_Esplanade_du_Port_Vieux__zidIX1APV0J"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48347,
+        "lon": -1.56185,
+        "name": "basque_country_parking_Rotonde_de_Bellevue_zidBVM2VIKM",
+        "station_id": "basque_country_parking_Rotonde_de_Bellevue_zidBVM2VIKM",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.485892,
+        "lon": -1.552903,
+        "name": "basque_country_parking_15_rue_Pellot_zidJHPU7BCB",
+        "station_id": "basque_country_parking_15_rue_Pellot_zidJHPU7BCB"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.45874,
+        "lon": -1.57483,
+        "name": "basque_country_parking_Marquage_Bidard_lac_zidBGHI3ZPG",
+        "station_id": "basque_country_parking_Marquage_Bidard_lac_zidBGHI3ZPG",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.45439,
+        "lon": -1.57343,
+        "name": "basque_country_parking_Bidart_AV_Biarritz_zidJU3Q53KM",
+        "station_id": "basque_country_parking_Bidart_AV_Biarritz_zidJU3Q53KM",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.46491,
+        "lon": -1.53616,
+        "name": "basque_country_parking_OceanFest_zidEJTZZ5PM",
+        "station_id": "basque_country_parking_OceanFest_zidEJTZZ5PM",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.469988,
+        "lon": -1.555088,
+        "name": "basque_country_parking_45_kennedy_zidTUAFB3AE",
+        "station_id": "basque_country_parking_45_kennedy_zidTUAFB3AE",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48686,
+        "lon": -1.47981,
+        "name": "basque_country_parking_TMP_Avrion_bayonnais_1__zidTN9LBIM8",
+        "station_id": "basque_country_parking_TMP_Avrion_bayonnais_1__zidTN9LBIM8"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48543,
+        "lon": -1.47795,
+        "name": "basque_country_parking_TMP_Avrion_bayonnais_2_zidSX30CHPV",
+        "station_id": "basque_country_parking_TMP_Avrion_bayonnais_2_zidSX30CHPV"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48458,
+        "lon": -1.48046,
+        "name": "basque_country_parking_TMP_Avrion_bayonnais_3_zidQY7QIAX1",
+        "station_id": "basque_country_parking_TMP_Avrion_bayonnais_3_zidQY7QIAX1"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48311,
+        "lon": -1.56331,
+        "name": "basque_country_parking_marquage_Marechal_leclerc_zidJNA5247P",
+        "station_id": "basque_country_parking_marquage_Marechal_leclerc_zidJNA5247P",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.50191,
+        "lon": -1.46143,
+        "name": "basque_country_parking_Clinique_Caradoc_zid63SWT6OE",
+        "station_id": "basque_country_parking_Clinique_Caradoc_zid63SWT6OE",
+        "vehicle_capacity": {
+          "bike": 0,
+          "ebike": 2,
+          "scooter": 0
+        },
+        "vehicle_type_capacity": {
+          "bike": 0,
+          "ebike": 2,
+          "scooter": 0
+        },
+        "vehicle_types_capacity": [
+          {
+            "count": 0,
+            "vehicle_type_ids": [
+              "bike"
+            ]
+          },
+          {
+            "count": 0,
+            "vehicle_type_ids": [
+              "scooter"
+            ]
+          },
+          {
+            "count": 2,
+            "vehicle_type_ids": [
+              "ebike"
+            ]
+          }
+        ]
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.4642,
+        "lon": -1.54255,
+        "name": "basque_country_parking_Iraty_zid8WCFMDIO",
+        "station_id": "basque_country_parking_Iraty_zid8WCFMDIO",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.38754,
+        "lon": -1.66994,
+        "name": "basque_country_parking_Point_6_zidBTRUSTO9",
+        "station_id": "basque_country_parking_Point_6_zidBTRUSTO9"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.3882,
+        "lon": -1.67578,
+        "name": "basque_country_parking_Point_5_zid4DMO6FTQ",
+        "station_id": "basque_country_parking_Point_5_zid4DMO6FTQ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.39331,
+        "lon": -1.68483,
+        "name": "basque_country_parking_Point_1_zid6Z19EP22",
+        "station_id": "basque_country_parking_Point_1_zid6Z19EP22"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.38743,
+        "lon": -1.67004,
+        "name": "basque_country_parking_Point_7_zidWS02SOYE",
+        "station_id": "basque_country_parking_Point_7_zidWS02SOYE"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.38778,
+        "lon": -1.66469,
+        "name": "basque_country_parking_Point_8_zid6HT9XFLQ",
+        "station_id": "basque_country_parking_Point_8_zid6HT9XFLQ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.38928,
+        "lon": -1.66385,
+        "name": "basque_country_parking_Point_9_zid9GHOHBUN",
+        "station_id": "basque_country_parking_Point_9_zid9GHOHBUN"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.39002,
+        "lon": -1.66272,
+        "name": "basque_country_parking_Point_10_zidFEU1V12F",
+        "station_id": "basque_country_parking_Point_10_zidFEU1V12F"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.3901,
+        "lon": -1.66262,
+        "name": "basque_country_parking_Point_11_zidG41OKSUJ",
+        "station_id": "basque_country_parking_Point_11_zidG41OKSUJ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.39032,
+        "lon": -1.66229,
+        "name": "basque_country_parking_Point_13_zidGLTVREJ2",
+        "station_id": "basque_country_parking_Point_13_zidGLTVREJ2"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.39021,
+        "lon": -1.66247,
+        "name": "basque_country_parking_Point_12_zidA2ZZUANH",
+        "station_id": "basque_country_parking_Point_12_zidA2ZZUANH"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.38977,
+        "lon": -1.68337,
+        "name": "basque_country_parking_BikeRack_Pierre_benoit_zidNLJ65TQP",
+        "station_id": "basque_country_parking_BikeRack_Pierre_benoit_zidNLJ65TQP",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.37349,
+        "lon": -1.67862,
+        "name": "basque_country_parking_BikeRack_Leclerc_Urrugne_zid4JTG2IW2",
+        "station_id": "basque_country_parking_BikeRack_Leclerc_Urrugne_zid4JTG2IW2",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.37504,
+        "lon": -1.67582,
+        "name": "basque_country_parking_MotoRack_interspot_urrugne_zid5EXK861Z",
+        "station_id": "basque_country_parking_MotoRack_interspot_urrugne_zid5EXK861Z",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.38775,
+        "lon": -1.6663,
+        "name": "basque_country_parking_BikeRack_Mazarin_zid2R9QBTG0",
+        "station_id": "basque_country_parking_BikeRack_Mazarin_zid2R9QBTG0",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.38732,
+        "lon": -1.66344,
+        "name": "basque_country_parking_BikeRack_Moco_zidHBUR2PGV",
+        "station_id": "basque_country_parking_BikeRack_Moco_zidHBUR2PGV",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.38677,
+        "lon": -1.66368,
+        "name": "basque_country_parking_BikeRack_Pierre_Larramendy_zid41BE3TMJ",
+        "station_id": "basque_country_parking_BikeRack_Pierre_Larramendy_zid41BE3TMJ",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.38716,
+        "lon": -1.66198,
+        "name": "basque_country_parking_BikeRack_14_Victor_Hugo_zidNN6A4R00",
+        "station_id": "basque_country_parking_BikeRack_14_Victor_Hugo_zidNN6A4R00",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.38711,
+        "lon": -1.66115,
+        "name": "basque_country_parking_BikeRack_Marechal_Harispe_zid5AI38V3U",
+        "station_id": "basque_country_parking_BikeRack_Marechal_Harispe_zid5AI38V3U",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.38818,
+        "lon": -1.65958,
+        "name": "basque_country_parking_BikeRack_36_bd_victor_Hugo_zid24THPNM4",
+        "station_id": "basque_country_parking_BikeRack_36_bd_victor_Hugo_zid24THPNM4",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.3906,
+        "lon": -1.65746,
+        "name": "basque_country_parking_BikeRack_Carrefour_gambetta_zid8OPT0YJT",
+        "station_id": "basque_country_parking_BikeRack_Carrefour_gambetta_zid8OPT0YJT",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.47714,
+        "lon": -1.56586,
+        "name": "basque_country_parking_Virtual_Beau_Rivage_zidMXX3BPNR",
+        "station_id": "basque_country_parking_Virtual_Beau_Rivage_zidMXX3BPNR",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.46274,
+        "lon": -1.5724,
+        "name": "basque_country_parking_Marquage_Av_de_la_plage_zid9AN47ERC",
+        "station_id": "basque_country_parking_Marquage_Av_de_la_plage_zid9AN47ERC",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.47786,
+        "lon": -1.50441,
+        "name": "basque_country_parking_Point_1_zidH4Q2498T",
+        "station_id": "basque_country_parking_Point_1_zidH4Q2498T"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48414,
+        "lon": -1.50681,
+        "name": "basque_country_parking_Point_3_zid5U1DGXEG",
+        "station_id": "basque_country_parking_Point_3_zid5U1DGXEG"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48782,
+        "lon": -1.51003,
+        "name": "basque_country_parking_Point_4_zidSLFO62M2",
+        "station_id": "basque_country_parking_Point_4_zidSLFO62M2"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48547,
+        "lon": -1.53524,
+        "name": "basque_country_parking_Point_5_zidJ8N1SWJR",
+        "station_id": "basque_country_parking_Point_5_zidJ8N1SWJR"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.47782,
+        "lon": -1.4577,
+        "name": "basque_country_parking_Marquage_AV_Labourd__zid35MJEV6N",
+        "station_id": "basque_country_parking_Marquage_AV_Labourd__zid35MJEV6N",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.47736,
+        "lon": -1.51758,
+        "name": "basque_country_parking_Parc_Belay___Petanque_zid3FGBIBQV",
+        "station_id": "basque_country_parking_Parc_Belay___Petanque_zid3FGBIBQV",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.47739,
+        "lon": -1.51681,
+        "name": "basque_country_parking_BikeRack_Brindos_picnic_zidQUTBP4B7",
+        "station_id": "basque_country_parking_BikeRack_Brindos_picnic_zidQUTBP4B7",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.4875,
+        "lon": -1.53645,
+        "name": "basque_country_parking_Esplanade_Larochefoucault_zidOXOZW0N6",
+        "station_id": "basque_country_parking_Esplanade_Larochefoucault_zidOXOZW0N6",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.45771,
+        "lon": -1.50273,
+        "name": "basque_country_parking_BikeRack_Marie_et_pierre_zidGS08LFQR",
+        "station_id": "basque_country_parking_BikeRack_Marie_et_pierre_zidGS08LFQR",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.45859,
+        "lon": -1.50252,
+        "name": "basque_country_parking_BikeRack_Pierre_et_Marie_zidLE3ZH9PY",
+        "station_id": "basque_country_parking_BikeRack_Pierre_et_Marie_zidLE3ZH9PY",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.47655,
+        "lon": -1.52052,
+        "name": "basque_country_parking_Marquage_Haitz_Pean_zid0CVVJ60H",
+        "station_id": "basque_country_parking_Marquage_Haitz_Pean_zid0CVVJ60H",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.47478,
+        "lon": -1.54166,
+        "name": "basque_country_parking_8841486274_zidPBPMWKWJ",
+        "station_id": "basque_country_parking_8841486274_zidPBPMWKWJ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48447,
+        "lon": -1.55848,
+        "name": "basque_country_parking_8841486288_zidRCJ2Y7VH",
+        "station_id": "basque_country_parking_8841486288_zidRCJ2Y7VH"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.47751,
+        "lon": -1.56094,
+        "name": "basque_country_parking_8841486279_zidAQQ5K613",
+        "station_id": "basque_country_parking_8841486279_zidAQQ5K613"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48118,
+        "lon": -1.55401,
+        "name": "basque_country_parking_12073723016_zidL5QQFI87",
+        "station_id": "basque_country_parking_12073723016_zidL5QQFI87"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.46328,
+        "lon": -1.537391,
+        "name": "basque_country_parking_6038839697_zidF5GPJCJL",
+        "station_id": "basque_country_parking_6038839697_zidF5GPJCJL"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.47752,
+        "lon": -1.56673,
+        "name": "basque_country_parking_6269663111_zidDT3WJ88R",
+        "station_id": "basque_country_parking_6269663111_zidDT3WJ88R"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48404,
+        "lon": -1.55805,
+        "name": "basque_country_parking_8841486264_zidUFVR4IFA",
+        "station_id": "basque_country_parking_8841486264_zidUFVR4IFA"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.47562,
+        "lon": -1.54595,
+        "name": "basque_country_parking_10157473016_zidJUUX66W5",
+        "station_id": "basque_country_parking_10157473016_zidJUUX66W5"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48377,
+        "lon": -1.55825,
+        "name": "basque_country_parking_8841486263_zidDAEWWQI0",
+        "station_id": "basque_country_parking_8841486263_zidDAEWWQI0"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48299,
+        "lon": -1.55859,
+        "name": "basque_country_parking_8841486262_zid3TA5PHSM",
+        "station_id": "basque_country_parking_8841486262_zid3TA5PHSM"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.47719,
+        "lon": -1.56398,
+        "name": "basque_country_parking_8841486281_zid0F02FM9V",
+        "station_id": "basque_country_parking_8841486281_zid0F02FM9V"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48222,
+        "lon": -1.56385,
+        "name": "basque_country_parking_8841486285_zid4YL3LR7V",
+        "station_id": "basque_country_parking_8841486285_zid4YL3LR7V"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48738,
+        "lon": -1.54588,
+        "name": "basque_country_parking_8841486268_zidPPGJ41WF",
+        "station_id": "basque_country_parking_8841486268_zidPPGJ41WF"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.47728,
+        "lon": -1.56219,
+        "name": "basque_country_parking_8841486278_zidGG895UMJ",
+        "station_id": "basque_country_parking_8841486278_zidGG895UMJ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.47578,
+        "lon": -1.56638,
+        "name": "basque_country_parking_5720399418_zidD73O853J",
+        "station_id": "basque_country_parking_5720399418_zidD73O853J"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.46384,
+        "lon": -1.57446,
+        "name": "basque_country_parking_8841488519_zidXRCABU8T",
+        "station_id": "basque_country_parking_8841488519_zidXRCABU8T"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.46328,
+        "lon": -1.57506,
+        "name": "basque_country_parking_8841488522_zidSLLLPZPL",
+        "station_id": "basque_country_parking_8841488522_zidSLLLPZPL"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48051,
+        "lon": -1.55887,
+        "name": "basque_country_parking_11051461597_zidBXMIMC6T",
+        "station_id": "basque_country_parking_11051461597_zidBXMIMC6T"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.47131,
+        "lon": -1.56766,
+        "name": "basque_country_parking_10183336840_zidVQ9ZGXLD",
+        "station_id": "basque_country_parking_10183336840_zidVQ9ZGXLD"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48711,
+        "lon": -1.55527,
+        "name": "basque_country_parking_8841514178_zidZ64O8EVE",
+        "station_id": "basque_country_parking_8841514178_zidZ64O8EVE"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.46228,
+        "lon": -1.54679,
+        "name": "basque_country_parking_8841488527_zidCJGK8FCM",
+        "station_id": "basque_country_parking_8841488527_zidCJGK8FCM"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48036,
+        "lon": -1.55678,
+        "name": "basque_country_parking_11051487521_zidCOISV2Q0",
+        "station_id": "basque_country_parking_11051487521_zidCOISV2Q0"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48172,
+        "lon": -1.5588,
+        "name": "basque_country_parking_11051441274_zid2QH429EL",
+        "station_id": "basque_country_parking_11051441274_zid2QH429EL"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48091,
+        "lon": -1.56118,
+        "name": "basque_country_parking_8841486290_zidQ3CQETYD",
+        "station_id": "basque_country_parking_8841486290_zidQ3CQETYD"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48035,
+        "lon": -1.55477,
+        "name": "basque_country_parking_8841514175_zid3HFVQZPI",
+        "station_id": "basque_country_parking_8841514175_zid3HFVQZPI"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48526,
+        "lon": -1.55363,
+        "name": "basque_country_parking_8841486266_zidG7GOR7GB",
+        "station_id": "basque_country_parking_8841486266_zidG7GOR7GB"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48227,
+        "lon": -1.56327,
+        "name": "basque_country_parking_8841486287_zidEO6I25A8",
+        "station_id": "basque_country_parking_8841486287_zidEO6I25A8"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48329,
+        "lon": -1.56029,
+        "name": "basque_country_parking_5710675593_zidDIDNJK0Y",
+        "station_id": "basque_country_parking_5710675593_zidDIDNJK0Y"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48508,
+        "lon": -1.55655,
+        "name": "basque_country_parking_12108716768_zidDF9A6Z2S",
+        "station_id": "basque_country_parking_12108716768_zidDF9A6Z2S"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48172,
+        "lon": -1.55442,
+        "name": "basque_country_parking_6499477506_zidR9ISZL82",
+        "station_id": "basque_country_parking_6499477506_zidR9ISZL82"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48238,
+        "lon": -1.54464,
+        "name": "basque_country_parking_8841486271_zidBH9SJ2QP",
+        "station_id": "basque_country_parking_8841486271_zidBH9SJ2QP"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.47979,
+        "lon": -1.55882,
+        "name": "basque_country_parking_8841486277_zidFVNV752N",
+        "station_id": "basque_country_parking_8841486277_zidFVNV752N"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.47321,
+        "lon": -1.56679,
+        "name": "basque_country_parking_10157446583_zid7HQUP9MH",
+        "station_id": "basque_country_parking_10157446583_zid7HQUP9MH"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48082,
+        "lon": -1.5531,
+        "name": "basque_country_parking_8841514176_zid9J7CFHWI",
+        "station_id": "basque_country_parking_8841514176_zid9J7CFHWI"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.46112,
+        "lon": -1.54944,
+        "name": "basque_country_parking_8841488528_zidZ49RS77Y",
+        "station_id": "basque_country_parking_8841488528_zidZ49RS77Y"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48661,
+        "lon": -1.55026,
+        "name": "basque_country_parking_8841486267_zidXA7VNDSB",
+        "station_id": "basque_country_parking_8841486267_zidXA7VNDSB"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.47837,
+        "lon": -1.55623,
+        "name": "basque_country_parking_12108610144_zidWLT8TC2Z",
+        "station_id": "basque_country_parking_12108610144_zidWLT8TC2Z"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.46255,
+        "lon": -1.57621,
+        "name": "basque_country_parking_8841488525_zid7EPGSGD6",
+        "station_id": "basque_country_parking_8841488525_zid7EPGSGD6"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48208,
+        "lon": -1.55982,
+        "name": "basque_country_parking_Point_75_zidRQFDPX4K",
+        "station_id": "basque_country_parking_Point_75_zidRQFDPX4K"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48111,
+        "lon": -1.53591,
+        "name": "basque_country_parking_Point_76_zidX7DE30P1",
+        "station_id": "basque_country_parking_Point_76_zidX7DE30P1"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48491,
+        "lon": -1.54687,
+        "name": "basque_country_parking_Point_77_zidNEYKSENK",
+        "station_id": "basque_country_parking_Point_77_zidNEYKSENK"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.38491,
+        "lon": -1.66707,
+        "name": "basque_country_parking_Lanes_zidQPFK26U5",
+        "station_id": "basque_country_parking_Lanes_zidQPFK26U5",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.47256,
+        "lon": -1.54054,
+        "name": "basque_country_parking_Borde_d_andre_zidE6ODEN34",
+        "station_id": "basque_country_parking_Borde_d_andre_zidE6ODEN34",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.47451,
+        "lon": -1.56355,
+        "name": "basque_country_parking_BikeRack_Av_Pioche_zidSGTJ52CI",
+        "station_id": "basque_country_parking_BikeRack_Av_Pioche_zidSGTJ52CI",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.47974,
+        "lon": -1.56469,
+        "name": "basque_country_parking_BikeRack_Victor_Million_zidVUZ0OLOJ",
+        "station_id": "basque_country_parking_BikeRack_Victor_Million_zidVUZ0OLOJ",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.47728,
+        "lon": -1.55286,
+        "name": "basque_country_parking_Augusta_zidV2LOK9MJ",
+        "station_id": "basque_country_parking_Augusta_zidV2LOK9MJ",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.36015,
+        "lon": -1.40795,
+        "name": "basque_country_parking_Gare_Routiere___Cambo_zidJA9YUCYT",
+        "station_id": "basque_country_parking_Gare_Routiere___Cambo_zidJA9YUCYT"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49088,
+        "lon": -1.48123,
+        "name": "basque_country_parking_Brofest_Skatepark_Bayonne_zidZQF0BKW7",
+        "station_id": "basque_country_parking_Brofest_Skatepark_Bayonne_zidZQF0BKW7",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.3545,
+        "lon": -1.38747,
+        "name": "basque_country_parking_Thermes___Cambo_zidL6WFIJ93",
+        "station_id": "basque_country_parking_Thermes___Cambo_zidL6WFIJ93"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.36679,
+        "lon": -1.41604,
+        "name": "basque_country_parking_Arnaga___Cambo_zid41D2201R",
+        "station_id": "basque_country_parking_Arnaga___Cambo_zid41D2201R"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.36068719319442,
+        "lon": -1.3994543103337453,
+        "name": "basque_country_parking_Office_de_Tourime___Cambo_les_bains_zidGF2F9SRM",
+        "station_id": "basque_country_parking_Office_de_Tourime___Cambo_les_bains_zidGF2F9SRM"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.36282,
+        "lon": -1.40362,
+        "name": "basque_country_parking_Eglise_Cambo_zidYYDY7FFS",
+        "station_id": "basque_country_parking_Eglise_Cambo_zidYYDY7FFS",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.35323,
+        "lon": -1.39753,
+        "name": "basque_country_parking_musee_chocolat_puyodebat_zidW5TLJF82",
+        "station_id": "basque_country_parking_musee_chocolat_puyodebat_zidW5TLJF82",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.38856,
+        "lon": -1.68586,
+        "name": "basque_country_parking_BikeRack_Sokoa_Jolastokia_zidAU1MISSB",
+        "station_id": "basque_country_parking_BikeRack_Sokoa_Jolastokia_zidAU1MISSB",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.35484,
+        "lon": -1.40564,
+        "name": "basque_country_parking_La_colinne_zidDLC59VGQ",
+        "station_id": "basque_country_parking_La_colinne_zidDLC59VGQ",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.38748,
+        "lon": -1.66017,
+        "name": "basque_country_parking_Bikerack_Jaureguiberry_zidFP3MAPOY",
+        "station_id": "basque_country_parking_Bikerack_Jaureguiberry_zidFP3MAPOY",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.36536,
+        "lon": -1.39663,
+        "name": "basque_country_parking_Gare_SNCF_Cambo_zid9WHS5JGK",
+        "station_id": "basque_country_parking_Gare_SNCF_Cambo_zid9WHS5JGK",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.37038,
+        "lon": -1.40002,
+        "name": "basque_country_parking_Bas_Cambo_zidN5Y3087L",
+        "station_id": "basque_country_parking_Bas_Cambo_zidN5Y3087L",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.38571,
+        "lon": -1.68711,
+        "name": "basque_country_parking_Ciboure_3_couronnes_zid5W3B02G3",
+        "station_id": "basque_country_parking_Ciboure_3_couronnes_zid5W3B02G3",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48577,
+        "lon": -1.47033,
+        "name": "basque_country_parking_Glain_1_zidUD714ODE",
+        "station_id": "basque_country_parking_Glain_1_zidUD714ODE"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49101,
+        "lon": -1.47154,
+        "name": "basque_country_parking_Place_Marc_Aubert_1_zidSGICPVJA",
+        "station_id": "basque_country_parking_Place_Marc_Aubert_1_zidSGICPVJA"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49074,
+        "lon": -1.47133,
+        "name": "basque_country_parking_Place_Marc_Aubert_3_zid6P80F6J0",
+        "station_id": "basque_country_parking_Place_Marc_Aubert_3_zid6P80F6J0"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.4893,
+        "lon": -1.47229,
+        "name": "basque_country_parking_Arsenal_zidU4U02ECK",
+        "station_id": "basque_country_parking_Arsenal_zidU4U02ECK"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48845,
+        "lon": -1.4781,
+        "name": "basque_country_parking_Rue_d_Espagne_zidY42M2I2Z",
+        "station_id": "basque_country_parking_Rue_d_Espagne_zidY42M2I2Z"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49352,
+        "lon": -1.46401,
+        "name": "basque_country_parking_Vasserot_zidGQ1FBULP",
+        "station_id": "basque_country_parking_Vasserot_zidGQ1FBULP"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.47933,
+        "lon": -1.4986,
+        "name": "basque_country_parking_Avenue_du_Polo_2_zidGNW4XWBJ",
+        "station_id": "basque_country_parking_Avenue_du_Polo_2_zidGNW4XWBJ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.50368,
+        "lon": -1.46297,
+        "name": "basque_country_parking_Ecole_Prim__A__Briand_zidE7VTG103",
+        "station_id": "basque_country_parking_Ecole_Prim__A__Briand_zidE7VTG103"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49374,
+        "lon": -1.46076,
+        "name": "basque_country_parking_rue_rene_Cuzac_zidZOKXMRGF",
+        "station_id": "basque_country_parking_rue_rene_Cuzac_zidZOKXMRGF"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49334,
+        "lon": -1.46084,
+        "name": "basque_country_parking_giratoire_albert_Thomas_zidG7TW9RW7",
+        "station_id": "basque_country_parking_giratoire_albert_Thomas_zidG7TW9RW7"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49516,
+        "lon": -1.4685,
+        "name": "basque_country_parking_Moulin_zid0HL5N6QO",
+        "station_id": "basque_country_parking_Moulin_zid0HL5N6QO"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.4898,
+        "lon": -1.47813,
+        "name": "basque_country_parking_Place_Montaut_zidAF73OOGZ",
+        "station_id": "basque_country_parking_Place_Montaut_zidAF73OOGZ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.50191,
+        "lon": -1.46798,
+        "name": "basque_country_parking_Allee_Andre_Feuillerat_zidI161HOR9",
+        "station_id": "basque_country_parking_Allee_Andre_Feuillerat_zidI161HOR9"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48606,
+        "lon": -1.49462,
+        "name": "basque_country_parking_rue_Pierre_Laporte_zidGM43W39S",
+        "station_id": "basque_country_parking_rue_Pierre_Laporte_zidGM43W39S"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49863,
+        "lon": -1.45555,
+        "name": "basque_country_parking_Creche_Pyrene_zidSGJBAIQ8",
+        "station_id": "basque_country_parking_Creche_Pyrene_zidSGJBAIQ8"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49074,
+        "lon": -1.48412,
+        "name": "basque_country_parking_Rue_Menigne_Saube_le_Bile_zidKWP72LSC",
+        "station_id": "basque_country_parking_Rue_Menigne_Saube_le_Bile_zidKWP72LSC"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.47978,
+        "lon": -1.48189,
+        "name": "basque_country_parking_Avenue_Vital_Biraben_zidRCECVNFS",
+        "station_id": "basque_country_parking_Avenue_Vital_Biraben_zidRCECVNFS"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.47826,
+        "lon": -1.48434,
+        "name": "basque_country_parking_Avenue_Jacques_Loeb_zidQZ53KCZA",
+        "station_id": "basque_country_parking_Avenue_Jacques_Loeb_zidQZ53KCZA"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.4773,
+        "lon": -1.48269,
+        "name": "basque_country_parking_Rue_des_Montagnards_zid1TMCAKJB",
+        "station_id": "basque_country_parking_Rue_des_Montagnards_zid1TMCAKJB"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.47789,
+        "lon": -1.49342,
+        "name": "basque_country_parking_Avenue_de_l_Ursuya_zidCA32CZUS",
+        "station_id": "basque_country_parking_Avenue_de_l_Ursuya_zidCA32CZUS"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.47847,
+        "lon": -1.48166,
+        "name": "basque_country_parking_Vital_Biraben_zidWPHC8P6I",
+        "station_id": "basque_country_parking_Vital_Biraben_zidWPHC8P6I"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.50746,
+        "lon": -1.48641,
+        "name": "basque_country_parking_Borthayre_ecole_M__Curie_zid7LYSF3JC",
+        "station_id": "basque_country_parking_Borthayre_ecole_M__Curie_zid7LYSF3JC"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.47849,
+        "lon": -1.49988,
+        "name": "basque_country_parking_Esplanade_du_Polo_zidC32LUUFK",
+        "station_id": "basque_country_parking_Esplanade_du_Polo_zidC32LUUFK"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49795,
+        "lon": -1.45296,
+        "name": "basque_country_parking_Harambillet_groupe_scolaire_zidPEE240VC",
+        "station_id": "basque_country_parking_Harambillet_groupe_scolaire_zidPEE240VC"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49737,
+        "lon": -1.45863,
+        "name": "basque_country_parking_Jean_Fontan_zid2RLI33SG",
+        "station_id": "basque_country_parking_Jean_Fontan_zid2RLI33SG"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49046,
+        "lon": -1.48036,
+        "name": "basque_country_parking_skate_parc_Poterne_zidK1PYFAJS",
+        "station_id": "basque_country_parking_skate_parc_Poterne_zidK1PYFAJS"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.47939,
+        "lon": -1.5014,
+        "name": "basque_country_parking_fronton_Gaudeul_zid9J8TEDDC",
+        "station_id": "basque_country_parking_fronton_Gaudeul_zid9J8TEDDC"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.50477,
+        "lon": -1.46463,
+        "name": "basque_country_parking_MVC_St_Etienne_zid0Z5SBB9Q",
+        "station_id": "basque_country_parking_MVC_St_Etienne_zid0Z5SBB9Q"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.47867,
+        "lon": -1.49839,
+        "name": "basque_country_parking_fronton_Ursuya_zidP2GUI9VB",
+        "station_id": "basque_country_parking_fronton_Ursuya_zidP2GUI9VB"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.47883,
+        "lon": -1.49835,
+        "name": "basque_country_parking_fronton_Ursuya_zid8N77MQMH",
+        "station_id": "basque_country_parking_fronton_Ursuya_zid8N77MQMH"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.50264,
+        "lon": -1.46274,
+        "name": "basque_country_parking_14_avril_Ste_Marguerite_zidCW92O8PN",
+        "station_id": "basque_country_parking_14_avril_Ste_Marguerite_zidCW92O8PN"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.4854,
+        "lon": -1.47799,
+        "name": "basque_country_parking_Rue_Moynac___fronton_zidD0FTVMYG",
+        "station_id": "basque_country_parking_Rue_Moynac___fronton_zidD0FTVMYG"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49241,
+        "lon": -1.47664,
+        "name": "basque_country_parking_Thiers_4_zidS29VD6LK",
+        "station_id": "basque_country_parking_Thiers_4_zidS29VD6LK"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49507,
+        "lon": -1.46765,
+        "name": "basque_country_parking_Rue_Sainte_Catherine_zid2VA45UIX",
+        "station_id": "basque_country_parking_Rue_Sainte_Catherine_zid2VA45UIX"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49569,
+        "lon": -1.45701,
+        "name": "basque_country_parking_Albizia_zid221HGVRI",
+        "station_id": "basque_country_parking_Albizia_zid221HGVRI"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49351,
+        "lon": -1.48048,
+        "name": "basque_country_parking_Foch_1_zidUJB4PHUZ",
+        "station_id": "basque_country_parking_Foch_1_zidUJB4PHUZ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49381,
+        "lon": -1.4816,
+        "name": "basque_country_parking_Foch_2_zidVR9GUWJO",
+        "station_id": "basque_country_parking_Foch_2_zidVR9GUWJO"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.47969,
+        "lon": -1.49967,
+        "name": "basque_country_parking_Creche_Pyrene_zid6TYNZEA5",
+        "station_id": "basque_country_parking_Creche_Pyrene_zid6TYNZEA5"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49925,
+        "lon": -1.4555,
+        "name": "basque_country_parking_Esplanade_Balain_zid9GXGVQRE",
+        "station_id": "basque_country_parking_Esplanade_Balain_zid9GXGVQRE"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49402,
+        "lon": -1.46745,
+        "name": "basque_country_parking_Alsace_lorraine_zidNVD58PYW",
+        "station_id": "basque_country_parking_Alsace_lorraine_zidNVD58PYW"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48452,
+        "lon": -1.47172,
+        "name": "basque_country_parking_Glain_4_zidF54QLV7B",
+        "station_id": "basque_country_parking_Glain_4_zidF54QLV7B"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49528,
+        "lon": -1.45934,
+        "name": "basque_country_parking_Gymnase_Betsellere_zidYABV16HC",
+        "station_id": "basque_country_parking_Gymnase_Betsellere_zidYABV16HC"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.4969,
+        "lon": -1.46857,
+        "name": "basque_country_parking_rue_maubec_zidZ4H9KV1F",
+        "station_id": "basque_country_parking_rue_maubec_zidZ4H9KV1F"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48945,
+        "lon": -1.4819,
+        "name": "basque_country_parking_Piste_Entree_Parking_centre_Ville_zidRQZ7OHTT",
+        "station_id": "basque_country_parking_Piste_Entree_Parking_centre_Ville_zidRQZ7OHTT"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49486,
+        "lon": -1.46749,
+        "name": "basque_country_parking_Boulevard_Jean_d_Amou_zidY8K1ME9W",
+        "station_id": "basque_country_parking_Boulevard_Jean_d_Amou_zidY8K1ME9W"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49683,
+        "lon": -1.46854,
+        "name": "basque_country_parking_Rue_Maubec_zidS66Z1YEX",
+        "station_id": "basque_country_parking_Rue_Maubec_zidS66Z1YEX"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48871,
+        "lon": -1.47595,
+        "name": "basque_country_parking_La_PLachotte_zidJ4S12Z1A",
+        "station_id": "basque_country_parking_La_PLachotte_zidJ4S12Z1A"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49088,
+        "lon": -1.47051,
+        "name": "basque_country_parking_Restaurant_Universitaire_zidWFJGUUBW",
+        "station_id": "basque_country_parking_Restaurant_Universitaire_zidWFJGUUBW"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48941,
+        "lon": -1.47092,
+        "name": "basque_country_parking_Place_Paul_Bert_zid6RVNQK6G",
+        "station_id": "basque_country_parking_Place_Paul_Bert_zid6RVNQK6G"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49318,
+        "lon": -1.46748,
+        "name": "basque_country_parking_rue_aristide_Brian_zid1OYT73Y8",
+        "station_id": "basque_country_parking_rue_aristide_Brian_zid1OYT73Y8"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49489,
+        "lon": -1.45823,
+        "name": "basque_country_parking_Cavailles_zid677LUJIN",
+        "station_id": "basque_country_parking_Cavailles_zid677LUJIN"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49476,
+        "lon": -1.46724,
+        "name": "basque_country_parking_Rue_Denis_Etcheverry_zidHDBWILB5",
+        "station_id": "basque_country_parking_Rue_Denis_Etcheverry_zidHDBWILB5"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49434,
+        "lon": -1.45687,
+        "name": "basque_country_parking_Stade_Didier_Deschamps_zidFVW7TV3A",
+        "station_id": "basque_country_parking_Stade_Didier_Deschamps_zidFVW7TV3A"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.47839,
+        "lon": -1.49856,
+        "name": "basque_country_parking_Avenue_du_polo_4_zidEUMLG7ID",
+        "station_id": "basque_country_parking_Avenue_du_polo_4_zidEUMLG7ID"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.4777,
+        "lon": -1.49878,
+        "name": "basque_country_parking_Avenue_du_Polo_3_zidUP439ZJ2",
+        "station_id": "basque_country_parking_Avenue_du_Polo_3_zidUP439ZJ2"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.5033,
+        "lon": -1.46997,
+        "name": "basque_country_parking_Avenue_de_lattre_de_Tassigny_1_zidZXLFEHH1",
+        "station_id": "basque_country_parking_Avenue_de_lattre_de_Tassigny_1_zidZXLFEHH1"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48723,
+        "lon": -1.48003,
+        "name": "basque_country_parking_Grimard_tennis_zidRTR5BB0R",
+        "station_id": "basque_country_parking_Grimard_tennis_zidRTR5BB0R"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49101,
+        "lon": -1.4623,
+        "name": "basque_country_parking_Foirail_city_stade_zidR05FJAR9",
+        "station_id": "basque_country_parking_Foirail_city_stade_zidR05FJAR9"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.50311,
+        "lon": -1.47098,
+        "name": "basque_country_parking_Avenue_de_Lattre_de_Tassigny_2_zidTBP2IMZF",
+        "station_id": "basque_country_parking_Avenue_de_Lattre_de_Tassigny_2_zidTBP2IMZF"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49524,
+        "lon": -1.46735,
+        "name": "basque_country_parking_Square_du_Marquisat_zidAA4U6MQX",
+        "station_id": "basque_country_parking_Square_du_Marquisat_zidAA4U6MQX"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49461,
+        "lon": -1.46815,
+        "name": "basque_country_parking_alsace_lorraine_zid9729O6AG",
+        "station_id": "basque_country_parking_alsace_lorraine_zid9729O6AG"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.4914,
+        "lon": -1.47784,
+        "name": "basque_country_parking_place_du_chateau_vieux_zidA3M0GYL9",
+        "station_id": "basque_country_parking_place_du_chateau_vieux_zidA3M0GYL9"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49251,
+        "lon": -1.47676,
+        "name": "basque_country_parking_rue_thier_zid152CRCYS",
+        "station_id": "basque_country_parking_rue_thier_zid152CRCYS"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49595,
+        "lon": -1.47005,
+        "name": "basque_country_parking_Eglise_Saint_Esprit_zidFORQCNBG",
+        "station_id": "basque_country_parking_Eglise_Saint_Esprit_zidFORQCNBG"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49232,
+        "lon": -1.48029,
+        "name": "basque_country_parking_Piste_Galcis___Poterne_zidX2BI0GEA",
+        "station_id": "basque_country_parking_Piste_Galcis___Poterne_zidX2BI0GEA"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49318,
+        "lon": -1.47782,
+        "name": "basque_country_parking_Jules_Labat_zidMBBFL5DU",
+        "station_id": "basque_country_parking_Jules_Labat_zidMBBFL5DU"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49829,
+        "lon": -1.46768,
+        "name": "basque_country_parking_Rue_de_la_Gendarmerie_zidZ3EGRD1M",
+        "station_id": "basque_country_parking_Rue_de_la_Gendarmerie_zidZ3EGRD1M"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49074,
+        "lon": -1.47004,
+        "name": "basque_country_parking_Rue_Ravignan_zidE1M4HZNT",
+        "station_id": "basque_country_parking_Rue_Ravignan_zidE1M4HZNT"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.50424,
+        "lon": -1.46173,
+        "name": "basque_country_parking_Ecole_Mat__A__Briand_zidDD529GWH",
+        "station_id": "basque_country_parking_Ecole_Mat__A__Briand_zidDD529GWH"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49451,
+        "lon": -1.46749,
+        "name": "basque_country_parking_Este_zidOL597G5X",
+        "station_id": "basque_country_parking_Este_zidOL597G5X"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49195,
+        "lon": -1.4771,
+        "name": "basque_country_parking_Thiers_Porte_zidUWUSAAHW",
+        "station_id": "basque_country_parking_Thiers_Porte_zidUWUSAAHW"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49035,
+        "lon": -1.4835,
+        "name": "basque_country_parking_Avenue_de_Marhum_zidFSEG7N2C",
+        "station_id": "basque_country_parking_Avenue_de_Marhum_zidFSEG7N2C"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49237,
+        "lon": -1.47786,
+        "name": "basque_country_parking_ecole_grand_bayonne_zidXH16GLTT",
+        "station_id": "basque_country_parking_ecole_grand_bayonne_zidXH16GLTT"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49475,
+        "lon": -1.47842,
+        "name": "basque_country_parking_allee_Paulmy_zidSS9B74HM",
+        "station_id": "basque_country_parking_allee_Paulmy_zidSS9B74HM"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.51011,
+        "lon": -1.46658,
+        "name": "basque_country_parking_kml_133_zidJS3IN8QV",
+        "station_id": "basque_country_parking_kml_133_zidJS3IN8QV"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.51085,
+        "lon": -1.46559,
+        "name": "basque_country_parking_kml_135_zidVELXSLB8",
+        "station_id": "basque_country_parking_kml_135_zidVELXSLB8"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.51026,
+        "lon": -1.46568,
+        "name": "basque_country_parking_kml_134_zidERK9OSQV",
+        "station_id": "basque_country_parking_kml_134_zidERK9OSQV"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.51119,
+        "lon": -1.46476,
+        "name": "basque_country_parking_kml_138_zidIUF7R6H4",
+        "station_id": "basque_country_parking_kml_138_zidIUF7R6H4"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.51022,
+        "lon": -1.46439,
+        "name": "basque_country_parking_kml_139_zidPKHALVXN",
+        "station_id": "basque_country_parking_kml_139_zidPKHALVXN"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49689,
+        "lon": -1.46995,
+        "name": "basque_country_parking_Gare_zidRFUJCWON",
+        "station_id": "basque_country_parking_Gare_zidRFUJCWON"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49553,
+        "lon": -1.48018,
+        "name": "basque_country_parking_Vauban___BAB_zid94D015QP",
+        "station_id": "basque_country_parking_Vauban___BAB_zid94D015QP"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48712,
+        "lon": -1.4768,
+        "name": "basque_country_parking_Stade_Belascain_zid8QRL52JP",
+        "station_id": "basque_country_parking_Stade_Belascain_zid8QRL52JP"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49139,
+        "lon": -1.47266,
+        "name": "basque_country_parking_Jacques_Lafittes_zid8L0EM57H",
+        "station_id": "basque_country_parking_Jacques_Lafittes_zid8L0EM57H"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.50404,
+        "lon": -1.45256,
+        "name": "basque_country_parking_Lycee_Benat_Etxepare_zidHRBPW10N",
+        "station_id": "basque_country_parking_Lycee_Benat_Etxepare_zidHRBPW10N"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49092,
+        "lon": -1.47219,
+        "name": "basque_country_parking_Visitandine_zidH6VC3ZY4",
+        "station_id": "basque_country_parking_Visitandine_zidH6VC3ZY4"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49019,
+        "lon": -1.47665,
+        "name": "basque_country_parking_Place_Pasteur_zidGUUPR5ND",
+        "station_id": "basque_country_parking_Place_Pasteur_zidGUUPR5ND"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48972,
+        "lon": -1.46828,
+        "name": "basque_country_parking_Chemin_de_Mousserolles___Parking_zidYBI411IJ",
+        "station_id": "basque_country_parking_Chemin_de_Mousserolles___Parking_zidYBI411IJ"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49234,
+        "lon": -1.4722,
+        "name": "basque_country_parking_Rue_Frederic_Bastiat_zidZ6AG02U2",
+        "station_id": "basque_country_parking_Rue_Frederic_Bastiat_zidZ6AG02U2"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49007,
+        "lon": -1.47131,
+        "name": "basque_country_parking_Place_Beotheguy_zid5U10Q1NO",
+        "station_id": "basque_country_parking_Place_Beotheguy_zid5U10Q1NO"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49076,
+        "lon": -1.47114,
+        "name": "basque_country_parking_Cardinal_Godin_zidURDYTJ45",
+        "station_id": "basque_country_parking_Cardinal_Godin_zidURDYTJ45"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48713,
+        "lon": -1.48005,
+        "name": "basque_country_parking_Avenue_Fernand_Forgues___Tennis_zidDY8O7IFD",
+        "station_id": "basque_country_parking_Avenue_Fernand_Forgues___Tennis_zidDY8O7IFD"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48693,
+        "lon": -1.47988,
+        "name": "basque_country_parking_Avenue_Fernand_Forgues___Tennis_zidVU32VOES",
+        "station_id": "basque_country_parking_Avenue_Fernand_Forgues___Tennis_zidVU32VOES"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49077,
+        "lon": -1.47731,
+        "name": "basque_country_parking_rue_Notre_Dame_zidQ0IX86SD",
+        "station_id": "basque_country_parking_rue_Notre_Dame_zidQ0IX86SD"
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.37527,
+        "lon": -1.76456,
+        "name": "basque_country_parking_Bd_de_la_mer_biarritz_zidLIWPTAON",
+        "station_id": "basque_country_parking_Bd_de_la_mer_biarritz_zidLIWPTAON",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48166,
+        "lon": -1.56618,
+        "name": "basque_country_parking_sent_Corsair_zidLZ9Y6N74",
+        "station_id": "basque_country_parking_sent_Corsair_zidLZ9Y6N74",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.4767,
+        "lon": -1.56235,
+        "name": "basque_country_parking_BikeRack_Marechal_Joffre_zid0ZS0KC3S",
+        "station_id": "basque_country_parking_BikeRack_Marechal_Joffre_zid0ZS0KC3S",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48476,
+        "lon": -1.55302,
+        "name": "basque_country_parking_BikeRack_35_Av_marne_zid0BBBSG7U",
+        "station_id": "basque_country_parking_BikeRack_35_Av_marne_zid0BBBSG7U",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48192,
+        "lon": -1.55831,
+        "name": "basque_country_parking_BikeRack_4_av_Verdun_zidVNSMGZD2",
+        "station_id": "basque_country_parking_BikeRack_4_av_Verdun_zidVNSMGZD2",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.4823,
+        "lon": -1.56113,
+        "name": "basque_country_parking_BikeRack_Pl_Bellevue_zidFB5SZO68",
+        "station_id": "basque_country_parking_BikeRack_Pl_Bellevue_zidFB5SZO68",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48163,
+        "lon": -1.54261,
+        "name": "basque_country_parking_Marquage_AV_de_la_marne_zidGBCB2B22",
+        "station_id": "basque_country_parking_Marquage_AV_de_la_marne_zidGBCB2B22",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.47821,
+        "lon": -1.56664,
+        "name": "basque_country_parking_BikeRack_Prince_de_galles_zid68HK6NZK",
+        "station_id": "basque_country_parking_BikeRack_Prince_de_galles_zid68HK6NZK",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48248,
+        "lon": -1.56704,
+        "name": "basque_country_parking_BikeRack_Esplanade_Vierge_zid7H29AYBJ",
+        "station_id": "basque_country_parking_BikeRack_Esplanade_Vierge_zid7H29AYBJ",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48162,
+        "lon": -1.56507,
+        "name": "basque_country_parking_BikeRack_Temple_zidI65YXP4T",
+        "station_id": "basque_country_parking_BikeRack_Temple_zidI65YXP4T",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.50641,
+        "lon": -1.4673,
+        "name": "basque_country_parking_BikeRack_Camayou_zid2318EDTK",
+        "station_id": "basque_country_parking_BikeRack_Camayou_zid2318EDTK",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.38372,
+        "lon": -1.67518,
+        "name": "basque_country_parking_BikeRack_Rue_de_la_tour_zid84VAZD72",
+        "station_id": "basque_country_parking_BikeRack_Rue_de_la_tour_zid84VAZD72",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49506,
+        "lon": -1.53521,
+        "name": "basque_country_parking_BikeRack_Eglise_Sainte_Marie_zid78HP1TGH",
+        "station_id": "basque_country_parking_BikeRack_Eglise_Sainte_Marie_zid78HP1TGH",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.4961,
+        "lon": -1.48562,
+        "name": "basque_country_parking_BikeRack_Balishon_zidBDGPOPUS",
+        "station_id": "basque_country_parking_BikeRack_Balishon_zidBDGPOPUS",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49128,
+        "lon": -1.54255,
+        "name": "basque_country_parking_Arceau_Fourviere_zidP7SRWKSM",
+        "station_id": "basque_country_parking_Arceau_Fourviere_zidP7SRWKSM",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.49304,
+        "lon": -1.47927,
+        "name": "basque_country_parking_Arceau_PL_Basque_zidUM0BOFTU",
+        "station_id": "basque_country_parking_Arceau_PL_Basque_zidUM0BOFTU",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.47238,
+        "lon": -1.55579,
+        "name": "basque_country_parking_Rue_du_reptou_zid54GP1YQ1",
+        "station_id": "basque_country_parking_Rue_du_reptou_zid54GP1YQ1",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      },
+      {
+        "is_virtual_station": true,
+        "lat": 43.48066,
+        "lon": -1.55985,
+        "name": "basque_country_parking_Arceau_Jaulerry_zidNKUZM4BM",
+        "station_id": "basque_country_parking_Arceau_Jaulerry_zidNKUZM4BM",
+        "vehicle_capacity": {},
+        "vehicle_type_capacity": {},
+        "vehicle_types_capacity": []
+      }
+    ]
+  },
+  "last_updated": 1771749827,
+  "ttl": 0,
+  "version": "2.2"
+}

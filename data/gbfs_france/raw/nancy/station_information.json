@@ -1,0 +1,326 @@
+{
+  "last_updated": 1771749878,
+  "ttl": 300,
+  "version": "2.3",
+  "data": {
+    "stations": [
+      {
+        "station_id": "1",
+        "name": "DOMINICAINS - FOURIER (CB)",
+        "lat": 48.692465,
+        "lon": 6.183401,
+        "address": "Angle rue Pierre FOURIER et rue des Dominicains",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 25
+      },
+      {
+        "station_id": "2",
+        "name": "PLACE DE LA CARRIERE",
+        "lat": 48.694598,
+        "lon": 6.182294,
+        "address": "Angle Place de la Carrière et rue des Maréchaux",
+        "capacity": 16
+      },
+      {
+        "station_id": "3",
+        "name": "PLACE DE DOMBASLE",
+        "lat": 48.691958,
+        "lon": 6.17851,
+        "address": "Rue Stanislas - Face au n°68",
+        "capacity": 28
+      },
+      {
+        "station_id": "4",
+        "name": "MARCHE CENTRAL (CB)",
+        "lat": 48.689173,
+        "lon": 6.183905,
+        "address": "Angle rue Saint-Dizier - Rue du Dr SCHMITT",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 18
+      },
+      {
+        "station_id": "5",
+        "name": "PLACE COLONEL DRIANT",
+        "lat": 48.69213,
+        "lon": 6.18727,
+        "address": "Rue Drouin - Face au n°2",
+        "capacity": 16
+      },
+      {
+        "station_id": "6",
+        "name": "LES 2 RIVES",
+        "lat": 48.69542,
+        "lon": 6.195229,
+        "address": "2 rue Emilie du Châtelet",
+        "capacity": 16
+      },
+      {
+        "station_id": "7",
+        "name": "PLACE ST EPVRE",
+        "lat": 48.695235,
+        "lon": 6.179811,
+        "address": "Place du Colonel Fabien",
+        "capacity": 20
+      },
+      {
+        "station_id": "8",
+        "name": "COURS LEOPOLD - SAINT MICHEL",
+        "lat": 48.695614,
+        "lon": 6.176768,
+        "address": "Angle rue Saint-Michel et cours Léopold",
+        "capacity": 18
+      },
+      {
+        "station_id": "9",
+        "name": "PLACE BARROIS",
+        "lat": 48.699502,
+        "lon": 6.204736,
+        "address": "Place Barrois",
+        "capacity": 17
+      },
+      {
+        "station_id": "10",
+        "name": "GARE THIERS (CB)",
+        "lat": 48.69037,
+        "lon": 6.175677,
+        "address": "Rue Mazagran",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 39
+      },
+      {
+        "station_id": "11",
+        "name": "MAZAGRAN - FOCH (CB)",
+        "lat": 48.689399,
+        "lon": 6.177771,
+        "address": "Rue Pierre Sémard",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 28
+      },
+      {
+        "station_id": "12",
+        "name": "ST SEBASTIEN - ST THIEBAUT",
+        "lat": 48.688614,
+        "lon": 6.1795,
+        "address": "Angle rue Saint-Thiebaut et rue du Grand Rabbin HAGUENAUER",
+        "capacity": 22
+      },
+      {
+        "station_id": "13",
+        "name": "SAINT NICOLAS - CHARLES III",
+        "lat": 48.688015,
+        "lon": 6.187451,
+        "address": "71 rue Saint-Nicolas",
+        "capacity": 16
+      },
+      {
+        "station_id": "14",
+        "name": "FAC DE LETTRES",
+        "lat": 48.692818,
+        "lon": 6.16861,
+        "address": "Place Godefroy de Bouillon",
+        "capacity": 19
+      },
+      {
+        "station_id": "15",
+        "name": "PORT STE CATHERINE",
+        "lat": 48.695487,
+        "lon": 6.190679,
+        "address": "Angle rue Henri BAZIN et quai Sainte-Catherine",
+        "capacity": 16
+      },
+      {
+        "station_id": "16",
+        "name": "PORTE DE LA CRAFFE",
+        "lat": 48.698472,
+        "lon": 6.177986,
+        "address": "Angle rue du Haut Bourgeois et place des Bourgets",
+        "capacity": 20
+      },
+      {
+        "station_id": "17",
+        "name": "CONSERVATOIRE - MANUFACTURE",
+        "lat": 48.695718,
+        "lon": 6.171338,
+        "address": "27 rue Baron Louis - Angle quai Claude le Lorrain",
+        "capacity": 15
+      },
+      {
+        "station_id": "18",
+        "name": "GARE SAINT LEON",
+        "lat": 48.68956,
+        "lon": 6.172515,
+        "address": "Angle rue Saint-Léon - Esplanade Saint-Léon",
+        "capacity": 20
+      },
+      {
+        "station_id": "19",
+        "name": "COMMANDERIE - CHALNOT",
+        "lat": 48.68692,
+        "lon": 6.172348,
+        "address": "Angle rue Pierre CHALNOT et rue de la Commanderie",
+        "capacity": 18
+      },
+      {
+        "station_id": "20",
+        "name": "PLACE DES VOSGES",
+        "lat": 48.684781,
+        "lon": 6.187631,
+        "address": "Angle avenue du Général Leclerc et rue du Maréchal De Lattre de Tassigny",
+        "capacity": 15
+      },
+      {
+        "station_id": "21",
+        "name": "HOPITAL CENTRAL",
+        "lat": 48.68335,
+        "lon": 6.190297,
+        "address": "45 avenue du Maréchal de Lattre de Tassigny",
+        "capacity": 20
+      },
+      {
+        "station_id": "22",
+        "name": "HOPITAL ST JULIEN",
+        "lat": 48.685857,
+        "lon": 6.192902,
+        "address": "Angle rue Molitor et rue Foller",
+        "capacity": 16
+      },
+      {
+        "station_id": "23",
+        "name": "PROMENADE DES CANAUX",
+        "lat": 48.692794,
+        "lon": 6.196284,
+        "address": "Promenade des Canaux",
+        "capacity": 16
+      },
+      {
+        "station_id": "24",
+        "name": "3 MAISONS - CHARLES V (CB)",
+        "lat": 48.701365,
+        "lon": 6.176824,
+        "address": "rue du faubourg des 3 Maisons - Angle boulevard Charles V",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 23
+      },
+      {
+        "station_id": "25",
+        "name": "PLACE COMMANDERIE",
+        "lat": 48.685918,
+        "lon": 6.167422,
+        "address": "Place de la Commanderie - Face au n°13",
+        "capacity": 18
+      },
+      {
+        "station_id": "26",
+        "name": "BAUDRICOURT HAUSSONVILLE",
+        "lat": 48.675248,
+        "lon": 6.162845,
+        "address": "Rue des 3 Epis Baudricourt",
+        "capacity": 15
+      },
+      {
+        "station_id": "27",
+        "name": "NANCY THERMAL (CB)",
+        "lat": 48.679501,
+        "lon": 6.167344,
+        "address": "Rue du Sergent Blandan",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 18
+      },
+      {
+        "station_id": "28",
+        "name": "MARCHÉ D'HAUSSONVILLE",
+        "lat": 48.672276,
+        "lon": 6.165711,
+        "address": "Boulevard d'Haussonville",
+        "capacity": 15
+      },
+      {
+        "station_id": "29",
+        "name": "VELODROME (CB)",
+        "lat": 48.666721,
+        "lon": 6.16662,
+        "address": "Place du Vélodrome",
+        "rental_methods": [
+          "creditcard"
+        ],
+        "capacity": 24
+      },
+      {
+        "station_id": "30",
+        "name": "NATIONS",
+        "lat": 48.662356,
+        "lon": 6.173442,
+        "address": "au milieu du boulevard des Nations  à Vandoeuvre dans le prolongement de l’arrêt de bus Nations devant le centre commercial",
+        "capacity": 15
+      },
+      {
+        "station_id": "31",
+        "name": "ARTEM",
+        "lat": 48.674665,
+        "lon": 6.170655,
+        "address": "en face du 119 rue du Sergent Blandan",
+        "capacity": 20
+      },
+      {
+        "station_id": "32",
+        "name": "MEDREVILLE",
+        "lat": 48.685497,
+        "lon": 6.161015,
+        "address": "en face du 1 Boulevard Charlemagne Nancy",
+        "capacity": 15
+      },
+      {
+        "station_id": "33",
+        "name": "LAXOU MAIRIE",
+        "lat": 48.684954,
+        "lon": 6.154908,
+        "address": "9 av Paul Déroulède",
+        "capacity": 15
+      },
+      {
+        "station_id": "34",
+        "name": "MALZEVILLE",
+        "lat": 48.707187,
+        "lon": 6.185524,
+        "address": "Square Waldstetten  en face du 6 rue Maurice Barrès MALZEVILLE",
+        "capacity": 15
+      },
+      {
+        "station_id": "35",
+        "name": "MON DESERT",
+        "lat": 48.684141,
+        "lon": 6.176525,
+        "address": "Croisement rue Mon Désert et Bd de l'American Légion",
+        "capacity": 15
+      },
+      {
+        "station_id": "36",
+        "name": "SAURUPT",
+        "lat": 48.680516,
+        "lon": 6.181811,
+        "address": "100 Avenue du Général Leclerc",
+        "capacity": 15
+      },
+      {
+        "station_id": "37",
+        "name": "JARDINIERS - TIERCELINS",
+        "lat": 48.691291,
+        "lon": 6.190844,
+        "address": "En face du 19 rue des Jardiniers",
+        "capacity": 12
+      }
+    ]
+  }
+}

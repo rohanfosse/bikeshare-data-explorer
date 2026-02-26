@@ -1,0 +1,321 @@
+{
+  "last_updated": 1771749823,
+  "ttl": 0,
+  "version": "2.3",
+  "data": {
+    "stations": [
+      {
+        "station_id": "80e9cf09-44dc-4cf3-bc00-f55656a9adbf",
+        "lat": 47.638337,
+        "lon": 6.872482,
+        "name": "PAR30"
+      },
+      {
+        "station_id": "8fe34b2c-3f91-4306-bde2-a2b0c0dfdd45",
+        "lat": 47.648127,
+        "lon": 6.847355,
+        "name": "KOE1"
+      },
+      {
+        "station_id": "19c85d9b-9fc7-4f5b-905e-562e121ae45e",
+        "lat": 47.637045,
+        "lon": 6.860173,
+        "name": "REV1"
+      },
+      {
+        "station_id": "2ef6cd3d-3b63-45e3-a001-234c84dce8d5",
+        "lat": 47.664381,
+        "lon": 6.846609,
+        "name": "VIP1 Valdoie"
+      },
+      {
+        "station_id": "e204330b-088e-4e06-8652-ccc03363dc0b",
+        "lat": 47.657258,
+        "lon": 6.842852,
+        "name": "LUM1"
+      },
+      {
+        "station_id": "0d0d97cd-27e9-4b75-8269-fa7ae3d1c703",
+        "lat": 47.650345,
+        "lon": 6.85917,
+        "name": "PAR20"
+      },
+      {
+        "station_id": "12b1a618-61b6-47f4-931b-0cf8134c0894",
+        "lat": 47.61801,
+        "lon": 6.862035,
+        "name": "JAC1"
+      },
+      {
+        "station_id": "81dd11bd-217b-45ed-91b4-23b5b6f0be52",
+        "lat": 47.622357,
+        "lon": 6.831259,
+        "name": "CHA1 Bavilliers"
+      },
+      {
+        "station_id": "0902aceb-b207-4823-a3b3-ea832848dae8",
+        "lat": 47.626563,
+        "lon": 6.853768,
+        "name": "MIE1"
+      },
+      {
+        "station_id": "f3db772f-b649-4a2b-93a5-274136e2c368",
+        "lat": 47.649001,
+        "lon": 6.864977,
+        "name": "MAR1"
+      },
+      {
+        "station_id": "50a9a79c-79bc-4ca1-9c69-ed4f45411b1f",
+        "lat": 47.631719,
+        "lon": 6.861281,
+        "name": "BAZ1"
+      },
+      {
+        "station_id": "42f1e2e3-0b35-4979-9a17-4b7cdcdedb02",
+        "lat": 47.643432,
+        "lon": 6.844364,
+        "name": "ETA1"
+      },
+      {
+        "station_id": "91bdb61b-f826-4539-bab6-39c587b8dd45",
+        "lat": 47.669777,
+        "lon": 6.812725,
+        "name": "ALS1"
+      },
+      {
+        "station_id": "c2430a85-0f13-43e5-a584-27954115c7a3",
+        "lat": 47.633895,
+        "lon": 6.860573,
+        "name": "KEL1"
+      },
+      {
+        "station_id": "683ebe0b-ff1a-4ca9-8ecf-c9c4cbf2cc37",
+        "lat": 47.641448,
+        "lon": 6.839563,
+        "name": "CHA1"
+      },
+      {
+        "station_id": "80e3c844-c3d9-4770-8002-8a4c3c3e6709",
+        "lat": 47.652835,
+        "lon": 6.851939,
+        "name": "PAR10"
+      },
+      {
+        "station_id": "4f1163ef-93ed-44c2-ba61-e2e138ceef22",
+        "lat": 47.649756,
+        "lon": 6.848849,
+        "name": "RIB1"
+      },
+      {
+        "station_id": "e0736e44-a117-477b-ab31-b433e776dc56",
+        "lat": 47.654396,
+        "lon": 6.846897,
+        "name": "ARM1"
+      },
+      {
+        "station_id": "1311c18c-b9a2-4e42-b0b6-cfcd5de36065",
+        "lat": 47.633394,
+        "lon": 6.850273,
+        "name": "ROO1"
+      },
+      {
+        "station_id": "4aa034d2-5704-4563-8197-28237758f9c6",
+        "lat": 47.656102,
+        "lon": 6.846145,
+        "name": "JAU2"
+      },
+      {
+        "station_id": "e1c8594a-f54e-4ee6-a57e-c4111fed20d4",
+        "lat": 47.636788,
+        "lon": 6.841376,
+        "name": "LEC1"
+      },
+      {
+        "station_id": "3348a72e-eba3-4627-a05b-a500b4547dfb",
+        "lat": 47.63595,
+        "lon": 6.857963,
+        "name": "MON1"
+      },
+      {
+        "station_id": "beffb463-2bb0-48ee-bb03-732d3f2863d4",
+        "lat": 47.63296,
+        "lon": 6.817977,
+        "name": "MAI1 Essert"
+      },
+      {
+        "station_id": "e403bcf7-35c7-409e-a3fb-e3f69b4ad6ce",
+        "lat": 47.64783,
+        "lon": 6.85604,
+        "name": "HOU1"
+      },
+      {
+        "station_id": "193ae0e8-6a04-429d-a441-f347b2652a88",
+        "lat": 47.643576,
+        "lon": 6.841929,
+        "name": "EDI1"
+      },
+      {
+        "station_id": "cc9c7eb7-60b4-4844-9c8e-af28b19dc685",
+        "lat": 47.664867,
+        "lon": 6.843538,
+        "name": "BLU1"
+      },
+      {
+        "station_id": "ee4a47cc-c0da-4102-8545-5b9a70982a17",
+        "lat": 47.656803,
+        "lon": 6.864068,
+        "name": "POS1 Offemont"
+      },
+      {
+        "station_id": "b9ade083-519b-4915-b964-59cd759d1e11",
+        "lat": 47.652611,
+        "lon": 6.864274,
+        "name": "BUS1"
+      },
+      {
+        "station_id": "f4c34bb4-5e55-41e6-9378-1102fa7d329c",
+        "lat": 47.645514,
+        "lon": 6.862668,
+        "name": "ROU1"
+      },
+      {
+        "station_id": "cb0456fc-a9a2-4291-a2a3-61b64001344c",
+        "lat": 47.638169,
+        "lon": 6.876583,
+        "name": "ALT10"
+      },
+      {
+        "station_id": "45b92fc2-3d63-4dfb-946a-97924e4fc2c0",
+        "lat": 47.646189,
+        "lon": 6.851107,
+        "name": "STR1"
+      },
+      {
+        "station_id": "2a75d285-5f8c-4c1d-9220-2fb519d9d1b5",
+        "lat": 47.64171,
+        "lon": 6.855423,
+        "name": "RES1"
+      },
+      {
+        "station_id": "deea3858-d8c3-4cc7-9ca6-237f455d9076",
+        "lat": 47.648231,
+        "lon": 6.853688,
+        "name": "TRA1"
+      },
+      {
+        "station_id": "285fd809-8396-44d1-8988-8a7ad961fd0b",
+        "lat": 47.63467,
+        "lon": 6.845638,
+        "name": "MAD1"
+      },
+      {
+        "station_id": "8c166007-0c2e-426b-9e28-a5b216ccc532",
+        "lat": 47.651946,
+        "lon": 6.856263,
+        "name": "GAM1"
+      },
+      {
+        "station_id": "b275f6f3-9715-4bf9-bd2e-66ec5a7eeb82",
+        "lat": 47.634733,
+        "lon": 6.85126,
+        "name": "PAR1"
+      },
+      {
+        "station_id": "bbff9998-ead1-4bf0-af77-638d95e78b64",
+        "lat": 47.634338,
+        "lon": 6.855909,
+        "name": "THI1"
+      },
+      {
+        "station_id": "445ab067-897f-4d6b-8e32-3ce41482730c",
+        "lat": 47.641113,
+        "lon": 6.861614,
+        "name": "ATR1"
+      },
+      {
+        "station_id": "a0017f6d-a701-46b4-a094-4e43377bac2e",
+        "lat": 47.640302,
+        "lon": 6.837348,
+        "name": "GAN1"
+      },
+      {
+        "station_id": "24ee71ce-d7d6-4df6-bb1f-5f952569f824",
+        "lat": 47.652756,
+        "lon": 6.8287,
+        "name": "CRA1 Cravanche"
+      },
+      {
+        "station_id": "05c4b14c-8178-401c-9d84-667355641b38",
+        "lat": 47.620619,
+        "lon": 6.834295,
+        "name": "AUB1"
+      },
+      {
+        "station_id": "27f09500-a988-4875-9ef0-72aa73877e7a",
+        "lat": 47.640286,
+        "lon": 6.863534,
+        "name": "REM1"
+      },
+      {
+        "station_id": "8459dc2a-dbd4-4db4-b325-af51ce6a04a7",
+        "lat": 47.64158,
+        "lon": 6.859575,
+        "name": "MAG1"
+      },
+      {
+        "station_id": "5aff6fa5-dc7e-4c98-bc01-e61e9e043367",
+        "lat": 47.630361,
+        "lon": 6.852795,
+        "name": "JOL1"
+      },
+      {
+        "station_id": "6c57304e-443b-4c99-8467-299c9b85cbb9",
+        "lat": 47.643442,
+        "lon": 6.857784,
+        "name": "BRA1"
+      },
+      {
+        "station_id": "8befbde2-0673-4c33-b238-bf2abbf8fdd7",
+        "lat": 47.63704,
+        "lon": 6.873077,
+        "name": "ALT1"
+      },
+      {
+        "station_id": "ef5a5d5b-7ff4-43b5-8090-a88a4f5e616c",
+        "lat": 47.651477,
+        "lon": 6.85093,
+        "name": "BOR1"
+      },
+      {
+        "station_id": "347e2191-4d05-447d-bb65-cb3ba7027a03",
+        "lat": 47.643042,
+        "lon": 6.835272,
+        "name": "DUV1"
+      },
+      {
+        "station_id": "d28bca5c-9f12-48fc-9f82-66a7d9f3fb6c",
+        "lat": 47.631319,
+        "lon": 6.855195,
+        "name": "SER1"
+      },
+      {
+        "station_id": "10a87317-7863-452e-93b6-3fad65bf839d",
+        "lat": 47.629318,
+        "lon": 6.858079,
+        "name": "RHO1"
+      },
+      {
+        "station_id": "4d3a9251-6bfe-4717-99db-d3a06252353a",
+        "lat": 47.640718,
+        "lon": 6.866501,
+        "name": "MEL1"
+      },
+      {
+        "station_id": "092dac3b-f8bc-4537-8611-1554a65de83a",
+        "lat": 47.6385,
+        "lon": 6.853996,
+        "name": "DEF1"
+      }
+    ]
+  }
+}

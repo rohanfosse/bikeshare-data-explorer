@@ -1,0 +1,649 @@
+{
+  "ttl": 60,
+  "last_updated": 1771749754,
+  "data": {
+    "stations": [
+      {
+        "station_id": "8604",
+        "name": "Place d'Armes (B)",
+        "lat": 50.3584917,
+        "lon": 3.5235366,
+        "region_id": "494",
+        "is_virtual_station": true,
+        "capacity": 5,
+        "vehicle_capacity": {
+          "bike": 5
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=8604",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=8604"
+        }
+      },
+      {
+        "station_id": "8613",
+        "name": "Marché aux Herbes ",
+        "lat": 50.3593309,
+        "lon": 3.5232539,
+        "region_id": "494",
+        "is_virtual_station": true,
+        "capacity": 5,
+        "vehicle_capacity": {
+          "bike": 5
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=8613",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=8613"
+        }
+      },
+      {
+        "station_id": "8607",
+        "name": "Musée A",
+        "lat": 50.3581569,
+        "lon": 3.5315348,
+        "region_id": "494",
+        "is_virtual_station": true,
+        "capacity": 8,
+        "vehicle_capacity": {
+          "bike": 8
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=8607",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=8607"
+        }
+      },
+      {
+        "station_id": "22053",
+        "name": "Louise d'Epinay",
+        "lat": 50.3269524,
+        "lon": 3.5106762,
+        "region_id": "494",
+        "is_virtual_station": true,
+        "capacity": 3,
+        "vehicle_capacity": {
+          "bike": 3
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=22053",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=22053"
+        }
+      },
+      {
+        "station_id": "13485",
+        "name": "place verte",
+        "lat": 50.3574503,
+        "lon": 3.5289418,
+        "region_id": "494",
+        "is_virtual_station": true,
+        "capacity": 6,
+        "vehicle_capacity": {
+          "bike": 6
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=13485",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=13485"
+        }
+      },
+      {
+        "station_id": "8603",
+        "name": "Place d'armes (A)",
+        "lat": 50.357332,
+        "lon": 3.5226607,
+        "region_id": "494",
+        "is_virtual_station": true,
+        "capacity": 5,
+        "vehicle_capacity": {
+          "bike": 5
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=8603",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=8603"
+        }
+      },
+      {
+        "station_id": "8602",
+        "name": "Gare (B)",
+        "lat": 50.3636607,
+        "lon": 3.517586,
+        "region_id": "494",
+        "is_virtual_station": true,
+        "capacity": 8,
+        "vehicle_capacity": {
+          "bike": 8
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=8602",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=8602"
+        }
+      },
+      {
+        "station_id": "12629",
+        "name": "Rhônelle",
+        "lat": 50.3538496,
+        "lon": 3.5295666,
+        "region_id": "494",
+        "is_virtual_station": true,
+        "capacity": 6,
+        "vehicle_capacity": {
+          "bike": 6
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=12629",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=12629"
+        }
+      },
+      {
+        "station_id": "8610",
+        "name": "Place des Wantiers",
+        "lat": 50.3566495,
+        "lon": 3.5243282,
+        "region_id": "494",
+        "is_virtual_station": true,
+        "capacity": 5,
+        "vehicle_capacity": {
+          "bike": 5
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=8610",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=8610"
+        }
+      },
+      {
+        "station_id": "12454",
+        "name": "Transvilles",
+        "lat": 50.3600976,
+        "lon": 3.5225957,
+        "region_id": "494",
+        "is_virtual_station": true,
+        "capacity": 5,
+        "vehicle_capacity": {
+          "bike": 5
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=12454",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=12454"
+        }
+      },
+      {
+        "station_id": "17083",
+        "name": "Musée B",
+        "lat": 50.3572373,
+        "lon": 3.5312266,
+        "region_id": "494",
+        "is_virtual_station": true,
+        "capacity": 8,
+        "vehicle_capacity": {
+          "bike": 8
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=17083",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=17083"
+        }
+      },
+      {
+        "station_id": "22045",
+        "name": "Campus Mont Houy",
+        "lat": 50.3282841,
+        "lon": 3.514535,
+        "region_id": "494",
+        "is_virtual_station": true,
+        "capacity": 4,
+        "vehicle_capacity": {
+          "bike": 4
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=22045",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=22045"
+        }
+      },
+      {
+        "station_id": "22046",
+        "name": "Watteau",
+        "lat": 50.3277058,
+        "lon": 3.5146033,
+        "region_id": "494",
+        "is_virtual_station": true,
+        "capacity": 4,
+        "vehicle_capacity": {
+          "bike": 4
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=22046",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=22046"
+        }
+      },
+      {
+        "station_id": "27969",
+        "name": "Parking entrée ambulances ",
+        "lat": 50.359985,
+        "lon": 3.501102,
+        "region_id": "494",
+        "is_virtual_station": true,
+        "capacity": 5,
+        "vehicle_capacity": {
+          "bike": 5
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=27969",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=27969"
+        }
+      },
+      {
+        "station_id": "8601",
+        "name": "Gare (A)",
+        "lat": 50.3629067,
+        "lon": 3.5173181,
+        "region_id": "494",
+        "is_virtual_station": true,
+        "capacity": 8,
+        "vehicle_capacity": {
+          "bike": 8
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=8601",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=8601"
+        }
+      },
+      {
+        "station_id": "24040",
+        "name": "R.U.2",
+        "lat": 50.3222774,
+        "lon": 3.5136736,
+        "region_id": "494",
+        "is_virtual_station": true,
+        "capacity": 5,
+        "vehicle_capacity": {
+          "bike": 5
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=24040",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=24040"
+        }
+      },
+      {
+        "station_id": "22039",
+        "name": "INSA",
+        "lat": 50.3231907,
+        "lon": 3.5139442,
+        "region_id": "494",
+        "is_virtual_station": true,
+        "capacity": 3,
+        "vehicle_capacity": {
+          "bike": 3
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=22039",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=22039"
+        }
+      },
+      {
+        "station_id": "22040",
+        "name": "Lottman",
+        "lat": 50.3245769,
+        "lon": 3.5144277,
+        "region_id": "494",
+        "is_virtual_station": true,
+        "capacity": 3,
+        "vehicle_capacity": {
+          "bike": 3
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=22040",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=22040"
+        }
+      },
+      {
+        "station_id": "22041",
+        "name": "Moriamez Recherche",
+        "lat": 50.3249939,
+        "lon": 3.5145283,
+        "region_id": "494",
+        "is_virtual_station": true,
+        "capacity": 3,
+        "vehicle_capacity": {
+          "bike": 3
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=22041",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=22041"
+        }
+      },
+      {
+        "station_id": "22042",
+        "name": "Carpeaux",
+        "lat": 50.3264602,
+        "lon": 3.5160144,
+        "region_id": "494",
+        "is_virtual_station": true,
+        "capacity": 3,
+        "vehicle_capacity": {
+          "bike": 3
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=22042",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=22042"
+        }
+      },
+      {
+        "station_id": "22043",
+        "name": "Fior (A)",
+        "lat": 50.3275114,
+        "lon": 3.5163289,
+        "region_id": "494",
+        "is_virtual_station": true,
+        "capacity": 3,
+        "vehicle_capacity": {
+          "bike": 3
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=22043",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=22043"
+        }
+      },
+      {
+        "station_id": "22044",
+        "name": "Fior (B)",
+        "lat": 50.3272721,
+        "lon": 3.5161021,
+        "region_id": "494",
+        "is_virtual_station": true,
+        "capacity": 3,
+        "vehicle_capacity": {
+          "bike": 3
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=22044",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=22044"
+        }
+      },
+      {
+        "station_id": "22047",
+        "name": "Eisen",
+        "lat": 50.3276813,
+        "lon": 3.5137686,
+        "region_id": "494",
+        "is_virtual_station": true,
+        "capacity": 3,
+        "vehicle_capacity": {
+          "bike": 3
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=22047",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=22047"
+        }
+      },
+      {
+        "station_id": "22048",
+        "name": "Herbin",
+        "lat": 50.3273148,
+        "lon": 3.5135136,
+        "region_id": "494",
+        "is_virtual_station": true,
+        "capacity": 3,
+        "vehicle_capacity": {
+          "bike": 3
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=22048",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=22048"
+        }
+      },
+      {
+        "station_id": "22050",
+        "name": "B.U",
+        "lat": 50.3259513,
+        "lon": 3.5144349,
+        "region_id": "494",
+        "is_virtual_station": true,
+        "capacity": 3,
+        "vehicle_capacity": {
+          "bike": 3
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=22050",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=22050"
+        }
+      },
+      {
+        "station_id": "22051",
+        "name": "VUC",
+        "lat": 50.3272132,
+        "lon": 3.5121004,
+        "region_id": "494",
+        "is_virtual_station": true,
+        "capacity": 3,
+        "vehicle_capacity": {
+          "bike": 3
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=22051",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=22051"
+        }
+      },
+      {
+        "station_id": "22056",
+        "name": "Matisse (B)",
+        "lat": 50.3264691,
+        "lon": 3.5097401,
+        "region_id": "494",
+        "is_virtual_station": true,
+        "capacity": 3,
+        "vehicle_capacity": {
+          "bike": 3
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=22056",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=22056"
+        }
+      },
+      {
+        "station_id": "22057",
+        "name": "Matisse (A)",
+        "lat": 50.326596,
+        "lon": 3.5107944,
+        "region_id": "494",
+        "is_virtual_station": true,
+        "capacity": 3,
+        "vehicle_capacity": {
+          "bike": 3
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=22057",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=22057"
+        }
+      },
+      {
+        "station_id": "12652",
+        "name": "Paris",
+        "lat": 50.3592757,
+        "lon": 3.5202131,
+        "region_id": "494",
+        "is_virtual_station": true,
+        "capacity": 4,
+        "vehicle_capacity": {
+          "bike": 4
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=12652",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=12652"
+        }
+      },
+      {
+        "station_id": "22783",
+        "name": "P+R Nungesser ",
+        "lat": 50.3486919,
+        "lon": 3.5194078,
+        "region_id": "494",
+        "is_virtual_station": true,
+        "capacity": 8,
+        "vehicle_capacity": {
+          "bike": 8
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=22783",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=22783"
+        }
+      },
+      {
+        "station_id": "27968",
+        "name": "Clinique teissier",
+        "lat": 50.3597448,
+        "lon": 3.5001663,
+        "region_id": "494",
+        "is_virtual_station": true,
+        "capacity": 5,
+        "vehicle_capacity": {
+          "bike": 5
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=27968",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=27968"
+        }
+      },
+      {
+        "station_id": "13347",
+        "name": "Le stade du Hainaut ",
+        "lat": 50.3496939,
+        "lon": 3.5247799,
+        "region_id": "494",
+        "is_virtual_station": true,
+        "capacity": 5,
+        "vehicle_capacity": {
+          "bike": 5
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=13347",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=13347"
+        }
+      },
+      {
+        "station_id": "15573",
+        "name": "Tertiales",
+        "lat": 50.3642615,
+        "lon": 3.5294483,
+        "region_id": "494",
+        "is_virtual_station": true,
+        "capacity": 10,
+        "vehicle_capacity": {
+          "bike": 10
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=15573",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=15573"
+        }
+      },
+      {
+        "station_id": "12987",
+        "name": "Harpignies",
+        "lat": 50.364416,
+        "lon": 3.523887,
+        "region_id": "494",
+        "is_virtual_station": true,
+        "capacity": 4,
+        "vehicle_capacity": {
+          "bike": 4
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=12987",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=12987"
+        }
+      },
+      {
+        "station_id": "12989",
+        "name": "Froissart",
+        "lat": 50.3626144,
+        "lon": 3.5198818,
+        "region_id": "494",
+        "is_virtual_station": true,
+        "capacity": 4,
+        "vehicle_capacity": {
+          "bike": 4
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=12989",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=12989"
+        }
+      },
+      {
+        "station_id": "8608",
+        "name": "saint-Géry",
+        "lat": 50.3594581,
+        "lon": 3.5258719,
+        "region_id": "494",
+        "is_virtual_station": true,
+        "capacity": 5,
+        "vehicle_capacity": {
+          "bike": 5
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=8608",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=8608"
+        }
+      },
+      {
+        "station_id": "23822",
+        "name": "P+r famars ",
+        "lat": 50.3200646,
+        "lon": 3.5120637,
+        "region_id": "494",
+        "is_virtual_station": true,
+        "capacity": 8,
+        "vehicle_capacity": {
+          "bike": 8
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=23822",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=23822"
+        }
+      },
+      {
+        "station_id": "12653",
+        "name": "Canada",
+        "lat": 50.3523295,
+        "lon": 3.523152,
+        "region_id": "494",
+        "is_virtual_station": true,
+        "capacity": 4,
+        "vehicle_capacity": {
+          "bike": 4
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=12653",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=12653"
+        }
+      },
+      {
+        "station_id": "22052",
+        "name": "Pater",
+        "lat": 50.3281624,
+        "lon": 3.5124402,
+        "region_id": "494",
+        "is_virtual_station": true,
+        "capacity": 3,
+        "vehicle_capacity": {
+          "bike": 3
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=22052",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=22052"
+        }
+      },
+      {
+        "station_id": "22037",
+        "name": "Université ",
+        "lat": 50.3210453,
+        "lon": 3.5131988,
+        "region_id": "494",
+        "is_virtual_station": true,
+        "capacity": 3,
+        "vehicle_capacity": {
+          "bike": 3
+        },
+        "rental_uris": {
+          "android": "https://dnky.bike/deeplink_hubs?hub_id=22037",
+          "ios": "https://dnky.bike/deeplink_hubs?hub_id=22037"
+        }
+      }
+    ]
+  },
+  "version": "2.3"
+}

@@ -1,0 +1,281 @@
+{
+  "data": {
+    "stations": [
+      {
+        "capacity": 7,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.066849,
+        "lon": -0.869463,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Gare SNCF - Strasbourg"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://choletbus.ecovelo.mobi/#/station/stn_7KNWiwi2gbLPEFo3QA9bC2"
+        },
+        "station_id": "stn_7KNWiwi2gbLPEFo3QA9bC2"
+      },
+      {
+        "capacity": 18,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.074325,
+        "lon": -0.83808,
+        "name": [
+          {
+            "language": "fr",
+            "text": "L'Autre Faubourg"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://choletbus.ecovelo.mobi/#/station/stn_mYm8ZnEQk2CtTdX5U6PRAR"
+        },
+        "station_id": "stn_mYm8ZnEQk2CtTdX5U6PRAR"
+      },
+      {
+        "capacity": 16,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.04861,
+        "lon": -0.885003,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Jean Monnet Descartes"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://choletbus.ecovelo.mobi/#/station/stn_BcRBNDANWo8KyBBQBPkR8J"
+        },
+        "station_id": "stn_BcRBNDANWo8KyBBQBPkR8J"
+      },
+      {
+        "capacity": 16,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.057339,
+        "lon": -0.867562,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Lorraine"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://choletbus.ecovelo.mobi/#/station/stn_92GiBpSzCHLu9M3v4dmFCo"
+        },
+        "station_id": "stn_92GiBpSzCHLu9M3v4dmFCo"
+      },
+      {
+        "capacity": 18,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.039178,
+        "lon": -0.916506,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Cormier Armand Mayer"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://choletbus.ecovelo.mobi/#/station/stn_BbCXs8jXi6QGMnbxSJErtV"
+        },
+        "station_id": "stn_BbCXs8jXi6QGMnbxSJErtV"
+      },
+      {
+        "capacity": 18,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.058498,
+        "lon": -0.879819,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Hôtel de Ville"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://choletbus.ecovelo.mobi/#/station/stn_239xmKpdeMh7gMsT6Ykb8K"
+        },
+        "station_id": "stn_239xmKpdeMh7gMsT6Ykb8K"
+      },
+      {
+        "capacity": 18,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.041254,
+        "lon": -0.894181,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Centre Hospitalier"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://choletbus.ecovelo.mobi/#/station/stn_eAp4acmKGWA9BVCD8fY22n"
+        },
+        "station_id": "stn_eAp4acmKGWA9BVCD8fY22n"
+      },
+      {
+        "capacity": 7,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.066358,
+        "lon": -0.859026,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Béthenod "
+          }
+        ],
+        "rental_uris": {
+          "web": "https://choletbus.ecovelo.mobi/#/station/stn_9Eg4XArArL3iKcfNQFjQt9"
+        },
+        "station_id": "stn_9Eg4XArArL3iKcfNQFjQt9"
+      },
+      {
+        "capacity": 18,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.061242,
+        "lon": -0.879729,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Travot"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://choletbus.ecovelo.mobi/#/station/stn_YAY5srZMvTFrwYbc8guEQ4"
+        },
+        "station_id": "stn_YAY5srZMvTFrwYbc8guEQ4"
+      },
+      {
+        "capacity": 18,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.046281,
+        "lon": -0.851279,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Val de Moine Parc"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://choletbus.ecovelo.mobi/#/station/stn_dxQMkG4hdFdojnstdPXGpg"
+        },
+        "station_id": "stn_dxQMkG4hdFdojnstdPXGpg"
+      },
+      {
+        "capacity": 7,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.075095,
+        "lon": -0.874116,
+        "name": [
+          {
+            "language": "fr",
+            "text": "La Dabardière"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://choletbus.ecovelo.mobi/#/station/stn_kVHpUqL2megqHYADz68HuA"
+        },
+        "station_id": "stn_kVHpUqL2megqHYADz68HuA"
+      },
+      {
+        "capacity": 18,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.065366,
+        "lon": -0.870047,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Gare SNCF"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://choletbus.ecovelo.mobi/#/station/stn_2crYzgWz9iL4XEgcd3JyRW"
+        },
+        "station_id": "stn_2crYzgWz9iL4XEgcd3JyRW"
+      },
+      {
+        "capacity": 18,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.031251,
+        "lon": -0.914621,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Cormier Jean Rouyer"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://choletbus.ecovelo.mobi/#/station/stn_4CLaAm6N4h4KLZc8zdMgcy"
+        },
+        "station_id": "stn_4CLaAm6N4h4KLZc8zdMgcy"
+      },
+      {
+        "capacity": 16,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.062041,
+        "lon": -0.895704,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Bretagne Mocrat"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://choletbus.ecovelo.mobi/#/station/stn_UgaZ6yq45KD7JEZigpGcrr"
+        },
+        "station_id": "stn_UgaZ6yq45KD7JEZigpGcrr"
+      },
+      {
+        "capacity": 18,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.04959,
+        "lon": -0.8691,
+        "name": [
+          {
+            "language": "fr",
+            "text": "Parc du Carteron"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://choletbus.ecovelo.mobi/#/station/stn_ScMqwFnjLcNkyPh455qzXm"
+        },
+        "station_id": "stn_ScMqwFnjLcNkyPh455qzXm"
+      },
+      {
+        "capacity": 7,
+        "is_valet_station": false,
+        "is_virtual_station": false,
+        "lat": 47.071814,
+        "lon": -0.874104,
+        "name": [
+          {
+            "language": "fr",
+            "text": "ZI  Nord"
+          }
+        ],
+        "rental_uris": {
+          "web": "https://choletbus.ecovelo.mobi/#/station/stn_GVEPc8q7RzeKRH5R6SYBEt"
+        },
+        "station_id": "stn_GVEPc8q7RzeKRH5R6SYBEt"
+      }
+    ]
+  },
+  "last_updated": "2026-02-22T09:42:05+01:00",
+  "ttl": 0,
+  "version": "3.0"
+}

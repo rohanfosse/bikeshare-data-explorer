@@ -1,0 +1,37 @@
+{
+  "last_updated": "2026-02-22T09:41:05.875+01:00",
+  "ttl": 300,
+  "version": "3.0",
+  "data": {
+    "stations": [
+      {
+        "station_id": "666",
+        "name": [
+          {
+            "text": "Chirac",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.524329,
+        "lon": 3.266242,
+        "is_virtual_station": false,
+        "capacity": 9,
+        "is_charging_station": true
+      },
+      {
+        "station_id": "667",
+        "name": [
+          {
+            "text": "Le Monastier",
+            "language": "fr"
+          }
+        ],
+        "lat": 44.515114,
+        "lon": 3.254989,
+        "is_virtual_station": false,
+        "capacity": 9,
+        "is_charging_station": true
+      }
+    ]
+  }
+}
