@@ -44,7 +44,7 @@ with st.sidebar:
     metric_key = st.selectbox(
         "Métrique principale",
         options=list(METRICS.keys()),
-        format_func=lambda k: METRICS[k][\"label\"],
+        format_func=lambda k: METRICS[k]["label"],
         index=0,
     )
     min_stations = st.number_input(
