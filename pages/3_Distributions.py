@@ -6,9 +6,7 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
-import pandas as pd
 import plotly.express as px
-import plotly.figure_factory as ff
 import plotly.graph_objects as go
 import streamlit as st
 
@@ -16,18 +14,22 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 from utils.data_loader import METRICS, load_stations
 
 st.set_page_config(
-    page_title="Distributions · Gold Standard GBFS",
-    page_icon="📊",
+    page_title="Distributions statistiques — Gold Standard GBFS",
+    page_icon=None,
     layout="wide",
 )
 
-st.title("📊 Distributions des métriques")
+st.title("Distributions et corrélations statistiques")
+st.markdown(
+    "Analyse des distributions empiriques des métriques d'enrichissement "
+    "et de leurs interdépendances à l'échelle des stations et des villes."
+)
 
 df = load_stations()
 
 # ── Sidebar ───────────────────────────────────────────────────────────────────
 with st.sidebar:
-    st.header("Options")
+    st.header("Paramètres")
     all_cities = sorted(df["city"].unique())
     city_filter = st.multiselect(
         "Filtrer par ville(s)",
@@ -35,15 +37,19 @@ with st.sidebar:
         default=[],
         placeholder="Toutes les villes",
     )
-    n_bins = st.slider("Nombre de bins (histogramme)", 20, 100, 40, 5)
+    n_bins = st.slider("Nombre de classes (histogramme)", 20, 100, 40, 5)
 
 dff = df[df["city"].isin(city_filter)] if city_filter else df
 st.caption(f"**{len(dff):,}** stations · {dff['city'].nunique()} villes")
 
 st.divider()
 
-# ── Histogrammes (grille 2×3) ─────────────────────────────────────────────────
-st.subheader("Histogrammes des métriques enrichies")
+# ── Histogrammes ───────────────────────────────────────────────────────────────
+st.subheader("Distributions univariées des métriques enrichies")
+st.caption(
+    "Vert : valeur élevée favorable. Rouge : valeur faible favorable. Bleu : neutre. "
+    "La ligne verticale indique la médiane."
+)
 
 metric_keys = [k for k in METRICS if k in dff.columns]
 cols = st.columns(2)
@@ -54,37 +60,42 @@ for i, mkey in enumerate(metric_keys):
     if series.empty:
         continue
 
+    color = (
+        "#1A6FBF" if meta["higher_is_better"] is True
+        else "#c0392b" if meta["higher_is_better"] is False
+        else "#5a7a99"
+    )
+
     fig = px.histogram(
         series,
         nbins=n_bins,
         labels={"value": meta["label"]},
-        color_discrete_sequence=[
-            "#2ecc71" if meta["higher_is_better"] is True
-            else "#e74c3c" if meta["higher_is_better"] is False
-            else "#3498db"
-        ],
+        color_discrete_sequence=[color],
         height=280,
     )
+    med = float(series.median())
+    fig.add_vline(
+        x=med, line_dash="dash", line_color="#1A2332", opacity=0.7,
+        annotation_text=f"Med. {med:.2f}", annotation_position="top right",
+    )
     fig.update_layout(
-        title=dict(text=meta["label"], font_size=14),
+        title=dict(text=meta["label"], font_size=13),
         showlegend=False,
         margin=dict(l=10, r=10, t=40, b=10),
         plot_bgcolor="white",
         xaxis_title=f"{meta['label']} ({meta['unit']})",
         yaxis_title="Stations",
     )
-    # Ligne médiane
-    med = float(series.median())
-    fig.add_vline(
-        x=med, line_dash="dash", line_color="black", opacity=0.6,
-        annotation_text=f"médiane {med:.2f}", annotation_position="top right",
-    )
     cols[i % 2].plotly_chart(fig, use_container_width=True)
 
 st.divider()
 
-# ── Box-plots par ville (top 15) ──────────────────────────────────────────────
-st.subheader("Comparaison inter-villes (box-plots)")
+# ── Box-plots par ville ────────────────────────────────────────────────────────
+st.subheader("Dispersion inter-villes (boites à moustaches)")
+st.caption(
+    "Les boites à moustaches avec encoche (notched) permettent d'évaluer "
+    "visuellement la significativité des différences de médiane entre villes."
+)
 
 bp_metric = st.selectbox(
     "Métrique",
@@ -109,7 +120,6 @@ if bp_city_sel:
     bp_df = dff[dff["city"].isin(bp_city_sel) & dff[bp_metric].notna()]
     meta_bp = METRICS[bp_metric]
 
-    # Trier par médiane
     order = (
         bp_df.groupby("city")[bp_metric].median()
         .sort_values(ascending=not meta_bp.get("higher_is_better", True))
@@ -139,7 +149,12 @@ else:
 st.divider()
 
 # ── Matrice de corrélation ─────────────────────────────────────────────────────
-st.subheader("Matrice de corrélation des métriques")
+st.subheader("Matrice de corrélation de Spearman")
+st.caption(
+    "Corrélation de rang de Spearman entre les métriques d'enrichissement. "
+    "Bleu = corrélation négative, Rouge = corrélation positive. "
+    "Les valeurs extrêmes (proches de ±1) indiquent des colinéarités potentielles."
+)
 
 num_cols = [k for k in METRICS if k in dff.columns]
 corr_df  = dff[num_cols].dropna(how="all").corr(method="spearman")
@@ -166,18 +181,18 @@ fig_corr.update_layout(
     xaxis=dict(tickangle=-30),
 )
 st.plotly_chart(fig_corr, use_container_width=True)
-st.caption(
-    "Corrélation de Spearman (rang). "
-    "Rouge = corrélation positive, Bleu = corrélation négative."
-)
 
 st.divider()
 
-# ── Scatter matriciel (pairplot) ──────────────────────────────────────────────
-with st.expander("🔍 Scatter matriciel (pairplot) — peut être lent sur 46k points", expanded=False):
-    sample_n = st.slider("Échantillon (stations)", 500, 5000, 2000, 500)
+# ── Scatter matriciel ──────────────────────────────────────────────────────────
+with st.expander("Scatter matriciel (pairplot) — calcul sur echantillon", expanded=False):
+    st.caption(
+        "Représentation croisée de chaque paire de métriques sélectionnées. "
+        "Un échantillon aléatoire est utilisé pour limiter le temps de rendu."
+    )
+    sample_n = st.slider("Taille de l'échantillon (stations)", 500, 5000, 2000, 500)
     pair_keys = st.multiselect(
-        "Variables",
+        "Variables à croiser",
         options=num_cols,
         default=["infra_cyclable_pct", "baac_accidents_cyclistes", "gtfs_heavy_stops_300m"],
         format_func=lambda k: METRICS[k]["label"],

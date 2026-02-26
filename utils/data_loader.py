@@ -71,7 +71,7 @@ METRICS: dict[str, dict] = {
 @st.cache_data(ttl=3600, show_spinner="Chargement du Gold Standard…")
 def load_stations() -> pd.DataFrame:
     """Charge et normalise le CSV Gold Standard."""
-    df = pd.read_csv(DATA_PATH, low_memory=False)
+    df = pd.read_parquet(DATA_PATH)
 
     # Nettoyage minimal
     df = df.dropna(subset=["lat", "lon"])
