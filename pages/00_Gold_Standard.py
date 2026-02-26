@@ -38,18 +38,18 @@ st.divider()
 section(1, "L'Illusion de l'Open Data : La nécessité de l'Audit GBFS")
 
 st.markdown(r"""
-Le format **GBFS** (*General Bikeshare Feed Specification*) s'est imposé comme le standard international pour la diffusion en temps réel de l'état des systèmes de vélos en libre-service. Si cette standardisation a facilité l'émergence d'applications de type *MaaS* (Mobility as a Service), elle dissimule des **hétérogénéités structurelles profondes** d'un opérateur à l'autre.
+Le standard **GBFS** (*General Bikeshare Feed Specification*) s'est imposé comme l'ontologie de référence pour la diffusion en temps réel de l'état des flottes de vélos en libre-service. Si cette standardisation a catalysé le développement d'applications de type *Mobility as a Service (MaaS)*, elle masque des **asymétries de qualité et des biais structurels profonds** d'un opérateur à l'autre.
 
-Une utilisation naïve de ces données brutes dans un algorithme de recherche induit des biais d'évaluation massifs. L'audit complet des 125 systèmes français a révélé une taxonomie de **6 classes d'anomalies (A1 à A6)** que nous avons dû purger algorithmiquement :
+L'ingestion directe de ces données brutes dans des modèles de géographie quantitative engendre des artefacts statistiques majeurs. L'audit systématique des 125 systèmes français a mis en exergue une taxonomie de **6 classes d'anomalies (A1 à A6)**, nécessitant un protocole de purge algorithmique strict :
 
-1. **A1 — Doublons spatio-temporels :** Enregistrements multiples d'une même station dus à des désynchronisations d'API.
-2. **A2 — Stations fantômes (Zombies) :** Stations déclarées dans le fichier `station_information.json` mais physiquement inexistantes ou désactivées dans les faits.
-3. **A3 — L'Illusion Capacitive (*Floating-Anchor*) :** L'anomalie la plus critique. Pour les systèmes hybrides (vélos *free-floating* pouvant s'attacher à du mobilier urbain générique), certains opérateurs déclarent arbitrairement une "capacité de 999" vélos par point d'ancrage. Non corrigé, ce biais surestime artificiellement la densité de réseaux comme ceux de Bordeaux ou de la métropole lilloise de plus de 90 %.
-4. **A4 — Incohérence de typologie :** Flou entre vélos mécaniques et électriques.
-5. **A5 — Dérive Géospatiale :** Coordonnées (Lat/Lon) projetées en dehors des limites administratives de l'agglomération (erreur de géocodage).
-6. **A6 — Absence de standardisation des ID :** Rend impossible le suivi longitudinal d'une station.
+1. **A1 — Redondance spatio-temporelle :** Multiplicité d'enregistrements d'une même entité induite par des latences de synchronisation des API.
+2. **A2 — Artéfacts topologiques (Stations zombies) :** Entités déclarées actives dans l'architecture réseau (`station_information.json`) mais souffrant d'obsolescence physique sur le terrain.
+3. **A3 — Le Biais de Surcapacité Structurelle (*Floating-Anchor*) :** L'anomalie la plus critique pour la modélisation. Sur les systèmes hybrides (vélos *free-floating* s'attachant au mobilier urbain), les opérateurs imputent arbitrairement des capacités virtuelles (ex. « 999 docks ») aux points d'ancrage. Non corrigé, ce biais génère une surestimation asymptotique de l'offre (supérieure à 90 % pour les métropoles de Bordeaux ou Lille), invalidant toute analyse spatiale de densité.
+4. **A4 — Incohérence typologique :** Déficit de granularité dans la classification énergétique de la flotte (confusion mécanique vs. assistance électrique).
+5. **A5 — Dérive géospatiale :** Aberrations de géocodage entraînant la projection de coordonnées hors des polygones administratifs (EPCI) de rattachement.
+6. **A6 — Instabilité des clés primaires (UUID) :** Rupture de la continuité des identifiants au fil des itérations de l'API, prohibant toute analyse longitudinale des flux.
 
-**Bilan de la consolidation :** L'application de nos filtres de redressement (correction par la moyenne conditionnelle pour A3, géofiltres pour A5) a permis de passer d'un "bruit statistique" à un jeu de données certifié de **46 359 stations validées** sur 62 agglomérations.
+**Processus d'assainissement algorithmique :** L'implémentation de heuristiques de correction ciblées (notamment le redressement par moyenne conditionnelle pour purger l'anomalie A3, et le géofiltrage strict pour A5) a permis de distiller ce bruit statistique pour aboutir à une **base de vérité terrain certifiée (*Gold Standard*)** comprenant 46 359 stations validées, réparties sur 62 agglomérations.
 """)
 
 # ── Section 2 : L'Hybridation Multi-Sources ────────────────────────────────────
@@ -57,10 +57,52 @@ st.divider()
 section(2, "L'Hybridation Multi-Sources : Modéliser l'Environnement Cyclable")
 
 st.markdown(r"""
-Si le GBFS permet de localiser le vélo, il ne dit rien de l'environnement dans lequel il évolue. L'innovation de notre démarche (et le cœur de l'IMD) repose sur **l'enrichissement spatial** (*Spatial Join*) des coordonnées des stations avec 6 bases de données institutionnelles indépendantes. 
+Bien que l'ontologie GBFS garantisse la localisation ponctuelle de l'offre matérielle, elle demeure agnostique quant aux déterminants environnementaux qui conditionnent la pratique cyclable. Le saut qualitatif de notre méthodologie – et le socle de l'IMD – réside dans la vectorisation et **l'enrichissement multidimensionnel (*Spatial Join* croisé)** de ces coordonnées avec six bases de données institutionnelles de référence.
 
-Cette hybridation croisée permet de passer d'une vision "matérielle" (où sont les vélos ?) à une vision "écosystémique" (le vélo est-il sûr, utile et accessible ?).
+Cette architecture de données hybride permet d'opérer une transition paradigmatique : il ne s'agit plus de mesurer un simple volume d'équipement (où sont les vélos ?), mais de **modéliser un système complexe** (le vélo est-il déployé dans un écosystème sécurisé, physiquement accessible et intégré aux autres modes de transport ?).
 """)
+
+# Tableau récapitulatif des sources (mis à jour avec un ton académique)
+donnees_sources = pd.DataFrame({
+    "Dimension Modélisée": [
+        "Infrastructure Primaire (Offre)", 
+        "Sécurité Spatiale (S)", 
+        "Perméabilité Cyclable (I)", 
+        "Capillarité Multimodale (M)", 
+        "Friction Spatiale (T)", 
+        "Vulnérabilité Socio-Économique",
+        "Pratiques Comportementales (Validation)"
+    ],
+    "Source de la donnée": [
+        "APIs GBFS (Auditées)", 
+        "Base BAAC (ONISR)", 
+        "OpenStreetMap / Cerema", 
+        "Point d'Accès National (GTFS)", 
+        "NASA SRTM (30m)", 
+        "INSEE (Dispositif Filosofi)",
+        "FUB (2023) / INSEE EMP (2019)"
+    ],
+    "Format / Nature": [
+        "GeoJSON point", 
+        "Open Data Gouvernemental", 
+        "Réseau filaire (Lignes/Graphes)", 
+        "Schedules & Stops (Noeuds)", 
+        "Modèle Numérique de Terrain (MNT)", 
+        "Carroyage Démographique (200m)",
+        "Micro-données de sondage"
+    ],
+    "Intégration et Apport au Modèle Spatial": [
+        "Coordonnées de vérité terrain et capacités ajustées post-correction (Le socle).",
+        "Modélisation de l'exposition au risque via la densité de clusters d'accidents corporels (Rayon 300m).",
+        "Mesure de la continuité de l'aménagement en site propre protégeant l'usager vulnérable.",
+        "Calcul de la distance aux pôles d'échanges lourds (Ferroviaire, BHNS, Tram) pour évaluer la capacité de rabattement.",
+        "Extraction du gradient altimétrique pour modéliser la friction spatiale et la barrière énergétique de l'usager.",
+        "Analyse de la variance des revenus médians par quartier pour objectiver l'Indice d'Équité Sociale (IES).",
+        "Analyse de convergence statistique pour valider l'efficience de l'IMD face au report modal réel."
+    ]
+})
+
+st.table(donnees_sources)
 
 # Tableau récapitulatif des sources
 donnees_sources = pd.DataFrame({
