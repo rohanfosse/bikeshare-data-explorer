@@ -99,6 +99,14 @@ def load_stations() -> pd.DataFrame:
     df["capacity"] = pd.to_numeric(df["capacity"], errors="coerce")
     df["n_stations_system"] = pd.to_numeric(df["n_stations_system"], errors="coerce")
 
+    # Normalisation des noms de villes (doublons et variantes connues)
+    _city_norm = {
+        "Strasbourg, FR": "Strasbourg",
+        "Nice, FR":       "Nice",
+        "PAU":            "Pau",
+    }
+    df["city"] = df["city"].replace(_city_norm)
+
     # Source lisible
     df["source_label"] = df["source"].map(
         {"MobilityData": "GBFS (MobilityData)", "Manuel": "GBFS (Manuel)", "OSM": "OSM (M1)"}
