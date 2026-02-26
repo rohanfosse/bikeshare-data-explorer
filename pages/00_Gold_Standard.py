@@ -35,92 +35,77 @@ sidebar_nav()
 
 # ── Section 1 : L'Illusion de l'Open Data et l'Audit GBFS ──────────────────────
 st.divider()
-section(1, "L'Illusion de l'Open Data : La nécessité de l'Audit GBFS")
+section(1, "L'Illusion de l'Open Data : Taxonomie des Anomalies GBFS")
 
 st.markdown(r"""
-Le standard **GBFS** (*General Bikeshare Feed Specification*) s'est imposé comme l'ontologie de référence pour la diffusion en temps réel de l'état des flottes de vélos en libre-service. Si cette standardisation a catalysé le développement d'applications de type *Mobility as a Service (MaaS)*, elle masque des **asymétries de qualité et des biais structurels profonds** d'un opérateur à l'autre.
+[cite_start]Le standard **GBFS** (*General Bikeshare Feed Specification*, v3.0) s'est imposé comme l'ontologie de référence. En France, les données sont centralisées par *transport.data.gouv.fr* et *MobilityData*. Si cette standardisation a catalysé le développement d'applications *MaaS*, l'ingestion directe de ces données brutes dans des modèles de géographie quantitative engendre des artefacts statistiques majeurs[cite: 32, 33].
 
-L'ingestion directe de ces données brutes dans des modèles de géographie quantitative engendre des artefacts statistiques majeurs. L'audit systématique des 125 systèmes français a mis en exergue une taxonomie de **6 classes d'anomalies (A1 à A6)**, nécessitant un protocole de purge algorithmique strict :
+[cite_start]L'audit systématique des 125 systèmes français a mis en exergue une taxonomie de **5 classes d'anomalies critiques (A1 à A5)**[cite: 46]:
 
-1. **A1 — Redondance spatio-temporelle :** Multiplicité d'enregistrements d'une même entité induite par des latences de synchronisation des API.
-2. **A2 — Artéfacts topologiques (Stations zombies) :** Entités déclarées actives dans l'architecture réseau (`station_information.json`) mais souffrant d'obsolescence physique sur le terrain.
-3. **A3 — Le Biais de Surcapacité Structurelle (*Floating-Anchor*) :** L'anomalie la plus critique pour la modélisation. Sur les systèmes hybrides (vélos *free-floating* s'attachant au mobilier urbain), les opérateurs imputent arbitrairement des capacités virtuelles (ex. « 999 docks ») aux points d'ancrage. Non corrigé, ce biais génère une surestimation asymptotique de l'offre (supérieure à 90 % pour les métropoles de Bordeaux ou Lille), invalidant toute analyse spatiale de densité.
-4. **A4 — Incohérence typologique :** Déficit de granularité dans la classification énergétique de la flotte (confusion mécanique vs. assistance électrique).
-5. **A5 — Dérive géospatiale :** Aberrations de géocodage entraînant la projection de coordonnées hors des polygones administratifs (EPCI) de rattachement.
-6. **A6 — Instabilité des clés primaires (UUID) :** Rupture de la continuité des identifiants au fil des itérations de l'API, prohibant toute analyse longitudinale des flux.
+* [cite_start]**A1 — Inclusion hors-domaine :** Présence de systèmes d'autopartage (ex. Citiz) encodés par erreur comme des flottes cyclables (14 systèmes affectés)[cite: 46].
+* [cite_start]**A2 — Capacité fictive (Placeholder) :** Valeur constante non nulle déclarée arbitrairement sur toutes les stations (ex. `pony_Nice` déclarant $c=100$)[cite: 46].
+* [cite_start]**A3 — Le Biais de Surcapacité Structurelle (*Floating-Anchor*) :** L'anomalie la plus critique[cite: 49].
+* [cite_start]**A4 — Aberrations géospatiales :** Coordonnées (Lat/Lon) permutées ou aberrantes générant des *bounding-boxes* à l'échelle continentale[cite: 47].
+* [cite_start]**A5 — Hors périmètre :** Systèmes situés dans les DOM-TOM ou présentant un périmètre d'action macro-régional ($> 50\,000\,\text{km}^2$)[cite: 47, 48].
 
-**Processus d'assainissement algorithmique :** L'implémentation de heuristiques de correction ciblées (notamment le redressement par moyenne conditionnelle pour purger l'anomalie A3, et le géofiltrage strict pour A5) a permis de distiller ce bruit statistique pour aboutir à une **base de vérité terrain certifiée (*Gold Standard*)** comprenant 46 359 stations validées, réparties sur 62 agglomérations.
+#### Zoom sur l'anomalie A3 : Le biais de la moyenne conditionnelle
+[cite_start]L'anomalie la plus pernicieuse concerne l'hybridation des flottes *free-floating* s'attachant au mobilier urbain[cite: 49]. Pour éviter d'afficher des stations vides, le calcul du profil capacitaire se fait souvent par **moyenne conditionnelle** (en excluant les stations à capacité nulle). [cite_start]Le biais se formalise ainsi[cite: 50]:
 """)
 
-# ── Section 2 : L'Hybridation Multi-Sources ────────────────────────────────────
+st.latex(r"""
+\bar{c}_{\text{profil}} = \frac{\sum_{i : c_i > 0} c_i}{\#\{i : c_i > 0\}}
+\quad \neq \quad
+\bar{c}_{\text{réel}} = \frac{\sum_{i=1}^{N} c_i}{N}
+""")
+
+st.markdown(r"""
+[cite_start]Ce biais mathématique classe à tort des milliers de vélos *free-floating* comme des stations d'ancrage lourdes (*dock-based*), faussant intégralement l'analyse des densités urbaines[cite: 51].
+""")
+
+# ── Section 2 : Protocole de Purge et Filtrage ────────────────────────────────
 st.divider()
-section(2, "L'Hybridation Multi-Sources : Modéliser l'Environnement Cyclable")
+section(2, "Protocole de Purge Algorithmique et Filtrage Spatial")
 
 st.markdown(r"""
-Bien que l'ontologie GBFS garantisse la localisation ponctuelle de l'offre matérielle, elle demeure agnostique quant aux déterminants environnementaux qui conditionnent la pratique cyclable. Le saut qualitatif de notre méthodologie – et le socle de l'IMD – réside dans la vectorisation et **l'enrichissement multidimensionnel (*Spatial Join* croisé)** de ces coordonnées avec six bases de données institutionnelles de référence.
+[cite_start]Pour distiller ce bruit statistique, nous avons implémenté un pipeline de redressement séquentiel en 6 étapes[cite: 52]:
+1.  [cite_start]**Exclusion sémantique :** Retrait des 14 systèmes d'autopartage Citiz[cite: 52].
+2.  [cite_start]**Reclassification A2 :** Passage forcé en *free-floating* pour les systèmes à capacité placeholder fictive (`pony_Nice`)[cite: 53].
+3.  [cite_start]**Redressement A3 :** Recalcul systématique de $\bar{c}_{\text{réel}}$ et réassignation topologique (Dock / Semi-dock / FF)[cite: 54].
+4.  [cite_start]**Géofiltre national :** Suppression des stations hors France métropolitaine (Box: $\varphi \in [41^\circ, 52^\circ]$, $\lambda \in [-6^\circ, 10^\circ]$)[cite: 55].
+5.  [cite_start]**Filtre Topologique ($3\sigma$) :** Suppression des *outliers* GPS éloignés de plus de 3 écarts-types du centroïde du système[cite: 56].
+6.  [cite_start]**Seuil de robustesse spatiale :** Exclusion des micro-réseaux ($N_{\min} < 20$ stations dock) incapables de soutenir une analyse maillée[cite: 57].
 
-Cette architecture de données hybride permet d'opérer une transition paradigmatique : il ne s'agit plus de mesurer un simple volume d'équipement (où sont les vélos ?), mais de **modéliser un système complexe** (le vélo est-il déployé dans un écosystème sécurisé, physiquement accessible et intégré aux autres modes de transport ?).
+[cite_start]**Bilan de la consolidation :** Passage d'une base brute de **125 systèmes** à un jeu certifié de **104 systèmes** (sur 62 agglomérations), regroupant **46 359 stations validées**[cite: 62].
 """)
 
-# Tableau récapitulatif des sources
-donnees_sources = pd.DataFrame({
-    "Dimension Modélisée": [
-        "Infrastructure Primaire (Offre)", 
-        "Sécurité Spatiale (S)", 
-        "Perméabilité Cyclable (I)", 
-        "Capillarité Multimodale (M)", 
-        "Friction Spatiale (T)", 
-        "Vulnérabilité Socio-Économique",
-        "Pratiques Comportementales"
-    ],
-    "Source de la donnée": [
-        "APIs GBFS (Auditées)", 
-        "Base BAAC (ONISR)", 
-        "OpenStreetMap / Cerema", 
-        "Point d'Accès National (GTFS)", 
-        "NASA SRTM (30m)", 
-        "INSEE (Dispositif Filosofi)",
-        "FUB (2023) / INSEE EMP (2019)"
-    ],
-    "Format / Nature": [
-        "GeoJSON point", 
-        "Open Data Gouvernemental", 
-        "Réseau filaire (Lignes)", 
-        "Schedules & Stops", 
-        "Modèle Numérique (MNT)", 
-        "Carroyage (200m)",
-        "Sondages & Enquêtes"
-    ],
-    "Intégration et Apport au Modèle Spatial": [
-        "Coordonnées de vérité terrain et capacités ajustées post-correction.",
-        "Densité de clusters d'accidents corporels à moins de 300m.",
-        "Mesure de la continuité de l'aménagement en site propre.",
-        "Distance aux pôles d'échanges lourds (Ferroviaire, BHNS, Tram).",
-        "Gradient altimétrique pour modéliser la barrière énergétique.",
-        "Revenus médians pour objectiver l'Indice d'Équité Sociale (IES).",
-        "Convergence statistique validant l'efficience de l'IMD."
-    ]
-})
-
-st.table(donnees_sources)
-
-# ── Section 3 : Avant / Après ──────────────────────────────────────────────────
+# ── Section 3 : Avant / Après (Étude de Cas) ──────────────────────────────────
 st.divider()
-section(3, "Avant / Après : L'Impact Structurant de la Consolidation")
+section(3, "Avant / Après : Preuve Empirique de l'Impact de l'Audit")
 
 st.markdown(r"""
-Pour saisir l'ampleur de la contribution de ce jeu de données (*Gold Standard*), il convient d'observer la métamorphose de l'information entre l'extraction initiale et l'architecture finale. Le fichier brut n'est qu'un inventaire logistique ; le fichier final est une véritable matrice de recherche socio-spatiale.
+[cite_start]Pour saisir l'impact de ces corrections sur l'évaluation des politiques publiques, le cas de **Bordeaux** (Anomalie A3 via l'opérateur *Pony*) est paradigmatique[cite: 85]. [cite_start]Sans cet audit, 2 996 stations *Pony* (capacité réelle de $0{,}03$) étaient comptabilisées comme de véritables stations *dock-based*[cite: 87].
 """)
 
+# Métriques de Bordeaux
+col_metrics1, col_metrics2, col_metrics3 = st.columns(3)
+col_metrics1.metric("Bordeaux : Stations Dock (Avant)", "3 221")
+col_metrics2.metric("Bordeaux : Stations Dock (Après)", "225", "-93%", delta_color="inverse")
+col_metrics3.metric("Bordeaux : Rang IMD initial", "2 ➔ 14")
+
+st.info(" **Démonstration :** Une simple erreur de calcul asymptotique dans les flux ouverts suffit à hisser artificiellement une agglomération au 2e rang national[cite: 88, 142]. La correction ramène le réseau à sa stricte réalité physique (Rang 14).")
+
+st.markdown("<br>", unsafe_allow_html=True)
+
+# Visualisation JSON Avant/Après
 col_before, col_after = st.columns(2)
 
 with col_before:
     st.error("**AVANT : GBFS Brut (Approche Naïve)**")
     st.markdown("""
     * **Nature :** Fichiers JSON éclatés par opérateur.
-    * **Bruit statistique :** Fort (Stations doublons, points géolocalisés en plein océan ou hors EPCI).
-    * **Aberrations capacitives :** Prévalence du "999 vélos" pour les stations virtuelles, faussant totalement les moyennes.
-    * **Absence de contexte :** Un point GPS nu. Impossible de savoir si la station se trouve sur une autoroute dangereuse ou au pied d'une gare.
+    * **Bruit statistique :** Fort (Stations doublons, erreurs de géocodage).
+    * **Aberrations capacitives :** Prévalence du biais "A3" faussant les moyennes.
+    * **Absence de contexte :** Un point GPS nu, sans environnement urbain.
     * **Agnosticisme social :** Aucune donnée sur la population desservie.
     """)
     st.code("""
@@ -138,10 +123,10 @@ with col_after:
     st.success("**APRÈS : Gold Standard (Notre Contribution)**")
     st.markdown("""
     * **Nature :** Fichier structuré unique (`.parquet` / `.geojson`).
-    * **Signal purifié :** Application des filtres spatiaux et suppression des 6 anomalies.
-    * **Redressement de l'offre :** Capacité recalculée par la moyenne conditionnelle locale.
-    * **Environnement 360° :** Chaque station porte désormais son score de rugosité (MNT), sa distance au tramway (GTFS) et la qualité des pistes (OSM).
-    * **Dimension Sociale :** Enrichissement par le revenu médian du carroyage INSEE.
+    * **Signal purifié :** Application des filtres et suppression des 5 anomalies.
+    * **Redressement de l'offre :** Capacité recalculée $\\bar{c}_{réel}$.
+    * **Environnement 360° :** Scores de rugosité (MNT), accès au tramway (GTFS), et pistes (OSM).
+    * **Dimension Sociale :** Enrichissement par les variables INSEE Filosofi/RP.
     """)
     st.code("""
     # Exemple d'un point Gold Standard enrichi
@@ -157,17 +142,64 @@ with col_after:
     }
     """, language="json")
 
-st.info("**Conclusion méthodologique :** Les données sont intrinsèquement de *meilleure qualité* car elles reflètent la réalité physique du terrain, et elles sont *plus complètes* car elles intègrent les dimensions sécuritaires, topographiques et sociales indispensables à toute analyse d'équité.")
 
-
-# ── Section 4 : Implication pour la Recherche ──────────────────────────────────
+# ── Section 4 : L'Hybridation Multi-Sources ────────────────────────────────────
 st.divider()
-section(4, "Implication : L'Infrastructure de Données comme Objet de Recherche")
+section(4, "L'Hybridation Multi-Sources : Modéliser l'Environnement Cyclable")
+
+st.markdown(r"""
+Le GBFS indique *où* se trouve le vélo, mais demeure agnostique quant aux **déterminants environnementaux et sociaux** qui conditionnent son usage. Le saut qualitatif du *Gold Standard* réside dans l'enrichissement multidimensionnel (*Spatial Join*) des coordonnées avec des bases de données institutionnelles.
+""")
+
+donnees_sources = pd.DataFrame({
+    "Dimension Modélisée": [
+        "Infrastructure Primaire", 
+        "Sécurité Spatiale (S)", 
+        "Perméabilité Cyclable (I)", 
+        "Capillarité Multimodale (M)", 
+        "Friction Spatiale (T)", 
+        "Vulnérabilité Socio-Éco.",
+        "Pratiques Réelles (Val.)"
+    ],
+    "Source de la donnée": [
+        "GBFS transport.data.gouv.fr", 
+        "Base BAAC (ONISR)", 
+        "OpenStreetMap / Cerema", 
+        "Point d'Accès National (GTFS)", 
+        "NASA SRTM (30m)", 
+        "INSEE (Filosofi & RP 2020)",
+        "FUB (2023) / INSEE EMP (2019)"
+    ],
+    "Format / Nature": [
+        "GeoJSON point", 
+        "Open Data (Accidents)", 
+        "Réseau filaire (Lignes)", 
+        "Schedules & Stops (Noeuds)", 
+        "Modèle Numérique (MNT)", 
+        "Carroyage Démographique",
+        "Enquêtes déclaratives"
+    ],
+    "Variables intégrées et apport analytique": [
+        "Coordonnées de vérité terrain, typologies certifiées et capacités redressées.",
+        "Densité de clusters d'accidents corporels cyclistes dans un rayon de 300m.",
+        "Mesure continue de l'aménagement en site propre protégeant l'usager vulnérable.",
+        "Distance isochrone aux pôles d'échanges lourds (Train, Tram, BHNS).",
+        "Gradient altimétrique modélisant la barrière énergétique physiologique.",
+        "Variables INSEE : Revenu médian, chômage, % de cadres, diplômés, sans voiture.",
+        "Optimisation supervisée des pondérations du modèle IMD par convergence statistique."
+    ]
+})
+
+st.table(donnees_sources)
+
+# ── Section 5 : Implication pour la Recherche ──────────────────────────────────
+st.divider()
+section(5, "Implication : L'Infrastructure de Données comme Objet de Recherche")
 
 st.markdown("""
 Dans le champ des études urbaines, le traitement des données est trop souvent relégué au rang de "détail technique". Cette recherche prouve au contraire que **la qualité de la donnée est éminemment politique**. 
 
-En omettant de corriger les anomalies GBFS, un algorithme de planification publique conclurait à tort qu'une agglomération est parfaitement couverte grâce à des capacités artificiellement gonflées, justifiant potentiellement un arrêt des subventions pour l'aménagement cyclable de ce territoire. 
+En omettant de corriger les anomalies GBFS, un algorithme de planification publique conclurait à tort qu'une agglomération est parfaitement couverte grâce à des capacités artificiellement gonflées, justifiant potentiellement des réallocations de subventions inéquitables. 
 
-La mise à disposition de ce **Gold Standard au format `.parquet`** constitue donc une contribution académique autonome. Elle offre aux futurs chercheurs et géomaticiens un "socle de vérité terrain" déjà purgé de ses biais, prêt à supporter des modélisations complexes telles que la théorie des graphes ou l'analyse des flux de micromobilité.
+La mise à disposition de ce **Gold Standard au format `.parquet`** constitue donc une contribution académique autonome. [cite_start]Elle offre aux futurs chercheurs et géomaticiens un "socle de vérité terrain" déjà purgé de ses biais, prêt à supporter des modélisations complexes telles que la théorie des graphes ou l'analyse temporelle des flux de micromobilité[cite: 172, 173].
 """)
