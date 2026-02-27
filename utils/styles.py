@@ -17,6 +17,7 @@ _NAV: list[tuple[str, str]] = [
     ("pages/3_Distributions.py",   "Distributions — Statistiques"),
     ("pages/5_Mobilite_France.py", "France — Indicateurs nationaux"),
     ("pages/6_Montpellier.py",     "Montpellier — Étude de cas VLS"),
+    ("pages/7_IES.py",             "IES — Équité Spatiale"),
     ("pages/4_Export.py",          "Export — Données chercheurs"),
 ]
 
