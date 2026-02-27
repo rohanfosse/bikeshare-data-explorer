@@ -1,0 +1,16 @@
+{
+  "pairs_analysees": 124,
+  "stations_uniques": 35,
+  "quartiers_couverts": 5,
+  "pct_paires_avec_quartier": 99.2,
+  "rugosite_mean": 1.384,
+  "rugosite_median": 1.302,
+  "rugosite_p95": 2.065,
+  "rugosite_max": 2.804,
+  "energie_mean_kj": 15.21,
+  "energie_median_kj": 12.28,
+  "corr_rugosite_energie": -0.21,
+  "regression_r2_energie": 0.994,
+  "trips_temporel_couverts": 131296,
+  "pct_trips_temporel_couverts": 11.4
+}

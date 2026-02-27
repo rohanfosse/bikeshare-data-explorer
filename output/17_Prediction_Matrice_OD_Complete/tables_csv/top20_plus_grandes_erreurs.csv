@@ -1,0 +1,21 @@
+dep,ret,dep_quartier,ret_quartier,trip_count,pred_gb,resid_gb,rugosite_final,rugosite_source
+Boutonnet,Place Albert 1er - St Charles,Centre,Centre,3139,1939.3411305190293,1199.6588694809707,2.076308885724955,exact_osm
+Boutonnet,Corum,Centre,Centre,1936,855.5175020486583,1080.4824979513417,1.5917402897274429,exact_osm
+Fac de Lettres,Louis Blanc,Hôpitaux-Facultés,Centre,1490,482.1832534161515,1007.8167465838485,1.3301980971199732,exact_osm
+Boutonnet,Louis Blanc,Centre,Centre,2456,1466.6692974650875,989.3307025349125,1.982962986866664,exact_osm
+FacdesSciences,Louis Blanc,Hôpitaux-Facultés,Centre,1691,730.1585784833209,960.8414215166791,1.317096092236525,exact_osm
+Place Viala,Les Arceaux,Les Cévennes,Centre,1003,266.4531251012624,736.5468748987375,1.621578932143301,exact_osm
+Aiguelongue,Corum,Hôpitaux-Facultés,Centre,931,254.952169950439,676.047830049561,1.3694181101947192,exact_osm
+Nombre d'Or,Hôtel de Ville,Centre,Prés d'Arènes,1204,543.1541813768306,660.8458186231694,1.731719583780777,exact_osm
+Fac de Lettres,Corum,Hôpitaux-Facultés,Centre,1264,637.5583927902261,626.4416072097739,1.2120101898642517,exact_osm
+Garcia Lorca,Hôtel de Ville,Prés d'Arènes,Prés d'Arènes,879,259.7376527526321,619.2623472473679,1.6345244322849055,exact_osm
+Hôtel de Ville,Garcia Lorca,Prés d'Arènes,Prés d'Arènes,1132,514.5424675276131,617.4575324723869,1.6595454223820365,exact_osm
+Occitanie,Place Albert 1er - St Charles,Hôpitaux-Facultés,Centre,2239,1648.252463095822,590.7475369041781,1.0777190785320092,exact_osm
+Foch,Place Viala,Centre,Les Cévennes,1044,455.3944581459364,588.6055418540636,1.1102355988429415,exact_osm
+Place Albert 1er - St Charles,Père Soulas,Centre,Hôpitaux-Facultés,632,1205.3454826360903,-573.3454826360903,1.0657747875195842,exact_osm
+FacdesSciences,Père Soulas,Hôpitaux-Facultés,Hôpitaux-Facultés,892,320.1772475753061,571.8227524246938,1.4439894366071342,exact_osm
+Boutonnet,Occitanie,Centre,Hôpitaux-Facultés,1634,2195.377716665295,-561.3777166652949,1.006963497410527,exact_osm
+Rue Jules Ferry - Gare Saint-Roch,Médiathèque Emile Zola,Centre,Centre,1157,634.6910550747945,522.3089449252055,1.302609352340277,exact_osm
+Fac de Lettres,Place Albert 1er - St Charles,Hôpitaux-Facultés,Centre,1872,1355.6339608284502,516.3660391715498,1.1037856523133118,exact_osm
+Rue Jules Ferry - Gare Saint-Roch,Voltaire,Centre,Centre,789,284.9760479835303,504.0239520164697,1.547774461179955,exact_osm
+Rue Jules Ferry - Gare Saint-Roch,Port Marianne,Centre,Port Marianne,1259,755.0531900523303,503.94680994766975,1.2728081498023758,exact_osm

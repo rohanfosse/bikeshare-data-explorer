@@ -1,0 +1,14 @@
+{
+  "pairs_tested": 2866,
+  "rugosite_mean": 1.3996149163427207,
+  "rugosite_median": 1.2936771205789674,
+  "rugosite_p95": 2.0433680010351933,
+  "energy_proxy_mean_kj": 27.05608050279581,
+  "energy_proxy_median_kj": 22.468721533148926,
+  "corr_rugosite_energy": -0.24184250936395485,
+  "elevation_gain_mean_m": 12.822225705860214,
+  "pct_elevation_not_null": 75.1,
+  "with_elevation": true,
+  "elevation_method": "cumulative_5_waypoints",
+  "trips_total_represented": 449455
+}

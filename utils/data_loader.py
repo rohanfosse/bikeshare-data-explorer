@@ -25,15 +25,20 @@ CEREMA_PATH     = _ROOT / "data" / "external" / "mobility_sources" / "cerema_cyc
 ECO_PATH        = _ROOT / "data" / "external" / "mobility_sources" / "eco_compteurs_city_usage.csv"
 
 # Données Montpellier Vélomagg (analyse de réseau)
-SOCIO_MMM_PATH   = _ROOT / "data" / "processed" / "socioeconomic_analysis_results.csv"
-TEMPORAL_PATH    = _ROOT / "data" / "processed" / "station_temporal_profiles.csv"
-STRESS_PATH      = _ROOT / "data" / "processed" / "station_stress_ranking.csv"
-BIKETRAM_PATH    = _ROOT / "data" / "processed" / "multimodal" / "bike_tram_proximity_matrix.csv"
-HOURLY_PATH      = _ROOT / "data" / "processed" / "flow_analysis" / "hourly_flow_statistics.csv"
-NETFLOW_PATH     = _ROOT / "data" / "processed" / "flow_analysis" / "net_flow_analysis.csv"
-SYNTHESE_PATH    = _ROOT / "data" / "processed" / "ville_montpellier" / "analyses" / "synthese_velo_socio.csv"
-TOP_QUART_PATH   = _ROOT / "data" / "processed" / "ville_montpellier" / "analyses" / "top_10_quartiers_velo.csv"
-BOT_QUART_PATH   = _ROOT / "data" / "processed" / "ville_montpellier" / "analyses" / "bottom_10_quartiers_velo.csv"
+SOCIO_MMM_PATH    = _ROOT / "data" / "processed" / "socioeconomic_analysis_results.csv"
+TEMPORAL_PATH     = _ROOT / "data" / "processed" / "station_temporal_profiles.csv"
+STRESS_PATH       = _ROOT / "data" / "processed" / "station_stress_ranking.csv"
+BIKETRAM_PATH     = _ROOT / "data" / "processed" / "multimodal" / "bike_tram_proximity_matrix.csv"
+HOURLY_PATH       = _ROOT / "data" / "processed" / "flow_analysis" / "hourly_flow_statistics.csv"
+NETFLOW_PATH      = _ROOT / "data" / "processed" / "flow_analysis" / "net_flow_analysis.csv"
+SYNTHESE_PATH     = _ROOT / "data" / "processed" / "ville_montpellier" / "analyses" / "synthese_velo_socio.csv"
+TOP_QUART_PATH    = _ROOT / "data" / "processed" / "ville_montpellier" / "analyses" / "top_10_quartiers_velo.csv"
+BOT_QUART_PATH    = _ROOT / "data" / "processed" / "ville_montpellier" / "analyses" / "bottom_10_quartiers_velo.csv"
+COMMUNITY_PATH    = _ROOT / "data" / "processed" / "community_detection_results.csv"
+NETWORK_TOPO_PATH = _ROOT / "data" / "processed" / "network_topology_results.csv"
+VULNERABILITY_PATH = _ROOT / "data" / "processed" / "station_vulnerability_ranking.csv"
+WEATHER_PATH      = _ROOT / "data" / "processed" / "weather_data_enriched.csv"
+MODAL_PATH        = _ROOT / "data" / "processed" / "ville_montpellier" / "analyses" / "parts_modales_moyennes.csv"
 
 # ── Métadonnées des métriques ──────────────────────────────────────────────────
 METRICS: dict[str, dict] = {
@@ -312,3 +317,36 @@ def load_top_quartiers() -> tuple[pd.DataFrame, pd.DataFrame]:
     except Exception:
         bot = pd.DataFrame()
     return top, bot
+
+
+@st.cache_data(ttl=3600, show_spinner=False)
+def load_community_detection() -> pd.DataFrame:
+    """Détection de communautés Louvain + métriques de pontage (bridge stations)."""
+    return pd.read_csv(COMMUNITY_PATH)
+
+
+@st.cache_data(ttl=3600, show_spinner=False)
+def load_network_topology() -> pd.DataFrame:
+    """Topologie du graphe de flux : degrés, clustering, points d'articulation."""
+    return pd.read_csv(NETWORK_TOPO_PATH)
+
+
+@st.cache_data(ttl=3600, show_spinner=False)
+def load_station_vulnerability() -> pd.DataFrame:
+    """Indice de vulnérabilité structurelle par station (betweenness, population, clustering)."""
+    return pd.read_csv(VULNERABILITY_PATH)
+
+
+@st.cache_data(ttl=3600, show_spinner=False)
+def load_weather_data() -> pd.DataFrame:
+    """Données météorologiques horaires enrichies (Montpellier, 2021-2024)."""
+    df = pd.read_csv(WEATHER_PATH)
+    if "datetime" in df.columns:
+        df["datetime"] = pd.to_datetime(df["datetime"], errors="coerce")
+    return df
+
+
+@st.cache_data(ttl=3600, show_spinner=False)
+def load_parts_modales() -> pd.DataFrame:
+    """Parts modales moyennes sur l'ensemble des quartiers de Montpellier."""
+    return pd.read_csv(MODAL_PATH)

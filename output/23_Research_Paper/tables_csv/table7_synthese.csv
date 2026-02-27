@@ -1,0 +1,14 @@
+Domaine,Indicateur,Valeur
+Dataset,Systèmes GBFS collectés,125
+Dataset,Stations géolocalisées,"46,359"
+Dataset,Villes analysées (IMD),62
+Dataset,Villes avec profil socio-éco,62
+IMD,IMD médian national,0.359
+IMD,IMD max,0.787
+IMD,IMD min,0.246
+IMD,Écart-type IMD,0.12
+Couverture S,S médian national,0.222
+Couverture S,"Villes avec S ≥ 0,60",8
+Équité sociale,IES médian,0.885
+Équité sociale,"Villes IES > 1,20 (sur-performeurs)",11
+Équité sociale,Déserts de mobilité sociale,62

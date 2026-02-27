@@ -1,0 +1,58 @@
+{
+  "notebook": "13_Analyse_Graphe_Reseau_Urbain.ipynb",
+  "global_stats": {
+    "Nodes": 64.0,
+    "Edges": 3602.0,
+    "Density": 0.8933531746031746,
+    "Reciprocity": 0.9733481399222654,
+    "Avg_Degree": 23476.34375,
+    "Total_Weight": 751243.0,
+    "Avg_Clustering": 0.0032633795015369164,
+    "Is_Connected": 1.0,
+    "Num_Components": 1.0,
+    "Largest_Component_Size": 64.0,
+    "Diameter": 2.0,
+    "Density_nx": 0.8933531746031746,
+    "Reciprocity_nx": 0.9733481399222654,
+    "Transitivity_und": 0.9855538031330734,
+    "Avg_Clustering_und": 0.9713368638667927,
+    "Strongly_CC": 2.0,
+    "Weakly_CC": 1.0,
+    "Self_Loops": 63.0,
+    "Diameter_SCC": 2.0,
+    "Radius_SCC": 1.0,
+    "Avg_Shortest_Path_SCC": 1.086021505376344,
+    "Degree_Assortativity": 0.18430390612101238
+  },
+  "fiedler_value": 1.0153090924136003,
+  "spectral_gap": 12608.411628120499,
+  "exports": {
+    "figures_png": [
+      "fig01_global_stats.png",
+      "fig02_degree_distribution.png",
+      "fig03_centrality_heatmap.png",
+      "fig04_centrality_correlation.png",
+      "fig05_top_stations.png",
+      "fig06_kcore.png",
+      "fig07_clustering_triangles.png",
+      "fig08_directionality.png",
+      "fig09_structural_holes.png",
+      "fig10_communities_comparison.png",
+      "fig11_spectral.png",
+      "fig12_robustness.png"
+    ],
+    "tables_csv": [
+      "df_centralities.csv",
+      "df_comm_comparison.csv",
+      "df_communities.csv",
+      "df_degree_dist.csv",
+      "df_kcore.csv",
+      "df_robustness.csv",
+      "df_spectral.csv",
+      "df_structural_holes.csv"
+    ],
+    "interactive_html": [
+      "m_graph_analysis.html"
+    ]
+  }
+}

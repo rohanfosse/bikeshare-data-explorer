@@ -1,0 +1,63 @@
+city,cluster,typology,IMD,revenu_median_uc,taux_chomage,taux_pauvrete,part_velo
+Bordeaux,1,C1 — Villes Moyennes,0.7872,20500.0,10.5,18.0,4.0
+Marseille,0,C0 — Villes Fragiles,0.7547,16500.0,17.0,30.0,0.8
+Nantes,1,C1 — Villes Moyennes,0.6624,22000.0,8.5,14.0,5.0
+Lyon,1,C1 — Villes Moyennes,0.6602,22500.0,9.5,18.0,3.5
+Rennes,1,C1 — Villes Moyennes,0.6213,22000.0,8.0,15.0,6.0
+Lille,0,C0 — Villes Fragiles,0.6067,17000.0,16.0,28.0,2.5
+La Roche-sur-Yon,0,C0 — Villes Fragiles,0.5907,20000.0,10.5,17.0,2.0
+Paris,1,C1 — Villes Moyennes,0.5782,28500.0,8.5,20.0,4.2
+Belfort,0,C0 — Villes Fragiles,0.5616,18000.0,13.0,22.0,2.0
+Toulouse,1,C1 — Villes Moyennes,0.5615,21000.0,10.5,18.0,1.5
+Vichy,0,C0 — Villes Fragiles,0.5218,18000.0,14.0,22.0,1.0
+Brest,0,C0 — Villes Fragiles,0.5056,19000.0,10.5,20.0,1.5
+Angers,1,C1 — Villes Moyennes,0.4867,19500.0,11.0,20.0,3.5
+Besançon,0,C0 — Villes Fragiles,0.4799,18500.0,12.0,22.0,3.0
+Strasbourg,1,C1 — Villes Moyennes,0.4665,19500.0,11.5,22.0,10.0
+Nancy,0,C0 — Villes Fragiles,0.4661,19500.0,12.5,22.0,2.0
+Périgueux,0,C0 — Villes Fragiles,0.4646,18500.0,13.5,22.0,1.5
+Amiens,0,C0 — Villes Fragiles,0.4524,17000.0,15.0,24.0,2.5
+Carcassonne,0,C0 — Villes Fragiles,0.4423,16500.0,16.0,28.0,1.0
+Auray,0,C0 — Villes Fragiles,0.4352,20500.0,10.0,18.0,1.5
+Grenoble,1,C1 — Villes Moyennes,0.4294,20000.0,12.0,22.0,8.0
+Argelès-sur-Mer,0,C0 — Villes Fragiles,0.4258,17500.0,14.0,22.0,3.0
+Bourg-en-Bresse,0,C0 — Villes Fragiles,0.4057,20000.0,10.5,18.0,1.5
+La Baule,1,C1 — Villes Moyennes,0.3899,23000.0,9.5,14.0,3.0
+Épinal,0,C0 — Villes Fragiles,0.3876,18000.0,12.0,22.0,1.0
+Cergy-Pontoise,0,C0 — Villes Fragiles,0.3799,22000.0,11.0,20.0,1.5
+Dijon,1,C1 — Villes Moyennes,0.3784,21500.0,10.5,14.0,4.5
+Longwy,0,C0 — Villes Fragiles,0.3734,17000.0,14.0,25.0,0.8
+Saint-Brieuc,0,C0 — Villes Fragiles,0.3679,19000.0,12.0,20.0,1.5
+Clermont-Ferrand,0,C0 — Villes Fragiles,0.3632,19000.0,11.0,20.0,2.0
+Landerneau,0,C0 — Villes Fragiles,0.3597,20000.0,9.5,16.0,2.5
+Libourne,0,C0 — Villes Fragiles,0.3585,19500.0,11.0,18.0,1.0
+Mulhouse,0,C0 — Villes Fragiles,0.3551,15000.0,18.0,32.0,2.0
+Niort,0,C0 — Villes Fragiles,0.3547,21000.0,8.5,16.0,2.0
+Troyes,0,C0 — Villes Fragiles,0.3546,18500.0,14.0,24.0,1.5
+PAU,0,C0 — Villes Fragiles,0.3535,20000.0,11.5,20.0,2.0
+Louviers,0,C0 — Villes Fragiles,0.3532,19000.0,12.0,20.0,1.0
+Calais,0,C0 — Villes Fragiles,0.353,16000.0,18.0,28.0,1.5
+Les Sables-d'Olonne,0,C0 — Villes Fragiles,0.352,20000.0,10.5,18.0,2.0
+Montpellier,0,C0 — Villes Fragiles,0.3516,19200.0,15.2,18.5,4.5
+Soissons,0,C0 — Villes Fragiles,0.3483,17500.0,15.0,25.0,1.0
+Reims,0,C0 — Villes Fragiles,0.3434,18500.0,13.0,22.0,1.5
+Auxerre,0,C0 — Villes Fragiles,0.3393,18500.0,13.0,22.0,1.5
+Agen,0,C0 — Villes Fragiles,0.3377,18500.0,13.0,22.0,1.0
+Cholet,0,C0 — Villes Fragiles,0.3367,20000.0,8.0,16.0,1.5
+Valence,0,C0 — Villes Fragiles,0.3336,18000.0,15.0,25.0,1.5
+Caen,0,C0 — Villes Fragiles,0.3304,19500.0,12.0,20.0,2.5
+Brive-la-Gaillarde,0,C0 — Villes Fragiles,0.3288,19000.0,11.5,20.0,1.0
+Chantrerie,1,C1 — Villes Moyennes,0.3279,21500.0,9.0,15.0,3.0
+Avignon,0,C0 — Villes Fragiles,0.3276,17500.0,15.5,26.0,1.5
+Laon,0,C0 — Villes Fragiles,0.3276,17500.0,14.0,24.0,1.0
+Pointe-à-Pitre,0,C0 — Villes Fragiles,0.3247,14000.0,23.0,38.0,0.5
+Royan,0,C0 — Villes Fragiles,0.322,20000.0,11.5,18.0,1.5
+Annecy,1,C1 — Villes Moyennes,0.3089,22500.0,7.5,14.0,2.5
+Ardenne Métropole,0,C0 — Villes Fragiles,0.3072,17500.0,14.5,24.0,1.0
+Saint-Étienne,0,C0 — Villes Fragiles,0.3023,15500.0,16.5,27.0,0.8
+Cherbourg-en-Cotentin,0,C0 — Villes Fragiles,0.2997,18500.0,12.0,20.0,1.5
+La Réunion,0,C0 — Villes Fragiles,0.2884,16000.0,22.0,35.0,0.5
+Tarbes,0,C0 — Villes Fragiles,0.2792,18000.0,13.5,23.0,1.0
+Saint-Nazaire,0,C0 — Villes Fragiles,0.2725,19000.0,12.0,20.0,2.0
+Châtellerault,0,C0 — Villes Fragiles,0.2624,17500.0,14.5,25.0,1.5
+Montreuil-Bellay,0,C0 — Villes Fragiles,0.2459,18500.0,11.0,18.0,1.5

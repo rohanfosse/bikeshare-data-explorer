@@ -1,0 +1,11 @@
+{
+  "pairs_tested": 67,
+  "rugosite_mean": 1.3320318218983216,
+  "rugosite_median": 1.2778269997777083,
+  "rugosite_p95": 1.899303997264039,
+  "energy_proxy_mean_kj": 15.86975403917615,
+  "energy_proxy_median_kj": 12.455769097486625,
+  "corr_rugosite_energy": -0.18688835728174816,
+  "with_elevation": true,
+  "output_csv": "C:\\Users\\Rohan\\OneDrive - Cesi\\Bureau\\CESI\\BikeShare-Graph-Forecasting\\output\\13_Analyse_Graphe_Reseau_Urbain\\tables_csv\\osm_rugosite_energie_test.csv"
+}

@@ -1,0 +1,14 @@
+region,n_villes,IMD_moyen,IMD_mediane,IMD_ecart_type,Meilleure_ville,IMD_max,Pire_ville,IMD_min,n_Favorisees,n_Deserts,pct_Deserts,IES_moyen,Revenu_median
+Provence-Alpes-Côte d'Azur,2,0.541,0.541,0.302,Marseille,0.755,Avignon,0.328,0,1,50%,1.444,17000.0
+Île-de-France,2,0.479,0.479,0.14,Paris,0.578,Cergy-Pontoise,0.38,2,0,0%,0.935,25250.0
+Bretagne,5,0.458,0.435,0.109,Rennes,0.621,Landerneau,0.36,5,0,0%,1.07,20100.0
+Bourgogne-Franche-Comté,4,0.44,0.429,0.101,Belfort,0.562,Auxerre,0.339,1,1,25%,1.078,19125.0
+Hauts-de-France,5,0.418,0.353,0.116,Lille,0.607,Laon,0.328,0,3,60%,1.106,17000.0
+Auvergne-Rhône-Alpes,8,0.416,0.384,0.123,Lyon,0.66,Saint-Étienne,0.302,4,2,25%,0.996,19438.0
+Occitanie,5,0.412,0.426,0.106,Toulouse,0.562,Tarbes,0.279,1,1,20%,1.027,18440.0
+Pays de la Loire,9,0.407,0.352,0.143,Nantes,0.662,Montreuil-Bellay,0.246,4,1,11%,0.941,20389.0
+Nouvelle-Aquitaine,9,0.397,0.354,0.156,Bordeaux,0.787,Châtellerault,0.262,1,2,22%,0.951,19389.0
+Grand Est,8,0.382,0.364,0.057,Strasbourg,0.466,Ardenne Métropole,0.307,2,4,50%,0.971,17938.0
+Normandie,3,0.328,0.33,0.027,Louviers,0.353,Cherbourg-en-Cotentin,0.3,0,1,33%,0.801,19000.0
+Guadeloupe,1,0.325,0.325,,Pointe-à-Pitre,0.325,Pointe-à-Pitre,0.325,0,1,100%,0.981,14000.0
+La Réunion,1,0.288,0.288,,La Réunion,0.288,La Réunion,0.288,0,1,100%,0.796,16000.0

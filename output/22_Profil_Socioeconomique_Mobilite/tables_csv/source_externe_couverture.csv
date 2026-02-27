@@ -1,0 +1,17 @@
+variable,non_null_count,coverage_pct
+part_cadres,62,100.0
+part_diplomes_sup,62,100.0
+part_sans_voiture,62,100.0
+part_velo,62,100.0
+revenu_median_uc,62,100.0
+taux_chomage,62,100.0
+taux_pauvrete,62,100.0
+baac_accidents_cyclistes,46,74.19
+baac_accidents_cyclistes_per_100k,46,74.19
+emp_part_velo_2019,46,74.19
+infra_cyclable_km,45,72.58
+infra_cyclable_km_per_km2,45,72.58
+fub_score_2023,34,54.84
+eco_avg_daily_bike_counts,26,41.94
+fub_rank_2023,9,14.52
+gtfs_stops_within_300m_pct,0,0.0

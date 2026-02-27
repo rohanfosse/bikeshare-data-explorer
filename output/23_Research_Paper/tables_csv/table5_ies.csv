@@ -1,0 +1,12 @@
+city,IMD,revenu_median_uc,IMD_attendu,IES,quadrant
+Marseille,0.755,16500.0,0.37,2.039,Mobilité Inclusive ★
+Bordeaux,0.787,20500.0,0.433,1.819,Villes Favorisées Bien Équipées
+Lille,0.607,17000.0,0.378,1.605,Mobilité Inclusive ★
+Nantes,0.662,22000.0,0.456,1.452,Villes Favorisées Bien Équipées
+Belfort,0.562,18000.0,0.394,1.427,Mobilité Inclusive ★
+…,,,,,…
+Tarbes,0.279,18000.0,0.394,0.709,Désert de Mobilité Sociale ⚠
+Châtellerault,0.262,17500.0,0.386,0.68,Désert de Mobilité Sociale ⚠
+Annecy,0.309,22500.0,0.464,0.666,Sous-Investissement
+Saint-Nazaire,0.272,19000.0,0.409,0.666,Sous-Investissement
+Montreuil-Bellay,0.246,18500.0,0.401,0.612,Désert de Mobilité Sociale ⚠

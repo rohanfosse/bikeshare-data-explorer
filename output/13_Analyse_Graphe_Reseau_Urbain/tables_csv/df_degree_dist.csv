@@ -1,0 +1,65 @@
+Station_Name,in_degree,out_degree,total_degree,weighted_in_degree,weighted_out_degree,flow_balance,Quartier
+Aiguelongue,60,60,120,8400,8393,-7,Hôpitaux-Facultés
+Albert 1er - Cathédrale,60,60,120,9563,9566,3,Centre
+Antigone centre,61,60,121,17797,17782,-15,Centre
+AtelierTAM,64,58,122,5010,5441,431,Croix d'Argent
+Beaux-Arts,58,60,118,6082,6076,-6,Centre
+Boutonnet,60,60,120,34166,34161,-5,Centre
+Celleneuve,61,60,121,4347,4348,1,Mosson
+Charles Flahault,60,60,120,8789,8765,-24,Centre
+Cité Mion,60,60,120,3663,3667,4,Prés d'Arènes
+Clemenceau,57,57,114,5318,5332,14,
+Comedie Baudin,58,58,116,2610,2601,-9,Centre
+Comédie,62,60,122,31433,31427,-6,Centre
+Corum,61,60,121,21313,21303,-10,Centre
+Deux Ponts - Gare Saint-Roch,58,59,117,3235,3214,-21,
+Emile Combes,60,60,120,6019,6023,4,Centre
+Esplanade,59,58,117,19661,19672,11,
+Euromédecine,60,57,117,2405,2397,-8,Hôpitaux-Facultés
+Fac de Lettres,60,60,120,18871,18872,1,Hôpitaux-Facultés
+FacdesSciences,60,60,120,25574,25562,-12,Hôpitaux-Facultés
+Foch,61,60,121,11825,11829,4,Centre
+Gambetta,60,60,120,6525,6512,-13,Centre
+Garcia Lorca,60,60,120,8807,8796,-11,Prés d'Arènes
+Halles Castellane,61,60,121,15466,15452,-14,Centre
+Hôtel de Ville,59,60,119,16903,16890,-13,Prés d'Arènes
+Hôtel du Département,58,58,116,3813,3792,-21,Les Cévennes
+Jardin de la Lironde,60,60,120,4034,4016,-18,Port Marianne
+Jean de Beins,55,54,109,1302,1313,11,Centre
+Jeu de Mail des Abbés,60,60,120,6349,6341,-8,Centre
+Les Arceaux,61,60,121,11566,11565,-1,Centre
+Les Aubes,58,60,118,7607,7584,-23,Centre
+Louis Blanc,60,60,120,23203,23198,-5,Centre
+Malbosc,59,60,119,4234,4243,9,Hôpitaux-Facultés
+Marie Caizergues,60,60,120,7969,7964,-5,Centre
+Médiathèque Emile Zola,60,60,120,25411,25361,-50,Centre
+Nombre d'Or,61,60,121,19632,19597,-35,Centre
+Nouveau Saint-Roch,61,59,120,11544,11550,6,Croix d'Argent
+Observatoire,61,60,121,14547,14545,-2,Centre
+Occitanie,60,60,120,29444,29487,43,Hôpitaux-Facultés
+Odysseum,60,60,120,5885,5904,19,
+Parvis Jules Ferry - Gare Saint-Roch,60,60,120,11929,11922,-7,Centre
+Place Albert 1er - St Charles,60,60,120,32404,32321,-83,Centre
+Place Viala,60,60,120,14714,14708,-6,Les Cévennes
+Plan Cabanes,60,60,120,17578,17556,-22,Centre
+Pont de Lattes - Gare Saint-Roch,60,60,120,5644,5641,-3,Centre
+Port Marianne,60,60,120,24995,25005,10,Port Marianne
+Providence - Ovalie,59,59,118,2996,2999,3,Croix d'Argent
+Prés d'Arènes,60,60,120,7748,7735,-13,Prés d'Arènes
+Père Soulas,59,60,119,13169,13191,22,Hôpitaux-Facultés
+Pérols Etang de l'Or,61,62,123,40701,40601,-100,
+Renouvier,61,60,121,9054,9033,-21,Centre
+Richter,60,60,120,14963,14954,-9,Port Marianne
+Rondelet,61,60,121,9644,9629,-15,Centre
+Rue Jules Ferry - Gare Saint-Roch,61,60,121,19043,19023,-20,Centre
+Sabines,60,60,120,5887,5867,-20,Croix d'Argent
+Saint-Denis,60,60,120,8325,8321,-4,
+Saint-Guilhem - Courreau,60,60,120,12978,12976,-2,Centre
+Sud De France,60,59,119,3134,3122,-12,Centre
+Tonnelles,60,60,120,5209,5196,-13,Les Cévennes
+Vert Bois,59,59,118,9055,9015,-40,Hôpitaux-Facultés
+Voltaire,60,60,120,11279,11278,-1,Centre
+Station SAV,2,3,5,255,255,0,
+Station SAV Smoove,3,4,7,208,211,3,
+Perols etang or,1,16,17,1,134,133,
+Smoove,1,2,3,8,9,1,

@@ -1,0 +1,53 @@
+department,region,n_villes,IMD_mean,IMD_median,n_deserts,IES_mean
+Bouches-du-Rhône,Provence-Alpes-Côte d'Azur,1,0.755,0.755,0,2.039
+Rhône,Auvergne-Rhône-Alpes,1,0.66,0.66,0,1.423
+Ille-et-Vilaine,Bretagne,1,0.621,0.621,0,1.362
+Nord,Hauts-de-France,1,0.607,0.607,0,1.605
+Paris,Île-de-France,1,0.578,0.578,0,1.037
+Gironde,Nouvelle-Aquitaine,2,0.573,0.573,0,1.339
+Haute-Garonne,Occitanie,1,0.562,0.562,0,1.275
+Territoire de Belfort,Bourgogne-Franche-Comté,1,0.562,0.562,0,1.427
+Allier,Auvergne-Rhône-Alpes,1,0.522,0.522,0,1.326
+Doubs,Bourgogne-Franche-Comté,1,0.48,0.48,0,1.196
+Vendée,Pays de la Loire,2,0.471,0.471,0,1.109
+Bas-Rhin,Grand Est,1,0.466,0.466,0,1.118
+Dordogne,Nouvelle-Aquitaine,1,0.465,0.465,0,1.157
+Somme,Hauts-de-France,1,0.452,0.452,0,1.197
+Aude,Occitanie,1,0.442,0.442,0,1.195
+Morbihan,Bretagne,1,0.435,0.435,0,1.006
+Finistère,Bretagne,2,0.433,0.433,0,1.041
+Isère,Auvergne-Rhône-Alpes,1,0.429,0.429,0,1.011
+Pyrénées-Orientales,Occitanie,1,0.426,0.426,0,1.104
+Meurthe-et-Moselle,Grand Est,2,0.42,0.42,0,1.053
+Loire-Atlantique,Pays de la Loire,4,0.413,0.359,0,0.919
+Ain,Auvergne-Rhône-Alpes,1,0.406,0.406,0,0.955
+Vosges,Grand Est,1,0.388,0.388,0,0.985
+Val-d'Oise,Île-de-France,1,0.38,0.38,0,0.833
+Côte-d'Or,Bourgogne-Franche-Comté,1,0.378,0.378,0,0.844
+Côtes-d'Armor,Bretagne,1,0.368,0.368,0,0.899
+Puy-de-Dôme,Auvergne-Rhône-Alpes,1,0.363,0.363,0,0.888
+Maine-et-Loire,Pays de la Loire,3,0.356,0.337,1,0.857
+Deux-Sèvres,Nouvelle-Aquitaine,1,0.355,0.355,0,0.805
+Haut-Rhin,Grand Est,1,0.355,0.355,1,1.024
+Aube,Grand Est,1,0.355,0.355,1,0.883
+Pyrénées-Atlantiques,Nouvelle-Aquitaine,1,0.354,0.354,0,0.832
+Eure,Normandie,1,0.353,0.353,0,0.863
+Pas-de-Calais,Hauts-de-France,1,0.353,0.353,1,0.974
+Hérault,Occitanie,1,0.352,0.352,0,0.853
+Marne,Grand Est,1,0.343,0.343,1,0.855
+Yonne,Bourgogne-Franche-Comté,1,0.339,0.339,1,0.845
+Aisne,Hauts-de-France,2,0.338,0.338,2,0.876
+Lot-et-Garonne,Nouvelle-Aquitaine,1,0.338,0.338,1,0.841
+Drôme,Auvergne-Rhône-Alpes,1,0.334,0.334,1,0.848
+Calvados,Normandie,1,0.33,0.33,0,0.792
+Corrèze,Nouvelle-Aquitaine,1,0.329,0.329,0,0.803
+Vaucluse,Provence-Alpes-Côte d'Azur,1,0.328,0.328,1,0.849
+Guadeloupe,Guadeloupe,1,0.325,0.325,1,0.981
+Charente-Maritime,Nouvelle-Aquitaine,1,0.322,0.322,0,0.758
+Haute-Savoie,Auvergne-Rhône-Alpes,1,0.309,0.309,0,0.666
+Ardennes,Grand Est,1,0.307,0.307,1,0.796
+Loire,Auvergne-Rhône-Alpes,1,0.302,0.302,1,0.853
+Manche,Normandie,1,0.3,0.3,1,0.747
+La Réunion,La Réunion,1,0.288,0.288,1,0.796
+Hautes-Pyrénées,Occitanie,1,0.279,0.279,1,0.709
+Vienne,Nouvelle-Aquitaine,1,0.262,0.262,1,0.68

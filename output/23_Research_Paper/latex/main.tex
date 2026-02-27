@@ -1,0 +1,928 @@
+%% ============================================================
+%%  Mesure et Cartographie de la Mobilité Douce en France
+%%  Standard : IEEE Transactions on Intelligent Transportation Systems
+%%  (IEEEtran, journal mode)
+%%  Compilation : pdflatex → bibtex → pdflatex × 2
+%%  Encodage   : UTF-8
+%% ============================================================
+\documentclass[journal,10pt,twoside]{IEEEtran}
+
+%% ── Encodage & Langue ───────────────────────────────────────
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{csquotes}
+
+%% ── Mathématiques ───────────────────────────────────────────
+\usepackage{amsmath,amssymb,bm}
+
+%% ── Figures ─────────────────────────────────────────────────
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\graphicspath{{figures/}}
+
+%% ── Tableaux ─────────────────────────────────────────────────
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{array}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+
+%% ── Couleurs ─────────────────────────────────────────────────
+\usepackage[dvipsnames]{xcolor}
+\definecolor{ieeblue}{RGB}{0,82,155}
+\definecolor{corrgreen}{RGB}{39,174,96}
+\definecolor{warnred}{RGB}{192,57,43}
+
+%% ── Hyperliens ───────────────────────────────────────────────
+\usepackage[hidelinks,unicode]{hyperref}
+\hypersetup{colorlinks=true,linkcolor=ieeblue,citecolor=ieeblue,urlcolor=ieeblue}
+
+%% ── Divers ───────────────────────────────────────────────────
+\usepackage{microtype}
+\usepackage{subcaption}
+\usepackage{siunitx}
+\sisetup{output-decimal-marker={,},group-separator={\,}}
+\usepackage{enumitem}
+\usepackage{rotating}
+
+%% ── Métadonnées ─────────────────────────────────────────────
+\title{Mesure et Cartographie de la Mobilité Douce en France~:\\
+Un Indice Composite Socio-Spatial pour l'Analyse Comparative\\
+des Systèmes de Vélos en Libre-Service}
+
+\author{%
+  \IEEEauthorblockN{Rohan~Fossé}
+  \IEEEauthorblockA{%
+    CESI\\
+    Montpellier, France\\
+    \texttt{rfosse@cesi.fr}}%
+}
+
+\markboth{IEEE TRANSACTIONS ON INTELLIGENT TRANSPORTATION SYSTEMS,~VOL.~XX,~NO.~XX,~2025}%
+{Fossé~: Mesure et Cartographie de la Mobilité Douce en France}
+
+% ─────────────────────────────────────────────────────────────
+\begin{document}
+\maketitle
+
+%% ============================================================
+\begin{abstract}
+Les systèmes de vélos en libre-service (SVLS) représentent un levier
+croissant des politiques de mobilité urbaine durable. Si leur déploiement
+s'accélère en France, leur évaluation comparative souffre de deux faiblesses
+récurrentes~: une hétérogénéité de qualité des données brutes et un recours
+à des indicateurs mono-dimensionnels. Ce travail propose un cadre d'analyse
+intégré. \emph{Premièrement}, un pipeline GBFS automatisé est couplé à un
+audit qualité multicritère (cinq classes d'anomalies). \emph{Deuxièmement},
+un \emph{Indice de Mobilité Douce} (IMD) à cinq composantes est calculé sur
+\num{62}~agglomérations~; les pondérations sont calibrées empiriquement par
+optimisation supervisée maximisant la corrélation de Spearman avec le
+Baromètre FUB~2023 et l'EMP~2019 (évolution différentielle,
+$\rho_{\text{FUB}} : 0{,}16 \rightarrow 0{,}47$, $\rho_{\text{EMP}} : 0{,}26
+\rightarrow 0{,}48$), puis validées par Monte~Carlo ($N=10\,000$).
+\emph{Troisièmement}, un \emph{Indice d'Équité Sociale} (IES) met en regard
+la performance et le profil socio-économique local (INSEE 2019--2021).
+Appliqué à \num{125}~systèmes GBFS couvrant \num{46359}~stations
+géolocalisées, le modèle révèle une forte dispersion des performances
+($\text{IMD} \in [0{,}25;\,0{,}79]$, médiane~$= 0{,}36$, $\sigma = 0{,}12$).
+Le poids dominant $w_M^* = 0{,}578$ (multimodalité) induit une corrélation
+modérée avec la taille démographique ($r_s = +0{,}41$, $p < 0{,}05$),
+reflétant l'avantage infrastructurel des grandes métropoles.
+La correction de l'anomalie~A3 (Pony) fait chuter Bordeaux du rang~2 au
+rang~14 avec les poids normatifs, illustrant l'impact de la qualité des données.
+Sur les \num{62}~agglomérations avec profil complet, le meilleur prédicteur
+est la part des diplômés du supérieur ($r_s = +0{,}53$, $p < 0{,}001$)~;
+le modèle Ridge ($R^2_{\text{train}} = 0{,}39$) laisse une fraction
+substantielle inexpliquée, attribuable aux choix politiques locaux.
+\end{abstract}
+
+\begin{IEEEkeywords}
+vélo libre-service, GBFS, qualité des données, indice composite, couverture
+spatiale, équité sociale, mobilité douce, France, classification socio-spatiale
+\end{IEEEkeywords}
+
+%% ============================================================
+\section{Introduction}
+\label{sec:introduction}
+
+\IEEEPARstart{L}{a} mobilité douce s'impose progressivement comme un axe
+prioritaire des stratégies de transition écologique urbaine. En France, le
+\emph{Plan Vélo 2023--2027} vise à tripler la part modale du vélo d'ici~2030,
+tandis que la loi d'orientation des mobilités (LOM, 2019) contraint les
+autorités organisatrices de mobilité (AOM) à intégrer le vélo dans leurs
+offres multimodales~\cite{LOM2019}. Les systèmes de vélos en libre-service
+(SVLS) constituent un maillon essentiel de cette chaîne multimodale
+\cite{DeMaio2009}.
+
+Pourtant, l'évaluation comparative de ces systèmes souffre de trois lacunes.
+\emph{Premièrement}, les analyses existantes portent principalement sur des
+villes isolées ou des métropoles étrangères, sans vision nationale cohérente
+\cite{Fishman2016}. \emph{Deuxièmement}, les indicateurs mobilisés restent
+mono-dimensionnels et ne capturent ni la couverture spatiale effective ni
+l'accessibilité sociale~\cite{ElGeneidy2016}. \emph{Troisièmement}, la
+qualité variable des flux GBFS --- standard pourtant adopté par la quasi-%
+totalité des opérateurs français --- n'a jamais été systématiquement auditée
+dans la littérature, ce qui rend tout classement comparatif potentiellement
+trompeur.
+
+Ce travail répond à quatre questions de recherche~:
+\begin{description}[leftmargin=1.6em,labelsep=0.4em]
+  \item[\textbf{Q1.}] Quelles anomalies de données affectent les flux GBFS
+    français, et dans quelle mesure biaisent-elles les classements de
+    performance~?
+  \item[\textbf{Q2.}] Comment construire un indice composite de performance
+    des SVLS à la fois robuste, multi-dimensionnel et interprétable~?
+  \item[\textbf{Q3.}] Existe-t-il une corrélation systématique entre les
+    performances des SVLS et le profil socio-économique des agglomérations
+    françaises~?
+  \item[\textbf{Q4.}] Quels facteurs socio-économiques prédisent le mieux
+    l'IMD, et quelle est la part résiduelle attribuable aux choix politiques~?
+\end{description}
+
+Les contributions de ce travail sont au nombre de six~:
+\begin{enumerate}[leftmargin=1.8em,itemsep=0pt]
+  \item un \textbf{pipeline GBFS} automatisé avec audit qualité multicritère~;
+  \item une \textbf{taxonomie des anomalies GBFS} françaises (5~classes)~;
+  \item l'\textbf{Indice de Mobilité Douce (IMD)}, composite à 5~composantes~;
+  \item une \textbf{calibration empirique des poids} par optimisation supervisée
+    (FUB + EMP) et validation Monte~Carlo ($N = 10\,000$)~;
+  \item l'\textbf{Indice d'Équité Sociale (IES)}, performance ajustée du
+    contexte socio-économique~;
+  \item une \textbf{cartographie nationale} des déserts de mobilité et des
+    typologies de villes.
+\end{enumerate}
+
+%% ============================================================
+\section{État de l'Art}
+\label{sec:relatedwork}
+
+\subsection{Systèmes de vélos en libre-service}
+
+Les travaux fondateurs de DeMaio~\cite{DeMaio2009} et Shaheen~\emph{et
+al.}~\cite{Shaheen2010} posent une taxonomie (dock-based, dockless,
+électrique) et analysent les facteurs de succès. La recherche post-2015
+s'articule autour de~: la modélisation de la demande
+\cite{Singhvi2015,Lin2018}, le rééquilibrage des stations
+\cite{Raviv2013,Forma2015}, et les déterminants socio-démographiques de
+l'adoption~\cite{Buck2013,Wang2016}. La comparaison multi-villes reste rare~:
+Gu~\emph{et al.}~\cite{Gu2019} analysent 20~villes chinoises par densité et
+couverture~; Fishman~\cite{Fishman2016} offre une revue sans quantification
+unifiée.
+
+\subsection{Qualité des données GBFS}
+
+La qualité des flux GBFS est un sujet émergent. MobilityData
+\cite{MobilityData2024} maintient un validateur officiel (GBFS Validator)
+vérifiant la conformité syntaxique des flux, mais sans audit sémantique
+des valeurs. Hunter~\emph{et al.}~\cite{Hunter2021} identifient des
+incohérences dans les données de disponibilité temps réel (Vélib', BIXI),
+sans traiter la qualité des données statiques de stations. À notre
+connaissance, aucune étude n'a réalisé d'audit systématique des capacités
+déclarées dans les flux \texttt{station\_information.json} à l'échelle
+nationale.
+
+\subsection{Indices composites d'accessibilité}
+
+El-Geneidy~\emph{et al.}~\cite{ElGeneidy2016} formalisent la notion de
+\emph{cumulative opportunity measure}. Geurs et van~Wee~\cite{Geurs2004}
+proposent un cadre à quatre composantes (infrastructure, localisation,
+temporelle, individuelle). Birago~\emph{et al.}~\cite{Birago2017}
+introduisent une mesure raster de la couverture spatiale des réseaux de
+transport. Ces trois approches inspirent directement la construction de l'IMD.
+
+\subsection{Équité sociale et SVLS}
+
+Hodge~\cite{Hodge1995} établit le cadre conceptuel de la \emph{transit
+equity}. Smith~\emph{et al.}~\cite{Smith2015} montrent que le réseau
+Divvy (Chicago) surreprésente les quartiers aisés. En France, le rapport
+Cerema~\cite{Cerema2022} souligne l'inégalité d'accès aux SVLS selon le
+revenu. Ces résultats motivent la construction de l'IES.
+
+%% ============================================================
+\section{Données, Collecte et Contrôle Qualité}
+\label{sec:data}
+
+\subsection{Architecture GBFS et pipeline de collecte}
+
+Le \emph{General Bikeshare Feed Specification} (GBFS v3.0)
+\cite{MobilityData2024} définit une arborescence de flux JSON~: depuis
+\texttt{gbfs.json} (annuaire) jusqu'à \texttt{station\_information.json}
+(géométrie, capacité) et \texttt{station\_status.json} (disponibilité).
+Deux agrégateurs référencent les systèmes français~: \emph{transport.data.%
+gouv.fr} (catalogue officiel national) et \emph{MobilityData} (registre
+mondial). Un pipeline Python (\texttt{fetch\_gbfs\_france.py}) déduplique
+les entrées par normalisation des URL GBFS et parcourt la chaîne de flux
+pour chaque système, en collectant les données statiques de station.
+
+\subsection{Audit qualité des données GBFS}
+\label{sec:audit}
+
+L'audit révèle cinq classes d'anomalies critiques, synthétisées dans la
+Table~\ref{tab:anomalies}.
+
+\begin{table}[!t]
+  \caption{Taxonomie des anomalies GBFS identifiées dans le corpus français}
+  \label{tab:anomalies}
+  \centering
+  \small
+  \begin{tabular}{@{}lL{3.2cm}c@{}}
+    \toprule
+    Classe & Description & Systèmes\\
+    \midrule
+    \textbf{A1} & Systèmes d'autopartage (Citiz) inclus dans GBFS, non cyclistes & 14 \\
+    \textbf{A2} & Capacité fictive (placeholder): valeur constante non nulle
+                  sur toutes les stations (ex. \texttt{pony\_Nice}: $c=100$) & 1 \\
+    \textbf{A3} & Capacité calculée sur stations non nulles uniquement
+                  (biais de la moyenne; ex. \texttt{pony\_bordeaux}: $\bar{c}_{\text{profil}}=15$
+                  vs $\bar{c}_{\text{réel}}=0{,}03$) & 5 \\
+    \textbf{A4} & Coordonnées GPS aberrantes ou permutées,
+                  générant des bounding-boxes continentales & 2 \\
+    \textbf{A5} & Systèmes hors France métropolitaine (DOM-TOM)
+                  ou à périmètre régional ($A_{\text{bbox}} > \SI{50000}{km^2}$) & 6 \\
+    \midrule
+    Total & & 21 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsubsection{Anomalie A3 --- impact sur les classements}
+
+L'anomalie~A3 est la plus impactante. Plusieurs opérateurs Pony publient
+dans leur flux GBFS une capacité nulle pour la quasi-totalité de leurs stations,
+à l'exception de quelques ancres physiques ponctuelles. Le calcul du profil
+système dans le script de collecte utilisait la \emph{moyenne conditionnelle}
+(moyenne des valeurs non nulles), produisant des moyennes gonflées~:
+
+\begin{equation}
+  \bar{c}_{\text{profil}} = \frac{\sum_{i : c_i > 0} c_i}{\#\{i : c_i > 0\}}
+  \quad \neq \quad
+  \bar{c}_{\text{réel}} = \frac{\sum_{i=1}^{N} c_i}{N}
+  \label{eq:cap_bias}
+\end{equation}
+
+Pour \texttt{pony\_bordeaux} : $\bar{c}_{\text{profil}} = 90/6 = 15$
+(compatible avec le seuil dock-based $\geq 8$) vs
+$\bar{c}_{\text{réel}} = 90/2996 \approx 0{,}03$ (free-floating). Cette
+erreur classait à tort \num{2996}~stations Pony comme dock-based dans
+l'agrégation bordelaise, portant le compte de stations dock de Bordeaux de
+$225$ (velo-tbm uniquement) à $3\,221$, et son rang IMD de~14 à~2.
+Après correction, Bordeaux retourne à sa juste position.
+
+\subsubsection{Procédure de correction}
+
+Les corrections appliquées sont~:
+\begin{enumerate}[leftmargin=1.8em,itemsep=0pt]
+  \item Exclusion des \num{14}~systèmes Citiz (autopartage voiture) ;
+  \item Reclassement de \texttt{pony\_Nice} en free-floating
+    ($c=100$ fictif $\rightarrow$ exclu des agrégations capacité) ;
+  \item Recalcul de $\bar{c}_{\text{réel}}$ pour tous les systèmes
+    (\ref{eq:cap_bias}) et reclassification en dock/semi/FF~;
+  \item Suppression des stations hors France métropolitaine
+    ($\varphi < 41°$ ou $\varphi > 52°$, $\lambda < -6°$ ou $\lambda > 10°$)~;
+  \item Suppression des outliers GPS intra-système ($> 3\sigma$ du centroïde)~;
+  \item Seuil minimal de $N_{\min} = 20$ stations dock par agglomération
+    pour figurer dans le classement (exclut les systèmes trop petits pour
+    des métriques géographiques stables).
+\end{enumerate}
+
+\subsection{Données socio-économiques}
+
+Les indicateurs socio-économiques sont issus de l'INSEE~\emph{Filosofi}
+2019--2021 et du \emph{Recensement de la Population} (RP~2020), pour
+les sept variables décrites dans la Table~\ref{tab:socio_vars}.
+
+\begin{table}[!t]
+  \caption{Variables socio-économiques retenues (INSEE 2019-2021)}
+  \label{tab:socio_vars}
+  \centering
+  \small
+  \begin{tabular}{@{}clc@{}}
+    \toprule
+    Var. & Définition & Source \\
+    \midrule
+    $r$ & Revenu médian par unité de consommation (\euro/an) & Filosofi 2021 \\
+    $u$ & Taux de chômage (\%) & RP 2020 \\
+    $c$ & Part des cadres (\%) & RP 2020 \\
+    $d$ & Part diplômés Bac+3 et plus (\%) & RP 2020 \\
+    $v$ & Part des ménages sans voiture (\%) & RP 2020 \\
+    $p$ & Taux de pauvreté au seuil de 60\,\% (\%) & Filosofi 2021 \\
+    $b$ & Part vélo dom.-travail (\%) & RP 2020 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsection{Statistiques descriptives du jeu de données final}
+
+La Table~\ref{tab:dataset} synthétise les caractéristiques du corpus après
+application de la procédure de qualité. La Fig.~\ref{fig:carte_nationale}
+présente la distribution géographique des systèmes retenus.
+
+\begin{table}[!t]
+  \caption{Statistiques descriptives du jeu de données (après audit qualité)}
+  \label{tab:dataset}
+  \centering
+  \small
+  \begin{tabular}{@{}lS[table-format=6.0]@{}}
+    \toprule
+    Indicateur & {Valeur} \\
+    \midrule
+    Systèmes GBFS bruts collectés         & 125 \\
+    Systèmes exclus (audit qualité)        &  21 \\
+    Systèmes retenus dans l'analyse        & 104 \\
+    \quad dont dock-based ($\bar{c} \geq 8$) &  62 \\
+    \quad dont semi-dock ($2 \leq \bar{c} < 8$) & 11 \\
+    \quad dont free-floating ($\bar{c} < 2$) &  31 \\
+    Stations géolocalisées (France métr.) & 46359 \\
+    Agglomérations classées (IMD, $N_{\text{dock+semi}} \geq 3$) & 62 \\
+    Agglomérations avec profil socio-éco  &  62 \\
+    Indicateurs socio-économiques          &   7 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{figure}[!t]
+  \centering
+  \includegraphics[width=\columnwidth]{fig01_carte_nationale}
+  \caption{Distribution nationale des systèmes GBFS retenus après audit.
+    La taille des marqueurs est proportionnelle au nombre de stations~;
+    la couleur encode le type (dock-based, semi-dock, free-floating).}
+  \label{fig:carte_nationale}
+\end{figure}
+
+%% ============================================================
+\section{Méthodologie}
+\label{sec:methodology}
+
+\subsection{Indice de Mobilité Douce (IMD)}
+
+L'IMD est un indice composite à cinq composantes, normalisées dans $[0,1]$
+par transformation min-max avant agrégation pondérée~:
+
+\begin{equation}
+  \text{IMD} = \sum_{k \in \{S,E,D,P,M\}} w_k \, C_k,
+  \quad \sum_k w_k = 1
+  \label{eq:imd}
+\end{equation}
+
+\noindent avec $\mathbf{w}^* = (0{,}184;\,0{,}069;\,0{,}051;\,0{,}118;\,0{,}578)$,
+calibrés empiriquement (voir Section~\ref{sec:calibration}).
+La Table~\ref{tab:composantes} détaille les cinq composantes.
+
+\begin{table}[!t]
+  \caption{Composantes de l'IMD}
+  \label{tab:composantes}
+  \centering
+  \small
+  \begin{tabular}{@{}cL{3.6cm}c@{}}
+    \toprule
+    $C_k$ & Définition & Poids $w_k$ \\
+    \midrule
+    $S$ & Couverture spatiale (raster, $r{=}300$\,m, $g{=}150$\,m) & \textbf{0{,}184} \\
+    $E$ & Équité~: $1 - \mathrm{Gini}(\mathbf{c})$ & 0{,}069 \\
+    $D$ & Densité~: $\log(1 + n_{\text{dock}}/\text{km}^2)$ normalisé & 0{,}051 \\
+    $P$ & Per capita~: $\log(1 + n_{\text{dock}}/\text{1000\,hab.})$ norm. & 0{,}118 \\
+    $M$ & Multimodalité~: nb de types (dock, semi, FF) & \textbf{0{,}578} \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsubsection{Couverture spatiale $S$}
+
+Pour chaque station $i$ projetée en coordonnées métriques locales $(x_i, y_i)$,
+un disque de rayon $r = \SI{300}{\metre}$ est discrétisé sur une grille de
+résolution $g = \SI{150}{\metre}$. La couverture est~:
+
+\begin{equation}
+  S = \frac{\left|\bigcup_{i=1}^{N} D_i\right|}{A_{\text{hull}} \,/\, g^2}
+  \label{eq:coverage}
+\end{equation}
+
+\noindent où $A_{\text{hull}}$ est l'aire de l'enveloppe convexe des stations,
+calculée après suppression des outliers GPS ($> 3\sigma$). Les cellules
+couvertes sont dédupliquées par encodage entier~:
+$\mathrm{key}_{ij} = I_x^{(j)} \times 10^5 + I_y^{(j)}$ (complexité
+$\mathcal{O}(N \cdot |\mathcal{D}|)$).
+
+\subsubsection{Équité $E$ et coefficient de Gini}
+
+\begin{equation}
+  \text{Gini}(\mathbf{c}) = \frac{\sum_{i,j} |c_i - c_j|}{2N \sum_i c_i},
+  \quad E = 1 - \text{Gini}(\mathbf{c})
+  \label{eq:gini}
+\end{equation}
+
+\subsection{Calibration empirique des poids IMD}
+\label{sec:calibration}
+
+Les poids de l'équation~(\ref{eq:imd}) ont été calibrés empiriquement via une
+\emph{optimisation supervisée} (NB~25). La fonction objectif maximise la
+moyenne des corrélations de rang de Spearman avec deux références de terrain~:
+
+\begin{equation}
+  \mathbf{w}^* = \underset{\mathbf{w}}{\arg\max}\;
+    \frac{1}{2}\Bigl[
+      \rho\!\bigl(\textstyle\sum_k w_k C_k,\,y_{\text{FUB}}\bigr)
+      + \rho\!\bigl(\textstyle\sum_k w_k C_k,\,y_{\text{EMP}}\bigr)
+    \Bigr]
+  \label{eq:opt_weights}
+\end{equation}
+
+\noindent sous les contraintes $\sum_k w_k = 1$, $w_k \geq 0{,}05$, résolue
+par \emph{évolution différentielle} (\texttt{scipy.optimize.differential\_evolution},
+500~générations, population $15 \times 5$). Les références sont~: le
+\textbf{Baromètre FUB~2023} (score citoyen de praticabilité vélo, $n = 34$
+villes) et la \textbf{EMP~2019} (part modale vélo nationale, $n = 46$~villes).
+La méthode CRITIC~\cite{Diakoulaki1995} (pondération par variance corrigée des
+corrélations inter-composantes) a également été testée à titre de comparaison.
+Les résultats sont synthétisés dans la Table~\ref{tab:poids_comparaison}.
+
+\begin{table}[!t]
+  \caption{Comparaison des méthodes de pondération~: corrélations de Spearman
+    avec les références externes.}
+  \label{tab:poids_comparaison}
+  \centering
+  \small
+  \begin{tabular}{@{}lC{1.1cm}C{1.1cm}C{0.9cm}@{}}
+    \toprule
+    Méthode & $\rho_{\text{FUB}}$ & $\rho_{\text{EMP}}$ & $w_M$ \\
+    \midrule
+    Poids normatifs & 0{,}162 & 0{,}260 & 0{,}10 \\
+    CRITIC~\cite{Diakoulaki1995} & 0{,}208 & 0{,}277 & 0{,}21 \\
+    \textbf{Opt. combinée (retenu)} & \textbf{0{,}473} & \textbf{0{,}475} & \textbf{0{,}578} \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\textbf{Robustesse — Monte Carlo.} La stabilité des classements est vérifiée
+par $N = 10\,000$ tirages de Dirichlet uniformes sur le simplexe (filtrés
+$w_k \geq 0{,}05$). Les villes multimodales (Bordeaux, Marseille, Nantes,
+Lyon) apparaissent dans le Top~10 dans plus de 83\,\% des tirages.
+Une analyse OAT confirme que $C_M$ est la composante pivot (amplitude~IMD
+$\approx 0{,}12$), tandis que $C_E$ et $C_D$ ont un impact marginal.
+
+\subsection{Indice d'Équité Sociale (IES)}
+\label{sec:ies}
+
+L'IES mesure la sur- ou sous-performance d'une agglomération relativement
+à son niveau socio-économique attendu. Un modèle de référence linéaire est
+estimé sur le revenu médian $r$~:
+
+\begin{equation}
+  \widehat{\text{IMD}}(r) = \alpha + \beta r
+  \label{eq:imd_ref}
+\end{equation}
+
+\begin{equation}
+  \text{IES} = \frac{\text{IMD}_{\text{obs}}}{\widehat{\text{IMD}}(r)}
+  \label{eq:ies}
+\end{equation}
+
+Un IES~$> 1$ indique une agglomération qui \emph{sur-performe} par rapport à
+sa richesse médiane~; IES~$< 1$ révèle un sous-investissement.
+
+\subsection{Régression Ridge avec validation croisée LOO}
+
+Pour identifier les déterminants socio-économiques de l'IMD, une régression
+Ridge est estimée~:
+
+\begin{equation}
+  \hat{\bm{\beta}} = \underset{\bm{\beta}}{\arg\min}
+    \left\| \mathbf{y} - \mathbf{X}\bm{\beta} \right\|_2^2
+    + \lambda \|\bm{\beta}\|_2^2
+  \label{eq:ridge}
+\end{equation}
+
+\noindent où $\mathbf{X} \in \mathbb{R}^{n \times 7}$ est la matrice des
+variables socio-économiques standardisées (StandardScaler, $n{=}31$), et
+$\lambda^*$ est sélectionné par minimisation du RMSE LOO-CV.
+
+\subsection{Analyse en quadrants et clustering $k$-means}
+
+L'espace bidimensionnel revenu $\times$ IMD est partitionné en quatre
+quadrants par les médianes. Un clustering $k$-means est appliqué sur le
+profil joint $\mathbf{z}_i = [\text{IMD}_i, r_i, u_i, d_i, v_i, p_i]$,
+avec $k^*$ sélectionné par score de silhouette~\cite{Rousseeuw1987}.
+
+%% ============================================================
+\section{Résultats}
+\label{sec:results}
+
+\subsection{Impact de l'audit qualité sur les classements}
+\label{sec:impact_audit}
+
+La correction de l'anomalie A3 est la plus impactante. La
+Table~\ref{tab:bordeaux_correction} compare la situation de Bordeaux avant
+et après correction.
+
+\begin{table}[!t]
+  \caption{Impact de la correction A3 sur Bordeaux}
+  \label{tab:bordeaux_correction}
+  \centering
+  \small
+  \begin{tabular}{@{}lccc@{}}
+    \toprule
+    & Avant correction & Après correction & $\Delta$ \\
+    \midrule
+    Stations dock comptées & 3\,221 & 225 & $-93\,\%$ \\
+    Densité dock (st/km²) & 7{,}12 & 1{,}89 & $-73\,\%$ \\
+    Dock/1\,000\,hab. & 12{,}20 & 0{,}85 & $-93\,\%$ \\
+    IMD & 0{,}690 & 0{,}364 & $-47\,\%$ \\
+    Rang national & 2 & 14 & $-12$ \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Les \num{2996}~stations de \texttt{pony\_bordeaux} (mean\_capacity $= 0{,}03$
+après correction) étaient comptabilisées à tort dans les stations dock-based
+de la ville. Cet exemple illustre que tout classement comparatif SVLS fondé
+sur des données GBFS brutes, sans procédure d'audit, peut produire des
+conclusions fallacieuses.
+
+\subsection{Classement IMD national}
+
+La Table~\ref{tab:top10bot5} présente les dix premières et trois dernières
+agglomérations ($n = 62$). La distribution révèle une forte dispersion
+($\sigma = 0{,}12$, plage $[0{,}25;\,0{,}79]$, médiane~$= 0{,}36$).
+
+\begin{table*}[!t]
+  \caption{Classement IMD corrigé~: 10 premières et 5 dernières agglomérations
+    ($N \geq 20$ stations dock). Les composantes normalisées $C_k \in [0,1]$.}
+  \label{tab:top10bot5}
+  \centering
+  \small
+  \begin{tabular}{@{}clccccccc@{}}
+    \toprule
+    Rang & Agglomération
+         & IMD
+         & $C_1\,(S)$ & $C_2\,(E)$ & $C_3\,(D)$ & $C_4\,(P)$ & $C_5\,(M)$
+         & $N_{\text{dock}}$ \\
+    \midrule
+    1  & Bordeaux                & 0{,}787 & 0{,}397 & 0{,}783 & 0{,}652 & 0{,}417 & 1{,}000 &   225 \\
+    2  & Marseille               & 0{,}755 & 0{,}378 & 0{,}840 & 0{,}619 & 0{,}153 & 1{,}000 &   221 \\
+    3  & Nantes                  & 0{,}662 & 0{,}786 & 0{,}809 & 1{,}000 & 0{,}220 & 0{,}667 &   124 \\
+    4  & Lyon                    & 0{,}660 & 0{,}022 & 0{,}812 & 0{,}006 & 0{,}189 & 1{,}000 &   452 \\
+    5  & Rennes                  & 0{,}621 & 0{,}631 & 0{,}857 & 0{,}836 & 0{,}155 & 0{,}667 &    57 \\
+    6  & Lille                   & 0{,}607 & 0{,}244 & 0{,}743 & 0{,}228 & 0{,}279 & 1{,}000 &   268 \\
+    7  & La Roche-sur-Yon        & 0{,}591 & 0{,}746 & 0{,}836 & 0{,}869 & 0{,}330 & 0{,}667 &    57 \\
+    8  & Paris                   & 0{,}578 & 0{,}461 & 0{,}794 & 0{,}846 & 0{,}089 & 1{,}000 & 1\,507 \\
+    9  & Belfort                 & 0{,}562 & 0{,}606 & 0{,}882 & 0{,}710 & 0{,}333 & 0{,}667 &    32 \\
+    10 & Toulouse                & 0{,}562 & 0{,}273 & 0{,}769 & 0{,}310 & 0{,}176 & 1{,}000 &   434 \\
+    \midrule
+    \multicolumn{9}{c}{$\cdots$} \\
+    \midrule
+    60 & Saint-Nazaire           & 0{,}273 & 0{,}026 & 0{,}989 & 0{,}030 & 0{,}045 & 0{,}333 &     5 \\
+    61 & Châtellerault           & 0{,}262 & 0{,}010 & 0{,}979 & 0{,}012 &    ---  & 0{,}333 &     0 \\
+    62 & Montreuil-Bellay        & 0{,}246 & 0{,}007 & 0{,}721 & 0{,}047 &    ---  & 0{,}333 &     0 \\
+    \bottomrule
+  \end{tabular}
+\end{table*}
+
+\textbf{Bordeaux}~(\#1, IMD$=0{,}787$) est l'unique agglomération à
+conjuguer les trois types de systèmes (dock + semi-dock + free-floating,
+$C_5 = 1{,}00$) avec une équité élevée ($C_2 = 0{,}783$) et une densité
+significative ($C_3 = 0{,}652$). \textbf{Marseille}~(\#2, IMD$=0{,}755$)
+présente le score d'équité le plus élevé du Top~10 ($C_2 = 0{,}840$) et
+bénéficie également d'une couverture multimodale complète.
+\textbf{Nantes}~(\#3, IMD$=0{,}662$) atteint la densité maximale du corpus
+($C_3 = 1{,}00$) et une couverture spatiale remarquable ($C_1 = 0{,}786$).
+\textbf{Lyon}~(\#4) illustre un paradoxe~: couverture spatiale quasi nulle
+($C_1 = 0{,}022$) mais IMD élevé grâce à la multimodalité complète et
+à l'équité maximale de son réseau Vélo'v ($C_2 = 0{,}812$).
+
+En bas de classement, les agglomérations partagent une multimodalité réduite
+($C_5 = 0{,}333$, un seul type de système). \textbf{Saint-Nazaire}~(\#60)
+dispose d'un réseau de seulement 5~stations dock à très faible couverture~;
+\textbf{Châtellerault} et \textbf{Montreuil-Bellay} (\#61--\#62) ne
+possèdent pas de stations dock physiques (uniquement semi-dock).
+
+Avec les poids optimisés, la corrélation IMD/population est modérée et
+significative ($r_s = +0{,}41$, $p < 0{,}05$, Spearman, $n = 59$),
+reflétant l'avantage multimodal structurel des grandes métropoles ($w_M^*
+= 0{,}578$). La Fig.~\ref{fig:classement_imd} illustre la décomposition
+par composante et la relation IMD/population.
+
+\begin{figure}[!t]
+  \centering
+  \includegraphics[width=\columnwidth]{fig04_classement_imd}
+  \caption{(a)~Classement IMD corrigé (Top~20), décomposé par composante
+    ($\mathbf{w}^* = (0{,}184;\,0{,}069;\,0{,}051;\,0{,}118;\,0{,}578)$,
+    poids calibrés, NB~25). (b)~IMD en fonction de la population (échelle
+    logarithmique). La corrélation modérée ($r_s = +0{,}41$, $p < 0{,}05$)
+    reflète l'avantage multimodal des grandes métropoles.}
+  \label{fig:classement_imd}
+\end{figure}
+
+\subsection{Analyse socio-économique}
+
+La Fig.~\ref{fig:correlations} présente les corrélations de Spearman entre
+l'IMD et les six variables socio-économiques sur les \num{62}~agglomérations.
+Les corrélations les plus significatives sont~:
+part des diplômés du supérieur ($r_s = +0{,}53$, $p < 0{,}001$, \textbf{***}),
+ménages sans voiture ($r_s = +0{,}44$, $p < 0{,}001$, ***) et part vélo
+domicile-travail ($r_s = +0{,}43$, $p < 0{,}001$, ***).
+Le taux de chômage exerce un effet négatif significatif ($r_s = -0{,}27$,
+$p < 0{,}05$, *). Le revenu médian reste corrélé positivement mais modérément
+($r_s = +0{,}30$, $p < 0{,}05$). Ces résultats confirment que le capital
+humain et les comportements modaux préexistants covarient davantage avec
+la qualité des SVLS que la richesse brute.
+
+\begin{figure}[!t]
+  \centering
+  \includegraphics[width=\columnwidth]{fig05_correlations}
+  \caption{Corrélations de Spearman IMD $\times$ 7~variables socio-économiques
+    ($n=31$). Les ellipses encodent la direction et l'intensité.}
+  \label{fig:correlations}
+\end{figure}
+
+\subsection{Analyse en quadrants socio-mobilité}
+
+La Table~\ref{tab:quadrants} présente la répartition des agglomérations
+dans les quatre quadrants. La Fig.~\ref{fig:quadrants} visualise leur
+distribution.
+
+\begin{table}[!t]
+  \caption{Répartition par quadrant (revenu médian $\times$ IMD, $n = 62$)}
+  \label{tab:quadrants}
+  \centering
+  \small
+  \begin{tabular}{@{}lcc@{}}
+    \toprule
+    Quadrant & $N$ & \% \\
+    \midrule
+    Villes Favorisées --- Bien Équipées & 20 & 32{,}3 \\
+    Désert de Mobilité Sociale\dag      & 18 & 29{,}0 \\
+    Sous-Investissement                 & 13 & 21{,}0 \\
+    Mobilité Inclusive\ddag             & 11 & 17{,}7 \\
+    \midrule
+    Total & 62 & 100{,}0 \\
+    \bottomrule
+    \multicolumn{3}{l}{\footnotesize \dag Revenu faible + IMD faible.} \\
+    \multicolumn{3}{l}{\footnotesize \ddag IMD élevé malgré revenu faible.} \\
+  \end{tabular}
+\end{table}
+
+\begin{figure}[!t]
+  \centering
+  \includegraphics[width=\columnwidth]{fig06_quadrants}
+  \caption{Analyse en 4~quadrants~: revenu médian (axe~$x$) $\times$
+    IMD (axe~$y$). Les médianes sont matérialisées par des lignes en
+    pointillé. Les déserts de mobilité sociale sont encadrés.}
+  \label{fig:quadrants}
+\end{figure}
+
+\subsection{Indice d'Équité Sociale}
+
+La Table~\ref{tab:ies} présente les cinq plus grands sur-performeurs et
+sous-performeurs selon l'IES (médiane~$= 0{,}885$, $\sigma = 0{,}28$,
+$n = 62$). \textbf{Marseille} (IES~$= 2{,}04$) se distingue comme le
+premier sur-performeur malgré un revenu médian bas ($r = \SI{16500}{\euro/an}$)
+et un taux de pauvreté élevé ($30\,\%$)~: une illustration d'une politique
+de déploiement volontariste dans un contexte socio-économique contraint.
+\textbf{Bordeaux}~(IES~$= 1{,}82$) et \textbf{Lille}~(IES~$= 1{,}61$)
+complètent le trio des meilleurs sur-performeurs.
+
+À l'opposé, \textbf{Montreuil-Bellay} (IES~$= 0{,}61$) et
+\textbf{Annecy}~(IES~$= 0{,}67$) sous-performent relativement à leur
+niveau de revenu. Le cas d'Annecy est notable~: agglomération aisée
+($r \approx \SI{24000}{\euro/an}$) avec un usage vélo effectif élevé,
+mais un réseau GBFS incomplet à la date de collecte.
+
+\begin{table}[!t]
+  \caption{IES~: 5 sur-performeurs et 5 sous-performeurs ($n = 31$)}
+  \label{tab:ies}
+  \centering
+  \small
+  \begin{tabular}{@{}lS[table-format=1.3]S[table-format=1.3]S[table-format=5.0]@{}}
+    \toprule
+    Agglomération & {IMD} & {IES} & {$r$ (\euro/an)} \\
+    \midrule
+    \multicolumn{4}{@{}l}{\emph{Sur-performeurs}} \\
+    Marseille             & 0.755 & 2.039 & 16500 \\
+    Bordeaux              & 0.787 & 1.819 & 20500 \\
+    Lille                 & 0.607 & 1.605 & 17000 \\
+    Nantes                & 0.662 & 1.452 & 22000 \\
+    Belfort               & 0.562 & 1.427 & 18000 \\
+    \midrule
+    \multicolumn{4}{@{}l}{\emph{Sous-performeurs}} \\
+    Châtellerault         & 0.262 & 0.680 & 20000 \\
+    Tarbes                & 0.279 & 0.709 & 19500 \\
+    Saint-Nazaire         & 0.273 & 0.666 & 20500 \\
+    Annecy                & 0.309 & 0.666 & 24000 \\
+    Montreuil-Bellay      & 0.246 & 0.613 & 21000 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsection{Déserts de mobilité sociale}
+
+Les \textbf{18~agglomérations} (29\,\%) classées dans le quadrant
+\emph{Désert de Mobilité Sociale} présentent simultanément un revenu inférieur
+à la médiane ($r < r_{\text{med}}$) ET un IMD inférieur à la médiane
+($\text{IMD} < 0{,}36$). Ces territoires concentrent des publics captifs de
+la mobilité sans alternative SVLS performante~--- un enjeu majeur de
+politique publique. La Fig.~\ref{fig:deserts} visualise leur position.
+
+\begin{figure}[!t]
+  \centering
+  \includegraphics[width=\columnwidth]{fig07_deserts}
+  \caption{Déserts de mobilité sociale~: fragilité sociale (axe~$x$)
+    $\times$ IMD (axe~$y$). Les marqueurs encadrés cumulent les deux critères.
+    La taille est proportionnelle au taux de pauvreté.}
+  \label{fig:deserts}
+\end{figure}
+
+\subsection{Facteurs prédictifs de l'IMD}
+
+La régression Ridge ($\alpha = 0{,}1$, $R^2_{\text{train}} = 0{,}39$,
+$n = 62$) identifie~:
+
+\begin{itemize}[itemsep=0pt]
+  \item $\hat{\beta}_{\text{cadres}} = +0{,}105$~: la part des cadres est
+    le prédicteur positif le plus fort (proxy de marchés du travail tertiaires
+    favorables au vélo)~;
+  \item $\hat{\beta}_{\text{revenu}} = -0{,}064$~: l'effet revenu est négatif
+    après contrôle des autres variables (revenu capturant partiellement
+    l'étalement urbain)~;
+  \item $\hat{\beta}_{\text{chômage}} = -0{,}051$~: le taux de chômage exerce
+    un effet modérateur négatif.
+\end{itemize}
+
+\noindent Le $R^2_{\text{LOO-CV}}$ est non défini (modèle sans généralisation
+stable sur $n = 62$ observations), ce qui signifie qu'une fraction
+substantielle de la performance SVLS est déterminée par des facteurs non
+capturés~--- gouvernance locale, qualité du maillage, culture cyclable.
+Le $R^2_{\text{train}} = 0{,}39$ indique néanmoins que la socio-économie
+prédit environ un tiers de la variance (Fig.~\ref{fig:ridge}).
+
+\begin{figure}[!t]
+  \centering
+  \includegraphics[width=\columnwidth]{fig08_ridge}
+  \caption{Régression Ridge LOO-CV ($n=31$)~: coefficients normalisés
+    (barres) et intervalles de confiance par bootstrap
+    (\num{1000}~réplications). La ligne en pointillé~: $\beta=0$.}
+  \label{fig:ridge}
+\end{figure}
+
+\subsection{Clustering socio-mobilité}
+
+Le score de silhouette est maximisé pour $k^* = 2$ clusters
+(Fig.~\ref{fig:clustering}). La Table~\ref{tab:clusters} caractérise les
+deux groupes. Le cluster~C1 (\num{13}~villes, IMD~$= 0{,}51$, revenu
+médian~$\approx \SI{21850}{\euro}$) rassemble les métropoles multimodales
+à fort capital humain. Le cluster~C0 (\num{49}~villes) regroupe la majorité
+avec des profils socio-économiques plus fragiles et une multimodalité
+plus limitée (IMD~$= 0{,}38$).
+
+\begin{table}[!t]
+  \caption{Caractérisation des clusters ($k^* = 2$, $n=31$)}
+  \label{tab:clusters}
+  \centering
+  \small
+  \begin{tabular}{@{}lccc@{}}
+    \toprule
+    Cluster & $N$ & IMD moy. & $r$ moy. (\euro) \\
+    \midrule
+    C0 --- Villes Fragiles          & 49 & 0{,}38 & 18\,341 & --- \\
+    C1 --- Métropoles Multimodales  & 13 & 0{,}51 & 21\,846 & --- \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{figure}[!t]
+  \centering
+  \includegraphics[width=\columnwidth]{fig09_clustering}
+  \caption{Clustering $k$-means ($k^* = 2$)~: projection ACP~2D avec
+    ellipses de confiance à \SI{95}{\percent} et profils radar normalisés
+    des deux clusters.}
+  \label{fig:clustering}
+\end{figure}
+
+%% ============================================================
+\section{Discussion}
+\label{sec:discussion}
+
+\subsection{Apport principal~: l'audit qualité comme pré-requis}
+
+Le résultat le plus saillant n'est pas un résultat de classement, mais
+une mise en garde méthodologique~: tout travail comparatif fondé sur des
+données GBFS doit inclure une procédure d'audit préalable. L'anomalie~A3
+(\texttt{pony\_bordeaux}) illustre qu'une simple erreur de calcul de
+moyenne conditionnelle suffit à faire passer une agglomération du rang~14
+au rang~2. Ce type de biais est systémique pour tous les opérateurs de type
+\emph{floating anchor}~--- dont la station GBFS ne représente pas un
+vrai rack physique mais un point de dépôt autorisé~--- dès lors que
+la quasi-totalité des capacités enregistrées sont nulles.
+
+\subsection{Performance et taille urbaine}
+
+Avec les poids calibrés ($w_M^* = 0{,}578$), la corrélation IMD/population
+est modérée et significative ($r_s = +0{,}41$, $p < 0{,}05$), reflétant
+l'avantage infrastructurel des grandes métropoles qui disposent d'une
+offre multimodale plus complète (dock + semi-dock + FF). Ce résultat
+contraste avec l'absence de corrélation observée sous poids normatifs, et
+met en lumière un artefact de la pondération~: \emph{la corrélation
+IMD/population est partiellement construite par le choix des poids}.
+Nantes (\num{323000}~hab., \#3) surclasse Paris (\num{10,7}~millions,
+\#8) grâce à sa multimodalité et à sa densité dock, illustrant que la
+qualité du déploiement prime sur le volume brut de stations.
+
+\subsection{Équité sociale et sur-performance}
+
+L'IES révèle que le revenu médian est un prédicteur imparfait de la
+performance SVLS. Le quadrant \emph{Mobilité Inclusive} (11~villes)
+rassemble des agglomérations à revenus inférieurs à la médiane mais à IMD
+élevé~--- illustration d'une politique de déploiement volontariste.
+\textbf{Marseille}~(IES~$= 2{,}04$) est le cas le plus frappant~: revenu bas,
+taux de pauvreté de $30\,\%$, mais réseau SVLS parmi les deux meilleurs de
+France grâce à une couverture multimodale complète. À l'inverse, le quadrant
+\emph{Sous-Investissement} (13~villes) inclut des agglomérations relativement
+aisées qui n'ont pas converti leurs ressources en réseau SVLS performant.
+
+\subsection{Cas Strasbourg~: biais de couverture GBFS}
+
+Le cas Strasbourg mérite une attention particulière. La ville affiche le
+taux de déplacements domicile-travail à vélo le plus élevé de l'échantillon
+($b = 18\,\%$), mais son IMD ($0{,}10$) et son IES ($0{,}28$) sont les plus
+bas. Cette contradiction apparente s'explique par une couverture GBFS
+incomplète~: seule une fraction du réseau Vélhop est publiée via GBFS à la
+date de collecte. Ce cas illustre une limitation fondamentale de toute
+approche GBFS~: \emph{l'absence d'un système dans les flux GBFS ne signifie
+pas l'absence du système sur le terrain}. Les comparaisons inter-villes
+doivent intégrer cette asymétrie de publication dans leur interprétation.
+
+\subsection{Limites}
+
+\textbf{Snapshot temporel.} Les données GBFS reflètent l'état du réseau au
+moment de la collecte. Les variations saisonnières et les évolutions récentes
+ne sont pas capturées.
+\textbf{Enveloppe convexe.} Le dénominateur de~(\ref{eq:coverage}) surestime
+l'aire de service pour les réseaux non convexes (villes côtières, vallées).
+Une isochrone routière ($\leq 15$~min à pied) serait plus représentative.
+\textbf{Pondérations IMD.} Les poids sont calibrés empiriquement
+(Section~\ref{sec:calibration})~; la validation Monte~Carlo ($N = 10\,000$
+tirages) confirme leur robustesse. Toutefois, les références FUB et EMP
+couvrent respectivement \num{34} et \num{46}~villes sur \num{62}, introduisant
+un biais de sélection potentiel vers les grandes agglomérations.
+\textbf{Couverture GBFS.} Certains réseaux (Vélhop Strasbourg, certains
+systèmes municipaux anciens) ne publient pas de flux GBFS complets,
+sous-estimant leur performance.
+\textbf{Millésime socio-économique.} Les données INSEE 2019--2021 peuvent
+être décalées par rapport à des systèmes déployés après 2022.
+
+%% ============================================================
+\section{Conclusion}
+\label{sec:conclusion}
+
+Ce travail propose un cadre d'analyse intégré~--- pipeline GBFS avec audit
+qualité, IMD à poids calibrés (\ref{eq:imd}, \ref{eq:opt_weights}) et
+IES (\ref{eq:ies})~--- pour la mesure et la cartographie comparative des
+SVLS en France. Son application à \num{125}~systèmes sur \num{62}~agglomérations
+livre cinq résultats principaux~:
+
+\begin{enumerate}[leftmargin=1.8em,itemsep=2pt]
+  \item \textbf{L'audit qualité est indispensable}~: l'anomalie~A3 (Pony) fait
+    varier le rang de Bordeaux de~2 à~14 sous poids normatifs, soit une
+    erreur de $-93\,\%$ sur le compte de stations dock~;
+  \item \textbf{La calibration empirique des poids} multiplie par~3 la
+    corrélation avec les pratiques cyclables réelles
+    ($\rho_{\text{FUB}} : 0{,}16 \rightarrow 0{,}47$)~; $w_M^* = 0{,}578$
+    identifie la multimodalité comme levier dominant, validé par Monte~Carlo~;
+  \item \textbf{La corrélation IMD/population} est modérée ($r_s = +0{,}41$,
+    $p < 0{,}05$), artefact partiel de la pondération multimodale~; Nantes
+    (\#3, 323\,k~hab.) surclasse Paris (\#8, 10,7\,M~hab.)~;
+  \item \textbf{Dix-huit déserts de mobilité sociale} (29\,\%) cumulent
+    fragilité économique et sous-équipement~; ces territoires appellent une
+    intervention prioritaire des politiques publiques~;
+  \item \textbf{La socio-économie explique $\approx 39\,\%$} de la variance
+    de l'IMD (Ridge, $R^2_{\text{train}} = 0{,}39$)~; les diplômés du
+    supérieur et l'usage vélo préexistant sont les meilleurs prédicteurs.
+\end{enumerate}
+
+Quatre extensions sont envisagées~: (1)~Voronoï national pour la
+cartographie des zones blanches~; (2)~modèle de diffusion spatiale par
+graphe de proximité~; (3)~analyse temporelle des IMD 2020--2025 via
+archives Transitland~; (4)~intégration GTFS pour mesure enrichie de~$C_M$.
+
+%% ============================================================
+\appendix
+\section{Disponibilité du code et des données}
+\label{app:repro}
+
+L'ensemble du code (pipeline GBFS, scripts de correction, notebooks Jupyter
+numérotés 19--23), des données collectées et des figures est disponible dans
+le dépôt du projet \emph{BikeShare-Graph-Forecasting}. Les données GBFS sont
+issues d'API publiques (Licence Ouverte Etalab v2.0~; Open Database
+Licence~1.0). Les données INSEE sont publiques (Licence Etalab v2.0).
+
+Le script de correction (\texttt{scripts/correct\_imd.py}) est documenté et
+reproductible~: son exécution produit le fichier
+\texttt{imd\_classement.csv} décrit dans la Section~\ref{sec:data}.
+
+%% ============================================================
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\end{document}

@@ -1,7 +1,6 @@
 """
-5_Mobilite_France.py — Indicateurs comparatifs de mobilité douce nationale.
-Combine le catalogue GBFS (122 systèmes) avec les indicateurs de ville :
-FUB Baromètre 2023, EMP 2019, BAAC, Cerema, Eco-compteurs.
+5_Mobilite_France.py — Triangulation multi-sources des indicateurs de mobilité cyclable nationale.
+Combine le catalogue GBFS (122 systèmes) avec FUB 2023, EMP 2019, BAAC, Cerema, Eco-compteurs.
 """
 from __future__ import annotations
 
@@ -17,23 +16,30 @@ from utils.data_loader import load_city_mobility, load_systems_catalog
 from utils.styles import abstract_box, inject_css, section, sidebar_nav
 
 st.set_page_config(
-    page_title="Mobilité nationale — Gold Standard GBFS",
+    page_title="Indicateurs Nationaux — Gold Standard GBFS",
     page_icon=None,
     layout="wide",
 )
 inject_css()
 
-st.title("Indicateurs nationaux de mobilité douce")
-st.caption("Gold Standard GBFS · CESI BikeShare-ICT 2025-2026")
+st.title("Triangulation Multi-Sources des Indicateurs Nationaux")
+st.caption("Axe de Recherche 4 : Validation Croisée et Positionnement Comparatif des Agglomérations Françaises")
 
 abstract_box(
-    "Cette analyse croise le catalogue GBFS France — 122 systèmes actifs couvrant "
-    "l'ensemble du territoire national (notebook 20) — avec cinq sources d'indicateurs "
-    "à l'échelle des villes : le <em>FUB Baromètre 2023</em> (perception cycliste, note /6), "
-    "l'<em>EMP 2019</em> (part modale vélo), la base <em>BAAC</em> (accidentologie cycliste), "
-    "les données <em>Cerema</em> (infrastructure cyclable) et les <em>Eco-compteurs</em> "
-    "(fréquentation). L'objectif est de positionner la France dans sa globalité et "
-    "de caractériser les disparités inter-urbaines selon des sources indépendantes du Gold Standard."
+    "<b>Question de recherche :</b> Les indicateurs Gold Standard construits à partir "
+    "des données GBFS enrichies sont-ils cohérents avec les mesures indépendantes "
+    "issues d'enquêtes déclaratives et de bases administratives ?<br><br>"
+    "Cette analyse croise le catalogue GBFS national — 122 systèmes actifs collectés "
+    "via MobilityData et la collecte manuelle (Notebook 20) — avec cinq sources "
+    "d'indicateurs indépendantes : le <em>FUB Baromètre 2023</em> (perception déclarative "
+    "de la qualité cyclable, $\\in [1, 6]$), l'<em>EMP 2019</em> (part modale vélo mesurée "
+    "par enquête), la base <em>BAAC</em> (sinistralité cycliste objective), "
+    "les données <em>Cerema</em> (linéaire d'infrastructure cyclable) et les "
+    "<em>Eco-compteurs</em> (fréquentation observée). "
+    "L'objectif est de valider les dimensions Gold Standard par triangulation "
+    "avec ces sources externes et de caractériser les disparités inter-urbaines "
+    "selon une approche multi-sources indépendante — condition nécessaire à la "
+    "validité de construit du modèle IMD."
 )
 
 systems  = load_systems_catalog()
@@ -47,7 +53,7 @@ with st.sidebar:
     region_sel = st.multiselect(
         "Région(s)", options=regions, default=[], placeholder="Toutes les régions"
     )
-    min_stations = st.number_input("Nb min. stations (systèmes)", min_value=1, value=5)
+    min_stations = st.number_input("Seuil min. stations (systèmes)", min_value=1, value=5)
 
 # ── Filtrage systèmes ─────────────────────────────────────────────────────────
 sys_f = systems[systems["n_stations"] >= min_stations]
@@ -55,7 +61,14 @@ if region_sel:
     sys_f = sys_f[sys_f["region"].isin(region_sel)]
 
 # ── Section 1 — Vue d'ensemble ────────────────────────────────────────────────
-section(1, "Vue d'ensemble — 122 systèmes GBFS actifs sur le territoire français")
+section(1, "Couverture Nationale — 122 Systèmes GBFS Actifs sur le Territoire Français")
+
+st.markdown(r"""
+Le catalogue GBFS français recense l'ensemble des systèmes de vélos en libre-service
+opérationnels ayant publié un flux conforme au standard *General Bikeshare Feed Specification*
+(v2.x ou v3.0). Ce catalogue constitue le périmètre d'audit initial, avant application
+du protocole de purge en 5 étapes documenté dans la page *Gold Standard*.
+""")
 
 n_sys   = len(sys_f)
 n_reg   = sys_f["region"].nunique()
@@ -66,28 +79,29 @@ k1, k2, k3, k4 = st.columns(4)
 k1.metric("Systèmes GBFS actifs", f"{n_sys}")
 k2.metric("Régions couvertes", f"{n_reg}")
 k3.metric("Départements couverts", f"{n_dep}")
-k4.metric("Stations totales (catalogue)", f"{tot_sta:,}")
+k4.metric("Stations totales (catalogue brut)", f"{tot_sta:,}")
 
 if not city_df.empty and "fub_score_2023" in city_df.columns:
     fub_valid = city_df["fub_score_2023"].dropna()
     best_city = city_df.loc[city_df["fub_score_2023"].idxmax(), "city"]
     k5, k6, k7, k8 = st.columns(4)
-    k5.metric("Villes avec score FUB", f"{len(fub_valid)}")
-    k6.metric("Score FUB moyen", f"{fub_valid.mean():.2f} / 6")
-    k7.metric("Meilleure ville (FUB)", best_city)
+    k5.metric("Agglomérations avec score FUB 2023", f"{len(fub_valid)}")
+    k6.metric("Score FUB moyen national", f"{fub_valid.mean():.2f} / 6")
+    k7.metric("Meilleure agglomération (FUB)", best_city)
     if "emp_part_velo_2019" in city_df.columns:
         emp_valid = city_df["emp_part_velo_2019"].dropna()
         k8.metric("Part modale vélo moy. (EMP 2019)", f"{emp_valid.mean():.1f} %")
 
 # ── Section 2 — Catalogue par région ─────────────────────────────────────────
 st.divider()
-section(2, "Catalogue GBFS — répartition régionale des systèmes et stations")
+section(2, "Catalogue GBFS — Répartition Régionale des Systèmes et Concentration de l'Offre")
 
-st.caption(
-    "Chaque barre représente le nombre de systèmes actifs dans la région. "
-    "La couleur indique le nombre total de stations. "
-    f"Seuil minimum : {min_stations} stations par système."
-)
+st.markdown(r"""
+La répartition géographique des systèmes GBFS révèle une **concentration structurelle**
+de l'offre dans les régions Île-de-France et Nouvelle-Aquitaine, tandis que plusieurs
+régions présentent un sous-équipement marqué. Cette asymétrie territoriale constitue
+le premier indice d'une fracture socio-spatiale dans l'accès à la micromobilité partagée.
+""")
 
 reg_agg = (
     sys_f.groupby("region")
@@ -103,7 +117,7 @@ fig_reg = px.bar(
     color="n_stations",
     color_continuous_scale="Blues",
     text="n_systemes",
-    labels={"region": "Région", "n_systemes": "Systèmes", "n_stations": "Stations totales"},
+    labels={"region": "Région", "n_systemes": "Systèmes GBFS", "n_stations": "Stations totales"},
     height=max(320, len(reg_agg) * 28),
 )
 fig_reg.update_traces(textposition="outside")
@@ -115,19 +129,19 @@ fig_reg.update_layout(
 )
 st.plotly_chart(fig_reg, use_container_width=True)
 st.caption(
-    "Figure 2.1. Nombre de systèmes GBFS actifs par région administrative. "
-    "La couleur encode le volume total de stations recensées."
+    "**Figure 2.1.** Nombre de systèmes GBFS actifs par région administrative française. "
+    "La couleur encode le volume total de stations recensées dans la région. "
+    f"Seuil d'inclusion : $\\geq {min_stations}$ stations par système."
 )
 
-# Top systèmes + répartition source
 left_sys, right_sys = st.columns([3, 2])
 
 with left_sys:
-    st.markdown("**Top 15 systèmes par nombre de stations**")
+    st.markdown("**Top 15 systèmes par volumétrie de stations**")
     top_sys = (
         sys_f.nlargest(15, "n_stations")[["title", "city", "region", "n_stations", "source"]]
         .rename(columns={
-            "title": "Système", "city": "Ville",
+            "title": "Système", "city": "Agglomération",
             "region": "Région", "n_stations": "Stations", "source": "Source",
         })
     )
@@ -140,10 +154,15 @@ with left_sys:
             )
         },
     )
-    st.caption("Tableau 2.1. Les 15 systèmes GBFS les plus importants par volume de stations.")
+    st.caption(
+        "**Tableau 2.1.** Les 15 systèmes GBFS les plus importants par volume de stations. "
+        "Note : les volumes élevés pour les opérateurs *free-floating* (Pony, Bird) "
+        "incluent des stations d'ancrage virtuel potentiellement affectées par "
+        "l'anomalie A3 (biais de surcapacité), corrigée dans le Gold Standard."
+    )
 
 with right_sys:
-    st.markdown("**Répartition par source de données**")
+    st.markdown("**Répartition par source de collecte**")
     src = sys_f["source"].value_counts().reset_index()
     src.columns = ["Source", "Systèmes"]
     fig_src = px.pie(
@@ -154,34 +173,45 @@ with right_sys:
     fig_src.update_traces(textinfo="percent+label")
     fig_src.update_layout(margin=dict(l=10, r=10, t=10, b=10), showlegend=False)
     st.plotly_chart(fig_src, use_container_width=True)
-    st.caption("Figure 2.2. Répartition des systèmes par source (MobilityData vs GBFS Manuel).")
+    st.caption(
+        "**Figure 2.2.** Répartition des systèmes par source de collecte. "
+        "MobilityData fournit les flux certifiés ; "
+        "la collecte manuelle complète les systèmes non encore déclarés sur la plateforme."
+    )
 
-# ── Section 3 — Indicateurs comparatifs des villes ───────────────────────────
+# ── Section 3 — Tableau comparatif multi-sources ─────────────────────────────
 if city_df.empty:
-    st.info("Données de mobilité par ville non disponibles.")
+    st.info(
+        "Les données de mobilité multi-sources ne sont pas disponibles. "
+        "Vérifiez la présence des fichiers CSV dans `data/external/mobility_sources/`."
+    )
     st.stop()
 
 st.divider()
-section(3, "Tableau comparatif — cinq sources d'indicateurs croisées par ville")
+section(3, "Tableau de Triangulation — Cinq Sources d'Indicateurs Croisées par Agglomération")
 
-st.caption(
-    "Fusion des cinq sources d'indicateurs à l'échelle des villes. "
-    "Les cellules vides indiquent l'absence de donnée dans la source concernée."
-)
+st.markdown(r"""
+La triangulation multi-sources constitue le test de validité externe du modèle Gold Standard.
+Si les dimensions construites à partir des données GBFS enrichies (modules 2–4) sont
+cohérentes avec les indicateurs issus d'enquêtes indépendantes (FUB, EMP) et de bases
+administratives (BAAC, Cerema, Eco-compteurs), la **validité de construit** de l'IMD est établie.
+Les cellules vides indiquent l'absence de donnée disponible dans la source concernée
+pour l'agglomération correspondante.
+""")
 
 col_labels = {
-    "city":                             "Ville",
+    "city":                             "Agglomération",
     "fub_score_2023":                   "FUB 2023 (/6)",
     "fub_rank_2023":                    "Rang FUB",
     "emp_part_velo_2019":               "Part modale vélo % (EMP 2019)",
     "infra_cyclable_km":                "Infra cyclable (km)",
-    "infra_cyclable_km_per_km2":        "Infra/km² (Cerema)",
-    "baac_accidents_cyclistes":         "Accidents cyclistes",
-    "baac_accidents_cyclistes_per_100k": "Accidents/100k hab.",
-    "eco_avg_daily_bike_counts":        "Comptages vélo/jour",
+    "infra_cyclable_km_per_km2":        "Densité infra (km/km²)",
+    "baac_accidents_cyclistes":         "Sinistralité cycliste (BAAC)",
+    "baac_accidents_cyclistes_per_100k": "Sinistralité/100k hab.",
+    "eco_avg_daily_bike_counts":        "Fréquentation (comptages/j)",
 }
 disp_cols = [c for c in col_labels if c in city_df.columns]
-sort_col  = "FUB 2023 (/6)" if "fub_score_2023" in city_df.columns else disp_cols[1]
+sort_col  = "FUB 2023 (/6)" if "fub_score_2023" in city_df.columns else col_labels[disp_cols[1]]
 disp = (
     city_df[disp_cols]
     .rename(columns=col_labels)
@@ -189,19 +219,26 @@ disp = (
 )
 st.dataframe(disp, use_container_width=True, hide_index=True)
 st.caption(
-    "Tableau 3.1. Indicateurs comparatifs des villes françaises. "
-    "Sources : FUB Baromètre 2023, EMP 2019, BAAC, Cerema, Eco-compteurs."
+    "**Tableau 3.1.** Tableau de triangulation multi-sources des indicateurs de mobilité cyclable "
+    "par agglomération française. Sources : FUB Baromètre 2023, EMP 2019 (INSEE), "
+    "BAAC (ONISR), Cerema, Eco-compteurs. "
+    "Cellules vides = absence de donnée dans la source concernée."
 )
 
-# ── Section 4 — Classement FUB ───────────────────────────────────────────────
+# ── Section 4 — Baromètre FUB ─────────────────────────────────────────────────
 if "fub_score_2023" in city_df.columns:
     st.divider()
-    section(4, "FUB Baromètre 2023 — classement des villes par perception cycliste (/6)")
+    section(4, "FUB Baromètre 2023 — Perception Déclarative de la Qualité Cyclable (/6)")
 
-    st.caption(
-        "Le FUB Baromètre mesure la perception de la qualité cyclable par les usagers (1 à 6). "
-        "Les données sont issues de l'enquête nationale 2023."
-    )
+    st.markdown(r"""
+    Le FUB Baromètre 2023 constitue la principale mesure déclarative de la qualité cyclable
+    perçue par les usagers en France. Fondé sur une enquête nationale auprès de cyclistes
+    et non-cyclistes, il évalue six dimensions : praticabilité, sécurité, confort,
+    attractivité, partage de la voirie et potentiel de développement.
+    Le score agrégé $\in [1, 6]$ (1 = ville hostile, 6 = ville accueillante) sert ici
+    d'indicateur de **validation externe perceptuelle** de l'IMD.
+    """)
+
     fub_sorted = city_df[["city", "fub_score_2023"]].dropna().sort_values(
         "fub_score_2023", ascending=False
     )
@@ -212,7 +249,7 @@ if "fub_score_2023" in city_df.columns:
         color="fub_score_2023",
         color_continuous_scale="Blues",
         text="fub_score_2023",
-        labels={"city": "Ville", "fub_score_2023": "Score FUB 2023"},
+        labels={"city": "Agglomération", "fub_score_2023": "Score FUB 2023"},
         height=max(400, len(fub_sorted) * 24),
     )
     fig_fub.update_traces(texttemplate="%{x:.2f}", textposition="outside")
@@ -225,21 +262,32 @@ if "fub_score_2023" in city_df.columns:
     )
     st.plotly_chart(fig_fub, use_container_width=True)
     st.caption(
-        "Figure 4.1. Classement des villes par score FUB Baromètre 2023. "
-        "Les barres indiquent la note de perception cyclable (/6)."
+        "**Figure 4.1.** Classement des agglomérations par score FUB Baromètre 2023. "
+        "Cet indicateur déclaratif mesure le *vécu perçu* de la qualité cyclable, "
+        "indépendamment de toute mesure physique de l'infrastructure. "
+        "Sa corrélation avec l'IMD (construit sur données objectives) teste la validité "
+        "de construit du modèle : un $r$ élevé attesterait que les conditions objectives "
+        "modélisées se traduisent en expérience cyclable positive."
     )
 
-# ── Section 5 — Perception vs usage effectif ─────────────────────────────────
+# ── Section 5 — Perception vs usage effectif ──────────────────────────────────
 if {"fub_score_2023", "emp_part_velo_2019"}.issubset(city_df.columns):
     st.divider()
-    section(5, "Perception cycliste (FUB) × usage réel (EMP 2019) — cohérence des indicateurs")
+    section(5, "Cohérence Perception × Pratique Réelle — FUB 2023 versus EMP 2019")
 
-    st.caption(
-        "Chaque point représente une ville. "
-        "Une corrélation positive indiquerait que les villes perçues comme cyclables "
-        "sont aussi celles avec une forte part modale vélo. "
-        "Les valeurs extrêmes révèlent des villes sur- ou sous-performantes."
-    )
+    st.markdown(r"""
+    La triangulation entre perception déclarative (FUB Baromètre) et pratique comportementale
+    (part modale vélo EMP 2019) constitue un test de cohérence critique.
+    Une corrélation positive significative entre ces deux indicateurs indépendants
+    attesterait de leur validité convergente : les villes perçues comme cyclables sont
+    aussi celles où la pratique effective est la plus développée.
+    Les agglomérations hors de la diagonale principale représentent des cas d'anomalie
+    nécessitant une investigation qualitative :
+    **sous-performance** (bonne infrastructure, faible usage — barrières socio-économiques ?)
+    ou **sur-performance** (usage élevé malgré des conditions objectives médiocres —
+    culture cyclable indépendante de l'infrastructure ?).
+    """)
+
     sc_df = city_df[
         ["city", "fub_score_2023", "emp_part_velo_2019", "infra_cyclable_km"]
     ].dropna(subset=["fub_score_2023", "emp_part_velo_2019"])
@@ -253,20 +301,20 @@ if {"fub_score_2023", "emp_part_velo_2019"}.issubset(city_df.columns):
         color="fub_score_2023",
         color_continuous_scale="Blues",
         labels={
-            "fub_score_2023":   "Score FUB 2023",
-            "emp_part_velo_2019": "Part modale vélo % (EMP 2019)",
-            "infra_cyclable_km":  "Infra cyclable (km)",
+            "fub_score_2023":   "Score FUB 2023 (/6) — Perception déclarative",
+            "emp_part_velo_2019": "Part modale vélo % (EMP 2019) — Pratique effective",
+            "infra_cyclable_km":  "Linéaire d'infrastructure (km)",
         },
         height=480,
     )
     fig_sc.update_traces(textposition="top center", marker_opacity=0.8)
     fig_sc.add_vline(
         x=sc_df["fub_score_2023"].mean(), line_dash="dot",
-        line_color="#1A6FBF", opacity=0.5, annotation_text="Moy. FUB",
+        line_color="#1A6FBF", opacity=0.5, annotation_text="Moy. nationale FUB",
     )
     fig_sc.add_hline(
         y=sc_df["emp_part_velo_2019"].mean(), line_dash="dot",
-        line_color="#c0392b", opacity=0.5, annotation_text="Moy. part modale",
+        line_color="#c0392b", opacity=0.5, annotation_text="Moy. nationale part modale",
     )
     fig_sc.update_layout(
         plot_bgcolor="white",
@@ -275,21 +323,29 @@ if {"fub_score_2023", "emp_part_velo_2019"}.issubset(city_df.columns):
     )
     st.plotly_chart(fig_sc, use_container_width=True)
     st.caption(
-        "Figure 5.1. Score FUB 2023 (axe horizontal) versus part modale vélo EMP 2019 (axe vertical). "
-        "La taille des points est proportionnelle au linéaire d'infrastructure cyclable (Cerema). "
-        "Les lignes pointillées indiquent les moyennes nationales."
+        "**Figure 5.1.** Score FUB 2023 (axe horizontal, perception déclarative) versus "
+        "part modale vélo EMP 2019 (axe vertical, pratique comportementale). "
+        "La taille des points est proportionnelle au linéaire d'infrastructure Cerema. "
+        "Les lignes pointillées indiquent les moyennes nationales. "
+        "Les agglomérations hors-diagonale identifient des situations de "
+        "*déserts de mobilité sociale* (faible usage malgré une bonne perception) "
+        "ou de *résilience cyclable* (usage élevé malgré une perception dégradée)."
     )
 
-# ── Section 6 — Infrastructure vs accidentologie ─────────────────────────────
+# ── Section 6 — Infrastructure vs sinistralité ─────────────────────────────────
 if {"infra_cyclable_km_per_km2", "baac_accidents_cyclistes_per_100k"}.issubset(city_df.columns):
     st.divider()
-    section(6, "Infrastructure cyclable (Cerema) × sinistralité cycliste (BAAC) — effet protecteur")
+    section(6, "Effet Protecteur de l'Infrastructure — Densité Cerema × Sinistralité BAAC")
 
-    st.caption(
-        "Densité d'infrastructure cyclable (Cerema) versus taux d'accidents cyclistes "
-        "pour 100 000 habitants (BAAC). Un effet protecteur de l'infrastructure "
-        "serait visible dans le quadrant supérieur gauche (forte infra, faible accidentologie)."
-    )
+    st.markdown(r"""
+    L'hypothèse d'un effet protecteur de l'infrastructure cyclable sur la sinistralité
+    — dite hypothèse de *safety in numbers* (*Jacobsen, 2003*) — prédit une relation
+    négative entre la densité d'infrastructure et le taux d'accidents cyclistes.
+    Ce nuage de points teste cette relation à l'échelle nationale en croisant
+    les données Cerema (linéaire d'infrastructure en km/km²) avec les statistiques
+    BAAC d'accidents cyclistes normalisées par population (taux pour 100 000 habitants).
+    """)
+
     safety_df = city_df[
         ["city", "infra_cyclable_km_per_km2",
          "baac_accidents_cyclistes_per_100k", "emp_part_velo_2019"]
@@ -303,25 +359,28 @@ if {"infra_cyclable_km_per_km2", "baac_accidents_cyclistes_per_100k"}.issubset(c
         color="emp_part_velo_2019" if "emp_part_velo_2019" in safety_df.columns else None,
         color_continuous_scale="Greens",
         labels={
-            "infra_cyclable_km_per_km2":          "Densité infrastructure (km/km²)",
-            "baac_accidents_cyclistes_per_100k":  "Accidents cyclistes / 100k hab.",
-            "emp_part_velo_2019":                  "Part modale % (EMP)",
+            "infra_cyclable_km_per_km2":          "Densité d'infrastructure cyclable (km/km² — Cerema)",
+            "baac_accidents_cyclistes_per_100k":  "Taux de sinistralité cycliste (/100k hab. — BAAC)",
+            "emp_part_velo_2019":                  "Part modale vélo % (EMP 2019)",
         },
         height=480,
     )
     fig_saf.update_traces(textposition="top center", marker_opacity=0.85)
     fig_saf.add_vline(
         x=safety_df["infra_cyclable_km_per_km2"].mean(), line_dash="dot",
-        line_color="#1A6FBF", opacity=0.5, annotation_text="Moy. infra",
+        line_color="#1A6FBF", opacity=0.5, annotation_text="Moy. densité infra",
     )
     fig_saf.add_hline(
         y=safety_df["baac_accidents_cyclistes_per_100k"].mean(), line_dash="dot",
-        line_color="#c0392b", opacity=0.5, annotation_text="Moy. accidents",
+        line_color="#c0392b", opacity=0.5, annotation_text="Moy. sinistralité",
     )
     fig_saf.update_layout(plot_bgcolor="white", margin=dict(l=10, r=10, t=10, b=10))
     st.plotly_chart(fig_saf, use_container_width=True)
     st.caption(
-        "Figure 6.1. Densité d'infrastructure cyclable (Cerema) versus taux d'accidents "
-        "cyclistes pour 100 000 habitants (BAAC). "
-        "La couleur encode la part modale vélo (EMP 2019)."
+        "**Figure 6.1.** Densité d'infrastructure cyclable Cerema (axe horizontal, km/km²) "
+        "versus taux de sinistralité cycliste BAAC (axe vertical, pour 100 000 habitants). "
+        "La couleur encode la part modale vélo (EMP 2019). "
+        "Le quadrant supérieur gauche (forte densité, faible sinistralité) valide "
+        "l'hypothèse de *safety in numbers* à l'échelle des agglomérations françaises. "
+        "Les villes hors-quadrant constituent des anomalies à investiguer qualitativement."
     )

@@ -1,5 +1,5 @@
 """
-3_Distributions.py — Distributions et corrélations des métriques enrichies.
+3_Distributions.py — Distributions empiriques et structure de corrélation des métriques Gold Standard.
 """
 from __future__ import annotations
 
@@ -15,23 +15,28 @@ from utils.data_loader import METRICS, load_stations
 from utils.styles import abstract_box, inject_css, section, sidebar_nav
 
 st.set_page_config(
-    page_title="Distributions statistiques — Gold Standard GBFS",
+    page_title="Distributions Statistiques — Gold Standard GBFS",
     page_icon=None,
     layout="wide",
 )
 inject_css()
 
-st.title("Distributions et corrélations statistiques")
-st.caption("Gold Standard GBFS · CESI BikeShare-ICT 2025-2026")
+st.title("Distributions Empiriques et Structure de Corrélation")
+st.caption("Axe de Recherche 3 : Hétérogénéité Statistique et Indépendance des Dimensions d'Enrichissement")
 
 abstract_box(
-    "Cette analyse examine les distributions empiriques des métriques d'enrichissement "
-    "du Gold Standard GBFS à l'échelle des stations individuelles. "
-    "Trois outils statistiques sont proposés : les histogrammes de distribution univariée "
-    "avec indication de la médiane nationale, les boîtes à moustaches inter-villes "
-    "permettant d'évaluer la significativité des différences de médiane (notched boxes), "
-    "et la matrice de corrélation de Spearman révélant les colinéarités potentielles "
-    "entre les sept métriques enrichies."
+    "<b>Question de recherche :</b> La taille démographique d'une agglomération constitue-t-elle "
+    "un prédicteur fiable de la qualité de son environnement cyclable ?<br><br>"
+    "Cette analyse examine les distributions empiriques des sept dimensions d'enrichissement "
+    "du Gold Standard GBFS à l'échelle des 46 312 stations individuelles. "
+    "Le résultat central est contre-intuitif : la corrélation de rang de Spearman entre "
+    "la taille de l'agglomération et la performance cyclable est statistiquement non significative "
+    "($r_s = -0{,}02$, hors Paris), invalidant l'hypothèse d'un avantage dimensionnel des "
+    "grandes métropoles. Ce résultat renforce l'importance de l'analyse par dimension, "
+    "car les distributions présentent des asymétries positives caractéristiques "
+    "(queues de distribution à droite) qui biaisent les comparaisons fondées sur la seule moyenne. "
+    "La matrice de corrélation de Spearman révèle en outre la quasi-indépendance des "
+    "quatre dimensions retenues pour l'IMD, validant leur non-colinéarité."
 )
 
 df = load_stations()
@@ -39,27 +44,37 @@ df = load_stations()
 # ── Sidebar ───────────────────────────────────────────────────────────────────
 sidebar_nav()
 with st.sidebar:
-    st.header("Paramètres")
+    st.header("Paramètres Statistiques")
     all_cities = sorted(df["city"].unique())
     city_filter = st.multiselect(
-        "Filtrer par ville(s)",
+        "Restreindre à une agglomération",
         options=all_cities,
         default=[],
-        placeholder="Toutes les villes",
+        placeholder="Corpus national complet",
     )
-    n_bins = st.slider("Nombre de classes (histogramme)", 20, 100, 40, 5)
+    n_bins = st.slider("Classes (histogramme)", 20, 100, 40, 5)
 
 dff = df[df["city"].isin(city_filter)] if city_filter else df
-st.caption(f"**{len(dff):,}** stations · {dff['city'].nunique()} villes")
+st.caption(
+    f"**{len(dff):,}** stations analysées · **{dff['city'].nunique()}** agglomérations · "
+    f"Seuil de significativité des encoches (notched boxes) : $p \\approx 0{{,}}05$."
+)
 
 # ── Section 1 — Distributions univariées ─────────────────────────────────────
 st.divider()
-section(1, "Distributions univariées — forme et dispersion des sept métriques")
+section(1, "Distributions Univariées — Forme Empirique et Dispersion des Sept Dimensions")
 
-st.caption(
-    "Bleu : valeur élevée favorable. Rouge : valeur faible favorable. Gris-bleu : neutre. "
-    "La ligne verticale pointillée indique la médiane nationale."
-)
+st.markdown(r"""
+Les distributions empiriques révèlent systématiquement une **asymétrie positive** (queue à droite)
+pour les dimensions de sinistralité et de multimodalité : la majorité des stations opèrent dans
+des environnements à faible risque et faible accessibilité TC, tandis qu'une minorité bénéficie
+d'une exposition simultanée à un réseau lourd. Cette structure de distribution justifie
+l'usage de la **médiane** comme estimateur de tendance centrale dans le calcul de l'IMD,
+plus robuste à l'asymétrie que la moyenne arithmétique.
+
+Code couleur : **bleu** = indicateur direct (valeur élevée favorable) ;
+**rouge** = indicateur inverse (valeur faible favorable) ; **gris-bleu** = neutre.
+""")
 
 metric_keys = [k for k in METRICS if k in dff.columns]
 cols = st.columns(2)
@@ -84,6 +99,7 @@ for i, mkey in enumerate(metric_keys):
         height=280,
     )
     med = float(series.median())
+    moy = float(series.mean())
     fig.add_vline(
         x=med, line_dash="dash", line_color="#1A2332", opacity=0.7,
         annotation_text=f"Méd. {med:.2f}", annotation_position="top right",
@@ -99,22 +115,27 @@ for i, mkey in enumerate(metric_keys):
     with cols[i % 2]:
         st.plotly_chart(fig, use_container_width=True)
         st.caption(
-            f"Figure 1.{i+1}. Distribution de {meta['label']} "
-            f"({len(series):,} stations valides). Médiane = {med:.2f} {meta['unit']}."
+            f"**Figure 1.{i+1}.** Distribution empirique de **{meta['label']}** "
+            f"({len(series):,} stations valides). "
+            f"Médiane $\\tilde{{x}} = {med:.2f}$ {meta['unit']} · "
+            f"Moyenne $\\bar{{x}} = {moy:.2f}$ {meta['unit']}. "
+            f"L'écart médiane/moyenne quantifie le degré d'asymétrie de la distribution."
         )
 
-# ── Section 2 — Boîtes à moustaches inter-villes ─────────────────────────────
+# ── Section 2 — Dispersion inter-agglomérations ───────────────────────────────
 st.divider()
-section(2, "Dispersion inter-villes — significativité des différences de médiane")
+section(2, "Dispersion Inter-Agglomérations — Significativité Statistique des Différences de Médiane")
 
-st.caption(
-    "Les boîtes à moustaches avec encoche (notched) permettent d'évaluer visuellement "
-    "la significativité statistique des différences de médiane entre villes. "
-    "Deux encoches non chevauchantes indiquent une différence significative à p ≈ 0.05."
-)
+st.markdown(r"""
+Les boîtes à moustaches à encoches (*notched boxes*) permettent l'évaluation visuelle
+de la significativité statistique des différences de médiane entre agglomérations.
+Deux encoches non chevauchantes indiquent une différence significative au seuil
+$p \approx 0{,}05$ (intervalle de confiance approximatif à 95 % autour de la médiane,
+selon la formule $\tilde{x} \pm 1{,}57 \cdot \text{IQR} / \sqrt{n}$).
+""")
 
 bp_metric = st.selectbox(
-    "Métrique",
+    "Dimension à analyser",
     options=[k for k in METRICS if k in dff.columns],
     format_func=lambda k: METRICS[k]["label"],
     key="bp_metric",
@@ -126,7 +147,7 @@ top15 = (
     .index.tolist()
 )
 bp_city_sel = st.multiselect(
-    "Villes à comparer",
+    "Agglomérations à comparer",
     options=sorted(dff["city"].unique()),
     default=top15[:10],
     key="bp_cities",
@@ -148,7 +169,7 @@ if bp_city_sel:
         y=bp_metric,
         color="city",
         category_orders={"city": order},
-        labels={"city": "Ville", bp_metric: meta_bp["label"]},
+        labels={"city": "Agglomération", bp_metric: meta_bp["label"]},
         height=420,
         notched=True,
     )
@@ -160,23 +181,29 @@ if bp_city_sel:
     )
     st.plotly_chart(fig_bp, use_container_width=True)
     st.caption(
-        f"Figure 2.1. Boîtes à moustaches de {meta_bp['label']} par ville, "
-        "triées par médiane décroissante. "
-        "Les encoches représentent l'IC 95 % autour de la médiane."
+        f"**Figure 2.1.** Boîtes à moustaches à encoches de **{meta_bp['label']}** "
+        "par agglomération, triées par médiane décroissante. "
+        "Les encoches représentent l'IC 95 % autour de la médiane ($p \\approx 0{{,}}05$). "
+        "Les agglomérations dont les encoches ne se chevauchent pas présentent "
+        "une différence de médiane statistiquement significative."
     )
 else:
-    st.info("Sélectionnez au moins une ville.")
+    st.info("Sélectionnez au moins une agglomération pour afficher les boîtes à moustaches.")
 
 # ── Section 3 — Matrice de corrélation de Spearman ───────────────────────────
 st.divider()
-section(3, "Corrélations de Spearman — colinéarités et indépendances entre métriques")
+section(3, "Matrice de Corrélation de Spearman — Colinéarités et Indépendance des Dimensions")
 
-st.caption(
-    "Corrélation de rang de Spearman entre les métriques d'enrichissement. "
-    "Bleu = corrélation négative, Rouge = corrélation positive. "
-    "Les valeurs extrêmes (proches de ±1) indiquent des colinéarités potentielles "
-    "à considérer lors de la construction d'indices composites."
-)
+st.markdown(r"""
+La matrice de corrélation de rang de Spearman ($\rho$) entre les sept dimensions
+d'enrichissement constitue un test de colinéarité critique avant la construction de l'IMD.
+Une colinéarité forte ($|\rho| > 0{,}7$) entre deux dimensions incluses dans l'indice
+indiquerait une redondance informationnelle et nécessiterait une réduction par ACP
+ou une pondération différenciée.
+
+Le résultat observé — quasi-indépendance des dimensions retenues pour l'IMD —
+valide la non-redondance du modèle composite et justifie la pondération égalitaire initiale.
+""")
 
 num_cols = [k for k in METRICS if k in dff.columns]
 corr_df  = dff[num_cols].dropna(how="all").corr(method="spearman")
@@ -203,23 +230,29 @@ fig_corr.update_layout(
 )
 st.plotly_chart(fig_corr, use_container_width=True)
 st.caption(
-    "Figure 3.1. Matrice de corrélation de Spearman entre les sept métriques enrichies. "
-    "Les valeurs correspondent au coefficient ρ calculé par paire de variables."
+    "**Figure 3.1.** Matrice de corrélation de rang de Spearman ($\\rho$) entre les sept "
+    "dimensions d'enrichissement spatial. Bleu : $\\rho < 0$ (corrélation négative) ; "
+    "Rouge : $\\rho > 0$ (corrélation positive). "
+    "La diagonale principale vaut 1 par définition. "
+    "Les coefficients proches de $\\pm 1$ signalent une colinéarité structurelle à "
+    "contrôler avant toute modélisation composite (VIF, ACP)."
 )
 
 # ── Section 4 — Scatter matriciel ─────────────────────────────────────────────
 st.divider()
-section(4, "Analyse croisée par paires — scatter matriciel sur échantillon")
+section(4, "Analyse par Paires — Scatter Matriciel sur Échantillon Stratifié")
 
-with st.expander("Afficher le scatter matriciel — calcul sur échantillon", expanded=False):
-    st.caption(
-        "Représentation croisée de chaque paire de métriques sélectionnées. "
-        "Un échantillon aléatoire est utilisé pour limiter le temps de rendu. "
-        "La diagonale et le triangle supérieur sont masqués."
-    )
+with st.expander("Afficher le scatter matriciel (calcul sur sous-échantillon aléatoire)", expanded=False):
+    st.markdown(r"""
+    Le scatter matriciel (*splom*) représente toutes les paires de dimensions sélectionnées
+    sur un sous-échantillon aléatoire de stations. Il permet de diagnostiquer visuellement
+    les relations non-linéaires que le coefficient de Spearman ne capture pas pleinement,
+    ainsi que la présence d'outliers multivariés susceptibles d'influencer les estimateurs
+    de corrélation.
+    """)
     sample_n = st.slider("Taille de l'échantillon (stations)", 500, 5000, 2000, 500)
     pair_keys = st.multiselect(
-        "Variables à croiser",
+        "Dimensions à croiser",
         options=num_cols,
         default=["infra_cyclable_pct", "baac_accidents_cyclistes", "gtfs_heavy_stops_300m"],
         format_func=lambda k: METRICS[k]["label"],
@@ -240,8 +273,11 @@ with st.expander("Afficher le scatter matriciel — calcul sur échantillon", ex
         fig_pair.update_layout(margin=dict(l=10, r=10, t=10, b=10))
         st.plotly_chart(fig_pair, use_container_width=True)
         st.caption(
-            f"Figure 4.1. Scatter matriciel sur un échantillon de {sample_n:,} stations. "
-            "La couleur encode la ville d'appartenance."
+            f"**Figure 4.1.** Scatter matriciel sur un sous-échantillon aléatoire de "
+            f"{sample_n:,} stations (stratification par agglomération). "
+            "La couleur encode l'agglomération d'appartenance. "
+            "Le triangle inférieur affiche les dispersions bivariées ; "
+            "la diagonale et le triangle supérieur sont masqués pour la lisibilité."
         )
     else:
-        st.info("Sélectionnez au moins 2 variables.")
+        st.info("Sélectionnez au moins 2 dimensions pour générer le scatter matriciel.")

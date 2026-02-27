@@ -1,0 +1,65 @@
+Station_Name,louvain_r0.5,louvain_r1.0,louvain_r1.5,louvain_r2.0,label_propagation,greedy_modularity
+Aiguelongue,12,0,0,0,0,3
+Albert 1er - Cathédrale,4,9,1,1,0,0
+Antigone centre,7,2,2,2,0,9
+AtelierTAM,7,3,3,26,0,8
+Beaux-Arts,4,0,4,27,0,3
+Boutonnet,4,9,5,5,0,0
+Celleneuve,6,4,6,33,0,2
+Charles Flahault,4,5,7,7,0,0
+Cité Mion,7,6,8,8,0,4
+Clemenceau,11,7,9,11,0,7
+Comedie Baudin,7,5,10,10,0,5
+Comédie,7,7,9,11,0,7
+Corum,4,0,0,29,0,3
+Deux Ponts - Gare Saint-Roch,7,6,11,9,0,1
+Emile Combes,4,0,12,14,0,3
+Esplanade,7,8,13,15,0,11
+Euromédecine,1,9,1,31,0,6
+Fac de Lettres,4,9,0,17,0,0
+FacdesSciences,4,9,14,18,0,0
+Foch,7,5,15,28,0,5
+Gambetta,6,4,6,20,0,2
+Garcia Lorca,13,10,16,23,0,4
+Halles Castellane,7,5,17,22,0,5
+Hôtel de Ville,7,10,16,23,0,4
+Hôtel du Département,1,4,6,31,0,6
+Jardin de la Lironde,7,6,11,38,0,1
+Jean de Beins,2,2,2,2,0,9
+Jeu de Mail des Abbés,4,0,4,27,0,3
+Les Arceaux,4,5,15,32,0,5
+Les Aubes,4,0,0,29,0,3
+Louis Blanc,4,9,14,30,0,0
+Malbosc,1,9,1,31,0,6
+Marie Caizergues,4,0,19,39,0,3
+Médiathèque Emile Zola,7,2,20,3,0,1
+Nombre d'Or,7,2,20,34,0,1
+Nouveau Saint-Roch,13,11,21,35,0,4
+Observatoire,5,4,22,36,0,2
+Occitanie,4,9,1,37,0,0
+Odysseum,7,6,11,38,0,1
+Parvis Jules Ferry - Gare Saint-Roch,6,11,19,39,0,2
+Place Albert 1er - St Charles,4,9,5,40,0,0
+Place Viala,8,5,15,32,0,5
+Plan Cabanes,6,4,6,33,0,2
+Pont de Lattes - Gare Saint-Roch,7,2,20,3,0,1
+Port Marianne,7,6,23,4,0,1
+Providence - Ovalie,10,11,22,13,0,2
+Prés d'Arènes,13,11,16,23,0,4
+Père Soulas,9,9,14,28,0,0
+Pérols Etang de l'Or,15,12,24,6,0,10
+Renouvier,11,11,7,7,0,7
+Richter,7,6,11,9,0,11
+Rondelet,13,11,21,12,0,4
+Rue Jules Ferry - Gare Saint-Roch,7,6,11,25,0,1
+Sabines,6,11,22,13,0,2
+Saint-Denis,0,11,21,35,0,4
+Saint-Guilhem - Courreau,4,11,25,16,0,12
+Sud De France,7,6,11,38,0,1
+Tonnelles,6,4,6,33,0,2
+Vert Bois,4,9,0,0,0,0
+Voltaire,7,6,8,19,0,1
+Station SAV,14,1,18,21,0,13
+Station SAV Smoove,3,3,3,24,0,8
+Perols etang or,15,12,24,6,0,10
+Smoove,16,3,3,26,1,8

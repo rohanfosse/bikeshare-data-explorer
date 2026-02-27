@@ -1,0 +1,126 @@
+system_id,city,system_name,n_stations,n_cap_known,mean_capacity,median_capacity,total_capacity,gini_capacity,E_ict,area_bbox_km2,density_st_km2
+dott-paris,Paris,Dott Paris,14747,0,,,0,,,155.6,94.77
+pony_paris,Paris,Pony Paris,3617,3608,1.6310975609756098,2.0,5885,0.2111,0.7889,99.9,36.22
+dott-bordeaux,Bordeaux,Dott Bordeaux,3449,0,,,0,,,487.7,7.07
+bird-bordeaux,Bordeaux,Bird Bordeaux,3152,0,,,0,,,421.4,7.48
+pony_bordeaux,Bordeaux,Pony Bordeaux,2996,6,15.0,15.0,90,0.4,0.6,421.1,7.12
+Paris,Paris,Vélib' Metropole,1507,1505,32.16611295681063,30.0,48410,0.2061,0.7939,509.9,2.96
+dott-lyon,Lyon,Dott Lyon,1404,0,,,0,,,112.0,12.53
+voi_Marseille,Marseille,Voi Marseille,1268,1267,5.22336227308603,5.0,6618,0.0463,0.9537,188.1,6.74
+pony_Angers,Angers,Pony Angers,1223,8,4.125,3.0,33,0.2235,0.7765,6426.0,0.19
+pony_Perpignan,Perpignan,Pony Perpignan,1030,2,2.5,2.5,5,,,11316829.0,0.0
+bird-marseille,Marseille,Bird Marseille,803,0,,,0,,,231.3,3.47
+voi_Grenoble,Grenoble,Voi Grenoble,697,697,9.730272596843616,8.0,6782,0.1016,0.8984,141.5,4.93
+pony_Basque_Country,Basque Country,Pony Basque Country,497,0,,,0,,,627.9,0.79
+voi_Le_Havre,Le Havre,Voi Le Havre,470,470,9.12340425531915,7.0,4288,0.2045,0.7955,72.9,6.45
+lyon,Lyon,Vélo'v,452,452,20.922566371681416,20.0,9457,0.1876,0.8124,63548.3,0.01
+toulouse,Toulouse,VélÔToulouse,434,434,17.806451612903224,18.0,7728,0.1306,0.8694,448.7,0.97
+pony_Nice,"Nice, FR",Pony Nice,412,412,100.0,100.0,41200,0.0,1.0,957.6,0.43
+citiz_alpes_loire,Grenoble,Citiz Alpes Loire,408,403,2.630272952853598,2.0,1060,0.369,0.631,31544.8,0.01
+pony_poitiers,Poitiers,Pony Poitiers,393,6,4.833333333333333,5.0,29,0.2356,0.7644,289.0,1.36
+voi_SQY,Saint-Quentin-en-Yvelines,Voi Saint-Quentin-en-Yvelines,382,382,8.028795811518325,8.0,3067,0.2181,0.7819,150.7,2.53
+pony_Bourges,Bourges,Pony Bourges,377,0,,,0,,,38.4,9.81
+dott-gpseo,Grand Paris Seine et Oise,Dott Gpseo,351,0,,,0,,,309.8,1.13
+citiz_grand_est,Strasbourg,Citiz Grand Est,273,272,2.286764705882353,2.0,622,0.2855,0.7145,2492568.4,0.0
+v_lille,Lille,V'lille,268,264,19.518939393939394,18.0,5153,0.1838,0.8162,177.1,1.51
+velo-tbm-bordeaux,Bordeaux,Le Vélo par TBM,225,223,20.269058295964125,20.0,4520,0.2166,0.7834,119.4,1.89
+levelo_inurba_marseille,Marseille,levélo - Marseille,221,220,23.59090909090909,20.0,5190,0.1597,0.8403,127.2,1.74
+pony_Evry,Evry,Pony Evry,212,0,,,0,,,13.8,15.4
+pony_Herouville,Herouville-Saint-Clair,Pony Herouville,209,0,,,0,,,79.6,2.63
+pony_Lorient,Lorient,Pony Lorient,203,0,,,0,,,14.6,13.91
+citiz_metropole_lyon,Lyon,Citiz Métropole Lyon,201,201,2.54228855721393,2.0,511,0.2386,0.7614,374.8,0.54
+pony_Limoges,Limoges,Pony Limoges,154,1,6.0,6.0,6,,,104.0,1.48
+inurba-rouen,Rouen,LOVELO Libre-service,131,131,11.64885496183206,12.0,1526,0.1824,0.8176,48.5,2.7
+citiz_occitanie,Toulouse,Citiz Occitanie,128,127,1.8267716535433072,2.0,232,0.1123,0.8877,30600.0,0.0
+nantes,Nantes,Naolib,124,124,19.89516129032258,16.0,2467,0.1909,0.8091,30.3,4.09
+dott-siemu,Marne-la-Vallée,Dott SIEMU,117,0,,,0,,,40.8,2.87
+vilvolt_epinal,Épinal,Vilvolt,105,103,15.679611650485436,15.0,1615,0.053,0.947,823.8,0.13
+citiz_gironde,Bordeaux,Citiz Gironde,99,99,2.6161616161616164,2.0,259,0.2717,0.7283,182275.3,0.0
+citiz_provence,Marseille,Citiz Provence,98,98,3.224489795918368,2.0,316,0.3134,0.6866,3171.9,0.03
+velivert_saint_etienne,Saint-Étienne,Vélivert,97,96,18.64583333333333,20.0,1790,0.2276,0.7724,404.3,0.24
+bird-laval,Laval,Bird Laval,83,0,,,0,,,17.2,4.82
+CVelo_FR_Clermont-Ferrand,Clermont-Ferrand,C-Vélo,82,82,20.92682926829268,20.0,1716,0.1467,0.8533,93.7,0.87
+pony_La_Roche_Sur_Yon,La Roche-sur-Yon,Pony La Roche-sur-Yon,81,0,,,0,,,23.9,3.39
+calais-velos,Calais,Vel’in,80,77,11.181818181818182,9.0,861,0.216,0.784,157.9,0.51
+velonecy60minutes_annecy,Annecy,Vélonecy,80,80,10.925,10.0,874,0.0911,0.9089,505.0,0.16
+dott-versailles-grand-parc,Versailles,Dott Versailles Grand-Parc,79,0,,,0,,,17.1,4.63
+citiz_lille_arras,Lille,Citiz Lille Arras,77,76,3.881578947368421,3.0,295,0.2842,0.7158,3842.9,0.02
+bird-millau,Millau,Bird Millau,76,0,,,0,,,12.8,5.93
+twisto_velolib_caen,Caen,Twisto Vélolib,75,75,12.8,10.0,960,0.1631,0.8369,188.6,0.4
+donkey_brest,Brest,Donkey Republic Brest,75,75,5.373333333333333,4.0,403,0.3331,0.6669,10.9,6.89
+dott-bourgoin-jallieu,Bourgoin-Jallieu,Dott Bourgoin Jallieu,69,0,,,0,,,17.4,3.95
+bird-larochesuryon,La Roche-sur-Yon,Bird Larochesuryon,69,0,,,0,,,22.5,3.07
+libelo,Valence,Libélo,68,68,11.308823529411764,10.0,769,0.1463,0.8537,272.1,0.25
+calivelo,Libourne,CaliVélo,66,66,10.984848484848484,10.0,725,0.2272,0.7728,676.4,0.1
+bird-sarreguemines,Sarreguemines,Bird Sarreguemines,65,0,,,0,,,12.7,5.11
+bird-montlucon,Montluçon,Bird Montlucon,63,0,,,0,,,19.8,3.18
+bird-draguignan,Draguignan,Bird Draguignan,63,0,,,0,,,22.3,2.82
+zebullo,Reims,Zebullo,63,63,10.968253968253968,10.0,691,0.2282,0.7718,62.9,1.0
+pony_Beauvais,Beauvais,Pony Beauvais,62,0,,,0,,,22.3,2.79
+nextbike_af,Mulhouse,VéloCité Mulhouse,60,60,16.583333333333332,15.5,995,0.156,0.844,71.8,0.84
+le_velo_star,Rennes,LE vélo STAR,57,57,24.73684210526316,24.0,1410,0.1426,0.8574,19.7,2.9
+citiz_bfc,Besançon,Citiz BFC,56,55,2.2181818181818183,2.0,122,0.2924,0.7076,14785.0,0.0
+citiz_developpement,France,Citiz Développement,55,55,2.036363636363636,2.0,112,0.2123,0.7877,242026.8,0.0
+citiz_rennes_metropole,Rennes,Citiz Rennes Métropole,55,55,2.618181818181818,2.0,144,0.2361,0.7639,91.2,0.6
+auxrmlevelo,Auxerre,AuxR_M le vélo,55,54,12.77777777777778,10.0,690,0.1592,0.8408,347.7,0.16
+Optymo_Belfort_ALS,Belfort,Optymo Belfort Auto libre-service,52,0,,,0,,,21.6,2.4
+grand-est,Grand Est,Velo Fluo Grand-Est,52,27,7.407407407407407,5.0,200,0.2093,0.7907,67051.2,0.0
+tanlib,Niort,Vélo Tanlib,51,51,13.96078431372549,14.0,712,0.2236,0.7764,81.9,0.62
+bird-gap,Gap,Bird Gap,50,0,,,0,,,17.1,2.92
+nextbike_ah,FR,VélO2,49,49,15.408163265306122,15.0,755,0.1507,0.8493,59.4,0.83
+capcotentin,Cherbourg-en-Cotentin,CapCotentin,49,49,10.122448979591836,8.0,496,0.2998,0.7002,292.0,0.17
+bird-vichy,Vichy,Bird Vichy,46,0,,,0,,,6.1,7.57
+amiens,Amiens,Velam,45,45,18.88888888888889,20.0,850,0.1687,0.8313,16.2,2.78
+beb,Bourg-en-Bresse,Rubis'Velo,45,45,11.933333333333334,10.0,537,0.2041,0.7959,39.5,1.14
+cergy,Cergy-Pontoise,VélO2,45,45,19.4,20.0,873,0.1211,0.8789,28.6,1.58
+citiz_nantes,Nantes,Citiz Nantes,41,39,1.7692307692307692,1.0,69,0.2921,0.7079,103.4,0.4
+donkey_valenciennes,Valenciennes,Donkey Republic Valenciennes,40,40,4.725,4.0,189,0.2107,0.7893,8.6,4.64
+idecycle_pau,PAU,IDEcycle (Pau),40,40,10.5,10.0,420,0.0452,0.9548,55.3,0.72
+velozef,Brest,VéloZef,40,40,10.0,10.0,400,0.0,1.0,114.0,0.35
+semo,Louviers,Semo Vélo,40,40,9.75,10.0,390,0.2595,0.7405,247.9,0.16
+vertuose,Longwy,Vertuose,39,39,11.538461538461538,12.0,450,0.1899,0.8101,155.3,0.25
+nextbike_ae,"Strasbourg, FR",Vélhop - Strasbourg,39,39,13.23076923076923,10.0,516,0.2731,0.7269,182.6,0.21
+nancy,Nancy,VélOstan'lib,37,37,18.62162162162162,17.0,689,0.1291,0.8709,14.3,2.58
+cyclam,Ardenne Métropole,Cycl'AM,34,34,9.058823529411764,8.0,308,0.1595,0.8405,262.2,0.13
+besancon,Besançon,VéloCité,33,33,14.393939393939394,12.0,475,0.2156,0.7844,332.8,0.1
+Optymo_FR_Belfort,Belfort,Optymo Belfort,32,32,17.5,20.0,560,0.2533,0.7467,31.8,1.01
+bird-ajaccio,Ajaccio,Bird Ajaccio,32,0,,,0,,,43.7,0.73
+altervelo,"Saint-Pierre, L'Étang-Salé & Saint-Louis",Altervelo Libre-service,31,31,14.451612903225806,16.0,448,0.2042,0.7958,164.0,0.19
+impulsyon,La Roche-sur-Yon,Impulsyon,31,31,7.290322580645161,6.0,226,0.1696,0.8304,15.1,2.06
+lemarcel,Troyes,Le Marcel,30,30,13.533333333333331,10.0,406,0.2563,0.7437,30.3,0.99
+velopop,Avignon,Vélopop,29,29,17.93103448275862,20.0,520,0.1711,0.8289,41.0,0.71
+ogalo,Montreuil-Bellay,Ogalo,28,28,7.357142857142857,8.0,206,0.2791,0.7209,367.3,0.08
+cyclovis,Soissons,Cyclovis,28,28,12.535714285714286,12.0,351,0.308,0.692,47.2,0.59
+citiz_angers,Angers,Citiz Angers,26,26,2.576923076923077,2.0,67,0.3347,0.6653,40.1,0.65
+velibeo,Brive-la-Gaillarde,Vélibéo,26,26,12.115384615384617,12.0,315,0.2265,0.7735,48.3,0.54
+knot_strasbourg,Strasbourg,Knot Strasbourg,25,25,7.84,8.0,196,0.1567,0.8433,62.7,0.4
+citiz_la_rochelle,La Rochelle,Citiz La Rochelle,24,24,1.9583333333333333,2.0,47,0.0204,0.9796,40.5,0.59
+citiz_grand_poitiers,Poitiers,Citiz Grand Poitiers,22,22,1.5909090909090908,1.5,35,0.2091,0.7909,224.2,0.1
+velocite,Laon,Vélo'Cité,19,18,9.77777777777778,10.0,176,0.2336,0.7664,45.9,0.41
+tempovelo,Agen,Tempovelo,16,16,10.9375,10.0,175,0.1711,0.8289,25.6,0.63
+petitesreines,Les Sables-d'Olonne,Les Petites Reines,16,16,12.375,10.0,198,0.142,0.858,22.1,0.72
+chantrerie,Chantrerie,Naolib Micromob',16,16,14.0,12.0,224,0.173,0.827,76.0,0.21
+choletbus,Cholet,Choletbus 2 Roues,16,16,14.875,18.0,238,0.1465,0.8535,22.7,0.7
+karu,Pointe-à-Pitre,Karu'Vélo,14,14,12.857142857142858,12.0,180,0.1802,0.8198,56.1,0.25
+ti_velo,Landerneau,Ti Vélo,14,14,12.5,12.5,175,0.1,0.9,29.9,0.47
+labaule,La Baule,La Baule,14,14,18.571428571428573,16.0,260,0.189,0.811,13.5,1.04
+mp_CHATELLERAULT,Châtellerault,CHATELLERAULT,13,13,6.846153846153846,7.0,89,0.0207,0.9793,561.9,0.02
+tlpmobilites,Tarbes,TLP Mobilites,13,13,12.76923076923077,14.0,166,0.278,0.722,180.9,0.07
+saintbrieuc,Saint-Brieuc,Vélo'Baie,12,11,11.818181818181818,10.0,130,0.0979,0.9021,12.5,0.96
+auray-quiberon,Auray,AQTA,11,11,15.454545454545457,10.0,170,0.2139,0.7861,5.8,1.89
+cyclolibre,Carcassonne,Cyclolibre,10,10,8.6,5.0,86,0.4023,0.5977,3.6,2.76
+calais,Calais,Velect'in,9,9,16.666666666666668,18.0,150,0.2933,0.7067,35.0,0.26
+auto-en-velay,Allègre,Auto-en-Velay,9,9,2.333333333333333,2.0,21,0.0952,0.9048,578.6,0.02
+dott-ol-vallee,Ol-Vallee,Dott Ol-Vallee,8,0,,,0,,,0.1,62.84
+aupa,Bayonne,Citiz AUPA,8,8,1.875,1.5,15,0.2917,0.7083,43.1,0.19
+velo-modalis,Royan,VéloModalis - TERRA,8,8,10.0,10.0,80,0.0,1.0,24.9,0.32
+vivelo,Vichy,Vivélo,8,7,10.0,10.0,70,0.0,1.0,15.6,0.51
+velodaqui,Argelès-sur-Mer,Vélo d'Aqui,6,6,10.0,10.0,60,0.3,0.7,3.5,1.69
+mp_LASCAUX,Lascaux,VELO VEZERE LASCAUX,5,5,4.6,5.0,23,0.0696,0.9304,236.1,0.02
+velyceo,Saint-Nazaire,VélYcéo,5,5,29.6,30.0,148,0.0108,0.9892,103.4,0.05
+mp_ARBRESLE,Courzieu,PAYS DE L'ARBRESLE - VEL'PAR,4,4,5.0,5.0,20,0.0,1.0,106.0,0.04
+perivelo,Périgueux,Périvélo,3,3,20.0,20.0,60,0.0,1.0,6.6,0.45
+mp_OSSAU,Arundy,VALLEE D'OSSAU,3,3,7.0,7.0,21,0.0,1.0,32.7,0.09
+montpellier,Montpellier,Velomagg,53,53,12.5849,8.0,667,0.272,0.728,97.42,0.544
+dijon,Dijon,Velodi,40,40,22.025,20.0,881,0.162,0.838,31.7,1.262
+mvelo_plus_grenoble,Grenoble,Mvelo+,127,0,0.0,0.0,0,0.0,1.0,1823.69,0.0696
