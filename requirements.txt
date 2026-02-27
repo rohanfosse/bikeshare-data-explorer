@@ -8,3 +8,4 @@ geopandas>=0.14.0
 pydeck>=0.9.0
 plotly>=5.20.0
 matplotlib>=3.8.0   # pour les palettes de couleurs dans data_loader.py
+scipy>=1.9.0        # pour IES — corrélation de Spearman (scipy.stats.spearmanr)

@@ -8,10 +8,35 @@ import sys
 from pathlib import Path
 
 import numpy as np
+import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
-from scipy.stats import spearmanr
+
+# scipy optionnel — fallback pur numpy/pandas si non installé
+try:
+    from scipy.stats import spearmanr as _spearmanr_scipy
+
+    def spearmanr(x, y):  # type: ignore[misc]
+        res = _spearmanr_scipy(x, y)
+        rho = float(res.statistic if hasattr(res, "statistic") else res[0])
+        pval = float(res.pvalue if hasattr(res, "pvalue") else res[1])
+        return rho, pval
+
+except ImportError:
+    def spearmanr(x, y):  # type: ignore[misc]
+        """Fallback : rho de Spearman via rangs pandas + p-valeur approchée."""
+        rx = pd.Series(x).rank()
+        ry = pd.Series(y).rank()
+        rho = float(rx.corr(ry))
+        n = len(rx)
+        if abs(rho) >= 1.0 - 1e-10:
+            return rho, 0.0
+        t = rho * np.sqrt((n - 2) / (1.0 - rho ** 2))
+        z = abs(t)
+        # Approximation CDF normale (Abramowitz & Stegun)
+        phi = 0.5 * (1.0 + np.sign(t) * (1.0 - np.exp(-0.717 * z - 0.416 * z ** 2)))
+        return rho, float(max(0.0, min(1.0, 2.0 * (1.0 - phi))))
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 from utils.data_loader import (

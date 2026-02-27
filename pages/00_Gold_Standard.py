@@ -46,6 +46,24 @@ catalog = load_systems_catalog()
 cities  = city_stats(df)
 compl   = completeness_report(df)
 
+# ── Vue dock-based uniquement (hors free-floating et autopartage) ──────────────
+# Exclusions A1 (autopartage : citiz_*), A3 (free-floating : bird-*, dott-*,
+# pony_*, voi_*) et A5 (hors-périmètre : altervelo La Réunion).
+_FF_PREFIXES = ("bird-", "dott-", "pony_", "voi_", "citiz_")
+_FF_EXACT = frozenset({
+    "auto-en-velay",      # autopartage (A1)
+    "grand-est",          # autopartage Citiz régional
+    "altervelo",          # DOM-TOM La Réunion (A5)
+    "aupa",               # autopartage Bayonne (A1)
+    "Optymo_Belfort_ALS", # capacité nulle, non-VLS
+    "osm_strasbourg",     # 0 stations (ébauche OSM)
+})
+df_dock = df[
+    ~df["system_id"].str.startswith(_FF_PREFIXES, na=False)
+    & ~df["system_id"].isin(_FF_EXACT)
+].copy()
+cities_dock = city_stats(df_dock)
+
 sidebar_nav()
 
 # ── KPIs réels ────────────────────────────────────────────────────────────────
@@ -193,16 +211,16 @@ if not catalog.empty and "status" in catalog.columns:
             "selon le verdict de l'audit (5 classes d'anomalies A1–A5)."
         )
 
-        # Top cities by station count
-        st.markdown("**Top 10 agglomérations (Gold Standard)**")
-        top_cities = cities.head(10)[["city", "n_stations"]].rename(
+        # Top cities by station count (dock-based uniquement)
+        st.markdown("**Top 10 agglomérations — stations dock-based**")
+        top_cities = cities_dock.head(10)[["city", "n_stations"]].rename(
             columns={"city": "Agglomération", "n_stations": "Stations"}
         )
         st.dataframe(top_cities, use_container_width=True, hide_index=True,
                      column_config={"Stations": st.column_config.ProgressColumn(
                          "Stations",
                          min_value=0,
-                         max_value=int(cities["n_stations"].max()),
+                         max_value=int(cities_dock["n_stations"].max()),
                          format="%d",
                      )})
 
@@ -411,9 +429,15 @@ donnees_sources = pd.DataFrame({
 
 st.table(donnees_sources)
 
-# Distribution des stations par ville (top 20)
-st.markdown("#### Couverture Géographique — Distribution des Stations par Agglomération")
-top20 = cities.head(20).copy()
+# Distribution des stations par ville (top 20) — dock-based uniquement
+st.markdown("#### Couverture Géographique — Stations Dock-Based par Agglomération")
+st.caption(
+    "Filtrage appliqué : les flottes *free-floating* (A3 : bird, dott, pony, voi) et les "
+    "systèmes d'autopartage (A1 : citiz) sont exclus. Seules les stations **dock-based** "
+    "ou *semi-dock* certifiées sont comptabilisées, permettant une comparaison homogène "
+    "de la capacité physique des réseaux VLS."
+)
+top20 = cities_dock.head(20).copy()
 fig_cities = px.bar(
     top20,
     x="n_stations",
@@ -422,7 +446,7 @@ fig_cities = px.bar(
     color="n_stations",
     color_continuous_scale="Blues",
     text="n_stations",
-    labels={"city": "Agglomération", "n_stations": "Stations certifiées"},
+    labels={"city": "Agglomération", "n_stations": "Stations dock certifiées"},
     height=480,
 )
 fig_cities.update_traces(texttemplate="%{x:,}", textposition="outside")
@@ -434,10 +458,11 @@ fig_cities.update_layout(
 )
 st.plotly_chart(fig_cities, use_container_width=True)
 st.caption(
-    "**Figure 5.1.** Top 20 agglomérations par nombre de stations Gold Standard certifiées. "
-    "La distribution est fortement asymétrique : Paris (Vélib') et Montpellier (Vélomagg) "
-    "concentrent un volume disproportionné de stations, justifiant l'étude de cas micro-locale "
-    "dédiée à Montpellier pour la validation des modèles de friction spatiale et d'équité sociale."
+    "**Figure 5.1.** Top 20 agglomérations par nombre de stations VLS dock-based certifiées "
+    "(hors flottes free-floating A3 et autopartage A1). Paris (Vélib') domine largement, "
+    "suivi par Lyon et Toulouse. L'exclusion des opérateurs free-floating ramène Bordeaux "
+    "de 9 920 stations brutes à 225 stations dock-based (*velo-TBM*), illustrant concrètement "
+    "l'impact de la correction A3 sur l'évaluation comparative des réseaux VLS."
 )
 
 # ── Section 6 : Implication pour la Recherche ──────────────────────────────────
