@@ -6,9 +6,17 @@ import sys
 from pathlib import Path
 
 import pandas as pd
+import plotly.express as px
+import plotly.graph_objects as go
 import streamlit as st
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
+from utils.data_loader import (
+    city_stats,
+    completeness_report,
+    load_stations,
+    load_systems_catalog,
+)
 from utils.styles import abstract_box, inject_css, section, sidebar_nav
 
 st.set_page_config(
@@ -26,19 +34,38 @@ abstract_box(
     "La robustesse d'un modèle d'évaluation spatial (tel que l'IMD) dépend intégralement de la fiabilité "
     "de ses données d'entrée (paradigme de la lutte contre le <i>Garbage In, Garbage Out</i>). Cette section documente "
     "le pipeline d'audit massif réalisé sur les flux GBFS français et la stratégie d'hybridation "
-    "multi-sources (BAAC, Cerema, GTFS, INSEE) mise en œuvre pour constituer notre base de référence spatiale : le Gold Standard."
+    "multi-sources (BAAC, Cerema, GTFS, INSEE) mise en œuvre pour constituer notre base de référence spatiale : "
+    "le <b>Gold Standard GBFS</b> — 46 359 stations certifiées issues de 104 systèmes nationaux, "
+    "enrichies selon cinq modules spatiaux (topographie SRTM, infrastructure OSM, accidentologie BAAC, "
+    "multimodalité GTFS, profil socio-économique INSEE)."
 )
 
+# ── Chargement des données ─────────────────────────────────────────────────────
+df      = load_stations()
+catalog = load_systems_catalog()
+cities  = city_stats(df)
+compl   = completeness_report(df)
+
 sidebar_nav()
+
+# ── KPIs réels ────────────────────────────────────────────────────────────────
+n_ok        = int((catalog["status"] == "ok").sum()) if "status" in catalog.columns else "—"
+avg_compl   = compl["Complétude (%)"].mean() if not compl.empty else 0
+
+k1, k2, k3, k4 = st.columns(4)
+k1.metric("Stations Gold Standard certifiées", f"{len(df):,}")
+k2.metric("Agglomérations couvertes", f"{df['city'].nunique()}")
+k3.metric("Systèmes GBFS certifiés", f"{n_ok}")
+k4.metric("Complétude moyenne d'enrichissement", f"{avg_compl:.1f} %")
 
 # ── Section 1 : L'Illusion de l'Open Data et l'Audit GBFS ──────────────────────
 st.divider()
 section(1, "L'Illusion de l'Open Data : Taxonomie des Anomalies GBFS")
 
 st.markdown(r"""
-Le standard **GBFS** (*General Bikeshare Feed Specification*, v3.0) s'est imposé comme l'ontologie de référence
-pour l'interopérabilité des données de micromobilité. En France, les données sont centralisées par
-*transport.data.gouv.fr* et *MobilityData*. Si cette standardisation a catalysé le développement
+Le standard **GBFS** (*General Bikeshare Feed Specification*, v3.0) s'est imposé comme l'ontologie de
+référence pour l'interopérabilité des données de micromobilité. En France, les données sont centralisées
+par *transport.data.gouv.fr* et *MobilityData*. Si cette standardisation a catalysé le développement
 d'applications *MaaS*, l'ingestion directe de ces données brutes dans des modèles de géographie
 quantitative engendre des artefacts statistiques majeurs (*Romanillos et al., 2016 ; Fishman, 2016*).
 
@@ -47,8 +74,8 @@ critiques (A1 à A5)** :
 
 * **A1 — Inclusion hors-domaine :** Présence de systèmes d'autopartage (ex. Citiz) encodés par erreur
   comme des flottes cyclables (14 systèmes affectés).
-* **A2 — Capacité fictive (Placeholder) :** Valeur constante non nulle déclarée arbitrairement sur toutes
-  les stations (ex. `pony_Nice` déclarant $c = 100$).
+* **A2 — Capacité fictive (Placeholder) :** Valeur constante non nulle déclarée arbitrairement sur
+  toutes les stations (ex. `pony_Nice` déclarant $c = 100$).
 * **A3 — Le Biais de Surcapacité Structurelle (*Floating-Anchor*) :** L'anomalie la plus critique,
   inhérente aux flottes *free-floating* (cf. infra).
 * **A4 — Aberrations géospatiales :** Coordonnées (Lat/Lon) permutées ou aberrantes générant des
@@ -75,9 +102,9 @@ lourdes (*dock-based*), faussant intégralement l'analyse des densités urbaines
 comparaison inter-systèmes non auditée.
 """)
 
-# ── Section 2 : Protocole de Purge et Filtrage ────────────────────────────────
+# ── Section 2 : Protocole de Purge et Résultats ───────────────────────────────
 st.divider()
-section(2, "Protocole de Purge Algorithmique et Filtrage Spatial")
+section(2, "Protocole de Purge Algorithmique : Du Bruit au Signal Certifié")
 
 st.markdown(r"""
 Pour distiller ce bruit statistique, un pipeline de redressement séquentiel en **6 étapes** a été
@@ -100,9 +127,106 @@ implémenté :
 **104 systèmes** (sur 62 agglomérations), regroupant **46 359 stations validées**.
 """)
 
+# Catalogue des systèmes
+if not catalog.empty and "status" in catalog.columns:
+    col_bar, col_stats = st.columns([3, 2])
+
+    with col_bar:
+        if "region" in catalog.columns and "n_stations" in catalog.columns:
+            region_df = (
+                catalog[catalog["status"] == "ok"]
+                .groupby("region")["n_stations"]
+                .agg(["sum", "count"])
+                .reset_index()
+                .rename(columns={"sum": "n_stations", "count": "n_systemes"})
+                .sort_values("n_stations", ascending=True)
+            )
+            fig_reg = px.bar(
+                region_df,
+                x="n_stations",
+                y="region",
+                orientation="h",
+                color="n_stations",
+                color_continuous_scale="Blues",
+                text="n_systemes",
+                labels={"n_stations": "Stations certifiées", "region": "Région", "n_systemes": "Systèmes"},
+                height=max(320, len(region_df) * 28),
+            )
+            fig_reg.update_traces(
+                texttemplate="%{text} syst.",
+                textposition="outside",
+            )
+            fig_reg.update_layout(
+                coloraxis_showscale=False,
+                plot_bgcolor="white",
+                margin=dict(l=10, r=80, t=10, b=10),
+            )
+            st.plotly_chart(fig_reg, use_container_width=True)
+            st.caption(
+                "**Figure 2.1.** Distribution des stations Gold Standard certifiées par région "
+                "administrative. Les étiquettes indiquent le nombre de systèmes GBFS certifiés par région. "
+                "La concentration en Île-de-France et Occitanie reflète la présence des plus grands "
+                "réseaux nationaux (Vélib', Vélomagg)."
+            )
+
+    with col_stats:
+        # Status breakdown
+        status_counts = catalog["status"].value_counts().reset_index()
+        status_counts.columns = ["Statut", "Systèmes"]
+        status_labels = {
+            "ok": "Certifié (Gold Standard)",
+            "too_small": "Exclu (micro-réseau)",
+            "autopartage": "Exclu (autopartage)",
+            "excluded": "Exclu (autre anomalie)",
+            "dom_tom": "Hors périmètre (DOM-TOM)",
+        }
+        status_counts["Statut"] = status_counts["Statut"].map(
+            lambda s: status_labels.get(s, s)
+        )
+        st.dataframe(
+            status_counts,
+            use_container_width=True,
+            hide_index=True,
+        )
+        st.caption(
+            "**Tableau 2.1.** Répartition des 125 systèmes GBFS audités "
+            "selon le verdict de l'audit (5 classes d'anomalies A1–A5)."
+        )
+
+        # Top cities by station count
+        st.markdown("**Top 10 agglomérations (Gold Standard)**")
+        top_cities = cities.head(10)[["city", "n_stations"]].rename(
+            columns={"city": "Agglomération", "n_stations": "Stations"}
+        )
+        st.dataframe(top_cities, use_container_width=True, hide_index=True,
+                     column_config={"Stations": st.column_config.ProgressColumn(
+                         "Stations",
+                         min_value=0,
+                         max_value=int(cities["n_stations"].max()),
+                         format="%d",
+                     )})
+
+    # Catalog details (expandable)
+    with st.expander("Catalogue complet des 125 systèmes audités", expanded=False):
+        display_cat = catalog.copy()
+        if "gbfs_url" in display_cat.columns:
+            display_cat = display_cat.drop(columns=["gbfs_url"])
+        rename_cat = {
+            "source":      "Source",
+            "system_id":   "Identifiant",
+            "title":       "Nom du système",
+            "city":        "Agglomération",
+            "region":      "Région",
+            "department":  "Département",
+            "n_stations":  "Stations (brut)",
+            "status":      "Statut d'audit",
+        }
+        display_cat = display_cat.rename(columns={k: v for k, v in rename_cat.items() if k in display_cat.columns})
+        st.dataframe(display_cat, use_container_width=True, hide_index=True)
+
 # ── Section 3 : Avant / Après (Étude de Cas) ──────────────────────────────────
 st.divider()
-section(3, "Avant / Après : Preuve Empirique de l'Impact de l'Audit")
+section(3, "Avant / Après : Preuve Empirique de l'Impact de l'Audit — Cas Bordeaux")
 
 st.markdown(r"""
 Pour saisir l'impact de ces corrections sur l'évaluation des politiques publiques, le cas de **Bordeaux**
@@ -169,46 +293,110 @@ with col_after:
     }
     """, language="json")
 
-
-# ── Section 4 : L'Hybridation Multi-Sources ────────────────────────────────────
+# ── Section 4 : Complétude de l'Enrichissement ────────────────────────────────
 st.divider()
-section(4, "L'Hybridation Multi-Sources : Modéliser l'Environnement Cyclable")
+section(4, "Complétude de l'Enrichissement Spatial — Couverture par Module Méthodologique")
+
+st.markdown(r"""
+L'enrichissement spatial des 46 359 stations certifiées repose sur cinq modules indépendants
+(Topographie, Infrastructure, Accidentologie, Multimodalité, Socio-Économique).
+La complétude de chaque module — proportion de stations disposant d'une valeur valide — est conditionnée
+par la couverture géographique de la source primaire et par les contraintes de l'algorithme de
+*Spatial Join* (rayon de 300 m). Le tableau ci-dessous documente le taux de couverture observé pour
+chaque dimension d'enrichissement sur le corpus complet.
+""")
+
+if not compl.empty:
+    # Color-coded completeness bar chart
+    compl_sorted = compl.sort_values("Complétude (%)", ascending=True).copy()
+    compl_sorted["couleur"] = compl_sorted["Complétude (%)"].apply(
+        lambda v: "#27ae60" if v >= 80 else ("#e67e22" if v >= 50 else "#e74c3c")
+    )
+
+    fig_compl = go.Figure(go.Bar(
+        x=compl_sorted["Complétude (%)"],
+        y=compl_sorted["Métrique"],
+        orientation="h",
+        marker_color=compl_sorted["couleur"].tolist(),
+        text=compl_sorted["Complétude (%)"].apply(lambda v: f"{v:.1f} %"),
+        textposition="outside",
+    ))
+    fig_compl.update_layout(
+        height=max(280, len(compl_sorted) * 42),
+        plot_bgcolor="white",
+        margin=dict(l=10, r=80, t=10, b=10),
+        xaxis=dict(title="Taux de complétude (%)", range=[0, 115]),
+        yaxis=dict(title=""),
+        showlegend=False,
+    )
+    fig_compl.add_vline(x=80, line_dash="dash", line_color="#27ae60", opacity=0.5,
+                        annotation_text="Seuil qualité (80 %)", annotation_position="top")
+    st.plotly_chart(fig_compl, use_container_width=True)
+    st.caption(
+        "**Figure 4.1.** Taux de complétude par dimension d'enrichissement spatial "
+        "sur les 46 359 stations Gold Standard. "
+        "Vert : complétude $\\geq 80\\,\\%$ (qualité satisfaisante) ; "
+        "Orange : $50\\,\\% \\leq$ complétude $< 80\\,\\%$ (couverture partielle) ; "
+        "Rouge : complétude $< 50\\,\\%$ (contrainte de source primaire — couverture BAAC ou SRTM)."
+    )
+
+    # Completeness table
+    with st.expander("Tableau détaillé de complétude", expanded=False):
+        display_compl = compl.copy()
+        display_compl["Complétude (%)"] = display_compl["Complétude (%)"].round(1)
+        st.dataframe(
+            display_compl,
+            use_container_width=True,
+            hide_index=True,
+            column_config={
+                "Complétude (%)": st.column_config.ProgressColumn(
+                    "Complétude (%)", min_value=0, max_value=100, format="%.1f %%"
+                ),
+                "Valides": st.column_config.NumberColumn(format="%d"),
+                "Total":   st.column_config.NumberColumn(format="%d"),
+            },
+        )
+
+# ── Section 5 : L'Hybridation Multi-Sources ────────────────────────────────────
+st.divider()
+section(5, "L'Hybridation Multi-Sources : Modéliser l'Environnement Cyclable à 360°")
 
 st.markdown(r"""
 Le GBFS indique *où* se trouve le vélo, mais demeure agnostique quant aux **déterminants
 environnementaux et sociaux** qui conditionnent son usage. Le saut qualitatif du *Gold Standard* réside
 dans l'enrichissement multidimensionnel (*Spatial Join*) des coordonnées avec des bases de données
 institutionnelles. Six modules d'enrichissement ont été appliqués à l'ensemble des 46 359 stations
-certifiées.
+certifiées, couvrant les déterminants identifiés dans la littérature scientifique
+(*Pucher et al., 2010 ; Parkin et al., 2008 ; Fishman, 2016*).
 """)
 
 donnees_sources = pd.DataFrame({
     "Dimension Modélisée": [
         "Infrastructure Primaire",
-        "Sécurité Spatiale (S)",
-        "Perméabilité Cyclable (I)",
-        "Capillarité Multimodale (M)",
-        "Friction Spatiale (T)",
-        "Vulnérabilité Socio-Éco.",
-        "Pratiques Réelles (Val.)",
+        "Sécurité Spatiale (S — IMD)",
+        "Perméabilité Cyclable (I — IMD)",
+        "Capillarité Multimodale (M — IMD)",
+        "Friction Spatiale (T — IMD)",
+        "Vulnérabilité Socio-Éco. (IES)",
+        "Pratiques Réelles (Validation externe)",
     ],
     "Source de la donnée": [
         "GBFS transport.data.gouv.fr",
-        "Base BAAC (ONISR)",
+        "Base BAAC (ONISR) 2021–2023",
         "OpenStreetMap / Cerema",
         "Point d'Accès National (GTFS)",
-        "NASA SRTM (30 m)",
+        "NASA SRTM (30 m via Open-Topo-Data)",
         "INSEE (Filosofi & RP 2020)",
-        "FUB (2023) / INSEE EMP (2019)",
+        "FUB Baromètre 2023 / INSEE EMP 2019",
     ],
     "Format / Nature": [
         "GeoJSON point",
-        "Open Data (Accidents)",
-        "Réseau filaire (Lignes)",
-        "Schedules & Stops (Noeuds)",
-        "Modèle Numérique (MNT)",
-        "Carroyage Démographique",
-        "Enquêtes déclaratives",
+        "Open Data (Accidents corporels)",
+        "Réseau filaire (Lignes OSM)",
+        "Schedules & Stops (Noeuds GTFS)",
+        "Modèle Numérique de Terrain",
+        "Carroyage Démographique 200 m",
+        "Enquêtes déclaratives agrégées",
     ],
     "Variables intégrées et apport analytique": [
         "Coordonnées de vérité terrain, typologies certifiées et capacités redressées.",
@@ -216,16 +404,45 @@ donnees_sources = pd.DataFrame({
         "Mesure continue de l'aménagement en site propre protégeant l'usager vulnérable.",
         "Distance isochrone aux pôles d'échanges lourds (Train, Tram, BHNS).",
         "Gradient altimétrique modélisant la barrière énergétique physiologique.",
-        "Variables INSEE : Revenu médian, chômage, % de cadres, diplômés, sans voiture.",
-        "Optimisation supervisée des pondérations du modèle IMD par convergence statistique.",
+        "Revenu médian, chômage, % de cadres, diplômés, sans voiture par carreau INSEE.",
+        "Part modale vélo effective et score perçu du climat cyclable — validation externe de l'IMD.",
     ],
 })
 
 st.table(donnees_sources)
 
-# ── Section 5 : Implication pour la Recherche ──────────────────────────────────
+# Distribution des stations par ville (top 20)
+st.markdown("#### Couverture Géographique — Distribution des Stations par Agglomération")
+top20 = cities.head(20).copy()
+fig_cities = px.bar(
+    top20,
+    x="n_stations",
+    y="city",
+    orientation="h",
+    color="n_stations",
+    color_continuous_scale="Blues",
+    text="n_stations",
+    labels={"city": "Agglomération", "n_stations": "Stations certifiées"},
+    height=480,
+)
+fig_cities.update_traces(texttemplate="%{x:,}", textposition="outside")
+fig_cities.update_layout(
+    coloraxis_showscale=False,
+    plot_bgcolor="white",
+    margin=dict(l=10, r=60, t=10, b=10),
+    yaxis=dict(autorange="reversed"),
+)
+st.plotly_chart(fig_cities, use_container_width=True)
+st.caption(
+    "**Figure 5.1.** Top 20 agglomérations par nombre de stations Gold Standard certifiées. "
+    "La distribution est fortement asymétrique : Paris (Vélib') et Montpellier (Vélomagg) "
+    "concentrent un volume disproportionné de stations, justifiant l'étude de cas micro-locale "
+    "dédiée à Montpellier pour la validation des modèles de friction spatiale et d'équité sociale."
+)
+
+# ── Section 6 : Implication pour la Recherche ──────────────────────────────────
 st.divider()
-section(5, "Implication : L'Infrastructure de Données comme Objet de Recherche")
+section(6, "Implication : L'Infrastructure de Données comme Objet de Recherche Autonome")
 
 st.markdown(r"""
 Dans le champ des études urbaines, le traitement des données est trop souvent relégué au rang de "détail
@@ -233,11 +450,17 @@ technique". Cette recherche prouve au contraire que **la qualité de la donnée 
 
 En omettant de corriger les anomalies GBFS, un algorithme de planification publique conclurait à tort
 qu'une agglomération est parfaitement couverte grâce à des capacités artificiellement gonflées, justifiant
-potentiellement des réallocations de subventions inéquitables.
+potentiellement des réallocations de subventions inéquitables. Le cas Bordeaux illustre cette menace :
+sans audit, l'agglomération se serait vue attribuer un rang IMD de 2e place nationale, conduisant à
+une réallocation des ressources de mobilité au détriment de villes objectivement mieux équipées.
 
 La mise à disposition de ce **Gold Standard au format `.parquet`** constitue donc une contribution
-académique autonome. Elle offre aux futurs chercheurs et géomaticiens un "socle de vérité terrain" déjà
-purgé de ses biais, prêt à supporter des modélisations complexes telles que la théorie des graphes,
-l'analyse temporelle des flux de micromobilité, ou la modélisation économétrique de l'équité spatiale
-(*cf.* Indice d'Équité Sociale — IES).
+académique autonome à deux niveaux :
+
+1. **Contribution méthodologique :** Un protocole d'audit reproductible et généralisable à tout corpus
+   GBFS national ou international, documenté dans les Notebooks 20–21 du dépôt public.
+2. **Contribution empirique :** Un jeu de données de 46 359 stations certifiées, enrichies selon
+   cinq modules spatiaux, prêt à supporter des modélisations complexes telles que la théorie des
+   graphes, l'analyse temporelle des flux de micromobilité, ou la modélisation économétrique de
+   l'équité spatiale — Indice d'Équité Sociale (IES, *cf.* page dédiée).
 """)

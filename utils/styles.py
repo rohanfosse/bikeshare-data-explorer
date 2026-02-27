@@ -10,14 +10,14 @@ import streamlit as st
 
 _NAV: list[tuple[str, str]] = [
     ("app.py",                     "Introduction — Vue d'ensemble"),
-    ("pages/00_Gold_Standard.py", "Gold Standard — Audit et Hybridation"),
+    ("pages/00_Gold_Standard.py",  "Gold Standard — Audit et Hybridation"),
     ("pages/0_IMD.py",             "IMD — Indice de Mobilité Douce"),
+    ("pages/7_IES.py",             "IES — Équité Spatiale"),
     ("pages/1_Carte.py",           "Carte — Visualisation spatiale"),
     ("pages/2_Villes.py",          "Villes — Analyse comparative"),
     ("pages/3_Distributions.py",   "Distributions — Statistiques"),
     ("pages/5_Mobilite_France.py", "France — Indicateurs nationaux"),
     ("pages/6_Montpellier.py",     "Montpellier — Étude de cas VLS"),
-    ("pages/7_IES.py",             "IES — Équité Spatiale"),
     ("pages/4_Export.py",          "Export — Données chercheurs"),
 ]
 
