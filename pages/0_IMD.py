@@ -92,7 +92,7 @@ k5.metric("Réseaux d'excellence (IMD > 60)", f"{int((imd_f['IMD'] > 60).sum())}
 _mmm = imd_f[imd_f["city"] == "Montpellier"]
 if not _mmm.empty:
     _mmm_row  = _mmm.iloc[0]
-    _mmm_rank = int(imd_f[imd_f["IMD"] >= _mmm_row["IMD"]].index[0]) + 1
+    _mmm_rank = int(_mmm.index[0]) + 1
     _s_str    = f"S={_mmm_row['S_securite']*100:.1f}"
     _i_str    = f"I={_mmm_row['I_infra']*100:.1f}"
     _m_str    = f"M={_mmm_row['M_multi']*100:.1f}"
@@ -655,7 +655,6 @@ fig_baseline.add_hline(y=_med_imd_bl, line_dash="dot", line_color="#888", opacit
 # Cercle rouge Montpellier
 _mmm_bl = imd_f[imd_f["city"] == "Montpellier"]
 if not _mmm_bl.empty:
-    import math
     fig_baseline.add_trace(go.Scatter(
         x=[_mmm_bl["n_stations"].iloc[0]],
         y=[_mmm_bl["IMD"].iloc[0]],

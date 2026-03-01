@@ -44,19 +44,21 @@ abstract_box(
     "intuitives dominantes : <b>(1)</b> l'absence d'autocorrélation spatiale significative "
     "(Moran's $I = -0{,}023$, $p = 0{,}765$) réfute le déterminisme géographique — c'est "
     "la gouvernance locale, non la localisation, qui explique les disparités ; "
-    "<b>(2)</b> le faible $R^2 = 0{,}28$ du modèle Ridge réfute le déterminisme économique — "
-    "72 % de la qualité de l'environnement cyclable relèvent de choix politiques, non du revenu médian."
+    "<b>(2)</b> la corrélation de Spearman nulle ($\\rho = +0{,}055$, $p = 0{,}677$) entre IMD "
+    "et revenu médian (INSEE Filosofi, 59 agglomérations dock-based) réfute le déterminisme "
+    "économique — la quasi-totalité de la qualité VLS relève de choix politiques locaux."
 )
 
 sidebar_nav()
 
 # ── KPIs calculés depuis les données réelles ───────────────────────────────────
 k1, k2, k3, k4, k5 = st.columns(5)
-k1.metric("Stations Gold Standard", f"{len(df):,}")
-k2.metric("Agglomérations couvertes", f"{df['city'].nunique()}")
-k3.metric("Systèmes GBFS certifiés", f"{n_certified}")
+n_dock = int((df["station_type"] == "docked_bike").sum()) if "station_type" in df.columns else len(df)
+k1.metric("Stations Gold Standard (total)",    f"{len(df):,}")
+k2.metric("Dont stations dock-based (VLS)",    f"{n_dock:,}")
+k3.metric("Systèmes GBFS certifiés",           f"{n_certified}")
 k4.metric("Moran's I (autocorrélation spatiale)", "−0,023 (ns)")
-k5.metric("R² Ridge (revenu → IMD)", "0,28")
+k5.metric("ρ Spearman IMD × Revenu",           "+0,055 (ns)", "Indépendance totale")
 
 # ── Section 1 : Contexte et Problématique ──────────────────────────────────────
 st.divider()
