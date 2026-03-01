@@ -200,13 +200,16 @@ def compute_imd_cities(df: pd.DataFrame) -> pd.DataFrame:
     """
     Calcule l'Indice de Mobilité Douce (IMD) à l'échelle des villes.
 
-    Composantes (pondération égale, 25 % chacune) :
+    Composantes (normalisées Min-Max sur les villes avec ≥ 5 stations) :
     - S : Sécurité      = 1 − norm(baac_accidents_cyclistes)
     - I : Infrastructure = norm(infra_cyclable_pct)
     - M : Multimodalité  = norm(gtfs_heavy_stops_300m)
     - T : Topographie    = 1 − norm(topography_roughness_index)
 
-    Normalisation min-max sur les villes avec au moins 5 stations.
+    Poids optimaux calibrés par évolution différentielle
+    (maximisation ρ de Spearman vs part modale EMP 2019) :
+      wM = 0.578, wI = 0.184, wS = 0.142, wT = 0.096
+
     La médiane est utilisée pour imputer les valeurs manquantes.
     IMD ∈ [0, 100].
 
@@ -229,8 +232,13 @@ def compute_imd_cities(df: pd.DataFrame) -> pd.DataFrame:
     stats["M_multi"]    = _minmax(_fill("gtfs_heavy_stops_300m")).values
     stats["T_topo"]     = (1 - _minmax(_fill("topography_roughness_index"))).values
 
-    comp_cols = ["S_securite", "I_infra", "M_multi", "T_topo"]
-    stats["IMD"] = stats[comp_cols].mean(axis=1) * 100
+    # Poids optimaux (évolution différentielle, ρ Spearman vs EMP 2019)
+    stats["IMD"] = (
+        0.142 * stats["S_securite"]
+        + 0.184 * stats["I_infra"]
+        + 0.578 * stats["M_multi"]
+        + 0.096 * stats["T_topo"]
+    ) * 100
 
     return stats.sort_values("IMD", ascending=False).reset_index(drop=True)
 
