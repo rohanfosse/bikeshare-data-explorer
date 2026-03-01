@@ -29,50 +29,45 @@ inject_css()
 st.title("Ingénierie des Données : Genèse du Gold Standard")
 st.caption("Axe Préliminaire : De l'Open Data brut à l'infrastructure de recherche validée")
 
-abstract_box(
-    "<b>Problématique méthodologique :</b> L'Open Data constitue-t-il un matériau de recherche prêt à l'emploi ?<br><br>"
-    "La robustesse d'un modèle d'évaluation spatial (tel que l'IMD) dépend intégralement de la fiabilité "
-    "de ses données d'entrée (paradigme de la lutte contre le <i>Garbage In, Garbage Out</i>). Cette section documente "
-    "le pipeline d'audit massif réalisé sur les flux GBFS français et la stratégie d'hybridation "
-    "multi-sources (BAAC, Cerema, GTFS, INSEE) mise en œuvre pour constituer notre base de référence spatiale : "
-    "le <b>Gold Standard GBFS</b> — 46 359 stations certifiées issues de 104 systèmes nationaux, "
-    "enrichies selon cinq modules spatiaux (topographie SRTM, infrastructure OSM, accidentologie BAAC, "
-    "multimodalité GTFS, profil socio-économique INSEE)."
-)
-
-# ── Chargement des données ─────────────────────────────────────────────────────
+# ── Chargement des données (avant abstract pour valeurs dynamiques) ────────────
 df      = load_stations()
 catalog = load_systems_catalog()
 cities  = city_stats(df)
 compl   = completeness_report(df)
 
-# ── Vue dock-based uniquement (hors free-floating et autopartage) ──────────────
-# Exclusions A1 (autopartage : citiz_*), A3 (free-floating : bird-*, dott-*,
-# pony_*, voi_*) et A5 (hors-périmètre : altervelo La Réunion).
-_FF_PREFIXES = ("bird-", "dott-", "pony_", "voi_", "citiz_")
-_FF_EXACT = frozenset({
-    "auto-en-velay",      # autopartage (A1)
-    "grand-est",          # autopartage Citiz régional
-    "altervelo",          # DOM-TOM La Réunion (A5)
-    "aupa",               # autopartage Bayonne (A1)
-    "Optymo_Belfort_ALS", # capacité nulle, non-VLS
-    "osm_strasbourg",     # 0 stations (ébauche OSM)
-})
-df_dock = df[
-    ~df["system_id"].str.startswith(_FF_PREFIXES, na=False)
-    & ~df["system_id"].isin(_FF_EXACT)
-].copy()
+# ── Vue dock-based : station_type == 'docked_bike' ────────────────────────────
+# Le Gold Standard Final classe chaque entrée via la colonne `station_type` :
+# 'docked_bike' (VLS physique), 'free_floating' (A3), 'carsharing' (A1).
+df_dock    = df[df["station_type"] == "docked_bike"].copy() if "station_type" in df.columns else df.copy()
 cities_dock = city_stats(df_dock)
+
+# ── Métriques clés calculées ───────────────────────────────────────────────────
+n_ok         = int((catalog["status"] == "ok").sum()) if "status" in catalog.columns else len(catalog)
+n_ff         = int((df["station_type"] == "free_floating").sum()) if "station_type" in df.columns else 0
+n_carshare   = int((df["station_type"] == "carsharing").sum())    if "station_type" in df.columns else 0
+n_dock       = len(df_dock)
+n_dock_cities = df_dock["city"].nunique()
+avg_compl    = compl["Complétude (%)"].mean() if not compl.empty else 0
+
+abstract_box(
+    "<b>Problématique méthodologique :</b> L'Open Data constitue-t-il un matériau de recherche prêt à l'emploi ?<br><br>"
+    "La robustesse d'un modèle d'évaluation spatial (tel que l'IMD) dépend intégralement de la fiabilité "
+    "de ses données d'entrée (paradigme de la lutte contre le <i>Garbage In, Garbage Out</i>). Cette section documente "
+    "le pipeline d'audit massif réalisé sur les flux GBFS français et la stratégie d'hybridation "
+    f"multi-sources (BAAC, Cerema, GTFS, INSEE) mise en œuvre pour constituer notre base de référence spatiale : "
+    f"le <b>Gold Standard GBFS</b> — <b>{len(df):,} stations certifiées</b> issues de <b>{n_ok} systèmes</b> "
+    f"({n_dock_cities} agglomérations), dont <b>{n_dock:,} stations dock-based</b> (VLS physique) et "
+    f"{n_ff:,} points free-floating. Le corpus est enrichi selon six modules spatiaux (topographie SRTM, "
+    "infrastructure OSM, accidentologie BAAC, multimodalité GTFS, profil socio-économique INSEE Filosofi, "
+    "usage modal RP 2020)."
+)
 
 sidebar_nav()
 
 # ── KPIs réels ────────────────────────────────────────────────────────────────
-n_ok        = int((catalog["status"] == "ok").sum()) if "status" in catalog.columns else "—"
-avg_compl   = compl["Complétude (%)"].mean() if not compl.empty else 0
-
 k1, k2, k3, k4 = st.columns(4)
-k1.metric("Stations Gold Standard certifiées", f"{len(df):,}")
-k2.metric("Agglomérations couvertes", f"{df['city'].nunique()}")
+k1.metric("Stations Gold Standard", f"{len(df):,}")
+k2.metric("Dont VLS dock-based", f"{n_dock:,}", f"{n_dock_cities} agglomérations")
 k3.metric("Systèmes GBFS certifiés", f"{n_ok}")
 k4.metric("Complétude moyenne d'enrichissement", f"{avg_compl:.1f} %")
 
@@ -87,8 +82,8 @@ par *transport.data.gouv.fr* et *MobilityData*. Si cette standardisation a catal
 d'applications *MaaS*, l'ingestion directe de ces données brutes dans des modèles de géographie
 quantitative engendre des artefacts statistiques majeurs (*Romanillos et al., 2016 ; Fishman, 2016*).
 
-L'audit systématique des 125 systèmes français a mis en exergue une taxonomie de **5 classes d'anomalies
-critiques (A1 à A5)** :
+L'audit systématique des systèmes GBFS français a mis en exergue une taxonomie de **5 classes d'anomalies
+critiques (A1 à A5)**, désormais encodées dans la colonne `station_type` du Gold Standard Final :
 
 * **A1 — Inclusion hors-domaine :** Présence de systèmes d'autopartage (ex. Citiz) encodés par erreur
   comme des flottes cyclables (14 systèmes affectés).
@@ -141,9 +136,16 @@ implémenté :
 6. **Seuil de robustesse spatiale :** Exclusion des micro-réseaux ($N_{\min} < 20$ stations dock)
    incapables de soutenir une analyse maillée.
 
-**Bilan de la consolidation :** Passage d'une base brute de **125 systèmes** à un jeu certifié de
-**104 systèmes** (sur 62 agglomérations), regroupant **46 359 stations validées**.
-""")
+"""
+)
+
+st.markdown(
+    f"**Bilan de la consolidation :** Le Gold Standard Final regroupe **{len(df):,} stations certifiées** "
+    f"issues de **{n_ok} systèmes** couvrant **{df['city'].nunique()} agglomérations**, dont "
+    f"**{n_dock:,} stations dock-based** (VLS physique, `station_type = docked_bike`), "
+    f"**{n_ff:,} points free-floating** (mobilité légère, A3 corrigé) et "
+    f"**{n_carshare:,} points d'autopartage** (A1, conservés pour analyse comparative)."
+)
 
 # Catalogue des systèmes
 if not catalog.empty and "status" in catalog.columns:
@@ -207,7 +209,7 @@ if not catalog.empty and "status" in catalog.columns:
             hide_index=True,
         )
         st.caption(
-            "**Tableau 2.1.** Répartition des 125 systèmes GBFS audités "
+            f"**Tableau 2.1.** Répartition des {len(catalog)} systèmes GBFS audités "
             "selon le verdict de l'audit (5 classes d'anomalies A1–A5)."
         )
 
@@ -225,7 +227,7 @@ if not catalog.empty and "status" in catalog.columns:
                      )})
 
     # Catalog details (expandable)
-    with st.expander("Catalogue complet des 125 systèmes audités", expanded=False):
+    with st.expander(f"Catalogue complet des {len(catalog)} systèmes audités", expanded=False):
         display_cat = catalog.copy()
         if "gbfs_url" in display_cat.columns:
             display_cat = display_cat.drop(columns=["gbfs_url"])
@@ -316,13 +318,13 @@ st.divider()
 section(4, "Complétude de l'Enrichissement Spatial — Couverture par Module Méthodologique")
 
 st.markdown(r"""
-L'enrichissement spatial des 46 359 stations certifiées repose sur cinq modules indépendants
+L'enrichissement spatial des {N_STATIONS} stations certifiées repose sur cinq modules indépendants
 (Topographie, Infrastructure, Accidentologie, Multimodalité, Socio-Économique).
 La complétude de chaque module — proportion de stations disposant d'une valeur valide — est conditionnée
 par la couverture géographique de la source primaire et par les contraintes de l'algorithme de
 *Spatial Join* (rayon de 300 m). Le tableau ci-dessous documente le taux de couverture observé pour
 chaque dimension d'enrichissement sur le corpus complet.
-""")
+""".replace("{N_STATIONS}", f"{len(df):,}"))
 
 if not compl.empty:
     # Color-coded completeness bar chart
@@ -351,8 +353,8 @@ if not compl.empty:
                         annotation_text="Seuil qualité (80 %)", annotation_position="top")
     st.plotly_chart(fig_compl, use_container_width=True)
     st.caption(
-        "**Figure 4.1.** Taux de complétude par dimension d'enrichissement spatial "
-        "sur les 46 359 stations Gold Standard. "
+        f"**Figure 4.1.** Taux de complétude par dimension d'enrichissement spatial "
+        f"sur les {len(df):,} stations Gold Standard. "
         "Vert : complétude $\\geq 80\\,\\%$ (qualité satisfaisante) ; "
         "Orange : $50\\,\\% \\leq$ complétude $< 80\\,\\%$ (couverture partielle) ; "
         "Rouge : complétude $< 50\\,\\%$ (contrainte de source primaire — couverture BAAC ou SRTM)."
@@ -383,10 +385,10 @@ st.markdown(r"""
 Le GBFS indique *où* se trouve le vélo, mais demeure agnostique quant aux **déterminants
 environnementaux et sociaux** qui conditionnent son usage. Le saut qualitatif du *Gold Standard* réside
 dans l'enrichissement multidimensionnel (*Spatial Join*) des coordonnées avec des bases de données
-institutionnelles. Six modules d'enrichissement ont été appliqués à l'ensemble des 46 359 stations
+institutionnelles. Six modules d'enrichissement ont été appliqués à l'ensemble des {N_STATIONS} stations
 certifiées, couvrant les déterminants identifiés dans la littérature scientifique
 (*Pucher et al., 2010 ; Parkin et al., 2008 ; Fishman, 2016*).
-""")
+""".replace("{N_STATIONS}", f"{len(df):,}"))
 
 donnees_sources = pd.DataFrame({
     "Dimension Modélisée": [
@@ -484,8 +486,9 @@ académique autonome à deux niveaux :
 
 1. **Contribution méthodologique :** Un protocole d'audit reproductible et généralisable à tout corpus
    GBFS national ou international, documenté dans les Notebooks 20–21 du dépôt public.
-2. **Contribution empirique :** Un jeu de données de 46 359 stations certifiées, enrichies selon
-   cinq modules spatiaux, prêt à supporter des modélisations complexes telles que la théorie des
-   graphes, l'analyse temporelle des flux de micromobilité, ou la modélisation économétrique de
+2. **Contribution empirique :** Un jeu de données de {N_STATIONS} stations certifiées, enrichies selon
+   six modules spatiaux (dont les données socio-économiques INSEE Filosofi — revenu médian, Gini,
+   mobilité), prêt à supporter des modélisations complexes telles que la théorie des graphes,
+   l'analyse temporelle des flux de micromobilité, ou la modélisation économétrique de
    l'équité spatiale — Indice d'Équité Sociale (IES, *cf.* page dédiée).
-""")
+""".replace("{N_STATIONS}", f"{len(df):,}"))

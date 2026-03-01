@@ -21,7 +21,7 @@ from utils.styles import abstract_box, inject_css, section, sidebar_nav
 
 st.set_page_config(
     page_title="Indice de Mobilité Douce — Gold Standard GBFS",
-    page_icon="📐",
+    page_icon=None,
     layout="wide",
 )
 inject_css()
@@ -436,16 +436,16 @@ if "revenu_median" in imd_f.columns and "IES" in imd_f.columns:
     st.plotly_chart(fig_ies, use_container_width=True)
     
     st.markdown("""
-    **📝 Diagnostic Socio-Spatial (Lecture des Quadrants) :**
+    **Diagnostic Socio-Spatial (Lecture des Quadrants) :**
     Le quadrant inférieur gauche concentre les **"Déserts de Mobilité Sociale"** (environ 29 % des villes du panel). Ces agglomérations cumulent une fragilité économique structurelle (revenu inférieur à la médiane) et un sous-équipement cyclable profond (IMD faible, IES < 1). Les usagers de ces territoires sont triplement pénalisés : précarité budgétaire, éloignement des hubs multimodaux, et impossibilité de se reporter sur les SVLS.
     """)
 else:
-    st.info("💡 *Les données socio-économiques (colonnes `revenu_median` et `IES`) ne sont pas détectées dans ce dataset pour générer la matrice d'équité. Assurez-vous d'avoir fusionné les résultats du Notebook 22.*")
+    st.info("*Les données socio-économiques (colonnes `revenu_median` et `IES`) ne sont pas détectées dans ce dataset pour générer la matrice d'équité. Assurez-vous d'avoir fusionné les résultats du Notebook 22.*")
 
     
-# ── Section 7 — Conclusions de la page ────────────────────────────────────
+# ── Section 8 — Conclusions de la page ────────────────────────────────────
 st.divider()
-section(7, "Conclusions de la Modélisation Spatiale (IMD)")
+section(8, "Conclusions de la Modélisation Spatiale (IMD)")
 st.success("""
 **Bilan des résultats observés dans cette section :**
 

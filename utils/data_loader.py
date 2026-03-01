@@ -12,7 +12,7 @@ import streamlit as st
 
 # Chemins des données
 _ROOT     = Path(__file__).parent.parent
-DATA_PATH = _ROOT / "data" / "stations_gold_standard.parquet"
+DATA_PATH = _ROOT / "data" / "stations_gold_standard_final.parquet"
 
 # Catalogue des systèmes GBFS
 SYSTEMS_PATH   = _ROOT / "data" / "gbfs_france" / "systems_catalog.csv"
@@ -90,6 +90,35 @@ METRICS: dict[str, dict] = {
         "description": "Écart-type des dénivelés absolus entre la station et ses voisines à ≤ 500 m (proxy dénivelé local).",
         "color_scale": "Purples",
         "higher_is_better": False,
+    },
+    # ── Nouvelles colonnes socio-économiques INSEE (Gold Standard Final) ──────────
+    "revenu_median_uc": {
+        "label": "Revenu médian/UC (€/an, INSEE)",
+        "unit": "€/an",
+        "description": "Revenu médian par unité de consommation du carreau INSEE 200 m contenant la station (Filosofi).",
+        "color_scale": "Greens",
+        "higher_is_better": None,
+    },
+    "gini_revenu": {
+        "label": "Indice de Gini (inégalités de revenu)",
+        "unit": "",
+        "description": "Coefficient de Gini mesurant les inégalités de revenu dans le carreau INSEE 200 m.",
+        "color_scale": "Reds",
+        "higher_is_better": False,
+    },
+    "part_menages_voit0": {
+        "label": "Ménages sans voiture (%)",
+        "unit": "%",
+        "description": "Part des ménages sans voiture dans le carreau INSEE 200 m (RP 2020).",
+        "color_scale": "Blues",
+        "higher_is_better": None,
+    },
+    "part_velo_travail": {
+        "label": "Part vélo domicile-travail (%)",
+        "unit": "%",
+        "description": "Part modale vélo pour les trajets domicile-travail dans le carreau INSEE 200 m (RP 2020).",
+        "color_scale": "Greens",
+        "higher_is_better": True,
     },
 }
 
@@ -207,7 +236,6 @@ def color_scale_rgb(
     Gère les NaN (couleur grise).
     """
     import matplotlib.cm as cm
-    import matplotlib.colors as mcolors
 
     cmap = cm.get_cmap(palette)
     vmin, vmax = series.min(), series.max()

@@ -4,6 +4,7 @@ Atlas de l'Indice de Mobilité Douce (IMD) — Gold Standard GBFS.
 """
 from __future__ import annotations
 
+import pandas as pd
 import streamlit as st
 
 from utils.data_loader import city_stats, load_stations, load_systems_catalog
@@ -23,11 +24,19 @@ st.caption(
     "en France — Gold Standard GBFS · CESI BikeShare-ICT · 2025-2026"
 )
 
+# ── Chargement des données (avant abstract pour valeurs dynamiques) ───────────
+df      = load_stations()
+catalog = load_systems_catalog()
+cities  = city_stats(df)
+
+n_certified = int((catalog["status"] == "ok").sum()) if "status" in catalog.columns else len(catalog)
+n_cities    = df["city"].nunique()
+
 abstract_box(
     "<b>Résumé de recherche :</b> Cette plateforme constitue l'interface de diffusion des résultats "
     "d'une recherche en géographie quantitative portant sur l'équité socio-spatiale des systèmes de "
-    "vélos en libre-service (VLS) français. À partir d'un corpus de <b>46 359 stations certifiées</b> "
-    "(Gold Standard GBFS, 104 systèmes, 62 agglomérations), deux indices composites sont calibrés "
+    f"vélos en libre-service (VLS) français. À partir d'un corpus de <b>{len(df):,} stations certifiées</b> "
+    f"(Gold Standard GBFS, {n_certified} systèmes, {n_cities} agglomérations), deux indices composites sont calibrés "
     "empiriquement : l'<b>Indice de Mobilité Douce (IMD)</b>, qui évalue la qualité physique "
     "de l'environnement cyclable à travers quatre dimensions (sécurité, infrastructure, multimodalité, "
     "topographie), et l'<b>Indice d'Équité Sociale (IES)</b>, qui mesure l'écart entre l'offre "
@@ -42,12 +51,6 @@ abstract_box(
 sidebar_nav()
 
 # ── KPIs calculés depuis les données réelles ───────────────────────────────────
-df      = load_stations()
-catalog = load_systems_catalog()
-cities  = city_stats(df)
-
-n_certified = int((catalog["status"] == "ok").sum()) if "status" in catalog.columns else "—"
-
 k1, k2, k3, k4, k5 = st.columns(5)
 k1.metric("Stations Gold Standard", f"{len(df):,}")
 k2.metric("Agglomérations couvertes", f"{df['city'].nunique()}")
@@ -97,7 +100,7 @@ st.markdown(r"""
 La littérature académique s'appuie de manière croissante sur des flux de données ouverts au standard
 GBFS (*General Bikeshare Feed Specification*, v3.0). Toutefois, nos travaux démontrent que
 l'utilisation naïve de ces données brutes est **scientifiquement erronée**. L'audit systématique
-des 125 systèmes français a révélé une taxonomie de 5 classes d'anomalies structurelles (A1 à A5).
+des {N_CATALOG} systèmes français a révélé une taxonomie de 5 classes d'anomalies structurelles (A1 à A5).
 
 L'anomalie A3 — le *biais de la moyenne conditionnelle* inhérent aux flottes *free-floating* — est
 la plus pernicieuse : elle engendre des surestimations massives de capacité
@@ -107,10 +110,10 @@ après correction de ce seul biais, ce qui aurait pu conduire à des réallocati
 publiques erronées de plusieurs millions d'euros.
 
 En purgeant rigoureusement les données de ces biais algorithmiques, nous avons constitué un
-**Gold Standard** de 46 359 stations validées sur 62 agglomérations — socle indispensable à toute
+**Gold Standard** de {N_STATIONS} stations validées sur {N_CITIES} agglomérations — socle indispensable à toute
 modélisation spatiale robuste. Ce jeu de données est mis à disposition de la communauté
 scientifique via l'interface d'export de cette plateforme (formats CSV et Parquet, principes FAIR).
-""")
+""".replace("{N_CATALOG}", str(len(catalog))).replace("{N_STATIONS}", f"{len(df):,}").replace("{N_CITIES}", str(n_cities)))
 
 col_l, col_r = st.columns(2)
 with col_l:
@@ -124,7 +127,6 @@ with col_l:
         {"Étape": "Stations Gold Standard certifiées",  "Valeur": f"{len(df):,}"},
         {"Étape": "Agglomérations couvertes",           "Valeur": str(df['city'].nunique())},
     ]
-    import pandas as pd
     st.table(pd.DataFrame(audit_rows))
 
 with col_r:
@@ -153,7 +155,7 @@ axes = [
         "Page":        "Gold Standard",
         "Question":    "L'Open Data GBFS est-il un matériau de recherche fiable ?",
         "Méthode":     "Audit multi-systèmes, taxonomie A1–A5, pipeline de purge en 6 étapes",
-        "Résultat clé":"46 359 stations certifiées — Bordeaux : rang 2 → 14 après correction",
+        "Résultat clé":f"{len(df):,} stations certifiées — Bordeaux : rang 2 → 14 après correction",
     },
     {
         "Axe":         "Axe 1",
@@ -211,7 +213,7 @@ Deux résultats contre-intuitifs structurent l'ensemble de la contribution :
 L'hypothèse implicitement dominante en géographie urbaine postule qu'une agglomération
 "bien située" — c'est-à-dire bénéficiant d'une forte densité et d'une tradition de mobilité
 douce — est condamnée à la performance cyclable, tandis que les villes périphériques seraient
-structurellement pénalisées. L'indice de Moran appliqué aux scores IMD des 62 agglomérations
+structurellement pénalisées. L'indice de Moran appliqué aux scores IMD des {N_CITIES} agglomérations
 **réfute formellement cette hypothèse** : les villes performantes et sous-performantes ne forment
 pas de clusters territoriaux cohérents. Bordeaux, Rennes et Grenoble, très éloignées
 géographiquement, peuvent atteindre des scores comparables, quand des villes voisines présentent
@@ -232,7 +234,7 @@ sur le capital économique.**
 Ces deux résultats convergent vers une conclusion politique forte : toute agglomération,
 quelle que soit sa situation géographique ou économique, dispose d'une **marge d'action
 significative** pour améliorer l'équité et la qualité de son environnement cyclable.
-""")
+""".replace("{N_CITIES}", str(n_cities)))
 
 col_r1, col_r2 = st.columns(2)
 with col_r1:
@@ -252,10 +254,10 @@ latérale. Chaque module correspond à un axe de recherche ou à un outil transv
 """)
 
 nav_rows = [
-    {"Module": "Gold Standard",       "Axe":      "Prél.",  "Contenu principal": "Taxonomie des anomalies GBFS (A1–A5), pipeline de purge en 6 étapes, complétude de l'enrichissement, catalogue des 104 systèmes certifiés."},
+    {"Module": "Gold Standard",       "Axe":      "Prél.",  "Contenu principal": f"Taxonomie des anomalies GBFS (A1–A5), pipeline de purge en 6 étapes, complétude de l'enrichissement, catalogue des {n_certified} systèmes certifiés."},
     {"Module": "IMD",                 "Axe":      "1",      "Contenu principal": "Formulation mathématique, poids optimaux, Monte Carlo ($N=10\\,000$), classement national, décomposition (S, I, M, T), validation FUB/EMP."},
     {"Module": "IES",                 "Axe":      "2",      "Contenu principal": "Formalisation de l'IES, modèle Ridge, matrice de justice cyclable (4 quadrants), validation empirique IMD × part modale réelle."},
-    {"Module": "Carte",               "Axe":      "Trans.", "Contenu principal": "Visualisation WebGL des 46 359 stations (pydeck), filtrage par dimension d'enrichissement, heatmap de densité et couches thématiques."},
+    {"Module": "Carte",               "Axe":      "Trans.", "Contenu principal": f"Visualisation WebGL des {len(df):,} stations (pydeck), filtrage par dimension d'enrichissement, heatmap de densité et couches thématiques."},
     {"Module": "Villes",              "Axe":      "3",      "Contenu principal": "Classement univarié, nuage infra × sinistralité (Moran's $I$), profil radar multi-dimensionnel comparatif."},
     {"Module": "Distributions",       "Axe":      "4",      "Contenu principal": "Histogrammes, boîtes à moustaches à encoches, matrice de corrélation de Spearman ($\\rho$), scatter matriciel stratifié."},
     {"Module": "France",              "Axe":      "Trans.", "Contenu principal": "Triangulation FUB 2023, EMP 2019, éco-compteurs, BAAC et Cerema — indicateurs nationaux de la mobilité cyclable."},
