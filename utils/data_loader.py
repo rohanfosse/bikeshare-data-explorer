@@ -1,5 +1,5 @@
 """
-data_loader.py — chargement et préparation du Gold Standard GBFS.
+data_loader.py - chargement et préparation du Gold Standard GBFS.
 Toutes les fonctions sont mises en cache via @st.cache_data (TTL 1h).
 """
 from __future__ import annotations
@@ -165,7 +165,7 @@ def city_stats(df: pd.DataFrame) -> pd.DataFrame:
         "topography_roughness_index": "mean",
         "capacity": "mean",
     }
-    # Colonnes socio-économiques optionnelles (Gold Standard Final — INSEE Filosofi)
+    # Colonnes socio-économiques optionnelles (Gold Standard Final - INSEE Filosofi)
     _socio: dict[str, str] = {
         "revenu_median_uc":  "median",   # médiane des médianes de carreau
         "gini_revenu":       "mean",
@@ -356,7 +356,7 @@ def load_net_flows() -> pd.DataFrame:
 
 @st.cache_data(ttl=3600, show_spinner=False)
 def load_bike_tram_proximity() -> pd.DataFrame:
-    """Matrice de proximité stations vélo — arrêts tram (distance en m)."""
+    """Matrice de proximité stations vélo - arrêts tram (distance en m)."""
     df = pd.read_csv(BIKETRAM_PATH)
     df["distance_m"] = pd.to_numeric(df["distance_m"], errors="coerce")
     return df

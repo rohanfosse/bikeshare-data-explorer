@@ -1,5 +1,5 @@
 """
-4_Export.py — Interface d'accès aux données Gold Standard GBFS (principes FAIR).
+4_Export.py - Interface d'accès aux données Gold Standard GBFS (principes FAIR).
 """
 from __future__ import annotations
 
@@ -15,13 +15,13 @@ from utils.data_loader import METRICS, load_stations
 from utils.styles import abstract_box, inject_css, section, sidebar_nav
 
 st.set_page_config(
-    page_title="Export FAIR — Gold Standard GBFS",
+    page_title="Export FAIR - Gold Standard GBFS",
     page_icon=None,
     layout="wide",
 )
 inject_css()
 
-st.title("Accès aux Données — Gold Standard GBFS")
+st.title("Accès aux Données - Gold Standard GBFS")
 st.caption("Infrastructure de Données Ouverte selon les Principes FAIR (Findable, Accessible, Interoperable, Reusable)")
 
 abstract_box(
@@ -30,8 +30,8 @@ abstract_box(
     "Cette interface implémente les principes <em>FAIR</em> "
     "(<em>Findable, Accessible, Interoperable, Reusable</em>) pour la diffusion du corpus "
     "Gold Standard GBFS auprès de la communauté scientifique. "
-    "Le jeu de données — 46 312 stations certifiées issues de 122 systèmes nationaux, "
-    "enrichies selon cinq modules spatiaux — est mis à disposition dans deux formats "
+    "Le jeu de données - 46 312 stations certifiées issues de 122 systèmes nationaux, "
+    "enrichies selon cinq modules spatiaux - est mis à disposition dans deux formats "
     "interopérables : CSV (UTF-8) et Parquet (Apache Arrow). "
     "Les filtres disponibles permettent l'extraction de sous-corpus analytiquement cohérents "
     "pour des usages spécifiques : étude de cas urbaine, analyse sectorielle par métrique, "
@@ -42,7 +42,7 @@ abstract_box(
 
 df = load_stations()
 
-# ── Sidebar — filtres ─────────────────────────────────────────────────────────
+# ── Sidebar - filtres ─────────────────────────────────────────────────────────
 sidebar_nav()
 with st.sidebar:
     st.header("Filtres de Sélection")
@@ -86,7 +86,7 @@ with st.sidebar:
         if active:
             vmin, vmax = float(s.min()), float(s.max())
             lo, hi = st.slider(
-                f"Plage — {meta['label']} ({meta['unit']})",
+                f"Plage - {meta['label']} ({meta['unit']})",
                 min_value=vmin,
                 max_value=vmax,
                 value=(vmin, vmax),
@@ -128,8 +128,8 @@ if not cols_to_export:
 
 dff_export = dff[cols_to_export]
 
-# ── Section 1 — Résumé du sous-corpus ────────────────────────────────────────
-section(1, "Résumé du Sous-Corpus Sélectionné — Volumétrie et Périmètre")
+# ── Section 1 - Résumé du sous-corpus ────────────────────────────────────────
+section(1, "Résumé du Sous-Corpus Sélectionné - Volumétrie et Périmètre")
 
 m1, m2, m3, m4 = st.columns(4)
 m1.metric("Stations sélectionnées", f"{len(dff_export):,}")
@@ -144,9 +144,9 @@ st.caption(
     "analyses du tableau de bord."
 )
 
-# ── Section 2 — Schéma des colonnes ──────────────────────────────────────────
+# ── Section 2 - Schéma des colonnes ──────────────────────────────────────────
 st.divider()
-section(2, "Schéma des Données — Dictionnaire de Variables et Taux de Complétude")
+section(2, "Schéma des Données - Dictionnaire de Variables et Taux de Complétude")
 
 with st.expander("Afficher le dictionnaire de variables", expanded=False):
     st.markdown(r"""
@@ -174,9 +174,9 @@ with st.expander("Afficher le dictionnaire de variables", expanded=False):
         hide_index=True,
     )
 
-# ── Section 3 — Statistiques descriptives ─────────────────────────────────────
+# ── Section 3 - Statistiques descriptives ─────────────────────────────────────
 st.divider()
-section(3, "Statistiques Descriptives du Sous-Corpus — Caractérisation Multivariée")
+section(3, "Statistiques Descriptives du Sous-Corpus - Caractérisation Multivariée")
 
 with st.expander("Afficher les statistiques du sous-corpus sélectionné", expanded=False):
     metric_cols_present = [k for k in METRICS if k in dff_export.columns]
@@ -211,16 +211,16 @@ with st.expander("Afficher les statistiques du sous-corpus sélectionné", expan
     else:
         st.info("Aucune dimension d'enrichissement présente dans les colonnes sélectionnées.")
 
-# ── Section 4 — Prévisualisation ──────────────────────────────────────────────
+# ── Section 4 - Prévisualisation ──────────────────────────────────────────────
 st.divider()
-section(4, "Prévisualisation Tabulaire — Aperçu des Premières Observations")
+section(4, "Prévisualisation Tabulaire - Aperçu des Premières Observations")
 
 n_preview = st.slider("Nombre de lignes à afficher", 10, 200, 50, 10)
 st.dataframe(dff_export.head(n_preview), use_container_width=True, hide_index=True)
 
-# ── Section 5 — Téléchargement ────────────────────────────────────────────────
+# ── Section 5 - Téléchargement ────────────────────────────────────────────────
 st.divider()
-section(5, "Téléchargement — Formats CSV (UTF-8) et Parquet (Apache Arrow)")
+section(5, "Téléchargement - Formats CSV (UTF-8) et Parquet (Apache Arrow)")
 
 st.markdown(r"""
 Deux formats d'export sont proposés, conformément aux standards d'interopérabilité FAIR :
@@ -235,30 +235,30 @@ Deux formats d'export sont proposés, conformément aux standards d'interopérab
 dl1, dl2 = st.columns(2)
 
 with dl1:
-    st.markdown("**Format CSV — Interopérabilité universelle**")
+    st.markdown("**Format CSV - Interopérabilité universelle**")
     csv_bytes = dff_export.to_csv(index=False).encode("utf-8")
     size_kb   = len(csv_bytes) / 1024
     st.download_button(
-        label=f"Télécharger en CSV ({size_kb:,.0f} Ko — {len(dff_export):,} observations)",
+        label=f"Télécharger en CSV ({size_kb:,.0f} Ko - {len(dff_export):,} observations)",
         data=csv_bytes,
         file_name="gold_standard_gbfs_export.csv",
         mime="text/csv",
     )
 
 with dl2:
-    st.markdown("**Format Parquet — Pipeline analytique haute performance**")
+    st.markdown("**Format Parquet - Pipeline analytique haute performance**")
     buf = io.BytesIO()
     dff_export.to_parquet(buf, index=False)
     parquet_bytes = buf.getvalue()
     size_kb_pq    = len(parquet_bytes) / 1024
     st.download_button(
-        label=f"Télécharger en Parquet ({size_kb_pq:,.0f} Ko — {len(dff_export):,} observations)",
+        label=f"Télécharger en Parquet ({size_kb_pq:,.0f} Ko - {len(dff_export):,} observations)",
         data=parquet_bytes,
         file_name="gold_standard_gbfs_export.parquet",
         mime="application/octet-stream",
     )
 
-# ── Section 6 — Métadonnées de citation ───────────────────────────────────────
+# ── Section 6 - Métadonnées de citation ───────────────────────────────────────
 st.divider()
 section(6, "Métadonnées de Citation et de Reproductibilité")
 
@@ -266,7 +266,7 @@ with st.expander("Informations pour la citation scientifique", expanded=True):
     metric_keys_present = [k for k in METRICS if k in dff_export.columns]
     st.markdown(
         f"""
-**Jeu de données** : Gold Standard GBFS — Micromobilité française
+**Jeu de données** : Gold Standard GBFS - Micromobilité française
 **Pipeline d'enrichissement** : Notebooks 20–27 · CESI BikeShare-ICT (2025-2026)
 **Observations exportées** : {len(dff_export):,} / {len(df):,} (corpus complet)
 **Agglomérations** : {dff["city"].nunique()} · **Réseaux GBFS** : {dff["system_id"].nunique()}
@@ -275,9 +275,9 @@ with st.expander("Informations pour la citation scientifique", expanded=True):
 
 **Sources primaires de l'enrichissement spatial :**
 - Infrastructure cyclable : OpenStreetMap / Overpass API (Module 3A)
-- Topographie : Open-Elevation API — SRTM 30 m NASA (Module 2)
+- Topographie : Open-Elevation API - SRTM 30 m NASA (Module 2)
 - Sinistralité cycliste : BAAC 2021–2023, ONISR / Ministère de l'Intérieur (Module 3B)
-- Accessibilité multimodale : Point d'Accès National GTFS — transport.data.gouv.fr (Module 4)
+- Accessibilité multimodale : Point d'Accès National GTFS - transport.data.gouv.fr (Module 4)
 
 **Protocole de reproductibilité :**
 Les résultats sont reproductibles à partir du dépôt public (Notebook 27).

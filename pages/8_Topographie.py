@@ -1,5 +1,5 @@
 """
-8_Topographie.py — Friction Topographique et Couverture Spatiale des Réseaux VLS Français.
+8_Topographie.py - Friction Topographique et Couverture Spatiale des Réseaux VLS Français.
 
 Rugosité TRI (Terrain Ruggedness Index, SRTM 30 m), distribution altimétrique,
 distances inter-stations vol d'oiseau (haversine), classement national des agglomérations.
@@ -20,7 +20,7 @@ from utils.data_loader import compute_imd_cities, load_city_mobility, load_stati
 from utils.styles import abstract_box, inject_css, section, sidebar_nav
 
 st.set_page_config(
-    page_title="Friction Topographique — Gold Standard GBFS",
+    page_title="Friction Topographique - Gold Standard GBFS",
     page_icon=None,
     layout="wide",
 )
@@ -73,7 +73,7 @@ def compute_spatial_coverage(df: pd.DataFrame) -> pd.DataFrame:
 
         pts = np.column_stack([xs_s, ys_s])
 
-        # Matrice de distances O(n²) — vectorisé numpy, rapide pour n ≤ 300
+        # Matrice de distances O(n²) - vectorisé numpy, rapide pour n ≤ 300
         diffs = pts[:, np.newaxis, :] - pts[np.newaxis, :, :]
         D     = np.sqrt((diffs ** 2).sum(axis=2))
         np.fill_diagonal(D, np.inf)
@@ -168,11 +168,11 @@ if not mob_df.empty and "emp_part_velo_2019" in mob_df.columns:
         emp_df = _tmp
 
 # ── Abstract dynamique ─────────────────────────────────────────────────────────
-_n_cities_tri = len(tri_city) if not tri_city.empty else "—"
-_tri_med      = f"{tri_city['tri_mean'].median():.2f}" if not tri_city.empty else "—"
-_most_rugged  = tri_city.iloc[0]["city"] if not tri_city.empty else "—"
-_most_rugged_tri = f"{tri_city.iloc[0]['tri_mean']:.1f}" if not tri_city.empty else "—"
-_flattest     = tri_city.iloc[-1]["city"] if not tri_city.empty else "—"
+_n_cities_tri = len(tri_city) if not tri_city.empty else "-"
+_tri_med      = f"{tri_city['tri_mean'].median():.2f}" if not tri_city.empty else "-"
+_most_rugged  = tri_city.iloc[0]["city"] if not tri_city.empty else "-"
+_most_rugged_tri = f"{tri_city.iloc[0]['tri_mean']:.1f}" if not tri_city.empty else "-"
+_flattest     = tri_city.iloc[-1]["city"] if not tri_city.empty else "-"
 _mmm_tri_str  = ""
 if not tri_city.empty and "Montpellier" in tri_city["city"].values:
     _mmm_t = tri_city[tri_city["city"] == "Montpellier"].iloc[0]
@@ -203,7 +203,7 @@ abstract_box(
     "permettent d'évaluer la densité spatiale et le diamètre de couverture de chaque réseau. "
     f"{_mmm_tri_str}"
     "La composante topographique (T) de l'IMD, calibrée sur le TRI, contribue à hauteur de "
-    "9,6 % au score global — le déterminant le moins influent, mais structurellement correcteur "
+    "9,6 % au score global - le déterminant le moins influent, mais structurellement correcteur "
     "des biais de performance au profit des agglomérations de plaine."
 )
 
@@ -250,8 +250,8 @@ if not topo_f.empty and "Montpellier" in topo_f["city"].values:
         else ""
     )
     st.info(
-        f"**Montpellier (Vélomagg) — Rugosité : TRI = {_m_row['tri_mean']:.2f} m "
-        f"(rang #{_m_rank}/{len(topo_f)} — modérément rugged)**  \n"
+        f"**Montpellier (Vélomagg) - Rugosité : TRI = {_m_row['tri_mean']:.2f} m "
+        f"(rang #{_m_rank}/{len(topo_f)} - modérément rugged)**  \n"
         f"Montpellier présente une topographie mixte (plaine littorale + garrigues au nord). "
         + _m_note + "  \n"
         "Cette rugosité modérée favorise l'usage cyclable par rapport aux agglomérations de relief "
@@ -259,9 +259,9 @@ if not topo_f.empty and "Montpellier" in topo_f["city"].values:
         "lié aux déséquilibres source/puits topographiques analysés page **Montpellier**."
     )
 
-# ── Section 1 — Cadre théorique ────────────────────────────────────────────────
+# ── Section 1 - Cadre théorique ────────────────────────────────────────────────
 st.divider()
-section(1, "Cadre Théorique — Terrain Ruggedness Index (TRI) et Modèle d'Énergie Cyclable")
+section(1, "Cadre Théorique - Terrain Ruggedness Index (TRI) et Modèle d'Énergie Cyclable")
 
 col_th, col_formula = st.columns([3, 2])
 
@@ -287,7 +287,7 @@ où $\mathcal{V}(i)$ désigne les cellules voisines dans le buffer de 500 m.
 | **Électrification compensatrice** | Les VAE réduisent la friction de ~60 % mais créent un paradoxe de recharge | *Dill & McNeil, 2016* |
 | **Indicateur TRI → IMD** | $T_i = 1 - \text{norm}(\text{TRI}_i)$ → poids $w_T = 9{,}6\,\%$ dans l'IMD | Calibration par évolution différentielle |
 
-#### 1.3. Distances Vol d'Oiseau — Méthodologie
+#### 1.3. Distances Vol d'Oiseau - Méthodologie
 
 La **distance vol d'oiseau** (haversine) entre stations voisines est calculée par approximation
 planaire locale valide pour des distances $< 100$ km :
@@ -313,14 +313,14 @@ T_i = 1 - \frac{\text{TRI}_i - \min(\text{TRI})}{\max(\text{TRI}) - \min(\text{T
         "cohérent avec l'effet négatif du relief sur l'adoption cyclable."
     )
 
-# ── Section 2 — Classement national par rugosité ───────────────────────────────
+# ── Section 2 - Classement national par rugosité ───────────────────────────────
 st.divider()
 section(2, "Classement National des Agglomérations par Rugosité Topographique (TRI moyen)")
 
 st.markdown(r"""
 Le classement ci-dessous ordonne les agglomérations françaises par **TRI moyen** de leurs
 stations dock-based, du plus accidenté au plus plat. Ce classement permet d'identifier les
-réseaux opérant sous une contrainte topographique structurelle forte — pour lesquels le TRI
+réseaux opérant sous une contrainte topographique structurelle forte - pour lesquels le TRI
 constitue un frein objectif à la pratique cyclable, indépendamment de la qualité des infrastructures.
 """)
 
@@ -362,7 +362,7 @@ if not topo_f.empty:
         plot_bgcolor="white",
         margin=dict(l=10, r=80, t=10, b=10),
         yaxis=dict(autorange="reversed"),
-        xaxis=dict(title="TRI moyen (m) — écart-type des dénivelés dans un rayon 500 m"),
+        xaxis=dict(title="TRI moyen (m) - écart-type des dénivelés dans un rayon 500 m"),
     )
     st.plotly_chart(fig_tri_bar, use_container_width=True)
     st.caption(
@@ -374,7 +374,7 @@ if not topo_f.empty:
     )
 
     # Table synthétique
-    with st.expander("Tableau complet — statistiques topographiques par agglomération", expanded=False):
+    with st.expander("Tableau complet - statistiques topographiques par agglomération", expanded=False):
         _cols_disp = ["city", "n_stations", "tri_mean", "tri_median", "tri_max"]
         if "elev_mean" in topo_f.columns:
             _cols_disp += ["elev_mean", "elev_range"]
@@ -415,9 +415,9 @@ if not topo_f.empty:
             "TRI max = rugosité de la station la plus contrainte de l'agglomération."
         )
 
-# ── Section 3 — Altitude et dénivelé ──────────────────────────────────────────
+# ── Section 3 - Altitude et dénivelé ──────────────────────────────────────────
 st.divider()
-section(3, "Distribution Altimétrique — Altitude et Dénivelé Intra-Réseau")
+section(3, "Distribution Altimétrique - Altitude et Dénivelé Intra-Réseau")
 
 st.markdown(r"""
 L'altitude moyenne et le dénivelé total intra-réseau (altitude max − altitude min des stations)
@@ -452,7 +452,7 @@ with tab_elev_scatter:
                 color_continuous_scale="Plasma",
                 labels={
                     "elev_mean": "Altitude moyenne des stations (m)",
-                    "tri_mean":  "TRI moyen (m) — rugosité locale",
+                    "tri_mean":  "TRI moyen (m) - rugosité locale",
                     "elev_range": "Dénivelé total du réseau (m)",
                     "_label":    "",
                 },
@@ -474,7 +474,7 @@ with tab_elev_scatter:
             st.caption(
                 "**Figure 3.1.** Altitude moyenne des stations (axe horizontal) versus TRI moyen "
                 "(axe vertical). La couleur encode le dénivelé total intra-réseau. "
-                f"$\\rho_s$(altitude, TRI) $= {_rho_elev_tri:+.3f}$ — "
+                f"$\\rho_s$(altitude, TRI) $= {_rho_elev_tri:+.3f}$ - "
                 + ("corrélation positive : les réseaux en altitude ont aussi plus de rugosité locale. "
                    if _rho_elev_tri > 0.3 else
                    "corrélation faible : altitude et rugosité sont deux dimensions partiellement indépendantes. ")
@@ -515,7 +515,7 @@ with tab_elev_box:
                 "**Figure 3.2.** Distribution des altitudes de station par agglomération "
                 "(Top 20 les plus accidentées + Montpellier), triées par médiane altimétrique décroissante. "
                 "Les encoches matérialisent l'IC 95 % de la médiane. "
-                "L'amplitude de la boîte traduit la variabilité altimétrique intra-réseau — "
+                "L'amplitude de la boîte traduit la variabilité altimétrique intra-réseau - "
                 "une forte amplitude signale un réseau exposé à des déséquilibres source/puits intenses."
             )
 
@@ -558,9 +558,9 @@ with tab_elev_map:
                 "les plus élevées, sources potentielles de déséquilibres opérationnels."
             )
 
-# ── Section 4 — Distances vol d'oiseau ────────────────────────────────────────
+# ── Section 4 - Distances vol d'oiseau ────────────────────────────────────────
 st.divider()
-section(4, "Distances Vol d'Oiseau — Espacement Inter-Stations et Diamètre de Couverture")
+section(4, "Distances Vol d'Oiseau - Espacement Inter-Stations et Diamètre de Couverture")
 
 st.markdown(r"""
 La **distance vol d'oiseau au plus proche voisin** (NN distance, haversine approchée en plan local)
@@ -645,7 +645,7 @@ if not spatial_f.empty:
                     color="nn_mean_km",
                     color_continuous_scale="Blues_r",
                     labels={
-                        "tri_mean":   "TRI moyen (m) — rugosité",
+                        "tri_mean":   "TRI moyen (m) - rugosité",
                         "nn_mean_km": "Espacement NN moyen (km)",
                         "_label":     "",
                     },
@@ -677,7 +677,7 @@ if not spatial_f.empty:
                     "**Figure 4.2.** Rugosité TRI (axe horizontal) versus espacement NN moyen (axe vertical). "
                     f"$\\rho_s$(TRI, NN distance) $= {_rho_nn_tri:+.3f}$. "
                     + ("Une corrélation positive suggère que les réseaux en terrain accidenté "
-                       "ont des stations plus espacées — la topographie pénalise la densification du réseau. "
+                       "ont des stations plus espacées - la topographie pénalise la densification du réseau. "
                        if _rho_nn_tri > 0.2 else
                        ("Une corrélation négative suggère que les opérateurs densifient leur réseau "
                         "dans les zones accidentées pour compenser la friction topographique. "
@@ -725,14 +725,14 @@ if not spatial_f.empty:
             "Trié par NN moyen croissant (réseau le plus dense en tête)."
         )
 
-# ── Section 5 — TRI vs composante T de l'IMD ─────────────────────────────────
+# ── Section 5 - TRI vs composante T de l'IMD ─────────────────────────────────
 st.divider()
 section(5, "Validation : TRI Brut versus Composante Topographique T de l'IMD")
 
 st.markdown(r"""
 La composante T de l'IMD est définie comme $T_i = 1 - \text{norm}(\text{TRI}_i)$.
 La relation entre le TRI brut et le score T normalisé doit être **parfaitement monotone décroissante**
-— toute déviation indique une anomalie dans la normalisation ou un problème de données.
+- toute déviation indique une anomalie dans la normalisation ou un problème de données.
 Le nuage de points ci-dessous valide empiriquement la cohérence entre la métrique brute et la composante IMD.
 """)
 
@@ -774,15 +774,15 @@ if not topo_f.empty and "T_topo" in topo_f.columns:
         st.caption(
             "**Figure 5.1.** TRI brut (axe horizontal) versus composante T normalisée "
             "(axe vertical). La relation est monotone décroissante ($\\rho_s = "
-            f"{_rho_val:+.3f}$) — valide la normalisation Min-Max inverse. "
+            f"{_rho_val:+.3f}$) - valide la normalisation Min-Max inverse. "
             "La couleur encode le score IMD global : les villes avec un T élevé "
             "(terrain plat) ne dominent pas systématiquement le classement IMD, "
             "la multimodalité (poids 57,8 %) restant le déterminant dominant."
         )
 
-# ── Section 6 — Impact topographique sur la pratique cyclable ──────────────────
+# ── Section 6 - Impact topographique sur la pratique cyclable ──────────────────
 st.divider()
-section(6, "Impact Topographique sur la Pratique Cyclable — TRI vs Part Modale EMP 2019")
+section(6, "Impact Topographique sur la Pratique Cyclable - TRI vs Part Modale EMP 2019")
 
 if emp_df is not None and len(emp_df) >= 5:
     try:
@@ -858,9 +858,9 @@ else:
         "Vérifiez `data/external/mobility_sources/emp_2019_city_modal_share.csv`."
     )
 
-# ── Section 7 — Diagnostic par agglomération ──────────────────────────────────
+# ── Section 7 - Diagnostic par agglomération ──────────────────────────────────
 st.divider()
-section(7, "Audit Topographique par Agglomération — Profil Détaillé et Carte des Stations")
+section(7, "Audit Topographique par Agglomération - Profil Détaillé et Carte des Stations")
 
 _city_sel_topo = st.selectbox(
     "Sélectionnez une agglomération",
@@ -877,7 +877,7 @@ if not _grp_clean.empty:
     col_diag_l, col_diag_r = st.columns([2, 3])
 
     with col_diag_l:
-        st.markdown(f"#### Profil — {_city_sel_topo}")
+        st.markdown(f"#### Profil - {_city_sel_topo}")
         _kpi_rows = {"Stations dock-based": f"{len(_grp_clean)}"}
         if "topography_roughness_index" in _grp_clean.columns:
             _tri_s = _grp_clean["topography_roughness_index"].dropna()
@@ -901,8 +901,8 @@ if not _grp_clean.empty:
 
         if _city_sel_topo in topo_f["city"].values if not topo_f.empty else False:
             _imd_row = topo_f[topo_f["city"] == _city_sel_topo].iloc[0]
-            _kpi_rows["Score T (/100)"] = f"{_imd_row['T_topo']*100:.1f}" if "T_topo" in _imd_row else "—"
-            _kpi_rows["IMD (/100)"] = f"{_imd_row['IMD']:.1f}" if "IMD" in _imd_row else "—"
+            _kpi_rows["Score T (/100)"] = f"{_imd_row['T_topo']*100:.1f}" if "T_topo" in _imd_row else "-"
+            _kpi_rows["IMD (/100)"] = f"{_imd_row['IMD']:.1f}" if "IMD" in _imd_row else "-"
 
         for label, val in _kpi_rows.items():
             st.metric(label, val)

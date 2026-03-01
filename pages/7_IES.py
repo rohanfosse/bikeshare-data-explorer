@@ -1,5 +1,5 @@
 """
-7_IES.py — Indice d'Équité Sociale (IES).
+7_IES.py - Indice d'Équité Sociale (IES).
 Mesure de la justice spatiale dans la distribution des systèmes de vélos en libre-service.
 """
 from __future__ import annotations
@@ -13,7 +13,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
 
-# scipy optionnel — fallback pur numpy/pandas si non installé
+# scipy optionnel - fallback pur numpy/pandas si non installé
 try:
     from scipy.stats import spearmanr as _spearmanr_scipy
 
@@ -46,7 +46,7 @@ from utils.data_loader import (
 from utils.styles import abstract_box, inject_css, section, sidebar_nav
 
 st.set_page_config(
-    page_title="Indice d'Équité Sociale (IES) — Gold Standard GBFS",
+    page_title="Indice d'Équité Sociale (IES) - Gold Standard GBFS",
     page_icon=None,
     layout="wide",
 )
@@ -77,8 +77,8 @@ else:
     _rho_pre = float("nan")
     _n_desert_pre = _n_inclus_pre = 0
     _n_cities_pre = len(imd_df)
-    _rho_str = "—"
-    _p_str   = "—"
+    _rho_str = "-"
+    _p_str   = "-"
 
 # Montpellier
 _mmm_ies_pre = _ies_pre[_ies_pre["city"] == "Montpellier"] if not _ies_pre.empty else pd.DataFrame()
@@ -94,19 +94,19 @@ st.caption(
 )
 
 abstract_box(
-    "<b>Problématique de recherche :</b> La qualité de l'environnement cyclable partagé — "
-    "telle que mesurée par l'IMD — est-elle distribuée de manière équitable sur le territoire, "
+    "<b>Problématique de recherche :</b> La qualité de l'environnement cyclable partagé - "
+    "telle que mesurée par l'IMD - est-elle distribuée de manière équitable sur le territoire, "
     "indépendamment du niveau socio-économique des populations desservies ?<br><br>"
     "L'Indice de Mobilité Douce quantifie la <i>qualité physique</i> de l'offre cyclable, mais reste "
-    "aveugle à sa dimension sociale. L'Indice d'Équité Sociale (IES) — défini comme le ratio entre "
+    "aveugle à sa dimension sociale. L'Indice d'Équité Sociale (IES) - défini comme le ratio entre "
     "l'IMD observé et l'IMD théoriquement prédit par le seul déterminant économique "
-    "(régression OLS proxy Ridge) — isole la composante de "
+    "(régression OLS proxy Ridge) - isole la composante de "
     "l'aménagement cyclable relevant d'une volonté politique proactive, au-delà du déterminisme "
     "économique. Grâce aux données socio-économiques INSEE Filosofi intégrées au Gold Standard Final "
     "(revenu médian par carreau 200 m, indice de Gini, part ménages sans voiture, part vélo "
     "domicile-travail), l'IES est construit directement à l'échelle de "
     f"<b>{_n_cities_pre} agglomérations</b> françaises dotées de réseaux VLS dock-based certifiés. "
-    f"<b>Résultat clé : ρ Spearman (IMD × Revenu) = {_rho_str} (p = {_p_str})</b> — "
+    f"<b>Résultat clé : ρ Spearman (IMD × Revenu) = {_rho_str} (p = {_p_str})</b> - "
     "la corrélation entre qualité de l'offre VLS et niveau de revenu est statistiquement nulle. "
     "La quasi-totalité de la variance de l'IMD relève de choix de <b>gouvernance locale</b>, "
     f"non de déterminismes économiques. Le panel compte <b>{_n_desert_pre} déserts de mobilité "
@@ -185,10 +185,10 @@ if not np.isnan(rho_rev):
     k3.metric(
         "ρ Spearman (IMD × Revenu)",
         f"{rho_rev:+.3f}",
-        f"p = {pval_rev:.3f} — {'non sign.' if pval_rev > 0.05 else 'sign.'}" if pval_rev >= 0.001 else "p < 0,001",
+        f"p = {pval_rev:.3f} - {'non sign.' if pval_rev > 0.05 else 'sign.'}" if pval_rev >= 0.001 else "p < 0,001",
     )
 else:
-    k3.metric("ρ Spearman (IMD × Revenu)", "—")
+    k3.metric("ρ Spearman (IMD × Revenu)", "-")
 
 if ies_df is not None:
     _med_r = float(ies_df["revenu_median_uc"].median())
@@ -200,8 +200,8 @@ if ies_df is not None:
     k5.metric("Mobilité Inclusive (IES > 1)",   f"{_n_inc} agglomérations",
               f"{100*_n_inc/len(ies_df):.0f} % du panel")
 else:
-    k4.metric("Déserts de Mobilité Sociale", "—")
-    k5.metric("Mobilité Inclusive (IES > 1)",   "—")
+    k4.metric("Déserts de Mobilité Sociale", "-")
+    k5.metric("Mobilité Inclusive (IES > 1)",   "-")
 
 # ── Encart Montpellier ────────────────────────────────────────────────────────
 if ies_df is not None and "Montpellier" in ies_df["city"].values:
@@ -212,17 +212,17 @@ if ies_df is not None and "Montpellier" in ies_df["city"].values:
     ) + 1
     _med_nat_rev = int(ies_df["revenu_median_uc"].median())
     st.success(
-        f"**Montpellier (Vélomagg) — Cas d'étude — Rang IMD #{_m_rank}/{len(ies_df)} — "
+        f"**Montpellier (Vélomagg) - Cas d'étude - Rang IMD #{_m_rank}/{len(ies_df)} - "
         f"IES = {_m['IES']:.3f}**  \n"
         f"Montpellier illustre le paradigme de la mobilité inclusive : avec un revenu médian de "
         f"{int(_m['revenu_median_uc']):,} €/UC (sous la médiane nationale de {_med_nat_rev:,} €/UC), "
-        f"le réseau Vélomagg atteint un IMD de **{_m['IMD']:.1f}/100** — largement au-dessus de la médiane "
+        f"le réseau Vélomagg atteint un IMD de **{_m['IMD']:.1f}/100** - largement au-dessus de la médiane "
         f"nationale ({ies_df['IMD'].median():.1f}/100). IES = {_m['IES']:.3f} : "
         f"la qualité VLS dépasse de **{(_m['IES']-1)*100:.0f} %** ce que le revenu laisserait prévoir. "
-        f"Ce réseau fait l'objet de l'étude de cas intra-urbaine page **Montpellier — Vélomagg**."
+        f"Ce réseau fait l'objet de l'étude de cas intra-urbaine page **Montpellier - Vélomagg**."
     )
 
-# ── Section 1 — Fondements théoriques ─────────────────────────────────────────
+# ── Section 1 - Fondements théoriques ─────────────────────────────────────────
 st.divider()
 section(1, "Fondements Théoriques : Justice Spatiale et Droit à la Mobilité")
 
@@ -232,7 +232,7 @@ st.markdown(r"""
 La littérature internationale en géographie des transports a documenté un paradoxe systématique :
 les systèmes de vélos en libre-service (VLS) tendent à s'implanter préférentiellement dans les
 quartiers à forte accessibilité multimodale et revenu élevé (*Fishman et al., 2014 ;
-Médard de Chardon et al., 2017*). Ce phénomène — la **"gentrification cyclable"** (*Stehlin, 2019*) —
+Médard de Chardon et al., 2017*). Ce phénomène - la **"gentrification cyclable"** (*Stehlin, 2019*) -
 s'oppose au mandat d'équité spatiale des politiques de mobilité douce, dont l'objectif est précisément
 de réduire la dépendance automobile dans les territoires sous-équipés.
 
@@ -246,7 +246,7 @@ douce pour les populations précaires de celles qui reproduisent les inégalité
 Le concept de **justice spatiale** (*Soja, 2010 ; Grengs, 2010*) stipule que la distribution des
 ressources de mobilité dans l'espace urbain n'est pas politiquement neutre. La **double peine**
 (*Lucas, 2012*) désigne la situation des ménages à la fois exclus économiquement *et* spatialement
-des alternatives à la voiture individuelle — deux handicaps se renforçant mutuellement.
+des alternatives à la voiture individuelle - deux handicaps se renforçant mutuellement.
 
 | Indicateur | Situation à risque | Mécanisme d'exclusion |
 | :--- | :--- | :--- |
@@ -266,11 +266,11 @@ agglomérations ($r_s = 0$).
 (INSEE Filosofi) est $\rho = +0{,}055$ ($p = 0{,}677$, **non significatif**). H₁ est donc rejetée :
 il n'y a pas de corrélation significative entre niveau de revenu et qualité de l'environnement cyclable.
 Ce résultat, plus fort encore que les estimations Ridge ($R^2 = 0{,}28$) issues de la littérature,
-confirme l'absence totale de déterminisme économique dans la distribution spatiale des VLS français —
+confirme l'absence totale de déterminisme économique dans la distribution spatiale des VLS français -
 et confère une responsabilité entière aux décideurs publics locaux.
 """)
 
-# ── Section 2 — Formalisation mathématique ────────────────────────────────────
+# ── Section 2 - Formalisation mathématique ────────────────────────────────────
 st.divider()
 section(2, "Formalisation Mathématique de l'IES et du Modèle de Référence Ridge")
 
@@ -292,10 +292,10 @@ l'agglomération $i$ ayant un revenu médian $R_{m,i}$.
 
 Les trois régimes interprétatifs sont :
 
-* **$\text{IES}_i > 1$ — "Mobilité Inclusive" :** L'agglomération investit au-delà de ce que son
+* **$\text{IES}_i > 1$ - "Mobilité Inclusive" :** L'agglomération investit au-delà de ce que son
   niveau de revenu laisserait prévoir. Politique publique pro-active.
-* **$\text{IES}_i \approx 1$ — "Conformité" :** Proportionnalité entre offre et niveau économique.
-* **$\text{IES}_i < 1$ — "Sous-investissement" :** Risque de captivité automobile pour les
+* **$\text{IES}_i \approx 1$ - "Conformité" :** Proportionnalité entre offre et niveau économique.
+* **$\text{IES}_i < 1$ - "Sous-investissement" :** Risque de captivité automobile pour les
   populations vulnérables.
 
 #### 2.2. Le Modèle de Référence Ridge
@@ -313,7 +313,7 @@ st.latex(r"""
 st.markdown(r"""
 Le paramètre $\lambda$ est sélectionné par validation croisée ($k = 5$). Sur le panel Gold Standard
 dock-based (59 agglomérations, INSEE Filosofi), la corrélation de Spearman entre revenu médian/UC
-et IMD est $\rho = +0{,}055$ ($p = 0{,}677$) — **statistiquement nulle**. Le coefficient de
+et IMD est $\rho = +0{,}055$ ($p = 0{,}677$) - **statistiquement nulle**. Le coefficient de
 détermination OLS est $R^2 \approx 0{,}003$ : le revenu médian n'explique que **moins de 1 % de
 la variance de l'IMD**. La quasi-totalité de la variance est attribuable aux choix de gouvernance
 locale, à la topographie, à l'héritage historique des politiques de mobilité et aux stratégies
@@ -373,7 +373,7 @@ if ies_df is not None and len(ies_df) >= 5:
     _fmt_p = lambda p: f"{p:.4f}" if p >= 0.001 else "< 0,001"
 
     _ols_tab = pd.DataFrame({
-        "Paramètre":   ["β₀ — Constante", "β₁ — Revenu médian/UC (€/an)"],
+        "Paramètre":   ["β₀ - Constante", "β₁ - Revenu médian/UC (€/an)"],
         "Estimation":  [f"{_b0:.3f}",     f"{_b1:.2e}"],
         "Erreur std.": [f"{_SE0:.3f}",    f"{_SE1:.2e}"],
         "Stat. t":     [f"{_t0:.3f}",     f"{_t1:.3f}"],
@@ -388,20 +388,20 @@ if ies_df is not None and len(ies_df) >= 5:
         st.caption(
             f"**Tableau 2.1.** Résultats de la régression MCO simple (proxy Ridge). "
             f"$n = {_n_ols}$ agglomérations françaises dock-based (Gold Standard, Filosofi). "
-            f"$R^2 = {_R2:.4f}$ — $R^2_{{\\text{{adj}}}} = {_adjR2:.4f}$ — "
+            f"$R^2 = {_R2:.4f}$ - $R^2_{{\\text{{adj}}}} = {_adjR2:.4f}$ - "
             f"$F(1,\\ {_n_ols - 2}) = {_F:.3f}$, $p = {_fmt_p(_pF)}$. "
-            "Note : *** $p < 0{{,}}001$ · ** $p < 0{{,}}01$ · * $p < 0{{,}}05$ · n.s. = non significatif. "
-            "La non-significativité de $\\hat{{\\beta}}_1$ ($p = {:.4f}$) confirme l'absence "
-            "de prédiction linéaire de l'IMD par le revenu.".format(_p1)
+            f"Note : *** $p < 0{{,}}001$ · ** $p < 0{{,}}01$ · * $p < 0{{,}}05$ · n.s. = non significatif. "
+            f"La non-significativité de $\\hat{{\\beta}}_1$ ($p = {_p1:.4f}$) confirme l'absence "
+            f"de prédiction linéaire de l'IMD par le revenu."
         )
     with ols_meta:
         st.metric("R² (OLS)", f"{_R2:.4f}",
                   help="Part de variance IMD expliquée par le revenu médian")
         st.metric("R² ajusté", f"{_adjR2:.4f}")
         st.metric(f"F-stat (1, {_n_ols - 2} ddl)", f"{_F:.3f}",
-                  f"p = {_fmt_p(_pF)} — {'n.s.' if _pF > 0.05 else 'sign.'}")
+                  f"p = {_fmt_p(_pF)} - {'n.s.' if _pF > 0.05 else 'sign.'}")
 
-# ── Section 3 — Matrice de diagnostic ─────────────────────────────────────────
+# ── Section 3 - Matrice de diagnostic ─────────────────────────────────────────
 st.divider()
 section(3, "Matrice de Diagnostic : Quatre Régimes de Justice Cyclable")
 
@@ -418,19 +418,19 @@ fig_quad = go.Figure()
 _quadrants = [
     dict(x0=0.0, y0=0.5, x1=0.5, y1=1.0,
          label_x=0.25, label_y=0.75,
-         text="<b>Mobilité Inclusive</b><br>IES > 1<br>Revenu < médiane — IMD > médiane<br><i>Sur-investissement pro-actif</i>",
+         text="<b>Mobilité Inclusive</b><br>IES > 1<br>Revenu < médiane - IMD > médiane<br><i>Sur-investissement pro-actif</i>",
          color="#27ae60"),
     dict(x0=0.5, y0=0.5, x1=1.0, y1=1.0,
          label_x=0.75, label_y=0.75,
-         text="<b>Excellence Consolidée</b><br>IES ≈ 1<br>Revenu > médiane — IMD > médiane<br><i>Conformité attendue</i>",
+         text="<b>Excellence Consolidée</b><br>IES ≈ 1<br>Revenu > médiane - IMD > médiane<br><i>Conformité attendue</i>",
          color="#1A6FBF"),
     dict(x0=0.0, y0=0.0, x1=0.5, y1=0.5,
          label_x=0.25, label_y=0.25,
-         text="<b>Désert de Mobilité</b><br>IES < 1<br>Revenu < médiane — IMD < médiane<br><i>Double peine (Lucas, 2012)</i>",
+         text="<b>Désert de Mobilité</b><br>IES < 1<br>Revenu < médiane - IMD < médiane<br><i>Double peine (Lucas, 2012)</i>",
          color="#e74c3c"),
     dict(x0=0.5, y0=0.0, x1=1.0, y1=0.5,
          label_x=0.75, label_y=0.25,
-         text="<b>Sous-Performance</b><br>IES < 1<br>Revenu > médiane — IMD < médiane<br><i>Sous-investissement relatif</i>",
+         text="<b>Sous-Performance</b><br>IES < 1<br>Revenu > médiane - IMD < médiane<br><i>Sous-investissement relatif</i>",
          color="#e67e22"),
 ]
 
@@ -477,14 +477,14 @@ st.plotly_chart(fig_quad, use_container_width=True)
 st.caption(
     "**Figure 3.1.** Matrice de diagnostic à quatre quadrants de la justice cyclable (diagramme conceptuel). "
     "Les axes sont normalisés min-max sur l'échantillon national. "
-    "Le quadrant inférieur gauche — 'Déserts de Mobilité Sociale' — concentre les agglomérations "
+    "Le quadrant inférieur gauche - 'Déserts de Mobilité Sociale' - concentre les agglomérations "
     "cumulant précarité économique ($R_m <$ médiane nationale) et sous-équipement cyclable "
     "(IMD $<$ médiane), caractérisées par un IES $< 1$."
 )
 
 # ── 3b. Scatter réel IMD × Revenu médian (données Filosofi) ──────────────────
 if ies_df is not None:
-    st.markdown("#### Application sur Données Réelles — IMD × Revenu Médian (INSEE Filosofi)")
+    st.markdown("#### Application sur Données Réelles - IMD × Revenu Médian (INSEE Filosofi)")
 
     _q_colors = {
         "Mobilité Inclusive (IES > 1)":   "#27ae60",
@@ -567,10 +567,10 @@ if ies_df is not None:
     )
     st.plotly_chart(fig_ies_real, use_container_width=True)
     _p_str_fig = f"{pval_rev:.3f}" if pval_rev >= 0.001 else "< 0,001"
-    _sig_str   = "**non significatif** — absence de déterminisme économique" if pval_rev > 0.05 else "significatif"
+    _sig_str   = "**non significatif** - absence de déterminisme économique" if pval_rev > 0.05 else "significatif"
     st.caption(
         f"**Figure 3.2.** Score IMD (axe vertical) versus revenu médian/UC (axe horizontal, "
-        f"données INSEE Filosofi agrégées par agglomération — {len(df_dock):,} stations dock-based). "
+        f"données INSEE Filosofi agrégées par agglomération - {len(df_dock):,} stations dock-based). "
         f"Corrélation de Spearman : $\\rho = {rho_rev:+.3f}$ ($p = {_p_str_fig}$, {_sig_str}). "
         f"La droite OLS (proxy Ridge) est quasi-horizontale, confirmant l'indépendance entre "
         f"revenu et qualité VLS. **Montpellier** (revenu modeste, IMD élevé) et **Strasbourg** "
@@ -602,13 +602,13 @@ if ies_df is not None:
         st.caption(
             "**Tableau 3.1.** Classement des agglomérations par IES (ascendant). "
             "Les IES < 1 identifient les agglomérations dont l'offre cyclable est inférieure "
-            "à l'attendu pour leur niveau de revenu — cibles prioritaires des politiques d'équité."
+            "à l'attendu pour leur niveau de revenu - cibles prioritaires des politiques d'équité."
         )
 
 # ── Tests statistiques formels (Bootstrap CI + Mann-Whitney U) ────────────────
 if ies_df is not None and len(ies_df) >= 10:
     with st.expander(
-        "Tests statistiques formels — Intervalle de Confiance Bootstrap et Mann-Whitney U",
+        "Tests statistiques formels - Intervalle de Confiance Bootstrap et Mann-Whitney U",
         expanded=True,
     ):
         # ── Bootstrap CI pour ρ de Spearman ───────────────────────────────────
@@ -632,14 +632,14 @@ if ies_df is not None and len(ies_df) >= 10:
 
         bc1, bc2, bc3, bc4 = st.columns(4)
         bc1.metric("ρ observé", f"{rho_rev:+.4f}")
-        bc2.metric("IC 95 % — Borne inf.", f"{_ci_lo:+.4f}")
-        bc3.metric("IC 95 % — Borne sup.", f"{_ci_hi:+.4f}")
-        bc4.metric("0 inclus dans IC ?", "Oui — H₀ non rejetée" if _zero_in_ci else "Non — H₀ rejetée")
+        bc2.metric("IC 95 % - Borne inf.", f"{_ci_lo:+.4f}")
+        bc3.metric("IC 95 % - Borne sup.", f"{_ci_hi:+.4f}")
+        bc4.metric("0 inclus dans IC ?", "Oui - H₀ non rejetée" if _zero_in_ci else "Non - H₀ rejetée")
         st.caption(
             f"**Tableau 3.2.** Intervalle de confiance percentiloïde à 95 % pour $\\rho$ de Spearman "
             f"($N = 2\\ 000$ rééchantillonnages avec remise, graine = 42, $n = {_nb}$). "
             f"$\\text{{IC}}_{{95\\%}} = [{_ci_lo:+.3f},\\ {_ci_hi:+.3f}]$. "
-            + ("L'IC inclut 0 : **H₀ ($\\rho = 0$) ne peut pas être rejetée** — "
+            + ("L'IC inclut 0 : **H₀ ($\\rho = 0$) ne peut pas être rejetée** - "
                "l'absence de corrélation significative entre revenu et IMD est confirmée."
                if _zero_in_ci else
                "L'IC n'inclut pas 0 : H₀ ($\\rho = 0$) est rejetée.")
@@ -653,11 +653,11 @@ if ies_df is not None and len(ies_df) >= 10:
 
         if len(_desert_imd) >= 3 and len(_inclus_imd) >= 3:
             st.markdown(
-                "#### Test de Mann-Whitney U — Comparaison des Scores IMD dans le Bas-Revenu\n"
+                "#### Test de Mann-Whitney U - Comparaison des Scores IMD dans le Bas-Revenu\n"
                 "Les deux quadrants *Désert de Mobilité* et *Mobilité Inclusive* regroupent les "
                 "agglomérations dont le revenu est inférieur à la médiane nationale. "
                 "Le test de Mann-Whitney U (non-paramétrique, non supposant la normalité) "
-                "vérifie si l'IMD diffère significativement entre ces deux groupes — "
+                "vérifie si l'IMD diffère significativement entre ces deux groupes - "
                 "c'est-à-dire si la gouvernance locale fait réellement une différence "
                 "à niveau de revenu identique."
             )
@@ -671,10 +671,10 @@ if ies_df is not None and len(ies_df) >= 10:
             if _mw_ok:
                 _effect_r = 1 - 2 * _U / (len(_desert_imd) * len(_inclus_imd))
                 mw1, mw2, mw3, mw4, mw5 = st.columns(5)
-                mw1.metric(f"Déserts — n", f"{len(_desert_imd)}")
-                mw2.metric(f"Inclusifs — n", f"{len(_inclus_imd)}")
-                mw3.metric("Médiane IMD — Déserts", f"{float(np.median(_desert_imd)):.1f}")
-                mw4.metric("Médiane IMD — Inclusifs", f"{float(np.median(_inclus_imd)):.1f}")
+                mw1.metric(f"Déserts - n", f"{len(_desert_imd)}")
+                mw2.metric(f"Inclusifs - n", f"{len(_inclus_imd)}")
+                mw3.metric("Médiane IMD - Déserts", f"{float(np.median(_desert_imd)):.1f}")
+                mw4.metric("Médiane IMD - Inclusifs", f"{float(np.median(_inclus_imd)):.1f}")
                 mw5.metric("Stat. U", f"{_U:.0f}",
                            f"p = {_p_mw:.4f} ({'sign.' if _p_mw < 0.05 else 'n.s.'})")
                 _p_mw_fmt = f"{_p_mw:.4f}" if _p_mw >= 0.001 else "< 0,001"
@@ -698,9 +698,9 @@ if ies_df is not None and len(ies_df) >= 10:
             else:
                 st.info("scipy.stats requis pour le test de Mann-Whitney U.")
 
-# ── Section 4 — Profil socio-économique des stations (INSEE Filosofi) ─────────
+# ── Section 4 - Profil socio-économique des stations (INSEE Filosofi) ─────────
 st.divider()
-section(4, "Profil Socio-Économique des Stations — Données INSEE Filosofi (Carreau 200 m)")
+section(4, "Profil Socio-Économique des Stations - Données INSEE Filosofi (Carreau 200 m)")
 
 st.markdown(
     "Le Gold Standard Final intègre des données socio-économiques au niveau du carreau INSEE "
@@ -745,7 +745,7 @@ else:
     st.table(pd.DataFrame(stat_rows))
     st.caption(
         f"**Tableau 4.1.** Statistiques descriptives des indicateurs socio-économiques "
-        f"au niveau station (carreau INSEE 200 m) — {len(df_dock):,} stations dock-based."
+        f"au niveau station (carreau INSEE 200 m) - {len(df_dock):,} stations dock-based."
     )
 
     # ── Distributions visuelles ───────────────────────────────────────────────
@@ -829,7 +829,7 @@ else:
                 color_continuous_scale="Blues",
                 labels={
                     "IMD":               "Score IMD (/100)",
-                    "part_velo_travail": "Part vélo domicile-travail — RP 2020 (%)",
+                    "part_velo_travail": "Part vélo domicile-travail - RP 2020 (%)",
                 },
                 height=440,
             )
@@ -864,9 +864,9 @@ else:
                 f"$\\rho = {rho_vt:+.3f}$ ($p = {pval_vt:.3f}$)."
             )
 
-# ── Section 5 — Validation empirique nationale ────────────────────────────────
+# ── Section 5 - Validation empirique nationale ────────────────────────────────
 st.divider()
-section(5, "Validation Empirique Nationale — IMD Physique versus Pratiques Réelles de Mobilité")
+section(5, "Validation Empirique Nationale - IMD Physique versus Pratiques Réelles de Mobilité")
 
 st.markdown(r"""
 La triangulation avec les sources externes (baromètre FUB 2023 et EMP 2019) confirme la cohérence
@@ -878,8 +878,8 @@ agglomération dont la part modale est inférieure au prédit est en situation d
 """)
 
 tab_emp, tab_fub = st.tabs(
-    ["Part Modale Réelle (EMP 2019) — Proxy IES Direct",
-     "Climat Perçu (Baromètre FUB 2023) — Proxy IES Subjectif"]
+    ["Part Modale Réelle (EMP 2019) - Proxy IES Direct",
+     "Climat Perçu (Baromètre FUB 2023) - Proxy IES Subjectif"]
 )
 
 with tab_emp:
@@ -917,8 +917,8 @@ with tab_emp:
                 "Sous-performance (IES < 1)": "#e74c3c",
             },
             labels={
-                "IMD":               "Score IMD (/100) — Qualité physique de l'offre",
-                "emp_part_velo_2019":"Part modale vélo déclarée — EMP 2019 (%)",
+                "IMD":               "Score IMD (/100) - Qualité physique de l'offre",
+                "emp_part_velo_2019":"Part modale vélo déclarée - EMP 2019 (%)",
                 "regime":            "Régime IES proxy",
             },
             height=480,
@@ -973,7 +973,7 @@ with tab_emp:
         st.caption(
             "**Tableau 5.1.** Classement par résidu IES proxy. Les résidus négatifs identifient "
             "les agglomérations dont la part modale vélo est inférieure à ce que leur IMD prédit "
-            "— candidats aux politiques de levée des barrières d'usage."
+            "- candidats aux politiques de levée des barrières d'usage."
         )
     else:
         st.info(
@@ -997,8 +997,8 @@ with tab_fub:
             color="IMD",
             color_continuous_scale="Blues",
             labels={
-                "IMD":            "Score IMD (/100) — Qualité physique de l'offre",
-                "fub_score_2023": "Score FUB 2023 (/6) — Climat perçu",
+                "IMD":            "Score IMD (/100) - Qualité physique de l'offre",
+                "fub_score_2023": "Score FUB 2023 (/6) - Climat perçu",
             },
             height=420,
         )
@@ -1023,7 +1023,7 @@ with tab_fub:
             "dans `data/external/mobility_sources/`."
         )
 
-# ── Section 6 — Implications politiques ───────────────────────────────────────
+# ── Section 6 - Implications politiques ───────────────────────────────────────
 st.divider()
 section(6, "Implications pour la Gouvernance des Réseaux VLS")
 
@@ -1046,7 +1046,7 @@ l'abonnement est le principal frein à l'adoption du VLS dans les ménages à re
 dispositif de **tarification sociale différenciée** (abonnement gratuit ou subventionné pour les
 allocataires RSA/APL, abonnement jeune) est un levier complémentaire à l'investissement
 infrastructurel, permettant de lever les barrières d'usage non capturées par l'IMD physique
-— et révélées par un résidu IES négatif malgré un IMD satisfaisant.
+- et révélées par un résidu IES négatif malgré un IMD satisfaisant.
 
 #### 6.3. Levier Gouvernanciel : Contractualisation des Obligations d'Équité
 
@@ -1070,7 +1070,7 @@ dans le déploiement de leurs réseaux VLS. Il invalide toute forme de fatalisme
 et souligne la responsabilité pleine et entière des décideurs publics locaux dans la constitution
 ou la résorption des déserts de mobilité sociale.
 
-L'étude de cas intra-urbaine de Montpellier — corrélation entre revenu fiscal et part modale vélo par
-quartier, calcul de l'IES intra-urbain $\widetilde{\text{IES}}_q$ — est détaillée dans la section
-*Fracture Socio-Spatiale* de la page **Montpellier — Étude de cas VLS**.
+L'étude de cas intra-urbaine de Montpellier - corrélation entre revenu fiscal et part modale vélo par
+quartier, calcul de l'IES intra-urbain $\widetilde{\text{IES}}_q$ - est détaillée dans la section
+*Fracture Socio-Spatiale* de la page **Montpellier - Étude de cas VLS**.
 """)

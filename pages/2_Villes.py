@@ -1,5 +1,5 @@
 """
-2_Villes.py — Analyse comparative inter-urbaine des métriques d'enrichissement spatial.
+2_Villes.py - Analyse comparative inter-urbaine des métriques d'enrichissement spatial.
 """
 from __future__ import annotations
 
@@ -16,7 +16,7 @@ from utils.data_loader import METRICS, city_stats, compute_imd_cities, load_stat
 from utils.styles import abstract_box, inject_css, section, sidebar_nav
 
 st.set_page_config(
-    page_title="Analyse Comparative Inter-Urbaine — Gold Standard GBFS",
+    page_title="Analyse Comparative Inter-Urbaine - Gold Standard GBFS",
     page_icon=None,
     layout="wide",
 )
@@ -28,8 +28,8 @@ imd_df = compute_imd_cities(df)   # dock-based, sans entrées non-ville
 cities = city_stats(df)
 
 _n_dock_cities = len(imd_df)
-_top_city      = imd_df.iloc[0]["city"] if len(imd_df) else "—"
-_top_imd       = f"{imd_df.iloc[0]['IMD']:.1f}" if len(imd_df) else "—"
+_top_city      = imd_df.iloc[0]["city"] if len(imd_df) else "-"
+_top_imd       = f"{imd_df.iloc[0]['IMD']:.1f}" if len(imd_df) else "-"
 
 st.title("Analyse Comparative Inter-Urbaine")
 st.caption("Axe de Recherche 2 : Gouvernance Locale et Disparités Structurelles de l'Environnement Cyclable")
@@ -39,8 +39,8 @@ abstract_box(
     "sont-elles le produit d'une fatalité géographique ou d'inégalités de gouvernance ?<br><br>"
     "Cette analyse comparative classe les <b>{n} agglomérations</b> françaises dotées d'un "
     "réseau VLS dock-based certifié Gold Standard selon les dimensions d'enrichissement spatial. "
-    "Le résultat clé de l'analyse spatiale globale — l'absence d'autocorrélation significative "
-    "(Moran's $I = -0{,}023$, $p = 0{,}765$) — invalide l'hypothèse d'un déterminisme "
+    "Le résultat clé de l'analyse spatiale globale - l'absence d'autocorrélation significative "
+    "(Moran's $I = -0{,}023$, $p = 0{,}765$) - invalide l'hypothèse d'un déterminisme "
     "géographique structurant les disparités. Les villes performantes et sous-performantes "
     "ne forment pas de clusters territoriaux cohérents : ce sont les choix de gouvernance "
     "locale, et non la localisation géographique, qui expliquent l'hétérogénéité observée. "
@@ -89,12 +89,12 @@ cities_sorted = cities_f.dropna(subset=[metric_key]).sort_values(
 k1, k2, k3, k4 = st.columns(4)
 k1.metric("Agglomérations dock-based analysées", f"{len(cities_f)}")
 k2.metric("Optimum IMD national",                _top_city)
-k3.metric("Score IMD — Optimum",                 f"{_top_imd} / 100")
+k3.metric("Score IMD - Optimum",                 f"{_top_imd} / 100")
 k4.metric("IMD médian national",                 f"{imd_df['IMD'].median():.1f} / 100")
 
-# ── Section 1 — Classement univarié ──────────────────────────────────────────
+# ── Section 1 - Classement univarié ──────────────────────────────────────────
 st.divider()
-section(1, "Classement Univarié — Agglomérations Triées par la Dimension Sélectionnée")
+section(1, "Classement Univarié - Agglomérations Triées par la Dimension Sélectionnée")
 
 st.markdown(r"""
 Le classement univarié constitue le premier niveau de diagnostic territorial. Il met en évidence
@@ -168,9 +168,9 @@ with col_chart:
         "reflètent des choix différenciés de politique d'aménagement cyclable."
     )
 
-# ── Section 2 — Infrastructure et accidentologie ──────────────────────────────
+# ── Section 2 - Infrastructure et accidentologie ──────────────────────────────
 st.divider()
-section(2, "Analyse Croisée Infrastructure × Sinistralité — Effet Protecteur de l'Aménagement Cyclable")
+section(2, "Analyse Croisée Infrastructure × Sinistralité - Effet Protecteur de l'Aménagement Cyclable")
 
 st.markdown(r"""
 L'hypothèse d'un effet protecteur de l'infrastructure cyclable sur la sinistralité est centrale
@@ -233,9 +233,9 @@ if not scatter_df.empty:
         "aux TC lourds. Le cercle rouge identifie Montpellier (rang IMD #2 national)."
     )
 
-# ── Section 3 — IMD vs Revenu médian ──────────────────────────────────────────
+# ── Section 3 - IMD vs Revenu médian ──────────────────────────────────────────
 st.divider()
-section(3, "Justice Sociale — Classement IMD × Revenu Médian par Agglomération")
+section(3, "Justice Sociale - Classement IMD × Revenu Médian par Agglomération")
 
 _has_revenu = "revenu_median_uc" in imd_df.columns and imd_df["revenu_median_uc"].notna().sum() >= 5
 if _has_revenu:
@@ -323,10 +323,10 @@ if _has_revenu:
         st.plotly_chart(fig_ies, use_container_width=True)
         st.caption(
             "**Figure 3.1.** Score IMD versus revenu médian/UC (INSEE Filosofi) par agglomération. "
-            "Corrélation de Spearman : $\\rho = +0{,}055$ ($p = 0{,}677$, **non significatif**) — "
+            "Corrélation de Spearman : $\\rho = +0{,}055$ ($p = 0{,}677$, **non significatif**) - "
             "la qualité VLS est indépendante du niveau de revenu. "
             "Les quadrants révèlent les quatre régimes de justice cyclable. "
-            "Analyse complète : page **IES — Indice d'Équité Sociale**."
+            "Analyse complète : page **IES - Indice d'Équité Sociale**."
         )
 else:
     st.info(
@@ -334,9 +334,9 @@ else:
         "Vérifiez que le fichier `stations_gold_standard_final.parquet` est utilisé."
     )
 
-# ── Section 4 — Profil radar ──────────────────────────────────────────────────
+# ── Section 4 - Profil radar ──────────────────────────────────────────────────
 st.divider()
-section(4, "Profil Radar Multi-Dimensionnel — Audit Comparatif des Agglomérations")
+section(4, "Profil Radar Multi-Dimensionnel - Audit Comparatif des Agglomérations")
 
 st.markdown(r"""
 Le profil radar permet de visualiser simultanément les quatre dimensions de l'environnement

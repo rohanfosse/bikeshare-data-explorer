@@ -1,5 +1,5 @@
 """
-6_Montpellier.py — Validation micro-locale : réseau Vélomagg (Montpellier Méditerranée Métropole).
+6_Montpellier.py - Validation micro-locale : réseau Vélomagg (Montpellier Méditerranée Métropole).
 Sources : TAM/MMM trips, station metrics, community detection, weather, socioeconomic IRIS.
 """
 from __future__ import annotations
@@ -36,7 +36,7 @@ from utils.styles import abstract_box, inject_css, section, sidebar_nav
 _VIZ_PATH = Path(__file__).parent.parent / "data" / "processed" / "ville_montpellier" / "visualisations"
 
 st.set_page_config(
-    page_title="Montpellier Vélomagg — Validation Micro-Locale",
+    page_title="Montpellier Vélomagg - Validation Micro-Locale",
     page_icon=None,
     layout="wide",
 )
@@ -52,15 +52,15 @@ abstract_box(
     "Cette étude de cas constitue l'étape de <em>validation micro-locale</em> du cadre "
     "analytique développé à l'échelle nationale. Le réseau Vélomagg "
     "(TAM / Montpellier Méditerranée Métropole) est analysé selon cinq axes complémentaires : "
-    "(1) la <em>topologie du réseau</em> — structure du graphe de flux, détection de communautés "
+    "(1) la <em>topologie du réseau</em> - structure du graphe de flux, détection de communautés "
     "de Louvain, stations-pivots et points d'articulation structurellement critiques ; "
-    "(2) les <em>dynamiques temporelles</em> — patterns horaires, régimes bimodaux "
+    "(2) les <em>dynamiques temporelles</em> - patterns horaires, régimes bimodaux "
     "domicile-travail et sensibilité aux conditions météorologiques ; "
-    "(3) la <em>modélisation de la friction spatiale</em> — déséquilibres source/puits "
+    "(3) la <em>modélisation de la friction spatiale</em> - déséquilibres source/puits "
     "et indice de vulnérabilité opérationnelle ; "
-    "(4) l'<em>écosystème multimodal</em> — intégration GTFS du réseau tramway TAM "
+    "(4) l'<em>écosystème multimodal</em> - intégration GTFS du réseau tramway TAM "
     "et quantification du coût de correspondance piéton-vélo ; "
-    "(5) la <em>fracture socio-spatiale</em> — corrélation entre usage du vélo et "
+    "(5) la <em>fracture socio-spatiale</em> - corrélation entre usage du vélo et "
     "profil socio-économique par quartier (IRIS), révélant les déserts de mobilité sociale. "
     "Les données couvrent 5 ans d'historique de courses Vélomagg (notebooks 22–26)."
 )
@@ -87,10 +87,10 @@ sidebar_nav()
 n_stations  = len(stations)
 total_trips = int(profiles["Total_Trips"].sum(skipna=True)) if "Total_Trips" in profiles.columns else 0
 avg_trips   = round(profiles["Total_Trips"].mean(), 0) if "Total_Trips" in profiles.columns else 0
-top_station = profiles.loc[profiles["Total_Trips"].idxmax(), "Station_Name"] if "Total_Trips" in profiles.columns else "—"
-n_quartiers = stations["Quartier"].nunique() if "Quartier" in stations.columns else "—"
+top_station = profiles.loc[profiles["Total_Trips"].idxmax(), "Station_Name"] if "Total_Trips" in profiles.columns else "-"
+n_quartiers = stations["Quartier"].nunique() if "Quartier" in stations.columns else "-"
 pct_5min    = 100 * biketram["walkable_5min"].mean() if "walkable_5min" in biketram.columns else 0
-n_bridge    = int(community["Is_Bridge"].sum()) if "Is_Bridge" in community.columns else "—"
+n_bridge    = int(community["Is_Bridge"].sum()) if "Is_Bridge" in community.columns else "-"
 
 k1, k2, k3, k4, k5, k6 = st.columns(6)
 k1.metric("Stations analysées", f"{n_stations}")
@@ -111,7 +111,7 @@ try:
         _n_ranked = len(_imd_ranked)
         _top_city = _imd_ranked.iloc[0]["city"]
         st.success(
-            f"**Montpellier — Rang IMD #{_mmm_pos}/{_n_ranked} National (Vélomagg) — "
+            f"**Montpellier - Rang IMD #{_mmm_pos}/{_n_ranked} National (Vélomagg) - "
             f"IMD = {_mmm_imd:.1f}/100**  \n"
             f"Le réseau Vélomagg se classe parmi les environnements cyclables les plus favorables "
             f"de France (rang #{_mmm_pos} sur {_n_ranked} agglomérations dock-based), "
@@ -124,9 +124,9 @@ try:
 except Exception:
     pass
 
-# ── Section 1 — Topologie du réseau et communautés ───────────────────────────
+# ── Section 1 - Topologie du réseau et communautés ───────────────────────────
 st.divider()
-section(1, "Topologie du Réseau et Détection de Communautés — Structure du Graphe de Flux")
+section(1, "Topologie du Réseau et Détection de Communautés - Structure du Graphe de Flux")
 
 st.markdown(r"""
 L'analyse de la topologie du graphe de flux (*directed weighted graph*, $n = 56$ nœuds)
@@ -206,7 +206,7 @@ with col_community:
             "lui conférant un rôle structurel critique dans la connectivité du réseau."
         )
 
-# Section 1 — suite : profils d'usage
+# Section 1 - suite : profils d'usage
 left_prof, right_prof = st.columns([2, 3])
 
 with left_prof:
@@ -253,16 +253,16 @@ with right_prof:
             "fonctionnelle par analyse de la série temporelle horaire."
         )
 
-# ── Section 2 — Dynamiques temporelles et friction météorologique ─────────────
+# ── Section 2 - Dynamiques temporelles et friction météorologique ─────────────
 st.divider()
-section(2, "Dynamiques Temporelles — Régimes Bimodaux, Flux OD et Friction Météorologique")
+section(2, "Dynamiques Temporelles - Régimes Bimodaux, Flux OD et Friction Météorologique")
 
 st.markdown(r"""
 Les dynamiques temporelles du réseau Vélomagg révèlent un **régime bimodal** caractéristique
 des mobilités pendulaires : un pic matinal ($h \approx 8$) et un pic vespéral
 ($h \approx 17$–$18$) concentrent respectivement $\sim 18\,\%$ et $\sim 22\,\%$
-du volume de trips journalier. La friction météorologique — quantifiée par le
-score de mauvais temps ($\text{bad\_weather\_score} \in [0, 1]$) — constitue
+du volume de trips journalier. La friction météorologique - quantifiée par le
+score de mauvais temps ($\text{bad\_weather\_score} \in [0, 1]$) - constitue
 un déterminant externe des déséquilibres source/puits : les précipitations induisent
 une réduction significative des départs, exacerbant les stocks dans les stations-puits
 et aggravant les pénuries dans les stations-sources.
@@ -354,9 +354,9 @@ with tab_weather:
             "Vérifiez la présence de `weather_data_enriched.csv` dans `data/processed/`."
         )
 
-# ── Section 3 — Friction spatiale : déséquilibres et vulnérabilité ─────────────
+# ── Section 3 - Friction spatiale : déséquilibres et vulnérabilité ─────────────
 st.divider()
-section(3, "Modélisation de la Friction Spatiale — Déséquilibres Source/Puits et Vulnérabilité Structurelle")
+section(3, "Modélisation de la Friction Spatiale - Déséquilibres Source/Puits et Vulnérabilité Structurelle")
 
 st.markdown(r"""
 Le flux net $f_i = \sum_t (\text{entrées}_t - \text{sorties}_t)$ quantifie la
@@ -441,7 +441,7 @@ with col_vuln:
         )
 
 # Centralité : PageRank vs Trips
-st.markdown("#### Centralité Structurelle — PageRank versus Volume de Trips")
+st.markdown("#### Centralité Structurelle - PageRank versus Volume de Trips")
 st.markdown(r"""
 Le PageRank ($PR_i$) mesure l'importance structurelle d'une station dans le graphe de flux
 orienté, indépendamment de son volume absolu de trips. Une station à fort $PR_i$ mais faible
@@ -472,9 +472,9 @@ if {"PageRank", "Total_Trips", "Station_Name"}.issubset(stations.columns):
         "moindre dans le graphe de flux orienté."
     )
 
-# ── Section 4 — Écosystème multimodal ─────────────────────────────────────────
+# ── Section 4 - Écosystème multimodal ─────────────────────────────────────────
 st.divider()
-section(4, "Écosystème Multimodal — Intégration GTFS Tramway et Coût de Correspondance")
+section(4, "Écosystème Multimodal - Intégration GTFS Tramway et Coût de Correspondance")
 
 st.markdown(r"""
 L'efficacité du réseau Vélomagg comme solution du **premier/dernier kilomètre** repose sur
@@ -532,9 +532,9 @@ if {"bike_station", "distance_m", "walkable_5min", "walkable_10min"}.issubset(bi
         f"**{pct_gt:.0f} %** présentent une friction multimodale élevée (> 10 min)."
     )
 
-# ── Section 5 — Fracture socio-spatiale ───────────────────────────────────────
+# ── Section 5 - Fracture socio-spatiale ───────────────────────────────────────
 st.divider()
-section(5, "Fracture Socio-Spatiale — Usage du Vélo et Profil Socio-Économique par Quartier")
+section(5, "Fracture Socio-Spatiale - Usage du Vélo et Profil Socio-Économique par Quartier")
 
 st.markdown(r"""
 L'analyse de la fracture socio-spatiale confronte les données d'usage du réseau Vélomagg
@@ -654,7 +654,7 @@ with tab_scatter:
                 color="transport_voiture_camion_pct" if "transport_voiture_camion_pct" in syn_clean.columns else None,
                 color_continuous_scale="RdBu_r",
                 labels={
-                    "revenu_fiscal_moyen_menage":       "Revenu fiscal médian (€/an — INSEE Filosofi)",
+                    "revenu_fiscal_moyen_menage":       "Revenu fiscal médian (€/an - INSEE Filosofi)",
                     "transport_deux_roues_velo_pct":    "Part modale vélo/deux-roues (%)",
                     "transport_voiture_camion_pct":     "Part modale voiture (%)",
                     "equipement_pas_de_voiture_pct":    "% ménages sans voiture",

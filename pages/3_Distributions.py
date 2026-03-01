@@ -1,5 +1,5 @@
 """
-3_Distributions.py — Distributions empiriques et structure de corrélation des métriques Gold Standard.
+3_Distributions.py - Distributions empiriques et structure de corrélation des métriques Gold Standard.
 """
 from __future__ import annotations
 
@@ -15,7 +15,7 @@ from utils.data_loader import METRICS, load_stations
 from utils.styles import abstract_box, inject_css, section, sidebar_nav
 
 st.set_page_config(
-    page_title="Distributions Statistiques — Gold Standard GBFS",
+    page_title="Distributions Statistiques - Gold Standard GBFS",
     page_icon=None,
     layout="wide",
 )
@@ -89,9 +89,9 @@ st.caption(
     f"Seuil de significativité des encoches (notched boxes) : $p \\approx 0{{,}}05$."
 )
 
-# ── Section 1 — Distributions univariées ─────────────────────────────────────
+# ── Section 1 - Distributions univariées ─────────────────────────────────────
 st.divider()
-section(1, "Distributions Univariées — Forme Empirique et Dispersion des Sept Dimensions")
+section(1, "Distributions Univariées - Forme Empirique et Dispersion des Sept Dimensions")
 
 st.markdown(r"""
 Les distributions empiriques révèlent systématiquement une **asymétrie positive** (queue à droite)
@@ -153,7 +153,7 @@ for i, mkey in enumerate(metric_keys):
 
 # ── Tableau de statistiques de forme ─────────────────────────────────────────
 with st.expander(
-    "Statistiques de forme — Asymétrie, Aplatissement et Test de Normalité (Shapiro-Wilk)",
+    "Statistiques de forme - Asymétrie, Aplatissement et Test de Normalité (Shapiro-Wilk)",
     expanded=False,
 ):
     _shape_rows = []
@@ -175,7 +175,7 @@ with st.expander(
 
         def _sig_sw(p: float) -> str:
             if p != p:  # nan
-                return "—"
+                return "-"
             if p < 0.001: return "Rejetée (***)"
             if p < 0.01:  return "Rejetée (**)"
             if p < 0.05:  return "Rejetée (*)"
@@ -186,7 +186,7 @@ with st.expander(
             "n valides": f"{len(_s):,}",
             "Asymétrie γ₁": f"{_skew:+.3f}",
             "Kurtosis γ₂": f"{_kurt:+.3f}",
-            "SW p-val. (n ≤ 5 000)": f"{_sw_p:.4f}" if _sw_p == _sw_p else "—",
+            "SW p-val. (n ≤ 5 000)": f"{_sw_p:.4f}" if _sw_p == _sw_p else "-",
             "H₀ normalité": _sig_sw(_sw_p),
         })
 
@@ -204,9 +204,9 @@ with st.expander(
             "(t-test, ANOVA) dans les comparaisons inter-agglomérations."
         )
 
-# ── Section 2 — Dispersion inter-agglomérations ───────────────────────────────
+# ── Section 2 - Dispersion inter-agglomérations ───────────────────────────────
 st.divider()
-section(2, "Dispersion Inter-Agglomérations — Significativité Statistique des Différences de Médiane")
+section(2, "Dispersion Inter-Agglomérations - Significativité Statistique des Différences de Médiane")
 
 st.markdown(r"""
 Les boîtes à moustaches à encoches (*notched boxes*) permettent l'évaluation visuelle
@@ -285,9 +285,9 @@ if bp_city_sel:
 else:
     st.info("Sélectionnez au moins une agglomération pour afficher les boîtes à moustaches.")
 
-# ── Section 3 — Matrice de corrélation de Spearman ───────────────────────────
+# ── Section 3 - Matrice de corrélation de Spearman ───────────────────────────
 st.divider()
-section(3, "Matrice de Corrélation de Spearman — Colinéarités et Indépendance des Dimensions")
+section(3, "Matrice de Corrélation de Spearman - Colinéarités et Indépendance des Dimensions")
 
 st.markdown(r"""
 La matrice de corrélation de rang de Spearman ($\rho$) entre les sept dimensions
@@ -296,11 +296,11 @@ Une colinéarité forte ($|\rho| > 0{,}7$) entre deux dimensions incluses dans l
 indiquerait une redondance informationnelle et nécessiterait une réduction par ACP
 ou une pondération différenciée.
 
-Le résultat observé — quasi-indépendance des dimensions retenues pour l'IMD —
+Le résultat observé - quasi-indépendance des dimensions retenues pour l'IMD -
 valide la non-redondance du modèle composite et justifie la pondération différenciée
 optimisée par évolution différentielle.
 **À l'échelle des villes**, la corrélation Spearman entre l'IMD agrégé et le revenu
-médian des ménages est $\rho_s = +0{,}055$ (p = 0,677, non significatif) —
+médian des ménages est $\rho_s = +0{,}055$ (p = 0,677, non significatif) -
 validant l'indépendance de la performance cyclable vis-à-vis du niveau de richesse de l'agglomération.
 """)
 
@@ -362,9 +362,9 @@ st.caption(
     + _socio_note
 )
 
-# ── Section 4 — Scatter matriciel ─────────────────────────────────────────────
+# ── Section 4 - Scatter matriciel ─────────────────────────────────────────────
 st.divider()
-section(4, "Analyse par Paires — Scatter Matriciel sur Échantillon Stratifié")
+section(4, "Analyse par Paires - Scatter Matriciel sur Échantillon Stratifié")
 
 with st.expander("Afficher le scatter matriciel (calcul sur sous-échantillon aléatoire)", expanded=False):
     st.markdown(r"""

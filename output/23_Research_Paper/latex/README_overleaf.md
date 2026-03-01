@@ -1,4 +1,4 @@
-# Guide d'utilisation — Overleaf
+# Guide d'utilisation - Overleaf
 
 ## Structure du projet LaTeX
 

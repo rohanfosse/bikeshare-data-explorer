@@ -1,5 +1,5 @@
 """
-00_Gold_Standard.py — Ingénierie des données et audit multi-sources.
+00_Gold_Standard.py - Ingénierie des données et audit multi-sources.
 Présentation de l'hybridation des bases de données et de la correction des flux GBFS.
 """
 import sys
@@ -20,7 +20,7 @@ from utils.data_loader import (
 from utils.styles import abstract_box, inject_css, section, sidebar_nav
 
 st.set_page_config(
-    page_title="Gold Standard — Audit et Hybridation",
+    page_title="Gold Standard - Audit et Hybridation",
     page_icon=None,
     layout="wide",
 )
@@ -55,7 +55,7 @@ abstract_box(
     "de ses données d'entrée (paradigme de la lutte contre le <i>Garbage In, Garbage Out</i>). Cette section documente "
     "le pipeline d'audit massif réalisé sur les flux GBFS français et la stratégie d'hybridation "
     f"multi-sources (BAAC, Cerema, GTFS, INSEE) mise en œuvre pour constituer notre base de référence spatiale : "
-    f"le <b>Gold Standard GBFS</b> — <b>{len(df):,} stations certifiées</b> issues de <b>{n_ok} systèmes</b> "
+    f"le <b>Gold Standard GBFS</b> - <b>{len(df):,} stations certifiées</b> issues de <b>{n_ok} systèmes</b> "
     f"({n_dock_cities} agglomérations), dont <b>{n_dock:,} stations dock-based</b> (VLS physique) et "
     f"{n_ff:,} points free-floating. Le corpus est enrichi selon six modules spatiaux (topographie SRTM, "
     "infrastructure OSM, accidentologie BAAC, multimodalité GTFS, profil socio-économique INSEE Filosofi, "
@@ -85,15 +85,15 @@ quantitative engendre des artefacts statistiques majeurs (*Romanillos et al., 20
 L'audit systématique des systèmes GBFS français a mis en exergue une taxonomie de **5 classes d'anomalies
 critiques (A1 à A5)**, désormais encodées dans la colonne `station_type` du Gold Standard Final :
 
-* **A1 — Inclusion hors-domaine :** Présence de systèmes d'autopartage (ex. Citiz) encodés par erreur
+* **A1 - Inclusion hors-domaine :** Présence de systèmes d'autopartage (ex. Citiz) encodés par erreur
   comme des flottes cyclables (14 systèmes affectés).
-* **A2 — Capacité fictive (Placeholder) :** Valeur constante non nulle déclarée arbitrairement sur
+* **A2 - Capacité fictive (Placeholder) :** Valeur constante non nulle déclarée arbitrairement sur
   toutes les stations (ex. `pony_Nice` déclarant $c = 100$).
-* **A3 — Le Biais de Surcapacité Structurelle (*Floating-Anchor*) :** L'anomalie la plus critique,
+* **A3 - Le Biais de Surcapacité Structurelle (*Floating-Anchor*) :** L'anomalie la plus critique,
   inhérente aux flottes *free-floating* (cf. infra).
-* **A4 — Aberrations géospatiales :** Coordonnées (Lat/Lon) permutées ou aberrantes générant des
+* **A4 - Aberrations géospatiales :** Coordonnées (Lat/Lon) permutées ou aberrantes générant des
   *bounding-boxes* à l'échelle continentale.
-* **A5 — Hors périmètre :** Systèmes situés dans les DOM-TOM ou présentant un périmètre d'action
+* **A5 - Hors périmètre :** Systèmes situés dans les DOM-TOM ou présentant un périmètre d'action
   macro-régional ($> 50\,000\,\text{km}^2$).
 
 #### Zoom sur l'anomalie A3 : Le biais de la moyenne conditionnelle
@@ -214,7 +214,7 @@ if not catalog.empty and "status" in catalog.columns:
         )
 
         # Top cities by station count (dock-based uniquement)
-        st.markdown("**Top 10 agglomérations — stations dock-based**")
+        st.markdown("**Top 10 agglomérations - stations dock-based**")
         top_cities = cities_dock.head(10)[["city", "n_stations"]].rename(
             columns={"city": "Agglomération", "n_stations": "Stations"}
         )
@@ -246,7 +246,7 @@ if not catalog.empty and "status" in catalog.columns:
 
 # ── Section 3 : Avant / Après (Étude de Cas) ──────────────────────────────────
 st.divider()
-section(3, "Avant / Après : Preuve Empirique de l'Impact de l'Audit — Cas Bordeaux")
+section(3, "Avant / Après : Preuve Empirique de l'Impact de l'Audit - Cas Bordeaux")
 
 st.markdown(r"""
 Pour saisir l'impact de ces corrections sur l'évaluation des politiques publiques, le cas de **Bordeaux**
@@ -315,12 +315,12 @@ with col_after:
 
 # ── Section 4 : Complétude de l'Enrichissement ────────────────────────────────
 st.divider()
-section(4, "Complétude de l'Enrichissement Spatial — Couverture par Module Méthodologique")
+section(4, "Complétude de l'Enrichissement Spatial - Couverture par Module Méthodologique")
 
 st.markdown(r"""
 L'enrichissement spatial des {N_STATIONS} stations certifiées repose sur cinq modules indépendants
 (Topographie, Infrastructure, Accidentologie, Multimodalité, Socio-Économique).
-La complétude de chaque module — proportion de stations disposant d'une valeur valide — est conditionnée
+La complétude de chaque module - proportion de stations disposant d'une valeur valide - est conditionnée
 par la couverture géographique de la source primaire et par les contraintes de l'algorithme de
 *Spatial Join* (rayon de 300 m). Le tableau ci-dessous documente le taux de couverture observé pour
 chaque dimension d'enrichissement sur le corpus complet.
@@ -357,7 +357,7 @@ if not compl.empty:
         f"sur les {len(df):,} stations Gold Standard. "
         "Vert : complétude $\\geq 80\\,\\%$ (qualité satisfaisante) ; "
         "Orange : $50\\,\\% \\leq$ complétude $< 80\\,\\%$ (couverture partielle) ; "
-        "Rouge : complétude $< 50\\,\\%$ (contrainte de source primaire — couverture BAAC ou SRTM)."
+        "Rouge : complétude $< 50\\,\\%$ (contrainte de source primaire - couverture BAAC ou SRTM)."
     )
 
     # Completeness table
@@ -393,10 +393,10 @@ certifiées, couvrant les déterminants identifiés dans la littérature scienti
 donnees_sources = pd.DataFrame({
     "Dimension Modélisée": [
         "Infrastructure Primaire",
-        "Sécurité Spatiale (S — IMD)",
-        "Perméabilité Cyclable (I — IMD)",
-        "Capillarité Multimodale (M — IMD)",
-        "Friction Spatiale (T — IMD)",
+        "Sécurité Spatiale (S - IMD)",
+        "Perméabilité Cyclable (I - IMD)",
+        "Capillarité Multimodale (M - IMD)",
+        "Friction Spatiale (T - IMD)",
         "Vulnérabilité Socio-Éco. (IES)",
         "Pratiques Réelles (Validation externe)",
     ],
@@ -425,14 +425,14 @@ donnees_sources = pd.DataFrame({
         "Distance isochrone aux pôles d'échanges lourds (Train, Tram, BHNS).",
         "Gradient altimétrique modélisant la barrière énergétique physiologique.",
         "Revenu médian, chômage, % de cadres, diplômés, sans voiture par carreau INSEE.",
-        "Part modale vélo effective et score perçu du climat cyclable — validation externe de l'IMD.",
+        "Part modale vélo effective et score perçu du climat cyclable - validation externe de l'IMD.",
     ],
 })
 
 st.table(donnees_sources)
 
-# Distribution des stations par ville (top 20) — dock-based uniquement
-st.markdown("#### Couverture Géographique — Stations Dock-Based par Agglomération")
+# Distribution des stations par ville (top 20) - dock-based uniquement
+st.markdown("#### Couverture Géographique - Stations Dock-Based par Agglomération")
 st.caption(
     "Filtrage appliqué : les flottes *free-floating* (A3 : bird, dott, pony, voi) et les "
     "systèmes d'autopartage (A1 : citiz) sont exclus. Seules les stations **dock-based** "
@@ -487,8 +487,8 @@ académique autonome à deux niveaux :
 1. **Contribution méthodologique :** Un protocole d'audit reproductible et généralisable à tout corpus
    GBFS national ou international, documenté dans les Notebooks 20–21 du dépôt public.
 2. **Contribution empirique :** Un jeu de données de {N_STATIONS} stations certifiées, enrichies selon
-   six modules spatiaux (dont les données socio-économiques INSEE Filosofi — revenu médian, Gini,
+   six modules spatiaux (dont les données socio-économiques INSEE Filosofi - revenu médian, Gini,
    mobilité), prêt à supporter des modélisations complexes telles que la théorie des graphes,
    l'analyse temporelle des flux de micromobilité, ou la modélisation économétrique de
-   l'équité spatiale — Indice d'Équité Sociale (IES, *cf.* page dédiée).
+   l'équité spatiale - Indice d'Équité Sociale (IES, *cf.* page dédiée).
 """.replace("{N_STATIONS}", f"{len(df):,}"))

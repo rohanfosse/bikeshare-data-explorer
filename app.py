@@ -1,6 +1,6 @@
 """
-app.py — Point d'entrée de l'application Streamlit.
-Atlas de l'Indice de Mobilité Douce (IMD) — Gold Standard GBFS.
+app.py - Point d'entrée de l'application Streamlit.
+Atlas de l'Indice de Mobilité Douce (IMD) - Gold Standard GBFS.
 """
 from __future__ import annotations
 
@@ -11,7 +11,7 @@ from utils.data_loader import city_stats, load_stations, load_systems_catalog
 from utils.styles import abstract_box, inject_css, section, sidebar_nav
 
 st.set_page_config(
-    page_title="Atlas IMD — Justice Spatiale & Vélos en Libre-Service",
+    page_title="Atlas IMD - Justice Spatiale & Vélos en Libre-Service",
     page_icon=None,
     layout="wide",
 )
@@ -21,7 +21,7 @@ inject_css()
 st.title("Atlas de l'Indice de Mobilité Douce (IMD)")
 st.caption(
     "Évaluation quantitative de l'équité socio-spatiale des systèmes de vélos en libre-service "
-    "en France — Gold Standard GBFS · CESI BikeShare-ICT · 2025-2026"
+    "en France - Gold Standard GBFS · CESI BikeShare-ICT · 2025-2026"
 )
 
 # ── Chargement des données (avant abstract pour valeurs dynamiques) ───────────
@@ -42,11 +42,11 @@ abstract_box(
     "topographie), et l'<b>Indice d'Équité Sociale (IES)</b>, qui mesure l'écart entre l'offre "
     "observée et l'offre socialement attendue. Les résultats clés invalident deux hypothèses "
     "intuitives dominantes : <b>(1)</b> l'absence d'autocorrélation spatiale significative "
-    "(Moran's $I = -0{,}023$, $p = 0{,}765$) réfute le déterminisme géographique — c'est "
+    "(Moran's $I = -0{,}023$, $p = 0{,}765$) réfute le déterminisme géographique - c'est "
     "la gouvernance locale, non la localisation, qui explique les disparités ; "
     "<b>(2)</b> la corrélation de Spearman nulle ($\\rho = +0{,}055$, $p = 0{,}677$) entre IMD "
     "et revenu médian (INSEE Filosofi, 59 agglomérations dock-based) réfute le déterminisme "
-    "économique — la quasi-totalité de la qualité VLS relève de choix politiques locaux."
+    "économique - la quasi-totalité de la qualité VLS relève de choix politiques locaux."
 )
 
 sidebar_nav()
@@ -79,14 +79,14 @@ Pour y répondre, il apparaît impératif de s'affranchir du prisme purement cap
 jusqu'ici dominé l'évaluation des politiques cyclables. Historiquement, la littérature académique
 et les planificateurs urbains se sont appuyés sur des métriques volumétriques naïves (densité brute
 de stations, ratio de vélos par habitant) calculées à partir de flux de données ouverts (GBFS)
-rarement audités. Ce postulat — qui associe implicitement l'abondance de l'offre à son utilité
-sociale — masque des biais structurels majeurs : un réseau dense peut s'avérer inopérant s'il est
+rarement audités. Ce postulat - qui associe implicitement l'abondance de l'offre à son utilité
+sociale - masque des biais structurels majeurs : un réseau dense peut s'avérer inopérant s'il est
 déconnecté des pôles d'échanges multimodaux, ou inéquitable s'il exclut systématiquement les
 quartiers à forte vulnérabilité économique (*Médard de Chardon et al., 2017*).
 
 Afin de pallier ces lacunes méthodologiques, cet article propose une approche quantitative inédite,
 structurée autour de :
-1. La constitution d'un jeu de données de référence — le **Gold Standard** — expurgé des anomalies
+1. La constitution d'un jeu de données de référence - le **Gold Standard** - expurgé des anomalies
    inhérentes à l'Open Data GBFS.
 2. La calibration empirique d'un **Indice de Mobilité Douce (IMD)** intégrant la friction spatiale,
    l'accidentologie, la continuité des infrastructures et l'hybridation multimodale.
@@ -104,7 +104,7 @@ GBFS (*General Bikeshare Feed Specification*, v3.0). Toutefois, nos travaux dém
 l'utilisation naïve de ces données brutes est **scientifiquement erronée**. L'audit systématique
 des {N_CATALOG} systèmes français a révélé une taxonomie de 5 classes d'anomalies structurelles (A1 à A5).
 
-L'anomalie A3 — le *biais de la moyenne conditionnelle* inhérent aux flottes *free-floating* — est
+L'anomalie A3 - le *biais de la moyenne conditionnelle* inhérent aux flottes *free-floating* - est
 la plus pernicieuse : elle engendre des surestimations massives de capacité
 ($\bar{c}_{\text{profil}} \gg \bar{c}_{\text{réel}}$), invalidant les classements de performance
 de plusieurs métropoles. À titre d'illustration, Bordeaux passait du rang 2 au rang 14 national
@@ -112,7 +112,7 @@ après correction de ce seul biais, ce qui aurait pu conduire à des réallocati
 publiques erronées de plusieurs millions d'euros.
 
 En purgeant rigoureusement les données de ces biais algorithmiques, nous avons constitué un
-**Gold Standard** de {N_STATIONS} stations validées sur {N_CITIES} agglomérations — socle indispensable à toute
+**Gold Standard** de {N_STATIONS} stations validées sur {N_CITIES} agglomérations - socle indispensable à toute
 modélisation spatiale robuste. Ce jeu de données est mis à disposition de la communauté
 scientifique via l'interface d'export de cette plateforme (formats CSV et Parquet, principes FAIR).
 """.replace("{N_CATALOG}", str(len(catalog))).replace("{N_STATIONS}", f"{len(df):,}").replace("{N_CITIES}", str(n_cities)))
@@ -132,7 +132,7 @@ with col_l:
     st.table(pd.DataFrame(audit_rows))
 
 with col_r:
-    st.markdown("**Anomalies GBFS — Taxonomie A1–A5**")
+    st.markdown("**Anomalies GBFS - Taxonomie A1–A5**")
     anomaly_rows = [
         {"Classe": "A1", "Nature": "Inclusion hors-domaine (autopartage)", "Impact": "Biais de classification"},
         {"Classe": "A2", "Nature": "Capacité fictive (placeholder)",        "Impact": "Surestimation capacitaire"},
@@ -144,7 +144,7 @@ with col_r:
 
 # ── Section 3 : Architecture analytique ───────────────────────────────────────
 st.divider()
-section(3, "Architecture Analytique — Cinq Axes de Recherche Complémentaires")
+section(3, "Architecture Analytique - Cinq Axes de Recherche Complémentaires")
 
 st.markdown(r"""
 La recherche est structurée en cinq axes analytiques complémentaires, progressant de l'ingénierie
@@ -157,42 +157,42 @@ axes = [
         "Page":        "Gold Standard",
         "Question":    "L'Open Data GBFS est-il un matériau de recherche fiable ?",
         "Méthode":     "Audit multi-systèmes, taxonomie A1–A5, pipeline de purge en 6 étapes",
-        "Résultat clé":f"{len(df):,} stations certifiées — Bordeaux : rang 2 → 14 après correction",
+        "Résultat clé":f"{len(df):,} stations certifiées - Bordeaux : rang 2 → 14 après correction",
     },
     {
         "Axe":         "Axe 1",
         "Page":        "IMD",
         "Question":    "La qualité cyclable se réduit-elle au volume de stations ?",
         "Méthode":     "Indice composite 4D (S, I, M, T), optimisation supervisée, Monte Carlo $N=10\\,000$",
-        "Résultat clé":"Top 10 stable dans 89 % des simulations — $w_M^* = 0{,}578$",
+        "Résultat clé":"Top 10 stable dans 89 % des simulations - $w_M^* = 0{,}578$",
     },
     {
         "Axe":         "Axe 2",
         "Page":        "IES",
         "Question":    "L'offre cyclable est-elle équitablement distribuée socialement ?",
         "Méthode":     "Modèle Ridge ($\\lambda$ par CV), $\\text{IES}_i = \\text{IMD}_{\\text{obs}} / \\widehat{\\text{IMD}}(R_m)$",
-        "Résultat clé":"$R^2 = 0{,}28$ — 72 % de la variance IMD relèvent de la gouvernance locale",
+        "Résultat clé":"$R^2 = 0{,}28$ - 72 % de la variance IMD relèvent de la gouvernance locale",
     },
     {
         "Axe":         "Axe 3",
         "Page":        "Villes",
         "Question":    "Les disparités inter-urbaines sont-elles géographiques ou politiques ?",
         "Méthode":     "Indice global de Moran (autocorrélation spatiale), analyse comparative",
-        "Résultat clé":"Moran's $I = -0{,}023$ ($p = 0{,}765$) — déterminisme géographique invalidé",
+        "Résultat clé":"Moran's $I = -0{,}023$ ($p = 0{,}765$) - déterminisme géographique invalidé",
     },
     {
         "Axe":         "Axe 4",
         "Page":        "Distributions",
         "Question":    "La taille d'une agglomération prédit-elle sa performance cyclable ?",
         "Méthode":     "Corrélation de Spearman, boîtes à encoches, matrice de corrélation",
-        "Résultat clé":"$r_s = -0{,}02$ (hors Paris) — aucune corrélation taille–performance",
+        "Résultat clé":"$r_s = -0{,}02$ (hors Paris) - aucune corrélation taille–performance",
     },
     {
         "Axe":         "Axe 5",
         "Page":        "Montpellier",
         "Question":    "Les modèles nationaux se valident-ils à l'échelle micro-locale ?",
         "Méthode":     "Théorie des graphes (Louvain, PageRank), GTFS, IES intra-urbain par quartier",
-        "Résultat clé":"Structure bimodale Commuter confirmée — fracture socio-spatiale cartographiée",
+        "Résultat clé":"Structure bimodale Commuter confirmée - fracture socio-spatiale cartographiée",
     },
 ]
 st.table(pd.DataFrame(axes))
@@ -205,7 +205,7 @@ st.caption(
 
 # ── Section 4 : Résultats clés ────────────────────────────────────────────────
 st.divider()
-section(4, "Résultats Clés — Invalidation de Deux Hypothèses Intuitives Majeures")
+section(4, "Résultats Clés - Invalidation de Deux Hypothèses Intuitives Majeures")
 
 st.markdown(r"""
 Deux résultats contre-intuitifs structurent l'ensemble de la contribution :
@@ -213,14 +213,14 @@ Deux résultats contre-intuitifs structurent l'ensemble de la contribution :
 #### 4.1. L'Absence de Déterminisme Géographique (Moran's $I = -0{,}023$, $p = 0{,}765$)
 
 L'hypothèse implicitement dominante en géographie urbaine postule qu'une agglomération
-"bien située" — c'est-à-dire bénéficiant d'une forte densité et d'une tradition de mobilité
-douce — est condamnée à la performance cyclable, tandis que les villes périphériques seraient
+"bien située" - c'est-à-dire bénéficiant d'une forte densité et d'une tradition de mobilité
+douce - est condamnée à la performance cyclable, tandis que les villes périphériques seraient
 structurellement pénalisées. L'indice de Moran appliqué aux scores IMD des {N_CITIES} agglomérations
 **réfute formellement cette hypothèse** : les villes performantes et sous-performantes ne forment
 pas de clusters territoriaux cohérents. Bordeaux, Rennes et Grenoble, très éloignées
 géographiquement, peuvent atteindre des scores comparables, quand des villes voisines présentent
-des écarts considérables. **Les choix de gouvernance locale — politique tarifaire, densification
-ciblée, intégration multimodale — priment sur le déterminisme géographique.**
+des écarts considérables. **Les choix de gouvernance locale - politique tarifaire, densification
+ciblée, intégration multimodale - priment sur le déterminisme géographique.**
 
 #### 4.2. L'Absence de Déterminisme Économique ($R^2_{\text{Ridge}} = 0{,}28$)
 
@@ -240,15 +240,15 @@ significative** pour améliorer l'équité et la qualité de son environnement c
 
 col_r1, col_r2 = st.columns(2)
 with col_r1:
-    st.metric("Indice de Moran (IMD spatial)", "I = −0,023", "p = 0,765 — non significatif", delta_color="off")
-    st.caption("Absence d'autocorrélation spatiale — les disparités ne sont pas géographiquement déterminées.")
+    st.metric("Indice de Moran (IMD spatial)", "I = −0,023", "p = 0,765 - non significatif", delta_color="off")
+    st.caption("Absence d'autocorrélation spatiale - les disparités ne sont pas géographiquement déterminées.")
 with col_r2:
     st.metric("R² Ridge (revenu médian → IMD)", "0,28", "72 % expliqués par la gouvernance", delta_color="off")
-    st.caption("Absence de déterminisme économique — la qualité cyclable est un choix politique.")
+    st.caption("Absence de déterminisme économique - la qualité cyclable est un choix politique.")
 
 # ── Section 5 : Guide de Navigation ───────────────────────────────────────────
 st.divider()
-section(5, "Guide de Navigation — Parcours de Recherche et Modules Analytiques")
+section(5, "Guide de Navigation - Parcours de Recherche et Modules Analytiques")
 
 st.markdown(r"""
 La plateforme est organisée en modules thématiques accessibles depuis la barre de navigation
@@ -262,7 +262,7 @@ nav_rows = [
     {"Module": "Carte",               "Axe":      "Trans.", "Contenu principal": f"Visualisation WebGL des {len(df):,} stations (pydeck), filtrage par dimension d'enrichissement, heatmap de densité et couches thématiques."},
     {"Module": "Villes",              "Axe":      "3",      "Contenu principal": "Classement univarié, nuage infra × sinistralité (Moran's $I$), profil radar multi-dimensionnel comparatif."},
     {"Module": "Distributions",       "Axe":      "4",      "Contenu principal": "Histogrammes, boîtes à moustaches à encoches, matrice de corrélation de Spearman ($\\rho$), scatter matriciel stratifié."},
-    {"Module": "France",              "Axe":      "Trans.", "Contenu principal": "Triangulation FUB 2023, EMP 2019, éco-compteurs, BAAC et Cerema — indicateurs nationaux de la mobilité cyclable."},
+    {"Module": "France",              "Axe":      "Trans.", "Contenu principal": "Triangulation FUB 2023, EMP 2019, éco-compteurs, BAAC et Cerema - indicateurs nationaux de la mobilité cyclable."},
     {"Module": "Montpellier",         "Axe":      "5",      "Contenu principal": "Topologie Louvain, déséquilibres source/puits, vulnérabilité structurelle $V_i$, intégration GTFS tramway, fracture socio-spatiale IES intra-urbain."},
     {"Module": "Export",              "Axe":      "FAIR",   "Contenu principal": "Accès libre au Gold Standard (CSV UTF-8 / Parquet), filtres multi-critères, dictionnaire de variables, métadonnées de citation."},
 ]

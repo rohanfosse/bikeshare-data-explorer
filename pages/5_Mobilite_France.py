@@ -1,5 +1,5 @@
 """
-5_Mobilite_France.py — Triangulation multi-sources des indicateurs de mobilité cyclable nationale.
+5_Mobilite_France.py - Triangulation multi-sources des indicateurs de mobilité cyclable nationale.
 Combine le catalogue GBFS (122 systèmes) avec FUB 2023, EMP 2019, BAAC, Cerema, Eco-compteurs.
 """
 from __future__ import annotations
@@ -16,7 +16,7 @@ from utils.data_loader import load_city_mobility, load_systems_catalog
 from utils.styles import abstract_box, inject_css, section, sidebar_nav
 
 st.set_page_config(
-    page_title="Indicateurs Nationaux — Gold Standard GBFS",
+    page_title="Indicateurs Nationaux - Gold Standard GBFS",
     page_icon=None,
     layout="wide",
 )
@@ -29,8 +29,8 @@ abstract_box(
     "<b>Question de recherche :</b> Les indicateurs Gold Standard construits à partir "
     "des données GBFS enrichies sont-ils cohérents avec les mesures indépendantes "
     "issues d'enquêtes déclaratives et de bases administratives ?<br><br>"
-    "Cette analyse croise le catalogue GBFS national — 122 systèmes actifs collectés "
-    "via MobilityData et la collecte manuelle (Notebook 20) — avec cinq sources "
+    "Cette analyse croise le catalogue GBFS national - 122 systèmes actifs collectés "
+    "via MobilityData et la collecte manuelle (Notebook 20) - avec cinq sources "
     "d'indicateurs indépendantes : le <em>FUB Baromètre 2023</em> (perception déclarative "
     "de la qualité cyclable, $\\in [1, 6]$), l'<em>EMP 2019</em> (part modale vélo mesurée "
     "par enquête), la base <em>BAAC</em> (sinistralité cycliste objective), "
@@ -38,7 +38,7 @@ abstract_box(
     "<em>Eco-compteurs</em> (fréquentation observée). "
     "L'objectif est de valider les dimensions Gold Standard par triangulation "
     "avec ces sources externes et de caractériser les disparités inter-urbaines "
-    "selon une approche multi-sources indépendante — condition nécessaire à la "
+    "selon une approche multi-sources indépendante - condition nécessaire à la "
     "validité de construit du modèle IMD."
 )
 
@@ -60,8 +60,8 @@ sys_f = systems[systems["n_stations"] >= min_stations]
 if region_sel:
     sys_f = sys_f[sys_f["region"].isin(region_sel)]
 
-# ── Section 1 — Vue d'ensemble ────────────────────────────────────────────────
-section(1, "Couverture Nationale — 122 Systèmes GBFS Actifs sur le Territoire Français")
+# ── Section 1 - Vue d'ensemble ────────────────────────────────────────────────
+section(1, "Couverture Nationale - 122 Systèmes GBFS Actifs sur le Territoire Français")
 
 st.markdown(r"""
 Le catalogue GBFS français recense l'ensemble des systèmes de vélos en libre-service
@@ -92,9 +92,9 @@ if not city_df.empty and "fub_score_2023" in city_df.columns:
         emp_valid = city_df["emp_part_velo_2019"].dropna()
         k8.metric("Part modale vélo moy. (EMP 2019)", f"{emp_valid.mean():.1f} %")
 
-# ── Section 2 — Catalogue par région ─────────────────────────────────────────
+# ── Section 2 - Catalogue par région ─────────────────────────────────────────
 st.divider()
-section(2, "Catalogue GBFS — Répartition Régionale des Systèmes et Concentration de l'Offre")
+section(2, "Catalogue GBFS - Répartition Régionale des Systèmes et Concentration de l'Offre")
 
 st.markdown(r"""
 La répartition géographique des systèmes GBFS révèle une **concentration structurelle**
@@ -179,7 +179,7 @@ with right_sys:
         "la collecte manuelle complète les systèmes non encore déclarés sur la plateforme."
     )
 
-# ── Section 3 — Tableau comparatif multi-sources ─────────────────────────────
+# ── Section 3 - Tableau comparatif multi-sources ─────────────────────────────
 if city_df.empty:
     st.info(
         "Les données de mobilité multi-sources ne sont pas disponibles. "
@@ -188,7 +188,7 @@ if city_df.empty:
     st.stop()
 
 st.divider()
-section(3, "Tableau de Triangulation — Cinq Sources d'Indicateurs Croisées par Agglomération")
+section(3, "Tableau de Triangulation - Cinq Sources d'Indicateurs Croisées par Agglomération")
 
 st.markdown(r"""
 La triangulation multi-sources constitue le test de validité externe du modèle Gold Standard.
@@ -225,10 +225,10 @@ st.caption(
     "Cellules vides = absence de donnée dans la source concernée."
 )
 
-# ── Section 4 — Baromètre FUB ─────────────────────────────────────────────────
+# ── Section 4 - Baromètre FUB ─────────────────────────────────────────────────
 if "fub_score_2023" in city_df.columns:
     st.divider()
-    section(4, "FUB Baromètre 2023 — Perception Déclarative de la Qualité Cyclable (/6)")
+    section(4, "FUB Baromètre 2023 - Perception Déclarative de la Qualité Cyclable (/6)")
 
     st.markdown(r"""
     Le FUB Baromètre 2023 constitue la principale mesure déclarative de la qualité cyclable
@@ -270,10 +270,10 @@ if "fub_score_2023" in city_df.columns:
         "modélisées se traduisent en expérience cyclable positive."
     )
 
-# ── Section 5 — Perception vs usage effectif ──────────────────────────────────
+# ── Section 5 - Perception vs usage effectif ──────────────────────────────────
 if {"fub_score_2023", "emp_part_velo_2019"}.issubset(city_df.columns):
     st.divider()
-    section(5, "Cohérence Perception × Pratique Réelle — FUB 2023 versus EMP 2019")
+    section(5, "Cohérence Perception × Pratique Réelle - FUB 2023 versus EMP 2019")
 
     st.markdown(r"""
     La triangulation entre perception déclarative (FUB Baromètre) et pratique comportementale
@@ -283,8 +283,8 @@ if {"fub_score_2023", "emp_part_velo_2019"}.issubset(city_df.columns):
     aussi celles où la pratique effective est la plus développée.
     Les agglomérations hors de la diagonale principale représentent des cas d'anomalie
     nécessitant une investigation qualitative :
-    **sous-performance** (bonne infrastructure, faible usage — barrières socio-économiques ?)
-    ou **sur-performance** (usage élevé malgré des conditions objectives médiocres —
+    **sous-performance** (bonne infrastructure, faible usage - barrières socio-économiques ?)
+    ou **sur-performance** (usage élevé malgré des conditions objectives médiocres -
     culture cyclable indépendante de l'infrastructure ?).
     """)
 
@@ -301,8 +301,8 @@ if {"fub_score_2023", "emp_part_velo_2019"}.issubset(city_df.columns):
         color="fub_score_2023",
         color_continuous_scale="Blues",
         labels={
-            "fub_score_2023":   "Score FUB 2023 (/6) — Perception déclarative",
-            "emp_part_velo_2019": "Part modale vélo % (EMP 2019) — Pratique effective",
+            "fub_score_2023":   "Score FUB 2023 (/6) - Perception déclarative",
+            "emp_part_velo_2019": "Part modale vélo % (EMP 2019) - Pratique effective",
             "infra_cyclable_km":  "Linéaire d'infrastructure (km)",
         },
         height=480,
@@ -332,14 +332,14 @@ if {"fub_score_2023", "emp_part_velo_2019"}.issubset(city_df.columns):
         "ou de *résilience cyclable* (usage élevé malgré une perception dégradée)."
     )
 
-# ── Section 6 — Infrastructure vs sinistralité ─────────────────────────────────
+# ── Section 6 - Infrastructure vs sinistralité ─────────────────────────────────
 if {"infra_cyclable_km_per_km2", "baac_accidents_cyclistes_per_100k"}.issubset(city_df.columns):
     st.divider()
-    section(6, "Effet Protecteur de l'Infrastructure — Densité Cerema × Sinistralité BAAC")
+    section(6, "Effet Protecteur de l'Infrastructure - Densité Cerema × Sinistralité BAAC")
 
     st.markdown(r"""
     L'hypothèse d'un effet protecteur de l'infrastructure cyclable sur la sinistralité
-    — dite hypothèse de *safety in numbers* (*Jacobsen, 2003*) — prédit une relation
+    - dite hypothèse de *safety in numbers* (*Jacobsen, 2003*) - prédit une relation
     négative entre la densité d'infrastructure et le taux d'accidents cyclistes.
     Ce nuage de points teste cette relation à l'échelle nationale en croisant
     les données Cerema (linéaire d'infrastructure en km/km²) avec les statistiques
@@ -359,8 +359,8 @@ if {"infra_cyclable_km_per_km2", "baac_accidents_cyclistes_per_100k"}.issubset(c
         color="emp_part_velo_2019" if "emp_part_velo_2019" in safety_df.columns else None,
         color_continuous_scale="Greens",
         labels={
-            "infra_cyclable_km_per_km2":          "Densité d'infrastructure cyclable (km/km² — Cerema)",
-            "baac_accidents_cyclistes_per_100k":  "Taux de sinistralité cycliste (/100k hab. — BAAC)",
+            "infra_cyclable_km_per_km2":          "Densité d'infrastructure cyclable (km/km² - Cerema)",
+            "baac_accidents_cyclistes_per_100k":  "Taux de sinistralité cycliste (/100k hab. - BAAC)",
             "emp_part_velo_2019":                  "Part modale vélo % (EMP 2019)",
         },
         height=480,

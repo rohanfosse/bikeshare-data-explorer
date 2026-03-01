@@ -1,5 +1,5 @@
 """
-0_IMD.py — Indice de Mobilité Douce (IMD).
+0_IMD.py - Indice de Mobilité Douce (IMD).
 
 Classement composite des villes françaises selon quatre dimensions :
 Sécurité (S), Infrastructure (I), Multimodalité (M), Topographie (T).
@@ -21,7 +21,7 @@ from utils.data_loader import compute_imd_cities, load_city_mobility, load_stati
 from utils.styles import abstract_box, inject_css, section, sidebar_nav
 
 st.set_page_config(
-    page_title="Indice de Mobilité Douce — Gold Standard GBFS",
+    page_title="Indice de Mobilité Douce - Gold Standard GBFS",
     page_icon=None,
     layout="wide",
 )
@@ -46,9 +46,9 @@ for _col in ("fub_score_2023", "emp_part_velo_2019"):
         imd_df[_col] = float("nan")
 
 # ── Abstract dynamique ─────────────────────────────────────────────────────────
-_top_city  = imd_df.iloc[0]["city"] if len(imd_df) else "—"
-_top_score = f"{imd_df.iloc[0]['IMD']:.1f}" if len(imd_df) else "—"
-_med_score = f"{imd_df['IMD'].median():.1f}" if len(imd_df) else "—"
+_top_city  = imd_df.iloc[0]["city"] if len(imd_df) else "-"
+_top_score = f"{imd_df.iloc[0]['IMD']:.1f}" if len(imd_df) else "-"
+_med_score = f"{imd_df['IMD'].median():.1f}" if len(imd_df) else "-"
 _n_cities  = len(imd_df)
 
 abstract_box(
@@ -77,7 +77,7 @@ with st.sidebar:
     show_components = st.checkbox("Afficher la décomposition (S, I, M, T)", value=True)
 
 imd_f = imd_df[imd_df["n_stations"] >= min_stations].reset_index(drop=True)
-top_city  = imd_f.iloc[0]["city"]  if len(imd_f) else "—"
+top_city  = imd_f.iloc[0]["city"]  if len(imd_f) else "-"
 top_score = imd_f.iloc[0]["IMD"]   if len(imd_f) else 0.0
 
 # ── KPIs ──────────────────────────────────────────────────────────────────────
@@ -85,7 +85,7 @@ k1, k2, k3, k4, k5 = st.columns(5)
 k1.metric("Agglomérations analysées",        f"{len(imd_f)}")
 k2.metric("Score IMD médian national",       f"{imd_f['IMD'].median():.1f} / 100")
 k3.metric("Optimum national",                top_city)
-k4.metric("Score IMD — Optimum",             f"{top_score:.1f} / 100")
+k4.metric("Score IMD - Optimum",             f"{top_score:.1f} / 100")
 k5.metric("Réseaux d'excellence (IMD > 60)", f"{int((imd_f['IMD'] > 60).sum())}")
 
 # ── Encart Montpellier (cas d'étude) ──────────────────────────────────────────
@@ -102,7 +102,7 @@ if not _mmm.empty:
         if _mmm_rank > 1 else "optimum national"
     )
     st.success(
-        f"**Montpellier — Cas d'Étude National — Rang #{_mmm_rank}/{len(imd_f)} "
+        f"**Montpellier - Cas d'Étude National - Rang #{_mmm_rank}/{len(imd_f)} "
         f"(IMD = {_mmm_row['IMD']:.1f}/100)**  \n"
         f"Le réseau Vélomagg de Montpellier se classe parmi les meilleurs réseaux VLS de France "
         f"({_rank_note}). "
@@ -112,7 +112,7 @@ if not _mmm.empty:
         f"C'est ce réseau qui fait l'objet de l'analyse fine pages **Montpellier** et **IES**."
     )
 
-# ── Section 1 — Cadre théorique ────────────────────────────────────────────────
+# ── Section 1 - Cadre théorique ────────────────────────────────────────────────
 st.divider()
 section(1, "Cadre Théorique et Formulation Mathématique de l'IMD")
 
@@ -127,10 +127,10 @@ empirique supervisée**. Il mesure la qualité globale de l'environnement cyclab
 
 | Dim. | Variable opérationnelle | Source | Justification |
 | :--- | :--- | :--- | :--- |
-| **S — Sécurité** | Densité accidents cyclistes (300 m) | BAAC (ONISR) | La sécurité perçue est le 1er frein au report modal (*Garrard et al., 2012*). |
-| **I — Infrastructure** | Taux aménagements site propre | OSM / Cerema | La continuité cyclable détermine l'usage vulnérable (*Pucher et al., 2010*). |
-| **M — Multimodalité** | Proximité GTFS (Tram, Métro, BHNS) | PAN GTFS | Le VLS est une solution premier/dernier km (*Fishman, 2016*). |
-| **T — Topographie** | Rugosité altimétrique (MNT) | SRTM 30m | La friction énergétique pénalise l'équité hors électrification (*Parkin et al., 2008*). |
+| **S - Sécurité** | Densité accidents cyclistes (300 m) | BAAC (ONISR) | La sécurité perçue est le 1er frein au report modal (*Garrard et al., 2012*). |
+| **I - Infrastructure** | Taux aménagements site propre | OSM / Cerema | La continuité cyclable détermine l'usage vulnérable (*Pucher et al., 2010*). |
+| **M - Multimodalité** | Proximité GTFS (Tram, Métro, BHNS) | PAN GTFS | Le VLS est une solution premier/dernier km (*Fishman, 2016*). |
+| **T - Topographie** | Rugosité altimétrique (MNT) | SRTM 30m | La friction énergétique pénalise l'équité hors électrification (*Parkin et al., 2008*). |
 
 #### 1.2. Formule Générale
 Pour chaque agglomération $i$, les composantes sont normalisées Min-Max sur l'échantillon national,
@@ -145,14 +145,14 @@ st.latex(r"""
 
 with col_weight:
     _weights = pd.DataFrame({
-        "Composante": ["M — Multimodalité", "I — Infrastructure", "S — Sécurité", "T — Topographie"],
+        "Composante": ["M - Multimodalité", "I - Infrastructure", "S - Sécurité", "T - Topographie"],
         "Poids (%)":  [57.8, 18.4, 14.2, 9.6],
     })
     _w_colors = {
-        "M — Multimodalité":  "#1A6FBF",
-        "I — Infrastructure": "#27ae60",
-        "S — Sécurité":       "#c0392b",
-        "T — Topographie":    "#8e44ad",
+        "M - Multimodalité":  "#1A6FBF",
+        "I - Infrastructure": "#27ae60",
+        "S - Sécurité":       "#c0392b",
+        "T - Topographie":    "#8e44ad",
     }
     fig_w = px.bar(
         _weights,
@@ -187,7 +187,7 @@ le Top 10 national maintient sa composition dans **plus de 89 % des simulations*
 La structure de l'IMD capture une réalité physique robuste.
 """)
 
-# ── Section 2 — Classement ────────────────────────────────────────────────────
+# ── Section 2 - Classement ────────────────────────────────────────────────────
 st.divider()
 section(2, "Classement National des Agglomérations par Score IMD (/100)")
 
@@ -273,7 +273,7 @@ with col_bar:
         f"Optimum national : **{top_city}** (IMD = {top_score:.1f}/100)."
     )
 
-# ── Section 3 — Décomposition ─────────────────────────────────────────────────
+# ── Section 3 - Décomposition ─────────────────────────────────────────────────
 if show_components:
     st.divider()
     section(3, "Décomposition Dimensionnelle et Typologie Stratégique")
@@ -287,10 +287,10 @@ if show_components:
     top20 = imd_f.head(min(20, len(imd_f))).copy()
     comp_cols   = ["S_securite", "I_infra", "M_multi", "T_topo"]
     comp_labels = {
-        "S_securite": "S — Sécurité",
-        "I_infra":    "I — Infrastructure",
-        "M_multi":    "M — Multimodalité",
-        "T_topo":     "T — Topographie",
+        "S_securite": "S - Sécurité",
+        "I_infra":    "I - Infrastructure",
+        "M_multi":    "M - Multimodalité",
+        "T_topo":     "T - Topographie",
     }
     for c in comp_cols:
         top20[c] = (top20[c] * 100).round(1)
@@ -310,10 +310,10 @@ if show_components:
             barmode="group",
             labels={"city": "Agglomération", "Score": "Score (/100)", "Composante": ""},
             color_discrete_map={
-                "S — Sécurité":       "#c0392b",
-                "I — Infrastructure": "#27ae60",
-                "M — Multimodalité":  "#1A6FBF",
-                "T — Topographie":    "#8e44ad",
+                "S - Sécurité":       "#c0392b",
+                "I - Infrastructure": "#27ae60",
+                "M - Multimodalité":  "#1A6FBF",
+                "T - Topographie":    "#8e44ad",
             },
             height=max(500, min(20, len(imd_f)) * 32),
         )
@@ -342,8 +342,8 @@ if show_components:
             text="city", size="n_stations", size_max=28,
             color="IMD", color_continuous_scale="Blues",
             labels={
-                "I_infra": "Score d'Infrastructure I — Continuité Cyclable (norm.)",
-                "M_multi": "Score de Multimodalité M — Intégration TC lourds (norm.)",
+                "I_infra": "Score d'Infrastructure I - Continuité Cyclable (norm.)",
+                "M_multi": "Score de Multimodalité M - Intégration TC lourds (norm.)",
                 "city":    "Agglomération",
                 "IMD":     "Score IMD (/100)",
             },
@@ -399,8 +399,8 @@ if show_components:
 
     with tab_heat:
         heat_df = top20[["city"] + comp_cols].set_index("city").copy()
-        heat_df.columns = ["S — Sécurité", "I — Infra.", "M — Multi.", "T — Topo."]
-        heat_df = heat_df.sort_values("M — Multi.", ascending=False)
+        heat_df.columns = ["S - Sécurité", "I - Infra.", "M - Multi.", "T - Topo."]
+        heat_df = heat_df.sort_values("M - Multi.", ascending=False)
 
         fig_heat = px.imshow(
             heat_df,
@@ -417,11 +417,11 @@ if show_components:
         st.plotly_chart(fig_heat, use_container_width=True)
         st.caption(
             "**Figure 3.3.** Heatmap des composantes IMD pour les 20 meilleures agglomérations "
-            "(triées par score M — Multimodalité). Permet d'identifier d'un coup d'œil les "
-            "dimensions déficitaires par agglomération — cibles prioritaires d'investissement."
+            "(triées par score M - Multimodalité). Permet d'identifier d'un coup d'œil les "
+            "dimensions déficitaires par agglomération - cibles prioritaires d'investissement."
         )
 
-# ── Section 4 — Validation externe ────────────────────────────────────────────
+# ── Section 4 - Validation externe ────────────────────────────────────────────
 st.divider()
 section(4, "Double Validation Externe : Ressenti Subjectif vs. Pratique Déclarée")
 
@@ -472,7 +472,7 @@ with tab_fub:
         st.plotly_chart(fig_fub, use_container_width=True)
         st.caption(
             f"**Figure 4.1.** IMD objectif (axe horizontal) versus score FUB 2023 subjectif "
-            f"(axe vertical — perception du climat cyclable). La corrélation positive "
+            f"(axe vertical - perception du climat cyclable). La corrélation positive "
             f"($\\rho = {rho_fub:+.3f}$) valide la **validité de façade** de l'IMD : les "
             f"agglomérations bien équipées sont perçues comme plus cyclables par leurs usagers."
         )
@@ -512,14 +512,14 @@ with tab_emp:
         st.caption(
             f"**Figure 4.2.** IMD objectif versus part modale vélo déclarée (EMP 2019). "
             f"La corrélation ($\\rho = {rho_emp:+.3f}$) prouve que les infrastructures "
-            f"modélisées par l'IMD se traduisent par un report modal effectif — validité "
+            f"modélisées par l'IMD se traduisent par un report modal effectif - validité "
             f"prédictive du modèle. La droite OLS matérialise le niveau de pratique attendu "
             f"pour chaque niveau de qualité IMD."
         )
     else:
         st.warning("Données EMP 2019 non disponibles dans ce corpus.")
 
-# ── Section 5 — Distribution et radar ─────────────────────────────────────────
+# ── Section 5 - Distribution et radar ─────────────────────────────────────────
 st.divider()
 section(5, "Diagnostic Territorial : Distribution Nationale et Radars de Performance")
 
@@ -551,7 +551,7 @@ with dist_col:
         f"**Figure 5.1.** Distribution nationale des scores IMD. "
         f"Médiane = {med_imd:.1f} / Q1 = {q1_imd:.1f} / Q3 = {q3_imd:.1f}. "
         "L'asymétrie positive souligne que l'excellence cyclable reste l'apanage d'une "
-        "minorité d'agglomérations — la plupart stagnent sous la médiane nationale."
+        "minorité d'agglomérations - la plupart stagnent sous la médiane nationale."
     )
 
 with box_col:
@@ -560,10 +560,10 @@ with box_col:
     _comp_scaled.columns = [comp_labels[c] for c in comp_cols]
     _comp_melt = _comp_scaled.melt(var_name="Composante", value_name="Score (/100)")
     _box_colors = {
-        "S — Sécurité":       "#c0392b",
-        "I — Infrastructure": "#27ae60",
-        "M — Multimodalité":  "#1A6FBF",
-        "T — Topographie":    "#8e44ad",
+        "S - Sécurité":       "#c0392b",
+        "I - Infrastructure": "#27ae60",
+        "M - Multimodalité":  "#1A6FBF",
+        "T - Topographie":    "#8e44ad",
     }
     fig_box_comp = px.box(
         _comp_melt, x="Composante", y="Score (/100)",
@@ -581,12 +581,12 @@ with box_col:
     st.caption(
         "**Figure 5.2.** Boîtes à encoches des quatre composantes IMD sur l'ensemble "
         "des agglomérations. La forte dispersion de M (Multimodalité) confirme que "
-        "l'intégration aux TC lourds est la dimension la plus inégalement distribuée — "
+        "l'intégration aux TC lourds est la dimension la plus inégalement distribuée - "
         "et la plus décisive (poids 57,8 %)."
     )
 
 # ── 5b. Radar comparateur ──────────────────────────────────────────────────────
-st.markdown("#### Audit Micro-Local — Comparateur Radar")
+st.markdown("#### Audit Micro-Local - Comparateur Radar")
 radar_sel = st.multiselect(
     "Sélectionnez 2 à 6 agglomérations à comparer :",
     options=sorted(imd_f["city"].tolist()),
@@ -627,7 +627,7 @@ if len(radar_sel) >= 2:
 else:
     st.info("Sélectionnez au moins 2 agglomérations pour amorcer l'audit comparatif.")
 
-# ── Section 6 — Baseline comparison ──────────────────────────────────────────
+# ── Section 6 - Baseline comparison ──────────────────────────────────────────
 st.divider()
 section(6, "Au-delà du Volume : Supériorité de l'IMD face aux Métriques Naïves")
 
@@ -653,8 +653,8 @@ fig_baseline = px.scatter(
     hover_name="city",
     hover_data={"n_stations": True, "IMD": ":.1f", "M_multi": ":.3f", "_label": False},
     labels={
-        "n_stations": "Volume brut — Nombre de stations dock (échelle logarithmique)",
-        "IMD":        "Qualité — Score IMD (/100)",
+        "n_stations": "Volume brut - Nombre de stations dock (échelle logarithmique)",
+        "IMD":        "Qualité - Score IMD (/100)",
         "M_multi":    "Score Multimodalité (M)",
         "_label":     "",
     },
@@ -694,7 +694,7 @@ st.caption(
     "dans des environnements sous-optimaux."
 )
 
-# ── Section 7 — IES (pont vers la page dédiée) ────────────────────────────────
+# ── Section 7 - IES (pont vers la page dédiée) ────────────────────────────────
 st.divider()
 section(7, "Justice Spatiale : L'Indice d'Équité Sociale (IES)")
 
@@ -708,9 +708,9 @@ st.latex(r"\text{IES}_i = \frac{\text{IMD}_{\text{observé}, i}}{\widehat{\text{
 
 col_ies_l, col_ies_r = st.columns(2)
 col_ies_l.markdown("""
-* **IES > 1 — Mobilité Inclusive :** Sur-investissement relatif — politique pro-active.
-* **IES ≈ 1 — Conformité :** Offre proportionnelle au niveau de revenu.
-* **IES < 1 — Sous-investissement :** Risque de captivité automobile pour les populations vulnérables.
+* **IES > 1 - Mobilité Inclusive :** Sur-investissement relatif - politique pro-active.
+* **IES ≈ 1 - Conformité :** Offre proportionnelle au niveau de revenu.
+* **IES < 1 - Sous-investissement :** Risque de captivité automobile pour les populations vulnérables.
 """)
 
 # Scatter IES depuis données Filosofi si disponibles
@@ -778,11 +778,11 @@ else:
         "Vérifiez que le fichier `stations_gold_standard_final.parquet` est bien utilisé.*"
     )
 
-# ── Section 8 — Conclusions ────────────────────────────────────────────────────
+# ── Section 8 - Conclusions ────────────────────────────────────────────────────
 st.divider()
 section(8, "Conclusions de la Modélisation Spatiale (IMD)")
 st.success(
-    f"**Bilan des résultats observés — {len(imd_f)} agglomérations analysées :**\n\n"
+    f"**Bilan des résultats observés - {len(imd_f)} agglomérations analysées :**\n\n"
     f"1. **Validité et Supériorité du Modèle :** L'IMD (médiane nationale : "
     f"{imd_f['IMD'].median():.1f}/100 ; optimum : {top_city} à {top_score:.1f}/100) "
     "offre une évaluation bien plus fidèle qu'un simple comptage volumétrique. "
@@ -790,12 +790,12 @@ st.success(
     "physique et pratiques réelles.\n\n"
     "2. **Robustesse Structurelle :** Les simulations Monte Carlo ($N = 10\\,000$) "
     "confirment que le classement national est stable à ±20 % de perturbation des poids. "
-    "La multimodalité (57,8 %) est le déterminant dominant — immédiatement actionnable "
+    "La multimodalité (57,8 %) est le déterminant dominant - immédiatement actionnable "
     "par des politiques de déploiement ciblé sur les pôles d'échanges.\n\n"
     "3. **Deux Typologies Stratégiques :** L'analyse matricielle (Section 3) "
     "distingue les réseaux 'Orientés Pôles d'Échanges' (score M élevé) des réseaux "
-    "'Orientés Maillage Cyclable' (score I élevé) — chaque trajectoire étant viable "
+    "'Orientés Maillage Cyclable' (score I élevé) - chaque trajectoire étant viable "
     "pour atteindre l'excellence IMD.\n\n"
     "*La confrontation de cet indice d'offre physique avec les déterminants socio-économiques "
-    "INSEE Filosofi est détaillée dans la page **IES — Indice d'Équité Sociale**.*"
+    "INSEE Filosofi est détaillée dans la page **IES - Indice d'Équité Sociale**.*"
 )

@@ -24,7 +24,7 @@ seuil standard pour l'analyse du dernier kilomètre.
 | 1 | Comblement des zones blanches OSM | `source`, `osm_node_id` | OpenStreetMap |
 | 2 | Topographie nationale (SRTM 30 m) | `elevation_m`, `topography_roughness_index` | Open-Elevation / SRTM |
 | 3A | Continuité cyclable (cycleways) | `infra_cyclable_km`, `infra_cyclable_pct` | OSM Overpass API |
-| 3B | Sécurité — accidents cyclistes | `baac_accidents_cyclistes` | BAAC 2021-2023 (ONISR) |
+| 3B | Sécurité - accidents cyclistes | `baac_accidents_cyclistes` | BAAC 2021-2023 (ONISR) |
 | 4 | Multimodalité lourde | `gtfs_heavy_stops_300m`, `gtfs_stops_within_300m_pct` | Flux GTFS nationaux |
 
 Le traitement des 46 000 stations repose sur du *batch processing* avec
