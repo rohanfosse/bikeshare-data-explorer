@@ -133,11 +133,13 @@ def load_stations() -> pd.DataFrame:
     df["capacity"] = pd.to_numeric(df["capacity"], errors="coerce")
     df["n_stations_system"] = pd.to_numeric(df["n_stations_system"], errors="coerce")
 
-    # Normalisation des noms de villes (doublons et variantes connues)
+    # Normalisation des noms de villes (doublons, variantes régionales et codages ISO)
     _city_norm = {
-        "Strasbourg, FR": "Strasbourg",
-        "Nice, FR":       "Nice",
-        "PAU":            "Pau",
+        "Strasbourg, FR":  "Strasbourg",
+        "Nice, FR":        "Nice",
+        "PAU":             "Pau",
+        "Marne-la-Vallée": "Marne-la-Vallée",   # conservé tel quel
+        "Grand Paris Seine et Oise": "Île-de-France (Cergy)",  # renommer pour clarté
     }
     df["city"] = df["city"].replace(_city_norm)
 
@@ -215,7 +217,19 @@ def compute_imd_cities(df: pd.DataFrame) -> pd.DataFrame:
 
     Référence méthodologique : notebooks 21-25, CESI BikeShare-ICT 2025-2026.
     """
-    stats = city_stats(df).query("n_stations >= 5").copy().reset_index(drop=True)
+    # Filtrage sur les stations à vélos en libre-service avec borne (docked_bike uniquement)
+    # pour garantir la cohérence avec le Gold Standard et éviter l'inflation des systèmes
+    # free-floating qui faussent les statistiques de proximité infrastructurelle.
+    if "station_type" in df.columns:
+        df_dock = df[df["station_type"] == "docked_bike"].copy()
+    else:
+        df_dock = df.copy()
+
+    # Exclusion des entrées non-ville (pays, régions) qui parasitent le classement
+    _NON_CITY = frozenset({"France", "FR", "Grand Est", "Basque Country"})
+    df_dock = df_dock[~df_dock["city"].isin(_NON_CITY)]
+
+    stats = city_stats(df_dock).query("n_stations >= 5").copy().reset_index(drop=True)
 
     def _minmax(s: pd.Series) -> pd.Series:
         lo, hi = s.min(), s.max()
