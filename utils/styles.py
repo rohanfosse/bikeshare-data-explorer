@@ -1,5 +1,5 @@
 """
-styles.py — Mise en page académique partagée pour toutes les pages du tableau de bord.
+styles.py - Mise en page académique partagée pour toutes les pages du tableau de bord.
 Thème : panneau de navigation sombre, contenu blanc épuré, style article de recherche.
 """
 from __future__ import annotations
@@ -9,16 +9,17 @@ import streamlit as st
 # ── Navigation labels (descriptifs) ───────────────────────────────────────────
 
 _NAV: list[tuple[str, str]] = [
-    ("app.py",                     "Introduction — Vue d'ensemble"),
-    ("pages/00_Gold_Standard.py",  "Gold Standard — Audit et Hybridation"),
-    ("pages/0_IMD.py",             "IMD — Indice de Mobilité Douce"),
-    ("pages/7_IES.py",             "IES — Équité Spatiale"),
-    ("pages/1_Carte.py",           "Carte — Visualisation spatiale"),
-    ("pages/2_Villes.py",          "Villes — Analyse comparative"),
-    ("pages/3_Distributions.py",   "Distributions — Statistiques"),
-    ("pages/5_Mobilite_France.py", "France — Indicateurs nationaux"),
-    ("pages/6_Montpellier.py",     "Montpellier — Étude de cas VLS"),
-    ("pages/4_Export.py",          "Export — Données chercheurs"),
+    ("app.py",                     "Introduction - Vue d'ensemble"),
+    ("pages/00_Gold_Standard.py",  "Gold Standard - Audit et Hybridation"),
+    ("pages/0_IMD.py",             "IMD - Indice de Mobilité Douce"),
+    ("pages/7_IES.py",             "IES - Équité Spatiale"),
+    ("pages/1_Carte.py",           "Carte - Visualisation spatiale"),
+    ("pages/2_Villes.py",          "Villes - Analyse comparative"),
+    ("pages/3_Distributions.py",   "Distributions - Statistiques"),
+    ("pages/5_Mobilite_France.py", "France - Indicateurs nationaux"),
+    ("pages/6_Montpellier.py",     "Montpellier - Étude de cas VLS"),
+    ("pages/8_Topographie.py",       "Topographie - Relief et accessibilité"),
+    ("pages/4_Export.py",          "Export - Données chercheurs"),
 ]
 
 # ── CSS global ─────────────────────────────────────────────────────────────────
@@ -229,7 +230,7 @@ def sidebar_nav() -> None:
 
 def abstract_box(text: str) -> None:
     """
-    Boîte résumé avec bordure bleue à gauche — style abstract d'article.
+    Boîte résumé avec bordure bleue à gauche - style abstract d'article.
     """
     st.markdown(
         f"""
@@ -255,5 +256,5 @@ def abstract_box(text: str) -> None:
 
 
 def section(number: int | str, title: str) -> None:
-    """En-tête de section numérotée — style article de recherche."""
+    """En-tête de section numérotée - style article de recherche."""
     st.markdown(f"### {number}. {title}")
