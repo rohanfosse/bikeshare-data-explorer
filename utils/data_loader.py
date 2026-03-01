@@ -152,7 +152,7 @@ def load_stations() -> pd.DataFrame:
 @st.cache_data(ttl=3600, show_spinner=False)
 def city_stats(df: pd.DataFrame) -> pd.DataFrame:
     """Statistiques agrégées par ville."""
-    agg = {
+    agg: dict[str, str] = {
         "uid": "count",
         "infra_cyclable_pct": "mean",
         "infra_cyclable_km": "mean",
@@ -163,6 +163,16 @@ def city_stats(df: pd.DataFrame) -> pd.DataFrame:
         "topography_roughness_index": "mean",
         "capacity": "mean",
     }
+    # Colonnes socio-économiques optionnelles (Gold Standard Final — INSEE Filosofi)
+    _socio: dict[str, str] = {
+        "revenu_median_uc":  "median",   # médiane des médianes de carreau
+        "gini_revenu":       "mean",
+        "part_menages_voit0": "mean",
+        "part_velo_travail": "mean",
+    }
+    for col, func in _socio.items():
+        if col in df.columns:
+            agg[col] = func
     stats = df.groupby("city").agg(agg).reset_index()
     stats = stats.rename(columns={"uid": "n_stations"})
     return stats.sort_values("n_stations", ascending=False)
