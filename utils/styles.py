@@ -4,23 +4,38 @@ Thème : panneau de navigation sombre, contenu blanc épuré, style article de r
 """
 from __future__ import annotations
 
+import inspect
+import pathlib
+
 import streamlit as st
 
-# ── Navigation labels (descriptifs) ───────────────────────────────────────────
+# ── Navigation groupée par catégorie ──────────────────────────────────────────
+# Chaque entrée : (fichier, label court)
+# Les groupes sont rendus avec un séparateur visuel dans la sidebar.
 
-_NAV: list[tuple[str, str]] = [
-    ("app.py",                     "Introduction - Vue d'ensemble"),
-    ("pages/00_Gold_Standard.py",  "Gold Standard - Audit et Hybridation"),
-    ("pages/0_IMD.py",             "IMD - Indice de Mobilité Douce"),
-    ("pages/7_IES.py",             "IES - Équité Spatiale"),
-    ("pages/1_Carte.py",           "Carte - Visualisation spatiale"),
-    ("pages/2_Villes.py",          "Villes - Analyse comparative"),
-    ("pages/3_Distributions.py",   "Distributions - Statistiques"),
-    ("pages/5_Mobilite_France.py", "France - Indicateurs nationaux"),
-    ("pages/6_Montpellier.py",     "Montpellier - Étude de cas VLS"),
-    ("pages/8_Topographie.py",       "Topographie - Relief et accessibilité"),
-    ("pages/4_Export.py",          "Export - Données chercheurs"),
+_NAV_GROUPS: list[tuple[str, list[tuple[str, str]]]] = [
+    ("Vue d'ensemble", [
+        ("app.py",                     "Introduction"),
+    ]),
+    ("Axes de recherche", [
+        ("pages/00_Gold_Standard.py",  "Gold Standard"),
+        ("pages/0_IMD.py",             "IMD — Mobilité Douce"),
+        ("pages/7_IES.py",             "IES — Équité Sociale"),
+        ("pages/2_Villes.py",          "Villes — Comparaison"),
+        ("pages/3_Distributions.py",   "Distributions"),
+        ("pages/8_Topographie.py",     "Topographie"),
+        ("pages/6_Montpellier.py",     "Montpellier"),
+    ]),
+    ("Modules transversaux", [
+        ("pages/1_Carte.py",           "Carte des stations"),
+        ("pages/5_Mobilite_France.py", "France — Validation"),
+    ]),
+    ("Données et références", [
+        ("pages/4_Export.py",          "Export FAIR"),
+        ("pages/9_References.py",      "Références"),
+    ]),
 ]
+
 
 # ── CSS global ─────────────────────────────────────────────────────────────────
 
@@ -137,6 +152,15 @@ hr {
     border-left-color: #4A9FDF !important;
 }
 
+/* Page active dans la navigation (st.page_link natif) */
+[data-testid="stSidebar"] [data-testid="stPageLink"] a[aria-current],
+[data-testid="stSidebar"] [data-testid="stPageLink"] button[aria-current] {
+    color: #e0eaf4 !important;
+    background: rgba(74, 159, 223, 0.18) !important;
+    border-left-color: #5ab4e8 !important;
+    font-weight: 600 !important;
+}
+
 /* Masquer la navigation automatique de Streamlit */
 [data-testid="stSidebarNavItems"],
 [data-testid="stSidebarNavSeparator"],
@@ -180,8 +204,15 @@ def inject_css() -> None:
 def sidebar_nav() -> None:
     """
     Affiche le panneau de navigation sombre avec le branding du projet.
-    À appeler une seule fois par page.
+    Détecte automatiquement la page courante et la met en évidence.
+    À appeler une seule fois par page, après inject_css().
     """
+    # Détection automatique de la page courante via le frame d'appel
+    try:
+        caller_file = pathlib.Path(inspect.stack()[1].filename).name
+    except Exception:
+        caller_file = ""
+
     with st.sidebar:
         # Branding projet
         st.markdown(
@@ -215,15 +246,31 @@ def sidebar_nav() -> None:
             unsafe_allow_html=True,
         )
 
-        # Liens de navigation
-        st.markdown(
-            "<div style='font-size:0.62rem; text-transform:uppercase; "
-            "letter-spacing:0.13em; color:#3a5a78; font-weight:600; "
-            "margin: 0.6rem 0 0.3rem;'>Analyses</div>",
-            unsafe_allow_html=True,
-        )
-        for path, label in _NAV:
-            st.page_link(path, label=label)
+        # Navigation groupée
+        for group_label, entries in _NAV_GROUPS:
+            st.markdown(
+                f"<div style='font-size:0.60rem; text-transform:uppercase; "
+                f"letter-spacing:0.13em; color:#3a5a78; font-weight:600; "
+                f"margin: 0.75rem 0 0.25rem 0.3rem;'>{group_label}</div>",
+                unsafe_allow_html=True,
+            )
+            for path, label in entries:
+                nav_name = pathlib.Path(path).name
+                is_active = caller_file == nav_name
+                if is_active:
+                    # Page courante : indicateur visuel non-cliquable
+                    st.markdown(
+                        f"<div style='"
+                        f"color:#e0eaf4; font-weight:600; font-size:0.82rem;"
+                        f"padding:0.28rem 0.55rem; border-radius:4px;"
+                        f"border-left:2px solid #5ab4e8;"
+                        f"background:rgba(74,159,223,0.18);"
+                        f"margin-bottom:0.05rem;"
+                        f"'>{label}</div>",
+                        unsafe_allow_html=True,
+                    )
+                else:
+                    st.page_link(path, label=label)
 
         st.divider()
 
