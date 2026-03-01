@@ -21,14 +21,21 @@ st.set_page_config(
 )
 inject_css()
 
+# ── Chargement anticipé (abstract dynamique) ──────────────────────────────────
+df = load_stations()
+_n_total  = len(df)
+_n_dock   = int((df["station_type"] == "docked_bike").sum()) if "station_type" in df.columns else _n_total
+_n_cities = df["city"].nunique()
+
 st.title("Distributions Empiriques et Structure de Corrélation")
 st.caption("Axe de Recherche 3 : Hétérogénéité Statistique et Indépendance des Dimensions d'Enrichissement")
 
 abstract_box(
     "<b>Question de recherche :</b> La taille démographique d'une agglomération constitue-t-elle "
     "un prédicteur fiable de la qualité de son environnement cyclable ?<br><br>"
-    "Cette analyse examine les distributions empiriques des sept dimensions d'enrichissement "
-    "du Gold Standard GBFS à l'échelle des 46 312 stations individuelles. "
+    f"Cette analyse examine les distributions empiriques des sept dimensions d'enrichissement "
+    f"du Gold Standard GBFS à l'échelle des <b>{_n_total:,} stations certifiées</b> "
+    f"(dont {_n_dock:,} dock-based VLS) issues de <b>{_n_cities} agglomérations</b>. "
     "Le résultat central est contre-intuitif : la corrélation de rang de Spearman entre "
     "la taille de l'agglomération et la performance cyclable est statistiquement non significative "
     "($r_s = -0{,}02$, hors Paris), invalidant l'hypothèse d'un avantage dimensionnel des "
@@ -39,12 +46,19 @@ abstract_box(
     "quatre dimensions retenues pour l'IMD, validant leur non-colinéarité."
 )
 
-df = load_stations()
-
 # ── Sidebar ───────────────────────────────────────────────────────────────────
 sidebar_nav()
 with st.sidebar:
     st.header("Paramètres Statistiques")
+
+    type_options = ["Toutes les stations", "Dock-based (VLS)", "Free-floating"]
+    type_map = {
+        "Toutes les stations": None,
+        "Dock-based (VLS)": "docked_bike",
+        "Free-floating": "free_floating",
+    }
+    station_type_sel = st.selectbox("Type de station", options=type_options, index=1)
+
     all_cities = sorted(df["city"].unique())
     city_filter = st.multiselect(
         "Restreindre à une agglomération",
@@ -54,9 +68,24 @@ with st.sidebar:
     )
     n_bins = st.slider("Classes (histogramme)", 20, 100, 40, 5)
 
-dff = df[df["city"].isin(city_filter)] if city_filter else df
+    st.divider()
+    include_socio = st.checkbox(
+        "Inclure les indicateurs socio-écon. dans la matrice de corrélation",
+        value=False,
+        help="Ajoute revenu médian, Gini, part ménages sans voiture et part vélo-travail.",
+    )
+
+# ── Filtrage ──────────────────────────────────────────────────────────────────
+dff = df.copy()
+if station_type_sel != "Toutes les stations" and "station_type" in dff.columns:
+    dff = dff[dff["station_type"] == type_map[station_type_sel]]
+if city_filter:
+    dff = dff[dff["city"].isin(city_filter)]
+
+_type_label = f" ({station_type_sel})" if station_type_sel != "Toutes les stations" else ""
 st.caption(
-    f"**{len(dff):,}** stations analysées · **{dff['city'].nunique()}** agglomérations · "
+    f"**{len(dff):,}** stations analysées{_type_label} · "
+    f"**{dff['city'].nunique()}** agglomérations · "
     f"Seuil de significativité des encoches (notched boxes) : $p \\approx 0{{,}}05$."
 )
 
@@ -116,7 +145,7 @@ for i, mkey in enumerate(metric_keys):
         st.plotly_chart(fig, use_container_width=True)
         st.caption(
             f"**Figure 1.{i+1}.** Distribution empirique de **{meta['label']}** "
-            f"({len(series):,} stations valides). "
+            f"({len(series):,} stations valides{_type_label}). "
             f"Médiane $\\tilde{{x}} = {med:.2f}$ {meta['unit']} · "
             f"Moyenne $\\bar{{x}} = {moy:.2f}$ {meta['unit']}. "
             f"L'écart médiane/moyenne quantifie le degré d'asymétrie de la distribution."
@@ -146,10 +175,15 @@ top15 = (
     .nlargest(15)
     .index.tolist()
 )
+# Include Montpellier in default selection if not already there
+_default_bp = list(dict.fromkeys(
+    (["Montpellier"] if "Montpellier" in dff["city"].values else []) + top15
+))[:10]
+
 bp_city_sel = st.multiselect(
     "Agglomérations à comparer",
     options=sorted(dff["city"].unique()),
-    default=top15[:10],
+    default=_default_bp,
     key="bp_cities",
 )
 
@@ -163,11 +197,18 @@ if bp_city_sel:
         .index.tolist()
     )
 
+    # Montpellier highlighted
+    color_map_bp = {
+        c: ("#e74c3c" if c == "Montpellier" else "#1A6FBF")
+        for c in bp_city_sel
+    }
+
     fig_bp = px.box(
         bp_df,
         x="city",
         y=bp_metric,
         color="city",
+        color_discrete_map=color_map_bp,
         category_orders={"city": order},
         labels={"city": "Agglomération", bp_metric: meta_bp["label"]},
         height=420,
@@ -182,10 +223,11 @@ if bp_city_sel:
     st.plotly_chart(fig_bp, use_container_width=True)
     st.caption(
         f"**Figure 2.1.** Boîtes à moustaches à encoches de **{meta_bp['label']}** "
-        "par agglomération, triées par médiane décroissante. "
+        f"par agglomération{_type_label}, triées par médiane décroissante. "
         "Les encoches représentent l'IC 95 % autour de la médiane ($p \\approx 0{{,}}05$). "
         "Les agglomérations dont les encoches ne se chevauchent pas présentent "
-        "une différence de médiane statistiquement significative."
+        "une différence de médiane statistiquement significative. "
+        "**Montpellier** est mis en évidence en rouge."
     )
 else:
     st.info("Sélectionnez au moins une agglomération pour afficher les boîtes à moustaches.")
@@ -202,12 +244,31 @@ indiquerait une redondance informationnelle et nécessiterait une réduction par
 ou une pondération différenciée.
 
 Le résultat observé — quasi-indépendance des dimensions retenues pour l'IMD —
-valide la non-redondance du modèle composite et justifie la pondération égalitaire initiale.
+valide la non-redondance du modèle composite et justifie la pondération différenciée
+optimisée par évolution différentielle.
+**À l'échelle des villes**, la corrélation Spearman entre l'IMD agrégé et le revenu
+médian des ménages est $\rho_s = +0{,}055$ (p = 0,677, non significatif) —
+validant l'indépendance de la performance cyclable vis-à-vis du niveau de richesse de l'agglomération.
 """)
 
+_SOCIO_COLS = ["revenu_median_uc", "gini_revenu", "part_menages_voit0", "part_velo_travail"]
+_socio_labels = {
+    "revenu_median_uc":    "Revenu médian (€/UC)",
+    "gini_revenu":         "Gini revenu",
+    "part_menages_voit0":  "Ménages sans voiture (%)",
+    "part_velo_travail":   "Part vélo travail (%)",
+}
+
 num_cols = [k for k in METRICS if k in dff.columns]
-corr_df  = dff[num_cols].dropna(how="all").corr(method="spearman")
-labels   = [METRICS[c]["label"] for c in corr_df.columns]
+if include_socio:
+    socio_available = [c for c in _SOCIO_COLS if c in dff.columns]
+    num_cols = num_cols + socio_available
+    all_labels = {**{c: METRICS[c]["label"] for c in [k for k in METRICS if k in dff.columns]}, **_socio_labels}
+else:
+    all_labels = {c: METRICS[c]["label"] for c in num_cols}
+
+corr_df = dff[num_cols].dropna(how="all").corr(method="spearman")
+labels  = [all_labels.get(c, c) for c in corr_df.columns]
 
 fig_corr = go.Figure(
     data=go.Heatmap(
@@ -224,18 +285,28 @@ fig_corr = go.Figure(
     )
 )
 fig_corr.update_layout(
-    height=480,
-    margin=dict(l=10, r=10, t=10, b=120),
-    xaxis=dict(tickangle=-30),
+    height=480 if not include_socio else 560,
+    margin=dict(l=10, r=10, t=10, b=130),
+    xaxis=dict(tickangle=-35),
 )
 st.plotly_chart(fig_corr, use_container_width=True)
+
+_socio_note = (
+    " Les colonnes socio-économiques (revenu, Gini, etc.) sont incluses à titre exploratoire "
+    "pour tester la colinéarité avec les dimensions spatiales de l'IMD."
+    if include_socio else ""
+)
 st.caption(
-    "**Figure 3.1.** Matrice de corrélation de rang de Spearman ($\\rho$) entre les sept "
-    "dimensions d'enrichissement spatial. Bleu : $\\rho < 0$ (corrélation négative) ; "
+    "**Figure 3.1.** Matrice de corrélation de rang de Spearman ($\\rho$) entre les "
+    + ("sept" if not include_socio else "sept + quatre") +
+    " dimensions d'enrichissement spatial"
+    + (_type_label or "") + ". "
+    "Bleu : $\\rho < 0$ (corrélation négative) ; "
     "Rouge : $\\rho > 0$ (corrélation positive). "
     "La diagonale principale vaut 1 par définition. "
     "Les coefficients proches de $\\pm 1$ signalent une colinéarité structurelle à "
     "contrôler avant toute modélisation composite (VIF, ACP)."
+    + _socio_note
 )
 
 # ── Section 4 — Scatter matriciel ─────────────────────────────────────────────
@@ -255,7 +326,7 @@ with st.expander("Afficher le scatter matriciel (calcul sur sous-échantillon al
         "Dimensions à croiser",
         options=num_cols,
         default=["infra_cyclable_pct", "baac_accidents_cyclistes", "gtfs_heavy_stops_300m"],
-        format_func=lambda k: METRICS[k]["label"],
+        format_func=lambda k: all_labels.get(k, k),
     )
     if len(pair_keys) >= 2:
         sample_df = dff[pair_keys + ["city"]].dropna().sample(
@@ -265,7 +336,7 @@ with st.expander("Afficher le scatter matriciel (calcul sur sous-échantillon al
             sample_df,
             dimensions=pair_keys,
             color="city",
-            labels={k: METRICS[k]["label"] for k in pair_keys},
+            labels={k: all_labels.get(k, k) for k in pair_keys},
             height=600,
             opacity=0.4,
         )
@@ -274,7 +345,7 @@ with st.expander("Afficher le scatter matriciel (calcul sur sous-échantillon al
         st.plotly_chart(fig_pair, use_container_width=True)
         st.caption(
             f"**Figure 4.1.** Scatter matriciel sur un sous-échantillon aléatoire de "
-            f"{sample_n:,} stations (stratification par agglomération). "
+            f"{sample_n:,} stations{_type_label} (stratification par agglomération). "
             "La couleur encode l'agglomération d'appartenance. "
             "Le triangle inférieur affiche les dispersions bivariées ; "
             "la diagonale et le triangle supérieur sont masqués pour la lisibilité."
