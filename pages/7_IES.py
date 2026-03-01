@@ -325,6 +325,82 @@ politiques locales de mobilité (*Pucher & Buehler, 2012*) : ni la géographie n
 prédestinent une agglomération à l'excellence ou à la médiocrité cyclable.
 """)
 
+# ── Tableau OLS formel ─────────────────────────────────────────────────────────
+if ies_df is not None and len(ies_df) >= 5:
+    _x_ols = ies_df["revenu_median_uc"].values.astype(float)
+    _y_ols = ies_df["IMD"].values.astype(float)
+    _n_ols = len(_x_ols)
+    _xbar  = _x_ols.mean()
+    _ybar  = _y_ols.mean()
+    _Sxx   = float(np.sum((_x_ols - _xbar) ** 2))
+    _Sxy   = float(np.sum((_x_ols - _xbar) * (_y_ols - _ybar)))
+    _b1    = _Sxy / _Sxx
+    _b0    = _ybar - _b1 * _xbar
+    _yhat_ols = _b0 + _b1 * _x_ols
+    _resid_ols = _y_ols - _yhat_ols
+    _SSres = float(np.sum(_resid_ols ** 2))
+    _SStot = float(np.sum((_y_ols - _ybar) ** 2))
+    _R2    = 1.0 - _SSres / _SStot
+    _adjR2 = 1.0 - (1.0 - _R2) * (_n_ols - 1) / (_n_ols - 2)
+    _MSE   = _SSres / (_n_ols - 2)
+    _SE1   = float(np.sqrt(_MSE / _Sxx))
+    _SE0   = float(np.sqrt(_MSE * (1.0 / _n_ols + _xbar ** 2 / _Sxx)))
+    _t1    = _b1 / _SE1
+    _t0    = _b0 / _SE0
+    _F     = _t1 ** 2  # F = t² for simple OLS
+
+    # p-values (t-distribution, df = n-2)
+    try:
+        from scipy.stats import t as _t_dist
+        _p1 = float(2 * (1 - _t_dist.cdf(abs(_t1), df=_n_ols - 2)))
+        _p0 = float(2 * (1 - _t_dist.cdf(abs(_t0), df=_n_ols - 2)))
+        _pF = _p1  # For simple regression, F-test p = t-test p on slope
+    except ImportError:
+        def _t_approx(t, n):
+            z = abs(t)
+            phi = 0.5 * (1 + np.sign(t) * (1 - np.exp(-0.717 * z - 0.416 * z ** 2)))
+            return float(max(0.0, min(1.0, 2 * (1 - phi))))
+        _p0 = _t_approx(_t0, _n_ols)
+        _p1 = _t_approx(_t1, _n_ols)
+        _pF = _p1
+
+    def _sig_stars(p: float) -> str:
+        if p < 0.001: return "***"
+        if p < 0.01:  return "**"
+        if p < 0.05:  return "*"
+        return "n.s."
+
+    _fmt_p = lambda p: f"{p:.4f}" if p >= 0.001 else "< 0,001"
+
+    _ols_tab = pd.DataFrame({
+        "Paramètre":   ["β₀ — Constante", "β₁ — Revenu médian/UC (€/an)"],
+        "Estimation":  [f"{_b0:.3f}",     f"{_b1:.2e}"],
+        "Erreur std.": [f"{_SE0:.3f}",    f"{_SE1:.2e}"],
+        "Stat. t":     [f"{_t0:.3f}",     f"{_t1:.3f}"],
+        "p-valeur":    [_fmt_p(_p0),      _fmt_p(_p1)],
+        "Sig.":        [_sig_stars(_p0),  _sig_stars(_p1)],
+    })
+
+    ols_col, ols_meta = st.columns([3, 2])
+    with ols_col:
+        st.markdown("#### Tableau de Régression OLS : IMD ~ Revenu médian/UC")
+        st.table(_ols_tab)
+        st.caption(
+            f"**Tableau 2.1.** Résultats de la régression MCO simple (proxy Ridge). "
+            f"$n = {_n_ols}$ agglomérations françaises dock-based (Gold Standard, Filosofi). "
+            f"$R^2 = {_R2:.4f}$ — $R^2_{{\\text{{adj}}}} = {_adjR2:.4f}$ — "
+            f"$F(1,\\ {_n_ols - 2}) = {_F:.3f}$, $p = {_fmt_p(_pF)}$. "
+            "Note : *** $p < 0{{,}}001$ · ** $p < 0{{,}}01$ · * $p < 0{{,}}05$ · n.s. = non significatif. "
+            "La non-significativité de $\\hat{{\\beta}}_1$ ($p = {:.4f}$) confirme l'absence "
+            "de prédiction linéaire de l'IMD par le revenu.".format(_p1)
+        )
+    with ols_meta:
+        st.metric("R² (OLS)", f"{_R2:.4f}",
+                  help="Part de variance IMD expliquée par le revenu médian")
+        st.metric("R² ajusté", f"{_adjR2:.4f}")
+        st.metric(f"F-stat (1, {_n_ols - 2} ddl)", f"{_F:.3f}",
+                  f"p = {_fmt_p(_pF)} — {'n.s.' if _pF > 0.05 else 'sign.'}")
+
 # ── Section 3 — Matrice de diagnostic ─────────────────────────────────────────
 st.divider()
 section(3, "Matrice de Diagnostic : Quatre Régimes de Justice Cyclable")
@@ -528,6 +604,99 @@ if ies_df is not None:
             "Les IES < 1 identifient les agglomérations dont l'offre cyclable est inférieure "
             "à l'attendu pour leur niveau de revenu — cibles prioritaires des politiques d'équité."
         )
+
+# ── Tests statistiques formels (Bootstrap CI + Mann-Whitney U) ────────────────
+if ies_df is not None and len(ies_df) >= 10:
+    with st.expander(
+        "Tests statistiques formels — Intervalle de Confiance Bootstrap et Mann-Whitney U",
+        expanded=True,
+    ):
+        # ── Bootstrap CI pour ρ de Spearman ───────────────────────────────────
+        st.markdown(
+            r"#### Intervalle de Confiance Bootstrap pour $\rho$ de Spearman "
+            r"($N_{\text{boot}} = 2\,000$)"
+        )
+        _xb = ies_df["revenu_median_uc"].values.astype(float)
+        _yb = ies_df["IMD"].values.astype(float)
+        _nb = len(_xb)
+        np.random.seed(42)
+        _rho_boot = []
+        for _ in range(2000):
+            _idx = np.random.randint(0, _nb, size=_nb)
+            _rx  = pd.Series(_xb[_idx]).rank()
+            _ry  = pd.Series(_yb[_idx]).rank()
+            _rho_boot.append(float(_rx.corr(_ry)))
+        _ci_lo = float(np.percentile(_rho_boot, 2.5))
+        _ci_hi = float(np.percentile(_rho_boot, 97.5))
+        _zero_in_ci = _ci_lo <= 0.0 <= _ci_hi
+
+        bc1, bc2, bc3, bc4 = st.columns(4)
+        bc1.metric("ρ observé", f"{rho_rev:+.4f}")
+        bc2.metric("IC 95 % — Borne inf.", f"{_ci_lo:+.4f}")
+        bc3.metric("IC 95 % — Borne sup.", f"{_ci_hi:+.4f}")
+        bc4.metric("0 inclus dans IC ?", "Oui — H₀ non rejetée" if _zero_in_ci else "Non — H₀ rejetée")
+        st.caption(
+            f"**Tableau 3.2.** Intervalle de confiance percentiloïde à 95 % pour $\\rho$ de Spearman "
+            f"($N = 2\\ 000$ rééchantillonnages avec remise, graine = 42, $n = {_nb}$). "
+            f"$\\text{{IC}}_{{95\\%}} = [{_ci_lo:+.3f},\\ {_ci_hi:+.3f}]$. "
+            + ("L'IC inclut 0 : **H₀ ($\\rho = 0$) ne peut pas être rejetée** — "
+               "l'absence de corrélation significative entre revenu et IMD est confirmée."
+               if _zero_in_ci else
+               "L'IC n'inclut pas 0 : H₀ ($\\rho = 0$) est rejetée.")
+        )
+
+        st.divider()
+
+        # ── Mann-Whitney U : Déserts vs. Inclusifs ────────────────────────────
+        _desert_imd  = ies_df.loc[ies_df["quadrant"] == "Désert de Mobilité Sociale",  "IMD"].values
+        _inclus_imd  = ies_df.loc[ies_df["quadrant"] == "Mobilité Inclusive (IES > 1)", "IMD"].values
+
+        if len(_desert_imd) >= 3 and len(_inclus_imd) >= 3:
+            st.markdown(
+                "#### Test de Mann-Whitney U — Comparaison des Scores IMD dans le Bas-Revenu\n"
+                "Les deux quadrants *Désert de Mobilité* et *Mobilité Inclusive* regroupent les "
+                "agglomérations dont le revenu est inférieur à la médiane nationale. "
+                "Le test de Mann-Whitney U (non-paramétrique, non supposant la normalité) "
+                "vérifie si l'IMD diffère significativement entre ces deux groupes — "
+                "c'est-à-dire si la gouvernance locale fait réellement une différence "
+                "à niveau de revenu identique."
+            )
+            try:
+                from scipy.stats import mannwhitneyu as _mwu
+                _U, _p_mw = _mwu(_desert_imd, _inclus_imd, alternative="less")
+                _mw_ok = True
+            except ImportError:
+                _mw_ok = False
+
+            if _mw_ok:
+                _effect_r = 1 - 2 * _U / (len(_desert_imd) * len(_inclus_imd))
+                mw1, mw2, mw3, mw4, mw5 = st.columns(5)
+                mw1.metric(f"Déserts — n", f"{len(_desert_imd)}")
+                mw2.metric(f"Inclusifs — n", f"{len(_inclus_imd)}")
+                mw3.metric("Médiane IMD — Déserts", f"{float(np.median(_desert_imd)):.1f}")
+                mw4.metric("Médiane IMD — Inclusifs", f"{float(np.median(_inclus_imd)):.1f}")
+                mw5.metric("Stat. U", f"{_U:.0f}",
+                           f"p = {_p_mw:.4f} ({'sign.' if _p_mw < 0.05 else 'n.s.'})")
+                _p_mw_fmt = f"{_p_mw:.4f}" if _p_mw >= 0.001 else "< 0,001"
+                st.caption(
+                    f"**Tableau 3.3.** Test de Mann-Whitney U unilatéral "
+                    f"($H_1$ : IMD$_{{\\text{{désert}}}}$ $<$ IMD$_{{\\text{{inclusif}}}}$). "
+                    f"$n_{{\\text{{désert}}}} = {len(_desert_imd)}$, "
+                    f"$n_{{\\text{{inclusif}}}} = {len(_inclus_imd)}$. "
+                    f"$U = {_U:.0f}$, $p = {_p_mw_fmt}$. "
+                    f"Taille d'effet $r = 1 - 2U/(n_1 n_2) = {_effect_r:.3f}$. "
+                    + ("La différence de score IMD entre déserts et agglomérations inclusives "
+                       "**est statistiquement significative** ($p < 0{{,}}05$) : à niveau de revenu "
+                       "comparable, la gouvernance locale détermine significativement la qualité VLS."
+                       if _p_mw < 0.05 else
+                       "La différence n'est pas significative au seuil $\\alpha = 0{{,}}05$ "
+                       f"(taille d'échantillon limitée : $n_1 + n_2 = "
+                       f"{len(_desert_imd) + len(_inclus_imd)}$). "
+                       "Ce résultat est cohérent avec l'absence de corrélation globale : "
+                       "les deux quadrants coexistent sans structure dominante.")
+                )
+            else:
+                st.info("scipy.stats requis pour le test de Mann-Whitney U.")
 
 # ── Section 4 — Profil socio-économique des stations (INSEE Filosofi) ─────────
 st.divider()

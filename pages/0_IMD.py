@@ -97,12 +97,18 @@ if not _mmm.empty:
     _i_str    = f"I={_mmm_row['I_infra']*100:.1f}"
     _m_str    = f"M={_mmm_row['M_multi']*100:.1f}"
     _t_str    = f"T={_mmm_row['T_topo']*100:.1f}"
+    _rank_note = (
+        f"derrière {top_city} (rang #1, IMD = {top_score:.1f}/100)"
+        if _mmm_rank > 1 else "optimum national"
+    )
     st.success(
-        f"**Montpellier — Cas d'Étude National — Rang #{_mmm_rank} (IMD = {_mmm_row['IMD']:.1f}/100)**  \n"
-        f"Le réseau Vélomagg de Montpellier se distingue comme le meilleur réseau VLS de France selon l'IMD. "
+        f"**Montpellier — Cas d'Étude National — Rang #{_mmm_rank}/{len(imd_f)} "
+        f"(IMD = {_mmm_row['IMD']:.1f}/100)**  \n"
+        f"Le réseau Vélomagg de Montpellier se classe parmi les meilleurs réseaux VLS de France "
+        f"({_rank_note}). "
         f"Décomposition : {_s_str}/100 · {_i_str}/100 · {_m_str}/100 · {_t_str}/100. "
-        f"Cette performance exceptionnelle repose sur une intégration quasi-totale aux lignes de tram TAM "
-        f"(M = {_mmm_row['M_multi']*100:.1f}/100) et une sécurité infrastructurelle très élevée. "
+        f"La performance repose sur une intégration quasi-totale aux lignes de tram TAM "
+        f"(M = {_mmm_row['M_multi']*100:.1f}/100) et une sécurité infrastructurelle élevée. "
         f"C'est ce réseau qui fait l'objet de l'analyse fine pages **Montpellier** et **IES**."
     )
 
@@ -255,11 +261,16 @@ with col_bar:
         xaxis=dict(range=[0, 108], title="Score IMD (/100)"),
     )
     st.plotly_chart(fig_imd, use_container_width=True)
+    _bar_mont_note = (
+        f"**Montpellier** (Vélomagg, rang #{int(_mmm.index[0]) + 1}/{len(imd_f)}, "
+        f"IMD = {float(_mmm.iloc[0]['IMD']):.1f}/100)"
+        if not _mmm.empty else "Montpellier (absent de la sélection)"
+    )
     st.caption(
         f"**Figure 2.1.** Classement national des {n_top} premières agglomérations "
         f"(seuil : {min_stations} stations dock minimum). "
-        f"La barre **rouge** identifie Montpellier (Vélomagg), cas d'étude principal — "
-        f"optimum national avec IMD = {top_score:.1f}/100."
+        f"La barre **rouge** identifie {_bar_mont_note}, cas d'étude principal. "
+        f"Optimum national : **{top_city}** (IMD = {top_score:.1f}/100)."
     )
 
 # ── Section 3 — Décomposition ─────────────────────────────────────────────────
@@ -364,7 +375,7 @@ if show_components:
             fig_quad.add_annotation(
                 x=float(_mmm_q["I_infra"].iloc[0]),
                 y=float(_mmm_q["M_multi"].iloc[0]),
-                text="<b>Montpellier<br>Rang #1</b>",
+                text=f"<b>Montpellier<br>Rang #{_mmm_rank}</b>",
                 showarrow=True, ax=30, ay=-50,
                 font=dict(size=11, color="#c0392b"),
                 bgcolor="rgba(255,240,240,0.92)",
@@ -377,11 +388,12 @@ if show_components:
             margin=dict(l=10, r=10, t=10, b=10),
         )
         st.plotly_chart(fig_quad, use_container_width=True)
+        _quad_mmm_note = f"(rang #{_mmm_rank}/{len(imd_f)})" if not _mmm.empty else ""
         st.caption(
             "**Figure 3.2.** Matrice typologique Infrastructure × Multimodalité. "
             "Deux trajectoires d'excellence émergent : stratégie 'Pôles d'Échanges' "
             "(M élevé, quadrant haut) et stratégie 'Maillage Cyclable' (I élevé, quadrant droite). "
-            "**Montpellier** (rang #1) excelle dans les deux dimensions, incarnant la "
+            f"**Montpellier** {_quad_mmm_note} excelle dans les deux dimensions, incarnant la "
             "stratégie 'Réseaux Intégrés'. La couleur encode le score IMD global. Taille = nb. stations."
         )
 
@@ -660,7 +672,7 @@ if not _mmm_bl.empty:
         y=[_mmm_bl["IMD"].iloc[0]],
         mode="markers",
         marker=dict(size=22, color="rgba(0,0,0,0)", line=dict(color="#e74c3c", width=3)),
-        name="Montpellier (rang #1)",
+        name=f"Montpellier (rang #{_mmm_rank if not _mmm.empty else '?'})",
         showlegend=True,
     ))
 fig_baseline.update_traces(textposition="top center", marker_opacity=0.8, marker_size=11,

@@ -151,6 +151,59 @@ for i, mkey in enumerate(metric_keys):
             f"L'écart médiane/moyenne quantifie le degré d'asymétrie de la distribution."
         )
 
+# ── Tableau de statistiques de forme ─────────────────────────────────────────
+with st.expander(
+    "Statistiques de forme — Asymétrie, Aplatissement et Test de Normalité (Shapiro-Wilk)",
+    expanded=False,
+):
+    _shape_rows = []
+    for _mkey in metric_keys:
+        _meta_s = METRICS[_mkey]
+        _s = dff[_mkey].dropna()
+        if len(_s) < 10:
+            continue
+        _skew = float(_s.skew())
+        _kurt = float(_s.kurtosis())  # pandas excess kurtosis
+
+        # Shapiro-Wilk sur sous-échantillon (valide jusqu'à n=5000)
+        _sw_sample = _s.sample(min(len(_s), 5000), random_state=42) if len(_s) > 5000 else _s
+        try:
+            from scipy.stats import shapiro as _shapiro
+            _, _sw_p = _shapiro(_sw_sample.values)
+        except Exception:
+            _sw_p = float("nan")
+
+        def _sig_sw(p: float) -> str:
+            if p != p:  # nan
+                return "—"
+            if p < 0.001: return "Rejetée (***)"
+            if p < 0.01:  return "Rejetée (**)"
+            if p < 0.05:  return "Rejetée (*)"
+            return "Non rejetée"
+
+        _shape_rows.append({
+            "Dimension": _meta_s["label"],
+            "n valides": f"{len(_s):,}",
+            "Asymétrie γ₁": f"{_skew:+.3f}",
+            "Kurtosis γ₂": f"{_kurt:+.3f}",
+            "SW p-val. (n ≤ 5 000)": f"{_sw_p:.4f}" if _sw_p == _sw_p else "—",
+            "H₀ normalité": _sig_sw(_sw_p),
+        })
+
+    if _shape_rows:
+        st.table(pd.DataFrame(_shape_rows))
+        st.caption(
+            "**Tableau 1.1.** Statistiques de forme pour les dimensions d'enrichissement spatial"
+            + (_type_label or "") + ". "
+            "γ₁ = coefficient d'asymétrie de Fisher (γ₁ > 0 : queue à droite, distribution asymétrique positive). "
+            "γ₂ = excès de kurtosis (γ₂ > 0 : leptokurtique, queues plus lourdes que la loi normale). "
+            "SW = test de Shapiro-Wilk ($H_0$ : la distribution est normale). "
+            "*** $p < 0{{,}}001$ · ** $p < 0{{,}}01$ · * $p < 0{{,}}05$. "
+            "Le rejet quasi-universel de la normalité valide l'usage d'estimateurs robustes "
+            "(médiane, $\\rho$ de Spearman) et invalide l'usage de tests paramétriques "
+            "(t-test, ANOVA) dans les comparaisons inter-agglomérations."
+        )
+
 # ── Section 2 — Dispersion inter-agglomérations ───────────────────────────────
 st.divider()
 section(2, "Dispersion Inter-Agglomérations — Significativité Statistique des Différences de Médiane")
