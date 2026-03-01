@@ -6,6 +6,7 @@ from __future__ import annotations
 
 import numpy as np
 import pandas as pd
+import plotly.graph_objects as go
 import streamlit as st
 
 from utils.data_loader import city_stats, compute_imd_cities, load_stations, load_systems_catalog
@@ -109,6 +110,57 @@ k3.metric("Systèmes GBFS certifiés",      f"{n_certified}")
 k4.metric(f"IMD #1 — {_top_city}",        f"{_top_imd:.1f} / 100")
 k5.metric("Moran's I (spatial)",          "−0,023", "p = 0,765 — non sign.")
 k6.metric("ρ Spearman IMD × Revenu",      _rho_str, f"p = {_pval_str} — non sign.")
+
+# ── Pipeline de recherche (vue synthétique) ─────────────────────────────────────
+st.markdown(
+    f"""
+    <div style="display:flex; gap:0; align-items:stretch; margin:1.4rem 0 0.3rem 0;">
+      <div style="flex:1; background:#e8edf5; border:1px solid #c0cfe0; border-radius:6px;
+                  padding:0.75rem 0.5rem; text-align:center;">
+        <div style="font-weight:700; font-size:0.82rem; color:#1A2332;">GBFS Bruts</div>
+        <div style="font-size:0.72rem; color:#4a6a88; margin-top:0.28rem;">
+          125 systèmes<br>~60&nbsp;000 points bruts</div>
+      </div>
+      <div style="display:flex; align-items:center; padding:0 0.45rem;
+                  color:#5a8abf; font-size:1.4rem; flex-shrink:0;">&#8594;</div>
+      <div style="flex:1; background:#fef3cd; border:1px solid #e8d460; border-radius:6px;
+                  padding:0.75rem 0.5rem; text-align:center;">
+        <div style="font-weight:700; font-size:0.82rem; color:#856404;">Audit A1–A5</div>
+        <div style="font-size:0.72rem; color:#856404; margin-top:0.28rem;">
+          Taxonomie<br>5&nbsp;classes d'anomalies</div>
+      </div>
+      <div style="display:flex; align-items:center; padding:0 0.45rem;
+                  color:#5a8abf; font-size:1.4rem; flex-shrink:0;">&#8594;</div>
+      <div style="flex:1.2; background:#1A6FBF; border:1px solid #1A6FBF; border-radius:6px;
+                  padding:0.75rem 0.5rem; text-align:center;">
+        <div style="font-weight:700; font-size:0.82rem; color:white;">Gold Standard</div>
+        <div style="font-size:0.72rem; color:#b8d8f4; margin-top:0.28rem;">
+          <b style="color:white">{len(df):,}</b>&nbsp;stations<br>{n_certified}&nbsp;systèmes certifiés</div>
+      </div>
+      <div style="display:flex; align-items:center; padding:0 0.45rem;
+                  color:#5a8abf; font-size:1.4rem; flex-shrink:0;">&#8594;</div>
+      <div style="flex:1; background:#155a9c; border:1px solid #155a9c; border-radius:6px;
+                  padding:0.75rem 0.5rem; text-align:center;">
+        <div style="font-weight:700; font-size:0.82rem; color:white;">IMD &middot; IES</div>
+        <div style="font-size:0.72rem; color:#a8c8e8; margin-top:0.28rem;">
+          4&nbsp;composantes<br>{_n_imd}&nbsp;agglomérations</div>
+      </div>
+      <div style="display:flex; align-items:center; padding:0 0.45rem;
+                  color:#5a8abf; font-size:1.4rem; flex-shrink:0;">&#8594;</div>
+      <div style="flex:1; background:#0d3d6b; border:1px solid #0d3d6b; border-radius:6px;
+                  padding:0.75rem 0.5rem; text-align:center;">
+        <div style="font-weight:700; font-size:0.82rem; color:white;">Justice Spatiale</div>
+        <div style="font-size:0.72rem; color:#90b8d8; margin-top:0.28rem;">
+          Gouvernance<br>&#62;&nbsp;Géographie</div>
+      </div>
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
+st.caption(
+    "**Figure 0.1.** Pipeline de recherche en quatre étapes : "
+    "de la donnée GBFS brute à l'atlas de justice spatiale (IMD, IES)."
+)
 
 # ── Section 1 : Contexte et Problématique ──────────────────────────────────────
 st.divider()
