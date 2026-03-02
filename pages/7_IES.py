@@ -184,6 +184,25 @@ if has_revenu:
         _tmp["quadrant"] = _tmp.apply(_quadrant, axis=1)
         ies_df = _tmp
 
+# ── Variables textuelles dynamiques (sections 1-2-6) ──────────────────────────
+def _fr(v: float, fmt: str = ".3f") -> str:
+    """Formate un flottant avec virgule décimale (notation française)."""
+    return format(v, fmt).replace(".", ",")
+
+_n_txt     = str(len(ies_df)) if ies_df is not None else str(len(imd_f))
+_rho_dyn   = _fr(rho_rev, "+.3f") if not np.isnan(rho_rev) else "—"
+_p_dyn     = (_fr(pval_rev, ".3f") if pval_rev >= 0.001 else "< 0,001") if not np.isnan(pval_rev) else "—"
+_sig_dyn   = "non significatif" if (not np.isnan(pval_rev) and pval_rev > 0.05) else "significatif"
+_nulle_dyn = "nulle" if (not np.isnan(pval_rev) and pval_rev > 0.05) else "significative"
+_R2_txt    = "—"
+if ies_df is not None and len(ies_df) >= 5:
+    _xo_pre    = ies_df["revenu_median_uc"].values.astype(float)
+    _yo_pre    = ies_df["IMD"].values.astype(float)
+    _yhat_pre  = np.polyval(np.polyfit(_xo_pre, _yo_pre, 1), _xo_pre)
+    _SStot_pre = float(np.sum((_yo_pre - _yo_pre.mean()) ** 2))
+    if _SStot_pre > 0:
+        _R2_txt = _fr(1.0 - float(np.sum((_yo_pre - _yhat_pre) ** 2)) / _SStot_pre, ".4f")
+
 # ── KPIs ──────────────────────────────────────────────────────────────────────
 k1, k2, k3, k4, k5 = st.columns(5)
 k1.metric("Agglomérations analysées (dock)", f"{len(imd_f)}")
@@ -267,13 +286,15 @@ des alternatives à la voiture individuelle - deux handicaps se renforçant mutu
 agglomérations ($r_s = 0$).
 
 **H₁ :** Il existe une corrélation positive significative entre revenu et IMD (inégalité structurelle).
-
+""")
+st.markdown(f"""
 **Résultat empirique observé :** H₀ est **confirmée** sur le panel Gold Standard dock-based
-($n$ = 59 agglomérations). La corrélation de Spearman entre l'IMD et le revenu médian/UC
-(INSEE Filosofi) est $\rho = +0{,}055$ ($p = 0{,}677$, **non significatif**). H₁ est donc rejetée :
+($n = {_n_txt}$ agglomérations, seuil ≥ {min_stations} stations dock-based).
+La corrélation de Spearman entre l'IMD et le revenu médian/UC (INSEE Filosofi) est
+$\\rho = {_rho_dyn}$ ($p = {_p_dyn}$, **{_sig_dyn}**). H₁ est donc rejetée :
 il n'y a pas de corrélation significative entre niveau de revenu et qualité de l'environnement cyclable.
-Ce résultat, plus fort encore que les estimations Ridge ($R^2 = 0{,}28$) issues de la littérature,
-confirme l'absence totale de déterminisme économique dans la distribution spatiale des VLS français -
+Ce résultat, plus fort encore que les estimations Ridge ($R^2 = 0{{,}}28$) issues de la littérature,
+confirme l'absence totale de déterminisme économique dans la distribution spatiale des VLS français —
 et confère une responsabilité entière aux décideurs publics locaux.
 """)
 
@@ -317,11 +338,11 @@ st.latex(r"""
 + \lambda \|\boldsymbol{\beta}\|_2^2 \right\}
 """)
 
-st.markdown(r"""
-Le paramètre $\lambda$ est sélectionné par validation croisée ($k = 5$). Sur le panel Gold Standard
-dock-based (59 agglomérations, INSEE Filosofi), la corrélation de Spearman entre revenu médian/UC
-et IMD est $\rho = +0{,}055$ ($p = 0{,}677$) - **statistiquement nulle**. Le coefficient de
-détermination OLS est $R^2 \approx 0{,}003$ : le revenu médian n'explique que **moins de 1 % de
+st.markdown(f"""
+Le paramètre $\\lambda$ est sélectionné par validation croisée ($k = 5$). Sur le panel Gold Standard
+dock-based ({_n_txt} agglomérations, INSEE Filosofi), la corrélation de Spearman entre revenu médian/UC
+et IMD est $\\rho = {_rho_dyn}$ ($p = {_p_dyn}$) — **statistiquement {_nulle_dyn}**. Le coefficient de
+détermination OLS est $R^2 = {_R2_txt}$ : le revenu médian n'explique que **moins de 1 % de
 la variance de l'IMD**. La quasi-totalité de la variance est attribuable aux choix de gouvernance
 locale, à la topographie, à l'héritage historique des politiques de mobilité et aux stratégies
 des opérateurs.
@@ -1034,50 +1055,166 @@ with tab_fub:
 st.divider()
 section(6, "Implications pour la Gouvernance des Réseaux VLS")
 
+st.markdown("L'IES fournit un outil de ciblage précis pour orienter les investissements en "
+            "mobilité douce vers les territoires où l'impact social est maximal.")
+
+# ── KPIs politiques dynamiques ────────────────────────────────────────────────
+if ies_df is not None:
+    _deserts_df   = ies_df[ies_df["quadrant"] == "Désert de Mobilité Sociale"].copy()
+    _inclusifs_df = ies_df[ies_df["quadrant"] == "Mobilité Inclusive (IES > 1)"].copy()
+    _sous_perf_df = ies_df[ies_df["quadrant"] == "Sous-Performance"].copy()
+    _med_ies      = float(ies_df["IES"].median())
+    _ies_min      = float(ies_df["IES"].min())
+    _ies_max      = float(ies_df["IES"].max())
+
+    gc1, gc2, gc3, gc4 = st.columns(4)
+    gc1.metric("Déserts de Mobilité Sociale", f"{len(_deserts_df)} agglomérations",
+               "cibles prioritaires d'intervention")
+    gc2.metric("Mobilité Inclusive (IES > 1)", f"{len(_inclusifs_df)} agglomérations",
+               "modèles de gouvernance proactive")
+    gc3.metric("IES médian national", f"{_med_ies:.3f}",
+               "ratio IMD observé / IMD prédit")
+    gc4.metric("Amplitude IES", f"[{_ies_min:.2f} ; {_ies_max:.2f}]",
+               f"dispersion sur {len(ies_df)} agglomérations")
+
+# ── 6.1. Levier Infrastructurel ───────────────────────────────────────────────
 st.markdown(r"""
-L'IES fournit un outil de ciblage politique précis pour orienter les investissements en mobilité douce
-vers les territoires où l'impact social est maximal. Trois leviers d'action se dégagent :
+#### 6.1. Levier Infrastructurel : Tableau des Déserts de Mobilité et Effort Correctif
 
-#### 6.1. Levier Infrastructurel : Redéploiement Spatial de l'Offre
+Les agglomérations en **"Désert de Mobilité Sociale"** (IES $< 1$, revenu $<$ médiane nationale)
+cumulent précarité économique et sous-équipement cyclable — la double peine (*Lucas, 2012*).
+Le diagnostic IES permet de quantifier *l'effort correctif minimal* pour chacune :
 
-Les agglomérations en "Désert de Mobilité Sociale" (IES $< 1$, revenu $<$ médiane) devraient
-bénéficier d'une densification prioritaire de l'offre VLS. Le diagnostic IES permet de quantifier
-*l'effort correctif minimal* nécessaire pour atteindre le niveau d'équité cible :
-$\text{IMD}_{\text{cible}, i} = \widehat{\text{IMD}}(R_{m,i})$, ce qui se traduit en nombre
-de stations supplémentaires à déployer, en fonction des composantes déficitaires de l'IMD.
+$$\Delta\text{IMD}_i = \widehat{\text{IMD}}(R_{m,i}) - \text{IMD}_{\text{observé}, i}$$
 
+$\Delta\text{IMD}_i > 0$ mesure le déficit à combler pour atteindre l'équité prédite par le revenu.
+""")
+
+if ies_df is not None and not _deserts_df.empty:
+    _deserts_df = _deserts_df.copy()
+    _deserts_df["Δ IMD (effort)"] = (_deserts_df["IMD_hat"] - _deserts_df["IMD"]).clip(lower=0).round(1)
+    _deserts_df["IES"] = _deserts_df["IES"].round(3)
+
+    _disp_desert = _deserts_df[["city", "n_stations", "revenu_median_uc", "IMD", "IMD_hat", "IES", "Δ IMD (effort)"]].copy()
+    _disp_desert = _disp_desert.sort_values("Δ IMD (effort)", ascending=False)
+    _disp_desert.columns = [
+        "Agglomération", "Stations", "Revenu médian/UC (€)", "IMD observé", "IMD prédit (Ridge)", "IES", "Δ IMD (effort)"
+    ]
+    _disp_desert["Revenu médian/UC (€)"] = _disp_desert["Revenu médian/UC (€)"].round(0).astype(int)
+    _disp_desert["IMD observé"]          = _disp_desert["IMD observé"].round(1)
+    _disp_desert["IMD prédit (Ridge)"]   = _disp_desert["IMD prédit (Ridge)"].round(1)
+
+    st.dataframe(
+        _disp_desert,
+        use_container_width=True,
+        hide_index=True,
+        column_config={
+            "IMD observé": st.column_config.ProgressColumn(
+                "IMD observé (/100)", min_value=0, max_value=100, format="%.1f"
+            ),
+            "Δ IMD (effort)": st.column_config.ProgressColumn(
+                "Δ IMD à combler", min_value=0,
+                max_value=float(_disp_desert["Δ IMD (effort)"].max()),
+                format="%.1f",
+            ),
+            "IES": st.column_config.NumberColumn("IES", format="%.3f"),
+        },
+    )
+    st.caption(
+        f"**Tableau 6.1.** Agglomérations en Désert de Mobilité Sociale ($n = {len(_deserts_df)}$). "
+        "Colonnes : IMD observé (score actuel), IMD prédit par la régression Ridge à revenu équivalent, "
+        "Δ IMD = effort correctif minimal. Les agglomérations avec Δ IMD > 10 points sont les cibles "
+        "prioritaires des politiques nationales de rééquilibrage. "
+        f"Source : Gold Standard GBFS dock-based, seuil ≥ {min_stations} stations."
+    )
+elif ies_df is not None:
+    st.success(
+        "Aucun désert de mobilité sociale détecté dans le panel actuel "
+        f"(seuil ≥ {min_stations} stations). "
+        "Toutes les agglomérations affichent un IMD au moins conforme à leur niveau de revenu."
+    )
+else:
+    st.info("Données INSEE Filosofi (revenu_median_uc) nécessaires pour ce diagnostic.")
+
+# ── 6.2. Levier Tarifaire ─────────────────────────────────────────────────────
+st.markdown(r"""
 #### 6.2. Levier Tarifaire : Différenciation Socio-Spatiale
 
 La littérature internationale (*Fishman et al., 2014 ; Ricci, 2015*) montre que le prix de
 l'abonnement est le principal frein à l'adoption du VLS dans les ménages à revenus modestes. Un
 dispositif de **tarification sociale différenciée** (abonnement gratuit ou subventionné pour les
 allocataires RSA/APL, abonnement jeune) est un levier complémentaire à l'investissement
-infrastructurel, permettant de lever les barrières d'usage non capturées par l'IMD physique
-- et révélées par un résidu IES négatif malgré un IMD satisfaisant.
+infrastructurel, permettant de lever les barrières d'usage non capturées par l'IMD physique —
+révélées par un résidu IES négatif malgré un IMD satisfaisant (quadrant "Sous-Performance").
+""")
 
+if ies_df is not None and not _sous_perf_df.empty:
+    st.markdown(
+        f"**{len(_sous_perf_df)} agglomérations en Sous-Performance** "
+        f"(IMD ≥ médiane mais revenu ≥ médiane → IES < 1) — l'offre physique est présente mais "
+        f"sous-utilisée, suggérant des barrières tarifaires ou comportementales :"
+    )
+    _sp_disp = (_sous_perf_df[["city", "n_stations", "revenu_median_uc", "IMD", "IES"]]
+                .sort_values("IES")
+                .copy())
+    _sp_disp.columns = ["Agglomération", "Stations", "Revenu médian/UC (€)", "IMD (/100)", "IES"]
+    _sp_disp["IMD (/100)"]          = _sp_disp["IMD (/100)"].round(1)
+    _sp_disp["Revenu médian/UC (€)"] = _sp_disp["Revenu médian/UC (€)"].round(0).astype(int)
+    st.dataframe(_sp_disp, use_container_width=True, hide_index=True,
+                 column_config={"IES": st.column_config.NumberColumn("IES", format="%.3f")})
+    st.caption(
+        "**Tableau 6.2.** Agglomérations en Sous-Performance — "
+        "offre VLS élevée mais usage sous le potentiel prévisible. "
+        "Cibles prioritaires pour des politiques tarifaires sociales ou des campagnes de sensibilisation."
+    )
+
+# ── 6.3. Levier Gouvernanciel ─────────────────────────────────────────────────
+st.markdown(r"""
 #### 6.3. Levier Gouvernanciel : Contractualisation des Obligations d'Équité
 
 L'IES peut être intégré comme **indicateur contractuel** dans les délégations de service public (DSP)
-VLS : les opérateurs seraient tenus de maintenir un IES $\geq 0{,}90$ pour l'ensemble de leur
+VLS : les opérateurs seraient tenus de maintenir un $\text{IES} \geq 0{,}90$ pour l'ensemble de leur
 territoire, sous peine de pénalités financières. Ce mécanisme de régulation performative inciterait
 les opérateurs à étendre leur réseau vers les zones moins rentables mais socialement stratégiques.
+""")
 
-#### 6.4. Résultat Clé : L'Autonomie Totale de la Gouvernance sur le Déterminisme Économique
+if ies_df is not None and "IES" in ies_df.columns:
+    _threshold = 0.90
+    _n_below   = int((ies_df["IES"] < _threshold).sum())
+    _n_above   = int((ies_df["IES"] >= _threshold).sum())
+    tc1, tc2, tc3 = st.columns(3)
+    tc1.metric(f"Agglomérations IES ≥ {_threshold:.2f}", f"{_n_above}",
+               f"{100 * _n_above / len(ies_df):.0f} % du panel — conformes")
+    tc2.metric(f"Agglomérations IES < {_threshold:.2f}", f"{_n_below}",
+               f"{100 * _n_below / len(ies_df):.0f} % du panel — sous le seuil DSP")
+    tc3.metric("IES médian", f"{float(ies_df['IES'].median()):.3f}",
+               "référence de contractualisation")
+    st.caption(
+        f"**Tableau 6.3.** Simulation de contractualisation DSP au seuil IES ≥ {_threshold:.2f}. "
+        f"{_n_below} agglomérations seraient sous le seuil contractuel et éligibles à des "
+        "pénalités ou obligations de redéploiement dans leur DSP VLS."
+    )
 
-Le test empirique sur le panel Gold Standard dock-based ($n = 59$ agglomérations françaises,
-données INSEE Filosofi) produit un résultat sans appel : $\rho_s(\text{IMD}, \text{Revenu}) = +0{,}055$
-($p = 0{,}677$, **non significatif**). Le revenu médian n'explique statistiquement aucune partie de
-la variance de l'IMD ($R^2 \approx 0{,}003$). **La quasi-totalité de la qualité de l'environnement
-cyclable relève de choix de gouvernance locale**, non de déterminismes économiques.
+# ── 6.4. Résultat Clé Dynamique ───────────────────────────────────────────────
+st.divider()
+st.markdown(f"""
+#### 6.4. Résultat Clé : L'Autonomie de la Gouvernance sur le Déterminisme Économique
 
-Ce résultat, plus fort encore que les estimations issues de la littérature internationale ($R^2_{\text{Ridge}} \approx 0{,}28$
-sur des panels plus larges), s'explique par la spécificité française : la décentralisation des
-politiques de mobilité urbaine confère aux métropoles et agglomérations une autonomie quasi-totale
-dans le déploiement de leurs réseaux VLS. Il invalide toute forme de fatalisme territorial
-et souligne la responsabilité pleine et entière des décideurs publics locaux dans la constitution
-ou la résorption des déserts de mobilité sociale.
+Le test empirique sur le panel Gold Standard dock-based ($n = {_n_txt}$ agglomérations françaises,
+données INSEE Filosofi, seuil ≥ {min_stations} stations) produit un résultat sans appel :
+$\\rho_s(\\text{{IMD}}, \\text{{Revenu}}) = {_rho_dyn}$ ($p = {_p_dyn}$, **{_sig_dyn}**).
+Le revenu médian n'explique statistiquement aucune partie de la variance de l'IMD ($R^2 = {_R2_txt}$).
+**La quasi-totalité de la qualité de l'environnement cyclable relève de choix de gouvernance locale**,
+non de déterminismes économiques.
 
-L'étude de cas intra-urbaine de Montpellier - corrélation entre revenu fiscal et part modale vélo par
-quartier, calcul de l'IES intra-urbain $\widetilde{\text{IES}}_q$ - est détaillée dans la section
-*Fracture Socio-Spatiale* de la page **Montpellier - Étude de cas VLS**.
+Ce résultat, plus fort encore que les estimations issues de la littérature internationale
+($R^2_{{\\text{{Ridge}}}} \\approx 0{{,}}28$ sur des panels plus larges), s'explique par la
+spécificité française : la décentralisation des politiques de mobilité urbaine confère aux
+métropoles et agglomérations une autonomie quasi-totale dans le déploiement de leurs réseaux VLS.
+Il invalide toute forme de fatalisme territorial et souligne la responsabilité pleine et entière
+des décideurs publics locaux dans la constitution ou la résorption des déserts de mobilité sociale.
+
+L'étude de cas intra-urbaine de Montpellier — corrélation entre revenu fiscal et part modale vélo
+par quartier, calcul de l'IES intra-urbain $\\widetilde{{\\text{{IES}}}}_q$ — est détaillée dans
+la section *Fracture Socio-Spatiale* de la page **Montpellier — Étude de cas VLS**.
 """)
