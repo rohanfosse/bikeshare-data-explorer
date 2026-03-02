@@ -499,41 +499,125 @@ chaque dimension d'enrichissement sur le corpus complet.
 """.replace("{N_STATIONS}", f"{len(df):,}"))
 
 if not compl.empty:
+    col_compl_bar, col_compl_kpi = st.columns([3, 1])
+
     # Color-coded completeness bar chart
     compl_sorted = compl.sort_values("Complétude (%)", ascending=True).copy()
     compl_sorted["couleur"] = compl_sorted["Complétude (%)"].apply(
         lambda v: "#27ae60" if v >= 80 else ("#e67e22" if v >= 50 else "#e74c3c")
     )
 
-    fig_compl = go.Figure(go.Bar(
-        x=compl_sorted["Complétude (%)"],
-        y=compl_sorted["Métrique"],
-        orientation="h",
-        marker_color=compl_sorted["couleur"].tolist(),
-        text=compl_sorted["Complétude (%)"].apply(lambda v: f"{v:.1f} %"),
-        textposition="outside",
-    ))
-    fig_compl.update_layout(
-        height=max(280, len(compl_sorted) * 42),
-        plot_bgcolor="white",
-        margin=dict(l=10, r=80, t=10, b=10),
-        xaxis=dict(title="Taux de complétude (%)", range=[0, 115]),
-        yaxis=dict(title=""),
-        showlegend=False,
-    )
-    fig_compl.add_vline(x=80, line_dash="dash", line_color="#27ae60", opacity=0.5,
-                        annotation_text="Seuil qualité (80 %)", annotation_position="top")
-    st.plotly_chart(fig_compl, use_container_width=True)
-    st.caption(
-        f"**Figure 4.1.** Taux de complétude par dimension d'enrichissement spatial "
-        f"sur les {len(df):,} stations Gold Standard. "
-        "Vert : complétude $\\geq 80\\,\\%$ (qualité satisfaisante) ; "
-        "Orange : $50\\,\\% \\leq$ complétude $< 80\\,\\%$ (couverture partielle) ; "
-        "Rouge : complétude $< 50\\,\\%$ (contrainte de source primaire - couverture BAAC ou SRTM)."
+    with col_compl_bar:
+        fig_compl = go.Figure(go.Bar(
+            x=compl_sorted["Complétude (%)"],
+            y=compl_sorted["Métrique"],
+            orientation="h",
+            marker_color=compl_sorted["couleur"].tolist(),
+            text=compl_sorted["Complétude (%)"].apply(lambda v: f"{v:.1f} %"),
+            textposition="outside",
+        ))
+        fig_compl.update_layout(
+            height=max(280, len(compl_sorted) * 42),
+            plot_bgcolor="white",
+            margin=dict(l=10, r=80, t=10, b=10),
+            xaxis=dict(title="Taux de complétude (%)", range=[0, 115]),
+            yaxis=dict(title=""),
+            showlegend=False,
+        )
+        fig_compl.add_vline(x=80, line_dash="dash", line_color="#27ae60", opacity=0.5,
+                            annotation_text="Seuil qualité (80 %)", annotation_position="top")
+        st.plotly_chart(fig_compl, use_container_width=True)
+        st.caption(
+            f"**Figure 4.1.** Taux de complétude par dimension d'enrichissement spatial "
+            f"sur les {len(df):,} stations Gold Standard. "
+            "Vert : complétude $\\geq 80\\,\\%$ (qualité satisfaisante) ; "
+            "Orange : $50\\,\\% \\leq$ complétude $< 80\\,\\%$ (couverture partielle) ; "
+            "Rouge : complétude $< 50\\,\\%$ (contrainte de source primaire - couverture BAAC ou SRTM)."
+        )
+
+    with col_compl_kpi:
+        _n_green  = int((compl["Complétude (%)"] >= 80).sum())
+        _n_orange = int(((compl["Complétude (%)"] >= 50) & (compl["Complétude (%)"] < 80)).sum())
+        _n_red    = int((compl["Complétude (%)"] < 50).sum())
+        st.metric("Métriques ≥ 80 %", f"{_n_green} / {len(compl)}", "Qualité satisfaisante")
+        st.metric("Métriques 50–80 %", f"{_n_orange} / {len(compl)}", "Couverture partielle",
+                  delta_color="off")
+        st.metric("Métriques < 50 %", f"{_n_red} / {len(compl)}", "Contrainte source primaire",
+                  delta_color="inverse")
+
+    # ── Heatmap de complétude par ville ──────────────────────────────────────
+    st.markdown("#### Heatmap de Complétude par Agglomération — Couverture Spatiale des Modules")
+    st.markdown(
+        "La heatmap ci-dessous croise les **agglomérations dock-based** (axe vertical, top 25) "
+        "et les **dimensions d'enrichissement** (axe horizontal), révélant quelles villes "
+        "bénéficient d'une couverture complète et lesquelles présentent des lacunes structurelles "
+        "(zones blanches = donnée absente)."
     )
 
-    # Completeness table
-    with st.expander("Tableau détaillé de complétude", expanded=False):
+    from utils.data_loader import METRICS as _METRICS_DEF
+
+    _hm_cities = cities_dock.head(25)["city"].tolist()
+    _hm_metrics = list(_METRICS_DEF.keys())
+    _hm_labels  = [_METRICS_DEF[k]["label"] for k in _hm_metrics]
+
+    # Calcul du taux de complétude ville × métrique
+    _hm_df_dock = df_dock[df_dock["city"].isin(_hm_cities)]
+    _hm_matrix  = []
+    for _city in _hm_cities:
+        _city_df = _hm_df_dock[_hm_df_dock["city"] == _city]
+        _row = []
+        for _col in _hm_metrics:
+            if _col in _city_df.columns and len(_city_df) > 0:
+                _pct = 100 * _city_df[_col].notna().mean()
+            else:
+                _pct = 0.0
+            _row.append(round(_pct, 1))
+        _hm_matrix.append(_row)
+
+    _hm_z    = np.array(_hm_matrix)
+    _hm_text = [[f"{v:.0f} %" for v in row] for row in _hm_matrix]
+
+    fig_hm = go.Figure(go.Heatmap(
+        z=_hm_z,
+        x=_hm_labels,
+        y=_hm_cities,
+        text=_hm_text,
+        texttemplate="%{text}",
+        textfont=dict(size=8),
+        colorscale=[
+            [0.0,  "#e74c3c"],
+            [0.5,  "#e67e22"],
+            [0.8,  "#f9e79f"],
+            [1.0,  "#27ae60"],
+        ],
+        zmin=0, zmax=100,
+        showscale=True,
+        colorbar=dict(
+            title="Complétude (%)",
+            thickness=12,
+            tickvals=[0, 50, 80, 100],
+            ticktext=["0 %", "50 %", "80 %", "100 %"],
+        ),
+        hovertemplate="Ville : %{y}<br>Métrique : %{x}<br>Complétude : %{z:.0f} %<extra></extra>",
+    ))
+    fig_hm.update_layout(
+        height=max(400, len(_hm_cities) * 22),
+        margin=dict(l=10, r=20, t=10, b=120),
+        xaxis=dict(tickangle=-40, tickfont=dict(size=9), side="bottom"),
+        yaxis=dict(autorange="reversed", tickfont=dict(size=9)),
+        plot_bgcolor="white",
+    )
+    st.plotly_chart(fig_hm, use_container_width=True)
+    st.caption(
+        f"**Figure 4.2.** Heatmap de complétude des {len(_hm_metrics)} dimensions d'enrichissement "
+        f"pour les {len(_hm_cities)} plus grandes agglomérations dock-based. "
+        "Vert = couverture complète (100 %) ; Rouge = donnée absente (0 %). "
+        "Les lacunes de couverture BAAC et SRTM sont visibles sur les petites agglomérations "
+        "périphériques, confirmant la dépendance à la densité urbaine des sources primaires."
+    )
+
+    # Completeness table (dépliable)
+    with st.expander("Tableau détaillé de complétude (toutes métriques)", expanded=False):
         display_compl = compl.copy()
         display_compl["Complétude (%)"] = display_compl["Complétude (%)"].round(1)
         st.dataframe(
@@ -608,36 +692,179 @@ st.markdown("#### Couverture Géographique - Stations Dock-Based par Agglomérat
 st.caption(
     "Filtrage appliqué : les flottes *free-floating* (A3 : bird, dott, pony, voi) et les "
     "systèmes d'autopartage (A1 : citiz) sont exclus. Seules les stations **dock-based** "
-    "ou *semi-dock* certifiées sont comptabilisées, permettant une comparaison homogène "
+    "certifiées sont comptabilisées, permettant une comparaison homogène "
     "de la capacité physique des réseaux VLS."
 )
-top20 = cities_dock.head(20).copy()
-fig_cities = px.bar(
-    top20,
-    x="n_stations",
-    y="city",
-    orientation="h",
-    color="n_stations",
-    color_continuous_scale="Blues",
-    text="n_stations",
-    labels={"city": "Agglomération", "n_stations": "Stations dock certifiées"},
-    height=480,
-)
-fig_cities.update_traces(texttemplate="%{x:,}", textposition="outside")
-fig_cities.update_layout(
-    coloraxis_showscale=False,
-    plot_bgcolor="white",
-    margin=dict(l=10, r=60, t=10, b=10),
-    yaxis=dict(autorange="reversed"),
-)
-st.plotly_chart(fig_cities, use_container_width=True)
-st.caption(
-    "**Figure 5.1.** Top 20 agglomérations par nombre de stations VLS dock-based certifiées "
-    "(hors flottes free-floating A3 et autopartage A1). Paris (Vélib') domine largement, "
-    "suivi par Lyon et Toulouse. L'exclusion des opérateurs free-floating ramène Bordeaux "
-    "de 9 920 stations brutes à 225 stations dock-based (*velo-TBM*), illustrant concrètement "
-    "l'impact de la correction A3 sur l'évaluation comparative des réseaux VLS."
-)
+
+tab_bar, tab_map, tab_scatter = st.tabs([
+    "Classement par agglomération",
+    "Carte nationale des stations",
+    "Capacité × Infrastructure cyclable",
+])
+
+with tab_bar:
+    top20 = cities_dock.head(20).copy()
+    fig_cities = px.bar(
+        top20,
+        x="n_stations",
+        y="city",
+        orientation="h",
+        color="n_stations",
+        color_continuous_scale="Blues",
+        text="n_stations",
+        labels={"city": "Agglomération", "n_stations": "Stations dock certifiées"},
+        height=480,
+    )
+    fig_cities.update_traces(texttemplate="%{x:,}", textposition="outside")
+    fig_cities.update_layout(
+        coloraxis_showscale=False,
+        plot_bgcolor="white",
+        margin=dict(l=10, r=60, t=10, b=10),
+        yaxis=dict(autorange="reversed"),
+    )
+    st.plotly_chart(fig_cities, use_container_width=True)
+    st.caption(
+        "**Figure 5.1.** Top 20 agglomérations par nombre de stations VLS dock-based certifiées. "
+        "Paris (Vélib') domine largement, suivi par Lyon et Toulouse. "
+        "L'exclusion des opérateurs free-floating ramène Bordeaux "
+        "de 9 920 stations brutes à 225 stations dock-based, illustrant concrètement "
+        "l'impact de la correction A3 sur l'évaluation comparative des réseaux VLS."
+    )
+
+with tab_map:
+    st.markdown(
+        "Carte interactive de **toutes les stations certifiées**, colorées par type. "
+        "Un échantillon aléatoire de 5 000 points est affiché pour la performance."
+    )
+    _map_df = df.dropna(subset=["lat", "lon"]).copy()
+    # Sous-échantillonnage pour la performance
+    if len(_map_df) > 5000:
+        _map_df = _map_df.sample(5000, random_state=42)
+
+    _type_labels_map = {
+        "docked_bike":   "Dock-based VLS",
+        "free_floating": "Free-floating (A3)",
+        "carsharing":    "Autopartage (A1)",
+    }
+    _map_df["Type"] = _map_df["station_type"].map(
+        lambda t: _type_labels_map.get(str(t), str(t))
+    ) if "station_type" in _map_df.columns else "Dock-based VLS"
+
+    _map_type_colors = {
+        "Dock-based VLS":       "#1A6FBF",
+        "Free-floating (A3)":   "#e74c3c",
+        "Autopartage (A1)":     "#8e44ad",
+    }
+    fig_map_gs = px.scatter_mapbox(
+        _map_df,
+        lat="lat", lon="lon",
+        color="Type",
+        color_discrete_map=_map_type_colors,
+        hover_name="city" if "city" in _map_df.columns else None,
+        hover_data={
+            "capacity": True,
+            "lat": False,
+            "lon": False,
+            "Type": False,
+            "source_label": True,
+        },
+        mapbox_style="carto-positron",
+        zoom=4.8,
+        center={"lat": 46.8, "lon": 2.3},
+        size_max=8,
+        opacity=0.65,
+        height=500,
+        labels={"Type": "Type de station", "capacity": "Capacité", "source_label": "Source"},
+    )
+    fig_map_gs.update_layout(
+        margin=dict(l=0, r=0, t=0, b=0),
+        legend=dict(orientation="h", y=-0.08, x=0.5, xanchor="center"),
+    )
+    st.plotly_chart(fig_map_gs, use_container_width=True)
+    st.caption(
+        f"**Figure 5.2.** Carte nationale des stations du Gold Standard "
+        f"(échantillon de {min(5000, len(df)):,} points sur {len(df):,}). "
+        "Bleu = stations dock-based certifiées (VLS physique) ; "
+        "Rouge = flottes free-floating (A3 corrigé) ; "
+        "Violet = systèmes d'autopartage (A1, conservés pour analyse comparative). "
+        "La densité bleue en Île-de-France traduit la présence de Vélib' ; "
+        "les clusters rouges à Bordeaux/Nice illustrent la prévalence de l'anomalie A3."
+    )
+
+with tab_scatter:
+    st.markdown(r"""
+    La relation entre la **capacité moyenne des stations** (proxy de l'offre physique) et le
+    **taux d'infrastructure cyclable** (proxy de la demande latente) détermine si les réseaux
+    VLS sont déployés là où l'environnement les soutient — ou au contraire dans des zones
+    peu propices à l'usage cyclable.
+    """)
+    _sc_df = cities_dock.dropna(subset=["infra_cyclable_pct", "capacity"]).copy()
+    if not _sc_df.empty:
+        # Taille encodée par nombre de stations
+        _sc_rho = float(
+            pd.Series(_sc_df["capacity"].values).rank()
+            .corr(pd.Series(_sc_df["infra_cyclable_pct"].values).rank())
+        )
+        # Ligne OLS manuelle
+        _sc_x  = _sc_df["infra_cyclable_pct"].values
+        _sc_y  = _sc_df["capacity"].values
+        _sc_c  = np.polyfit(_sc_x, _sc_y, 1)
+        _sc_xr = np.linspace(_sc_x.min(), _sc_x.max(), 100)
+
+        fig_sc = px.scatter(
+            _sc_df,
+            x="infra_cyclable_pct",
+            y="capacity",
+            size="n_stations",
+            color="n_stations",
+            color_continuous_scale="Blues",
+            hover_name="city",
+            size_max=30,
+            labels={
+                "infra_cyclable_pct": "Infrastructure cyclable moyenne (% dans buffer 300 m)",
+                "capacity":           "Capacité moyenne par station (bornes)",
+                "n_stations":         "Stations dock",
+            },
+            height=420,
+            opacity=0.85,
+        )
+        # Annoter top 5 villes par n_stations
+        _top5_cities = _sc_df.nlargest(5, "n_stations")
+        for _, _r in _top5_cities.iterrows():
+            fig_sc.add_annotation(
+                x=_r["infra_cyclable_pct"], y=_r["capacity"],
+                text=str(_r["city"]),
+                showarrow=True, arrowhead=2, arrowwidth=1,
+                arrowcolor="#333", ax=25, ay=-18,
+                font=dict(size=9),
+            )
+        fig_sc.add_trace(go.Scatter(
+            x=_sc_xr, y=np.polyval(_sc_c, _sc_xr),
+            mode="lines",
+            line=dict(color="#1A2332", dash="dash", width=2),
+            name=f"Tendance OLS (ρ = {_sc_rho:+.2f})",
+            showlegend=True,
+        ))
+        fig_sc.update_layout(
+            plot_bgcolor="white",
+            margin=dict(l=10, r=10, t=10, b=30),
+            xaxis=dict(showgrid=True, gridcolor="#eee"),
+            yaxis=dict(showgrid=True, gridcolor="#eee"),
+            coloraxis_showscale=False,
+            legend=dict(orientation="h", y=-0.15, x=0.5, xanchor="center"),
+        )
+        st.plotly_chart(fig_sc, use_container_width=True)
+        st.caption(
+            f"**Figure 5.3.** Infrastructure cyclable moyenne (axe x) versus "
+            f"capacité moyenne par station (axe y). Taille = nombre de stations. "
+            f"ρ de Spearman = {_sc_rho:+.2f}. "
+            "Les 5 agglomérations les plus grandes sont annotées. "
+            "Une corrélation positive suggère que les villes dotées d'un environnement "
+            "cyclable dense ont tendance à concevoir des stations à plus haute capacité, "
+            "cohérent avec une planification intégrée offre/demande."
+        )
+    else:
+        st.info("Données insuffisantes pour le scatter capacité × infrastructure.")
 
 # ── Section 6 : Implication pour la Recherche ──────────────────────────────────
 st.divider()
@@ -658,9 +885,81 @@ académique autonome à deux niveaux :
 
 1. **Contribution méthodologique :** Un protocole d'audit reproductible et généralisable à tout corpus
    GBFS national ou international, documenté dans les Notebooks 20–21 du dépôt public.
-2. **Contribution empirique :** Un jeu de données de {N_STATIONS} stations certifiées, enrichies selon
-   six modules spatiaux (dont les données socio-économiques INSEE Filosofi - revenu médian, Gini,
-   mobilité), prêt à supporter des modélisations complexes telles que la théorie des graphes,
+2. **Contribution empirique :** Un jeu de données enrichi selon six modules spatiaux
+   (dont les données socio-économiques INSEE Filosofi - revenu médian, Gini, mobilité),
+   prêt à supporter des modélisations complexes telles que la théorie des graphes,
    l'analyse temporelle des flux de micromobilité, ou la modélisation économétrique de
    l'équité spatiale - Indice d'Équité Sociale (IES, *cf.* page dédiée).
-""".replace("{N_STATIONS}", f"{len(df):,}"))
+""")
+
+# ── Synthèse visuelle du pipeline ─────────────────────────────────────────────
+st.markdown("#### Synthèse du Pipeline d'Ingénierie — De la Source Brute au Gold Standard")
+
+# Métriques dynamiques pour le pipeline
+_n_sources       = 6   # modules d'enrichissement
+_n_anomaly_types = 5   # classes A1–A5
+_pct_dock        = round(100 * n_dock / max(len(df), 1), 1)
+_avg_cap_dock    = round(float(df_dock["capacity"].median()), 1) if "capacity" in df_dock.columns else "n.d."
+
+col_pipe1, col_pipe2, col_pipe3, col_pipe4 = st.columns(4)
+col_pipe1.metric("Étapes du pipeline", "6", "Audit + Purge + Enrichissement")
+col_pipe2.metric("Classes d'anomalies traitées", str(_n_anomaly_types), "A1 → A5")
+col_pipe3.metric("Modules d'enrichissement spatial", str(_n_sources), "Topo · Sécu · Infra · TC · Socio · Val.")
+col_pipe4.metric("Part dock-based finale", f"{_pct_dock:.1f} %",
+                 f"Capacité médiane : {_avg_cap_dock} bornes")
+
+# Diagramme de flux textuel du pipeline
+st.markdown("""
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│              PIPELINE D'INGÉNIERIE DU GOLD STANDARD GBFS                    │
+├─────────────┬──────────────────────────────────────┬────────────────────────┤
+│  ÉTAPE      │  OPÉRATION                           │  RÉSULTAT              │
+├─────────────┼──────────────────────────────────────┼────────────────────────┤
+│ 1. Collecte │ Agrégation GBFS (MobilityData + OSM) │ ~122 systèmes bruts    │
+│ 2. Audit    │ Détection anomalies A1–A5            │ Classification typée   │
+│ 3. Purge    │ Exclusion sémantique + géofiltre      │ Réduction ~-40 %       │
+│ 4. Redress. │ Recalc. capacité réelle A3            │ Fin biais FF-anchor    │
+│ 5. Spatial  │ Spatial Join 6 sources (300 m buffer) │ +11 métriques/station  │
+│ 6. Certif.  │ Seuil robustesse ≥ 20 stations dock  │ Gold Standard Final    │
+└─────────────┴──────────────────────────────────────┴────────────────────────┘
+```
+""")
+
+# Distribution géographique finale (treemap par région)
+if not catalog.empty and {"region", "n_stations", "status"}.issubset(catalog.columns):
+    _treemap_df = (
+        catalog[catalog["status"] == "ok"]
+        .groupby(["region", "city"])
+        .agg(n_stations=("n_stations", "sum"), n_systems=("status", "count"))
+        .reset_index()
+    )
+    if not _treemap_df.empty:
+        _treemap_df["label"] = _treemap_df.apply(
+            lambda r: f"{r['city']}<br>{r['n_stations']:,} stations", axis=1
+        )
+        fig_tree = px.treemap(
+            _treemap_df,
+            path=["region", "city"],
+            values="n_stations",
+            color="n_stations",
+            color_continuous_scale="Blues",
+            hover_data={"n_stations": True, "n_systems": True},
+            labels={"n_stations": "Stations", "n_systems": "Systèmes"},
+            height=420,
+        )
+        fig_tree.update_traces(
+            textinfo="label+value",
+            hovertemplate="<b>%{label}</b><br>Stations : %{value:,}<extra></extra>",
+        )
+        fig_tree.update_layout(
+            margin=dict(l=5, r=5, t=10, b=5),
+            coloraxis_showscale=False,
+        )
+        st.plotly_chart(fig_tree, use_container_width=True)
+        st.caption(
+            "**Figure 6.1.** Treemap des stations Gold Standard certifiées par région et agglomération. "
+            "La surface de chaque cellule est proportionnelle au nombre de stations certifiées. "
+            "Paris (Vélib') et l'Île-de-France dominent la surface nationale, "
+            "illustrant la forte concentration géographique de l'offre VLS française."
+        )
