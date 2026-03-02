@@ -35,6 +35,7 @@ _NAV_GROUPS: list[tuple[str, list[tuple[str, str]]]] = [
     ("Modules transversaux", [
         ("pages/1_Carte.py",           "Carte des stations"),
         ("pages/5_Mobilite_France.py", "France - Validation"),
+        ("pages/14_Flux_Villes.py",    "Flux VLS Temps Réel"),
     ]),
     ("Données et références", [
         ("pages/4_Export.py",          "Export FAIR"),
