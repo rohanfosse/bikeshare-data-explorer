@@ -46,23 +46,24 @@ st.title("Validation Micro-Locale : Réseau Vélomagg de Montpellier")
 st.caption("Axe de Recherche 5 : Friction Spatiale, Écosystème Multimodal et Fracture Socio-Spatiale")
 
 abstract_box(
-    "<b>Question de recherche :</b> La rugosité topographique et la distance aux nœuds "
-    "modaux expliquent-elles les déséquilibres source/puits opérationnels du réseau Vélomagg ? "
-    "Dans quelle mesure l'écosystème multimodal GTFS-tramway réduit-il ces frictions ?<br><br>"
-    "Cette étude de cas constitue l'étape de <em>validation micro-locale</em> du cadre "
-    "analytique développé à l'échelle nationale. Le réseau Vélomagg "
-    "(TAM / Montpellier Méditerranée Métropole) est analysé selon cinq axes complémentaires : "
-    "(1) la <em>topologie du réseau</em> - structure du graphe de flux, détection de communautés "
-    "de Louvain, stations-pivots et points d'articulation structurellement critiques ; "
-    "(2) les <em>dynamiques temporelles</em> - patterns horaires, régimes bimodaux "
-    "domicile-travail et sensibilité aux conditions météorologiques ; "
-    "(3) la <em>modélisation de la friction spatiale</em> - déséquilibres source/puits "
-    "et indice de vulnérabilité opérationnelle ; "
-    "(4) l'<em>écosystème multimodal</em> - intégration GTFS du réseau tramway TAM "
-    "et quantification du coût de correspondance piéton-vélo ; "
-    "(5) la <em>fracture socio-spatiale</em> - corrélation entre usage du vélo et "
-    "profil socio-économique par quartier (IRIS), révélant les déserts de mobilité sociale. "
-    "Les données couvrent 5 ans d'historique de courses Vélomagg (notebooks 22–26)."
+    "<b>Question de recherche :</b> Les déséquilibres opérationnels source/puits du réseau "
+    "Vélomagg s'expliquent-ils par la topographie et la multimodalité ? "
+    "Les modèles nationaux (IMD, IES) se confirment-ils à l'échelle micro-locale ?<br><br>"
+    "Étude de cas du réseau <b>Vélomagg</b> (TAM / Montpellier Méditerranée Métropole, "
+    "IMD national = 86,8/100, rang #2) sur cinq axes : "
+    "<em>topologie du graphe</em> (Louvain, PageRank, points critiques), "
+    "<em>dynamiques temporelles</em> (régime bimodal domicile-travail), "
+    "<em>friction spatiale</em> (source/puits, indice de vulnérabilité V_i), "
+    "<em>intégration GTFS-tramway</em> (coût de correspondance piéton-vélo), "
+    "et <em>fracture socio-spatiale</em> (IES par quartier IRIS). "
+    "Les résultats valident à l'échelle fine les conclusions nationales.",
+    findings=[
+        ("53", "stations Vélomagg"),
+        ("5 ans", "historique de courses"),
+        ("4 lignes", "tramway GTFS intégré"),
+        ("86,8/100", "IMD national"),
+        ("#2", "rang national"),
+    ],
 )
 
 # ── Chargement ────────────────────────────────────────────────────────────────

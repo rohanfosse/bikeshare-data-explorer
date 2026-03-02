@@ -52,14 +52,21 @@ avg_compl    = compl["Complétude (%)"].mean() if not compl.empty else 0
 abstract_box(
     "<b>Problématique méthodologique :</b> L'Open Data constitue-t-il un matériau de recherche prêt à l'emploi ?<br><br>"
     "La robustesse d'un modèle d'évaluation spatial (tel que l'IMD) dépend intégralement de la fiabilité "
-    "de ses données d'entrée (paradigme de la lutte contre le <i>Garbage In, Garbage Out</i>). Cette section documente "
+    "de ses données d'entrée (paradigme <i>Garbage In, Garbage Out</i>). Cette page documente "
     "le pipeline d'audit massif réalisé sur les flux GBFS français et la stratégie d'hybridation "
-    f"multi-sources (BAAC, Cerema, GTFS, INSEE) mise en œuvre pour constituer notre base de référence spatiale : "
-    f"le <b>Gold Standard GBFS</b> - <b>{len(df):,} stations certifiées</b> issues de <b>{n_ok} systèmes</b> "
-    f"({n_dock_cities} agglomérations), dont <b>{n_dock:,} stations dock-based</b> (VLS physique) et "
-    f"{n_ff:,} points free-floating. Le corpus est enrichi selon six modules spatiaux (topographie SRTM, "
-    "infrastructure OSM, accidentologie BAAC, multimodalité GTFS, profil socio-économique INSEE Filosofi, "
-    "usage modal RP 2020)."
+    f"multi-sources mise en œuvre pour constituer le <b>Gold Standard GBFS</b> : "
+    f"<b>{len(df):,} stations certifiées</b> issues de <b>{n_ok} systèmes</b> "
+    f"({n_dock_cities} agglomérations), dont {n_dock:,} stations dock-based (VLS) "
+    f"et {n_ff:,} points free-floating. "
+    "Résultat clé : Bordeaux passait du rang 2 au rang 14 national après correction de l'anomalie A3 "
+    "— illustrant l'enjeu d'un audit rigoureux avant toute modélisation spatiale.",
+    findings=[
+        (f"{len(df):,}", "stations certifiées"),
+        (str(n_ok), "systèmes Gold Standard"),
+        (f"{n_dock:,}", "stations dock-based VLS"),
+        (str(n_dock_cities), "agglomérations"),
+        (f"{avg_compl:.0f} %", "complétude enrichissement"),
+    ],
 )
 
 sidebar_nav()

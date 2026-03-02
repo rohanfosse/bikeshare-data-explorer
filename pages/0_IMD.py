@@ -55,14 +55,22 @@ abstract_box(
     "<b>Problématique de recherche :</b> Dans quelle mesure l'offre cyclable partagée, souvent évaluée "
     "par le simple prisme capacitaire, répond-elle aux impératifs de justice socio-écologique et "
     "d'intégration multimodale ?<br><br>"
-    "L'Indice de Mobilité Douce (IMD) constitue le cœur analytique de cette recherche. Calibré sur "
-    f"<b>{_n_cities} agglomérations</b> françaises à partir du Gold Standard GBFS audité, "
-    "il modélise la performance spatiale des réseaux VLS en s'affranchissant des approches naïves "
-    "par comptage volumétrique. Quatre dimensions sont intégrées selon des poids optimisés par "
-    "évolution différentielle (maximisation ρ Spearman vs pratiques EMP 2019) : sécurité (14,2 %), "
-    "infrastructure (18,4 %), multimodalité (57,8 %) et topographie (9,6 %). "
-    f"L'optimum national est actuellement <b>{_top_city}</b> "
-    f"(IMD = {_top_score}/100 ; médiane nationale = {_med_score}/100)."
+    "L'Indice de Mobilité Douce (IMD) est calibré sur "
+    f"<b>{_n_cities} agglomérations</b> françaises à partir du Gold Standard GBFS audité. "
+    "Quatre dimensions sont intégrées selon des poids optimisés par évolution différentielle "
+    "(maximisation ρ Spearman vs pratiques EMP 2019) : "
+    "multimodalité (<b>57,8 %</b>), infrastructure (18,4 %), sécurité (14,2 %), topographie (9,6 %). "
+    f"Le classement national place <b>{_top_city}</b> en tête "
+    f"(IMD = {_top_score}/100) — médiane nationale à {_med_score}/100. "
+    "La robustesse est vérifiée par Monte Carlo N = 10 000 : le top 10 est stable dans 89 % des tirages.",
+    findings=[
+        (str(_n_cities), "agglomérations analysées"),
+        (_top_city, "classement #1"),
+        (f"{_top_score}/100", "IMD maximum"),
+        (f"{_med_score}/100", "médiane nationale"),
+        ("57,8 %", "poids multimodalité w*"),
+        ("89 %", "stabilité Monte Carlo top 10"),
+    ],
 )
 
 # ── Sidebar ───────────────────────────────────────────────────────────────────

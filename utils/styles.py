@@ -275,16 +275,37 @@ def sidebar_nav() -> None:
         st.divider()
 
 
-def abstract_box(text: str) -> None:
+def abstract_box(
+    text: str,
+    findings: list[tuple[str, str]] | None = None,
+) -> None:
     """
-    Boîte résumé avec bordure bleue à gauche - style abstract d'article.
+    Boîte résumé enrichie - style abstract d'article de recherche.
+
+    findings: liste de (valeur, label) affichées en chips au bas de la boîte.
+    Ex: findings=[("46 312", "stations"), ("59", "agglomérations")]
     """
+    _chips_html = ""
+    if findings:
+        chips = " ".join(
+            f'<span style="display:inline-block; background:#eaf1fb; '
+            f'border:1px solid #c4d8f0; border-radius:20px; '
+            f'padding:0.18rem 0.72rem; margin:0.15rem 0.18rem 0 0; '
+            f'font-size:0.76rem; white-space:nowrap; vertical-align:middle;">'
+            f'<b style="color:#1A6FBF;">{v}</b>'
+            f'<span style="color:#5a7a96; margin-left:0.32rem;">{lbl}</span></span>'
+            for v, lbl in findings
+        )
+        _chips_html = (
+            f'<div style="margin-top:0.8rem; padding-top:0.62rem; '
+            f'border-top:1px solid #d0e4f5; line-height:2;">{chips}</div>'
+        )
     st.markdown(
         f"""
         <div style="
             border-left: 3px solid #1A6FBF;
             background: #f4f8fc;
-            padding: 0.85rem 1.3rem;
+            padding: 0.85rem 1.3rem 0.75rem;
             border-radius: 0 5px 5px 0;
             margin: 0.4rem 0 1.4rem 0;
             font-size: 0.91rem;
@@ -296,6 +317,7 @@ def abstract_box(text: str) -> None:
                 Résumé
             </span><br/>
             {text}
+            {_chips_html}
         </div>
         """,
         unsafe_allow_html=True,

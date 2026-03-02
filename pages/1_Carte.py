@@ -38,15 +38,20 @@ st.caption("Axe de Recherche 2 : Distribution Territoriale et Disparités Géogr
 abstract_box(
     "<b>Question de recherche :</b> Les disparités spatiales de l'offre cyclable partagée "
     "résultent-elles d'une fatalité géographique ou d'inégalités de gouvernance locale ?<br><br>"
-    "Cette interface permet la visualisation géospatiale du corpus Gold Standard GBFS : "
-    f"<b>{_n_total:,} stations certifiées</b> (dont {_n_dock:,} stations dock-based VLS) "
-    f"issues de {_n_systems} systèmes nationaux couvrant {_n_cities} agglomérations, enrichies "
-    "selon cinq modules spatiaux dans un rayon normalisé de 300 m. "
-    "Le calcul global de l'autocorrélation spatiale (indice de Moran, $I = -0{,}023$, $p = 0{,}765$) "
-    "invalide l'hypothèse d'un déterminisme géographique : les stations performantes et "
-    "sous-performantes ne forment pas de clusters territoriaux significatifs. "
-    "Cette absence de structure spatiale oriente l'interprétation des disparités observées "
-    "vers des facteurs de <em>gouvernance locale</em> et de <em>choix politiques d'aménagement</em>."
+    f"Visualisation géospatiale WebGL du corpus Gold Standard GBFS : "
+    f"<b>{_n_total:,} stations certifiées</b> ({_n_dock:,} dock-based VLS) "
+    f"issues de {_n_systems} systèmes nationaux couvrant {_n_cities} agglomérations, "
+    "enrichies selon cinq modules spatiaux (rayon 300 m). "
+    "L'indice de Moran ($I = -0{,}023$, $p = 0{,}765$) invalide le déterminisme géographique : "
+    "les disparités observées reflètent des choix de <em>gouvernance locale</em>, "
+    "non une fatalité territoriale.",
+    findings=[
+        (f"{_n_total:,}", "stations cartographiées"),
+        (f"{_n_dock:,}", "dont dock-based VLS"),
+        (str(_n_systems), "systèmes GBFS"),
+        (str(_n_cities), "agglomérations"),
+        ("I = −0,023", "Moran (p = 0,765)"),
+    ],
 )
 
 # ── Sidebar ───────────────────────────────────────────────────────────────────

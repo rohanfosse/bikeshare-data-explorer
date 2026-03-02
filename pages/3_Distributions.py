@@ -33,17 +33,20 @@ st.caption("Axe de Recherche 3 : Hétérogénéité Statistique et Indépendance
 abstract_box(
     "<b>Question de recherche :</b> La taille démographique d'une agglomération constitue-t-elle "
     "un prédicteur fiable de la qualité de son environnement cyclable ?<br><br>"
-    f"Cette analyse examine les distributions empiriques des sept dimensions d'enrichissement "
-    f"du Gold Standard GBFS à l'échelle des <b>{_n_total:,} stations certifiées</b> "
-    f"(dont {_n_dock:,} dock-based VLS) issues de <b>{_n_cities} agglomérations</b>. "
-    "Le résultat central est contre-intuitif : la corrélation de rang de Spearman entre "
-    "la taille de l'agglomération et la performance cyclable est statistiquement non significative "
-    "($r_s = -0{,}02$, hors Paris), invalidant l'hypothèse d'un avantage dimensionnel des "
-    "grandes métropoles. Ce résultat renforce l'importance de l'analyse par dimension, "
-    "car les distributions présentent des asymétries positives caractéristiques "
-    "(queues de distribution à droite) qui biaisent les comparaisons fondées sur la seule moyenne. "
-    "La matrice de corrélation de Spearman révèle en outre la quasi-indépendance des "
-    "quatre dimensions retenues pour l'IMD, validant leur non-colinéarité."
+    f"Analyse des distributions empiriques des sept dimensions d'enrichissement du Gold Standard "
+    f"sur <b>{_n_total:,} stations</b> ({_n_dock:,} dock-based) et <b>{_n_cities} agglomérations</b>. "
+    "Résultat central : $r_s = -0{,}02$ (hors Paris) entre taille et performance cyclable — "
+    "aucun avantage métropolitain. Les distributions présentent toutes des asymétries positives "
+    "(Shapiro-Wilk $p < 0{,}05$), justifiant les tests non paramétriques. "
+    "La matrice Spearman confirme la quasi-indépendance des quatre composantes IMD, "
+    "validant la construction de l'indice comme somme pondérée non redondante.",
+    findings=[
+        (f"{_n_total:,}", "stations analysées"),
+        (f"{_n_dock:,}", "dont dock-based VLS"),
+        (str(_n_cities), "agglomérations"),
+        ("r_s = −0,02", "taille × performance"),
+        ("p < 0,05", "normalité rejetée"),
+    ],
 )
 
 # ── Sidebar ───────────────────────────────────────────────────────────────────
