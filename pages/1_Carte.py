@@ -77,10 +77,6 @@ with st.sidebar:
         placeholder="Corpus national complet",
     )
 
-    # Raccourci zoom Montpellier
-    if st.button("Zoom Montpellier (Vélomagg - Rang IMD #2)"):
-        city_sel = ["Montpellier"]
-
     metric_key = st.selectbox(
         "Dimension d'enrichissement à cartographier",
         options=list(METRICS.keys()),
@@ -141,7 +137,7 @@ if "station_type" in df.columns and station_type_sel == "Toutes les stations":
         _tc[i].metric(stype.replace("_", " ").title(), f"{cnt:,}")
 
 # ── Section 2 - Carte ─────────────────────────────────────────────────────────
-section(2, "Carte Interactive - Coloration par Dimension d'Enrichissement Spatial (Rayon 300 m)")
+section(2, "Carte Interactive — Vue Nationale et Vue par Agglomération")
 
 palette = meta["color_scale"]
 dff = dff.copy()
@@ -174,54 +170,132 @@ _map_cols = ["lat", "lon", "_color", "station_name", "city",
 if "station_type" in dff.columns:
     _map_cols.append("station_type")
 
-layer = pdk.Layer(
-    "ScatterplotLayer",
-    data=dff[[c for c in _map_cols if c in dff.columns]],
-    get_position="[lon, lat]",
-    get_fill_color="_color",
-    get_radius=point_size,
-    pickable=show_tooltip,
-    auto_highlight=True,
-)
-
-# Centrage automatique sur Montpellier si sélectionné
-if city_sel and "Montpellier" in city_sel and len(city_sel) == 1:
-    _lat_c, _lon_c, _zoom = 43.6047, 3.8742, 13
-elif city_sel and len(dff) > 0:
-    _lat_c = float(dff["lat"].mean())
-    _lon_c = float(dff["lon"].mean())
-    _zoom  = 11
-else:
-    _lat_c = float(dff["lat"].mean()) if len(dff) > 0 else 46.5
-    _lon_c = float(dff["lon"].mean()) if len(dff) > 0 else 2.35
-    _zoom  = 5
-
-view_state = pdk.ViewState(latitude=_lat_c, longitude=_lon_c, zoom=_zoom, pitch=0)
-
-r = pdk.Deck(
-    layers=[layer],
-    initial_view_state=view_state,
-    tooltip=tooltip_html,
-    map_style="light",
-)
-
-st.pydeck_chart(r, use_container_width=True, height=580)
-
-# ── Légende ───────────────────────────────────────────────────────────────────
+# Stats calculées avant les onglets — utilisées dans les sections 3+
 valid = dff[metric_key].dropna()
+unit = meta["unit"]
 if len(valid) > 0:
     vmin, vmax = float(valid.min()), float(valid.max())
     vmean = float(valid.mean())
-    unit = meta["unit"]
-    st.caption(
-        f"**Figure 2.1.** Distribution cartographique de la dimension **{meta['label']}** "
-        f"sur le corpus Gold Standard{_type_label}. "
-        f"Intervalle observé : [{vmin:.2f} - {vmax:.2f}] {unit} · "
-        f"Moyenne : {vmean:.2f} {unit}. "
-        f"Palette chromatique : *{palette}*. "
-        f"Points gris : valeur manquante. "
-        f"**Montpellier Vélomagg (rang IMD #2 national)** est accessible via le bouton 'Zoom Montpellier' en sidebar."
+else:
+    vmin, vmax, vmean = 0.0, 0.0, 0.0
+
+tab_nat, tab_city = st.tabs(["Vue Nationale", "Vue par Agglomération"])
+
+with tab_nat:
+    layer = pdk.Layer(
+        "ScatterplotLayer",
+        data=dff[[c for c in _map_cols if c in dff.columns]],
+        get_position="[lon, lat]",
+        get_fill_color="_color",
+        get_radius=point_size,
+        pickable=show_tooltip,
+        auto_highlight=True,
     )
+    # Centrage depuis la bounding box de la sélection courante
+    if city_sel and len(dff) > 0:
+        _lat_c = float(dff["lat"].mean())
+        _lon_c = float(dff["lon"].mean())
+        _lon_span = max(float(dff["lon"].max()) - float(dff["lon"].min()), 0.01)
+        _lat_span = max(float(dff["lat"].max()) - float(dff["lat"].min()), 0.01)
+        _zoom = int(np.clip(
+            np.log2(1.0 / max(_lon_span, _lat_span * 0.7)) + 11.5, 9, 15
+        ))
+    else:
+        _lat_c = float(dff["lat"].mean()) if len(dff) > 0 else 46.5
+        _lon_c = float(dff["lon"].mean()) if len(dff) > 0 else 2.35
+        _zoom = 5
+
+    view_state = pdk.ViewState(latitude=_lat_c, longitude=_lon_c, zoom=_zoom, pitch=0)
+    r = pdk.Deck(layers=[layer], initial_view_state=view_state, tooltip=tooltip_html, map_style="light")
+    st.pydeck_chart(r, use_container_width=True, height=560)
+
+    if len(valid) > 0:
+        st.caption(
+            f"**Figure 2.1.** Distribution cartographique de **{meta['label']}** "
+            f"sur le corpus Gold Standard{_type_label}. "
+            f"Plage : [{vmin:.2f} – {vmax:.2f}] {unit} · Moyenne : {vmean:.2f} {unit}. "
+            f"Points gris : valeur manquante. Palette : *{palette}*."
+        )
+
+with tab_city:
+    # Liste des villes dock-based avec ≥ 3 stations
+    _dock_df = df[df["station_type"] == "docked_bike"] if "station_type" in df.columns else df
+    _city_counts = _dock_df["city"].value_counts()
+    _dock_cities = sorted(_city_counts[_city_counts >= 3].index.tolist())
+    _default_idx = _dock_cities.index("Montpellier") if "Montpellier" in _dock_cities else 0
+
+    city_single = st.selectbox(
+        "Agglomération à visualiser",
+        options=_dock_cities,
+        index=_default_idx,
+        key="city_single_sel",
+    )
+
+    dff_city = _dock_df[_dock_df["city"] == city_single].copy()
+    dff_city["_color"] = color_scale_rgb(dff_city[metric_key], palette=palette, alpha=210)
+
+    # Auto-zoom depuis la bounding box des stations
+    if len(dff_city) >= 2:
+        _lat_min_c = float(dff_city["lat"].min())
+        _lat_max_c = float(dff_city["lat"].max())
+        _lon_min_c = float(dff_city["lon"].min())
+        _lon_max_c = float(dff_city["lon"].max())
+        _lat_c_city = (_lat_min_c + _lat_max_c) / 2
+        _lon_c_city = (_lon_min_c + _lon_max_c) / 2
+        _lon_span_c = max(_lon_max_c - _lon_min_c, 0.005)
+        _lat_span_c = max(_lat_max_c - _lat_min_c, 0.005)
+        _zoom_city = int(np.clip(
+            np.log2(1.0 / max(_lon_span_c, _lat_span_c * 0.7)) + 11.5, 11, 16
+        ))
+    elif len(dff_city) == 1:
+        _lat_c_city = float(dff_city["lat"].iloc[0])
+        _lon_c_city = float(dff_city["lon"].iloc[0])
+        _zoom_city = 14
+    else:
+        _lat_c_city, _lon_c_city, _zoom_city = 46.5, 2.35, 5
+
+    layer_city = pdk.Layer(
+        "ScatterplotLayer",
+        data=dff_city[[c for c in _map_cols if c in dff_city.columns]],
+        get_position="[lon, lat]",
+        get_fill_color="_color",
+        get_radius=35,
+        pickable=True,
+        auto_highlight=True,
+    )
+    view_city = pdk.ViewState(
+        latitude=_lat_c_city, longitude=_lon_c_city, zoom=_zoom_city, pitch=0
+    )
+    r_city = pdk.Deck(
+        layers=[layer_city],
+        initial_view_state=view_city,
+        tooltip=tooltip_html,
+        map_style="light",
+    )
+    st.pydeck_chart(r_city, use_container_width=True, height=520)
+
+    # Statistiques comparatives ville vs national
+    _city_valid = dff_city[metric_key].dropna()
+    _nat_valid = _dock_df[metric_key].dropna()
+    if len(_city_valid) > 0 and len(_nat_valid) > 0:
+        _city_mean = float(_city_valid.mean())
+        _nat_mean  = float(_nat_valid.mean())
+        _delta = _city_mean - _nat_mean
+        _c1, _c2, _c3, _c4 = st.columns(4)
+        _c1.metric("Stations dock-based", f"{len(dff_city)}")
+        _c2.metric(f"Moyenne {meta['label']}", f"{_city_mean:.3f} {unit}")
+        _c3.metric(
+            "Écart à la moyenne nationale",
+            f"{_delta:+.3f} {unit}",
+            delta_color="normal" if meta.get("higher_is_better") else "inverse",
+        )
+        _c4.metric("Médiane nationale", f"{float(_nat_valid.median()):.3f} {unit}")
+        st.caption(
+            f"**Figure 2.2.** Vue par agglomération — **{city_single}** · "
+            f"{len(dff_city)} stations dock-based · "
+            f"Dimension : **{meta['label']}** · "
+            f"Zoom automatique (niveau {_zoom_city}) calculé depuis la boîte englobante des stations."
+        )
 
 # ── Section 3 - Statistiques descriptives ─────────────────────────────────────
 st.divider()
