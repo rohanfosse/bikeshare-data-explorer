@@ -69,11 +69,13 @@ if region_sel:
 # ── Section 1 - Vue d'ensemble ────────────────────────────────────────────────
 section(1, "Couverture Nationale - 122 Systèmes GBFS Actifs sur le Territoire Français")
 
-st.markdown(r"""
-Le catalogue GBFS français recense l'ensemble des systèmes de vélos en libre-service
-opérationnels ayant publié un flux conforme au standard *General Bikeshare Feed Specification*
-(v2.x ou v3.0). Ce catalogue constitue le périmètre d'audit initial, avant application
-du protocole de purge en 5 étapes documenté dans la page *Gold Standard*.
+st.markdown("""
+Le catalogue recense 122 systèmes de vélos en libre-service opérationnels ayant publié
+un flux conforme au standard *General Bikeshare Feed Specification* (GBFS v2.x–v3.0),
+collectés via MobilityData et la prospection manuelle. Ce périmètre constitue la population
+initiale soumise au protocole d'audit en cinq étapes, dont l'issue est le corpus Gold Standard
+(46 312 stations certifiées). La distribution régionale ci-dessous révèle les premières
+disparités de couverture territoriale.
 """)
 
 n_sys   = len(sys_f)
@@ -236,13 +238,15 @@ if "fub_score_2023" in city_df.columns:
     st.divider()
     section(4, "FUB Baromètre 2023 - Perception Déclarative de la Qualité Cyclable (/6)")
 
-    st.markdown(r"""
-    Le FUB Baromètre 2023 constitue la principale mesure déclarative de la qualité cyclable
+    st.markdown("""
+    Le *FUB Baromètre 2023* est la principale mesure déclarative de la qualité cyclable
     perçue par les usagers en France. Fondé sur une enquête nationale auprès de cyclistes
     et non-cyclistes, il évalue six dimensions : praticabilité, sécurité, confort,
-    attractivité, partage de la voirie et potentiel de développement.
-    Le score agrégé $\in [1, 6]$ (1 = ville hostile, 6 = ville accueillante) sert ici
-    d'indicateur de **validation externe perceptuelle** de l'IMD.
+    attractivité, partage de la voirie et potentiel de développement. Le score agrégé va
+    de 1 (ville hostile au vélo) à 6 (ville accueillante). Il sert ici d'**indicateur de
+    validation externe perceptuelle** de l'IMD : une corrélation positive et significative
+    entre score FUB et IMD objectif attesterait de la **validité de construit** du modèle,
+    confirmant que les conditions physiques modélisées se traduisent en expérience cyclable vécue.
     """)
 
     fub_sorted = city_df[["city", "fub_score_2023"]].dropna().sort_values(
@@ -281,17 +285,15 @@ if {"fub_score_2023", "emp_part_velo_2019"}.issubset(city_df.columns):
     st.divider()
     section(5, "Cohérence Perception × Pratique Réelle - FUB 2023 versus EMP 2019")
 
-    st.markdown(r"""
-    La triangulation entre perception déclarative (FUB Baromètre) et pratique comportementale
-    (part modale vélo EMP 2019) constitue un test de cohérence critique.
-    Une corrélation positive significative entre ces deux indicateurs indépendants
-    attesterait de leur validité convergente : les villes perçues comme cyclables sont
-    aussi celles où la pratique effective est la plus développée.
-    Les agglomérations hors de la diagonale principale représentent des cas d'anomalie
-    nécessitant une investigation qualitative :
-    **sous-performance** (bonne infrastructure, faible usage - barrières socio-économiques ?)
-    ou **sur-performance** (usage élevé malgré des conditions objectives médiocres -
-    culture cyclable indépendante de l'infrastructure ?).
+    st.markdown("""
+    La confrontation entre perception déclarative (FUB Baromètre) et pratique comportementale
+    (part modale vélo EMP 2019) constitue un test de **validité convergente** : les villes
+    perçues comme cyclables devraient être aussi celles où la pratique effective est la plus
+    développée. Les agglomérations hors de la diagonale principale identifient deux profils
+    d'anomalie à investiguer qualitativement — la **sous-performance** (bonne perception,
+    faible usage : barrières socio-économiques ou offre inadaptée ?) et la
+    **sur-performance** (usage élevé malgré une perception dégradée : culture cyclable
+    indépendante de l'infrastructure ?).
     """)
 
     sc_df = city_df[
@@ -343,13 +345,14 @@ if {"infra_cyclable_km_per_km2", "baac_accidents_cyclistes_per_100k"}.issubset(c
     st.divider()
     section(6, "Effet Protecteur de l'Infrastructure - Densité Cerema × Sinistralité BAAC")
 
-    st.markdown(r"""
-    L'hypothèse d'un effet protecteur de l'infrastructure cyclable sur la sinistralité
-    - dite hypothèse de *safety in numbers* (*Jacobsen, 2003*) - prédit une relation
-    négative entre la densité d'infrastructure et le taux d'accidents cyclistes.
-    Ce nuage de points teste cette relation à l'échelle nationale en croisant
-    les données Cerema (linéaire d'infrastructure en km/km²) avec les statistiques
-    BAAC d'accidents cyclistes normalisées par population (taux pour 100 000 habitants).
+    st.markdown("""
+    L'hypothèse *safety in numbers* (Jacobsen, 2003) prédit qu'une densité d'infrastructure
+    cyclable plus élevée réduit le taux de sinistralité : plus les cyclistes sont nombreux
+    et les aménagements développés, plus chaque trajet est sûr. Ce nuage de points teste
+    cette relation à l'échelle nationale en croisant les données Cerema (linéaire
+    d'infrastructure en km/km²) avec les statistiques BAAC d'accidents cyclistes normalisées
+    par population (taux pour 100 000 habitants). Un quadrant supérieur gauche peu peuplé
+    (forte densité, faible sinistralité) validerait l'hypothèse à l'échelle urbaine française.
     """)
 
     safety_df = city_df[

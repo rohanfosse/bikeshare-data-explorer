@@ -130,16 +130,16 @@ st.divider()
 section(1, "Topologie du Réseau et Détection de Communautés - Structure du Graphe de Flux")
 
 st.markdown(r"""
-L'analyse de la topologie du graphe de flux (*directed weighted graph*, $n = 56$ nœuds)
-permet de caractériser la structure organisationnelle profonde du réseau Vélomagg.
+L'analyse topologique du graphe de flux orienté (stations comme nœuds, flux OD comme arêtes
+pondérées) révèle la structure organisationnelle profonde du réseau Vélomagg.
 La **détection de communautés de Louvain** (*Blondel et al., 2008*) identifie des
-sous-ensembles de stations échangeant préférentiellement entre elles, révélant des
-bassins de mobilité fonctionnels indépendants des découpages administratifs.
+sous-ensembles de stations échangeant préférentiellement entre elles — des *bassins de
+mobilité fonctionnels* indépendants des découpages administratifs.
 
 Les **stations-pivots** (*bridge stations*, coefficient de participation $P_i > 0{,}5$)
-sont les nœuds assurant la connexion entre plusieurs communautés distinctes.
-Leur défaillance opérationnelle (stock nul, vélo défectueux) présente un risque
-structurel élevé pour la connectivité globale du réseau.
+assurent la connexion entre plusieurs communautés distinctes. Leur défaillance opérationnelle
+(stock nul, vélo défectueux) fragilise la connectivité globale du réseau bien au-delà de
+leur seule zone d'influence locale.
 """)
 
 col_map, col_community = st.columns([3, 2])
@@ -260,13 +260,13 @@ section(2, "Dynamiques Temporelles - Régimes Bimodaux, Flux OD et Friction Mét
 
 st.markdown(r"""
 Les dynamiques temporelles du réseau Vélomagg révèlent un **régime bimodal** caractéristique
-des mobilités pendulaires : un pic matinal ($h \approx 8$) et un pic vespéral
-($h \approx 17$–$18$) concentrent respectivement $\sim 18\,\%$ et $\sim 22\,\%$
-du volume de trips journalier. La friction météorologique - quantifiée par le
-score de mauvais temps ($\text{bad\_weather\_score} \in [0, 1]$) - constitue
-un déterminant externe des déséquilibres source/puits : les précipitations induisent
-une réduction significative des départs, exacerbant les stocks dans les stations-puits
-et aggravant les pénuries dans les stations-sources.
+des mobilités pendulaires : un pic matinal ($h \approx 8\,\text{h}$) et un pic vespéral
+($h \approx 17$–$18\,\text{h}$) concentrent l'essentiel du volume de trips journalier.
+La **friction météorologique** — quantifiée par un score de mauvais temps normalisé de 0 à 1
+(0 = temps dégagé, 1 = épisode pluvieux intense) — constitue un déterminant externe des
+déséquilibres source/puits : les précipitations induisent une réduction significative des
+départs, exacerbant les stocks dans les stations-puits et aggravant les pénuries dans les
+stations-sources, ce qui complexifie la politique de redistribution.
 """)
 
 tab_hourly, tab_weather = st.tabs(["Distribution Horaire des Flux", "Friction Météorologique"])
@@ -481,12 +481,14 @@ st.markdown(r"""
 L'efficacité du réseau Vélomagg comme solution du **premier/dernier kilomètre** repose sur
 son intégration à l'écosystème de transport lourd TAM (4 lignes de tramway, fréquence
 $\sim 5$–$7$ min en heure de pointe). Le seuil d'interopérabilité confortable est fixé
-à **400 m** ($\approx 5$ min à 80 m/min), standard UITP pour la correspondance multimodale.
-Au-delà de **800 m** ($\approx 10$ min), le coût de correspondance piéton-vélo devient
-dissuasif et la complémentarité modale se dissout.
+à **400 m** ($\approx 5$ min à pied), standard UITP pour la correspondance multimodale.
+Au-delà de **800 m** ($\approx 10$ min), le coût piéton devient dissuasif et la
+complémentarité modale se dissout.
 
-Le coût de correspondance constitue une composante de la **friction spatiale totale** :
-$\text{friction}_{\text{totale}} = \text{friction}_{\text{topo}} + \text{friction}_{\text{multimodale}} + \text{friction}_{\text{météo}}$.
+La distance à l'arrêt de tramway le plus proche constitue l'une des trois composantes de
+la **friction spatiale totale** — aux côtés de la rugosité topographique et de la
+friction météorologique — qui structurent collectivement les déséquilibres source/puits
+du réseau et conditionnent l'efficacité opérationnelle du rebalancing.
 """)
 
 if {"bike_station", "distance_m", "walkable_5min", "walkable_10min"}.issubset(biketram.columns):
@@ -537,17 +539,17 @@ if {"bike_station", "distance_m", "walkable_5min", "walkable_10min"}.issubset(bi
 st.divider()
 section(5, "Fracture Socio-Spatiale - Usage du Vélo et Profil Socio-Économique par Quartier")
 
-st.markdown(r"""
-L'analyse de la fracture socio-spatiale confronte les données d'usage du réseau Vélomagg
-aux indicateurs socio-économiques des quartiers de Montpellier (IRIS, données INSEE Filosofi).
-L'objectif est de tester empiriquement l'hypothèse d'un **biais socio-économique**
-dans l'adoption de la micromobilité partagée : les ménages à revenus élevés
-utilisent-ils davantage le vélo en libre-service que les ménages précaires,
-et cette disparité est-elle expliquée par des inégalités d'infrastructure
-ou par des barrières d'usage indépendantes de l'offre physique ?
+st.markdown("""
+Cette section confronte les données d'usage du réseau Vélomagg aux indicateurs
+socio-économiques des quartiers de Montpellier (IRIS, INSEE Filosofi) pour tester
+l'hypothèse d'un **biais socio-économique** dans l'adoption de la micromobilité partagée.
+La question centrale est la suivante : les ménages précaires sous-utilisent-ils le VLS
+en raison d'inégalités d'infrastructure (offre absente ou éloignée) ou de barrières
+d'usage structurelles (coût, habitudes de mobilité, accessibilité culturelle) ?
 
-Si tel est le cas, les zones à revenu faible et faible usage constituent formellement
-des **déserts de mobilité sociale** au sens de l'Indice d'Équité Sociale (IES).
+Les quartiers cumulant revenu faible et usage faible constituent formellement des
+**déserts de mobilité sociale** au sens de l'IES — la micro-validation de la
+conclusion nationale ρ(IMD, revenu) ≈ 0 à l'échelle des quartiers montpelliérains.
 """)
 
 tab_viz, tab_scatter = st.tabs(["Figures Pré-calculées (Analyse IRIS)", "Analyse Interactive"])
