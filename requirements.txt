@@ -9,3 +9,5 @@ pydeck>=0.9.0
 plotly>=5.20.0
 matplotlib>=3.8.0   # pour les palettes de couleurs dans data_loader.py
 scipy>=1.9.0        # pour IES - corrélation de Spearman (scipy.stats.spearmanr)
+networkx>=3.0.0     # pour la percolation (11_Physique.py) et les graphes de flux (14_Flux_Villes.py)
+requests>=2.28.0    # pour la collecte GBFS temps réel (gbfs_collector.py)

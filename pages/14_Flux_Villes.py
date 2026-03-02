@@ -3,16 +3,14 @@
 
 Ce module lit les snapshots stockés dans data/status_snapshots/ par le script
 scripts/collect_status.py et affiche les pseudo-flux inter-snapshots.
-
-Si aucune donnée n'est encore collectée, il propose de lancer la collecte
-et affiche un aperçu live (snapshot unique sans historique de flux).
 """
 from __future__ import annotations
 
 import sys
 from pathlib import Path
-from datetime import datetime, timezone, timedelta
+from datetime import datetime, timezone
 
+import numpy as np
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
@@ -40,12 +38,11 @@ _SNAP_DIR = _ROOT / "data" / "status_snapshots"
 st.title("Flux VLS par Snapshot GBFS — Comparaison Nationale")
 st.caption("Module transversal : collecte station_status en temps réel sur les grandes villes françaises")
 
-# ── Collecteur (lecture seule ici) ─────────────────────────────────────────────
+# ── Collecteur ────────────────────────────────────────────────────────────────
 @st.cache_resource
 def get_collector() -> GBFSCollector:
     return GBFSCollector()
 
-# ── État des données collectées ───────────────────────────────────────────────
 @st.cache_data(ttl=60)
 def get_available() -> pd.DataFrame:
     return collector.list_available()
@@ -61,7 +58,6 @@ try:
     else:
         _date_range   = "aucune donnée collectée"
         _n_snap_total = 0
-    _catalog_ok = True
 except Exception as _exc:
     st.error(
         f"Impossible de charger le catalogue GBFS : {_exc}. "
@@ -78,13 +74,12 @@ abstract_box(
     "les pseudo-flux sont inférés des variations de disponibilité entre snapshots "
     "consécutifs : &Delta;bikes &lt; 0 &rarr; départs estimés ; &Delta;bikes &gt; 0 "
     "&rarr; retours estimés. La résolution temporelle dépend de l'intervalle de collecte "
-    "(recommandé : 60 s). Pour lancer la collecte, exécuter : "
-    "<code>python scripts/collect_status.py</code>",
+    "(recommandé : 60 s).",
     findings=[
         (str(_n_systems), "réseaux avec données"),
         (str(_n_snap_total), "fichiers collectés"),
         (_date_range, "période couverte"),
-        ("&ge; 20 villes", "réseaux cibles GBFS"),
+        ("≥ 20 villes", "réseaux cibles GBFS"),
     ],
 )
 
@@ -92,14 +87,10 @@ sidebar_nav()
 with st.sidebar:
     st.header("Paramètres")
 
-    # Sélection du système
-    all_sys_ids = PRIORITY_SYSTEMS
+    all_sys_ids   = PRIORITY_SYSTEMS
     collected_ids = avail["system_id"].tolist() if _has_data else []
 
-    if _has_data:
-        default_sys = collected_ids[0] if collected_ids else all_sys_ids[0]
-    else:
-        default_sys = "Paris"
+    default_sys = collected_ids[0] if collected_ids else all_sys_ids[0]
 
     system_sel = st.selectbox(
         "Réseau à analyser",
@@ -118,66 +109,84 @@ with st.sidebar:
     show_live = st.checkbox(
         "Afficher un snapshot live (appel API direct)",
         value=not _has_data,
-        help="Récupère le status actuel sans historique. Utile pour tester avant collecte.",
+        help="Récupère le status actuel sans historique.",
     )
     st.divider()
     st.caption("R. Fossé & G. Pallares · 2025–2026")
-
-# ── Démarrer la collecte ──────────────────────────────────────────────────────
-if not _has_data:
-    st.info(
-        "Aucune donnée collectée. Pour commencer la collecte, ouvrez un terminal "
-        "dans le répertoire du projet et exécutez :"
-    )
-    st.code(
-        "# Tester quels réseaux sont compatibles station_status\n"
-        "python scripts/test_status_feeds.py\n\n"
-        "# Lancer la collecte continue (toutes les 60 s, 8 h)\n"
-        "python scripts/collect_status.py --interval 60 --duration 28800\n\n"
-        "# Collecte sur Paris + Lyon uniquement (3 snapshots de test)\n"
-        "python scripts/collect_status.py --systems Paris lyon --interval 30 --max-iter 3",
-        language="bash",
-    )
 
 # ── Section 1 — Inventaire des données collectées ─────────────────────────────
 st.divider()
 section(1, "Inventaire des Données Collectées")
 
 if _has_data:
-    cat = collector._catalog[["system_id", "city", "n_stations"]].copy()
+    cat            = collector._catalog[["system_id", "city", "n_stations"]].copy()
     avail_enriched = avail.merge(cat, on="system_id", how="left")
     avail_enriched = avail_enriched.sort_values("n_files", ascending=False)
 
+    total_stations = int(avail_enriched["n_stations"].sum())
+    last_collect   = avail_enriched["date_fin"].max()
+    jours_max      = int(avail_enriched["n_files"].max())
+
+    m1, m2, m3, m4 = st.columns(4)
+    m1.metric("Réseaux collectés", _n_systems)
+    m2.metric("Stations couvertes", f"{total_stations:,}")
+    m3.metric("Fichiers Parquet", _n_snap_total)
+    m4.metric("Dernière collecte", last_collect)
+
     fig_inv = px.bar(
         avail_enriched,
-        x="system_id", y="n_files",
+        x="system_id",
+        y="n_files",
         color="n_stations",
         color_continuous_scale="Blues",
-        text="date_debut",
-        labels={"system_id": "Réseau", "n_files": "Journées collectées",
-                "n_stations": "N stations"},
-        height=320,
+        text="n_stations",
+        labels={
+            "system_id": "Réseau",
+            "n_files":   "Journées collectées",
+            "n_stations": "Stations",
+        },
+        height=340,
     )
-    fig_inv.update_traces(textposition="outside", textfont=dict(size=9))
+    fig_inv.update_traces(texttemplate="%{text} st.", textposition="outside", textfont=dict(size=9))
     fig_inv.update_layout(
         plot_bgcolor="white",
         xaxis_tickangle=-35,
-        margin=dict(l=10, r=10, t=10, b=80),
-        showlegend=True,
+        coloraxis_colorbar=dict(title="Stations", thickness=12),
+        margin=dict(l=10, r=10, t=20, b=90),
     )
     st.plotly_chart(fig_inv, use_container_width=True)
     st.caption(
         "**Figure 1.1.** Journées de données collectées par réseau. "
-        "La couleur encode la taille du réseau (nombre de stations). "
-        "Chaque journée correspond à un fichier Parquet dans data/status_snapshots/."
+        "La couleur et l'annotation encodent la taille du réseau (nombre de stations)."
     )
+
     st.dataframe(
-        avail_enriched[["system_id", "city", "n_stations", "n_files", "date_debut", "date_fin"]],
+        avail_enriched[["system_id", "city", "n_stations", "n_files", "date_debut", "date_fin"]].rename(
+            columns={
+                "system_id":  "Réseau",
+                "city":       "Ville",
+                "n_stations": "Stations",
+                "n_files":    "Journées",
+                "date_debut": "Début",
+                "date_fin":   "Fin",
+            }
+        ),
         use_container_width=True,
         hide_index=True,
+        column_config={
+            "Stations": st.column_config.NumberColumn(format="%d"),
+            "Journées": st.column_config.ProgressColumn(
+                format="%d j",
+                min_value=0,
+                max_value=jours_max,
+            ),
+        },
     )
 else:
-    st.info("Lancez le script de collecte pour alimenter cette section.")
+    st.info(
+        "Aucune donnée collectée. Lancez `python scripts/collect_status.py` "
+        "pour démarrer la collecte."
+    )
 
 # ── Section 2 — Snapshot live ─────────────────────────────────────────────────
 st.divider()
@@ -191,14 +200,14 @@ if show_live:
         if row_sel.empty:
             st.warning(f"Système '{system_sel}' introuvable dans le catalogue.")
         else:
-            row = row_sel.iloc[0]
+            row      = row_sel.iloc[0]
             snap_live = collector.take_snapshot(str(row["system_id"]), str(row["gbfs_url"]))
             info_df   = collector.load_station_info(str(row["system_id"]), str(row["gbfs_url"]))
 
             if snap_live.empty:
                 st.warning(
                     f"Le réseau **{system_sel}** n'expose pas de feed `station_status`. "
-                    "Essayez `python scripts/test_status_feeds.py` pour identifier les réseaux compatibles."
+                    "Testez les réseaux compatibles avec `python scripts/test_status_feeds.py`."
                 )
             else:
                 if not info_df.empty:
@@ -207,66 +216,154 @@ if show_live:
                         on="station_id", how="left",
                     )
 
-                n_renting  = int(snap_live["is_renting"].sum())  if "is_renting" in snap_live.columns else "?"
+                n_total     = len(snap_live)
+                n_renting   = int(snap_live["is_renting"].sum()) if "is_renting" in snap_live.columns else n_total
                 total_bikes = int(snap_live["num_bikes_available"].sum())
                 total_docks = int(snap_live["num_docks_available"].sum())
                 fill_rate   = total_bikes / max(total_bikes + total_docks, 1) * 100
+                n_empty     = int((snap_live["num_bikes_available"] == 0).sum())
+                n_full      = int((snap_live["num_docks_available"] == 0).sum())
+                med_bikes   = float(snap_live["num_bikes_available"].median())
+                q25 = float(snap_live["num_bikes_available"].quantile(0.25))
+                q75 = float(snap_live["num_bikes_available"].quantile(0.75))
 
-                col_s1, col_s2, col_s3, col_s4 = st.columns(4)
-                col_s1.metric("Stations actives", f"{len(snap_live)}")
-                col_s2.metric("Vélos disponibles", f"{total_bikes:,}")
-                col_s3.metric("Places libres", f"{total_docks:,}")
-                col_s4.metric("Taux de remplissage", f"{fill_rate:.1f}%")
+                # Métriques principales
+                c1, c2, c3, c4 = st.columns(4)
+                c1.metric("Stations actives", f"{n_renting} / {n_total}")
+                c2.metric("Vélos disponibles", f"{total_bikes:,}")
+                c3.metric("Places libres", f"{total_docks:,}")
+                c4.metric("Taux de remplissage", f"{fill_rate:.1f} %")
 
-                # Distribution des disponibilités
-                fig_live = px.histogram(
-                    snap_live,
-                    x="num_bikes_available",
-                    nbins=30,
-                    color_discrete_sequence=["#1A6FBF"],
-                    labels={"num_bikes_available": "Vélos disponibles par station"},
-                    height=300,
+                # Métriques secondaires
+                c5, c6, c7, c8 = st.columns(4)
+                c5.metric("Stations vides (0 vélo)", n_empty,
+                          delta=f"{n_empty/n_total*100:.0f}% du réseau",
+                          delta_color="inverse")
+                c6.metric("Stations pleines (0 place)", n_full,
+                          delta=f"{n_full/n_total*100:.0f}% du réseau",
+                          delta_color="inverse")
+                c7.metric("Médiane vélos / station", f"{med_bikes:.1f}")
+                c8.metric("IQR disponibilité", f"[{q25:.0f} — {q75:.0f}]")
+
+                # Distribution + box-plot côte à côte
+                col_hist, col_box = st.columns([3, 2])
+                with col_hist:
+                    fig_hist = px.histogram(
+                        snap_live,
+                        x="num_bikes_available",
+                        nbins=30,
+                        color_discrete_sequence=["#1A6FBF"],
+                        labels={"num_bikes_available": "Vélos disponibles"},
+                        height=300,
+                    )
+                    fig_hist.add_vline(
+                        x=med_bikes, line_dash="dash", line_color="#D96B27",
+                        annotation_text=f"Médiane {med_bikes:.1f}",
+                        annotation_position="top right",
+                    )
+                    fig_hist.update_layout(
+                        plot_bgcolor="white",
+                        xaxis_title="Vélos disponibles par station",
+                        yaxis_title="Nombre de stations",
+                        showlegend=False,
+                        margin=dict(l=10, r=10, t=10, b=10),
+                    )
+                    st.plotly_chart(fig_hist, use_container_width=True)
+
+                with col_box:
+                    # Catégoriser les stations
+                    def _cat(row_s: pd.Series) -> str:
+                        b = row_s["num_bikes_available"]
+                        d = row_s["num_docks_available"]
+                        if b == 0:
+                            return "Vide"
+                        if d == 0:
+                            return "Pleine"
+                        if b <= q25:
+                            return "Peu remplie"
+                        if b >= q75:
+                            return "Bien remplie"
+                        return "Équilibrée"
+
+                    snap_live["statut"] = snap_live.apply(_cat, axis=1)
+                    cat_counts = snap_live["statut"].value_counts().reset_index()
+                    cat_counts.columns = ["Statut", "Stations"]
+                    color_map = {
+                        "Vide": "#C0392B",
+                        "Peu remplie": "#E67E22",
+                        "Équilibrée": "#2980B9",
+                        "Bien remplie": "#27AE60",
+                        "Pleine": "#1A5276",
+                    }
+                    fig_pie = px.pie(
+                        cat_counts,
+                        names="Statut",
+                        values="Stations",
+                        color="Statut",
+                        color_discrete_map=color_map,
+                        hole=0.45,
+                        height=300,
+                    )
+                    fig_pie.update_traces(textposition="outside", textinfo="percent+label")
+                    fig_pie.update_layout(
+                        showlegend=False,
+                        margin=dict(l=10, r=10, t=10, b=10),
+                    )
+                    st.plotly_chart(fig_pie, use_container_width=True)
+
+                st.caption(
+                    f"**Figure 2.1.** Distribution de la disponibilité et répartition par statut — "
+                    f"{system_sel} ({datetime.now(timezone.utc).strftime('%H:%M UTC')}). "
+                    "Seuils : vide = 0 vélo, pleine = 0 place, peu remplie = Q1, bien remplie ≥ Q3."
                 )
-                fig_live.update_layout(
-                    plot_bgcolor="white",
-                    xaxis_title="Vélos disponibles (snapshot actuel)",
-                    yaxis_title="Stations",
-                    showlegend=False,
-                    margin=dict(l=10, r=10, t=10, b=10),
-                )
-                st.plotly_chart(fig_live, use_container_width=True)
 
+                # Carte
                 if "lat" in snap_live.columns and snap_live["lat"].notna().any():
-                    st.markdown("**Carte de disponibilité (snapshot actuel)**")
                     map_df = snap_live.dropna(subset=["lat", "lon"]).copy()
                     map_df["lat"] = map_df["lat"].astype(float)
                     map_df["lon"] = map_df["lon"].astype(float)
+                    map_df["pct_rempli"] = (
+                        map_df["num_bikes_available"]
+                        / (map_df["num_bikes_available"] + map_df["num_docks_available"]).replace(0, np.nan)
+                        * 100
+                    ).round(1)
                     fig_map = px.scatter_mapbox(
                         map_df,
                         lat="lat", lon="lon",
                         size="num_bikes_available",
-                        color="num_bikes_available",
+                        color="pct_rempli",
                         color_continuous_scale="RdYlGn",
-                        size_max=20,
+                        range_color=[0, 100],
+                        size_max=22,
                         zoom=12,
                         mapbox_style="carto-positron",
                         hover_name="station_name" if "station_name" in map_df.columns else "station_id",
-                        hover_data={"num_bikes_available": True, "num_docks_available": True,
-                                    "lat": False, "lon": False},
-                        labels={"num_bikes_available": "Vélos dispo"},
+                        hover_data={
+                            "num_bikes_available":  True,
+                            "num_docks_available":  True,
+                            "pct_rempli":           True,
+                            "lat": False, "lon": False,
+                        },
+                        labels={
+                            "num_bikes_available": "Vélos dispo",
+                            "num_docks_available": "Places libres",
+                            "pct_rempli": "Remplissage (%)",
+                        },
                         height=500,
                     )
-                    fig_map.update_layout(margin=dict(l=0, r=0, t=0, b=0))
+                    fig_map.update_layout(
+                        coloraxis_colorbar=dict(title="Rempli (%)", thickness=12),
+                        margin=dict(l=0, r=0, t=0, b=0),
+                    )
                     st.plotly_chart(fig_map, use_container_width=True)
                     st.caption(
-                        f"**Figure 2.1.** Disponibilité en temps réel — {system_sel} "
-                        f"({datetime.now(timezone.utc).strftime('%H:%M UTC')}). "
-                        "Vert = stations bien remplies, rouge = stations vides ou quasi-vides. "
-                        "Taille des points proportionnelle au nombre de vélos disponibles."
+                        f"**Figure 2.2.** Carte de disponibilité en temps réel — {system_sel}. "
+                        "La couleur encode le taux de remplissage (0 % = vide, 100 % = plein). "
+                        "La taille des points est proportionnelle au nombre de vélos disponibles."
                     )
                 else:
                     st.info(
-                        "Coordonnées GPS non chargées pour ce réseau. "
+                        "Coordonnées GPS non disponibles pour ce réseau. "
                         "Vérifiez que station_information.json est accessible."
                     )
 else:
@@ -276,17 +373,14 @@ else:
 st.divider()
 section(3, "Pseudo-Flux Horaires — Reconstruction depuis les Snapshots")
 
-st.markdown(r"""
-Les **pseudo-flux** sont estimés à partir de la variation de disponibilité entre snapshots consécutifs :
-
-$$\hat{d}_i(t) = \max(0,\; b_i(t-1) - b_i(t)), \quad \hat{a}_i(t) = \max(0,\; b_i(t) - b_i(t-1))$$
-
-où $\hat{d}$ est le nombre de **départs estimés** et $\hat{a}$ le nombre d'**arrivées estimées**
-à la station $i$ entre les snapshots $t-1$ et $t$.
-
-Ces estimations sont des **minorants** : si deux usagers partent et trois reviennent simultanément
-entre deux snapshots, seul le flux net (+1) est observé.
-""")
+st.markdown(
+    "Les **pseudo-flux** sont estimés à partir de la variation de disponibilité entre "
+    "snapshots consécutifs. Pour la station _i_ entre les instants _t-1_ et _t_ :"
+    "<br>&emsp;**Départs estimés** : max(0, b<sub>i</sub>(t-1) &minus; b<sub>i</sub>(t))"
+    "<br>&emsp;**Arrivées estimées** : max(0, b<sub>i</sub>(t) &minus; b<sub>i</sub>(t-1))"
+    "<br>Ces estimations sont des **minorants** : les flux simultanés s'annulent partiellement.",
+    unsafe_allow_html=True,
+)
 
 if _has_data and system_sel in collected_ids:
     with st.spinner(f"Chargement des flux pour {system_sel}..."):
@@ -295,99 +389,170 @@ if _has_data and system_sel in collected_ids:
     if not flows_df.empty:
         flows_df["hour"] = pd.to_datetime(flows_df["fetched_at"]).dt.hour
 
-        # Agrégation horaire
         hourly_flows = flows_df.groupby("hour").agg(
             departures=("departures_est", "sum"),
             arrivals=("arrivals_est", "sum"),
             net_flow=("net_flow_est", "mean"),
             n_stations=("station_id", "nunique"),
         ).reset_index()
+        hourly_flows["dep_per_station"] = (
+            hourly_flows["departures"] / hourly_flows["n_stations"].replace(0, np.nan)
+        ).round(2)
+
+        peak_dep_h = int(hourly_flows["hour"].iloc[int(hourly_flows["departures"].to_numpy().argmax())])
+        peak_arr_h = int(hourly_flows["hour"].iloc[int(hourly_flows["arrivals"].to_numpy().argmax())])
+        total_dep  = int(hourly_flows["departures"].sum())
+        total_arr  = int(hourly_flows["arrivals"].sum())
+        imbalance  = abs(total_dep - total_arr) / max(total_dep + total_arr, 1) * 100
+
+        s1, s2, s3, s4 = st.columns(4)
+        s1.metric("Heure de pointe départs", f"{peak_dep_h:02d}h")
+        s2.metric("Heure de pointe arrivées", f"{peak_arr_h:02d}h")
+        s3.metric("Total départs estimés", f"{total_dep:,}")
+        s4.metric("Déséquilibre global", f"{imbalance:.1f} %",
+                  help="(|D−A| / (D+A)) × 100 — 0 % = réseau parfaitement équilibré")
 
         fig_flows = go.Figure()
         fig_flows.add_trace(go.Bar(
             x=hourly_flows["hour"], y=hourly_flows["departures"],
             name="Départs estimés",
-            marker_color="#C0392B", opacity=0.8,
+            marker_color="#C0392B", opacity=0.85,
         ))
         fig_flows.add_trace(go.Bar(
             x=hourly_flows["hour"], y=hourly_flows["arrivals"],
             name="Arrivées estimées",
-            marker_color="#1E8449", opacity=0.8,
+            marker_color="#1E8449", opacity=0.85,
         ))
         fig_flows.add_trace(go.Scatter(
-            x=hourly_flows["hour"], y=hourly_flows["net_flow"],
-            name="Flux net moyen (par station)",
+            x=hourly_flows["hour"], y=hourly_flows["dep_per_station"],
+            name="Départs / station",
             mode="lines+markers",
             yaxis="y2",
             line=dict(color="#D96B27", width=2.5),
+            marker=dict(size=6),
         ))
         fig_flows.update_layout(
             plot_bgcolor="white",
             barmode="group",
-            xaxis=dict(title="Heure", dtick=2),
-            yaxis=dict(title="Pseudo-flux cumulés (stations)"),
-            yaxis2=dict(title="Flux net moyen", overlaying="y", side="right",
-                        showgrid=False),
-            legend=dict(x=0.02, y=0.98),
-            height=400,
-            margin=dict(l=10, r=10, t=10, b=10),
+            xaxis=dict(title="Heure de la journée", dtick=2, tickmode="linear"),
+            yaxis=dict(title="Pseudo-flux cumulés"),
+            yaxis2=dict(
+                title="Départs / station",
+                overlaying="y", side="right",
+                showgrid=False,
+                tickformat=".2f",
+            ),
+            legend=dict(x=0.01, y=0.99, bgcolor="rgba(255,255,255,0.8)"),
+            height=420,
+            margin=dict(l=10, r=60, t=10, b=10),
         )
         st.plotly_chart(fig_flows, use_container_width=True)
         st.caption(
-            f"**Figure 3.1.** Pseudo-flux horaires pour le réseau **{system_sel}** "
+            f"**Figure 3.1.** Pseudo-flux horaires agrégés — {system_sel} "
             f"({flows_df['fetched_at'].min()} → {flows_df['fetched_at'].max()}). "
             "Barres rouges = départs estimés, vertes = arrivées estimées. "
-            "Ligne orange = flux net moyen par station (axe droit). "
-            "Ces profils sont directement comparables à ceux de Montpellier (données TAM)."
+            "Ligne orange = départs normalisés par station (axe droit)."
         )
 
-        # Top stations les plus actives
+        # Top stations — graphique à barres avec couleur déséquilibre
         top_stations = (
             flows_df.groupby("station_id")
             .agg(
                 total_dep=("departures_est", "sum"),
                 total_arr=("arrivals_est", "sum"),
-                total_activity=("departures_est", lambda x: x.sum() + flows_df.loc[x.index, "arrivals_est"].sum()),
             )
+            .assign(imbalance=lambda d: d["total_dep"] - d["total_arr"])
             .sort_values("total_dep", ascending=False)
             .head(15)
             .reset_index()
         )
 
         if not top_stations.empty:
-            # Enrichir avec les noms de stations si dispo
-            info_df = collector._info_cache.get(system_sel, pd.DataFrame())
-            if not info_df.empty:
+            info_cached = collector._info_cache.get(system_sel, pd.DataFrame())
+            if not info_cached.empty:
                 top_stations = top_stations.merge(
-                    info_df[["station_id", "name"]], on="station_id", how="left"
+                    info_cached[["station_id", "name"]], on="station_id", how="left"
                 )
                 top_stations["label"] = top_stations["name"].fillna(top_stations["station_id"])
             else:
                 top_stations["label"] = top_stations["station_id"]
 
             top_stations = top_stations.sort_values("total_dep", ascending=True)
+
+            # Couleur = déséquilibre (rouge = émetteur net, vert = attracteur net)
+            top_stations["color"] = top_stations["imbalance"].apply(
+                lambda v: "#C0392B" if v > 0 else "#1E8449"
+            )
+
             fig_top = go.Figure()
             fig_top.add_trace(go.Bar(
                 y=top_stations["label"], x=top_stations["total_dep"],
-                orientation="h", name="Départs", marker_color="#C0392B", opacity=0.8,
+                orientation="h", name="Départs",
+                marker_color="#C0392B", opacity=0.85,
             ))
             fig_top.add_trace(go.Bar(
                 y=top_stations["label"], x=top_stations["total_arr"],
-                orientation="h", name="Arrivées", marker_color="#1E8449", opacity=0.8,
+                orientation="h", name="Arrivées",
+                marker_color="#1E8449", opacity=0.85,
+            ))
+            fig_top.add_trace(go.Scatter(
+                y=top_stations["label"], x=top_stations["imbalance"],
+                orientation="h", name="Déséquilibre (D−A)",
+                mode="markers",
+                marker=dict(
+                    color=top_stations["imbalance"],
+                    colorscale="RdYlGn_r",
+                    size=10,
+                    symbol="diamond",
+                    line=dict(width=1, color="white"),
+                ),
+                xaxis="x2",
             ))
             fig_top.update_layout(
                 plot_bgcolor="white",
-                barmode="group",
-                xaxis_title="Pseudo-flux cumulés",
-                height=max(350, len(top_stations) * 25),
-                margin=dict(l=10, r=10, t=10, b=10),
-                legend=dict(x=0.65, y=0.02),
+                barmode="overlay",
+                xaxis=dict(title="Pseudo-flux cumulés", domain=[0, 0.75]),
+                xaxis2=dict(
+                    title="Déséquilibre net (D−A)",
+                    overlaying="x", side="top",
+                    domain=[0, 0.75],
+                    showgrid=False,
+                ),
+                height=max(380, len(top_stations) * 28),
+                margin=dict(l=10, r=10, t=40, b=10),
+                legend=dict(x=0.77, y=0.98),
             )
             st.plotly_chart(fig_top, use_container_width=True)
             st.caption(
-                f"**Figure 3.2.** Top 15 stations par volume d'activité estimé ({system_sel}). "
-                "Les stations à fort déséquilibre (barres rouge ≫ verte ou inverse) "
-                "sont les candidates prioritaires à la redistribution."
+                f"**Figure 3.2.** Top 15 stations les plus actives ({system_sel}). "
+                "Barres : départs (rouge) vs arrivées (vert). "
+                "Losange : déséquilibre net D−A (positif = émetteur net, négatif = attracteur net). "
+                "Les stations fortement déséquilibrées sont candidates prioritaires à la redistribution."
+            )
+
+        # Tableau synthétique par heure
+        with st.expander("Tableau détaillé heure par heure"):
+            tbl = hourly_flows.rename(columns={
+                "hour":            "Heure",
+                "departures":      "Départs",
+                "arrivals":        "Arrivées",
+                "net_flow":        "Flux net moy.",
+                "n_stations":      "Stations actives",
+                "dep_per_station": "Départs / station",
+            })
+            st.dataframe(
+                tbl,
+                use_container_width=True,
+                hide_index=True,
+                column_config={
+                    "Heure":           st.column_config.NumberColumn(format="%02dh"),
+                    "Départs":         st.column_config.ProgressColumn(
+                                           format="%d", min_value=0, max_value=int(tbl["Départs"].max())),
+                    "Arrivées":        st.column_config.ProgressColumn(
+                                           format="%d", min_value=0, max_value=int(tbl["Départs"].max())),
+                    "Flux net moy.":   st.column_config.NumberColumn(format="%.2f"),
+                    "Départs / station": st.column_config.NumberColumn(format="%.2f"),
+                },
             )
     else:
         st.info(f"Aucun flux calculable pour {system_sel} (moins de 2 snapshots).")
@@ -418,7 +583,6 @@ if len(multi_sel) >= 2:
             arrivals=("arrivals_est", "sum"),
         ).reset_index()
 
-        # Normaliser par nombre de stations pour comparaison équitable
         sys_sizes = {
             sid: max(combined[combined["system_id"] == sid]["station_id"].nunique(), 1)
             for sid in multi_sel
@@ -426,31 +590,90 @@ if len(multi_sel) >= 2:
         hourly_by_sys["dep_per_station"] = hourly_by_sys.apply(
             lambda r: r["departures"] / sys_sizes.get(r["system_id"], 1), axis=1
         )
+        hourly_by_sys["arr_per_station"] = hourly_by_sys.apply(
+            lambda r: r["arrivals"] / sys_sizes.get(r["system_id"], 1), axis=1
+        )
 
+        # Tableau de synthèse par réseau
+        summary_rows = []
+        for sid in multi_sel:
+            sub = hourly_by_sys[hourly_by_sys["system_id"] == sid]
+            if sub.empty:
+                continue
+            peak_h   = int(sub.loc[sub["dep_per_station"].idxmax(), "hour"])
+            max_dep  = float(sub["dep_per_station"].max())
+            mean_dep = float(sub["dep_per_station"].mean())
+            total_d  = int(sub["departures"].sum())
+            total_a  = int(sub["arrivals"].sum())
+            disbal   = abs(total_d - total_a) / max(total_d + total_a, 1) * 100
+            summary_rows.append({
+                "Réseau":               sid,
+                "Stations":             sys_sizes[sid],
+                "Heure de pointe":      f"{peak_h:02d}h",
+                "Max départs/station":  round(max_dep, 2),
+                "Moy départs/station":  round(mean_dep, 2),
+                "Total départs":        total_d,
+                "Déséquilibre (%)":     round(disbal, 1),
+            })
+
+        if summary_rows:
+            df_summary = pd.DataFrame(summary_rows)
+            st.dataframe(
+                df_summary,
+                use_container_width=True,
+                hide_index=True,
+                column_config={
+                    "Total départs": st.column_config.NumberColumn(format="%d"),
+                    "Déséquilibre (%)": st.column_config.NumberColumn(format="%.1f %%"),
+                    "Max départs/station": st.column_config.NumberColumn(format="%.2f"),
+                    "Moy départs/station": st.column_config.NumberColumn(format="%.2f"),
+                },
+            )
+            st.caption("**Tableau 4.1.** Statistiques clés par réseau. Déséquilibre = |D−A|/(D+A) × 100.")
+
+        # Graphique lignes — départs normalisés
         fig_comp = px.line(
             hourly_by_sys,
             x="hour", y="dep_per_station",
             color="system_id",
             markers=True,
             labels={
-                "hour": "Heure",
-                "dep_per_station": "Départs estimés / station",
-                "system_id": "Réseau",
+                "hour":             "Heure",
+                "dep_per_station":  "Départs estimés / station",
+                "system_id":        "Réseau",
             },
-            height=420,
+            height=400,
         )
         fig_comp.update_layout(
             plot_bgcolor="white",
-            xaxis=dict(dtick=2, title="Heure de la journée"),
-            legend=dict(x=0.02, y=0.98),
+            xaxis=dict(dtick=2, title="Heure de la journée", tickmode="linear"),
+            legend=dict(x=0.01, y=0.99, bgcolor="rgba(255,255,255,0.8)"),
             margin=dict(l=10, r=10, t=10, b=10),
         )
         st.plotly_chart(fig_comp, use_container_width=True)
         st.caption(
-            "**Figure 4.1.** Profils horaires de départs estimés normalisés par station, "
-            "pour chaque réseau sélectionné. La normalisation permet de comparer des réseaux "
-            "de tailles très différentes. Des pics à des heures différentes indiquent des "
-            "comportements de mobilité distincts selon les villes."
+            "**Figure 4.1.** Profils horaires de départs estimés normalisés par station. "
+            "La normalisation permet de comparer des réseaux de tailles très différentes. "
+            "Des pics à des heures distinctes reflètent des rythmes de mobilité urbaine différents."
+        )
+
+        # Heatmap heure × réseau
+        pivot = hourly_by_sys.pivot(index="system_id", columns="hour", values="dep_per_station").fillna(0)
+        fig_heat = px.imshow(
+            pivot,
+            color_continuous_scale="Blues",
+            labels={"x": "Heure", "y": "Réseau", "color": "Départs / station"},
+            aspect="auto",
+            height=max(250, len(pivot) * 38),
+        )
+        fig_heat.update_layout(
+            margin=dict(l=10, r=10, t=10, b=10),
+            coloraxis_colorbar=dict(title="Dép./st.", thickness=12),
+        )
+        st.plotly_chart(fig_heat, use_container_width=True)
+        st.caption(
+            "**Figure 4.2.** Carte de chaleur heure × réseau (départs / station). "
+            "Les colonnes les plus sombres identifient les heures de pointe systémiques."
         )
     else:
         st.info("Données insuffisantes pour la comparaison (moins de 2 réseaux avec des flux).")
@@ -462,72 +685,9 @@ elif not _has_data:
 else:
     st.info("Sélectionnez au moins 2 réseaux dans la barre latérale pour activer la comparaison.")
 
-# ── Section 5 — Guide de collecte ────────────────────────────────────────────
 st.divider()
-section(5, "Guide de Collecte — Mise en Place et Planification")
-
-st.markdown("""
-### Architecture de collecte
-
-```
-scripts/
-├── test_status_feeds.py   ← Étape 1 : diagnostiquer les réseaux compatibles
-└── collect_status.py      ← Étape 2 : lancer la collecte continue
-
-data/status_snapshots/
-├── feed_diagnostic.csv    ← Résultats du diagnostic
-├── Paris/
-│   ├── station_info.parquet    ← Infos statiques (nom, lat, lon, capacité)
-│   ├── 2026-03-01.parquet      ← Snapshots du 01/03/2026
-│   └── 2026-03-02.parquet      ← Snapshots du 02/03/2026
-├── lyon/
-│   └── ...
-└── ...
-```
-
-### Schéma d'un snapshot (Parquet)
-
-| Colonne | Type | Description |
-|---|---|---|
-| `fetched_at` | datetime (UTC) | Horodatage du snapshot |
-| `system_id` | str | Identifiant du réseau |
-| `station_id` | str | Identifiant de la station |
-| `num_bikes_available` | int | Vélos disponibles |
-| `num_docks_available` | int | Places libres |
-| `is_renting` | bool | Station en service (location) |
-| `is_returning` | bool | Station en service (retour) |
-
-### Commandes recommandées
-""")
-
-col_cmd1, col_cmd2 = st.columns(2)
-
-with col_cmd1:
-    st.code(
-        "# 1. Diagnostic des feeds compatibles\n"
-        "python scripts/test_status_feeds.py\n\n"
-        "# 2. Test rapide (3 snapshots)\n"
-        "python scripts/collect_status.py \\\n"
-        "  --systems Paris lyon toulouse \\\n"
-        "  --interval 30 --max-iter 3",
-        language="bash",
-    )
-
-with col_cmd2:
-    st.code(
-        "# 3. Collecte journalière (8h, toutes les 60s)\n"
-        "python scripts/collect_status.py \\\n"
-        "  --interval 60 --duration 28800\n\n"
-        "# 4. Collecte longue en arrière-plan (Windows)\n"
-        "start /B python scripts/collect_status.py \\\n"
-        "  --interval 90 > logs/collect.log 2>&1",
-        language="bash",
-    )
-
 st.caption(
-    "**Tableau 5.1.** Pour obtenir des profils de flux comparables à Montpellier (TAM), "
-    "une collecte minimale de **48 heures** à un intervalle de **60 secondes** est recommandée, "
-    "couvrant au moins 2 jours ouvrés complets. "
-    "L'inférence des flux est d'autant plus précise que l'intervalle est court. "
-    "— **R. Fossé & G. Pallares · 2025–2026**"
+    "**R. Fossé & G. Pallares · 2025–2026** — "
+    "Données : GBFS station_status, collecte via `scripts/collect_status.py`. "
+    "Pseudo-flux inférés des variations de disponibilité entre snapshots consécutifs."
 )
