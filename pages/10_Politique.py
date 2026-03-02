@@ -1004,14 +1004,20 @@ if _city_list:
         # Colonne 2 : réseau VLS
         with c2:
             st.markdown("**Réseau VLS**")
-            _ann_vls = _row.get("annee_vls", "—")
-            _age_net = int(2020 - float(_ann_vls)) if pd.notna(_ann_vls) and str(_ann_vls) != "—" else "—"
+            _ann_vls  = _row.get("annee_vls", "—")
+            _ann_vls  = "—" if pd.isna(_ann_vls) else str(_ann_vls)
+            try:
+                _age_net = str(int(2020 - float(_ann_vls))) if _ann_vls != "—" else "—"
+            except (ValueError, TypeError):
+                _age_net = "—"
+            _cap_v   = _row.get("capacity", float("nan"))
+            _s_cap   = f"{_cap_v:.0f}" if pd.notna(_cap_v) else "—"
             st.markdown(
                 f"<div style='font-size:0.85rem; line-height:1.8;'>"
                 f"<b>Création du réseau :</b> {_ann_vls}<br>"
                 f"<b>Âge en 2020 :</b> {_age_net} ans<br>"
                 f"<b>N° stations :</b> {int(_row.get('n_stations', 0))}<br>"
-                f"<b>Capacité moyenne :</b> {_row.get('capacity', 0.0):.0f} points<br>"
+                f"<b>Capacité moyenne :</b> {_s_cap} points<br>"
                 f"</div>",
                 unsafe_allow_html=True,
             )
@@ -1025,14 +1031,20 @@ if _city_list:
             _i_val    = _row.get("I_infra", float("nan"))
             _m_val    = _row.get("M_multi", float("nan"))
             _t_val    = _row.get("T_topo", float("nan"))
+            _s_imd  = f"{_imd_val:.1f}" if pd.notna(_imd_val) else "—"
+            _s_ies  = f"{_ies_val:.3f}" if pd.notna(_ies_val) else "—"
+            _s_sec  = f"{_s_val:.3f}"   if pd.notna(_s_val)   else "—"
+            _s_inf  = f"{_i_val:.3f}"   if pd.notna(_i_val)   else "—"
+            _s_mul  = f"{_m_val:.3f}"   if pd.notna(_m_val)   else "—"
+            _s_top  = f"{_t_val:.3f}"   if pd.notna(_t_val)   else "—"
             st.markdown(
                 f"<div style='font-size:0.85rem; line-height:1.8;'>"
-                f"<b>IMD (/100) :</b> {_imd_val:.1f}<br>"
-                f"<b>IES :</b> {_ies_val:.3f}<br>"
-                f"<b>S_sécurité :</b> {_s_val:.3f}<br>"
-                f"<b>I_infra :</b> {_i_val:.3f}<br>"
-                f"<b>M_multi :</b> {_m_val:.3f}<br>"
-                f"<b>T_topo :</b> {_t_val:.3f}"
+                f"<b>IMD (/100) :</b> {_s_imd}<br>"
+                f"<b>IES :</b> {_s_ies}<br>"
+                f"<b>S_sécurité :</b> {_s_sec}<br>"
+                f"<b>I_infra :</b> {_s_inf}<br>"
+                f"<b>M_multi :</b> {_s_mul}<br>"
+                f"<b>T_topo :</b> {_s_top}"
                 f"</div>",
                 unsafe_allow_html=True,
             )
@@ -1046,14 +1058,21 @@ if _city_list:
             _gin_v   = _row.get("gini_revenu", float("nan"))
             _voit_v  = _row.get("part_menages_voit0", float("nan"))
             _vtrav_v = _row.get("part_velo_travail", float("nan"))
+            # Pré-formatage pour éviter les f-strings avec format spec conditionnel
+            _s_fub   = f"{_fub_v:.2f}"   if pd.notna(_fub_v)   else "—"
+            _s_emp   = f"{_emp_v:.1f}"   if pd.notna(_emp_v)   else "—"
+            _s_rev   = f"{_rev_v:,.0f}"  if pd.notna(_rev_v)   else "—"
+            _s_gin   = f"{_gin_v:.3f}"   if pd.notna(_gin_v)   else "—"
+            _s_voit  = f"{_voit_v:.1f}"  if pd.notna(_voit_v)  else "—"
+            _s_vtrav = f"{_vtrav_v:.2f}" if pd.notna(_vtrav_v) else "—"
             st.markdown(
                 f"<div style='font-size:0.85rem; line-height:1.8;'>"
-                f"<b>FUB score (/6) :</b> {_fub_v:.2f if pd.notna(_fub_v) else '—'}<br>"
-                f"<b>EMP part vélo :</b> {_emp_v:.1f if pd.notna(_emp_v) else '—'} %<br>"
-                f"<b>Revenu médian/UC :</b> {_rev_v:,.0f if pd.notna(_rev_v) else '—'} €<br>"
-                f"<b>Gini revenu :</b> {_gin_v:.3f if pd.notna(_gin_v) else '—'}<br>"
-                f"<b>Ménages sans voiture :</b> {_voit_v:.1f if pd.notna(_voit_v) else '—'} %<br>"
-                f"<b>Vélo domicile-travail :</b> {_vtrav_v:.2f if pd.notna(_vtrav_v) else '—'} %"
+                f"<b>FUB score (/6) :</b> {_s_fub}<br>"
+                f"<b>EMP part vélo :</b> {_s_emp} %<br>"
+                f"<b>Revenu médian/UC :</b> {_s_rev} €<br>"
+                f"<b>Gini revenu :</b> {_s_gin}<br>"
+                f"<b>Ménages sans voiture :</b> {_s_voit} %<br>"
+                f"<b>Vélo domicile-travail :</b> {_s_vtrav} %"
                 f"</div>",
                 unsafe_allow_html=True,
             )
