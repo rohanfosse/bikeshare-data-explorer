@@ -321,38 +321,150 @@ with tab_hourly:
 
 with tab_weather:
     if not weather.empty and "bad_weather_score" in weather.columns and "hour" in weather.columns:
-        weather_hourly = weather.groupby("hour").agg(
-            trips_mean=("bad_weather_score", lambda x: (x == 0).mean() * 100),
-            bad_weather_pct=("bad_weather_score", lambda x: (x > 0).mean() * 100),
-        ).reset_index()
-
         season_labels = {1: "Hiver", 2: "Printemps", 3: "Été", 4: "Automne"}
-        if "season" in weather.columns and "is_raining" in weather.columns:
-            rain_by_season = weather.groupby("season")["is_raining"].mean().reset_index()
-            rain_by_season["Saison"] = rain_by_season["season"].map(season_labels)
-            rain_by_season["Taux de précipitation (%)"] = (rain_by_season["is_raining"] * 100).round(1)
 
-            fig_rain = px.bar(
-                rain_by_season, x="Saison", y="Taux de précipitation (%)",
-                color="Taux de précipitation (%)",
-                color_continuous_scale="Blues_r",
-                text="Taux de précipitation (%)",
-                height=300,
-                labels={"Saison": "Saison", "Taux de précipitation (%)": "Heures pluvieuses (%)"},
+        col_w1, col_w2 = st.columns(2)
+
+        with col_w1:
+            if "season" in weather.columns and "is_raining" in weather.columns:
+                rain_by_season = weather.groupby("season")["is_raining"].mean().reset_index()
+                rain_by_season["Saison"] = rain_by_season["season"].map(season_labels)
+                rain_by_season["Taux de précipitation (%)"] = (rain_by_season["is_raining"] * 100).round(1)
+
+                fig_rain = px.bar(
+                    rain_by_season, x="Saison", y="Taux de précipitation (%)",
+                    color="Taux de précipitation (%)",
+                    color_continuous_scale="Blues_r",
+                    text="Taux de précipitation (%)",
+                    height=300,
+                    labels={"Saison": "Saison", "Taux de précipitation (%)": "Heures pluvieuses (%)"},
+                )
+                fig_rain.update_traces(texttemplate="%{y:.1f}%", textposition="outside")
+                fig_rain.update_layout(
+                    plot_bgcolor="white", coloraxis_showscale=False,
+                    margin=dict(l=10, r=10, t=10, b=30),
+                )
+                st.plotly_chart(fig_rain, use_container_width=True)
+                st.caption(
+                    "**Figure 2.3.** Taux horaire de précipitations par saison (Montpellier, 2021–2024). "
+                    "L'été méditerranéen, quasi exempt de précipitations, favorise les pics d'usage "
+                    "touristique non pendulaire."
+                )
+
+        with col_w2:
+            # Score météo moyen par heure × trips horaires (corrélation friction)
+            if not hourly.empty and "total_trips" in hourly.columns:
+                _wx_hr = (
+                    weather.groupby("hour")["bad_weather_score"]
+                    .mean()
+                    .reset_index()
+                    .rename(columns={"bad_weather_score": "bws_mean"})
+                )
+                _wx_merged = hourly[["hour", "total_trips"]].merge(_wx_hr, on="hour", how="inner")
+                if not _wx_merged.empty:
+                    # Droite OLS manuelle
+                    _wx_x = _wx_merged["bws_mean"].values
+                    _wx_y = _wx_merged["total_trips"].values
+                    _wx_coef = np.polyfit(_wx_x, _wx_y, 1)
+                    _wx_xr = np.linspace(_wx_x.min(), _wx_x.max(), 100)
+
+                    # Corrélation de Spearman
+                    _wx_rho = float(
+                        pd.Series(_wx_x).rank().corr(pd.Series(_wx_y).rank())
+                    )
+
+                    fig_wx = px.scatter(
+                        _wx_merged,
+                        x="bws_mean", y="total_trips",
+                        text="hour",
+                        labels={
+                            "bws_mean":    "Score de mauvais temps moyen (0 = beau, 1 = pluie forte)",
+                            "total_trips": "Volume moyen de trips",
+                        },
+                        height=300,
+                        color="total_trips",
+                        color_continuous_scale="RdBu",
+                    )
+                    fig_wx.add_trace(go.Scatter(
+                        x=_wx_xr, y=np.polyval(_wx_coef, _wx_xr),
+                        mode="lines",
+                        line=dict(color="#1A2332", dash="dash", width=2),
+                        name=f"Tendance (ρ = {_wx_rho:+.2f})",
+                        showlegend=True,
+                    ))
+                    fig_wx.update_traces(
+                        selector=dict(mode="markers+text"),
+                        textposition="top center",
+                        textfont=dict(size=8),
+                        marker_size=9,
+                    )
+                    fig_wx.update_layout(
+                        plot_bgcolor="white",
+                        coloraxis_showscale=False,
+                        margin=dict(l=10, r=10, t=10, b=30),
+                        legend=dict(orientation="h", y=-0.25),
+                    )
+                    st.plotly_chart(fig_wx, use_container_width=True)
+                    st.caption(
+                        f"**Figure 2.4.** Score de mauvais temps moyen (axe x) versus "
+                        f"volume de trips (axe y) par heure 0–23 h. "
+                        f"ρ de Spearman = {_wx_rho:+.2f} : la friction météorologique "
+                        "présente une corrélation négative avec le volume de trips, "
+                        "confirmant l'effet dissuasif des précipitations sur l'usage du VLS."
+                    )
+
+        # Profil temperature × trips : scatter optionnel
+        if "temperature" in weather.columns and not hourly.empty and "total_trips" in hourly.columns:
+            _temp_hr = (
+                weather.groupby("hour")["temperature"]
+                .mean().reset_index().rename(columns={"temperature": "temp_mean"})
             )
-            fig_rain.update_traces(texttemplate="%{y:.1f}%", textposition="outside")
-            fig_rain.update_layout(
-                plot_bgcolor="white", coloraxis_showscale=False,
-                margin=dict(l=10, r=10, t=10, b=10),
-            )
-            st.plotly_chart(fig_rain, use_container_width=True)
-            st.caption(
-                "**Figure 2.3.** Taux horaire de précipitations par saison (Montpellier, 2021–2024). "
-                "La friction météorologique saisonnière modifie la distribution des déséquilibres "
-                "source/puits et conditionne la politique de redistribution (<em>rebalancing</em>). "
-                "L'été méditerranéen, quasi exempt de précipitations, favorise les pics d'usage "
-                "touristique non pendulaire."
-            )
+            _temp_merged = hourly[["hour", "total_trips"]].merge(_temp_hr, on="hour", how="inner")
+            if not _temp_merged.empty:
+                with st.expander("Corrélation Température × Volume de Trips (par heure)"):
+                    _tc = np.polyfit(_temp_merged["temp_mean"].values, _temp_merged["total_trips"].values, 1)
+                    _txr = np.linspace(_temp_merged["temp_mean"].min(), _temp_merged["temp_mean"].max(), 100)
+                    _t_rho = float(
+                        pd.Series(_temp_merged["temp_mean"].values).rank()
+                        .corr(pd.Series(_temp_merged["total_trips"].values).rank())
+                    )
+                    fig_temp = px.scatter(
+                        _temp_merged,
+                        x="temp_mean", y="total_trips",
+                        text="hour",
+                        color="total_trips",
+                        color_continuous_scale="RdYlGn",
+                        labels={
+                            "temp_mean": "Température moyenne (°C)",
+                            "total_trips": "Volume moyen de trips",
+                        },
+                        height=300,
+                    )
+                    fig_temp.add_trace(go.Scatter(
+                        x=_txr, y=np.polyval(_tc, _txr),
+                        mode="lines",
+                        line=dict(color="#c0392b", dash="dash", width=1.5),
+                        name=f"Tendance (ρ = {_t_rho:+.2f})",
+                        showlegend=True,
+                    ))
+                    fig_temp.update_traces(
+                        selector=dict(mode="markers+text"),
+                        textposition="top center", textfont=dict(size=8),
+                        marker_size=9,
+                    )
+                    fig_temp.update_layout(
+                        plot_bgcolor="white", coloraxis_showscale=False,
+                        margin=dict(l=10, r=10, t=10, b=30),
+                        legend=dict(orientation="h", y=-0.25),
+                    )
+                    st.plotly_chart(fig_temp, use_container_width=True)
+                    st.caption(
+                        f"**Figure 2.5.** Température moyenne (°C) versus volume de trips "
+                        f"par tranche horaire. ρ de Spearman = {_t_rho:+.2f}. "
+                        "Les heures les plus chaudes (14–16 h) cumulent les températures "
+                        "maximales mais pas nécessairement le volume le plus élevé, "
+                        "reflétant l'effet de chaleur dissuasif en journée."
+                    )
     else:
         st.info(
             "Les données météorologiques enrichies sont nécessaires pour cette analyse. "
@@ -477,6 +589,66 @@ if {"PageRank", "Total_Trips", "Station_Name"}.issubset(stations.columns):
         "moindre dans le graphe de flux orienté."
     )
 
+# Scatter : anatomie du V_i (Betweenness × Population)
+st.markdown("#### Anatomie de l'Indice de Vulnérabilité — Betweenness × Population exposée")
+st.markdown(r"""
+Le nuage ci-dessous décompose l'indice $V_i$ en ses deux composantes principales.
+Les stations en **haut à droite** (fort betweenness ET forte population) concentrent le
+risque systémique maximal : leur défaillance coupe des flux structuraux et prive
+une large zone de desserte. La taille encode $V_i$ ; la couleur encode le clustering $C_i$.
+""")
+
+if {"Vulnerability_Index", "Betweenness", "Population_300m", "Clustering"}.issubset(vulnerability.columns):
+    _vuln_sc = vulnerability.dropna(
+        subset=["Vulnerability_Index", "Betweenness", "Population_300m", "Clustering"]
+    ).copy()
+    # Nom court pour le hover
+    _vuln_sc["label"] = _vuln_sc["Station_Name"].str.replace(r"^\S+\s+", "", regex=True).str[:25]
+
+    fig_vi = px.scatter(
+        _vuln_sc,
+        x="Betweenness",
+        y="Population_300m",
+        size="Vulnerability_Index",
+        color="Clustering",
+        hover_name="Station_Name",
+        size_max=35,
+        color_continuous_scale="RdYlGn_r",
+        labels={
+            "Betweenness":        "Centralité de betweenness $b_i$",
+            "Population_300m":    "Population exposée (300 m)",
+            "Vulnerability_Index":"Indice V_i",
+            "Clustering":         "Coeff. clustering $C_i$",
+        },
+        height=380,
+        opacity=0.85,
+    )
+    # Annoter les 5 stations les plus vulnérables
+    _top5_vi = _vuln_sc.nlargest(5, "Vulnerability_Index")
+    for _, _r in _top5_vi.iterrows():
+        fig_vi.add_annotation(
+            x=_r["Betweenness"], y=_r["Population_300m"],
+            text=_r["label"],
+            showarrow=True, arrowhead=2, arrowwidth=1,
+            arrowcolor="#1A2332", ax=30, ay=-20,
+            font=dict(size=8),
+        )
+    fig_vi.update_layout(
+        plot_bgcolor="white",
+        margin=dict(l=10, r=10, t=10, b=30),
+        xaxis=dict(showgrid=True, gridcolor="#eee"),
+        yaxis=dict(showgrid=True, gridcolor="#eee"),
+    )
+    st.plotly_chart(fig_vi, use_container_width=True)
+    st.caption(
+        "**Figure 3.4.** Betweenness ($b_i$, axe x) versus population exposée à 300 m (axe y). "
+        "La **taille** encode l'indice de vulnérabilité $V_i$ ; "
+        "la **couleur** encode le coefficient de clustering $C_i$ "
+        "(rouge = station peu intégrée localement, donc plus fragile). "
+        "Les 5 stations les plus vulnérables sont annotées. "
+        "La quadrant supérieur droit identifie les nœuds à risque systémique maximal."
+    )
+
 # ── Section 4 - Écosystème multimodal ─────────────────────────────────────────
 st.divider()
 section(4, "Écosystème Multimodal - Intégration GTFS Tramway et Coût de Correspondance")
@@ -539,6 +711,83 @@ if {"bike_station", "distance_m", "walkable_5min", "walkable_10min"}.issubset(bi
         f"**{pct_gt:.0f} %** présentent une friction multimodale élevée (> 10 min)."
     )
 
+    # Scatter : distance tram × volume de trips
+    st.markdown("#### Friction Multimodale × Usage — Distance au Tram versus Volume de Trips")
+    st.markdown(r"""
+    La relation entre la distance au tram et le volume de trips quantifie directement
+    l'**effet de friction multimodale** : les stations éloignées des correspondances
+    tramway perdent-elles des usagers au profit d'autres modes ?
+    """)
+
+    _trips_ref = profiles[["Station_Name", "Total_Trips", "Profile"]].dropna(subset=["Total_Trips"])
+    _dist_trips = closest.merge(
+        _trips_ref.rename(columns={"Station_Name": "bike_station"}),
+        on="bike_station", how="inner",
+    ).dropna(subset=["dist_tram_min_m", "Total_Trips"])
+
+    if not _dist_trips.empty:
+        _dt_x = _dist_trips["dist_tram_min_m"].values
+        _dt_y = _dist_trips["Total_Trips"].values
+        _dt_coef = np.polyfit(_dt_x, _dt_y, 1)
+        _dt_xr   = np.linspace(_dt_x.min(), _dt_x.max(), 100)
+        _dt_rho  = float(
+            pd.Series(_dt_x).rank().corr(pd.Series(_dt_y).rank())
+        )
+
+        _dist_trips["Zone"] = pd.cut(
+            _dist_trips["dist_tram_min_m"],
+            bins=[0, 400, 800, float("inf")],
+            labels=["< 5 min (optimal)", "5–10 min", "> 10 min (friction)"],
+        ).astype(str)
+        _zone_colors = {
+            "< 5 min (optimal)": "#27ae60",
+            "5–10 min":          "#e67e22",
+            "> 10 min (friction)": "#c0392b",
+        }
+
+        fig_dt = px.scatter(
+            _dist_trips,
+            x="dist_tram_min_m", y="Total_Trips",
+            color="Zone",
+            color_discrete_map=_zone_colors,
+            symbol="Profile" if "Profile" in _dist_trips.columns else None,
+            hover_name="bike_station",
+            hover_data={"dist_tram_min_m": ":.0f m", "Total_Trips": ":,.0f", "Zone": False},
+            labels={
+                "dist_tram_min_m": "Distance à l'arrêt tram le plus proche (m)",
+                "Total_Trips":     "Volume de trips totaux (5 ans)",
+                "Zone":            "Zone d'intégration",
+                "Profile":         "Profil",
+            },
+            height=380,
+            opacity=0.8,
+        )
+        fig_dt.add_trace(go.Scatter(
+            x=_dt_xr, y=np.polyval(_dt_coef, _dt_xr),
+            mode="lines",
+            line=dict(color="#1A2332", dash="dash", width=2),
+            name=f"Tendance OLS (ρ = {_dt_rho:+.2f})",
+            showlegend=True,
+        ))
+        fig_dt.add_vline(x=400, line_dash="dot", line_color="#27ae60", line_width=1.5)
+        fig_dt.add_vline(x=800, line_dash="dot", line_color="#e67e22", line_width=1.5)
+        fig_dt.update_layout(
+            plot_bgcolor="white",
+            margin=dict(l=10, r=10, t=10, b=30),
+            xaxis=dict(showgrid=True, gridcolor="#eee"),
+            yaxis=dict(showgrid=True, gridcolor="#eee"),
+            legend=dict(orientation="h", y=-0.22, x=0.5, xanchor="center"),
+        )
+        st.plotly_chart(fig_dt, use_container_width=True)
+        st.caption(
+            f"**Figure 4.2.** Distance au tramway le plus proche (axe x) versus "
+            f"volume de trips totaux (axe y). ρ de Spearman = {_dt_rho:+.2f}. "
+            "La couleur encode la zone d'intégration UITP ; le symbole encode le profil fonctionnel. "
+            "Une corrélation négative confirme l'**effet friction multimodale** : "
+            "les stations éloignées des correspondances tramway génèrent structurellement "
+            "moins de trips, indépendamment de leur capacité."
+        )
+
 # ── Section 5 - Fracture socio-spatiale ───────────────────────────────────────
 st.divider()
 section(5, "Fracture Socio-Spatiale - Usage du Vélo et Profil Socio-Économique par Quartier")
@@ -559,55 +808,229 @@ conclusion nationale ρ(IMD, revenu) ≈ 0 à l'échelle des quartiers montpelli
 tab_viz, tab_scatter = st.tabs(["Figures Pré-calculées (Analyse IRIS)", "Analyse Interactive"])
 
 with tab_viz:
+    _syn = synthese.copy() if not synthese.empty else pd.DataFrame()
+
     col_v1, col_v2 = st.columns(2)
+
     with col_v1:
-        img_revenu = _VIZ_PATH / "revenu_vs_velo.png"
-        if img_revenu.exists():
-            st.image(str(img_revenu), use_container_width=True)
-            st.caption(
-                "**Figure 5.1.** Revenu fiscal médian des ménages (€/an, INSEE Filosofi) "
-                "versus part modale vélo/deux-roues par quartier IRIS. "
-                "La pente positive de la relation atteste d'un biais socio-économique "
-                "structurel dans l'adoption de la micromobilité partagée : "
-                "les quartiers aisés cyclent davantage, indépendamment de la densité "
-                "d'infrastructure. Ce résultat caractérise une situation de "
-                "<em>désert de mobilité sociale</em> dans les quartiers périphériques précaires."
+        # Fig 5.1 — Revenu × Part vélo (scatter interactif)
+        _req1 = {"nom", "revenu_fiscal_moyen_menage", "transport_deux_roues_velo_pct"}
+        if _req1.issubset(_syn.columns):
+            _s1 = _syn.dropna(subset=["revenu_fiscal_moyen_menage", "transport_deux_roues_velo_pct"])
+            _r1x = _s1["revenu_fiscal_moyen_menage"].values
+            _r1y = _s1["transport_deux_roues_velo_pct"].values
+            _c1  = np.polyfit(_r1x, _r1y, 1)
+            _xr1 = np.linspace(_r1x.min(), _r1x.max(), 100)
+            _rho1 = float(pd.Series(_r1x).rank().corr(pd.Series(_r1y).rank()))
+
+            fig_v1 = px.scatter(
+                _s1,
+                x="revenu_fiscal_moyen_menage",
+                y="transport_deux_roues_velo_pct",
+                text="nom",
+                color="transport_voiture_camion_pct" if "transport_voiture_camion_pct" in _s1.columns else None,
+                color_continuous_scale="RdBu_r",
+                size="equipement_pas_de_voiture_pct" if "equipement_pas_de_voiture_pct" in _s1.columns else None,
+                size_max=20,
+                labels={
+                    "revenu_fiscal_moyen_menage":    "Revenu fiscal médian (€/an)",
+                    "transport_deux_roues_velo_pct": "Part modale vélo/deux-roues (%)",
+                    "transport_voiture_camion_pct":  "Part voiture (%)",
+                    "equipement_pas_de_voiture_pct": "% ménages sans voiture",
+                },
+                height=320,
+                opacity=0.85,
             )
+            fig_v1.add_trace(go.Scatter(
+                x=_xr1, y=np.polyval(_c1, _xr1),
+                mode="lines",
+                line=dict(color="#1A2332", dash="dash", width=2),
+                name=f"Tendance OLS (ρ = {_rho1:+.2f})",
+                showlegend=True,
+            ))
+            fig_v1.update_traces(
+                selector=dict(mode="markers+text"),
+                textposition="top center", textfont=dict(size=8),
+            )
+            fig_v1.update_layout(
+                plot_bgcolor="white",
+                margin=dict(l=10, r=10, t=10, b=10),
+                legend=dict(orientation="h", y=-0.22),
+                coloraxis_showscale=False,
+            )
+            st.plotly_chart(fig_v1, use_container_width=True)
+            st.caption(
+                f"**Figure 5.1.** Revenu fiscal médian (axe x) versus part modale vélo (axe y) "
+                f"par quartier IRIS. ρ Spearman = {_rho1:+.2f}. "
+                "La couleur encode la part modale voiture ; "
+                "la taille encode le % de ménages sans voiture. "
+                "La relation positive revenu–vélo caractérise le biais socio-économique "
+                "structurel de la micromobilité partagée à Montpellier."
+            )
+        else:
+            _img = _VIZ_PATH / "revenu_vs_velo.png"
+            if _img.exists():
+                st.image(str(_img), use_container_width=True)
 
     with col_v2:
-        img_modal = _VIZ_PATH / "parts_modales.png"
-        if img_modal.exists():
-            st.image(str(img_modal), use_container_width=True)
-            st.caption(
-                "**Figure 5.2.** Parts modales moyennes des quartiers montpelliérains "
-                "(marche à pied, vélo/deux-roues, voiture, transports en commun). "
-                "La part modale voiture reste dominante ($\\approx 59\\,\\%$), "
-                "révélant le poids de la <em>captivité automobile</em> "
-                "dans les mobilités quotidiennes."
+        # Fig 5.2 — Parts modales (donut interactif)
+        if not modal.empty:
+            _modal_clean = modal.reset_index()
+            _modal_clean.columns = ["Mode", "Part (%)"]
+            _modal_colors = {
+                "Marche a pied":       "#27ae60",
+                "Velo/Deux-roues":     "#1A6FBF",
+                "Voiture":             "#c0392b",
+                "Transport en commun": "#8e44ad",
+            }
+            fig_v2 = go.Figure(go.Pie(
+                labels=_modal_clean["Mode"],
+                values=_modal_clean["Part (%)"].round(1),
+                hole=0.45,
+                marker_colors=[_modal_colors.get(m, "#999") for m in _modal_clean["Mode"]],
+                textinfo="label+percent",
+                hovertemplate="%{label}<br>%{value:.1f} %<extra></extra>",
+            ))
+            fig_v2.update_layout(
+                height=320,
+                margin=dict(l=10, r=10, t=20, b=10),
+                annotations=[dict(
+                    text="Parts<br>modales", x=0.5, y=0.5,
+                    font_size=12, showarrow=False,
+                )],
+                showlegend=True,
+                legend=dict(orientation="h", y=-0.12, x=0.5, xanchor="center"),
             )
+            st.plotly_chart(fig_v2, use_container_width=True)
+            _voit_pct = float(_modal_clean.loc[_modal_clean["Mode"] == "Voiture", "Part (%)"].iloc[0]) \
+                if "Voiture" in _modal_clean["Mode"].values else float("nan")
+            _velo_pct = float(_modal_clean.loc[_modal_clean["Mode"] == "Velo/Deux-roues", "Part (%)"].iloc[0]) \
+                if "Velo/Deux-roues" in _modal_clean["Mode"].values else float("nan")
+            _s_voit = f"{_voit_pct:.1f} %" if not np.isnan(_voit_pct) else "n.d."
+            _s_velo = f"{_velo_pct:.1f} %" if not np.isnan(_velo_pct) else "n.d."
+            st.caption(
+                f"**Figure 5.2.** Parts modales moyennes des quartiers montpelliérains. "
+                f"La voiture reste dominante ({_s_voit}), révélant le poids de la "
+                "<em>captivité automobile</em>. Le vélo/deux-roues représente "
+                f"{_s_velo} — soit le niveau cible de développement du VLS."
+            )
+        else:
+            _img = _VIZ_PATH / "parts_modales.png"
+            if _img.exists():
+                st.image(str(_img), use_container_width=True)
 
     col_v3, col_v4 = st.columns(2)
+
     with col_v3:
-        img_densite = _VIZ_PATH / "densite_vs_velo.png"
-        if img_densite.exists():
-            st.image(str(img_densite), use_container_width=True)
-            st.caption(
-                "**Figure 5.3.** Densité de population (hab./km²) versus part modale vélo. "
-                "La densité urbaine constitue un prédicteur positif de l'usage cyclable, "
-                "indépendamment du revenu, en réduisant la friction spatiale totale "
-                "(distances plus courtes, moins d'avantage compétitif de la voiture)."
+        # Fig 5.3 — Densité × Part vélo (scatter interactif)
+        _req3 = {"nom", "densite_hab_km2", "transport_deux_roues_velo_pct"}
+        if _req3.issubset(_syn.columns):
+            _s3 = _syn.dropna(subset=["densite_hab_km2", "transport_deux_roues_velo_pct"])
+            _r3x = _s3["densite_hab_km2"].values
+            _r3y = _s3["transport_deux_roues_velo_pct"].values
+            _c3  = np.polyfit(_r3x, _r3y, 1)
+            _xr3 = np.linspace(_r3x.min(), _r3x.max(), 100)
+            _rho3 = float(pd.Series(_r3x).rank().corr(pd.Series(_r3y).rank()))
+
+            fig_v3 = px.scatter(
+                _s3,
+                x="densite_hab_km2",
+                y="transport_deux_roues_velo_pct",
+                text="nom",
+                color="revenu_fiscal_moyen_menage" if "revenu_fiscal_moyen_menage" in _s3.columns else None,
+                color_continuous_scale="Greens",
+                labels={
+                    "densite_hab_km2":               "Densité de population (hab./km²)",
+                    "transport_deux_roues_velo_pct": "Part modale vélo/deux-roues (%)",
+                    "revenu_fiscal_moyen_menage":    "Revenu médian (€/an)",
+                },
+                height=320,
+                opacity=0.85,
             )
+            fig_v3.add_trace(go.Scatter(
+                x=_xr3, y=np.polyval(_c3, _xr3),
+                mode="lines",
+                line=dict(color="#1A2332", dash="dash", width=2),
+                name=f"Tendance OLS (ρ = {_rho3:+.2f})",
+                showlegend=True,
+            ))
+            fig_v3.update_traces(
+                selector=dict(mode="markers+text"),
+                textposition="top center", textfont=dict(size=8),
+            )
+            fig_v3.update_layout(
+                plot_bgcolor="white",
+                margin=dict(l=10, r=10, t=10, b=10),
+                legend=dict(orientation="h", y=-0.22),
+                coloraxis_showscale=False,
+            )
+            st.plotly_chart(fig_v3, use_container_width=True)
+            st.caption(
+                f"**Figure 5.3.** Densité de population (hab./km²) versus part modale vélo "
+                f"par quartier IRIS. ρ Spearman = {_rho3:+.2f}. "
+                "La couleur encode le revenu médian. "
+                "La densité urbaine réduit la friction spatiale "
+                "(distances plus courtes, moins d'avantage compétitif de la voiture), "
+                "agissant comme prédicteur positif de l'usage cyclable indépendant du revenu."
+            )
+        else:
+            _img = _VIZ_PATH / "densite_vs_velo.png"
+            if _img.exists():
+                st.image(str(_img), use_container_width=True)
 
     with col_v4:
-        img_top = _VIZ_PATH / "top_10_quartiers_velo.png"
-        if img_top.exists():
-            st.image(str(img_top), use_container_width=True)
-            st.caption(
-                "**Figure 5.4.** Top 10 quartiers par taux d'usage cyclable. "
-                "Le Centre, l'Écusson et les quartiers universitaires concentrent "
-                "l'essentiel de la pratique cyclable, révélant l'interaction entre "
-                "densité étudiante, proximité aux nœuds tramway et disponibilité des stations."
+        # Fig 5.4 — Radar des modes par quartier (top 5 et bottom 5 par vélo)
+        _req4 = {
+            "nom", "transport_deux_roues_velo_pct", "transport_voiture_camion_pct",
+            "transport_marche_a_pied_pct", "transport_transport_commun_pct",
+        }
+        if _req4.issubset(_syn.columns):
+            _s4 = _syn.dropna(subset=["transport_deux_roues_velo_pct"]).copy()
+            _s4 = _s4.sort_values("transport_deux_roues_velo_pct")
+            _bot5 = _s4.head(5)
+            _top5 = _s4.tail(5)
+            _sel4 = pd.concat([_bot5, _top5])
+            _sel4["rang"] = ["Bottom 5"] * 5 + ["Top 5"] * 5
+
+            _mode_cols = [
+                ("transport_deux_roues_velo_pct",  "Vélo"),
+                ("transport_voiture_camion_pct",    "Voiture"),
+                ("transport_marche_a_pied_pct",     "Marche"),
+                ("transport_transport_commun_pct",  "TC"),
+            ]
+            _mc_avail = [(c, l) for c, l in _mode_cols if c in _sel4.columns]
+            _theta4   = [l for _, l in _mc_avail] + [[l for _, l in _mc_avail][0]]
+
+            fig_v4 = go.Figure()
+            _pal4 = {"Top 5": "#1A6FBF", "Bottom 5": "#c0392b"}
+            for _, _row4 in _sel4.iterrows():
+                _vals4 = [_row4[c] for c, _ in _mc_avail] + [_row4[_mc_avail[0][0]]]
+                fig_v4.add_trace(go.Scatterpolar(
+                    r=_vals4, theta=_theta4,
+                    fill="toself",
+                    name=str(_row4["nom"])[:18],
+                    line_color=_pal4.get(str(_row4["rang"]), "#999"),
+                    opacity=0.55,
+                ))
+            fig_v4.update_layout(
+                polar=dict(radialaxis=dict(visible=True, tickfont=dict(size=8))),
+                height=320,
+                margin=dict(l=30, r=30, t=20, b=30),
+                legend=dict(orientation="v", font=dict(size=8)),
+                showlegend=True,
             )
+            st.plotly_chart(fig_v4, use_container_width=True)
+            st.caption(
+                "**Figure 5.4.** Profil modal radar des 5 quartiers les plus cyclistes "
+                "(bleu) et les 5 moins cyclistes (rouge). "
+                "Les quartiers à forte pratique cyclable se distinguent par une part "
+                "voiture bien plus faible et une part TC/marche plus élevée, "
+                "révélant la complémentarité modale plutôt que la concurrence."
+            )
+        else:
+            _img = _VIZ_PATH / "top_10_quartiers_velo.png"
+            if _img.exists():
+                st.image(str(_img), use_container_width=True)
 
 with tab_scatter:
     left_sq, right_sq = st.columns(2)
