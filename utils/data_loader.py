@@ -24,6 +24,9 @@ BAAC_CITY_PATH  = _ROOT / "data" / "external" / "mobility_sources" / "baac_cycli
 CEREMA_PATH     = _ROOT / "data" / "external" / "mobility_sources" / "cerema_cycling_infra_city.csv"
 ECO_PATH        = _ROOT / "data" / "external" / "mobility_sources" / "eco_compteurs_city_usage.csv"
 
+# Données politiques (élections municipales 2020 + régionales 2021)
+POLITIQUE_PATH = _ROOT / "data" / "external" / "politique" / "political_data.csv"
+
 # Données Montpellier Vélomagg (analyse de réseau)
 SOCIO_MMM_PATH    = _ROOT / "data" / "processed" / "socioeconomic_analysis_results.csv"
 TEMPORAL_PATH     = _ROOT / "data" / "processed" / "station_temporal_profiles.csv"
@@ -410,3 +413,33 @@ def load_weather_data() -> pd.DataFrame:
 def load_parts_modales() -> pd.DataFrame:
     """Parts modales moyennes sur l'ensemble des quartiers de Montpellier."""
     return pd.read_csv(MODAL_PATH)
+
+
+@st.cache_data(ttl=3600, show_spinner=False)
+def load_political_data() -> pd.DataFrame:
+    """
+    Données politiques des communes françaises dotées de VLS.
+
+    Source : résultats des élections municipales 2020 et régionales 2021.
+    Colonnes clés :
+    - city              : nom de la ville (normalisé, cohérent avec Gold Standard)
+    - maire             : nom du maire élu en 2020
+    - parti_maire       : parti politique du maire
+    - couleur_municipale: couleur politique simplifiée (Gauche / Centre / Droite /
+                          Extrême droite)
+    - president_region  : nom du/de la président·e de région (post 2021)
+    - parti_region      : parti politique régional
+    - couleur_regionale : couleur politique régionale simplifiée
+
+    Auteurs : R. Fossé & G. Pallares — 2025–2026.
+    """
+    try:
+        df = pd.read_csv(POLITIQUE_PATH)
+        # Ordre canonique des couleurs pour les visualisations
+        _order = ["Gauche", "Centre", "Droite", "Extrême droite"]
+        for col in ("couleur_municipale", "couleur_regionale"):
+            if col in df.columns:
+                df[col] = pd.Categorical(df[col], categories=_order, ordered=True)
+        return df
+    except Exception:
+        return pd.DataFrame()
