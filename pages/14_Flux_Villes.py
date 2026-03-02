@@ -127,8 +127,11 @@ if _has_data:
     last_collect   = avail_enriched["date_fin"].max()
     jours_max      = int(avail_enriched["n_files"].max())
 
+    coverage_pct = round(_n_systems / len(PRIORITY_SYSTEMS) * 100)
+
     m1, m2, m3, m4 = st.columns(4)
-    m1.metric("Réseaux collectés", _n_systems)
+    m1.metric("Réseaux collectés", f"{_n_systems} / {len(PRIORITY_SYSTEMS)}",
+              delta=f"{coverage_pct} % de couverture")
     m2.metric("Stations couvertes", f"{total_stations:,}")
     m3.metric("Fichiers Parquet", _n_snap_total)
     m4.metric("Dernière collecte", last_collect)
@@ -366,6 +369,63 @@ if show_live:
                         "Coordonnées GPS non disponibles pour ce réseau. "
                         "Vérifiez que station_information.json est accessible."
                     )
+
+                # Stations critiques
+                st.markdown("**Stations critiques (snapshot actuel)**")
+                name_col = "station_name" if "station_name" in snap_live.columns else "station_id"
+                snap_live["pct_rempli_st"] = (
+                    snap_live["num_bikes_available"]
+                    / (snap_live["num_bikes_available"] + snap_live["num_docks_available"]).replace(0, np.nan)
+                    * 100
+                ).round(1)
+                display_cols = [name_col, "num_bikes_available", "num_docks_available", "pct_rempli_st"]
+
+                col_crit1, col_crit2 = st.columns(2)
+                with col_crit1:
+                    st.markdown("*Priorité redistribution entrante (stations vides)*")
+                    df_vides = (
+                        snap_live.sort_values("num_bikes_available")
+                        .head(8)[display_cols]
+                        .rename(columns={
+                            name_col: "Station",
+                            "num_bikes_available": "Vélos dispo",
+                            "num_docks_available": "Places libres",
+                            "pct_rempli_st": "Remplissage (%)",
+                        })
+                    )
+                    st.dataframe(
+                        df_vides, use_container_width=True, hide_index=True,
+                        column_config={
+                            "Remplissage (%)": st.column_config.ProgressColumn(
+                                format="%.0f %%", min_value=0, max_value=100
+                            )
+                        },
+                    )
+                with col_crit2:
+                    st.markdown("*Priorité redistribution sortante (stations saturées)*")
+                    df_full = (
+                        snap_live.sort_values("num_docks_available")
+                        .head(8)[display_cols]
+                        .rename(columns={
+                            name_col: "Station",
+                            "num_bikes_available": "Vélos dispo",
+                            "num_docks_available": "Places libres",
+                            "pct_rempli_st": "Remplissage (%)",
+                        })
+                    )
+                    st.dataframe(
+                        df_full, use_container_width=True, hide_index=True,
+                        column_config={
+                            "Remplissage (%)": st.column_config.ProgressColumn(
+                                format="%.0f %%", min_value=0, max_value=100
+                            )
+                        },
+                    )
+                st.caption(
+                    "**Tableau 2.1.** Stations nécessitant une intervention prioritaire de redistribution. "
+                    "Gauche = stations à réapprovisionner (peu de vélos). "
+                    "Droite = stations à décharger (peu de places disponibles)."
+                )
 else:
     st.info("Cochez 'Afficher un snapshot live' dans la barre latérale pour voir la disponibilité actuelle.")
 
@@ -477,57 +537,66 @@ if _has_data and system_sel in collected_ids:
             else:
                 top_stations["label"] = top_stations["station_id"]
 
-            top_stations = top_stations.sort_values("total_dep", ascending=True)
+            col_top, col_div = st.columns(2)
 
-            # Couleur = déséquilibre (rouge = émetteur net, vert = attracteur net)
-            top_stations["color"] = top_stations["imbalance"].apply(
-                lambda v: "#C0392B" if v > 0 else "#1E8449"
-            )
+            # Gauche : top 15 par activité totale (départs + arrivées)
+            with col_top:
+                act_df = top_stations.sort_values("total_dep", ascending=True)
+                fig_act = go.Figure()
+                fig_act.add_trace(go.Bar(
+                    y=act_df["label"], x=act_df["total_dep"],
+                    orientation="h", name="Départs",
+                    marker_color="#C0392B", opacity=0.85,
+                ))
+                fig_act.add_trace(go.Bar(
+                    y=act_df["label"], x=act_df["total_arr"],
+                    orientation="h", name="Arrivées",
+                    marker_color="#1E8449", opacity=0.85,
+                ))
+                fig_act.update_layout(
+                    plot_bgcolor="white",
+                    barmode="group",
+                    xaxis_title="Pseudo-flux cumulés",
+                    height=max(380, len(act_df) * 28),
+                    margin=dict(l=10, r=10, t=30, b=10),
+                    title=dict(text="Activité totale (Top 15)", font=dict(size=13)),
+                    legend=dict(x=0.6, y=0.02, bgcolor="rgba(255,255,255,0.8)"),
+                )
+                st.plotly_chart(fig_act, use_container_width=True)
 
-            fig_top = go.Figure()
-            fig_top.add_trace(go.Bar(
-                y=top_stations["label"], x=top_stations["total_dep"],
-                orientation="h", name="Départs",
-                marker_color="#C0392B", opacity=0.85,
-            ))
-            fig_top.add_trace(go.Bar(
-                y=top_stations["label"], x=top_stations["total_arr"],
-                orientation="h", name="Arrivées",
-                marker_color="#1E8449", opacity=0.85,
-            ))
-            fig_top.add_trace(go.Scatter(
-                y=top_stations["label"], x=top_stations["imbalance"],
-                orientation="h", name="Déséquilibre (D−A)",
-                mode="markers",
-                marker=dict(
-                    color=top_stations["imbalance"],
-                    colorscale="RdYlGn_r",
-                    size=10,
-                    symbol="diamond",
-                    line=dict(width=1, color="white"),
-                ),
-                xaxis="x2",
-            ))
-            fig_top.update_layout(
-                plot_bgcolor="white",
-                barmode="overlay",
-                xaxis=dict(title="Pseudo-flux cumulés", domain=[0, 0.75]),
-                xaxis2=dict(
-                    title="Déséquilibre net (D−A)",
-                    overlaying="x", side="top",
-                    domain=[0, 0.75],
-                    showgrid=False,
-                ),
-                height=max(380, len(top_stations) * 28),
-                margin=dict(l=10, r=10, t=40, b=10),
-                legend=dict(x=0.77, y=0.98),
-            )
-            st.plotly_chart(fig_top, use_container_width=True)
+            # Droite : top 15 par |déséquilibre| — diverging bar centré sur 0
+            with col_div:
+                div_df = (
+                    top_stations.assign(abs_imbal=lambda d: d["imbalance"].abs())
+                    .sort_values("abs_imbal", ascending=True)
+                )
+                colors_div = ["#C0392B" if v > 0 else "#1E8449" for v in div_df["imbalance"]]
+                fig_div = go.Figure()
+                fig_div.add_trace(go.Bar(
+                    y=div_df["label"],
+                    x=div_df["imbalance"],
+                    orientation="h",
+                    marker_color=colors_div,
+                    opacity=0.9,
+                    hovertemplate="%{y}<br>Déséquilibre : %{x:+d}<extra></extra>",
+                ))
+                fig_div.add_vline(x=0, line_color="#333", line_width=1.5)
+                fig_div.update_layout(
+                    plot_bgcolor="white",
+                    xaxis_title="Déséquilibre net (D − A)",
+                    height=max(380, len(div_df) * 28),
+                    margin=dict(l=10, r=10, t=30, b=10),
+                    title=dict(text="Déséquilibre (D − A)", font=dict(size=13)),
+                    showlegend=False,
+                )
+                st.plotly_chart(fig_div, use_container_width=True)
+
             st.caption(
-                f"**Figure 3.2.** Top 15 stations les plus actives ({system_sel}). "
-                "Barres : départs (rouge) vs arrivées (vert). "
-                "Losange : déséquilibre net D−A (positif = émetteur net, négatif = attracteur net). "
-                "Les stations fortement déséquilibrées sont candidates prioritaires à la redistribution."
+                f"**Figure 3.2.** Gauche : Top 15 stations par activité totale ({system_sel}) — "
+                "barres rouges = départs, vertes = arrivées. "
+                "Droite : déséquilibre net D−A, centré sur 0 — rouge = émetteur net (plus de départs), "
+                "vert = attracteur net (plus d'arrivées). "
+                "Ces stations sont candidates prioritaires à la redistribution."
             )
 
         # Tableau synthétique par heure
@@ -600,7 +669,7 @@ if len(multi_sel) >= 2:
             sub = hourly_by_sys[hourly_by_sys["system_id"] == sid]
             if sub.empty:
                 continue
-            peak_h   = int(sub.loc[sub["dep_per_station"].idxmax(), "hour"])
+            peak_h   = int(sub["hour"].iloc[int(sub["dep_per_station"].to_numpy().argmax())])
             max_dep  = float(sub["dep_per_station"].max())
             mean_dep = float(sub["dep_per_station"].mean())
             total_d  = int(sub["departures"].sum())
@@ -675,6 +744,35 @@ if len(multi_sel) >= 2:
             "**Figure 4.2.** Carte de chaleur heure × réseau (départs / station). "
             "Les colonnes les plus sombres identifient les heures de pointe systémiques."
         )
+
+        # Matrice de corrélation entre profils horaires des villes
+        pivot_corr = hourly_by_sys.pivot(
+            index="hour", columns="system_id", values="dep_per_station"
+        ).fillna(0)
+        if pivot_corr.shape[1] >= 2:
+            corr_matrix = pivot_corr.corr(method="pearson").round(2)
+            fig_corr = px.imshow(
+                corr_matrix,
+                color_continuous_scale="RdBu",
+                zmin=-1, zmax=1,
+                text_auto=".2f",
+                labels={"color": "r de Pearson"},
+                height=max(300, len(corr_matrix) * 55),
+            )
+            fig_corr.update_layout(
+                margin=dict(l=10, r=10, t=10, b=10),
+                coloraxis_colorbar=dict(title="r", thickness=12, len=0.8),
+                font=dict(size=11),
+            )
+            fig_corr.update_traces(textfont=dict(size=12))
+            st.plotly_chart(fig_corr, use_container_width=True)
+            st.caption(
+                "**Figure 4.3.** Matrice de corrélation de Pearson entre les profils horaires des réseaux "
+                "(départs normalisés par station). "
+                "r ≈ +1 = rythmes de mobilité similaires. "
+                "r ≈ −1 = comportements opposés (activité décalée ou inversée). "
+                "r ≈ 0 = profils indépendants."
+            )
     else:
         st.info("Données insuffisantes pour la comparaison (moins de 2 réseaux avec des flux).")
 elif not _has_data:
