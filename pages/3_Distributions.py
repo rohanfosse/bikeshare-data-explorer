@@ -35,9 +35,9 @@ abstract_box(
     "un prédicteur fiable de la qualité de son environnement cyclable ?<br><br>"
     f"Analyse des distributions empiriques des sept dimensions d'enrichissement du Gold Standard "
     f"sur <b>{_n_total:,} stations</b> ({_n_dock:,} dock-based) et <b>{_n_cities} agglomérations</b>. "
-    "Résultat central : $r_s = -0{,}02$ (hors Paris) entre taille et performance cyclable — "
+    "Résultat central : <i>r<sub>s</sub></i>&nbsp;=&nbsp;&minus;0,02 (hors Paris) entre taille et performance cyclable — "
     "aucun avantage métropolitain. Les distributions présentent toutes des asymétries positives "
-    "(Shapiro-Wilk $p < 0{,}05$), justifiant les tests non paramétriques. "
+    "(Shapiro-Wilk <i>p</i>&nbsp;&lt;&nbsp;0,05), justifiant les tests non paramétriques. "
     "La matrice Spearman confirme la quasi-indépendance des quatre composantes IMD, "
     "validant la construction de l'indice comme somme pondérée non redondante.",
     findings=[

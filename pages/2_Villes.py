@@ -77,7 +77,7 @@ abstract_box(
     f"Cette analyse comparative classe les <b>{_n_dock_cities} agglomérations</b> françaises dotées d'un "
     "réseau VLS dock-based certifié Gold Standard selon les dimensions d'enrichissement spatial. "
     "Le résultat clé de l'analyse spatiale globale — l'absence d'autocorrélation significative "
-    "(Moran's $I = -0{,}023$, $p = 0{,}765$) — invalide l'hypothèse d'un déterminisme "
+    "(Moran's <i>I</i>&nbsp;=&nbsp;&minus;0,023, <i>p</i>&nbsp;=&nbsp;0,765) — invalide l'hypothèse d'un déterminisme "
     "géographique structurant les disparités. Les villes performantes et sous-performantes "
     "ne forment pas de clusters territoriaux cohérents : ce sont les choix de gouvernance "
     "locale, et non la localisation géographique, qui expliquent l'hétérogénéité observée. "
@@ -85,7 +85,14 @@ abstract_box(
     f"Montpellier #{_mmm_rank} (IMD = {_mmm_imd:.1f}/100). "
     f"ρ Spearman (IMD × Revenu) = {_rho_str} (p = {_pval_str}, non significatif).</b> "
     "Cinq niveaux d'analyse sont proposés : classement univarié, profil infrastructure × sinistralité, "
-    "justice sociale IMD × revenu, audit radar multi-dimensionnel, et synthèse statistique comparative."
+    "justice sociale IMD × revenu, audit radar multi-dimensionnel, et synthèse statistique comparative.",
+    findings=[
+        (str(_n_dock_cities), "agglomérations classées"),
+        (_top_city, "#1 national"),
+        (f"{_top_imd}/100", "IMD maximum"),
+        (f"#{_mmm_rank}", "Montpellier"),
+        (f"ρ = {_rho_str}", "IMD × Revenu (n.s.)"),
+    ],
 )
 
 # ── Sidebar ───────────────────────────────────────────────────────────────────

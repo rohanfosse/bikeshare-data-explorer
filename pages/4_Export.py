@@ -37,7 +37,13 @@ abstract_box(
     "pour des usages spécifiques : étude de cas urbaine, analyse sectorielle par métrique, "
     "ou extraction d'un réseau GBFS individuel. "
     "Les métadonnées de citation, incluant le protocole d'enrichissement et les sources primaires, "
-    "sont générées automatiquement à partir de la sélection courante."
+    "sont générées automatiquement à partir de la sélection courante.",
+    findings=[
+        ("46 312", "stations certifiées"),
+        ("122", "systèmes GBFS"),
+        ("CSV + Parquet", "formats FAIR"),
+        ("5 modules", "enrichissement spatial"),
+    ],
 )
 
 df = load_stations()

@@ -204,7 +204,14 @@ abstract_box(
     f"{_mmm_tri_str}"
     "La composante topographique (T) de l'IMD, calibrée sur le TRI, contribue à hauteur de "
     "9,6 % au score global - le déterminant le moins influent, mais structurellement correcteur "
-    "des biais de performance au profit des agglomérations de plaine."
+    "des biais de performance au profit des agglomérations de plaine.",
+    findings=[
+        (str(_n_cities_tri), "agglomérations analysées"),
+        (f"TRI = {_tri_med} m", "rugosité médiane"),
+        (_most_rugged, "plus accidentée"),
+        (_flattest, "plus plane"),
+        ("9,6 %", "poids IMD composante T"),
+    ],
 )
 
 # ── Sidebar ───────────────────────────────────────────────────────────────────

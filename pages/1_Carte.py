@@ -42,7 +42,7 @@ abstract_box(
     f"<b>{_n_total:,} stations certifiées</b> ({_n_dock:,} dock-based VLS) "
     f"issues de {_n_systems} systèmes nationaux couvrant {_n_cities} agglomérations, "
     "enrichies selon cinq modules spatiaux (rayon 300 m). "
-    "L'indice de Moran ($I = -0{,}023$, $p = 0{,}765$) invalide le déterminisme géographique : "
+    "L'indice de Moran (<i>I</i>&nbsp;=&nbsp;&minus;0,023, <i>p</i>&nbsp;=&nbsp;0,765) invalide le déterminisme géographique : "
     "les disparités observées reflètent des choix de <em>gouvernance locale</em>, "
     "non une fatalité territoriale.",
     findings=[

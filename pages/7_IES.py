@@ -111,7 +111,14 @@ abstract_box(
     "La quasi-totalité de la variance de l'IMD relève de choix de <b>gouvernance locale</b>, "
     f"non de déterminismes économiques. Le panel compte <b>{_n_desert_pre} déserts de mobilité "
     f"sociale</b> (revenu et IMD sous la médiane nationale) et "
-    f"<b>{_n_inclus_pre} agglomérations à mobilité inclusive</b> (IMD élevé malgré un faible revenu)."
+    f"<b>{_n_inclus_pre} agglomérations à mobilité inclusive</b> (IMD élevé malgré un faible revenu).",
+    findings=[
+        (str(_n_cities_pre), "agglomérations analysées"),
+        (f"ρ = {_rho_str}", "IMD × Revenu (n.s.)"),
+        (f"p = {_p_str}", "Spearman"),
+        (str(_n_desert_pre), "déserts de mobilité"),
+        (str(_n_inclus_pre), "mobilité inclusive"),
+    ],
 )
 
 # ── Sidebar ───────────────────────────────────────────────────────────────────

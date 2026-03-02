@@ -32,14 +32,20 @@ abstract_box(
     "Cette analyse croise le catalogue GBFS national - 122 systèmes actifs collectés "
     "via MobilityData et la collecte manuelle (Notebook 20) - avec cinq sources "
     "d'indicateurs indépendantes : le <em>FUB Baromètre 2023</em> (perception déclarative "
-    "de la qualité cyclable, $\\in [1, 6]$), l'<em>EMP 2019</em> (part modale vélo mesurée "
+    "de la qualité cyclable, échelle 1 à 6), l'<em>EMP 2019</em> (part modale vélo mesurée "
     "par enquête), la base <em>BAAC</em> (sinistralité cycliste objective), "
     "les données <em>Cerema</em> (linéaire d'infrastructure cyclable) et les "
     "<em>Eco-compteurs</em> (fréquentation observée). "
     "L'objectif est de valider les dimensions Gold Standard par triangulation "
     "avec ces sources externes et de caractériser les disparités inter-urbaines "
     "selon une approche multi-sources indépendante - condition nécessaire à la "
-    "validité de construit du modèle IMD."
+    "validité de construit du modèle IMD.",
+    findings=[
+        ("122", "systèmes GBFS actifs"),
+        ("5", "sources indépendantes"),
+        ("FUB 2023", "baromètre déclaratif"),
+        ("EMP 2019", "enquête modale"),
+    ],
 )
 
 systems  = load_systems_catalog()
