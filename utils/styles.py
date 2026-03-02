@@ -27,6 +27,10 @@ _NAV_GROUPS: list[tuple[str, list[tuple[str, str]]]] = [
         ("pages/8_Topographie.py",     "Topographie"),
         ("pages/6_Montpellier.py",     "Montpellier"),
     ]),
+    ("Sciences appliquées", [
+        ("pages/11_Physique.py",       "Physique Statistique"),
+        ("pages/12_Biologie.py",       "Biologie & Écologie"),
+    ]),
     ("Modules transversaux", [
         ("pages/1_Carte.py",           "Carte des stations"),
         ("pages/5_Mobilite_France.py", "France - Validation"),
