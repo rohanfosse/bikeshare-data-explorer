@@ -16,7 +16,6 @@ from datetime import datetime, timezone, timedelta
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
-from plotly.subplots import make_subplots
 import streamlit as st
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
@@ -37,32 +36,39 @@ inject_css()
 _ROOT     = Path(__file__).parent.parent
 _SNAP_DIR = _ROOT / "data" / "status_snapshots"
 
+# ── En-tête ───────────────────────────────────────────────────────────────────
+st.title("Flux VLS par Snapshot GBFS — Comparaison Nationale")
+st.caption("Module transversal : collecte station_status en temps réel sur les grandes villes françaises")
+
 # ── Collecteur (lecture seule ici) ─────────────────────────────────────────────
 @st.cache_resource
 def get_collector() -> GBFSCollector:
     return GBFSCollector()
-
-collector = get_collector()
 
 # ── État des données collectées ───────────────────────────────────────────────
 @st.cache_data(ttl=60)
 def get_available() -> pd.DataFrame:
     return collector.list_available()
 
-avail = get_available()
-_n_systems = len(avail)
-_has_data  = _n_systems > 0
-
-# ── En-tête ───────────────────────────────────────────────────────────────────
-st.title("Flux VLS par Snapshot GBFS — Comparaison Nationale")
-st.caption("Module transversal : collecte station_status en temps réel sur les grandes villes françaises")
-
-if _has_data:
-    _date_range = f"{avail['date_debut'].min()} → {avail['date_fin'].max()}"
-    _n_snap_total = avail["n_files"].sum()
-else:
-    _date_range = "aucune donnée collectée"
-    _n_snap_total = 0
+try:
+    collector     = get_collector()
+    avail         = get_available()
+    _n_systems    = len(avail)
+    _has_data     = _n_systems > 0
+    if _has_data:
+        _date_range   = f"{avail['date_debut'].min()} → {avail['date_fin'].max()}"
+        _n_snap_total = int(avail["n_files"].sum())
+    else:
+        _date_range   = "aucune donnée collectée"
+        _n_snap_total = 0
+    _catalog_ok = True
+except Exception as _exc:
+    st.error(
+        f"Impossible de charger le catalogue GBFS : {_exc}. "
+        "Vérifiez que `data/gbfs_france/systems_catalog.csv` est bien présent."
+    )
+    sidebar_nav()
+    st.stop()
 
 abstract_box(
     "Ce module exploite les flux <b>GBFS station_status</b> — la couche temps-réel "
