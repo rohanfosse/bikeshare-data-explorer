@@ -317,6 +317,49 @@ st.caption(
     "(visualisation spatiale, validation multi-sources et diffusion FAIR des données)."
 )
 
+# Donut IMD + texte explicatif
+_col_donut, _col_expl = st.columns([1, 2])
+with _col_donut:
+    _fig_donut = go.Figure(go.Pie(
+        labels=["Multimodalité (M)", "Infrastructure (I)", "Sécurité (S)", "Topographie (T)"],
+        values=[57.8, 18.4, 14.2, 9.6],
+        hole=0.55,
+        marker=dict(colors=["#1A6FBF", "#2196F3", "#64B5F6", "#BBDEFB"],
+                    line=dict(color="white", width=1.5)),
+        textfont=dict(size=10),
+        hovertemplate="<b>%{label}</b><br>w* = %{value} %<extra></extra>",
+    ))
+    _fig_donut.add_annotation(
+        text="IMD<br><b>4 axes</b>", x=0.5, y=0.5, showarrow=False,
+        font=dict(size=12, color="#1A2332"),
+    )
+    _fig_donut.update_layout(
+        height=280, margin=dict(l=0, r=0, t=20, b=0),
+        paper_bgcolor="rgba(0,0,0,0)",
+        showlegend=True,
+        legend=dict(font=dict(size=9), orientation="v", x=1.02, y=0.5),
+    )
+    st.plotly_chart(_fig_donut, use_container_width=True, config={"displayModeBar": False})
+    st.caption("**Figure 3.1.** Poids optimaux des quatre composantes IMD (calibration par évolution différentielle, Monte Carlo N = 10 000).")
+
+with _col_expl:
+    st.markdown(rf"""
+La **composante M — Multimodalité** (w* = 57,8 %) domine le modèle avec une marge nette.
+Ce résultat, obtenu par optimisation supervisée, valide empiriquement que la proximité
+aux arrêts de transports en commun (GTFS, rayon 300 m) est le déterminant le plus fort
+de la qualité cyclable — loin devant le simple linéaire d'infrastructure.
+
+La **composante I — Infrastructure** (18,4 %) reflète la continuité des aménagements
+cyclables (pistes, bandes, voies vertes) dans un rayon normalisé.
+La **composante S — Sécurité** (14,2 %) est calibrée à partir des données BAAC 2020–2023
+(densité d'accidents cyclables géolocalisés). Enfin, la **composante T — Topographie**
+(9,6 %) est la seule contrainte purement géographique du modèle : elle est validée par
+la corrélation du TRI SRTM 30 m avec les scores observés.
+
+L'absence de forte colinéarité entre composantes (matrice Spearman disponible en page
+*Distributions*) valide la construction de l'indice comme somme pondérée non redondante.
+""")
+
 # ── Section 4 : Résultats clés ────────────────────────────────────────────────
 st.divider()
 section(4, "Résultats Clés — Invalidation de Deux Hypothèses Intuitives Majeures")
@@ -370,6 +413,99 @@ with col_r2:
         "Absence de déterminisme économique (données réelles Gold Standard + INSEE Filosofi). "
         "La qualité cyclable est un choix de gouvernance locale, non une fatalité économique."
     )
+
+# Graphiques résultats : classement + scatter
+_col_rank, _col_scat = st.columns(2)
+
+with _col_rank:
+    _top10 = _imd_ranked.head(10).copy()
+    _fig_rank = go.Figure(go.Bar(
+        x=_top10["IMD"],
+        y=_top10["city"],
+        orientation="h",
+        marker_color=["#e74c3c" if c == "Montpellier" else "#1A6FBF" for c in _top10["city"]],
+        text=_top10["IMD"].round(1).astype(str),
+        textposition="outside",
+        textfont=dict(size=10),
+        hovertemplate="<b>%{y}</b><br>IMD = %{x:.1f} / 100<extra></extra>",
+    ))
+    _fig_rank.update_layout(
+        title=dict(text=f"Classement national IMD — Top 10 sur {_n_imd} agglomérations",
+                   font=dict(size=11), x=0),
+        height=370, margin=dict(l=10, r=55, t=38, b=30),
+        xaxis=dict(range=[0, 110], title="IMD / 100", gridcolor="#e8edf3", tickfont=dict(size=10)),
+        yaxis=dict(autorange="reversed", tickfont=dict(size=10)),
+        paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="#f8fafd",
+    )
+    st.plotly_chart(_fig_rank, use_container_width=True, config={"displayModeBar": False})
+    st.caption(
+        f"**Figure 4.1.** Classement IMD national (top 10). "
+        f"Montpellier (rang #{_mmm_rank}, rouge) — médiane nationale : {_imd_median:.1f}/100."
+    )
+
+with _col_scat:
+    if _n_filosofi >= 5:
+        _xfit = np.linspace(
+            float(_tmp["revenu_median_uc"].min()),
+            float(_tmp["revenu_median_uc"].max()),
+            100,
+        )
+        _yfit = np.polyval(_c, _xfit)
+        _highlight = {"Montpellier", _top_city, "Paris", "Lyon", "Marseille", "Bordeaux", "Rennes"}
+        _lab_mask   = _tmp["city"].isin(_highlight)
+        _fig_scat = go.Figure()
+        _fig_scat.add_trace(go.Scatter(
+            x=_tmp["revenu_median_uc"], y=_tmp["IMD"],
+            mode="markers",
+            marker=dict(
+                color=["#e74c3c" if c == "Montpellier" else "#1A6FBF" for c in _tmp["city"]],
+                size=7, opacity=0.68,
+            ),
+            text=_tmp["city"],
+            hovertemplate="<b>%{text}</b><br>%{x:,.0f} €/UC &nbsp;·&nbsp; IMD %{y:.1f}<extra></extra>",
+            showlegend=False,
+        ))
+        _fig_scat.add_trace(go.Scatter(
+            x=_tmp.loc[_lab_mask, "revenu_median_uc"],
+            y=_tmp.loc[_lab_mask, "IMD"],
+            mode="markers+text",
+            marker=dict(
+                color=["#e74c3c" if c == "Montpellier" else "#1565C0"
+                       for c in _tmp.loc[_lab_mask, "city"]],
+                size=9, opacity=1,
+            ),
+            text=_tmp.loc[_lab_mask, "city"],
+            textposition="top center",
+            textfont=dict(size=8),
+            showlegend=False,
+            hovertemplate="<b>%{text}</b><br>%{x:,.0f} €/UC &nbsp;·&nbsp; IMD %{y:.1f}<extra></extra>",
+        ))
+        _fig_scat.add_trace(go.Scatter(
+            x=_xfit, y=_yfit,
+            mode="lines",
+            line=dict(color="#e74c3c", dash="dash", width=1.5),
+            name=f"OLS (R² = {_R2_str})",
+        ))
+        _fig_scat.update_layout(
+            title=dict(
+                text=f"IMD × Revenu médian/UC — ρ = {_rho_str}, p = {_pval_str}",
+                font=dict(size=11), x=0,
+            ),
+            height=370, margin=dict(l=10, r=15, t=38, b=45),
+            xaxis=dict(title="Revenu médian/UC (€, INSEE Filosofi 2019)",
+                       gridcolor="#e8edf3", tickformat=",.0f", tickfont=dict(size=9)),
+            yaxis=dict(title="IMD / 100", gridcolor="#e8edf3", tickfont=dict(size=10)),
+            paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="#f8fafd",
+            legend=dict(font=dict(size=9), bgcolor="rgba(255,255,255,0.85)",
+                        x=0.02, y=0.98, xanchor="left", yanchor="top"),
+        )
+        st.plotly_chart(_fig_scat, use_container_width=True, config={"displayModeBar": False})
+        st.caption(
+            f"**Figure 4.2.** Corrélation IMD × revenu médian/UC "
+            f"({_n_filosofi} agglomérations dock-based, INSEE Filosofi 2019). "
+            f"La droite OLS (tirets) est quasi-horizontale — "
+            f"R² = {_R2_str} (< 1 % de variance expliquée)."
+        )
 
 # ── Section 5 : Guide de Navigation ───────────────────────────────────────────
 st.divider()
