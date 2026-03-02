@@ -1,70 +1,70 @@
-city,region,maire,parti_maire,couleur_municipale,annee_election,president_region,parti_region,couleur_regionale,note
-Paris,Île-de-France,Anne Hidalgo,PS,Gauche,2020,Valérie Pécresse,LR,Droite,Municipales 2020
-Lyon,Auvergne-Rhône-Alpes,Grégory Doucet,EELV,Gauche,2020,Laurent Wauquiez,LR,Droite,Municipales 2020
-Marseille,Provence-Alpes-Côte d'Azur,Benoît Payan,PS,Gauche,2020,Renaud Muselier,LR,Droite,Municipales 2020
-Toulouse,Occitanie,Jean-Luc Moudenc,LR,Droite,2020,Carole Delga,PS,Gauche,Municipales 2020
-Nice,Provence-Alpes-Côte d'Azur,Christian Estrosi,LR,Droite,2020,Renaud Muselier,LR,Droite,Municipales 2020
-Bordeaux,Nouvelle-Aquitaine,Pierre Hurmic,EELV,Gauche,2020,Alain Rousset,PS,Gauche,Municipales 2020
-Nantes,Pays de la Loire,Johanna Rolland,PS,Gauche,2020,Christelle Morançais,LR,Droite,Municipales 2020
-Strasbourg,Grand Est,Jeanne Barseghian,EELV,Gauche,2020,Franck Leroy,LR,Droite,Municipales 2020
-Montpellier,Occitanie,Michaël Delafosse,PS,Gauche,2020,Carole Delga,PS,Gauche,Municipales 2020
-Rennes,Bretagne,Nathalie Appéré,PS,Gauche,2020,Loïg Chesnais-Girard,PS,Gauche,Municipales 2020
-Grenoble,Auvergne-Rhône-Alpes,Éric Piolle,EELV,Gauche,2020,Laurent Wauquiez,LR,Droite,Municipales 2020
-Dijon,Bourgogne-Franche-Comté,François Rebsamen,PS,Gauche,2020,Marie-Guite Dufay,PS,Gauche,Municipales 2020
-Angers,Pays de la Loire,Christophe Béchu,LR,Droite,2020,Christelle Morançais,LR,Droite,Municipales 2020
-Clermont-Ferrand,Auvergne-Rhône-Alpes,Olivier Bianchi,PS,Gauche,2020,Laurent Wauquiez,LR,Droite,Municipales 2020
-Brest,Bretagne,François Cuillandre,PS,Gauche,2020,Loïg Chesnais-Girard,PS,Gauche,Municipales 2020
-Reims,Grand Est,Arnaud Robinet,LR,Droite,2020,Franck Leroy,LR,Droite,Municipales 2020
-Nancy,Grand Est,Mathieu Klein,PS,Gauche,2020,Franck Leroy,LR,Droite,Municipales 2020
-Lille,Hauts-de-France,Martine Aubry,PS,Gauche,2020,Xavier Bertrand,LR,Droite,Municipales 2020
-Le Havre,Normandie,Édouard Philippe,Horizons,Centre,2020,Hervé Morin,UDI,Centre,Municipales 2020
-Caen,Normandie,Joël Bruneau,LR,Droite,2020,Hervé Morin,UDI,Centre,Municipales 2020
-Perpignan,Occitanie,Louis Aliot,RN,Extrême droite,2020,Carole Delga,PS,Gauche,Municipales 2020
-Besançon,Bourgogne-Franche-Comté,Anne Vignot,EELV,Gauche,2020,Marie-Guite Dufay,PS,Gauche,Municipales 2020
-Pau,Nouvelle-Aquitaine,Nicolas Patriarche,MoDem,Centre,2020,Alain Rousset,PS,Gauche,Municipales 2020
-Avignon,Provence-Alpes-Côte d'Azur,Cécile Helle,PS,Gauche,2020,Renaud Muselier,LR,Droite,Municipales 2020
-Rouen,Normandie,Nicolas Mayer-Rossignol,PS,Gauche,2020,Hervé Morin,UDI,Centre,Municipales 2020
-Troyes,Grand Est,François Baroin,LR,Droite,2020,Franck Leroy,LR,Droite,Municipales 2020
-Mulhouse,Grand Est,Michèle Lutz,LR,Droite,2020,Franck Leroy,LR,Droite,Municipales 2020
-Saint-Étienne,Auvergne-Rhône-Alpes,Gaël Perdriau,LR,Droite,2020,Laurent Wauquiez,LR,Droite,Municipales 2020
-Calais,Hauts-de-France,Natacha Bouchart,LR,Droite,2020,Xavier Bertrand,LR,Droite,Municipales 2020
-Poitiers,Nouvelle-Aquitaine,Léonore Moncond'huy,EELV,Gauche,2020,Alain Rousset,PS,Gauche,Municipales 2020
-Amiens,Hauts-de-France,Brigitte Fouré,DVG,Centre,2020,Xavier Bertrand,LR,Droite,Municipales 2020
-Niort,Nouvelle-Aquitaine,Jérôme Baloge,DVG,Centre,2020,Alain Rousset,PS,Gauche,Municipales 2020
-La Rochelle,Nouvelle-Aquitaine,Jean-François Fountaine,DVG,Centre,2020,Alain Rousset,PS,Gauche,Municipales 2020
-Lorient,Bretagne,Fabrice Loher,UDI,Centre,2020,Loïg Chesnais-Girard,PS,Gauche,Municipales 2020
-Saint-Brieuc,Bretagne,Marie-Claire Diouron,LR,Droite,2020,Loïg Chesnais-Girard,PS,Gauche,Municipales 2020
-Valence,Auvergne-Rhône-Alpes,Nicolas Daragon,LR,Droite,2020,Laurent Wauquiez,LR,Droite,Municipales 2020
-Bourg-en-Bresse,Auvergne-Rhône-Alpes,Jean-François Debat,PS,Gauche,2020,Laurent Wauquiez,LR,Droite,Municipales 2020
-Auxerre,Bourgogne-Franche-Comté,Guy Ferez,PS,Gauche,2020,Marie-Guite Dufay,PS,Gauche,Municipales 2020
-Bourges,Centre-Val de Loire,Nicolas Sansu,PCF,Gauche,2020,François Bonneau,PS,Gauche,Municipales 2020
-Carcassonne,Occitanie,Régis Banquet,PS,Gauche,2020,Carole Delga,PS,Gauche,Municipales 2020
-Laval,Pays de la Loire,François Zocchetto,UDI,Centre,2020,Christelle Morançais,LR,Droite,Municipales 2020
-Cholet,Pays de la Loire,Gilles Bourdouleix,DVG,Centre,2020,Christelle Morançais,LR,Droite,Municipales 2020
-Tarbes,Occitanie,Gérard Trémège,DVG,Centre,2020,Carole Delga,PS,Gauche,Municipales 2020
-Belfort,Bourgogne-Franche-Comté,Damien Meslot,LR,Droite,2020,Marie-Guite Dufay,PS,Gauche,Municipales 2020
-Cherbourg-en-Cotentin,Normandie,Benoît Arrivé,PS,Gauche,2020,Hervé Morin,UDI,Centre,Municipales 2020
-Bayonne,Nouvelle-Aquitaine,Jean-René Etchegaray,Centre,Centre,2020,Alain Rousset,PS,Gauche,Municipales 2020
-Annecy,Auvergne-Rhône-Alpes,Jean-Luc Rigaut,UDI,Centre,2020,Laurent Wauquiez,LR,Droite,Municipales 2020
-Versailles,Île-de-France,François de Mazières,LR,Droite,2020,Valérie Pécresse,LR,Droite,Municipales 2020
-Limoges,Nouvelle-Aquitaine,Émile-Roger Lombertie,LR,Droite,2020,Alain Rousset,PS,Gauche,Municipales 2020
-Ajaccio,Corse,Stéphane Sbraggia,DVG,Centre,2020,Gilles Simeoni,Corse,Centre,Municipales 2020
-Saint-Nazaire,Pays de la Loire,David Samzun,PS,Gauche,2020,Christelle Morançais,LR,Droite,Municipales 2020
-Agen,Nouvelle-Aquitaine,Roméo Lozano,DVG,Centre,2020,Alain Rousset,PS,Gauche,Municipales 2020
-Épinal,Grand Est,Michel Heinrich,LR,Droite,2020,Franck Leroy,LR,Droite,Municipales 2020
-Gap,Provence-Alpes-Côte d'Azur,Roger Didier,LR,Droite,2020,Renaud Muselier,LR,Droite,Municipales 2020
-Beauvais,Hauts-de-France,Caroline Cayeux,LR,Droite,2020,Xavier Bertrand,LR,Droite,Municipales 2020
-Vichy,Auvergne-Rhône-Alpes,Frédéric Aguilera,LR,Droite,2020,Laurent Wauquiez,LR,Droite,Municipales 2020
-Millau,Occitanie,Christophe Rivenq,LR,Droite,2020,Carole Delga,PS,Gauche,Municipales 2020
-Montluçon,Auvergne-Rhône-Alpes,Frédéric Laporte,LR,Droite,2020,Laurent Wauquiez,LR,Droite,Municipales 2020
-La Roche-sur-Yon,Pays de la Loire,Luc Bouard,LR,Droite,2020,Christelle Morançais,LR,Droite,Municipales 2020
-Draguignan,Provence-Alpes-Côte d'Azur,Maxime Caubit,LR,Droite,2020,Renaud Muselier,LR,Droite,Municipales 2020
-Sarreguemines,Grand Est,Céleste Lett,LR,Droite,2020,Franck Leroy,LR,Droite,Municipales 2020
-Bourgoin-Jallieu,Auvergne-Rhône-Alpes,Vincent Chriqui,DVG,Centre,2020,Laurent Wauquiez,LR,Droite,Municipales 2020
-Valenciennes,Hauts-de-France,Laurent Degallaix,DVG,Centre,2020,Xavier Bertrand,LR,Droite,Municipales 2020
-Libourne,Nouvelle-Aquitaine,Philippe Buisson,PS,Gauche,2020,Alain Rousset,PS,Gauche,Municipales 2020
-Châtellerault,Nouvelle-Aquitaine,Jean-Pierre Abelin,UDI,Centre,2020,Alain Rousset,PS,Gauche,Municipales 2020
-Soissons,Hauts-de-France,Alain Crémont,DVG,Centre,2020,Xavier Bertrand,LR,Droite,Municipales 2020
-Marne-la-Vallée,Île-de-France,divers,DVG,Centre,2020,Valérie Pécresse,LR,Droite,Intercommunalité (plusieurs communes)
-Île-de-France (Cergy),Île-de-France,divers,DVG,Centre,2020,Valérie Pécresse,LR,Droite,Agglomération Cergy-Pontoise
-Brive-la-Gaillarde,Nouvelle-Aquitaine,Frédéric Soulier,LR,Droite,2020,Alain Rousset,PS,Gauche,Municipales 2020
+city,region,maire,parti_maire,couleur_municipale,annee_election,president_region,parti_region,couleur_regionale,note,annee_vls,couleur_precedente
+Paris,Île-de-France,Anne Hidalgo,PS,Gauche,2020,Valérie Pécresse,LR,Droite,Municipales 2020,2007,Gauche
+Lyon,Auvergne-Rhône-Alpes,Grégory Doucet,EELV,Gauche,2020,Laurent Wauquiez,LR,Droite,Municipales 2020,2005,Centre
+Marseille,Provence-Alpes-Côte d'Azur,Benoît Payan,PS,Gauche,2020,Renaud Muselier,LR,Droite,Municipales 2020,2007,Droite
+Toulouse,Occitanie,Jean-Luc Moudenc,LR,Droite,2020,Carole Delga,PS,Gauche,Municipales 2020,2007,Droite
+Nice,Provence-Alpes-Côte d'Azur,Christian Estrosi,LR,Droite,2020,Renaud Muselier,LR,Droite,Municipales 2020,2009,Droite
+Bordeaux,Nouvelle-Aquitaine,Pierre Hurmic,EELV,Gauche,2020,Alain Rousset,PS,Gauche,Municipales 2020,2010,Droite
+Nantes,Pays de la Loire,Johanna Rolland,PS,Gauche,2020,Christelle Morançais,LR,Droite,Municipales 2020,2008,Gauche
+Strasbourg,Grand Est,Jeanne Barseghian,EELV,Gauche,2020,Franck Leroy,LR,Droite,Municipales 2020,2013,Gauche
+Montpellier,Occitanie,Michaël Delafosse,PS,Gauche,2020,Carole Delga,PS,Gauche,Municipales 2020,2012,Centre
+Rennes,Bretagne,Nathalie Appéré,PS,Gauche,2020,Loïg Chesnais-Girard,PS,Gauche,Municipales 2020,2009,Gauche
+Grenoble,Auvergne-Rhône-Alpes,Éric Piolle,EELV,Gauche,2020,Laurent Wauquiez,LR,Droite,Municipales 2020,2011,Gauche
+Dijon,Bourgogne-Franche-Comté,François Rebsamen,PS,Gauche,2020,Marie-Guite Dufay,PS,Gauche,Municipales 2020,2010,Gauche
+Angers,Pays de la Loire,Christophe Béchu,LR,Droite,2020,Christelle Morançais,LR,Droite,Municipales 2020,2011,Droite
+Clermont-Ferrand,Auvergne-Rhône-Alpes,Olivier Bianchi,PS,Gauche,2020,Laurent Wauquiez,LR,Droite,Municipales 2020,2012,Gauche
+Brest,Bretagne,François Cuillandre,PS,Gauche,2020,Loïg Chesnais-Girard,PS,Gauche,Municipales 2020,2019,Gauche
+Reims,Grand Est,Arnaud Robinet,LR,Droite,2020,Franck Leroy,LR,Droite,Municipales 2020,2011,Droite
+Nancy,Grand Est,Mathieu Klein,PS,Gauche,2020,Franck Leroy,LR,Droite,Municipales 2020,2008,Gauche
+Lille,Hauts-de-France,Martine Aubry,PS,Gauche,2020,Xavier Bertrand,LR,Droite,Municipales 2020,2011,Gauche
+Le Havre,Normandie,Édouard Philippe,Horizons,Centre,2020,Hervé Morin,UDI,Centre,Municipales 2020,2018,Droite
+Caen,Normandie,Joël Bruneau,LR,Droite,2020,Hervé Morin,UDI,Centre,Municipales 2020,2016,Droite
+Perpignan,Occitanie,Louis Aliot,RN,Extrême droite,2020,Carole Delga,PS,Gauche,Municipales 2020,2013,Droite
+Besançon,Bourgogne-Franche-Comté,Anne Vignot,EELV,Gauche,2020,Marie-Guite Dufay,PS,Gauche,Municipales 2020,2012,Gauche
+Pau,Nouvelle-Aquitaine,Nicolas Patriarche,MoDem,Centre,2020,Alain Rousset,PS,Gauche,Municipales 2020,2019,Centre
+Avignon,Provence-Alpes-Côte d'Azur,Cécile Helle,PS,Gauche,2020,Renaud Muselier,LR,Droite,Municipales 2020,2014,Gauche
+Rouen,Normandie,Nicolas Mayer-Rossignol,PS,Gauche,2020,Hervé Morin,UDI,Centre,Municipales 2020,2020,Gauche
+Troyes,Grand Est,François Baroin,LR,Droite,2020,Franck Leroy,LR,Droite,Municipales 2020,2014,Droite
+Mulhouse,Grand Est,Michèle Lutz,LR,Droite,2020,Franck Leroy,LR,Droite,Municipales 2020,2015,Droite
+Saint-Étienne,Auvergne-Rhône-Alpes,Gaël Perdriau,LR,Droite,2020,Laurent Wauquiez,LR,Droite,Municipales 2020,2019,Droite
+Calais,Hauts-de-France,Natacha Bouchart,LR,Droite,2020,Xavier Bertrand,LR,Droite,Municipales 2020,2015,Droite
+Poitiers,Nouvelle-Aquitaine,Léonore Moncond'huy,EELV,Gauche,2020,Alain Rousset,PS,Gauche,Municipales 2020,2017,Centre
+Amiens,Hauts-de-France,Brigitte Fouré,DVG,Centre,2020,Xavier Bertrand,LR,Droite,Municipales 2020,2018,Centre
+Niort,Nouvelle-Aquitaine,Jérôme Baloge,DVG,Centre,2020,Alain Rousset,PS,Gauche,Municipales 2020,2019,Centre
+La Rochelle,Nouvelle-Aquitaine,Jean-François Fountaine,DVG,Centre,2020,Alain Rousset,PS,Gauche,Municipales 2020,2011,Gauche
+Lorient,Bretagne,Fabrice Loher,UDI,Centre,2020,Loïg Chesnais-Girard,PS,Gauche,Municipales 2020,2015,Centre
+Saint-Brieuc,Bretagne,Marie-Claire Diouron,LR,Droite,2020,Loïg Chesnais-Girard,PS,Gauche,Municipales 2020,2014,Droite
+Valence,Auvergne-Rhône-Alpes,Nicolas Daragon,LR,Droite,2020,Laurent Wauquiez,LR,Droite,Municipales 2020,2019,Droite
+Bourg-en-Bresse,Auvergne-Rhône-Alpes,Jean-François Debat,PS,Gauche,2020,Laurent Wauquiez,LR,Droite,Municipales 2020,2018,Gauche
+Auxerre,Bourgogne-Franche-Comté,Guy Ferez,PS,Gauche,2020,Marie-Guite Dufay,PS,Gauche,Municipales 2020,2016,Gauche
+Bourges,Centre-Val de Loire,Nicolas Sansu,PCF,Gauche,2020,François Bonneau,PS,Gauche,Municipales 2020,2014,Gauche
+Carcassonne,Occitanie,Régis Banquet,PS,Gauche,2020,Carole Delga,PS,Gauche,Municipales 2020,2016,Gauche
+Laval,Pays de la Loire,François Zocchetto,UDI,Centre,2020,Christelle Morançais,LR,Droite,Municipales 2020,2016,Centre
+Cholet,Pays de la Loire,Gilles Bourdouleix,DVG,Centre,2020,Christelle Morançais,LR,Droite,Municipales 2020,2019,Centre
+Tarbes,Occitanie,Gérard Trémège,DVG,Centre,2020,Carole Delga,PS,Gauche,Municipales 2020,2019,Centre
+Belfort,Bourgogne-Franche-Comté,Damien Meslot,LR,Droite,2020,Marie-Guite Dufay,PS,Gauche,Municipales 2020,2017,Droite
+Cherbourg-en-Cotentin,Normandie,Benoît Arrivé,PS,Gauche,2020,Hervé Morin,UDI,Centre,Municipales 2020,2019,Gauche
+Bayonne,Nouvelle-Aquitaine,Jean-René Etchegaray,Centre,Centre,2020,Alain Rousset,PS,Gauche,Municipales 2020,2011,Centre
+Annecy,Auvergne-Rhône-Alpes,Jean-Luc Rigaut,UDI,Centre,2020,Laurent Wauquiez,LR,Droite,Municipales 2020,2013,Centre
+Versailles,Île-de-France,François de Mazières,LR,Droite,2020,Valérie Pécresse,LR,Droite,Municipales 2020,2018,Droite
+Limoges,Nouvelle-Aquitaine,Émile-Roger Lombertie,LR,Droite,2020,Alain Rousset,PS,Gauche,Municipales 2020,2013,Droite
+Ajaccio,Corse,Stéphane Sbraggia,DVG,Centre,2020,Gilles Simeoni,Corse,Centre,Municipales 2020,2018,Centre
+Saint-Nazaire,Pays de la Loire,David Samzun,PS,Gauche,2020,Christelle Morançais,LR,Droite,Municipales 2020,2016,Gauche
+Agen,Nouvelle-Aquitaine,Roméo Lozano,DVG,Centre,2020,Alain Rousset,PS,Gauche,Municipales 2020,2019,Centre
+Épinal,Grand Est,Michel Heinrich,LR,Droite,2020,Franck Leroy,LR,Droite,Municipales 2020,2018,Droite
+Gap,Provence-Alpes-Côte d'Azur,Roger Didier,LR,Droite,2020,Renaud Muselier,LR,Droite,Municipales 2020,2020,Droite
+Beauvais,Hauts-de-France,Caroline Cayeux,LR,Droite,2020,Xavier Bertrand,LR,Droite,Municipales 2020,2015,Droite
+Vichy,Auvergne-Rhône-Alpes,Frédéric Aguilera,LR,Droite,2020,Laurent Wauquiez,LR,Droite,Municipales 2020,2016,Droite
+Millau,Occitanie,Christophe Rivenq,LR,Droite,2020,Carole Delga,PS,Gauche,Municipales 2020,2016,Droite
+Montluçon,Auvergne-Rhône-Alpes,Frédéric Laporte,LR,Droite,2020,Laurent Wauquiez,LR,Droite,Municipales 2020,2015,Droite
+La Roche-sur-Yon,Pays de la Loire,Luc Bouard,LR,Droite,2020,Christelle Morançais,LR,Droite,Municipales 2020,2018,Droite
+Draguignan,Provence-Alpes-Côte d'Azur,Maxime Caubit,LR,Droite,2020,Renaud Muselier,LR,Droite,Municipales 2020,2020,Droite
+Sarreguemines,Grand Est,Céleste Lett,LR,Droite,2020,Franck Leroy,LR,Droite,Municipales 2020,2018,Droite
+Bourgoin-Jallieu,Auvergne-Rhône-Alpes,Vincent Chriqui,DVG,Centre,2020,Laurent Wauquiez,LR,Droite,Municipales 2020,2016,Centre
+Valenciennes,Hauts-de-France,Laurent Degallaix,DVG,Centre,2020,Xavier Bertrand,LR,Droite,Municipales 2020,2015,Centre
+Libourne,Nouvelle-Aquitaine,Philippe Buisson,PS,Gauche,2020,Alain Rousset,PS,Gauche,Municipales 2020,2019,Gauche
+Châtellerault,Nouvelle-Aquitaine,Jean-Pierre Abelin,UDI,Centre,2020,Alain Rousset,PS,Gauche,Municipales 2020,2015,Centre
+Soissons,Hauts-de-France,Alain Crémont,DVG,Centre,2020,Xavier Bertrand,LR,Droite,Municipales 2020,2018,Centre
+Marne-la-Vallée,Île-de-France,divers,DVG,Centre,2020,Valérie Pécresse,LR,Droite,Intercommunalité (plusieurs communes),2016,Centre
+Île-de-France (Cergy),Île-de-France,divers,DVG,Centre,2020,Valérie Pécresse,LR,Droite,Agglomération Cergy-Pontoise,2017,Centre
+Brive-la-Gaillarde,Nouvelle-Aquitaine,Frédéric Soulier,LR,Droite,2020,Alain Rousset,PS,Gauche,Municipales 2020,2019,Droite
