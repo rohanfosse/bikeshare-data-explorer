@@ -1,0 +1,210 @@
+22:30:08 [INFO] collect_status — Mode veille désactivé (SetThreadExecutionState).
+22:30:08 [INFO] gbfs_collector — Catalogue : 77 systèmes dock-based éligibles
+22:30:08 [INFO] gbfs_collector — Démarrage collecte : 43 systèmes | 12 workers | intervalle 60s | durée 28800s
+22:30:08 [INFO] gbfs_collector — Pré-chargement des station_information (parallèle)...
+22:30:08 [INFO] gbfs_collector — [capcotentin] station_info : 49 stations
+22:30:08 [INFO] gbfs_collector — [CVelo_FR_Clermont-Ferrand] station_info : 82 stations
+22:30:08 [INFO] gbfs_collector — [donkey_brest] station_info : 75 stations
+22:30:09 [INFO] gbfs_collector — [libelo] station_info : 68 stations
+22:30:09 [INFO] gbfs_collector — [donkey_valenciennes] station_info : 40 stations
+22:30:09 [INFO] gbfs_collector — [beb] station_info : 45 stations
+22:30:09 [INFO] gbfs_collector — [semo] station_info : 40 stations
+22:30:09 [INFO] gbfs_collector — [auxrmlevelo] station_info : 55 stations
+22:30:10 [INFO] gbfs_collector — [Optymo_Belfort_ALS] station_info : 52 stations
+22:30:10 [INFO] gbfs_collector — [idecycle_pau] station_info : 40 stations
+22:30:10 [INFO] gbfs_collector — [velibeo] station_info : 26 stations
+22:30:10 [INFO] gbfs_collector — [tanlib] station_info : 51 stations
+22:30:10 [INFO] gbfs_collector — [twisto_velolib_caen] station_info : 75 stations
+22:30:10 [INFO] gbfs_collector — [calais-velos] station_info : 80 stations
+22:30:11 [WARNING] gbfs_collector — Impossible de charger https://data.metropole-dijon.fr/gbfs/gbfs.json : 404 Client Error: Not Found for url: https://data.metropole-dijon.fr/gbfs/gbfs.json
+22:30:11 [WARNING] gbfs_collector — Impossible de charger https://data.metropole-dijon.fr/gbfs/gbfs.json : 404 Client Error: Not Found for url: https://data.metropole-dijon.fr/gbfs/gbfs.json
+22:30:11 [INFO] gbfs_collector — [vilvolt_epinal] station_info : 106 stations
+22:30:11 [INFO] gbfs_collector — [velopop] station_info : 29 stations
+22:30:13 [INFO] gbfs_collector — [citiz_angers] station_info : 26 stations
+22:30:13 [INFO] gbfs_collector — [citiz_grand_poitiers] station_info : 23 stations
+22:30:13 [INFO] gbfs_collector — [citiz_la_rochelle] station_info : 24 stations
+22:30:13 [INFO] gbfs_collector — [citiz_bfc] station_info : 57 stations
+22:30:13 [INFO] gbfs_collector — [citiz_rennes_metropole] station_info : 56 stations
+22:30:13 [INFO] gbfs_collector — [citiz_occitanie] station_info : 128 stations
+22:30:14 [INFO] gbfs_collector — [citiz_grand_est] station_info : 285 stations
+22:30:14 [INFO] gbfs_collector — [citiz_alpes_loire] station_info : 408 stations
+22:30:14 [INFO] gbfs_collector — ── Itération 1 ──────────────────────────────────────────
+22:30:14 [INFO] gbfs_collector — [citiz_angers] 26 stations collectées
+22:30:14 [INFO] gbfs_collector — [citiz_la_rochelle] 24 stations collectées
+22:30:14 [INFO] gbfs_collector — [citiz_grand_poitiers] 22 stations collectées
+22:30:14 [INFO] gbfs_collector — [CVelo_FR_Clermont-Ferrand] 82 stations collectées
+22:30:14 [INFO] gbfs_collector — [capcotentin] 49 stations collectées
+22:30:14 [INFO] gbfs_collector — [citiz_bfc] 55 stations collectées
+22:30:14 [INFO] gbfs_collector — [citiz_occitanie] 128 stations collectées
+22:30:14 [INFO] gbfs_collector — [citiz_rennes_metropole] 55 stations collectées
+22:30:14 [INFO] gbfs_collector — [citiz_grand_est] 284 stations collectées
+22:30:14 [INFO] gbfs_collector — [citiz_alpes_loire] 407 stations collectées
+22:30:14 [INFO] gbfs_collector — [donkey_brest] 75 stations collectées
+22:30:14 [INFO] gbfs_collector — [libelo] 68 stations collectées
+22:30:14 [INFO] gbfs_collector — [donkey_valenciennes] 40 stations collectées
+22:30:14 [INFO] gbfs_collector — [beb] 45 stations collectées
+22:30:14 [INFO] gbfs_collector — [semo] 40 stations collectées
+22:30:14 [INFO] gbfs_collector — [idecycle_pau] 40 stations collectées
+22:30:14 [INFO] gbfs_collector — [levelo_inurba_marseille] 223 stations collectées
+22:30:14 [INFO] gbfs_collector — [inurba-rouen] 131 stations collectées
+22:30:14 [INFO] gbfs_collector — [velo-tbm-bordeaux] 225 stations collectées
+22:30:14 [INFO] gbfs_collector — [le_velo_star] 57 stations collectées
+22:30:14 [INFO] gbfs_collector — [twisto_velolib_caen] 75 stations collectées
+22:30:14 [INFO] gbfs_collector — [vilvolt_epinal] 106 stations collectées
+22:30:14 [INFO] gbfs_collector — [nantes] 123 stations collectées
+22:30:14 [INFO] gbfs_collector — [velibeo] 26 stations collectées
+22:30:14 [INFO] gbfs_collector — [tanlib] 51 stations collectées
+22:30:14 [INFO] gbfs_collector — [velivert_saint_etienne] 97 stations collectées
+22:30:14 [INFO] gbfs_collector — [amiens] 45 stations collectées
+22:30:14 [INFO] gbfs_collector — [v_lille] 267 stations collectées
+22:30:14 [INFO] gbfs_collector — [Paris] 1511 stations collectées
+22:30:14 [INFO] gbfs_collector — [nextbike_af] 61 stations collectées
+22:30:14 [INFO] gbfs_collector — [cergy] 45 stations collectées
+22:30:14 [INFO] gbfs_collector — [velopop] 29 stations collectées
+22:30:14 [INFO] gbfs_collector — [nancy] 37 stations collectées
+22:30:14 [INFO] gbfs_collector — [lyon] 453 stations collectées
+22:30:14 [INFO] gbfs_collector — [zebullo] 63 stations collectées
+22:30:14 [INFO] gbfs_collector — [auxrmlevelo] 55 stations collectées
+22:30:14 [INFO] gbfs_collector — [calais-velos] 80 stations collectées
+22:30:14 [INFO] gbfs_collector — [montpellier] 53 stations collectées
+22:30:15 [INFO] gbfs_collector — [toulouse] 434 stations collectées
+22:30:15 [INFO] gbfs_collector — [velozef] 41 stations collectées
+22:30:16 [INFO] gbfs_collector — [velonecy60minutes_annecy] 80 stations collectées
+22:30:19 [INFO] gbfs_collector — [Optymo_Belfort_ALS] 52 stations collectées
+22:30:19 [INFO] gbfs_collector — Résumé itération 1 : 42/43 systèmes OK, 5860 stations — 5.0 s
+22:30:19 [INFO] gbfs_collector — Prochaine collecte dans 55 s...
+22:31:14 [INFO] gbfs_collector — ── Itération 2 ──────────────────────────────────────────
+22:31:14 [INFO] gbfs_collector — [citiz_grand_poitiers] 22 stations collectées
+22:31:14 [INFO] gbfs_collector — [citiz_angers] 26 stations collectées
+22:31:14 [INFO] gbfs_collector — [citiz_la_rochelle] 24 stations collectées
+22:31:14 [INFO] gbfs_collector — [auxrmlevelo] 55 stations collectées
+22:31:14 [INFO] gbfs_collector — [citiz_bfc] 55 stations collectées
+22:31:14 [INFO] gbfs_collector — [CVelo_FR_Clermont-Ferrand] 82 stations collectées
+22:31:14 [INFO] gbfs_collector — [citiz_rennes_metropole] 55 stations collectées
+22:31:14 [INFO] gbfs_collector — [citiz_grand_est] 284 stations collectées
+22:31:14 [INFO] gbfs_collector — [citiz_occitanie] 128 stations collectées
+22:31:14 [INFO] gbfs_collector — [capcotentin] 49 stations collectées
+22:31:14 [INFO] gbfs_collector — [citiz_alpes_loire] 407 stations collectées
+22:31:14 [INFO] gbfs_collector — [donkey_brest] 75 stations collectées
+22:31:14 [INFO] gbfs_collector — [beb] 45 stations collectées
+22:31:14 [INFO] gbfs_collector — [idecycle_pau] 40 stations collectées
+22:31:14 [INFO] gbfs_collector — [donkey_valenciennes] 40 stations collectées
+22:31:14 [INFO] gbfs_collector — [libelo] 68 stations collectées
+22:31:14 [INFO] gbfs_collector — [le_velo_star] 57 stations collectées
+22:31:14 [INFO] gbfs_collector — [inurba-rouen] 131 stations collectées
+22:31:14 [INFO] gbfs_collector — [levelo_inurba_marseille] 223 stations collectées
+22:31:14 [INFO] gbfs_collector — [velo-tbm-bordeaux] 225 stations collectées
+22:31:14 [INFO] gbfs_collector — [twisto_velolib_caen] 75 stations collectées
+22:31:14 [INFO] gbfs_collector — [vilvolt_epinal] 106 stations collectées
+22:31:14 [INFO] gbfs_collector — [nantes] 123 stations collectées
+22:31:14 [INFO] gbfs_collector — [amiens] 45 stations collectées
+22:31:14 [INFO] gbfs_collector — [v_lille] 267 stations collectées
+22:31:14 [INFO] gbfs_collector — [velibeo] 26 stations collectées
+22:31:14 [INFO] gbfs_collector — [tanlib] 51 stations collectées
+22:31:14 [INFO] gbfs_collector — [velivert_saint_etienne] 97 stations collectées
+22:31:14 [INFO] gbfs_collector — [Paris] 1511 stations collectées
+22:31:14 [INFO] gbfs_collector — [cergy] 45 stations collectées
+22:31:14 [INFO] gbfs_collector — [velopop] 29 stations collectées
+22:31:14 [INFO] gbfs_collector — [semo] 40 stations collectées
+22:31:14 [INFO] gbfs_collector — [nancy] 37 stations collectées
+22:31:14 [INFO] gbfs_collector — [nextbike_af] 61 stations collectées
+22:31:14 [INFO] gbfs_collector — [velozef] 41 stations collectées
+22:31:14 [INFO] gbfs_collector — [zebullo] 63 stations collectées
+22:31:14 [INFO] gbfs_collector — [lyon] 453 stations collectées
+22:31:14 [INFO] gbfs_collector — [montpellier] 53 stations collectées
+22:31:14 [INFO] gbfs_collector — [toulouse] 434 stations collectées
+22:31:14 [INFO] gbfs_collector — [calais-velos] 80 stations collectées
+22:31:15 [INFO] gbfs_collector — [velonecy60minutes_annecy] 80 stations collectées
+22:31:20 [INFO] gbfs_collector — [Optymo_Belfort_ALS] 52 stations collectées
+22:31:20 [INFO] gbfs_collector — Résumé itération 2 : 42/43 systèmes OK, 5860 stations — 6.2 s
+22:31:20 [INFO] gbfs_collector — Prochaine collecte dans 54 s...
+22:32:14 [INFO] gbfs_collector — ── Itération 3 ──────────────────────────────────────────
+22:32:14 [INFO] gbfs_collector — [citiz_angers] 26 stations collectées
+22:32:14 [INFO] gbfs_collector — [citiz_bfc] 55 stations collectées
+22:32:14 [INFO] gbfs_collector — [citiz_la_rochelle] 24 stations collectées
+22:32:14 [INFO] gbfs_collector — [citiz_grand_poitiers] 22 stations collectées
+22:32:14 [INFO] gbfs_collector — [citiz_rennes_metropole] 55 stations collectées
+22:32:14 [INFO] gbfs_collector — [CVelo_FR_Clermont-Ferrand] 82 stations collectées
+22:32:14 [INFO] gbfs_collector — [citiz_occitanie] 128 stations collectées
+22:32:14 [INFO] gbfs_collector — [capcotentin] 49 stations collectées
+22:32:14 [INFO] gbfs_collector — [citiz_alpes_loire] 407 stations collectées
+22:32:14 [INFO] gbfs_collector — [citiz_grand_est] 284 stations collectées
+22:32:14 [INFO] gbfs_collector — [auxrmlevelo] 55 stations collectées
+22:32:14 [INFO] gbfs_collector — [donkey_brest] 75 stations collectées
+22:32:14 [INFO] gbfs_collector — [donkey_valenciennes] 40 stations collectées
+22:32:14 [INFO] gbfs_collector — [libelo] 68 stations collectées
+22:32:14 [INFO] gbfs_collector — [le_velo_star] 57 stations collectées
+22:32:14 [INFO] gbfs_collector — [inurba-rouen] 131 stations collectées
+22:32:14 [INFO] gbfs_collector — [idecycle_pau] 40 stations collectées
+22:32:14 [INFO] gbfs_collector — [twisto_velolib_caen] 75 stations collectées
+22:32:14 [INFO] gbfs_collector — [levelo_inurba_marseille] 223 stations collectées
+22:32:14 [INFO] gbfs_collector — [velo-tbm-bordeaux] 225 stations collectées
+22:32:14 [INFO] gbfs_collector — [beb] 45 stations collectées
+22:32:14 [INFO] gbfs_collector — [semo] 40 stations collectées
+22:32:14 [INFO] gbfs_collector — [nantes] 123 stations collectées
+22:32:14 [INFO] gbfs_collector — [vilvolt_epinal] 106 stations collectées
+22:32:14 [INFO] gbfs_collector — [v_lille] 267 stations collectées
+22:32:14 [INFO] gbfs_collector — [tanlib] 51 stations collectées
+22:32:14 [INFO] gbfs_collector — [velivert_saint_etienne] 97 stations collectées
+22:32:14 [INFO] gbfs_collector — [velonecy60minutes_annecy] 80 stations collectées
+22:32:14 [INFO] gbfs_collector — [amiens] 45 stations collectées
+22:32:14 [INFO] gbfs_collector — [cergy] 45 stations collectées
+22:32:14 [INFO] gbfs_collector — [Paris] 1511 stations collectées
+22:32:14 [INFO] gbfs_collector — [nancy] 37 stations collectées
+22:32:14 [INFO] gbfs_collector — [velopop] 29 stations collectées
+22:32:14 [INFO] gbfs_collector — [velozef] 41 stations collectées
+22:32:14 [INFO] gbfs_collector — [zebullo] 63 stations collectées
+22:32:14 [INFO] gbfs_collector — [nextbike_af] 61 stations collectées
+22:32:14 [INFO] gbfs_collector — [lyon] 453 stations collectées
+22:32:14 [INFO] gbfs_collector — [montpellier] 53 stations collectées
+22:32:14 [INFO] gbfs_collector — [toulouse] 434 stations collectées
+22:32:14 [INFO] gbfs_collector — [velibeo] 26 stations collectées
+22:32:14 [INFO] gbfs_collector — [calais-velos] 80 stations collectées
+22:32:18 [INFO] gbfs_collector — [Optymo_Belfort_ALS] 52 stations collectées
+22:32:18 [INFO] gbfs_collector — Résumé itération 3 : 42/43 systèmes OK, 5860 stations — 4.3 s
+22:32:18 [INFO] gbfs_collector — Prochaine collecte dans 56 s...
+22:33:14 [INFO] gbfs_collector — ── Itération 4 ──────────────────────────────────────────
+22:33:14 [INFO] gbfs_collector — [citiz_angers] 26 stations collectées
+22:33:14 [INFO] gbfs_collector — [citiz_la_rochelle] 24 stations collectées
+22:33:14 [INFO] gbfs_collector — [CVelo_FR_Clermont-Ferrand] 82 stations collectées
+22:33:14 [INFO] gbfs_collector — [citiz_grand_poitiers] 22 stations collectées
+22:33:14 [INFO] gbfs_collector — [citiz_bfc] 55 stations collectées
+22:33:14 [INFO] gbfs_collector — [auxrmlevelo] 55 stations collectées
+22:33:14 [INFO] gbfs_collector — [capcotentin] 49 stations collectées
+22:33:14 [INFO] gbfs_collector — [citiz_rennes_metropole] 55 stations collectées
+22:33:14 [INFO] gbfs_collector — [citiz_occitanie] 128 stations collectées
+22:33:14 [INFO] gbfs_collector — [citiz_grand_est] 284 stations collectées
+22:33:14 [INFO] gbfs_collector — [citiz_alpes_loire] 407 stations collectées
+22:33:14 [INFO] gbfs_collector — [donkey_brest] 75 stations collectées
+22:33:14 [INFO] gbfs_collector — [idecycle_pau] 40 stations collectées
+22:33:14 [INFO] gbfs_collector — [donkey_valenciennes] 40 stations collectées
+22:33:14 [INFO] gbfs_collector — [libelo] 68 stations collectées
+22:33:14 [INFO] gbfs_collector — [inurba-rouen] 131 stations collectées
+22:33:14 [INFO] gbfs_collector — [le_velo_star] 57 stations collectées
+22:33:14 [INFO] gbfs_collector — [levelo_inurba_marseille] 223 stations collectées
+22:33:14 [INFO] gbfs_collector — [beb] 45 stations collectées
+22:33:14 [INFO] gbfs_collector — [velo-tbm-bordeaux] 225 stations collectées
+22:33:14 [INFO] gbfs_collector — [semo] 40 stations collectées
+22:33:14 [INFO] gbfs_collector — [twisto_velolib_caen] 75 stations collectées
+22:33:14 [INFO] gbfs_collector — [nantes] 123 stations collectées
+22:33:14 [INFO] gbfs_collector — [vilvolt_epinal] 106 stations collectées
+22:33:14 [INFO] gbfs_collector — [velibeo] 26 stations collectées
+22:33:14 [INFO] gbfs_collector — [velonecy60minutes_annecy] 80 stations collectées
+22:33:14 [INFO] gbfs_collector — [tanlib] 51 stations collectées
+22:33:14 [INFO] gbfs_collector — [amiens] 45 stations collectées
+22:33:14 [INFO] gbfs_collector — [v_lille] 267 stations collectées
+22:33:14 [INFO] gbfs_collector — [velivert_saint_etienne] 97 stations collectées
+22:33:14 [INFO] gbfs_collector — [cergy] 45 stations collectées
+22:33:14 [INFO] gbfs_collector — [velopop] 29 stations collectées
+22:33:14 [INFO] gbfs_collector — [Paris] 1511 stations collectées
+22:33:14 [INFO] gbfs_collector — [velozef] 41 stations collectées
+22:33:14 [INFO] gbfs_collector — [nextbike_af] 61 stations collectées
+22:33:14 [INFO] gbfs_collector — [lyon] 453 stations collectées
+22:33:14 [INFO] gbfs_collector — [nancy] 37 stations collectées
+22:33:14 [INFO] gbfs_collector — [zebullo] 63 stations collectées
+22:33:14 [INFO] gbfs_collector — [toulouse] 434 stations collectées
+22:33:14 [INFO] gbfs_collector — [montpellier] 53 stations collectées
+22:33:14 [INFO] gbfs_collector — [calais-velos] 80 stations collectées
+22:33:20 [INFO] gbfs_collector — [Optymo_Belfort_ALS] 52 stations collectées
+22:33:20 [INFO] gbfs_collector — Résumé itération 4 : 42/43 systèmes OK, 5860 stations — 6.0 s
+22:33:20 [INFO] gbfs_collector — Prochaine collecte dans 54 s...
