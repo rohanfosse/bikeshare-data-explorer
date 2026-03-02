@@ -59,7 +59,7 @@ abstract_box(
     f"({n_dock_cities} agglomérations), dont {n_dock:,} stations dock-based (VLS) "
     f"et {n_ff:,} points free-floating. "
     "Résultat clé : Bordeaux passait du rang 2 au rang 14 national après correction de l'anomalie A3 "
-    "— illustrant l'enjeu d'un audit rigoureux avant toute modélisation spatiale.",
+    "- illustrant l'enjeu d'un audit rigoureux avant toute modélisation spatiale.",
     findings=[
         (f"{len(df):,}", "stations certifiées"),
         (str(n_ok), "systèmes Gold Standard"),

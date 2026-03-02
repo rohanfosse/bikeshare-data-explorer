@@ -64,9 +64,9 @@ _Y_META: dict[str, dict] = {
     "IMD":               {"label": "IMD (/100)",             "fmt": ".1f", "title": "Indice de Mobilité Douce"},
     "IES":               {"label": "IES",                    "fmt": ".3f", "title": "Indice d'Équité Sociale"},
     "fub_score_2023":    {"label": "FUB score (/6)",         "fmt": ".2f", "title": "FUB Baromètre 2023 (subjectif)"},
-    "emp_part_velo_2019":{"label": "Part modale vélo (%)",   "fmt": ".1f", "title": "EMP 2019 — Part modale cycliste"},
-    "part_velo_travail": {"label": "% vélo domicile-travail","fmt": ".2f", "title": "RP 2020 — Navette vélo"},
-    "gini_revenu":       {"label": "Gini (inégalités)",      "fmt": ".3f", "title": "Gini — Inégalités de revenu"},
+    "emp_part_velo_2019":{"label": "Part modale vélo (%)",   "fmt": ".1f", "title": "EMP 2019 - Part modale cycliste"},
+    "part_velo_travail": {"label": "% vélo domicile-travail","fmt": ".2f", "title": "RP 2020 - Navette vélo"},
+    "gini_revenu":       {"label": "Gini (inégalités)",      "fmt": ".3f", "title": "Gini - Inégalités de revenu"},
 }
 
 # ── Chargement des données ─────────────────────────────────────────────────────
@@ -110,7 +110,7 @@ if has_parti and _n_pol >= 3:
     _top_parti = str(merged["parti_maire"].value_counts().index[0])
     _top_n     = int(merged["parti_maire"].value_counts().iloc[0])
 else:
-    _top_parti, _top_n = "—", 0
+    _top_parti, _top_n = "-", 0
 
 # ── Titre + résumé ─────────────────────────────────────────────────────────────
 st.title("Gouvernance Politique et Mobilité Douce")
@@ -125,7 +125,7 @@ abstract_box(
     "l'<b>IMD</b> (Infrastructure, Multimodalité, Sécurité, Topographie), "
     "l'<b>IES</b> (équité distributive), le <b>FUB Baromètre 2023</b> (satisfaction subjective), "
     "la <b>part modale EMP 2019</b>, la <b>part vélo domicile-travail</b> et le <b>Gini</b> "
-    "(inégalités de revenu). L'analyse est exploratoire — faibles effectifs, "
+    "(inégalités de revenu). L'analyse est exploratoire - faibles effectifs, "
     "absence de contrôle causal. L'année de création du réseau VLS permet de distinguer "
     "les villes pionnières (héritage) des villes récentes (décision politique directe).",
     findings=[
@@ -155,7 +155,7 @@ with st.sidebar:
     exclude_idf    = st.checkbox(
         "Exclure Île-de-France",
         value=False,
-        help="Paris, Versailles, Marne-la-Vallée, Cergy — géants démographiques atypiques.",
+        help="Paris, Versailles, Marne-la-Vallée, Cergy - géants démographiques atypiques.",
     )
 
 # ── Filtre ─────────────────────────────────────────────────────────────────────
@@ -168,7 +168,7 @@ has_parti = "parti_maire"        in merged.columns and merged["parti_maire"].not
 has_reg   = "couleur_regionale"  in merged.columns and merged["couleur_regionale"].notna().sum() >= 3
 
 if not has_pol and not has_parti:
-    st.warning("Données politiques non disponibles — vérifiez `data/external/politique/political_data.csv`.")
+    st.warning("Données politiques non disponibles - vérifiez `data/external/politique/political_data.csv`.")
     st.stop()
 
 # ── Regroupement des petits partis ────────────────────────────────────────────
@@ -207,16 +207,16 @@ kpi_cols = st.columns(4)
 for col_w, grp_label in zip(kpi_cols, _COULEUR_ORDER):
     if not merged_couleur.empty:
         s = merged_couleur.loc[merged_couleur["couleur_municipale"] == grp_label, "IMD"]
-        col_w.metric(grp_label, f"{s.median():.1f} / 100" if len(s) > 0 else "—",
+        col_w.metric(grp_label, f"{s.median():.1f} / 100" if len(s) > 0 else "-",
                      f"n = {len(s)} villes" if len(s) > 0 else "0 ville")
     else:
-        col_w.metric(grp_label, "—")
+        col_w.metric(grp_label, "-")
 
 # ══════════════════════════════════════════════════════════════════════════════
-# Section 1 — Cadre méthodologique
+# Section 1 - Cadre méthodologique
 # ══════════════════════════════════════════════════════════════════════════════
 st.divider()
-section(1, "Cadre Méthodologique — Sources, Indicateurs et Hypothèses")
+section(1, "Cadre Méthodologique - Sources, Indicateurs et Hypothèses")
 
 col_meth, col_src = st.columns([3, 2])
 with col_meth:
@@ -240,7 +240,7 @@ durant le mandat actuel.
 | Code | Source | Description |
 |:--- |:--- |:--- |
 | **IMD** | Gold Standard | Composite infra + multi + sécurité + topo (/100) |
-| **IES** | Calculé | IMD / IMD_hat(revenu) — équité distributive |
+| **IES** | Calculé | IMD / IMD_hat(revenu) - équité distributive |
 | **FUB** | FUB 2023 | Satisfaction subjective des cyclistes (/6) |
 | **EMP** | EMP 2019 | Part modale vélo (%) |
 | **Gini** | INSEE Filosofi | Inégalités de revenu (0→1) |
@@ -252,7 +252,7 @@ durant le mandat actuel.
 **H₂ :** L'effet partisan est conditionné par l'âge du réseau : les villes pionnières
 (annee_vls < 2015) ont un IMD élevé indépendamment de la couleur politique actuelle.
 
-**H₃ :** L'IES est orthogonal au parti — la justice distributive transcende le clivage.
+**H₃ :** L'IES est orthogonal au parti - la justice distributive transcende le clivage.
 
 > **Avertissement :** Panel ≤ 60 agglomérations, effectifs faibles par parti.
 > Corrélation ≠ causalité.
@@ -287,10 +287,10 @@ with col_src:
         st.caption("**Tableau 1.2.** Âge du réseau (années) en 2020 par parti.")
 
 # ══════════════════════════════════════════════════════════════════════════════
-# Section 2 — Analyse principale (variable Y sélectable)
+# Section 2 - Analyse principale (variable Y sélectable)
 # ══════════════════════════════════════════════════════════════════════════════
 st.divider()
-_sec2_title = f"Analyse par Parti — {_ym['title']}"
+_sec2_title = f"Analyse par Parti - {_ym['title']}"
 section(2, _sec2_title)
 
 if not _y_avail:
@@ -374,7 +374,7 @@ else:
     ]
     _labels_kw = [g for g in _partis_box if (_ana_df["parti_grp"] == g).sum() >= 2]
 
-    with st.expander("Test de Kruskal-Wallis — significativité globale", expanded=True):
+    with st.expander("Test de Kruskal-Wallis - significativité globale", expanded=True):
         if _SCIPY and len(_groups_kw) >= 2:
             try:
                 _H, _p_kw = _kw(*_groups_kw)
@@ -387,7 +387,7 @@ else:
                 _fmt_p = lambda p: f"{p:.4f}" if p >= 0.001 else "< 0,001"
                 kw3.metric("p-valeur", _fmt_p(_p_kw),
                            "sign." if _p_kw < 0.05 else "non sign.")
-                kw4.metric("η²", f"{_eta2:.3f}" if pd.notna(_eta2) else "—")
+                kw4.metric("η²", f"{_eta2:.3f}" if pd.notna(_eta2) else "-")
                 st.caption(
                     f"$k = {len(_groups_kw)}$ partis, $n = {_n_kw}$ agglomérations. "
                     f"$H({_df_kw}) = {_H:.3f}$, $p = {_fmt_p(_p_kw)}$, $\\eta^2 = {_eta2:.3f}$. "
@@ -422,13 +422,13 @@ else:
             except Exception as e:
                 st.info(f"Test non disponible : {e}")
         else:
-            st.info("scipy non installé — statistiques descriptives uniquement.")
+            st.info("scipy non installé - statistiques descriptives uniquement.")
 
     # ── 2.3 Scatter Y × revenu ────────────────────────────────────────────────
     if has_revnu:
         _scat_df = _ana_df.dropna(subset=["revenu_median_uc", y_col]).copy()
         if len(_scat_df) >= 5:
-            st.markdown(f"#### 2.3. {_ym['title']} × Revenu médian — Coloré par Parti")
+            st.markdown(f"#### 2.3. {_ym['title']} × Revenu médian - Coloré par Parti")
             _hov_s = ["city", "n_stations", "parti_maire"]
             if "couleur_municipale" in _scat_df.columns:
                 _hov_s.append("couleur_municipale")
@@ -464,10 +464,10 @@ else:
             )
 
 # ══════════════════════════════════════════════════════════════════════════════
-# Section 3 — Composantes IMD par Parti (Radar)
+# Section 3 - Composantes IMD par Parti (Radar)
 # ══════════════════════════════════════════════════════════════════════════════
 st.divider()
-section(3, "Décomposition IMD par Parti — Radar des Composantes")
+section(3, "Décomposition IMD par Parti - Radar des Composantes")
 
 _comp_cols  = ["S_securite", "I_infra", "M_multi", "T_topo"]
 _comp_names = ["Sécurité (S)", "Infrastructure (I)", "Multimodalité (M)", "Topographie (T)"]
@@ -555,7 +555,7 @@ else:
             "ne sont pas disponibles dans ce panel.")
 
 # ══════════════════════════════════════════════════════════════════════════════
-# Section 4 — Équité Sociale (IES) par Parti
+# Section 4 - Équité Sociale (IES) par Parti
 # ══════════════════════════════════════════════════════════════════════════════
 st.divider()
 section(4, "Équité Sociale (IES) par Parti")
@@ -640,14 +640,14 @@ else:
     st.info("IES non disponible (revenu_median_uc absent).")
 
 # ══════════════════════════════════════════════════════════════════════════════
-# Section 5 — Validation Externe : FUB et EMP
+# Section 5 - Validation Externe : FUB et EMP
 # ══════════════════════════════════════════════════════════════════════════════
 _has_fub = "fub_score_2023"     in merged.columns and merged["fub_score_2023"].notna().sum() >= 5
 _has_emp = "emp_part_velo_2019" in merged.columns and merged["emp_part_velo_2019"].notna().sum() >= 5
 
 if _has_fub or _has_emp:
     st.divider()
-    section(5, "Validation Externe — FUB Baromètre et EMP Modal Share")
+    section(5, "Validation Externe - FUB Baromètre et EMP Modal Share")
 
     st.markdown(r"""
 La confrontation de l'IMD (objectif, infrastructure) avec le **FUB Baromètre**
@@ -762,11 +762,11 @@ permet de tester la validité externe du classement politique.
             )
 
 # ══════════════════════════════════════════════════════════════════════════════
-# Section 6 — Historique VLS : Âge du réseau et Continuité Politique
+# Section 6 - Historique VLS : Âge du réseau et Continuité Politique
 # ══════════════════════════════════════════════════════════════════════════════
 if "annee_vls" in merged_pol.columns:
     st.divider()
-    section(6, "Historique VLS — Âge du Réseau et Continuité Politique")
+    section(6, "Historique VLS - Âge du Réseau et Continuité Politique")
 
     st.markdown(r"""
 L'âge du réseau VLS en 2020 est un facteur de confusion majeur : les villes pionnières
@@ -882,10 +882,10 @@ permet de tester si le mandat 2020 a **changé** ou **maintenu** l'orientation p
             )
 
 # ══════════════════════════════════════════════════════════════════════════════
-# Section 7 — Vue agrégée par couleur (condensé)
+# Section 7 - Vue agrégée par couleur (condensé)
 # ══════════════════════════════════════════════════════════════════════════════
 st.divider()
-section(7, "Vue Agrégée par Couleur Politique — Blocs Gauche / Centre / Droite")
+section(7, "Vue Agrégée par Couleur Politique - Blocs Gauche / Centre / Droite")
 
 if has_pol and not merged_couleur.empty:
     _mc = merged_couleur.copy()
@@ -932,11 +932,11 @@ if has_pol and not merged_couleur.empty:
                 pass
 
 # ══════════════════════════════════════════════════════════════════════════════
-# Section 8 — Dimension Régionale
+# Section 8 - Dimension Régionale
 # ══════════════════════════════════════════════════════════════════════════════
 if has_reg:
     st.divider()
-    section(8, "Dimension Régionale — Exécutifs Régionaux et IMD")
+    section(8, "Dimension Régionale - Exécutifs Régionaux et IMD")
 
     _reg_pol = merged.dropna(subset=["couleur_regionale"]).copy()
     _reg_pol["couleur_regionale"] = pd.Categorical(
@@ -968,10 +968,10 @@ if has_reg:
         st.dataframe(_reg_tbl, use_container_width=True, hide_index=True)
 
 # ══════════════════════════════════════════════════════════════════════════════
-# Section 9 — Fiche par Ville
+# Section 9 - Fiche par Ville
 # ══════════════════════════════════════════════════════════════════════════════
 st.divider()
-section(9, "Fiche par Ville — Profil Politique, IMD et Contexte Historique")
+section(9, "Fiche par Ville - Profil Politique, IMD et Contexte Historique")
 
 _city_list = sorted(merged_pol["city"].dropna().unique().tolist())
 if _city_list:
@@ -984,19 +984,19 @@ if _city_list:
         # Colonne 1 : contexte politique
         with c1:
             st.markdown("**Contexte politique**")
-            _parti  = _row.get("parti_maire", "—")
-            _couleur = _row.get("couleur_municipale", "—")
-            _couleur_prec = _row.get("couleur_precedente", "—")
+            _parti  = _row.get("parti_maire", "-")
+            _couleur = _row.get("couleur_municipale", "-")
+            _couleur_prec = _row.get("couleur_precedente", "-")
             _continuity = "✓ Continuité" if str(_couleur) == str(_couleur_prec) else "↔ Alternance"
             st.markdown(
                 f"<div style='font-size:0.85rem; line-height:1.8;'>"
-                f"<b>Maire :</b> {_row.get('maire', '—')}<br>"
+                f"<b>Maire :</b> {_row.get('maire', '-')}<br>"
                 f"<b>Parti :</b> {_parti}<br>"
                 f"<b>Bloc :</b> {_couleur}<br>"
                 f"<b>Mandat précédent :</b> {_couleur_prec}<br>"
                 f"<b>Transition :</b> {_continuity}<br>"
-                f"<b>Région :</b> {_row.get('region', '—')}<br>"
-                f"<b>Région (couleur) :</b> {_row.get('couleur_regionale', '—')}"
+                f"<b>Région :</b> {_row.get('region', '-')}<br>"
+                f"<b>Région (couleur) :</b> {_row.get('couleur_regionale', '-')}"
                 f"</div>",
                 unsafe_allow_html=True,
             )
@@ -1004,14 +1004,14 @@ if _city_list:
         # Colonne 2 : réseau VLS
         with c2:
             st.markdown("**Réseau VLS**")
-            _ann_vls  = _row.get("annee_vls", "—")
-            _ann_vls  = "—" if pd.isna(_ann_vls) else str(_ann_vls)
+            _ann_vls  = _row.get("annee_vls", "-")
+            _ann_vls  = "-" if pd.isna(_ann_vls) else str(_ann_vls)
             try:
-                _age_net = str(int(2020 - float(_ann_vls))) if _ann_vls != "—" else "—"
+                _age_net = str(int(2020 - float(_ann_vls))) if _ann_vls != "-" else "-"
             except (ValueError, TypeError):
-                _age_net = "—"
+                _age_net = "-"
             _cap_v   = _row.get("capacity", float("nan"))
-            _s_cap   = f"{_cap_v:.0f}" if pd.notna(_cap_v) else "—"
+            _s_cap   = f"{_cap_v:.0f}" if pd.notna(_cap_v) else "-"
             st.markdown(
                 f"<div style='font-size:0.85rem; line-height:1.8;'>"
                 f"<b>Création du réseau :</b> {_ann_vls}<br>"
@@ -1031,12 +1031,12 @@ if _city_list:
             _i_val    = _row.get("I_infra", float("nan"))
             _m_val    = _row.get("M_multi", float("nan"))
             _t_val    = _row.get("T_topo", float("nan"))
-            _s_imd  = f"{_imd_val:.1f}" if pd.notna(_imd_val) else "—"
-            _s_ies  = f"{_ies_val:.3f}" if pd.notna(_ies_val) else "—"
-            _s_sec  = f"{_s_val:.3f}"   if pd.notna(_s_val)   else "—"
-            _s_inf  = f"{_i_val:.3f}"   if pd.notna(_i_val)   else "—"
-            _s_mul  = f"{_m_val:.3f}"   if pd.notna(_m_val)   else "—"
-            _s_top  = f"{_t_val:.3f}"   if pd.notna(_t_val)   else "—"
+            _s_imd  = f"{_imd_val:.1f}" if pd.notna(_imd_val) else "-"
+            _s_ies  = f"{_ies_val:.3f}" if pd.notna(_ies_val) else "-"
+            _s_sec  = f"{_s_val:.3f}"   if pd.notna(_s_val)   else "-"
+            _s_inf  = f"{_i_val:.3f}"   if pd.notna(_i_val)   else "-"
+            _s_mul  = f"{_m_val:.3f}"   if pd.notna(_m_val)   else "-"
+            _s_top  = f"{_t_val:.3f}"   if pd.notna(_t_val)   else "-"
             st.markdown(
                 f"<div style='font-size:0.85rem; line-height:1.8;'>"
                 f"<b>IMD (/100) :</b> {_s_imd}<br>"
@@ -1059,12 +1059,12 @@ if _city_list:
             _voit_v  = _row.get("part_menages_voit0", float("nan"))
             _vtrav_v = _row.get("part_velo_travail", float("nan"))
             # Pré-formatage pour éviter les f-strings avec format spec conditionnel
-            _s_fub   = f"{_fub_v:.2f}"   if pd.notna(_fub_v)   else "—"
-            _s_emp   = f"{_emp_v:.1f}"   if pd.notna(_emp_v)   else "—"
-            _s_rev   = f"{_rev_v:,.0f}"  if pd.notna(_rev_v)   else "—"
-            _s_gin   = f"{_gin_v:.3f}"   if pd.notna(_gin_v)   else "—"
-            _s_voit  = f"{_voit_v:.1f}"  if pd.notna(_voit_v)  else "—"
-            _s_vtrav = f"{_vtrav_v:.2f}" if pd.notna(_vtrav_v) else "—"
+            _s_fub   = f"{_fub_v:.2f}"   if pd.notna(_fub_v)   else "-"
+            _s_emp   = f"{_emp_v:.1f}"   if pd.notna(_emp_v)   else "-"
+            _s_rev   = f"{_rev_v:,.0f}"  if pd.notna(_rev_v)   else "-"
+            _s_gin   = f"{_gin_v:.3f}"   if pd.notna(_gin_v)   else "-"
+            _s_voit  = f"{_voit_v:.1f}"  if pd.notna(_voit_v)  else "-"
+            _s_vtrav = f"{_vtrav_v:.2f}" if pd.notna(_vtrav_v) else "-"
             st.markdown(
                 f"<div style='font-size:0.85rem; line-height:1.8;'>"
                 f"<b>FUB score (/6) :</b> {_s_fub}<br>"
@@ -1117,10 +1117,10 @@ if _city_list:
             )
 
 # ══════════════════════════════════════════════════════════════════════════════
-# Section 10 — Analyse de Régression Contrôlée
+# Section 10 - Analyse de Régression Contrôlée
 # ══════════════════════════════════════════════════════════════════════════════
 st.divider()
-section(10, "Analyse de Régression Contrôlée — Effet Partisan Net")
+section(10, "Analyse de Régression Contrôlée - Effet Partisan Net")
 
 st.markdown(f"""
 OLS multivarié : **{_ym['title']}** ~ covariables numériques + indicatrices partisanes.
@@ -1204,7 +1204,7 @@ if len(_reg_df) >= 10 and _sel_covs:
             "Variable":  _feat_names,
             "β (std)":   [f"{b:+.3f}" for b in _beta],
             "Err. std.": [f"{s:.3f}" for s in _se],
-            "t":         [f"{t:+.2f}" if pd.notna(t) else "—" for t in _t_stat],
+            "t":         [f"{t:+.2f}" if pd.notna(t) else "-" for t in _t_stat],
             "Sig.":      [
                 "***" if abs(t) > 3.29 else "**" if abs(t) > 2.58 else "*" if abs(t) > 1.96 else "."
                 for t in [tv if pd.notna(tv) else 0 for tv in _t_stat]
@@ -1218,11 +1218,11 @@ if len(_reg_df) >= 10 and _sel_covs:
 
         st.dataframe(_ols_tbl, use_container_width=True, hide_index=True)
         st.caption(
-            f"**Tableau 10.1.** Régression OLS — {_ym['title']} sur covariables "
+            f"**Tableau 10.1.** Régression OLS - {_ym['title']} sur covariables "
             f"numériques standardisées et indicatrices partisanes. "
             f"Référence : **{_ref_parti}**. "
             "Sig. : *** p<0,001 ; ** p<0,01 ; * p<0,05 ; . p<0,1. "
-            "β (std) = coefficients sur variables centrées réduites — interprétables "
+            "β (std) = coefficients sur variables centrées réduites - interprétables "
             "comme contributions relatives."
         )
     except Exception as e:
@@ -1234,10 +1234,10 @@ else:
     )
 
 # ══════════════════════════════════════════════════════════════════════════════
-# Section 11 — Tableau de classement
+# Section 11 - Tableau de classement
 # ══════════════════════════════════════════════════════════════════════════════
 st.divider()
-section(11, "Tableau de Classement — Agglomérations, Partis et Scores")
+section(11, "Tableau de Classement - Agglomérations, Partis et Scores")
 
 _disp_cols = ["city", "parti_maire", "couleur_municipale", "annee_vls",
               "couleur_precedente", "region", "couleur_regionale", "maire",
@@ -1287,15 +1287,15 @@ st.caption(
     "**Tableau 11.1.** Classement par IMD décroissant. "
     "'Création VLS' = année d'ouverture du réseau dock-based. "
     "'Bloc précédent' = couleur politique 2014–2020. "
-    "Source : élections municipales 2020 / régionales 2021, Gold Standard GBFS — "
+    "Source : élections municipales 2020 / régionales 2021, Gold Standard GBFS - "
     "R. Fossé & G. Pallares, 2025–2026."
 )
 
 # ══════════════════════════════════════════════════════════════════════════════
-# Section 12 — Discussion
+# Section 12 - Discussion
 # ══════════════════════════════════════════════════════════════════════════════
 st.divider()
-section(12, "Discussion — Synthèse, Biais et Perspectives")
+section(12, "Discussion - Synthèse, Biais et Perspectives")
 
 st.markdown(r"""
 #### 12.1. Principaux Résultats

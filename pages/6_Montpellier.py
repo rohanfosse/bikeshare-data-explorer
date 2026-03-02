@@ -133,7 +133,7 @@ st.markdown(r"""
 L'analyse topologique du graphe de flux orienté (stations comme nœuds, flux OD comme arêtes
 pondérées) révèle la structure organisationnelle profonde du réseau Vélomagg.
 La **détection de communautés de Louvain** (*Blondel et al., 2008*) identifie des
-sous-ensembles de stations échangeant préférentiellement entre elles — des *bassins de
+sous-ensembles de stations échangeant préférentiellement entre elles - des *bassins de
 mobilité fonctionnels* indépendants des découpages administratifs.
 
 Les **stations-pivots** (*bridge stations*, coefficient de participation $P_i > 0{,}5$)
@@ -262,8 +262,8 @@ st.markdown(r"""
 Les dynamiques temporelles du réseau Vélomagg révèlent un **régime bimodal** caractéristique
 des mobilités pendulaires : un pic matinal ($h \approx 8\,\text{h}$) et un pic vespéral
 ($h \approx 17$–$18\,\text{h}$) concentrent l'essentiel du volume de trips journalier.
-La **friction météorologique** — quantifiée par un score de mauvais temps normalisé de 0 à 1
-(0 = temps dégagé, 1 = épisode pluvieux intense) — constitue un déterminant externe des
+La **friction météorologique** - quantifiée par un score de mauvais temps normalisé de 0 à 1
+(0 = temps dégagé, 1 = épisode pluvieux intense) - constitue un déterminant externe des
 déséquilibres source/puits : les précipitations induisent une réduction significative des
 départs, exacerbant les stocks dans les stations-puits et aggravant les pénuries dans les
 stations-sources, ce qui complexifie la politique de redistribution.
@@ -486,8 +486,8 @@ Au-delà de **800 m** ($\approx 10$ min), le coût piéton devient dissuasif et 
 complémentarité modale se dissout.
 
 La distance à l'arrêt de tramway le plus proche constitue l'une des trois composantes de
-la **friction spatiale totale** — aux côtés de la rugosité topographique et de la
-friction météorologique — qui structurent collectivement les déséquilibres source/puits
+la **friction spatiale totale** - aux côtés de la rugosité topographique et de la
+friction météorologique - qui structurent collectivement les déséquilibres source/puits
 du réseau et conditionnent l'efficacité opérationnelle du rebalancing.
 """)
 
@@ -548,7 +548,7 @@ en raison d'inégalités d'infrastructure (offre absente ou éloignée) ou de ba
 d'usage structurelles (coût, habitudes de mobilité, accessibilité culturelle) ?
 
 Les quartiers cumulant revenu faible et usage faible constituent formellement des
-**déserts de mobilité sociale** au sens de l'IES — la micro-validation de la
+**déserts de mobilité sociale** au sens de l'IES - la micro-validation de la
 conclusion nationale ρ(IMD, revenu) ≈ 0 à l'échelle des quartiers montpelliérains.
 """)
 

@@ -1,5 +1,5 @@
 """
-2_Villes.py — Analyse comparative inter-urbaine des métriques d'enrichissement spatial.
+2_Villes.py - Analyse comparative inter-urbaine des métriques d'enrichissement spatial.
 """
 from __future__ import annotations
 
@@ -17,7 +17,7 @@ from utils.data_loader import METRICS, city_stats, compute_imd_cities, load_stat
 from utils.styles import abstract_box, inject_css, section, sidebar_nav
 
 st.set_page_config(
-    page_title="Analyse Comparative Inter-Urbaine — Gold Standard GBFS",
+    page_title="Analyse Comparative Inter-Urbaine - Gold Standard GBFS",
     page_icon=None,
     layout="wide",
 )
@@ -30,8 +30,8 @@ cities = city_stats(df)
 
 _imd_ranked    = imd_df.sort_values("IMD", ascending=False).reset_index(drop=True)
 _n_dock_cities = len(_imd_ranked)
-_top_city      = _imd_ranked.iloc[0]["city"] if _n_dock_cities > 0 else "—"
-_top_imd       = f"{_imd_ranked.iloc[0]['IMD']:.1f}" if _n_dock_cities > 0 else "—"
+_top_city      = _imd_ranked.iloc[0]["city"] if _n_dock_cities > 0 else "-"
+_top_imd       = f"{_imd_ranked.iloc[0]['IMD']:.1f}" if _n_dock_cities > 0 else "-"
 
 _mmm_row  = _imd_ranked[_imd_ranked["city"] == "Montpellier"]
 _mmm_rank = int(_mmm_row.index[0]) + 1 if not _mmm_row.empty else "?"
@@ -76,12 +76,12 @@ abstract_box(
     "sont-elles le produit d'une fatalité géographique ou d'inégalités de gouvernance ?<br><br>"
     f"Cette analyse comparative classe les <b>{_n_dock_cities} agglomérations</b> françaises dotées d'un "
     "réseau VLS dock-based certifié Gold Standard selon les dimensions d'enrichissement spatial. "
-    "Le résultat clé de l'analyse spatiale globale — l'absence d'autocorrélation significative "
-    "(Moran's <i>I</i>&nbsp;=&nbsp;&minus;0,023, <i>p</i>&nbsp;=&nbsp;0,765) — invalide l'hypothèse d'un déterminisme "
+    "Le résultat clé de l'analyse spatiale globale - l'absence d'autocorrélation significative "
+    "(Moran's <i>I</i>&nbsp;=&nbsp;&minus;0,023, <i>p</i>&nbsp;=&nbsp;0,765) - invalide l'hypothèse d'un déterminisme "
     "géographique structurant les disparités. Les villes performantes et sous-performantes "
     "ne forment pas de clusters territoriaux cohérents : ce sont les choix de gouvernance "
     "locale, et non la localisation géographique, qui expliquent l'hétérogénéité observée. "
-    f"<b>Classement national : {_top_city} #1 (IMD = {_top_imd}/100) — "
+    f"<b>Classement national : {_top_city} #1 (IMD = {_top_imd}/100) - "
     f"Montpellier #{_mmm_rank} (IMD = {_mmm_imd:.1f}/100). "
     f"ρ Spearman (IMD × Revenu) = {_rho_str} (p = {_pval_str}, non significatif).</b> "
     "Cinq niveaux d'analyse sont proposés : classement univarié, profil infrastructure × sinistralité, "
@@ -123,7 +123,7 @@ with st.sidebar:
     for i, row in _imd_ranked.head(5).iterrows():
         _city_label = f"#{i+1} {row['city']}"
         _highlight  = " (cas d'étude)" if row["city"] == "Montpellier" else ""
-        st.caption(f"{_city_label} — IMD {row['IMD']:.1f}/100{_highlight}")
+        st.caption(f"{_city_label} - IMD {row['IMD']:.1f}/100{_highlight}")
 
 # ── Filtrage ──────────────────────────────────────────────────────────────────
 df_dock = df[df["station_type"] == "docked_bike"].copy() if "station_type" in df.columns else df.copy()
@@ -153,11 +153,11 @@ k1.metric("Agglomérations dock analysées",   f"{len(cities_f)}")
 k2.metric("IMD #1 national",                 _top_city, f"{_top_imd} / 100")
 k3.metric(f"Montpellier (rang #{_mmm_rank})", f"{_mmm_imd:.1f} / 100")
 k4.metric("IMD médian national",             f"{_imd_ranked['IMD'].median():.1f} / 100")
-k5.metric("ρ Spearman IMD × Revenu",         _rho_str,  f"p = {_pval_str} — non sign.")
+k5.metric("ρ Spearman IMD × Revenu",         _rho_str,  f"p = {_pval_str} - non sign.")
 
-# ── Section 1 — Classement univarié ───────────────────────────────────────────
+# ── Section 1 - Classement univarié ───────────────────────────────────────────
 st.divider()
-section(1, "Classement Univarié — Agglomérations Triées par la Dimension Sélectionnée")
+section(1, "Classement Univarié - Agglomérations Triées par la Dimension Sélectionnée")
 
 st.markdown(r"""
 Le classement univarié constitue le premier niveau de diagnostic territorial. Il met en évidence
@@ -235,9 +235,9 @@ with col_chart:
         "reflètent des choix différenciés de politique d'aménagement cyclable."
     )
 
-# ── Section 2 — Infrastructure × sinistralité ─────────────────────────────────
+# ── Section 2 - Infrastructure × sinistralité ─────────────────────────────────
 st.divider()
-section(2, "Analyse Croisée Infrastructure × Sinistralité — Effet Protecteur de l'Aménagement Cyclable")
+section(2, "Analyse Croisée Infrastructure × Sinistralité - Effet Protecteur de l'Aménagement Cyclable")
 
 st.markdown(r"""
 L'hypothèse d'un effet protecteur de l'infrastructure cyclable sur la sinistralité est centrale
@@ -349,9 +349,9 @@ else:
         "Vérifiez les colonnes `baac_accidents_cyclistes` et `infra_cyclable_pct`."
     )
 
-# ── Section 3 — IMD × Revenu médian ───────────────────────────────────────────
+# ── Section 3 - IMD × Revenu médian ───────────────────────────────────────────
 st.divider()
-section(3, "Justice Sociale — Classement IMD × Revenu Médian par Agglomération")
+section(3, "Justice Sociale - Classement IMD × Revenu Médian par Agglomération")
 
 _has_revenu = "revenu_median_uc" in imd_df.columns and imd_df["revenu_median_uc"].notna().sum() >= 5
 if _has_revenu:
@@ -463,7 +463,7 @@ $$\rho_s(\text{{IMD}}, \text{{Revenu}}) = {_rho_s3:+.3f}, \quad p = {_pval_s3_st
             fig_ies.add_annotation(
                 x=float(_mmm_ies["revenu_median_uc"].iloc[0]),
                 y=float(_mmm_ies["IMD"].iloc[0]),
-                text=f"<b>Montpellier<br>Rang #{_mmm_ies_rank} — IES = {_mmm_ies_val:.3f}</b>",
+                text=f"<b>Montpellier<br>Rang #{_mmm_ies_rank} - IES = {_mmm_ies_val:.3f}</b>",
                 showarrow=True, ax=-65, ay=-35,
                 font=dict(size=11, color="#27ae60"),
                 bgcolor="rgba(240,255,240,0.9)",
@@ -494,14 +494,14 @@ $$\rho_s(\text{{IMD}}, \text{{Revenu}}) = {_rho_s3:+.3f}, \quad p = {_pval_s3_st
             f"**Figure 3.1.** Score IMD versus revenu médian/UC (INSEE Filosofi) par agglomération "
             f"($n = {len(_imd_f)}$, seuil $\\geq {min_stations}$ stations dock). "
             f"Corrélation de Spearman : $\\rho = {_rho_s3:+.3f}$ ($p = {_pval_s3_str}$, "
-            f"**{_sig_s3}**) — $R^2 = {_R2_s3:.4f}$. "
+            f"**{_sig_s3}**) - $R^2 = {_R2_s3:.4f}$. "
             "La droite OLS est quasi-horizontale : la qualité VLS est indépendante du niveau de revenu. "
             "Les quadrants révèlent les quatre régimes de justice cyclable. "
             "Analyse complète des tests formels (bootstrap CI, Mann-Whitney U) : page **IES**."
         )
 
         # Tableau IES synthétique
-        with st.expander("Tableau IES par agglomération — tous les régimes", expanded=False):
+        with st.expander("Tableau IES par agglomération - tous les régimes", expanded=False):
             _disp_ies = _imd_f[["city", "n_stations", "revenu_median_uc", "IMD", "IES", "regime"]].copy()
             _disp_ies = _disp_ies.sort_values("IES", ascending=False).reset_index(drop=True)
             _disp_ies.insert(0, "Rang IMD", _disp_ies["city"].map(
@@ -529,7 +529,7 @@ $$\rho_s(\text{{IMD}}, \text{{Revenu}}) = {_rho_s3:+.3f}, \quad p = {_pval_s3_st
                 f"**Tableau 3.1.** Classement des agglomérations par IES (décroissant). "
                 f"$n = {len(_disp_ies)}$ agglomérations dock-based (seuil $\\geq {min_stations}$ stations). "
                 "Les IES < 1 identifient les villes dont l'offre cyclable est inférieure au prédit "
-                "par le revenu — cibles prioritaires des politiques d'équité cyclable."
+                "par le revenu - cibles prioritaires des politiques d'équité cyclable."
             )
 else:
     st.info(
@@ -537,9 +537,9 @@ else:
         "Vérifiez que le fichier `stations_gold_standard_final.parquet` est utilisé."
     )
 
-# ── Section 4 — Profil radar ───────────────────────────────────────────────────
+# ── Section 4 - Profil radar ───────────────────────────────────────────────────
 st.divider()
-section(4, "Profil Radar Multi-Dimensionnel — Audit Comparatif des Agglomérations")
+section(4, "Profil Radar Multi-Dimensionnel - Audit Comparatif des Agglomérations")
 
 st.markdown(r"""
 Le profil radar permet de visualiser simultanément les dimensions de l'environnement
@@ -628,14 +628,14 @@ elif len(radar_city_sel) < 2:
 else:
     st.warning("Aucune dimension radar disponible dans ce corpus.")
 
-# ── Section 5 — Synthèse statistique comparative ──────────────────────────────
+# ── Section 5 - Synthèse statistique comparative ──────────────────────────────
 st.divider()
-section(5, "Synthèse Statistique — Distribution des Dimensions et Écarts Extrêmes")
+section(5, "Synthèse Statistique - Distribution des Dimensions et Écarts Extrêmes")
 
 st.markdown(
     "La synthèse statistique compare les extrema et la dispersion intra-nationale pour chaque "
     "dimension d'enrichissement. Elle révèle les dimensions les plus hétérogènes entre "
-    "agglomérations — celles où les choix de gouvernance sont les plus différenciés."
+    "agglomérations - celles où les choix de gouvernance sont les plus différenciés."
 )
 
 _synth_dims = {k: v for k, v in {
@@ -661,7 +661,7 @@ if _synth_dims:
             "Min": f"{float(s.min()):.3f}",
             "Médiane": f"{float(s.median()):.3f}",
             "Max": f"{float(s.max()):.3f}",
-            "CV (%)": f"{_cv:.1f}" if not np.isnan(_cv) else "—",
+            "CV (%)": f"{_cv:.1f}" if not np.isnan(_cv) else "-",
             "Meilleur": _best,
             "Moins bon": _worst,
             f"Montpellier (#{_mmm_rank_f})": _mmm_display,

@@ -1,5 +1,5 @@
 """
-1_Carte.py — Visualisation géospatiale du corpus Gold Standard GBFS.
+1_Carte.py - Visualisation géospatiale du corpus Gold Standard GBFS.
 Utilise pydeck (ScatterplotLayer, WebGL) pour rendre 46 000+ points en temps réel.
 """
 from __future__ import annotations
@@ -137,7 +137,7 @@ if "station_type" in df.columns and station_type_sel == "Toutes les stations":
         _tc[i].metric(stype.replace("_", " ").title(), f"{cnt:,}")
 
 # ── Section 2 - Carte ─────────────────────────────────────────────────────────
-section(2, "Carte Interactive — Vue Nationale et Vue par Agglomération")
+section(2, "Carte Interactive - Vue Nationale et Vue par Agglomération")
 
 palette = meta["color_scale"]
 dff = dff.copy()
@@ -170,7 +170,7 @@ _map_cols = ["lat", "lon", "_color", "station_name", "city",
 if "station_type" in dff.columns:
     _map_cols.append("station_type")
 
-# Stats calculées avant les onglets — utilisées dans les sections 3+
+# Stats calculées avant les onglets - utilisées dans les sections 3+
 valid = dff[metric_key].dropna()
 unit = meta["unit"]
 if len(valid) > 0:
@@ -291,7 +291,7 @@ with tab_city:
         )
         _c4.metric("Médiane nationale", f"{float(_nat_valid.median()):.3f} {unit}")
         st.caption(
-            f"**Figure 2.2.** Vue par agglomération — **{city_single}** · "
+            f"**Figure 2.2.** Vue par agglomération - **{city_single}** · "
             f"{len(dff_city)} stations dock-based · "
             f"Dimension : **{meta['label']}** · "
             f"Zoom automatique (niveau {_zoom_city}) calculé depuis la boîte englobante des stations."
@@ -328,9 +328,9 @@ else:
         "Vérifiez le périmètre géographique ou sélectionnez une autre métrique d'enrichissement."
     )
 
-# ── Section 4 — Distribution de la métrique ────────────────────────────────────
+# ── Section 4 - Distribution de la métrique ────────────────────────────────────
 st.divider()
-section(4, f"Distribution Empirique — {meta['label']}")
+section(4, f"Distribution Empirique - {meta['label']}")
 
 st.markdown(
     f"L'histogramme ci-dessous représente la distribution empirique de la dimension "
@@ -373,14 +373,14 @@ if len(valid) >= 5:
     st.caption(
         f"**Figure 4.1.** Distribution empirique de **{meta['label']}** "
         f"({len(valid):,} stations valides{_type_label}). "
-        f"Asymétrie $\\gamma_1 = {_skew:.3f}$ — Aplatissement $\\gamma_2 = {_kurt:.3f}$ (excédentaire). "
+        f"Asymétrie $\\gamma_1 = {_skew:.3f}$ - Aplatissement $\\gamma_2 = {_kurt:.3f}$ (excédentaire). "
         f"IQR = {_iqr:.3f} {meta['unit']}. "
-        f"{_norm_flag} — justifie l'usage de tests non-paramétriques (Spearman, Mann-Whitney)."
+        f"{_norm_flag} - justifie l'usage de tests non-paramétriques (Spearman, Mann-Whitney)."
     )
 
-# ── Section 5 — Classement par agglomération ──────────────────────────────────
+# ── Section 5 - Classement par agglomération ──────────────────────────────────
 st.divider()
-section(5, f"Classement des Agglomérations — Moyenne de {meta['label']} par Ville")
+section(5, f"Classement des Agglomérations - Moyenne de {meta['label']} par Ville")
 
 st.markdown(
     "L'agrégation par agglomération permet de comparer les niveaux moyens d'enrichissement "
@@ -431,7 +431,7 @@ if len(_city_agg) >= 2:
     fig_city.update_layout(
         height=420,
         xaxis=dict(tickangle=-40, title="Agglomération"),
-        yaxis=dict(title=f"{meta['label']} — Moyenne ({meta['unit']})" if meta["unit"] else f"{meta['label']} — Moyenne",
+        yaxis=dict(title=f"{meta['label']} - Moyenne ({meta['unit']})" if meta["unit"] else f"{meta['label']} - Moyenne",
                    showgrid=True, gridcolor="#e8ecf1"),
         plot_bgcolor="white",
         paper_bgcolor="white",
@@ -448,7 +448,7 @@ if len(_city_agg) >= 2:
     )
 
     # Tableau synthétique
-    with st.expander(f"Tableau détaillé — {_n_cities_agg} agglomérations", expanded=False):
+    with st.expander(f"Tableau détaillé - {_n_cities_agg} agglomérations", expanded=False):
         _city_display = _city_agg.copy()
         for col in ["Moyenne", "Médiane", "Écart-type"]:
             _city_display[col] = _city_display[col].map(lambda v: f"{v:.3f}")
@@ -465,9 +465,9 @@ else:
         "Sélectionnez 'Toutes les stations' ou élargissez le filtre géographique."
     )
 
-# ── Section 6 — Méthodologie ────────────────────────────────────────────────────
+# ── Section 6 - Méthodologie ────────────────────────────────────────────────────
 st.divider()
-section(6, "Note Méthodologique — Enrichissement Spatial 300 m et Autocorrélation")
+section(6, "Note Méthodologique - Enrichissement Spatial 300 m et Autocorrélation")
 
 st.markdown(r"""
 **Protocole d'enrichissement spatial.** Chaque station du corpus Gold Standard a été enrichie
@@ -477,7 +477,7 @@ selon un rayon normalisé de **300 mètres** à partir de cinq sources administr
 |---|---|---|
 | Densité résidentielle | INSEE RP 2019 (carreaux 200 m) | 300 m |
 | Accessibilité multimodale | GTFS national (SNCF, RATP, Métropoles) | 300 m isochrone marche |
-| Mixité fonctionnelle | IGN BD TOPO — POI commerces/services | 300 m |
+| Mixité fonctionnelle | IGN BD TOPO - POI commerces/services | 300 m |
 | Topographie (TRI) | SRTM 30 m (NASA/USGS) | 500 m × 500 m |
 | Profil socio-économique | INSEE Filosofi 2019 (carreaux 200 m) | 300 m |
 
@@ -485,12 +485,12 @@ selon un rayon normalisé de **300 mètres** à partir de cinq sources administr
 permutation $n = 999$) calculé sur l'ensemble du corpus dock-based est **non significatif**
 (seuil $\alpha = 0{,}05$). Cette absence de structure spatiale macroscopique invalide
 l'hypothèse d'un déterminisme géographique et oriente l'interprétation vers des facteurs
-de **gouvernance locale**. L'analyse à l'échelle intra-urbaine (LISA — Local Indicators of
+de **gouvernance locale**. L'analyse à l'échelle intra-urbaine (LISA - Local Indicators of
 Spatial Association) peut révéler des clusters locaux non détectés à l'échelle nationale.
 
 **Limites.** (1) Le rayon de 300 m ne capture pas les discontinuités de voirie (coupures
 autoroutières, voies ferrées). (2) Les données Filosofi sont interpolées à l'échelle de
-carreaux 200 m — la résolution peut introduire un biais d'agrégation (MAUP). (3) Le TRI
+carreaux 200 m - la résolution peut introduire un biais d'agrégation (MAUP). (3) Le TRI
 SRTM 30 m présente une précision altimétrique de ±16 m en zone urbaine plane.
 """)
 

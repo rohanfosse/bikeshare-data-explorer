@@ -19,17 +19,17 @@ _NAV_GROUPS: list[tuple[str, list[tuple[str, str]]]] = [
     ]),
     ("Axes de recherche", [
         ("pages/00_Gold_Standard.py",  "Gold Standard"),
-        ("pages/0_IMD.py",             "IMD — Mobilité Douce"),
-        ("pages/7_IES.py",             "IES — Équité Sociale"),
+        ("pages/0_IMD.py",             "IMD - Mobilité Douce"),
+        ("pages/7_IES.py",             "IES - Équité Sociale"),
         ("pages/10_Politique.py",      "Politique & Mobilité"),
-        ("pages/2_Villes.py",          "Villes — Comparaison"),
+        ("pages/2_Villes.py",          "Villes - Comparaison"),
         ("pages/3_Distributions.py",   "Distributions"),
         ("pages/8_Topographie.py",     "Topographie"),
         ("pages/6_Montpellier.py",     "Montpellier"),
     ]),
     ("Modules transversaux", [
         ("pages/1_Carte.py",           "Carte des stations"),
-        ("pages/5_Mobilite_France.py", "France — Validation"),
+        ("pages/5_Mobilite_France.py", "France - Validation"),
     ]),
     ("Données et références", [
         ("pages/4_Export.py",          "Export FAIR"),

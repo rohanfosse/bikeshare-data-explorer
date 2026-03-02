@@ -1,6 +1,6 @@
 """
-9_References.py — Références bibliographiques, sources de données et citation.
-Atlas IMD — Justice Spatiale & Vélos en Libre-Service · R. Fossé & G. Pallares · 2025–2026
+9_References.py - Références bibliographiques, sources de données et citation.
+Atlas IMD - Justice Spatiale & Vélos en Libre-Service · R. Fossé & G. Pallares · 2025–2026
 """
 from __future__ import annotations
 
@@ -9,7 +9,7 @@ import streamlit as st
 from utils.styles import abstract_box, inject_css, section, sidebar_nav
 
 st.set_page_config(
-    page_title="Références — Atlas IMD",
+    page_title="Références - Atlas IMD",
     layout="wide",
 )
 inject_css()
@@ -17,7 +17,7 @@ inject_css()
 st.title("Références et Sources")
 st.caption(
     "Bibliographie académique, sources de données institutionnelles, "
-    "stack technique et modalités de citation — Gold Standard GBFS · R. Fossé & G. Pallares · 2025–2026"
+    "stack technique et modalités de citation - Gold Standard GBFS · R. Fossé & G. Pallares · 2025–2026"
 )
 
 abstract_box(
@@ -57,7 +57,7 @@ refs = [
             "of built environment factors. *Cities*, 98, 102521. "
             "https://doi.org/10.1016/j.cities.2019.102521"
         ),
-        "Pertinence": "Systèmes free-floating — dynamiques spatiales structurellement différentes des dock-based",
+        "Pertinence": "Systèmes free-floating - dynamiques spatiales structurellement différentes des dock-based",
     },
     {
         "Référence": "Médard de Chardon et al. (2017)",
@@ -80,7 +80,7 @@ refs = [
             "*Biometrika*, 37(1/2), 17–23. "
             "https://doi.org/10.2307/2332142"
         ),
-        "Pertinence": "Indice de Moran — mesure d'autocorrélation spatiale globale (I = −0,023, p = 0,765)",
+        "Pertinence": "Indice de Moran - mesure d'autocorrélation spatiale globale (I = −0,023, p = 0,765)",
     },
     {
         "Référence": "Riley et al. (1999)",
@@ -89,7 +89,7 @@ refs = [
             "A Terrain Ruggedness Index That Quantifies Topographic Heterogeneity. "
             "*Intermountain Journal of Sciences*, 5(1–4), 23–27."
         ),
-        "Pertinence": "Terrain Ruggedness Index (TRI) — composante T de l'IMD, données SRTM 30 m",
+        "Pertinence": "Terrain Ruggedness Index (TRI) - composante T de l'IMD, données SRTM 30 m",
     },
     {
         "Référence": "Spearman (1904)",
@@ -98,7 +98,7 @@ refs = [
             "*The American Journal of Psychology*, 15(1), 72–101. "
             "https://doi.org/10.2307/1412159"
         ),
-        "Pertinence": "Corrélation de rang — tests non paramétriques (ρ IMD × revenu = +0,055, p = 0,677)",
+        "Pertinence": "Corrélation de rang - tests non paramétriques (ρ IMD × revenu = +0,055, p = 0,677)",
     },
 ]
 
@@ -120,12 +120,12 @@ import pandas as pd
 
 sources = [
     {
-        "Source": "GBFS — MobilityData",
+        "Source": "GBFS - MobilityData",
         "Millésime": "2024–2025",
         "Granularité": "Station",
         "Variables mobilisées": "Capacité (num_docks_available), lat/lon, station_type",
         "URL / Référence": "https://github.com/MobilityData/gbfs",
-        "Rôle dans l'étude": "Corpus principal — 46 312 stations certifiées, 122 systèmes français",
+        "Rôle dans l'étude": "Corpus principal - 46 312 stations certifiées, 122 systèmes français",
     },
     {
         "Source": "INSEE Filosofi",
@@ -133,7 +133,7 @@ sources = [
         "Granularité": "Carreau 200 m (INSPIRE)",
         "Variables mobilisées": "Revenu médian/UC, indice de Gini, taux de pauvreté",
         "URL / Référence": "https://www.insee.fr/fr/statistiques/4507787",
-        "Rôle dans l'étude": "IES — déterminisme économique (ρ Spearman, modèle Ridge)",
+        "Rôle dans l'étude": "IES - déterminisme économique (ρ Spearman, modèle Ridge)",
     },
     {
         "Source": "INSEE Recensement de la Population (RP)",
@@ -141,7 +141,7 @@ sources = [
         "Granularité": "Carreau 200 m",
         "Variables mobilisées": "Part ménages sans voiture, part modale vélo",
         "URL / Référence": "https://www.insee.fr/fr/statistiques/5650714",
-        "Rôle dans l'étude": "Composante I (Infrastructure) — demande cyclable de proximité",
+        "Rôle dans l'étude": "Composante I (Infrastructure) - demande cyclable de proximité",
     },
     {
         "Source": "GTFS national (SNCF / RATP / Métropoles)",
@@ -149,26 +149,26 @@ sources = [
         "Granularité": "Arrêt de transport en commun",
         "Variables mobilisées": "Géolocalisation des arrêts, lignes desservies",
         "URL / Référence": "https://transport.data.gouv.fr/",
-        "Rôle dans l'étude": "Composante M (Multimodalité) — accessibilité à 300 m (poids w_M* = 0,578)",
+        "Rôle dans l'étude": "Composante M (Multimodalité) - accessibilité à 300 m (poids w_M* = 0,578)",
     },
     {
-        "Source": "BAAC — ONISR (Min. Intérieur)",
+        "Source": "BAAC - ONISR (Min. Intérieur)",
         "Millésime": "2020–2023",
         "Granularité": "Accident individuel géolocalisé",
         "Variables mobilisées": "Localisation, type d'usager, gravité",
         "URL / Référence": "https://www.data.gouv.fr/fr/datasets/bases-de-donnees-annuelles-des-accidents-corporels-de-la-circulation-routiere/",
-        "Rôle dans l'étude": "Composante S (Sécurité) — densité d'accidents cyclables dans un rayon de 300 m",
+        "Rôle dans l'étude": "Composante S (Sécurité) - densité d'accidents cyclables dans un rayon de 300 m",
     },
     {
-        "Source": "SRTM — NASA / USGS",
+        "Source": "SRTM - NASA / USGS",
         "Millésime": "2000 (30 m GSD)",
         "Granularité": "Pixel raster 30 m",
         "Variables mobilisées": "Altitude (MNT), TRI (Terrain Ruggedness Index)",
         "URL / Référence": "https://www.usgs.gov/centers/eros/science/usgs-eros-archive-digital-elevation-shuttle-radar-topography-mission-srtm",
-        "Rôle dans l'étude": "Composante T (Topographie) — friction altimétrique (poids w_T* = 0,096)",
+        "Rôle dans l'étude": "Composante T (Topographie) - friction altimétrique (poids w_T* = 0,096)",
     },
     {
-        "Source": "FUB — Baromètre des villes cyclables",
+        "Source": "FUB - Baromètre des villes cyclables",
         "Millésime": "2023",
         "Granularité": "Agglomération",
         "Variables mobilisées": "Note globale perçue (/6), sous-scores thématiques",
@@ -176,12 +176,12 @@ sources = [
         "Rôle dans l'étude": "Validation externe de l'IMD (validité de face, corrélation Spearman positive)",
     },
     {
-        "Source": "EMP — Enquête Mobilité des Personnes (SDES)",
+        "Source": "EMP - Enquête Mobilité des Personnes (SDES)",
         "Millésime": "2019",
         "Granularité": "Agglomération / Ménage",
         "Variables mobilisées": "Part modale vélo, nombre de déplacements/jour",
         "URL / Référence": "https://www.statistiques.developpement-durable.gouv.fr/enquete-nationale-transports-et-deplacements-entd-2008",
-        "Rôle dans l'étude": "Validation externe de l'IMD (validité prédictive — lien offre/usage observé)",
+        "Rôle dans l'étude": "Validation externe de l'IMD (validité prédictive - lien offre/usage observé)",
     },
 ]
 
@@ -210,7 +210,7 @@ reglementaire = [
      "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32017R1926"),
 ]
 for name, year, desc, url in reglementaire:
-    st.markdown(f"- **{name}** ({year}) — {desc} [Lien]({url})")
+    st.markdown(f"- **{name}** ({year}) - {desc} [Lien]({url})")
 
 # ── Section 3 : Stack technique ────────────────────────────────────────────────
 st.divider()
@@ -256,10 +256,10 @@ st.caption(
 
 st.markdown("""
 #### Formats de données
-- **Parquet (Apache Arrow)** — format colonnaire optimisé, compression ZSTD, ~3–5× plus compact que CSV
-- **CSV UTF-8** — format universel, séparateur virgule, compatible Excel / R / QGIS
-- **GeoJSON** — export géospatial optionnel (coordonnées WGS-84 EPSG:4326)
-- **GBFS v3.0** — format source (JSON temps réel, MobilityData)
+- **Parquet (Apache Arrow)** - format colonnaire optimisé, compression ZSTD, ~3–5× plus compact que CSV
+- **CSV UTF-8** - format universel, séparateur virgule, compatible Excel / R / QGIS
+- **GeoJSON** - export géospatial optionnel (coordonnées WGS-84 EPSG:4326)
+- **GBFS v3.0** - format source (JSON temps réel, MobilityData)
 """)
 
 # ── Section 4 : Comment citer ce travail ───────────────────────────────────────
@@ -283,7 +283,7 @@ with tab_apa:
 
 **Corpus Gold Standard GBFS :**
 
-> Fossé R. & Pallares G. (2026). *Gold Standard GBFS France — 46 312 stations certifiées,
+> Fossé R. & Pallares G. (2026). *Gold Standard GBFS France - 46 312 stations certifiées,
 > 122 systèmes, enrichissement multi-sources* [Ensemble de données].
 > https://doi.org/10.xxxx/gold-standard-gbfs-france-2026
 """)
@@ -297,12 +297,12 @@ with tab_bib:
                    Équité socio-spatiale des vélos en libre-service français}},
   year         = {2026},
   url          = {https://github.com/rohanfosse/bikeshare-data-explorer},
-  note         = {Plateforme Streamlit — Gold Standard GBFS · 46 312 stations · 122 systèmes}
+  note         = {Plateforme Streamlit - Gold Standard GBFS · 46 312 stations · 122 systèmes}
 }
 
 @dataset{fosse_gold_standard_gbfs_2026,
   author       = {Foss{\\'{e}}, Rohan and Pallares, Ga{\\"{e}}l},
-  title        = {{Gold Standard GBFS France — 46 312 stations certifiées}},
+  title        = {{Gold Standard GBFS France - 46 312 stations certifiées}},
   year         = {2026},
   doi          = {10.xxxx/gold-standard-gbfs-france-2026},
   url          = {https://github.com/rohanfosse/bikeshare-data-explorer},

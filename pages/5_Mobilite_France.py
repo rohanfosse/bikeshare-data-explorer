@@ -290,7 +290,7 @@ if {"fub_score_2023", "emp_part_velo_2019"}.issubset(city_df.columns):
     (part modale vélo EMP 2019) constitue un test de **validité convergente** : les villes
     perçues comme cyclables devraient être aussi celles où la pratique effective est la plus
     développée. Les agglomérations hors de la diagonale principale identifient deux profils
-    d'anomalie à investiguer qualitativement — la **sous-performance** (bonne perception,
+    d'anomalie à investiguer qualitativement - la **sous-performance** (bonne perception,
     faible usage : barrières socio-économiques ou offre inadaptée ?) et la
     **sur-performance** (usage élevé malgré une perception dégradée : culture cyclable
     indépendante de l'infrastructure ?).

@@ -3,7 +3,7 @@
 
 Classement composite des villes françaises selon quatre dimensions :
 Sécurité (S), Infrastructure (I), Multimodalité (M), Topographie (T).
-Auteurs : R. Fossé & G. Pallares — 2025–2026.
+Auteurs : R. Fossé & G. Pallares - 2025–2026.
 """
 from __future__ import annotations
 
@@ -61,7 +61,7 @@ abstract_box(
     "(maximisation ρ Spearman vs pratiques EMP 2019) : "
     "multimodalité (<b>57,8 %</b>), infrastructure (18,4 %), sécurité (14,2 %), topographie (9,6 %). "
     f"Le classement national place <b>{_top_city}</b> en tête "
-    f"(IMD = {_top_score}/100) — médiane nationale à {_med_score}/100. "
+    f"(IMD = {_top_score}/100) - médiane nationale à {_med_score}/100. "
     "La robustesse est vérifiée par Monte Carlo N = 10 000 : le top 10 est stable dans 89 % des tirages.",
     findings=[
         (str(_n_cities), "agglomérations analysées"),

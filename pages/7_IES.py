@@ -190,11 +190,11 @@ def _fr(v: float, fmt: str = ".3f") -> str:
     return format(v, fmt).replace(".", ",")
 
 _n_txt     = str(len(ies_df)) if ies_df is not None else str(len(imd_f))
-_rho_dyn   = _fr(rho_rev, "+.3f") if not np.isnan(rho_rev) else "—"
-_p_dyn     = (_fr(pval_rev, ".3f") if pval_rev >= 0.001 else "< 0,001") if not np.isnan(pval_rev) else "—"
+_rho_dyn   = _fr(rho_rev, "+.3f") if not np.isnan(rho_rev) else "-"
+_p_dyn     = (_fr(pval_rev, ".3f") if pval_rev >= 0.001 else "< 0,001") if not np.isnan(pval_rev) else "-"
 _sig_dyn   = "non significatif" if (not np.isnan(pval_rev) and pval_rev > 0.05) else "significatif"
 _nulle_dyn = "nulle" if (not np.isnan(pval_rev) and pval_rev > 0.05) else "significative"
-_R2_txt    = "—"
+_R2_txt    = "-"
 if ies_df is not None and len(ies_df) >= 5:
     _xo_pre    = ies_df["revenu_median_uc"].values.astype(float)
     _yo_pre    = ies_df["IMD"].values.astype(float)
@@ -294,7 +294,7 @@ La corrélation de Spearman entre l'IMD et le revenu médian/UC (INSEE Filosofi)
 $\\rho = {_rho_dyn}$ ($p = {_p_dyn}$, **{_sig_dyn}**). H₁ est donc rejetée :
 il n'y a pas de corrélation significative entre niveau de revenu et qualité de l'environnement cyclable.
 Ce résultat, plus fort encore que les estimations Ridge ($R^2 = 0{{,}}28$) issues de la littérature,
-confirme l'absence totale de déterminisme économique dans la distribution spatiale des VLS français —
+confirme l'absence totale de déterminisme économique dans la distribution spatiale des VLS français -
 et confère une responsabilité entière aux décideurs publics locaux.
 """)
 
@@ -341,7 +341,7 @@ st.latex(r"""
 st.markdown(f"""
 Le paramètre $\\lambda$ est sélectionné par validation croisée ($k = 5$). Sur le panel Gold Standard
 dock-based ({_n_txt} agglomérations, INSEE Filosofi), la corrélation de Spearman entre revenu médian/UC
-et IMD est $\\rho = {_rho_dyn}$ ($p = {_p_dyn}$) — **statistiquement {_nulle_dyn}**. Le coefficient de
+et IMD est $\\rho = {_rho_dyn}$ ($p = {_p_dyn}$) - **statistiquement {_nulle_dyn}**. Le coefficient de
 détermination OLS est $R^2 = {_R2_txt}$ : le revenu médian n'explique que **moins de 1 % de
 la variance de l'IMD**. La quasi-totalité de la variance est attribuable aux choix de gouvernance
 locale, à la topographie, à l'héritage historique des politiques de mobilité et aux stratégies
@@ -1082,7 +1082,7 @@ st.markdown(r"""
 #### 6.1. Levier Infrastructurel : Tableau des Déserts de Mobilité et Effort Correctif
 
 Les agglomérations en **"Désert de Mobilité Sociale"** (IES $< 1$, revenu $<$ médiane nationale)
-cumulent précarité économique et sous-équipement cyclable — la double peine (*Lucas, 2012*).
+cumulent précarité économique et sous-équipement cyclable - la double peine (*Lucas, 2012*).
 Le diagnostic IES permet de quantifier *l'effort correctif minimal* pour chacune :
 
 $$\Delta\text{IMD}_i = \widehat{\text{IMD}}(R_{m,i}) - \text{IMD}_{\text{observé}, i}$$
@@ -1144,14 +1144,14 @@ La littérature internationale (*Fishman et al., 2014 ; Ricci, 2015*) montre que
 l'abonnement est le principal frein à l'adoption du VLS dans les ménages à revenus modestes. Un
 dispositif de **tarification sociale différenciée** (abonnement gratuit ou subventionné pour les
 allocataires RSA/APL, abonnement jeune) est un levier complémentaire à l'investissement
-infrastructurel, permettant de lever les barrières d'usage non capturées par l'IMD physique —
+infrastructurel, permettant de lever les barrières d'usage non capturées par l'IMD physique -
 révélées par un résidu IES négatif malgré un IMD satisfaisant (quadrant "Sous-Performance").
 """)
 
 if ies_df is not None and not _sous_perf_df.empty:
     st.markdown(
         f"**{len(_sous_perf_df)} agglomérations en Sous-Performance** "
-        f"(IMD ≥ médiane mais revenu ≥ médiane → IES < 1) — l'offre physique est présente mais "
+        f"(IMD ≥ médiane mais revenu ≥ médiane → IES < 1) - l'offre physique est présente mais "
         f"sous-utilisée, suggérant des barrières tarifaires ou comportementales :"
     )
     _sp_disp = (_sous_perf_df[["city", "n_stations", "revenu_median_uc", "IMD", "IES"]]
@@ -1163,7 +1163,7 @@ if ies_df is not None and not _sous_perf_df.empty:
     st.dataframe(_sp_disp, use_container_width=True, hide_index=True,
                  column_config={"IES": st.column_config.NumberColumn("IES", format="%.3f")})
     st.caption(
-        "**Tableau 6.2.** Agglomérations en Sous-Performance — "
+        "**Tableau 6.2.** Agglomérations en Sous-Performance - "
         "offre VLS élevée mais usage sous le potentiel prévisible. "
         "Cibles prioritaires pour des politiques tarifaires sociales ou des campagnes de sensibilisation."
     )
@@ -1184,9 +1184,9 @@ if ies_df is not None and "IES" in ies_df.columns:
     _n_above   = int((ies_df["IES"] >= _threshold).sum())
     tc1, tc2, tc3 = st.columns(3)
     tc1.metric(f"Agglomérations IES ≥ {_threshold:.2f}", f"{_n_above}",
-               f"{100 * _n_above / len(ies_df):.0f} % du panel — conformes")
+               f"{100 * _n_above / len(ies_df):.0f} % du panel - conformes")
     tc2.metric(f"Agglomérations IES < {_threshold:.2f}", f"{_n_below}",
-               f"{100 * _n_below / len(ies_df):.0f} % du panel — sous le seuil DSP")
+               f"{100 * _n_below / len(ies_df):.0f} % du panel - sous le seuil DSP")
     tc3.metric("IES médian", f"{float(ies_df['IES'].median()):.3f}",
                "référence de contractualisation")
     st.caption(
@@ -1214,7 +1214,7 @@ métropoles et agglomérations une autonomie quasi-totale dans le déploiement d
 Il invalide toute forme de fatalisme territorial et souligne la responsabilité pleine et entière
 des décideurs publics locaux dans la constitution ou la résorption des déserts de mobilité sociale.
 
-L'étude de cas intra-urbaine de Montpellier — corrélation entre revenu fiscal et part modale vélo
-par quartier, calcul de l'IES intra-urbain $\\widetilde{{\\text{{IES}}}}_q$ — est détaillée dans
-la section *Fracture Socio-Spatiale* de la page **Montpellier — Étude de cas VLS**.
+L'étude de cas intra-urbaine de Montpellier - corrélation entre revenu fiscal et part modale vélo
+par quartier, calcul de l'IES intra-urbain $\\widetilde{{\\text{{IES}}}}_q$ - est détaillée dans
+la section *Fracture Socio-Spatiale* de la page **Montpellier - Étude de cas VLS**.
 """)
