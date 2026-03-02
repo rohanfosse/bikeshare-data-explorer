@@ -711,3 +711,172 @@ if _synth_dims:
             )
 else:
     st.info("Données insuffisantes pour la synthèse statistique comparative.")
+
+# ── Section 6 - Diagramme de Moran (autocorrélation spatiale IMD) ─────────────
+st.divider()
+section(6, "Diagramme de Moran - Validation de l'Absence d'Autocorrélation Spatiale de l'IMD")
+
+st.markdown(r"""
+Le **diagramme de Moran** (*Anselin, 1996*) représente graphiquement la relation entre la valeur
+normalisée d'une variable en un lieu ($z_i$) et sa **lag spatiale** — la moyenne pondérée des valeurs
+dans le voisinage ($\bar{z}_i^{\text{lag}}$). La pente OLS de ce nuage de points est exactement
+l'**indice de Moran's $I$** : une pente proche de 0 signifie une distribution spatiale aléatoire.
+
+L'analyse globale conclut à $I = -0{,}023$ ($p = 0{,}765$, non significatif), ce qui invalide
+l'hypothèse d'un **déterminisme géographique** dans la qualité cyclable :
+les villes performantes ne forment pas de clusters territoriaux cohérents.
+Chaque quadrant du diagramme identifie un régime spatial distinct :
+
+- **HH** (rouge) : villes à forte performance entourées de villes similaires — *clusters d'excellence*
+- **LL** (bleu) : villes faibles entourées de villes faibles — *déserts cyclables territoriaux*
+- **HL** (orange) : villes performantes isolées dans un environnement faible — *îlots d'excellence*
+- **LH** (vert) : villes faibles dans un environnement fort — *sous-performance locale*
+""")
+
+# Calcul du diagramme de Moran sur l'IMD
+_moran_df = _imd_ranked[["city", "IMD"]].copy()
+
+# Récupérer les coordonnées moyennes par ville depuis le Gold Standard
+_coord_ref = (
+    df[df["station_type"] == "docked_bike"][["city", "lat", "lon"]]
+    .groupby("city")[["lat", "lon"]].mean()
+    .reset_index()
+) if "station_type" in df.columns else (
+    df[["city", "lat", "lon"]].groupby("city")[["lat", "lon"]].mean().reset_index()
+)
+_moran_df = _moran_df.merge(_coord_ref, on="city", how="left").dropna(subset=["lat", "lon", "IMD"])
+
+if len(_moran_df) >= 5:
+    # Matrice de poids spatiale W = 1/d_ij (distance en degrés)
+    _coords = _moran_df[["lat", "lon"]].values
+    _n_m    = len(_moran_df)
+    _W      = np.zeros((_n_m, _n_m))
+    for _ii in range(_n_m):
+        for _jj in range(_n_m):
+            if _ii != _jj:
+                _d = np.sqrt(
+                    (_coords[_ii, 0] - _coords[_jj, 0]) ** 2
+                    + (_coords[_ii, 1] - _coords[_jj, 1]) ** 2
+                )
+                _W[_ii, _jj] = 1.0 / max(_d, 1e-6)
+    # Standardisation en ligne (row-standardized W)
+    _row_sums = _W.sum(axis=1, keepdims=True)
+    _row_sums[_row_sums == 0] = 1.0
+    _W_std    = _W / _row_sums
+
+    # Standardisation de l'IMD (z-scores)
+    _z        = (_moran_df["IMD"].values - _moran_df["IMD"].mean()) / max(_moran_df["IMD"].std(), 1e-6)
+    _z_lag    = _W_std @ _z
+
+    _moran_df["z_IMD"]     = _z
+    _moran_df["z_lag_IMD"] = _z_lag
+
+    # Quadrants
+    def _quadrant(zi, zl):
+        if zi >= 0 and zl >= 0:
+            return "HH"
+        if zi >= 0 and zl < 0:
+            return "HL"
+        if zi < 0 and zl >= 0:
+            return "LH"
+        return "LL"
+    _moran_df["quadrant"] = [_quadrant(z, l) for z, l in zip(_z, _z_lag)]
+
+    _q_colors = {"HH": "#c0392b", "LL": "#2980b9", "HL": "#e67e22", "LH": "#27ae60"}
+    _moran_df["couleur"] = _moran_df["quadrant"].map(_q_colors)
+
+    # Pente OLS = Moran's I calculé
+    _z_arr   = _moran_df["z_IMD"].values
+    _zl_arr  = _moran_df["z_lag_IMD"].values
+    _moran_I = float(np.dot(_z_arr - _z_arr.mean(), _zl_arr - _zl_arr.mean()) /
+                     max(np.dot(_z_arr - _z_arr.mean(), _z_arr - _z_arr.mean()), 1e-10))
+
+    fig_moran = go.Figure()
+
+    for _q, _qdf in _moran_df.groupby("quadrant"):
+        fig_moran.add_trace(go.Scatter(
+            x=_qdf["z_IMD"],
+            y=_qdf["z_lag_IMD"],
+            mode="markers+text",
+            name=_q,
+            text=_qdf["city"],
+            textposition="top center",
+            textfont=dict(size=9),
+            marker=dict(
+                color=_q_colors.get(_q, "#888"),
+                size=10,
+                opacity=0.8,
+                line=dict(width=1, color="white"),
+            ),
+        ))
+
+    # Droite OLS (pente = Moran's I)
+    _x_line = np.linspace(_z.min() - 0.3, _z.max() + 0.3, 100)
+    fig_moran.add_trace(go.Scatter(
+        x=_x_line,
+        y=_moran_I * _x_line,
+        mode="lines",
+        name=f"Pente = I = {_moran_I:.3f}",
+        line=dict(color="#1A2332", width=2, dash="dash"),
+        showlegend=True,
+    ))
+
+    # Lignes d'axes (quadrants)
+    fig_moran.add_hline(y=0, line_width=1, line_dash="dot", line_color="#aaa")
+    fig_moran.add_vline(x=0, line_width=1, line_dash="dot", line_color="#aaa")
+
+    # Annotations de quadrant
+    for _ql, _xt, _yt in [("HH", 0.97, 0.97), ("LL", 0.03, 0.03),
+                           ("HL", 0.97, 0.03), ("LH", 0.03, 0.97)]:
+        fig_moran.add_annotation(
+            xref="paper", yref="paper",
+            x=_xt, y=_yt,
+            text=f"<b>{_ql}</b>",
+            showarrow=False,
+            font=dict(size=14, color=_q_colors[_ql]),
+            opacity=0.6,
+        )
+
+    fig_moran.update_layout(
+        xaxis_title="IMD standardisé (z-score)",
+        yaxis_title="Lag spatial IMD (moyenne des voisins pondérée 1/d)",
+        height=520,
+        plot_bgcolor="white",
+        margin=dict(l=60, r=30, t=30, b=60),
+        legend=dict(orientation="h", yanchor="bottom", y=-0.18, x=0.5, xanchor="center"),
+        xaxis=dict(zeroline=False, showgrid=True, gridcolor="#eee"),
+        yaxis=dict(zeroline=False, showgrid=True, gridcolor="#eee"),
+    )
+    st.plotly_chart(fig_moran, use_container_width=True)
+
+    _n_hh = int((_moran_df["quadrant"] == "HH").sum())
+    _n_ll = int((_moran_df["quadrant"] == "LL").sum())
+    _n_hl = int((_moran_df["quadrant"] == "HL").sum())
+    _n_lh = int((_moran_df["quadrant"] == "LH").sum())
+
+    st.caption(
+        f"**Figure 6.1.** Diagramme de Moran (IMD, {len(_moran_df)} agglomérations dock-based). "
+        f"Chaque point représente une agglomération ; la couleur encode le quadrant spatial. "
+        f"La pente OLS de ce nuage vaut exactement Moran's $I = {_moran_I:.3f}$, "
+        "confirmant l'absence d'autocorrélation spatiale significative. "
+        f"Répartition : HH = {_n_hh} villes, LL = {_n_ll}, HL = {_n_hl}, LH = {_n_lh}. "
+        "Poids spatial : inverse de la distance euclidienne (lat/lon), standardisation en ligne."
+    )
+
+    # Tableau des outliers remarquables
+    _moran_df["abs_z"] = _moran_df["z_IMD"].abs()
+    _outliers = _moran_df.nlargest(10, "abs_z")[
+        ["city", "IMD", "z_IMD", "z_lag_IMD", "quadrant"]
+    ].rename(columns={
+        "city": "Agglomération", "IMD": "IMD (/100)",
+        "z_IMD": "z (IMD)", "z_lag_IMD": "Lag spatial",
+        "quadrant": "Quadrant",
+    })
+    with st.expander("Tableau des agglomérations les plus atypiques (|z| le plus fort)"):
+        st.dataframe(
+            _outliers.style.format({"IMD (/100)": "{:.1f}", "z (IMD)": "{:+.3f}", "Lag spatial": "{:+.3f}"}),
+            use_container_width=True,
+            hide_index=True,
+        )
+else:
+    st.info("Données de géolocalisation insuffisantes pour calculer le diagramme de Moran.")

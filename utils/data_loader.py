@@ -42,6 +42,8 @@ NETWORK_TOPO_PATH = _ROOT / "data" / "processed" / "network_topology_results.csv
 VULNERABILITY_PATH = _ROOT / "data" / "processed" / "station_vulnerability_ranking.csv"
 WEATHER_PATH      = _ROOT / "data" / "processed" / "weather_data_enriched.csv"
 MODAL_PATH        = _ROOT / "data" / "processed" / "ville_montpellier" / "analyses" / "parts_modales_moyennes.csv"
+SUPER_SPREADERS_PATH      = _ROOT / "data" / "processed" / "super_spreaders_ranking.csv"
+DYN_NEIGHBORHOODS_PATH    = _ROOT / "data" / "processed" / "dynamic_functional_neighborhoods.csv"
 
 # ── Métadonnées des métriques ──────────────────────────────────────────────────
 METRICS: dict[str, dict] = {
@@ -413,6 +415,45 @@ def load_weather_data() -> pd.DataFrame:
 def load_parts_modales() -> pd.DataFrame:
     """Parts modales moyennes sur l'ensemble des quartiers de Montpellier."""
     return pd.read_csv(MODAL_PATH)
+
+
+@st.cache_data(ttl=3600, show_spinner=False)
+def load_super_spreaders() -> pd.DataFrame:
+    """
+    Classement des stations par potentiel de contagion opérationnelle.
+
+    Potentiel de contagion = Demande × Capacité au carré (proxy de la propagation
+    d'un déséquilibre à travers le réseau). Les « super-spreaders » sont les stations
+    dont la défaillance génère les perturbations les plus larges dans l'équilibre global.
+
+    Auteurs : R. Fossé & G. Pallares - 2025–2026.
+    """
+    df = pd.read_csv(SUPER_SPREADERS_PATH)
+    for col in ("Demand", "Capacity", "Contagion_Potential"):
+        if col in df.columns:
+            df[col] = pd.to_numeric(df[col], errors="coerce")
+    return df.dropna(subset=["Contagion_Potential"]).sort_values(
+        "Contagion_Potential", ascending=False
+    ).reset_index(drop=True)
+
+
+@st.cache_data(ttl=3600, show_spinner=False)
+def load_dynamic_neighborhoods() -> pd.DataFrame:
+    """
+    Quartiers fonctionnels dynamiques : affectation de communauté Louvain
+    par tranche horaire (matin, midi, soir, nuit).
+
+    Permet d'observer la recomposition des bassins de mobilité selon le
+    moment de la journée - phénomène de « double vie » des stations
+    situées à l'interface domicile/travail.
+
+    Auteurs : R. Fossé & G. Pallares - 2025–2026.
+    """
+    df = pd.read_csv(DYN_NEIGHBORHOODS_PATH)
+    for col in ("Population_300m", "Stability_Score"):
+        if col in df.columns:
+            df[col] = pd.to_numeric(df[col], errors="coerce")
+    return df
 
 
 @st.cache_data(ttl=3600, show_spinner=False)

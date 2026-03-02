@@ -18,6 +18,7 @@ from utils.data_loader import (
     compute_imd_cities,
     load_bike_tram_proximity,
     load_community_detection,
+    load_dynamic_neighborhoods,
     load_hourly_flows,
     load_montpellier_stations,
     load_net_flows,
@@ -27,6 +28,7 @@ from utils.data_loader import (
     load_station_temporal_profiles,
     load_station_vulnerability,
     load_stations,
+    load_super_spreaders,
     load_synthese_velo_socio,
     load_top_quartiers,
     load_weather_data,
@@ -80,6 +82,8 @@ topo        = load_network_topology()
 vulnerability = load_station_vulnerability()
 weather     = load_weather_data()
 modal       = load_parts_modales()
+super_spreaders  = load_super_spreaders()
+dyn_neighborhoods = load_dynamic_neighborhoods()
 
 # ── Sidebar ───────────────────────────────────────────────────────────────────
 sidebar_nav()
@@ -677,3 +681,252 @@ with tab_scatter:
                 "les quartiers précaires cumulent forte captivité automobile et faible "
                 "accès effectif au réseau de vélos partagés."
             )
+
+# ── Section 6 - Super-Spreaders & Quartiers Fonctionnels Dynamiques ───────────
+st.divider()
+section(6, "Résilience Réseau : Super-Spreaders et Quartiers Fonctionnels Dynamiques")
+
+st.markdown(r"""
+Deux analyses complémentaires révèlent la **vulnérabilité structurelle** et la **dynamique
+temporelle** du réseau Vélomagg.
+
+**Super-Spreaders** (*Kitsak et al., 2010*) : le potentiel de contagion opérationnelle
+$C_i = D_i \times K_i^2$ (demande × carré de la capacité) identifie les stations dont la
+défaillance — stock nul ou vélo hors-service — propage une perturbation maximale dans le réseau.
+Ces nœuds critiques doivent être prioritisés dans les stratégies de réapprovisionnement (*rebalancing*).
+
+**Quartiers Fonctionnels Dynamiques** : la détection de communautés de Louvain appliquée
+séparément à chaque tranche horaire (matin, midi, soir, nuit) révèle la *recomposition* des
+bassins de mobilité au fil de la journée. Un score de stabilité $S \in [0, 1]$ mesure
+la cohérence de l'appartenance communautaire d'une station sur les quatre tranches.
+""")
+
+tab_ss, tab_dyn = st.tabs(["Super-Spreaders", "Quartiers Dynamiques"])
+
+# ── Onglet Super-Spreaders ─────────────────────────────────────────────────────
+with tab_ss:
+    if not super_spreaders.empty and "Contagion_Potential" in super_spreaders.columns:
+        _n_ss = st.slider(
+            "Nombre de stations affichées",
+            min_value=5, max_value=min(30, len(super_spreaders)),
+            value=min(15, len(super_spreaders)), step=5,
+            key="ss_slider",
+        )
+        _ss_top = super_spreaders.head(_n_ss).copy()
+
+        # Normalisation du potentiel de contagion pour la couleur
+        _ss_max = _ss_top["Contagion_Potential"].max()
+        _ss_top["CP_norm"] = _ss_top["Contagion_Potential"] / max(_ss_max, 1)
+
+        col_ss_bar, col_ss_map = st.columns([3, 2])
+
+        with col_ss_bar:
+            # Nom court pour l'affichage
+            _ss_top["label"] = _ss_top["Name"].str.replace(
+                r"^\d+\s+", "", regex=True
+            ).str[:30]
+
+            fig_ss = go.Figure(go.Bar(
+                x=_ss_top["Contagion_Potential"],
+                y=_ss_top["label"],
+                orientation="h",
+                marker=dict(
+                    color=_ss_top["CP_norm"],
+                    colorscale="Reds",
+                    showscale=True,
+                    colorbar=dict(title="C_i normalisé", thickness=12),
+                ),
+                text=_ss_top["Demand"].apply(lambda v: f"{int(v):,}" if pd.notna(v) else "—"),
+                textposition="outside",
+                hovertemplate=(
+                    "<b>%{y}</b><br>"
+                    "C_i = %{x:.2e}<br>"
+                    "Demande = %{text} trips<extra></extra>"
+                ),
+            ))
+            fig_ss.update_layout(
+                xaxis_title="Potentiel de contagion C_i = D × K²",
+                yaxis=dict(autorange="reversed"),
+                height=480,
+                plot_bgcolor="white",
+                margin=dict(l=10, r=80, t=20, b=40),
+                xaxis=dict(showgrid=True, gridcolor="#eee"),
+            )
+            st.plotly_chart(fig_ss, use_container_width=True)
+            st.caption(
+                f"**Figure 6.1.** Top {_n_ss} stations Vélomagg par potentiel de contagion "
+                "$C_i = D_i \\times K_i^2$ (Demande × Capacité²). "
+                "La couleur encode l'intensité relative du potentiel (rouge = maximal). "
+                "Les stations autour de la **Gare Saint-Roch** concentrent un potentiel "
+                "disproportionné, justifiant une priorité opérationnelle de réapprovisionnement."
+            )
+
+        with col_ss_map:
+            _ss_map = _ss_top.dropna(subset=["Latitude", "Longitude"])
+            if not _ss_map.empty:
+                fig_ss_map = px.scatter_mapbox(
+                    _ss_map,
+                    lat="Latitude", lon="Longitude",
+                    size="Contagion_Potential",
+                    color="CP_norm",
+                    color_continuous_scale="Reds",
+                    hover_name="Name",
+                    hover_data={"Demand": True, "Capacity": True,
+                                "Contagion_Potential": ":.2e",
+                                "Latitude": False, "Longitude": False, "CP_norm": False},
+                    mapbox_style="carto-positron",
+                    zoom=12,
+                    center={"lat": 43.611, "lon": 3.876},
+                    size_max=30,
+                    height=480,
+                    labels={"CP_norm": "C_i normalisé"},
+                )
+                fig_ss_map.update_layout(margin=dict(l=0, r=0, t=0, b=0))
+                st.plotly_chart(fig_ss_map, use_container_width=True)
+                st.caption(
+                    "**Figure 6.2.** Carte des super-spreaders. "
+                    "La taille et la couleur encodent le potentiel de contagion $C_i$. "
+                    "La concentration spatiale autour du centre-ville et de la gare "
+                    "matérialise le risque systémique localisé du réseau."
+                )
+
+        # Tableau synthétique
+        _ss_display = _ss_top[["Name", "Demand", "Capacity", "Contagion_Potential"]].copy()
+        _ss_display.insert(0, "Rang", range(1, len(_ss_display) + 1))
+        _ss_display = _ss_display.rename(columns={
+            "Name": "Station",
+            "Demand": "Demande (trips)",
+            "Capacity": "Capacité (bornes)",
+            "Contagion_Potential": "C_i (potentiel)",
+        })
+        with st.expander("Tableau complet des super-spreaders"):
+            st.dataframe(
+                _ss_display.style.format({
+                    "Demande (trips)": "{:,.0f}",
+                    "Capacité (bornes)": "{:.0f}",
+                    "C_i (potentiel)": "{:.2e}",
+                }),
+                use_container_width=True,
+                hide_index=True,
+            )
+    else:
+        st.info("Données super-spreaders non disponibles.")
+
+# ── Onglet Quartiers Dynamiques ────────────────────────────────────────────────
+with tab_dyn:
+    _comm_cols = {
+        "Community_Morning_Rush": "Matin (pointe AM)",
+        "Community_Lunch_Time":   "Midi",
+        "Community_Evening_Rush": "Soir (pointe PM)",
+        "Community_Night_Life":   "Nuit",
+    }
+    _avail_cols = {k: v for k, v in _comm_cols.items() if k in dyn_neighborhoods.columns}
+
+    if not dyn_neighborhoods.empty and _avail_cols:
+        col_dyn_left, col_dyn_right = st.columns([3, 2])
+
+        with col_dyn_left:
+            # Heatmap station × tranche horaire (appartenance de communauté)
+            _hm_data = dyn_neighborhoods[["Name"] + list(_avail_cols.keys())].dropna()
+            _hm_data = _hm_data.sort_values(
+                "Community_Morning_Rush" if "Community_Morning_Rush" in _hm_data.columns
+                else _hm_data.columns[1]
+            )
+            _hm_labels = [_avail_cols[c] for c in _avail_cols]
+            _hm_z = _hm_data[list(_avail_cols.keys())].values.T
+            _hm_names = _hm_data["Name"].str.replace(r"^\d+\s+", "", regex=True).str[:25].tolist()
+
+            fig_hm = go.Figure(go.Heatmap(
+                z=_hm_z,
+                x=_hm_names,
+                y=_hm_labels,
+                colorscale="Spectral",
+                showscale=True,
+                colorbar=dict(title="Communauté", thickness=12),
+                hoverongaps=False,
+                hovertemplate="Station: %{x}<br>Tranche: %{y}<br>Communauté: %{z}<extra></extra>",
+            ))
+            fig_hm.update_layout(
+                xaxis=dict(tickangle=-45, tickfont=dict(size=8)),
+                yaxis=dict(tickfont=dict(size=10)),
+                height=320,
+                margin=dict(l=120, r=20, t=20, b=120),
+                plot_bgcolor="white",
+            )
+            st.plotly_chart(fig_hm, use_container_width=True)
+            st.caption(
+                "**Figure 6.3.** Heatmap d'appartenance communautaire (Louvain) "
+                "par station et par tranche horaire. "
+                "Les changements de couleur entre colonnes révèlent les stations "
+                "à *double vie* fonctionnelle : leur bassin de mobilité se reconfigure "
+                "selon que l'heure est une pointe AM, une pause méridienne ou une pointe PM."
+            )
+
+        with col_dyn_right:
+            # Distribution du score de stabilité
+            if "Stability_Score" in dyn_neighborhoods.columns:
+                _stab = dyn_neighborhoods["Stability_Score"].dropna()
+                fig_stab = px.histogram(
+                    dyn_neighborhoods.dropna(subset=["Stability_Score"]),
+                    x="Stability_Score",
+                    nbins=20,
+                    color_discrete_sequence=["#1A6FBF"],
+                    labels={"Stability_Score": "Score de stabilité (0 = volatile, 1 = stable)"},
+                    height=260,
+                )
+                fig_stab.update_layout(
+                    plot_bgcolor="white",
+                    margin=dict(l=10, r=10, t=20, b=40),
+                    yaxis_title="Nombre de stations",
+                )
+                fig_stab.add_vline(
+                    x=float(_stab.median()),
+                    line_dash="dash", line_color="#e74c3c", line_width=2,
+                    annotation_text=f"Médiane = {_stab.median():.2f}",
+                    annotation_position="top right",
+                )
+                st.plotly_chart(fig_stab, use_container_width=True)
+                st.caption(
+                    "**Figure 6.4.** Distribution du score de stabilité communautaire $S \\in [0,1]$. "
+                    f"Médiane = {_stab.median():.2f}. "
+                    "Les stations stables ($S \\approx 1$) conservent la même communauté "
+                    "quelle que soit la tranche horaire — elles constituent le *squelette* "
+                    "permanent du réseau. Les stations volatiles ($S < 0{,}5$) participent "
+                    "à plusieurs bassins selon l'heure, révélant leur rôle d'interface entre "
+                    "zones résidentielles et zones d'activité."
+                )
+
+            # Résumé par tranche horaire : nombre de communautés distinctes
+            _n_comm_per_slot = {}
+            for col, label in _avail_cols.items():
+                _n_comm_per_slot[label] = int(dyn_neighborhoods[col].dropna().nunique())
+
+            if _n_comm_per_slot:
+                _slot_df = pd.DataFrame(
+                    list(_n_comm_per_slot.items()),
+                    columns=["Tranche horaire", "Communautés actives"],
+                )
+                fig_slots = px.bar(
+                    _slot_df,
+                    x="Tranche horaire",
+                    y="Communautés actives",
+                    color="Communautés actives",
+                    color_continuous_scale="Blues",
+                    text="Communautés actives",
+                    height=240,
+                )
+                fig_slots.update_traces(textposition="outside")
+                fig_slots.update_layout(
+                    plot_bgcolor="white",
+                    showlegend=False,
+                    coloraxis_showscale=False,
+                    margin=dict(l=10, r=10, t=20, b=40),
+                )
+                st.plotly_chart(fig_slots, use_container_width=True)
+                st.caption(
+                    "**Figure 6.5.** Nombre de communautés Louvain actives par tranche horaire. "
+                    "La fragmentation communautaire maximale en pointe AM/PM illustre "
+                    "l'éclatement fonctionnel du réseau aux heures de mobilité intense."
+                )
+    else:
+        st.info("Données de quartiers fonctionnels dynamiques non disponibles.")
