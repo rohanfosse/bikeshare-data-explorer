@@ -30,6 +30,7 @@ _NAV_GROUPS: list[tuple[str, list[tuple[str, str]]]] = [
     ("Sciences appliquées", [
         ("pages/11_Physique.py",       "Physique Statistique"),
         ("pages/12_Biologie.py",       "Biologie & Écologie"),
+        ("pages/13_Chimie.py",         "Chimie & Cinétique"),
     ]),
     ("Modules transversaux", [
         ("pages/1_Carte.py",           "Carte des stations"),
