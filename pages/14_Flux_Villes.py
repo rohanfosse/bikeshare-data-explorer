@@ -7,6 +7,8 @@ scripts/collect_status.py et affiche les pseudo-flux inter-snapshots.
 from __future__ import annotations
 
 import sys
+import threading
+import time
 from pathlib import Path
 from datetime import datetime, timezone
 
@@ -47,6 +49,58 @@ def get_collector() -> GBFSCollector:
 @st.cache_data(ttl=60)
 def get_available() -> pd.DataFrame:
     return get_collector().list_available()
+
+
+@st.cache_resource
+def get_collection_state() -> dict:
+    """État partagé (mutable) du thread de collecte automatique."""
+    return {
+        "thread":          None,
+        "running":         False,
+        "started_at":      None,
+        "n_iterations":    0,
+        "last_collect_at": None,
+        "last_error":      None,
+        "interval":        60,
+    }
+
+
+def _bg_collect_loop(state: dict, collector: GBFSCollector) -> None:
+    """Boucle de collecte exécutée dans un thread daemon."""
+    targets = collector.get_target_systems()
+    state["started_at"] = datetime.now(timezone.utc)
+    while state["running"]:
+        t0 = time.monotonic()
+        try:
+            collector.collect_and_save(targets)
+            state["n_iterations"]    += 1
+            state["last_collect_at"]  = datetime.now(timezone.utc)
+            state["last_error"]       = None
+        except Exception as exc:
+            state["last_error"] = str(exc)
+        # Attendre l'intervalle en vérifiant le flag toutes les 0.5 s
+        sleep_end = time.monotonic() + max(0.0, state["interval"] - (time.monotonic() - t0))
+        while state["running"] and time.monotonic() < sleep_end:
+            time.sleep(0.5)
+    state["running"] = False
+
+
+def start_bg_collection(state: dict, collector: GBFSCollector, interval: int = 60) -> None:
+    if state["running"]:
+        return
+    state.update(running=True, interval=interval, n_iterations=0, last_error=None)
+    t = threading.Thread(
+        target=_bg_collect_loop,
+        args=(state, collector),
+        daemon=True,
+        name="gbfs-bg-collector",
+    )
+    state["thread"] = t
+    t.start()
+
+
+def stop_bg_collection(state: dict) -> None:
+    state["running"] = False
 
 
 @st.cache_data(ttl=300)
@@ -134,6 +188,43 @@ with st.sidebar:
         value=not _has_data,
         help="Récupère le status actuel sans historique.",
     )
+    st.divider()
+
+    # ── Collecte automatique en arrière-plan ──────────────────────────────────
+    st.subheader("Collecte automatique")
+    bg_state = get_collection_state()
+
+    if bg_state["running"]:
+        elapsed_h = (
+            datetime.now(timezone.utc) - bg_state["started_at"]
+        ).total_seconds() / 3600 if bg_state["started_at"] else 0.0
+        st.success(f"En cours — {elapsed_h:.1f} h")
+        st.metric("Itérations", bg_state["n_iterations"])
+        if bg_state["last_collect_at"]:
+            st.caption(
+                f"Dernière collecte : "
+                f"{bg_state['last_collect_at'].strftime('%H:%M:%S UTC')}"
+            )
+        if bg_state["last_error"]:
+            st.error(f"Erreur : {bg_state['last_error'][:120]}")
+        if st.button("Arrêter", use_container_width=True):
+            stop_bg_collection(bg_state)
+            st.rerun()
+    else:
+        bg_interval = st.number_input(
+            "Intervalle (s)", min_value=30, max_value=300, value=60, step=10,
+            help="Intervalle entre deux séries de snapshots.",
+        )
+        if st.button("Démarrer la collecte", use_container_width=True, type="primary"):
+            start_bg_collection(bg_state, collector, interval=int(bg_interval))
+            st.rerun()
+        if bg_state["n_iterations"] > 0:
+            st.info(f"Arrêtée après {bg_state['n_iterations']} itérations.")
+        st.caption(
+            "Le thread tourne tant que Streamlit est actif. "
+            "Pour du h24 sans surveillance, utilisez le script PS1."
+        )
+
     st.divider()
     if st.button("Rafraîchir les données", use_container_width=True):
         st.cache_data.clear()
