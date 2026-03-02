@@ -5,6 +5,7 @@ Présentation de l'hybridation des bases de données et de la correction des flu
 import sys
 from pathlib import Path
 
+import numpy as np
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
@@ -197,41 +198,123 @@ if not catalog.empty and "status" in catalog.columns:
             )
 
     with col_stats:
-        # Status breakdown
+        # Status breakdown → donut
         status_counts = catalog["status"].value_counts().reset_index()
         status_counts.columns = ["Statut", "Systèmes"]
         status_labels = {
-            "ok": "Certifié (Gold Standard)",
-            "too_small": "Exclu (micro-réseau)",
-            "autopartage": "Exclu (autopartage)",
-            "excluded": "Exclu (autre anomalie)",
-            "dom_tom": "Hors périmètre (DOM-TOM)",
+            "ok":           "Certifié (Gold Standard)",
+            "too_small":    "Exclu (micro-réseau)",
+            "autopartage":  "Exclu (autopartage A1)",
+            "excluded":     "Exclu (autre anomalie)",
+            "dom_tom":      "Hors périmètre (DOM-TOM)",
+        }
+        _status_colors = {
+            "Certifié (Gold Standard)":    "#27ae60",
+            "Exclu (micro-réseau)":        "#e67e22",
+            "Exclu (autopartage A1)":      "#c0392b",
+            "Exclu (autre anomalie)":      "#8e44ad",
+            "Hors périmètre (DOM-TOM)":    "#95a5a6",
         }
         status_counts["Statut"] = status_counts["Statut"].map(
             lambda s: status_labels.get(s, s)
         )
-        st.dataframe(
-            status_counts,
-            use_container_width=True,
-            hide_index=True,
+        fig_donut = go.Figure(go.Pie(
+            labels=status_counts["Statut"],
+            values=status_counts["Systèmes"],
+            hole=0.5,
+            marker_colors=[
+                _status_colors.get(s, "#bdc3c7") for s in status_counts["Statut"]
+            ],
+            textinfo="label+percent",
+            hovertemplate="%{label}<br>%{value} systèmes (%{percent})<extra></extra>",
+        ))
+        fig_donut.update_layout(
+            height=280,
+            margin=dict(l=5, r=5, t=10, b=5),
+            showlegend=False,
+            annotations=[dict(
+                text=f"<b>{len(catalog)}</b><br>systèmes",
+                x=0.5, y=0.5, font_size=13, showarrow=False,
+            )],
         )
+        st.plotly_chart(fig_donut, use_container_width=True)
         st.caption(
-            f"**Tableau 2.1.** Répartition des {len(catalog)} systèmes GBFS audités "
-            "selon le verdict de l'audit (5 classes d'anomalies A1–A5)."
+            f"**Figure 2.2.** Répartition des {len(catalog)} systèmes GBFS audités "
+            "selon le verdict de l'audit. Vert = certifié Gold Standard ; "
+            "les autres couleurs encodent les 5 classes d'anomalies A1–A5."
         )
 
-        # Top cities by station count (dock-based uniquement)
-        st.markdown("**Top 10 agglomérations - stations dock-based**")
-        top_cities = cities_dock.head(10)[["city", "n_stations"]].rename(
-            columns={"city": "Agglomération", "n_stations": "Stations"}
+    # Distribution de capacité par station_type (démontre le biais A3)
+    if "station_type" in df.columns and "capacity" in df.columns:
+        st.markdown("#### Distribution de Capacité par Type — Preuve Visuelle du Biais A3")
+        _cap_df = df[df["capacity"].notna() & (df["capacity"] > 0)].copy()
+        _cap_df["capacity_clipped"] = _cap_df["capacity"].clip(upper=150)
+        _type_labels = {
+            "docked_bike":   "Dock-based VLS",
+            "free_floating": "Free-floating (A3)",
+            "carsharing":    "Autopartage (A1)",
+        }
+        _cap_df["Type"] = _cap_df["station_type"].map(
+            lambda t: _type_labels.get(t, str(t))
         )
-        st.dataframe(top_cities, use_container_width=True, hide_index=True,
-                     column_config={"Stations": st.column_config.ProgressColumn(
-                         "Stations",
-                         min_value=0,
-                         max_value=int(cities_dock["n_stations"].max()),
-                         format="%d",
-                     )})
+        _type_colors = {
+            "Dock-based VLS":       "#1A6FBF",
+            "Free-floating (A3)":   "#c0392b",
+            "Autopartage (A1)":     "#8e44ad",
+        }
+        fig_cap = px.violin(
+            _cap_df,
+            x="Type",
+            y="capacity_clipped",
+            color="Type",
+            color_discrete_map=_type_colors,
+            box=True,
+            points=False,
+            labels={
+                "Type":             "Type de station",
+                "capacity_clipped": "Capacité déclarée (bornes, plafonnée à 150)",
+            },
+            height=340,
+        )
+        fig_cap.update_layout(
+            plot_bgcolor="white",
+            margin=dict(l=10, r=10, t=10, b=10),
+            showlegend=False,
+            yaxis=dict(showgrid=True, gridcolor="#eee"),
+        )
+        st.plotly_chart(fig_cap, use_container_width=True)
+
+        # Statistiques synthétiques par type
+        _cap_stats = (
+            _cap_df.groupby("Type")["capacity"]
+            .agg(["median", "mean", "max", "count"])
+            .reset_index()
+            .rename(columns={
+                "Type":   "Type de station",
+                "median": "Capacité médiane",
+                "mean":   "Capacité moyenne",
+                "max":    "Capacité max observée",
+                "count":  "Stations",
+            })
+        )
+        st.dataframe(
+            _cap_stats.style.format({
+                "Capacité médiane": "{:.0f}",
+                "Capacité moyenne": "{:.1f}",
+                "Capacité max observée": "{:.0f}",
+                "Stations": "{:,}",
+            }),
+            use_container_width=True, hide_index=True,
+        )
+        st.caption(
+            "**Figure 2.3 & Tableau 2.2.** Distribution des capacités déclarées par type de station "
+            "(plafonnée à 150 bornes pour la lisibilité). "
+            "Le biais A3 se lit directement : les stations *free-floating* présentent une "
+            "capacité médiane disproportionnée — artefact du calcul par **moyenne conditionnelle** "
+            "(exclusion des stations à capacité nulle). "
+            "Après correction, seules les stations *dock-based* conservent une capacité physiquement "
+            "interprétable comme nombre de bornes de stationnement réelles."
+        )
 
     # Catalog details (expandable)
     with st.expander(f"Catalogue complet des {len(catalog)} systèmes audités", expanded=False):
@@ -272,6 +355,88 @@ st.info(
     "artificiellement une agglomération au 2e rang national. La correction ramène le réseau à sa stricte "
     "réalité physique (Rang 14), illustrant que la qualité de la donnée est éminemment politique."
 )
+
+# Graphique multi-villes : stations brutes (GBFS) vs certifiées (Gold Standard)
+st.markdown("#### Impact de l'Audit sur la Taille des Réseaux — Comparaison Multi-Villes")
+st.markdown(
+    "Le catalogue GBFS déclare pour chaque système un comptage brut de stations "
+    "(`n_stations` GBFS), tandis que le Gold Standard Final ne retient que les "
+    "stations **dock-based certifiées**. L'écart révèle l'ampleur de la contamination "
+    "A3 dans chaque agglomération."
+)
+
+if not catalog.empty and {"city", "n_stations", "status"}.issubset(catalog.columns):
+    # Stations brutes par ville (catalogue GBFS)
+    _raw = (
+        catalog.groupby("city")["n_stations"]
+        .sum().reset_index()
+        .rename(columns={"n_stations": "GBFS brut"})
+    )
+    # Stations certifiées (Gold Standard, dock-based)
+    _cert = cities_dock[["city", "n_stations"]].rename(columns={"n_stations": "Gold Standard"})
+
+    _compare = _raw.merge(_cert, on="city", how="inner")
+    _compare = _compare[_compare["GBFS brut"] > 0].copy()
+    _compare["Réduction (%)"] = (
+        100 * (1 - _compare["Gold Standard"] / _compare["GBFS brut"])
+    ).round(1)
+    # Tri par réduction décroissante, top 15 villes avec le plus grand écart
+    _compare = _compare.sort_values("Réduction (%)", ascending=False).head(15)
+
+    _before_after = pd.melt(
+        _compare,
+        id_vars=["city", "Réduction (%)"],
+        value_vars=["GBFS brut", "Gold Standard"],
+        var_name="Phase",
+        value_name="Stations",
+    )
+
+    fig_ba = px.bar(
+        _before_after,
+        x="Stations",
+        y="city",
+        color="Phase",
+        barmode="group",
+        orientation="h",
+        color_discrete_map={"GBFS brut": "#e74c3c", "Gold Standard": "#1A6FBF"},
+        text="Stations",
+        labels={"city": "Agglomération", "Stations": "Stations", "Phase": ""},
+        height=max(360, len(_compare) * 42),
+        custom_data=["Réduction (%)"],
+    )
+    fig_ba.update_traces(
+        texttemplate="%{x:,}",
+        textposition="outside",
+    )
+    fig_ba.update_layout(
+        plot_bgcolor="white",
+        margin=dict(l=10, r=80, t=10, b=10),
+        yaxis=dict(autorange="reversed"),
+        legend=dict(orientation="h", y=-0.12, x=0.5, xanchor="center"),
+        xaxis=dict(showgrid=True, gridcolor="#eee"),
+    )
+    st.plotly_chart(fig_ba, use_container_width=True)
+
+    # Tableau récapitulatif
+    _tbl_ba = _compare[["city", "GBFS brut", "Gold Standard", "Réduction (%)"]].rename(
+        columns={"city": "Agglomération"}
+    )
+    st.dataframe(
+        _tbl_ba.style.format({
+            "GBFS brut": "{:,.0f}",
+            "Gold Standard": "{:,.0f}",
+            "Réduction (%)": "{:.1f} %",
+        }).background_gradient(subset=["Réduction (%)"], cmap="RdYlGn_r"),
+        use_container_width=True, hide_index=True,
+    )
+    st.caption(
+        "**Figure 3.1 & Tableau 3.1.** Comparaison du nombre de stations GBFS brutes "
+        "versus stations dock-based certifiées (Gold Standard) par agglomération. "
+        "Les 15 agglomérations présentant le plus fort taux de réduction sont affichées. "
+        "**Bordeaux** passe de plus de 3 000 stations brutes (Pony free-floating inclus) "
+        "à 225 stations dock-based — soit une réduction de plus de 93 % — illustrant "
+        "le risque systémique d'une ingestion directe des flux GBFS non audités."
+    )
 
 st.markdown("<br>", unsafe_allow_html=True)
 
