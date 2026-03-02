@@ -700,9 +700,18 @@ permet de tester la validité externe du classement politique.
                     hover_data=["city", "parti_maire"],
                     labels={"IMD": "IMD (/100)", "fub_score_2023": "FUB score (/6)",
                             "parti_grp": "Parti"},
-                    trendline="ols",
                     height=360,
                 )
+                # Droite de régression globale (numpy, sans statsmodels)
+                _fv = _fub_scat[["IMD", "fub_score_2023"]].dropna()
+                if len(_fv) >= 3:
+                    _cx = np.polyfit(_fv["IMD"].values, _fv["fub_score_2023"].values, 1)
+                    _xr = np.linspace(_fv["IMD"].min(), _fv["IMD"].max(), 100)
+                    fig_fub_scat.add_trace(go.Scatter(
+                        x=_xr, y=np.polyval(_cx, _xr), mode="lines",
+                        line=dict(color="#555", dash="dash", width=1.5),
+                        name="Tendance globale", showlegend=False,
+                    ))
                 fig_fub_scat.update_layout(
                     plot_bgcolor="white", margin=dict(l=10, r=10, t=10, b=10),
                     showlegend=False,
@@ -787,11 +796,20 @@ permet de tester si le mandat 2020 a **changé** ou **maintenu** l'orientation p
                 color="parti_grp", color_discrete_map=_parti_grp_colors,
                 text="city" if show_labels else None,
                 hover_data=["city", "parti_maire", "annee_vls"],
-                trendline="ols",
                 labels={"age_vls": "Âge du réseau VLS en 2020 (années)",
                         "IMD": "Score IMD (/100)", "parti_grp": "Parti"},
                 height=380,
             )
+            # Droite de régression globale (numpy, sans statsmodels)
+            _av = _age_scat[["age_vls", "IMD"]].dropna()
+            if len(_av) >= 3:
+                _ca = np.polyfit(_av["age_vls"].values, _av["IMD"].values, 1)
+                _xra = np.linspace(_av["age_vls"].min(), _av["age_vls"].max(), 100)
+                fig_age.add_trace(go.Scatter(
+                    x=_xra, y=np.polyval(_ca, _xra), mode="lines",
+                    line=dict(color="#555", dash="dash", width=1.5),
+                    name="Tendance globale", showlegend=False,
+                ))
             fig_age.update_layout(
                 plot_bgcolor="white", showlegend=False,
                 margin=dict(l=10, r=10, t=10, b=10),
