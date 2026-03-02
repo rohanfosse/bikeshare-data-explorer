@@ -267,7 +267,7 @@ with st.expander("Informations pour la citation scientifique", expanded=True):
     st.markdown(
         f"""
 **Jeu de données** : Gold Standard GBFS - Micromobilité française
-**Pipeline d'enrichissement** : Notebooks 20–27 · CESI BikeShare-ICT (2025-2026)
+**Auteurs** : R. Fossé & G. Pallares — 2025–2026
 **Observations exportées** : {len(dff_export):,} / {len(df):,} (corpus complet)
 **Agglomérations** : {dff["city"].nunique()} · **Réseaux GBFS** : {dff["system_id"].nunique()}
 **Dimensions d'enrichissement présentes** : {", ".join(f"`{k}`" for k in metric_keys_present)}

@@ -215,7 +215,7 @@ def compute_imd_cities(df: pd.DataFrame) -> pd.DataFrame:
     La médiane est utilisée pour imputer les valeurs manquantes.
     IMD ∈ [0, 100].
 
-    Référence méthodologique : notebooks 21-25, CESI BikeShare-ICT 2025-2026.
+    Auteurs : R. Fossé & G. Pallares — 2025–2026.
     """
     # Filtrage sur les stations à vélos en libre-service avec borne (docked_bike uniquement)
     # pour garantir la cohérence avec le Gold Standard et éviter l'inflation des systèmes

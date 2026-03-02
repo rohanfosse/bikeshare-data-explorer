@@ -1,6 +1,6 @@
 """
 9_References.py — Références bibliographiques, sources de données et citation.
-Atlas IMD — Justice Spatiale & Vélos en Libre-Service · CESI BikeShare-ICT · 2025–2026
+Atlas IMD — Justice Spatiale & Vélos en Libre-Service · R. Fossé & G. Pallares · 2025–2026
 """
 from __future__ import annotations
 
@@ -17,7 +17,7 @@ inject_css()
 st.title("Références et Sources")
 st.caption(
     "Bibliographie académique, sources de données institutionnelles, "
-    "stack technique et modalités de citation — Gold Standard GBFS · CESI BikeShare-ICT · 2025–2026"
+    "stack technique et modalités de citation — Gold Standard GBFS · R. Fossé & G. Pallares · 2025–2026"
 )
 
 abstract_box(
@@ -277,37 +277,35 @@ with tab_apa:
     st.markdown("""
 **Plateforme et indices IMD/IES :**
 
-> CESI BikeShare-ICT. (2026). *Atlas de l'Indice de Mobilité Douce (IMD) :
+> Fossé R. & Pallares G. (2026). *Atlas de l'Indice de Mobilité Douce (IMD) :
 > Évaluation quantitative de l'équité socio-spatiale des systèmes de vélos en libre-service en France.*
-> Tableau de bord Streamlit. CESI École d'ingénieurs. https://github.com/cesi/bikeshare-data-explorer
+> Tableau de bord Streamlit. https://github.com/rohanfosse/bikeshare-data-explorer
 
 **Corpus Gold Standard GBFS :**
 
-> CESI BikeShare-ICT. (2026). *Gold Standard GBFS France — 46 312 stations certifiées,
+> Fossé R. & Pallares G. (2026). *Gold Standard GBFS France — 46 312 stations certifiées,
 > 122 systèmes, enrichissement multi-sources* [Ensemble de données].
-> CESI École d'ingénieurs. https://doi.org/10.xxxx/gold-standard-gbfs-france-2026
+> https://doi.org/10.xxxx/gold-standard-gbfs-france-2026
 """)
 
 with tab_bib:
     st.code(
         """\
-@software{cesi_atlas_imd_2026,
-  author       = {{CESI BikeShare-ICT}},
+@software{fosse_atlas_imd_2026,
+  author       = {Foss{\\'{e}}, Rohan and Pallares, Ga{\\"{e}}l},
   title        = {{Atlas de l'Indice de Mobilité Douce (IMD) :
                    Équité socio-spatiale des vélos en libre-service français}},
   year         = {2026},
-  publisher    = {CESI École d'ingénieurs},
-  url          = {https://github.com/cesi/bikeshare-data-explorer},
+  url          = {https://github.com/rohanfosse/bikeshare-data-explorer},
   note         = {Plateforme Streamlit — Gold Standard GBFS · 46 312 stations · 122 systèmes}
 }
 
-@dataset{cesi_gold_standard_gbfs_2026,
-  author       = {{CESI BikeShare-ICT}},
+@dataset{fosse_gold_standard_gbfs_2026,
+  author       = {Foss{\\'{e}}, Rohan and Pallares, Ga{\\"{e}}l},
   title        = {{Gold Standard GBFS France — 46 312 stations certifiées}},
   year         = {2026},
-  publisher    = {CESI École d'ingénieurs},
   doi          = {10.xxxx/gold-standard-gbfs-france-2026},
-  url          = {https://github.com/cesi/bikeshare-data-explorer},
+  url          = {https://github.com/rohanfosse/bikeshare-data-explorer},
   note         = {Fichier Parquet Apache Arrow, enrichissement multi-sources
                    (INSEE, GTFS, BAAC, SRTM, Filosofi)}
 }""",
@@ -334,7 +332,9 @@ st.divider()
 section(5, "Affiliations et Contexte de Recherche")
 
 st.markdown("""
-**Institution :** CESI École d'ingénieurs — Programme BikeShare-ICT 2025–2026
+**Auteur principal :** Rohan Fossé
+
+**Contributeur :** Gaël Pallares
 
 **Contexte :** Ce travail s'inscrit dans le cadre d'une recherche appliquée en géographie quantitative
 et en sciences des données, portant sur l'évaluation de l'équité socio-spatiale des politiques

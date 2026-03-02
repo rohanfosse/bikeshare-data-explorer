@@ -3,7 +3,7 @@
 
 Classement composite des villes françaises selon quatre dimensions :
 Sécurité (S), Infrastructure (I), Multimodalité (M), Topographie (T).
-Référence : notebooks 21–25, CESI BikeShare-ICT 2025-2026.
+Auteurs : R. Fossé & G. Pallares — 2025–2026.
 """
 from __future__ import annotations
 

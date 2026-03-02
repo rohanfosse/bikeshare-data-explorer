@@ -228,7 +228,7 @@ def sidebar_nav() -> None:
                     letter-spacing: 0.15em;
                     color: #4A9FDF;
                     font-weight: 700;
-                ">CESI · BikeShare-ICT · 2025-2026</div>
+                ">R. Fossé &amp; G. Pallares · 2025–2026</div>
                 <div style="
                     font-size: 1.0rem;
                     font-weight: 700;
