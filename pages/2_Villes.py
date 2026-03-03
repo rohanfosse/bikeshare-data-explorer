@@ -328,12 +328,35 @@ if not scatter_df.empty:
         margin=dict(l=10, r=10, t=10, b=10),
         legend=dict(orientation="h", yanchor="bottom", y=1.01, x=0),
     )
-    fig_sc.add_hline(y=float(scatter_df["baac_accidents_cyclistes"].mean()),
-                     line_dash="dot", line_color="#e74c3c", opacity=0.5,
+    _xm_sc = float(scatter_df["infra_cyclable_pct"].mean())
+    _ym_sc = float(scatter_df["baac_accidents_cyclistes"].mean())
+    fig_sc.add_hline(y=_ym_sc, line_dash="dot", line_color="#e74c3c", opacity=0.5,
                      annotation_text="Moy. sinistralité", annotation_position="right")
-    fig_sc.add_vline(x=float(scatter_df["infra_cyclable_pct"].mean()),
-                     line_dash="dot", line_color="#1A6FBF", opacity=0.5,
+    fig_sc.add_vline(x=_xm_sc, line_dash="dot", line_color="#1A6FBF", opacity=0.5,
                      annotation_text="Moy. infrastructure", annotation_position="top")
+
+    # Annotations de quadrant
+    _xmin_sc = float(scatter_df["infra_cyclable_pct"].min())
+    _xmax_sc = float(scatter_df["infra_cyclable_pct"].max())
+    _ymin_sc = float(scatter_df["baac_accidents_cyclistes"].min())
+    _ymax_sc = float(scatter_df["baac_accidents_cyclistes"].max())
+    for _ql, _qx, _qy, _qc in [
+        ("Zone Idéale<br>(infra forte, faible sinistralité)",
+         _xm_sc + (_xmax_sc - _xm_sc) * 0.45, _ymin_sc + (_ym_sc - _ymin_sc) * 0.15, "#27ae60"),
+        ("Zone Critique<br>(faible infra, sinistralité forte)",
+         _xmin_sc + (_xm_sc - _xmin_sc) * 0.15, _ym_sc + (_ymax_sc - _ym_sc) * 0.65, "#e74c3c"),
+        ("Zone Protégée<br>(faible infra et sinistralité)",
+         _xmin_sc + (_xm_sc - _xmin_sc) * 0.15, _ymin_sc + (_ym_sc - _ymin_sc) * 0.15, "#1A6FBF"),
+        ("Paradoxe<br>(forte infra et sinistralité)",
+         _xm_sc + (_xmax_sc - _xm_sc) * 0.45, _ym_sc + (_ymax_sc - _ym_sc) * 0.65, "#e67e22"),
+    ]:
+        fig_sc.add_annotation(
+            x=_qx, y=_qy, text=_ql,
+            showarrow=False,
+            font=dict(size=9, color=_qc),
+            opacity=0.45,
+            align="center",
+        )
     st.plotly_chart(fig_sc, use_container_width=True)
     st.caption(
         "**Figure 2.1.** Couverture en infrastructure cyclable (axe horizontal) versus densité "
@@ -709,6 +732,71 @@ if _synth_dims:
                 "chaque agglomération. Les dimensions avec une boîte plus large indiquent une plus "
                 "forte hétérogénéité de gouvernance cyclable à l'échelle nationale."
             )
+
+        # ── Heatmap comparative top-N villes × dimensions ──────────────────
+        st.markdown("#### Matrice de performance : Top agglomérations × Dimensions")
+        _n_hm = st.slider("Agglomérations à inclure dans la matrice", 10, min(40, len(cities_f)),
+                          min(25, len(cities_f)), 5, key="heatmap_n_cities")
+        _hm_cities = _imd_ranked[_imd_ranked["city"].isin(cities_f["city"].values)]["city"].head(_n_hm).tolist()
+        if "Montpellier" not in _hm_cities and "Montpellier" in cities_f["city"].values:
+            _hm_cities = ["Montpellier"] + _hm_cities[: _n_hm - 1]
+
+        _hm_df = cities_f[cities_f["city"].isin(_hm_cities)].set_index("city")
+        _hm_cols = [c for c in _synth_dims if c in _hm_df.columns]
+        _hm_data = _hm_df[_hm_cols].copy().astype(float)
+
+        # Normalisation min-max par dimension
+        for _c in _hm_cols:
+            _rng = _hm_data[_c].max() - _hm_data[_c].min()
+            _hm_data[_c] = (_hm_data[_c] - _hm_data[_c].min()) / _rng if _rng else 0.5
+        # Inversion sinistralité (valeur basse = meilleure → inverser pour cohérence visuelle)
+        if "baac_accidents_cyclistes" in _hm_data.columns:
+            _hm_data["baac_accidents_cyclistes"] = 1.0 - _hm_data["baac_accidents_cyclistes"]
+
+        # Tri par IMD décroissant
+        _hm_order = [c for c in _imd_ranked["city"].tolist() if c in _hm_data.index]
+        _hm_data = _hm_data.reindex(_hm_order).dropna(how="all")
+        _hm_labels = [_synth_dims[c][0] for c in _hm_data.columns]
+
+        if not _hm_data.empty:
+            _hm_text = _hm_data.values.round(2)
+            fig_hm = go.Figure(go.Heatmap(
+                z=_hm_data.values,
+                x=_hm_labels,
+                y=_hm_data.index.tolist(),
+                colorscale="RdYlGn",
+                zmin=0, zmax=1,
+                text=_hm_text,
+                texttemplate="%{text:.2f}",
+                textfont=dict(size=9),
+                hovertemplate="<b>%{y}</b> — %{x}<br>Score normalisé : %{z:.2f}<extra></extra>",
+                colorbar=dict(title="Score<br>[0–1]", thickness=14, len=0.65),
+            ))
+            # Surligner Montpellier (rectangle autour de la ligne)
+            if "Montpellier" in _hm_data.index:
+                _mmm_hm_idx = list(_hm_data.index).index("Montpellier")
+                fig_hm.add_shape(
+                    type="rect",
+                    xref="paper", yref="y",
+                    x0=0, x1=1,
+                    y0=_mmm_hm_idx - 0.5, y1=_mmm_hm_idx + 0.5,
+                    line=dict(color="#e74c3c", width=2),
+                    fillcolor="rgba(0,0,0,0)",
+                )
+            fig_hm.update_layout(
+                height=max(340, len(_hm_data) * 22 + 60),
+                margin=dict(l=10, r=60, t=40, b=10),
+                yaxis=dict(autorange="reversed"),
+                xaxis=dict(side="top", tickangle=-20),
+            )
+            st.plotly_chart(fig_hm, use_container_width=True)
+            st.caption(
+                f"**Figure 5.2.** Matrice de performance normalisée min-max : top {_n_hm} agglomérations "
+                f"(triées par IMD décroissant) × {len(_hm_cols)} dimensions d'enrichissement. "
+                "Vert = performance élevée ; rouge = performance faible. "
+                "La composante sécurité est inversée (vert = faible sinistralité). "
+                "Le rectangle rouge identifie **Montpellier**."
+            )
 else:
     st.info("Données insuffisantes pour la synthèse statistique comparative.")
 
@@ -880,3 +968,118 @@ if len(_moran_df) >= 5:
         )
 else:
     st.info("Données de géolocalisation insuffisantes pour calculer le diagramme de Moran.")
+
+# ── Section 7 - Carte nationale ────────────────────────────────────────────────
+st.divider()
+section(7, "Carte Nationale — Distribution Géographique de la Qualité Cyclable")
+
+st.markdown(
+    "Chaque agglomération est représentée par un cercle centré sur son barycentre de stations. "
+    "La **couleur** encode la dimension sélectionnée dans la sidebar, la **taille** le nombre "
+    "de stations dock-based Gold Standard. Basculez la métrique dans le panneau latéral pour "
+    "explorer la géographie de chaque dimension d'enrichissement cyclable."
+)
+
+# Coordonnées moyennes par agglomération (barycentre des stations dock)
+_city_coords_7 = (
+    df[df["station_type"] == "docked_bike"][["city", "lat", "lon"]]
+    .groupby("city")[["lat", "lon"]].mean()
+    .reset_index()
+) if "station_type" in df.columns else (
+    df[["city", "lat", "lon"]].groupby("city")[["lat", "lon"]].mean().reset_index()
+)
+
+_map_df7 = (
+    cities_f[["city", "n_stations", metric_key]]
+    .merge(_imd_ranked[["city", "IMD"]], on="city", how="left")
+    .merge(_city_coords_7, on="city", how="left")
+    .dropna(subset=["lat", "lon", metric_key])
+)
+
+if not _map_df7.empty:
+    col_map7, col_rank7 = st.columns([3, 1])
+
+    with col_map7:
+        fig_map7 = px.scatter_mapbox(
+            _map_df7,
+            lat="lat", lon="lon",
+            color=metric_key,
+            size="n_stations",
+            color_continuous_scale=meta["color_scale"],
+            hover_name="city",
+            hover_data={
+                "IMD":       ":.1f",
+                metric_key:  ":.3f",
+                "n_stations": True,
+                "lat": False, "lon": False,
+            },
+            labels={metric_key: meta["label"], "n_stations": "Stations dock"},
+            mapbox_style="carto-positron",
+            zoom=5,
+            center={"lat": 46.5, "lon": 2.5},
+            size_max=28,
+            opacity=0.85,
+            height=560,
+        )
+        # Annotation Montpellier
+        _mmm_map = _map_df7[_map_df7["city"] == "Montpellier"]
+        if not _mmm_map.empty:
+            fig_map7.add_trace(go.Scattermapbox(
+                lat=[float(_mmm_map["lat"].iloc[0])],
+                lon=[float(_mmm_map["lon"].iloc[0])],
+                mode="markers+text",
+                marker=dict(size=22, color="rgba(0,0,0,0)",
+                            symbol="circle", opacity=1.0),
+                text=["Montpellier"],
+                textposition="top right",
+                textfont=dict(size=11, color="#e74c3c"),
+                name="Montpellier",
+                showlegend=False,
+            ))
+        fig_map7.update_layout(
+            margin=dict(l=0, r=0, t=0, b=0),
+            coloraxis_colorbar=dict(title=meta["label"], thickness=14, len=0.6),
+        )
+        st.plotly_chart(fig_map7, use_container_width=True)
+        st.caption(
+            f"**Figure 7.1.** Distribution géographique des agglomérations VLS françaises "
+            f"colorées par **{meta['label']}** (dimension sélectionnée). "
+            f"Taille des cercles : nombre de stations dock-based Gold Standard. "
+            f"{len(_map_df7)} agglomérations représentées (seuil ≥ {min_stations} stations). "
+            "Source : Gold Standard GBFS, centroïdes moyens des stations."
+        )
+
+    with col_rank7:
+        st.markdown(f"#### Top 10 — {meta['label']}")
+        _rank7 = _map_df7.sort_values(
+            metric_key, ascending=not meta.get("higher_is_better", True)
+        ).reset_index(drop=True).head(10)
+        for _i, _r in _rank7.iterrows():
+            _is_mmm = _r["city"] == "Montpellier"
+            _color7  = "#e74c3c" if _is_mmm else "#1A6FBF"
+            _bold7   = "<b>" if _is_mmm else ""
+            _bold7e  = "</b>" if _is_mmm else ""
+            st.markdown(
+                f"<div style='padding:4px 8px;margin:2px 0;border-left:3px solid {_color7}'>"
+                f"<span style='color:{_color7};font-size:12px'>{_bold7}#{_i+1} {_r['city']}{_bold7e}</span><br>"
+                f"<small>{_r[metric_key]:.3f} {meta['unit']} · IMD {_r['IMD']:.1f}</small>"
+                "</div>",
+                unsafe_allow_html=True,
+            )
+        st.markdown("---")
+        st.markdown(f"#### Flop 5 — {meta['label']}")
+        _flop7 = _map_df7.sort_values(
+            metric_key, ascending=meta.get("higher_is_better", True)
+        ).reset_index(drop=True).head(5)
+        for _i, _r in _flop7.iterrows():
+            _is_mmm = _r["city"] == "Montpellier"
+            _color7f = "#e74c3c" if _is_mmm else "#e67e22"
+            st.markdown(
+                f"<div style='padding:4px 8px;margin:2px 0;border-left:3px solid {_color7f}'>"
+                f"<span style='color:{_color7f};font-size:12px'>#{_i+1} {_r['city']}</span><br>"
+                f"<small>{_r[metric_key]:.3f} {meta['unit']} · IMD {_r['IMD']:.1f}</small>"
+                "</div>",
+                unsafe_allow_html=True,
+            )
+else:
+    st.info("Données de géolocalisation insuffisantes pour la carte nationale.")
