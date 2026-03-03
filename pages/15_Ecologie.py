@@ -260,10 +260,10 @@ st.markdown(rf"""
 Le modèle de substitution modale applique la formule suivante à chaque agglomération :
 
 $$\text{{CO}}_2^{{\text{{évité}}}} = \underbrace{{N_{{\text{{vélos}}}} \times {_FILL_RATE:.0%}}}_{{\text{{flotte active}}}}
-\times \underbrace{{{_TRAJETS_VLO_J} \times 365}}_{{{\text{{trajets/an}}}}}
-\times \underbrace{{{_KM_TRAJET}\ \text{{km}}}}_{{{\text{{dist. moy.}}}}}
-\times \underbrace{{\alpha}}_{{{\text{{subst.}}\ {_subst_pct}\%}}}
-\times \underbrace{{{int(_CO2_NET)}\ \text{{g CO}}_2/\text{{km}}}}_{{{\Delta_{{ACV}}}}}
+\times \underbrace{{{_TRAJETS_VLO_J} \times 365}}_{{\text{{trajets/an}}}}
+\times \underbrace{{{_KM_TRAJET}\ \text{{km}}}}_{{\text{{dist. moy.}}}}
+\times \underbrace{{\alpha}}_{{\text{{subst.}}\ {_subst_pct}\%}}
+\times \underbrace{{{int(_CO2_NET)}\ \text{{g CO}}_2/\text{{km}}}}_{{\Delta_{{ACV}}}}
 \div 10^6\ \text{{[t CO}}_2\text{{eq/an]}}$$
 """)
 
