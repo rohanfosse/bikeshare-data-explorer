@@ -627,54 +627,64 @@ latérale. Chaque module correspond à un axe de recherche ou à un outil transv
 
 _nav_cards = [
     {
-        "module": "Gold Standard", "axe": "Axe Prél.", "icon": "🔍", "color": "#e67e22",
-        "desc": f"Taxonomie A1–A5, pipeline de purge, complétude de l'enrichissement, "
+        "module": "Gold Standard", "axe": "Axe Prél.", "color": "#e67e22",
+        "file": "pages/00_Gold_Standard.py",
+        "desc": f"Taxonomie A1–A5, pipeline de purge en 6 étapes, complétude de l'enrichissement, "
                 f"catalogue des {n_certified} systèmes certifiés ({len(df):,} stations).",
     },
     {
-        "module": "IMD", "axe": "Axe 1", "icon": "📊", "color": "#1A6FBF",
+        "module": "IMD", "axe": "Axe 1", "color": "#1A6FBF",
+        "file": "pages/0_IMD.py",
         "desc": f"Formulation 4D (S, I, M, T), poids w_M* = 0,578, Monte Carlo N = 10 000, "
-                f"classement national ({_top_city} #1, IMD = {_top_imd:.1f}/100).",
+                f"classement national ({_top_city} #1, IMD = {_top_imd:.1f}/100), validation FUB/EMP.",
     },
     {
-        "module": "IES", "axe": "Axe 2", "icon": "⚖️", "color": "#27ae60",
+        "module": "IES", "axe": "Axe 2", "color": "#27ae60",
+        "file": "pages/7_IES.py",
         "desc": f"Indice d'Équité Sociale, modèle Ridge, 4 régimes cyclables, "
                 f"R² = {_R2_str}, bootstrap CI N = 2 000, Mann-Whitney U.",
     },
     {
-        "module": "Carte", "axe": "Transversal", "icon": "🗺️", "color": "#16a085",
+        "module": "Carte", "axe": "Transversal", "color": "#16a085",
+        "file": "pages/1_Carte.py",
         "desc": f"Visualisation WebGL des {len(df):,} stations (pydeck), filtrage "
-                "par dimension, distribution empirique, classement par agglomération.",
+                "par dimension d'enrichissement, distribution empirique, classement par agglomération.",
     },
     {
-        "module": "Villes", "axe": "Axe 3", "icon": "🏙️", "color": "#8e44ad",
-        "desc": "Classement univarié, scatter infra × sinistralité, heatmap cities × dimensions, "
-                "profil radar comparatif, diagramme de Moran, carte nationale.",
+        "module": "Villes", "axe": "Axe 3", "color": "#8e44ad",
+        "file": "pages/2_Villes.py",
+        "desc": "Classement univarié, scatter infra × sinistralité, heatmap agglomérations × dimensions, "
+                "profil radar comparatif, diagramme de Moran, carte nationale de la qualité cyclable.",
     },
     {
-        "module": "Distributions", "axe": "Axe 4", "icon": "📈", "color": "#2c3e50",
+        "module": "Distributions", "axe": "Axe 4", "color": "#2c3e50",
+        "file": "pages/3_Distributions.py",
         "desc": "Histogrammes, boîtes à encoches, matrice de corrélation Spearman, "
-                "statistiques de forme (γ₁, γ₂, Shapiro-Wilk), tests formels.",
+                "statistiques de forme (γ₁, γ₂, Shapiro-Wilk), tests formels de normalité.",
     },
     {
-        "module": "Topographie", "axe": "Axe 5", "icon": "🏔️", "color": "#7f8c8d",
-        "desc": "TRI (SRTM 30 m), classement rugosité, score d'effort cyclable, "
-                "simulateur VAE, profil altimétrique, distances haversine inter-stations.",
+        "module": "Topographie", "axe": "Axe 5", "color": "#566573",
+        "file": "pages/8_Topographie.py",
+        "desc": "TRI (SRTM 30 m), classement national de rugosité, score d'effort cyclable, "
+                "simulateur VAE, profil altimétrique par agglomération, distances haversine.",
     },
     {
-        "module": "France", "axe": "Transversal", "icon": "🇫🇷", "color": "#c0392b",
+        "module": "Mobilité France", "axe": "Transversal", "color": "#c0392b",
+        "file": "pages/5_Mobilite_France.py",
         "desc": "Triangulation FUB 2023, EMP 2019, éco-compteurs, BAAC et Cerema — "
-                "indicateurs nationaux de la mobilité cyclable.",
+                "indicateurs nationaux de la mobilité cyclable et validation externe.",
     },
     {
-        "module": "Montpellier", "axe": "Axe 6", "icon": "🚲", "color": "#e74c3c",
+        "module": "Montpellier", "axe": "Axe 6", "color": "#e74c3c",
+        "file": "pages/6_Montpellier.py",
         "desc": "Graphes Louvain, déséquilibres source/puits, vulnérabilité V_i, "
-                "GTFS tramway, super-spreaders, fracture socio-spatiale IES intra-urbaine.",
+                "intégration GTFS tramway, super-spreaders, fracture socio-spatiale IES intra-urbaine.",
     },
     {
-        "module": "Export", "axe": "FAIR", "icon": "📦", "color": "#95a5a6",
+        "module": "Export", "axe": "FAIR", "color": "#7f8c8d",
+        "file": "pages/4_Export.py",
         "desc": "Gold Standard en accès libre (CSV / Parquet), filtres multi-critères, "
-                "dictionnaire de variables, métadonnées FAIR pour citation académique.",
+                "dictionnaire de variables complet, métadonnées FAIR pour citation académique.",
     },
 ]
 
@@ -683,21 +693,23 @@ for _ni, _nc in enumerate(_nav_cards):
     _col = _nav_c1 if _ni % 2 == 0 else _nav_c2
     with _col:
         st.markdown(
-            f"<div style='border:1px solid #e0e0e0;border-radius:8px;padding:10px 14px;"
-            f"margin-bottom:8px;background:white;border-top:3px solid {_nc['color']}'>"
+            f"<div style='border:1px solid #dde3ea;border-radius:6px;padding:10px 14px;"
+            f"margin-bottom:4px;background:#fafbfc;border-top:3px solid {_nc['color']}'>"
             f"<div style='display:flex;gap:8px;align-items:center;margin-bottom:5px'>"
-            f"<span style='font-size:1.1rem'>{_nc['icon']}</span>"
             f"<span style='font-weight:700;font-size:0.9rem;color:#1A2332'>{_nc['module']}</span>"
-            f"<span style='margin-left:auto;background:{_nc['color']}22;color:{_nc['color']};"
-            f"font-size:0.68rem;font-weight:600;padding:1px 6px;border-radius:3px'>{_nc['axe']}</span>"
+            f"<span style='margin-left:auto;background:{_nc['color']}20;color:{_nc['color']};"
+            f"font-size:0.68rem;font-weight:600;padding:1px 7px;border-radius:3px'>{_nc['axe']}</span>"
             f"</div>"
-            f"<div style='font-size:0.78rem;color:#555;line-height:1.45'>{_nc['desc']}</div>"
+            f"<div style='font-size:0.77rem;color:#555;line-height:1.5;margin-bottom:6px'>"
+            f"{_nc['desc']}</div>"
             f"</div>",
             unsafe_allow_html=True,
         )
+        st.page_link(_nc["file"], label=f"Ouvrir {_nc['module']}", use_container_width=True)
+
 st.caption(
     "**Figure 5.1.** Guide de navigation par module analytique. "
-    "Les modules 'Transversal' sont multi-axes. "
+    "Les modules 'Transversal' ne sont pas rattachés à un axe unique. "
     "Le module 'FAIR' implémente les principes *Findable, Accessible, Interoperable, Reusable*."
 )
 
