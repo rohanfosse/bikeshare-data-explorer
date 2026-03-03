@@ -225,31 +225,60 @@ modélisation spatiale robuste. Ce jeu de données est mis à disposition de la 
 scientifique via l'interface d'export de cette plateforme (formats CSV et Parquet, principes FAIR).
 """)
 
-col_l, col_r = st.columns(2)
+col_l, col_r = st.columns([3, 2])
 with col_l:
-    st.markdown("**Bilan de l'Audit GBFS**")
-    audit_rows = [
-        {"Étape": "Systèmes GBFS bruts disponibles",    "Valeur": "125"},
-        {"Étape": "Exclusion A1 (Autopartage Citiz)",    "Valeur": "−14"},
-        {"Étape": "Exclusion A4 & A5 (Géo / Périmètre)","Valeur": "−7"},
-        {"Étape": "Micro-réseaux exclus (< 20 stations)","Valeur": "−20 (approx.)"},
-        {"Étape": "Systèmes Gold Standard certifiés",    "Valeur": str(n_certified)},
-        {"Étape": "Stations Gold Standard certifiées",   "Valeur": f"{len(df):,}"},
-        {"Étape": "Agglomérations couvertes",            "Valeur": str(df["city"].nunique())},
-        {"Étape": "Dont stations dock-based VLS",        "Valeur": f"{n_dock:,}"},
+    st.markdown("**Pipeline de purge GBFS — Entonnoir de certification**")
+    _funnel_stages = [
+        ("GBFS bruts disponibles",         125,        "#95a5a6"),
+        ("Après exclusion A1 (autopartage)", 111,       "#e67e22"),
+        ("Après exclusion A4/A5 (géo/DOM)", 104,        "#f1c40f"),
+        ("Après exclusion micro-réseaux",   84,         "#3498db"),
+        (f"Gold Standard certifiés",        n_certified,"#27ae60"),
     ]
-    st.table(pd.DataFrame(audit_rows))
+    fig_funnel = go.Figure(go.Funnel(
+        y=[s[0] for s in _funnel_stages],
+        x=[s[1] for s in _funnel_stages],
+        marker_color=[s[2] for s in _funnel_stages],
+        textinfo="value+percent initial",
+        textfont=dict(size=11),
+        hovertemplate="<b>%{y}</b><br>%{x} systèmes (%{percentInitial:.0%})<extra></extra>",
+        connector=dict(line=dict(color="#ccc", width=1)),
+    ))
+    fig_funnel.update_layout(
+        height=280,
+        margin=dict(l=10, r=10, t=10, b=10),
+        paper_bgcolor="rgba(0,0,0,0)",
+    )
+    st.plotly_chart(fig_funnel, use_container_width=True, config={"displayModeBar": False})
+    st.caption(
+        f"**Figure 2.1.** Entonnoir de certification GBFS : de 125 systèmes bruts à "
+        f"{n_certified} systèmes Gold Standard ({len(df):,} stations, {n_dock:,} dock-based)."
+    )
 
 with col_r:
-    st.markdown("**Anomalies GBFS - Taxonomie A1–A5**")
-    anomaly_rows = [
-        {"Classe": "A1", "Nature": "Inclusion hors-domaine (autopartage)",  "Impact": "Biais de classification"},
-        {"Classe": "A2", "Nature": "Capacité fictive (placeholder)",          "Impact": "Surestimation capacitaire"},
-        {"Classe": "A3", "Nature": "Biais floating-anchor (moyenne cond.)",  "Impact": "Surestimation massive IMD"},
-        {"Classe": "A4", "Nature": "Aberrations géospatiales (Lat/Lon)",     "Impact": "Biais topologique"},
-        {"Classe": "A5", "Nature": "Hors périmètre (DOM-TOM / macro-rég.)", "Impact": "Artefacts de distribution"},
-    ]
-    st.table(pd.DataFrame(anomaly_rows))
+    st.markdown("**Taxonomie des anomalies A1–A5**")
+    _anomaly_df = pd.DataFrame([
+        {"Cl.": "A1", "Nature": "Autopartage inclus",         "Gravité": "Haute",    "Nb": 14},
+        {"Cl.": "A2", "Nature": "Capacité fictive (placeholder)", "Gravité": "Modérée", "Nb": "n.d."},
+        {"Cl.": "A3", "Nature": "Biais floating-anchor",      "Gravité": "Critique", "Nb": "n.d."},
+        {"Cl.": "A4", "Nature": "Aberrations géospatiales",   "Gravité": "Haute",    "Nb": 5},
+        {"Cl.": "A5", "Nature": "Hors périmètre (DOM/rég.)",  "Gravité": "Modérée",  "Nb": 2},
+    ])
+    st.dataframe(
+        _anomaly_df.style.apply(
+            lambda col: [
+                "background-color:#fde8e8;color:#c0392b" if v == "Critique"
+                else "background-color:#fef3cd;color:#856404" if v == "Haute"
+                else "" for v in col
+            ], subset=["Gravité"]
+        ),
+        use_container_width=True, hide_index=True,
+    )
+    st.markdown(
+        "<small>**A3** (biais *floating-anchor*) : l'anomalie la plus pernicieuse — "
+        "Bordeaux passe du **rang 2 au rang 14** après correction.</small>",
+        unsafe_allow_html=True,
+    )
 
 # ── Section 3 : Architecture analytique ───────────────────────────────────────
 st.divider()
@@ -261,61 +290,76 @@ des données vers la modélisation spatiale, puis vers l'évaluation de la justi
 de la contrainte topographique.
 """)
 
-axes = [
+_axes_cards = [
     {
-        "Axe":          "Axe Prél.",
-        "Page":         "Gold Standard",
-        "Question":     "L'Open Data GBFS est-il un matériau de recherche fiable ?",
-        "Méthode":      "Audit multi-systèmes, taxonomie A1–A5, pipeline de purge en 6 étapes",
-        "Résultat clé": f"{len(df):,} stations certifiées - Bordeaux : rang 2 → 14 après correction",
+        "badge": "Axe Prél.", "page": "Gold Standard", "color": "#e67e22",
+        "question": "L'Open Data GBFS est-il un matériau de recherche fiable ?",
+        "methode":  "Audit multi-systèmes · Taxonomie A1–A5 · Pipeline de purge en 6 étapes",
+        "result":   f"✓ {len(df):,} stations certifiées · Bordeaux : rang 2 → 14 après correction A3",
     },
     {
-        "Axe":          "Axe 1",
-        "Page":         "IMD",
-        "Question":     "La qualité cyclable se réduit-elle au volume de stations ?",
-        "Méthode":      "Indice composite 4D (S, I, M, T), optimisation supervisée, Monte Carlo N = 10 000",
-        "Résultat clé": f"Top 10 stable dans 89 % des simulations - w_M* = 0,578 - #1 : {_top_city} (IMD = {_top_imd:.1f}/100)",
+        "badge": "Axe 1", "page": "IMD", "color": "#1A6FBF",
+        "question": "La qualité cyclable se réduit-elle au volume de stations ?",
+        "methode":  "Indice composite 4D (S, I, M, T) · Évolution différentielle · Monte Carlo N = 10 000",
+        "result":   f"✓ Top 10 stable 89 % des simulations · w_M* = 0,578 · #1 : {_top_city} (IMD = {_top_imd:.1f}/100)",
     },
     {
-        "Axe":          "Axe 2",
-        "Page":         "IES",
-        "Question":     "L'offre cyclable est-elle équitablement distribuée socialement ?",
-        "Méthode":      "Modèle Ridge (lambda par CV), IES = IMD_obs / IMD_prédit(R_m)",
-        "Résultat clé": f"ρ = {_rho_str} (p = {_pval_str}, n.s.) - R² = {_R2_str} - Gouvernance > Économie",
+        "badge": "Axe 2", "page": "IES", "color": "#27ae60",
+        "question": "L'offre cyclable est-elle équitablement distribuée socialement ?",
+        "methode":  "Modèle Ridge (λ par CV) · IES = IMD_obs / IMD_prédit(Revenu) · Bootstrap CI N = 2 000",
+        "result":   f"✓ ρ = {_rho_str} (p = {_pval_str}, n.s.) · R² = {_R2_str} · Gouvernance > Économie",
     },
     {
-        "Axe":          "Axe 3",
-        "Page":         "Villes",
-        "Question":     "Les disparités inter-urbaines sont-elles géographiques ou politiques ?",
-        "Méthode":      "Indice global de Moran (autocorrélation spatiale), analyse comparative",
-        "Résultat clé": "Moran's I = −0,023 (p = 0,765) - déterminisme géographique invalidé",
+        "badge": "Axe 3", "page": "Villes", "color": "#8e44ad",
+        "question": "Les disparités inter-urbaines sont-elles géographiques ou politiques ?",
+        "methode":  "Indice global de Moran (autocorrélation spatiale) · Diagramme de Moran",
+        "result":   "✓ Moran's I = −0,023 (p = 0,765, n.s.) · Déterminisme géographique invalidé",
     },
     {
-        "Axe":          "Axe 4",
-        "Page":         "Distributions",
-        "Question":     "La taille d'une agglomération prédit-elle sa performance cyclable ?",
-        "Méthode":      "Corrélation de Spearman, boîtes à encoches, matrice de corrélation",
-        "Résultat clé": "r_s = −0,02 (hors Paris) - aucune corrélation taille–performance",
+        "badge": "Axe 4", "page": "Distributions", "color": "#16a085",
+        "question": "La taille d'une agglomération prédit-elle sa performance cyclable ?",
+        "methode":  "Spearman · Boîtes à encoches · Matrice de corrélation inter-dimensions",
+        "result":   "✓ ρ_s = −0,02 (hors Paris) · Aucune corrélation taille–performance",
     },
     {
-        "Axe":          "Axe 5",
-        "Page":         "Topographie",
-        "Question":     "Le relief contraint-il structurellement la qualité des réseaux VLS ?",
-        "Méthode":      "TRI (Riley 1999, SRTM 30 m), haversine inter-stations, OLS TRI ~ composante T",
-        "Résultat clé": "Laon (TRI = 11,1) > Montpellier (TRI = 3,9) > Tarbes (TRI = 0,35) - T validé",
+        "badge": "Axe 5", "page": "Topographie", "color": "#2c3e50",
+        "question": "Le relief contraint-il structurellement la qualité des réseaux VLS ?",
+        "methode":  "TRI (Riley 1999, SRTM 30 m) · Haversine inter-stations · Score d'effort cyclable",
+        "result":   "✓ Brest/Saint-Étienne > Montpellier > Calais · Effort VAE −60 % · Composante T validée",
     },
     {
-        "Axe":          "Axe 6",
-        "Page":         "Montpellier",
-        "Question":     "Les modèles nationaux se valident-ils à l'échelle micro-locale ?",
-        "Méthode":      "Théorie des graphes (Louvain, PageRank), GTFS, IES intra-urbain par quartier",
-        "Résultat clé": "Structure bimodale Commuter confirmée - fracture socio-spatiale cartographiée",
+        "badge": "Axe 6", "page": "Montpellier", "color": "#c0392b",
+        "question": "Les modèles nationaux se valident-ils à l'échelle micro-locale ?",
+        "methode":  "Graphes Louvain · PageRank · GTFS · IES intra-urbain par quartier (iris)",
+        "result":   "✓ Structure bimodale Commuter confirmée · Fracture socio-spatiale cartographiée",
     },
 ]
-st.table(pd.DataFrame(axes))
+
+# Grille 2 colonnes
+_ax_c1, _ax_c2 = st.columns(2)
+for _i, _ax in enumerate(_axes_cards):
+    _col = _ax_c1 if _i % 2 == 0 else _ax_c2
+    with _col:
+        st.markdown(
+            f"<div style='border-left:4px solid {_ax['color']};background:#f8f9fa;"
+            f"border-radius:6px;padding:10px 14px;margin-bottom:10px;'>"
+            f"<div style='display:flex;gap:8px;align-items:center;margin-bottom:4px'>"
+            f"<span style='background:{_ax['color']};color:white;font-size:0.72rem;"
+            f"font-weight:700;padding:1px 7px;border-radius:3px'>{_ax['badge']}</span>"
+            f"<span style='font-size:0.78rem;color:#555;font-weight:600'>{_ax['page']}</span>"
+            f"</div>"
+            f"<div style='font-size:0.83rem;font-weight:600;color:#1A2332;margin-bottom:3px'>"
+            f"{_ax['question']}</div>"
+            f"<div style='font-size:0.75rem;color:#666;margin-bottom:3px'>"
+            f"<em>{_ax['methode']}</em></div>"
+            f"<div style='font-size:0.78rem;color:{_ax['color']};font-weight:500'>"
+            f"{_ax['result']}</div>"
+            f"</div>",
+            unsafe_allow_html=True,
+        )
 st.caption(
-    "**Tableau 3.1.** Architecture des six axes de recherche. "
-    "Chaque axe correspond à une page dédiée dans la barre de navigation latérale. "
+    "**Figure 3.2.** Architecture des six axes de recherche. "
+    "Chaque carte correspond à une page dédiée dans la barre de navigation latérale. "
     "Les pages *Carte*, *France* et *Export* constituent des modules transversaux "
     "(visualisation spatiale, validation multi-sources et diffusion FAIR des données)."
 )
@@ -421,29 +465,91 @@ with col_r2:
 _col_rank, _col_scat = st.columns(2)
 
 with _col_rank:
-    _top10 = _imd_ranked.head(10).copy()
-    _fig_rank = go.Figure(go.Bar(
-        x=_top10["IMD"],
-        y=_top10["city"],
+    _n_rank_show = st.slider(
+        "Agglomérations à afficher (classement IMD)",
+        min_value=10, max_value=min(40, _n_imd), value=min(20, _n_imd), step=5,
+        key="home_rank_slider",
+    )
+    _top_n = _imd_ranked.head(_n_rank_show).copy()
+    _top_n["_pctile"] = ((_n_imd - np.arange(len(_top_n))) / _n_imd * 100).round(0).astype(int)
+
+    _fig_rank = go.Figure()
+    _fig_rank.add_trace(go.Bar(
+        x=_top_n["IMD"],
+        y=_top_n["city"],
         orientation="h",
-        marker_color=["#e74c3c" if c == "Montpellier" else "#1A6FBF" for c in _top10["city"]],
-        text=_top10["IMD"].round(1).astype(str),
+        marker_color=[
+            "#e74c3c" if c == "Montpellier"
+            else "#f1c40f" if c == _top_city
+            else "#1A6FBF"
+            for c in _top_n["city"]
+        ],
+        text=_top_n["IMD"].apply(lambda v: f"{v:.1f}"),
         textposition="outside",
         textfont=dict(size=10),
-        hovertemplate="<b>%{y}</b><br>IMD = %{x:.1f} / 100<extra></extra>",
+        customdata=_top_n[["_pctile"]].values,
+        hovertemplate="<b>%{y}</b><br>IMD = %{x:.1f} / 100<br>Percentile : top %{customdata[0]:.0f} %<extra></extra>",
     ))
+    # Ligne médiane
+    _fig_rank.add_vline(
+        x=_imd_median, line_dash="dot", line_color="#aaa", line_width=1.5,
+        annotation_text=f"Médiane {_imd_median:.1f}", annotation_position="top right",
+        annotation_font_size=9,
+    )
     _fig_rank.update_layout(
-        title=dict(text=f"Classement national IMD - Top 10 sur {_n_imd} agglomérations",
+        title=dict(text=f"Classement national IMD — top {_n_rank_show} / {_n_imd} agglomérations",
                    font=dict(size=11), x=0),
-        height=370, margin=dict(l=10, r=55, t=38, b=30),
-        xaxis=dict(range=[0, 110], title="IMD / 100", gridcolor="#e8edf3", tickfont=dict(size=10)),
+        height=max(340, _n_rank_show * 20),
+        margin=dict(l=10, r=65, t=38, b=30),
+        xaxis=dict(range=[0, 112], title="IMD / 100", gridcolor="#e8edf3", tickfont=dict(size=10)),
         yaxis=dict(autorange="reversed", tickfont=dict(size=10)),
         paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="#f8fafd",
     )
     st.plotly_chart(_fig_rank, use_container_width=True, config={"displayModeBar": False})
     st.caption(
-        f"**Figure 4.1.** Classement IMD national (top 10). "
-        f"Montpellier (rang #{_mmm_rank}, rouge) - médiane nationale : {_imd_median:.1f}/100."
+        f"**Figure 4.1.** Classement IMD national (top {_n_rank_show}). "
+        f"Montpellier (rang #{_mmm_rank}, rouge) · médiane nationale : {_imd_median:.1f}/100. "
+        "Jaune = agglomération #1. Ligne pointillée = médiane."
+    )
+
+    # Violin distribution nationale
+    _fig_violin = go.Figure()
+    _fig_violin.add_trace(go.Violin(
+        x=_imd_ranked["IMD"],
+        name="Distribution nationale",
+        line_color="#1A6FBF",
+        fillcolor="rgba(26,111,191,0.15)",
+        meanline_visible=True,
+        orientation="h",
+        side="positive",
+        width=1.8,
+        points="all",
+        pointpos=-0.9,
+        marker=dict(size=4, color="#1A6FBF", opacity=0.4),
+        hovertemplate="IMD %{x:.1f}<extra></extra>",
+    ))
+    if not _mmm_row.empty:
+        _fig_violin.add_vline(
+            x=float(_mmm_imd), line_dash="dash", line_color="#e74c3c", line_width=2,
+            annotation_text=f"Montpellier {_mmm_imd:.1f}",
+            annotation_font=dict(size=9, color="#e74c3c"),
+            annotation_position="top left",
+        )
+    _fig_violin.update_layout(
+        height=160,
+        margin=dict(l=10, r=10, t=20, b=10),
+        xaxis=dict(title="IMD / 100", gridcolor="#e8edf3", range=[0, 105]),
+        yaxis=dict(visible=False),
+        paper_bgcolor="rgba(0,0,0,0)",
+        plot_bgcolor="#f8fafd",
+        showlegend=False,
+        title=dict(text="Distribution des scores IMD (toutes agglomérations)", font_size=10, x=0),
+    )
+    st.plotly_chart(_fig_violin, use_container_width=True, config={"displayModeBar": False})
+    st.caption(
+        f"**Figure 4.2.** Violin plot de la distribution nationale des scores IMD "
+        f"({_n_imd} agglomérations dock-based). Points individuels = chaque agglomération. "
+        f"Ligne pointillée rouge = Montpellier (rang #{_mmm_rank})."
     )
 
 with _col_scat:
@@ -519,24 +625,80 @@ La plateforme est organisée en modules thématiques accessibles depuis la barre
 latérale. Chaque module correspond à un axe de recherche ou à un outil transversal.
 """)
 
-nav_rows = [
-    {"Module": "Gold Standard",  "Axe": "Prél.", "Contenu principal": f"Taxonomie des anomalies GBFS (A1–A5), pipeline de purge en 6 étapes, complétude de l'enrichissement, catalogue des {n_certified} systèmes certifiés."},
-    {"Module": "IMD",            "Axe": "1",     "Contenu principal": f"Formulation mathématique, poids optimaux (w_M* = 0,578), Monte Carlo N = 10 000, classement national ({_top_city} #1), décomposition (S, I, M, T), validation FUB/EMP."},
-    {"Module": "IES",            "Axe": "2",     "Contenu principal": f"Formalisation de l'IES, modèle Ridge, matrice de justice cyclable (4 quadrants), OLS formel (R² = {_R2_str}), bootstrap CI (N = 2 000), Mann-Whitney U."},
-    {"Module": "Carte",          "Axe": "Trans.","Contenu principal": f"Visualisation WebGL des {len(df):,} stations (pydeck), filtrage par dimension d'enrichissement, distribution empirique, classement par agglomération."},
-    {"Module": "Villes",         "Axe": "3",     "Contenu principal": "Classement univarié, nuage infra × sinistralité (Moran's I), profil radar multi-dimensionnel comparatif."},
-    {"Module": "Distributions",  "Axe": "4",     "Contenu principal": "Histogrammes, boîtes à moustaches à encoches, matrice de corrélation Spearman, statistiques de forme (γ₁, γ₂, Shapiro-Wilk)."},
-    {"Module": "Topographie",    "Axe": "5",     "Contenu principal": "Terrain Ruggedness Index (Riley 1999, SRTM 30 m), classement national TRI, distances vol d'oiseau (haversine), validation IMD composante T."},
-    {"Module": "France",         "Axe": "Trans.","Contenu principal": "Triangulation FUB 2023, EMP 2019, éco-compteurs, BAAC et Cerema - indicateurs nationaux de la mobilité cyclable."},
-    {"Module": "Montpellier",    "Axe": "6",     "Contenu principal": "Topologie Louvain, déséquilibres source/puits, vulnérabilité structurelle V_i, intégration GTFS tramway, fracture socio-spatiale IES intra-urbain."},
-    {"Module": "Export",         "Axe": "FAIR",  "Contenu principal": "Accès libre au Gold Standard (CSV UTF-8 / Parquet), filtres multi-critères, dictionnaire de variables, métadonnées de citation."},
+_nav_cards = [
+    {
+        "module": "Gold Standard", "axe": "Axe Prél.", "icon": "🔍", "color": "#e67e22",
+        "desc": f"Taxonomie A1–A5, pipeline de purge, complétude de l'enrichissement, "
+                f"catalogue des {n_certified} systèmes certifiés ({len(df):,} stations).",
+    },
+    {
+        "module": "IMD", "axe": "Axe 1", "icon": "📊", "color": "#1A6FBF",
+        "desc": f"Formulation 4D (S, I, M, T), poids w_M* = 0,578, Monte Carlo N = 10 000, "
+                f"classement national ({_top_city} #1, IMD = {_top_imd:.1f}/100).",
+    },
+    {
+        "module": "IES", "axe": "Axe 2", "icon": "⚖️", "color": "#27ae60",
+        "desc": f"Indice d'Équité Sociale, modèle Ridge, 4 régimes cyclables, "
+                f"R² = {_R2_str}, bootstrap CI N = 2 000, Mann-Whitney U.",
+    },
+    {
+        "module": "Carte", "axe": "Transversal", "icon": "🗺️", "color": "#16a085",
+        "desc": f"Visualisation WebGL des {len(df):,} stations (pydeck), filtrage "
+                "par dimension, distribution empirique, classement par agglomération.",
+    },
+    {
+        "module": "Villes", "axe": "Axe 3", "icon": "🏙️", "color": "#8e44ad",
+        "desc": "Classement univarié, scatter infra × sinistralité, heatmap cities × dimensions, "
+                "profil radar comparatif, diagramme de Moran, carte nationale.",
+    },
+    {
+        "module": "Distributions", "axe": "Axe 4", "icon": "📈", "color": "#2c3e50",
+        "desc": "Histogrammes, boîtes à encoches, matrice de corrélation Spearman, "
+                "statistiques de forme (γ₁, γ₂, Shapiro-Wilk), tests formels.",
+    },
+    {
+        "module": "Topographie", "axe": "Axe 5", "icon": "🏔️", "color": "#7f8c8d",
+        "desc": "TRI (SRTM 30 m), classement rugosité, score d'effort cyclable, "
+                "simulateur VAE, profil altimétrique, distances haversine inter-stations.",
+    },
+    {
+        "module": "France", "axe": "Transversal", "icon": "🇫🇷", "color": "#c0392b",
+        "desc": "Triangulation FUB 2023, EMP 2019, éco-compteurs, BAAC et Cerema — "
+                "indicateurs nationaux de la mobilité cyclable.",
+    },
+    {
+        "module": "Montpellier", "axe": "Axe 6", "icon": "🚲", "color": "#e74c3c",
+        "desc": "Graphes Louvain, déséquilibres source/puits, vulnérabilité V_i, "
+                "GTFS tramway, super-spreaders, fracture socio-spatiale IES intra-urbaine.",
+    },
+    {
+        "module": "Export", "axe": "FAIR", "icon": "📦", "color": "#95a5a6",
+        "desc": "Gold Standard en accès libre (CSV / Parquet), filtres multi-critères, "
+                "dictionnaire de variables, métadonnées FAIR pour citation académique.",
+    },
 ]
-st.table(pd.DataFrame(nav_rows))
+
+_nav_c1, _nav_c2 = st.columns(2)
+for _ni, _nc in enumerate(_nav_cards):
+    _col = _nav_c1 if _ni % 2 == 0 else _nav_c2
+    with _col:
+        st.markdown(
+            f"<div style='border:1px solid #e0e0e0;border-radius:8px;padding:10px 14px;"
+            f"margin-bottom:8px;background:white;border-top:3px solid {_nc['color']}'>"
+            f"<div style='display:flex;gap:8px;align-items:center;margin-bottom:5px'>"
+            f"<span style='font-size:1.1rem'>{_nc['icon']}</span>"
+            f"<span style='font-weight:700;font-size:0.9rem;color:#1A2332'>{_nc['module']}</span>"
+            f"<span style='margin-left:auto;background:{_nc['color']}22;color:{_nc['color']};"
+            f"font-size:0.68rem;font-weight:600;padding:1px 6px;border-radius:3px'>{_nc['axe']}</span>"
+            f"</div>"
+            f"<div style='font-size:0.78rem;color:#555;line-height:1.45'>{_nc['desc']}</div>"
+            f"</div>",
+            unsafe_allow_html=True,
+        )
 st.caption(
-    "**Tableau 5.1.** Guide de navigation par module analytique. "
-    "Les modules 'Trans.' sont transversaux et ne sont pas rattachés à un axe de recherche unique. "
-    "Le module 'FAIR' implémente les principes *Findable, Accessible, Interoperable, Reusable* "
-    "pour la diffusion académique du corpus Gold Standard."
+    "**Figure 5.1.** Guide de navigation par module analytique. "
+    "Les modules 'Transversal' sont multi-axes. "
+    "Le module 'FAIR' implémente les principes *Findable, Accessible, Interoperable, Reusable*."
 )
 
 # ── Section 6 : Données et Reproductibilité ───────────────────────────────────
