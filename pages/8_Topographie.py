@@ -158,6 +158,75 @@ if not tri_city.empty and not spatial_df.empty:
     tri_city = tri_city.merge(spatial_df[["city", "nn_mean_km", "nn_median_km",
                                           "diameter_km", "centroid_mean_km"]], on="city", how="left")
 
+# ── Score d'effort cyclable par agglomération ─────────────────────────────────
+# Modèle physiologique simplifié (Parkin et al., 2008 ; Olds et al., 1995)
+# Cycliste standard : m_total = 85 kg (corps + vélo), v_moy = 15 km/h
+# Dépense supplémentaire vs plat : ΔE (kcal/km) = m × g × (Δz / d) / 4 184
+# avec g = 9.81 m/s², Δz = dénivelé estimé (m), d = distance NN (m)
+# Plat de référence : ~30 kcal/km (cycliste, terrain plat, effort modéré)
+_M_KG   = 85.0   # masse totale (kg)
+_G_ACC  = 9.81   # gravité (m/s²)
+_KCAL_J = 4184.0 # J/kcal
+_E_FLAT = 30.0   # kcal/km sur terrain plat (référence)
+
+def _classify_effort(tri_m: float) -> str:
+    """Classification topographique basée sur le TRI moyen (m)."""
+    if pd.isna(tri_m):
+        return "N/D"
+    if tri_m < 5:
+        return "Plat"
+    if tri_m < 15:
+        return "Ondulé"
+    if tri_m < 30:
+        return "Vallonné"
+    if tri_m < 60:
+        return "Accidenté"
+    return "Montagneux"
+
+_EFFORT_COLORS = {
+    "Plat":        "#27ae60",
+    "Ondulé":      "#f1c40f",
+    "Vallonné":    "#e67e22",
+    "Accidenté":   "#e74c3c",
+    "Montagneux":  "#8e44ad",
+    "N/D":         "#95a5a6",
+}
+
+if not tri_city.empty and "elev_range" in tri_city.columns and "nn_mean_km" in tri_city.columns:
+    # Gradient estimé (pente moyenne entre stations voisines, %)
+    _nn_m = tri_city["nn_mean_km"] * 1000  # km → m
+    _nn_m = _nn_m.replace(0, float("nan"))
+    tri_city["gradient_pct"] = (tri_city["elev_range"] / _nn_m * 100).clip(upper=30)
+
+    # Dépense énergétique supplémentaire vs plat (kcal/km)
+    tri_city["effort_extra_kcal_km"] = (
+        _M_KG * _G_ACC * (tri_city["gradient_pct"] / 100) * 1000 / _KCAL_J
+    ).clip(lower=0)
+    tri_city["effort_total_kcal_km"] = (_E_FLAT + tri_city["effort_extra_kcal_km"]).round(1)
+
+    # Supplément relatif vs plat (%)
+    tri_city["effort_pct_vs_flat"] = (
+        tri_city["effort_extra_kcal_km"] / _E_FLAT * 100
+    ).round(1)
+
+    # VAE : réduction ~60 % de l'effort supplémentaire (Dill & McNeil, 2016)
+    tri_city["effort_vae_kcal_km"] = (
+        _E_FLAT + tri_city["effort_extra_kcal_km"] * 0.40
+    ).round(1)
+
+    # Indice d'effort composite normalisé [0, 100]
+    _tri_n   = tri_city["tri_mean"].fillna(0)
+    _grad_n  = tri_city["gradient_pct"].fillna(0)
+    _tri_rng = _tri_n.max() - _tri_n.min() if _tri_n.max() != _tri_n.min() else 1
+    _grd_rng = _grad_n.max() - _grad_n.min() if _grad_n.max() != _grad_n.min() else 1
+    tri_city["effort_index"] = (
+        0.5 * (_tri_n - _tri_n.min()) / _tri_rng
+        + 0.5 * (_grad_n - _grad_n.min()) / _grd_rng
+    ) * 100
+
+    # Classification topographique
+    tri_city["classe_effort"] = tri_city["tri_mean"].apply(_classify_effort)
+
 # Données EMP 2019
 emp_df: pd.DataFrame | None = None
 if not mob_df.empty and "emp_part_velo_2019" in mob_df.columns:
@@ -294,6 +363,25 @@ où $\mathcal{V}(i)$ désigne les cellules voisines dans le buffer de 500 m.
 | **Électrification compensatrice** | Les VAE réduisent la friction de ~60 % mais créent un paradoxe de recharge | *Dill & McNeil, 2016* |
 | **Indicateur TRI → IMD** | $T_i = 1 - \text{norm}(\text{TRI}_i)$ → poids $w_T = 9{,}6\,\%$ dans l'IMD | Calibration par évolution différentielle |
 
+#### 1.4. Modèle de Dépense Énergétique Cyclable
+
+La **dépense énergétique supplémentaire** due à la pente (par rapport au terrain plat) est modélisée par
+le travail mécanique contre la gravité (*Olds et al., 1995*) :
+
+$$\Delta E_{\text{kcal/km}} = \frac{m \cdot g \cdot \Delta z}{4{,}184 \times 10^3}$$
+
+où $m = 85\,\text{kg}$ (cycliste + vélo), $g = 9{,}81\,\text{m/s}^2$, et $\Delta z$ est le dénivelé
+positif par km parcouru (estimé ici comme gradient entre stations voisines).
+Le terrain plat de référence représente $\approx 30\,\text{kcal/km}$.
+
+| Classe | TRI moyen | Gradient estimé | Supplément kcal/km | VAE (−60 %) |
+| :--- | :--- | :--- | :--- | :--- |
+| **Plat** | < 5 m | < 1 % | +0–2 kcal | Négligeable |
+| **Ondulé** | 5–15 m | 1–3 % | +2–6 kcal | +1–2 kcal |
+| **Vallonné** | 15–30 m | 3–6 % | +6–12 kcal | +2–5 kcal |
+| **Accidenté** | 30–60 m | 6–12 % | +12–24 kcal | +5–10 kcal |
+| **Montagneux** | > 60 m | > 12 % | > 24 kcal | > 10 kcal |
+
 #### 1.3. Distances Vol d'Oiseau - Méthodologie
 
 La **distance vol d'oiseau** (haversine) entre stations voisines est calculée par approximation
@@ -422,9 +510,299 @@ if not topo_f.empty:
             "TRI max = rugosité de la station la plus contrainte de l'agglomération."
         )
 
+# ── Section 2.5 - Score d'Effort Cyclable ─────────────────────────────────────
+st.divider()
+section(3, "Score d'Effort Cyclable — Classification Topographique et Dépense Énergétique")
+
+st.markdown(r"""
+Au-delà du TRI brut, le **score d'effort cyclable** combine rugosité et gradient inter-stations
+pour produire un indicateur directement interprétable en termes physiologiques :
+la dépense énergétique supplémentaire (kcal/km) qu'un cycliste standard ($m = 85\,\text{kg}$)
+doit fournir par rapport à un trajet sur terrain plat ($\approx 30\,\text{kcal/km}$ de référence).
+
+Le **VAE** (Vélo à Assistance Électrique) réduit ce supplément d'environ **60 %**
+(*Dill & McNeil, 2016*), ramenant une agglomération "Accidentée" à un niveau d'effort
+équivalent à une ville "Ondulée" — clé de l'électrification comme outil d'équité spatiale.
+""")
+
+if not topo_f.empty and "effort_total_kcal_km" in topo_f.columns:
+    tab_effort_bar, tab_effort_2d, tab_effort_vae, tab_effort_class = st.tabs([
+        "Classement Effort",
+        "Carte 2D TRI × Gradient",
+        "Simulateur VAE",
+        "Classification Topographique",
+    ])
+
+    with tab_effort_bar:
+        _ef_sorted = topo_f.dropna(subset=["effort_total_kcal_km"]).sort_values(
+            "effort_total_kcal_km", ascending=False
+        ).reset_index(drop=True)
+        _n_ef = st.slider("Agglomérations à afficher", 10, len(_ef_sorted),
+                          min(30, len(_ef_sorted)), 5, key="ef_bar_slider")
+        _ef_top = _ef_sorted.head(_n_ef).copy()
+
+        _ef_colors = [
+            _EFFORT_COLORS.get(str(c), "#1A6FBF")
+            for c in _ef_top.get("classe_effort", ["N/D"] * len(_ef_top))
+        ]
+
+        fig_ef_bar = go.Figure()
+        fig_ef_bar.add_trace(go.Bar(
+            x=_ef_top["effort_total_kcal_km"],
+            y=_ef_top["city"],
+            orientation="h",
+            name="Total (vélo classique)",
+            marker_color=_ef_colors,
+            text=_ef_top["effort_total_kcal_km"].apply(lambda v: f"{v:.1f} kcal/km"),
+            textposition="outside",
+            hovertemplate=(
+                "<b>%{y}</b><br>"
+                "Total : %{x:.1f} kcal/km<br>"
+                "Supplément : +%{customdata[0]:.1f} kcal/km (%{customdata[1]:.0f} %)<extra></extra>"
+            ),
+            customdata=_ef_top[["effort_extra_kcal_km", "effort_pct_vs_flat"]].values,
+        ))
+        if "effort_vae_kcal_km" in _ef_top.columns:
+            fig_ef_bar.add_trace(go.Bar(
+                x=_ef_top["effort_vae_kcal_km"],
+                y=_ef_top["city"],
+                orientation="h",
+                name="Total (VAE, −60 %)",
+                marker_color="#3498db",
+                opacity=0.5,
+                text=_ef_top["effort_vae_kcal_km"].apply(lambda v: f"{v:.1f}"),
+                textposition="inside",
+            ))
+        fig_ef_bar.add_vline(
+            x=_E_FLAT, line_dash="dash", line_color="#27ae60", line_width=1.5,
+            annotation_text=f"Référence plat ({_E_FLAT:.0f} kcal/km)",
+            annotation_position="top right",
+        )
+        fig_ef_bar.update_layout(
+            barmode="overlay",
+            plot_bgcolor="white",
+            yaxis=dict(autorange="reversed"),
+            xaxis=dict(title="Dépense énergétique estimée (kcal/km)", showgrid=True, gridcolor="#eee"),
+            height=max(420, _n_ef * 24),
+            margin=dict(l=10, r=120, t=10, b=10),
+            legend=dict(orientation="h", y=-0.12, x=0.5, xanchor="center"),
+        )
+        st.plotly_chart(fig_ef_bar, use_container_width=True)
+        st.caption(
+            f"**Figure 3.1.** Dépense énergétique cyclable estimée (kcal/km) par agglomération "
+            f"(modèle $m = 85\\,\\text{{kg}}$, référence plat = {_E_FLAT:.0f} kcal/km). "
+            "La couleur encode la classe topographique (vert = Plat, rouge = Accidenté, violet = Montagneux). "
+            "Les barres bleues semi-transparentes indiquent l'effort réduit avec VAE (−60 % du supplément). "
+            "La ligne pointillée verte matérialise la référence terrain plat."
+        )
+
+    with tab_effort_2d:
+        if "gradient_pct" in topo_f.columns:
+            _sc2d = topo_f.dropna(subset=["tri_mean", "gradient_pct", "effort_total_kcal_km"]).copy()
+            _sc2d["_label"] = _sc2d["city"].apply(
+                lambda c: c if c in {"Montpellier", "Brest", "Marseille", "Saint-Étienne",
+                                     "Grenoble", "Clermont-Ferrand", "Laon", "Paris",
+                                     "Strasbourg", "Bordeaux", "Rennes"} else ""
+            )
+
+            fig_2d = px.scatter(
+                _sc2d,
+                x="tri_mean",
+                y="gradient_pct",
+                size="effort_total_kcal_km",
+                color="classe_effort" if "classe_effort" in _sc2d.columns else "effort_total_kcal_km",
+                color_discrete_map=_EFFORT_COLORS,
+                text="_label",
+                hover_name="city",
+                hover_data={
+                    "tri_mean":              ":.2f",
+                    "gradient_pct":          ":.2f",
+                    "effort_total_kcal_km":  ":.1f",
+                    "effort_vae_kcal_km":    ":.1f",
+                    "_label":                False,
+                    "classe_effort":         True,
+                },
+                size_max=30,
+                labels={
+                    "tri_mean":             "TRI moyen (m) — rugosité locale",
+                    "gradient_pct":         "Gradient estimé (%) — pente inter-stations",
+                    "effort_total_kcal_km": "Effort total (kcal/km)",
+                    "classe_effort":        "Classe",
+                },
+                height=520,
+                opacity=0.85,
+            )
+            # Quadrants d'effort
+            _tri_med  = float(_sc2d["tri_mean"].median())
+            _grad_med = float(_sc2d["gradient_pct"].median())
+            fig_2d.add_hline(y=_grad_med, line_dash="dot", line_color="#aaa", line_width=1)
+            fig_2d.add_vline(x=_tri_med, line_dash="dot", line_color="#aaa", line_width=1)
+            for _ql, _xt, _yt in [
+                ("Effort minimal\n(Plat dense)", 0.03, 0.03),
+                ("Fort TRI,\npente faible", 0.97, 0.03),
+                ("Faible TRI,\npente forte", 0.03, 0.97),
+                ("Effort maximal\n(Accidenté)", 0.97, 0.97),
+            ]:
+                fig_2d.add_annotation(
+                    xref="paper", yref="paper", x=_xt, y=_yt,
+                    text=_ql, showarrow=False,
+                    font=dict(size=9, color="#555"),
+                    opacity=0.6,
+                )
+            fig_2d.update_traces(textposition="top center", selector=dict(mode="markers+text"),
+                                 textfont=dict(size=9))
+            fig_2d.update_layout(
+                plot_bgcolor="white",
+                margin=dict(l=10, r=10, t=10, b=10),
+                xaxis=dict(showgrid=True, gridcolor="#eee"),
+                yaxis=dict(showgrid=True, gridcolor="#eee"),
+            )
+            st.plotly_chart(fig_2d, use_container_width=True)
+            st.caption(
+                "**Figure 3.2.** Carte 2D de l'effort cyclable : TRI (axe x) versus gradient "
+                "inter-stations estimé (axe y). La taille encode l'effort total (kcal/km) ; "
+                "la couleur encode la classe topographique. "
+                "Les lignes pointillées indiquent les médianes nationales. "
+                "Le quadrant supérieur droit regroupe les agglomérations à effort maximal "
+                "(rugosité ET pente élevées)."
+            )
+
+    with tab_effort_vae:
+        st.markdown(r"""
+### Simulateur d'Impact VAE
+
+Le VAE réduit d'environ **60 %** le supplément énergétique dû à la pente, sans affecter
+la dépense de base sur terrain plat. L'effet est **non linéaire** : plus la pente est forte,
+plus le gain absolu du VAE est élevé, réduisant ainsi l'inégalité spatiale entre agglomérations
+planes et accidentées.
+""")
+        if "effort_total_kcal_km" in topo_f.columns and "effort_vae_kcal_km" in topo_f.columns:
+            _vae_df = topo_f.dropna(subset=["effort_total_kcal_km", "effort_vae_kcal_km"]).copy()
+            _vae_df["Gain VAE (kcal/km)"] = (
+                _vae_df["effort_total_kcal_km"] - _vae_df["effort_vae_kcal_km"]
+            ).round(1)
+            _vae_df["Réduction VAE (%)"] = (
+                _vae_df["Gain VAE (kcal/km)"] / _vae_df["effort_total_kcal_km"] * 100
+            ).round(1)
+            _vae_df = _vae_df.sort_values("Gain VAE (kcal/km)", ascending=False)
+
+            fig_vae = go.Figure()
+            fig_vae.add_trace(go.Bar(
+                x=_vae_df["city"],
+                y=_vae_df["effort_total_kcal_km"],
+                name="Vélo classique",
+                marker_color=[_EFFORT_COLORS.get(str(c), "#1A6FBF")
+                              for c in _vae_df.get("classe_effort", ["N/D"] * len(_vae_df))],
+                opacity=0.85,
+            ))
+            fig_vae.add_trace(go.Bar(
+                x=_vae_df["city"],
+                y=_vae_df["effort_vae_kcal_km"],
+                name="VAE (−60 % pente)",
+                marker_color="#3498db",
+                opacity=0.75,
+            ))
+            fig_vae.add_hline(
+                y=_E_FLAT, line_dash="dash", line_color="#27ae60", line_width=1.5,
+                annotation_text="Plat de référence",
+            )
+            fig_vae.update_layout(
+                barmode="group",
+                plot_bgcolor="white",
+                xaxis=dict(tickangle=-40, tickfont=dict(size=9)),
+                yaxis=dict(title="kcal/km", showgrid=True, gridcolor="#eee"),
+                height=400,
+                margin=dict(l=10, r=10, t=20, b=100),
+                legend=dict(orientation="h", y=-0.35, x=0.5, xanchor="center"),
+            )
+            st.plotly_chart(fig_vae, use_container_width=True)
+            st.caption(
+                "**Figure 3.3.** Comparaison vélo classique vs VAE par agglomération. "
+                "La couleur encode la classe topographique pour le vélo classique. "
+                "Le VAE efface l'essentiel de l'écart entre villes planes et accidentées, "
+                "illustrant son rôle d'outil d'équité spatiale dans l'accès à la micromobilité."
+            )
+
+            # Tableau top gain VAE
+            with st.expander("Agglomérations qui bénéficient le plus du VAE"):
+                _vae_tbl = _vae_df[["city", "effort_total_kcal_km", "effort_vae_kcal_km",
+                                     "Gain VAE (kcal/km)", "Réduction VAE (%)"]].head(15).rename(
+                    columns={"city": "Agglomération", "effort_total_kcal_km": "Effort vélo (kcal/km)",
+                             "effort_vae_kcal_km": "Effort VAE (kcal/km)"}
+                )
+                st.dataframe(
+                    _vae_tbl.style.format({
+                        "Effort vélo (kcal/km)": "{:.1f}",
+                        "Effort VAE (kcal/km)":  "{:.1f}",
+                        "Gain VAE (kcal/km)":    "{:.1f}",
+                        "Réduction VAE (%)":      "{:.1f} %",
+                    }).background_gradient(subset=["Gain VAE (kcal/km)"], cmap="RdYlGn"),
+                    use_container_width=True, hide_index=True,
+                )
+
+    with tab_effort_class:
+        if "classe_effort" in topo_f.columns:
+            _cls_counts = topo_f["classe_effort"].value_counts().reset_index()
+            _cls_counts.columns = ["Classe", "Agglomérations"]
+            _cls_order = ["Plat", "Ondulé", "Vallonné", "Accidenté", "Montagneux", "N/D"]
+            _cls_counts = _cls_counts.set_index("Classe").reindex(
+                [c for c in _cls_order if c in _cls_counts.index]
+            ).reset_index()
+
+            col_cls_pie, col_cls_text = st.columns([2, 3])
+            with col_cls_pie:
+                fig_cls = go.Figure(go.Pie(
+                    labels=_cls_counts["Classe"],
+                    values=_cls_counts["Agglomérations"],
+                    marker_colors=[_EFFORT_COLORS.get(c, "#999") for c in _cls_counts["Classe"]],
+                    textinfo="label+percent+value",
+                    hole=0.4,
+                    hovertemplate="%{label}<br>%{value} agglomérations (%{percent})<extra></extra>",
+                ))
+                fig_cls.update_layout(
+                    height=340,
+                    margin=dict(l=5, r=5, t=10, b=5),
+                    showlegend=False,
+                    annotations=[dict(
+                        text=f"<b>{len(topo_f)}</b><br>villes",
+                        x=0.5, y=0.5, font_size=12, showarrow=False,
+                    )],
+                )
+                st.plotly_chart(fig_cls, use_container_width=True)
+
+            with col_cls_text:
+                st.markdown("#### Répartition des classes topographiques")
+                _cls_descs = {
+                    "Plat":        "TRI < 5 m · Terrain très favorable · Effort ≈ 30 kcal/km",
+                    "Ondulé":      "TRI 5–15 m · Légères ondulations · Effort +2–6 kcal/km",
+                    "Vallonné":    "TRI 15–30 m · Pentes modérées · Effort +6–12 kcal/km",
+                    "Accidenté":   "TRI 30–60 m · Relief marqué · Effort +12–24 kcal/km",
+                    "Montagneux":  "TRI > 60 m · Terrain très contraint · Effort > +24 kcal/km",
+                }
+                for _, _cr in _cls_counts.iterrows():
+                    _c = str(_cr["Classe"])
+                    _color = _EFFORT_COLORS.get(_c, "#999")
+                    _n_c = int(_cr["Agglomérations"])
+                    st.markdown(
+                        f"<div style='border-left:4px solid {_color};padding:6px 12px;margin:4px 0'>"
+                        f"<b>{_c}</b> · {_n_c} agglomération{'s' if _n_c > 1 else ''}<br>"
+                        f"<small>{_cls_descs.get(_c, '')}</small></div>",
+                        unsafe_allow_html=True,
+                    )
+
+            st.caption(
+                "**Figure 3.4.** Répartition nationale des agglomérations VLS par classe topographique "
+                "(TRI moyen). La majorité des réseaux français opèrent sur des terrains favorables à "
+                "cyclables (Plat/Ondulé), mais une minorité significative fait face à des contraintes "
+                "de relief structurelles (Accidenté/Montagneux), justifiant un traitement correcteur "
+                "dans le calcul de l'IES."
+            )
+else:
+    st.info("Score d'effort non calculable : données de TRI, dénivelé ou NN manquantes.")
+
 # ── Section 3 - Altitude et dénivelé ──────────────────────────────────────────
 st.divider()
-section(3, "Distribution Altimétrique - Altitude et Dénivelé Intra-Réseau")
+section(4, "Distribution Altimétrique - Altitude et Dénivelé Intra-Réseau")
 
 st.markdown(r"""
 L'altitude moyenne et le dénivelé total intra-réseau (altitude max − altitude min des stations)
@@ -567,7 +945,7 @@ with tab_elev_map:
 
 # ── Section 4 - Distances vol d'oiseau ────────────────────────────────────────
 st.divider()
-section(4, "Distances Vol d'Oiseau - Espacement Inter-Stations et Diamètre de Couverture")
+section(5, "Distances Vol d'Oiseau - Espacement Inter-Stations et Diamètre de Couverture")
 
 st.markdown(r"""
 La **distance vol d'oiseau au plus proche voisin** (NN distance, haversine approchée en plan local)
@@ -734,7 +1112,7 @@ if not spatial_f.empty:
 
 # ── Section 5 - TRI vs composante T de l'IMD ─────────────────────────────────
 st.divider()
-section(5, "Validation : TRI Brut versus Composante Topographique T de l'IMD")
+section(6, "Validation : TRI Brut versus Composante Topographique T de l'IMD")
 
 st.markdown(r"""
 La composante T de l'IMD est définie comme $T_i = 1 - \text{norm}(\text{TRI}_i)$.
@@ -789,7 +1167,7 @@ if not topo_f.empty and "T_topo" in topo_f.columns:
 
 # ── Section 6 - Impact topographique sur la pratique cyclable ──────────────────
 st.divider()
-section(6, "Impact Topographique sur la Pratique Cyclable - TRI vs Part Modale EMP 2019")
+section(7, "Impact Topographique sur la Pratique Cyclable - TRI vs Part Modale EMP 2019")
 
 if emp_df is not None and len(emp_df) >= 5:
     try:
@@ -867,7 +1245,7 @@ else:
 
 # ── Section 7 - Diagnostic par agglomération ──────────────────────────────────
 st.divider()
-section(7, "Audit Topographique par Agglomération - Profil Détaillé et Carte des Stations")
+section(8, "Audit Topographique par Agglomération - Profil Détaillé et Carte des Stations")
 
 _city_sel_topo = st.selectbox(
     "Sélectionnez une agglomération",
@@ -910,6 +1288,16 @@ if not _grp_clean.empty:
             _imd_row = topo_f[topo_f["city"] == _city_sel_topo].iloc[0]
             _kpi_rows["Score T (/100)"] = f"{_imd_row['T_topo']*100:.1f}" if "T_topo" in _imd_row else "-"
             _kpi_rows["IMD (/100)"] = f"{_imd_row['IMD']:.1f}" if "IMD" in _imd_row else "-"
+            # Effort cyclable
+            if "effort_total_kcal_km" in _imd_row.index:
+                _kpi_rows["Effort estimé (kcal/km)"] = f"{_imd_row['effort_total_kcal_km']:.1f}"
+            if "effort_vae_kcal_km" in _imd_row.index:
+                _kpi_rows["Effort VAE (kcal/km)"] = f"{_imd_row['effort_vae_kcal_km']:.1f}"
+            if "gradient_pct" in _imd_row.index:
+                _s_grad = _imd_row["gradient_pct"]
+                _kpi_rows["Gradient estimé (%)"] = f"{_s_grad:.2f}" if pd.notna(_s_grad) else "-"
+            if "classe_effort" in _imd_row.index:
+                _kpi_rows["Classe topographique"] = str(_imd_row["classe_effort"])
 
         for label, val in _kpi_rows.items():
             st.metric(label, val)
@@ -940,46 +1328,179 @@ if not _grp_clean.empty:
                 st.plotly_chart(fig_tri_hist, use_container_width=True)
 
     with col_diag_r:
-        # Scatter géographique stations colorées par TRI/altitude
-        _color_col = (
-            "topography_roughness_index" if _has_tri and "topography_roughness_index" in _grp_clean.columns
-            else "elevation_m" if _has_elev else None
-        )
-        if _color_col:
-            _grp_map = _grp_clean.dropna(subset=[_color_col])
-            if not _grp_map.empty:
-                _label_col = "TRI (m)" if _color_col == "topography_roughness_index" else "Altitude (m)"
-                fig_city_map = px.scatter_mapbox(
-                    _grp_map,
-                    lat="lat", lon="lon",
-                    color=_color_col,
-                    color_continuous_scale="Plasma",
-                    hover_name="station_name" if "station_name" in _grp_map.columns else None,
-                    hover_data={
-                        _color_col: ":.2f",
-                        "elevation_m": ":.0f" if "elevation_m" in _grp_map.columns else False,
-                        "lat": False, "lon": False,
-                    },
-                    size_max=12,
-                    opacity=0.85,
-                    mapbox_style="carto-positron",
-                    zoom=12,
-                    center={"lat": float(_grp_map["lat"].mean()),
-                            "lon": float(_grp_map["lon"].mean())},
-                    labels={_color_col: _label_col},
-                    height=480,
-                )
-                fig_city_map.update_layout(
-                    margin=dict(l=0, r=0, t=0, b=0),
-                    coloraxis_colorbar=dict(title=_label_col, thickness=14),
-                )
-                st.plotly_chart(fig_city_map, use_container_width=True)
-                st.caption(
-                    f"**Figure 7.1.** Carte des stations dock-based de **{_city_sel_topo}** "
-                    f"colorées par **{_label_col.lower()}** (SRTM 30 m). "
-                    "Les stations en violet foncé (TRI élevé) ou orange foncé (altitude élevée) "
-                    "sont les plus exposées à la friction topographique et aux déséquilibres "
-                    "source/puits dans la journée de mobilité."
-                )
+        tab_diag_map, tab_diag_profile = st.tabs(["Carte Stations", "Profil Altimétrique"])
+
+        # ── Onglet carte ──────────────────────────────────────────────────────
+        with tab_diag_map:
+            _color_col = (
+                "topography_roughness_index" if _has_tri and "topography_roughness_index" in _grp_clean.columns
+                else "elevation_m" if _has_elev else None
+            )
+            if _color_col:
+                _grp_map = _grp_clean.dropna(subset=[_color_col])
+                if not _grp_map.empty:
+                    _label_col = "TRI (m)" if _color_col == "topography_roughness_index" else "Altitude (m)"
+                    fig_city_map = px.scatter_mapbox(
+                        _grp_map,
+                        lat="lat", lon="lon",
+                        color=_color_col,
+                        color_continuous_scale="Plasma",
+                        hover_name="station_name" if "station_name" in _grp_map.columns else None,
+                        hover_data={
+                            _color_col: ":.2f",
+                            "elevation_m": ":.0f" if "elevation_m" in _grp_map.columns else False,
+                            "lat": False, "lon": False,
+                        },
+                        size_max=12,
+                        opacity=0.85,
+                        mapbox_style="carto-positron",
+                        zoom=12,
+                        center={"lat": float(_grp_map["lat"].mean()),
+                                "lon": float(_grp_map["lon"].mean())},
+                        labels={_color_col: _label_col},
+                        height=460,
+                    )
+                    fig_city_map.update_layout(
+                        margin=dict(l=0, r=0, t=0, b=0),
+                        coloraxis_colorbar=dict(title=_label_col, thickness=14),
+                    )
+                    st.plotly_chart(fig_city_map, use_container_width=True)
+                    st.caption(
+                        f"**Figure 8.1.** Carte des stations dock-based de **{_city_sel_topo}** "
+                        f"colorées par **{_label_col.lower()}** (SRTM 30 m). "
+                        "Les stations en violet foncé (TRI élevé) ou orange foncé (altitude élevée) "
+                        "sont les plus exposées à la friction topographique et aux déséquilibres "
+                        "source/puits dans la journée de mobilité."
+                    )
+
+        # ── Onglet profil altimétrique ────────────────────────────────────────
+        with tab_diag_profile:
+            if "elevation_m" in _grp_clean.columns:
+                _prof_df = _grp_clean.dropna(subset=["elevation_m", "lat", "lon"]).copy()
+                if len(_prof_df) >= 3:
+                    # Projection ACP : axe géographique principal (1ère composante)
+                    _cos_lat_p = np.cos(np.radians(float(_prof_df["lat"].mean())))
+                    _pca_x = _prof_df["lon"].values * 111.32 * _cos_lat_p
+                    _pca_y = _prof_df["lat"].values * 110.574
+                    _pca_coords = np.column_stack([_pca_x, _pca_y])
+                    _pca_c = _pca_coords - _pca_coords.mean(axis=0)
+                    _, _, _Vt = np.linalg.svd(_pca_c, full_matrices=False)
+                    _prof_df["_pca_pos"] = _pca_c @ _Vt[0]
+                    _prof_df = _prof_df.sort_values("_pca_pos").reset_index(drop=True)
+
+                    # Distance cumulée entre stations successives (km)
+                    _dx = np.diff(_prof_df["lon"].values) * 111.32 * _cos_lat_p
+                    _dy = np.diff(_prof_df["lat"].values) * 110.574
+                    _cum_dist_p = np.concatenate([[0.0], np.cumsum(np.sqrt(_dx ** 2 + _dy ** 2))])
+                    _prof_df["_cum_km"] = _cum_dist_p
+
+                    # Valeurs TRI pour la couleur des marqueurs
+                    _tri_marker = (
+                        _prof_df["topography_roughness_index"].values
+                        if "topography_roughness_index" in _prof_df.columns else None
+                    )
+
+                    # Hover text station par station
+                    _prof_hover = []
+                    for _, _r in _prof_df.iterrows():
+                        _sn = str(_r["station_name"]) if "station_name" in _r.index else "Station"
+                        _ht = f"<b>{_sn}</b><br>Altitude : {_r['elevation_m']:.0f} m<br>Distance : {_r['_cum_km']:.2f} km"
+                        if _tri_marker is not None and pd.notna(_r.get("topography_roughness_index")):
+                            _ht += f"<br>TRI : {_r['topography_roughness_index']:.2f} m"
+                        _prof_hover.append(_ht)
+
+                    fig_prof = go.Figure()
+
+                    # Zone de remplissage sous le profil
+                    fig_prof.add_trace(go.Scatter(
+                        x=_prof_df["_cum_km"].values,
+                        y=_prof_df["elevation_m"].values,
+                        mode="lines",
+                        fill="tozeroy",
+                        fillcolor="rgba(52, 152, 219, 0.12)",
+                        line=dict(color="rgba(52, 152, 219, 0.35)", width=1.5),
+                        showlegend=False,
+                        hoverinfo="skip",
+                    ))
+
+                    # Marqueurs colorés par TRI
+                    fig_prof.add_trace(go.Scatter(
+                        x=_prof_df["_cum_km"].values,
+                        y=_prof_df["elevation_m"].values,
+                        mode="markers",
+                        marker=dict(
+                            color=_tri_marker if _tri_marker is not None
+                                  else _prof_df["elevation_m"].values,
+                            colorscale="Plasma",
+                            size=8,
+                            colorbar=dict(title="TRI (m)", thickness=12, len=0.65,
+                                          x=1.01, xanchor="left"),
+                            showscale=True,
+                            line=dict(color="white", width=0.5),
+                        ),
+                        text=_prof_hover,
+                        hovertemplate="%{text}<extra></extra>",
+                        showlegend=False,
+                    ))
+
+                    # Ligne horizontale altitude moyenne
+                    _prof_elev_mean = float(_prof_df["elevation_m"].mean())
+                    fig_prof.add_hline(
+                        y=_prof_elev_mean,
+                        line_dash="dash", line_color="#e74c3c", line_width=1.2,
+                        annotation_text=f"Moy. {_prof_elev_mean:.0f} m",
+                        annotation_position="top right",
+                    )
+
+                    # Annotation station la plus haute et la plus basse
+                    _idx_max = int(_prof_df["elevation_m"].idxmax())
+                    _idx_min = int(_prof_df["elevation_m"].idxmin())
+                    for _idx, _pos, _color_ann in [
+                        (_idx_max, "top center", "#8e44ad"),
+                        (_idx_min, "bottom center", "#27ae60"),
+                    ]:
+                        _sn_ann = (
+                            str(_prof_df.loc[_idx, "station_name"])
+                            if "station_name" in _prof_df.columns else ""
+                        )
+                        fig_prof.add_annotation(
+                            x=float(_prof_df.loc[_idx, "_cum_km"]),
+                            y=float(_prof_df.loc[_idx, "elevation_m"]),
+                            text=f"{_sn_ann[:18]}<br>{_prof_df.loc[_idx, 'elevation_m']:.0f} m",
+                            showarrow=True, arrowhead=2, arrowsize=1, arrowwidth=1,
+                            arrowcolor=_color_ann, font=dict(size=9, color=_color_ann),
+                            ax=0, ay=-32 if _pos.startswith("top") else 32,
+                        )
+
+                    fig_prof.update_layout(
+                        plot_bgcolor="white",
+                        xaxis=dict(
+                            title="Distance cumulée le long de l'axe principal (km)",
+                            showgrid=True, gridcolor="#eee",
+                        ),
+                        yaxis=dict(
+                            title="Altitude (m, SRTM 30 m)",
+                            showgrid=True, gridcolor="#eee",
+                        ),
+                        height=430,
+                        margin=dict(l=10, r=70, t=20, b=40),
+                    )
+                    st.plotly_chart(fig_prof, use_container_width=True)
+                    _prof_denivelé = float(
+                        _prof_df["elevation_m"].max() - _prof_df["elevation_m"].min()
+                    )
+                    st.caption(
+                        f"**Figure 8.2.** Profil altimétrique de **{_city_sel_topo}** — "
+                        "stations triées le long de l'axe géographique principal (ACP, 1ère composante). "
+                        f"Dénivelé total du réseau : **{_prof_denivelé:.0f} m**. "
+                        "Couleur des marqueurs : TRI (rugosité locale). "
+                        "La ligne rouge pointillée marque l'altitude moyenne. "
+                        "Les annotations violet/vert indiquent la station la plus haute / la plus basse. "
+                        "Ce profil révèle les gradients source/puits potentiels du réseau VLS."
+                    )
+                else:
+                    st.info("Données altimétriques insuffisantes pour tracer le profil (< 3 stations).")
+            else:
+                st.info("Données d'altitude non disponibles pour cette agglomération.")
 else:
     st.info(f"Aucune station dock-based géolocalisée trouvée pour {_city_sel_topo}.")
