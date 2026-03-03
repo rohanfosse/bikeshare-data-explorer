@@ -1,0 +1,98 @@
+
+Systèmes ciblés (43) :
+  • auxrmlevelo                              Auxerre                        (55 stations)
+  • CVelo_FR_Clermont-Ferrand                Clermont-Ferrand               (82 stations)
+  • capcotentin                              Cherbourg-en-Cotentin          (49 stations)
+  • citiz_alpes_loire                        Grenoble                       (408 stations)
+  • citiz_angers                             Angers                         (26 stations)
+  • citiz_bfc                                Besançon                       (56 stations)
+  • citiz_grand_est                          Strasbourg                     (285 stations)
+  • citiz_grand_poitiers                     Poitiers                       (22 stations)
+  • citiz_la_rochelle                        La Rochelle                    (24 stations)
+  • citiz_occitanie                          Toulouse                       (128 stations)
+  • citiz_rennes_metropole                   Rennes                         (55 stations)
+  • donkey_brest                             Brest                          (75 stations)
+  • donkey_valenciennes                      Valenciennes                   (40 stations)
+  • idecycle_pau                             PAU                            (40 stations)
+  • velo-tbm-bordeaux                        Bordeaux                       (225 stations)
+  • le_velo_star                             Rennes                         (57 stations)
+  • levelo_inurba_marseille                  Marseille                      (221 stations)
+  • libelo                                   Valence                        (68 stations)
+  • inurba-rouen                             Rouen                          (131 stations)
+  • nantes                                   Nantes                         (124 stations)
+  • Optymo_Belfort_ALS                       Belfort                        (52 stations)
+  • beb                                      Bourg-en-Bresse                (45 stations)
+  • semo                                     Louviers                       (40 stations)
+  • twisto_velolib_caen                      Caen                           (75 stations)
+  • v_lille                                  Lille                          (268 stations)
+  • amiens                                   Amiens                         (45 stations)
+  • calais-velos                             Calais                         (80 stations)
+  • vilvolt_epinal                           Épinal                         (105 stations)
+  • Paris                                    Paris                          (1507 stations)
+  • velibeo                                  Brive-la-Gaillarde             (26 stations)
+  • velivert_saint_etienne                   Saint-Étienne                  (97 stations)
+  • tanlib                                   Niort                          (51 stations)
+  • lyon                                     Lyon                           (452 stations)
+  • cergy                                    Cergy-Pontoise                 (45 stations)
+  • nextbike_af                              Mulhouse                       (60 stations)
+  • velonecy60minutes_annecy                 Annecy                         (80 stations)
+  • velopop                                  Avignon                        (29 stations)
+  • nancy                                    Nancy                          (37 stations)
+  • velozef                                  Brest                          (40 stations)
+  • toulouse                                 Toulouse                       (434 stations)
+  • zebullo                                  Reims                          (63 stations)
+  • montpellier                              Montpellier                    (56 stations)
+  • dijon                                    Dijon                          (40 stations)
+
+Intervalle    : 60 s
+Workers HTTP  : 12
+Durée max     : 28800 s
+Prév. veille  : oui
+Stockage      : C:\Users\Rohan\OneDrive - Cesi\Bureau\CESI\bikeshare-data-explorer\data\status_snapshots
+
+
+Fichiers collectés :
+                system_id  n_files date_debut   date_fin
+                   amiens        2 2026-03-02 2026-03-03
+              auxrmlevelo        2 2026-03-02 2026-03-03
+                      beb        2 2026-03-02 2026-03-03
+                 besancon        1 2026-03-02 2026-03-02
+             calais-velos        2 2026-03-02 2026-03-03
+              capcotentin        2 2026-03-02 2026-03-03
+                    cergy        2 2026-03-02 2026-03-03
+        citiz_alpes_loire        2 2026-03-02 2026-03-03
+             citiz_angers        2 2026-03-02 2026-03-03
+                citiz_bfc        2 2026-03-02 2026-03-03
+          citiz_grand_est        2 2026-03-02 2026-03-03
+     citiz_grand_poitiers        2 2026-03-02 2026-03-03
+        citiz_la_rochelle        2 2026-03-02 2026-03-03
+          citiz_occitanie        2 2026-03-02 2026-03-03
+   citiz_rennes_metropole        2 2026-03-02 2026-03-03
+CVelo_FR_Clermont-Ferrand        2 2026-03-02 2026-03-03
+             donkey_brest        2 2026-03-02 2026-03-03
+      donkey_valenciennes        2 2026-03-02 2026-03-03
+             idecycle_pau        2 2026-03-02 2026-03-03
+             inurba-rouen        2 2026-03-02 2026-03-03
+             le_velo_star        2 2026-03-02 2026-03-03
+  levelo_inurba_marseille        2 2026-03-02 2026-03-03
+                   libelo        2 2026-03-02 2026-03-03
+                     lyon        2 2026-03-02 2026-03-03
+              montpellier        2 2026-03-02 2026-03-03
+                    nancy        2 2026-03-02 2026-03-03
+                   nantes        2 2026-03-02 2026-03-03
+              nextbike_af        2 2026-03-02 2026-03-03
+       Optymo_Belfort_ALS        2 2026-03-02 2026-03-03
+                    Paris        2 2026-03-02 2026-03-03
+                     semo        2 2026-03-02 2026-03-03
+                   tanlib        2 2026-03-02 2026-03-03
+                 toulouse        2 2026-03-02 2026-03-03
+      twisto_velolib_caen        2 2026-03-02 2026-03-03
+                  v_lille        2 2026-03-02 2026-03-03
+                  velibeo        2 2026-03-02 2026-03-03
+   velivert_saint_etienne        2 2026-03-02 2026-03-03
+        velo-tbm-bordeaux        2 2026-03-02 2026-03-03
+ velonecy60minutes_annecy        2 2026-03-02 2026-03-03
+                  velopop        2 2026-03-02 2026-03-03
+                  velozef        2 2026-03-02 2026-03-03
+           vilvolt_epinal        2 2026-03-02 2026-03-03
+                  zebullo        2 2026-03-02 2026-03-03
