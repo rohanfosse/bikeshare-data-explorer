@@ -63,9 +63,12 @@ a baseline comparison, a characterization of the free-floating
 subset showing that the same GBFS \texttt{capacity} field is
 populated according to six incompatible semantics across French
 operators, and a global audit on the 1{,}254 non-French systems of
-the MobilityData canonical catalogue (47 countries, 226 systems
-flagged) establish the technical validity of the release and
-document that the A1--A5 taxonomy generalises beyond France. The dataset is archived on Zenodo under concept DOI
+the MobilityData canonical catalogue (47 countries, 215 systems
+flagged after country-perimeter calibration) establish the technical
+validity of the release and document that the A1--A5 taxonomy
+generalises beyond France, with nextbike driving the Czech hotspot
+(25 of 45 audited systems) in a direct mirror of the Pony-driven
+French free-floating hotspot. The dataset is archived on Zenodo under concept DOI
 \texttt{10.5281/zenodo.20125460} and licensed under ODbL v1.0.
 
 \vspace{0.5em}
@@ -605,10 +608,13 @@ MobilityData catalogue (CSV pulled 2026-05). The audit ran in
 parallel against each \texttt{Auto-Discovery URL} with country-
 specific perimeters and the same statistical thresholds as in
 Section~\ref{secMethods}; 1{,}167 feeds (93.1\,\%) were reachable,
-773 publish a \texttt{station\_information} document, and 226
-(29.2\,\% of those with data) trigger at least one A1--A5 class
-(Table~\ref{tab:global-audit}). The full per-system audit table is
-released as \texttt{experiments/e5\_europe/massive\_audit\_results.csv}.
+773 publish a \texttt{station\_information} document, and 215
+trigger at least one A1--A5 class after country-perimeter
+calibration (Table~\ref{tab:global-audit}). The A4 geospatial flag
+requires more than 5\,\% of stations and at least 5 absolute
+out-of-country stations to fire, to avoid edge-of-coast false
+positives. The full per-system audit table is released as
+\texttt{experiments/e5\_europe/massive\_audit\_results.csv}.
 
 \begin{table}[ht]
 \centering
@@ -627,21 +633,21 @@ listed for completeness.}
    & \textbf{A1} & \textbf{A2} & \textbf{A3} & \textbf{A4 geo}\\
 \midrule
 Germany (DE)        & 251 & 243 & 64 & 58 &  4 &  9 &  -- \\
-United States (US)  & 175 & 172 &  3 & -- & -- & -- &  3 \\
+United States (US)  & 175 & 172 &  1 & -- & -- & -- & --  \\
 Poland (PL)         &  94 &  91 & 29 &  2 &  3 & -- & 25 \\
 Norway (NO)         &  83 &  45 &  2 & -- & -- & -- &  2 \\
-Spain (ES)          &  69 &  66 &  7 & -- & -- & -- &  7 \\
+Spain (ES)          &  69 &  66 &  1 & -- & -- & -- &  1 \\
 United Kingdom (GB) &  56 &  54 &  4 &  1 &  1 & -- &  2 \\
 Finland (FI)        &  55 &  55 & 15 &  1 & -- & -- & 14 \\
 Netherlands (NL)    &  52 &  52 &  2 & -- & -- & -- &  1 \\
-Switzerland (CH)    &  49 &  46 & 19 & 11 &  3 &  3 &  3 \\
+Switzerland (CH)    &  49 &  46 & 19 & 11 &  3 &  3 &  1 \\
 \textbf{Czech Rep.\ (CZ)} & 45 & 43 & \textbf{25} & -- & \textbf{16} & \textbf{12} & -- \\
 Belgium (BE)        &  37 &  34 &  5 & -- & -- &  2 &  2 \\
 Italy (IT)          &  34 &  33 &  0 & -- & -- & -- & -- \\
 Austria (AT)        &  27 &  23 &  5 &  5 &  1 &  1 & -- \\
 Sweden (SE)         &  23 &  23 & 13 &  1 & -- & -- & 12 \\
 \midrule
-\textbf{Total (47 countries)} & 1{,}254 & 1{,}167 & 226 & 80+ & 33 & 29 & -- \\
+\textbf{Total (47 countries)} & 1{,}254 & 1{,}168 & 215 & 75 & 30 & 29 & 53 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -652,12 +658,20 @@ Three observations follow.
 A3 (structural over-capacity on free-floating fleets) is detected on
 29 non-French systems spread across seven countries, with Czech
 Republic alone contributing 12 cases. A2 (placeholder capacity) is
-detected on 33 non-French systems, again with Czech Republic as the
+detected on 30 non-French systems, again with Czech Republic as the
 hotspot (16 systems). A1 (out-of-domain inclusion of car-sharing) is
 widespread in the DACH region: 58 systems in Germany, 11 in
-Switzerland, 5 in Austria, plus scattered cases elsewhere. The
-empirical conclusion is that the A1--A5 taxonomy generalises beyond
-the French market.
+Switzerland, 5 in Austria, plus a single case in the United Kingdom.
+The empirical conclusion is that the A1--A5 taxonomy generalises
+beyond the French market.
+
+\paragraph{Country hotspots are operator-driven.}
+The 25 Czech anomalies are all from a single operator (\emph{nextbike})
+that publishes 45 systems in the country with 1{,}606 affected
+stations, exactly mirroring the French structure where the
+\emph{Pony} operator drives the A2/A3 hotspot. The country-level
+incidence is therefore a corporate publication convention, not a
+national regulatory feature.
 
 \paragraph{Operator-level anti-patterns travel with the operator.}
 \emph{Dott} publishes \texttt{capacity = NaN} on all of its

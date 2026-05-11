@@ -34,46 +34,74 @@ TMP = Path(os.environ.get("TMPDIR") or os.environ.get("TEMP") or "/tmp")
 CSV_IN = TMP / "gbfs_systems.csv"
 
 # Country perimeters (broad bounding boxes for A4/A5 checks).
-COUNTRY_BBOX = {
-    "FR": ((41.0, 52.0), (-6.0, 10.0)),
-    "ES": ((35.0, 44.5), (-9.5, 4.5)),
-    "PT": ((36.5, 42.5), (-10.0, -6.0)),
-    "IT": ((35.5, 47.0), (6.0, 19.0)),
-    "DE": ((47.0, 55.5), (5.5, 15.5)),
-    "AT": ((46.0, 49.5), (9.0, 17.5)),
-    "CH": ((45.5, 48.0), (5.5, 11.0)),
-    "BE": ((49.0, 51.5), (2.5, 6.5)),
-    "NL": ((50.5, 54.0), (3.0, 7.5)),
-    "LU": ((49.4, 50.2), (5.7, 6.6)),
-    "GB": ((49.5, 61.0), (-9.0, 2.5)),
-    "IE": ((51.0, 55.5), (-11.0, -5.0)),
-    "DK": ((54.0, 58.0), (7.5, 15.5)),
-    "SE": ((55.0, 69.5), (10.5, 24.5)),
-    "NO": ((57.5, 71.5), (4.0, 31.5)),
-    "FI": ((59.5, 70.5), (19.5, 32.0)),
-    "PL": ((49.0, 55.0), (14.0, 24.5)),
-    "CZ": ((48.5, 51.5), (12.0, 19.0)),
-    "SK": ((47.5, 49.7), (16.5, 22.7)),
-    "HU": ((45.5, 48.7), (16.0, 23.0)),
-    "RO": ((43.5, 48.5), (20.0, 30.0)),
-    "GR": ((34.5, 42.0), (19.0, 28.5)),
-    "US": ((24.0, 50.0), (-125.0, -65.0)),
-    "CA": ((42.0, 70.0), (-141.0, -52.0)),
-    "MX": ((14.0, 33.0), (-118.5, -86.0)),
-    "BR": ((-34.0, 6.0), (-74.0, -34.0)),
-    "AU": ((-44.0, -10.0), (112.0, 154.0)),
-    "NZ": ((-47.5, -34.0), (166.0, 179.0)),
-    "JP": ((24.0, 46.0), (122.0, 146.0)),
-    "KR": ((33.0, 39.0), (124.0, 132.0)),
-    "TW": ((21.5, 25.5), (119.0, 122.5)),
-    "AE": ((22.5, 26.5), (51.0, 57.0)),
-    "SG": ((1.1, 1.5), (103.5, 104.1)),
-    "CL": ((-56.0, -17.0), (-76.0, -66.0)),
-    "AR": ((-55.0, -22.0), (-74.0, -53.5)),
+COUNTRY_BBOX: dict[str, tuple[tuple[float, float], tuple[float, float]]] = {
+    # Calibrated against the OpenStreetMap "place=country" bounding boxes
+    # with a 0.5-degree buffer on each side to absorb GPS noise at coastal
+    # stations. Where the country has remote territories (Spitsbergen for
+    # Norway, Canary for Spain, Hawaii for US) the bbox is extended.
+    "FR": ((41.0, 51.5),  (-6.0, 10.0)),
+    "ES": ((27.5, 44.5),  (-19.0, 4.5)),
+    "PT": ((32.0, 42.5),  (-32.0, -6.0)),
+    "IT": ((35.5, 47.5),  (6.0, 19.0)),
+    "DE": ((47.0, 55.5),  (5.5, 15.5)),
+    "AT": ((46.0, 49.5),  (9.0, 17.5)),
+    "CH": ((45.5, 48.0),  (5.5, 11.0)),
+    "BE": ((49.0, 52.0),  (2.0, 7.0)),
+    "NL": ((50.5, 54.0),  (3.0, 7.5)),
+    "LU": ((49.4, 50.2),  (5.7, 6.6)),
+    "GB": ((49.5, 61.5),  (-9.0, 2.5)),
+    "IE": ((51.0, 55.5),  (-11.0, -5.0)),
+    "DK": ((54.0, 58.0),  (7.5, 15.5)),
+    "SE": ((54.5, 69.5),  (10.5, 24.5)),
+    "NO": ((57.5, 71.5),  (4.0, 31.5)),
+    "FI": ((59.5, 70.5),  (19.0, 32.0)),
+    "PL": ((48.5, 55.5),  (13.5, 24.5)),
+    "CZ": ((48.0, 51.5),  (12.0, 19.0)),
+    "SK": ((47.5, 50.0),  (16.5, 23.0)),
+    "HU": ((45.5, 49.0),  (16.0, 23.0)),
+    "RO": ((43.0, 48.5),  (20.0, 30.0)),
+    "HR": ((42.0, 47.0),  (13.0, 20.0)),
+    "SI": ((45.0, 47.0),  (13.0, 17.0)),
+    "BA": ((42.5, 45.5),  (15.5, 20.0)),
+    "GR": ((34.5, 42.0),  (19.0, 28.5)),
+    "BG": ((41.0, 44.5),  (22.0, 29.0)),
+    "CY": ((34.5, 35.7),  (32.0, 35.0)),
+    "LT": ((53.5, 56.5),  (20.5, 27.0)),
+    "LV": ((55.5, 58.5),  (20.5, 28.5)),
+    "EE": ((57.0, 60.0),  (21.5, 28.5)),
+    "IS": ((63.0, 67.0),  (-25.0, -13.0)),
+    "MC": ((43.7, 43.8),  (7.4,  7.5)),
+    "TR": ((35.5, 42.5),  (25.5, 45.0)),
+    "UA": ((44.0, 53.0),  (22.0, 41.0)),
+    "XK": ((41.5, 43.5),  (20.0, 22.0)),
+    "LI": ((47.0, 47.3),  (9.4,  9.7)),
+    "US": ((18.0, 72.0),  (-180.0, -65.0)),  # incl. Alaska, Hawaii
+    "CA": ((42.0, 84.0),  (-141.0, -52.0)),
+    "MX": ((14.0, 33.0),  (-118.5, -86.0)),
+    "BR": ((-34.0, 6.0),  (-74.0, -34.0)),
+    "AR": ((-55.0, -22.0),(-74.0, -53.5)),
+    "CL": ((-56.0, -17.0),(-76.0, -66.0)),
+    "CO": ((-5.0, 14.0),  (-80.0, -66.0)),
+    "AU": ((-44.0, -10.0),(112.0, 154.0)),
+    "NZ": ((-47.5, -34.0),(166.0, 179.0)),
+    "JP": ((20.0, 46.0),  (122.0, 154.0)),
+    "KR": ((33.0, 39.0),  (124.0, 132.0)),
+    "TW": ((21.5, 25.5),  (119.0, 122.5)),
+    "AE": ((22.0, 26.5),  (51.0, 57.0)),
+    "QA": ((24.0, 27.0),  (50.5, 52.0)),
+    "SA": ((16.0, 33.0),  (34.0, 56.0)),
+    "IL": ((29.0, 33.5),  (34.0, 36.0)),
+    "MY": ((1.0, 7.5),    (99.5, 119.5)),
+    "SG": ((1.1, 1.5),    (103.5, 104.1)),
 }
 SIGMA_MAX = 3.0
 N_MIN_DOCK = 20
 TIMEOUT = 8
+# A4 is flagged at the system level only if >= 5% of stations OR
+# >= 5 absolute stations fall outside the country perimeter, to avoid
+# false positives from edge-of-country coastal stations.
+A4_PERIM_MIN_PCT = 5.0
+A4_PERIM_MIN_ABS = 5
 
 # Reused HTTP session per thread
 import threading
@@ -239,10 +267,16 @@ def audit_system(row: dict) -> dict[str, Any]:
         out["a5_macro_bbox_km2"] = 0.0
         out["a5_macro_flag"] = False
 
-    # Any anomaly flag
+    # Any anomaly flag: A4 requires a non-trivial out-of-perimeter mass.
+    n_stations = out["stations"] or 1
+    a4_perim_pct = 100.0 * (out.get("a4_out_of_perim") or 0) / n_stations
+    a4_perim_flag = (a4_perim_pct >= A4_PERIM_MIN_PCT
+                     and (out.get("a4_out_of_perim") or 0) >= A4_PERIM_MIN_ABS)
+    out["a4_perim_flag"] = a4_perim_flag
+    out["a4_perim_pct"] = round(a4_perim_pct, 2)
+
     flags = [out["a1_cars"], out["a2_placeholder"], out["a3_overcap_flag"],
-             (out.get("a4_out_of_perim") or 0) > 0,
-             out["a5_macro_flag"]]
+             a4_perim_flag, out["a5_macro_flag"]]
     out["any_anomaly"] = any(flags)
     return out
 
@@ -271,7 +305,8 @@ def main(max_systems: int | None = None, skip_fr: bool = True) -> None:
     keys = ["country", "name", "system_id", "stations", "reachable",
             "vehicle_form_factors", "a1_cars", "a2_placeholder",
             "a3_overcap_ratio", "a3_overcap_flag",
-            "a4_out_of_perim", "a4_outliers",
+            "a4_out_of_perim", "a4_perim_pct", "a4_perim_flag",
+            "a4_outliers",
             "a5_macro_bbox_km2", "a5_macro_flag",
             "a6_zero_capacity_pct", "capacity_nan_pct", "any_anomaly",
             "root_url"]
@@ -296,11 +331,10 @@ def main(max_systems: int | None = None, skip_fr: bool = True) -> None:
             by_country[c]["reachable"] += 1
         if r.get("any_anomaly"):
             by_country[c]["flagged"] += 1
-            for k in ("a1_cars", "a2_placeholder", "a3_overcap_flag", "a5_macro_flag"):
+            for k in ("a1_cars", "a2_placeholder", "a3_overcap_flag",
+                      "a4_perim_flag", "a5_macro_flag"):
                 if r.get(k):
                     by_country[c]["anomalies"][k] += 1
-            if (r.get("a4_out_of_perim") or 0) > 0:
-                by_country[c]["anomalies"]["a4_geospatial"] += 1
     by_country_sorted = sorted(by_country.items(), key=lambda kv: -kv[1]["audited"])
 
     # A6 candidate (c=0): top systems by zero-capacity rate

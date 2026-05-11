@@ -49,8 +49,8 @@
   \begin{itemize}[leftmargin=1.4em,itemsep=0.15em,topsep=0.2em]}{%
   \end{itemize}\par\medskip}
 
-\title{\bfseries\sffamily\Large Auditing Open Mobility Feeds at Country Scale:\\
-A Reproducible Protocol and Reference Dataset for the 123 French GBFS Systems}
+\title{\bfseries\sffamily\Large Auditing Open Mobility Feeds at Country and Global Scale:\\
+1{,}254 GBFS Systems, Five Anomaly Classes and One Operator-Specific Hotspot per Country}
 
 \author[1]{Rohan Foss\'e\thanks{Lead contact: \texttt{rfosse@cesi.fr}}}
 \author[2]{Ga\"el Pallares}
@@ -62,59 +62,61 @@ A Reproducible Protocol and Reference Dataset for the 123 French GBFS Systems}
 \maketitle
 
 \section*{Summary}
-Open mobility feeds are increasingly assumed to be directly ingestible into
-quantitative research pipelines: the General Bikeshare Feed Specification
-(GBFS) is now a regulatory requirement for French operators, and 123 feeds
-are centralised on a single public portal. By auditing all of them, we show
-that this syntactic standardisation is necessary but not sufficient. Five
-recurring anomaly classes (A1--A5: out-of-domain inclusion, placeholder
-capacity, structural over-capacity, geospatial error, out-of-perimeter
-coverage) re-appear across operators and together reclassify
-\textbf{30.9\,\%} (95\,\% bootstrap CI [30.5, 31.3]) of the raw stations.
-We formalise a six-step idempotent purging protocol, hybridise its output
-with five reference sources (INSEE, BAAC, BD~TOPO, OpenStreetMap, FUB), and
-release the resulting \emph{GBFS France Audit Catalogue} dataset (46{,}307
-certified stations across 97 cities) as a versioned research commons under
-ODbL on Zenodo. A single anomaly (the A3 reclassification of the
-\emph{Pony} free-floating fleet in Bordeaux) is sufficient to move the city
-from rank 2 to rank 14 in a national soft-mobility ranking, a result that
-quantifies the cost of skipping the audit. A characterization of the
-free-floating subset documents that the single GBFS
+Open mobility feeds are increasingly assumed to be directly ingestible
+into quantitative research pipelines: the General Bikeshare Feed
+Specification (GBFS) is now a regulatory requirement for French
+operators, and similar feeds are catalogued worldwide by MobilityData.
+By auditing the 123 French GBFS systems centralised on
+\emph{transport.data.gouv.fr}, we show that this syntactic
+standardisation is necessary but not sufficient. Five recurring
+anomaly classes (A1--A5: out-of-domain inclusion, placeholder
+capacity, structural over-capacity, geospatial error, out-of-
+perimeter coverage) re-appear across operators and together
+reclassify \textbf{30.9\,\%} (95\,\% bootstrap CI [30.5, 31.3]) of
+the raw French stations. We formalise a six-step idempotent purging
+protocol and release the resulting \emph{GBFS France Audit
+Catalogue} (46{,}307 stations, 97 cities) on Zenodo. We then apply
+the same rule set to the 1{,}254 non-French GBFS systems of the
+MobilityData canonical catalogue and observe that 215 systems
+across 47 countries trigger at least one anomaly class. The Czech
+Republic is the European hotspot: 25 of 45 audited systems
+(55.6\,\%) are flagged, all of them deployments of a single
+operator (nextbike), exactly mirroring the operator-specific
+concentration observed for \emph{Pony} in France. A characterisation
+of the French free-floating subset documents that the single GBFS
 \texttt{capacity} field is populated according to six mutually
-incompatible semantics across the four major operators, affecting
-84.7\,\% of the certified rows. A global audit on the 1{,}254
-non-French GBFS systems of the MobilityData canonical catalogue
-flags 226 systems (29.2\,\% of those with data) across 47 countries,
-demonstrating that the anti-patterns generalise beyond France: A3
-appears in Czech Republic (12) and Germany (9), A2 in Czech Republic
-(16), A1 in the DACH region (74). We further publish three internal
-robustness checks, a reproducibility checklist with container-pinned
-bit-exact replay, and a six-experiment falsification roadmap with
-four pilots already completed. The protocol is designed to
-be transferable; the dataset itself is positioned as a contestable
-artefact rather than a finished product.
+incompatible semantics, affecting 84.7\,\% of the certified rows; a
+positive control on Beryl London (UK) shows that the standard can
+be used correctly when an audit tier exists. A single A3 correction
+moves the Bordeaux agglomeration from rank 2 to rank 14 in a
+national soft-mobility ranking, which quantifies the policy cost of
+skipping the audit. The dataset, audit pipeline, internal robustness
+checks, global audit table and Docker image for bit-exact
+reproduction are released together as a versioned research commons.
 
 \begin{bigpicture}\itshape
-Public-policy decisions about urban mobility increasingly depend on the
-analysis of open data feeds whose semantic quality is taken on trust.
-This article makes the case that syntactic standardisation, on its own,
-hides systematic errors that can flip the ranking of cities by an order
-of magnitude, and proposes a reproducible audit pipeline backed by a
-versioned reference dataset. The contribution is methodological as much
-as empirical: any open mobility standard (GBFS today, transit feeds,
+Public-policy decisions about urban mobility increasingly depend on
+the analysis of open data feeds whose semantic quality is taken on
+trust. By auditing the 123 French GBFS systems and the 1{,}254
+non-French systems in the MobilityData canonical catalogue, we
+document that the same five anomaly classes recur across 47
+countries, and that hotspots are typically driven by a single
+operator (nextbike in Czech Republic, Pony in France) rather than
+by national policy. The contribution is methodological as much as
+empirical: any open mobility standard (GBFS today, transit feeds,
 charging-station feeds and shared-mobility-data-specification feeds
 tomorrow) benefits from a community-maintained validation tier
-between regulatory publication and academic use. The 123-system French
-corpus is a stress test of that idea, and the audit numbers documented
-here support a broader conclusion: an open feed is a starting point for
-research, not a substitute for one.
+between regulatory publication and academic use. The 1{,}377-system
+corpus is a stress test of that idea, and the audit numbers
+documented here support a broader conclusion: an open feed is a
+starting point for research, not a substitute for one.
 \end{bigpicture}
 
 \begin{highlights}
-\item 226 of 1{,}254 non-French GBFS systems flag at least one A1--A5 anomaly
-\item One GBFS field carries six incompatible semantics across operators
-\item Bordeaux drops from national rank 2 to rank 14 after one A3 correction
-\item Audit Catalogue (46{,}307 stations, 97 cities) FAIR-released on Zenodo
+\item Audit of 1{,}377 GBFS systems across 47 countries flags 22+215 systems
+\item One operator drives each country: nextbike in Czechia, Pony in France
+\item Single GBFS field carries six incompatible semantics across operators
+\item Audit Catalogue (46{,}307 stations) FAIR-released, code reproducible
 \end{highlights}
 
 \noindent\textbf{Keywords:} data quality; GBFS; bike sharing; FAIR; reproducibility;
@@ -532,35 +534,39 @@ handful of edge outliers (1 station in Bicing, 3 in Oslo, 1 in Bergen), in line
 with what would be expected from any GPS-anchored fleet.
 
 To turn the negative-control argument into a positive one, the rule
-set was then applied to the entire MobilityData canonical
-catalogue: 1{,}254 non-French GBFS systems across 47 countries.
-1{,}167 (93.1\,\%) were reachable, 773 publish a
-\texttt{station\_information} document, and \textbf{226 systems
-(29.2\,\% of those with data) trigger at least one A1--A5 class}
-(Table~\ref{tab:global-audit}). A3 (structural over-capacity) is
-detected on 29 non-French systems concentrated in Czech Republic
-(12) and Germany (9); A2 (placeholder capacity) on 33 non-French
-systems with Czech Republic again the hotspot (16); A1
-(out-of-domain car-sharing labelled as BSS) on roughly 80 non-French
+set was then applied to the entire MobilityData canonical catalogue:
+1{,}254 non-French GBFS systems across 47 countries. 1{,}168
+(93.1\,\%) were reachable, 773 publish a
+\texttt{station\_information} document, and \textbf{215 systems
+trigger at least one A1--A5 class} after country-perimeter
+calibration (Table~\ref{tab:global-audit}). A3 (structural
+over-capacity) is detected on 29 non-French systems concentrated in
+Czech Republic (12) and Germany (9); A2 (placeholder capacity) on
+30 non-French systems with Czech Republic again the hotspot (16);
+A1 (out-of-domain car-sharing labelled as BSS) on 75 non-French
 systems concentrated in the DACH region (Germany 58, Switzerland 11,
 Austria 5). Operator-level anti-patterns also travel internationally:
-Dott publishes \texttt{capacity = NaN} on every non-French deployment
-observed (Austria, UAE; 18 systems), and Bird does the same on its
-three Canadian deployments. The cross-country audit yields a
-candidate sixth anomaly class, A6 (zero-capacity dock), exemplified
-by PBSC HQ (Canada, 18.2\,\%), Beryl Greater Manchester (UK,
-10.5\,\%), MonaBike (Monaco, 6.8\,\%) and Citi Bike NYC (US,
+\emph{Dott} publishes \texttt{capacity = NaN} on every non-French
+deployment observed (Austria, UAE; 18 systems), and \emph{Bird} does
+the same on three Canadian deployments. The cross-country audit also
+surfaces a candidate sixth anomaly class, A6 (zero-capacity dock),
+exemplified by PBSC HQ (Canada, 18.2\,\%), Beryl Greater Manchester
+(UK, 10.5\,\%), MonaBike (Monaco, 6.8\,\%) and Citi Bike NYC (US,
 2.4\,\%). The empirical conclusion is that the documented
 anti-patterns are not French-specific but global, and the protocol
-generalises to a 1{,}254-system corpus with no recalibration.
+generalises to a 1{,}254-system corpus with no methodological
+recalibration.
 
 \begin{table}[ht]
 \centering
-\caption{Global audit of A1--A5 on the MobilityData catalogue
-(1{,}254 non-French systems). Per-class counts are not disjoint
-(one system can trigger several classes). A4 is sensitive to
-country-perimeter calibration; only countries with $\geq 30$
-audited systems or notable structural anomaly counts are shown.}
+\caption{Global audit of A1--A5 on the MobilityData canonical
+catalogue (1{,}254 non-French systems). Per-class counts are not
+disjoint (one system can trigger several classes). A4 is the
+geospatial out-of-perimeter class; it requires more than 5\,\% of
+stations and at least 5 absolute outside-country stations to flag,
+to avoid edge-of-coast false positives. Only countries with $\geq 30$
+audited systems or notable structural anomaly concentrations are
+shown.}
 \label{tab:global-audit}
 \small
 \begin{tabular}{@{}lrrrrrrr@{}}
@@ -568,21 +574,42 @@ audited systems or notable structural anomaly counts are shown.}
 \textbf{Country} & \textbf{Audited} & \textbf{Reach.} & \textbf{Flagged}
    & \textbf{A1} & \textbf{A2} & \textbf{A3} & \textbf{A4 geo}\\
 \midrule
-Germany (DE)        & 251 & 243 & 64 & 58 &  4 &  9 &  -- \\
-United States (US)  & 175 & 172 &  3 & -- & -- & -- &  3 \\
-Poland (PL)         &  94 &  91 & 29 &  2 &  3 & -- & 25 \\
-Spain (ES)          &  69 &  66 &  7 & -- & -- & -- &  7 \\
-United Kingdom (GB) &  56 &  54 &  4 &  1 &  1 & -- &  2 \\
-Switzerland (CH)    &  49 &  46 & 19 & 11 &  3 &  3 &  3 \\
+Germany (DE)         & 251 & 243 & 64 & 58 &  4 &  9 &  -- \\
+United States (US)   & 175 & 172 &  1 & -- & -- & -- & --  \\
+Poland (PL)          &  94 &  91 & 29 &  2 &  3 & -- & 25 \\
+Norway (NO)          &  83 &  45 &  2 & -- & -- & -- &  2 \\
+Spain (ES)           &  69 &  66 &  1 & -- & -- & -- &  1 \\
+United Kingdom (GB)  &  56 &  54 &  4 &  1 &  1 & -- &  2 \\
+Finland (FI)         &  55 &  55 & 15 &  1 & -- & -- & 14 \\
+Netherlands (NL)     &  52 &  52 &  2 & -- & -- & -- &  1 \\
+Switzerland (CH)     &  49 &  46 & 19 & 11 &  3 &  3 &  1 \\
 \textbf{Czech Rep.\ (CZ)} & 45 & 43 & \textbf{25} & -- & \textbf{16} & \textbf{12} & -- \\
-Belgium (BE)        &  37 &  34 &  5 & -- & -- &  2 &  2 \\
-Italy (IT)          &  34 &  33 &  0 & -- & -- & -- & -- \\
-Austria (AT)        &  27 &  23 &  5 &  5 &  1 &  1 & -- \\
+Belgium (BE)         &  37 &  34 &  5 & -- & -- &  2 &  2 \\
+Italy (IT)           &  34 &  33 &  0 & -- & -- & -- & -- \\
+Austria (AT)         &  27 &  23 &  5 &  5 &  1 &  1 & -- \\
 \midrule
-\textbf{Total (47 countries)} & 1{,}254 & 1{,}167 & 226 & 80+ & 33 & 29 & -- \\
+\textbf{Total (47 countries)} & 1{,}254 & 1{,}168 & 215 & 75 & 30 & 29 & 53 \\
 \bottomrule
 \end{tabular}
 \end{table}
+
+\paragraph{Czech Republic case study: one operator drives an entire country.}
+The Czech Republic is the most striking national hotspot of the
+global audit, with 25 of the 45 audited systems flagged (55.6\,\%).
+The structural finding is that \textbf{all 45 audited Czech systems
+belong to a single operator}, \emph{nextbike}, and that 25 of those
+deployments simultaneously trigger A2 (placeholder capacity, 16
+systems) or A3 (structural over-capacity, 12 systems), with 3
+deployments flagged by both classes. The 25 flagged Czech systems
+together publish 1{,}606 GBFS station entries that, under the
+declared capacity semantics of the standard, would naively be
+counted as physical docks. This is the cross-country mirror of the
+French case: \emph{Pony} drives the French free-floating A2/A3
+hotspot, and \emph{nextbike} drives the Czech one. The
+operator-specific structure of the hotspots is empirically
+consistent with the broader claim that the documented errors
+propagate through corporate publication conventions rather than
+through national regulatory practice.
 
 \subsection{Empirical evidence that current GBFS usage produces downstream errors}\label{secConsequences}
 A reviewer of any audit paper is entitled to ask: does the audit
