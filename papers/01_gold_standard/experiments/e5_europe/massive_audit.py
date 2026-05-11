@@ -202,6 +202,7 @@ def audit_system(row: dict) -> dict[str, Any]:
         "a5_macro_bbox_km2": None, "a5_macro_flag": None,
         "a6_zero_capacity_pct": None,
         "capacity_nan_pct": None,
+        "centroid_lat": None, "centroid_lon": None,
         "any_anomaly": None,
     }
     if not root_url:
@@ -292,6 +293,8 @@ def audit_system(row: dict) -> dict[str, Any]:
     if len(lats_in) > 2:
         mlat = sum(lats_in) / len(lats_in)
         mlon = sum(lons_in) / len(lons_in)
+        out["centroid_lat"] = round(mlat, 5)
+        out["centroid_lon"] = round(mlon, 5)
         slat = (sum((la - mlat) ** 2 for la in lats_in) / max(1, len(lats_in) - 1)) ** 0.5
         slon = (sum((lo - mlon) ** 2 for lo in lons_in) / max(1, len(lons_in) - 1)) ** 0.5
         outliers = 0
@@ -358,7 +361,8 @@ def main(max_systems: int | None = None, skip_fr: bool = True) -> None:
             "a4_out_of_perim", "a4_perim_pct", "a4_perim_flag",
             "a4_outliers",
             "a5_macro_bbox_km2", "a5_macro_hull_km2", "a5_macro_flag",
-            "a6_zero_capacity_pct", "capacity_nan_pct", "any_anomaly",
+            "a6_zero_capacity_pct", "capacity_nan_pct",
+            "centroid_lat", "centroid_lon", "any_anomaly",
             "root_url"]
     out_csv = HERE / "massive_audit_results.csv"
     with out_csv.open("w", newline="", encoding="utf-8") as f:

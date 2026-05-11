@@ -1,6 +1,6 @@
 {
   "total_audited": 1509,
-  "reachable": 1421,
+  "reachable": 1420,
   "with_stations": 917,
   "flagged_anomalies": 204,
   "by_country": {
@@ -21,9 +21,9 @@
       "reachable": 243,
       "flagged": 32,
       "anomalies": {
-        "a3_overcap_flag": 9,
         "a1_cars": 21,
         "a2_placeholder": 4,
+        "a3_overcap_flag": 9,
         "a5_macro_flag": 3
       }
     },
@@ -38,13 +38,13 @@
       "reachable": 91,
       "flagged": 28,
       "anomalies": {
-        "a2_placeholder": 3,
-        "a4_perim_flag": 25
+        "a4_perim_flag": 25,
+        "a2_placeholder": 3
       }
     },
     "NO": {
       "audited": 83,
-      "reachable": 46,
+      "reachable": 45,
       "flagged": 2,
       "anomalies": {
         "a4_perim_flag": 2
@@ -89,8 +89,8 @@
       "flagged": 15,
       "anomalies": {
         "a1_cars": 8,
-        "a3_overcap_flag": 3,
         "a2_placeholder": 3,
+        "a3_overcap_flag": 3,
         "a4_perim_flag": 1,
         "a5_macro_flag": 1
       }
@@ -100,8 +100,8 @@
       "reachable": 43,
       "flagged": 25,
       "anomalies": {
-        "a3_overcap_flag": 12,
-        "a2_placeholder": 16
+        "a2_placeholder": 16,
+        "a3_overcap_flag": 12
       }
     },
     "BE": {
@@ -304,7 +304,7 @@
       "flagged": 0,
       "anomalies": {}
     },
-    "MY": {
+    "MC": {
       "audited": 1,
       "reachable": 1,
       "flagged": 0,
@@ -316,7 +316,7 @@
       "flagged": 0,
       "anomalies": {}
     },
-    "MC": {
+    "MY": {
       "audited": 1,
       "reachable": 1,
       "flagged": 0,
@@ -336,13 +336,13 @@
         "a4_perim_flag": 1
       }
     },
-    "TR": {
+    "UA": {
       "audited": 1,
       "reachable": 1,
       "flagged": 0,
       "anomalies": {}
     },
-    "UA": {
+    "TR": {
       "audited": 1,
       "reachable": 1,
       "flagged": 0,
@@ -512,38 +512,14 @@
   "high_nan_systems": [
     {
       "country": "AT",
-      "name": "Dott Bregenz",
-      "stations": 98,
-      "nan_pct": 100.0
-    },
-    {
-      "country": "AE",
-      "name": "Dott Abu Dhabi",
-      "stations": 1433,
+      "name": "Dott Innsbruck",
+      "stations": 56,
       "nan_pct": 100.0
     },
     {
       "country": "AT",
-      "name": "Dott Feldkirchen bei Graz",
-      "stations": 25,
-      "nan_pct": 100.0
-    },
-    {
-      "country": "AT",
-      "name": "Dott Klagenfurt",
-      "stations": 46,
-      "nan_pct": 100.0
-    },
-    {
-      "country": "AE",
-      "name": "Dott Dubai",
-      "stations": 342,
-      "nan_pct": 100.0
-    },
-    {
-      "country": "AT",
-      "name": "Dott Baden bei Wien",
-      "stations": 47,
+      "name": "Dott Korneuburg",
+      "stations": 43,
       "nan_pct": 100.0
     },
     {
@@ -554,44 +530,26 @@
     },
     {
       "country": "AT",
-      "name": "Dott Innsbruck",
-      "stations": 56,
-      "nan_pct": 100.0
-    },
-    {
-      "country": "AE",
-      "name": "Dott Dubai Hills",
-      "stations": 7,
-      "nan_pct": 100.0
-    },
-    {
-      "country": "AE",
-      "name": "Dott Sharjah",
-      "stations": 38,
-      "nan_pct": 100.0
-    },
-    {
-      "country": "AT",
       "name": "Dott Dornbirn",
       "stations": 3,
       "nan_pct": 100.0
     },
     {
       "country": "AT",
-      "name": "Dott Korneuburg",
-      "stations": 43,
+      "name": "Dott Bregenz",
+      "stations": 98,
+      "nan_pct": 100.0
+    },
+    {
+      "country": "AE",
+      "name": "Dott Dubai",
+      "stations": 342,
       "nan_pct": 100.0
     },
     {
       "country": "AT",
-      "name": "Dott Linz",
-      "stations": 153,
-      "nan_pct": 100.0
-    },
-    {
-      "country": "AT",
-      "name": "Dott M\u00f6dling",
-      "stations": 68,
+      "name": "Dott Feldkirchen bei Graz",
+      "stations": 25,
       "nan_pct": 100.0
     },
     {
@@ -608,14 +566,56 @@
     },
     {
       "country": "AT",
+      "name": "Dott Klagenfurt",
+      "stations": 46,
+      "nan_pct": 100.0
+    },
+    {
+      "country": "AE",
+      "name": "Dott Sharjah",
+      "stations": 38,
+      "nan_pct": 100.0
+    },
+    {
+      "country": "AE",
+      "name": "Dott Dubai Hills",
+      "stations": 7,
+      "nan_pct": 100.0
+    },
+    {
+      "country": "AT",
+      "name": "Dott Linz",
+      "stations": 153,
+      "nan_pct": 100.0
+    },
+    {
+      "country": "AE",
+      "name": "Dott Abu Dhabi",
+      "stations": 1433,
+      "nan_pct": 100.0
+    },
+    {
+      "country": "AT",
       "name": "Dott Leoben",
       "stations": 46,
       "nan_pct": 100.0
     },
     {
       "country": "AT",
+      "name": "Dott M\u00f6dling",
+      "stations": 68,
+      "nan_pct": 100.0
+    },
+    {
+      "country": "AT",
       "name": "EVENTbike - Austria",
       "stations": 21,
+      "nan_pct": 100.0
+    },
+    {
+      "country": "AT",
+      "name": "Dott Baden bei Wien",
+      "stations": 47,
       "nan_pct": 100.0
     },
     {
@@ -638,14 +638,14 @@
     },
     {
       "country": "BE",
-      "name": "Dott Kortrijk",
-      "stations": 66,
+      "name": "Dott Brussels",
+      "stations": 2477,
       "nan_pct": 100.0
     },
     {
       "country": "BE",
-      "name": "Dott Brussels",
-      "stations": 2477,
+      "name": "Dott Kortrijk",
+      "stations": 66,
       "nan_pct": 100.0
     },
     {

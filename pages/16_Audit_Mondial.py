@@ -133,7 +133,8 @@ abstract_box(
 
 sidebar_nav()
 
-# ─── KPI ───────────────────────────────────────────────────────────────────────
+# ─── KPI (ligne 1) ─────────────────────────────────────────────────────────────
+n_total_stations = int(df_audit["stations"].fillna(0).sum())
 k1, k2, k3, k4 = st.columns(4)
 k1.metric("Systemes audites", f"{n_audited:,}",
           f"{n_reachable:,} reachables (HTTP 200)")
@@ -143,6 +144,178 @@ k3.metric("Flagues A1 a A5", f"{n_flagged}",
           f"{100 * n_flagged / n_with_data:.1f} % des exploitables")
 k4.metric("Pays couverts", f"{n_countries}",
           "europeens, americains, asiatiques")
+
+# ─── KPI (ligne 2) ─────────────────────────────────────────────────────────────
+k5, k6, k7, k8 = st.columns(4)
+k5.metric("Stations declarees (mondial)", f"{n_total_stations:,}",
+          "tous systemes confondus")
+k6.metric("Classes d'anomalie", "7",
+          "A1-A5 (corpus FR) + A6, A7 (audit mondial)")
+k7.metric("A7 candidate (non couvert par A1-A6)",
+          "215 syst. / 70 176 stations",
+          "Dott domine: 141 systemes")
+k8.metric("DOI Zenodo (catalogue FR)", "10.5281/zenodo.20125460",
+          "46 307 stations, ODbL v1.0")
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# Vue d'ensemble visuelle (avant les sections detaillees)
+# ═══════════════════════════════════════════════════════════════════════════════
+st.divider()
+section(0, "Vue d'ensemble visuelle du corpus audite")
+
+# ─── Carte mondiale des systemes audites ───────────────────────────────────────
+st.markdown(
+    f"**Carte 0.1 - {len(df_audit[df_audit['centroid_lat'].notna()]):,} "
+    "systemes GBFS geolocalises a travers le monde.** Chaque point est le "
+    "centroide d'un systeme GBFS audite ; le rayon est proportionnel a la "
+    "racine du nombre de stations declarees ; la couleur indique le verdict "
+    "de l'audit (rouge = flague par au moins une classe A1-A5, vert = "
+    "passe sans anomalie structurelle, gris = systeme reachable mais sans "
+    "station_information exploitable)."
+)
+
+map_df = df_audit.dropna(subset=["centroid_lat", "centroid_lon"]).copy()
+map_df["stations_int"] = map_df["stations"].fillna(0).astype(int)
+map_df["log_stations"] = (map_df["stations_int"].clip(lower=1)) ** 0.5
+map_df["statut"] = map_df["any_anomaly"].map(
+    {True: "Flague A1-A5", False: "Audit propre"}
+).fillna("Audit propre")
+map_df["info"] = (
+    map_df["name"].astype(str) + " (" + map_df["country"].astype(str)
+    + ") - " + map_df["stations_int"].astype(str) + " stations"
+)
+
+fig_map = px.scatter_geo(
+    map_df,
+    lat="centroid_lat",
+    lon="centroid_lon",
+    size="log_stations",
+    color="statut",
+    color_discrete_map={
+        "Audit propre": "#16A085",
+        "Flague A1-A5": "#C0392B",
+    },
+    hover_name="info",
+    projection="natural earth",
+    title=None,
+    size_max=30,
+    opacity=0.75,
+)
+fig_map.update_layout(
+    height=520, margin=dict(t=10, b=10, l=10, r=10),
+    legend=dict(orientation="h", yanchor="bottom", y=-0.05, xanchor="center", x=0.5),
+    geo=dict(
+        showcountries=True, countrycolor="#D5DBDB",
+        showcoastlines=True, coastlinecolor="#85929E",
+        showland=True, landcolor="#FBFCFC",
+        showocean=True, oceancolor="#EBF5FB",
+    ),
+)
+st.plotly_chart(fig_map, use_container_width=True)
+st.caption(
+    "Carte 0.1 - Repartition geographique des systemes GBFS du catalogue "
+    "MobilityData (centroides agreges par audit). La concentration "
+    "europeenne est immediatement visible ; le globe complet permet "
+    "neanmoins d'apprecier les deploiements en Amerique du Nord, "
+    "Moyen-Orient (Careem, Dott Dubai/Abu Dhabi) et quelques avant-postes "
+    "en Asie."
+)
+
+# ─── 4 graphiques d'overview en grille 2x2 ─────────────────────────────────────
+g1, g2 = st.columns(2)
+
+# (1) Entonnoir de selection
+with g1:
+    funnel = go.Figure(go.Funnel(
+        y=[
+            "Catalogue MobilityData (mondial)",
+            "Reachable (HTTP 200)",
+            "Publie station_information",
+            "Flague A1-A5",
+        ],
+        x=[n_audited, n_reachable, n_with_data, n_flagged],
+        textposition="inside",
+        textinfo="value+percent initial",
+        marker=dict(color=["#85929E", "#1A6FBF", "#5DADE2", "#C0392B"]),
+    ))
+    funnel.update_layout(
+        title="Figure 0.2 - Entonnoir de l'audit",
+        height=380, margin=dict(t=50, b=20, l=20, r=20),
+    )
+    st.plotly_chart(funnel, use_container_width=True)
+
+# (2) Distribution des classes A1-A5 detectees globalement
+with g2:
+    class_counts = pd.DataFrame({
+        "Classe": ["A1 cars", "A2 placeholder", "A3 over-cap",
+                   "A4 perim geo", "A5 macro region"],
+        "Systemes flagues": [n_a1, n_a2, n_a3, n_a4, n_a5],
+    })
+    fig_pie = px.bar(
+        class_counts.sort_values("Systemes flagues", ascending=True),
+        x="Systemes flagues", y="Classe", orientation="h",
+        text="Systemes flagues",
+        color="Systemes flagues",
+        color_continuous_scale="Reds",
+        title="Figure 0.3 - Decompte global par classe",
+    )
+    fig_pie.update_layout(
+        height=380, margin=dict(t=50, b=20, l=20, r=20),
+        coloraxis_showscale=False,
+    )
+    fig_pie.update_traces(textposition="outside")
+    st.plotly_chart(fig_pie, use_container_width=True)
+
+g3, g4 = st.columns(2)
+
+# (3) Top 10 systemes par nombre de stations declarees
+with g3:
+    top_sys = df_audit.dropna(subset=["stations"]).nlargest(15, "stations")[
+        ["name", "country", "stations"]
+    ].copy()
+    top_sys["label"] = top_sys["name"].str.slice(0, 28) + " (" + top_sys["country"] + ")"
+    fig_top = px.bar(
+        top_sys.sort_values("stations", ascending=True),
+        x="stations", y="label", orientation="h",
+        text="stations",
+        title="Figure 0.4 - Top 15 systemes par stations declarees",
+        color_discrete_sequence=["#1A6FBF"],
+    )
+    fig_top.update_layout(
+        height=420, margin=dict(t=50, b=20, l=20, r=20),
+        yaxis_title=None, xaxis_title="Stations declarees",
+    )
+    fig_top.update_traces(textposition="outside")
+    st.plotly_chart(fig_top, use_container_width=True)
+
+# (4) Distribution des effectifs (boxplot/histogramme log)
+with g4:
+    valid_n = df_audit["stations"].dropna()
+    valid_n = valid_n[valid_n > 0]
+    fig_hist = px.histogram(
+        valid_n, nbins=40, log_x=True,
+        title="Figure 0.5 - Distribution des effectifs de stations (log)",
+        color_discrete_sequence=["#5DADE2"],
+    )
+    fig_hist.update_layout(
+        height=420, margin=dict(t=50, b=20, l=20, r=20),
+        xaxis_title="Stations par systeme (echelle log)",
+        yaxis_title="Nombre de systemes",
+        showlegend=False,
+    )
+    st.plotly_chart(fig_hist, use_container_width=True)
+
+st.caption(
+    "Figures 0.2 a 0.5 - Vue d'ensemble du corpus audite : "
+    "l'entonnoir montre la perte progressive entre catalogue et "
+    "donnees exploitables ; la distribution par classe revele que "
+    "A4 et A2 dominent en volume ; le top 15 met en lumiere les "
+    "deploiements Dott Italy/Belgique/UAE qui depassent les 1000 "
+    "stations ; et la distribution log montre que la majorite des "
+    "systemes ont moins de 100 stations, avec une queue longue qui "
+    "porte le volume global."
+)
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
