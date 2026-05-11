@@ -1,7 +1,7 @@
 # Experiments for the Gold Standard paper
 
 This folder hosts the empirical validation experiments referenced by
-the *Future directions* subsection of the Gold Standard GBFS France
+the *Future directions* subsection of the GBFS France Audit Catalogue
 paper. Each experiment is **falsifiable** in the Popperian sense: it
 states a hypothesis, a re-executable protocol, an explicit success
 criterion, and (where available) a pilot result. Each experiment is

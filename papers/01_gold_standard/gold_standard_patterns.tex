@@ -1,4 +1,4 @@
-% Gold Standard GBFS France --- Patterns (Cell Press) submission draft
+% GBFS France Audit Catalogue --- Patterns (Cell Press) submission draft
 % Adapted from the SCITEPRESS conference version (gold_standard.tex)
 % Single-column article class; Cell Press editors typeset the final layout.
 
@@ -73,7 +73,7 @@ coverage) re-appear across operators and together reclassify
 \textbf{30.9\,\%} (95\,\% bootstrap CI [30.5, 31.3]) of the raw stations.
 We formalise a six-step idempotent purging protocol, hybridise its output
 with five reference sources (INSEE, BAAC, BD~TOPO, OpenStreetMap, FUB), and
-release the resulting \emph{Gold Standard GBFS France} dataset (46{,}307
+release the resulting \emph{GBFS France Audit Catalogue} dataset (46{,}307
 certified stations across 97 cities) as a versioned research commons under
 ODbL on Zenodo. A single anomaly (the A3 reclassification of the
 \emph{Pony} free-floating fleet in Bordeaux) is sufficient to move the city
@@ -106,7 +106,7 @@ research, not a substitute for one.
 \begin{highlights}
 \item Five anomaly classes reclassify 30.9\,\% of 67k raw GBFS stations
 \item Six-step idempotent, reversible audit pipeline released as open code
-\item Gold Standard dataset: 46{,}307 certified stations, 97 cities, FAIR
+\item Audit Catalogue dataset: 46{,}307 certified stations, 97 cities, FAIR
 \item Bordeaux drops from national rank 2 to rank 14 after one correction
 \end{highlights}
 
@@ -174,7 +174,7 @@ audit of all 123 French GBFS systems and stress-tested on two
 non-French systems (Bicing Barcelona, Oslo Bysykkel) which both pass
 the audit with zero anomalies under unchanged thresholds. Second, a
 six-step \textbf{purging protocol} whose every transformation is
-logged, reproducible and reversible. Third, the \textbf{Gold Standard
+logged, reproducible and reversible. Third, the \textbf{Audit Catalogue
 GBFS France} data product (46{,}307 certified stations, 97 cities),
 released as a versioned Parquet file with DOI
 \texttt{10.5281/zenodo.20125460} under ODbL, accompanied by its JSON
@@ -191,7 +191,7 @@ Section~\ref{secMethods} details the experimental procedures.
 \subsection{Anomaly taxonomy and incidence}
 The systematic audit of the 123 French GBFS systems uncovered five
 recurring anomaly classes, formalised in the \texttt{station\_type}
-column of the Gold Standard and summarised in
+column of the Audit Catalogue and summarised in
 Table~\ref{tab:anomalies}. Each class, in isolation, is sufficient to
 invalidate a non-audited cross-system comparison; the protocol that
 addresses them is given in Section~\ref{secMethods}.
@@ -241,7 +241,7 @@ Figure~\ref{fig:capacity-violin} as a bimodal capacity distribution.
 \includegraphics[width=0.75\linewidth]{fig02_capacity_violin.pdf}
 \caption{Empirical signature of the A3 floating-anchor bias. Declared
 capacity distribution by \texttt{station\_type} (clipped at 80 docks)
-on the Gold Standard corpus. Only dock-based stations exhibit a
+on the Audit Catalogue corpus. Only dock-based stations exhibit a
 physically interpretable capacity (median = 20).}
 \label{fig:capacity-violin}
 \end{figure}
@@ -265,7 +265,7 @@ explicitly; \emph{rejected} entries are kept in a separate
 \small
 \begin{tabular}{@{}lrr@{}}
 \toprule
-\textbf{Indicator} & \textbf{Raw} & \textbf{Gold Standard}\\
+\textbf{Indicator} & \textbf{Raw} & \textbf{Audit Catalogue}\\
 \midrule
 Inventoried GBFS systems            & 142 & 123 (certified)\\
 Cities covered                      & --  & 97 \\
@@ -307,7 +307,7 @@ The national IMD rank is reported for context (definition in
 \small
 \begin{tabular}{@{}lrr@{}}
 \toprule
-\textbf{Indicator} & \textbf{Raw GBFS} & \textbf{Gold Standard}\\
+\textbf{Indicator} & \textbf{Raw GBFS} & \textbf{Audit Catalogue}\\
 \midrule
 \textit{Pony Bordeaux subsystem} & & \\
 \quad \texttt{station\_information} entries & 2{,}996 & 2{,}996 (relabelled) \\
@@ -341,7 +341,7 @@ Figure~\ref{fig:bordeaux-before-after}.
 \includegraphics[width=0.9\linewidth]{fig04_bordeaux_before_after.pdf}
 \caption{Top twelve French urban areas ranked by absolute reduction in
 dock-based station count between the raw GBFS feed and the certified
-Gold Standard. Bordeaux exhibits the largest absolute drop
+Audit Catalogue. Bordeaux exhibits the largest absolute drop
 (9{,}921 raw entries down to 225 certified dock-based stations),
 driven by the reclassification of the \emph{Pony} free-floating fleet
 (A3). Paris and Lyon also see substantial corrections.}
@@ -378,11 +378,11 @@ schema-level rules to GBFS.
 
 \begin{table}[ht]
 \centering
-\caption{Measured comparison of the Gold Standard against three
+\caption{Measured comparison of the Audit Catalogue against three
 baselines on the same 123-system French GBFS corpus. Brackets are
 95\,\% confidence intervals (Wald on Dock, bootstrap on
 $\rho_{\text{FUB}}$ over cities $n=2{,}000$, Wilson on A1/A3). ``Dock''
-for the Gold Standard is the reference by construction.}
+for the Audit Catalogue is the reference by construction.}
 \label{tab:baselines}
 \small
 \begin{tabular}{@{}lcccc@{}}
@@ -402,7 +402,7 @@ MobilityData audit &
   0.15 \footnotesize[.15, .15] &
   0.19 \footnotesize[$-$.20, .52] &
   82\,\% \footnotesize[59, 94] & 0\,\% \\
-\textbf{Gold Standard} &
+\textbf{Audit Catalogue} &
   \textbf{1.00} &
   0.25 \footnotesize[$-$.13, .59] &
   \textbf{100\,\%} \footnotesize[82, 100] &
@@ -424,7 +424,7 @@ biased. Third, $\rho_{\text{FUB}}$ is highest on the raw count and
 drops after audit; this is not a defect but a feature: FUB captures
 perception of the entire cycling environment, so the raw count
 over-fits the perceptual signal by including virtual stations, while
-the Gold Standard's lower correlation reflects an honest count of
+the Audit Catalogue's lower correlation reflects an honest count of
 physical docks.
 
 \subsection{Internal robustness checks}\label{secInternal}
@@ -548,7 +548,7 @@ operator-side notification on regression, would close the loop between
 detection and correction. Star \cite{Star2010} reminds us that the
 most durable infrastructures are those whose governance is explicit,
 transparent and tied to an identifiable community of practice: moving
-the Gold Standard from author-led to community-led governance is an
+the Audit Catalogue from author-led to community-led governance is an
 institutional challenge as much as a scientific one.
 
 \subsection{Limitations}\label{secLimitations}
@@ -573,9 +573,9 @@ audited}. We have deliberately preserved free-floating entries in the
 release with an explicit \texttt{station\_type = free\_floating} label,
 so that downstream consumers can either exclude them or run their own
 free-floating-native audit (experiment E6, scheduled for 2027). A
-reader who interprets the Gold Standard as a fully-audited
+reader who interprets the Audit Catalogue as a fully-audited
 all-fleet-types dataset will be misled; the appropriate framing is
-\emph{Gold Standard for dock-based French BSS, with explicit
+\emph{Audit Catalogue for dock-based French BSS, with explicit
 free-floating annotation}.
 
 \textbf{L4 -- Operator coverage.} Some operators publish partial GBFS
@@ -645,7 +645,7 @@ E6 & Free-floating-native protocol              & L3                          & 
 \end{table}
 
 \subsection{Downstream use}
-The Gold Standard is not produced for its own sake but to unlock
+The Audit Catalogue is not produced for its own sake but to unlock
 analyses that the raw feed would not support. Four families of
 downstream studies illustrate the expected return on investment:
 composite-index work (the companion IMD paper \cite{Fosse2026imd} is
@@ -683,7 +683,7 @@ that process; its provenance and rejected candidates ship with the
 audit report.
 
 \subsection{Six-step purging protocol}
-The transition from the raw feed to the Gold Standard proceeds through
+The transition from the raw feed to the Audit Catalogue proceeds through
 a chain of six sequential transformations (Algorithm~\ref{alg:purge}),
 each coded in \texttt{utils/data\_loader.py} and logged in an audit
 report shipped alongside the dataset. The protocol is deliberately
@@ -770,7 +770,7 @@ FUB Barometer  & municipal score &
 \end{table}
 
 \subsection{Released schema}\label{secSchema}
-The Gold Standard Parquet exposes 30 columns documented in
+The Audit Catalogue Parquet exposes 30 columns documented in
 Table~\ref{tab:schema}: 14 from the raw GBFS payload (preserved
 verbatim or normalised), 7 from the audit pipeline (typed,
 \emph{station\_type} enum, audit status), 4 from spatial-equity
@@ -793,7 +793,7 @@ marked $^\ast$ are derived from external sources.}
 \textbf{Column} & \textbf{Type} & \textbf{Source / Description} & \textbf{Compl.}\\
 \midrule
 \multicolumn{4}{l}{\textit{Identifiers (5)}}\\
-\quad\texttt{uid}              & string  & Gold Standard primary key                 & 100\,\%\\
+\quad\texttt{uid}              & string  & Audit Catalogue primary key                 & 100\,\%\\
 \quad\texttt{station\_id}       & string  & GBFS native identifier                    & 100\,\%\\
 \quad\texttt{system\_id}        & string  & Operator-system identifier                & 100\,\%\\
 \quad\texttt{system\_name}      & string  & Operator-system label                     & 100\,\%\\
@@ -845,7 +845,7 @@ marked $^\ast$ are derived from external sources.}
 \end{table}
 
 \subsection{Reproducibility infrastructure}
-The Gold Standard is released in alignment with the four FAIR
+The Audit Catalogue is released in alignment with the four FAIR
 principles \cite{Wilkinson2016}. \emph{Findable:} primary deposit on
 Zenodo under concept DOI \texttt{10.5281/zenodo.20125460}, with one
 DOI per SemVer-tagged release (current 1.0.0, dated 2026-05); mirrored
@@ -883,7 +883,7 @@ directed to and will be fulfilled by the lead contact, Rohan Foss\'e
 
 \paragraph{Materials availability.} This study did not generate new
 physical materials. The released artefact is the
-\emph{Gold Standard GBFS France} dataset, a derivative of public open
+\emph{GBFS France Audit Catalogue} dataset, a derivative of public open
 data.
 
 \paragraph{Data and code availability.}

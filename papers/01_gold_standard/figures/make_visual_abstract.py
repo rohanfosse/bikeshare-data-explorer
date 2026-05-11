@@ -1,12 +1,12 @@
 """
-Generate the Patterns visual abstract for the Gold Standard GBFS France paper.
+Generate the Patterns visual abstract for the GBFS France Audit Catalogue paper.
 
 Output: fig00_visual_abstract.pdf  (and .png for journal preview)
 
 Layout (single-pane, ~square):
   - Top:    Raw input (142 GBFS feeds, ~67k stations)
   - Middle: 6-step audit pipeline + 5 anomaly classes
-  - Bottom: Certified Gold Standard (46,307 stations / 97 cities / 5 enrichment sources)
+  - Bottom: Certified Audit Catalogue (46,307 stations / 97 cities / 5 enrichment sources)
   - Side:   Headline result (Bordeaux rank 2 -> 14)
 """
 from __future__ import annotations
@@ -50,7 +50,7 @@ def make_figure():
     ax.set_aspect("equal"); ax.axis("off")
 
     # Title
-    text(ax, 50, 97.0, "Gold Standard GBFS France", fs=15.5, weight="bold", color=DARK)
+    text(ax, 50, 97.0, "GBFS France Audit Catalogue", fs=15.5, weight="bold", color=DARK)
     text(ax, 50, 93.7, "An auditable, versioned reference dataset for the 123 French bike-sharing feeds",
          fs=9.6, color=GREY, style="italic")
 
@@ -129,9 +129,9 @@ def make_figure():
 
     arrow(ax, 50, 32.7, 50, 29.0, color=DARK, lw=2.0)
 
-    # ---- BOTTOM : Gold Standard output
+    # ---- BOTTOM : Audit Catalogue output
     rounded_box(ax, 6, 11.5, 60, 16.5, fc="#E8F1FB", ec=PRIMARY, lw=1.5)
-    text(ax, 36, 25.0, "Gold Standard GBFS France  v1.0", fs=12.0, weight="bold", color=DARK)
+    text(ax, 36, 25.0, "GBFS France Audit Catalogue  v1.0", fs=12.0, weight="bold", color=DARK)
     text(ax, 36, 22.0, "DOI 10.5281/zenodo.20125460  ·  ODbL  ·  Croissant + DCAT-AP + JSON Schema",
          fs=7.9, color=GREY, style="italic")
 

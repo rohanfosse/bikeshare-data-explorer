@@ -1,4 +1,4 @@
-% Gold Standard GBFS France --- Scientific Data Descriptor submission draft
+% GBFS France Audit Catalogue --- Scientific Data Descriptor submission draft
 % Adapted from the Patterns version (gold_standard_patterns.tex).
 % Format: Background & Summary | Methods | Data Records | Technical Validation
 %         | Usage Notes | Code Availability
@@ -31,7 +31,7 @@
 \newcommand{\eg}{\emph{e.g.}}
 \newcommand{\etc}{etc.}
 
-\title{\bfseries\sffamily\Large Gold Standard GBFS France: a versioned, audited
+\title{\bfseries\sffamily\Large GBFS France Audit Catalogue: a versioned, audited
 reference dataset of 46{,}307 bike-sharing stations from 123 French operators}
 
 \author[1]{Rohan Foss\'e\thanks{Corresponding author: \texttt{rfosse@cesi.fr}}}
@@ -49,7 +49,7 @@ used by French micromobility operators to publish station-level data
 on the national portal \emph{transport.data.gouv.fr}. Although the
 publication is regulated and the syntax is shared, the semantics of
 GBFS feeds vary substantially across operators, which limits their
-direct use in research. We release the Gold Standard GBFS France
+direct use in research. We release the GBFS France Audit Catalogue
 dataset, a versioned and audited national catalogue of 46{,}307
 bike-sharing stations spanning 123 operators and 97 cities, enriched
 with five reference sources (INSEE Filosofi, BAAC, BD~TOPO,
@@ -95,7 +95,7 @@ incompatible with urban analysis (overseas, macro-regional). On the
 French corpus, these classes affect 22 of the 123 systems and 30.9\,\%
 of the raw stations (95\,\% bootstrap CI [30.5, 31.3]).
 
-We release the \emph{Gold Standard GBFS France} dataset, which
+We release the \emph{GBFS France Audit Catalogue} dataset, which
 re-publishes the French national catalogue after applying a
 documented six-step purging pipeline that addresses A1--A5. The
 released artefact contains 46{,}307 stations across 97 cities, of
@@ -274,7 +274,7 @@ mobility-research practice.
 \section{Data Records}\label{secRecords}
 
 \subsection{Repository structure}
-The Gold Standard is deposited on Zenodo under concept DOI
+The Audit Catalogue is deposited on Zenodo under concept DOI
 \texttt{10.5281/zenodo.20125460}. Each tagged release receives its
 own version DOI, while the concept DOI always resolves to the latest
 release. The current release is v1.0.0, dated 2026-05.
@@ -287,7 +287,7 @@ Face Datasets and Kaggle.
 
 \begin{table}[ht]
 \centering
-\caption{Files included in the Gold Standard v1.0.0 release on Zenodo.}
+\caption{Files included in the Audit Catalogue v1.0.0 release on Zenodo.}
 \label{tab:files}
 \small
 \begin{tabular}{@{}llrl@{}}
@@ -324,7 +324,7 @@ derived from external sources.
 \textbf{Column} & \textbf{Type} & \textbf{Source / Description} & \textbf{Compl.}\\
 \midrule
 \multicolumn{4}{l}{\textit{Identifiers (5)}}\\
-\quad\texttt{uid}                & string  & Gold Standard primary key                 & 100\,\%\\
+\quad\texttt{uid}                & string  & Audit Catalogue primary key                 & 100\,\%\\
 \quad\texttt{station\_id}         & string  & GBFS native identifier                    & 100\,\%\\
 \quad\texttt{system\_id}          & string  & Operator-system identifier                & 100\,\%\\
 \quad\texttt{system\_name}        & string  & Operator-system label                     & 100\,\%\\
@@ -483,7 +483,7 @@ schema-level rules to GBFS.
 
 \begin{table}[ht]
 \centering
-\caption{Comparison of the Gold Standard against three baseline audit
+\caption{Comparison of the Audit Catalogue against three baseline audit
 strategies on the same French GBFS corpus. Brackets are 95\,\%
 confidence intervals (Wald on Dock, bootstrap on
 $\rho_{\text{FUB}}$ over cities $n=2{,}000$, Wilson on A1/A3).}
@@ -497,7 +497,7 @@ $\rho_{\text{FUB}}$ over cities $n=2{,}000$, Wilson on A1/A3).}
 Raw GBFS                 & 0.12 \footnotesize[.12, .12] & 0.38 \footnotesize[.01, .68] & 0\,\% & 0\,\%\\
 \texttt{vehicle\_type}    & 0.15 \footnotesize[.15, .15] & 0.19 \footnotesize[$-$.20, .52] & 82\,\% \footnotesize[59, 94] & 0\,\%\\
 MobilityData audit       & 0.15 \footnotesize[.15, .15] & 0.19 \footnotesize[$-$.20, .52] & 82\,\% \footnotesize[59, 94] & 0\,\%\\
-\textbf{Gold Standard}   & \textbf{1.00} & 0.25 \footnotesize[$-$.13, .59] & \textbf{100\,\%} \footnotesize[82, 100] & \textbf{100\,\%} \footnotesize[91, 100]\\
+\textbf{Audit Catalogue}   & \textbf{1.00} & 0.25 \footnotesize[$-$.13, .59] & \textbf{100\,\%} \footnotesize[82, 100] & \textbf{100\,\%} \footnotesize[91, 100]\\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -531,7 +531,7 @@ the subsystem and agglomeration levels.}
 \small
 \begin{tabular}{@{}lrr@{}}
 \toprule
-\textbf{Indicator} & \textbf{Raw GBFS} & \textbf{Gold Standard}\\
+\textbf{Indicator} & \textbf{Raw GBFS} & \textbf{Audit Catalogue}\\
 \midrule
 \textit{Pony Bordeaux subsystem} & & \\
 \quad \texttt{station\_information} entries & 2{,}996 & 2{,}996 (relabelled) \\
@@ -552,7 +552,7 @@ the subsystem and agglomeration levels.}
 \includegraphics[width=0.9\linewidth]{fig04_bordeaux_before_after.pdf}
 \caption{Twelve French urban areas with the largest absolute
 reduction in dock-based station count between the raw GBFS feed and
-the certified Gold Standard.}
+the certified Audit Catalogue.}
 \label{fig:bordeaux-before-after}
 \end{figure}
 
@@ -622,7 +622,7 @@ audited}. Free-floating entries are preserved in the release with an
 explicit \texttt{station\_type = free\_floating} label, so that
 downstream consumers can either exclude them with a single column
 filter or run their own free-floating-native audit. The appropriate
-framing of the v1.0 release is therefore \emph{Gold Standard for
+framing of the v1.0 release is therefore \emph{Audit Catalogue for
 dock-based French BSS, with explicit free-floating annotation}.
 
 \textbf{L4 -- Operator coverage.} Some operators publish partial GBFS
@@ -706,7 +706,7 @@ to Zenodo via the GitHub--Zenodo integration.
 % ===================================================================
 \section*{Data Availability}\label{secData}
 
-The Gold Standard GBFS France dataset is archived on Zenodo under
+The GBFS France Audit Catalogue dataset is archived on Zenodo under
 concept DOI \texttt{10.5281/zenodo.20125460} (current release 1.0.0,
 2026-05). Each tagged release receives its own version DOI. The
 dataset is licensed under the Open Database Licence v1.0 (ODbL-1.0);

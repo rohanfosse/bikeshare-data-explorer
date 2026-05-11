@@ -25,7 +25,7 @@
 \begin{document}
 
 \title{\uppercase{Auditing Open GBFS Feeds at Country Scale:\\
-The Gold Standard GBFS France Protocol and Dataset}}
+The GBFS France Audit Catalogue Protocol and Dataset}}
 
 \author{\authorname{Rohan Foss\'e\sup{1} and
 Ga\"el Pallares\sup{2}}
@@ -51,7 +51,7 @@ critical anomaly classes is established, a six-step purging
 protocol is formalised, and a multi-source hybridisation scheme
 is proposed that reconciles the raw GBFS feed with the INSEE,
 BAAC, FUB, BD~TOPO and OpenStreetMap reference sources. The
-resulting product, the Gold Standard GBFS France (46{,}307
+resulting product, the GBFS France Audit Catalogue (46{,}307
 certified stations, 57 urban areas), is released openly as a
 research commons. The Bordeaux case study illustrates the
 operational impact of data quality: correcting a single anomaly
@@ -159,7 +159,7 @@ First, an empirically-grounded taxonomy of five anomaly classes
 (A1--A5), built from the audit of all 122 French GBFS systems.
 Second, a six-step purging protocol, fully automated, whose every
 transformation is logged, reproducible and reversible. Third, the
-Gold Standard GBFS France data product (46{,}307 certified
+GBFS France Audit Catalogue data product (46{,}307 certified
 stations spanning 57 urban areas), released as a versioned
 Parquet file under an open licence and accompanied by its schema
 and audit report. Fourth, a validation roadmap of six falsifiable
@@ -184,7 +184,7 @@ validation roadmap, and Section~\ref{secConclusion} concludes.
 
 The systematic audit of the 122 French GBFS systems uncovered
 five recurring anomaly classes, formalised in the
-\texttt{station\_type} column of the Gold Standard and summarised
+\texttt{station\_type} column of the Audit Catalogue and summarised
 in Table~\ref{tab:anomalies}. The five classes are not artefacts
 of an ad-hoc set of validation rules but rather structural
 features that re-appear across operators, geographies and
@@ -223,7 +223,7 @@ collapsed into A3) and ``A7-cross-border duplicate''
 (rejected because no instance was found on the French corpus).
 The current five-class taxonomy is the artefact of that process;
 its provenance and the rejected candidates are part of the audit
-report shipped with the Gold Standard.
+report shipped with the Audit Catalogue.
 
 \begin{table*}[ht]
 \centering
@@ -322,19 +322,19 @@ illustration, Table~\ref{tab:json-example} shows a typical
 \emph{Pony} station record \emph{before} and \emph{after} the
 purging pipeline: the GBFS payload itself is left untouched, but
 the \texttt{station\_type}, \texttt{capacity\_corrected} and
-\texttt{audit\_status} fields of the Gold Standard schema make
+\texttt{audit\_status} fields of the Audit Catalogue schema make
 the semantic shift explicit.
 
 \begin{table}[ht]
 \centering
 \caption{Worked example of the A3 correction on a single
 \emph{Pony} record. Left: raw GBFS \texttt{station\_information}
-entry. Right: corresponding Gold Standard row.}
+entry. Right: corresponding Audit Catalogue row.}
 \label{tab:json-example}
 \smalll
 \begin{tabular}{@{}p{0.46\linewidth}p{0.46\linewidth}@{}}
 \toprule
-\textbf{Raw GBFS (extract)} & \textbf{Gold Standard row}\\
+\textbf{Raw GBFS (extract)} & \textbf{Audit Catalogue row}\\
 \midrule
 \verb|"station_id": "pony_33_a91"| &
 \verb|station_id = pony_33_a91|\\
@@ -359,7 +359,7 @@ entry. Right: corresponding Gold Standard row.}
     \includegraphics[width=0.48\textwidth]{fig02_capacity_violin.pdf}
     \caption{Empirical signature of the A3 floating-anchor bias.
     Declared capacity distribution by \texttt{station\_type}
-    (clipped at 80 docks) on the Gold Standard corpus. Only
+    (clipped at 80 docks) on the Audit Catalogue corpus. Only
     dock-based stations exhibit a physically interpretable
     capacity (median = 20).}
     \label{fig:capacity-violin}
@@ -395,7 +395,7 @@ protocol with its own thresholds and contextual variables.
 \section{\uppercase{Six-Step Purging Protocol}}
 \label{secProtocol}
 
-The transition from the raw feed to the Gold Standard proceeds
+The transition from the raw feed to the Audit Catalogue proceeds
 through a chain of six sequential transformations
 (Algorithm~\ref{alg:purge}), each transformation being coded in
 \texttt{utils/data\_loader.py} and logged in an audit report
@@ -477,7 +477,7 @@ and are no longer informative for cross-city comparison
 
 The output of the purging stage is only a starting point. Indeed,
 in order to support downstream analyses that go beyond the count
-of certified stations, the Gold Standard enriches each station
+of certified stations, the Audit Catalogue enriches each station
 with a contextual profile obtained by articulating five reference
 sources (Table~\ref{tab:sources}). Hybridisation is performed
 either by spatial joining (point-in-polygon, buffer queries) or
@@ -547,7 +547,7 @@ variables exceed the threshold, and missing values remain below
     \centering
     \includegraphics[width=0.48\textwidth]{fig05_completeness.pdf}
     \caption{Empirical completeness of contextual enrichment per
-    derived variable on the dock-based subset of the Gold Standard
+    derived variable on the dock-based subset of the Audit Catalogue
     ($n = 5{,}442$).}
     \label{fig:completeness}
 \end{figure}
@@ -579,7 +579,7 @@ corpus.}\label{tab:overview}
 \small
 \begin{tabular}{@{}lrr@{}}
 \toprule
-\textbf{Indicator} & \textbf{Raw} & \textbf{Gold Standard}\\
+\textbf{Indicator} & \textbf{Raw} & \textbf{Audit Catalogue}\\
 \midrule
 Inventoried systems    & 122 & 122 \\
 Retained systems       &  -- &  85 \\
@@ -637,7 +637,7 @@ any such ranking.
     \includegraphics[width=0.85\textwidth]{fig04_bordeaux_before_after.pdf}
     \caption{Top twelve French urban areas ranked by relative
     reduction in dock-based station count between the raw GBFS
-    feed and the certified Gold Standard. Bordeaux exhibits the
+    feed and the certified Audit Catalogue. Bordeaux exhibits the
     largest absolute drop (9{,}921 to 225), driven by the
     reclassification of the \emph{Pony} free-floating fleet (A3).
     Paris and Lyon also see substantial corrections.}
@@ -689,7 +689,7 @@ and a non-audited pipeline conflates them.
 A natural question, often raised by reviewers, is whether the
 full purging pipeline is justified or whether simpler heuristics
 would suffice. Three baselines are therefore evaluated against
-the certified Gold Standard
+the certified Audit Catalogue
 (Table~\ref{tab:baselines}). The \emph{Raw GBFS} baseline
 ingests \texttt{station\_information} as is and counts every
 entry as a dock-based station. The \emph{vehicle\_type filter}
@@ -698,17 +698,17 @@ keep only systems whose name does not advertise a non-bike fleet
 (\eg \emph{Citiz} car-sharing). The \emph{MobilityData audit}
 adapts the canonical GTFS-realtime schema-level rules to GBFS
 and additionally drops stations with invalid coordinates. The
-Gold Standard label is the reference by construction, so a
+Audit Catalogue label is the reference by construction, so a
 ``Dock'' score of 1.0 for it is tautological and reported for
 calibration only.
 
 \begin{table}[ht]
 \centering
-\caption{Measured comparison of the Gold Standard against three
+\caption{Measured comparison of the Audit Catalogue against three
 baselines on the same 122-system French GBFS corpus. Brackets are
 95\,\% confidence intervals (Wald on Dock, bootstrap on
 $\rho_{\text{FUB}}$ over cities $n=2000$, Wilson on A1/A3).
-``Dock'' for the Gold Standard is the reference by
+``Dock'' for the Audit Catalogue is the reference by
 construction.}
 \label{tab:baselines}
 \smalll
@@ -735,7 +735,7 @@ MobilityData audit &
   0.19 \footnotesize[$-$.20, .52] &
   82\,\% \footnotesize[59, 94] &
   0\,\% \\
-\textbf{Gold Standard} &
+\textbf{Audit Catalogue} &
   \textbf{1.00} &
   0.25 \footnotesize[$-$.13, .59] &
   \textbf{100\,\%} \footnotesize[82, 100] &
@@ -762,7 +762,7 @@ is highest on the raw count and \emph{drops} after audit. This
 is not a defect: the FUB cycling barometer captures perception
 of the entire cycling environment (including free-floating
 fleets), so the raw count over-fits the perceptual signal by
-including virtual stations. The Gold Standard's lower
+including virtual stations. The Audit Catalogue's lower
 $\rho_{\text{FUB}}$ reflects an honest count of physical docks
 and is the appropriate input for downstream studies that need
 to separate \emph{dock-based infrastructure} from \emph{any
@@ -772,7 +772,7 @@ shared-bike presence}.
 \label{secReproducibility}
 
 \paragraph{FAIR alignment}
-The Gold Standard is released in alignment with the four FAIR
+The Audit Catalogue is released in alignment with the four FAIR
 principles \cite{Wilkinson2016}. \emph{Findable}: the dataset is
 deposited on Zenodo with a permanent DOI and Dublin Core
 metadata. \emph{Accessible}: it is distributed in the open
@@ -788,7 +788,7 @@ source code, which together support an end-to-end reproduction
 of the production pipeline.
 
 \paragraph{Versioning}
-Every release of the Gold Standard carries a semantic version
+Every release of the Audit Catalogue carries a semantic version
 number (Major.Minor.Patch) and a Git hash that uniquely
 identifies the pipeline that produced it
 (Table~\ref{tab:versions}). This is not a cosmetic convention:
@@ -799,7 +799,7 @@ explicit and traceable.
 
 \begin{table}[ht]
 \centering
-\caption{Versioning of the Gold Standard GBFS France.}
+\caption{Versioning of the GBFS France Audit Catalogue.}
 \label{tab:versions}
 \small
 \begin{tabular}{@{}lll@{}}
@@ -843,7 +843,7 @@ functions and one collector class.
 
 \begin{table}[ht]
 \centering
-\caption{Engineering footprint of the Gold Standard release
+\caption{Engineering footprint of the Audit Catalogue release
 on a commodity laptop (single core, no parallelisation).}
 \label{tab:engineering-footprint}
 \small
@@ -895,7 +895,7 @@ governance body that decides on schema evolutions, mediates
 between contributors and resolves classification conflicts. Star
 \cite{Star2010} has shown that the most durable infrastructures
 are those whose governance is explicit, transparent and tied to
-an identifiable community of practice. The Gold Standard as
+an identifiable community of practice. The Audit Catalogue as
 released today is, de facto, governed by the authors of the
 pipeline: this situation is acceptable as a transitional state,
 but it is inadequate in the medium term. Moving to a shared
@@ -949,7 +949,7 @@ operator community could adopt voluntarily, without waiting for
 a schema revision.
 
 \paragraph{Downstream use cases}
-The Gold Standard is not produced for its own sake but to unlock
+The Audit Catalogue is not produced for its own sake but to unlock
 a class of analyses that the raw feed would not support. Four
 families of downstream studies illustrate the expected return on
 investment. The first is \emph{composite-index work} -- the
@@ -959,7 +959,7 @@ multimodality and safety variables at the station level inherits
 the same audit. The second is \emph{demand modelling and
 forecasting}: graph-based neural networks
 \cite{Lin2018BSSGraph} are extremely sensitive to false
-\emph{station} nodes introduced by A3, and the Gold Standard
+\emph{station} nodes introduced by A3, and the Audit Catalogue
 removes that confound without changing the operator-level data
 pipeline. The third is \emph{spatial-equity analysis}, where the
 hybridisation with INSEE Filosofi opens the kind of
@@ -1223,7 +1223,7 @@ sufficient to invalidate any non-audited comparative ranking, as
 emblematically illustrated by Bordeaux's shift from rank 2 to
 rank 14 after correcting a single anomaly. Beyond this empirical
 diagnosis, three practical lessons can be drawn for the
-community. First, the production of a Gold Standard is neither a
+community. First, the production of an Audit Catalogue is neither a
 standalone product nor a methodological complement to a main
 study: by demonstrating that nearly one third of the corpus is
 re-classified by audit, the present work shows that the data
@@ -1236,7 +1236,7 @@ audit handbook, a working group and a continuous validation chain
 would be necessary first steps in that direction. Third, while
 the present version of the protocol is technically operational,
 the validation roadmap of Section~\ref{secExperiments} is what
-would move the Gold Standard from a descriptive artefact to a
+would move the Audit Catalogue from a descriptive artefact to a
 certifiable infrastructure, and any failure on one of its six
 experiments should be read as an invitation to revise the
 protocol in public rather than to defend it in private.
@@ -1244,7 +1244,7 @@ protocol in public rather than to defend it in private.
 \section*{Usage Examples}
 \label{secUsage}
 
-To make the Gold Standard immediately actionable for new users,
+To make the Audit Catalogue immediately actionable for new users,
 three concrete reuse patterns are documented below. Each can be
 copy-pasted into a Jupyter notebook and run in under a second on
 a commodity laptop; complete notebooks are released alongside
@@ -1298,7 +1298,7 @@ direct operational signal for transit planning:
 \texttt{~~(gs.gtfs\_heavy\_stops\_300m == 0)]}\\
 \texttt{deserts.city.value\_counts().head(10)}
 \end{quote}
-On the certified Gold Standard, this three-condition filter
+On the certified Audit Catalogue, this three-condition filter
 recovers $1{,}041$ stations, \ie $19.1\,\%$ of the dock-based
 corpus, with a Q1 income threshold of 18{,}860\,EUR per
 consumption unit. Figure~\ref{fig:mobility-deserts} shows the
@@ -1324,7 +1324,7 @@ infrastructure-poor cities.
 \end{figure}
 
 \section*{Data Availability}
-The Gold Standard GBFS France data product is released openly
+The GBFS France Audit Catalogue data product is released openly
 and is deposited on three complementary channels that together
 satisfy the FAIR principles for research data.
 
@@ -1367,7 +1367,7 @@ Licence (ODbL v1.0); the code is released under the MIT
 licence. Derivative datasets are required to redistribute the
 ODbL terms and to cite the concept DOI.
 
-\emph{Citation.} Authors using the Gold Standard are kindly
+\emph{Citation.} Authors using the Audit Catalogue are kindly
 asked to cite the concept DOI alongside the present paper. A
 \texttt{CITATION.cff} file is provided at the root of the
 GitHub repository so that the citation can be exported in
