@@ -1,0 +1,42 @@
+brand,system_id,n_stations,n_cities,cap_nan_pct,cap_unique_nonzero,cap_mean,cap_std,pattern
+bird,bird-bordeaux,3152,1,100.0,0,0.0,0.0,NaN (no capacity reported)
+bird,bird-marseille,803,1,100.0,0,0.0,0.0,NaN (no capacity reported)
+bird,bird-laval,83,1,100.0,0,0.0,0.0,NaN (no capacity reported)
+bird,bird-millau,75,1,100.0,0,0.0,0.0,NaN (no capacity reported)
+bird,bird-larochesuryon,69,1,100.0,0,0.0,0.0,NaN (no capacity reported)
+bird,bird-sarreguemines,64,1,100.0,0,0.0,0.0,NaN (no capacity reported)
+bird,bird-draguignan,63,1,100.0,0,0.0,0.0,NaN (no capacity reported)
+bird,bird-montlucon,62,1,100.0,0,0.0,0.0,NaN (no capacity reported)
+bird,bird-gap,50,1,100.0,0,0.0,0.0,NaN (no capacity reported)
+bird,bird-vichy,46,1,100.0,0,0.0,0.0,NaN (no capacity reported)
+bird,bird-ajaccio,32,1,100.0,0,0.0,0.0,NaN (no capacity reported)
+dott,dott-paris,14747,1,100.0,0,0.0,0.0,NaN (no capacity reported)
+dott,dott-bordeaux,3449,1,100.0,0,0.0,0.0,NaN (no capacity reported)
+dott,dott-lyon,1404,1,100.0,0,0.0,0.0,NaN (no capacity reported)
+dott,dott-gpseo,351,1,100.0,0,0.0,0.0,NaN (no capacity reported)
+dott,dott-siemu,117,1,100.0,0,0.0,0.0,NaN (no capacity reported)
+dott,dott-versailles-grand-parc,79,1,100.0,0,0.0,0.0,NaN (no capacity reported)
+dott,dott-bourgoin-jallieu,69,1,100.0,0,0.0,0.0,NaN (no capacity reported)
+dott,dott-ol-vallee,8,1,100.0,0,0.0,0.0,NaN (no capacity reported)
+other,mvelo_plus_grenoble,127,1,100.0,0,0.0,0.0,NaN (no capacity reported)
+other,zebullo,63,1,0.0,12,10.97,5.91,Capacity-profile estimator (conditional-averaging)
+other,knot_strasbourg,25,1,0.0,3,7.84,2.94,Small fleet-profile estimator
+other,chantrerie,16,1,0.0,7,14.0,5.19,Capacity-profile estimator (conditional-averaging)
+pony,pony_paris,3617,1,0.2,9,1.63,0.77,Per-vehicle ratio (<2 bikes/station)
+pony,pony_bordeaux,2996,1,99.8,6,15.0,11.73,NaN (no capacity reported)
+pony,pony_Angers,1223,1,99.3,3,4.12,2.47,NaN (no capacity reported)
+pony,pony_Perpignan,1029,1,99.8,2,2.5,0.71,NaN (no capacity reported)
+pony,pony_Basque_Country,497,1,100.0,0,0.0,0.0,NaN (no capacity reported)
+pony,pony_Nice,412,1,0.0,1,100.0,0.0,Single placeholder value
+pony,pony_poitiers,393,1,98.5,4,4.83,2.4,NaN (no capacity reported)
+pony,pony_Bourges,377,1,100.0,0,0.0,0.0,NaN (no capacity reported)
+pony,pony_Evry,212,1,100.0,0,0.0,0.0,NaN (no capacity reported)
+pony,pony_Herouville,209,1,100.0,0,0.0,0.0,NaN (no capacity reported)
+pony,pony_Lorient,203,1,100.0,0,0.0,0.0,NaN (no capacity reported)
+pony,pony_Limoges,154,1,99.4,1,6.0,0.0,NaN (no capacity reported)
+pony,pony_La_Roche_Sur_Yon,81,1,100.0,0,0.0,0.0,NaN (no capacity reported)
+pony,pony_Beauvais,62,1,100.0,0,0.0,0.0,NaN (no capacity reported)
+voi,voi_Marseille,1267,1,0.0,4,5.22,8.29,Small fleet-profile estimator
+voi,voi_Grenoble,697,1,0.0,4,9.73,1.99,Small fleet-profile estimator
+voi,voi_Le_Havre,470,1,0.0,11,9.12,6.03,Mixed/unclear pattern
+voi,voi_SQY,382,1,0.0,12,8.03,3.45,Mixed/unclear pattern

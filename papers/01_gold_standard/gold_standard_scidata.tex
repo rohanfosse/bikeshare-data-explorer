@@ -594,6 +594,79 @@ These two negative controls do not establish full European
 transferability, but they document that A1--A5 does not over-fit the
 French market.
 
+\subsection{Documented errors traceable to unaudited GBFS usage}\label{secConsequences}
+A natural question for a Data Descriptor is whether the documented
+anomalies have measurable downstream consequences, or whether they
+are a theoretical concern that no real user has yet encountered. The
+following four observations are drawn from the same audit on the
+French corpus and document concrete errors that propagate when GBFS
+is ingested without the present audit.
+
+\paragraph{Semantic fragmentation of the same field across operators.}
+On the 39{,}235 free-floating entries of the French corpus, the
+GBFS \texttt{station\_information.capacity} field is populated
+according to at least six mutually incompatible semantics
+(Table~\ref{tab:capacity-semantics}). A downstream consumer who
+applies a single arithmetic to the field (\eg \texttt{df.capacity.sum()})
+aggregates six different quantities into one number. This is not a
+theoretical hazard: it affects 84.7\,\% of the certified rows.
+
+\begin{table}[ht]
+\centering
+\caption{Six observed semantics of the GBFS
+\texttt{station\_information.capacity} field on the French
+free-floating corpus, by operator brand. Total = 39{,}235 stations.}
+\label{tab:capacity-semantics}
+\small
+\begin{tabular}{@{}llrrl@{}}
+\toprule
+\textbf{Operator} & \textbf{Cities} & \textbf{Stations} & \textbf{Reported $\bar c$} & \textbf{Semantics}\\
+\midrule
+Dott         & 8  & 20{,}224 & NaN  & Capacity left unfilled \\
+Bird         & 11 &  4{,}499 & NaN  & Capacity left unfilled \\
+Pony (Nice)  & 1  &     412  & 100  & Constant placeholder (A2) \\
+Pony (Paris) & 1  &  3{,}617 & 1.6  & Per-vehicle ratio \\
+Pony (Bordeaux, Angers, \dots) & 12 &  7{,}436 & 2--15 & Conditional fleet profile (A3) \\
+Voi          & 4  &  2{,}816 & 5--10 & Small fleet-profile estimator \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Same standard, correct usage exists.}
+The semantic fragmentation is not inherent to GBFS but operator-
+specific. Beryl London (UK, hybrid free-floating) publishes
+\emph{zero} entries in \texttt{station\_information} and reports all
+vehicles in \texttt{free\_bike\_status}, which is the canonical
+GBFS v2/v3 pattern for free-floating fleets. Beryl therefore avoids
+the A3 anti-pattern entirely. The presence of a working positive
+control demonstrates that the documented errors are propagated by
+the absence of an audit tier between operator publication and
+academic use, not by the GBFS schema itself.
+
+\paragraph{Existing validators do not catch the errors.}
+The official MobilityData GBFS Validator
+\cite{MobilityData2024Validator} returns no error on any of the 22
+systems flagged by A1--A5, because the anomalies are at the
+semantic rather than syntactic level. The schema-level baseline
+reported in Table~\ref{tab:baselines} reaches $0\,\%$ recall on A3,
+which makes the gap empirically measurable: a production-grade
+schema audit will pass a free-floating fleet labelled as
+\texttt{station\_information}, and only a semantically-aware step on
+the capacity distribution recovers it.
+
+\paragraph{Downstream rankings are sensitive.}
+The audit corrections reorder city-level rankings used by public
+policy. The Bordeaux agglomeration moves from rank 2 to rank 14
+in the national IMD soft-mobility ranking \cite{Fosse2026imd} after
+the A3 correction on the \emph{Pony Bordeaux} subsystem alone
+(Table~\ref{tab:bordeaux}). The Spearman correlation between dock
+count and the FUB Cycling Barometer drops from
+$\rho = 0.38$ (raw) to $\rho = 0.25$ (audited)
+(Table~\ref{tab:baselines}); the raw correlation over-fits
+the FUB perceptual signal by counting virtual stations as if they
+were physical infrastructure. Any analysis that takes raw counts
+as input and produces a city-level conclusion inherits these biases.
+
 % ===================================================================
 \section{Usage Notes}\label{secUsage}
 

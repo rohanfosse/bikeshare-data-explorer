@@ -1,0 +1,287 @@
+{
+  "total_freefloating": 39235,
+  "brands_observed": [
+    "bird",
+    "dott",
+    "other",
+    "pony",
+    "voi"
+  ],
+  "per_brand": [
+    {
+      "brand": "bird",
+      "n_systems": 11,
+      "n_stations": 4499,
+      "n_cities": 11,
+      "patterns": "NaN (no capacity reported)"
+    },
+    {
+      "brand": "dott",
+      "n_systems": 8,
+      "n_stations": 20224,
+      "n_cities": 8,
+      "patterns": "NaN (no capacity reported)"
+    },
+    {
+      "brand": "other",
+      "n_systems": 4,
+      "n_stations": 231,
+      "n_cities": 4,
+      "patterns": "Capacity-profile estimator (conditional-averaging), NaN (no capacity reported), Small fleet-profile estimator"
+    },
+    {
+      "brand": "pony",
+      "n_systems": 14,
+      "n_stations": 11465,
+      "n_cities": 14,
+      "patterns": "NaN (no capacity reported), Per-vehicle ratio (<2 bikes/station), Single placeholder value"
+    },
+    {
+      "brand": "voi",
+      "n_systems": 4,
+      "n_stations": 2816,
+      "n_cities": 4,
+      "patterns": "Mixed/unclear pattern, Small fleet-profile estimator"
+    }
+  ],
+  "capacity_use_patterns_observed": [
+    "Capacity-profile estimator (conditional-averaging)",
+    "Mixed/unclear pattern",
+    "NaN (no capacity reported)",
+    "Per-vehicle ratio (<2 bikes/station)",
+    "Single placeholder value",
+    "Small fleet-profile estimator"
+  ],
+  "key_findings": {
+    "Pony": [
+      {
+        "system_id": "pony_paris",
+        "n_stations": 3617,
+        "cap_mean": 1.63,
+        "pattern": "Per-vehicle ratio (<2 bikes/station)"
+      },
+      {
+        "system_id": "pony_bordeaux",
+        "n_stations": 2996,
+        "cap_mean": 15.0,
+        "pattern": "NaN (no capacity reported)"
+      },
+      {
+        "system_id": "pony_Angers",
+        "n_stations": 1223,
+        "cap_mean": 4.12,
+        "pattern": "NaN (no capacity reported)"
+      },
+      {
+        "system_id": "pony_Perpignan",
+        "n_stations": 1029,
+        "cap_mean": 2.5,
+        "pattern": "NaN (no capacity reported)"
+      },
+      {
+        "system_id": "pony_Basque_Country",
+        "n_stations": 497,
+        "cap_mean": 0.0,
+        "pattern": "NaN (no capacity reported)"
+      },
+      {
+        "system_id": "pony_Nice",
+        "n_stations": 412,
+        "cap_mean": 100.0,
+        "pattern": "Single placeholder value"
+      },
+      {
+        "system_id": "pony_poitiers",
+        "n_stations": 393,
+        "cap_mean": 4.83,
+        "pattern": "NaN (no capacity reported)"
+      },
+      {
+        "system_id": "pony_Bourges",
+        "n_stations": 377,
+        "cap_mean": 0.0,
+        "pattern": "NaN (no capacity reported)"
+      },
+      {
+        "system_id": "pony_Evry",
+        "n_stations": 212,
+        "cap_mean": 0.0,
+        "pattern": "NaN (no capacity reported)"
+      },
+      {
+        "system_id": "pony_Herouville",
+        "n_stations": 209,
+        "cap_mean": 0.0,
+        "pattern": "NaN (no capacity reported)"
+      },
+      {
+        "system_id": "pony_Lorient",
+        "n_stations": 203,
+        "cap_mean": 0.0,
+        "pattern": "NaN (no capacity reported)"
+      },
+      {
+        "system_id": "pony_Limoges",
+        "n_stations": 154,
+        "cap_mean": 6.0,
+        "pattern": "NaN (no capacity reported)"
+      },
+      {
+        "system_id": "pony_La_Roche_Sur_Yon",
+        "n_stations": 81,
+        "cap_mean": 0.0,
+        "pattern": "NaN (no capacity reported)"
+      },
+      {
+        "system_id": "pony_Beauvais",
+        "n_stations": 62,
+        "cap_mean": 0.0,
+        "pattern": "NaN (no capacity reported)"
+      }
+    ],
+    "Dott": [
+      {
+        "system_id": "dott-paris",
+        "n_stations": 14747,
+        "cap_nan_pct": 100.0,
+        "pattern": "NaN (no capacity reported)"
+      },
+      {
+        "system_id": "dott-bordeaux",
+        "n_stations": 3449,
+        "cap_nan_pct": 100.0,
+        "pattern": "NaN (no capacity reported)"
+      },
+      {
+        "system_id": "dott-lyon",
+        "n_stations": 1404,
+        "cap_nan_pct": 100.0,
+        "pattern": "NaN (no capacity reported)"
+      },
+      {
+        "system_id": "dott-gpseo",
+        "n_stations": 351,
+        "cap_nan_pct": 100.0,
+        "pattern": "NaN (no capacity reported)"
+      },
+      {
+        "system_id": "dott-siemu",
+        "n_stations": 117,
+        "cap_nan_pct": 100.0,
+        "pattern": "NaN (no capacity reported)"
+      },
+      {
+        "system_id": "dott-versailles-grand-parc",
+        "n_stations": 79,
+        "cap_nan_pct": 100.0,
+        "pattern": "NaN (no capacity reported)"
+      },
+      {
+        "system_id": "dott-bourgoin-jallieu",
+        "n_stations": 69,
+        "cap_nan_pct": 100.0,
+        "pattern": "NaN (no capacity reported)"
+      },
+      {
+        "system_id": "dott-ol-vallee",
+        "n_stations": 8,
+        "cap_nan_pct": 100.0,
+        "pattern": "NaN (no capacity reported)"
+      }
+    ],
+    "Bird": [
+      {
+        "system_id": "bird-bordeaux",
+        "n_stations": 3152,
+        "cap_nan_pct": 100.0,
+        "pattern": "NaN (no capacity reported)"
+      },
+      {
+        "system_id": "bird-marseille",
+        "n_stations": 803,
+        "cap_nan_pct": 100.0,
+        "pattern": "NaN (no capacity reported)"
+      },
+      {
+        "system_id": "bird-laval",
+        "n_stations": 83,
+        "cap_nan_pct": 100.0,
+        "pattern": "NaN (no capacity reported)"
+      },
+      {
+        "system_id": "bird-millau",
+        "n_stations": 75,
+        "cap_nan_pct": 100.0,
+        "pattern": "NaN (no capacity reported)"
+      },
+      {
+        "system_id": "bird-larochesuryon",
+        "n_stations": 69,
+        "cap_nan_pct": 100.0,
+        "pattern": "NaN (no capacity reported)"
+      },
+      {
+        "system_id": "bird-sarreguemines",
+        "n_stations": 64,
+        "cap_nan_pct": 100.0,
+        "pattern": "NaN (no capacity reported)"
+      },
+      {
+        "system_id": "bird-draguignan",
+        "n_stations": 63,
+        "cap_nan_pct": 100.0,
+        "pattern": "NaN (no capacity reported)"
+      },
+      {
+        "system_id": "bird-montlucon",
+        "n_stations": 62,
+        "cap_nan_pct": 100.0,
+        "pattern": "NaN (no capacity reported)"
+      },
+      {
+        "system_id": "bird-gap",
+        "n_stations": 50,
+        "cap_nan_pct": 100.0,
+        "pattern": "NaN (no capacity reported)"
+      },
+      {
+        "system_id": "bird-vichy",
+        "n_stations": 46,
+        "cap_nan_pct": 100.0,
+        "pattern": "NaN (no capacity reported)"
+      },
+      {
+        "system_id": "bird-ajaccio",
+        "n_stations": 32,
+        "cap_nan_pct": 100.0,
+        "pattern": "NaN (no capacity reported)"
+      }
+    ],
+    "Voi": [
+      {
+        "system_id": "voi_Marseille",
+        "n_stations": 1267,
+        "cap_mean": 5.22,
+        "pattern": "Small fleet-profile estimator"
+      },
+      {
+        "system_id": "voi_Grenoble",
+        "n_stations": 697,
+        "cap_mean": 9.73,
+        "pattern": "Small fleet-profile estimator"
+      },
+      {
+        "system_id": "voi_Le_Havre",
+        "n_stations": 470,
+        "cap_mean": 9.12,
+        "pattern": "Mixed/unclear pattern"
+      },
+      {
+        "system_id": "voi_SQY",
+        "n_stations": 382,
+        "cap_mean": 8.03,
+        "pattern": "Mixed/unclear pattern"
+      }
+    ]
+  }
+}

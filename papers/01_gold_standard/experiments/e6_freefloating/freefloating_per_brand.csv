@@ -1,0 +1,6 @@
+brand,n_systems,n_stations,n_cities,patterns
+bird,11,4499,11,NaN (no capacity reported)
+dott,8,20224,8,NaN (no capacity reported)
+other,4,231,4,"Capacity-profile estimator (conditional-averaging), NaN (no capacity reported), Small fleet-profile estimator"
+pony,14,11465,14,"NaN (no capacity reported), Per-vehicle ratio (<2 bikes/station), Single placeholder value"
+voi,4,2816,4,"Mixed/unclear pattern, Small fleet-profile estimator"
