@@ -94,9 +94,9 @@ This article makes the case that syntactic standardisation, on its own,
 hides systematic errors that can flip the ranking of cities by an order
 of magnitude, and proposes a reproducible audit pipeline backed by a
 versioned reference dataset. The contribution is methodological as much
-as empirical: any open mobility standard --- GBFS today, transit feeds,
+as empirical: any open mobility standard (GBFS today, transit feeds,
 charging-station feeds and shared-mobility-data-specification feeds
-tomorrow --- benefits from a community-maintained validation tier
+tomorrow) benefits from a community-maintained validation tier
 between regulatory publication and academic use. The 123-system French
 corpus is a stress test of that idea, and the audit numbers documented
 here support a broader conclusion: an open feed is a starting point for
@@ -248,9 +248,9 @@ physically interpretable capacity (median = 20).}
 
 \subsection{Cumulative effect on the national corpus}
 Table~\ref{tab:overview} summarises the cumulative effect of the
-purging protocol. Across the country, 20{,}693 stations --- precisely
+purging protocol. Across the country, 20{,}693 stations, precisely
 $30.9\,\%$ of the raw corpus (95\,\% bootstrap CI [30.5, 31.3],
-$n = 10{,}000$ resamples on systems) --- are reassigned, removed or
+$n = 10{,}000$ resamples on systems), are reassigned, removed or
 reclassified. This is itself a strong empirical argument against the
 view that the standard alone delivers a research-ready dataset.
 
@@ -324,7 +324,7 @@ The national IMD rank is reported for context (definition in
 \end{tabular}
 \end{table}
 
-The purging protocol --- and in particular S3 (A3 correction) ---
+The purging protocol, and in particular step S3 (the A3 correction),
 reclassifies the 2{,}996 Pony entries as \texttt{free\_floating},
 recomputes their actual capacity to 0.03 bike per entry, and leaves
 the 225 genuinely dock-based stations of the historical \emph{V\'elo
@@ -359,7 +359,7 @@ Nice's national rank moves out of the top quartile. \emph{Strasbourg}
 provides the canonical A1 case: the \emph{Citiz Grand Est} car-sharing
 system was historically ingested as part of the city's BSS inventory,
 inflating the station count by roughly $35\,\%$. After semantic
-exclusion, the agglomeration drops from rank 6 to rank 5 --- a smaller
+exclusion, the agglomeration drops from rank 6 to rank 5, a smaller
 absolute move than Bordeaux but on a more discriminating part of the
 ranking. A1, A2 and A3 are therefore not interchangeable: each one
 distorts the ranking through a different mechanism (false positive on
@@ -418,7 +418,7 @@ validators by construction. Only a semantically-aware step on the
 capacity distribution can recover it. Second, the
 \emph{vehicle\_type filter} and the \emph{MobilityData audit} baselines
 produce identical numbers on this corpus, because schema-level checks
-do not catch anything that the name filter did not already exclude ---
+do not catch anything that the name filter did not already exclude:
 French GBFS feeds are syntactically well-formed but semantically
 biased. Third, $\rho_{\text{FUB}}$ is highest on the raw count and
 drops after audit; this is not a defect but a feature: FUB captures
@@ -522,8 +522,8 @@ Oslo: \{\texttt{bicycle}\}), so no A1 false positive is triggered
 either. Third, perimeter and topological filters caught only a
 handful of edge outliers (1 station in Bicing, 3 in Oslo), in line
 with what would be expected from any GPS-anchored fleet. These two
-negative controls do not establish full European transferability ---
-that requires the country-by-country E1 of the full E5 experiment ---
+negative controls do not establish full European transferability
+(that requires the country-by-country E1 of the full E5 experiment),
 but they make it more difficult to argue that A1--A5 is over-fit to
 the French market.
 
