@@ -16,3 +16,31 @@ data/raw/TAM_MMM_*.csv
 
 # Données traitées volumineuses (> 50 MB)
 data/processed/TAM_MMM_*
+
+# -------------------------------------------------------------------------
+# LaTeX build artifacts (papers/)
+# -------------------------------------------------------------------------
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.log
+*.lot
+*.nav
+*.out
+*.run.xml
+*.snm
+*.synctex.gz
+*.toc
+*.vrb
+*.xdv
+# Compiled PDFs of working papers (regenerate locally) but keep figures
+papers/**/*.pdf
+!papers/**/figures/**/*.pdf
+
+# Stale artifacts from previous file names (renamed 2026-05)
+papers/01_gold_standard/papier-gold-standard.*
+papers/02_imd/papier-imd.*
