@@ -189,12 +189,17 @@ def audit_system(row: dict) -> dict[str, Any]:
         return out
 
     # Vehicle form factors -> A1
+    # A1 triggers when at least one vehicle_type has a true automobile
+    # form factor. The match must be EXACT against the GBFS v3
+    # vocabulary; substring matching incorrectly catches
+    # "cargo_bicycle" (cargo bike, not car).
     if vt_url:
         vt = fetch_json(vt_url) or {}
         vtypes = (vt.get("data") or {}).get("vehicle_types") or []
         forms = sorted({(v.get("form_factor") or "?") for v in vtypes})
         out["vehicle_form_factors"] = ",".join(forms)
-        out["a1_cars"] = any("car" in f for f in forms)
+        # GBFS v3 reserves "car" for automobiles.
+        out["a1_cars"] = "car" in forms
 
     # Capacity stats
     caps = []

@@ -77,8 +77,10 @@ the raw French stations. We formalise a six-step idempotent purging
 protocol and release the resulting \emph{GBFS France Audit
 Catalogue} (46{,}307 stations, 97 cities) on Zenodo. We then apply
 the same rule set to the 1{,}254 non-French GBFS systems of the
-MobilityData canonical catalogue and observe that 215 systems
-across 47 countries trigger at least one anomaly class. The Czech
+MobilityData canonical catalogue and observe that 173 systems
+across 47 countries trigger at least one anomaly class, with a
+candidate sixth class (A6, zero-capacity dock) emerging from the
+audit on 14 non-French systems. The Czech
 Republic is the European hotspot: 25 of 45 audited systems
 (55.6\,\%) are flagged, all of them deployments of a single
 operator (nextbike), exactly mirroring the operator-specific
@@ -113,9 +115,9 @@ starting point for research, not a substitute for one.
 \end{bigpicture}
 
 \begin{highlights}
-\item Audit of 1{,}377 GBFS systems across 47 countries flags 22+215 systems
+\item Audit of 1{,}377 GBFS systems across 47 countries flags 195 systems
 \item One operator drives each country: nextbike in Czechia, Pony in France
-\item Single GBFS field carries six incompatible semantics across operators
+\item Six anomaly classes; A6 (zero-capacity dock) emerges from global audit
 \item Audit Catalogue (46{,}307 stations) FAIR-released, code reproducible
 \end{highlights}
 
@@ -207,20 +209,23 @@ addresses them is given in Section~\ref{secMethods}.
 
 \begin{table}[ht]
 \centering
-\caption{Five GBFS anomaly classes observed on the French corpus
-(2025--2026). Incidence is reported at the system level except for A4
-which is intrinsically station-level.}
+\caption{Six GBFS anomaly classes observed on the French (FR) and
+the global non-French (Global) corpora. A1--A5 are part of the
+original taxonomy; A6 was discovered during the global audit and is
+formalised in Section~\ref{secA6Formalisation}. Incidence is at the
+system level except where noted.}
 \label{tab:anomalies}
 \small
-\begin{tabular}{@{}llll@{}}
+\begin{tabular}{@{}lllrr@{}}
 \toprule
-\textbf{Class} & \textbf{Name} & \textbf{Signature} & \textbf{Incidence}\\
+\textbf{Class} & \textbf{Name} & \textbf{Signature} & \textbf{FR} & \textbf{Global}\\
 \midrule
-A1 & Out-of-domain inclusion & Car-sharing advertised as BSS & 14 systems\\
-A2 & Placeholder capacity & Constant non-zero $c_i$, \eg $c = 100$ & 3 systems\\
-A3 & Structural over-capacity & Conditional averaging on free-floating & 8 systems\\
-A4 & Geospatial error & Transposed coords; $>3\sigma$ outliers; out-of-FR & $\sim 3.8\,\%$ of stations\\
-A5 & Out of perimeter & System area $>50{,}000$\,km$^2$; overseas & 5 systems\\
+A1 & Out-of-domain inclusion       & Car-sharing advertised as BSS                  & 14         & 29        \\
+A2 & Placeholder capacity          & Constant non-zero $c_i$, \eg $c = 100$         &  3         & 34        \\
+A3 & Structural over-capacity      & Conditional averaging on free-floating         &  8         & 29        \\
+A4 & Geospatial error              & Transposed coords; $>3\sigma$ outliers; OOA    & $\sim$3.8\,\% stns & 78 systems\\
+A5 & Out of perimeter              & System area $>50{,}000$\,km$^2$; overseas      &  5         & 17        \\
+A6 & Zero-capacity dock (candidate)& $\geq 1\,\%$ of stations declare $c = 0$       &  0         & 14        \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -533,29 +538,35 @@ either. Third, perimeter and topological filters caught only a
 handful of edge outliers (1 station in Bicing, 3 in Oslo, 1 in Bergen), in line
 with what would be expected from any GPS-anchored fleet.
 
+\label{secGlobalAudit}%
 To turn the negative-control argument into a positive one, the rule
 set was then applied to the entire MobilityData canonical catalogue:
 1{,}254 non-French GBFS systems across 47 countries. 1{,}168
 (93.1\,\%) were reachable, 773 publish a
-\texttt{station\_information} document, and \textbf{215 systems
+\texttt{station\_information} document, and \textbf{173 systems
 trigger at least one A1--A5 class} after country-perimeter
-calibration (Table~\ref{tab:global-audit}). A3 (structural
-over-capacity) is detected on 29 non-French systems concentrated in
-Czech Republic (12) and Germany (9); A2 (placeholder capacity) on
-30 non-French systems with Czech Republic again the hotspot (16);
-A1 (out-of-domain car-sharing labelled as BSS) on 75 non-French
-systems concentrated in the DACH region (Germany 58, Switzerland 11,
-Austria 5). Operator-level anti-patterns also travel internationally:
-\emph{Dott} publishes \texttt{capacity = NaN} on every non-French
-deployment observed (Austria, UAE; 18 systems), and \emph{Bird} does
-the same on three Canadian deployments. The cross-country audit also
-surfaces a candidate sixth anomaly class, A6 (zero-capacity dock),
-exemplified by PBSC HQ (Canada, 18.2\,\%), Beryl Greater Manchester
-(UK, 10.5\,\%), MonaBike (Monaco, 6.8\,\%) and Citi Bike NYC (US,
-2.4\,\%). The empirical conclusion is that the documented
-anti-patterns are not French-specific but global, and the protocol
-generalises to a 1{,}254-system corpus with no methodological
-recalibration.
+calibration and after correcting a substring-matching false positive
+in the A1 detector (the GBFS form factor \texttt{cargo\_bicycle}
+contains the string \texttt{car} and was initially flagged as A1;
+the fix tightens A1 to exact list membership on the GBFS v3 form
+factor enum). The corrected breakdown is shown in
+Table~\ref{tab:global-audit}.
+
+A3 (structural over-capacity) is detected on 29 non-French systems
+concentrated in Czech Republic (12) and Germany (9); A2 (placeholder
+capacity) on 34 non-French systems with Czech Republic again the
+hotspot (16); A1 (out-of-domain car-sharing labelled as BSS) on 29
+non-French systems concentrated in the DACH region (Germany 21,
+Switzerland 8). Operator-level anti-patterns also travel
+internationally: \emph{Dott} publishes \texttt{capacity = NaN} on
+every non-French deployment observed (Austria, UAE; 18 systems),
+and \emph{Bird} does the same on three Canadian deployments. The
+cross-country audit also surfaces a candidate sixth anomaly class,
+\textbf{A6 (zero-capacity dock)}, formalised in
+Section~\ref{secA6Formalisation}. The empirical conclusion is that
+the documented anti-patterns are not French-specific but global,
+and the protocol generalises to a 1{,}254-system corpus with no
+methodological recalibration.
 
 \begin{table}[ht]
 \centering
@@ -574,21 +585,23 @@ shown.}
 \textbf{Country} & \textbf{Audited} & \textbf{Reach.} & \textbf{Flagged}
    & \textbf{A1} & \textbf{A2} & \textbf{A3} & \textbf{A4 geo}\\
 \midrule
-Germany (DE)         & 251 & 243 & 64 & 58 &  4 &  9 &  -- \\
-United States (US)   & 175 & 172 &  1 & -- & -- & -- & --  \\
-Poland (PL)          &  94 &  91 & 29 &  2 &  3 & -- & 25 \\
-Norway (NO)          &  83 &  45 &  2 & -- & -- & -- &  2 \\
+Germany (DE)         & 251 & 243 & 33 & 21 &  4 &  9 & -- \\
+United States (US)   & 175 & 172 &  1 & -- & -- & -- & -- \\
+Poland (PL)          &  94 &  91 & 28 & -- &  3 & -- & 25 \\
+Norway (NO)          &  83 &  46 &  2 & -- & -- & -- &  2 \\
 Spain (ES)           &  69 &  66 &  1 & -- & -- & -- &  1 \\
-United Kingdom (GB)  &  56 &  54 &  4 &  1 &  1 & -- &  2 \\
-Finland (FI)         &  55 &  55 & 15 &  1 & -- & -- & 14 \\
+United Kingdom (GB)  &  56 &  54 &  3 & -- &  1 & -- &  2 \\
+Finland (FI)         &  55 &  55 & 14 & -- & -- & -- & 14 \\
 Netherlands (NL)     &  52 &  52 &  2 & -- & -- & -- &  1 \\
-Switzerland (CH)     &  49 &  46 & 19 & 11 &  3 &  3 &  1 \\
+Switzerland (CH)     &  49 &  46 & 16 &  8 &  3 &  3 &  1 \\
 \textbf{Czech Rep.\ (CZ)} & 45 & 43 & \textbf{25} & -- & \textbf{16} & \textbf{12} & -- \\
 Belgium (BE)         &  37 &  34 &  5 & -- & -- &  2 &  2 \\
 Italy (IT)           &  34 &  33 &  0 & -- & -- & -- & -- \\
-Austria (AT)         &  27 &  23 &  5 &  5 &  1 &  1 & -- \\
+Austria (AT)         &  27 &  23 &  1 & -- &  1 &  1 & -- \\
+Slovakia (SK)        &  19 &  19 & 16 & -- & -- & -- & 16 \\
+Sweden (SE)          &  23 &  23 & 12 & -- & -- & -- & 12 \\
 \midrule
-\textbf{Total (47 countries)} & 1{,}254 & 1{,}168 & 215 & 75 & 30 & 29 & 53 \\
+\textbf{Total (47 countries)} & 1{,}254 & 1{,}168 & 173 & 29 & 34 & 29 & 78 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -610,6 +623,22 @@ operator-specific structure of the hotspots is empirically
 consistent with the broader claim that the documented errors
 propagate through corporate publication conventions rather than
 through national regulatory practice.
+
+\paragraph{Germany: how the audit caught itself.}
+The German case carries a methodological lesson. An initial run of
+the global audit flagged 64 of the 251 German systems, of which 58
+under A1 (out-of-domain car-sharing). Manual inspection of the
+flagged systems revealed that the A1 detector relied on substring
+matching (\texttt{"car" in form\_factor}) and incorrectly fired on
+the GBFS v3 form factor \texttt{cargo\_bicycle}, a cargo bike. After
+tightening A1 to exact list membership on the GBFS v3 form factor
+enum, the German count drops to 21 systems (Conficars, Stadtmobil,
+TeilAuto Greater Stuttgart, Ford Carsharing, Flinkster and similar
+brands) and the global flag count from 215 to 173. The episode
+illustrates two complementary points: open audit pipelines need
+their own audit (the rule of A1 was rule-level brittle), and the
+underlying signal is genuine (21 real car-sharing systems in
+Germany are still labelled as bike-sharing on national portals).
 
 \subsection{Empirical evidence that current GBFS usage produces downstream errors}\label{secConsequences}
 A reviewer of any audit paper is entitled to ask: does the audit
@@ -899,6 +928,33 @@ threshold $N_{\min} = 20$ dock-based stations is calibrated on the
 literature of meshed networks: below this value, density and
 connectivity metrics become noise-dominated and are no longer
 informative for cross-city comparison \cite{Saberi2018}.
+
+\subsection{A6 (candidate): zero-capacity dock formalisation}\label{secA6Formalisation}
+The global audit of Section~\ref{secGlobalAudit} surfaced a recurring
+pattern not covered by A1--A5: a non-trivial fraction of stations in
+\texttt{station\_information} declare \texttt{capacity = 0}. Because
+the GBFS schema reserves \texttt{station\_information} for physical
+infrastructure and provides \texttt{station\_status} for transient
+counts, a non-virtual physical station with zero docks is
+semantically inconsistent. The candidate signature is therefore:
+\begin{equation}
+\#\{i \,:\, c_i = 0 \,\land\, \mathtt{is\_virtual\_station}(i) \neq \mathtt{true}\}
+\;\geq\; \tau_{A6} \cdot |\mathcal{S}_s|,
+\end{equation}
+with $\tau_{A6} = 0.01$ as a conservative first threshold. On the
+1{,}254-system global corpus, 14 systems exceed 1\,\% zero-capacity
+declarations: PBSC HQ (Canada, 18.2\,\%), Beryl Greater Manchester
+(UK, 10.5\,\%), MonaBike (Monaco, 6.8\,\%), Bicicoru\~na (Spain,
+5.9\,\%), MBajk (Slovenia, 4.8\,\%), CyclOcity (Japan, 4.2\,\%),
+\`aV\'elo (Canada, 3.5\,\%), Careem BIKE (UAE, 2.7\,\%), Citi Bike
+NYC (US, 2.4\,\%), MiBiciTuBici (Argentina, 2.0\,\%) and four others
+between 1.1 and 1.8\,\%. On the French corpus, no dock-based system
+exceeds the threshold (0/65 systems with $c = 0$). A6 is reported as
+candidate because the threshold $\tau_{A6}$, the interaction with
+\texttt{is\_virtual\_station} (only required by GBFS v3) and the
+operational consequence for downstream consumers all warrant the
+inter-rater human validation of experiment E1, which is currently
+calibrated on A1--A5 only.
 
 \subsection{Multi-source hybridisation}
 The output of the purging stage enriches each station with a
