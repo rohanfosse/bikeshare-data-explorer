@@ -50,7 +50,7 @@
   \end{itemize}\par\medskip}
 
 \title{\bfseries\sffamily\Large Auditing Open Mobility Feeds at Country and Global Scale:\\
-1{,}254 GBFS Systems, Five Anomaly Classes and One Operator-Specific Hotspot per Country}
+1{,}509 GBFS Systems, Seven Anomaly Classes and One Operator-Specific Hotspot per Country}
 
 \author[1]{Rohan Foss\'e\thanks{Lead contact: \texttt{rfosse@cesi.fr}}}
 \author[2]{Ga\"el Pallares}
@@ -185,10 +185,12 @@ audited reference dataset at the scale of a country. The present paper
 fills that gap for the French case.
 
 The contributions are fourfold. First, an empirically-grounded
-\textbf{taxonomy} of five anomaly classes (A1--A5), derived from the
-audit of all 123 French GBFS systems and stress-tested on two
-non-French systems (Bicing Barcelona, Oslo Bysykkel, Bergen Bysykkel)
-which all pass the audit with zero anomalies under unchanged thresholds. Second, a
+\textbf{taxonomy} of seven anomaly classes (A1--A5 plus the two
+candidate classes A6 and A7 discovered through the global extension),
+derived from the audit of all 123 French GBFS systems and stress-tested
+on three non-French systems (Bicing Barcelona, Oslo Bysykkel, Bergen
+Bysykkel) which all pass the audit with zero anomalies under unchanged
+thresholds. Second, a
 six-step \textbf{purging protocol} whose every transformation is
 logged, reproducible and reversible. Third, the \textbf{Audit Catalogue
 GBFS France} data product (46{,}307 certified stations, 97 cities),
@@ -214,11 +216,12 @@ addresses them is given in Section~\ref{secMethods}.
 
 \begin{table}[ht]
 \centering
-\caption{Six GBFS anomaly classes observed on the French (FR) and
+\caption{Seven GBFS anomaly classes observed on the French (FR) and
 the global non-French (Global) corpora. A1--A5 are part of the
-original taxonomy; A6 was discovered during the global audit and is
-formalised in Section~\ref{secA6Formalisation}. Incidence is at the
-system level except where noted.}
+original taxonomy; A6 and A7 were discovered during the global audit
+and are formalised in Sections~\ref{secA6Formalisation}
+and~\ref{secA7Formalisation}. Incidence is at the system level except
+where noted.}
 \label{tab:anomalies}
 \small
 \begin{tabular}{@{}lllrr@{}}
@@ -500,8 +503,9 @@ measures, not as substitutes.
 A natural objection to the present protocol is that A1--A5 might be
 artefacts of French publication practice rather than structural
 features of open-mobility-feed publication in general. To address this
-upfront, three non-French dock-based systems were audited with the
-\emph{same} rule set, recalibrating only the national perimeter
+incrementally, three non-French dock-based systems were first audited
+with the \emph{same} rule set as a negative-control pilot, recalibrating
+only the national perimeter
 (latitude/longitude bounds). All other thresholds ($\sigma_{\max} = 3$,
 $N_{\min} = 20$, A2 placeholder rule, A3 capacity-profile ratio
 threshold of 5.0) were kept at their French values. Results are
@@ -513,8 +517,10 @@ reports ship alongside the dataset under \texttt{experiments/e5\_europe/}.
 \caption{E5 pilot: applying the A1--A5 rule set to three non-French
 dock-based systems, with French thresholds and country-appropriate
 perimeter only. All three systems pass the audit with zero structural
-anomalies, in contrast to the 22 French systems flagged by at least one
-class. \emph{Ratio} is $\bar c_{\text{profile}} / \bar c_{\text{actual}}$
+anomalies, in contrast to the 22 French systems flagged on the local
+Gold Standard audit of 123 systems (or 38 systems when the audit is
+applied to the 255 French entries of the MobilityData catalogue, see
+Table~\ref{tab:global-audit}). \emph{Ratio} is $\bar c_{\text{profile}} / \bar c_{\text{actual}}$
 from Eq.~\ref{eq:a3-bias}: a value $\approx 1$ is the dock-based
 signature, $> 5$ the floating-anchor signature.}
 \label{tab:e5-pilot}
@@ -547,20 +553,24 @@ with what would be expected from any GPS-anchored fleet.
 \label{secGlobalAudit}%
 To turn the negative-control argument into a positive one, the rule
 set was then applied to the entire MobilityData canonical catalogue:
-1{,}254 non-French GBFS systems across 47 countries. 1{,}168
-(93.1\,\%) were reachable, 773 publish a
-\texttt{station\_information} document, and \textbf{166 systems
-trigger at least one A1--A5 class} after three methodological
-corrections that emerged from the audit itself: a country-perimeter
-calibration on A4, a substring-matching fix in the A1 detector (the
-GBFS form factor \texttt{cargo\_bicycle} contains the string
-\texttt{car} and was initially flagged as A1; the fix tightens A1
-to exact list membership on the GBFS v3 form factor enum), and a
-convex-hull replacement of the bounding-box surface estimator in A5
-(the rectangular bbox overestimates the operational area for
-elongated networks; Switzerland's national operators had a bbox
-area of 99{,}000\,km$^2$ versus a hull area of $\approx
-41{,}000$\,km$^2$). The corrected breakdown is shown in
+\textbf{1{,}509 GBFS systems across 48 countries (the complete world
+inventory at the audit date)}. 1{,}421 systems (94.2\,\%) were
+reachable, 917 publish a \texttt{station\_information} document, and
+\textbf{204 systems trigger at least one A1--A5 class} after three
+methodological corrections that emerged from the audit itself: a
+country-perimeter calibration on A4, a substring-matching fix in the
+A1 detector (the GBFS form factor \texttt{cargo\_bicycle} contains
+the string \texttt{car} and was initially flagged as A1; the fix
+tightens A1 to exact list membership on the GBFS v3 form factor
+enum), and a convex-hull replacement of the bounding-box surface
+estimator in A5 (the rectangular bbox overestimates the operational
+area for elongated networks; Switzerland's national operators had a
+bbox area of 99{,}000\,km$^2$ versus a hull area of
+$\approx 41{,}000$\,km$^2$). A side observation is that the French
+national portal \emph{transport.data.gouv.fr} indexes only 123 of
+the 255 French entries that the MobilityData catalogue lists, so
+the global audit also exposes the incompleteness of the national
+regulatory pipeline. The corrected breakdown is shown in
 Table~\ref{tab:global-audit}.
 
 A3 (structural over-capacity) is detected on 29 non-French systems
@@ -581,14 +591,14 @@ methodological recalibration.
 
 \begin{table}[ht]
 \centering
-\caption{Global audit of A1--A5 on the MobilityData canonical
-catalogue (1{,}254 non-French systems). Per-class counts are not
-disjoint (one system can trigger several classes). A4 is the
-geospatial out-of-perimeter class; it requires more than 5\,\% of
-stations and at least 5 absolute outside-country stations to flag,
-to avoid edge-of-coast false positives. Only countries with $\geq 30$
-audited systems or notable structural anomaly concentrations are
-shown.}
+\caption{Exhaustive audit of A1--A5 on the MobilityData canonical
+catalogue (1{,}509 systems, including the 255 French entries).
+Per-class counts are not disjoint (one system can trigger several
+classes). A4 is the geospatial out-of-perimeter class; it requires
+more than 5\,\% of stations and at least 5 absolute outside-country
+stations to flag, to avoid edge-of-coast false positives. Countries
+with at least 30 audited systems or notable structural anomaly
+concentrations are shown.}
 \label{tab:global-audit}
 \small
 \begin{tabular}{@{}lrrrrrrr@{}}
@@ -596,23 +606,24 @@ shown.}
 \textbf{Country} & \textbf{Audited} & \textbf{Reach.} & \textbf{Flagged}
    & \textbf{A1} & \textbf{A2} & \textbf{A3} & \textbf{A4 geo}\\
 \midrule
-Germany (DE)         & 251 & 243 & 32 & 21 &  4 &  9 & -- \\
-United States (US)   & 175 & 172 &  0 & -- & -- & -- & -- \\
-Poland (PL)          &  94 &  91 & 28 & -- &  3 & -- & 25 \\
-Norway (NO)          &  83 &  46 &  2 & -- & -- & -- &  2 \\
-Spain (ES)           &  69 &  66 &  1 & -- & -- & -- &  1 \\
-United Kingdom (GB)  &  56 &  54 &  3 & -- &  1 & -- &  2 \\
-Finland (FI)         &  55 &  55 & 14 & -- & -- & -- & 14 \\
-Netherlands (NL)     &  52 &  52 &  1 & -- & -- & -- &  1 \\
-Switzerland (CH)     &  49 &  46 & 15 &  8 &  3 &  3 &  1 \\
-\textbf{Czech Rep.\ (CZ)} & 45 & 43 & \textbf{25} & -- & \textbf{16} & \textbf{12} & -- \\
-Belgium (BE)         &  37 &  34 &  4 & -- & -- &  2 &  2 \\
-Italy (IT)           &  34 &  33 &  0 & -- & -- & -- & -- \\
-Austria (AT)         &  27 &  23 &  1 & -- &  1 &  1 & -- \\
-Slovakia (SK)        &  19 &  19 & 16 & -- & -- & -- & 16 \\
-Sweden (SE)          &  23 &  23 & 12 & -- & -- & -- & 12 \\
+\textbf{France (FR)}      & 255 & 253 & \textbf{38} & 17 & 14 &  4 &  3 \\
+Germany (DE)              & 251 & 243 & 32 & 21 &  4 &  9 & -- \\
+United States (US)        & 175 & 172 &  0 & -- & -- & -- & -- \\
+Poland (PL)               &  94 &  91 & 28 & -- &  3 & -- & 25 \\
+Norway (NO)               &  83 &  46 &  2 & -- & -- & -- &  2 \\
+Spain (ES)                &  69 &  66 &  1 & -- & -- & -- &  1 \\
+United Kingdom (GB)       &  56 &  54 &  3 & -- &  1 & -- &  2 \\
+Finland (FI)              &  55 &  55 & 14 & -- & -- & -- & 14 \\
+Netherlands (NL)          &  52 &  52 &  1 & -- & -- & -- &  1 \\
+Switzerland (CH)          &  49 &  46 & 15 &  8 &  3 &  3 &  1 \\
+\textbf{Czech Rep.\ (CZ)} &  45 &  43 & \textbf{25} & -- & \textbf{16} & \textbf{12} & -- \\
+Belgium (BE)              &  37 &  34 &  4 & -- & -- &  2 &  2 \\
+Italy (IT)                &  34 &  33 &  0 & -- & -- & -- & -- \\
+Austria (AT)              &  27 &  23 &  1 & -- &  1 &  1 & -- \\
+Sweden (SE)               &  23 &  23 & 12 & -- & -- & -- & 12 \\
+Slovakia (SK)             &  19 &  19 & 16 & -- & -- & -- & 16 \\
 \midrule
-\textbf{Total (47 countries)} & 1{,}254 & 1{,}167 & 166 & 29 & 34 & 29 & 78 \\
+\textbf{Total (48 countries)} & 1{,}509 & 1{,}421 & 204 & 46 & 48 & 33 & 81 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -1081,11 +1092,14 @@ NaN}. The signature is:
 \end{equation}
 with the conservative threshold $\tau_{A7} = 0.5$ chosen so that a
 system flagged by A7 declares no usable capacity on at least half
-of its entries. The threshold is conservative rather than
-distribution-derived because $\rho_s^{A7}$ is bimodal on the global
-corpus: a large mass of systems at exactly $0\,\%$ NaN and a
-secondary mass at exactly $100\,\%$ NaN, with very few intermediate
-cases.
+of its entries. Unlike A6, where $\tau$ was anchored to the empirical
+distribution percentiles, A7 uses a coarser threshold because
+$\rho_s^{A7}$ is extremely bimodal on the global corpus
+(65\,\% of audited systems are at exactly $0\,\%$ NaN and 28\,\% at
+exactly $100\,\%$ NaN, with very few intermediate cases). Any
+threshold in $(0, 1)$ yields essentially the same flagged set;
+$\tau_{A7} = 0.5$ is reported for parsimony and is robust to
+sensitivity sweeps in the tested range.
 
 \paragraph{Incidence of A7.}
 On the 538 globally audited systems with at least 20 stations,

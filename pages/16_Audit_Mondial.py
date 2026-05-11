@@ -33,9 +33,9 @@ inject_css()
 
 st.title("Audit GBFS a l'echelle mondiale")
 st.caption(
-    "Transferabilite de la taxonomie A1-A5 sur 1254 systemes non-francais "
-    "issus du catalogue canonique MobilityData, et formalisation empirique "
-    "d'une 6e classe candidate"
+    "Audit exhaustif des 1509 systemes du catalogue canonique "
+    "MobilityData (48 pays), avec formalisation de deux classes "
+    "candidates (A6, A7) decouvertes lors de l'extension geographique"
 )
 
 
@@ -105,26 +105,29 @@ abstract_box(
     "publication francais, ou capturent-elles des features structurelles "
     "qui se transferent a d'autres juridictions ?<br><br>"
     "Le protocole d'audit a ete applique sans changement methodologique "
-    "aux 1254 systemes GBFS non-francais listes dans le catalogue "
-    "canonique MobilityData. Seuls les perimetres geographiques par pays "
-    "ont ete recalibres. Les seuils statistiques "
-    "(<i>&sigma;</i><sub>max</sub>=3, <i>N</i><sub>min</sub>=20, "
-    "&tau;<sub>A3</sub>=5) sont conserves identiques.<br><br>"
+    f"aux {n_audited:,} systemes GBFS listes dans le catalogue canonique "
+    "MobilityData, soit l'inventaire mondial de reference au moment de "
+    "la requete. Seuls les perimetres geographiques par pays ont ete "
+    "recalibres. Les seuils statistiques (<i>&sigma;</i><sub>max</sub>=3, "
+    "<i>N</i><sub>min</sub>=20, &tau;<sub>A3</sub>=5) sont conserves "
+    "identiques.<br><br>"
     "<b>Resultat global :</b> "
-    f"{n_flagged} systemes non-francais (sur {n_with_data} avec donnees "
-    f"exploitables) sont flagues par au moins une classe A1 a A5, repartis "
-    f"sur {n_countries} pays. Deux hotspots inversement structures "
-    "emergent : la Tchequie (un seul operateur, nextbike, fait 100 % du "
-    "corpus national et propage A2/A3) et la Suisse (15 operateurs "
-    "differents declenchent les 5 classes simultanement). Une 6e classe "
-    "candidate (A6 zero-capacity dock) est decouverte uniquement grace a "
-    "l'extension geographique du corpus.",
+    f"{n_flagged} systemes (sur {n_with_data} avec donnees exploitables) "
+    f"sont flagues par au moins une classe A1 a A5, repartis sur "
+    f"{n_countries} pays. Deux hotspots inversement structures emergent : "
+    "la Tchequie (un seul operateur, nextbike, fait 100 % du corpus "
+    "national et propage A2/A3) et la Suisse (15 operateurs differents "
+    "declenchent les 5 classes simultanement). L'extension a aussi mis "
+    "en evidence deux classes candidates : A6 (dock a capacite nulle, "
+    "14 systemes en queue extreme) et A7 (champ capacite structurellement "
+    "nul, 215 systemes / 70 176 stations supplementaires invisibles a "
+    "A1-A6, dominees par Dott a l'international).",
     findings=[
-        (f"{n_audited:,}", "systemes audites"),
+        (f"{n_audited:,}", "systemes audites (catalogue mondial)"),
         (f"{n_countries}", "pays couverts"),
         (f"{n_flagged}", "systemes flagues A1-A5"),
-        (f"{n_a1}+{n_a2}+{n_a3}", "A1 cars / A2 placeholder / A3 over-cap"),
-        ("nextbike (CZ), Pony (FR)", "operateurs-hotspots"),
+        ("215 / 70 176", "A7 systemes / stations non couverts par A1-A6"),
+        ("nextbike (CZ), Pony (FR), Dott (global)", "operateurs-hotspots"),
     ],
 )
 
@@ -159,7 +162,7 @@ st.markdown(
 
 tax = pd.DataFrame(
     {
-        "Classe": ["A1", "A2", "A3", "A4", "A5", "A6"],
+        "Classe": ["A1", "A2", "A3", "A4", "A5", "A6", "A7"],
         "Nom": [
             "Inclusion hors-domaine",
             "Capacite placeholder",
@@ -167,6 +170,7 @@ tax = pd.DataFrame(
             "Erreur geospatiale",
             "Couverture hors perimetre",
             "Dock a capacite nulle (candidate)",
+            "Champ capacite nul (candidate)",
         ],
         "Signature": [
             "Autopartage publie comme VLS",
@@ -175,9 +179,11 @@ tax = pd.DataFrame(
             "Coordonnees transposees ou hors pays",
             "Aire systeme >50 000 km^2 ou outre-mer",
             ">= seuil de stations c=0 sur dock-based",
+            ">= 50 % des stations declarent c = NaN",
         ],
         "Incidence FR": ["14 syst.", "3 syst.", "8 syst.",
-                         "3.8 % stns", "5 syst.", "0 syst."],
+                         "3.8 % stns", "5 syst.", "0 syst.",
+                         "19 syst. (free-floating)"],
         "Incidence mondiale": [
             f"{n_a1} syst.",
             f"{n_a2} syst.",
@@ -185,6 +191,16 @@ tax = pd.DataFrame(
             f"{n_a4} syst.",
             f"{n_a5} syst.",
             "14 syst. (A6-soft)",
+            "215 syst. / 70 176 stations",
+        ],
+        "Origine": [
+            "Corpus FR",
+            "Corpus FR",
+            "Corpus FR",
+            "Corpus FR",
+            "Corpus FR",
+            "Audit mondial",
+            "Audit mondial (paradoxe italien)",
         ],
     }
 )
@@ -199,7 +215,7 @@ st.dataframe(
 st.caption(
     "Tableau 1.1 - Taxonomie des anomalies. A1 a A5 sont issues du "
     "corpus francais et sont restees inchangees lors de l'extension. "
-    "A6 a ete decouverte uniquement grace a l'audit mondial."
+    "A6 et A7 ont ete decouvertes uniquement grace a l'audit mondial."
 )
 
 
@@ -533,10 +549,204 @@ if not a6_top.empty:
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
-# Section 7 : Free-floating francais - fragmentation semantique
+# Section 7 : Paradoxe italien & A7 candidate (champ capacite nul)
 # ═══════════════════════════════════════════════════════════════════════════════
 st.divider()
-section(7, "Free-floating francais : six semantiques pour un meme champ")
+section(7, "Paradoxe italien : 70 000 stations cachees par une lacune de la taxonomie")
+
+st.markdown(
+    "L'Italie illustre le risque oppose : un audit apparemment **propre** "
+    "(0 systeme flague sur 34 audites) qui masque en fait un gros volume "
+    "d'anomalies. Sur les 25 systemes italiens avec donnees exploitables, "
+    "**17 sont des deploiements Dott** dont *Dott Milan* avec ses "
+    "**11 199 stations declarees**. Chaque deploiement Dott publie "
+    "`capacity = NaN` sur 100 % des entrees `station_information`. La "
+    "taxonomie A1-A6 telle qu'elle etait formulee n'attrape pas ce pattern :"
+)
+
+st.markdown(
+    "- **A2** exige une valeur constante non nulle (NaN ne match pas)\n"
+    "- **A3** exige des capacites numeriques pour calculer le ratio "
+    "capacite-profil (NaN bloque le calcul)\n"
+    "- **A4/A5** sont geospatiales\n"
+    "- **A6** teste c = 0 (et non c = NaN)\n\n"
+    "La generalisation de ce probe a l'ensemble du corpus mondial "
+    "documente une 7e classe candidate (A7) : **215 systemes mondiaux** "
+    "avec >= 50 % de capacite NaN, totalisant **70 176 stations** que "
+    "A1-A6 manquait. Dott concentre 141 de ces 215 systemes."
+)
+
+# ─── Distribution rho_A7 (bimodale) ─────────────────────────────────────────────
+df_a7 = df_audit[
+    df_audit["reachable"] & (df_audit["stations"].fillna(0) >= 20)
+].copy()
+df_a7["nan_pct"] = pd.to_numeric(df_a7["capacity_nan_pct"], errors="coerce")
+df_a7 = df_a7.dropna(subset=["nan_pct"])
+
+buckets_a7 = pd.DataFrame({
+    "Bucket de capacite NaN": [
+        "0 %", "0+ a 10 %", "10 a 50 %", "50 a 90 %", "90 a 100 %", "exactement 100 %"
+    ],
+    "Systemes": [
+        int(((df_a7["nan_pct"] == 0)).sum()),
+        int(((df_a7["nan_pct"] > 0) & (df_a7["nan_pct"] < 10)).sum()),
+        int(((df_a7["nan_pct"] >= 10) & (df_a7["nan_pct"] < 50)).sum()),
+        int(((df_a7["nan_pct"] >= 50) & (df_a7["nan_pct"] < 90)).sum()),
+        int(((df_a7["nan_pct"] >= 90) & (df_a7["nan_pct"] < 100)).sum()),
+        int(((df_a7["nan_pct"] == 100)).sum()),
+    ],
+})
+
+fig7 = px.bar(
+    buckets_a7, x="Bucket de capacite NaN", y="Systemes",
+    title="Figure 7.1 - Distribution du taux NaN sur la capacite (n = "
+          f"{len(df_a7)} systemes globaux >= 20 stations)",
+    color="Systemes", color_continuous_scale="Reds",
+    text="Systemes",
+)
+fig7.update_layout(
+    height=380, margin=dict(t=50, b=40, l=40, r=20),
+    yaxis_title="Nombre de systemes",
+)
+fig7.update_traces(textposition="outside")
+st.plotly_chart(fig7, use_container_width=True)
+st.caption(
+    "Figure 7.1 - Distribution bimodale du taux de stations declarant "
+    "`capacity = NaN`. La grande masse a 0 % (systemes qui remplissent "
+    "le champ) et la masse secondaire a 100 % (systemes type Dott qui "
+    "ne le remplissent jamais) justifient le seuil tau_A7 = 0.5 ; tout "
+    "seuil entre 1 % et 99 % donne le meme ensemble flague."
+)
+
+# ─── Top operateurs A7 ─────────────────────────────────────────────────────────
+from collections import Counter as _Counter
+a7_rows = df_a7[
+    (df_a7["nan_pct"] >= 50) & (~df_a7["any_anomaly"])
+].copy()
+op_a7 = _Counter(
+    (str(r["name"]).split()[0].lower() if pd.notna(r["name"]) else "?")
+    for _, r in a7_rows.iterrows()
+)
+df_op_a7 = pd.DataFrame(
+    op_a7.most_common(15),
+    columns=["Operateur", "Systemes flagues A7 et non A1-A6"],
+)
+df_op_a7["Stations affectees"] = [
+    int(a7_rows[a7_rows["name"].str.lower().str.startswith(op)]["stations"].fillna(0).sum())
+    for op in df_op_a7["Operateur"]
+]
+st.markdown("**Top 15 operateurs propageant A7 a l'international.**")
+st.dataframe(df_op_a7, hide_index=True, use_container_width=True)
+st.caption(
+    "Tableau 7.1 - Operateurs derriere les systemes A7 invisibles a A1-A6. "
+    "Dott domine massivement (141 systemes), suivi de nextbike (13) et "
+    "Bird (10). Ces operateurs ne remplissent simplement pas le champ "
+    "`capacity` dans `station_information`."
+)
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# Section 8 : Operateurs transnationaux - portabilite des anti-patterns
+# ═══════════════════════════════════════════════════════════════════════════════
+st.divider()
+section(8, "Portabilite operationnelle des anti-patterns")
+
+st.markdown(
+    "Trois operateurs majeurs du marche micromobilite operent dans "
+    "plusieurs pays simultanement, ce qui permet de tester si leurs "
+    "anti-patterns sont specifiques d'une juridiction ou portables. "
+    "Le tableau 8.1 montre que la convention de publication suit "
+    "l'operateur, pas le pays."
+)
+
+df_a = df_audit[df_audit["reachable"]].copy()
+df_a["op"] = df_a["name"].astype(str).str.split().str[0].str.lower()
+ops_focus = ["dott", "nextbike", "bird", "pony", "voi", "bolt", "lime", "tier"]
+rows_op = []
+for op in ops_focus:
+    subset = df_a[df_a["op"] == op]
+    if len(subset) == 0:
+        continue
+    countries = sorted(subset["country"].unique().tolist())
+    stations = int(subset["stations"].fillna(0).sum())
+    a7_count = int(((pd.to_numeric(subset["capacity_nan_pct"], errors="coerce") >= 50)
+                    & ~subset["any_anomaly"]).sum())
+    flagged = int(subset["any_anomaly"].sum())
+    rows_op.append({
+        "Operateur": op,
+        "Pays presents": ", ".join(countries),
+        "Nb pays": len(countries),
+        "Systemes audites": len(subset),
+        "Stations totales": stations,
+        "Flagues A1-A5": flagged,
+        "Flagues A7 seul": a7_count,
+    })
+df_op_overview = pd.DataFrame(rows_op).sort_values("Stations totales", ascending=False)
+st.dataframe(df_op_overview, hide_index=True, use_container_width=True)
+st.caption(
+    "Tableau 8.1 - Empreinte mondiale des principaux operateurs "
+    "micromobilite. Dott et Bird transportent leur convention "
+    "`capacity = NaN` d'un pays a l'autre. nextbike alterne entre "
+    "placeholders (A2) et profils-flotte (A3) selon le pays. Pony "
+    "reste essentiellement franco-francais avec quelques deploiements "
+    "etrangers."
+)
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# Section 9 : Corrections methodologiques apportees a l'audit
+# ═══════════════════════════════════════════════════════════════════════════════
+st.divider()
+section(9, "Corrections methodologiques apportees pendant l'audit")
+
+st.markdown(
+    "L'audit a large echelle a permis d'identifier trois failles dans le "
+    "pipeline initial et de les corriger. La transparence sur ces "
+    "corrections est elle-meme un finding du protocole : un audit "
+    "ouvert s'audite. Le tableau 9.1 trace les trois corrections "
+    "principales et leur impact sur le nombre total de systemes "
+    "flagues."
+)
+
+fixes = pd.DataFrame({
+    "Correction": [
+        "A4 (geospatial) : seuil a 2 niveaux",
+        "A1 (cars) : substring vers membership stricte",
+        "A5 (perimetre) : bbox vers convex hull",
+    ],
+    "Probleme detecte": [
+        "Bbox lat/lon trop large pour certains pays (PL, FI), faux positifs"
+        " sur 1 station hors-perimetre",
+        "Test 'car' in form_factor catchait 'cargo_bicycle' (velo cargo)",
+        "Bbox rectangulaire surestime l'aire des reseaux etires "
+        "(Suisse 99000 km^2 vs surface reelle 41000 km^2)",
+    ],
+    "Solution": [
+        "Flag A4 seulement si >= 5 % des stations ET >= 5 absolu hors perimetre",
+        "Test d'appartenance exact sur l'enum GBFS v3",
+        "Convex hull projete en equirectangulaire local (scipy.spatial)",
+    ],
+    "Impact": [
+        "Total: 226 -> 215 systemes flagues",
+        "DE: 58 -> 21 systemes A1 (37 cargo_bicycle elimines)",
+        "CH A5: 5 -> 1 (Suisse 99000 -> 41000 km^2)",
+    ],
+})
+st.dataframe(fixes, hide_index=True, use_container_width=True)
+st.caption(
+    "Tableau 9.1 - Trois corrections methodologiques appliquees au "
+    "pipeline initial pendant l'audit a grande echelle. Le total "
+    "global de systemes flagues evolue de 226 (initial) a 173 (apres "
+    "A1 fix) puis 166 (apres A5 hull) puis 204 (incluant les 38 systemes "
+    "FR du catalogue MobilityData)."
+)
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# Section 10 : Free-floating francais - fragmentation semantique
+# ═══════════════════════════════════════════════════════════════════════════════
+st.divider()
+section(10, "Free-floating francais : six semantiques pour un meme champ")
 
 st.markdown(
     "La caracterisation interne du sous-ensemble free-floating (39 235 "
@@ -580,7 +790,7 @@ st.markdown(
 # Section 8 : Synthese
 # ═══════════════════════════════════════════════════════════════════════════════
 st.divider()
-section(8, "Synthese et portee scientifique")
+section(11, "Synthese et portee scientifique")
 
 st.markdown(
     "Trois conclusions empiriques se degagent de l'audit a large echelle."

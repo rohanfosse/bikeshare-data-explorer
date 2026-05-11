@@ -5,16 +5,19 @@
 [![Data licence: ODbL-1.0](https://img.shields.io/badge/data-ODbL--1.0-orange.svg)](https://opendatacommons.org/licenses/odbl/1-0/)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20125460.svg)](https://doi.org/10.5281/zenodo.20125460)
 
-A reproducible audit pipeline for French bike-sharing GBFS feeds and
-the **GBFS France Audit Catalogue** it produces: 46,307 station
-records from the 123 GBFS systems inventoried on
-`transport.data.gouv.fr`, of which 5,442 are dock-based stations
-fully validated by the audit, 39,235 are free-floating anchors typed
-and annotated (but not rigorously audited at the station level), and
-1,630 are car-sharing entries relabelled and excluded from
-bike-sharing analyses. Each station is enriched with twelve derived
-variables from five reference sources (INSEE Filosofi, BAAC, BD TOPO,
-OpenStreetMap, FUB Cycling Barometer).
+A reproducible audit pipeline for the GBFS bike-sharing standard,
+shipping two complementary artefacts. The local product is the
+**GBFS France Audit Catalogue** (46,307 station records from the 123
+GBFS systems inventoried on `transport.data.gouv.fr`, of which 5,442
+are dock-based stations fully validated, 39,235 are free-floating
+anchors typed and annotated, and 1,630 are car-sharing entries
+relabelled). Each station is enriched with twelve derived variables
+from five reference sources (INSEE Filosofi, BAAC, BD TOPO,
+OpenStreetMap, FUB Cycling Barometer). The same audit pipeline is
+then applied at world scale to the **1,509 GBFS systems of the
+MobilityData canonical catalogue** (48 countries), flagging 204
+systems under A1-A5 and surfacing two additional candidate classes
+(A6, A7) that affect another 215 systems and 70,176 stations.
 
 > Produced by the BikeShare-ICT research programme (CESI LINEACT,
 > 2025-2026). The release was previously circulated under the
@@ -47,7 +50,14 @@ ready-to-use research dataset. A systematic audit of the 123 French
 systems documents that 22 systems exhibit at least one of five
 recurring anomaly classes (A1 out-of-domain inclusion, A2
 placeholder capacity, A3 structural over-capacity on free-floating
-fleets, A4 geospatial error, A5 out-of-perimeter coverage). On the
+fleets, A4 geospatial error, A5 out-of-perimeter coverage). The
+audit pipeline was then applied to the 1,509 systems of the
+MobilityData canonical catalogue, which expanded the picture to two
+new candidate classes (A6 zero-capacity dock, A7 null-capacity
+field) and confirmed that the anti-patterns are global rather than
+French-specific (nextbike drives the Czech hotspot exactly as Pony
+drives the French free-floating hotspot, and Dott propagates
+`capacity = NaN` across all of its international deployments). On the
 raw corpus, 30.9 % of stations (95 % bootstrap CI [30.5, 31.3]) are
 reassigned, removed or reclassified by a semantically-aware audit.
 The single A3 reclassification of the *Pony* free-floating fleet
@@ -104,6 +114,35 @@ streamlit run app.py
 | 1. Filter dock-based stations of one city | `gs[(gs.city=="Paris") & (gs.station_type=="docked_bike")]` | 1,507 rows for Paris |
 | 2. Spatial-equity analysis with INSEE Filosofi | `gs.groupby("city").agg(n=("uid","size"), income=("revenu_median_uc","median"))` | rho ~ +0.39 Spearman |
 | 3. Identify mobility deserts | Q1 income and zero heavy-transit stops within 300 m | 1,041 stations (19.1 % of dock-based) |
+
+## Global audit (MobilityData canonical catalogue)
+
+The audit pipeline is also applied to the entire world inventory of
+GBFS feeds maintained by MobilityData. Headline numbers below;
+per-system results in
+[`papers/01_gold_standard/experiments/e5_europe/massive_audit_results.csv`](papers/01_gold_standard/experiments/e5_europe/massive_audit_results.csv)
+and a country-level aggregation in
+[`papers/01_gold_standard/experiments/e5_europe/massive_audit_summary.json`](papers/01_gold_standard/experiments/e5_europe/massive_audit_summary.json).
+
+| Metric                                    | Value                                                |
+| ----------------------------------------- | ---------------------------------------------------- |
+| Systems in the MobilityData catalogue     | 1,509                                                |
+| Reachable                                 | 1,421                                                |
+| Publish `station_information`             | 917                                                  |
+| **Flagged by at least one A1-A5 class**   | **204**                                              |
+| Additional systems caught by A6 candidate | 14                                                   |
+| Additional systems caught by A7 candidate | 215                                                  |
+| Countries covered                         | 48                                                   |
+| Hotspot countries                         | CZ (nextbike), CH (15 operators), DE (21 car-sharing) |
+
+Side finding: the French national portal
+`transport.data.gouv.fr` indexes only 123 of the 255 French entries
+listed by MobilityData, so the regulatory pipeline is less complete
+than the international catalogue. Reproduce the audit with:
+
+```bash
+python papers/01_gold_standard/experiments/e5_europe/massive_audit.py
+```
 
 ## Repository layout
 
