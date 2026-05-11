@@ -1,0 +1,46 @@
+{
+  "title": "bikeshare-data-explorer: a reproducible pipeline to audit French GBFS feeds and produce the Gold Standard GBFS France dataset",
+  "description": "An open-source Python package that ingests all French open GBFS feeds, audits them against a five-class anomaly taxonomy (A1-A5), enriches the certified stations with five public reference sources (INSEE Filosofi, BAAC, BD TOPO, OpenStreetMap, FUB Cycling Barometer), and produces the Gold Standard GBFS France dataset (46,307 certified stations, 57 urban areas) released openly under ODbL-1.0. Ships with an audit report, a JSON Schema, a Croissant JSON-LD manifest, a Streamlit dashboard and a six-experiment validation roadmap (E1 inter-rater reliability surrogates, E2 sigma_max sensitivity, E4 dynamic A6 detection pilots already runnable; comparative baselines and engineering benchmark also included).",
+  "creators": [
+    {
+      "name": "Fosse, Rohan",
+      "affiliation": "CESI, CESI Engineering School, Montpellier, France",
+      "orcid": "0009-0002-2195-0198"
+    },
+    {
+      "name": "Pallares, Gael",
+      "affiliation": "CESI, CESI LINEACT, Montpellier, France",
+      "orcid": "0009-0002-8680-604X"
+    }
+  ],
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "MIT",
+  "keywords": [
+    "bike-sharing",
+    "GBFS",
+    "data quality",
+    "audit",
+    "FAIR",
+    "research data infrastructure",
+    "reproducibility",
+    "soft mobility",
+    "urban mobility",
+    "France",
+    "open data",
+    "data validation"
+  ],
+  "communities": [
+    {"identifier": "fair"},
+    {"identifier": "open-mobility"}
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/rohanfosse/bikeshare-data-explorer",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    }
+  ],
+  "language": "eng",
+  "notes": "BikeShare-ICT research programme, CESI LINEACT, 2025-2026. Companion working paper: 'Auditing Open GBFS Feeds at Country Scale: The Gold Standard GBFS France Protocol and Dataset'."
+}
