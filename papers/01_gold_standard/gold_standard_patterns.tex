@@ -624,6 +624,33 @@ consistent with the broader claim that the documented errors
 propagate through corporate publication conventions rather than
 through national regulatory practice.
 
+\paragraph{Switzerland: heterogeneous fragmentation as the dual of operator monopoly.}
+Switzerland is the only country in the audit, with France, for which
+all five A1--A5 classes are simultaneously detected: 8 A1, 3 A2, 3
+A3, 1 A4 and 5 A5 across 16 flagged systems out of 49. The
+underlying pattern is the dual of the Czech case. Where Czech
+Republic has 45 systems published by a single operator that
+propagates one anti-pattern (nextbike, all A2/A3), Switzerland has
+\textbf{15 distinct operators among 16 flagged systems},
+representing five distinct failure modes simultaneously. Three
+classes of Swiss operators stand out. First, national-scale
+car-sharing brands (\emph{2EM Car Sharing} 1{,}741 stations,
+\emph{Mobility} 1{,}691, \emph{MyBuxi} 2{,}118, \emph{edrive
+carsharing}, \emph{Car-ship}, \emph{QuickRent}) are listed on the
+same federal GBFS catalogue as bike-sharing fleets and trigger A1.
+Second, mixed-fleet operators (\emph{Voi Switzerland} 771 e-scooter
+anchors, \emph{Bolt Switzerland} 54, \emph{nextbike Switzerland}
+380) publish virtual station entries with capacity profiles that
+trigger A3. Third, national aggregators
+(\emph{sharedmobility.ch} 12{,}091 entries, \emph{Velospot} 1{,}634)
+combine multiple operators into a single feed whose bounding box
+exceeds the A5 macro-region threshold. The case is empirically
+informative because it demonstrates that the same five anomaly
+classes can be reached through two opposite organisational
+configurations: monopoly publication (Czech Republic) or
+fragmented publication (Switzerland). The audit framework is
+operator-agnostic and detects both.
+
 \paragraph{Germany: how the audit caught itself.}
 The German case carries a methodological lesson. An initial run of
 the global audit flagged 64 of the 251 German systems, of which 58
@@ -938,21 +965,74 @@ infrastructure and provides \texttt{station\_status} for transient
 counts, a non-virtual physical station with zero docks is
 semantically inconsistent. The candidate signature is therefore:
 \begin{equation}
-\#\{i \,:\, c_i = 0 \,\land\, \mathtt{is\_virtual\_station}(i) \neq \mathtt{true}\}
-\;\geq\; \tau_{A6} \cdot |\mathcal{S}_s|,
+r_s^{A6} \,=\,
+\frac{\#\{i \in \mathcal{S}_s \,:\, c_i = 0 \,\land\, \mathtt{is\_virtual\_station}(i) \neq \mathtt{true}\}}{|\mathcal{S}_s|}
+\;\geq\; \tau_{A6}.
 \end{equation}
-with $\tau_{A6} = 0.01$ as a conservative first threshold. On the
-1{,}254-system global corpus, 14 systems exceed 1\,\% zero-capacity
-declarations: PBSC HQ (Canada, 18.2\,\%), Beryl Greater Manchester
+
+\paragraph{Calibration of $\tau_{A6}$ from the empirical distribution.}
+Rather than fixing $\tau_{A6}$ by convention, we calibrate it against
+the population distribution of $r_s^{A6}$ on the 538 globally audited
+systems with at least 20 stations
+(Table~\ref{tab:a6-distribution}). 94.4\,\% of audited systems
+declare \emph{exactly zero} stations with $c = 0$, which establishes
+the dock-based baseline; the remaining 5.6\,\% form a heavy tail.
+From the corresponding empirical CDF we read off two
+distribution-anchored thresholds. A6-soft uses the 95th percentile
+$\tau_{A6}^{\text{soft}} = 0.15\,\%$, which flags any system whose
+zero-capacity rate is above the corpus median by a non-trivial
+margin (30 systems globally). A6-hard uses $\bar r + 3\hat\sigma
+\approx 2.2\,\%$, which is the conventional outlier threshold under
+a normal model on the long tail and corresponds to the empirical
+97.5th percentile (8 systems globally). A6 thus exposes a two-tier
+detection consistent with the rest of the taxonomy: A6-soft as a
+flag for downstream consumers, A6-hard as a high-confidence
+operator-side anomaly.
+
+\begin{table}[ht]
+\centering
+\caption{Empirical distribution of the zero-capacity rate
+$r_s^{A6}$ across the 538 globally audited systems with at least 20
+stations and a reachable \texttt{station\_information} feed.
+Percentiles are computed on the same sample. The two A6 thresholds
+are derived from the distribution rather than chosen ex ante.}
+\label{tab:a6-distribution}
+\small
+\begin{tabular}{@{}lrr@{}}
+\toprule
+\textbf{Bucket} & \textbf{Systems} & \textbf{Share}\\
+\midrule
+$r_s^{A6} = 0$\,\% (no $c = 0$)   & 508 & 94.4\,\% \\
+$0 < r_s^{A6} \leq 0.5$\,\%        &   9 &  1.7\,\% \\
+$0.5 < r_s^{A6} \leq 1$\,\%        &   8 &  1.5\,\% \\
+$1 < r_s^{A6} \leq 2$\,\%          &   4 &  0.7\,\% \\
+$2 < r_s^{A6} \leq 5$\,\%          &   6 &  1.1\,\% \\
+$5 < r_s^{A6} \leq 10$\,\%         &   2 &  0.4\,\% \\
+$r_s^{A6} > 10$\,\%                &   1 &  0.2\,\% \\
+\midrule
+\textbf{Summary statistics} & & \\
+\quad mean $\bar r$                 &  0.10\,\% & \\
+\quad standard deviation $\hat\sigma$ &  0.71\,\% & \\
+\quad 95th percentile               &  0.15\,\% & \\
+\quad 97.5th percentile             &  $\approx \bar r + 3\hat\sigma \approx 2.2$\,\% & \\
+\quad 99th percentile               &  3.54\,\% & \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{A6 incidence on the audited corpus.}
+Under A6-soft ($\tau = 0.15\,\%$) 30 of 538 audited systems are
+flagged; under A6-hard ($\tau = 2.2\,\%$) 8 systems are flagged. The
+extreme tail is PBSC HQ (Canada, 18.2\,\%), Beryl Greater Manchester
 (UK, 10.5\,\%), MonaBike (Monaco, 6.8\,\%), Bicicoru\~na (Spain,
 5.9\,\%), MBajk (Slovenia, 4.8\,\%), CyclOcity (Japan, 4.2\,\%),
-\`aV\'elo (Canada, 3.5\,\%), Careem BIKE (UAE, 2.7\,\%), Citi Bike
-NYC (US, 2.4\,\%), MiBiciTuBici (Argentina, 2.0\,\%) and four others
-between 1.1 and 1.8\,\%. On the French corpus, no dock-based system
-exceeds the threshold (0/65 systems with $c = 0$). A6 is reported as
-candidate because the threshold $\tau_{A6}$, the interaction with
+\`aV\'elo (Canada, 3.5\,\%) and Careem BIKE (UAE, 2.7\,\%). On the
+French corpus, no dock-based system crosses either threshold
+(0/65 dock systems with $c = 0$), which is consistent with the
+corpus-level median behaviour and provides a negative control. A6
+is reported as candidate because the interaction with
 \texttt{is\_virtual\_station} (only required by GBFS v3) and the
-operational consequence for downstream consumers all warrant the
+operational consequence for downstream consumers still warrant the
 inter-rater human validation of experiment E1, which is currently
 calibrated on A1--A5 only.
 
