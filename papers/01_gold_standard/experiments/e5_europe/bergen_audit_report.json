@@ -1,0 +1,31 @@
+{
+  "system": "Bergen Bysykkel",
+  "country": "NO",
+  "feed_url": "https://gbfs.urbansharing.com/bergenbysykkel.no/gbfs.json",
+  "gbfs_version_feeds": [
+    "station_information",
+    "station_status",
+    "system_information",
+    "system_pricing_plans",
+    "vehicle_types"
+  ],
+  "vehicle_form_factors": [
+    "bicycle"
+  ],
+  "raw_station_count": 97,
+  "capacity_unique_nonzero": 21,
+  "capacity_std_nonzero": 6.715,
+  "capacity_mean_all": 18.299,
+  "capacity_mean_active": 18.299,
+  "capacity_profile_ratio": 1.0,
+  "anomalies_detected": {
+    "A1_carsharing": false,
+    "A2_placeholder": false,
+    "A3_overcapacity": false,
+    "A4_geospatial_out": 0,
+    "A4_geospatial_outlier": 1,
+    "A5_macro_region": false
+  },
+  "certified_dock_stations": 96,
+  "bbox_km2_proxy": 50.7
+}

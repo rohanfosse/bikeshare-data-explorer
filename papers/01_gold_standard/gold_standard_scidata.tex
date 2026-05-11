@@ -59,9 +59,12 @@ five recurring anomaly classes (A1--A5), reclassifies 30.9\,\% of the
 raw stations, and is shipped together with its audit report, JSON
 Schema, Frictionless Data Package descriptor, Croissant manifest and
 Docker image for bit-exact reproduction. Internal robustness checks,
-a baseline comparison and a cross-country pilot on Bicing Barcelona
-(ES) and Oslo Bysykkel (NO) establish the technical validity of the
-release. The dataset is archived on Zenodo under concept DOI
+a baseline comparison, a characterization of the free-floating
+subset showing that the same GBFS \texttt{capacity} field is
+populated according to six incompatible semantics across French
+operators, and a cross-country pilot on three non-French dock-based
+systems (Bicing Barcelona ES, Oslo Bysykkel NO, Bergen Bysykkel NO)
+establish the technical validity of the release. The dataset is archived on Zenodo under concept DOI
 \texttt{10.5281/zenodo.20125460} and licensed under ODbL v1.0.
 
 \vspace{0.5em}
@@ -123,9 +126,9 @@ graph-based neural networks \cite{Lin2018BSSGraph} whose false-station
 nodes are a known A3 confound; spatial-equity analysis combining
 station access with INSEE Filosofi; and multimodal integration with
 GTFS \cite{MobilityData2024Validator}. A transferability pilot on
-Bicing Barcelona and Oslo Bysykkel (Section~\ref{secValidation}) shows
-that A1--A5 generalises to other European dock-based systems without
-threshold recalibration.
+Bicing Barcelona, Oslo Bysykkel and Bergen Bysykkel
+(Section~\ref{secValidation}) shows that A1--A5 generalises to other
+European dock-based systems without threshold recalibration.
 
 % ===================================================================
 \section{Methods}\label{secMethods}
@@ -419,7 +422,7 @@ checks: (i) the empirical completeness of each derived variable;
 (ii) two internal robustness checks on the rule-based audit;
 (iii) a single-dimension sensitivity sweep on the topological
 threshold; (iv) a baseline comparison against three published audit
-strategies; and (v) a cross-country pilot on two non-French dock-based
+strategies; and (v) a cross-country pilot on three non-French dock-based
 systems.
 
 \subsection{Completeness}
@@ -564,7 +567,7 @@ all other thresholds were kept at their French values
 
 \begin{table}[ht]
 \centering
-\caption{Cross-country pilot: applying the A1--A5 rule set to two
+\caption{Cross-country pilot: applying the A1--A5 rule set to three
 non-French dock-based systems with French thresholds and country-
 appropriate perimeter only. \emph{Ratio} is
 $\bar c_{\text{profile}} / \bar c_{\text{actual}}$ from
@@ -578,6 +581,7 @@ Eq.~\ref{eq:a3-bias}.}
 \midrule
 Bicing Barcelona       & ES & 544 & 1.006 & none of A1--A5 \\
 Oslo Bysykkel          & NO & 266 & 1.000 & none of A1--A5 \\
+Bergen Bysykkel        & NO &  97 & 1.000 & none of A1--A5 \\
 \midrule
 French corpus (ref.)   & FR & $\sim$67{,}000 & --- & 22 systems flagged \\
 \bottomrule
@@ -589,7 +593,8 @@ capacity-profile ratio is essentially unity on both feeds, consistent
 with clean dock-based operation. Vehicle-type metadata is populated
 cleanly (Bicing: \{\texttt{bicycle}, \texttt{scooter\_standing}\};
 Oslo: \{\texttt{bicycle}\}), so A1 is not triggered. Perimeter and
-topological filters yield only 1 outlier in Bicing and 3 in Oslo.
+topological filters yield only 1 outlier in Bicing, 3 in Oslo and 1
+in Bergen.
 These two negative controls do not establish full European
 transferability, but they document that A1--A5 does not over-fit the
 French market.

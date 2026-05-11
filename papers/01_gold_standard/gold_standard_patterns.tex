@@ -78,12 +78,19 @@ certified stations across 97 cities) as a versioned research commons under
 ODbL on Zenodo. A single anomaly (the A3 reclassification of the
 \emph{Pony} free-floating fleet in Bordeaux) is sufficient to move the city
 from rank 2 to rank 14 in a national soft-mobility ranking, a result that
-quantifies the cost of skipping the audit. We further publish three
-internal robustness checks, a cross-country pilot on Bicing Barcelona
-and Oslo Bysykkel (both pass the audit with zero anomalies under
-French thresholds), a reproducibility checklist with container-pinned
-bit-exact replay, and a six-experiment falsification roadmap with
-four pilots already completed. The protocol is designed to
+quantifies the cost of skipping the audit. A characterization of the
+free-floating subset documents that the single GBFS
+\texttt{capacity} field is populated according to six mutually
+incompatible semantics across the four major operators, affecting
+84.7\,\% of the certified rows; a positive control on Beryl London
+(UK) shows that the documented errors are not inherent to GBFS but
+are propagated by the absence of an audit tier. We further publish
+three internal robustness checks, a cross-country pilot on three
+non-French dock-based systems (Bicing Barcelona, Oslo Bysykkel,
+Bergen Bysykkel; all three pass with zero anomalies), a
+reproducibility checklist with container-pinned bit-exact replay,
+and a six-experiment falsification roadmap with four pilots already
+completed. The protocol is designed to
 be transferable; the dataset itself is positioned as a contestable
 artefact rather than a finished product.
 
@@ -104,10 +111,10 @@ research, not a substitute for one.
 \end{bigpicture}
 
 \begin{highlights}
+\item One GBFS field carries six incompatible semantics across operators
 \item Five anomaly classes reclassify 30.9\,\% of 67k raw GBFS stations
-\item Six-step idempotent, reversible audit pipeline released as open code
-\item Audit Catalogue dataset: 46{,}307 certified stations, 97 cities, FAIR
 \item Bordeaux drops from national rank 2 to rank 14 after one correction
+\item Audit Catalogue (46{,}307 stations, 97 cities) FAIR-released on Zenodo
 \end{highlights}
 
 \noindent\textbf{Keywords:} data quality; GBFS; bike sharing; FAIR; reproducibility;
@@ -171,8 +178,8 @@ fills that gap for the French case.
 The contributions are fourfold. First, an empirically-grounded
 \textbf{taxonomy} of five anomaly classes (A1--A5), derived from the
 audit of all 123 French GBFS systems and stress-tested on two
-non-French systems (Bicing Barcelona, Oslo Bysykkel) which both pass
-the audit with zero anomalies under unchanged thresholds. Second, a
+non-French systems (Bicing Barcelona, Oslo Bysykkel, Bergen Bysykkel)
+which all pass the audit with zero anomalies under unchanged thresholds. Second, a
 six-step \textbf{purging protocol} whose every transformation is
 logged, reproducible and reversible. Third, the \textbf{Audit Catalogue
 GBFS France} data product (46{,}307 certified stations, 97 cities),
@@ -480,7 +487,7 @@ measures, not as substitutes.
 A natural objection to the present protocol is that A1--A5 might be
 artefacts of French publication practice rather than structural
 features of open-mobility-feed publication in general. To address this
-upfront, two non-French dock-based systems were audited with the
+upfront, three non-French dock-based systems were audited with the
 \emph{same} rule set, recalibrating only the national perimeter
 (latitude/longitude bounds). All other thresholds ($\sigma_{\max} = 3$,
 $N_{\min} = 20$, A2 placeholder rule, A3 capacity-profile ratio
@@ -490,9 +497,9 @@ reports ship alongside the dataset under \texttt{experiments/e5\_europe/}.
 
 \begin{table}[ht]
 \centering
-\caption{E5 pilot: applying the A1--A5 rule set to two non-French
+\caption{E5 pilot: applying the A1--A5 rule set to three non-French
 dock-based systems, with French thresholds and country-appropriate
-perimeter only. Both systems pass the audit with zero structural
+perimeter only. All three systems pass the audit with zero structural
 anomalies, in contrast to the 22 French systems flagged by at least one
 class. \emph{Ratio} is $\bar c_{\text{profile}} / \bar c_{\text{actual}}$
 from Eq.~\ref{eq:a3-bias}: a value $\approx 1$ is the dock-based
@@ -506,6 +513,7 @@ signature, $> 5$ the floating-anchor signature.}
 \midrule
 Bicing Barcelona       & ES & 544 & 1.006 & none of A1--A5 \\
 Oslo Bysykkel          & NO & 266 & 1.000 & none of A1--A5 \\
+Bergen Bysykkel        & NO &  97 & 1.000 & none of A1--A5 \\
 \midrule
 French corpus (ref.)   & FR & $\sim$67{,}000 & --- & 22 systems flagged \\
 \bottomrule
@@ -520,12 +528,91 @@ Eq.~\ref{eq:a3-bias}. Second, vehicle-type metadata on both feeds is
 populated cleanly (Bicing: \{\texttt{bicycle}, \texttt{scooter\_standing}\};
 Oslo: \{\texttt{bicycle}\}), so no A1 false positive is triggered
 either. Third, perimeter and topological filters caught only a
-handful of edge outliers (1 station in Bicing, 3 in Oslo), in line
+handful of edge outliers (1 station in Bicing, 3 in Oslo, 1 in Bergen), in line
 with what would be expected from any GPS-anchored fleet. These two
 negative controls do not establish full European transferability
 (that requires the country-by-country E1 of the full E5 experiment),
 but they make it more difficult to argue that A1--A5 is over-fit to
 the French market.
+
+\subsection{Empirical evidence that current GBFS usage produces downstream errors}\label{secConsequences}
+A reviewer of any audit paper is entitled to ask: does the audit
+detect errors that have measurable consequences, or does it
+discipline a problem that nobody actually encounters? Four
+empirical observations on the French corpus answer the question
+affirmatively.
+
+\paragraph{Six incompatible semantics for one GBFS field.}
+The single field \texttt{station\_information.capacity} is populated
+by French free-floating operators according to six mutually
+incompatible semantics that we observe directly on the audited
+corpus (Table~\ref{tab:capacity-semantics}). Dott (20{,}224
+stations) and Bird (4{,}499 stations) leave the field empty. Pony
+Nice publishes a constant placeholder of 100. Pony Paris reports a
+per-vehicle ratio close to 1.6. Pony Bordeaux and twelve sister
+cities report a conditional fleet-profile of 2 to 15. Voi mixes
+small fleet-profile estimators with NaN. Aggregated, these patterns
+cover \textbf{84.7\,\% of the certified rows}. A downstream
+consumer who applies a single arithmetic to the field aggregates
+six different quantities into one number; the standard does not
+warn that this is happening.
+
+\begin{table}[ht]
+\centering
+\caption{Six observed semantics of the same
+\texttt{station\_information.capacity} field across French
+free-floating operators. Total = 39{,}235 stations, 84.7\,\% of the
+certified corpus.}
+\label{tab:capacity-semantics}
+\small
+\begin{tabular}{@{}llrrl@{}}
+\toprule
+\textbf{Operator} & \textbf{Cities} & \textbf{Stations} & \textbf{Reported $\bar c$} & \textbf{Semantics}\\
+\midrule
+Dott         & 8  & 20{,}224 & NaN  & Field left unfilled \\
+Bird         & 11 &  4{,}499 & NaN  & Field left unfilled \\
+Pony (Nice)  & 1  &     412  & 100  & Constant placeholder (A2) \\
+Pony (Paris) & 1  &  3{,}617 & 1.6  & Per-vehicle ratio \\
+Pony (Bordeaux, Angers, \dots) & 12 &  7{,}436 & 2--15 & Conditional fleet profile (A3) \\
+Voi          & 4  &  2{,}816 & 5--10 & Small fleet-profile estimator \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{The errors are operator-specific, not standard-specific.}
+Beryl London (UK, hybrid free-floating) publishes \emph{zero}
+entries in \texttt{station\_information} and reports all vehicles
+in \texttt{free\_bike\_status}, which is the canonical GBFS v2/v3
+pattern for free-floating fleets. The presence of a working positive
+control demonstrates that the documented semantic fragmentation is
+not a flaw of the standard but a propagation failure: in the absence
+of a validation tier between operator publication and academic use,
+six incompatible operator practices coexist on a single national
+portal without anyone flagging the conflict.
+
+\paragraph{Existing validators do not catch the errors.}
+The official MobilityData GBFS Validator
+\cite{MobilityData2024Validator} returns no error on any of the 22
+systems flagged by A1--A5; the schema-level baseline reported in
+Table~\ref{tab:baselines} reaches \textbf{0\,\% recall on A3}. This
+is not a defect of the validator: it works exactly as designed,
+checking the syntax against the schema. The point is that
+syntax-level validation is the wrong abstraction layer for the
+errors documented here, and the operational consequence is that any
+team that adopts MobilityData's tooling will inherit unaudited
+data.
+
+\paragraph{Downstream rankings move by an order of magnitude.}
+The audit corrections reorder city-level rankings used by public
+policy. The Bordeaux agglomeration moves from rank 2 to rank 14
+(Table~\ref{tab:bordeaux}) on the national IMD soft-mobility ranking
+\cite{Fosse2026imd} after the A3 correction on the \emph{Pony
+Bordeaux} subsystem alone. The Spearman correlation between dock
+count and the FUB Cycling Barometer drops from $\rho = 0.38$ (raw)
+to $\rho = 0.25$ (audited): the raw correlation that has propagated
+in the literature is therefore an over-fit to virtual stations.
+These are not theoretical hazards: they are reproducible findings
+on the same corpus that this paper releases.
 
 % ===================================================================
 \section{Discussion}\label{secDiscussion}
@@ -612,7 +699,7 @@ pilot results are documented and shipped alongside the dataset
 (Table~\ref{tab:roadmap}). Four of the six experiments already
 include a completed pilot (the internal robustness checks of
 Section~\ref{secInternal} for E1, the $\sigma_{\max}$ sweep for E2,
-the 2-day dynamic snapshot for E4, and the Bicing/Oslo cross-country
+the 2-day dynamic snapshot for E4, and the Bicing/Oslo/Bergen cross-country
 test of Section~\ref{secCrossCountry} for E5); the remaining
 priorities are the human inter-rater reliability of E1, the full
 four-dimensional threshold sweep of E2, the twelve-month temporal
@@ -638,7 +725,7 @@ E1 & Inter-rater reliability of A1--A5         & Auditor effect             & In
 E2 & Threshold and buffer sensitivity           & $\sigma_{\max}, N_{\min}$, radii & $\sigma_{\max}$ pilot $\checkmark$ \\
 E3 & Twelve-month temporal stability            & Snapshot dependence (L4)    & Running \\
 E4 & Dynamic extension to \texttt{station\_status} & L2                       & 2-day pilot $\checkmark$ \\
-E5 & European generalisation (5 countries)      & L1                          & 2-system pilot $\checkmark$ \\
+E5 & European generalisation (5 countries)      & L1                          & 3-system pilot $\checkmark$ \\
 E6 & Free-floating-native protocol              & L3                          & Planned 2027-Q2 \\
 \bottomrule
 \end{tabular}

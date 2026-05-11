@@ -1,0 +1,42 @@
+[
+  {
+    "system": "Citi Bike NYC",
+    "stations": 2406,
+    "capacity_zero": 59,
+    "capacity_zero_pct": 2.45,
+    "capacity_nan": 0,
+    "capacity_mean_all": 30.0,
+    "capacity_mean_active": 30.75,
+    "capacity_unique_nonzero": 93
+  },
+  {
+    "system": "BlueBikes Boston",
+    "stations": 596,
+    "capacity_zero": 0,
+    "capacity_zero_pct": 0.0,
+    "capacity_nan": 0,
+    "capacity_mean_all": 17.68,
+    "capacity_mean_active": 17.68,
+    "capacity_unique_nonzero": 29
+  },
+  {
+    "system": "Capital Bikeshare DC",
+    "stations": 827,
+    "capacity_zero": 0,
+    "capacity_zero_pct": 0.0,
+    "capacity_nan": 0,
+    "capacity_mean_all": 17.25,
+    "capacity_mean_active": 17.25,
+    "capacity_unique_nonzero": 33
+  },
+  {
+    "system": "French dock-based (Audit Catalogue)",
+    "stations": 5442,
+    "capacity_zero": 0,
+    "capacity_zero_pct": 0.0,
+    "capacity_nan": 44,
+    "capacity_mean_all": 20.61,
+    "capacity_mean_active": 20.78,
+    "capacity_unique_nonzero": 77
+  }
+]
