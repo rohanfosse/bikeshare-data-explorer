@@ -220,6 +220,51 @@ st.caption(
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
+# Section 1bis : Couverture du portail national francais
+# ═══════════════════════════════════════════════════════════════════════════════
+st.divider()
+section("1bis", "Side finding : le portail national francais indexe moitie moins de feeds que le catalogue mondial")
+
+st.markdown(
+    "Le catalogue MobilityData recense **255 entrees francaises**. Le "
+    "portail obligatoire `transport.data.gouv.fr` (impose par l'article "
+    "L.1115-1 du Code des transports) en indexe environ **123**. "
+    "**Plus de la moitie des feeds GBFS publies par des operateurs "
+    "francais sont visibles au monde mais pas sur le portail national.** "
+    "Ce sont typiquement les flottes free-floating recentes (Voi, Bolt, "
+    "Lime) ou les deploiements regionaux de Pony, Dott, Bird, qui se "
+    "declarent au catalogue international mais pas sur le portail "
+    "francais. C'est un finding empirique qu'aucun audit limite au "
+    "portail national n'aurait pu observer."
+)
+
+fr_audited_local = 123
+fr_audited_global = 255
+fr_gap = fr_audited_global - fr_audited_local
+
+cov = pd.DataFrame({
+    "Source": [
+        "transport.data.gouv.fr (portail FR obligatoire)",
+        "Catalogue MobilityData (international)",
+        "Ecart non couvert par le portail FR",
+    ],
+    "Entrees francaises": [fr_audited_local, fr_audited_global, fr_gap],
+    "Part du catalogue mondial FR (%)": [
+        round(100 * fr_audited_local / fr_audited_global, 1),
+        100.0,
+        round(100 * fr_gap / fr_audited_global, 1),
+    ],
+})
+st.dataframe(cov, hide_index=True, use_container_width=True)
+st.caption(
+    "Tableau 1bis.1 - Ecart de couverture entre le portail national "
+    "francais (regulatoire) et le catalogue MobilityData (international). "
+    "132 entrees francaises (51.8 % du catalogue mondial pour la France) "
+    "sont absentes du portail obligatoire."
+)
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
 # Section 2 : Vue d'ensemble par pays
 # ═══════════════════════════════════════════════════════════════════════════════
 st.divider()
@@ -299,6 +344,41 @@ st.caption(
     "Tableau 2.1 - Detail par pays (audites >= 5 systemes). "
     "Sources : MobilityData canonical catalogue + ingestion automatique "
     "le 2026-05 sur le pipeline `massive_audit.py`."
+)
+
+# ─── Heatmap classes x pays (proportion par audite) ────────────────────────────
+st.markdown("**Carte chaude classes A1-A5 par pays.**")
+
+heat_df = df_country.head(15).copy()
+heat_df = heat_df.set_index("Pays")[
+    ["A1 cars", "A2 placeholder", "A3 over-cap", "A4 perim", "A5 macro"]
+]
+# Normaliser en taux par audites
+audited_per_country = df_country.head(15).set_index("Pays")["Audites"]
+heat_rate = heat_df.div(audited_per_country, axis=0) * 100
+
+fig_heat = px.imshow(
+    heat_rate.T,
+    color_continuous_scale="Reds",
+    aspect="auto",
+    labels={"color": "Taux (%)"},
+    text_auto=".1f",
+    title="Figure 2.2 - Taux de detection par classe et par pays (top 15 audites)",
+)
+fig_heat.update_layout(
+    height=380, margin=dict(t=50, b=40, l=40, r=20),
+    xaxis_title="Code pays ISO", yaxis_title="Classe d'anomalie",
+)
+st.plotly_chart(fig_heat, use_container_width=True)
+st.caption(
+    "Figure 2.2 - Carte chaude des taux de detection (systemes flagues "
+    "rapportes aux systemes audites par pays). Cellules plus sombres = "
+    "concentration plus forte. Trois signatures se distinguent : la "
+    "Tchequie ne s'allume que sur A2/A3 (monopole nextbike), la Suisse "
+    "s'allume sur A1/A5 (operateurs car-sharing nationaux + agregateurs), "
+    "et un cluster Scandinavie/Pologne/Slovaquie s'allume sur A4 "
+    "(operateurs trans-frontaliers, faux positifs partiels de la "
+    "calibration de bbox)."
 )
 
 
@@ -618,6 +698,52 @@ st.caption(
     "seuil entre 1 % et 99 % donne le meme ensemble flague."
 )
 
+# ─── Tableau de distribution detaillee A7 ─────────────────────────────────────
+n_a7_total = len(df_a7)
+n_extr0 = int((df_a7["nan_pct"] == 0).sum())
+n_01 = int(((df_a7["nan_pct"] > 0) & (df_a7["nan_pct"] < 1)).sum())
+n_110 = int(((df_a7["nan_pct"] >= 1) & (df_a7["nan_pct"] < 10)).sum())
+n_1050 = int(((df_a7["nan_pct"] >= 10) & (df_a7["nan_pct"] < 50)).sum())
+n_5099 = int(((df_a7["nan_pct"] >= 50) & (df_a7["nan_pct"] < 99)).sum())
+n_99100 = int(((df_a7["nan_pct"] >= 99) & (df_a7["nan_pct"] < 100)).sum())
+n_extr100 = int((df_a7["nan_pct"] == 100).sum())
+n_extremes = n_extr0 + n_extr100
+
+dist_a7 = pd.DataFrame({
+    "Bucket de taux NaN": [
+        "= 0 % (aucun NaN)",
+        "0+ a 1 %",
+        "1 a 10 %",
+        "10 a 50 %",
+        "50 a 99 %",
+        "99 a <100 %",
+        "= 100 % (tout NaN)",
+        "Total aux deux extremes",
+    ],
+    "Systemes": [n_extr0, n_01, n_110, n_1050, n_5099, n_99100,
+                 n_extr100, n_extremes],
+    "Part (%)": [
+        round(100 * n_extr0 / n_a7_total, 1),
+        round(100 * n_01 / n_a7_total, 1),
+        round(100 * n_110 / n_a7_total, 1),
+        round(100 * n_1050 / n_a7_total, 1),
+        round(100 * n_5099 / n_a7_total, 1),
+        round(100 * n_99100 / n_a7_total, 1),
+        round(100 * n_extr100 / n_a7_total, 1),
+        round(100 * n_extremes / n_a7_total, 1),
+    ],
+})
+st.dataframe(dist_a7, hide_index=True, use_container_width=True)
+st.caption(
+    f"Tableau 7.1bis - Distribution chiffree du taux NaN sur les "
+    f"{n_a7_total} systemes audites (>=20 stations). **{n_extremes} "
+    f"systemes ({round(100*n_extremes/n_a7_total,1)} %) sont a l'une "
+    "des deux extremes 0 % ou 100 %**. Cette bimodalite extreme "
+    "justifie un seuil coarse plutot qu'une calibration ancree sur "
+    "les percentiles comme pour A6 ; le choix tau_A7 = 0.5 est robuste "
+    "sur tout intervalle (1 %, 99 %)."
+)
+
 # ─── Top operateurs A7 ─────────────────────────────────────────────────────────
 from collections import Counter as _Counter
 a7_rows = df_a7[
@@ -787,10 +913,97 @@ st.markdown(
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
-# Section 8 : Synthese
+# Section 11 : Artefacts livrables et reproductibilite
 # ═══════════════════════════════════════════════════════════════════════════════
 st.divider()
-section(11, "Synthese et portee scientifique")
+section(11, "Artefacts livrables, donnees ouvertes et reproductibilite")
+
+st.markdown(
+    "Toutes les sorties de l'audit sont publiees sous deux licences "
+    "explicites, avec une separation claire entre le dataset stable "
+    "(catalogue francais) et l'audit derive du catalogue mondial "
+    "(reproductible depuis le code)."
+)
+
+artefacts = pd.DataFrame({
+    "Artefact": [
+        "Audit Catalogue GBFS France (Parquet, 46 307 stations)",
+        "Audit report PDF (per-systeme, log de pipeline)",
+        "rejected_stations.parquet (entrees exclues + motif)",
+        "Manifeste Croissant JSON-LD",
+        "JSON Schema (extension GBFS v3)",
+        "Frictionless Data Package",
+        "DCAT-AP record",
+        "Audit mondial 1509 systemes (CSV per-system)",
+        "Audit mondial agregats (JSON par pays)",
+        "Pipeline d'audit (Python, 1319 LoC)",
+        "Image Docker (reproduction bit-exact France)",
+        "3 papiers (SCITEPRESS, Patterns, Scientific Data)",
+    ],
+    "Localisation": [
+        "Zenodo (DOI principal)",
+        "Zenodo",
+        "Zenodo",
+        "Zenodo + GitHub",
+        "Zenodo + GitHub",
+        "Zenodo + GitHub",
+        "Zenodo + GitHub",
+        "GitHub (papers/01_gold_standard/experiments/e5_europe/)",
+        "GitHub",
+        "GitHub",
+        "GitHub Container Registry",
+        "GitHub (papers/01_gold_standard/)",
+    ],
+    "Licence": [
+        "ODbL v1.0", "ODbL v1.0", "ODbL v1.0",
+        "ODbL v1.0", "ODbL v1.0", "ODbL v1.0", "ODbL v1.0",
+        "MIT (code-versionne)", "MIT", "MIT", "MIT", "CC-BY-4.0",
+    ],
+})
+st.dataframe(artefacts, hide_index=True, use_container_width=True, height=460)
+st.caption(
+    "Tableau 11.1 - Inventaire complet des artefacts livrables. "
+    "Le catalogue francais est versionne sur Zenodo avec un DOI "
+    "stable (10.5281/zenodo.20125460) parce que c'est un dataset "
+    "fige ; l'audit mondial est versionne comme code parce que le "
+    "catalogue MobilityData evolue."
+)
+
+st.markdown(
+    "**Comment reproduire l'audit mondial localement** (10-15 minutes, "
+    "depend de la latence reseau) :"
+)
+st.code(
+    "git clone https://github.com/rohanfosse/bikeshare-data-explorer.git\n"
+    "cd bikeshare-data-explorer\n"
+    "pip install -r requirements.txt\n"
+    "# Telecharge le catalogue canonique MobilityData\n"
+    "curl -o $TEMP/gbfs_systems.csv https://raw.githubusercontent.com/MobilityData/gbfs/master/systems.csv\n"
+    "# Lance l'audit massif (16 workers paralleles, 1509 systemes)\n"
+    "python papers/01_gold_standard/experiments/e5_europe/massive_audit.py",
+    language="bash",
+)
+
+st.markdown("**Comment citer le dataset (BibTeX) :**")
+st.code(
+    "@dataset{fosse_gbfs_audit_2026,\n"
+    "  author       = {Fosse, Rohan and Pallares, Gael},\n"
+    "  title        = {GBFS France Audit Catalogue v1.0},\n"
+    "  year         = 2026,\n"
+    "  publisher    = {Zenodo},\n"
+    "  version      = {1.0.0},\n"
+    "  doi          = {10.5281/zenodo.20125460},\n"
+    "  url          = {https://doi.org/10.5281/zenodo.20125460}\n"
+    "}",
+    language="bibtex",
+)
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# Section 12 : Synthese et portee scientifique
+# ═══════════════════════════════════════════════════════════════════════════════
+st.divider()
+section(12, "Synthese et portee scientifique")
 
 st.markdown(
     "Trois conclusions empiriques se degagent de l'audit a large echelle."
