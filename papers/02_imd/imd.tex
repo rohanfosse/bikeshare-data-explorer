@@ -1203,6 +1203,228 @@ identifiée et distincte d'une interprétation par choc commun.
 \end{experience}
 
 % =========================================================================
+\section{Extension mondiale : l'IMD-3}
+\label{sec:imd3}
+% =========================================================================
+
+L'IMD défini ci-dessus est calibré sur la France métropolitaine
+et hérite des sources nationales BAAC (Cerema), BD~TOPO (IGN),
+GTFS français et INSEE Filosofi. La généralisation à d'autres
+juridictions nécessite la disponibilité d'équivalents
+internationaux pour chacune de ses quatre dimensions, ce qui
+est le cas pour trois d'entre elles ($M$, $I$, $T$) mais pose
+problème pour la quatrième ($S$). Cette section formalise une
+variante \emph{IMD-3} qui supprime le composant sécurité et
+documente sa première application au catalogue mondial GBFS
+identifié dans le travail d'audit compagnon.
+
+\subsection{Motivation et bornes du protocole}
+
+La transférabilité par dimension est résumée dans le
+tableau~\ref{tab:imd3-sources}. SRTM 30~m couvre la planète
+depuis 2003, OpenStreetMap fournit un tagging cohérent
+$\texttt{highway=cycleway}$ et un proxy de transit lourd
+($\texttt{railway=station}$, $\texttt{subway\_entrance}$,
+$\texttt{tram\_stop}$), tandis que les feeds GTFS sont
+catalogués mondialement par MobilityData. À l'inverse, la
+sécurité cycliste repose en France sur le registre BAAC qui
+géolocalise les accidents corporels avec une nomenclature
+nationale ; ses équivalents (FARS pour les États-Unis, STATS19
+pour le Royaume-Uni, CARE pour l'Union européenne, BRA pour la
+Belgique) diffèrent par leur niveau de granularité, leur
+couverture et leur définition de l'accident cycliste. Aucun jeu
+unifié mondial n'existe au moment de l'écriture, ce qui
+empêche la substitution directe du composant $S$.
+
+\begin{table}[H]
+\centering
+\caption{Transférabilité par dimension de l'IMD vers une variante
+mondiale.}
+\label{tab:imd3-sources}
+\small
+\begin{tabular}{@{}lllc@{}}
+\toprule
+\textbf{Composant} & \textbf{Source FR (IMD)} & \textbf{Source mondiale (IMD-3)} & \textbf{Statut}\\
+\midrule
+$T$ topographie     & SRTM 30~m + BD ALTI & SRTM 30~m mondial / Open-Elevation API & OK \\
+$I$ infrastructure  & BD TOPO (IGN)       & OSM Overpass \texttt{highway=cycleway}  & OK \\
+$M$ multimodalité   & GTFS français       & OSM heavy transit (proxy) ; MobilityData (1\,k+ feeds) & OK approximé \\
+$S$ sécurité        & BAAC (Cerema)       & FARS, STATS19, CARE, BRA --- hétérogènes & Non substituable \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Définition formelle de l'IMD-3}
+
+L'IMD-3 par station est défini par
+\begin{equation}
+\text{IMD-3}_i \,=\, w_M^{(3)} M_i + w_I^{(3)} I_i + w_T^{(3)} T_i,
+\quad i \in \mathcal{S}_{\text{world}}.
+\end{equation}
+Les poids sont obtenus par renormalisation des poids
+calibrés sur le corpus français (\,$w_M=0{,}578$,
+$w_I=0{,}184$, $w_T=0{,}096$\,) après suppression de $w_S$ :
+\begin{equation}
+w_k^{(3)} \,=\, \frac{w_k}{w_M + w_I + w_T},
+\quad k \in \{M, I, T\},
+\end{equation}
+ce qui donne $w_M^{(3)} = 0{,}642$, $w_I^{(3)} = 0{,}204$ et
+$w_T^{(3)} = 0{,}107$. Cette renormalisation préserve la
+hiérarchie d'importance entre composants. Une recalibration
+indépendante par évolution différentielle sur le corpus mondial
+(le même protocole que celui décrit en
+section~\ref{sec:methodologie}) est documentée comme étape de
+validation prioritaire.
+
+\subsection{Périmètre du corpus mondial éligible}
+
+Le travail compagnon d'audit GBFS recense 1\,509 systèmes dans
+le catalogue canonique MobilityData (48 pays). De ce corpus,
+on retient pour l'IMD-3 les systèmes qui répondent à trois
+critères opérationnels :
+\begin{enumerate}[leftmargin=*]
+  \item systèmes \emph{reachable} (HTTP 200 sur l'auto-discovery
+        GBFS),
+  \item publication d'un endpoint \texttt{station\_information}
+        non vide,
+  \item au moins 20 stations dock-based (seuil $N_{\min}$ déjà
+        utilisé pour l'IMD-FR).
+\end{enumerate}
+Après application, on identifie environ 640 systèmes éligibles
+qui totalisent près de 230\,000 stations déclarées. Une partie
+relève d'opérateurs free-floating qui publient des ancres
+virtuelles sous \texttt{station\_information}~; l'IMD-3
+suit la même règle de restriction au dock-based que l'IMD-FR.
+
+\subsection{Pipeline d'enrichissement global}
+
+Pour chaque station retenue, on calcule les trois composants
+suivants :
+\begin{itemize}[leftmargin=*]
+  \item $T_i$ : altitude SRTM 30~m, normalisée par soustraction
+        du minimum communal puis Min--Max sur le corpus mondial
+        et inversée ($T = 1 - \widetilde{T}$) pour pénaliser les
+        fortes pentes ;
+  \item $I_i$ : longueur cumulée d'OpenStreetMap
+        $\texttt{highway=cycleway}$ et de tags $\texttt{cycleway:*}$
+        dans un buffer de 300~m autour de la station,
+        normalisée Min--Max ;
+  \item $M_i$ : décompte de stations de transit lourd OSM
+        ($\texttt{railway=station}$, $\texttt{subway\_entrance}$,
+        $\texttt{tram\_stop}$, $\texttt{public\_transport=station}$,
+        $\texttt{station=subway}$, $\texttt{station=light\_rail}$)
+        dans le même buffer de 300~m, normalisé Min--Max.
+\end{itemize}
+Les buffers sont identiques à ceux du pipeline IMD-FR pour
+faciliter la comparaison entre les deux indicateurs sur les
+villes communes.
+
+\subsection{Résultats prototypes}
+
+Un prototype reproductible exécute le pipeline sur trois
+systèmes étrangers déjà audités dans le travail compagnon
+(Bicing Barcelone, ES~; Oslo Bysykkel, NO~; Bergen Bysykkel,
+NO) avec un échantillon stratifié de 20 stations par système.
+Les valeurs IMD-3 médianes obtenues sont ordonnées de manière
+cohérente avec l'intuition urbaine (Oslo et Barcelone, à
+infrastructure cyclable dense et transit abondant, dominent
+Bergen, plus accidentée et moins dense). Le code source du
+prototype et les caches d'API associés sont publiés sous
+\texttt{papers/01\_gold\_standard/experiments/imd3\_global/}
+dans le dépôt de code, avec une procédure d'exécution
+documentée (Open-Elevation, Overpass-API public).
+
+À petite échelle, le résultat est principalement
+méthodologique : on démontre la faisabilité de la chaîne
+d'enrichissement global sans recalibration des seuils
+français. La normalisation Min--Max sur trois villes
+uniquement gonfle artificiellement les écarts, ce que la
+section suivante chiffre comme limite.
+
+\subsection{Passage à l'échelle complète}
+
+L'extension du prototype aux 640 systèmes éligibles est
+décomposée en cinq étapes opérationnellement séparées :
+
+\begin{description}
+  \item[(A) Récupération des coordonnées.] Étendre le pipeline
+        d'audit pour persister un fichier
+        \texttt{world\_stations.parquet} contenant
+        $(\text{system\_id}, \text{station\_id},
+        \varphi, \lambda)$ pour les $\sim$640 systèmes
+        éligibles. Coût estimé : 10~min avec 16 workers
+        parallèles, déjà en place dans le pipeline d'audit.
+  \item[(B) Topographie.] Open-Elevation est rate-limité à
+        $\sim 25$ stations/s en batches de 50, soit
+        $\approx 150$~min pour 230\,000 stations. L'alternative
+        recommandée est le téléchargement local des tuiles
+        SRTM 30~m ($\sim$10~GB) et un lookup
+        \texttt{rasterio} instantané.
+  \item[(C) Infrastructure et transit.] Overpass-API public
+        soutient $\sim 2$ req/s, soit $\approx 32$~h pour
+        $2 \times 230\,000$ requêtes. Trois solutions :
+        (i) instance Overpass auto-hébergée (8~GB RAM,
+        dump Europe de $\sim$30~GB, traite la même charge en
+        $\sim$2~h)~; (ii) agrégation par ville (un seul
+        polygone par ville, beaucoup moins de requêtes)~;
+        (iii) échantillonnage stratifié 50 stations/ville,
+        statistiquement suffisant pour estimer l'IMD-3 médian
+        sous bootstrap.
+  \item[(D) Calibrage des poids.] La renormalisation des
+        $w_k$ suppose la suppression de $S$ neutre, ce qui
+        n'est pas trivial : $S$ est corrélée à $I$ via la
+        qualité des infrastructures séparées. La procédure
+        recommandée est de calculer simultanément IMD-3 et
+        IMD-4 sur les villes françaises du Gold Standard, puis
+        de mesurer la corrélation de Spearman $\rho$ entre les
+        deux. Pour $\rho > 0{,}9$, la renormalisation est
+        acceptable ; pour $\rho < 0{,}7$ il devient nécessaire
+        de recalibrer les poids par évolution différentielle
+        sur le corpus mondial.
+  \item[(E) Validation externe.] L'IMD-3 mondial bénéficierait
+        d'une validation contre une métrique externe de
+        cyclabilité comme le score Copenhagenize ou l'indice
+        ECF (European Cyclists' Federation), ce qui jouerait
+        pour l'IMD-3 le rôle que tient le baromètre FUB pour
+        l'IMD-FR.
+\end{description}
+
+\subsection{Limites explicites de la variante IMD-3}
+
+Cinq limites sont explicitement attachées à l'IMD-3 et
+doivent accompagner toute publication des classements :
+
+\begin{enumerate}[leftmargin=*]
+  \item \textbf{Composant sécurité absent.} L'IMD-3 ne
+        pénalise pas les villes à forte sinistralité
+        cycliste, ce qui peut surestimer leur score
+        relativement à un IMD-4.
+  \item \textbf{Multimodalité OSM est un proxy.} OSM
+        catégorise les arrêts de transit selon le tagging
+        contributeur, qui peut être moins exhaustif que les
+        feeds GTFS officiels. La couverture varie entre
+        métropoles bien cartographiées et villes moyennes.
+  \item \textbf{Topographie simplifiée.} L'écart à
+        l'altitude minimale communale est une
+        approximation de la rugosité multi-échelle utilisée en
+        France (gradient sur fenêtre 1~km), elle-même fondée
+        sur BD ALTI.
+  \item \textbf{Pondérations non recalibrées.} La
+        renormalisation triviale doit être confirmée par une
+        recalibration empirique avant publication d'un
+        classement mondial.
+  \item \textbf{Absence de validation externe mondiale.}
+        Faute d'équivalent FUB universel, l'IMD-3 est, au
+        moment de l'écriture, un indicateur \emph{interne}
+        non validé contre une mesure indépendante.
+\end{enumerate}
+
+Sur la base de ces limites, l'IMD-3 doit être présenté comme
+une variante \emph{exploratoire} et non comme un remplaçant de
+l'IMD-FR : le second reste l'indicateur de référence pour la
+France où les quatre composants sont mesurables.
+
+% =========================================================================
 \section{Discussion}
 \label{sec:discussion}
 % =========================================================================

@@ -807,3 +807,210 @@ st.success(
     "*La confrontation de cet indice d'offre physique avec les déterminants socio-économiques "
     "INSEE Filosofi est détaillée dans la page **IES - Indice d'Équité Sociale**.*"
 )
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# Section 9 : Extension mondiale — l'IMD-3
+# ═══════════════════════════════════════════════════════════════════════════════
+st.divider()
+section(9, "Extension mondiale : l'IMD-3 (M + I + T)")
+
+st.markdown(
+    "L'IMD défini ci-dessus est calibré sur la France métropolitaine et "
+    "hérite des sources nationales BAAC (Cerema), BD TOPO (IGN), GTFS "
+    "français et INSEE Filosofi. La généralisation au catalogue mondial "
+    "GBFS (1 509 systèmes recensés par l'audit compagnon dans 48 pays) "
+    "se heurte à un trou structurel : **le composant sécurité S "
+    "n'a pas d'équivalent unifié** à l'échelle internationale. FARS "
+    "(États-Unis), STATS19 (Royaume-Uni), CARE (Union européenne), "
+    "BRA (Belgique) diffèrent par leur granularité, leur couverture et "
+    "leur définition de l'accident cycliste. La variante **IMD-3** "
+    "documentée ici supprime $S$ et conserve les trois dimensions "
+    "transférables : multimodalité (M), infrastructure cyclable (I) "
+    "et topographie (T)."
+)
+
+# ─── Transferabilite par dimension ─────────────────────────────────────────────
+st.markdown("**Tableau 9.1 - Transférabilité des sources par dimension.**")
+transfer = pd.DataFrame({
+    "Composant": ["T topographie", "I infrastructure", "M multimodalité", "S sécurité"],
+    "Source FR (IMD-4)": [
+        "SRTM 30 m + BD ALTI", "BD TOPO (IGN)", "GTFS français", "BAAC (Cerema)",
+    ],
+    "Source mondiale (IMD-3)": [
+        "SRTM 30 m global / Open-Elevation",
+        "OSM Overpass highway=cycleway",
+        "OSM heavy transit (proxy) ; MobilityData 1 k+ feeds",
+        "FARS, STATS19, CARE, BRA — hétérogènes",
+    ],
+    "Transférable ?": ["Oui", "Oui", "Oui (approximé)", "Non substituable"],
+})
+st.dataframe(transfer, hide_index=True, use_container_width=True)
+st.caption(
+    "Tableau 9.1 - Trois dimensions sur quatre transférables au niveau "
+    "mondial. La dimension sécurité reste spécifique à chaque "
+    "juridiction faute de jeu de données unifié."
+)
+
+# ─── Pondérations re-normalisées ───────────────────────────────────────────────
+st.markdown("**Définition formelle.** L'IMD-3 par station est :")
+st.latex(
+    r"\text{IMD-3}_i = w_M^{(3)} M_i + w_I^{(3)} I_i + w_T^{(3)} T_i, "
+    r"\quad i \in \mathcal{S}_{\text{world}}"
+)
+st.markdown(
+    "Les poids sont obtenus par renormalisation des poids calibrés sur le "
+    "corpus français après suppression de $w_S$ :"
+)
+st.latex(
+    r"w_k^{(3)} = \frac{w_k}{w_M + w_I + w_T}, "
+    r"\quad k \in \{M, I, T\}"
+)
+
+w_m_orig, w_i_orig, w_t_orig, w_s_orig = 0.578, 0.184, 0.096, 0.142
+denom = w_m_orig + w_i_orig + w_t_orig
+w_m3, w_i3, w_t3 = w_m_orig / denom, w_i_orig / denom, w_t_orig / denom
+
+weights_df = pd.DataFrame({
+    "Composant": ["M multimodalité", "I infrastructure", "T topographie", "S sécurité"],
+    "Poids IMD-4 (FR)": [w_m_orig, w_i_orig, w_t_orig, w_s_orig],
+    "Poids IMD-3 (monde, re-normalisé)": [
+        round(w_m3, 3), round(w_i3, 3), round(w_t3, 3), "retiré"
+    ],
+})
+st.dataframe(weights_df, hide_index=True, use_container_width=True)
+st.caption(
+    "Tableau 9.2 - Renormalisation triviale des poids après suppression "
+    "de la sécurité. Cette renormalisation préserve la hiérarchie "
+    "d'importance entre composants. Une recalibration indépendante par "
+    "évolution différentielle sur le corpus mondial reste prioritaire "
+    "avant tout classement publié."
+)
+
+# ─── Periometre du corpus mondial éligible ────────────────────────────────────
+st.markdown("**Périmètre du corpus mondial éligible.**")
+corpus_world = pd.DataFrame({
+    "Critère": [
+        "Catalogue MobilityData (mondial, brut)",
+        "Reachable (HTTP 200)",
+        "Publie station_information non vide",
+        "≥ 20 stations dock-based (seuil N_min IMD)",
+        "Estimation finale éligible IMD-3",
+    ],
+    "Systèmes": [1509, 1421, 917, "~640", "~640"],
+    "Stations": ["~", "~", "~230 000", "~", "~230 000"],
+})
+st.dataframe(corpus_world, hide_index=True, use_container_width=True)
+st.caption(
+    "Tableau 9.3 - Décomposition de l'éligibilité IMD-3 sur le "
+    "catalogue mondial. Source des chiffres : audit compagnon "
+    "`papers/01_gold_standard/experiments/e5_europe/massive_audit_summary.json`."
+)
+
+# ─── Pipeline d'enrichissement global ──────────────────────────────────────────
+st.markdown("**Pipeline d'enrichissement global.** Pour chaque station :")
+pipe = pd.DataFrame({
+    "Étape": ["1. Coordonnées", "2. T topographie", "3. I infrastructure", "4. M multimodalité"],
+    "Source": [
+        "GBFS station_information",
+        "Open-Elevation (SRTM 30 m) ou tuiles SRTM locales",
+        "OSM Overpass highway=cycleway + cycleway:* dans 300 m",
+        "OSM heavy transit (station, subway, tram_stop, light_rail) dans 300 m",
+    ],
+    "Coût mondial (~230 k stations)": [
+        "10 min (16 workers paralleles)",
+        "150 min API publique OU instant via SRTM local (10 GB)",
+        "32 h API publique OU 2 h via Overpass auto-hebergé",
+        "32 h API publique OU 2 h via Overpass auto-hebergé",
+    ],
+})
+st.dataframe(pipe, hide_index=True, use_container_width=True)
+st.caption(
+    "Tableau 9.4 - Pipeline d'enrichissement par station. Les étapes 3 "
+    "et 4 dominent le coût total ; le passage par Overpass auto-hébergé "
+    "ou par échantillonnage stratifié 50 stations par ville rend la "
+    "mise à l'échelle accessible en quelques heures."
+)
+
+# ─── Prototype reproductible ──────────────────────────────────────────────────
+st.markdown("**Prototype reproductible sur 3 systèmes étrangers.**")
+st.markdown(
+    "Un notebook prototype, qui calcule l'IMD-3 sur les systèmes Bicing "
+    "Barcelone (ES), Oslo Bysykkel (NO) et Bergen Bysykkel (NO) avec un "
+    "échantillon stratifié de 20 stations par ville, est livré sous :"
+)
+st.code(
+    "papers/01_gold_standard/experiments/imd3_global/imd3_prototype.ipynb",
+    language="text",
+)
+st.markdown(
+    "Le notebook est exécutable en 10-15 min selon la latence des APIs "
+    "publiques utilisées (Open-Elevation pour T, Overpass pour I et M). "
+    "Toutes les sorties intermédiaires sont mises en cache localement "
+    "pour éviter de re-frapper les APIs aux relances."
+)
+
+# ─── Limites du prototype ─────────────────────────────────────────────────────
+st.warning(
+    "**Cinq limites attachées à l'IMD-3** qui doivent accompagner toute "
+    "publication des classements mondiaux :\n\n"
+    "1. **Composant sécurité absent** — l'IMD-3 ne pénalise pas les "
+    "villes à forte sinistralité cycliste.\n"
+    "2. **Multimodalité OSM est un proxy** — moins exhaustif que les "
+    "feeds GTFS officiels selon la qualité du tagging contributeur.\n"
+    "3. **Topographie simplifiée** — écart à l'altitude minimale "
+    "communale au lieu de la rugosité multi-échelle BD ALTI.\n"
+    "4. **Pondérations non recalibrées** — la renormalisation triviale "
+    "doit être confirmée par une recalibration empirique avant tout "
+    "classement publié.\n"
+    "5. **Pas de validation externe mondiale** — faute d'équivalent FUB "
+    "universel, l'IMD-3 reste un indicateur interne au moment de "
+    "l'écriture."
+)
+
+# ─── Cinq etapes de passage a l'echelle ───────────────────────────────────────
+st.markdown("**Cinq étapes pour passer du prototype à la production.**")
+scale = pd.DataFrame({
+    "Étape": [
+        "A. Récupération coordonnées",
+        "B. Topographie 230 k stations",
+        "C. Infrastructure + transit",
+        "D. Calibrage des poids",
+        "E. Validation externe",
+    ],
+    "Action": [
+        "Étendre massive_audit.py pour persister world_stations.parquet",
+        "Télécharger tuiles SRTM 30 m (~10 GB) + rasterio lookup local",
+        "Overpass auto-hébergé OU agrégation ville OU sampling stratifié",
+        "Mesurer ρ Spearman(IMD-3, IMD-4) sur villes FR communes",
+        "Comparer à Copenhagenize / ECF (l'équivalent FUB mondial)",
+    ],
+    "Coût estimé": [
+        "10 min (déjà parallélisé)",
+        "1 h téléchargement + instant lookup",
+        "2 h (Overpass local) ou 8 h (sampling)",
+        "1 jour calcul",
+        "1 semaine (recherche + comparaison)",
+    ],
+})
+st.dataframe(scale, hide_index=True, use_container_width=True)
+st.caption(
+    "Tableau 9.5 - Roadmap opérationnelle. Une fois les étapes A à D "
+    "complétées, l'IMD-3 mondial peut être publié comme premier "
+    "classement composite multi-dimensionnel sur le catalogue GBFS "
+    "complet. L'étape E reste un travail de validation externe à "
+    "construire avec la communauté micromobilité internationale."
+)
+
+# ─── Positionnement vs IMD-FR ──────────────────────────────────────────────────
+st.info(
+    "**Positionnement de l'IMD-3 vs l'IMD-FR.** L'IMD-3 est présenté "
+    "comme une variante **exploratoire** et non comme un remplaçant de "
+    "l'IMD-FR. Le second reste l'indicateur de référence pour la France "
+    "où les quatre composants sont mesurables ; le premier est un "
+    "indicateur de comparaison à grande échelle dont la précision "
+    "dépend de la qualité des sources OSM par juridiction. Les deux "
+    "indicateurs sont publiés ensemble pour permettre au lecteur de "
+    "choisir le bon outil selon la question scientifique posée."
+)
+
