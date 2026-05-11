@@ -1,40 +1,38 @@
 {
   "total_audited": 1254,
-  "reachable": 1168,
+  "reachable": 1167,
   "with_stations": 773,
-  "flagged_anomalies": 173,
+  "flagged_anomalies": 166,
   "by_country": {
     "DE": {
       "audited": 251,
       "reachable": 243,
-      "flagged": 33,
+      "flagged": 32,
       "anomalies": {
         "a3_overcap_flag": 9,
         "a1_cars": 21,
         "a2_placeholder": 4,
-        "a5_macro_flag": 4
+        "a5_macro_flag": 3
       }
     },
     "US": {
       "audited": 175,
       "reachable": 172,
-      "flagged": 1,
-      "anomalies": {
-        "a5_macro_flag": 1
-      }
+      "flagged": 0,
+      "anomalies": {}
     },
     "PL": {
       "audited": 94,
       "reachable": 91,
       "flagged": 28,
       "anomalies": {
-        "a4_perim_flag": 25,
-        "a2_placeholder": 3
+        "a2_placeholder": 3,
+        "a4_perim_flag": 25
       }
     },
     "NO": {
       "audited": 83,
-      "reachable": 46,
+      "reachable": 45,
       "flagged": 2,
       "anomalies": {
         "a4_perim_flag": 2
@@ -68,22 +66,21 @@
     "NL": {
       "audited": 52,
       "reachable": 52,
-      "flagged": 2,
+      "flagged": 1,
       "anomalies": {
-        "a4_perim_flag": 1,
-        "a5_macro_flag": 1
+        "a4_perim_flag": 1
       }
     },
     "CH": {
       "audited": 49,
       "reachable": 46,
-      "flagged": 16,
+      "flagged": 15,
       "anomalies": {
         "a1_cars": 8,
-        "a5_macro_flag": 5,
         "a2_placeholder": 3,
         "a3_overcap_flag": 3,
-        "a4_perim_flag": 1
+        "a4_perim_flag": 1,
+        "a5_macro_flag": 1
       }
     },
     "CZ": {
@@ -98,20 +95,18 @@
     "BE": {
       "audited": 37,
       "reachable": 34,
-      "flagged": 5,
+      "flagged": 4,
       "anomalies": {
         "a4_perim_flag": 2,
-        "a5_macro_flag": 1,
         "a3_overcap_flag": 2
       }
     },
     "CA": {
       "audited": 35,
       "reachable": 23,
-      "flagged": 2,
+      "flagged": 1,
       "anomalies": {
-        "a2_placeholder": 1,
-        "a5_macro_flag": 1
+        "a2_placeholder": 1
       }
     },
     "IT": {
@@ -142,9 +137,9 @@
       "reachable": 20,
       "flagged": 2,
       "anomalies": {
-        "a2_placeholder": 1,
         "a3_overcap_flag": 1,
-        "a5_macro_flag": 1
+        "a5_macro_flag": 1,
+        "a2_placeholder": 1
       }
     },
     "DK": {
@@ -243,13 +238,13 @@
       "flagged": 0,
       "anomalies": {}
     },
-    "BA": {
+    "AR": {
       "audited": 3,
       "reachable": 3,
       "flagged": 0,
       "anomalies": {}
     },
-    "AR": {
+    "BA": {
       "audited": 3,
       "reachable": 3,
       "flagged": 0,
@@ -273,13 +268,13 @@
       "flagged": 0,
       "anomalies": {}
     },
-    "CL": {
+    "CO": {
       "audited": 1,
       "reachable": 1,
       "flagged": 0,
       "anomalies": {}
     },
-    "CO": {
+    "CL": {
       "audited": 1,
       "reachable": 1,
       "flagged": 0,
@@ -332,10 +327,8 @@
     "TR": {
       "audited": 1,
       "reachable": 1,
-      "flagged": 1,
-      "anomalies": {
-        "a5_macro_flag": 1
-      }
+      "flagged": 0,
+      "anomalies": {}
     },
     "UA": {
       "audited": 1,
@@ -440,15 +433,9 @@
   ],
   "high_nan_systems": [
     {
-      "country": "AE",
-      "name": "Dott Sharjah",
-      "stations": 38,
-      "nan_pct": 100.0
-    },
-    {
-      "country": "AE",
-      "name": "Dott Dubai Hills",
-      "stations": 7,
+      "country": "AT",
+      "name": "Dott Klagenfurt",
+      "stations": 46,
       "nan_pct": 100.0
     },
     {
@@ -459,20 +446,26 @@
     },
     {
       "country": "AE",
-      "name": "Dott Ras Al Khaimah",
-      "stations": 31,
-      "nan_pct": 100.0
-    },
-    {
-      "country": "AT",
-      "name": "Dott Bregenz",
-      "stations": 98,
+      "name": "Dott Dubai Hills",
+      "stations": 7,
       "nan_pct": 100.0
     },
     {
       "country": "AE",
       "name": "Dott Dubai",
       "stations": 342,
+      "nan_pct": 100.0
+    },
+    {
+      "country": "AE",
+      "name": "Dott Sharjah",
+      "stations": 38,
+      "nan_pct": 100.0
+    },
+    {
+      "country": "AT",
+      "name": "Dott Innsbruck",
+      "stations": 56,
       "nan_pct": 100.0
     },
     {
@@ -489,38 +482,26 @@
     },
     {
       "country": "AE",
+      "name": "Dott Ras Al Khaimah",
+      "stations": 31,
+      "nan_pct": 100.0
+    },
+    {
+      "country": "AE",
       "name": "Dott Abu Dhabi",
       "stations": 1433,
       "nan_pct": 100.0
     },
     {
       "country": "AT",
-      "name": "Dott Innsbruck",
-      "stations": 56,
-      "nan_pct": 100.0
-    },
-    {
-      "country": "AT",
-      "name": "Dott Klagenfurt",
-      "stations": 46,
+      "name": "Dott Bregenz",
+      "stations": 98,
       "nan_pct": 100.0
     },
     {
       "country": "AT",
       "name": "Dott Korneuburg",
       "stations": 43,
-      "nan_pct": 100.0
-    },
-    {
-      "country": "AT",
-      "name": "Dott M\u00f6dling",
-      "stations": 68,
-      "nan_pct": 100.0
-    },
-    {
-      "country": "AT",
-      "name": "Dott Leoben",
-      "stations": 46,
       "nan_pct": 100.0
     },
     {
@@ -539,6 +520,18 @@
       "country": "AT",
       "name": "Dott Wels",
       "stations": 47,
+      "nan_pct": 100.0
+    },
+    {
+      "country": "AT",
+      "name": "Dott M\u00f6dling",
+      "stations": 68,
+      "nan_pct": 100.0
+    },
+    {
+      "country": "AT",
+      "name": "Dott Leoben",
+      "stations": 46,
       "nan_pct": 100.0
     },
     {
@@ -567,26 +560,26 @@
     },
     {
       "country": "BE",
-      "name": "Dott Brussels",
-      "stations": 2477,
-      "nan_pct": 100.0
-    },
-    {
-      "country": "BE",
-      "name": "Dott Ghent",
-      "stations": 3211,
-      "nan_pct": 100.0
-    },
-    {
-      "country": "BE",
       "name": "Dott Charleroi",
       "stations": 1078,
       "nan_pct": 100.0
     },
     {
       "country": "BE",
+      "name": "Dott Brussels",
+      "stations": 2477,
+      "nan_pct": 100.0
+    },
+    {
+      "country": "BE",
       "name": "Dott Liege",
       "stations": 922,
+      "nan_pct": 100.0
+    },
+    {
+      "country": "BE",
+      "name": "Dott Ghent",
+      "stations": 3211,
       "nan_pct": 100.0
     }
   ]

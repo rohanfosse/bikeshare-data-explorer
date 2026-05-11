@@ -77,10 +77,12 @@ the raw French stations. We formalise a six-step idempotent purging
 protocol and release the resulting \emph{GBFS France Audit
 Catalogue} (46{,}307 stations, 97 cities) on Zenodo. We then apply
 the same rule set to the 1{,}254 non-French GBFS systems of the
-MobilityData canonical catalogue and observe that 173 systems
-across 47 countries trigger at least one anomaly class, with a
-candidate sixth class (A6, zero-capacity dock) emerging from the
-audit on 14 non-French systems. The Czech
+MobilityData canonical catalogue and observe that 166 systems
+across 47 countries trigger at least one anomaly class, with two
+candidate classes emerging from the global audit: A6 (zero-capacity
+dock) flags 14 non-French systems, and A7 (null capacity field)
+catches an additional 215 systems and 70{,}176 stations that the
+v1.0 taxonomy A1--A5 was structurally blind to. The Czech
 Republic is the European hotspot: 25 of 45 audited systems
 (55.6\,\%) are flagged, all of them deployments of a single
 operator (nextbike), exactly mirroring the operator-specific
@@ -115,9 +117,9 @@ starting point for research, not a substitute for one.
 \end{bigpicture}
 
 \begin{highlights}
-\item Audit of 1{,}377 GBFS systems across 47 countries flags 195 systems
+\item Audit of 1{,}377 GBFS systems across 47 countries flags 188 systems
 \item One operator drives each country: nextbike in Czechia, Pony in France
-\item Six anomaly classes; A6 (zero-capacity dock) emerges from global audit
+\item Two candidate classes (A6, A7) emerge from cross-country extension
 \item Audit Catalogue (46{,}307 stations) FAIR-released, code reproducible
 \end{highlights}
 
@@ -226,6 +228,7 @@ A3 & Structural over-capacity      & Conditional averaging on free-floating     
 A4 & Geospatial error              & Transposed coords; $>3\sigma$ outliers; OOA    & $\sim$3.8\,\% stns & 78 systems\\
 A5 & Out of perimeter              & System area $>50{,}000$\,km$^2$; overseas      &  5         & 17        \\
 A6 & Zero-capacity dock (candidate)& $\geq 1\,\%$ of stations declare $c = 0$       &  0         & 14        \\
+A7 & Null capacity field (candidate)& $\geq 50\,\%$ of stations declare $c = $ \texttt{NaN} & 19 (FF) & 215 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -543,13 +546,18 @@ To turn the negative-control argument into a positive one, the rule
 set was then applied to the entire MobilityData canonical catalogue:
 1{,}254 non-French GBFS systems across 47 countries. 1{,}168
 (93.1\,\%) were reachable, 773 publish a
-\texttt{station\_information} document, and \textbf{173 systems
-trigger at least one A1--A5 class} after country-perimeter
-calibration and after correcting a substring-matching false positive
-in the A1 detector (the GBFS form factor \texttt{cargo\_bicycle}
-contains the string \texttt{car} and was initially flagged as A1;
-the fix tightens A1 to exact list membership on the GBFS v3 form
-factor enum). The corrected breakdown is shown in
+\texttt{station\_information} document, and \textbf{166 systems
+trigger at least one A1--A5 class} after three methodological
+corrections that emerged from the audit itself: a country-perimeter
+calibration on A4, a substring-matching fix in the A1 detector (the
+GBFS form factor \texttt{cargo\_bicycle} contains the string
+\texttt{car} and was initially flagged as A1; the fix tightens A1
+to exact list membership on the GBFS v3 form factor enum), and a
+convex-hull replacement of the bounding-box surface estimator in A5
+(the rectangular bbox overestimates the operational area for
+elongated networks; Switzerland's national operators had a bbox
+area of 99{,}000\,km$^2$ versus a hull area of $\approx
+41{,}000$\,km$^2$). The corrected breakdown is shown in
 Table~\ref{tab:global-audit}.
 
 A3 (structural over-capacity) is detected on 29 non-French systems
@@ -585,23 +593,23 @@ shown.}
 \textbf{Country} & \textbf{Audited} & \textbf{Reach.} & \textbf{Flagged}
    & \textbf{A1} & \textbf{A2} & \textbf{A3} & \textbf{A4 geo}\\
 \midrule
-Germany (DE)         & 251 & 243 & 33 & 21 &  4 &  9 & -- \\
-United States (US)   & 175 & 172 &  1 & -- & -- & -- & -- \\
+Germany (DE)         & 251 & 243 & 32 & 21 &  4 &  9 & -- \\
+United States (US)   & 175 & 172 &  0 & -- & -- & -- & -- \\
 Poland (PL)          &  94 &  91 & 28 & -- &  3 & -- & 25 \\
 Norway (NO)          &  83 &  46 &  2 & -- & -- & -- &  2 \\
 Spain (ES)           &  69 &  66 &  1 & -- & -- & -- &  1 \\
 United Kingdom (GB)  &  56 &  54 &  3 & -- &  1 & -- &  2 \\
 Finland (FI)         &  55 &  55 & 14 & -- & -- & -- & 14 \\
-Netherlands (NL)     &  52 &  52 &  2 & -- & -- & -- &  1 \\
-Switzerland (CH)     &  49 &  46 & 16 &  8 &  3 &  3 &  1 \\
+Netherlands (NL)     &  52 &  52 &  1 & -- & -- & -- &  1 \\
+Switzerland (CH)     &  49 &  46 & 15 &  8 &  3 &  3 &  1 \\
 \textbf{Czech Rep.\ (CZ)} & 45 & 43 & \textbf{25} & -- & \textbf{16} & \textbf{12} & -- \\
-Belgium (BE)         &  37 &  34 &  5 & -- & -- &  2 &  2 \\
+Belgium (BE)         &  37 &  34 &  4 & -- & -- &  2 &  2 \\
 Italy (IT)           &  34 &  33 &  0 & -- & -- & -- & -- \\
 Austria (AT)         &  27 &  23 &  1 & -- &  1 &  1 & -- \\
 Slovakia (SK)        &  19 &  19 & 16 & -- & -- & -- & 16 \\
 Sweden (SE)          &  23 &  23 & 12 & -- & -- & -- & 12 \\
 \midrule
-\textbf{Total (47 countries)} & 1{,}254 & 1{,}168 & 173 & 29 & 34 & 29 & 78 \\
+\textbf{Total (47 countries)} & 1{,}254 & 1{,}167 & 166 & 29 & 34 & 29 & 78 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -650,6 +658,28 @@ classes can be reached through two opposite organisational
 configurations: monopoly publication (Czech Republic) or
 fragmented publication (Switzerland). The audit framework is
 operator-agnostic and detects both.
+
+\paragraph{Italy: a clean audit that hides 70{,}000 stations.}
+Italy is the most informative \emph{negative} result of the global
+audit: 33 of 34 systems reachable, 25 with published station data,
+and zero classed as flagged by A1--A6. A closer look at the
+underlying capacity column tells a different story. Of the 25
+Italian systems with data, 17 are deployments of \emph{Dott} (Milan
+alone publishes 11{,}199 stations) and every Dott deployment
+declares \texttt{capacity = NaN} on 100\,\% of its
+\texttt{station\_information} entries. The pattern is the same as
+the \emph{Dott} pattern documented on the French corpus, scaled to
+a national level. Because A2 requires a constant non-zero value, A3
+requires numerical capacities to compute the profile ratio, A4--A5
+are geospatial and A6 tests $c = 0$ (not $c = \texttt{NaN}$), the
+existing taxonomy is structurally blind to this case. Generalising
+the probe across the audit corpus, \textbf{215 reachable systems
+with at least 20 stations have $\geq 50\,\%$ NaN capacity and are
+flagged by no A1--A6 class}, together covering 70{,}176 stations.
+Dott alone accounts for 141 of these systems, distributed across
+Germany, Italy, Austria, UAE, and beyond. This is the empirical
+case for introducing a candidate seventh class, A7 (null capacity
+field), formalised in Section~\ref{secA7Formalisation}.
 
 \paragraph{Germany: how the audit caught itself.}
 The German case carries a methodological lesson. An initial run of
@@ -1035,6 +1065,39 @@ is reported as candidate because the interaction with
 operational consequence for downstream consumers still warrant the
 inter-rater human validation of experiment E1, which is currently
 calibrated on A1--A5 only.
+
+\subsection{A7 (candidate): null capacity field formalisation}\label{secA7Formalisation}
+The Italian case study of Section~\ref{secGlobalAudit} demonstrates
+that A1--A6 are structurally blind to operators that publish
+\texttt{station\_information} entries with \texttt{capacity =
+NaN}. The signature is:
+\begin{equation}
+\rho_s^{A7} \,=\,
+\frac{\#\{i \in \mathcal{S}_s \,:\, c_i = \mathtt{NaN}\}}{|\mathcal{S}_s|}
+\;\geq\; \tau_{A7},
+\end{equation}
+with the conservative threshold $\tau_{A7} = 0.5$ chosen so that a
+system flagged by A7 declares no usable capacity on at least half
+of its entries. The threshold is conservative rather than
+distribution-derived because $\rho_s^{A7}$ is bimodal on the global
+corpus: a large mass of systems at exactly $0\,\%$ NaN and a
+secondary mass at exactly $100\,\%$ NaN, with very few intermediate
+cases.
+
+\paragraph{Incidence of A7.}
+On the 538 globally audited systems with at least 20 stations,
+\textbf{215 systems cross the A7 threshold} and are simultaneously
+not flagged by any of A1--A6, covering \textbf{70{,}176 stations}.
+The dominant operator is \emph{Dott} (141 systems across Germany,
+Italy, Austria, UAE, and other markets), followed by
+\emph{nextbike} (13 systems where the operator chose NaN rather
+than placeholder), \emph{Bird} (10 Canadian deployments) and
+several smaller operators. The empirical conclusion is that the
+same publication choice that affects the French Dott and Bird
+fleets is propagated internationally, and that the v1.0 taxonomy
+A1--A5 captures only the visible failure modes of the field; A6
+and A7 jointly close the principal blind spots that remain on the
+\texttt{capacity} channel.
 
 \subsection{Multi-source hybridisation}
 The output of the purging stage enriches each station with a

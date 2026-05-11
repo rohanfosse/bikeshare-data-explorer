@@ -108,6 +108,44 @@ import threading
 _local = threading.local()
 
 
+def _convex_hull_area_km2(lats: list[float], lons: list[float]) -> float:
+    """Return the convex hull area of a station cloud, in km^2.
+
+    Projects each station to a local equirectangular frame centred on
+    the cloud centroid, then computes the convex hull area via the
+    shoelace formula. Returns 0.0 for degenerate clouds (< 3 stations
+    or collinear).
+    """
+    n = len(lats)
+    if n < 3:
+        return 0.0
+    try:
+        from scipy.spatial import ConvexHull  # type: ignore
+        import numpy as np  # type: ignore
+    except ImportError:
+        # Fallback: return bbox-style area if scipy is unavailable.
+        return (max(lats) - min(lats)) * 111.0 * \
+               (max(lons) - min(lons)) * 111.0
+
+    mean_lat = sum(lats) / n
+    mean_lon = sum(lons) / n
+    km_per_deg_lat = 111.0
+    # Equirectangular x-scale depends on the latitude.
+    import math
+    km_per_deg_lon = 111.0 * math.cos(math.radians(mean_lat))
+
+    pts = np.column_stack([
+        (np.array(lons) - mean_lon) * km_per_deg_lon,
+        (np.array(lats) - mean_lat) * km_per_deg_lat,
+    ])
+    try:
+        hull = ConvexHull(pts)
+    except Exception:
+        return 0.0
+    # ConvexHull.volume in 2D is the polygon area (in km^2 here).
+    return float(hull.volume)
+
+
 def get_session() -> requests.Session:
     if not hasattr(_local, "session"):
         s = requests.Session()
@@ -263,13 +301,20 @@ def audit_system(row: dict) -> dict[str, Any]:
                 if d > SIGMA_MAX:
                     outliers += 1
         out["a4_outliers"] = outliers
+
+        # Bounding box (loose envelope, kept for backward comparison)
         bbox_km2 = (max(lats_in) - min(lats_in)) * 111.0 * \
                    (max(lons_in) - min(lons_in)) * 111.0
         out["a5_macro_bbox_km2"] = round(bbox_km2, 1)
-        out["a5_macro_flag"] = bbox_km2 > 50_000.0
+
+        # Convex hull (tight envelope, used for A5 detection)
+        hull_km2 = _convex_hull_area_km2(lats_in, lons_in)
+        out["a5_macro_hull_km2"] = round(hull_km2, 1)
+        out["a5_macro_flag"] = hull_km2 > 50_000.0
     else:
         out["a4_outliers"] = 0
         out["a5_macro_bbox_km2"] = 0.0
+        out["a5_macro_hull_km2"] = 0.0
         out["a5_macro_flag"] = False
 
     # Any anomaly flag: A4 requires a non-trivial out-of-perimeter mass.
@@ -312,7 +357,7 @@ def main(max_systems: int | None = None, skip_fr: bool = True) -> None:
             "a3_overcap_ratio", "a3_overcap_flag",
             "a4_out_of_perim", "a4_perim_pct", "a4_perim_flag",
             "a4_outliers",
-            "a5_macro_bbox_km2", "a5_macro_flag",
+            "a5_macro_bbox_km2", "a5_macro_hull_km2", "a5_macro_flag",
             "a6_zero_capacity_pct", "capacity_nan_pct", "any_anomaly",
             "root_url"]
     out_csv = HERE / "massive_audit_results.csv"
