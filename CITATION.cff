@@ -1,0 +1,86 @@
+# Citation File Format (CFF) -- https://citation-file-format.github.io/
+#
+# This file lets GitHub render a "Cite this repository" button and lets
+# Zenodo, OSF, ContentMine and most citation managers (Zotero, BibDesk,
+# Mendeley) ingest a structured citation in BibTeX, RIS, CSL-JSON or
+# EndNote with a single click.
+#
+# Whenever a new release of the Gold Standard is tagged, update both
+# `version` and `date-released` below, and regenerate the DOI via the
+# Zenodo / GitHub integration.
+
+cff-version: 1.2.0
+message: >-
+  If you use the Gold Standard GBFS France dataset in your research,
+  please cite both this software/data record and the companion paper
+  (see preferred-citation below).
+type: dataset
+title: "Gold Standard GBFS France: an audited national reference dataset for bike-sharing systems"
+abstract: >-
+  The Gold Standard GBFS France is an audited, certified and openly
+  released national reference dataset built from the systematic audit
+  of the 122 French GBFS systems published on
+  transport.data.gouv.fr and MobilityData. It contains 46,307
+  certified stations covering 57 urban areas, classified by a taxonomy
+  of five anomaly classes (A1-A5) and enriched by spatial joining with
+  INSEE Filosofi, BAAC (Cerema), BD TOPO, OpenStreetMap and the FUB
+  Cycling Barometer. The dataset is distributed as a versioned Parquet
+  file together with an audit report, a JSON Schema, a Frictionless
+  Data Package descriptor and a Croissant JSON-LD manifest.
+
+authors:
+  - family-names: "Fossé"
+    given-names: "Rohan"
+    email: "rfosse@cesi.fr"
+    affiliation: "CESI, CESI Engineering School, Montpellier, France"
+    orcid: "https://orcid.org/0009-0002-2195-0198"
+  - family-names: "Pallares"
+    given-names: "Gaël"
+    email: "gpallares@cesi.fr"
+    affiliation: "CESI, CESI LINEACT, Montpellier, France"
+    orcid: "https://orcid.org/0009-0002-8680-604X"
+
+version: "1.0.0"
+date-released: "2026-04-01"
+doi: "10.5281/zenodo.XXXXXXX"
+license: "ODbL-1.0"
+license-url: "https://opendatacommons.org/licenses/odbl/1-0/"
+
+repository-code: "https://github.com/rohanfosse/bikeshare-data-explorer"
+repository-artifact: "https://doi.org/10.5281/zenodo.XXXXXXX"
+url: "https://github.com/rohanfosse/bikeshare-data-explorer"
+
+keywords:
+  - bike-sharing
+  - GBFS
+  - data quality
+  - audit
+  - research data infrastructure
+  - FAIR
+  - reproducibility
+  - soft mobility
+  - urban mobility
+  - France
+
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.XXXXXXX"
+    description: "Concept DOI (always resolves to the latest release)"
+
+preferred-citation:
+  type: conference-paper
+  title: >-
+    Building a Gold Standard for Bike-Sharing Systems: GBFS Auditing,
+    Multi-Source Hybridisation and Reproducibility Conditions for
+    Quantitative Urban Mobility Research
+  year: 2026
+  authors:
+    - family-names: "Fossé"
+      given-names: "Rohan"
+      orcid: "https://orcid.org/0009-0002-2195-0198"
+    - family-names: "Pallares"
+      given-names: "Gaël"
+      orcid: "https://orcid.org/0009-0002-8680-604X"
+  collection-title: "Proceedings of the SCITEPRESS conference (working paper)"
+  notes: >-
+    Working paper, CESI LINEACT, programme BikeShare-ICT, 2025-2026.

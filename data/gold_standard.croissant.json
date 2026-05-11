@@ -1,0 +1,349 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "gold_standard_gbfs_france",
+  "alternateName": "Gold Standard GBFS France",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "description": "An audited, certified national reference dataset of 46,307 bike-sharing stations covering 57 French urban areas. Built from the systematic audit of the 122 French GBFS systems published on transport.data.gouv.fr and MobilityData, classified by a taxonomy of five anomaly classes (A1-A5) and enriched by spatial joining with INSEE Filosofi, BAAC (Cerema), BD TOPO, OpenStreetMap and the FUB Cycling Barometer. Released as a versioned Parquet file with an audit report and a JSON Schema.",
+  "url": "https://github.com/rohanfosse/bikeshare-data-explorer",
+  "version": "1.0.0",
+  "datePublished": "2026-04-01",
+  "license": "https://opendatacommons.org/licenses/odbl/1-0/",
+  "keywords": [
+    "bike-sharing",
+    "GBFS",
+    "data quality",
+    "audit",
+    "FAIR",
+    "soft mobility",
+    "urban mobility",
+    "France"
+  ],
+  "inLanguage": "en",
+  "creator": [
+    {
+      "@type": "Person",
+      "name": "Rohan Fossé",
+      "email": "rfosse@cesi.fr",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "CESI, CESI Engineering School, Montpellier, France"
+      },
+      "url": "https://orcid.org/0009-0002-2195-0198"
+    },
+    {
+      "@type": "Person",
+      "name": "Gaël Pallares",
+      "email": "gpallares@cesi.fr",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "CESI, CESI LINEACT, Montpellier, France"
+      },
+      "url": "https://orcid.org/0009-0002-8680-604X"
+    }
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "CESI LINEACT -- BikeShare-ICT programme",
+    "url": "https://lineact.cesi.fr/"
+  },
+  "citeAs": "Fossé R., Pallares G. (2026). Gold Standard GBFS France v1.0.0 [Data set]. Zenodo. https://doi.org/10.5281/zenodo.XXXXXXX",
+  "sameAs": [
+    "https://doi.org/10.5281/zenodo.XXXXXXX",
+    "https://entrepot.recherche.data.gouv.fr/dataset.xhtml?persistentId=doi:XX.XXXX/XXXXX"
+  ],
+  "isLiveDataset": false,
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "stations_gold_standard_final.parquet",
+      "name": "stations_gold_standard_final.parquet",
+      "description": "Main certified station-level table. One row per certified station, 30 columns covering identity, geolocation, capacity, audit verdict and contextual enrichment.",
+      "contentUrl": "https://zenodo.org/records/XXXXXXX/files/stations_gold_standard_final.parquet",
+      "encodingFormat": "application/vnd.apache.parquet",
+      "md5": "TO_BE_FILLED_AT_RELEASE",
+      "sha256": "TO_BE_FILLED_AT_RELEASE"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "systems_catalog.csv",
+      "name": "systems_catalog.csv",
+      "description": "Catalogue of the 122 audited GBFS systems with their audit verdict (ok / too_small / no_si_url / fetch_error / autopartage / dom_tom / excluded).",
+      "contentUrl": "https://zenodo.org/records/XXXXXXX/files/systems_catalog.csv",
+      "encodingFormat": "text/csv",
+      "md5": "TO_BE_FILLED_AT_RELEASE"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "audit_report.pdf",
+      "name": "audit_report.pdf",
+      "description": "Per-system audit report, including the verdict, the rule that triggered it and the raw GBFS payload extract.",
+      "contentUrl": "https://zenodo.org/records/XXXXXXX/files/audit_report.pdf",
+      "encodingFormat": "application/pdf"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "stations",
+      "name": "stations",
+      "description": "One row per certified bike-sharing station in the Gold Standard.",
+      "key": { "@id": "stations/uid" },
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "stations/uid",
+          "name": "uid",
+          "description": "Globally unique station identifier (concatenation of system_id and station_id).",
+          "dataType": "sc:Text"
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "stations/system_id",
+          "name": "system_id",
+          "description": "Identifier of the GBFS system (operator + city), as advertised on transport.data.gouv.fr.",
+          "dataType": "sc:Text"
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "stations/system_name",
+          "name": "system_name",
+          "description": "Human-readable name of the GBFS system.",
+          "dataType": "sc:Text"
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "stations/source",
+          "name": "source",
+          "description": "Provenance of the entry: 'gbfs' (ingested from a GBFS feed) or 'osm_backfill' (resolved against OSM when a GBFS payload was incomplete).",
+          "dataType": "sc:Text"
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "stations/station_id",
+          "name": "station_id",
+          "description": "Native station identifier as published by the operator.",
+          "dataType": "sc:Text"
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "stations/station_name",
+          "name": "station_name",
+          "description": "Human-readable station name.",
+          "dataType": "sc:Text"
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "stations/city",
+          "name": "city",
+          "description": "Urban area in which the station is located (after disambiguation against INSEE COG).",
+          "dataType": "sc:Text"
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "stations/lat",
+          "name": "lat",
+          "description": "Station latitude, WGS84.",
+          "dataType": "sc:Float"
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "stations/lon",
+          "name": "lon",
+          "description": "Station longitude, WGS84.",
+          "dataType": "sc:Float"
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "stations/capacity",
+          "name": "capacity",
+          "description": "Declared station capacity (number of docks). For free-floating stations, this is the post-A3 corrected value (see capacity_corrected).",
+          "dataType": "sc:Float"
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "stations/station_type",
+          "name": "station_type",
+          "description": "Audit verdict on the topology of the station: 'docked_bike' (physical dock), 'free_floating' (virtual anchor), 'carsharing' (A1, excluded from BSS analyses).",
+          "dataType": "sc:Text"
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "stations/address",
+          "name": "address",
+          "description": "Free-form street address as advertised by the operator (may be empty).",
+          "dataType": "sc:Text"
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "stations/region_id",
+          "name": "region_id",
+          "description": "INSEE region code of the urban area.",
+          "dataType": "sc:Text"
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "stations/n_stations_system",
+          "name": "n_stations_system",
+          "description": "Total number of certified stations in the system the station belongs to.",
+          "dataType": "sc:Integer"
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "stations/fetched_at",
+          "name": "fetched_at",
+          "description": "UTC timestamp at which the raw GBFS payload was fetched (ISO-8601).",
+          "dataType": "sc:Date"
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "stations/elevation_m",
+          "name": "elevation_m",
+          "description": "Station elevation above sea level, in metres (SRTM 30 m, BD ALTI fallback).",
+          "dataType": "sc:Float"
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "stations/topography_roughness_index",
+          "name": "topography_roughness_index",
+          "description": "Topographic Roughness Index in a 500 m neighbourhood. Higher = hillier terrain.",
+          "dataType": "sc:Float"
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "stations/infra_cyclable_km",
+          "name": "infra_cyclable_km",
+          "description": "Cumulated cycling-infrastructure linear (km) within a 300 m buffer (BD TOPO + OSM).",
+          "dataType": "sc:Float"
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "stations/infra_cyclable_pct",
+          "name": "infra_cyclable_pct",
+          "description": "Share of the 300 m buffer's street network that is cyclable (BD TOPO + OSM).",
+          "dataType": "sc:Float"
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "stations/baac_accidents_cyclistes",
+          "name": "baac_accidents_cyclistes",
+          "description": "Count of cyclist-related accidents in a 500 m buffer over five years (BAAC, Cerema).",
+          "dataType": "sc:Integer"
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "stations/gtfs_heavy_stops_300m",
+          "name": "gtfs_heavy_stops_300m",
+          "description": "Number of heavy-transit stops (tramway, metro, RER, train) within a 300 m buffer.",
+          "dataType": "sc:Integer"
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "stations/gtfs_stops_within_300m_pct",
+          "name": "gtfs_stops_within_300m_pct",
+          "description": "Share of the system's stations covered by at least one heavy-transit stop within 300 m.",
+          "dataType": "sc:Float"
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "stations/code_commune",
+          "name": "code_commune",
+          "description": "INSEE commune code (5-digit) of the station.",
+          "dataType": "sc:Text"
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "stations/commune_name",
+          "name": "commune_name",
+          "description": "INSEE commune name (official).",
+          "dataType": "sc:Text"
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "stations/revenu_median_uc",
+          "name": "revenu_median_uc",
+          "description": "Median income per consumption unit (INSEE Filosofi), at the IRIS or commune level.",
+          "dataType": "sc:Float"
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "stations/gini_revenu",
+          "name": "gini_revenu",
+          "description": "Local Gini index of income (INSEE Filosofi).",
+          "dataType": "sc:Float"
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "stations/revenu_d1",
+          "name": "revenu_d1",
+          "description": "First income decile (INSEE Filosofi).",
+          "dataType": "sc:Float"
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "stations/ecart_interquar",
+          "name": "ecart_interquar",
+          "description": "Interquartile range of income (INSEE Filosofi).",
+          "dataType": "sc:Float"
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "stations/part_menages_voit0",
+          "name": "part_menages_voit0",
+          "description": "Share of households with no car (INSEE census).",
+          "dataType": "sc:Float"
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "stations/part_velo_travail",
+          "name": "part_velo_travail",
+          "description": "Share of cycling commuting (INSEE Mobilités professionnelles), commune-level.",
+          "dataType": "sc:Float"
+        }
+      ]
+    }
+  ]
+}
