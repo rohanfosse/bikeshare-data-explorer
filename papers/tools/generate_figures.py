@@ -294,6 +294,54 @@ def fig04_bordeaux_before_after(catalog: pd.DataFrame, cities_dock: pd.DataFrame
     _save(fig, GOLD_DIR / "fig04_bordeaux_before_after.pdf")
 
 
+def fig06_mobility_deserts(stations: pd.DataFrame) -> None:
+    """Top cities by count of mobility-desert dock-based stations.
+
+    A mobility desert is a dock-based station that is both
+    (i) in a commune whose median income per CU sits in the
+    lowest national quartile and (ii) without any heavy-transit
+    stop within 300 m. This matches the filter of Usage Example 3.
+    """
+    dock = stations[stations["station_type"] == "docked_bike"].copy()
+    q1 = dock["revenu_median_uc"].quantile(0.25)
+    deserts = dock[
+        (dock["revenu_median_uc"] < q1)
+        & (dock["gtfs_heavy_stops_300m"] == 0)
+    ]
+    top = (
+        deserts.groupby("city").size()
+        .sort_values(ascending=True).tail(15)
+    )
+    n_total = int(len(deserts))
+    pct_total = 100 * n_total / max(len(dock), 1)
+
+    fig, ax = plt.subplots(figsize=(5.4, max(3.0, len(top) * 0.30)))
+    bars = ax.barh(
+        top.index.astype(str), top.values,
+        color=NAVY, edgecolor="white", linewidth=0.4,
+    )
+    max_val = top.max()
+    for bar in bars:
+        w = bar.get_width()
+        ax.text(
+            w + max_val * 0.012,
+            bar.get_y() + bar.get_height() / 2,
+            f"{int(w)}",
+            va="center", fontsize=7.5, color=DARK_GREY,
+        )
+    ax.set_xlabel("Mobility-desert stations")
+    ax.set_xlim(0, max_val * 1.18)
+    ax.grid(True, axis="x"); ax.grid(False, axis="y")
+    ax.text(
+        0.99, 0.05,
+        f"total = {n_total:,}  ({pct_total:.1f}% of dock-based)\n"
+        f"Q1 income = {q1:,.0f} EUR / CU",
+        transform=ax.transAxes, ha="right", va="bottom",
+        fontsize=7, color=MID_GREY,
+    )
+    _save(fig, GOLD_DIR / "fig06_mobility_deserts.pdf")
+
+
 def fig05_completeness(stations: pd.DataFrame) -> None:
     """Empirical completeness per enriched variable (dock-based subset)."""
     dock = stations[stations["station_type"] == "docked_bike"]
@@ -441,6 +489,7 @@ def main() -> None:
     fig03_region_stations(catalog)
     fig04_bordeaux_before_after(catalog, cities_dock)
     fig05_completeness(stations)
+    fig06_mobility_deserts(stations)
 
     print("IMD figures:")
     fig01_imd_weights()
