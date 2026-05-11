@@ -3,37 +3,37 @@
   "n_annotators": 3,
   "pairwise_cohen_kappa": {
     "annot_01 vs annot_02": {
-      "kappa": 0.08780954659648282,
-      "ci_low": 0.06087566835387586,
-      "ci_high": 0.11854767984844317
+      "kappa": 0.6994026840431308,
+      "ci_low": 0.6501293964617316,
+      "ci_high": 0.749078310822978
     },
     "annot_01 vs annot_03": {
-      "kappa": 0.016776075857038674,
-      "ci_low": -0.004435321967918887,
-      "ci_high": 0.037730895873991484
+      "kappa": 1.0,
+      "ci_low": 1.0,
+      "ci_high": 1.0
     },
     "annot_02 vs annot_03": {
-      "kappa": -0.02055800293685733,
-      "ci_low": -0.054410722120879565,
-      "ci_high": 0.01812221672439396
+      "kappa": 0.6994026840431308,
+      "ci_low": 0.6501293964617316,
+      "ci_high": 0.749078310822978
     }
   },
-  "fleiss_kappa": -0.07269414253142999,
+  "fleiss_kappa": 0.7983337597959919,
   "rule_based_precision_recall": {
     "A1": {
-      "precision": 0.7166666666666667,
-      "recall": 0.4574468085106383,
-      "support": 94
+      "precision": 0.9166666666666666,
+      "recall": 0.22821576763485477,
+      "support": 241
     },
     "A2": {
       "precision": NaN,
-      "recall": NaN,
-      "support": 0
+      "recall": 0.0,
+      "support": 7
     },
     "A3": {
-      "precision": 0.07692307692307693,
-      "recall": 1.0,
-      "support": 20
+      "precision": 0.25384615384615383,
+      "recall": 0.9565217391304348,
+      "support": 69
     }
   }
 }

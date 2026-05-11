@@ -1,0 +1,42 @@
+{
+  "storage_mb": {
+    "stations_gold_standard_final.parquet": 5.43,
+    "stations_gold_standard.parquet (intermediate)": 4.78,
+    "systems_catalog.csv": 0.02,
+    "status_snapshots/ (cumulative)": 4.87,
+    "status_snapshots/ (files)": 128.0
+  },
+  "load_benchmark": {
+    "rows": 46307,
+    "columns": 30,
+    "load_seconds": 0.231,
+    "memory_peak_mb": 15.88,
+    "throughput_rows_per_sec": 200757
+  },
+  "query_benchmarks_ms": {
+    "filter_dock_based_ms": 5.21,
+    "groupby_city_count_ms": 3.73,
+    "bbox_paris_ms": 5.95,
+    "merge_fub_ms": 21.67
+  },
+  "code_complexity": {
+    "utils/data_loader.py": {
+      "lines_total": 487,
+      "lines_code": 388,
+      "public_functions": 23,
+      "classes": 0
+    },
+    "utils/gbfs_collector.py": {
+      "lines_total": 578,
+      "lines_code": 475,
+      "public_functions": 10,
+      "classes": 1
+    },
+    "scripts/collect_status.py": {
+      "lines_total": 254,
+      "lines_code": 209,
+      "public_functions": 2,
+      "classes": 0
+    }
+  }
+}
