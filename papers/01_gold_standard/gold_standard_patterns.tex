@@ -451,48 +451,33 @@ the Audit Catalogue's lower correlation reflects an honest count of
 physical docks.
 
 \subsection{Internal robustness checks}\label{secInternal}
-Independent of the validation roadmap discussed in
-Section~\ref{secDiscussion}, three internal robustness checks were
-executed on the same corpus.
+Three internal robustness checks are reported on the same corpus,
+ahead of the human inter-rater reliability that is the next
+priority of the validation roadmap.
 
-\paragraph{Orthogonal-coverage check.}
-Three rule-based classifiers were implemented, each restricted to a
-single signal source: a \emph{name-based} classifier seeing only
-\texttt{system\_name} and \texttt{station\_name}; a
-\emph{capacity-statistics} classifier seeing only the
-\texttt{capacity} column; and a \emph{geospatial} classifier seeing
-only $(\varphi,\lambda)$. The pairwise Cohen's $\kappa$ between the
-three is near zero ($\kappa < 0.10$); Fleiss $\kappa = -0.07$. This is
-not failure but the expected signature of complementary coverage: each
-classifier sees only one slice of the taxonomy. The right measure is
-the recall of their union against the integrated pipeline, which
-reaches $97.2\,\%$ at a precision of $91.5\,\%$, with only 7 stations
-out of 500 flagged by all three. This empirically demonstrates that
-A1--A5 cannot be reduced to a single heuristic.
+\emph{Orthogonal-coverage.}
+Three rule-based classifiers, each restricted to one signal source
+(name, capacity, geospatial), have pairwise Cohen's $\kappa$ near
+zero on a stratified 500-station sample (Fleiss $\kappa = -0.07$),
+which is the expected signature of complementary coverage: their
+union reaches $97.2\,\%$ recall at $91.5\,\%$ precision against the
+integrated pipeline, with only 7 of 500 stations flagged by all
+three. A1--A5 cannot be reduced to a single heuristic.
 
-\paragraph{Full-task agreement check.}
-Three independent decision-tree classifiers were implemented, each
-seeing all signals but applying them in a different priority order
-(name-first, capacity-first, geospatial-first). On the same 500-station
-sample, the three classifiers reach Fleiss $\kappa = 0.80$, with
-pairwise Cohen's $\kappa \in [0.70, 1.00]$. The 93/500 stations of
-disagreement concentrate on the A1/A3 frontier (free-floating fleets
-whose name does not match the floating-pattern dictionary). The lower
-bound $\kappa = -0.07$ (orthogonal) and the upper bound $\kappa = 0.80$
-(full-task) bracket the inter-annotator agreement that three independent
-human annotators with full access to the payload would plausibly
-achieve.
+\emph{Full-task agreement.}
+Three decision-tree classifiers seeing all signals but applying them
+in different priority orders reach Fleiss $\kappa = 0.80$ on the
+same sample (pairwise $\kappa \in [0.70, 1.00]$); disagreements
+concentrate on the A1/A3 frontier. The pair
+$\kappa \in [-0.07, 0.80]$ brackets the human inter-rater agreement
+that three independent annotators would plausibly achieve.
 
-\paragraph{Threshold sensitivity.}
-A single-dimension pilot of the topological threshold $\sigma_{\max}$
-was completed on the certified corpus. Sweeping $\sigma_{\max} \in
-\{2.0, 2.5, 3.0, 3.5, 4.0\}$ yields Jaccard similarities of
-$0.66, 0.79, 1.00, 1.00, 1.00$ and Kendall's $\tau$ of
-$0.92, 0.95, 1.00, 1.00, 1.00$ against the reference at
-$\sigma_{\max} = 3.0$. Most importantly, the \textbf{Top-10 national
-ranking is invariant} across the entire grid ($\sigma_{\max}$-induced
-churn $= 0$), which is the criterion that matters for any downstream
-public-policy reading.
+\emph{Threshold sensitivity.}
+Sweeping $\sigma_{\max} \in \{2.0, 2.5, 3.0, 3.5, 4.0\}$ yields
+Kendall's $\tau$ of $0.92$ to $1.00$ against the
+$\sigma_{\max} = 3.0$ reference. Most importantly, the Top-10
+national ranking is invariant across the entire grid, the criterion
+that matters for any downstream public-policy reading.
 
 These three checks do not replace human inter-rater reliability, which
 is the next priority of the validation roadmap (experiment E1,
@@ -711,27 +696,21 @@ their own audit (the rule of A1 was rule-level brittle), and the
 underlying signal is genuine (21 real car-sharing systems in
 Germany are still labelled as bike-sharing on national portals).
 
-\subsection{Empirical evidence that current GBFS usage produces downstream errors}\label{secConsequences}
-A reviewer of any audit paper is entitled to ask: does the audit
-detect errors that have measurable consequences, or does it
-discipline a problem that nobody actually encounters? Four
-empirical observations on the French corpus answer the question
-affirmatively.
-
-\paragraph{Six incompatible semantics for one GBFS field.}
-The single field \texttt{station\_information.capacity} is populated
-by French free-floating operators according to six mutually
-incompatible semantics that we observe directly on the audited
-corpus (Table~\ref{tab:capacity-semantics}). Dott (20{,}224
-stations) and Bird (4{,}499 stations) leave the field empty. Pony
-Nice publishes a constant placeholder of 100. Pony Paris reports a
-per-vehicle ratio close to 1.6. Pony Bordeaux and twelve sister
-cities report a conditional fleet-profile of 2 to 15. Voi mixes
-small fleet-profile estimators with NaN. Aggregated, these patterns
-cover \textbf{84.7\,\% of the certified rows}. A downstream
+\subsection{Operator-level fragmentation of the capacity field}\label{secConsequences}
+Across the case studies above, a recurring mechanism explains why
+the same anomaly recurs across operators: the GBFS field
+\texttt{station\_information.capacity} is populated by French
+free-floating operators according to six mutually incompatible
+semantics (Table~\ref{tab:capacity-semantics}), aggregating to
+\textbf{84.7\,\% of the certified French rows}. A downstream
 consumer who applies a single arithmetic to the field aggregates
-six different quantities into one number; the standard does not
-warn that this is happening.
+six different quantities. The corresponding operator-level pattern
+is global: Beryl London (UK) provides a positive control by leaving
+\texttt{station\_information} empty for its free-floating fleet
+(the canonical GBFS v3 pattern), while the official MobilityData
+GBFS Validator \cite{MobilityData2024Validator} returns no error
+on any of the flagged French systems (0\,\% recall on A3 in
+Table~\ref{tab:baselines}).
 
 \begin{table}[ht]
 \centering
@@ -755,64 +734,25 @@ Voi          & 4  &  2{,}816 & 5--10 & Small fleet-profile estimator \\
 \end{tabular}
 \end{table}
 
-\paragraph{The errors are operator-specific, not standard-specific.}
-Beryl London (UK, hybrid free-floating) publishes \emph{zero}
-entries in \texttt{station\_information} and reports all vehicles
-in \texttt{free\_bike\_status}, which is the canonical GBFS v2/v3
-pattern for free-floating fleets. The presence of a working positive
-control demonstrates that the documented semantic fragmentation is
-not a flaw of the standard but a propagation failure: in the absence
-of a validation tier between operator publication and academic use,
-six incompatible operator practices coexist on a single national
-portal without anyone flagging the conflict.
-
-\paragraph{Existing validators do not catch the errors.}
-The official MobilityData GBFS Validator
-\cite{MobilityData2024Validator} returns no error on any of the 22
-systems flagged by A1--A5; the schema-level baseline reported in
-Table~\ref{tab:baselines} reaches \textbf{0\,\% recall on A3}. This
-is not a defect of the validator: it works exactly as designed,
-checking the syntax against the schema. The point is that
-syntax-level validation is the wrong abstraction layer for the
-errors documented here, and the operational consequence is that any
-team that adopts MobilityData's tooling will inherit unaudited
-data.
-
-\paragraph{Downstream rankings move by an order of magnitude.}
-The audit corrections reorder city-level rankings used by public
-policy. The Bordeaux agglomeration moves from rank 2 to rank 14
-(Table~\ref{tab:bordeaux}) on the national IMD soft-mobility ranking
-\cite{Fosse2026imd} after the A3 correction on the \emph{Pony
-Bordeaux} subsystem alone. The Spearman correlation between dock
-count and the FUB Cycling Barometer drops from $\rho = 0.38$ (raw)
-to $\rho = 0.25$ (audited): the raw correlation that has propagated
-in the literature is therefore an over-fit to virtual stations.
-These are not theoretical hazards: they are reproducible findings
-on the same corpus that this paper releases.
-
 % ===================================================================
 \section{Discussion}\label{secDiscussion}
 
 \subsection{Implications}
-The audit documented in this paper is intended as a scientific
-validation tier, downstream of GBFS publication and upstream of
-academic work. Its sustainability depends on collective appropriation,
-since no single research team can durably operate a national
-infrastructure on its own. Three concrete avenues are suggested.
-First, a jointly published \emph{GBFS Audit Best Practices Handbook} by
-francophone micromobility laboratories (CESI LINEACT, IFSTTAR
-UMRESTTE, LAET, LVMT, IRSTEA-ITRT) would align practices currently
-rebuilt in isolation. Second, a working group placed under ADEME or
-\emph{transport.data.gouv.fr} could formalise an extended GBFS schema
-and a certification framework, giving the audit a regulatory anchor.
-Third, a continuous validation chain running the pipeline monthly on
-the national feeds, with automated publication of the audit report and
-operator-side notification on regression, would close the loop between
-detection and correction. Star \cite{Star2010} reminds us that the
-most durable infrastructures are those whose governance is explicit,
-transparent and tied to an identifiable community of practice: moving
-the Audit Catalogue from author-led to community-led governance is an
-institutional challenge as much as a scientific one.
+The audit is intended as a scientific validation tier between GBFS
+publication and academic use. Three concrete avenues would
+institutionalise it: a jointly published \emph{GBFS Audit Best
+Practices Handbook} by francophone micromobility laboratories to
+align practices currently rebuilt in isolation; a working group
+under ADEME or \emph{transport.data.gouv.fr} to formalise an
+extended GBFS schema with a certification framework; and a
+continuous validation chain running the pipeline monthly on the
+national feeds, with automated publication of the audit report and
+operator-side notification on regression. Star \cite{Star2010}
+reminds us that the most durable infrastructures are those whose
+governance is explicit and tied to an identifiable community of
+practice; moving the artefact from author-led to community-led
+governance is therefore an institutional challenge as much as a
+scientific one.
 
 \subsection{Limitations}\label{secLimitations}
 The protocol has four acknowledged limitations.
@@ -848,42 +788,25 @@ periodically, which is the purpose of the temporal-stability
 experiment E3.
 
 \subsection{Recommendations to operators}
-The audit should also turn into constructive feedback to publishers.
-Four recommendations follow directly from the taxonomy and are
-deliberately compatible with the current GBFS specification: they are
-conventions that the French operator community could adopt voluntarily,
-without waiting for a schema revision.
-\begin{enumerate}[leftmargin=*]
-\item Populate \texttt{vehicle\_type} exhaustively, so that
-car-sharing or scooter-sharing services on the portal can no longer
-be ingested as bike sharing (A1).
-\item Report \texttt{capacity} as a physical dock count for dock-based
-stations and leave it \texttt{null} for virtual stations, rather than
-filling it with placeholders such as $c = 100$ (A2).
-\item Adopt the GBFS v3 \texttt{vehicle\_status} extension for
-free-floating fleets, and stop publishing per-vehicle anchor positions
-as \texttt{station\_information} (A3).
-\item Publish geographical perimeters as polygons in the GBFS
-\texttt{geofencing\_zones} block, so that validators can apply
-system-specific topological filters (A4, A5).
-\end{enumerate}
+Four conventions, compatible with the current GBFS specification,
+would close most of the anomalies documented here: populate
+\texttt{vehicle\_type} exhaustively (A1); leave \texttt{capacity}
+as \texttt{null} on virtual stations rather than using placeholders
+(A2); adopt the GBFS v3 \texttt{vehicle\_status} extension for
+free-floating fleets and stop publishing per-vehicle anchors as
+\texttt{station\_information} (A3); publish geographical perimeters
+as polygons in the \texttt{geofencing\_zones} block (A4, A5).
 
 \subsection{Future directions}
 Each of the four limitations above is paired with a falsifiable
-experiment whose protocol, success criterion and (where available)
-pilot results are documented and shipped alongside the dataset
-(Table~\ref{tab:roadmap}). Four of the six experiments already
-include a completed pilot (the internal robustness checks of
-Section~\ref{secInternal} for E1, the $\sigma_{\max}$ sweep for E2,
-the 2-day dynamic snapshot for E4, and the Bicing/Oslo/Bergen cross-country
-test of Section~\ref{secCrossCountry} for E5); the remaining
-priorities are the human inter-rater reliability of E1, the full
-four-dimensional threshold sweep of E2, the twelve-month temporal
-stability of E3, and the free-floating-native protocol of E6. The
-full protocols, including stratified sampling procedures, statistical
-tests and success thresholds, are released under
-\texttt{experiments/} in the source repository, so that the present
-artefact can be challenged in public rather than defended in private.
+experiment (Table~\ref{tab:roadmap}); four of the six include a
+completed pilot reported in this paper. The remaining priorities are
+the human inter-rater reliability of E1, the full four-dimensional
+threshold sweep of E2, the twelve-month temporal stability of E3,
+and the free-floating-native protocol of E6. Full protocols ship
+under \texttt{experiments/} in the source repository, so that the
+artefact can be challenged in public rather than defended in
+private.
 
 \begin{table}[ht]
 \centering
@@ -908,42 +831,35 @@ E6 & Free-floating-native protocol              & L3                          & 
 \end{table}
 
 \subsection{Downstream use}
-The Audit Catalogue is not produced for its own sake but to unlock
-analyses that the raw feed would not support. Four families of
-downstream studies illustrate the expected return on investment:
-composite-index work (the companion IMD paper \cite{Fosse2026imd} is
-the immediate example); demand modelling with graph-based neural
-networks \cite{Lin2018BSSGraph} whose false-station nodes from A3 are
-a known confound; spatial-equity analysis combining station access
-with INSEE Filosofi; and multimodal integration with GTFS, since the
-hybridisation schema is deliberately compatible with
+The Audit Catalogue unlocks four families of downstream studies:
+composite-index work (the companion IMD paper \cite{Fosse2026imd});
+demand modelling with graph-based neural networks
+\cite{Lin2018BSSGraph} whose false-station nodes from A3 are a known
+confound; spatial-equity analysis combining station access with INSEE
+Filosofi; and multimodal integration with GTFS, since the
+hybridisation schema is compatible with
 \cite{MobilityData2024Validator}.
 
 % ===================================================================
 \section{Experimental Procedures}\label{secMethods}
 
 \subsection{Provenance of the taxonomy}
-Anticipating the auditor-effect critique, the iterative process that
-produced A1--A5 is documented explicitly. The taxonomy was built by a
-hybrid inductive-deductive workflow over five iterations between
-2025-04 and 2026-01. \emph{Iteration 1} (April 2025): exploratory scan
-of the 123 systems on the four obvious axes of ISO/IEC 25012
-(completeness, consistency, accuracy, currentness); A1 and A4 emerge.
-\emph{Iteration 2} (June 2025): enrichment with the system catalogue
-of \emph{transport.data.gouv.fr}; A5 emerges as the system-level
-complement of A4. \emph{Iteration 3} (September 2025): A2 discovered
-when per-system standard deviation of \texttt{capacity} is plotted;
-three systems with exact zero variance on non-zero capacities stand
-out. \emph{Iteration 4} (November 2025): A3 emerges through reverse
-engineering of free-floating fleets; the per-system median capacity of
-\emph{Pony} matches a conditional-averaging estimator more closely
-than a physical-dock count. \emph{Iteration 5} (January 2026): the
-rule-based audit is re-run on a held-out subset of systems to test
-class stability; two candidate classes do not survive (``A6-rolling
-stock noise'', collapsed into A3, and ``A7-cross-border duplicate'',
-no instance found). The current five-class taxonomy is the artefact of
-that process; its provenance and rejected candidates ship with the
-audit report.
+The taxonomy A1--A5 was built by a hybrid inductive-deductive
+workflow over five iterations between 2025-04 and 2026-01, starting
+from the four ISO/IEC 25012 data-quality dimensions (completeness,
+consistency, accuracy, currentness) and enriched by reverse
+engineering of the French free-floating fleets. A1 and A4 emerged
+from an exploratory scan of the 123 systems; A5 from enrichment with
+the \emph{transport.data.gouv.fr} catalogue; A2 from a zero-variance
+diagnostic on \texttt{capacity}; A3 from the per-system median
+capacity of \emph{Pony} matching a conditional-averaging estimator
+more closely than a physical-dock count. Two rejected candidates
+(``A6-rolling stock noise'', collapsed into A3; ``A7-cross-border
+duplicate'', no instance found) ship with the audit report. The
+classes A6 and A7 documented in
+Sections~\ref{secA6Formalisation}--\ref{secA7Formalisation} are
+distinct from the rejected candidates and emerged from the global
+extension rather than the French corpus.
 
 \subsection{Six-step purging protocol}
 The transition from the raw feed to the Audit Catalogue proceeds through
@@ -1092,17 +1008,44 @@ NaN}. The signature is:
 \end{equation}
 with the conservative threshold $\tau_{A7} = 0.5$ chosen so that a
 system flagged by A7 declares no usable capacity on at least half
-of its entries. Unlike A6, where $\tau$ was anchored to the empirical
-distribution percentiles, A7 uses a coarser threshold because
-$\rho_s^{A7}$ is extremely bimodal on the global corpus
-(65\,\% of audited systems are at exactly $0\,\%$ NaN and 28\,\% at
-exactly $100\,\%$ NaN, with very few intermediate cases). Any
-threshold in $(0, 1)$ yields essentially the same flagged set;
-$\tau_{A7} = 0.5$ is reported for parsimony and is robust to
-sensitivity sweeps in the tested range.
+of its entries. Unlike A6, $\rho_s^{A7}$ is extremely bimodal on
+the global corpus
+(Table~\ref{tab:a7-distribution}): \textbf{87.0\,\% of audited
+systems sit at one of the two extreme values $0\,\%$ or $100\,\%$
+NaN}, with only $13.0\,\%$ distributed across the interior. Any
+threshold in $(0, 1)$ partitioning the interior in the same way
+yields essentially the same flagged set; $\tau_{A7} = 0.5$ is
+reported for parsimony and is robust to sensitivity sweeps in the
+tested range.
+
+\begin{table}[ht]
+\centering
+\caption{Empirical distribution of the NaN-capacity rate
+$\rho_s^{A7}$ across the 640 globally audited systems with at least
+20 stations and a reachable \texttt{station\_information} feed.
+The corpus is sharply bimodal at the extreme values, which justifies
+a coarse threshold rather than a distribution-anchored one.}
+\label{tab:a7-distribution}
+\small
+\begin{tabular}{@{}lrr@{}}
+\toprule
+\textbf{Bucket} & \textbf{Systems} & \textbf{Share}\\
+\midrule
+$\rho_s^{A7} = 0$\,\% (no NaN)        & 238 & 37.2\,\% \\
+$0 < \rho_s^{A7} < 1$\,\%              &   4 &  0.6\,\% \\
+$1 \leq \rho_s^{A7} < 10$\,\%          &  11 &  1.7\,\% \\
+$10 \leq \rho_s^{A7} < 50$\,\%         &  22 &  3.4\,\% \\
+$50 \leq \rho_s^{A7} < 99$\,\%         &  41 &  6.4\,\% \\
+$99 \leq \rho_s^{A7} < 100$\,\%        &   5 &  0.8\,\% \\
+$\rho_s^{A7} = 100$\,\% (all NaN)      & 319 & 49.8\,\% \\
+\midrule
+\textbf{Mass at the two extremes} & 557 & \textbf{87.0\,\%} \\
+\bottomrule
+\end{tabular}
+\end{table}
 
 \paragraph{Incidence of A7.}
-On the 538 globally audited systems with at least 20 stations,
+On the 640 globally audited systems with at least 20 stations,
 \textbf{215 systems cross the A7 threshold} and are simultaneously
 not flagged by any of A1--A6, covering \textbf{70{,}176 stations}.
 The dominant operator is \emph{Dott} (141 systems across Germany,
@@ -1266,28 +1209,41 @@ physical materials. The released artefact is the
 data.
 
 \paragraph{Data and code availability.}
+The artefacts cover two scopes with explicit licensing boundaries.
 \begin{itemize}[leftmargin=*]
-\item \textbf{Dataset.} Deposited on Zenodo, concept DOI
-\texttt{10.5281/zenodo.20125460}; current release 1.0.0 (2026-05),
-licensed under ODbL v1.0. Mirrored on \emph{Recherche Data Gouv}.
-\item \textbf{Source code.} The audit pipeline is available at
-\url{https://github.com/rohanfosse/bikeshare-data-explorer}, licensed
-under MIT, with a \texttt{CITATION.cff} file and a Docker image
+\item \textbf{French Audit Catalogue (Zenodo, ODbL v1.0).} The
+46{,}307-station certified Parquet file, the rejected-stations
+log, the audit report, and the machine-readable descriptors (JSON
+Schema, DCAT-AP, Frictionless Data Package, Croissant JSON-LD) are
+deposited on Zenodo under concept DOI
+\texttt{10.5281/zenodo.20125460} (current release 1.0.0,
+2026-05), mirrored on \emph{Recherche Data Gouv}. The 142 candidate
+French GBFS feeds inventoried from \emph{transport.data.gouv.fr}
+and MobilityData are archived with SHA-256 hashes in the same
+deposit; the certified subset of 123 systems is derived
+deterministically from them.
+\item \textbf{Global audit table (GitHub, MIT licence).} The full
+per-system result of the 1{,}509-system MobilityData-catalogue audit
+is shipped as \texttt{papers/01\_gold\_standard/experiments/e5\_europe/}\linebreak
+\texttt{massive\_audit\_results.csv} (and aggregated as
+\texttt{massive\_audit\_summary.json}) in the GitHub repository
+\url{https://github.com/rohanfosse/bikeshare-data-explorer}. These
+outputs are not in the Zenodo deposit because the upstream
+catalogue evolves; the audit is therefore versioned as code rather
+than as data. A re-run on the latest catalogue is one command:
+\texttt{python papers/01\_gold\_standard/experiments/e5\_europe/}\linebreak
+\texttt{massive\_audit.py}.
+\item \textbf{Source code (MIT).} Audit pipeline at
+\url{https://github.com/rohanfosse/bikeshare-data-explorer}, with a
+\texttt{CITATION.cff} file and a Docker image
 (\texttt{ghcr.io/rohanfosse/gold-standard:1.0.0}) for bit-exact
-reproduction. Releases are mirrored to Zenodo via the GitHub--Zenodo
-integration.
-\item \textbf{Schema and machine-readable descriptors.} JSON Schema,
-DCAT-AP record, Frictionless Data Package descriptor and Croissant
-JSON-LD manifest are shipped alongside the Parquet file.
-\item \textbf{Raw inputs.} The 142 candidate GBFS feeds inventoried
-from \emph{transport.data.gouv.fr} and MobilityData are archived with
-SHA-256 hashes in the Zenodo deposit; the certified subset of 123
-systems is derived deterministically from them.
-\item \textbf{Additional resources.} The audit report, the
-500-station blinded sample used in the internal robustness checks,
-the orthogonal- and full-task classifier scripts and the
-$\sigma_{\max}$ sensitivity notebook are released as supplementary
-material alongside the dataset.
+French reproduction. Releases are mirrored to Zenodo via the
+GitHub--Zenodo integration.
+\item \textbf{Additional resources.} The 500-station blinded sample
+used in the internal robustness checks, the orthogonal- and full-task
+classifier scripts, the $\sigma_{\max}$ sensitivity notebook, and the
+per-operator characterisation of the French free-floating subset
+are released as supplementary material alongside the dataset.
 \end{itemize}
 
 % ===================================================================
