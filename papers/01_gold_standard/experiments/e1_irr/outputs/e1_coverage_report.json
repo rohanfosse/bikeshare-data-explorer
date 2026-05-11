@@ -1,0 +1,143 @@
+{
+  "n_stations": 500,
+  "per_class_metrics": {
+    "A1": {
+      "name": {
+        "precision": 0.23,
+        "recall": 0.933,
+        "tp": 56,
+        "fp": 188,
+        "fn": 4,
+        "support": 60
+      },
+      "capacity": {
+        "precision": NaN,
+        "recall": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 60,
+        "support": 60
+      },
+      "geospatial": {
+        "precision": NaN,
+        "recall": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 60,
+        "support": 60
+      }
+    },
+    "A2": {
+      "name": {
+        "precision": NaN,
+        "recall": NaN,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "support": 0
+      },
+      "capacity": {
+        "precision": 0.0,
+        "recall": NaN,
+        "tp": 0,
+        "fp": 20,
+        "fn": 0,
+        "support": 0
+      },
+      "geospatial": {
+        "precision": NaN,
+        "recall": NaN,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "support": 0
+      }
+    },
+    "A3": {
+      "name": {
+        "precision": 0.957,
+        "recall": 0.258,
+        "tp": 67,
+        "fp": 3,
+        "fn": 193,
+        "support": 260
+      },
+      "capacity": {
+        "precision": 0.269,
+        "recall": 0.054,
+        "tp": 14,
+        "fp": 38,
+        "fn": 246,
+        "support": 260
+      },
+      "geospatial": {
+        "precision": NaN,
+        "recall": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 260,
+        "support": 260
+      }
+    },
+    "A4": {
+      "name": {
+        "precision": NaN,
+        "recall": NaN,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "support": 0
+      },
+      "capacity": {
+        "precision": NaN,
+        "recall": NaN,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "support": 0
+      },
+      "geospatial": {
+        "precision": 0.0,
+        "recall": NaN,
+        "tp": 0,
+        "fp": 75,
+        "fn": 0,
+        "support": 0
+      }
+    },
+    "A5": {
+      "name": {
+        "precision": 0.0,
+        "recall": NaN,
+        "tp": 0,
+        "fp": 1,
+        "fn": 0,
+        "support": 0
+      },
+      "capacity": {
+        "precision": NaN,
+        "recall": NaN,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "support": 0
+      },
+      "geospatial": {
+        "precision": NaN,
+        "recall": NaN,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "support": 0
+      }
+    }
+  },
+  "union": {
+    "n_flagged": 340,
+    "recall": 0.972,
+    "precision": 0.915
+  },
+  "intersection": {
+    "n_flagged": 7
+  }
+}

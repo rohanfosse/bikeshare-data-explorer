@@ -1,0 +1,357 @@
+{
+  "per_system": [
+    {
+      "system_id": "amiens",
+      "snapshots": 23805,
+      "stations": 45,
+      "a6a_overflow": 1,
+      "a6b_saturated": 1,
+      "a6c_degenerate": 1
+    },
+    {
+      "system_id": "auxrmlevelo",
+      "snapshots": 26345,
+      "stations": 55,
+      "a6a_overflow": 6,
+      "a6b_saturated": 6,
+      "a6c_degenerate": 0
+    },
+    {
+      "system_id": "beb",
+      "snapshots": 21555,
+      "stations": 45,
+      "a6a_overflow": 1,
+      "a6b_saturated": 4,
+      "a6c_degenerate": 0
+    },
+    {
+      "system_id": "besancon",
+      "snapshots": 1650,
+      "stations": 33,
+      "a6a_overflow": 0,
+      "a6b_saturated": 2,
+      "a6c_degenerate": 0
+    },
+    {
+      "system_id": "calais-velos",
+      "snapshots": 38320,
+      "stations": 80,
+      "a6a_overflow": 0,
+      "a6b_saturated": 2,
+      "a6c_degenerate": 2
+    },
+    {
+      "system_id": "capcotentin",
+      "snapshots": 23471,
+      "stations": 49,
+      "a6a_overflow": 7,
+      "a6b_saturated": 2,
+      "a6c_degenerate": 0
+    },
+    {
+      "system_id": "cergy",
+      "snapshots": 23805,
+      "stations": 45,
+      "a6a_overflow": 0,
+      "a6b_saturated": 38,
+      "a6c_degenerate": 2
+    },
+    {
+      "system_id": "citiz_alpes_loire",
+      "snapshots": 194953,
+      "stations": 407,
+      "a6a_overflow": 2,
+      "a6b_saturated": 43,
+      "a6c_degenerate": 43
+    },
+    {
+      "system_id": "citiz_angers",
+      "snapshots": 12454,
+      "stations": 26,
+      "a6a_overflow": 0,
+      "a6b_saturated": 1,
+      "a6c_degenerate": 1
+    },
+    {
+      "system_id": "citiz_bfc",
+      "snapshots": 26345,
+      "stations": 55,
+      "a6a_overflow": 0,
+      "a6b_saturated": 1,
+      "a6c_degenerate": 1
+    },
+    {
+      "system_id": "citiz_grand_est",
+      "snapshots": 130288,
+      "stations": 272,
+      "a6a_overflow": 1,
+      "a6b_saturated": 17,
+      "a6c_degenerate": 17
+    },
+    {
+      "system_id": "citiz_grand_poitiers",
+      "snapshots": 10538,
+      "stations": 22,
+      "a6a_overflow": 0,
+      "a6b_saturated": 1,
+      "a6c_degenerate": 1
+    },
+    {
+      "system_id": "citiz_la_rochelle",
+      "snapshots": 11496,
+      "stations": 24,
+      "a6a_overflow": 1,
+      "a6b_saturated": 4,
+      "a6c_degenerate": 4
+    },
+    {
+      "system_id": "citiz_occitanie",
+      "snapshots": 61312,
+      "stations": 128,
+      "a6a_overflow": 0,
+      "a6b_saturated": 0,
+      "a6c_degenerate": 0
+    },
+    {
+      "system_id": "citiz_rennes_metropole",
+      "snapshots": 25866,
+      "stations": 54,
+      "a6a_overflow": 0,
+      "a6b_saturated": 1,
+      "a6c_degenerate": 1
+    },
+    {
+      "system_id": "CVelo_FR_Clermont-Ferrand",
+      "snapshots": 39278,
+      "stations": 82,
+      "a6a_overflow": 0,
+      "a6b_saturated": 1,
+      "a6c_degenerate": 0
+    },
+    {
+      "system_id": "donkey_brest",
+      "snapshots": 35925,
+      "stations": 75,
+      "a6a_overflow": 0,
+      "a6b_saturated": 75,
+      "a6c_degenerate": 0
+    },
+    {
+      "system_id": "donkey_valenciennes",
+      "snapshots": 19160,
+      "stations": 40,
+      "a6a_overflow": 0,
+      "a6b_saturated": 34,
+      "a6c_degenerate": 0
+    },
+    {
+      "system_id": "idecycle_pau",
+      "snapshots": 19160,
+      "stations": 40,
+      "a6a_overflow": 0,
+      "a6b_saturated": 1,
+      "a6c_degenerate": 0
+    },
+    {
+      "system_id": "inurba-rouen",
+      "snapshots": 69299,
+      "stations": 131,
+      "a6a_overflow": 3,
+      "a6b_saturated": 8,
+      "a6c_degenerate": 0
+    },
+    {
+      "system_id": "le_velo_star",
+      "snapshots": 30153,
+      "stations": 57,
+      "a6a_overflow": 0,
+      "a6b_saturated": 0,
+      "a6c_degenerate": 0
+    },
+    {
+      "system_id": "levelo_inurba_marseille",
+      "snapshots": 116467,
+      "stations": 221,
+      "a6a_overflow": 16,
+      "a6b_saturated": 12,
+      "a6c_degenerate": 0
+    },
+    {
+      "system_id": "libelo",
+      "snapshots": 32572,
+      "stations": 68,
+      "a6a_overflow": 0,
+      "a6b_saturated": 0,
+      "a6c_degenerate": 0
+    },
+    {
+      "system_id": "lyon",
+      "snapshots": 241368,
+      "stations": 452,
+      "a6a_overflow": 8,
+      "a6b_saturated": 58,
+      "a6c_degenerate": 11
+    },
+    {
+      "system_id": "montpellier",
+      "snapshots": 27984,
+      "stations": 53,
+      "a6a_overflow": 0,
+      "a6b_saturated": 8,
+      "a6c_degenerate": 0
+    },
+    {
+      "system_id": "nancy",
+      "snapshots": 19573,
+      "stations": 37,
+      "a6a_overflow": 1,
+      "a6b_saturated": 0,
+      "a6c_degenerate": 0
+    },
+    {
+      "system_id": "nantes",
+      "snapshots": 65067,
+      "stations": 123,
+      "a6a_overflow": 1,
+      "a6b_saturated": 0,
+      "a6c_degenerate": 0
+    },
+    {
+      "system_id": "nextbike_af",
+      "snapshots": 31740,
+      "stations": 60,
+      "a6a_overflow": 3,
+      "a6b_saturated": 2,
+      "a6c_degenerate": 0
+    },
+    {
+      "system_id": "Optymo_Belfort_ALS",
+      "snapshots": 24908,
+      "stations": 52,
+      "a6a_overflow": 0,
+      "a6b_saturated": 0,
+      "a6c_degenerate": 0
+    },
+    {
+      "system_id": "Paris",
+      "snapshots": 804738,
+      "stations": 1507,
+      "a6a_overflow": 3,
+      "a6b_saturated": 35,
+      "a6c_degenerate": 1
+    },
+    {
+      "system_id": "semo",
+      "snapshots": 19160,
+      "stations": 40,
+      "a6a_overflow": 0,
+      "a6b_saturated": 4,
+      "a6c_degenerate": 0
+    },
+    {
+      "system_id": "tanlib",
+      "snapshots": 24429,
+      "stations": 51,
+      "a6a_overflow": 5,
+      "a6b_saturated": 5,
+      "a6c_degenerate": 0
+    },
+    {
+      "system_id": "toulouse",
+      "snapshots": 229152,
+      "stations": 434,
+      "a6a_overflow": 0,
+      "a6b_saturated": 22,
+      "a6c_degenerate": 1
+    },
+    {
+      "system_id": "twisto_velolib_caen",
+      "snapshots": 35925,
+      "stations": 75,
+      "a6a_overflow": 6,
+      "a6b_saturated": 18,
+      "a6c_degenerate": 0
+    },
+    {
+      "system_id": "v_lille",
+      "snapshots": 141243,
+      "stations": 267,
+      "a6a_overflow": 9,
+      "a6b_saturated": 10,
+      "a6c_degenerate": 0
+    },
+    {
+      "system_id": "velibeo",
+      "snapshots": 12454,
+      "stations": 26,
+      "a6a_overflow": 1,
+      "a6b_saturated": 1,
+      "a6c_degenerate": 0
+    },
+    {
+      "system_id": "velivert_saint_etienne",
+      "snapshots": 51216,
+      "stations": 97,
+      "a6a_overflow": 4,
+      "a6b_saturated": 21,
+      "a6c_degenerate": 0
+    },
+    {
+      "system_id": "velo-tbm-bordeaux",
+      "snapshots": 119025,
+      "stations": 225,
+      "a6a_overflow": 7,
+      "a6b_saturated": 16,
+      "a6c_degenerate": 1
+    },
+    {
+      "system_id": "velonecy60minutes_annecy",
+      "snapshots": 42320,
+      "stations": 80,
+      "a6a_overflow": 5,
+      "a6b_saturated": 8,
+      "a6c_degenerate": 0
+    },
+    {
+      "system_id": "velopop",
+      "snapshots": 13891,
+      "stations": 29,
+      "a6a_overflow": 7,
+      "a6b_saturated": 5,
+      "a6c_degenerate": 0
+    },
+    {
+      "system_id": "velozef",
+      "snapshots": 21120,
+      "stations": 40,
+      "a6a_overflow": 7,
+      "a6b_saturated": 5,
+      "a6c_degenerate": 0
+    },
+    {
+      "system_id": "vilvolt_epinal",
+      "snapshots": 50295,
+      "stations": 105,
+      "a6a_overflow": 4,
+      "a6b_saturated": 7,
+      "a6c_degenerate": 0
+    },
+    {
+      "system_id": "zebullo",
+      "snapshots": 33264,
+      "stations": 63,
+      "a6a_overflow": 0,
+      "a6b_saturated": 13,
+      "a6c_degenerate": 0
+    }
+  ],
+  "aggregate": {
+    "n_stations_with_snapshots": 4635,
+    "n_systems": 43,
+    "n_snapshots": 3003089,
+    "a6a_overflow_total": 109,
+    "a6b_saturated_total": 492,
+    "a6c_degenerate_total": 87,
+    "a6_union_total": 599
+  }
+}

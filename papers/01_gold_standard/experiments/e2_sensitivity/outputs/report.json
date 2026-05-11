@@ -1,0 +1,40 @@
+{
+  "reference_sigma_max": 3.0,
+  "grid": [
+    {
+      "sigma_max": 2.0,
+      "kept_stations": 30754,
+      "jaccard_vs_ref": 0.6641,
+      "kendall_tau_vs_ref": 0.9155,
+      "top10_churn": 0
+    },
+    {
+      "sigma_max": 2.5,
+      "kept_stations": 36410,
+      "jaccard_vs_ref": 0.7863,
+      "kendall_tau_vs_ref": 0.9469,
+      "top10_churn": 0
+    },
+    {
+      "sigma_max": 3.0,
+      "kept_stations": 46307,
+      "jaccard_vs_ref": 1.0,
+      "kendall_tau_vs_ref": 1.0,
+      "top10_churn": 0
+    },
+    {
+      "sigma_max": 3.5,
+      "kept_stations": 46307,
+      "jaccard_vs_ref": 1.0,
+      "kendall_tau_vs_ref": 1.0,
+      "top10_churn": 0
+    },
+    {
+      "sigma_max": 4.0,
+      "kept_stations": 46307,
+      "jaccard_vs_ref": 1.0,
+      "kendall_tau_vs_ref": 1.0,
+      "top10_churn": 0
+    }
+  ]
+}

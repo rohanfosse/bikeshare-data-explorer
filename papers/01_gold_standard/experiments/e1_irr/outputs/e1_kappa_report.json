@@ -1,0 +1,39 @@
+{
+  "n_stations": 500,
+  "n_annotators": 3,
+  "pairwise_cohen_kappa": {
+    "annot_01 vs annot_02": {
+      "kappa": 0.08780954659648282,
+      "ci_low": 0.06087566835387586,
+      "ci_high": 0.11854767984844317
+    },
+    "annot_01 vs annot_03": {
+      "kappa": 0.016776075857038674,
+      "ci_low": -0.004435321967918887,
+      "ci_high": 0.037730895873991484
+    },
+    "annot_02 vs annot_03": {
+      "kappa": -0.02055800293685733,
+      "ci_low": -0.054410722120879565,
+      "ci_high": 0.01812221672439396
+    }
+  },
+  "fleiss_kappa": -0.07269414253142999,
+  "rule_based_precision_recall": {
+    "A1": {
+      "precision": 0.7166666666666667,
+      "recall": 0.4574468085106383,
+      "support": 94
+    },
+    "A2": {
+      "precision": NaN,
+      "recall": NaN,
+      "support": 0
+    },
+    "A3": {
+      "precision": 0.07692307692307693,
+      "recall": 1.0,
+      "support": 20
+    }
+  }
+}
