@@ -3,7 +3,7 @@
 [![Tests](https://img.shields.io/badge/tests-21%20passed-brightgreen)](tests/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Data licence: ODbL-1.0](https://img.shields.io/badge/data-ODbL--1.0-orange.svg)](https://opendatacommons.org/licenses/odbl/1-0/)
-[![DOI](https://img.shields.io/badge/DOI-pending-lightgrey.svg)](#citation)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20125460.svg)](https://doi.org/10.5281/zenodo.20125460)
 
 A reproducible audit pipeline for French bike-sharing GBFS feeds and
 the **Gold Standard GBFS France** dataset it produces: 46,307
@@ -179,8 +179,9 @@ If you use this software or the Gold Standard dataset, please cite:
 
 A GitHub "Cite this repository" button is generated from
 [`CITATION.cff`](CITATION.cff) and produces BibTeX / RIS / CSL-JSON
-on demand. The Zenodo DOI for v1.0.0 will be added here upon
-publication.
+on demand. The dataset is archived on Zenodo under concept DOI
+[`10.5281/zenodo.20125460`](https://doi.org/10.5281/zenodo.20125460);
+each tagged release receives its own version DOI.
 
 ## Licences
 

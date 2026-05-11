@@ -90,10 +90,9 @@
     "name": "CESI LINEACT -- BikeShare-ICT programme",
     "url": "https://lineact.cesi.fr/"
   },
-  "citeAs": "Fossé R., Pallares G. (2026). Gold Standard GBFS France v1.0.0 [Data set]. Zenodo. https://doi.org/10.5281/zenodo.XXXXXXX",
+  "citeAs": "Fossé R., Pallares G. (2026). Gold Standard GBFS France v1.0.0 [Data set]. Zenodo. https://doi.org/10.5281/zenodo.20125460",
   "sameAs": [
-    "https://doi.org/10.5281/zenodo.XXXXXXX",
-    "https://entrepot.recherche.data.gouv.fr/dataset.xhtml?persistentId=doi:XX.XXXX/XXXXX"
+    "https://doi.org/10.5281/zenodo.20125460"
   ],
   "isLiveDataset": false,
   "distribution": [
@@ -102,7 +101,7 @@
       "@id": "stations_gold_standard_final.parquet",
       "name": "stations_gold_standard_final.parquet",
       "description": "Main certified station-level table. One row per certified station, 30 columns covering identity, geolocation, capacity, audit verdict and contextual enrichment.",
-      "contentUrl": "https://zenodo.org/records/XXXXXXX/files/stations_gold_standard_final.parquet",
+      "contentUrl": "https://zenodo.org/records/20125460/files/stations_gold_standard_final.parquet",
       "encodingFormat": "application/vnd.apache.parquet",
       "md5": "TO_BE_FILLED_AT_RELEASE",
       "sha256": "TO_BE_FILLED_AT_RELEASE"
@@ -112,7 +111,7 @@
       "@id": "systems_catalog.csv",
       "name": "systems_catalog.csv",
       "description": "Catalogue of the 122 audited GBFS systems with their audit verdict (ok / too_small / no_si_url / fetch_error / autopartage / dom_tom / excluded).",
-      "contentUrl": "https://zenodo.org/records/XXXXXXX/files/systems_catalog.csv",
+      "contentUrl": "https://zenodo.org/records/20125460/files/systems_catalog.csv",
       "encodingFormat": "text/csv",
       "md5": "TO_BE_FILLED_AT_RELEASE"
     },
@@ -121,7 +120,7 @@
       "@id": "audit_report.pdf",
       "name": "audit_report.pdf",
       "description": "Per-system audit report, including the verdict, the rule that triggered it and the raw GBFS payload extract.",
-      "contentUrl": "https://zenodo.org/records/XXXXXXX/files/audit_report.pdf",
+      "contentUrl": "https://zenodo.org/records/20125460/files/audit_report.pdf",
       "encodingFormat": "application/pdf"
     }
   ],
