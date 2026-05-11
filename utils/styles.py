@@ -19,7 +19,7 @@ _NAV_GROUPS: list[tuple[str, list[tuple[str, str]]]] = [
     ]),
     ("Axes de recherche", [
         ("pages/00_Gold_Standard.py",  "Gold Standard"),
-        ("pages/00b_Audit_Mondial.py", "Audit mondial"),
+        ("pages/16_Audit_Mondial.py",  "Audit mondial"),
         ("pages/0_IMD.py",             "IMD - Mobilité Douce"),
         ("pages/7_IES.py",             "IES - Équité Sociale"),
         ("pages/10_Politique.py",      "Politique & Mobilité"),
