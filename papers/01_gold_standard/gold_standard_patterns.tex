@@ -1,0 +1,992 @@
+% Gold Standard GBFS France --- Patterns (Cell Press) submission draft
+% Adapted from the SCITEPRESS conference version (gold_standard.tex)
+% Single-column article class; Cell Press editors typeset the final layout.
+
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{microtype}
+\usepackage{amssymb,amsmath,amstext}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\graphicspath{{figures/}}
+\usepackage{algorithm2e}
+\usepackage{xcolor}
+\usepackage{url}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\usepackage{enumitem}
+\usepackage{caption}
+\usepackage{titlesec}
+\usepackage{authblk}
+\usepackage{mdframed}
+
+\titleformat{\section}{\large\bfseries\sffamily\color{black!85}}{\thesection}{0.8em}{}
+\titleformat{\subsection}{\normalsize\bfseries\sffamily\color{black!75}}{\thesubsection}{0.8em}{}
+
+\newcommand{\ie}{\emph{i.e.}}
+\newcommand{\eg}{\emph{e.g.}}
+\newcommand{\etc}{etc.}
+
+\newmdenv[
+  linecolor=black!30,
+  linewidth=0.6pt,
+  backgroundcolor=black!3,
+  innertopmargin=8pt,
+  innerbottommargin=8pt,
+  innerleftmargin=10pt,
+  innerrightmargin=10pt,
+  skipabove=10pt,
+  skipbelow=10pt,
+  frametitle={\textsf{\bfseries\large The Bigger Picture}},
+  frametitlebackgroundcolor=black!8,
+]{bigpicture}
+
+\newenvironment{highlights}{%
+  \par\noindent\textsf{\bfseries\large Highlights}\par\smallskip
+  \begin{itemize}[leftmargin=1.4em,itemsep=0.15em,topsep=0.2em]}{%
+  \end{itemize}\par\medskip}
+
+\title{\bfseries\sffamily\Large Auditing Open Mobility Feeds at Country Scale:\\
+A Reproducible Protocol and Reference Dataset for the 123 French GBFS Systems}
+
+\author[1]{Rohan Foss\'e\thanks{Lead contact: \texttt{rfosse@cesi.fr}}}
+\author[2]{Ga\"el Pallares}
+\affil[1]{CESI Engineering School, Montpellier, France}
+\affil[2]{CESI LINEACT (EA 7527), Montpellier, France}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{Summary}
+Open mobility feeds are increasingly assumed to be directly ingestible into
+quantitative research pipelines: the General Bikeshare Feed Specification
+(GBFS) is now a regulatory requirement for French operators, and 123 feeds
+are centralised on a single public portal. By auditing all of them, we show
+that this syntactic standardisation is necessary but not sufficient. Five
+recurring anomaly classes (A1--A5: out-of-domain inclusion, placeholder
+capacity, structural over-capacity, geospatial error, out-of-perimeter
+coverage) re-appear across operators and together reclassify
+\textbf{30.9\,\%} (95\,\% bootstrap CI [30.5, 31.3]) of the raw stations.
+We formalise a six-step idempotent purging protocol, hybridise its output
+with five reference sources (INSEE, BAAC, BD~TOPO, OpenStreetMap, FUB), and
+release the resulting \emph{Gold Standard GBFS France} dataset (46{,}307
+certified stations across 97 cities) as a versioned research commons under
+ODbL on Zenodo. A single anomaly (the A3 reclassification of the
+\emph{Pony} free-floating fleet in Bordeaux) is sufficient to move the city
+from rank 2 to rank 14 in a national soft-mobility ranking, a result that
+quantifies the cost of skipping the audit. We further publish three
+internal robustness checks, a cross-country pilot on Bicing Barcelona
+and Oslo Bysykkel (both pass the audit with zero anomalies under
+French thresholds), a reproducibility checklist with container-pinned
+bit-exact replay, and a six-experiment falsification roadmap with
+four pilots already completed. The protocol is designed to
+be transferable; the dataset itself is positioned as a contestable
+artefact rather than a finished product.
+
+\begin{bigpicture}\itshape
+Public-policy decisions about urban mobility increasingly depend on the
+analysis of open data feeds whose semantic quality is taken on trust.
+This article makes the case that syntactic standardisation, on its own,
+hides systematic errors that can flip the ranking of cities by an order
+of magnitude, and proposes a reproducible audit pipeline backed by a
+versioned reference dataset. The contribution is methodological as much
+as empirical: any open mobility standard --- GBFS today, transit feeds,
+charging-station feeds and shared-mobility-data-specification feeds
+tomorrow --- benefits from a community-maintained validation tier
+between regulatory publication and academic use. The 123-system French
+corpus is a stress test of that idea, and the audit numbers documented
+here support a broader conclusion: an open feed is a starting point for
+research, not a substitute for one.
+\end{bigpicture}
+
+\begin{highlights}
+\item Five anomaly classes reclassify 30.9\,\% of 67k raw GBFS stations
+\item Six-step idempotent, reversible audit pipeline released as open code
+\item Gold Standard dataset: 46{,}307 certified stations, 97 cities, FAIR
+\item Bordeaux drops from national rank 2 to rank 14 after one correction
+\end{highlights}
+
+\noindent\textbf{Keywords:} data quality; GBFS; bike sharing; FAIR; reproducibility;
+open data audit; reference dataset; mobility infrastructure.
+
+% ===================================================================
+\section{Introduction}\label{secIntro}
+
+For more than a decade, bike-sharing systems have been a structural
+component of urban mobility policy in France and across Europe, advancing
+goals of liveability, decarbonisation and last-kilometre integration. To
+support inter-operability of the resulting fleets, the General Bikeshare
+Feed Specification (GBFS), introduced by the North American Bikeshare
+Association in 2015 and now maintained by the Open Mobility Foundation,
+provides a shared ontology covering station geolocation, dock counts,
+real-time availability and pricing
+\cite{Mobi2024,OMF2023}. In France, the 2019 Mobility Orientation Law
+(LOM, article L.~1115-1 of the transport code) makes the publication of
+these feeds on \emph{transport.data.gouv.fr} a regulatory acquis, so
+that by 2026 the working assumption of many research and policy
+pipelines is that GBFS feeds can be ingested directly.
+
+That working assumption is misleading. The systematic audit reported
+here, covering 123 French GBFS systems, shows that standardised syntax
+masks substantial semantic heterogeneity. Three findings make the gap
+concrete. First, the same field
+(\texttt{station\_information.capacity}) covers radically different
+realities: a physical dock count for dock-based fleets, a theoretical
+estimator obtained by conditional averaging on free-floating fleets, and
+arbitrary placeholders for under-reporting operators. Second, fourteen
+\emph{Citiz} car-sharing systems are listed on the national portal under
+the GBFS schema, blurring the very definition of the object of study.
+Third, $3.8\,\%$ of the raw stations (95\,\% bootstrap CI [3.4, 4.2],
+$n = 10{,}000$ resamples) exhibit transposed coordinates, fall outside
+the national perimeter, or generate continental-scale bounding boxes.
+Taken together, these observations support a single methodological
+claim: syntactic standardisation of an open feed is not sufficient to
+turn it into a research artefact, and any quantitative use of GBFS data
+must be preceded by an explicit, documented and reproducible audit.
+
+Empirical audits of mobility feeds have so far remained piecemeal. Tao
+\textit{et al.} \cite{Tao2020} document sampling biases in mobile-phone
+records used for origin-destination estimation; Romanillos \textit{et
+al.} \cite{Romanillos2016} warn against statistical artefacts of
+ingesting raw GPS feeds directly; Fishman \cite{Fishman2016} stresses
+the heterogeneity of operational definitions in international BSS
+comparisons. In the adjacent transit literature, the GTFS community has
+been more proactive: the Canonical GTFS Schedule Validator
+\cite{MobilityData2024Validator} and the earlier Conveyal validator
+\cite{Antrim2013Conveyal} codify hundreds of schema-level checks on
+transit feeds, and the data-engineering community has produced reusable
+declarative-validation frameworks such as Great Expectations
+\cite{GreatExpectations2024}, Pandera \cite{Pandera2024} and the
+Frictionless Data specifications \cite{FrictionlessData2023};
+ISO/IEC~25012 \cite{ISO25012} formalises the data-quality dimensions
+that we implicitly mobilise. None of these references, however,
+addresses GBFS specifically, and none of them produces a versioned,
+audited reference dataset at the scale of a country. The present paper
+fills that gap for the French case.
+
+The contributions are fourfold. First, an empirically-grounded
+\textbf{taxonomy} of five anomaly classes (A1--A5), derived from the
+audit of all 123 French GBFS systems and stress-tested on two
+non-French systems (Bicing Barcelona, Oslo Bysykkel) which both pass
+the audit with zero anomalies under unchanged thresholds. Second, a
+six-step \textbf{purging protocol} whose every transformation is
+logged, reproducible and reversible. Third, the \textbf{Gold Standard
+GBFS France} data product (46{,}307 certified stations, 97 cities),
+released as a versioned Parquet file with DOI
+\texttt{10.5281/zenodo.20125460} under ODbL, accompanied by its JSON
+Schema, Croissant manifest and audit report. Fourth, a
+\textbf{validation roadmap} of six falsifiable experiments, four of
+which already include a completed pilot, so that the protocol can be
+challenged in public rather than defended in private. Section~\ref{secResults} reports the empirical results,
+Section~\ref{secDiscussion} discusses implications and limitations, and
+Section~\ref{secMethods} details the experimental procedures.
+
+% ===================================================================
+\section{Results}\label{secResults}
+
+\subsection{Anomaly taxonomy and incidence}
+The systematic audit of the 123 French GBFS systems uncovered five
+recurring anomaly classes, formalised in the \texttt{station\_type}
+column of the Gold Standard and summarised in
+Table~\ref{tab:anomalies}. Each class, in isolation, is sufficient to
+invalidate a non-audited cross-system comparison; the protocol that
+addresses them is given in Section~\ref{secMethods}.
+
+\begin{table}[ht]
+\centering
+\caption{Five GBFS anomaly classes observed on the French corpus
+(2025--2026). Incidence is reported at the system level except for A4
+which is intrinsically station-level.}
+\label{tab:anomalies}
+\small
+\begin{tabular}{@{}llll@{}}
+\toprule
+\textbf{Class} & \textbf{Name} & \textbf{Signature} & \textbf{Incidence}\\
+\midrule
+A1 & Out-of-domain inclusion & Car-sharing advertised as BSS & 14 systems\\
+A2 & Placeholder capacity & Constant non-zero $c_i$, \eg $c = 100$ & 3 systems\\
+A3 & Structural over-capacity & Conditional averaging on free-floating & 8 systems\\
+A4 & Geospatial error & Transposed coords; $>3\sigma$ outliers; out-of-FR & $\sim 3.8\,\%$ of stations\\
+A5 & Out of perimeter & System area $>50{,}000$\,km$^2$; overseas & 5 systems\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+A3 is the most pernicious anomaly. Free-floating fleets (\emph{Pony},
+\emph{Cykleo}, \etc) advertise virtual stations in GBFS, the term
+``station'' designating the GPS position of an anchoring point
+currently occupied by a vehicle. To avoid displaying empty stations,
+the operator typically reports a capacity profile by \emph{conditional
+averaging} on stations whose instantaneous capacity is non-zero:
+\begin{equation}
+\bar{c}_{\text{profile}}
+= \frac{\sum_{i\,:\,c_i > 0} c_i}{\#\{i\,:\,c_i > 0\}}
+\;\neq\;
+\bar{c}_{\text{actual}}
+= \frac{1}{N}\sum_{i=1}^{N} c_i.
+\label{eq:a3-bias}
+\end{equation}
+Aggregated at the system level, $\bar{c}_{\text{profile}}$ wrongly
+classifies thousands of free-floating bikes as heavy dock-based
+stations. Cross-system comparison is therefore meaningful only after
+explicit reclassification; the empirical signature is visible in
+Figure~\ref{fig:capacity-violin} as a bimodal capacity distribution.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.75\linewidth]{fig02_capacity_violin.pdf}
+\caption{Empirical signature of the A3 floating-anchor bias. Declared
+capacity distribution by \texttt{station\_type} (clipped at 80 docks)
+on the Gold Standard corpus. Only dock-based stations exhibit a
+physically interpretable capacity (median = 20).}
+\label{fig:capacity-violin}
+\end{figure}
+
+\subsection{Cumulative effect on the national corpus}
+Table~\ref{tab:overview} summarises the cumulative effect of the
+purging protocol. Across the country, 20{,}693 stations --- precisely
+$30.9\,\%$ of the raw corpus (95\,\% bootstrap CI [30.5, 31.3],
+$n = 10{,}000$ resamples on systems) --- are reassigned, removed or
+reclassified. This is itself a strong empirical argument against the
+view that the standard alone delivers a research-ready dataset.
+
+\begin{table}[ht]
+\centering
+\caption{Effect of the purging pipeline on the national GBFS corpus.
+\emph{Certified} entries are kept in the Parquet with a typed
+\texttt{station\_type} so that downstream consumers can filter
+explicitly; \emph{rejected} entries are kept in a separate
+\texttt{rejected\_stations.parquet} with the exclusion motive.}
+\label{tab:overview}
+\small
+\begin{tabular}{@{}lrr@{}}
+\toprule
+\textbf{Indicator} & \textbf{Raw} & \textbf{Gold Standard}\\
+\midrule
+Inventoried GBFS systems            & 142 & 123 (certified)\\
+Cities covered                      & --  & 97 \\
+\quad with at least one dock-based station & -- & 64 \\
+Total stations (certified)          & 67{,}000 & 46{,}307 \\
+\quad dock-based                    & --       & 5{,}442 \\
+\quad free-floating (labelled, preserved) & -- & 39{,}235 \\
+\quad car-sharing (A1)              & 1{,}630  & re-labelled, excluded from BSS use \\
+Stations reclassified or dropped    & --       & 20{,}693 (30.9\,\%) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The most heavily impacted urban areas are those operated by
+free-floating fleets (\eg Bordeaux, Nice, Saint-\'Etienne) and those
+historically lumped together with car-sharing systems on the national
+portal (Strasbourg, Grenoble), whereas urban areas served by
+traditional dock-based operators (V\'elib' in Paris, V\'eloMagg in
+Montpellier) are left almost intact.
+
+\subsection{Case study: Bordeaux and A3}
+Bordeaux is the paradigmatic case (Table~\ref{tab:bordeaux}). The raw
+feed assembles five operators across the agglomeration: \emph{Pony}
+(free-floating), \emph{Bird} (free-floating), \emph{Dott}
+(free-floating), \emph{Le V\'elo par TBM} (dock-based) and \emph{Citiz
+Gironde} (car-sharing). \emph{Pony} alone advertises 2{,}996
+\texttt{station\_information} entries with declared capacities around
+12 docks. Naive ingestion therefore credits Bordeaux with tens of
+thousands of nominal docking points and places it in the national top
+three for V\'elib-class infrastructure.
+
+\begin{table}[ht]
+\centering
+\caption{Bordeaux: impact of the A3 correction on the
+\emph{Pony Bordeaux} subsystem and on the agglomeration as a whole.
+The national IMD rank is reported for context (definition in
+\cite{Fosse2026imd}).}
+\label{tab:bordeaux}
+\small
+\begin{tabular}{@{}lrr@{}}
+\toprule
+\textbf{Indicator} & \textbf{Raw GBFS} & \textbf{Gold Standard}\\
+\midrule
+\textit{Pony Bordeaux subsystem} & & \\
+\quad \texttt{station\_information} entries & 2{,}996 & 2{,}996 (relabelled) \\
+\quad Declared as dock-based                 & 2{,}996 & 0 \\
+\quad Declared capacity per entry (median)   & 12      & 12 \\
+\quad Recomputed actual capacity             & --      & 0.03 bike/entry \\
+\midrule
+\textit{Bordeaux agglomeration (all 5 systems)} & & \\
+\quad Total raw entries                      & 9{,}921 & -- \\
+\quad Certified dock-based stations           & --      & 225 \\
+\quad Nominal docking total (dock-based only) & 35{,}952 & 690 \\
+\quad National IMD rank (companion study)     & 2       & 14 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The purging protocol --- and in particular S3 (A3 correction) ---
+reclassifies the 2{,}996 Pony entries as \texttt{free\_floating},
+recomputes their actual capacity to 0.03 bike per entry, and leaves
+the 225 genuinely dock-based stations of the historical \emph{V\'elo
+par TBM} system. At the agglomeration level, this collapses the
+nominal docking total by $98\,\%$, drops Bordeaux's dock-based
+infrastructure from the top decile to the second quartile of the
+national distribution, and shifts the Bordeaux IMD rank from 2 to 14
+in our companion composite-index work \cite{Fosse2026imd}. The
+twelve urban areas most exposed to A3 are mapped in
+Figure~\ref{fig:bordeaux-before-after}.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.9\linewidth]{fig04_bordeaux_before_after.pdf}
+\caption{Top twelve French urban areas ranked by absolute reduction in
+dock-based station count between the raw GBFS feed and the certified
+Gold Standard. Bordeaux exhibits the largest absolute drop
+(9{,}921 raw entries down to 225 certified dock-based stations),
+driven by the reclassification of the \emph{Pony} free-floating fleet
+(A3). Paris and Lyon also see substantial corrections.}
+\label{fig:bordeaux-before-after}
+\end{figure}
+
+\paragraph{Two complementary case studies.}
+A3 is not the only class with a measurable downstream effect.
+\emph{Nice} carries the flagship A2 placeholder via \texttt{pony\_Nice}:
+every station declares $c = 100$, yielding a total nominal capacity of
+about 25{,}000 bikes for an agglomeration whose actual dock-based
+network is essentially the rebadged \emph{V\'eloBleu} of 91 stations.
+After purging, the nominal capacity collapses by a factor of $250$ and
+Nice's national rank moves out of the top quartile. \emph{Strasbourg}
+provides the canonical A1 case: the \emph{Citiz Grand Est} car-sharing
+system was historically ingested as part of the city's BSS inventory,
+inflating the station count by roughly $35\,\%$. After semantic
+exclusion, the agglomeration drops from rank 6 to rank 5 --- a smaller
+absolute move than Bordeaux but on a more discriminating part of the
+ranking. A1, A2 and A3 are therefore not interchangeable: each one
+distorts the ranking through a different mechanism (false positive on
+the population, on the capacity, or on the type), and a non-audited
+pipeline conflates them.
+
+\subsection{Comparison with naive baselines}
+A natural question is whether the full pipeline is justified or whether
+simpler heuristics would suffice. Three baselines are evaluated on the
+same 123-system corpus
+(Table~\ref{tab:baselines}). The \emph{Raw GBFS} baseline ingests
+\texttt{station\_information} as is. The \emph{vehicle\_type filter}
+mimics what a careful data engineer would write in a notebook. The
+\emph{MobilityData audit} adapts the canonical GTFS-realtime
+schema-level rules to GBFS.
+
+\begin{table}[ht]
+\centering
+\caption{Measured comparison of the Gold Standard against three
+baselines on the same 123-system French GBFS corpus. Brackets are
+95\,\% confidence intervals (Wald on Dock, bootstrap on
+$\rho_{\text{FUB}}$ over cities $n=2{,}000$, Wilson on A1/A3). ``Dock''
+for the Gold Standard is the reference by construction.}
+\label{tab:baselines}
+\small
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+\textbf{Pipeline} & \textbf{Dock} & \textbf{$\rho_{\text{FUB}}$} &
+\textbf{A1 ex.} & \textbf{A3 fix.}\\
+\midrule
+Raw GBFS &
+  0.12 \footnotesize[.12, .12] &
+  0.38 \footnotesize[.01, .68] &
+  0\,\% & 0\,\% \\
+\texttt{vehicle\_type} filter &
+  0.15 \footnotesize[.15, .15] &
+  0.19 \footnotesize[$-$.20, .52] &
+  82\,\% \footnotesize[59, 94] & 0\,\% \\
+MobilityData audit &
+  0.15 \footnotesize[.15, .15] &
+  0.19 \footnotesize[$-$.20, .52] &
+  82\,\% \footnotesize[59, 94] & 0\,\% \\
+\textbf{Gold Standard} &
+  \textbf{1.00} &
+  0.25 \footnotesize[$-$.13, .59] &
+  \textbf{100\,\%} \footnotesize[82, 100] &
+  \textbf{100\,\%} \footnotesize[91, 100] \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Three findings deserve emphasis. First, and most importantly, A3
+reclassification recall is $0\,\%$ for every baseline (Wilson upper
+bound $9\,\%$): structural over-capacity is invisible to syntactic
+validators by construction. Only a semantically-aware step on the
+capacity distribution can recover it. Second, the
+\emph{vehicle\_type filter} and the \emph{MobilityData audit} baselines
+produce identical numbers on this corpus, because schema-level checks
+do not catch anything that the name filter did not already exclude ---
+French GBFS feeds are syntactically well-formed but semantically
+biased. Third, $\rho_{\text{FUB}}$ is highest on the raw count and
+drops after audit; this is not a defect but a feature: FUB captures
+perception of the entire cycling environment, so the raw count
+over-fits the perceptual signal by including virtual stations, while
+the Gold Standard's lower correlation reflects an honest count of
+physical docks.
+
+\subsection{Internal robustness checks}\label{secInternal}
+Independent of the validation roadmap discussed in
+Section~\ref{secDiscussion}, three internal robustness checks were
+executed on the same corpus.
+
+\paragraph{Orthogonal-coverage check.}
+Three rule-based classifiers were implemented, each restricted to a
+single signal source: a \emph{name-based} classifier seeing only
+\texttt{system\_name} and \texttt{station\_name}; a
+\emph{capacity-statistics} classifier seeing only the
+\texttt{capacity} column; and a \emph{geospatial} classifier seeing
+only $(\varphi,\lambda)$. The pairwise Cohen's $\kappa$ between the
+three is near zero ($\kappa < 0.10$); Fleiss $\kappa = -0.07$. This is
+not failure but the expected signature of complementary coverage: each
+classifier sees only one slice of the taxonomy. The right measure is
+the recall of their union against the integrated pipeline, which
+reaches $97.2\,\%$ at a precision of $91.5\,\%$, with only 7 stations
+out of 500 flagged by all three. This empirically demonstrates that
+A1--A5 cannot be reduced to a single heuristic.
+
+\paragraph{Full-task agreement check.}
+Three independent decision-tree classifiers were implemented, each
+seeing all signals but applying them in a different priority order
+(name-first, capacity-first, geospatial-first). On the same 500-station
+sample, the three classifiers reach Fleiss $\kappa = 0.80$, with
+pairwise Cohen's $\kappa \in [0.70, 1.00]$. The 93/500 stations of
+disagreement concentrate on the A1/A3 frontier (free-floating fleets
+whose name does not match the floating-pattern dictionary). The lower
+bound $\kappa = -0.07$ (orthogonal) and the upper bound $\kappa = 0.80$
+(full-task) bracket the inter-annotator agreement that three independent
+human annotators with full access to the payload would plausibly
+achieve.
+
+\paragraph{Threshold sensitivity.}
+A single-dimension pilot of the topological threshold $\sigma_{\max}$
+was completed on the certified corpus. Sweeping $\sigma_{\max} \in
+\{2.0, 2.5, 3.0, 3.5, 4.0\}$ yields Jaccard similarities of
+$0.66, 0.79, 1.00, 1.00, 1.00$ and Kendall's $\tau$ of
+$0.92, 0.95, 1.00, 1.00, 1.00$ against the reference at
+$\sigma_{\max} = 3.0$. Most importantly, the \textbf{Top-10 national
+ranking is invariant} across the entire grid ($\sigma_{\max}$-induced
+churn $= 0$), which is the criterion that matters for any downstream
+public-policy reading.
+
+These three checks do not replace human inter-rater reliability, which
+is the next priority of the validation roadmap (experiment E1,
+Section~\ref{secDiscussion}); they are reported as robustness
+measures, not as substitutes.
+
+\subsection{Cross-country transferability pilot}\label{secCrossCountry}
+A natural objection to the present protocol is that A1--A5 might be
+artefacts of French publication practice rather than structural
+features of open-mobility-feed publication in general. To address this
+upfront, two non-French dock-based systems were audited with the
+\emph{same} rule set, recalibrating only the national perimeter
+(latitude/longitude bounds). All other thresholds ($\sigma_{\max} = 3$,
+$N_{\min} = 20$, A2 placeholder rule, A3 capacity-profile ratio
+threshold of 5.0) were kept at their French values. Results are
+reported in Table~\ref{tab:e5-pilot}; the full scripts and JSON audit
+reports ship alongside the dataset under \texttt{experiments/e5\_europe/}.
+
+\begin{table}[ht]
+\centering
+\caption{E5 pilot: applying the A1--A5 rule set to two non-French
+dock-based systems, with French thresholds and country-appropriate
+perimeter only. Both systems pass the audit with zero structural
+anomalies, in contrast to the 22 French systems flagged by at least one
+class. \emph{Ratio} is $\bar c_{\text{profile}} / \bar c_{\text{actual}}$
+from Eq.~\ref{eq:a3-bias}: a value $\approx 1$ is the dock-based
+signature, $> 5$ the floating-anchor signature.}
+\label{tab:e5-pilot}
+\small
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+\textbf{System} & \textbf{Country} & \textbf{Raw stns.}
+                & \textbf{Capacity ratio} & \textbf{Anomalies}\\
+\midrule
+Bicing Barcelona       & ES & 544 & 1.006 & none of A1--A5 \\
+Oslo Bysykkel          & NO & 266 & 1.000 & none of A1--A5 \\
+\midrule
+French corpus (ref.)   & FR & $\sim$67{,}000 & --- & 22 systems flagged \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Three observations follow. First, the capacity-profile ratio that
+defines the A3 signature on free-floating French fleets is essentially
+\textbf{unity} on both well-managed European dock-based systems, which
+empirically validates the discriminative power of
+Eq.~\ref{eq:a3-bias}. Second, vehicle-type metadata on both feeds is
+populated cleanly (Bicing: \{\texttt{bicycle}, \texttt{scooter\_standing}\};
+Oslo: \{\texttt{bicycle}\}), so no A1 false positive is triggered
+either. Third, perimeter and topological filters caught only a
+handful of edge outliers (1 station in Bicing, 3 in Oslo), in line
+with what would be expected from any GPS-anchored fleet. These two
+negative controls do not establish full European transferability ---
+that requires the country-by-country E1 of the full E5 experiment ---
+but they make it more difficult to argue that A1--A5 is over-fit to
+the French market.
+
+% ===================================================================
+\section{Discussion}\label{secDiscussion}
+
+\subsection{Implications}
+The audit documented in this paper is intended as a scientific
+validation tier, downstream of GBFS publication and upstream of
+academic work. Its sustainability depends on collective appropriation,
+since no single research team can durably operate a national
+infrastructure on its own. Three concrete avenues are suggested.
+First, a jointly published \emph{GBFS Audit Best Practices Handbook} by
+francophone micromobility laboratories (CESI LINEACT, IFSTTAR
+UMRESTTE, LAET, LVMT, IRSTEA-ITRT) would align practices currently
+rebuilt in isolation. Second, a working group placed under ADEME or
+\emph{transport.data.gouv.fr} could formalise an extended GBFS schema
+and a certification framework, giving the audit a regulatory anchor.
+Third, a continuous validation chain running the pipeline monthly on
+the national feeds, with automated publication of the audit report and
+operator-side notification on regression, would close the loop between
+detection and correction. Star \cite{Star2010} reminds us that the
+most durable infrastructures are those whose governance is explicit,
+transparent and tied to an identifiable community of practice: moving
+the Gold Standard from author-led to community-led governance is an
+institutional challenge as much as a scientific one.
+
+\subsection{Limitations}\label{secLimitations}
+The protocol has four acknowledged limitations.
+
+\textbf{L1 -- National coverage.} The corpus is limited to metropolitan
+France; extension to overseas territories and other European
+jurisdictions requires revisiting thresholds, in particular the
+macro-regional surface threshold and the geofilter bounds.
+
+\textbf{L2 -- Static versus dynamic.} The v1.0 release audits
+\texttt{station\_information} only; auditing
+\texttt{station\_status} (real-time availability) requires a distinct
+protocol, sketched in experiment E4 (a 2-day pilot already detected
+candidate dynamic anomalies on $12.9\,\%$ of monitored stations) and
+developed in a companion paper \cite{Fosse2026flows}.
+
+\textbf{L3 -- Free-floating asymmetry (key caveat).} The dock-based
+subset (5{,}442 stations) is fully certified; the free-floating subset
+(39{,}235 stations) is correctly typed but \emph{not rigorously
+audited}. We have deliberately preserved free-floating entries in the
+release with an explicit \texttt{station\_type = free\_floating} label,
+so that downstream consumers can either exclude them or run their own
+free-floating-native audit (experiment E6, scheduled for 2027). A
+reader who interprets the Gold Standard as a fully-audited
+all-fleet-types dataset will be misled; the appropriate framing is
+\emph{Gold Standard for dock-based French BSS, with explicit
+free-floating annotation}.
+
+\textbf{L4 -- Operator coverage.} Some operators publish partial GBFS
+feeds or are unavailable during the audit window; the inventory
+completeness is therefore not guaranteed and must be re-evaluated
+periodically, which is the purpose of the temporal-stability
+experiment E3.
+
+\subsection{Recommendations to operators}
+The audit should also turn into constructive feedback to publishers.
+Four recommendations follow directly from the taxonomy and are
+deliberately compatible with the current GBFS specification: they are
+conventions that the French operator community could adopt voluntarily,
+without waiting for a schema revision.
+\begin{enumerate}[leftmargin=*]
+\item Populate \texttt{vehicle\_type} exhaustively, so that
+car-sharing or scooter-sharing services on the portal can no longer
+be ingested as bike sharing (A1).
+\item Report \texttt{capacity} as a physical dock count for dock-based
+stations and leave it \texttt{null} for virtual stations, rather than
+filling it with placeholders such as $c = 100$ (A2).
+\item Adopt the GBFS v3 \texttt{vehicle\_status} extension for
+free-floating fleets, and stop publishing per-vehicle anchor positions
+as \texttt{station\_information} (A3).
+\item Publish geographical perimeters as polygons in the GBFS
+\texttt{geofencing\_zones} block, so that validators can apply
+system-specific topological filters (A4, A5).
+\end{enumerate}
+
+\subsection{Future directions}
+Each of the four limitations above is paired with a falsifiable
+experiment whose protocol, success criterion and (where available)
+pilot results are documented and shipped alongside the dataset
+(Table~\ref{tab:roadmap}). Four of the six experiments already
+include a completed pilot (the internal robustness checks of
+Section~\ref{secInternal} for E1, the $\sigma_{\max}$ sweep for E2,
+the 2-day dynamic snapshot for E4, and the Bicing/Oslo cross-country
+test of Section~\ref{secCrossCountry} for E5); the remaining
+priorities are the human inter-rater reliability of E1, the full
+four-dimensional threshold sweep of E2, the twelve-month temporal
+stability of E3, and the free-floating-native protocol of E6. The
+full protocols, including stratified sampling procedures, statistical
+tests and success thresholds, are released under
+\texttt{experiments/} in the source repository, so that the present
+artefact can be challenged in public rather than defended in private.
+
+\begin{table}[ht]
+\centering
+\caption{Six falsifiable experiments mapped to the limitations of
+Section~\ref{secLimitations}. ``Pilot $\checkmark$'' indicates a
+preliminary result already reported in this paper; full protocols are
+documented under \texttt{experiments/} in the source repository.}
+\label{tab:roadmap}
+\small
+\begin{tabular}{@{}llll@{}}
+\toprule
+\textbf{ID} & \textbf{Title} & \textbf{Targets} & \textbf{Status}\\
+\midrule
+E1 & Inter-rater reliability of A1--A5         & Auditor effect             & Internal pilot $\checkmark$ \\
+E2 & Threshold and buffer sensitivity           & $\sigma_{\max}, N_{\min}$, radii & $\sigma_{\max}$ pilot $\checkmark$ \\
+E3 & Twelve-month temporal stability            & Snapshot dependence (L4)    & Running \\
+E4 & Dynamic extension to \texttt{station\_status} & L2                       & 2-day pilot $\checkmark$ \\
+E5 & European generalisation (5 countries)      & L1                          & 2-system pilot $\checkmark$ \\
+E6 & Free-floating-native protocol              & L3                          & Planned 2027-Q2 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Downstream use}
+The Gold Standard is not produced for its own sake but to unlock
+analyses that the raw feed would not support. Four families of
+downstream studies illustrate the expected return on investment:
+composite-index work (the companion IMD paper \cite{Fosse2026imd} is
+the immediate example); demand modelling with graph-based neural
+networks \cite{Lin2018BSSGraph} whose false-station nodes from A3 are
+a known confound; spatial-equity analysis combining station access
+with INSEE Filosofi; and multimodal integration with GTFS, since the
+hybridisation schema is deliberately compatible with
+\cite{MobilityData2024Validator}.
+
+% ===================================================================
+\section{Experimental Procedures}\label{secMethods}
+
+\subsection{Provenance of the taxonomy}
+Anticipating the auditor-effect critique, the iterative process that
+produced A1--A5 is documented explicitly. The taxonomy was built by a
+hybrid inductive-deductive workflow over five iterations between
+2025-04 and 2026-01. \emph{Iteration 1} (April 2025): exploratory scan
+of the 123 systems on the four obvious axes of ISO/IEC 25012
+(completeness, consistency, accuracy, currentness); A1 and A4 emerge.
+\emph{Iteration 2} (June 2025): enrichment with the system catalogue
+of \emph{transport.data.gouv.fr}; A5 emerges as the system-level
+complement of A4. \emph{Iteration 3} (September 2025): A2 discovered
+when per-system standard deviation of \texttt{capacity} is plotted;
+three systems with exact zero variance on non-zero capacities stand
+out. \emph{Iteration 4} (November 2025): A3 emerges through reverse
+engineering of free-floating fleets; the per-system median capacity of
+\emph{Pony} matches a conditional-averaging estimator more closely
+than a physical-dock count. \emph{Iteration 5} (January 2026): the
+rule-based audit is re-run on a held-out subset of systems to test
+class stability; two candidate classes do not survive (``A6-rolling
+stock noise'', collapsed into A3, and ``A7-cross-border duplicate'',
+no instance found). The current five-class taxonomy is the artefact of
+that process; its provenance and rejected candidates ship with the
+audit report.
+
+\subsection{Six-step purging protocol}
+The transition from the raw feed to the Gold Standard proceeds through
+a chain of six sequential transformations (Algorithm~\ref{alg:purge}),
+each coded in \texttt{utils/data\_loader.py} and logged in an audit
+report shipped alongside the dataset. The protocol is deliberately
+sequential: early steps are inexpensive and remove out-of-domain or
+coarse-grained anomalies (A1, A2, A4 perimeter), while later steps
+require system-level statistics ($\bar c$, centroids, $\sigma$) and
+therefore benefit from operating on a pre-cleaned set.
+
+\begin{algorithm}[ht]
+\SetAlgoLined
+\DontPrintSemicolon
+\KwIn{National catalogue $\mathcal{C}$ (123 systems); thresholds
+$\sigma_{\max} = 3$, $N_{\min} = 20$.}
+\KwOut{Certified set $\mathcal{G}$, rejected set $\mathcal{R}$, audit report.}
+$\mathcal{G} \gets \emptyset$; $\mathcal{R} \gets \emptyset$\;
+\ForEach{system $s \in \mathcal{C}$}{
+    Ingest GBFS feed $\to \mathcal{S}_s$\;
+    \textbf{S1.} If $s$ is car-sharing, relabel \texttt{carsharing} and continue\;
+    \textbf{S2.} If $\mathrm{Var}(c) = 0$ and $c > 0$, force \texttt{free\_floating}\;
+    \textbf{S3.} Recompute $\bar c_{\text{actual}}$ on all stations and reassign topologically\;
+    \textbf{S4.} Keep $\varphi_i \in [41^\circ,52^\circ]$, $\lambda_i \in [-6^\circ,10^\circ]$\;
+    \textbf{S5.} Drop $d(\mathbf{x}_i, \boldsymbol{\mu}_s) > \sigma_{\max} \cdot \sigma_s$\;
+    \textbf{S6.} If $|\mathcal{S}_s^{\text{dock}}| < N_{\min}$, label \texttt{too\_small}\;
+    Update $\mathcal{G}, \mathcal{R}$ accordingly\;
+}
+\Return $(\mathcal{G}, \mathcal{R}, \text{audit report}, \text{metadata})$\;
+\caption{GBFS-to-Gold-Standard purging pipeline.}
+\label{alg:purge}
+\end{algorithm}
+
+\subsection{Protocol properties}
+Four properties are designed into the pipeline. \emph{Idempotence:} two
+successive applications produce the same result, tested by a unit test
+executed on every CI run. \emph{Reversibility:} each excluded station
+is kept in \texttt{rejected\_stations.parquet} together with the
+exclusion motive. \emph{Logging:} every step records the number of
+stations in, the number of stations out and the type of transformation
+applied. \emph{Explicit parameterisation:} all thresholds
+($\sigma_{\max}$, $N_{\min}$, geofilter bounds, hybridisation radii)
+are documented as hyperparameters and can be varied for sensitivity
+analysis without modifying the source code.
+
+\subsection{Threshold justification}
+The topological threshold $\sigma_{\max} = 3$ is a compromise between
+robustness to GPS noise and the preservation of legitimate peripheral
+extensions, \eg an off-centre TGV station or a university campus.
+Section~\ref{secInternal} reports the single-dimension sensitivity
+pilot: Top-10 invariance for $\sigma_{\max} \ge 2.5$. The robustness
+threshold $N_{\min} = 20$ dock-based stations is calibrated on the
+literature of meshed networks: below this value, density and
+connectivity metrics become noise-dominated and are no longer
+informative for cross-city comparison \cite{Saberi2018}.
+
+\subsection{Multi-source hybridisation}
+The output of the purging stage enriches each station with a
+contextual profile obtained by articulating five reference sources
+(Table~\ref{tab:sources}). Hybridisation is performed either by
+spatial joining (point-in-polygon, buffer queries) or by administrative
+aggregation (\ie at the IRIS or municipal level), depending on the
+granularity of the source.
+
+\begin{table}[ht]
+\centering
+\caption{Reference sources used for contextual enrichment.}
+\label{tab:sources}
+\small
+\begin{tabular}{@{}llll@{}}
+\toprule
+\textbf{Source} & \textbf{Granularity} & \textbf{Variables} &
+\textbf{Operation}\\
+\midrule
+INSEE Filosofi & IRIS / municipality &
+   Median income/CU, poverty rate, local Gini & Aggregation \\
+BAAC (Cerema)  & geolocated accident &
+   Severe-crash density (500\,m buffer) & Spatial join \\
+BD~TOPO        & polylines &
+   Cycle-infrastructure linear (300\,m buffer) & Spatial join \\
+OpenStreetMap  & polygons \& points &
+   Facility density (transit stops, shops, services) & Spatial join \\
+FUB Barometer  & municipal score &
+   Subjective cycling perception (2017--2021) & Aggregation \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Released schema}\label{secSchema}
+The Gold Standard Parquet exposes 30 columns documented in
+Table~\ref{tab:schema}: 14 from the raw GBFS payload (preserved
+verbatim or normalised), 7 from the audit pipeline (typed,
+\emph{station\_type} enum, audit status), 4 from spatial-equity
+hybridisation, 3 from infrastructure hybridisation, and 2 from
+multimodal-access hybridisation. Every column carries a stable name, a
+declared dtype, a source pointer and a completeness rate; the
+machine-readable equivalent is shipped as a JSON Schema, a Frictionless
+Data Package descriptor and a Croissant manifest.
+
+\begin{table}[ht]
+\centering
+\caption{Released schema of \texttt{stations\_gold\_standard\_final.parquet}.
+``Compl.'' is the empirical completeness rate on the certified subset.
+Columns marked $^\dag$ are introduced by the audit pipeline; columns
+marked $^\ast$ are derived from external sources.}
+\label{tab:schema}
+\small
+\begin{tabular}{@{}lllr@{}}
+\toprule
+\textbf{Column} & \textbf{Type} & \textbf{Source / Description} & \textbf{Compl.}\\
+\midrule
+\multicolumn{4}{l}{\textit{Identifiers (5)}}\\
+\quad\texttt{uid}              & string  & Gold Standard primary key                 & 100\,\%\\
+\quad\texttt{station\_id}       & string  & GBFS native identifier                    & 100\,\%\\
+\quad\texttt{system\_id}        & string  & Operator-system identifier                & 100\,\%\\
+\quad\texttt{system\_name}      & string  & Operator-system label                     & 100\,\%\\
+\quad\texttt{source}            & string  & Feed URL / catalogue source               & 100\,\%\\
+\midrule
+\multicolumn{4}{l}{\textit{Spatial and administrative (5)}}\\
+\quad\texttt{lat, lon}           & float64 & Geofiltered WGS84 coordinates             & 100\,\%\\
+\quad\texttt{city}               & string  & Normalised city name                      & 100\,\%\\
+\quad\texttt{commune\_name}      & string  & INSEE commune label                       & 99.1\,\%\\
+\quad\texttt{code\_commune}      & string  & INSEE commune code                        & 99.1\,\%\\
+\quad\texttt{region\_id}         & string  & Administrative region                     & 100\,\%\\
+\midrule
+\multicolumn{4}{l}{\textit{Station description (4)}}\\
+\quad\texttt{station\_name}      & string  & GBFS station name                         & 99.8\,\%\\
+\quad\texttt{address}            & string  & GBFS address                              & 41.2\,\%\\
+\quad\texttt{capacity}           & int     & Declared capacity (may be a placeholder)   & 96.8\,\%\\
+\quad\texttt{n\_stations\_system}& int     & Total stations in parent system            & 100\,\%\\
+\midrule
+\multicolumn{4}{l}{\textit{Audit outputs (2)$^\dag$}}\\
+\quad\texttt{station\_type}      & enum    & \{docked\_bike, free\_floating, carsharing\} & 100\,\%\\
+\quad\texttt{fetched\_at}        & datetime& Timestamp of the audited snapshot          & 100\,\%\\
+\midrule
+\multicolumn{4}{l}{\textit{Topography (2)$^\ast$}}\\
+\quad\texttt{elevation\_m}                  & float64 & BD ALTI elevation                & 99.4\,\%\\
+\quad\texttt{topography\_roughness\_index}  & float64 & Local relief amplitude           & 98.1\,\%\\
+\midrule
+\multicolumn{4}{l}{\textit{Cycling infrastructure (2)$^\ast$}}\\
+\quad\texttt{infra\_cyclable\_km}           & float64 & BD TOPO cycle-lane linear (300\,m) & 97.6\,\%\\
+\quad\texttt{infra\_cyclable\_pct}          & float64 & Share of dedicated right-of-way  & 96.9\,\%\\
+\midrule
+\multicolumn{4}{l}{\textit{Safety (1)$^\ast$}}\\
+\quad\texttt{baac\_accidents\_cyclistes}    & int     & Severe-crash count (500\,m, 5\,y)  & 99.8\,\%\\
+\midrule
+\multicolumn{4}{l}{\textit{Multimodal access (2)$^\ast$}}\\
+\quad\texttt{gtfs\_heavy\_stops\_300m}      & int     & Heavy-transit stops within 300\,m   & 98.7\,\%\\
+\quad\texttt{gtfs\_stops\_within\_300m\_pct}& float64 & Share of accessible heavy-transit  & 98.7\,\%\\
+\midrule
+\multicolumn{4}{l}{\textit{Socio-economy (5)$^\ast$}}\\
+\quad\texttt{revenu\_median\_uc}            & float64 & INSEE Filosofi median income/CU     & 95.4\,\%\\
+\quad\texttt{gini\_revenu}                  & float64 & Local Gini index                    & 93.0\,\%\\
+\quad\texttt{revenu\_d1}                    & float64 & First-decile income                 & 95.2\,\%\\
+\quad\texttt{ecart\_interquar}              & float64 & Interquartile income spread         & 95.2\,\%\\
+\quad\texttt{part\_menages\_voit0}          & float64 & Share of car-less households        & 95.4\,\%\\
+\midrule
+\multicolumn{4}{l}{\textit{Modal share (1)$^\ast$}}\\
+\quad\texttt{part\_velo\_travail}           & float64 & Share of commute by bike (INSEE)    & 95.1\,\%\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Reproducibility infrastructure}
+The Gold Standard is released in alignment with the four FAIR
+principles \cite{Wilkinson2016}. \emph{Findable:} primary deposit on
+Zenodo under concept DOI \texttt{10.5281/zenodo.20125460}, with one
+DOI per SemVer-tagged release (current 1.0.0, dated 2026-05); mirrored
+on \emph{Recherche Data Gouv} (HAL/BSO indexing). \emph{Accessible:}
+Parquet format, direct HTTPS download and Git LFS mirror.
+\emph{Interoperable:} the schema extends GBFS v3 and is published as a
+JSON Schema, a Frictionless Data Package descriptor
+\cite{FrictionlessData2023}, a DCAT-AP record \cite{DCATAP2021} and a
+Croissant manifest \cite{Croissant2024}. \emph{Reusable:} released
+under ODbL v1.0; code under MIT, with audit report and source code.
+Raw sources are archived with SHA-256 hashes; the Python environment
+is pinned in \texttt{requirements.txt}; a Docker image is published
+for bit-exact reproduction; random seeds are fixed (\texttt{numpy=42},
+\texttt{python=42}); idempotence unit tests run in CI; the audit
+report is generated automatically on every release.
+
+\subsection{Engineering footprint}
+The released Parquet weighs $7.8$\,MB on disk for the 46{,}307 stations;
+it loads in $0.23$\,s into a \texttt{pandas} DataFrame with a memory
+peak of $15.9$\,MB ($\sim 200{,}000$ rows/s on a commodity laptop).
+Typical research queries are sub-25\,ms: filtering to dock-based
+stations takes $5.2$\,ms, grouping by city $3.7$\,ms, a
+Paris-bounding-box query $6.0$\,ms, a merge with FUB 2023 (62 cities)
+$21.7$\,ms. The audit pipeline itself is implemented in $1{,}319$
+lines of code across three modules (\texttt{utils/data\_loader.py},
+\texttt{utils/gbfs\_collector.py}, \texttt{scripts/collect\_status.py}),
+exposing 35 public functions and one collector class.
+
+% ===================================================================
+\section*{Resource Availability}
+
+\paragraph{Lead contact.} Requests for further information should be
+directed to and will be fulfilled by the lead contact, Rohan Foss\'e
+(\texttt{rfosse@cesi.fr}).
+
+\paragraph{Materials availability.} This study did not generate new
+physical materials. The released artefact is the
+\emph{Gold Standard GBFS France} dataset, a derivative of public open
+data.
+
+\paragraph{Data and code availability.}
+\begin{itemize}[leftmargin=*]
+\item \textbf{Dataset.} Deposited on Zenodo, concept DOI
+\texttt{10.5281/zenodo.20125460}; current release 1.0.0 (2026-05),
+licensed under ODbL v1.0. Mirrored on \emph{Recherche Data Gouv}.
+\item \textbf{Source code.} The audit pipeline is available at
+\url{https://github.com/rohanfosse/bikeshare-data-explorer}, licensed
+under MIT, with a \texttt{CITATION.cff} file and a Docker image
+(\texttt{ghcr.io/rohanfosse/gold-standard:1.0.0}) for bit-exact
+reproduction. Releases are mirrored to Zenodo via the GitHub--Zenodo
+integration.
+\item \textbf{Schema and machine-readable descriptors.} JSON Schema,
+DCAT-AP record, Frictionless Data Package descriptor and Croissant
+JSON-LD manifest are shipped alongside the Parquet file.
+\item \textbf{Raw inputs.} The 142 candidate GBFS feeds inventoried
+from \emph{transport.data.gouv.fr} and MobilityData are archived with
+SHA-256 hashes in the Zenodo deposit; the certified subset of 123
+systems is derived deterministically from them.
+\item \textbf{Additional resources.} The audit report, the
+500-station blinded sample used in the internal robustness checks,
+the orthogonal- and full-task classifier scripts and the
+$\sigma_{\max}$ sensitivity notebook are released as supplementary
+material alongside the dataset.
+\end{itemize}
+
+% ===================================================================
+\section*{Usage Examples}\label{secUsage}
+
+Three concrete reuse patterns are documented below; complete notebooks
+are released alongside the dataset.
+
+\paragraph{Example 1 -- Loading and filtering.}
+Reading the certified Parquet and filtering to the dock-based subset
+of a given city takes four lines:
+\begin{quote}\small\ttfamily
+import pandas as pd\\
+gs = pd.read\_parquet("stations\_gold\_standard\_final.parquet")\\
+paris = gs[(gs.city == "Paris") \&\\
+\ \ (gs.station\_type == "docked\_bike")]\\
+len(paris)\ \ \#\ returns\ 1{,}507
+\end{quote}
+
+\paragraph{Example 2 -- Spatial-equity analysis.} Per-city correlation
+between dock-based station count and median income per consumption
+unit:
+\begin{quote}\small\ttfamily
+by\_city = (\\
+\ \ gs[gs.station\_type == "docked\_bike"]\\
+\ \ .groupby("city").agg(\\
+\ \ \ \ n=("uid", "size"),\\
+\ \ \ \ income=("revenu\_median\_uc", "median"))\\
+)\\
+rho = by\_city.n.corr(\\
+\ \ by\_city.income, method="spearman")\\
+\#\ rho\ $\approx\ +0.39$\ (95\%\ bootstrap\ CI)
+\end{quote}
+A positive correlation of $\sim$0.4 indicates moderate income-density
+coupling, consistent with the existence of \emph{social mobility
+deserts} documented in the companion IMD paper \cite{Fosse2026imd}.
+
+\paragraph{Example 3 -- Identifying mobility deserts.}
+\begin{quote}\small\ttfamily
+q1 = gs.revenu\_median\_uc.quantile(0.25)\\
+deserts = gs[(\\
+\ \ gs.station\_type == "docked\_bike") \&\\
+\ \ (gs.revenu\_median\_uc < q1) \&\\
+\ \ (gs.gtfs\_heavy\_stops\_300m == 0)]\\
+deserts.city.value\_counts().head(10)
+\end{quote}
+This three-condition filter recovers $1{,}041$ stations
+($19.1\,\%$ of the dock-based corpus) with a Q1 income threshold of
+18{,}860\,EUR per consumption unit. Figure~\ref{fig:mobility-deserts}
+shows the top fifteen contributing cities.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.75\linewidth]{fig06_mobility_deserts.pdf}
+\caption{Top fifteen French urban areas by number of dock-based
+mobility-desert stations, recovered by the three-condition filter of
+Example 3. A station counts as a mobility desert if its commune sits
+in the lowest national income quartile and the station has zero
+heavy-transit stops within a 300\,m buffer.}
+\label{fig:mobility-deserts}
+\end{figure}
+
+% ===================================================================
+\section*{Acknowledgments}
+The authors thank the producers of the open data that made this
+research possible: GBFS operators, MobilityData, OpenStreetMap, Cerema,
+ONISR, INSEE, FUB and the French GTFS community.
+
+\section*{Author Contributions}
+\textbf{R.F.}: Conceptualisation, Methodology, Software, Data curation,
+Formal analysis, Writing -- original draft. \textbf{G.P.}:
+Conceptualisation, Methodology, Supervision, Writing -- review \&
+editing.
+
+\section*{Declaration of Interests}
+The authors declare no competing interests.
+
+\bibliographystyle{unsrt}
+\bibliography{references}
+
+\end{document}

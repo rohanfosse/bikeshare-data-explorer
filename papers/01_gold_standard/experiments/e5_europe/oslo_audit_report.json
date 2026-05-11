@@ -1,0 +1,44 @@
+{
+  "system": "Oslo Bysykkel",
+  "country": "NO",
+  "feed_url": "https://gbfs.urbansharing.com/oslobysykkel.no/gbfs.json",
+  "gbfs_version_feeds": [
+    "station_information",
+    "station_status",
+    "system_information",
+    "system_pricing_plans",
+    "vehicle_types"
+  ],
+  "vehicle_form_factors": [
+    "bicycle"
+  ],
+  "raw_station_count": 266,
+  "capacity_unique_nonzero": 26,
+  "capacity_std_nonzero": 8.58,
+  "capacity_mean_all": 21.898,
+  "capacity_mean_active": 21.898,
+  "capacity_profile_ratio": 1.0,
+  "anomalies_detected": {
+    "A1_carsharing": false,
+    "A2_placeholder": false,
+    "A3_overcapacity": false,
+    "A4_geospatial_out": 0,
+    "A4_geospatial_outlier": 3,
+    "A5_macro_region": false
+  },
+  "certified_dock_stations": 263,
+  "too_small_under_N_min": false,
+  "bbox_km2_proxy": 110.5,
+  "thresholds_used": {
+    "geofilter_lat": [
+      57.5,
+      71.5
+    ],
+    "geofilter_lon": [
+      4.0,
+      31.5
+    ],
+    "sigma_max": 3.0,
+    "N_min": 20
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "system": "Bicing Barcelona",
+  "country": "ES",
+  "feed_url": "https://barcelona.publicbikesystem.net/customer/gbfs/v2/gbfs.json",
+  "gbfs_version_feeds": [
+    "gbfs_versions",
+    "geofencing_zones",
+    "station_information",
+    "station_status",
+    "system_information",
+    "system_pricing_plans",
+    "system_regions",
+    "vehicle_types"
+  ],
+  "vehicle_form_factors": [
+    "bicycle",
+    "scooter_standing"
+  ],
+  "raw_station_count": 544,
+  "capacity_unique_nonzero": 38,
+  "capacity_std_nonzero": 6.946,
+  "capacity_mean_all": 26.985,
+  "capacity_mean_active": 27.135,
+  "capacity_profile_ratio": 1.006,
+  "anomalies_detected": {
+    "A1_carsharing": false,
+    "A2_placeholder": false,
+    "A3_overcapacity": false,
+    "A4_geospatial_out": 0,
+    "A4_geospatial_outlier": 1,
+    "A5_macro_region": false
+  },
+  "certified_dock_stations": 543,
+  "too_small_under_N_min": false,
+  "bbox_km2_proxy": 114.5,
+  "thresholds_used": {
+    "geofilter_lat": [
+      35.0,
+      44.5
+    ],
+    "geofilter_lon": [
+      -9.5,
+      4.5
+    ],
+    "sigma_max": 3.0,
+    "N_min": 20
+  }
+}
