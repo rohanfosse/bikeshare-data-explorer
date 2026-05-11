@@ -1,0 +1,602 @@
+{
+  "total_audited": 1254,
+  "reachable": 1167,
+  "with_stations": 773,
+  "flagged_anomalies": 226,
+  "by_country": {
+    "DE": {
+      "audited": 251,
+      "reachable": 243,
+      "flagged": 64,
+      "anomalies": {
+        "a1_cars": 58,
+        "a2_placeholder": 4,
+        "a3_overcap_flag": 9,
+        "a5_macro_flag": 4
+      }
+    },
+    "US": {
+      "audited": 175,
+      "reachable": 172,
+      "flagged": 3,
+      "anomalies": {
+        "a4_geospatial": 3,
+        "a5_macro_flag": 1
+      }
+    },
+    "PL": {
+      "audited": 94,
+      "reachable": 91,
+      "flagged": 29,
+      "anomalies": {
+        "a1_cars": 2,
+        "a2_placeholder": 3,
+        "a4_geospatial": 25
+      }
+    },
+    "NO": {
+      "audited": 83,
+      "reachable": 45,
+      "flagged": 2,
+      "anomalies": {
+        "a4_geospatial": 2
+      }
+    },
+    "ES": {
+      "audited": 69,
+      "reachable": 66,
+      "flagged": 7,
+      "anomalies": {
+        "a4_geospatial": 7
+      }
+    },
+    "GB": {
+      "audited": 56,
+      "reachable": 54,
+      "flagged": 4,
+      "anomalies": {
+        "a2_placeholder": 1,
+        "a4_geospatial": 2,
+        "a1_cars": 1
+      }
+    },
+    "FI": {
+      "audited": 55,
+      "reachable": 55,
+      "flagged": 15,
+      "anomalies": {
+        "a1_cars": 1,
+        "a4_geospatial": 14
+      }
+    },
+    "NL": {
+      "audited": 52,
+      "reachable": 52,
+      "flagged": 2,
+      "anomalies": {
+        "a4_geospatial": 1,
+        "a5_macro_flag": 1
+      }
+    },
+    "CH": {
+      "audited": 49,
+      "reachable": 46,
+      "flagged": 19,
+      "anomalies": {
+        "a1_cars": 11,
+        "a5_macro_flag": 5,
+        "a4_geospatial": 3,
+        "a2_placeholder": 3,
+        "a3_overcap_flag": 3
+      }
+    },
+    "CZ": {
+      "audited": 45,
+      "reachable": 43,
+      "flagged": 25,
+      "anomalies": {
+        "a2_placeholder": 16,
+        "a3_overcap_flag": 12
+      }
+    },
+    "BE": {
+      "audited": 37,
+      "reachable": 34,
+      "flagged": 5,
+      "anomalies": {
+        "a5_macro_flag": 1,
+        "a3_overcap_flag": 2,
+        "a4_geospatial": 2
+      }
+    },
+    "CA": {
+      "audited": 35,
+      "reachable": 23,
+      "flagged": 4,
+      "anomalies": {
+        "a2_placeholder": 1,
+        "a4_geospatial": 3,
+        "a5_macro_flag": 1
+      }
+    },
+    "IT": {
+      "audited": 34,
+      "reachable": 33,
+      "flagged": 0,
+      "anomalies": {}
+    },
+    "AT": {
+      "audited": 27,
+      "reachable": 23,
+      "flagged": 5,
+      "anomalies": {
+        "a1_cars": 5,
+        "a2_placeholder": 1,
+        "a3_overcap_flag": 1
+      }
+    },
+    "SE": {
+      "audited": 23,
+      "reachable": 23,
+      "flagged": 13,
+      "anomalies": {
+        "a4_geospatial": 12,
+        "a1_cars": 1
+      }
+    },
+    "HR": {
+      "audited": 21,
+      "reachable": 20,
+      "flagged": 2,
+      "anomalies": {
+        "a2_placeholder": 1,
+        "a3_overcap_flag": 1,
+        "a5_macro_flag": 1
+      }
+    },
+    "DK": {
+      "audited": 19,
+      "reachable": 19,
+      "flagged": 0,
+      "anomalies": {}
+    },
+    "SK": {
+      "audited": 19,
+      "reachable": 19,
+      "flagged": 16,
+      "anomalies": {
+        "a4_geospatial": 16
+      }
+    },
+    "RO": {
+      "audited": 12,
+      "reachable": 12,
+      "flagged": 1,
+      "anomalies": {
+        "a2_placeholder": 1
+      }
+    },
+    "NZ": {
+      "audited": 11,
+      "reachable": 11,
+      "flagged": 0,
+      "anomalies": {}
+    },
+    "HU": {
+      "audited": 9,
+      "reachable": 8,
+      "flagged": 0,
+      "anomalies": {}
+    },
+    "BR": {
+      "audited": 8,
+      "reachable": 8,
+      "flagged": 0,
+      "anomalies": {}
+    },
+    "PT": {
+      "audited": 8,
+      "reachable": 7,
+      "flagged": 1,
+      "anomalies": {
+        "a2_placeholder": 1
+      }
+    },
+    "AE": {
+      "audited": 7,
+      "reachable": 7,
+      "flagged": 1,
+      "anomalies": {
+        "a4_geospatial": 1
+      }
+    },
+    "SI": {
+      "audited": 7,
+      "reachable": 7,
+      "flagged": 2,
+      "anomalies": {
+        "a2_placeholder": 2
+      }
+    },
+    "GR": {
+      "audited": 6,
+      "reachable": 6,
+      "flagged": 0,
+      "anomalies": {}
+    },
+    "IL": {
+      "audited": 5,
+      "reachable": 5,
+      "flagged": 0,
+      "anomalies": {}
+    },
+    "JP": {
+      "audited": 5,
+      "reachable": 4,
+      "flagged": 2,
+      "anomalies": {
+        "a5_macro_flag": 2
+      }
+    },
+    "SA": {
+      "audited": 5,
+      "reachable": 5,
+      "flagged": 0,
+      "anomalies": {}
+    },
+    "IE": {
+      "audited": 4,
+      "reachable": 3,
+      "flagged": 0,
+      "anomalies": {}
+    },
+    "BA": {
+      "audited": 3,
+      "reachable": 3,
+      "flagged": 0,
+      "anomalies": {}
+    },
+    "AR": {
+      "audited": 3,
+      "reachable": 3,
+      "flagged": 0,
+      "anomalies": {}
+    },
+    "LI": {
+      "audited": 2,
+      "reachable": 2,
+      "flagged": 0,
+      "anomalies": {}
+    },
+    "MX": {
+      "audited": 2,
+      "reachable": 2,
+      "flagged": 0,
+      "anomalies": {}
+    },
+    "CY": {
+      "audited": 1,
+      "reachable": 1,
+      "flagged": 0,
+      "anomalies": {}
+    },
+    "CL": {
+      "audited": 1,
+      "reachable": 1,
+      "flagged": 1,
+      "anomalies": {
+        "a4_geospatial": 1
+      }
+    },
+    "CO": {
+      "audited": 1,
+      "reachable": 1,
+      "flagged": 1,
+      "anomalies": {
+        "a5_macro_flag": 1
+      }
+    },
+    "IS": {
+      "audited": 1,
+      "reachable": 1,
+      "flagged": 0,
+      "anomalies": {}
+    },
+    "LV": {
+      "audited": 1,
+      "reachable": 1,
+      "flagged": 0,
+      "anomalies": {}
+    },
+    "MY": {
+      "audited": 1,
+      "reachable": 1,
+      "flagged": 0,
+      "anomalies": {}
+    },
+    "LT": {
+      "audited": 1,
+      "reachable": 1,
+      "flagged": 0,
+      "anomalies": {}
+    },
+    "LU": {
+      "audited": 1,
+      "reachable": 1,
+      "flagged": 0,
+      "anomalies": {}
+    },
+    "MC": {
+      "audited": 1,
+      "reachable": 1,
+      "flagged": 0,
+      "anomalies": {}
+    },
+    "QA": {
+      "audited": 1,
+      "reachable": 1,
+      "flagged": 0,
+      "anomalies": {}
+    },
+    "TR": {
+      "audited": 1,
+      "reachable": 1,
+      "flagged": 1,
+      "anomalies": {
+        "a5_macro_flag": 1
+      }
+    },
+    "UA": {
+      "audited": 1,
+      "reachable": 1,
+      "flagged": 0,
+      "anomalies": {}
+    },
+    "XK": {
+      "audited": 1,
+      "reachable": 1,
+      "flagged": 1,
+      "anomalies": {
+        "a3_overcap_flag": 1
+      }
+    }
+  },
+  "a6_zero_capacity_top": [
+    {
+      "country": "CA",
+      "name": "PBSC HQ",
+      "stations": 11,
+      "c0_pct": 18.18
+    },
+    {
+      "country": "GB",
+      "name": "Beryl - Greater Manchester",
+      "stations": 286,
+      "c0_pct": 10.49
+    },
+    {
+      "country": "MC",
+      "name": "MonaBike",
+      "stations": 59,
+      "c0_pct": 6.78
+    },
+    {
+      "country": "ES",
+      "name": "Bicicoru\u00f1a",
+      "stations": 84,
+      "c0_pct": 5.95
+    },
+    {
+      "country": "SI",
+      "name": "MBajk",
+      "stations": 42,
+      "c0_pct": 4.76
+    },
+    {
+      "country": "JP",
+      "name": "CyclOcity",
+      "stations": 24,
+      "c0_pct": 4.17
+    },
+    {
+      "country": "CA",
+      "name": "\u00e0V\u00e9lo",
+      "stations": 226,
+      "c0_pct": 3.54
+    },
+    {
+      "country": "AE",
+      "name": "Careem BIKE",
+      "stations": 225,
+      "c0_pct": 2.67
+    },
+    {
+      "country": "US",
+      "name": "Citi Bike",
+      "stations": 2406,
+      "c0_pct": 2.45
+    },
+    {
+      "country": "AR",
+      "name": "MiBiciTuBici",
+      "stations": 99,
+      "c0_pct": 2.02
+    },
+    {
+      "country": "US",
+      "name": "Trinity Metro Bikes",
+      "stations": 57,
+      "c0_pct": 1.75
+    },
+    {
+      "country": "US",
+      "name": "Mogo Detroit",
+      "stations": 81,
+      "c0_pct": 1.23
+    },
+    {
+      "country": "US",
+      "name": "CapMetro",
+      "stations": 85,
+      "c0_pct": 1.18
+    },
+    {
+      "country": "CA",
+      "name": "Mobi Bike Share",
+      "stations": 264,
+      "c0_pct": 1.14
+    }
+  ],
+  "high_nan_systems": [
+    {
+      "country": "AT",
+      "name": "Dott Dornbirn",
+      "stations": 3,
+      "nan_pct": 100.0
+    },
+    {
+      "country": "AE",
+      "name": "Dott Ras Al Khaimah",
+      "stations": 31,
+      "nan_pct": 100.0
+    },
+    {
+      "country": "AT",
+      "name": "Dott Bregenz",
+      "stations": 98,
+      "nan_pct": 100.0
+    },
+    {
+      "country": "AE",
+      "name": "Dott Dubai Hills",
+      "stations": 7,
+      "nan_pct": 100.0
+    },
+    {
+      "country": "AT",
+      "name": "Dott Baden bei Wien",
+      "stations": 47,
+      "nan_pct": 100.0
+    },
+    {
+      "country": "AE",
+      "name": "Dott Sharjah",
+      "stations": 38,
+      "nan_pct": 100.0
+    },
+    {
+      "country": "AT",
+      "name": "Dott Feldkirchen bei Graz",
+      "stations": 25,
+      "nan_pct": 100.0
+    },
+    {
+      "country": "AE",
+      "name": "Dott Dubai",
+      "stations": 342,
+      "nan_pct": 100.0
+    },
+    {
+      "country": "AE",
+      "name": "Dott Abu Dhabi",
+      "stations": 1433,
+      "nan_pct": 100.0
+    },
+    {
+      "country": "AT",
+      "name": "Dott Klagenfurt",
+      "stations": 46,
+      "nan_pct": 100.0
+    },
+    {
+      "country": "AT",
+      "name": "Dott Innsbruck",
+      "stations": 56,
+      "nan_pct": 100.0
+    },
+    {
+      "country": "AT",
+      "name": "Dott M\u00f6dling",
+      "stations": 68,
+      "nan_pct": 100.0
+    },
+    {
+      "country": "AT",
+      "name": "Dott Korneuburg",
+      "stations": 43,
+      "nan_pct": 100.0
+    },
+    {
+      "country": "AT",
+      "name": "Dott Linz",
+      "stations": 153,
+      "nan_pct": 100.0
+    },
+    {
+      "country": "AT",
+      "name": "Dott Leoben",
+      "stations": 46,
+      "nan_pct": 100.0
+    },
+    {
+      "country": "AT",
+      "name": "Dott Steyr",
+      "stations": 16,
+      "nan_pct": 100.0
+    },
+    {
+      "country": "AT",
+      "name": "Dott Wels",
+      "stations": 47,
+      "nan_pct": 100.0
+    },
+    {
+      "country": "AT",
+      "name": "EVENTbike - Austria",
+      "stations": 21,
+      "nan_pct": 100.0
+    },
+    {
+      "country": "BA",
+      "name": "nextbike BIH",
+      "stations": 38,
+      "nan_pct": 100.0
+    },
+    {
+      "country": "BE",
+      "name": "nextbike BE Vlaamse Rand",
+      "stations": 53,
+      "nan_pct": 100.0
+    },
+    {
+      "country": "BE",
+      "name": "Lime Antwerp",
+      "stations": 1,
+      "nan_pct": 100.0
+    },
+    {
+      "country": "BE",
+      "name": "Lime Brussels",
+      "stations": 1,
+      "nan_pct": 100.0
+    },
+    {
+      "country": "CA",
+      "name": "Bird Vaughan",
+      "stations": 466,
+      "nan_pct": 100.0
+    },
+    {
+      "country": "CA",
+      "name": "Bird Halifax",
+      "stations": 622,
+      "nan_pct": 100.0
+    },
+    {
+      "country": "CA",
+      "name": "Bird Ottawa",
+      "stations": 566,
+      "nan_pct": 100.0
+    }
+  ]
+}

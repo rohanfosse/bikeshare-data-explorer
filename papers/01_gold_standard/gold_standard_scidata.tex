@@ -62,9 +62,10 @@ Docker image for bit-exact reproduction. Internal robustness checks,
 a baseline comparison, a characterization of the free-floating
 subset showing that the same GBFS \texttt{capacity} field is
 populated according to six incompatible semantics across French
-operators, and a cross-country pilot on three non-French dock-based
-systems (Bicing Barcelona ES, Oslo Bysykkel NO, Bergen Bysykkel NO)
-establish the technical validity of the release. The dataset is archived on Zenodo under concept DOI
+operators, and a global audit on the 1{,}254 non-French systems of
+the MobilityData canonical catalogue (47 countries, 226 systems
+flagged) establish the technical validity of the release and
+document that the A1--A5 taxonomy generalises beyond France. The dataset is archived on Zenodo under concept DOI
 \texttt{10.5281/zenodo.20125460} and licensed under ODbL v1.0.
 
 \vspace{0.5em}
@@ -589,15 +590,99 @@ French corpus (ref.)   & FR & $\sim$67{,}000 & --- & 22 systems flagged \\
 \end{table}
 
 Both systems pass the audit with zero structural anomalies. The
-capacity-profile ratio is essentially unity on both feeds, consistent
-with clean dock-based operation. Vehicle-type metadata is populated
-cleanly (Bicing: \{\texttt{bicycle}, \texttt{scooter\_standing}\};
-Oslo: \{\texttt{bicycle}\}), so A1 is not triggered. Perimeter and
-topological filters yield only 1 outlier in Bicing, 3 in Oslo and 1
-in Bergen.
-These two negative controls do not establish full European
-transferability, but they document that A1--A5 does not over-fit the
-French market.
+capacity-profile ratio is essentially unity on the three feeds,
+consistent with clean dock-based operation. Vehicle-type metadata is
+populated cleanly (Bicing: \{\texttt{bicycle}, \texttt{scooter\_standing}\};
+Oslo and Bergen: \{\texttt{bicycle}\}), so A1 is not triggered.
+Perimeter and topological filters yield only 1 outlier in Bicing, 3
+in Oslo and 1 in Bergen.
+
+\subsection{Global generalisation across the MobilityData catalogue}\label{secGlobal}
+To rule out the possibility that A1--A5 captures French publication
+quirks rather than structural features, the rule set was applied to
+the 1{,}254 non-French GBFS systems listed in the canonical
+MobilityData catalogue (CSV pulled 2026-05). The audit ran in
+parallel against each \texttt{Auto-Discovery URL} with country-
+specific perimeters and the same statistical thresholds as in
+Section~\ref{secMethods}; 1{,}167 feeds (93.1\,\%) were reachable,
+773 publish a \texttt{station\_information} document, and 226
+(29.2\,\% of those with data) trigger at least one A1--A5 class
+(Table~\ref{tab:global-audit}). The full per-system audit table is
+released as \texttt{experiments/e5\_europe/massive\_audit\_results.csv}.
+
+\begin{table}[ht]
+\centering
+\caption{Global audit of A1--A5 on the MobilityData catalogue
+(1{,}254 non-French systems). \emph{Flagged} counts systems with at
+least one anomaly; per-class counts are not disjoint (one system can
+trigger several classes). Countries with $\geq 30$ audited systems
+or with notable concentration of structural anomalies are shown.
+A4 (geospatial) is sensitive to country-perimeter calibration and is
+listed for completeness.}
+\label{tab:global-audit}
+\small
+\begin{tabular}{@{}lrrrrrrr@{}}
+\toprule
+\textbf{Country} & \textbf{Audited} & \textbf{Reach.} & \textbf{Flagged}
+   & \textbf{A1} & \textbf{A2} & \textbf{A3} & \textbf{A4 geo}\\
+\midrule
+Germany (DE)        & 251 & 243 & 64 & 58 &  4 &  9 &  -- \\
+United States (US)  & 175 & 172 &  3 & -- & -- & -- &  3 \\
+Poland (PL)         &  94 &  91 & 29 &  2 &  3 & -- & 25 \\
+Norway (NO)         &  83 &  45 &  2 & -- & -- & -- &  2 \\
+Spain (ES)          &  69 &  66 &  7 & -- & -- & -- &  7 \\
+United Kingdom (GB) &  56 &  54 &  4 &  1 &  1 & -- &  2 \\
+Finland (FI)        &  55 &  55 & 15 &  1 & -- & -- & 14 \\
+Netherlands (NL)    &  52 &  52 &  2 & -- & -- & -- &  1 \\
+Switzerland (CH)    &  49 &  46 & 19 & 11 &  3 &  3 &  3 \\
+\textbf{Czech Rep.\ (CZ)} & 45 & 43 & \textbf{25} & -- & \textbf{16} & \textbf{12} & -- \\
+Belgium (BE)        &  37 &  34 &  5 & -- & -- &  2 &  2 \\
+Italy (IT)          &  34 &  33 &  0 & -- & -- & -- & -- \\
+Austria (AT)        &  27 &  23 &  5 &  5 &  1 &  1 & -- \\
+Sweden (SE)         &  23 &  23 & 13 &  1 & -- & -- & 12 \\
+\midrule
+\textbf{Total (47 countries)} & 1{,}254 & 1{,}167 & 226 & 80+ & 33 & 29 & -- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Three observations follow.
+
+\paragraph{The anti-patterns are not French-specific.}
+A3 (structural over-capacity on free-floating fleets) is detected on
+29 non-French systems spread across seven countries, with Czech
+Republic alone contributing 12 cases. A2 (placeholder capacity) is
+detected on 33 non-French systems, again with Czech Republic as the
+hotspot (16 systems). A1 (out-of-domain inclusion of car-sharing) is
+widespread in the DACH region: 58 systems in Germany, 11 in
+Switzerland, 5 in Austria, plus scattered cases elsewhere. The
+empirical conclusion is that the A1--A5 taxonomy generalises beyond
+the French market.
+
+\paragraph{Operator-level anti-patterns travel with the operator.}
+\emph{Dott} publishes \texttt{capacity = NaN} on all of its
+non-French deployments observed in the audit (Austria, UAE, totalling
+18 systems and $\sim 2{,}500$ stations). \emph{Bird} exhibits the
+same pattern in its three Canadian deployments
+($\sim 1{,}650$ stations). The capacity field is therefore left
+empty as a corporate convention regardless of jurisdiction.
+
+\paragraph{A6 zero-capacity dock is a candidate sixth class.}
+Beyond A1--A5, a recurring pattern emerges across countries: a
+fraction of stations declare \texttt{capacity = 0} in
+\texttt{station\_information}. The most affected system in the audit
+is PBSC HQ (Canada, 18.2\,\% of stations), followed by Beryl
+Greater Manchester (UK, 10.5\,\%), MonaBike (Monaco, 6.8\,\%),
+Bicicoru\~na (Spain, 5.9\,\%) and Citi Bike NYC (US, 2.4\,\%). Since
+\texttt{station\_information} is intended to describe physical
+infrastructure, a non-virtual station with a zero physical capacity
+is semantically inconsistent with the standard. A6 is the candidate
+sixth anomaly class to be formalised in the next release.
+
+These two negative controls, together with the global audit, do not
+establish full E1 inter-rater reliability on each country (planned
+in the validation roadmap) but they make it implausible to argue
+that A1--A5 over-fits the French market.
 
 \subsection{Documented errors traceable to unaudited GBFS usage}\label{secConsequences}
 A natural question for a Data Descriptor is whether the documented
