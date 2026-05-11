@@ -69,6 +69,39 @@ df_audit, audit_summary = _load_audit()
 df_ff_brand = _load_freefloating_patterns()
 
 
+# ─── Enrichissements derivés pour la carte et les KPIs ─────────────────────────
+_EUROPE = {"FR","DE","UK","GB","ES","IT","PT","NL","BE","LU","CH","AT","PL",
+           "CZ","SK","HU","RO","HR","SI","BA","GR","BG","CY","LT","LV","EE",
+           "IS","MC","LI","SE","NO","DK","FI","IE","TR","UA","XK","MT"}
+_NAMER = {"US","CA","MX"}
+_SAMER = {"AR","CL","BR","CO","UY","PE"}
+_ASIA = {"JP","KR","TW","SG","MY","TH","PH","VN","IN","CN","HK","IL","MN"}
+_MIDEAST = {"AE","SA","QA"}
+_OCEANIA = {"AU","NZ"}
+
+
+def _continent(c: str) -> str:
+    if c in _EUROPE: return "Europe"
+    if c in _NAMER: return "North America"
+    if c in _SAMER: return "South America"
+    if c in _ASIA: return "Asia"
+    if c in _MIDEAST: return "Middle East"
+    if c in _OCEANIA: return "Oceania"
+    return "Other"
+
+
+df_audit["continent"] = df_audit["country"].map(_continent)
+df_audit["operator_brand"] = (
+    df_audit["name"].astype(str).str.split().str[0]
+    .str.lower().str.replace(r"[^a-z]", "", regex=True)
+)
+# Gracefully handle older CSV snapshots that pre-date the centroid columns.
+for _col in ("centroid_lat", "centroid_lon"):
+    if _col not in df_audit.columns:
+        df_audit[_col] = pd.NA
+HAS_CENTROIDS = int(df_audit["centroid_lat"].notna().sum()) > 0
+
+
 # ─── Indicateurs synthese ──────────────────────────────────────────────────────
 n_audited = audit_summary["total_audited"]
 n_reachable = audit_summary["reachable"]
@@ -133,8 +166,123 @@ abstract_box(
 
 sidebar_nav()
 
-# ─── KPI (ligne 1) ─────────────────────────────────────────────────────────────
+# ─── HERO : portee mondiale de l'etude (mise en avant immediate) ───────────────
 n_total_stations = int(df_audit["stations"].fillna(0).sum())
+n_operators = int(df_audit["operator_brand"].nunique())
+n_continents = int(df_audit["continent"].nunique())
+top_operator = (
+    df_audit.groupby("operator_brand")["stations"].sum().sort_values(ascending=False).index[0]
+)
+top_op_systems = int((df_audit["operator_brand"] == top_operator).sum())
+top_op_stations = int(df_audit[df_audit["operator_brand"] == top_operator]["stations"].fillna(0).sum())
+top_op_countries = int(df_audit[df_audit["operator_brand"] == top_operator]["country"].nunique())
+
+st.markdown(
+    f"""
+    <div style="
+        background: linear-gradient(135deg, #1A6FBF 0%, #0F4C81 100%);
+        color: white;
+        padding: 1.2rem 1.4rem 1.0rem;
+        border-radius: 8px;
+        margin: 0.3rem 0 1.2rem 0;
+        box-shadow: 0 2px 8px rgba(26,111,191,0.18);
+    ">
+      <div style="font-size:0.7rem; text-transform:uppercase; letter-spacing:0.15em;
+                  color:#bcd9f4; font-weight:600; margin-bottom:0.6rem;">
+        Portee mondiale de l'audit
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(6, 1fr); gap:0.8rem;">
+        <div>
+          <div style="font-size:1.6rem; font-weight:700;">{n_audited:,}</div>
+          <div style="font-size:0.72rem; color:#d2e5f5; line-height:1.3;">systemes GBFS<br/>(catalogue MobilityData)</div>
+        </div>
+        <div>
+          <div style="font-size:1.6rem; font-weight:700;">{n_countries}</div>
+          <div style="font-size:0.72rem; color:#d2e5f5; line-height:1.3;">pays<br/>sur {n_continents} continents</div>
+        </div>
+        <div>
+          <div style="font-size:1.6rem; font-weight:700;">{n_total_stations:,}</div>
+          <div style="font-size:0.72rem; color:#d2e5f5; line-height:1.3;">stations<br/>declarees</div>
+        </div>
+        <div>
+          <div style="font-size:1.6rem; font-weight:700;">{n_operators}</div>
+          <div style="font-size:0.72rem; color:#d2e5f5; line-height:1.3;">marques d'operateurs<br/>distinctes</div>
+        </div>
+        <div>
+          <div style="font-size:1.6rem; font-weight:700;">{n_flagged}</div>
+          <div style="font-size:0.72rem; color:#d2e5f5; line-height:1.3;">flagues A1-A5<br/>+215 par A7</div>
+        </div>
+        <div>
+          <div style="font-size:1.6rem; font-weight:700;">7</div>
+          <div style="font-size:0.72rem; color:#d2e5f5; line-height:1.3;">classes d'anomalie<br/>(A1-A5 + A6, A7 cand.)</div>
+        </div>
+      </div>
+      <div style="border-top:1px solid rgba(255,255,255,0.18); margin-top:0.85rem; padding-top:0.65rem;
+                  font-size:0.78rem; color:#e9f1f9;">
+        <b>Plus gros operateur mondial :</b> <span style="text-transform:capitalize">{top_operator}</span>
+        ({top_op_systems} systemes, {top_op_stations:,} stations, {top_op_countries} pays).
+        &nbsp;|&nbsp; <b>Catalogue audite a 100 %</b> (le plus complet inventaire GBFS mondial public).
+        &nbsp;|&nbsp; <b>Couverture europeenne :</b> 34 pays, 1{","}249 systemes.
+      </div>
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
+
+# ─── Repartition continentale (mini barres pour appui visuel du HERO) ──────────
+cont_df = df_audit.groupby("continent").agg(
+    Systemes=("name", "size"),
+    Stations=("stations", lambda s: int(s.fillna(0).sum())),
+    Pays=("country", "nunique"),
+).reset_index().rename(columns={"continent": "Continent"})
+cont_df = cont_df.sort_values("Systemes", ascending=False)
+
+cc1, cc2, cc3 = st.columns([2, 2, 1])
+with cc1:
+    fig_cont = px.bar(
+        cont_df, x="Continent", y="Systemes", color="Continent",
+        text="Systemes",
+        title="Systemes GBFS par continent",
+        color_discrete_sequence=px.colors.qualitative.Set2,
+    )
+    fig_cont.update_layout(
+        height=300, margin=dict(t=40, b=20, l=10, r=10),
+        showlegend=False, xaxis_title=None,
+    )
+    fig_cont.update_traces(textposition="outside")
+    st.plotly_chart(fig_cont, use_container_width=True)
+
+with cc2:
+    fig_st = px.bar(
+        cont_df.sort_values("Stations", ascending=False),
+        x="Continent", y="Stations", color="Continent",
+        text="Stations",
+        title="Stations declarees par continent",
+        color_discrete_sequence=px.colors.qualitative.Set2,
+    )
+    fig_st.update_layout(
+        height=300, margin=dict(t=40, b=20, l=10, r=10),
+        showlegend=False, xaxis_title=None,
+    )
+    fig_st.update_traces(textposition="outside")
+    st.plotly_chart(fig_st, use_container_width=True)
+
+with cc3:
+    st.markdown("**Detail**")
+    st.dataframe(
+        cont_df, hide_index=True, use_container_width=True, height=300,
+    )
+
+st.caption(
+    "Vue continentale : l'Europe concentre 82.8 % des systemes audites "
+    "et 81.0 % des stations declarees ; l'Amerique du Nord et l'Asie "
+    "viennent ensuite (Moyen-Orient inclut Dubai/Abu Dhabi de Dott et "
+    "Careem). Le poids europeen est en partie un biais d'inscription au "
+    "catalogue MobilityData, en partie une realite : la France et "
+    "l'Allemagne concentrent a elles deux 33.5 % du corpus."
+)
+
+# ─── KPI (ligne 1 - detail audit pipeline) ─────────────────────────────────────
 k1, k2, k3, k4 = st.columns(4)
 k1.metric("Systemes audites", f"{n_audited:,}",
           f"{n_reachable:,} reachables (HTTP 200)")
@@ -165,62 +313,70 @@ st.divider()
 section(0, "Vue d'ensemble visuelle du corpus audite")
 
 # ─── Carte mondiale des systemes audites ───────────────────────────────────────
-st.markdown(
-    f"**Carte 0.1 - {len(df_audit[df_audit['centroid_lat'].notna()]):,} "
-    "systemes GBFS geolocalises a travers le monde.** Chaque point est le "
-    "centroide d'un systeme GBFS audite ; le rayon est proportionnel a la "
-    "racine du nombre de stations declarees ; la couleur indique le verdict "
-    "de l'audit (rouge = flague par au moins une classe A1-A5, vert = "
-    "passe sans anomalie structurelle, gris = systeme reachable mais sans "
-    "station_information exploitable)."
-)
+if HAS_CENTROIDS:
+    n_geo = int(df_audit["centroid_lat"].notna().sum())
+    st.markdown(
+        f"**Carte 0.1 - {n_geo:,} systemes GBFS geolocalises a travers le "
+        "monde.** Chaque point est le centroide d'un systeme GBFS audite ; "
+        "le rayon est proportionnel a la racine du nombre de stations "
+        "declarees ; la couleur indique le verdict de l'audit (rouge = "
+        "flague par au moins une classe A1-A5, vert = passe sans anomalie "
+        "structurelle)."
+    )
 
-map_df = df_audit.dropna(subset=["centroid_lat", "centroid_lon"]).copy()
-map_df["stations_int"] = map_df["stations"].fillna(0).astype(int)
-map_df["log_stations"] = (map_df["stations_int"].clip(lower=1)) ** 0.5
-map_df["statut"] = map_df["any_anomaly"].map(
-    {True: "Flague A1-A5", False: "Audit propre"}
-).fillna("Audit propre")
-map_df["info"] = (
-    map_df["name"].astype(str) + " (" + map_df["country"].astype(str)
-    + ") - " + map_df["stations_int"].astype(str) + " stations"
-)
+    map_df = df_audit.dropna(subset=["centroid_lat", "centroid_lon"]).copy()
+    map_df["stations_int"] = map_df["stations"].fillna(0).astype(int)
+    map_df["log_stations"] = (map_df["stations_int"].clip(lower=1)) ** 0.5
+    map_df["statut"] = map_df["any_anomaly"].map(
+        {True: "Flague A1-A5", False: "Audit propre"}
+    ).fillna("Audit propre")
+    map_df["info"] = (
+        map_df["name"].astype(str) + " (" + map_df["country"].astype(str)
+        + ") - " + map_df["stations_int"].astype(str) + " stations"
+    )
 
-fig_map = px.scatter_geo(
-    map_df,
-    lat="centroid_lat",
-    lon="centroid_lon",
-    size="log_stations",
-    color="statut",
-    color_discrete_map={
-        "Audit propre": "#16A085",
-        "Flague A1-A5": "#C0392B",
-    },
-    hover_name="info",
-    projection="natural earth",
-    title=None,
-    size_max=30,
-    opacity=0.75,
-)
-fig_map.update_layout(
-    height=520, margin=dict(t=10, b=10, l=10, r=10),
-    legend=dict(orientation="h", yanchor="bottom", y=-0.05, xanchor="center", x=0.5),
-    geo=dict(
-        showcountries=True, countrycolor="#D5DBDB",
-        showcoastlines=True, coastlinecolor="#85929E",
-        showland=True, landcolor="#FBFCFC",
-        showocean=True, oceancolor="#EBF5FB",
-    ),
-)
-st.plotly_chart(fig_map, use_container_width=True)
-st.caption(
-    "Carte 0.1 - Repartition geographique des systemes GBFS du catalogue "
-    "MobilityData (centroides agreges par audit). La concentration "
-    "europeenne est immediatement visible ; le globe complet permet "
-    "neanmoins d'apprecier les deploiements en Amerique du Nord, "
-    "Moyen-Orient (Careem, Dott Dubai/Abu Dhabi) et quelques avant-postes "
-    "en Asie."
-)
+    fig_map = px.scatter_geo(
+        map_df,
+        lat="centroid_lat",
+        lon="centroid_lon",
+        size="log_stations",
+        color="statut",
+        color_discrete_map={
+            "Audit propre": "#16A085",
+            "Flague A1-A5": "#C0392B",
+        },
+        hover_name="info",
+        projection="natural earth",
+        title=None,
+        size_max=30,
+        opacity=0.75,
+    )
+    fig_map.update_layout(
+        height=520, margin=dict(t=10, b=10, l=10, r=10),
+        legend=dict(orientation="h", yanchor="bottom", y=-0.05, xanchor="center", x=0.5),
+        geo=dict(
+            showcountries=True, countrycolor="#D5DBDB",
+            showcoastlines=True, coastlinecolor="#85929E",
+            showland=True, landcolor="#FBFCFC",
+            showocean=True, oceancolor="#EBF5FB",
+        ),
+    )
+    st.plotly_chart(fig_map, use_container_width=True)
+    st.caption(
+        "Carte 0.1 - Repartition geographique des systemes GBFS du "
+        "catalogue MobilityData (centroides agreges par audit). La "
+        "concentration europeenne est immediatement visible ; le globe "
+        "complet permet neanmoins d'apprecier les deploiements en "
+        "Amerique du Nord, au Moyen-Orient (Careem, Dott Dubai/Abu Dhabi) "
+        "et quelques avant-postes en Asie."
+    )
+else:
+    st.info(
+        "Carte mondiale indisponible : le fichier `massive_audit_results.csv` "
+        "deploye ne contient pas encore les colonnes `centroid_lat/lon`. "
+        "Relancer `python papers/01_gold_standard/experiments/e5_europe/`"
+        "`massive_audit.py` pour regenerer les centroides."
+    )
 
 # ─── 4 graphiques d'overview en grille 2x2 ─────────────────────────────────────
 g1, g2 = st.columns(2)
