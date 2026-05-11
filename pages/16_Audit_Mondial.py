@@ -312,71 +312,168 @@ k8.metric("DOI Zenodo (catalogue FR)", "10.5281/zenodo.20125460",
 st.divider()
 section(0, "Vue d'ensemble visuelle du corpus audite")
 
-# ─── Carte mondiale des systemes audites ───────────────────────────────────────
-if HAS_CENTROIDS:
-    n_geo = int(df_audit["centroid_lat"].notna().sum())
-    st.markdown(
-        f"**Carte 0.1 - {n_geo:,} systemes GBFS geolocalises a travers le "
-        "monde.** Chaque point est le centroide d'un systeme GBFS audite ; "
-        "le rayon est proportionnel a la racine du nombre de stations "
-        "declarees ; la couleur indique le verdict de l'audit (rouge = "
-        "flague par au moins une classe A1-A5, vert = passe sans anomalie "
-        "structurelle)."
+# ─── Matrice operateur x pays interactive ──────────────────────────────────────
+st.markdown(
+    "**Explorateur interactif operateur x pays.** "
+    "Chaque cellule de la matrice 0.1 represente le nombre de deploiements "
+    "d'un meme operateur dans un pays donne. Filtrer par metrique permet "
+    "de basculer entre nombre de systemes, total de stations declarees, "
+    "ou nombre de systemes flagues. Selectionner un operateur dans le menu "
+    "deroulant affiche un detail par pays sous la matrice."
+)
+
+c_ctrl1, c_ctrl2, c_ctrl3 = st.columns([1.2, 1.2, 2])
+with c_ctrl1:
+    n_top_ops = st.slider("Top N operateurs", 5, 30, 15, step=1,
+                          key="n_top_ops")
+with c_ctrl2:
+    metric_choice = st.radio(
+        "Metrique de la matrice",
+        ["Systemes", "Stations declarees", "Flagues A1-A5"],
+        horizontal=False, key="metric_choice",
+    )
+with c_ctrl3:
+    n_top_countries_mat = st.slider("Top N pays affiches dans la matrice",
+                                     5, 30, 18, step=1,
+                                     key="n_top_countries_mat")
+
+# Build per-(operator, country) aggregates
+mat_base = (
+    df_audit.groupby(["operator_brand", "country"])
+    .agg(
+        systems=("name", "size"),
+        stations=("stations", lambda s: int(s.fillna(0).sum())),
+        flagged=("any_anomaly", "sum"),
+    )
+    .reset_index()
+)
+
+# Pick top operators by total station count
+op_totals = (
+    mat_base.groupby("operator_brand")["stations"].sum()
+    .sort_values(ascending=False)
+    .head(n_top_ops)
+)
+top_ops_set = list(op_totals.index)
+
+# Pick top countries by total station count
+country_totals = (
+    mat_base.groupby("country")["stations"].sum()
+    .sort_values(ascending=False)
+    .head(n_top_countries_mat)
+)
+top_countries_set = list(country_totals.index)
+
+mat_filt = mat_base[
+    mat_base["operator_brand"].isin(top_ops_set)
+    & mat_base["country"].isin(top_countries_set)
+].copy()
+
+metric_col = {
+    "Systemes": "systems",
+    "Stations declarees": "stations",
+    "Flagues A1-A5": "flagged",
+}[metric_choice]
+
+pivot = (
+    mat_filt.pivot_table(
+        index="operator_brand", columns="country",
+        values=metric_col, aggfunc="sum", fill_value=0,
+    )
+    .reindex(index=top_ops_set, columns=top_countries_set, fill_value=0)
+)
+
+# Capitalise operator names for display
+pivot.index = [op.capitalize() if op else "?" for op in pivot.index]
+
+# Plotly heatmap
+fig_mat = px.imshow(
+    pivot,
+    color_continuous_scale=("YlOrRd" if metric_col == "flagged" else "Blues"),
+    aspect="auto",
+    labels={"x": "Pays (ISO)", "y": "Operateur",
+            "color": metric_choice},
+    text_auto=True,
+    title=f"Matrice 0.1 - {metric_choice} par operateur et par pays "
+          f"(top {n_top_ops} operateurs x top {n_top_countries_mat} pays)",
+)
+fig_mat.update_layout(
+    height=520, margin=dict(t=50, b=40, l=40, r=20),
+    coloraxis_colorbar=dict(title=metric_choice),
+)
+fig_mat.update_xaxes(side="bottom")
+st.plotly_chart(fig_mat, use_container_width=True)
+st.caption(
+    "Matrice 0.1 - Visualisation cross-tab operateur x pays. La "
+    "concentration de Dott en lignes basses (78 cellules > 0) est "
+    "immediatement visible et illustre la portabilite globale de ses "
+    "anti-patterns. nextbike est second avec 12 pays. Voi et Bird "
+    "occupent une diagonale moins dense."
+)
+
+# ─── Drill-down par operateur selectionne ──────────────────────────────────────
+st.markdown("**Drill-down operateur.**")
+
+d_ctrl1, d_ctrl2 = st.columns([1.5, 2.5])
+with d_ctrl1:
+    selected_op = st.selectbox(
+        "Selectionner un operateur pour voir son detail",
+        options=top_ops_set,
+        index=0,
+        format_func=lambda s: s.capitalize() if s else "?",
+        key="selected_op",
     )
 
-    map_df = df_audit.dropna(subset=["centroid_lat", "centroid_lon"]).copy()
-    map_df["stations_int"] = map_df["stations"].fillna(0).astype(int)
-    map_df["log_stations"] = (map_df["stations_int"].clip(lower=1)) ** 0.5
-    map_df["statut"] = map_df["any_anomaly"].map(
-        {True: "Flague A1-A5", False: "Audit propre"}
-    ).fillna("Audit propre")
-    map_df["info"] = (
-        map_df["name"].astype(str) + " (" + map_df["country"].astype(str)
-        + ") - " + map_df["stations_int"].astype(str) + " stations"
-    )
+op_detail = df_audit[df_audit["operator_brand"] == selected_op].copy()
+op_total_systems = len(op_detail)
+op_total_stations = int(op_detail["stations"].fillna(0).sum())
+op_total_countries = int(op_detail["country"].nunique())
+op_flagged = int(op_detail["any_anomaly"].sum())
+op_a7_only = int(
+    (pd.to_numeric(op_detail["capacity_nan_pct"], errors="coerce") >= 50)
+    .sum()
+)
 
-    fig_map = px.scatter_geo(
-        map_df,
-        lat="centroid_lat",
-        lon="centroid_lon",
-        size="log_stations",
-        color="statut",
-        color_discrete_map={
-            "Audit propre": "#16A085",
-            "Flague A1-A5": "#C0392B",
-        },
-        hover_name="info",
-        projection="natural earth",
-        title=None,
-        size_max=30,
-        opacity=0.75,
-    )
-    fig_map.update_layout(
-        height=520, margin=dict(t=10, b=10, l=10, r=10),
-        legend=dict(orientation="h", yanchor="bottom", y=-0.05, xanchor="center", x=0.5),
-        geo=dict(
-            showcountries=True, countrycolor="#D5DBDB",
-            showcoastlines=True, coastlinecolor="#85929E",
-            showland=True, landcolor="#FBFCFC",
-            showocean=True, oceancolor="#EBF5FB",
+with d_ctrl2:
+    sub_k1, sub_k2, sub_k3, sub_k4 = st.columns(4)
+    sub_k1.metric("Systemes",        f"{op_total_systems}")
+    sub_k2.metric("Stations totales", f"{op_total_stations:,}")
+    sub_k3.metric("Pays presents",    f"{op_total_countries}")
+    sub_k4.metric("Flagues A1-A5",    f"{op_flagged}",
+                  f"+{op_a7_only - op_flagged} A7 seul"
+                  if op_a7_only > op_flagged else None)
+
+# Per-country breakdown for the selected operator
+op_country = (
+    op_detail.groupby("country")
+    .agg(
+        Systemes=("name", "size"),
+        Stations=("stations", lambda s: int(s.fillna(0).sum())),
+        Flagues=("any_anomaly", "sum"),
+        Capacite_NaN_moyenne=(
+            "capacity_nan_pct",
+            lambda s: round(float(pd.to_numeric(s, errors="coerce").mean()), 1),
         ),
     )
-    st.plotly_chart(fig_map, use_container_width=True)
-    st.caption(
-        "Carte 0.1 - Repartition geographique des systemes GBFS du "
-        "catalogue MobilityData (centroides agreges par audit). La "
-        "concentration europeenne est immediatement visible ; le globe "
-        "complet permet neanmoins d'apprecier les deploiements en "
-        "Amerique du Nord, au Moyen-Orient (Careem, Dott Dubai/Abu Dhabi) "
-        "et quelques avant-postes en Asie."
-    )
-else:
-    st.info(
-        "Carte mondiale indisponible : le fichier `massive_audit_results.csv` "
-        "deploye ne contient pas encore les colonnes `centroid_lat/lon`. "
-        "Relancer `python papers/01_gold_standard/experiments/e5_europe/`"
-        "`massive_audit.py` pour regenerer les centroides."
-    )
+    .sort_values("Stations", ascending=False)
+    .reset_index()
+    .rename(columns={"country": "Pays"})
+)
+st.dataframe(
+    op_country, hide_index=True, use_container_width=True,
+    column_config={
+        "Capacite_NaN_moyenne": st.column_config.NumberColumn(
+            "Capacite NaN moyenne (%)", format="%.1f %%"
+        ),
+    },
+)
+st.caption(
+    f"Tableau 0.2 - Detail des deploiements de {selected_op.capitalize()} "
+    f"par pays. Total : {op_total_systems} systemes dans "
+    f"{op_total_countries} pays, {op_total_stations:,} stations declarees. "
+    "La colonne 'Capacite NaN moyenne' revele si l'operateur propage le "
+    "pattern A7 a l'international (Dott et Bird typiquement a 100 %)."
+)
 
 # ─── 4 graphiques d'overview en grille 2x2 ─────────────────────────────────────
 g1, g2 = st.columns(2)
