@@ -1,0 +1,564 @@
+{
+  "eu_failed": [],
+  "eu_M": {
+    "Utrecht": 0.52,
+    "Madrid": 2.3223270440251573,
+    "Barcelona": 1.2278481012658229,
+    "Seville": 0.4574898785425101,
+    "Vienna": 5.209302325581396,
+    "Berlin": 0.1875,
+    "Copenhagen": 0.9369957741067998,
+    "Geneva": 1.6634460547504026,
+    "Budapest": 7.103092783505154,
+    "Warsaw": 5.5675675675675675
+  },
+  "eu_n_stations": {
+    "Utrecht": 25,
+    "Madrid": 636,
+    "Barcelona": 237,
+    "Seville": 247,
+    "Vienna": 258,
+    "Berlin": 16,
+    "Copenhagen": 2603,
+    "Geneva": 621,
+    "Budapest": 97,
+    "Warsaw": 37
+  },
+  "fr_panel_n": 64,
+  "M_min": 0.0,
+  "M_max": 7.103092783505154,
+  "fr_M_summary": {
+    "median": 0.2153846153846154,
+    "p25": 0.08653846153846154,
+    "p75": 0.8036082474226804,
+    "max": 3.1794871794871793,
+    "n": 64
+  },
+  "eu_M_summary": {
+    "median": 1.4456470780081128,
+    "p25": 0.6242489435267,
+    "p75": 4.487558505192336,
+    "max": 7.103092783505154,
+    "n": 10
+  },
+  "imd_lite_ranking": [
+    {
+      "city": "Budapest",
+      "country": "EU",
+      "M": 7.103092783505154,
+      "n_stations": 97,
+      "M_norm": 1.0
+    },
+    {
+      "city": "Warsaw",
+      "country": "EU",
+      "M": 5.5675675675675675,
+      "n_stations": 37,
+      "M_norm": 0.7838230102381046
+    },
+    {
+      "city": "Vienna",
+      "country": "EU",
+      "M": 5.209302325581396,
+      "n_stations": 258,
+      "M_norm": 0.7333850879265535
+    },
+    {
+      "city": "Strasbourg",
+      "country": "FR",
+      "M": 3.1794871794871793,
+      "n_stations": 0,
+      "M_norm": 0.447620110900227
+    },
+    {
+      "city": "Nantes",
+      "country": "FR",
+      "M": 2.935483870967742,
+      "n_stations": 0,
+      "M_norm": 0.4132684114424833
+    },
+    {
+      "city": "Montpellier",
+      "country": "FR",
+      "M": 2.9056603773584904,
+      "n_stations": 0,
+      "M_norm": 0.40906974833639126
+    },
+    {
+      "city": "Paris",
+      "country": "FR",
+      "M": 2.794293297942933,
+      "n_stations": 0,
+      "M_norm": 0.39339107387585565
+    },
+    {
+      "city": "Mulhouse",
+      "country": "FR",
+      "M": 2.55,
+      "n_stations": 0,
+      "M_norm": 0.35899854862119013
+    },
+    {
+      "city": "Madrid",
+      "country": "EU",
+      "M": 2.3223270440251573,
+      "n_stations": 636,
+      "M_norm": 0.32694589734461577
+    },
+    {
+      "city": "Brest",
+      "country": "FR",
+      "M": 2.1652173913043478,
+      "n_stations": 0,
+      "M_norm": 0.3048274121284786
+    },
+    {
+      "city": "Caen",
+      "country": "FR",
+      "M": 1.9733333333333334,
+      "n_stations": 0,
+      "M_norm": 0.2778132559264635
+    },
+    {
+      "city": "Geneva",
+      "country": "EU",
+      "M": 1.6634460547504026,
+      "n_stations": 621,
+      "M_norm": 0.23418616445687818
+    },
+    {
+      "city": "Grand Est",
+      "country": "FR",
+      "M": 1.6538461538461537,
+      "n_stations": 0,
+      "M_norm": 0.23283465446019871
+    },
+    {
+      "city": "Bordeaux",
+      "country": "FR",
+      "M": 1.5777777777777777,
+      "n_stations": 0,
+      "M_norm": 0.2221254636348976
+    },
+    {
+      "city": "Dijon",
+      "country": "FR",
+      "M": 1.325,
+      "n_stations": 0,
+      "M_norm": 0.18653846153846154
+    },
+    {
+      "city": "Rennes",
+      "country": "FR",
+      "M": 1.280701754385965,
+      "n_stations": 0,
+      "M_norm": 0.1803019886435974
+    },
+    {
+      "city": "Besan\u00e7on",
+      "country": "FR",
+      "M": 1.2424242424242424,
+      "n_stations": 0,
+      "M_norm": 0.17491313717728812
+    },
+    {
+      "city": "Barcelona",
+      "country": "EU",
+      "M": 1.2278481012658229,
+      "n_stations": 237,
+      "M_norm": 0.17286105344380961
+    },
+    {
+      "city": "FR",
+      "country": "FR",
+      "M": 1.0,
+      "n_stations": 0,
+      "M_norm": 0.14078374455732948
+    },
+    {
+      "city": "Cergy-Pontoise",
+      "country": "FR",
+      "M": 0.9555555555555556,
+      "n_stations": 0,
+      "M_norm": 0.1345266892436704
+    },
+    {
+      "city": "Copenhagen",
+      "country": "EU",
+      "M": 0.9369957741067998,
+      "n_stations": 2603,
+      "M_norm": 0.13191377371314889
+    },
+    {
+      "city": "Soissons",
+      "country": "FR",
+      "M": 0.8214285714285714,
+      "n_stations": 0,
+      "M_norm": 0.11564379017209206
+    },
+    {
+      "city": "Saint-\u00c9tienne",
+      "country": "FR",
+      "M": 0.8144329896907216,
+      "n_stations": 0,
+      "M_norm": 0.1146589259796807
+    },
+    {
+      "city": "Saint-Nazaire",
+      "country": "FR",
+      "M": 0.8,
+      "n_stations": 0,
+      "M_norm": 0.11262699564586358
+    },
+    {
+      "city": "Toulouse",
+      "country": "FR",
+      "M": 0.7811059907834101,
+      "n_stations": 0,
+      "M_norm": 0.10996702627865136
+    },
+    {
+      "city": "Rouen",
+      "country": "FR",
+      "M": 0.7022900763358778,
+      "n_stations": 0,
+      "M_norm": 0.09887102671201764
+    },
+    {
+      "city": "P\u00e9rigueux",
+      "country": "FR",
+      "M": 0.6666666666666666,
+      "n_stations": 0,
+      "M_norm": 0.0938558297048863
+    },
+    {
+      "city": "Utrecht",
+      "country": "EU",
+      "M": 0.52,
+      "n_stations": 25,
+      "M_norm": 0.07320754716981133
+    },
+    {
+      "city": "Avignon",
+      "country": "FR",
+      "M": 0.4827586206896552,
+      "n_stations": 0,
+      "M_norm": 0.06796456633802113
+    },
+    {
+      "city": "Seville",
+      "country": "EU",
+      "M": 0.4574898785425101,
+      "n_stations": 247,
+      "M_norm": 0.06440713819829243
+    },
+    {
+      "city": "Auray",
+      "country": "FR",
+      "M": 0.45454545454545453,
+      "n_stations": 0,
+      "M_norm": 0.06399261116242248
+    },
+    {
+      "city": "Cholet",
+      "country": "FR",
+      "M": 0.4375,
+      "n_stations": 0,
+      "M_norm": 0.06159288824383164
+    },
+    {
+      "city": "La Baule",
+      "country": "FR",
+      "M": 0.42857142857142855,
+      "n_stations": 0,
+      "M_norm": 0.06033589052456977
+    },
+    {
+      "city": "Les Sables-d'Olonne",
+      "country": "FR",
+      "M": 0.375,
+      "n_stations": 0,
+      "M_norm": 0.05279390420899855
+    },
+    {
+      "city": "Montreuil-Bellay",
+      "country": "FR",
+      "M": 0.3333333333333333,
+      "n_stations": 0,
+      "M_norm": 0.04692791485244315
+    },
+    {
+      "city": "Arundy",
+      "country": "FR",
+      "M": 0.3333333333333333,
+      "n_stations": 0,
+      "M_norm": 0.04692791485244315
+    },
+    {
+      "city": "Ch\u00e2tellerault",
+      "country": "FR",
+      "M": 0.3076923076923077,
+      "n_stations": 0,
+      "M_norm": 0.04331807524840907
+    },
+    {
+      "city": "Landerneau",
+      "country": "FR",
+      "M": 0.2857142857142857,
+      "n_stations": 0,
+      "M_norm": 0.04022392701637985
+    },
+    {
+      "city": "Courzieu",
+      "country": "FR",
+      "M": 0.25,
+      "n_stations": 0,
+      "M_norm": 0.03519593613933237
+    },
+    {
+      "city": "Royan",
+      "country": "FR",
+      "M": 0.25,
+      "n_stations": 0,
+      "M_norm": 0.03519593613933237
+    },
+    {
+      "city": "Tarbes",
+      "country": "FR",
+      "M": 0.23076923076923078,
+      "n_stations": 0,
+      "M_norm": 0.032488556436306805
+    },
+    {
+      "city": "Carcassonne",
+      "country": "FR",
+      "M": 0.2,
+      "n_stations": 0,
+      "M_norm": 0.028156748911465895
+    },
+    {
+      "city": "Bourg-en-Bresse",
+      "country": "FR",
+      "M": 0.2,
+      "n_stations": 0,
+      "M_norm": 0.028156748911465895
+    },
+    {
+      "city": "Berlin",
+      "country": "EU",
+      "M": 0.1875,
+      "n_stations": 16,
+      "M_norm": 0.026396952104499275
+    },
+    {
+      "city": "Ardenne M\u00e9tropole",
+      "country": "FR",
+      "M": 0.17647058823529413,
+      "n_stations": 0,
+      "M_norm": 0.02484419021599932
+    },
+    {
+      "city": "Saint-Brieuc",
+      "country": "FR",
+      "M": 0.16666666666666666,
+      "n_stations": 0,
+      "M_norm": 0.023463957426221576
+    },
+    {
+      "city": "Argel\u00e8s-sur-Mer",
+      "country": "FR",
+      "M": 0.16666666666666666,
+      "n_stations": 0,
+      "M_norm": 0.023463957426221576
+    },
+    {
+      "city": "Valenciennes",
+      "country": "FR",
+      "M": 0.15,
+      "n_stations": 0,
+      "M_norm": 0.02111756168359942
+    },
+    {
+      "city": "Lyon",
+      "country": "FR",
+      "M": 0.13938053097345132,
+      "n_stations": 0,
+      "M_norm": 0.01962251306883132
+    },
+    {
+      "city": "Lille",
+      "country": "FR",
+      "M": 0.13432835820895522,
+      "n_stations": 0,
+      "M_norm": 0.018911249268895005
+    },
+    {
+      "city": "La Roche-sur-Yon",
+      "country": "FR",
+      "M": 0.12903225806451613,
+      "n_stations": 0,
+      "M_norm": 0.018165644459010255
+    },
+    {
+      "city": "Vichy",
+      "country": "FR",
+      "M": 0.125,
+      "n_stations": 0,
+      "M_norm": 0.017597968069666185
+    },
+    {
+      "city": "Libourne",
+      "country": "FR",
+      "M": 0.12121212121212122,
+      "n_stations": 0,
+      "M_norm": 0.01706469630997933
+    },
+    {
+      "city": "Amiens",
+      "country": "FR",
+      "M": 0.1111111111111111,
+      "n_stations": 0,
+      "M_norm": 0.01564263828414772
+    },
+    {
+      "city": "\u00c9pinal",
+      "country": "FR",
+      "M": 0.10476190476190476,
+      "n_stations": 0,
+      "M_norm": 0.014748773239339279
+    },
+    {
+      "city": "Clermont-Ferrand",
+      "country": "FR",
+      "M": 0.0975609756097561,
+      "n_stations": 0,
+      "M_norm": 0.013734999469007754
+    },
+    {
+      "city": "Saumur",
+      "country": "FR",
+      "M": 0.09090909090909091,
+      "n_stations": 0,
+      "M_norm": 0.012798522232484498
+    },
+    {
+      "city": "Valence",
+      "country": "FR",
+      "M": 0.08823529411764706,
+      "n_stations": 0,
+      "M_norm": 0.01242209510799966
+    },
+    {
+      "city": "Marseille",
+      "country": "FR",
+      "M": 0.08144796380090498,
+      "n_stations": 0,
+      "M_norm": 0.011466549330461224
+    },
+    {
+      "city": "Nancy",
+      "country": "FR",
+      "M": 0.08108108108108109,
+      "n_stations": 0,
+      "M_norm": 0.011414898207351039
+    },
+    {
+      "city": "Louviers",
+      "country": "FR",
+      "M": 0.075,
+      "n_stations": 0,
+      "M_norm": 0.01055878084179971
+    },
+    {
+      "city": "Calais",
+      "country": "FR",
+      "M": 0.06741573033707865,
+      "n_stations": 0,
+      "M_norm": 0.009491038958921087
+    },
+    {
+      "city": "Belfort",
+      "country": "FR",
+      "M": 0.0625,
+      "n_stations": 0,
+      "M_norm": 0.008798984034833092
+    },
+    {
+      "city": "Agen",
+      "country": "FR",
+      "M": 0.0625,
+      "n_stations": 0,
+      "M_norm": 0.008798984034833092
+    },
+    {
+      "city": "Cherbourg-en-Cotentin",
+      "country": "FR",
+      "M": 0.061224489795918366,
+      "n_stations": 0,
+      "M_norm": 0.008619412932081396
+    },
+    {
+      "city": "Laon",
+      "country": "FR",
+      "M": 0.05263157894736842,
+      "n_stations": 0,
+      "M_norm": 0.0074096707661752345
+    },
+    {
+      "city": "Pau",
+      "country": "FR",
+      "M": 0.05,
+      "n_stations": 0,
+      "M_norm": 0.007039187227866474
+    },
+    {
+      "city": "Annecy",
+      "country": "FR",
+      "M": 0.05,
+      "n_stations": 0,
+      "M_norm": 0.007039187227866474
+    },
+    {
+      "city": "Niort",
+      "country": "FR",
+      "M": 0.0392156862745098,
+      "n_stations": 0,
+      "M_norm": 0.005520931159110959
+    },
+    {
+      "city": "Brive-la-Gaillarde",
+      "country": "FR",
+      "M": 0.038461538461538464,
+      "n_stations": 0,
+      "M_norm": 0.005414759406051134
+    },
+    {
+      "city": "Auxerre",
+      "country": "FR",
+      "M": 0.03636363636363636,
+      "n_stations": 0,
+      "M_norm": 0.0051194088929937985
+    },
+    {
+      "city": "Troyes",
+      "country": "FR",
+      "M": 0.03333333333333333,
+      "n_stations": 0,
+      "M_norm": 0.004692791485244315
+    },
+    {
+      "city": "Longwy",
+      "country": "FR",
+      "M": 0.02564102564102564,
+      "n_stations": 0,
+      "M_norm": 0.003609839604034089
+    },
+    {
+      "city": "Lascaux",
+      "country": "FR",
+      "M": 0.0,
+      "n_stations": 0,
+      "M_norm": 0.0
+    }
+  ]
+}

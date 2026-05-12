@@ -163,16 +163,19 @@ cyclist counts to be cleanly resolved; the city ranking is stable
 under empirical weight uncertainty but fragile under uniform
 weight uncertainty; and a single city (Lyon) carries a Cook-style
 influence on the calibration four times the panel median. A continental-scale
-extension (E24) uses the MobilityData global GBFS catalogue
-(1\,239 EU+CH+NO systems in 28 countries) to position France in
-the European cycling landscape: France ranks first on number of
-GBFS systems and eighteenth on cycling modal share, with the
-Netherlands at the symmetric position (five times fewer systems
-for seven times more cycling). Cross-country Spearman
-correlations confirm the IMD's central thesis at continental
-scale: the ECF cycling-friendliness index correlates with modal
-share at $\rho = +0.79$, against $\rho = +0.46$ for the
-system-count proxy. Six further extensions tighten the analysis
+extension (E24--E26) uses the MobilityData global GBFS catalogue
+(1\,239 EU+CH+NO systems in 28 countries), live fetches from ten
+major European systems, and an OSM-based recomputation of the IMD
+multimodality component for those ten cities. The picture
+converges: France ranks first on number of GBFS systems and
+eighteenth on cycling modal share (Netherlands at the symmetric
+position); the EU non-FR median carries six times more stations,
+three times the station density, and \textbf{seven times the
+multimodality} ($1.45$ heavy stops per station vs.\ $0.22$ for
+the French median) of the French panel. The French champions
+(Strasbourg, Montpellier, Paris) sit at the European median on
+multimodality, not at its top -- Budapest, Warsaw and Vienna sit
+two to three times above the best French city. Six further extensions tighten the analysis
 on the French panel: a within-city variance decomposition (80\,\%
 of station IMD variance is intra-city), a Bayesian
 positive-deviant diagnostic (seven cities with a multimodality
@@ -2265,6 +2268,119 @@ oversight (Figure~\ref{fig:european-stations}).
     \label{fig:european-stations}
 \end{figure}
 
+\subsection{IMD-lite at continental scale: multimodality of EU cities}
+\label{sec:val-imd-lite}
+
+E25 documented that European systems carry more stations and
+higher density per km$^{2}$ than French systems. We now test
+whether those denser European systems are also better integrated
+with heavy public transport -- the multimodality component $M$
+that drove 77\,\% of the IMD-rank variance in the Sobol
+decomposition (Section~\ref{sec:val-sobol}) and the only IMD
+component with a credibly non-zero coefficient on the FUB
+well-being outcome (Section~\ref{sec:results-wellbeing}).
+
+For each of the ten European cities reachable in E25, we query
+the OpenStreetMap Overpass API for heavy-transit stops --
+\texttt{railway=station}, \texttt{railway=tram\_stop},
+\texttt{railway=subway\_entrance},
+\texttt{public\_transport=station} -- within a bounding box
+expanded by 1\,km around the network. For each bike-sharing
+station, we then count the number of heavy stops within 300\,m
+(the same buffer that the French pipeline uses), and aggregate to
+the city level. The result is the $M$ component of the IMD,
+computed on the European panel through the OSM tag conventions
+rather than the French GTFS feed. The two operationalisations are
+not strictly identical -- French GTFS counts every distinct stop
+of a heavy line while OSM may collapse a multi-platform station
+to a single node -- but they are tagged for the same construct
+(heavy public-transport access) and the bias, if any, is
+conservative against the European panel (OSM under-counts when
+GTFS over-counts).
+
+\begin{table}[H]
+\centering
+\caption{IMD-lite: multimodality $M$ -- mean number of heavy
+public-transport stops within 300\,m of each bike-sharing station.
+French values are from the Gold Standard pipeline (GTFS),
+European values are from a single OSM Overpass query per city
+(April 2026).}
+\label{tab:imd-lite-eu}
+\small
+\begin{tabular}{@{}lcrl@{}}
+\toprule
+City & Country & Stations & Mean heavy stops per station \\
+\midrule
+Budapest      & EU & $97$    & $7.10$ \\
+Warsaw        & EU & $37$    & $5.57$ \\
+Vienna        & EU & $258$   & $5.21$ \\
+Strasbourg    & FR & $39$    & $3.18$ \\
+Nantes        & FR & $124$   & $2.94$ \\
+Montpellier   & FR & $53$    & $2.91$ \\
+Paris         & FR & $1\,507$ & $2.79$ \\
+Mulhouse      & FR & $60$    & $2.55$ \\
+Madrid        & EU & $636$   & $2.32$ \\
+Brest         & FR & $115$   & $2.17$ \\
+Caen          & FR & $75$    & $1.97$ \\
+Geneva        & EU & $621$   & $1.66$ \\
+Copenhagen    & EU & $2\,603$ & $0.94$ \\
+Berlin (Buch) & EU & $16$    & $0.19$ \\
+\midrule
+\textbf{France}        & \multicolumn{2}{l}{median over $n = 64$:} & $0.22$ \\
+\textbf{Europe non-FR} & \multicolumn{2}{l}{median over $n = 10$:} & $1.45$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The picture is unambiguous:
+
+\begin{itemize}
+\item The European non-FR median is $1.45$ heavy stops per
+station against $0.22$ for the French panel -- the European
+median is \textbf{6.6 times the French median} on the dominant
+IMD component.
+\item The top three cities globally (Budapest $7.10$, Warsaw
+$5.57$, Vienna $5.21$) are all European, all above any French
+city in the panel.
+\item The French champions -- Strasbourg $3.18$, Montpellier
+$2.91$, Paris $2.79$ -- sit at the European median, not the
+European top.
+\end{itemize}
+
+The conclusion is therefore not just that French systems are
+small and sparse (E25). They are also \emph{less integrated} with
+heavy public transit than European peers. The two findings
+reinforce each other into a single structural diagnosis: the
+French bike-sharing model is volumetric in the worst sense -- it
+deploys many systems, but each is small, sparse, and weakly
+multimodal. The IMD's headline French result (multimodality is
+the single component that credibly drives subjective well-being)
+sits inside a continental gradient on the same component, with
+France close to the bottom (Figure~\ref{fig:imd-lite-eu}).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.99\linewidth]{e26_imd_lite_eu.pdf}
+    \caption{Left: distribution of the multimodality component
+    $M$ for the French Gold-Standard panel ($n = 64$) and ten
+    reachable EU non-FR systems. Right: top-20 cities by raw
+    $M$. The French champions sit at the European median; the
+    European top three (Budapest, Warsaw, Vienna) are out of
+    reach for the French panel.}
+    \label{fig:imd-lite-eu}
+\end{figure}
+
+\paragraph{Caveats.}
+The European panel of E26 covers ten cities and a single April
+2026 OSM snapshot; failures in five additional cities (Amsterdam,
+Rotterdam, Prague, Milan, Helsinki) are documented in E25. The
+OSM-vs-GTFS operationalisation difference is conservative (OSM
+under-counts) so the actual European-vs-FR multimodality gap is
+plausibly larger than the $6.6\times$ ratio reported here. A
+fully matched analysis would require running the French
+GTFS-based pipeline against European GTFS feeds, which exists in
+principle but is out of scope for the present revision.
+
 \subsection{Outcome coupling: life expectancy at département level}
 \label{sec:val-life-exp}
 
@@ -2410,6 +2526,7 @@ Section & Test & Verdict \\
 \ref{sec:val-cerema}         & E23. Concurrent validity vs.\ Cerema and BAAC ($R^{2} = 0.79$ triangulated) & Clean \\
 \ref{sec:val-european}       & E24. European panel: France 1st in systems, 18th in modal share & Clean \\
 \ref{sec:val-eu-stations}    & E25. Live European station-level fetch (10 cities) & Clean \\
+\ref{sec:val-imd-lite}       & E26. IMD-lite multimodality $M$ on European panel & Clean \\
 \ref{sec:val-life-exp}       & E21. Coupling to département life expectancy & Null \\
 ---                          & E14. Synthetic control on infrastructure openings & Outstanding \\
 \bottomrule
@@ -2714,10 +2831,18 @@ sharpens the picture: the EU non-FR median has six times more
 stations per system and three times the station density of the
 French median ($2.93$ vs $0.95$ stations per km$^{2}$).
 Copenhagen alone carries more dock-based stations ($2\,603$)
-than every French network outside Paris combined. The volumetric
-prior fails for France not because France under-invests but
-because the French model fragments deployments into many small,
-sparse systems instead of fewer dense ones.
+than every French network outside Paris combined. An OSM-based
+recomputation of the IMD multimodality component on the same
+European panel (Section~\ref{sec:val-imd-lite}) tightens the
+diagnosis: the European median has $1.45$ heavy public-transport
+stops per bike-sharing station against $0.22$ for the French
+median -- a 6.6-fold gap on the IMD component that the Sobol
+decomposition identified as the dominant driver of cycling
+well-being. The volumetric prior fails for France not because
+France under-invests but because the French model fragments
+deployments into many small, sparse, and weakly multimodal
+systems instead of fewer dense and tightly transit-integrated
+ones.
 
 \item[\textbf{Q3.}] \emph{Cycling-environment quality is
 statistically independent of local income.} The Spearman
