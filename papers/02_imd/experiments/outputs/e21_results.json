@@ -1,0 +1,147 @@
+{
+  "data_source": "data.gouv.fr -- 2024 esperance-de-vie-par-departements (98 depts)",
+  "n_cities_matched": 41,
+  "n_departments_unique": 33,
+  "spearman": {
+    "imd_vs_life_expectancy": {
+      "rho": -0.06588979174464167,
+      "p": 0.6823206875953679
+    },
+    "income_vs_life_expectancy": {
+      "rho": 0.09716948104547601,
+      "p": 0.5455911266390621
+    },
+    "imd_vs_income": {
+      "rho": 0.15271365159437855,
+      "p": 0.3404830859037673
+    }
+  },
+  "partial_regression": {
+    "r2_full": 0.052130704993421206,
+    "beta_imd_std": -0.5474717594920029,
+    "beta_log_income": 2.906752528581714,
+    "partial_r2_imd_net_income": 0.036645806524734474
+  },
+  "matched_table_head": [
+    {
+      "city": "Strasbourg",
+      "IMD": 96.74571258738621,
+      "dept_code": "67",
+      "life_expectancy": 75.0
+    },
+    {
+      "city": "Nantes",
+      "IMD": 83.02491329230122,
+      "dept_code": "44",
+      "life_expectancy": 79.0
+    },
+    {
+      "city": "Mulhouse",
+      "IMD": 77.80156877634691,
+      "dept_code": "68",
+      "life_expectancy": 76.0
+    },
+    {
+      "city": "Paris",
+      "IMD": 70.6455711575003,
+      "dept_code": "75",
+      "life_expectancy": 82.0
+    },
+    {
+      "city": "Caen",
+      "IMD": 64.5070722717407,
+      "dept_code": "14",
+      "life_expectancy": 83.0
+    },
+    {
+      "city": "Bordeaux",
+      "IMD": 56.945577292493645,
+      "dept_code": "33",
+      "life_expectancy": 81.0
+    },
+    {
+      "city": "Rennes",
+      "IMD": 48.757429768349915,
+      "dept_code": "35",
+      "life_expectancy": 75.0
+    },
+    {
+      "city": "Saint-Nazaire",
+      "IMD": 48.336899827140286,
+      "dept_code": "44",
+      "life_expectancy": 79.0
+    },
+    {
+      "city": "Besan\u00e7on",
+      "IMD": 47.3235023498278,
+      "dept_code": "25",
+      "life_expectancy": 77.0
+    },
+    {
+      "city": "Cergy-Pontoise",
+      "IMD": 42.56969326501701,
+      "dept_code": "95",
+      "life_expectancy": 84.0
+    },
+    {
+      "city": "Soissons",
+      "IMD": 41.39488539885116,
+      "dept_code": "02",
+      "life_expectancy": 79.0
+    },
+    {
+      "city": "Auray",
+      "IMD": 38.61031639347624,
+      "dept_code": "56",
+      "life_expectancy": 81.0
+    },
+    {
+      "city": "Rouen",
+      "IMD": 38.45754178659444,
+      "dept_code": "76",
+      "life_expectancy": 80.0
+    },
+    {
+      "city": "Belfort",
+      "IMD": 37.824258822380436,
+      "dept_code": "90",
+      "life_expectancy": 81.0
+    },
+    {
+      "city": "Bourg-en-Bresse",
+      "IMD": 37.24959470824737,
+      "dept_code": "01",
+      "life_expectancy": 79.0
+    },
+    {
+      "city": "Saint-\u00c9tienne",
+      "IMD": 37.203062075319856,
+      "dept_code": "42",
+      "life_expectancy": 79.0
+    },
+    {
+      "city": "La Baule",
+      "IMD": 36.497711914146855,
+      "dept_code": "44",
+      "life_expectancy": 79.0
+    },
+    {
+      "city": "Cholet",
+      "IMD": 34.779390342624815,
+      "dept_code": "49",
+      "life_expectancy": 74.0
+    },
+    {
+      "city": "Agen",
+      "IMD": 34.60807199302726,
+      "dept_code": "47",
+      "life_expectancy": 80.0
+    },
+    {
+      "city": "Avignon",
+      "IMD": 33.85633932717585,
+      "dept_code": "84",
+      "life_expectancy": 81.0
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "cerema_correlations": {
+    "infra_cyclable_km__IMD": {
+      "label": "Cerema km (raw)",
+      "predictor": "IMD",
+      "n": 43,
+      "rho": 0.47085472666868017,
+      "p": 0.001439372653560813
+    },
+    "infra_cyclable_km__M_multi": {
+      "label": "Cerema km (raw)",
+      "predictor": "M_multi",
+      "n": 43,
+      "rho": 0.45322057064952825,
+      "p": 0.00227288053277466
+    },
+    "infra_cyclable_km__I_infra": {
+      "label": "Cerema km (raw)",
+      "predictor": "I_infra",
+      "n": 43,
+      "rho": 0.5626698882512836,
+      "p": 8.587316421171264e-05
+    },
+    "infra_cyclable_km__S_securite": {
+      "label": "Cerema km (raw)",
+      "predictor": "S_securite",
+      "n": 43,
+      "rho": -0.6383428259930057,
+      "p": 4.116953176769369e-06
+    },
+    "infra_cyclable_km__T_topo": {
+      "label": "Cerema km (raw)",
+      "predictor": "T_topo",
+      "n": 43,
+      "rho": -0.057988523104802174,
+      "p": 0.7118577594270028
+    },
+    "infra_cyclable_km_per_km2__IMD": {
+      "label": "Cerema km / km\u00b2 (density)",
+      "predictor": "IMD",
+      "n": 43,
+      "rho": 0.43038356991845356,
+      "p": 0.0039671697039437145
+    },
+    "infra_cyclable_km_per_km2__M_multi": {
+      "label": "Cerema km / km\u00b2 (density)",
+      "predictor": "M_multi",
+      "n": 43,
+      "rho": 0.4191648429982558,
+      "p": 0.005145582013846361
+    },
+    "infra_cyclable_km_per_km2__I_infra": {
+      "label": "Cerema km / km\u00b2 (density)",
+      "predictor": "I_infra",
+      "n": 43,
+      "rho": 0.46375717305949865,
+      "p": 0.001734961851992941
+    },
+    "infra_cyclable_km_per_km2__S_securite": {
+      "label": "Cerema km / km\u00b2 (density)",
+      "predictor": "S_securite",
+      "n": 43,
+      "rho": -0.4855673203410525,
+      "p": 0.000964742155640391
+    },
+    "infra_cyclable_km_per_km2__T_topo": {
+      "label": "Cerema km / km\u00b2 (density)",
+      "predictor": "T_topo",
+      "n": 43,
+      "rho": 0.3192389006342494,
+      "p": 0.03691970741176921
+    }
+  },
+  "baac_per100k_correlations": {
+    "IMD": {
+      "n": 44,
+      "rho": 0.11177767438742621,
+      "p": 0.4700654183944668
+    },
+    "M_multi": {
+      "n": 44,
+      "rho": 0.07145383323244289,
+      "p": 0.6448587287006455
+    },
+    "I_infra": {
+      "n": 44,
+      "rho": 0.34648256391556986,
+      "p": 0.0212214130419362
+    },
+    "S_securite": {
+      "n": 44,
+      "rho": -0.6584926120590626,
+      "p": 1.18162075968081e-06
+    },
+    "T_topo": {
+      "n": 44,
+      "rho": 0.11396524250990739,
+      "p": 0.4613643859312724
+    }
+  },
+  "triangulation": {
+    "r2_full": 0.7876779849011557,
+    "beta_imd": 0.19577532125703662,
+    "beta_cerema_density": 0.29274096061648536,
+    "beta_log_km": 0.16718246168408557,
+    "partial_r2_imd": 0.2705206966019643,
+    "partial_r2_cerema_density": 0.32681602385185077,
+    "partial_r2_log_km": 0.12743030214372422,
+    "n_cities": 25
+  },
+  "coverage": {
+    "cerema_km": 43,
+    "cerema_density": 43,
+    "baac_per_100k": 44
+  }
+}

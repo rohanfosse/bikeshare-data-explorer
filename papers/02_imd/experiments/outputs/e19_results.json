@@ -1,0 +1,1377 @@
+{
+  "n_cities": 59,
+  "predictors": [
+    "revenu_median_uc",
+    "gini_revenu",
+    "part_menages_voit0",
+    "part_velo_travail"
+  ],
+  "n_positive_deviants": 7,
+  "n_negative_deviants": 2,
+  "positive_deviants": [
+    {
+      "city": "Montpellier",
+      "imd_obs": 88.29777782564966,
+      "imd_hat_median": 53.09591923818707,
+      "residual_median": 35.20185858746259,
+      "residual_ci95": [
+        27.139228314187996,
+        42.978833360951924
+      ],
+      "p_positive_deviant": 1.0,
+      "p_negative_deviant": 0.0,
+      "p_strong_positive": 0.9165,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.9138770541692026,
+        "I": 0.7568130726116002,
+        "S": 0.9651288174342029,
+        "T": 0.8172389949011073
+      }
+    },
+    {
+      "city": "Mulhouse",
+      "imd_obs": 77.80156877634691,
+      "imd_hat_median": 37.6344129592565,
+      "residual_median": 40.16715581709041,
+      "residual_ci95": [
+        30.18936771807527,
+        50.13448297895775
+      ],
+      "p_positive_deviant": 1.0,
+      "p_negative_deviant": 0.0,
+      "p_strong_positive": 0.977,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.802016129032258,
+        "I": 0.45846099267768864,
+        "S": 0.9815182732401275,
+        "T": 0.9449786221878247
+      }
+    },
+    {
+      "city": "Brest",
+      "imd_obs": 62.808893109598976,
+      "imd_hat_median": 35.601005966108026,
+      "residual_median": 27.20788714349095,
+      "residual_ci95": [
+        21.053657823374422,
+        33.02927142642954
+      ],
+      "p_positive_deviant": 0.99975,
+      "p_negative_deviant": 0.0,
+      "p_strong_positive": 0.414,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.6809957924263674,
+        "I": 0.2926552520069134,
+        "S": 0.8746456793678217,
+        "T": 0.5877615649379857
+      }
+    },
+    {
+      "city": "Caen",
+      "imd_obs": 64.5070722717407,
+      "imd_hat_median": 40.95775748450295,
+      "residual_median": 23.549314787237748,
+      "residual_ci95": [
+        19.695498750061045,
+        27.333947678916736
+      ],
+      "p_positive_deviant": 0.99925,
+      "p_negative_deviant": 0.0,
+      "p_strong_positive": 0.06225,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.6206451612903227,
+        "I": 0.42704601469336245,
+        "S": 0.9162161720219115,
+        "T": 0.8089443370928168
+      }
+    },
+    {
+      "city": "Nantes",
+      "imd_obs": 83.02491329230122,
+      "imd_hat_median": 59.193412965376965,
+      "residual_median": 23.83150032692426,
+      "residual_ci95": [
+        14.63754121504891,
+        33.103633202257576
+      ],
+      "p_positive_deviant": 0.971,
+      "p_negative_deviant": 0.0,
+      "p_strong_positive": 0.19925,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.9232570239334028,
+        "I": 0.5238885960648418,
+        "S": 0.8718202821492717,
+        "T": 0.7959644932122687
+      }
+    },
+    {
+      "city": "Strasbourg",
+      "imd_obs": 96.74571258738621,
+      "imd_hat_median": 70.77963377727545,
+      "residual_median": 25.96607881011076,
+      "residual_ci95": [
+        11.242498280298452,
+        39.6463245043237
+      ],
+      "p_positive_deviant": 0.943,
+      "p_negative_deviant": 0.0,
+      "p_strong_positive": 0.3855,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 1.0,
+        "I": 1.0,
+        "S": 0.8104438281038723,
+        "T": 0.9413968987824197
+      }
+    },
+    {
+      "city": "Saint-Nazaire",
+      "imd_obs": 48.336899827140286,
+      "imd_hat_median": 29.771635368692095,
+      "residual_median": 18.56526445844819,
+      "residual_ci95": [
+        11.03744332924904,
+        26.18712260073668
+      ],
+      "p_positive_deviant": 0.868,
+      "p_negative_deviant": 0.0,
+      "p_strong_positive": 0.01375,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.2516129032258065,
+        "I": 0.6683973045357915,
+        "S": 1.0,
+        "T": 0.7599128767948035
+      }
+    }
+  ],
+  "negative_deviants": [
+    {
+      "city": "Lyon",
+      "imd_obs": 26.907207013292712,
+      "imd_hat_median": 56.27560467334736,
+      "residual_median": -29.36839766005465,
+      "residual_ci95": [
+        -38.74163792434761,
+        -19.600679625451672
+      ],
+      "p_positive_deviant": 0.0,
+      "p_negative_deviant": 0.99675,
+      "p_strong_positive": 0.0,
+      "p_strong_negative": 0.58625,
+      "components": {
+        "M": 0.04383742506423066,
+        "I": 0.5547110181573613,
+        "S": 0.515059116433435,
+        "T": 0.7138418392843702
+      }
+    },
+    {
+      "city": "Saumur",
+      "imd_obs": 24.668073530259694,
+      "imd_hat_median": 41.88786539670285,
+      "residual_median": -17.21979186644316,
+      "residual_ci95": [
+        -21.920043909143914,
+        -12.713229346223944
+      ],
+      "p_positive_deviant": 0.0,
+      "p_negative_deviant": 0.8745,
+      "p_strong_positive": 0.0,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.028592375366568917,
+        "I": 0.187246043875287,
+        "S": 0.9159921510914888,
+        "T": 0.6836477584653735
+      }
+    }
+  ],
+  "all_cities": [
+    {
+      "city": "Strasbourg",
+      "imd_obs": 96.74571258738621,
+      "imd_hat_median": 70.77963377727545,
+      "residual_median": 25.96607881011076,
+      "residual_ci95": [
+        11.242498280298452,
+        39.6463245043237
+      ],
+      "p_positive_deviant": 0.943,
+      "p_negative_deviant": 0.0,
+      "p_strong_positive": 0.3855,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 1.0,
+        "I": 1.0,
+        "S": 0.8104438281038723,
+        "T": 0.9413968987824197
+      }
+    },
+    {
+      "city": "Montpellier",
+      "imd_obs": 88.29777782564966,
+      "imd_hat_median": 53.09591923818707,
+      "residual_median": 35.20185858746259,
+      "residual_ci95": [
+        27.139228314187996,
+        42.978833360951924
+      ],
+      "p_positive_deviant": 1.0,
+      "p_negative_deviant": 0.0,
+      "p_strong_positive": 0.9165,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.9138770541692026,
+        "I": 0.7568130726116002,
+        "S": 0.9651288174342029,
+        "T": 0.8172389949011073
+      }
+    },
+    {
+      "city": "Nantes",
+      "imd_obs": 83.02491329230122,
+      "imd_hat_median": 59.193412965376965,
+      "residual_median": 23.83150032692426,
+      "residual_ci95": [
+        14.63754121504891,
+        33.103633202257576
+      ],
+      "p_positive_deviant": 0.971,
+      "p_negative_deviant": 0.0,
+      "p_strong_positive": 0.19925,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.9232570239334028,
+        "I": 0.5238885960648418,
+        "S": 0.8718202821492717,
+        "T": 0.7959644932122687
+      }
+    },
+    {
+      "city": "Mulhouse",
+      "imd_obs": 77.80156877634691,
+      "imd_hat_median": 37.6344129592565,
+      "residual_median": 40.16715581709041,
+      "residual_ci95": [
+        30.18936771807527,
+        50.13448297895775
+      ],
+      "p_positive_deviant": 1.0,
+      "p_negative_deviant": 0.0,
+      "p_strong_positive": 0.977,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.802016129032258,
+        "I": 0.45846099267768864,
+        "S": 0.9815182732401275,
+        "T": 0.9449786221878247
+      }
+    },
+    {
+      "city": "Paris",
+      "imd_obs": 70.6455711575003,
+      "imd_hat_median": 52.77554513406407,
+      "residual_median": 17.870026023436232,
+      "residual_ci95": [
+        -2.5942409275035923,
+        38.839997089180855
+      ],
+      "p_positive_deviant": 0.648,
+      "p_negative_deviant": 0.00175,
+      "p_strong_positive": 0.15625,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.8788503114497935,
+        "I": 0.6658773442062422,
+        "S": 0.0,
+        "T": 0.7912375023236847
+      }
+    },
+    {
+      "city": "Caen",
+      "imd_obs": 64.5070722717407,
+      "imd_hat_median": 40.95775748450295,
+      "residual_median": 23.549314787237748,
+      "residual_ci95": [
+        19.695498750061045,
+        27.333947678916736
+      ],
+      "p_positive_deviant": 0.99925,
+      "p_negative_deviant": 0.0,
+      "p_strong_positive": 0.06225,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.6206451612903227,
+        "I": 0.42704601469336245,
+        "S": 0.9162161720219115,
+        "T": 0.8089443370928168
+      }
+    },
+    {
+      "city": "Brest",
+      "imd_obs": 62.808893109598976,
+      "imd_hat_median": 35.601005966108026,
+      "residual_median": 27.20788714349095,
+      "residual_ci95": [
+        21.053657823374422,
+        33.02927142642954
+      ],
+      "p_positive_deviant": 0.99975,
+      "p_negative_deviant": 0.0,
+      "p_strong_positive": 0.414,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.6809957924263674,
+        "I": 0.2926552520069134,
+        "S": 0.8746456793678217,
+        "T": 0.5877615649379857
+      }
+    },
+    {
+      "city": "Bordeaux",
+      "imd_obs": 56.945577292493645,
+      "imd_hat_median": 67.2969750323725,
+      "residual_median": -10.351397739878848,
+      "residual_ci95": [
+        -22.317490785191517,
+        1.5746326446776553
+      ],
+      "p_positive_deviant": 0.00025,
+      "p_negative_deviant": 0.26775,
+      "p_strong_positive": 0.0,
+      "p_strong_negative": 0.0025,
+      "components": {
+        "M": 0.496236559139785,
+        "I": 0.4048071219750666,
+        "S": 0.8406464448259886,
+        "T": 0.9247368347233141
+      }
+    },
+    {
+      "city": "Dijon",
+      "imd_obs": 50.21660250496376,
+      "imd_hat_median": 48.35328620279251,
+      "residual_median": 1.863316302171249,
+      "residual_ci95": [
+        -4.722265572005394,
+        8.425131065745527
+      ],
+      "p_positive_deviant": 0.0,
+      "p_negative_deviant": 0.0,
+      "p_strong_positive": 0.0,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.41673387096774195,
+        "I": 0.21749603402138223,
+        "S": 0.963036546480255,
+        "T": 0.8804519559390852
+      }
+    },
+    {
+      "city": "Rennes",
+      "imd_obs": 48.757429768349915,
+      "imd_hat_median": 60.74149196948381,
+      "residual_median": -11.984062201133895,
+      "residual_ci95": [
+        -21.555317910838287,
+        -2.8525994882695334
+      ],
+      "p_positive_deviant": 0.0,
+      "p_negative_deviant": 0.33075,
+      "p_strong_positive": 0.0,
+      "p_strong_negative": 0.00025,
+      "components": {
+        "M": 0.4028013582342954,
+        "I": 0.44929049006566046,
+        "S": 0.630365464802551,
+        "T": 0.8601434005211736
+      }
+    },
+    {
+      "city": "Saint-Nazaire",
+      "imd_obs": 48.336899827140286,
+      "imd_hat_median": 29.771635368692095,
+      "residual_median": 18.56526445844819,
+      "residual_ci95": [
+        11.03744332924904,
+        26.18712260073668
+      ],
+      "p_positive_deviant": 0.868,
+      "p_negative_deviant": 0.0,
+      "p_strong_positive": 0.01375,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.2516129032258065,
+        "I": 0.6683973045357915,
+        "S": 1.0,
+        "T": 0.7599128767948035
+      }
+    },
+    {
+      "city": "Besan\u00e7on",
+      "imd_obs": 47.3235023498278,
+      "imd_hat_median": 42.934621287704374,
+      "residual_median": 4.388881062123421,
+      "residual_ci95": [
+        -0.4616905533031737,
+        9.203522091761693
+      ],
+      "p_positive_deviant": 0.0,
+      "p_negative_deviant": 0.0,
+      "p_strong_positive": 0.0,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.39076246334310855,
+        "I": 0.24753642070701956,
+        "S": 0.9103916278309214,
+        "T": 0.7557500742070715
+      }
+    },
+    {
+      "city": "Toulouse",
+      "imd_obs": 46.115599335727936,
+      "imd_hat_median": 54.80618119865569,
+      "residual_median": -8.690581862927754,
+      "residual_ci95": [
+        -16.414538860351595,
+        -0.9606457595109277
+      ],
+      "p_positive_deviant": 0.0,
+      "p_negative_deviant": 0.09075,
+      "p_strong_positive": 0.0,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.24567043258510482,
+        "I": 0.5517694026051321,
+        "S": 0.942936604013297,
+        "T": 0.872249119519336
+      }
+    },
+    {
+      "city": "Cergy-Pontoise",
+      "imd_obs": 42.56969326501701,
+      "imd_hat_median": 30.328124196187495,
+      "residual_median": 12.241569068829515,
+      "residual_ci95": [
+        3.2709366962641466,
+        21.109233629229593
+      ],
+      "p_positive_deviant": 0.353,
+      "p_negative_deviant": 0.0,
+      "p_strong_positive": 0.00025,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.3005376344086022,
+        "I": 0.189760990908707,
+        "S": 0.9917858992178344,
+        "T": 0.7941308327694104
+      }
+    },
+    {
+      "city": "Soissons",
+      "imd_obs": 41.39488539885116,
+      "imd_hat_median": 30.10810777296225,
+      "residual_median": 11.286777625888911,
+      "residual_ci95": [
+        4.196402316512111,
+        18.48453514859086
+      ],
+      "p_positive_deviant": 0.2335,
+      "p_negative_deviant": 0.0,
+      "p_strong_positive": 0.0,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.25835253456221197,
+        "I": 0.2157092464374813,
+        "S": 0.9867987666000911,
+        "T": 0.8833871126025366
+      }
+    },
+    {
+      "city": "Auray",
+      "imd_obs": 38.61031639347624,
+      "imd_hat_median": 26.79966407314853,
+      "residual_median": 11.810652320327709,
+      "residual_ci95": [
+        5.478652307125067,
+        18.30873906467219
+      ],
+      "p_positive_deviant": 0.2565,
+      "p_negative_deviant": 0.0,
+      "p_strong_positive": 0.0,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.1429618768328446,
+        "I": 0.40673519288865917,
+        "S": 1.0,
+        "T": 0.9024158711860937
+      }
+    },
+    {
+      "city": "Rouen",
+      "imd_obs": 38.45754178659444,
+      "imd_hat_median": 38.72797651829356,
+      "residual_median": -0.2704347316991189,
+      "residual_ci95": [
+        -7.410429490181383,
+        6.887546052759801
+      ],
+      "p_positive_deviant": 0.0,
+      "p_negative_deviant": 0.0,
+      "p_strong_positive": 0.0,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.22088155626692932,
+        "I": 0.2527499516843029,
+        "S": 0.9266374204951627,
+        "T": 0.8210143075357754
+      }
+    },
+    {
+      "city": "Belfort",
+      "imd_obs": 37.824258822380436,
+      "imd_hat_median": 35.76324947540329,
+      "residual_median": 2.061009346977144,
+      "residual_ci95": [
+        -2.95167575054396,
+        7.07409558367848
+      ],
+      "p_positive_deviant": 0.0,
+      "p_negative_deviant": 0.0,
+      "p_strong_positive": 0.0,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.01965725806451613,
+        "I": 0.7602312126967695,
+        "S": 0.9884489207750797,
+        "T": 0.9024833664192411
+      }
+    },
+    {
+      "city": "Bourg-en-Bresse",
+      "imd_obs": 37.24959470824737,
+      "imd_hat_median": 36.89723825198171,
+      "residual_median": 0.35235645626566026,
+      "residual_ci95": [
+        -4.325066498141811,
+        4.909674391326187
+      ],
+      "p_positive_deviant": 0.0,
+      "p_negative_deviant": 0.0,
+      "p_strong_positive": 0.0,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.06290322580645162,
+        "I": 0.6409412876070918,
+        "S": 0.9260730929605102,
+        "T": 0.9031490254817429
+      }
+    },
+    {
+      "city": "Saint-\u00c9tienne",
+      "imd_obs": 37.203062075319856,
+      "imd_hat_median": 30.097228046465936,
+      "residual_median": 7.10583402885392,
+      "residual_ci95": [
+        -0.2809403842652827,
+        14.451711144416047
+      ],
+      "p_positive_deviant": 0.03075,
+      "p_negative_deviant": 0.0,
+      "p_strong_positive": 0.0,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.2561523112736947,
+        "I": 0.1643315573339907,
+        "S": 0.9923786693773722,
+        "T": 0.5502063253746036
+      }
+    },
+    {
+      "city": "Les Sables-d'Olonne",
+      "imd_obs": 37.05708775903346,
+      "imd_hat_median": 34.809256646743236,
+      "residual_median": 2.2478311122902177,
+      "residual_ci95": [
+        -4.758677561539803,
+        9.189296074523362
+      ],
+      "p_positive_deviant": 0.00025,
+      "p_negative_deviant": 0.0,
+      "p_strong_positive": 0.0,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.11794354838709678,
+        "I": 0.482862780776329,
+        "S": 0.8613870493009566,
+        "T": 0.9503728537397109
+      }
+    },
+    {
+      "city": "Argel\u00e8s-sur-Mer",
+      "imd_obs": 36.917932085444974,
+      "imd_hat_median": 38.24166957263235,
+      "residual_median": -1.3237374871873726,
+      "residual_ci95": [
+        -7.776409026035125,
+        5.073498655888266
+      ],
+      "p_positive_deviant": 0.0,
+      "p_negative_deviant": 0.0,
+      "p_strong_positive": 0.0,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.05241935483870968,
+        "I": 0.5482659443351932,
+        "S": 1.0,
+        "T": 1.0
+      }
+    },
+    {
+      "city": "La Baule",
+      "imd_obs": 36.497711914146855,
+      "imd_hat_median": 25.513268951706284,
+      "residual_median": 10.984442962440571,
+      "residual_ci95": [
+        -3.8843085239523623,
+        24.807171178559255
+      ],
+      "p_positive_deviant": 0.33375,
+      "p_negative_deviant": 0.00025,
+      "p_strong_positive": 0.009,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.1347926267281106,
+        "I": 0.31242620954047035,
+        "S": 1.0,
+        "T": 0.9122974826788973
+      }
+    },
+    {
+      "city": "Cholet",
+      "imd_obs": 34.779390342624815,
+      "imd_hat_median": 29.37358225953612,
+      "residual_median": 5.405808083088695,
+      "residual_ci95": [
+        0.18737311638918064,
+        10.727154158656077
+      ],
+      "p_positive_deviant": 0.0,
+      "p_negative_deviant": 0.0,
+      "p_strong_positive": 0.0,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.1376008064516129,
+        "I": 0.2870368971831264,
+        "S": 1.0,
+        "T": 0.7650609189116739
+      }
+    },
+    {
+      "city": "Agen",
+      "imd_obs": 34.60807199302726,
+      "imd_hat_median": 38.740936905915966,
+      "residual_median": -4.1328649128887065,
+      "residual_ci95": [
+        -10.437689456010634,
+        2.0503564340248532
+      ],
+      "p_positive_deviant": 0.0,
+      "p_negative_deviant": 0.0005,
+      "p_strong_positive": 0.0,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.01965725806451613,
+        "I": 0.6147788535776751,
+        "S": 0.9306935246504783,
+        "T": 0.9316774501075225
+      }
+    },
+    {
+      "city": "Avignon",
+      "imd_obs": 33.85633932717585,
+      "imd_hat_median": 43.886288751280055,
+      "residual_median": -10.029949424104203,
+      "residual_ci95": [
+        -19.003396672230704,
+        -1.182315873674398
+      ],
+      "p_positive_deviant": 0.0,
+      "p_negative_deviant": 0.189,
+      "p_strong_positive": 0.0,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.15183537263626254,
+        "I": 0.12690473923715537,
+        "S": 0.9745079630898311,
+        "T": 0.9278327615583971
+      }
+    },
+    {
+      "city": "Saint-Brieuc",
+      "imd_obs": 33.635215630723394,
+      "imd_hat_median": 35.32585984709631,
+      "residual_median": -1.6906442163729203,
+      "residual_ci95": [
+        -6.07074522591902,
+        2.6266249497974985
+      ],
+      "p_positive_deviant": 0.0,
+      "p_negative_deviant": 0.0,
+      "p_strong_positive": 0.0,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.05241935483870968,
+        "I": 0.5012866985664943,
+        "S": 0.9383942441337585,
+        "T": 0.8392191042419912
+      }
+    },
+    {
+      "city": "Lille",
+      "imd_obs": 31.999613069572717,
+      "imd_hat_median": 43.98423950103851,
+      "residual_median": -11.984626431465792,
+      "residual_ci95": [
+        -18.2432198081662,
+        -5.7528561254088855
+      ],
+      "p_positive_deviant": 0.0,
+      "p_negative_deviant": 0.284,
+      "p_strong_positive": 0.0,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.04224843524313915,
+        "I": 0.4258255843408789,
+        "S": 0.9075913662006377,
+        "T": 0.9202776417289636
+      }
+    },
+    {
+      "city": "La Roche-sur-Yon",
+      "imd_obs": 31.975934326778955,
+      "imd_hat_median": 34.66068638712918,
+      "residual_median": -2.6847520603502275,
+      "residual_ci95": [
+        -7.639656917805195,
+        2.3009319964449233
+      ],
+      "p_positive_deviant": 0.0,
+      "p_negative_deviant": 0.0,
+      "p_strong_positive": 0.0,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.04058272632674298,
+        "I": 0.41666383886031993,
+        "S": 1.0,
+        "T": 0.8087123031315963
+      }
+    },
+    {
+      "city": "Valence",
+      "imd_obs": 31.210440276345285,
+      "imd_hat_median": 38.13471561891507,
+      "residual_median": -6.9242753425697785,
+      "residual_ci95": [
+        -11.548371370213735,
+        -2.4405167606919926
+      ],
+      "p_positive_deviant": 0.0,
+      "p_negative_deviant": 0.00125,
+      "p_strong_positive": 0.0,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.027751423149905127,
+        "I": 0.42437953007436635,
+        "S": 0.9456419801180221,
+        "T": 0.8718446403371366
+      }
+    },
+    {
+      "city": "Valenciennes",
+      "imd_obs": 30.88834842942294,
+      "imd_hat_median": 32.91797197365653,
+      "residual_median": -2.029623544233587,
+      "residual_ci95": [
+        -8.38222620863973,
+        4.2002161146891375
+      ],
+      "p_positive_deviant": 0.0,
+      "p_negative_deviant": 0.00025,
+      "p_strong_positive": 0.0,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.04717741935483871,
+        "I": 0.27743282505323463,
+        "S": 1.0,
+        "T": 0.9225760010139321
+      }
+    },
+    {
+      "city": "Clermont-Ferrand",
+      "imd_obs": 30.47903703365148,
+      "imd_hat_median": 36.204845829254936,
+      "residual_median": -5.725808795603459,
+      "residual_ci95": [
+        -10.015747075909259,
+        -1.5032249816359815
+      ],
+      "p_positive_deviant": 0.0,
+      "p_negative_deviant": 0.0,
+      "p_strong_positive": 0.0,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.030684500393391035,
+        "I": 0.567730081754095,
+        "S": 0.7836285647624688,
+        "T": 0.7428868528136534
+      }
+    },
+    {
+      "city": "Ch\u00e2tellerault",
+      "imd_obs": 30.43617203815703,
+      "imd_hat_median": 29.87911813742454,
+      "residual_median": 0.5570539007324893,
+      "residual_ci95": [
+        -6.300821485404542,
+        7.543138773132643
+      ],
+      "p_positive_deviant": 0.0,
+      "p_negative_deviant": 0.0,
+      "p_strong_positive": 0.0,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.09677419354838711,
+        "I": 0.10549849944460342,
+        "S": 1.0,
+        "T": 0.9064011730499535
+      }
+    },
+    {
+      "city": "Vichy",
+      "imd_obs": 30.29128691442266,
+      "imd_hat_median": 35.650432154081656,
+      "residual_median": -5.359145239659,
+      "residual_ci95": [
+        -9.901668370349794,
+        -0.7965812473169583
+      ],
+      "p_positive_deviant": 0.0,
+      "p_negative_deviant": 0.0,
+      "p_strong_positive": 0.0,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.03931451612903226,
+        "I": 0.2608975658782248,
+        "S": 1.0,
+        "T": 0.9394159031255477
+      }
+    },
+    {
+      "city": "Ardenne M\u00e9tropole",
+      "imd_obs": 30.281754024999262,
+      "imd_hat_median": 27.705274043684028,
+      "residual_median": 2.576479981315236,
+      "residual_ci95": [
+        -5.187516019039208,
+        10.348266447436018
+      ],
+      "p_positive_deviant": 0.00325,
+      "p_negative_deviant": 0.0,
+      "p_strong_positive": 0.0,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.055502846299810255,
+        "I": 0.2813700010486248,
+        "S": 0.9565135840944178,
+        "T": 0.8660404786911251
+      }
+    },
+    {
+      "city": "Montreuil-Bellay",
+      "imd_obs": 30.075600694136995,
+      "imd_hat_median": 33.62450288489035,
+      "residual_median": -3.548902190753349,
+      "residual_ci95": [
+        -11.71931393709056,
+        4.637655166615309
+      ],
+      "p_positive_deviant": 0.0,
+      "p_negative_deviant": 0.00475,
+      "p_strong_positive": 0.0,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.10483870967741936,
+        "I": 0.0564983161754068,
+        "S": 1.0,
+        "T": 0.9142035684536121
+      }
+    },
+    {
+      "city": "Landerneau",
+      "imd_obs": 29.525463801141015,
+      "imd_hat_median": 25.173763767636657,
+      "residual_median": 4.351700033504358,
+      "residual_ci95": [
+        -5.941515000214381,
+        14.42271230987572
+      ],
+      "p_positive_deviant": 0.02875,
+      "p_negative_deviant": 0.0,
+      "p_strong_positive": 0.0,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.08986175115207373,
+        "I": 0.2843954784867783,
+        "S": 1.0,
+        "T": 0.5102685187910867
+      }
+    },
+    {
+      "city": "Pau",
+      "imd_obs": 28.714771859735233,
+      "imd_hat_median": 36.3633675902543,
+      "residual_median": -7.648595730519062,
+      "residual_ci95": [
+        -12.633164527938867,
+        -2.598104220645408
+      ],
+      "p_positive_deviant": 0.0,
+      "p_negative_deviant": 0.005,
+      "p_strong_positive": 0.0,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.015725806451612905,
+        "I": 0.45105237841547996,
+        "S": 0.8244235957812117,
+        "T": 0.8124626483222888
+      }
+    },
+    {
+      "city": "Royan",
+      "imd_obs": 28.57860336295005,
+      "imd_hat_median": 29.803633077774585,
+      "residual_median": -1.2250297148245348,
+      "residual_ci95": [
+        -6.364614896937544,
+        3.978061136339453
+      ],
+      "p_positive_deviant": 0.0,
+      "p_negative_deviant": 0.0,
+      "p_strong_positive": 0.0,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.07862903225806452,
+        "I": 0.09573493043579312,
+        "S": 1.0,
+        "T": 0.840866935251597
+      }
+    },
+    {
+      "city": "Calais",
+      "imd_obs": 28.44328220949881,
+      "imd_hat_median": 31.970508647889556,
+      "residual_median": -3.527226438390745,
+      "residual_ci95": [
+        -10.89472662542907,
+        3.9252900344982975
+      ],
+      "p_positive_deviant": 0.0,
+      "p_negative_deviant": 0.002,
+      "p_strong_positive": 0.0,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.021203334541500543,
+        "I": 0.23031659797995496,
+        "S": 0.9584680297530956,
+        "T": 0.9760060466328073
+      }
+    },
+    {
+      "city": "Louviers",
+      "imd_obs": 28.36084597112429,
+      "imd_hat_median": 26.60949390730488,
+      "residual_median": 1.7513520638194127,
+      "residual_ci95": [
+        -3.759256122910119,
+        7.4259846142181285
+      ],
+      "p_positive_deviant": 0.0,
+      "p_negative_deviant": 0.0,
+      "p_strong_positive": 0.0,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.023588709677419356,
+        "I": 0.21680897105414554,
+        "S": 0.9815182732401275,
+        "T": 0.9448514587878508
+      }
+    },
+    {
+      "city": "Amiens",
+      "imd_obs": 28.21261251863826,
+      "imd_hat_median": 44.14896536795171,
+      "residual_median": -15.936352849313451,
+      "residual_ci95": [
+        -22.874668613561518,
+        -9.013329497573784
+      ],
+      "p_positive_deviant": 0.0,
+      "p_negative_deviant": 0.69575,
+      "p_strong_positive": 0.0,
+      "p_strong_negative": 0.00075,
+      "components": {
+        "M": 0.03494623655913979,
+        "I": 0.33661980512535705,
+        "S": 0.876788488267517,
+        "T": 0.7863040726890279
+      }
+    },
+    {
+      "city": "Cherbourg-en-Cotentin",
+      "imd_obs": 27.972252903608325,
+      "imd_hat_median": 37.193937730927196,
+      "residual_median": -9.221684827318871,
+      "residual_ci95": [
+        -16.424034457445092,
+        -2.2350677566572927
+      ],
+      "p_positive_deviant": 0.0,
+      "p_negative_deviant": 0.09575,
+      "p_strong_positive": 0.0,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.01925608953258723,
+        "I": 0.3151535731647505,
+        "S": 0.9698257522287796,
+        "T": 0.7592603646609067
+      }
+    },
+    {
+      "city": "Libourne",
+      "imd_obs": 27.176352659950652,
+      "imd_hat_median": 27.40466794419815,
+      "residual_median": -0.22831528424749692,
+      "residual_ci95": [
+        -5.435232162711606,
+        5.271508091246665
+      ],
+      "p_positive_deviant": 0.0,
+      "p_negative_deviant": 0.0,
+      "p_strong_positive": 0.0,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.03812316715542522,
+        "I": 0.10426187674253173,
+        "S": 1.0,
+        "T": 0.9223349027400513
+      }
+    },
+    {
+      "city": "Troyes",
+      "imd_obs": 26.947594914120394,
+      "imd_hat_median": 40.0468408802253,
+      "residual_median": -13.099245966104903,
+      "residual_ci95": [
+        -19.39617074186389,
+        -6.860458795861999
+      ],
+      "p_positive_deviant": 0.0,
+      "p_negative_deviant": 0.39475,
+      "p_strong_positive": 0.0,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.010483870967741936,
+        "I": 0.4049430654966592,
+        "S": 0.716613523015289,
+        "T": 0.9077877854405496
+      }
+    },
+    {
+      "city": "Lyon",
+      "imd_obs": 26.907207013292712,
+      "imd_hat_median": 56.27560467334736,
+      "residual_median": -29.36839766005465,
+      "residual_ci95": [
+        -38.74163792434761,
+        -19.600679625451672
+      ],
+      "p_positive_deviant": 0.0,
+      "p_negative_deviant": 0.99675,
+      "p_strong_positive": 0.0,
+      "p_strong_negative": 0.58625,
+      "components": {
+        "M": 0.04383742506423066,
+        "I": 0.5547110181573613,
+        "S": 0.515059116433435,
+        "T": 0.7138418392843702
+      }
+    },
+    {
+      "city": "Marseille",
+      "imd_obs": 26.060009360480187,
+      "imd_hat_median": 34.7105249413453,
+      "residual_median": -8.650515580865115,
+      "residual_ci95": [
+        -18.582852020150767,
+        1.4671960451987147
+      ],
+      "p_positive_deviant": 0.0,
+      "p_negative_deviant": 0.138,
+      "p_strong_positive": 0.0,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.025616698292220116,
+        "I": 0.27315346080245323,
+        "S": 0.9264076038520916,
+        "T": 0.6664950568463568
+      }
+    },
+    {
+      "city": "Tarbes",
+      "imd_obs": 25.823284203215955,
+      "imd_hat_median": 35.78538038704593,
+      "residual_median": -9.962096183829981,
+      "residual_ci95": [
+        -15.428650388182366,
+        -4.476635863860455
+      ],
+      "p_positive_deviant": 0.0,
+      "p_negative_deviant": 0.07775,
+      "p_strong_positive": 0.0,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.07258064516129033,
+        "I": 0.10335776155479325,
+        "S": 0.829399445293485,
+        "T": 0.8280070809497603
+      }
+    },
+    {
+      "city": "Niort",
+      "imd_obs": 25.65931823884171,
+      "imd_hat_median": 36.00301784484046,
+      "residual_median": -10.343699605998744,
+      "residual_ci95": [
+        -15.77178432645425,
+        -4.784221252598528
+      ],
+      "p_positive_deviant": 0.0,
+      "p_negative_deviant": 0.1045,
+      "p_strong_positive": 0.0,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.012333965844402278,
+        "I": 0.19884664849002545,
+        "S": 0.9420181121258904,
+        "T": 0.8240603633990783
+      }
+    },
+    {
+      "city": "Brive-la-Gaillarde",
+      "imd_obs": 25.140603906080354,
+      "imd_hat_median": 29.75055996886812,
+      "residual_median": -4.6099560627877665,
+      "residual_ci95": [
+        -9.34945057972468,
+        0.20238861776159714
+      ],
+      "p_positive_deviant": 0.0,
+      "p_negative_deviant": 0.0,
+      "p_strong_positive": 0.0,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.012096774193548388,
+        "I": 0.17109258870105087,
+        "S": 0.9431331484311617,
+        "T": 0.8230016685282735
+      }
+    },
+    {
+      "city": "Auxerre",
+      "imd_obs": 24.818158754451165,
+      "imd_hat_median": 23.583971765132482,
+      "residual_median": 1.234186989318685,
+      "residual_ci95": [
+        -6.609112334228074,
+        8.894177798590748
+      ],
+      "p_positive_deviant": 0.0005,
+      "p_negative_deviant": 0.0,
+      "p_strong_positive": 0.0,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.011436950146627566,
+        "I": 0.12308551729193647,
+        "S": 1.0,
+        "T": 0.8012843247712982
+      }
+    },
+    {
+      "city": "Carcassonne",
+      "imd_obs": 24.67598026041953,
+      "imd_hat_median": 30.124711964309412,
+      "residual_median": -5.4487317038898855,
+      "residual_ci95": [
+        -14.24374986361483,
+        3.3850744484178694
+      ],
+      "p_positive_deviant": 0.0,
+      "p_negative_deviant": 0.0285,
+      "p_strong_positive": 0.0,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.06290322580645162,
+        "I": 0.0740074265946513,
+        "S": 0.8891096394407653,
+        "T": 0.7346958624381434
+      }
+    },
+    {
+      "city": "\u00c9pinal",
+      "imd_obs": 24.672026073065368,
+      "imd_hat_median": 26.299338090748073,
+      "residual_median": -1.6273120176827032,
+      "residual_ci95": [
+        -8.241682008893711,
+        5.002358519699744
+      ],
+      "p_positive_deviant": 0.0,
+      "p_negative_deviant": 0.0,
+      "p_strong_positive": 0.0,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.032949308755760374,
+        "I": 0.11916919792654478,
+        "S": 0.9964796710933577,
+        "T": 0.6692532766258663
+      }
+    },
+    {
+      "city": "Saumur",
+      "imd_obs": 24.668073530259694,
+      "imd_hat_median": 41.88786539670285,
+      "residual_median": -17.21979186644316,
+      "residual_ci95": [
+        -21.920043909143914,
+        -12.713229346223944
+      ],
+      "p_positive_deviant": 0.0,
+      "p_negative_deviant": 0.8745,
+      "p_strong_positive": 0.0,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.028592375366568917,
+        "I": 0.187246043875287,
+        "S": 0.9159921510914888,
+        "T": 0.6836477584653735
+      }
+    },
+    {
+      "city": "Nancy",
+      "imd_obs": 24.238670690737607,
+      "imd_hat_median": 41.437198030283064,
+      "residual_median": -17.198527339545457,
+      "residual_ci95": [
+        -25.694407712385807,
+        -8.782427483613356
+      ],
+      "p_positive_deviant": 0.0,
+      "p_negative_deviant": 0.751,
+      "p_strong_positive": 0.0,
+      "p_strong_negative": 0.009,
+      "components": {
+        "M": 0.025501307759372278,
+        "I": 0.20048358266149668,
+        "S": 0.7602370582503033,
+        "T": 0.8625448910541713
+      }
+    },
+    {
+      "city": "Longwy",
+      "imd_obs": 23.49447543820532,
+      "imd_hat_median": 19.833538289193775,
+      "residual_median": 3.660937149011543,
+      "residual_ci95": [
+        -4.679221226530714,
+        12.065693718662411
+      ],
+      "p_positive_deviant": 0.00525,
+      "p_negative_deviant": 0.0,
+      "p_strong_positive": 0.0,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.008064516129032258,
+        "I": 0.04895563312419861,
+        "S": 1.0,
+        "T": 0.8257877871314588
+      }
+    },
+    {
+      "city": "Annecy",
+      "imd_obs": 22.813291724107486,
+      "imd_hat_median": 28.589428361132267,
+      "residual_median": -5.776136637024781,
+      "residual_ci95": [
+        -20.301154248896115,
+        7.890963653531856
+      ],
+      "p_positive_deviant": 0.0025,
+      "p_negative_deviant": 0.13125,
+      "p_strong_positive": 0.0,
+      "p_strong_negative": 0.001,
+      "components": {
+        "M": 0.015725806451612905,
+        "I": 0.12021949223402768,
+        "S": 0.963036546480255,
+        "T": 0.6267898431331805
+      }
+    },
+    {
+      "city": "Lascaux",
+      "imd_obs": 22.202685688920408,
+      "imd_hat_median": 21.810933325091675,
+      "residual_median": 0.391752363828731,
+      "residual_ci95": [
+        -6.770367156238985,
+        7.610102229598258
+      ],
+      "p_positive_deviant": 0.0,
+      "p_negative_deviant": 0.0,
+      "p_strong_positive": 0.0,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.0,
+        "I": 0.0,
+        "S": 1.0,
+        "T": 0.8336130925958758
+      }
+    },
+    {
+      "city": "Laon",
+      "imd_obs": 17.234795128317586,
+      "imd_hat_median": 28.58103343115357,
+      "residual_median": -11.346238302835983,
+      "residual_ci95": [
+        -19.086194270524828,
+        -3.584515425358412
+      ],
+      "p_positive_deviant": 0.0,
+      "p_negative_deviant": 0.26075,
+      "p_strong_positive": 0.0,
+      "p_strong_negative": 0.0,
+      "components": {
+        "M": 0.016553480475382003,
+        "I": 0.11293499765437555,
+        "S": 1.0,
+        "T": 0.0
+      }
+    }
+  ]
+}

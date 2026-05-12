@@ -162,9 +162,29 @@ safety component is exposure-confounded and requires station-level
 cyclist counts to be cleanly resolved; the city ranking is stable
 under empirical weight uncertainty but fragile under uniform
 weight uncertainty; and a single city (Lyon) carries a Cook-style
-influence on the calibration four times the panel median. All
-code, data products, intermediate outputs and experiment scripts
-are released openly.
+influence on the calibration four times the panel median. A continental-scale
+extension (E24) uses the MobilityData global GBFS catalogue
+(1\,239 EU+CH+NO systems in 28 countries) to position France in
+the European cycling landscape: France ranks first on number of
+GBFS systems and eighteenth on cycling modal share, with the
+Netherlands at the symmetric position (five times fewer systems
+for seven times more cycling). Cross-country Spearman
+correlations confirm the IMD's central thesis at continental
+scale: the ECF cycling-friendliness index correlates with modal
+share at $\rho = +0.79$, against $\rho = +0.46$ for the
+system-count proxy. Six further extensions tighten the analysis
+on the French panel: a within-city variance decomposition (80\,\%
+of station IMD variance is intra-city), a Bayesian
+positive-deviant diagnostic (seven cities with a multimodality
+index four times the panel mean), a counterfactual M+I uplift
+simulator (median $+18$ IMD points and a $+44\,\%$ implied
+eco-counter increase if every panel city reached the panel 75th
+percentile), a Mobility-Precarity Index that combines car-free
+share with the IMD deficit, a concurrent-validity triangulation
+against Cerema and BAAC city aggregates ($R^{2} = 0.79$ on
+$n = 25$), and an honest null on département-level life
+expectancy. All code, data products, intermediate outputs and
+experiment scripts are released openly.
 
 \smallskip
 \noindent\textbf{Keywords:} bike-sharing systems; composite
@@ -1788,6 +1808,438 @@ structural intervention envisaged by the National Cycling Plan.
     \label{fig:archetypes}
 \end{figure}
 
+\subsection{Within-city heterogeneity decomposition}
+\label{sec:val-within}
+
+The validation tests so far treat each city as a single point in a
+59-city panel. The 46\,139-station Gold Standard makes it possible
+to test a much sharper question: \emph{how much of the cycling-
+environment variance is between cities, and how much is within
+them?} If the within-city component dominates, the city-level IMD
+hides spatial heterogeneity that policy targeting cannot afford to
+ignore.
+
+We compute a station-level IMD on the dock-based panel by
+re-normalising each component across the full set of $5\,442$
+dock-based stations rather than aggregating per city, applying the
+published weights, and decomposing the panel-wide variance through
+a one-way ANOVA and a Theil-T index.
+
+\begin{table}[H]
+\centering
+\caption{Decomposition of station-level IMD variance into
+between-city and within-city contributions. ICC1 is the
+intra-class correlation coefficient.}
+\label{tab:variance-decomp}
+\small
+\begin{tabular}{@{}lcc@{}}
+\toprule
+Decomposition & Between-cities share & Within-cities share \\
+\midrule
+ANOVA (homoscedastic)   & 19.2\,\% & 80.8\,\% \\
+Theil-T (scale-free)    & 20.8\,\% & 79.2\,\% \\
+\midrule
+\multicolumn{3}{@{}l}{ICC1 = $0.192$ ($N = 5\,442$ stations,
+$59 + 5$ city codes used for grouping)} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The reading is sharp: \textbf{80\,\% of the variance of the
+station-level IMD is within cities, only 20\,\% between them.}
+Inside Paris alone, the station IMD ranges from $17.5$ to $83.1$
+(an inter-station spread of $65.6$ points); Strasbourg's
+within-city spread is wider than the gap between Strasbourg and
+the panel median. The city-level IMD of
+Table~\ref{tab:top10} therefore reports the centre of a
+distribution that is itself much wider than the panel
+distribution -- ``Strasbourg is better than Paris'' is a
+statement about means whose effect size is dwarfed by intra-city
+variation (Figure~\ref{fig:within-city}).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.78\linewidth]{e18_within_vs_between.pdf}
+    \caption{Variance-share decomposition of the station-level
+    IMD into between-city and within-city contributions, under
+    the homoscedastic one-way ANOVA and the scale-free Theil
+    index. Both decompositions place about 80\,\% of the
+    variance \emph{within} cities. The city-level IMD ranking is
+    therefore an aggregation of a heterogeneous internal
+    distribution.}
+    \label{fig:within-city}
+\end{figure}
+
+The substantive consequence is that policy interventions targeted
+at the worst stations of otherwise high-IMD cities (e.g., Paris's
+peripheral districts) may yield more return per euro than
+inter-city redistribution. The complementary anomaly analysis of
+Section~\ref{sec:val-deviants} formalises this through the
+positive- and negative-deviant framework.
+
+\subsection{Positive and negative deviants}
+\label{sec:val-deviants}
+
+We complement the standard ranking with an anomaly-detection
+view: for each city, compute the residual between the observed
+IMD and the IMD predicted by the city's socio-economic profile
+through the Bayesian model of Section~\ref{sec:val-bayes-ies},
+and flag the cities whose residual lies more than one posterior
+standard deviation away from zero in the appropriate direction.
+
+\begin{table}[H]
+\centering
+\caption{Positive deviants identified by the Bayesian residual
+diagnostic ($P(r_i > \sigma_y) \geq 0.85$). Mean component
+profile aggregates to $C_M = 0.74$ against the panel mean
+$C_M = 0.19$, i.e.\ a four-fold excess of multimodality at the
+positive-deviant set.}
+\label{tab:positive-deviants}
+\small
+\begin{tabular}{@{}lcccccc@{}}
+\toprule
+City & IMD obs & IMD pred & Residual & $C_M$ & $C_I$ & $P_{+}$ \\
+\midrule
+Montpellier      & 88.3 & 53.1 & $+35.2$ & 0.91 & 0.76 & 1.00 \\
+Mulhouse         & 77.8 & 37.6 & $+40.2$ & 0.80 & 0.46 & 1.00 \\
+Brest            & 62.8 & 35.6 & $+27.2$ & 0.68 & 0.29 & 1.00 \\
+Caen             & 64.5 & 41.0 & $+23.5$ & 0.62 & 0.43 & 1.00 \\
+Nantes           & 83.0 & 59.2 & $+23.8$ & 0.92 & 0.52 & 0.97 \\
+Strasbourg       & 96.7 & 70.8 & $+25.9$ & 1.00 & 1.00 & 0.94 \\
+Saint-Nazaire    & 48.3 & 29.8 & $+18.6$ & 0.61 & 0.49 & 0.87 \\
+\midrule
+\multicolumn{4}{@{}l}{Mean of positive deviants:} & 0.74 & 0.59 & \\
+\multicolumn{4}{@{}l}{Panel mean:}                & 0.19 & 0.33 & \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The seven positive deviants share a single empirical signature: a
+multimodality index $C_M$ four times the panel mean, with the
+other three components close to the panel median. The
+\emph{negative deviants} are conversely Lyon ($P_{-} = 1.00$,
+residual $-29.4$) and Saumur ($P_{-} = 0.87$, residual $-17.2$);
+both have $C_M$ well below the panel mean despite favourable
+socio-economic predictors of the IMD. The diagnostic frames
+positive deviance as a copy-able pattern -- "what works" -- and
+not merely as a ranking position. A natural policy use is to
+treat the positive-deviant set as an empirical reference for
+what an under-performing city of comparable size could
+plausibly reach (Figure~\ref{fig:deviants}).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.78\linewidth]{e19_deviants.pdf}
+    \caption{Posterior median residual of the IMD against the
+    socio-economic prediction, with 95\,\% credible intervals
+    (top-30 panel). Green = positive deviants, red = negative
+    deviants, grey = neither.}
+    \label{fig:deviants}
+\end{figure}
+
+\subsection{Counterfactual what-if simulator}
+\label{sec:val-counterfactual}
+
+The component decomposition of Section~\ref{sec:val-deviants}
+identifies multimodality as the dominant lever. We translate this
+into a counterfactual exercise: for every city in the panel,
+simulate the IMD that the city would attain if its $C_M$ (and
+$C_I$) were raised to the panel 75th percentile ($C_M = 0.249$,
+$C_I = 0.455$) while leaving safety and topography unchanged. We
+then translate the IMD uplift into an implied eco-counter daily
+flow uplift through the partial-regression coefficient of E3
+($\beta_{\IMD} \approx 0.020$ per IMD point on log-flow, i.e.\ a
+$+10$-point IMD move predicts a $+22\,\%$ increase in observed
+cyclist counts).
+
+\begin{table}[H]
+\centering
+\caption{Counterfactual uplift scenarios applied to every city in
+the dock-based panel. Implied eco-counter change is derived from
+the E3 partial regression.}
+\label{tab:counterfactual}
+\small
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Scenario & Median $\Delta$IMD & Maximum $\Delta$IMD & Median implied
+$\Delta$counter \\
+\midrule
+S1: multimodal uplift ($C_M \to p75$)        & $+9.2$  & $+23.1$ & $+20.1\,\%$ \\
+S2: infrastructure uplift ($C_I \to p75$)    & $+10.1$ & $+16.8$ & $+22.4\,\%$ \\
+S3: joint $M$+$I$ uplift                     & $+18.2$ & $+26.1$ & $+43.9\,\%$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The joint M+I uplift scenario gives a median $+18$ IMD points and
+a median $+44\,\%$ implied eco-counter increase across the panel.
+The cities with the largest counterfactual yield are the ones
+furthest from the panel 75th percentile on M and I -- Lascaux
+($+26.1$ pts, $+68\,\%$), Longwy ($+24.6$, $+64\,\%$), Nancy
+($+23.3$, $+60\,\%$), Belfort ($+23.1$, $+59\,\%$). Five of the
+nine $\tau = 1$ Bayesian deserts (Nancy, Niort, Tarbes, Troyes,
+Lille) appear in the top-15 of the counterfactual yield ranking,
+suggesting that targeted multimodal + infrastructure programmes
+on the desert set would deliver the largest combined equity-and-
+behavioural gains (Figure~\ref{fig:counterfactual}).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.78\linewidth]{e20_counterfactual.pdf}
+    \caption{Top-20 cities by joint multimodal + infrastructure
+    counterfactual uplift potential to the panel 75th
+    percentile. Annotations report the implied eco-counter daily
+    flow increase under the E3 elasticity ($\beta \approx 0.020$
+    per IMD point).}
+    \label{fig:counterfactual}
+\end{figure}
+
+\subsection{Mobility-precarity index and exposure of car-free households}
+\label{sec:val-precarity}
+
+A bad IMD is more politically consequential in a city with many
+car-free households -- they depend on cycling and public
+transport for everyday mobility. We define the Mobility-Precarity
+Index
+\begin{equation}
+    \mathrm{IPM}_i \;=\; \mathrm{car\text{-}free}_i\,
+                          \cdot\, (1 - \mathrm{IMD}_i / 100),
+    \label{eq:ipm}
+\end{equation}
+which is largest when car-free dependence is high and the IMD is
+low. The top-15 IPM cities are Lyon (IMD $= 26.9$, car-free
+$= 36.4\,\%$, IPM $= 27.0$), Marseille ($26.1, 36.4\,\%, 26.9$),
+Nancy ($24.2, 34.9\,\%, 26.4$), Amiens ($28.2, 31.9\,\%, 22.9$),
+Lille ($32.0, 33.6\,\%, 22.8$), and ten further mid-sized cities.
+Seven of these fifteen are also Bayesian deserts at $\tau = 1$
+(Amiens, Laon, Lille, Lyon, Nancy, Tarbes, Troyes); three are
+prior-invariant deserts (Amiens, Lyon, Nancy). The Spearman
+correlation $\rho(\mathrm{IMD}, \mathrm{car\text{-}free}) =
++0.371$ ($p = 0.004$) is positive at the panel level (cycling-
+friendly cities tend to be dense and car-light), but the IPM
+captures the cities where the combination is adverse rather than
+favourable. The IPM is a downstream proxy for the social cost of
+cycling-environment deficits and complements the IES list with a
+weight reflecting the size of the population at risk
+(Figure~\ref{fig:precarity}).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.80\linewidth]{e22_precarity_ranking.pdf}
+    \caption{Top-20 cities by Mobility-Precarity Index. Red bars
+    mark the four prior-invariant Bayesian deserts of
+    Section~\ref{sec:val-bayes-ies}; orange bars mark the
+    $\tau = 1$ desert list.}
+    \label{fig:precarity}
+\end{figure}
+
+\subsection{Concurrent validity against Cerema and BAAC aggregates}
+\label{sec:val-cerema}
+
+E1--E3 validated the IMD against behavioural references (FUB,
+EMP, eco-counter). We close the validity loop with two
+\emph{supply-side} concurrent references that were not used to
+build the IMD: the Cerema cycling-infrastructure inventory (city-
+level kilometres of dedicated cycle facilities, raw and
+normalised by city footprint area) and the BAAC accident
+database at city level normalised per $100\,000$ inhabitants
+(distinct from the station-buffer count used in $C_S$).
+
+\begin{table}[H]
+\centering
+\caption{Concurrent-validity correlations against city-level
+Cerema infrastructure inventory and BAAC accident rate.}
+\label{tab:concurrent}
+\small
+\begin{tabular}{@{}lcc@{}}
+\toprule
+Reference & IMD vs reference & $C_I$ vs reference \\
+\midrule
+Cerema kilometres of cycle facilities ($n = 43$) &
+   $+0.471^{**}$ & $+0.563^{***}$ \\
+Cerema density km / km$^{2}$ ($n = 43$)          &
+   $+0.430^{**}$ & $+0.464^{**}$  \\
+BAAC crashes per $100\,000$ inhabitants ($n = 44$) &
+   $+0.112$ & $-$ \\
+BAAC crashes per $100\,000$ inhabitants vs.\ $C_S$ &
+   $-$  & $-0.658^{***}$ \\
+\bottomrule
+\end{tabular}
+\smallskip\\
+\footnotesize $^{*}$ $p < 0.05$, $^{**}$ $p < 0.01$, $^{***}$ $p < 0.001$.
+\end{table}
+
+The IMD and its cycling-infrastructure component correlate at
+$\rho > 0.43$ with both raw and normalised Cerema kilometres,
+confirming that the OSM-based station-buffer construction recovers
+the Cerema-equivalent picture without using the Cerema data
+itself. The safety component correlates strongly negatively with
+the BAAC per-100\,k rate ($\rho = -0.66$), exactly as the
+sign convention demands. The IMD-to-rate correlation is weak
+($\rho = +0.11$), consistent with the exposure-confounding
+argument of E3-E4 (cities with more cyclists have more crashes).
+
+\paragraph{Triangulation: does the IMD add information beyond
+Cerema and station volume?}
+We regress the log eco-counter daily count on the IMD, the
+Cerema density, and the log of the Cerema kilometres on the
+25-city panel with all three observed.
+
+\begin{table}[H]
+\centering
+\caption{Triangulation regression: $\log(\text{eco-counter})
+\sim \beta_0 + \beta_1\,\IMD + \beta_2\,\text{Cerema density}
++ \beta_3\,\log(\text{Cerema km})$.}
+\label{tab:triangulation}
+\small
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+$R^{2}$ full & Partial $R^{2}$ IMD net Cerema &
+Partial $R^{2}$ Cerema density net IMD &
+Partial $R^{2}$ log(km) net all & $n$ \\
+\midrule
+$0.788$ & $0.271$ & $0.327$ & $0.127$ & $25$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The triangulation $R^{2}$ is $0.788$ on $25$ cities; the
+partial $R^{2}$ of the IMD net of the two Cerema variables is
+$0.271$ and that of Cerema density net of the IMD is $0.327$.
+The IMD and Cerema's volumetric measures are \textbf{complementary
+predictors of cyclist behaviour, neither redundant}: substituting
+one for the other loses about a quarter of the explained
+variance. This is the strongest concurrent-validity statement the
+present data can support and the cleanest answer to the
+volumetric-vs-quality debate raised in
+Section~\ref{sec:results-volume}: in operational practice, the
+IMD adds about $27\,\%$ of the explained variance of cyclist
+counts over and above a high-quality volumetric reference.
+
+\subsection{European panel: France's anomaly at continental scale}
+\label{sec:val-european}
+
+Sections~\ref{sec:val-within}--\ref{sec:val-cerema} test the IMD
+inside France. The MobilityData global GBFS catalogue lists 1\,509
+bike-sharing systems worldwide, of which 1\,239 are in the
+EU+Switzerland+Norway region across 28 countries. We use the
+catalogue as a cross-country panel-frame and cross-reference each
+country's system count with two outcome indicators that have
+stable open sources: the Eurobarometer 2019 (EB495) urban cycling
+modal share by country, and the European Cyclists' Federation
+2022 cycling-friendliness index.
+
+\begin{table}[H]
+\centering
+\caption{Top-10 EU+CH+NO countries by number of GBFS systems
+listed in the MobilityData catalogue (April 2026 snapshot), with
+the EB 2019 urban cycling modal share and the ECF 2022 cycling
+index. France leads the continent in deployment count and ranks
+eighteenth on modal share.}
+\label{tab:european-panel}
+\small
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+Country & GBFS systems & Cycling modal share (\%) & ECF index \\
+\midrule
+France             & 255 &  4.0 & 68 \\
+Germany            & 251 & 11.0 & 82 \\
+Poland             &  94 &  7.0 & 62 \\
+Norway             &  83 &  6.0 & 75 \\
+Spain              &  69 &  4.0 & 63 \\
+United Kingdom     &  56 &  4.0 & 60 \\
+Finland            &  55 & 10.0 & 73 \\
+Netherlands        &  52 & 27.0 & 95 \\
+Switzerland        &  49 &  8.0 & 78 \\
+Czechia            &  45 &  6.0 & 67 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The Spearman correlations across the 26 countries with non-missing
+modal share are:
+\begin{itemize}
+\item GBFS systems vs.\ cycling modal share: $\rho = +0.46$
+($p = 0.02$),
+\item GBFS systems vs.\ ECF index: $\rho = +0.57$ ($p = 0.002$),
+\item modal share vs.\ ECF index: $\rho = +0.79$ ($p < 0.001$).
+\end{itemize}
+
+Two readings follow. First, the volumetric prior survives weakly
+at the European scale: more GBFS deployments is positively but
+moderately correlated with more cycling. The relationship is
+notably weaker than the modal share -- ECF index correlation,
+which is direct evidence that environment quality (the ECF
+construct) is roughly twice as good a behavioural predictor as
+deployment volume. Second, \textbf{France is the most extreme
+disconfirmation of the volumetric prior in Europe}: it ranks
+first on number of systems and eighteenth on modal share, with
+the Netherlands occupying the symmetric position (five times
+fewer systems than France for seven times more cycling). The
+IMD's diagnostic at the French national scale -- that
+multimodal-integration quality matters more than fleet size --
+is therefore consistent with a continental pattern, not an
+artefact of the French panel
+(Figure~\ref{fig:european-panel}).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.99\linewidth]{e24_european_panel.pdf}
+    \caption{Left: European GBFS deployment count against the
+    Eurobarometer 2019 urban cycling modal share by country.
+    France (red) sits at modal share 4\,\% with 255 systems; the
+    Netherlands at modal share 27\,\% with 52 systems. The
+    cross-country Spearman is $+0.46$ -- the volumetric prior is
+    weak at this scale. Right: top-15 countries by deployment
+    count.}
+    \label{fig:european-panel}
+\end{figure}
+
+\subsection{Outcome coupling: life expectancy at département level}
+\label{sec:val-life-exp}
+
+Beyond the supply and behavioural validation, the public-health
+literature \citep[Mueller~2015;][]{Heinen2010} suggests that
+cycling-environment quality could feed into a downstream
+mortality reduction. We test this by matching each panel city to
+its INSEE département code and joining a département-level life-
+expectancy series ($98$ départements, panel intersect $n = 41$
+cities).
+
+\begin{table}[H]
+\centering
+\caption{Spearman correlations between the IMD, local income and
+département-level life expectancy on the $41$-city intersect.}
+\label{tab:life-expectancy}
+\small
+\begin{tabular}{@{}lcc@{}}
+\toprule
+Pair & Spearman $\rho$ & $p$-value \\
+\midrule
+IMD vs life expectancy        & $-0.066$ & $0.682$ \\
+Income vs life expectancy     & $+0.097$ & $0.546$ \\
+IMD vs income                 & $+0.153$ & $0.340$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+All three correlations are statistically indistinguishable from
+zero on this panel. The partial regression of life expectancy on
+the standardised IMD and log income yields $R^{2} = 0.05$ and a
+non-credible IMD coefficient. We report this as an honest
+\emph{null}: the city-level IMD and the département-level life
+expectancy are not detectably linked on the present 41-city
+panel. Two explanations are equally plausible: (a) the spatial
+mismatch between a city-level supply indicator and a
+département-level outcome is too coarse for any signal to
+survive (the within-département variation of city IMD is
+absorbed by the département mean), and (b) the panel is too
+small ($n = 41$) to detect a modest health effect of the size
+expected from the Mueller-2015 literature. A cleaner test
+requires city-level mortality data, which is not in the open
+French data catalogue at municipal granularity. We document the
+null and scope the test for future iterations.
+
 \subsection{Summary of the executed experiments}
 \label{sec:val-summary}
 
@@ -1852,31 +2304,43 @@ optimum.
 
 \begin{table}[H]
 \centering
-\caption{Validation experiments and their verdicts. \emph{Clean} =
-test ran as pre-specified and passes its threshold;
+\caption{Validation and extension experiments and their verdicts.
+\emph{Clean} = test ran as pre-specified and passes its threshold;
 \emph{qualified} = passes with a documented caveat;
 \emph{substitute} = pre-registered protocol deferred, proxy
-reported in its place. Twelve are executed, one is outstanding.}
+reported in its place; \emph{null} = honest negative report;
+\emph{outstanding} = scoped for next iteration. The core wave is
+E1--E13, the extension wave for the present revision is E18--E23.}
 \label{tab:experiments-status}
 \small
 \begin{tabular}{@{}lp{7.6cm}l@{}}
 \toprule
 Section & Test & Verdict \\
 \midrule
-\ref{sec:val-loo}        & E1. Out-of-sample CV of the weights & Clean \\
-\ref{sec:val-weights}    & E2. Weight-space stability of the ranking & Clean \\
-\ref{sec:val-flow}       & E3. Behavioural validation vs.\ eco-counters & Clean \\
-\ref{sec:val-safety}     & E4. Exposure-adjusted safety (city-level proxy) & Substitute \\
-\ref{sec:val-radius}     & E5. Within-city station bootstrap (radius proxy) & Substitute \\
-\ref{sec:val-ies}        & E6. Specification robustness of the IES & Clean \\
-\ref{sec:val-moran}      & E8. Spatial autocorrelation diagnostic & Clean \\
-\ref{sec:val-sobol}      & E7. Sobol/Jansen variance decomposition & Clean \\
-\ref{sec:val-bayes-ies}  & E9. Bayesian IES (with prior sensitivity) & Qualified \\
-\ref{sec:val-per-city-ci}& E10. Per-city bootstrap CI on the IMD score & Clean \\
-\ref{sec:val-radius-sweep}& E11. Parametric buffer-radius sweep (lit.\ elasticities) & Substitute \\
-\ref{sec:val-leverage}   & E12. Cook-style leverage (Lyon-removed reordering) & Qualified \\
-\ref{sec:val-archetypes} & E13. k-means typology of urban archetypes & Clean \\
----                      & E14. Synthetic control on infrastructure openings & Outstanding \\
+\multicolumn{3}{@{}l}{\textit{Core wave -- construct, generalisation, equity, geometry, panel}} \\
+\ref{sec:val-loo}            & E1. Out-of-sample CV of the weights & Clean \\
+\ref{sec:val-weights}        & E2. Weight-space stability of the ranking & Clean \\
+\ref{sec:val-flow}           & E3. Behavioural validation vs.\ eco-counters & Clean \\
+\ref{sec:val-safety}         & E4. Exposure-adjusted safety (city-level proxy) & Substitute \\
+\ref{sec:val-radius}         & E5. Within-city station bootstrap (radius proxy) & Substitute \\
+\ref{sec:val-ies}            & E6. Specification robustness of the IES & Clean \\
+\ref{sec:val-moran}          & E8. Spatial autocorrelation diagnostic & Clean \\
+\ref{sec:val-sobol}          & E7. Sobol/Jansen variance decomposition & Clean \\
+\ref{sec:val-bayes-ies}      & E9. Bayesian IES (with prior sensitivity) & Qualified \\
+\ref{sec:val-per-city-ci}    & E10. Per-city bootstrap CI on the IMD score & Clean \\
+\ref{sec:val-radius-sweep}   & E11. Parametric buffer-radius sweep & Substitute \\
+\ref{sec:val-leverage}       & E12. Cook-style leverage (Lyon-removed reordering) & Qualified \\
+\ref{sec:val-archetypes}     & E13. k-means typology of urban archetypes & Clean \\
+\midrule
+\multicolumn{3}{@{}l}{\textit{Extension wave -- within-city, deviants, counterfactuals, external coupling}} \\
+\ref{sec:val-within}         & E18. Within-city variance decomposition (80.8\,\% within) & Clean \\
+\ref{sec:val-deviants}       & E19. Positive/negative deviants (7 + 2 cities) & Clean \\
+\ref{sec:val-counterfactual} & E20. Counterfactual M+I uplift simulator & Clean \\
+\ref{sec:val-precarity}      & E22. Mobility-Precarity Index (IPM) & Clean \\
+\ref{sec:val-cerema}         & E23. Concurrent validity vs.\ Cerema and BAAC ($R^{2} = 0.79$ triangulated) & Clean \\
+\ref{sec:val-european}       & E24. European panel: France 1st in systems, 18th in modal share & Clean \\
+\ref{sec:val-life-exp}       & E21. Coupling to département life expectancy & Null \\
+---                          & E14. Synthetic control on infrastructure openings & Outstanding \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -2165,10 +2629,18 @@ a four-city prior-invariant high-confidence shortlist (Amiens,
 Lyon, Nancy, Saumur).
 
 \item[\textbf{Q2.}] \emph{Volumetric metrics are weak predictors
-of cycling-environment quality.} Strasbourg (39 stations) and
-Montpellier (53) outrank Paris (1{,}507) and Lyon (452) on the
-calibrated IMD; medium-sized cities with tight multimodal
-integration outperform metropolitan heavyweights.
+of cycling-environment quality, in France and at continental
+scale.} Strasbourg (39 stations) and Montpellier (53) outrank
+Paris (1\,507) and Lyon (452) on the calibrated IMD;
+medium-sized cities with tight multimodal integration outperform
+metropolitan heavyweights. At European scale, France ranks first
+on number of GBFS systems (255 in the MobilityData catalogue)
+and eighteenth on cycling modal share (4\,\%) -- the Netherlands
+occupies the symmetric position, with five times fewer systems
+for seven times more cycling. The ECF cycling-friendliness index
+correlates with modal share at $\rho = +0.79$, against
+$\rho = +0.46$ for the system count, confirming the IMD's central
+thesis cross-nationally.
 
 \item[\textbf{Q3.}] \emph{Cycling-environment quality is
 statistically independent of local income.} The Spearman

@@ -7,17 +7,16 @@ income, and spatial equity in French bike-sharing systems*.
 
 ```
 overleaf/
-├── main.tex          — paper source (39 pages, 13-experiment programme)
+├── main.tex          — paper source (46 pages, 19 experiments)
 ├── references.bib    — bibliography (66 entries)
 ├── main.pdf          — pre-compiled PDF for sanity check
-├── figures/          — all 17 figures referenced by main.tex
+├── figures/          — all 24 figures referenced by main.tex
 └── README.md         — this file
 ```
 
 ## Build
 
-Set the compiler to **pdfLaTeX** and the bibliography to **BibTeX** in
-Overleaf, then click *Recompile*. The build sequence is the standard
+pdfLaTeX + BibTeX, standard 4-pass:
 
 ```
 pdflatex main
@@ -26,46 +25,45 @@ pdflatex main
 pdflatex main
 ```
 
-## What changed in this version
+## Most striking results
 
-- **Lyon-removed weight vector** added to Table 2 alongside the
-  in-sample optimum, with the Top-10 reordering quantified
-  (Kendall τ = 0.83, 9/10 overlap).
-- **Bayesian IES prior sensitivity** sweep over τ ∈ {0.1, 1, 10}:
-  reports four prior-invariant high-confidence deserts (Amiens,
-  Lyon, Nancy, Saumur) alongside the nine-city τ = 1 reference list.
-- **Montpellier case study** quantified: 83 % of stations have
-  ≥ 1 heavy GTFS stop within 300 m, 95th-percentile mean.
-- **E17 pseudo-flow** demoted to methodological probe with four
-  documented interpretations of the negative correlation.
-- **Honest scorecard labels**: seven clean / two qualified / three
-  substitutes for deferred pre-registered protocols.
+- **France ranks #1 in Europe for GBFS deployments (255 systems) but
+  #18 for cycling modal share (4 %)**, with the Netherlands at the
+  symmetric position. Cross-country ρ(modal share, ECF index) = +0.79,
+  vs ρ(N systems, modal share) = +0.46 — confirming the IMD's central
+  thesis at continental scale.
+- **80.8 % of the IMD variance is *within* cities**, not between them.
+  The Paris within-city spread (17.5–83.1) is wider than the
+  inter-city dispersion of the panel mean.
+- **Seven positive-deviant cities** share a single signature:
+  multimodality = 4× the panel mean. Lyon and Saumur are negative
+  deviants.
+- **Counterfactual joint M+I uplift** → +18 IMD points median across
+  the panel, implying a +44 % eco-counter increase under the E3
+  elasticity.
+- **Concurrent validity triangulated**: $R^2 = 0.79$ on 25 cities
+  with IMD + Cerema km/km² + log(Cerema km), with neither variable
+  redundant.
 
-## Figure inventory
+## Figure inventory (24 figures)
 
-| File | Source experiment | Description |
-|---|---|---|
-| fig01_weights.pdf | -- | Calibrated IMD weights (softmax optimum) |
-| fig02_volume_vs_imd.pdf | -- | Raw station count vs IMD |
-| fig03_imd_vs_income.pdf | -- | IMD vs median income per consumption unit |
-| fig04_equity_quadrant.pdf | -- | Median-split equity quadrants |
-| fig05_top10_components.pdf | -- | Top-10 component decomposition |
-| fig06_ies_ranking.pdf | -- | Spatial Equity Index ranking |
-| e2b_top10_freq_loo.pdf | E2 | Top-10 retention under LOO bootstrap |
-| e7_sobol_panel.pdf | E7 | Saltelli/Jansen variance decomposition |
-| e9_desert_posterior.pdf | E9 | Bayesian IES desert probabilities |
-| e10_imd_ci.pdf | E10 | Per-city bootstrap 95% CI on IMD score |
-| e11_radius_sweep.pdf | E11 | Parametric buffer-radius sweep |
-| e12_leverage.pdf | E12 | Cook-style calibration leverage |
-| e13_archetypes.pdf | E13 | k-means typology at k=4 |
-| e15_predictive_power.pdf | E15 | Metric tournament LOO predictive power |
-| e16_components_vs_fub.pdf | E16 | FUB well-being decomposition by IMD component |
-| e17_pseudo_flow_vs_imd.pdf | E17 | GBFS pseudo-flow vs IMD |
-| summary_scorecard.pdf | -- | Validation scorecard (clean/qualified/substitute) |
+Core (6) :
+fig01_weights · fig02_volume_vs_imd · fig03_imd_vs_income ·
+fig04_equity_quadrant · fig05_top10_components · fig06_ies_ranking
+
+Validation core (8) :
+e2b_top10_freq_loo · e7_sobol_panel · e9_desert_posterior ·
+e10_imd_ci · e11_radius_sweep · e12_leverage · e13_archetypes ·
+summary_scorecard
+
+Validation extension (6) :
+e15_predictive_power · e16_components_vs_fub · e17_pseudo_flow_vs_imd ·
+e18_within_vs_between · e19_deviants · e20_counterfactual
+
+Extension wave new (4) :
+e21_imd_vs_life_expectancy · e22_precarity_ranking ·
+e23_concurrent_validity · e24_european_panel
 
 ## Companion repository
 
-Full data, code and experiment scripts are released at
-<https://github.com/rohanfosse/bikeshare-data-explorer>.
-The experiment scripts that generate the figures above live under
-`papers/02_imd/experiments/`.
+<https://github.com/rohanfosse/bikeshare-data-explorer>

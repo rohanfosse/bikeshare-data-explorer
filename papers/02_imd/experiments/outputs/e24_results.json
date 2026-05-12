@@ -1,0 +1,217 @@
+{
+  "n_total_global": 1509,
+  "n_total_eu": 1239,
+  "n_countries": 27,
+  "by_country": [
+    {
+      "Country Code": "FR",
+      "n_systems": 255,
+      "country": "France",
+      "modal_share_pct": 4.0,
+      "ecf_index": 68.0
+    },
+    {
+      "Country Code": "DE",
+      "n_systems": 251,
+      "country": "Germany",
+      "modal_share_pct": 11.0,
+      "ecf_index": 82.0
+    },
+    {
+      "Country Code": "PL",
+      "n_systems": 94,
+      "country": "Poland",
+      "modal_share_pct": 7.0,
+      "ecf_index": 62.0
+    },
+    {
+      "Country Code": "NO",
+      "n_systems": 83,
+      "country": "Norway",
+      "modal_share_pct": 6.0,
+      "ecf_index": 75.0
+    },
+    {
+      "Country Code": "ES",
+      "n_systems": 69,
+      "country": "Spain",
+      "modal_share_pct": 4.0,
+      "ecf_index": 63.0
+    },
+    {
+      "Country Code": "GB",
+      "n_systems": 56,
+      "country": "United Kingdom",
+      "modal_share_pct": 4.0,
+      "ecf_index": 60.0
+    },
+    {
+      "Country Code": "FI",
+      "n_systems": 55,
+      "country": "Finland",
+      "modal_share_pct": 10.0,
+      "ecf_index": 73.0
+    },
+    {
+      "Country Code": "NL",
+      "n_systems": 52,
+      "country": "Netherlands",
+      "modal_share_pct": 27.0,
+      "ecf_index": 95.0
+    },
+    {
+      "Country Code": "CH",
+      "n_systems": 49,
+      "country": "Switzerland",
+      "modal_share_pct": 8.0,
+      "ecf_index": 78.0
+    },
+    {
+      "Country Code": "CZ",
+      "n_systems": 45,
+      "country": "Czechia",
+      "modal_share_pct": 6.0,
+      "ecf_index": 67.0
+    },
+    {
+      "Country Code": "BE",
+      "n_systems": 37,
+      "country": "Belgium",
+      "modal_share_pct": 9.0,
+      "ecf_index": 78.0
+    },
+    {
+      "Country Code": "IT",
+      "n_systems": 34,
+      "country": "Italy",
+      "modal_share_pct": 6.0,
+      "ecf_index": 64.0
+    },
+    {
+      "Country Code": "AT",
+      "n_systems": 27,
+      "country": "Austria",
+      "modal_share_pct": 6.0,
+      "ecf_index": 75.0
+    },
+    {
+      "Country Code": "SE",
+      "n_systems": 23,
+      "country": "Sweden",
+      "modal_share_pct": 8.0,
+      "ecf_index": 72.0
+    },
+    {
+      "Country Code": "HR",
+      "n_systems": 21,
+      "country": "Croatia",
+      "modal_share_pct": 4.0,
+      "ecf_index": 55.0
+    },
+    {
+      "Country Code": "SK",
+      "n_systems": 19,
+      "country": "Slovakia",
+      "modal_share_pct": 5.0,
+      "ecf_index": 58.0
+    },
+    {
+      "Country Code": "DK",
+      "n_systems": 19,
+      "country": "Denmark",
+      "modal_share_pct": 23.0,
+      "ecf_index": 90.0
+    },
+    {
+      "Country Code": "RO",
+      "n_systems": 12,
+      "country": "Romania",
+      "modal_share_pct": 5.0,
+      "ecf_index": 45.0
+    },
+    {
+      "Country Code": "HU",
+      "n_systems": 9,
+      "country": "Hungary",
+      "modal_share_pct": 7.0,
+      "ecf_index": 66.0
+    },
+    {
+      "Country Code": "PT",
+      "n_systems": 8,
+      "country": "Portugal",
+      "modal_share_pct": 3.0,
+      "ecf_index": 58.0
+    },
+    {
+      "Country Code": "SI",
+      "n_systems": 7,
+      "country": "Slovenia",
+      "modal_share_pct": 5.0,
+      "ecf_index": 60.0
+    },
+    {
+      "Country Code": "GR",
+      "n_systems": 6,
+      "country": "Greece",
+      "modal_share_pct": 2.0,
+      "ecf_index": 50.0
+    },
+    {
+      "Country Code": "IE",
+      "n_systems": 4,
+      "country": "Ireland",
+      "modal_share_pct": 3.0,
+      "ecf_index": 55.0
+    },
+    {
+      "Country Code": "CY",
+      "n_systems": 1,
+      "country": "Cyprus",
+      "modal_share_pct": NaN,
+      "ecf_index": NaN
+    },
+    {
+      "Country Code": "LV",
+      "n_systems": 1,
+      "country": "Latvia",
+      "modal_share_pct": 4.0,
+      "ecf_index": 55.0
+    },
+    {
+      "Country Code": "LT",
+      "n_systems": 1,
+      "country": "Lithuania",
+      "modal_share_pct": 5.0,
+      "ecf_index": 55.0
+    },
+    {
+      "Country Code": "LU",
+      "n_systems": 1,
+      "country": "Luxembourg",
+      "modal_share_pct": 3.0,
+      "ecf_index": 65.0
+    }
+  ],
+  "cross_country": {
+    "n_with_modal": 26,
+    "spearman_n_systems_vs_modal_share": {
+      "rho": 0.4609530627367929,
+      "p": 0.017787706069707095
+    },
+    "spearman_n_systems_vs_ecf": {
+      "rho": 0.574344707458636,
+      "p": 0.002151576270042636
+    },
+    "spearman_modal_vs_ecf": {
+      "rho": 0.7861950815966926,
+      "p": 1.928995317722035e-06
+    }
+  },
+  "france_position": {
+    "n_systems": 255,
+    "rank_systems": 1,
+    "modal_share_pct": 4.0,
+    "rank_modal": 18
+  }
+}

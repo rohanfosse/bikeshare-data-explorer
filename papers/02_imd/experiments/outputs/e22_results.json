@@ -1,0 +1,489 @@
+{
+  "ipm_distribution": {
+    "median": 13.060589563873636,
+    "p25": 9.284008779970243,
+    "p75": 15.828083786396117,
+    "max": 27.027591752053926
+  },
+  "top_15_precarity": [
+    {
+      "city": "Lyon",
+      "IMD": 26.907207013292712,
+      "part_menages_voit0": 36.977095343680716,
+      "IPM": 27.027591752053926,
+      "IPM_q": "Q4_high"
+    },
+    {
+      "city": "Marseille",
+      "IMD": 26.060009360480187,
+      "part_menages_voit0": 36.44859090909091,
+      "IPM": 26.95008470641869,
+      "IPM_q": "Q4_high"
+    },
+    {
+      "city": "Nancy",
+      "IMD": 24.238670690737607,
+      "part_menages_voit0": 34.89594594594595,
+      "IPM": 26.437632523690308,
+      "IPM_q": "Q4_high"
+    },
+    {
+      "city": "Amiens",
+      "IMD": 28.21261251863826,
+      "part_menages_voit0": 31.872,
+      "IPM": 22.880076138059614,
+      "IPM_q": "Q4_high"
+    },
+    {
+      "city": "Lille",
+      "IMD": 31.999613069572717,
+      "part_menages_voit0": 33.554402985074624,
+      "IPM": 22.817123862045587,
+      "IPM_q": "Q4_high"
+    },
+    {
+      "city": "Valenciennes",
+      "IMD": 30.88834842942294,
+      "part_menages_voit0": 28.621764705882352,
+      "IPM": 19.780974296879812,
+      "IPM_q": "Q4_high"
+    },
+    {
+      "city": "Rouen",
+      "IMD": 38.45754178659444,
+      "part_menages_voit0": 31.80580152671756,
+      "IPM": 19.57407211401886,
+      "IPM_q": "Q4_high"
+    },
+    {
+      "city": "Laon",
+      "IMD": 17.234795128317586,
+      "part_menages_voit0": 23.29105263157895,
+      "IPM": 19.276887427297698,
+      "IPM_q": "Q4_high"
+    },
+    {
+      "city": "Troyes",
+      "IMD": 26.947594914120394,
+      "part_menages_voit0": 25.726000000000003,
+      "IPM": 18.79346173239339,
+      "IPM_q": "Q4_high"
+    },
+    {
+      "city": "Tarbes",
+      "IMD": 25.823284203215955,
+      "part_menages_voit0": 23.241666666666664,
+      "IPM": 17.239905029769222,
+      "IPM_q": "Q4_high"
+    },
+    {
+      "city": "Clermont-Ferrand",
+      "IMD": 30.47903703365148,
+      "part_menages_voit0": 24.473048780487805,
+      "IPM": 17.013899179419337,
+      "IPM_q": "Q4_high"
+    },
+    {
+      "city": "Paris",
+      "IMD": 70.6455711575003,
+      "part_menages_voit0": 57.93941450432469,
+      "IPM": 17.00778420243294,
+      "IPM_q": "Q4_high"
+    },
+    {
+      "city": "Vichy",
+      "IMD": 30.29128691442266,
+      "part_menages_voit0": 23.877142857142854,
+      "IPM": 16.644449007319135,
+      "IPM_q": "Q4_high"
+    },
+    {
+      "city": "Carcassonne",
+      "IMD": 24.67598026041953,
+      "part_menages_voit0": 21.47,
+      "IPM": 16.172067038087928,
+      "IPM_q": "Q4_high"
+    },
+    {
+      "city": "Toulouse",
+      "IMD": 46.115599335727936,
+      "part_menages_voit0": 29.524919168591225,
+      "IPM": 15.909325740606162,
+      "IPM_q": "Q4_high"
+    }
+  ],
+  "spearman_imd_carfree": {
+    "rho": 0.3708357685563999,
+    "p": 0.0038357442368058127
+  },
+  "overlap_top15_with_desert_invariant": [
+    "Amiens",
+    "Lyon",
+    "Nancy"
+  ],
+  "overlap_top15_with_desert_tau1": [
+    "Amiens",
+    "Laon",
+    "Lille",
+    "Lyon",
+    "Nancy",
+    "Tarbes",
+    "Troyes"
+  ],
+  "all_cities": [
+    {
+      "city": "Strasbourg",
+      "IMD": 96.74571258738621,
+      "part_menages_voit0": 28.72128205128205,
+      "IPM": 0.9346730665361748
+    },
+    {
+      "city": "Montpellier",
+      "IMD": 88.29777782564966,
+      "part_menages_voit0": 30.711698113207547,
+      "IPM": 3.5939511467233087
+    },
+    {
+      "city": "Nantes",
+      "IMD": 83.02491329230122,
+      "part_menages_voit0": 28.497096774193547,
+      "IPM": 4.837406886596187
+    },
+    {
+      "city": "Mulhouse",
+      "IMD": 77.80156877634691,
+      "part_menages_voit0": 27.679,
+      "IPM": 6.1443037783949395
+    },
+    {
+      "city": "Paris",
+      "IMD": 70.6455711575003,
+      "part_menages_voit0": 57.93941450432469,
+      "IPM": 17.00778420243294
+    },
+    {
+      "city": "Caen",
+      "IMD": 64.5070722717407,
+      "part_menages_voit0": 23.6176,
+      "IPM": 8.382577699149369
+    },
+    {
+      "city": "Brest",
+      "IMD": 62.808893109598976,
+      "part_menages_voit0": 24.39095652173913,
+      "IPM": 9.07126671159124
+    },
+    {
+      "city": "Bordeaux",
+      "IMD": 56.945577292493645,
+      "part_menages_voit0": 31.290222222222223,
+      "IPM": 13.471824541673644
+    },
+    {
+      "city": "Dijon",
+      "IMD": 50.21660250496376,
+      "part_menages_voit0": 29.48,
+      "IPM": 14.676145581536684
+    },
+    {
+      "city": "Rennes",
+      "IMD": 48.757429768349915,
+      "part_menages_voit0": 30.730000000000004,
+      "IPM": 15.746841832186073
+    },
+    {
+      "city": "Saint-Nazaire",
+      "IMD": 48.336899827140286,
+      "part_menages_voit0": 12.704,
+      "IPM": 6.563280245960098
+    },
+    {
+      "city": "Besan\u00e7on",
+      "IMD": 47.3235023498278,
+      "part_menages_voit0": 27.89,
+      "IPM": 14.691475194633025
+    },
+    {
+      "city": "Toulouse",
+      "IMD": 46.115599335727936,
+      "part_menages_voit0": 29.524919168591225,
+      "IPM": 15.909325740606162
+    },
+    {
+      "city": "Cergy-Pontoise",
+      "IMD": 42.56969326501701,
+      "part_menages_voit0": 25.39888888888889,
+      "IPM": 14.586659796166405
+    },
+    {
+      "city": "Soissons",
+      "IMD": 41.39488539885116,
+      "part_menages_voit0": 22.151785714285715,
+      "IPM": 12.982079404058059
+    },
+    {
+      "city": "Auray",
+      "IMD": 38.61031639347624,
+      "part_menages_voit0": 13.483636363636363,
+      "IPM": 8.277561702290548
+    },
+    {
+      "city": "Rouen",
+      "IMD": 38.45754178659444,
+      "part_menages_voit0": 31.80580152671756,
+      "IPM": 19.57407211401886
+    },
+    {
+      "city": "Belfort",
+      "IMD": 37.824258822380436,
+      "part_menages_voit0": 22.625,
+      "IPM": 14.067261441436427
+    },
+    {
+      "city": "Bourg-en-Bresse",
+      "IMD": 37.24959470824737,
+      "part_menages_voit0": 19.33177777777778,
+      "IPM": 12.130768905656526
+    },
+    {
+      "city": "Saint-\u00c9tienne",
+      "IMD": 37.203062075319856,
+      "part_menages_voit0": 24.359896907216495,
+      "IPM": 15.297269339340822
+    },
+    {
+      "city": "Les Sables-d'Olonne",
+      "IMD": 37.05708775903346,
+      "part_menages_voit0": 14.46,
+      "IPM": 9.101545110043762
+    },
+    {
+      "city": "Argel\u00e8s-sur-Mer",
+      "IMD": 36.917932085444974,
+      "part_menages_voit0": 14.37,
+      "IPM": 9.064893159321555
+    },
+    {
+      "city": "La Baule",
+      "IMD": 36.497711914146855,
+      "part_menages_voit0": 12.48,
+      "IPM": 7.925085553114473
+    },
+    {
+      "city": "Cholet",
+      "IMD": 34.779390342624815,
+      "part_menages_voit0": 14.72,
+      "IPM": 9.600473741565628
+    },
+    {
+      "city": "Agen",
+      "IMD": 34.60807199302726,
+      "part_menages_voit0": 21.00125,
+      "IPM": 13.733122280564361
+    },
+    {
+      "city": "Avignon",
+      "IMD": 33.85633932717585,
+      "part_menages_voit0": 22.46034482758621,
+      "IPM": 14.856094268704831
+    },
+    {
+      "city": "Saint-Brieuc",
+      "IMD": 33.635215630723394,
+      "part_menages_voit0": 19.68,
+      "IPM": 13.060589563873636
+    },
+    {
+      "city": "Lille",
+      "IMD": 31.999613069572717,
+      "part_menages_voit0": 33.554402985074624,
+      "IPM": 22.817123862045587
+    },
+    {
+      "city": "La Roche-sur-Yon",
+      "IMD": 31.975934326778955,
+      "part_menages_voit0": 16.03,
+      "IPM": 10.904257727417335
+    },
+    {
+      "city": "Valence",
+      "IMD": 31.210440276345285,
+      "part_menages_voit0": 18.822794117647057,
+      "IPM": 12.948117201219388
+    },
+    {
+      "city": "Valenciennes",
+      "IMD": 30.88834842942294,
+      "part_menages_voit0": 28.621764705882352,
+      "IPM": 19.780974296879812
+    },
+    {
+      "city": "Clermont-Ferrand",
+      "IMD": 30.47903703365148,
+      "part_menages_voit0": 24.473048780487805,
+      "IPM": 17.013899179419337
+    },
+    {
+      "city": "Ch\u00e2tellerault",
+      "IMD": 30.43617203815703,
+      "part_menages_voit0": 13.405384615384616,
+      "IPM": 9.32529869146952
+    },
+    {
+      "city": "Vichy",
+      "IMD": 30.29128691442266,
+      "part_menages_voit0": 23.877142857142854,
+      "IPM": 16.644449007319135
+    },
+    {
+      "city": "Ardenne M\u00e9tropole",
+      "IMD": 30.281754024999262,
+      "part_menages_voit0": 21.121176470588235,
+      "IPM": 14.725313764578685
+    },
+    {
+      "city": "Montreuil-Bellay",
+      "IMD": 30.075600694136995,
+      "part_menages_voit0": 13.413333333333334,
+      "IPM": 9.379192760226426
+    },
+    {
+      "city": "Landerneau",
+      "IMD": 29.525463801141015,
+      "part_menages_voit0": 11.56,
+      "IPM": 8.1468563845881
+    },
+    {
+      "city": "Pau",
+      "IMD": 28.714771859735233,
+      "part_menages_voit0": 17.80325,
+      "IPM": 12.691087378881686
+    },
+    {
+      "city": "Royan",
+      "IMD": 28.57860336295005,
+      "part_menages_voit0": 14.31125,
+      "IPM": 10.22129462621981
+    },
+    {
+      "city": "Calais",
+      "IMD": 28.44328220949881,
+      "part_menages_voit0": 21.20820224719101,
+      "IPM": 15.175893430461203
+    },
+    {
+      "city": "Louviers",
+      "IMD": 28.36084597112429,
+      "part_menages_voit0": 14.56923076923077,
+      "IPM": 10.437273671591585
+    },
+    {
+      "city": "Amiens",
+      "IMD": 28.21261251863826,
+      "part_menages_voit0": 31.872,
+      "IPM": 22.880076138059614
+    },
+    {
+      "city": "Cherbourg-en-Cotentin",
+      "IMD": 27.972252903608325,
+      "part_menages_voit0": 19.06530612244898,
+      "IPM": 13.732310477030431
+    },
+    {
+      "city": "Libourne",
+      "IMD": 27.176352659950652,
+      "part_menages_voit0": 13.811076923076923,
+      "IPM": 10.057729952324477
+    },
+    {
+      "city": "Troyes",
+      "IMD": 26.947594914120394,
+      "part_menages_voit0": 25.726000000000003,
+      "IPM": 18.79346173239339
+    },
+    {
+      "city": "Lyon",
+      "IMD": 26.907207013292712,
+      "part_menages_voit0": 36.977095343680716,
+      "IPM": 27.027591752053926
+    },
+    {
+      "city": "Marseille",
+      "IMD": 26.060009360480187,
+      "part_menages_voit0": 36.44859090909091,
+      "IPM": 26.95008470641869
+    },
+    {
+      "city": "Tarbes",
+      "IMD": 25.823284203215955,
+      "part_menages_voit0": 23.241666666666664,
+      "IPM": 17.239905029769222
+    },
+    {
+      "city": "Niort",
+      "IMD": 25.65931823884171,
+      "part_menages_voit0": 16.093333333333334,
+      "IPM": 11.963893718095742
+    },
+    {
+      "city": "Brive-la-Gaillarde",
+      "IMD": 25.140603906080354,
+      "part_menages_voit0": 17.338846153846156,
+      "IPM": 12.979755520423046
+    },
+    {
+      "city": "Auxerre",
+      "IMD": 24.818158754451165,
+      "part_menages_voit0": 12.293818181818184,
+      "IPM": 9.242718868470964
+    },
+    {
+      "city": "Carcassonne",
+      "IMD": 24.67598026041953,
+      "part_menages_voit0": 21.47,
+      "IPM": 16.172067038087928
+    },
+    {
+      "city": "\u00c9pinal",
+      "IMD": 24.672026073065368,
+      "part_menages_voit0": 17.469428571428573,
+      "IPM": 13.159366599470184
+    },
+    {
+      "city": "Saumur",
+      "IMD": 24.668073530259694,
+      "part_menages_voit0": 20.89,
+      "IPM": 15.736839439528751
+    },
+    {
+      "city": "Nancy",
+      "IMD": 24.238670690737607,
+      "part_menages_voit0": 34.89594594594595,
+      "IPM": 26.437632523690308
+    },
+    {
+      "city": "Longwy",
+      "IMD": 23.49447543820532,
+      "part_menages_voit0": 13.395263157894737,
+      "IPM": 10.248116345380192
+    },
+    {
+      "city": "Annecy",
+      "IMD": 22.813291724107486,
+      "part_menages_voit0": 9.297625,
+      "IPM": 7.176530685336451
+    },
+    {
+      "city": "Lascaux",
+      "IMD": 22.202685688920408,
+      "part_menages_voit0": 10.703999999999999,
+      "IPM": 8.327424523857959
+    },
+    {
+      "city": "Laon",
+      "IMD": 17.234795128317586,
+      "part_menages_voit0": 23.29105263157895,
+      "IPM": 19.276887427297698
+    }
+  ]
+}
