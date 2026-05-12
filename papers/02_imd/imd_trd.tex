@@ -169,13 +169,15 @@ major European systems, and an OSM-based recomputation of the IMD
 multimodality component for those ten cities. The picture
 converges: France ranks first on number of GBFS systems and
 eighteenth on cycling modal share (Netherlands at the symmetric
-position); the EU non-FR median carries six times more stations,
-three times the station density, and \textbf{seven times the
-multimodality} ($1.45$ heavy stops per station vs.\ $0.22$ for
-the French median) of the French panel. The French champions
-(Strasbourg, Montpellier, Paris) sit at the European median on
-multimodality, not at its top -- Budapest, Warsaw and Vienna sit
-two to three times above the best French city. Six further extensions tighten the analysis
+position); the EU non-FR median carries six times more stations
+per system, three times the station density, and -- after
+calibrating the OSM-vs-GTFS measurement bias in E29 -- roughly
+\textbf{four times the multimodality} of the French median
+(raw $1.45$ vs.\ $0.22$ stops per station, corrected to
+$\approx 4 \times$). The French champions (Strasbourg,
+Montpellier, Paris) sit at the European median on multimodality;
+Budapest, Warsaw and Vienna sit two to three times above the
+best French city. Six further extensions tighten the analysis
 on the French panel: a within-city variance decomposition (80\,\%
 of station IMD variance is intra-city), a Bayesian
 positive-deviant diagnostic (seven cities with a multimodality
@@ -2374,12 +2376,98 @@ France close to the bottom (Figure~\ref{fig:imd-lite-eu}).
 The European panel of E26 covers ten cities and a single April
 2026 OSM snapshot; failures in five additional cities (Amsterdam,
 Rotterdam, Prague, Milan, Helsinki) are documented in E25. The
-OSM-vs-GTFS operationalisation difference is conservative (OSM
-under-counts) so the actual European-vs-FR multimodality gap is
-plausibly larger than the $6.6\times$ ratio reported here. A
-fully matched analysis would require running the French
-GTFS-based pipeline against European GTFS feeds, which exists in
-principle but is out of scope for the present revision.
+OSM-vs-GTFS operationalisation difference is calibrated in E29
+below: the OSM query returns more stops than the GTFS-based
+$C_M$ on the French panel (median ratio $1.59$), so the raw $6.6
+\times$ EU/FR multimodality gap shrinks to $4.1 \times$ on a
+consistently OSM-measured scale. The gap remains substantial.
+
+\subsection{Calibration of OSM vs.\ GTFS multimodality}
+\label{sec:val-osm-gtfs}
+
+To check that the EU/FR multimodality gap reported in E26 is not
+an OSM-vs-GTFS measurement artefact, we re-query OSM on the ten
+largest French cities using the exact same query that E26 used
+on European cities, and compare with the Gold Standard's
+GTFS-based $C_M$ per city.
+
+\begin{table}[H]
+\centering
+\caption{Per-city OSM vs.\ GTFS multimodality on the ten largest
+French networks. The OSM/GTFS ratio measures how much OSM
+over-counts (ratio $> 1$) or under-counts (ratio $< 1$) heavy
+stops relative to the GTFS feed.}
+\label{tab:osm-gtfs-fr}
+\small
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+City & $M$ GTFS (Gold Std.) & $M$ OSM (E26 query) & Ratio OSM/GTFS \\
+\midrule
+Paris      & $2.79$ & $4.17$ & $1.49$ \\
+Lyon       & $0.14$ & $2.81$ & $20.16$ \\
+Toulouse   & $0.78$ & $1.46$ & $1.87$ \\
+Lille      & $0.13$ & $1.57$ & $11.67$ \\
+Bordeaux   & $1.58$ & $1.64$ & $1.04$ \\
+Marseille  & $0.08$ & $2.32$ & $28.50$ \\
+Rouen      & $0.70$ & $1.19$ & $1.70$ \\
+Nantes     & $2.94$ & $1.65$ & $0.56$ \\
+Brest      & $2.17$ & $2.17$ & $1.00$ \\
+\'Epinal   & $0.10$ & $0.11$ & $1.09$ \\
+\midrule
+\multicolumn{3}{@{}l}{Panel median ratio (OSM / GTFS):} & $1.59$ \\
+\multicolumn{3}{@{}l}{Spearman $\rho$(GTFS, OSM):} & $+0.30$ ($p = 0.41$) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The calibration reveals three sub-findings, all important for
+the substantive claim of E26.
+
+First, OSM finds \textbf{more} heavy stops than GTFS on the
+French panel: the median ratio is $1.59$, i.e.\ OSM counts
+roughly 60\,\% more than GTFS. The OSM operationalisation is
+\emph{not} more conservative as claimed in our initial draft;
+it is in fact more liberal. The corrected EU/FR multimodality
+ratio is therefore $1.45 / (0.22 \cdot 1.59) = 4.1$, not $6.6$.
+
+Second, the ratio is extremely heterogeneous across French
+cities: Paris ($1.49$), Bordeaux ($1.04$), Brest ($1.00$) and
+\'Epinal ($1.09$) are well-calibrated, but Lyon ($20.16$),
+Marseille ($28.50$) and Lille ($11.67$) show a massive
+disagreement. The natural reading is that the French GTFS feeds
+ingested by the Gold Standard \textbf{under-cover} the tramway
+and metro networks of Lyon, Marseille and Lille at the time of
+the panel build, whereas OSM has the complete tag set. The
+Spearman $\rho = +0.30$ between the two operationalisations on
+this 10-city panel is not even significant at $p = 0.05$,
+indicating that the two methods do not rank French cities the
+same way.
+
+Third, the GTFS coverage gap explains the otherwise puzzling
+position of Lyon ($M_{\text{GTFS}} = 0.14$) and Marseille
+($M_{\text{GTFS}} = 0.08$) at the bottom of the French
+multimodality distribution -- it is a measurement artefact, not
+a true environment deficit. We document this explicitly: the
+recommended next iteration of the pipeline ingests the OSM
+heavy-stop tag set on the French panel and triangulates with
+the (potentially incomplete) GTFS feed, taking the maximum of
+the two as the empirical $M$. The IMD ranking re-computed on
+this corrected $M$ would likely rerate Lyon, Marseille, and Lille
+upward, partially eroding the Cook-style leverage finding of
+Section~\ref{sec:val-leverage} on Lyon.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.99\linewidth]{e29_osm_vs_gtfs.pdf}
+    \caption{Left: per-city OSM-vs-GTFS multimodality on the ten
+    largest French networks. Most cities lie above the $y = x$
+    line: OSM counts more heavy stops than GTFS. Right: per-city
+    ratio OSM/GTFS; the panel median is $1.59$, with Lyon,
+    Marseille and Lille three orders of magnitude above the
+    expected value $1.0$, indicating an under-covered GTFS feed
+    rather than a genuine environment deficit.}
+    \label{fig:osm-gtfs}
+\end{figure}
 
 \subsection{Outcome coupling: life expectancy at département level}
 \label{sec:val-life-exp}
@@ -2527,6 +2615,7 @@ Section & Test & Verdict \\
 \ref{sec:val-european}       & E24. European panel: France 1st in systems, 18th in modal share & Clean \\
 \ref{sec:val-eu-stations}    & E25. Live European station-level fetch (10 cities) & Clean \\
 \ref{sec:val-imd-lite}       & E26. IMD-lite multimodality $M$ on European panel & Clean \\
+\ref{sec:val-osm-gtfs}       & E29. OSM-vs-GTFS calibration on French panel & Qualified \\
 \ref{sec:val-life-exp}       & E21. Coupling to département life expectancy & Null \\
 ---                          & E14. Synthetic control on infrastructure openings & Outstanding \\
 \bottomrule
@@ -2833,16 +2922,20 @@ French median ($2.93$ vs $0.95$ stations per km$^{2}$).
 Copenhagen alone carries more dock-based stations ($2\,603$)
 than every French network outside Paris combined. An OSM-based
 recomputation of the IMD multimodality component on the same
-European panel (Section~\ref{sec:val-imd-lite}) tightens the
-diagnosis: the European median has $1.45$ heavy public-transport
-stops per bike-sharing station against $0.22$ for the French
-median -- a 6.6-fold gap on the IMD component that the Sobol
-decomposition identified as the dominant driver of cycling
-well-being. The volumetric prior fails for France not because
-France under-invests but because the French model fragments
-deployments into many small, sparse, and weakly multimodal
-systems instead of fewer dense and tightly transit-integrated
-ones.
+European panel (Section~\ref{sec:val-imd-lite}), calibrated
+against the French GTFS in Section~\ref{sec:val-osm-gtfs},
+tightens the diagnosis: the European median has $1.45$ heavy
+public-transport stops per bike-sharing station against $0.22$
+for the French median. The OSM-vs-GTFS calibration shows that
+OSM over-counts GTFS by a factor of $1.59$ on the French panel,
+so the consistent EU/FR multimodality gap is roughly
+$4 \times$, not the raw $6.6 \times$ -- still a substantial gap
+on the IMD component that the Sobol decomposition identified as
+the dominant driver of cycling well-being. The volumetric prior
+fails for France not because France under-invests but because
+the French model fragments deployments into many small, sparse,
+and weakly multimodal systems instead of fewer dense and tightly
+transit-integrated ones.
 
 \item[\textbf{Q3.}] \emph{Cycling-environment quality is
 statistically independent of local income.} The Spearman

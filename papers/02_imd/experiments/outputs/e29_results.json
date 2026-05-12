@@ -1,0 +1,101 @@
+{
+  "per_city": [
+    {
+      "city": "Paris",
+      "n_stations": 1507,
+      "M_gtfs": 2.794293297942933,
+      "M_osm": 4.172528201725282,
+      "ratio_osm_to_gtfs": 1.4932320113987174,
+      "n_osm_stops_in_bbox": 2480
+    },
+    {
+      "city": "Lyon",
+      "n_stations": 452,
+      "M_gtfs": 0.13938053097345132,
+      "M_osm": 2.809734513274336,
+      "ratio_osm_to_gtfs": 20.158730158730158,
+      "n_osm_stops_in_bbox": 1350
+    },
+    {
+      "city": "Toulouse",
+      "n_stations": 434,
+      "M_gtfs": 0.7811059907834101,
+      "M_osm": 1.4631336405529953,
+      "ratio_osm_to_gtfs": 1.8731563421828907,
+      "n_osm_stops_in_bbox": 248
+    },
+    {
+      "city": "Lille",
+      "n_stations": 268,
+      "M_gtfs": 0.13432835820895522,
+      "M_osm": 1.5671641791044777,
+      "ratio_osm_to_gtfs": 11.666666666666668,
+      "n_osm_stops_in_bbox": 338
+    },
+    {
+      "city": "Bordeaux",
+      "n_stations": 225,
+      "M_gtfs": 1.5777777777777777,
+      "M_osm": 1.64,
+      "ratio_osm_to_gtfs": 1.0394366197183098,
+      "n_osm_stops_in_bbox": 288
+    },
+    {
+      "city": "Marseille",
+      "n_stations": 221,
+      "M_gtfs": 0.08144796380090498,
+      "M_osm": 2.321266968325792,
+      "ratio_osm_to_gtfs": 28.5,
+      "n_osm_stops_in_bbox": 255
+    },
+    {
+      "city": "Rouen",
+      "n_stations": 131,
+      "M_gtfs": 0.7022900763358778,
+      "M_osm": 1.1908396946564885,
+      "ratio_osm_to_gtfs": 1.6956521739130437,
+      "n_osm_stops_in_bbox": 90
+    },
+    {
+      "city": "Nantes",
+      "n_stations": 124,
+      "M_gtfs": 2.935483870967742,
+      "M_osm": 1.653225806451613,
+      "ratio_osm_to_gtfs": 0.5631868131868132,
+      "n_osm_stops_in_bbox": 144
+    },
+    {
+      "city": "Brest",
+      "n_stations": 115,
+      "M_gtfs": 2.1652173913043478,
+      "M_osm": 2.1739130434782608,
+      "ratio_osm_to_gtfs": 1.0040160642570282,
+      "n_osm_stops_in_bbox": 82
+    },
+    {
+      "city": "\u00c9pinal",
+      "n_stations": 105,
+      "M_gtfs": 0.10476190476190476,
+      "M_osm": 0.11428571428571428,
+      "ratio_osm_to_gtfs": 1.0909090909090908,
+      "n_osm_stops_in_bbox": 13
+    }
+  ],
+  "panel_summary": {
+    "mean_M_gtfs": 1.1416087162857305,
+    "mean_M_osm": 1.910609176185496,
+    "median_ratio_osm_gtfs": 1.5944420926558807,
+    "p25_ratio": 1.052304737516005,
+    "p75_ratio": 9.218289085545724,
+    "spearman_rho": 0.29696969696969694,
+    "spearman_p": 0.4047016712701569
+  },
+  "e26_correction": {
+    "eu_median_M_osm_raw": 1.45,
+    "fr_median_M_gtfs": 0.22,
+    "raw_ratio_eu_to_fr": 6.590909090909091,
+    "panel_correction_osm_to_gtfs": 1.5944420926558807,
+    "eu_median_M_corrected": 0.9094090068738202,
+    "corrected_ratio_eu_to_fr": 4.13367730397191
+  }
+}
