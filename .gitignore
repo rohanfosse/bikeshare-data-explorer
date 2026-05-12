@@ -38,8 +38,11 @@ data/processed/TAM_MMM_*
 *.vrb
 *.xdv
 # Compiled PDFs of working papers (regenerate locally) but keep figures
+# and experiment outputs (used as figures in the LaTeX papers).
 papers/**/*.pdf
 !papers/**/figures/**/*.pdf
+!papers/**/experiments/outputs/**/*.pdf
+papers/**/experiments/**/__pycache__/
 
 # Stale artifacts from previous file names (renamed 2026-05)
 papers/01_gold_standard/papier-gold-standard.*

@@ -1,0 +1,161 @@
+{
+  "n_cities": 59,
+  "k_reported": 4,
+  "k_optimal_silhouette": 2,
+  "silhouette_at_k_reported": 0.30252976501703105,
+  "silhouettes_by_k": {
+    "2": 0.4410642616605733,
+    "3": 0.2787129479375437,
+    "4": 0.30252976501703105,
+    "5": 0.3225529104329829,
+    "6": 0.2796183281894113
+  },
+  "inertias_by_k": {
+    "2": 166.88790786367872,
+    "3": 133.35881055326223,
+    "4": 104.26274920967083,
+    "5": 75.26701722262582,
+    "6": 62.23642533645236
+  },
+  "archetypes": [
+    {
+      "cluster_id": 1,
+      "n_cities": 7,
+      "imd_mean": 75.73307359364534,
+      "income_mean": 19471.428571428572,
+      "income_median": 19870.0,
+      "component_means": {
+        "M_multi": 0.7767182457130485,
+        "I_infra": 0.5519530071470675,
+        "S_securite": 0.894345642449028,
+        "T_topo": 0.8315745351196767
+      },
+      "dominant_components": [
+        "S",
+        "T"
+      ],
+      "desert_share": 0.0,
+      "cities": [
+        "Strasbourg",
+        "Montpellier",
+        "Nantes",
+        "Mulhouse",
+        "Caen",
+        "Brest",
+        "Bordeaux"
+      ]
+    },
+    {
+      "cluster_id": 3,
+      "n_cities": 1,
+      "imd_mean": 70.6455711575003,
+      "income_mean": 30760.0,
+      "income_median": 30760.0,
+      "component_means": {
+        "M_multi": 0.8788503114497935,
+        "I_infra": 0.6658773442062422,
+        "S_securite": 0.0,
+        "T_topo": 0.7912375023236847
+      },
+      "dominant_components": [
+        "M",
+        "T"
+      ],
+      "desert_share": 0.0,
+      "cities": [
+        "Paris"
+      ]
+    },
+    {
+      "cluster_id": 0,
+      "n_cities": 17,
+      "imd_mean": 35.726294401002825,
+      "income_mean": 19769.41176470588,
+      "income_median": 19400.0,
+      "component_means": {
+        "M_multi": 0.09290357402793031,
+        "I_infra": 0.5217567449855269,
+        "S_securite": 0.8771327674675116,
+        "T_topo": 0.8646727517100101
+      },
+      "dominant_components": [
+        "S",
+        "T"
+      ],
+      "desert_share": 0.29411764705882354,
+      "cities": [
+        "Rennes",
+        "Saint-Nazaire",
+        "Toulouse",
+        "Auray",
+        "Belfort",
+        "Bourg-en-Bresse",
+        "Les Sables-d'Olonne",
+        "Argel\u00e8s-sur-Mer",
+        "Agen",
+        "Saint-Brieuc",
+        "Lille",
+        "La Roche-sur-Yon",
+        "Valence",
+        "Clermont-Ferrand",
+        "Pau",
+        "Troyes",
+        "Lyon"
+      ]
+    },
+    {
+      "cluster_id": 2,
+      "n_cities": 34,
+      "imd_mean": 30.118902279108063,
+      "income_mean": 19592.79411764706,
+      "income_median": 19285.0,
+      "component_means": {
+        "M_multi": 0.09533000696783067,
+        "I_infra": 0.1856321423104083,
+        "S_securite": 0.960425423433359,
+        "T_topo": 0.7869953588648173
+      },
+      "dominant_components": [
+        "S",
+        "T"
+      ],
+      "desert_share": 0.20588235294117646,
+      "cities": [
+        "Dijon",
+        "Besan\u00e7on",
+        "Cergy-Pontoise",
+        "Soissons",
+        "Rouen",
+        "Saint-\u00c9tienne",
+        "La Baule",
+        "Cholet",
+        "Avignon",
+        "Valenciennes",
+        "Ch\u00e2tellerault",
+        "Vichy",
+        "Ardenne M\u00e9tropole",
+        "Montreuil-Bellay",
+        "Landerneau",
+        "Royan",
+        "Calais",
+        "Louviers",
+        "Amiens",
+        "Cherbourg-en-Cotentin",
+        "Libourne",
+        "Marseille",
+        "Tarbes",
+        "Niort",
+        "Brive-la-Gaillarde",
+        "Auxerre",
+        "Carcassonne",
+        "\u00c9pinal",
+        "Saumur",
+        "Nancy",
+        "Longwy",
+        "Annecy",
+        "Lascaux",
+        "Laon"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "n_replicates": 1000,
+  "median_kendall_tau": 0.8497267759562841,
+  "ci95_kendall_tau": [
+    0.8054644808743169,
+    0.8885245901639344
+  ],
+  "top10_membership_pct": {
+    "Strasbourg": 100.0,
+    "Montpellier": 100.0,
+    "Nantes": 100.0,
+    "Mulhouse": 100.0,
+    "Paris": 100.0,
+    "Caen": 97.1,
+    "Brest": 99.0,
+    "Grand Est": 97.7,
+    "Bordeaux": 94.2,
+    "Dijon": 30.6
+  },
+  "rank_sd_by_city": [
+    {
+      "city": "Strasbourg",
+      "rank_ref": 1,
+      "rank_mean_boot": 1.334,
+      "rank_sd_boot": 0.6560823119091101
+    },
+    {
+      "city": "Montpellier",
+      "rank_ref": 2,
+      "rank_mean_boot": 2.185,
+      "rank_sd_boot": 0.792953340367511
+    },
+    {
+      "city": "Nantes",
+      "rank_ref": 3,
+      "rank_mean_boot": 3.033,
+      "rank_sd_boot": 0.9369690496489158
+    },
+    {
+      "city": "Mulhouse",
+      "rank_ref": 4,
+      "rank_mean_boot": 3.86,
+      "rank_sd_boot": 1.248358922746187
+    },
+    {
+      "city": "Paris",
+      "rank_ref": 5,
+      "rank_mean_boot": 5.062,
+      "rank_sd_boot": 0.6512726003756031
+    },
+    {
+      "city": "Caen",
+      "rank_ref": 6,
+      "rank_mean_boot": 6.689,
+      "rank_sd_boot": 1.7199648252217257
+    },
+    {
+      "city": "Brest",
+      "rank_ref": 7,
+      "rank_mean_boot": 7.183,
+      "rank_sd_boot": 1.2286215853548963
+    },
+    {
+      "city": "Grand Est",
+      "rank_ref": 8,
+      "rank_mean_boot": 7.825,
+      "rank_sd_boot": 1.2908814817790237
+    },
+    {
+      "city": "Bordeaux",
+      "rank_ref": 9,
+      "rank_mean_boot": 8.93,
+      "rank_sd_boot": 1.0738249391777073
+    },
+    {
+      "city": "Dijon",
+      "rank_ref": 10,
+      "rank_mean_boot": 11.746,
+      "rank_sd_boot": 2.37728500605207
+    },
+    {
+      "city": "Rennes",
+      "rank_ref": 11,
+      "rank_mean_boot": 12.533,
+      "rank_sd_boot": 2.797661702207751
+    },
+    {
+      "city": "Saint-Nazaire",
+      "rank_ref": 12,
+      "rank_mean_boot": 13.724,
+      "rank_sd_boot": 6.666770132530456
+    },
+    {
+      "city": "Besan\u00e7on",
+      "rank_ref": 13,
+      "rank_mean_boot": 13.271,
+      "rank_sd_boot": 2.731585437067633
+    },
+    {
+      "city": "Toulouse",
+      "rank_ref": 14,
+      "rank_mean_boot": 13.34,
+      "rank_sd_boot": 1.4058449416631984
+    },
+    {
+      "city": "FR",
+      "rank_ref": 15,
+      "rank_mean_boot": 17.069,
+      "rank_sd_boot": 4.960467619085931
+    }
+  ]
+}

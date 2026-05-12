@@ -1,0 +1,386 @@
+{
+  "published_radius_m": 300.0,
+  "elasticities_alpha": {
+    "M_multi": 0.85,
+    "I_infra": 0.4,
+    "S_securite": 0.7,
+    "T_topo": 0.1
+  },
+  "elasticities_alpha_sd": {
+    "M_multi": 0.2,
+    "I_infra": 0.15,
+    "S_securite": 0.2,
+    "T_topo": 0.1
+  },
+  "sweep": [
+    {
+      "radius_m": 150.0,
+      "kendall_tau_vs_ref": 0.9228521332554062,
+      "top10_retention": 0.8,
+      "mean_imd": 35.76695483840818,
+      "median_imd": 34.39690339018772,
+      "imd_range": [
+        9.016928127817305,
+        75.50190713888618
+      ],
+      "imd_top10": [
+        {
+          "city": "Strasbourg",
+          "imd": 75.50190713888618
+        },
+        {
+          "city": "Montpellier",
+          "imd": 64.2210120782178
+        },
+        {
+          "city": "Nantes",
+          "imd": 57.04189754782245
+        },
+        {
+          "city": "Mulhouse",
+          "imd": 55.632429818200755
+        },
+        {
+          "city": "Paris",
+          "imd": 54.91275319784694
+        },
+        {
+          "city": "Caen",
+          "imd": 47.92613382516675
+        },
+        {
+          "city": "Belfort",
+          "imd": 46.89162167281137
+        },
+        {
+          "city": "Bordeaux",
+          "imd": 46.820023363844555
+        },
+        {
+          "city": "Saint-Nazaire",
+          "imd": 46.137900531610455
+        },
+        {
+          "city": "Toulouse",
+          "imd": 44.91011774172699
+        }
+      ]
+    },
+    {
+      "radius_m": 200.0,
+      "kendall_tau_vs_ref": 0.9544126241963764,
+      "top10_retention": 0.8,
+      "mean_imd": 37.45106100445895,
+      "median_imd": 35.92204981882783,
+      "imd_range": [
+        9.384712779385557,
+        82.94041474408318
+      ],
+      "imd_top10": [
+        {
+          "city": "Strasbourg",
+          "imd": 82.94041474408318
+        },
+        {
+          "city": "Montpellier",
+          "imd": 70.83365869367584
+        },
+        {
+          "city": "Nantes",
+          "imd": 62.91418187029336
+        },
+        {
+          "city": "Paris",
+          "imd": 61.123006348364804
+        },
+        {
+          "city": "Mulhouse",
+          "imd": 60.8696940319311
+        },
+        {
+          "city": "Caen",
+          "imd": 52.17009653491675
+        },
+        {
+          "city": "Bordeaux",
+          "imd": 50.100251837501965
+        },
+        {
+          "city": "Saint-Nazaire",
+          "imd": 49.04158406539102
+        },
+        {
+          "city": "Belfort",
+          "imd": 48.746313858194064
+        },
+        {
+          "city": "Toulouse",
+          "imd": 47.45544624712882
+        }
+      ]
+    },
+    {
+      "radius_m": 250.0,
+      "kendall_tau_vs_ref": 0.9789596727060198,
+      "top10_retention": 0.8,
+      "mean_imd": 39.10646785164358,
+      "median_imd": 37.170584374857434,
+      "imd_range": [
+        9.752497430953808,
+        90.37892234928016
+      ],
+      "imd_top10": [
+        {
+          "city": "Strasbourg",
+          "imd": 90.37892234928016
+        },
+        {
+          "city": "Montpellier",
+          "imd": 77.44630530913392
+        },
+        {
+          "city": "Nantes",
+          "imd": 68.77609207398625
+        },
+        {
+          "city": "Paris",
+          "imd": 67.3332594988827
+        },
+        {
+          "city": "Mulhouse",
+          "imd": 66.10695824566142
+        },
+        {
+          "city": "Caen",
+          "imd": 56.22736528941644
+        },
+        {
+          "city": "Bordeaux",
+          "imd": 53.38048031115938
+        },
+        {
+          "city": "Saint-Nazaire",
+          "imd": 51.945267599171586
+        },
+        {
+          "city": "Belfort",
+          "imd": 50.60100604357677
+        },
+        {
+          "city": "Toulouse",
+          "imd": 49.97222122061602
+        }
+      ]
+    },
+    {
+      "radius_m": 300.0,
+      "kendall_tau_vs_ref": 0.9999999999999998,
+      "top10_retention": 1.0,
+      "mean_imd": 40.69873783684262,
+      "median_imd": 38.06723792726461,
+      "imd_range": [
+        10.120282082522056,
+        97.81742995447715
+      ],
+      "imd_top10": [
+        {
+          "city": "Strasbourg",
+          "imd": 97.81742995447715
+        },
+        {
+          "city": "Montpellier",
+          "imd": 83.87413465699325
+        },
+        {
+          "city": "Nantes",
+          "imd": 74.63800227767912
+        },
+        {
+          "city": "Paris",
+          "imd": 73.54351264940055
+        },
+        {
+          "city": "Mulhouse",
+          "imd": 71.24626930756442
+        },
+        {
+          "city": "Caen",
+          "imd": 60.213967666132895
+        },
+        {
+          "city": "Bordeaux",
+          "imd": 56.66070878481679
+        },
+        {
+          "city": "Saint-Nazaire",
+          "imd": 54.84895113295216
+        },
+        {
+          "city": "Brest",
+          "imd": 52.80564756730629
+        },
+        {
+          "city": "Rennes",
+          "imd": 52.40819634233432
+        }
+      ]
+    },
+    {
+      "radius_m": 400.0,
+      "kendall_tau_vs_ref": 0.9742840444184686,
+      "top10_retention": 1.0,
+      "mean_imd": 43.04520485840818,
+      "median_imd": 39.860545032078946,
+      "imd_range": [
+        10.572518052325226,
+        97.13777849820448
+      ],
+      "imd_top10": [
+        {
+          "city": "Strasbourg",
+          "imd": 97.13777849820448
+        },
+        {
+          "city": "Montpellier",
+          "imd": 90.0611662404079
+        },
+        {
+          "city": "Paris",
+          "imd": 81.8004668352177
+        },
+        {
+          "city": "Mulhouse",
+          "imd": 80.0312193306665
+        },
+        {
+          "city": "Nantes",
+          "imd": 79.44856305967465
+        },
+        {
+          "city": "Caen",
+          "imd": 68.1871724195658
+        },
+        {
+          "city": "Bordeaux",
+          "imd": 63.22116573213161
+        },
+        {
+          "city": "Brest",
+          "imd": 60.951390959011995
+        },
+        {
+          "city": "Saint-Nazaire",
+          "imd": 60.03798486717996
+        },
+        {
+          "city": "Rennes",
+          "imd": 58.5025141959944
+        }
+      ]
+    },
+    {
+      "radius_m": 500.0,
+      "kendall_tau_vs_ref": 0.9544126241963764,
+      "top10_retention": 1.0,
+      "mean_imd": 45.043729607614914,
+      "median_imd": 41.653852136893285,
+      "imd_range": [
+        11.024754022128391,
+        96.4581270419318
+      ],
+      "imd_top10": [
+        {
+          "city": "Strasbourg",
+          "imd": 96.4581270419318
+        },
+        {
+          "city": "Montpellier",
+          "imd": 93.02719964975073
+        },
+        {
+          "city": "Paris",
+          "imd": 85.52642266925713
+        },
+        {
+          "city": "Mulhouse",
+          "imd": 81.41157257957504
+        },
+        {
+          "city": "Nantes",
+          "imd": 81.38893653677945
+        },
+        {
+          "city": "Caen",
+          "imd": 76.16037717299872
+        },
+        {
+          "city": "Bordeaux",
+          "imd": 69.78162267944644
+        },
+        {
+          "city": "Brest",
+          "imd": 66.59532088648209
+        },
+        {
+          "city": "Saint-Nazaire",
+          "imd": 65.22701860140776
+        },
+        {
+          "city": "Rennes",
+          "imd": 64.5968320496545
+        }
+      ]
+    }
+  ],
+  "monte_carlo_summary": {
+    "150.0": {
+      "median_tau": 0.9205143191116305,
+      "q025_tau": 0.8585037989479837,
+      "q975_tau": 0.9590882524839274,
+      "median_top10_retention": 0.8,
+      "q025_top10_retention": 0.7,
+      "q975_top10_retention": 0.8
+    },
+    "200.0": {
+      "median_tau": 0.9509059029807129,
+      "q025_tau": 0.9193454120397427,
+      "q975_tau": 0.9731151373465808,
+      "median_top10_retention": 0.8,
+      "q025_top10_retention": 0.8,
+      "q975_top10_retention": 0.8
+    },
+    "250.0": {
+      "median_tau": 0.9754529514903564,
+      "q025_tau": 0.9649327878433663,
+      "q975_tau": 0.9848042080654587,
+      "median_top10_retention": 0.8,
+      "q025_top10_retention": 0.8,
+      "q975_top10_retention": 0.9
+    },
+    "300.0": {
+      "median_tau": 0.9999999999999998,
+      "q025_tau": 0.9999999999999998,
+      "q975_tau": 0.9999999999999998,
+      "median_top10_retention": 1.0,
+      "q025_top10_retention": 1.0,
+      "q975_top10_retention": 1.0
+    },
+    "400.0": {
+      "median_tau": 0.9731151373465808,
+      "q025_tau": 0.9544126241963764,
+      "q975_tau": 0.9836353009935709,
+      "median_top10_retention": 1.0,
+      "q025_top10_retention": 1.0,
+      "q975_top10_retention": 1.0
+    },
+    "500.0": {
+      "median_tau": 0.9520748100526006,
+      "q025_tau": 0.9298655756867329,
+      "q975_tau": 0.9719462302746931,
+      "median_top10_retention": 1.0,
+      "q025_top10_retention": 1.0,
+      "q975_top10_retention": 1.0
+    }
+  },
+  "n_mc": 1000
+}

@@ -1,0 +1,60 @@
+{
+  "n_cities_total": 59,
+  "n_cities_with_exposure": 25,
+  "rho_safety_vs_flow": {
+    "raw": -0.5717036564426878,
+    "p_raw": 0.0028303191191577804,
+    "adjusted": -0.4913361935297972,
+    "p_adjusted": 0.012621844281264895
+  },
+  "recalibrated_weights_adjusted_S": {
+    "M_multi": 0.3298011716698839,
+    "I_infra": 0.29991088077668304,
+    "S_securite_adj": 0.2487987490598273,
+    "T_topo": 0.12148919849360573
+  },
+  "calibration_objective_adjusted": 0.5543474707520076,
+  "kendall_tau_pub_vs_adjusted_ranking": 0.7837521917007597,
+  "new_top_10": [
+    {
+      "city": "Strasbourg",
+      "IMD_adj": 99.10198392268342
+    },
+    {
+      "city": "Montpellier",
+      "IMD_adj": 85.83838574697018
+    },
+    {
+      "city": "Nantes",
+      "IMD_adj": 80.02774520764595
+    },
+    {
+      "city": "Mulhouse",
+      "IMD_adj": 76.50982023246722
+    },
+    {
+      "city": "Caen",
+      "IMD_adj": 67.48543793175543
+    },
+    {
+      "city": "Bordeaux",
+      "IMD_adj": 63.275651593102864
+    },
+    {
+      "city": "Brest",
+      "IMD_adj": 62.23106294506391
+    },
+    {
+      "city": "Rennes",
+      "IMD_adj": 61.05358998384599
+    },
+    {
+      "city": "Saint-Nazaire",
+      "IMD_adj": 60.64870095139614
+    },
+    {
+      "city": "Belfort",
+      "IMD_adj": 59.252384925597276
+    }
+  ]
+}

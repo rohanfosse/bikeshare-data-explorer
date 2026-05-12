@@ -1,0 +1,54 @@
+{
+  "n_cities": 25,
+  "spearman_imd_vs_counts": 0.49230191646857785,
+  "p_imd_vs_counts": 0.012422248060350069,
+  "spearman_imd_vs_log_counts": 0.49230191646857785,
+  "r2_imd_and_size": 0.6475023346325094,
+  "r2_size_only": 0.40502352172353173,
+  "partial_r2_imd_net_size": 0.24247881290897766,
+  "components": {
+    "M_multi": {
+      "spearman": 0.593148751585675,
+      "partial_r2_net_size": 0.2361406313124741
+    },
+    "I_infra": {
+      "spearman": 0.4795998341828366,
+      "partial_r2_net_size": 0.16089533223489694
+    },
+    "S_securite": {
+      "spearman": -0.5717036564426878,
+      "partial_r2_net_size": 0.11120858572557013
+    },
+    "T_topo": {
+      "spearman": 0.11508856374050411,
+      "partial_r2_net_size": 0.054230474088927005
+    }
+  },
+  "cities_used": [
+    "Strasbourg",
+    "Nantes",
+    "Mulhouse",
+    "Paris",
+    "Caen",
+    "Brest",
+    "Bordeaux",
+    "Rennes",
+    "Besan\u00e7on",
+    "Toulouse",
+    "Belfort",
+    "Saint-\u00c9tienne",
+    "Cholet",
+    "Avignon",
+    "Saint-Brieuc",
+    "Lille",
+    "Valence",
+    "Clermont-Ferrand",
+    "Amiens",
+    "Troyes",
+    "Lyon",
+    "Niort",
+    "Auxerre",
+    "Nancy",
+    "Annecy"
+  ]
+}

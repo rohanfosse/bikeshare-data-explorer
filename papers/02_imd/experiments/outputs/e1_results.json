@@ -1,0 +1,43 @@
+{
+  "loo": {
+    "n_folds": 44,
+    "rho_loo_fub": 0.4936257758057204,
+    "rho_loo_emp": 0.5456989549191668,
+    "n_loo_fub": 32,
+    "n_loo_emp": 44,
+    "weights_mean": {
+      "M_multi": 0.373687515700767,
+      "I_infra": 0.37199100322516293,
+      "S_securite": 0.05317381000596622,
+      "T_topo": 0.20114767106810386
+    },
+    "weights_sd": {
+      "M_multi": 0.012229962777573447,
+      "I_infra": 0.03548161776269419,
+      "S_securite": 0.01048235563802533,
+      "T_topo": 0.0451372514024918
+    }
+  },
+  "spatial_block": {
+    "n_folds": 7,
+    "regions": [
+      "FRC",
+      "FRE",
+      "FRF",
+      "FRH",
+      "FRJ",
+      "FRK",
+      "OTHER"
+    ],
+    "weights_sd": {
+      "M_multi": 0.05977494770366316,
+      "I_infra": 0.05387494611765511,
+      "S_securite": 0.007309138530261669,
+      "T_topo": 0.03027894233774737
+    },
+    "rho_block_fub": 0.36618773577833685,
+    "rho_block_emp": 0.37516490857418416,
+    "n_block_fub": 26,
+    "n_block_emp": 38
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "panel_size": 59,
+  "rho_imd_income": 0.04097378511817544,
+  "p_imd_income": 0.7579901611343159,
+  "ridge_r2": 0.3967251313827107,
+  "ridge_lambda": 15.556761439304722,
+  "imd_median": 31.210440276345285,
+  "income_median": 19540.0,
+  "imd_range": [
+    17.234795128317586,
+    96.74571258738621
+  ],
+  "quadrant_counts": {
+    "A: wealthy + cycling-ready": 16,
+    "D: mobility desert": 15,
+    "B: inclusive (low income, high IMD)": 14,
+    "C: wealthy under-investor": 14
+  },
+  "deserts_count": 12,
+  "top10": [
+    {
+      "city": "Strasbourg",
+      "n_stations": 39,
+      "IMD": 96.74571258738621,
+      "M_multi": 1.0,
+      "I_infra": 1.0,
+      "S_securite": 0.8104438281038723,
+      "T_topo": 0.9413968987824197,
+      "revenu_median_uc": 18050.0,
+      "IES": 1.4904781805240557
+    },
+    {
+      "city": "Montpellier",
+      "n_stations": 53,
+      "IMD": 88.29777782564966,
+      "M_multi": 0.9138770541692026,
+      "I_infra": 0.7568130726116002,
+      "S_securite": 0.9651288174342029,
+      "T_topo": 0.8172389949011073,
+      "revenu_median_uc": 17530.0,
+      "IES": 1.706556066081705
+    },
+    {
+      "city": "Nantes",
+      "n_stations": 124,
+      "IMD": 83.02491329230122,
+      "M_multi": 0.9232570239334028,
+      "I_infra": 0.5238885960648418,
+      "S_securite": 0.8718202821492717,
+      "T_topo": 0.7959644932122687,
+      "revenu_median_uc": 23020.0,
+      "IES": 1.4804469337442598
+    },
+    {
+      "city": "Mulhouse",
+      "n_stations": 60,
+      "IMD": 77.80156877634691,
+      "M_multi": 0.802016129032258,
+      "I_infra": 0.45846099267768864,
+      "S_securite": 0.9815182732401275,
+      "T_topo": 0.9449786221878247,
+      "revenu_median_uc": 13840.0,
+      "IES": 1.9738430016644073
+    },
+    {
+      "city": "Paris",
+      "n_stations": 1507,
+      "IMD": 70.6455711575003,
+      "M_multi": 0.8788503114497935,
+      "I_infra": 0.6658773442062422,
+      "S_securite": 0.0,
+      "T_topo": 0.7912375023236847,
+      "revenu_median_uc": 30760.0,
+      "IES": 1.3206101620319535
+    },
+    {
+      "city": "Caen",
+      "n_stations": 75,
+      "IMD": 64.5070722717407,
+      "M_multi": 0.6206451612903227,
+      "I_infra": 0.42704601469336245,
+      "S_securite": 0.9162161720219115,
+      "T_topo": 0.8089443370928168,
+      "revenu_median_uc": 20280.0,
+      "IES": 1.5770126798494664
+    },
+    {
+      "city": "Brest",
+      "n_stations": 115,
+      "IMD": 62.808893109598976,
+      "M_multi": 0.6809957924263674,
+      "I_infra": 0.2926552520069134,
+      "S_securite": 0.8746456793678217,
+      "T_topo": 0.5877615649379857,
+      "revenu_median_uc": 19870.0,
+      "IES": 1.7622317222842863
+    },
+    {
+      "city": "Bordeaux",
+      "n_stations": 225,
+      "IMD": 56.945577292493645,
+      "M_multi": 0.496236559139785,
+      "I_infra": 0.4048071219750666,
+      "S_securite": 0.8406464448259886,
+      "T_topo": 0.9247368347233141,
+      "revenu_median_uc": 23710.0,
+      "IES": 0.9058593324971372
+    },
+    {
+      "city": "Dijon",
+      "n_stations": 40,
+      "IMD": 50.21660250496376,
+      "M_multi": 0.41673387096774195,
+      "I_infra": 0.21749603402138223,
+      "S_securite": 0.963036546480255,
+      "T_topo": 0.8804519559390852,
+      "revenu_median_uc": 21690.0,
+      "IES": 1.081375774253565
+    },
+    {
+      "city": "Rennes",
+      "n_stations": 57,
+      "IMD": 48.757429768349915,
+      "M_multi": 0.4028013582342954,
+      "I_infra": 0.44929049006566046,
+      "S_securite": 0.630365464802551,
+      "T_topo": 0.8601434005211736,
+      "revenu_median_uc": 21500.0,
+      "IES": 0.8440806112143261
+    }
+  ]
+}

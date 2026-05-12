@@ -1,0 +1,53 @@
+{
+  "n_loo_folds": 44,
+  "n_resampled_draws": 50000,
+  "bank_mean": {
+    "M_multi": 0.373687515700767,
+    "I_infra": 0.37199100322516293,
+    "S_securite": 0.05317381000596622,
+    "T_topo": 0.20114767106810386
+  },
+  "bank_sd": {
+    "M_multi": 0.012229962777573447,
+    "I_infra": 0.03548161776269419,
+    "S_securite": 0.01048235563802533,
+    "T_topo": 0.0451372514024918
+  },
+  "published_top10_in_panel": [
+    "Strasbourg",
+    "Montpellier",
+    "Nantes",
+    "Mulhouse",
+    "Paris",
+    "Caen",
+    "Brest",
+    "Bordeaux",
+    "Dijon",
+    "Rennes"
+  ],
+  "published_top10_retained_at_50pct": 9,
+  "published_top10_retained_at_25pct": 9,
+  "published_top10_median_freq": 1.0,
+  "top10_frequencies": {
+    "Strasbourg": 1.0,
+    "Montpellier": 1.0,
+    "Nantes": 1.0,
+    "Mulhouse": 1.0,
+    "Paris": 1.0,
+    "Caen": 1.0,
+    "Bordeaux": 1.0,
+    "Saint-Nazaire": 0.99978,
+    "Brest": 0.69816,
+    "Belfort": 0.55566,
+    "Rennes": 0.50468,
+    "Toulouse": 0.24168,
+    "Dijon": 4e-05,
+    "Cergy-Pontoise": 0.0,
+    "Besan\u00e7on": 0.0,
+    "Soissons": 0.0,
+    "Auray": 0.0,
+    "Rouen": 0.0,
+    "Bourg-en-Bresse": 0.0,
+    "Saint-\u00c9tienne": 0.0
+  }
+}
