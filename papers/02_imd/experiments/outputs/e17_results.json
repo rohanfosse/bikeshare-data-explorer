@@ -1,0 +1,211 @@
+{
+  "n_systems": 25,
+  "n_cities_matched": 21,
+  "spearman_per_predictor": {
+    "flow_raw": {
+      "IMD": {
+        "rho": -0.484977679158842,
+        "p": 0.02585806790782096,
+        "n": 21
+      },
+      "M_multi": {
+        "rho": -0.3202682786898013,
+        "p": 0.15695441440020427,
+        "n": 21
+      },
+      "I_infra": {
+        "rho": 0.05882478588180024,
+        "p": 0.8000507571912421,
+        "n": 21
+      },
+      "S_securite": {
+        "rho": -0.524876303828031,
+        "p": 0.014564295783186099,
+        "n": 21
+      },
+      "T_topo": {
+        "rho": -0.26144349280800105,
+        "p": 0.252303408917202,
+        "n": 21
+      }
+    },
+    "turnover_rate": {
+      "IMD": {
+        "rho": -0.5398808126485223,
+        "p": 0.01153028261233332,
+        "n": 21
+      },
+      "M_multi": {
+        "rho": -0.47059828705440193,
+        "p": 0.03131602631818172,
+        "n": 21
+      },
+      "I_infra": {
+        "rho": 0.06536087320200026,
+        "p": 0.7783412312892148,
+        "n": 21
+      },
+      "S_securite": {
+        "rho": -0.40707364212099156,
+        "p": 0.06703024837979348,
+        "n": 21
+      },
+      "T_topo": {
+        "rho": -0.23007027367104094,
+        "p": 0.3157169599147146,
+        "n": 21
+      }
+    }
+  },
+  "r2_full_imd_plus_logN_turnover": 0.2601785154063241,
+  "partial_r2_imd_net_size_turnover": 0.21958208017431483,
+  "matched_cities": [
+    {
+      "city": "Paris",
+      "IMD": 70.6455711575003,
+      "n_stations": 1511,
+      "mean_flow_per_station": 22.8391793514229,
+      "mean_turnover_rate": 0.7860378550151651
+    },
+    {
+      "city": "Lyon",
+      "IMD": 26.907207013292712,
+      "n_stations": 453,
+      "mean_flow_per_station": 28.70198675496689,
+      "mean_turnover_rate": 1.4920790529931371
+    },
+    {
+      "city": "Saint-\u00c9tienne",
+      "IMD": 37.203062075319856,
+      "n_stations": 407,
+      "mean_flow_per_station": 0.0,
+      "mean_turnover_rate": 0.0
+    },
+    {
+      "city": "Strasbourg",
+      "IMD": 96.74571258738621,
+      "n_stations": 284,
+      "mean_flow_per_station": 0.0,
+      "mean_turnover_rate": 0.0
+    },
+    {
+      "city": "Marseille",
+      "IMD": 26.060009360480187,
+      "n_stations": 223,
+      "mean_flow_per_station": 25.713004484304932,
+      "mean_turnover_rate": 1.0354404990413824
+    },
+    {
+      "city": "Rouen",
+      "IMD": 38.45754178659444,
+      "n_stations": 131,
+      "mean_flow_per_station": 7.106870229007634,
+      "mean_turnover_rate": 0.5730551892306155
+    },
+    {
+      "city": "Toulouse",
+      "IMD": 46.115599335727936,
+      "n_stations": 128,
+      "mean_flow_per_station": 0.0,
+      "mean_turnover_rate": 0.0
+    },
+    {
+      "city": "Clermont-Ferrand",
+      "IMD": 30.47903703365148,
+      "n_stations": 82,
+      "mean_flow_per_station": 3.1463414634146343,
+      "mean_turnover_rate": 0.1490059441430921
+    },
+    {
+      "city": "Calais",
+      "IMD": 28.44328220949881,
+      "n_stations": 80,
+      "mean_flow_per_station": 0.6,
+      "mean_turnover_rate": 0.05395833333333333
+    },
+    {
+      "city": "Brest",
+      "IMD": 62.808893109598976,
+      "n_stations": 75,
+      "mean_flow_per_station": 0.0,
+      "mean_turnover_rate": 0.0
+    },
+    {
+      "city": "Libourne",
+      "IMD": 27.176352659950652,
+      "n_stations": 68,
+      "mean_flow_per_station": 1.8823529411764706,
+      "mean_turnover_rate": 0.1651874462826475
+    },
+    {
+      "city": "Rennes",
+      "IMD": 48.757429768349915,
+      "n_stations": 57,
+      "mean_flow_per_station": 14.385964912280702,
+      "mean_turnover_rate": 0.6043757562743273
+    },
+    {
+      "city": "Auxerre",
+      "IMD": 24.818158754451165,
+      "n_stations": 55,
+      "mean_flow_per_station": 8.690909090909091,
+      "mean_turnover_rate": 0.7408903217994128
+    },
+    {
+      "city": "Montpellier",
+      "IMD": 88.29777782564966,
+      "n_stations": 53,
+      "mean_flow_per_station": 1.6226415094339623,
+      "mean_turnover_rate": 0.147031113283888
+    },
+    {
+      "city": "Belfort",
+      "IMD": 37.824258822380436,
+      "n_stations": 52,
+      "mean_flow_per_station": 0.5769230769230769,
+      "mean_turnover_rate": 0.5480769230769231
+    },
+    {
+      "city": "Cherbourg-en-Cotentin",
+      "IMD": 27.972252903608325,
+      "n_stations": 49,
+      "mean_flow_per_station": 5.979591836734694,
+      "mean_turnover_rate": 0.4550892442669154
+    },
+    {
+      "city": "Amiens",
+      "IMD": 28.21261251863826,
+      "n_stations": 45,
+      "mean_flow_per_station": 12.644444444444444,
+      "mean_turnover_rate": 0.680070500906859
+    },
+    {
+      "city": "Cergy-Pontoise",
+      "IMD": 42.56969326501701,
+      "n_stations": 45,
+      "mean_flow_per_station": 0.0,
+      "mean_turnover_rate": 0.0
+    },
+    {
+      "city": "Valenciennes",
+      "IMD": 30.88834842942294,
+      "n_stations": 40,
+      "mean_flow_per_station": 0.075,
+      "mean_turnover_rate": 0.009375
+    },
+    {
+      "city": "Pau",
+      "IMD": 28.714771859735233,
+      "n_stations": 40,
+      "mean_flow_per_station": 10.075,
+      "mean_turnover_rate": 0.9822727272727274
+    },
+    {
+      "city": "Nancy",
+      "IMD": 24.238670690737607,
+      "n_stations": 37,
+      "mean_flow_per_station": 11.432432432432432,
+      "mean_turnover_rate": 0.6265662241059333
+    }
+  ]
+}

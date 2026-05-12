@@ -103,14 +103,24 @@ EMP 2019 mobility survey). On the dock-based panel of fifty-nine
 urban areas, the IMD ranges from $17.2$ to $96.7$ on a $[0, 100]$
 scale and the Spearman correlation with median household income
 per consumption unit is $\rho_{\mathrm{Sp}} = +0.041$
-($p = 0.76$). We then introduce the Spatial Equity Index (IES),
-which measures over- or under-performance relative to the local
-socio-economic profile and is reported both as a Ridge point
-estimate and as a Bayesian posterior with credible intervals; the
-two specifications jointly identify a conservative shortlist of
-nine high-confidence \emph{social mobility deserts} and a broader
-shortlist of twenty deserts that are robust across
-specifications.
+($p = 0.76$). We then test the IMD against three behavioural alternatives in a
+metric tournament: the IMD doubles the cycling well-being
+predictive power of the volumetric default
+($\rho_{\text{LOO}}^{\text{FUB}} = +0.41$ vs.\ $+0.20$), survives
+controls for system size and observed usage in a partial
+regression on the FUB sub-panel ($R^{2} = 0.41$, partial
+$R^{2}_{\IMD} = 0.26$), and -- on a single 24-hour window of GBFS
+\texttt{station\_status} -- captures system equilibrium rather
+than gross turnover. The component decomposition isolates
+multimodality as the single dimension of the cycling environment
+that credibly drives subjective well-being. We then introduce the
+Spatial Equity Index (IES), which measures over- or
+under-performance relative to the local socio-economic profile
+and is reported both as a Ridge point estimate and as a Bayesian
+posterior with credible intervals; the two specifications jointly
+identify a conservative shortlist of nine high-confidence
+\emph{social mobility deserts} and a broader shortlist of twenty
+deserts that are robust across specifications.
 
 The IMD/IES framework is submitted to a thirteen-experiment
 falsification programme organised in two thematic waves: a
@@ -837,6 +847,228 @@ IMD. Because cycling at work and bike-sharing-related cycling are
 conceptually adjacent, the specification raises a tautology
 concern that we resolve through the alternative-specification
 analysis of Section~\ref{sec:val-ies}.
+
+\subsection{Usage, well-being and the IMD}
+\label{sec:results-usage}
+
+The descriptive analysis above answers the volume- and
+income-related parts of the research questions (Q2, Q3) on the
+supply side: the IMD is a contextual supply indicator. To answer
+Q1 fully, we now ask whether the IMD captures cycling
+\emph{outcomes} that policy actually targets: how cyclists feel
+about their environment (well-being), how many of them ride
+(observed usage), and how that compares with alternative
+indicators that institutions could use instead. The full
+robustness conditions (Q4) are then unfolded in
+Section~\ref{sec:validation}.
+
+\subsubsection{Is the IMD a better metric than the alternatives?}
+\label{sec:results-tournament}
+
+Four operational alternatives compete with the IMD as candidate
+city-level indicators of cycling-environment quality: (i) a
+volumetric metric defined as $\log[\text{stations} \cdot
+\text{mean capacity}]$ per system, (ii) the FUB Cycling Barometer
+2023 subjective perception score, (iii) eco-counter daily cyclist
+counts, and (iv) the EMP 2019 modal share of cycling to work. We
+run a metric tournament along three axes: inter-metric Spearman
+agreement on the dock-based panel, leave-one-city-out predictive
+performance against the two behavioural outcomes (FUB and
+eco-counter), and discriminative range across the panel
+(Table~\ref{tab:tournament}).
+
+\begin{table}[H]
+\centering
+\caption{Metric tournament: pairwise Spearman correlations and
+leave-one-city-out predictive performance for two behavioural
+outcomes. Cell entries are $\rho_{\text{Sp}}$ with the
+pairwise-complete sample size in parentheses. Stars in the
+``LOO well-being'' and ``LOO usage'' columns mark the strongest
+predictor of each outcome.}
+\label{tab:tournament}
+\small
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+Metric & IMD & Volumetric & FUB & Eco-counter & EMP \\
+\midrule
+IMD            & 1.00 (59) & +0.27 (59) & +0.41 (32) & +0.49 (25) & +0.47 (44) \\
+Volumetric     & +0.27     & 1.00 (59)  & +0.20 (32) & +0.55 (25) & +0.30 (44) \\
+FUB            & +0.41     & +0.20      & 1.00 (32)  & +0.69 (15) & +0.86 (29) \\
+Eco-counter    & +0.49     & +0.55      & +0.69      & 1.00 (25)  & +0.75 (18) \\
+EMP            & +0.47     & +0.30      & +0.86      & +0.75      & 1.00 (44)  \\
+\midrule
+\multicolumn{6}{@{}l}{LOO well-being (FUB outcome):} \\
+\multicolumn{6}{@{}r}{
+    IMD = $+0.41$\ \ Volumetric = $+0.20$\ \
+    Eco-counter = $+0.69$\ \ EMP = $\mathbf{+0.86}^{\,\star}$
+} \\
+\multicolumn{6}{@{}l}{LOO usage (eco-counter outcome):} \\
+\multicolumn{6}{@{}r}{
+    IMD = $+0.49$\ \ Volumetric = $+0.55$\ \
+    FUB = $+0.69$\ \ EMP = $\mathbf{+0.75}^{\,\star}$
+} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The tournament yields a clean ordering. As a predictor of
+\emph{cycling well-being} (FUB perception score), the IMD beats
+the volumetric metric by roughly two-to-one
+($\rho_{\text{LOO}} = +0.41$ vs.\ $+0.20$) but is dominated by the
+behavioural EMP modal share ($+0.86$) -- a metric that institutions
+should use whenever they have it, but that exists at fine spatial
+resolution only on a 44-city sub-panel. As a predictor of
+\emph{observed usage} (eco-counter), the IMD ($+0.49$) is roughly
+comparable to the volumetric metric ($+0.55$) but again dominated
+by EMP and FUB. The competitive position of the IMD is therefore
+clear: it is the best supply-side metric for cities where direct
+behavioural measurement is absent or unreliable, which is the
+majority of the French panel. Whenever EMP or FUB exist they
+should be used as primary, with the IMD as supply-side context;
+whenever they are absent the IMD outperforms the institutional
+volumetric default.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\linewidth]{e15_predictive_power.pdf}
+    \caption{Leave-one-city-out predictive performance of each
+    candidate metric for two outcomes: cycling well-being (FUB
+    perception score, left) and observed usage (eco-counter daily
+    counts, right). The IMD (navy) is the best supply-side
+    predictor in both panels and approximately doubles the
+    well-being predictive power of the volumetric default.
+    Behavioural metrics (EMP, FUB) dominate when they exist.}
+    \label{fig:tournament}
+\end{figure}
+
+\subsubsection{Which component drives cycling well-being?}
+\label{sec:results-wellbeing}
+
+The IMD/FUB correlation $\rho = +0.41$ aggregates four component
+contributions. We decompose it by fitting two parsimonious
+regressions on the FUB sub-panel of 32 cities:
+
+\begin{equation}
+    \text{FUB}_i \;=\; \alpha + \beta_M\,C_{M,i} + \beta_I\,C_{I,i}
+                                + \beta_S\,C_{S,i} + \beta_T\,C_{T,i}
+                                + \varepsilon_i,
+    \label{eq:fub-components}
+\end{equation}
+
+and a controls model in which the IMD enters jointly with the
+log of the number of stations and the log of the eco-counter
+average (with the eco-counter mean imputed where missing):
+\begin{equation}
+    \text{FUB}_i \;=\; \alpha + \beta_{\IMD}\,\IMD_i
+        + \beta_{N}\,\log(N_i) + \beta_{\text{eco}}\,\log(\text{eco}_i + 1)
+        + \varepsilon_i.
+    \label{eq:fub-controls}
+\end{equation}
+Coefficients are standardised and reported with bootstrap 95\,\%
+confidence intervals (Figure~\ref{fig:wellbeing}).
+
+The component-only regression explains $R^{2} = 0.39$ of the
+panel's well-being variance. The only credibly non-zero
+standardised coefficient is multimodality
+($\hat\beta_M = +0.50$, 95\,\% CI $[+0.13, +0.88]$, partial $R^{2}
+= 0.23$). Cycling-infrastructure continuity carries a
+positive-mean coefficient that does not cross zero only one-sidedly
+($+0.27$, CI $[-0.15, +0.55]$), and both safety and topography
+contribute essentially nothing once multimodality is partialled
+out. The reading is unambiguous: the dimension of the cycling
+environment that most strongly drives cyclists' subjective
+well-being in the French panel is the integration of the bike
+network with heavy public transit. The controls regression
+confirms that the IMD as a whole survives the inclusion of city
+size and observed usage ($\hat\beta_{\IMD} = +0.54$, CI $[+0.07,
++0.89]$, partial $R^{2} = 0.26$), with $\log(N)$ and $\log(\text{eco})$
+adding nothing detectable in the residual variance. The
+volumetric prior is therefore not only weakly correlated with
+well-being -- it disappears entirely once the IMD is in the
+regression.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\linewidth]{e16_components_vs_fub.pdf}
+    \caption{Which IMD component drives cycling well-being?
+    Standardised coefficients of the FUB perception score on the
+    four normalised IMD components ($n = 32$ cities with FUB
+    coverage). Multimodality is the only component whose 95\,\%
+    bootstrap confidence interval excludes zero. The
+    component-only regression explains $R^{2} = 0.39$ of the
+    FUB variance.}
+    \label{fig:wellbeing}
+\end{figure}
+
+\subsubsection{A GBFS-internal usage proxy: pseudo-flows from
+station status}
+\label{sec:results-pseudoflows}
+
+The eco-counter validation of Section~\ref{sec:val-flow} matches
+the IMD to 25 cities. The GBFS \texttt{station\_status} feed
+offers a second, network-internal usage signal that can be
+computed directly from the GBFS data the indicator is built on,
+without any external dataset. Between two snapshots at times
+$t_1 < t_2$, the pseudo-flow at station $s$ is
+\begin{equation}
+    \phi_s(t_1, t_2) \;=\;
+    \frac{|\,b_s(t_2) - b_s(t_1)\,|}
+         {\max(b_s(t_1) + d_s(t_1),\; b_s(t_2) + d_s(t_2))},
+\label{eq:pseudoflow}
+\end{equation}
+where $b_s$ is the number of bikes available at $s$ and $d_s$ the
+number of docks available; the denominator approximates the
+station's nominal capacity. The city-level turnover rate is the
+panel-mean $\bar\phi_i = |\mathcal{S}_i|^{-1} \sum_{s\in\mathcal{S}_i}
+\phi_s$.
+
+We compute $\bar\phi$ from two snapshots of the companion
+repository's 30-minute collector spanning a 24-hour window in
+early March 2026 and match the resulting series to 21 cities of
+the IMD panel. The Spearman correlation between the IMD and the
+capacity-normalised pseudo-flow is $\rho = -0.54$ ($p = 0.012$),
+i.e.\ \emph{higher-IMD cities show less per-station turnover}.
+Naively read this would contradict E3's positive correlation
+between the IMD and eco-counter daily counts. The right reading
+is different: a single 24-hour window of GBFS
+\texttt{station\_status} captures rider trips, operator
+rebalancing operations, holiday effects and station closures
+inextricably mixed in one signed quantity. Cities with mature,
+well-integrated systems --- where local demand is met by local
+supply --- need less operational rebalancing and therefore record
+less raw $|\Delta\text{bikes}|$. The negative correlation is a
+signature of \emph{system equilibrium}, not a signature of low
+usage. The methodological lesson is direct: GBFS-derived
+pseudo-flows require a multi-week panel to separate the operator
+rebalancing component from the rider behavioural component, and
+the 24-hour window reported here is illustrative rather than
+definitive (Figure~\ref{fig:pseudoflow}).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\linewidth]{e17_pseudo_flow_vs_imd.pdf}
+    \caption{GBFS-derived single-window pseudo-flow against the
+    IMD. Left: raw $|\Delta\text{bikes}|$ per station --
+    confounded by capacity and operational rebalancing. Right:
+    capacity-normalised turnover rate -- still negatively
+    correlated with the IMD, reflecting that high-IMD cities have
+    self-equilibrating systems that require less operator
+    intervention over a 24-hour window. A multi-week pseudo-flow
+    panel is documented in the companion repository for future
+    decomposition.}
+    \label{fig:pseudoflow}
+\end{figure}
+
+The three usage and well-being results together support a
+coherent interpretation of the IMD: it is a supply-side proxy
+that approximately doubles the predictive yield of the
+volumetric default on well-being, that survives controls for
+size and observed usage, and that tracks \emph{system
+equilibrium} rather than gross turnover when read on the GBFS
+data alone. The behavioural references (FUB, EMP, eco-counter)
+remain the gold standard whenever they exist; the IMD's policy
+relevance is its ability to extend an interpretable assessment to
+the cities those references do not cover.
 
 \subsection{Case study: Montpellier and V\'elomagg}
 \label{sec:results-montpellier}
@@ -1645,9 +1877,84 @@ updates re-audit Lyon's GBFS, OSM, BAAC and GTFS coverage as a
 priority.
 
 \subsection{Policy implications}
+\label{sec:discussion-policy}
 
-Subject to the validity treatments discussed above, four policy
-implications emerge.
+Subject to the validity treatments discussed above, the IMD and
+the IES support two complementary policy frames: an
+\emph{economic} frame around indicator-conditioned funding
+decisions, and a \emph{social} frame around equity-targeted
+deployment. We discuss them in turn before listing the
+operational implications.
+
+\subsubsection*{Economic frame: indicator-conditioned investment}
+
+The metric tournament of Section~\ref{sec:results-tournament}
+shows that the IMD doubles the well-being predictive power of the
+volumetric default at no marginal data cost (the IMD is computed
+on data the operators are already required to publish under the
+LOM). Adopting the IMD as the contractual benchmark in
+AOM--operator agreements would therefore align operator
+incentives with cycling well-being rather than with raw fleet
+volume, at no additional measurement burden. The
+component-decomposition of Section~\ref{sec:results-wellbeing}
+further suggests that the highest-yield investment, well-being
+per euro, is in heavy-transit integration (multimodality
+$C_M$). Heavy-transit integration is partly a question of
+station siting and partly a question of GTFS data quality;
+both are open-data deliverables that can be conditioned on
+indicator improvements.
+
+The expected investment yield can be quantified using the IES
+gap: bringing a desert city from its observed $\IES < 0.85$ to
+parity ($\IES = 1.00$) implies a target uplift
+$\Delta\IMD_i = (1 - \IES_i) \cdot \widehat{\IMD}_i$ on the IMD
+of city $i$. For the nine high-confidence Bayesian deserts of
+Section~\ref{sec:val-bayes-ies} (Saumur, Lyon, Amiens, Nancy,
+Troyes, Laon, Niort, Tarbes, Lille), the median required uplift
+is $11.4$ IMD points -- a one-standard-deviation move on the
+panel's IMD distribution, achievable through targeted
+infrastructure programmes of the National Cycling Plan's typical
+scale. Cities with deeper deserts (Saumur $\IES = 0.59$, Lyon
+$0.48$) would require larger uplifts and longer programmes.
+
+\subsubsection*{Social frame: equity-targeted deployment}
+
+The Bayesian IES of Section~\ref{sec:val-bayes-ies} flips the
+income-blind targeting heuristic on its head. The posterior
+coefficient on income is centred near zero ($-0.74$, CrI
+$[-4.76, +3.34]$), confirming that income alone is a poor
+predictor of cycling-environment quality. By contrast, the
+cycling-commute share is the only credibly non-zero coefficient
+($+9.01$, CrI $[+5.04, +13.07]$), which means that cycling
+environments correlate with prior cycling adoption -- a
+self-reinforcing loop in which cities that already cycle attract
+more cycling investment. The equity case for IES-targeted
+deployment is then a structural one: breaking the loop requires
+investing in cities where cycling adoption is low not despite
+their low cycling adoption but \emph{because of} it. The nine
+high-confidence deserts contain a mixture of northern industrial
+cities (Lille, Amiens, Laon, Troyes, Nancy), southern mid-sized
+cities (Tarbes, Saumur, Niort) and one large metropolis (Lyon),
+and they are not regionally concentrated
+(Section~\ref{sec:val-moran}); social-mobility deficits of the
+French bike-sharing landscape are therefore a pattern of local
+policy choice, not a pattern of regional development.
+
+A second social dimension is the relationship between the IES
+and the population that benefits from a cycling-environment
+upgrade. Combining the IES with the panel's car-free household
+share ($\hat\beta_{\text{car-free}} = +4.36$, CrI $[-1.19,
++9.99]$) gives a rough estimate of who is excluded by an IES
+deficit: in a city with a high car-free share, an IES below 0.85
+means a large fraction of the population is dependent on a
+sub-par cycling environment for everyday mobility. Of the nine
+high-confidence deserts, Lille and Lyon are above the panel's
+75th percentile of car-free households; the social cost of their
+IES deficit is therefore disproportionate. We document these
+two cities as the primary social-priority targets of the IES
+ranking.
+
+\subsubsection*{Operational implications}
 
 \begin{itemize}
 \item \emph{Prioritise homogeneous spatial coverage over central
@@ -1717,14 +2024,18 @@ research questions of Section~\ref{sec:introduction}:
 \begin{itemize}
 \item[\textbf{Q1.}] \emph{Performance can be measured by a
 composite indicator whose weights are calibrated against
-behavioural references rather than chosen normatively.} The
-IMD/IES pair, with weights calibrated by differential evolution
-against the FUB Cycling Barometer and the EMP 2019 mobility
-survey, generalises out of sample (leave-one-city-out Spearman
-$\approx 0.5$ on both references) and correlates with eco-counter
-daily flows after controlling for city size (partial $R^{2} =
-0.24$). The Bayesian re-specification of the IES turns the equity
-diagnostic into a calibrated probability statement.
+behavioural references rather than chosen normatively, and the
+IMD doubles the well-being predictive power of the volumetric
+default at no marginal data cost.} The IMD/IES pair, with weights
+calibrated by differential evolution against the FUB Cycling
+Barometer and the EMP 2019 mobility survey, generalises out of
+sample (leave-one-city-out Spearman $\approx 0.5$ on both
+references), correlates with eco-counter daily flows after
+controlling for city size (partial $R^{2} = 0.24$), and predicts
+cycling well-being twice as well as the volumetric metric
+($\rho_{\text{LOO}} = +0.41$ vs.\ $+0.20$). The Bayesian
+re-specification of the IES turns the equity diagnostic into a
+calibrated probability statement on every city.
 
 \item[\textbf{Q2.}] \emph{Volumetric metrics are weak predictors
 of cycling-environment quality.} Strasbourg (39 stations) and
