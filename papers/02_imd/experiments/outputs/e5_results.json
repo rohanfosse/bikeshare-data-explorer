@@ -147,7 +147,7 @@
         "revenu_median_uc"
       ],
       "n_predictors": 1,
-      "r2_in_sample": 0.3566331294613297,
+      "r2_in_sample": 0.3566331294613294,
       "n_deserts": 24,
       "deserts": [
         "Bourg-en-Bresse",
@@ -316,7 +316,7 @@
         "part_menages_voit0"
       ],
       "n_predictors": 3,
-      "r2_in_sample": 0.6533582207854538,
+      "r2_in_sample": 0.653358220785454,
       "n_deserts": 18,
       "deserts": [
         "Toulouse",
@@ -474,7 +474,7 @@
         "part_velo_travail"
       ],
       "n_predictors": 4,
-      "r2_in_sample": 0.642562941939515,
+      "r2_in_sample": 0.6425629419395145,
       "n_deserts": 18,
       "deserts": [
         "Rennes",

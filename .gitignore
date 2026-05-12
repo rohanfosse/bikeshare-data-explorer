@@ -46,4 +46,4 @@ papers/**/experiments/**/__pycache__/
 
 # Stale artifacts from previous file names (renamed 2026-05)
 papers/01_gold_standard/papier-gold-standard.*
-papers/02_imd/papier-imd.*
+papers/02_imd/papier-imd.*papers/02_imd/overleaf_bundle.zip
