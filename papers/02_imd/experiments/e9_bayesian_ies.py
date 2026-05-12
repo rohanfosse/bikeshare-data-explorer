@@ -116,11 +116,65 @@ def main() -> None:
     cities = [c for c, m in zip(panel.cities, mask) if m]
     log.info("  n_complete = %d", len(cities))
 
-    # Bayesian linear regression
+    # Bayesian linear regression -- main run at tau = 1.0
     log.info("Drawing %d posterior samples (tau=1.0)...", N_POST)
     beta, sigma2 = _bayesian_linreg_posterior(x, y, tau=1.0, rng=RNG)
     log.info("  beta shape = %s, sigma2 shape = %s",
              beta.shape, sigma2.shape)
+
+    # ---- Prior sensitivity: replicate at tau in {0.1, 1, 10} ---------
+    log.info("Prior sensitivity sweep on tau in {0.1, 1, 10}...")
+    prior_sweep = {}
+    intercept_lab = ["intercept"] + PREDICTORS
+    for tau_val in (0.1, 1.0, 10.0):
+        beta_t, _ = _bayesian_linreg_posterior(
+            x, y, tau=tau_val,
+            rng=np.random.default_rng(2026 + int(tau_val * 100)),
+        )
+        x_full_t = np.column_stack([np.ones(x.shape[0]), x])
+        y_hat_t = np.clip(x_full_t @ beta_t.T, 1e-3, None)
+        ies_t = y[:, None] / y_hat_t
+        p_desert_t = (ies_t < DESERT_THRESHOLD).mean(axis=1)
+        deserts_90 = sorted(
+            cities[i] for i in range(len(cities)) if p_desert_t[i] >= 0.90
+        )
+        deserts_75 = sorted(
+            cities[i] for i in range(len(cities)) if p_desert_t[i] >= 0.75
+        )
+        coef_q_t = np.percentile(beta_t, [2.5, 50, 97.5], axis=0)
+        coef_mean_t = beta_t.mean(axis=0)
+        prior_sweep[str(tau_val)] = {
+            "tau": tau_val,
+            "n_robust_deserts_p_geq_0.90": int(len(deserts_90)),
+            "n_robust_deserts_p_geq_0.75": int(len(deserts_75)),
+            "deserts_p_geq_0.90": deserts_90,
+            "deserts_p_geq_0.75": deserts_75,
+            "coefficients": {
+                name: {
+                    "mean": float(coef_mean_t[i]),
+                    "q025": float(coef_q_t[0, i]),
+                    "q975": float(coef_q_t[2, i]),
+                } for i, name in enumerate(intercept_lab)
+            },
+        }
+        log.info(
+            "  tau=%4.1f   #deserts(P>=0.90) = %d   #deserts(P>=0.75) = %d",
+            tau_val, len(deserts_90), len(deserts_75),
+        )
+        log.info("    beta_velo = %+.3f  [%+.2f, %+.2f]",
+                 coef_mean_t[4], coef_q_t[0, 4], coef_q_t[2, 4])
+
+    # Intersection of P>=0.90 deserts across the three priors
+    sets_90 = [set(prior_sweep[k]["deserts_p_geq_0.90"])
+               for k in prior_sweep]
+    invariant_90 = sorted(set.intersection(*sets_90))
+    union_90 = sorted(set.union(*sets_90))
+    log.info("Deserts at P>=0.90 invariant across tau in {0.1, 1, 10}: %d",
+             len(invariant_90))
+    log.info("  invariant: %s", ", ".join(invariant_90))
+    if set(union_90) != set(invariant_90):
+        log.info("  prior-sensitive: %s",
+                 ", ".join(sorted(set(union_90) - set(invariant_90))))
 
     # Posterior predictive of IMD_hat for each city
     x_full = np.column_stack([np.ones(x.shape[0]), x])
@@ -135,7 +189,6 @@ def main() -> None:
     sigma_mean = float(np.sqrt(sigma2).mean())
 
     log.info("Posterior coefficients (standardised predictors):")
-    intercept_lab = ["intercept"] + PREDICTORS
     for i, name in enumerate(intercept_lab):
         log.info(
             "  %-22s  mean=%+.3f   95%% CrI = [%+.3f, %+.3f]",
@@ -203,6 +256,9 @@ def main() -> None:
         ],
         "n_robust_deserts_p_geq_0.9": int((p_desert >= 0.9).sum()),
         "n_robust_deserts_p_geq_0.75": int((p_desert >= 0.75).sum()),
+        "prior_sensitivity": prior_sweep,
+        "invariant_deserts_p_geq_0.9_across_tau": invariant_90,
+        "n_invariant_deserts_p_geq_0.9": int(len(invariant_90)),
     }
     out_json = OUT_DIR / "e9_results.json"
     out_json.write_text(json.dumps(results, indent=2), encoding="utf-8")

@@ -548,5 +548,180 @@
     "Laon"
   ],
   "n_robust_deserts_p_geq_0.9": 9,
-  "n_robust_deserts_p_geq_0.75": 14
+  "n_robust_deserts_p_geq_0.75": 14,
+  "prior_sensitivity": {
+    "0.1": {
+      "tau": 0.1,
+      "n_robust_deserts_p_geq_0.90": 11,
+      "n_robust_deserts_p_geq_0.75": 15,
+      "deserts_p_geq_0.90": [
+        "Amiens",
+        "Cherbourg-en-Cotentin",
+        "Laon",
+        "Lille",
+        "Lyon",
+        "Nancy",
+        "Niort",
+        "Pau",
+        "Saumur",
+        "Tarbes",
+        "Troyes"
+      ],
+      "deserts_p_geq_0.75": [
+        "Amiens",
+        "Avignon",
+        "Cherbourg-en-Cotentin",
+        "Laon",
+        "Lille",
+        "Lyon",
+        "Marseille",
+        "Nancy",
+        "Niort",
+        "Pau",
+        "Rennes",
+        "Saumur",
+        "Tarbes",
+        "Troyes",
+        "Valence"
+      ],
+      "coefficients": {
+        "intercept": {
+          "mean": 37.77839032756427,
+          "q025": 34.406167089233534,
+          "q975": 41.15420775481091
+        },
+        "revenu_median_uc": {
+          "mean": -0.9086965186440331,
+          "q025": -4.779079945808735,
+          "q975": 3.016945556120148
+        },
+        "gini_revenu": {
+          "mean": -1.7650489004921006,
+          "q025": -7.271167149763609,
+          "q975": 3.813660817287246
+        },
+        "part_menages_voit0": {
+          "mean": 4.5214981652940605,
+          "q025": -0.9230753112670954,
+          "q975": 9.911381914696067
+        },
+        "part_velo_travail": {
+          "mean": 9.222445861158082,
+          "q025": 5.2853703030722645,
+          "q975": 13.14853329772742
+        }
+      }
+    },
+    "1.0": {
+      "tau": 1.0,
+      "n_robust_deserts_p_geq_0.90": 9,
+      "n_robust_deserts_p_geq_0.75": 14,
+      "deserts_p_geq_0.90": [
+        "Amiens",
+        "Laon",
+        "Lille",
+        "Lyon",
+        "Nancy",
+        "Niort",
+        "Saumur",
+        "Tarbes",
+        "Troyes"
+      ],
+      "deserts_p_geq_0.75": [
+        "Amiens",
+        "Avignon",
+        "Cherbourg-en-Cotentin",
+        "Laon",
+        "Lille",
+        "Lyon",
+        "Marseille",
+        "Nancy",
+        "Niort",
+        "Pau",
+        "Rennes",
+        "Saumur",
+        "Tarbes",
+        "Troyes"
+      ],
+      "coefficients": {
+        "intercept": {
+          "mean": 37.206757661587,
+          "q025": 33.61644124318501,
+          "q975": 40.80999524439791
+        },
+        "revenu_median_uc": {
+          "mean": -0.7787302448028468,
+          "q025": -4.903515524072167,
+          "q975": 3.3336091195716926
+        },
+        "gini_revenu": {
+          "mean": -1.535105684168393,
+          "q025": -7.374881735916913,
+          "q975": 4.153208114882445
+        },
+        "part_menages_voit0": {
+          "mean": 4.350810145490641,
+          "q025": -1.3706827685856247,
+          "q975": 10.1284735846846
+        },
+        "part_velo_travail": {
+          "mean": 9.057480484216686,
+          "q025": 4.982056944224332,
+          "q975": 13.196550671075252
+        }
+      }
+    },
+    "10.0": {
+      "tau": 10.0,
+      "n_robust_deserts_p_geq_0.90": 4,
+      "n_robust_deserts_p_geq_0.75": 5,
+      "deserts_p_geq_0.90": [
+        "Amiens",
+        "Lyon",
+        "Nancy",
+        "Saumur"
+      ],
+      "deserts_p_geq_0.75": [
+        "Amiens",
+        "Laon",
+        "Lyon",
+        "Nancy",
+        "Saumur"
+      ],
+      "coefficients": {
+        "intercept": {
+          "mean": 32.36422980097137,
+          "q025": 27.745481880764444,
+          "q975": 37.19849086503023
+        },
+        "revenu_median_uc": {
+          "mean": -0.0976666537337147,
+          "q025": -5.244946516447463,
+          "q975": 5.183977246407621
+        },
+        "gini_revenu": {
+          "mean": -0.14225884132151828,
+          "q025": -6.65450672245774,
+          "q975": 6.463496359096729
+        },
+        "part_menages_voit0": {
+          "mean": 3.3866683613088715,
+          "q025": -2.9380274342455084,
+          "q975": 9.960435759921705
+        },
+        "part_velo_travail": {
+          "mean": 7.738114389621933,
+          "q025": 2.406663244393898,
+          "q975": 13.027216262180776
+        }
+      }
+    }
+  },
+  "invariant_deserts_p_geq_0.9_across_tau": [
+    "Amiens",
+    "Lyon",
+    "Nancy",
+    "Saumur"
+  ],
+  "n_invariant_deserts_p_geq_0.9": 4
 }

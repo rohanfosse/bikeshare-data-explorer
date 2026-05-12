@@ -118,22 +118,32 @@ Spatial Equity Index (IES), which measures over- or
 under-performance relative to the local socio-economic profile
 and is reported both as a Ridge point estimate and as a Bayesian
 posterior with credible intervals; the two specifications jointly
-identify a conservative shortlist of nine high-confidence
-\emph{social mobility deserts} and a broader shortlist of twenty
-deserts that are robust across specifications.
+identify (i) a \emph{prior-invariant} four-city subset of social
+mobility deserts that survives a sweep of the Bayesian prior
+$\tau \in \{0.1, 1, 10\}$ (Amiens, Lyon, Nancy, Saumur),
+(ii) a nine-city reference list at the operating prior $\tau = 1$,
+and (iii) a broader shortlist of twenty deserts robust across
+frequentist specifications.
 
 The IMD/IES framework is submitted to a thirteen-experiment
 falsification programme organised in two thematic waves: a
-\emph{core wave} of eight tests targeting the central
+\emph{core wave} of eight tests targeting central
 construct-validity, generalisation and equity risks, and an
 \emph{extension wave} of five tests targeting residual risks not
-covered by the core (Sobol--Jansen variance decomposition,
-Bayesian re-specification of the IES, per-city ranking
-confidence intervals, parametric buffer-radius sweep, Cook-style
-leverage on the calibration panel). Twelve tests are executed on
-the current data; the thirteenth, a longitudinal
-synthetic-control identification, requires historical GBFS
-archives still to be ingested. The
+covered by the core. Twelve tests are executed on the current
+data; the thirteenth, a longitudinal synthetic-control
+identification, requires historical GBFS archives still to be
+ingested. We further classify the twelve executed tests as
+\emph{clean} (seven: out-of-sample CV, weight-space stability,
+eco-counter validation, IES specification sweep, spatial
+autocorrelation, Sobol decomposition, per-city ranking CI,
+k-means typology), \emph{qualified} (two: Bayesian IES with prior
+sensitivity, Cook-style leverage that reorders Saint-Nazaire and
+Dijon in the Top-10), and \emph{substitute} (three:
+exposure-adjusted safety, within-city station bootstrap, and
+parametric buffer-radius sweep stand in for pre-registered
+station-level kriging and a full geometric re-enrichment that
+are deferred to the next iteration). The
 indicator generalises out of sample (leave-one-city-out Spearman
 $\approx 0.5$ on both references), correlates with eco-counter
 daily flows after controlling for city size (partial $R^{2} =
@@ -326,7 +336,12 @@ under-deployment in low-income neighbourhoods \citep{Smith2015,
 McNeil2017, Hosford2018, Caspi2021}. In France, the
 \citet{Cerema2022} institutional report shows reduced access to
 bike-sharing for low-income households; comparative national
-quantitative audits remain missing.
+quantitative audits remain missing. Institutional benchmarking is
+currently anchored on volumetric counts (Cerema annual cycling
+report, ADEME mobility dashboard, \citet{Mobi2024}); no
+context-aware composite is in routine institutional use, which is
+the gap our IMD targets and against which we measure it in
+Section~\ref{sec:results-tournament}.
 
 \subsection{Positioning}
 
@@ -549,10 +564,11 @@ contributing measurably and safety constrained at the floor.
 
 \begin{table}[H]
 \centering
-\caption{Three weighting strategies for the IMD. The Spearman
-correlations against FUB and EMP are in-sample for the supervised
-optimisation; out-of-sample validation is reported in
-Section~\ref{sec:val-loo}.}
+\caption{Three weighting strategies for the IMD and the
+Lyon-removed sensitivity reported in
+Section~\ref{sec:val-leverage}. The Spearman correlations against
+FUB and EMP are in-sample for the supervised optimisation;
+out-of-sample validation is reported in Section~\ref{sec:val-loo}.}
 \label{tab:weights-comparison}
 \small
 \begin{tabular}{@{}lcccccc@{}}
@@ -563,6 +579,7 @@ $\rho_{\text{FUB}}$ & $\rho_{\text{EMP}}$ \\
 Normative                       & 0.300 & 0.275 & 0.275 & 0.150 & 0.16 & 0.26 \\
 CRITIC \citep{Diakoulaki1995}   & 0.310 & 0.240 & 0.225 & 0.225 & 0.21 & 0.28 \\
 Supervised (retained)           & 0.374 & 0.372 & 0.053 & 0.201 & 0.49 & 0.55 \\
+Supervised, Lyon-removed        & 0.393 & 0.194 & 0.062 & 0.351 & 0.49 & 0.55 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -1023,26 +1040,35 @@ panel-mean $\bar\phi_i = |\mathcal{S}_i|^{-1} \sum_{s\in\mathcal{S}_i}
 \phi_s$.
 
 We compute $\bar\phi$ from two snapshots of the companion
-repository's 30-minute collector spanning a 24-hour window in
-early March 2026 and match the resulting series to 21 cities of
-the IMD panel. The Spearman correlation between the IMD and the
-capacity-normalised pseudo-flow is $\rho = -0.54$ ($p = 0.012$),
-i.e.\ \emph{higher-IMD cities show less per-station turnover}.
-Naively read this would contradict E3's positive correlation
-between the IMD and eco-counter daily counts. The right reading
-is different: a single 24-hour window of GBFS
-\texttt{station\_status} captures rider trips, operator
-rebalancing operations, holiday effects and station closures
-inextricably mixed in one signed quantity. Cities with mature,
-well-integrated systems --- where local demand is met by local
-supply --- need less operational rebalancing and therefore record
-less raw $|\Delta\text{bikes}|$. The negative correlation is a
-signature of \emph{system equilibrium}, not a signature of low
-usage. The methodological lesson is direct: GBFS-derived
-pseudo-flows require a multi-week panel to separate the operator
-rebalancing component from the rider behavioural component, and
-the 24-hour window reported here is illustrative rather than
-definitive (Figure~\ref{fig:pseudoflow}).
+repository's 30-minute collector spanning a single 24-hour window
+in early March 2026 and match the resulting series to 21 cities
+of the IMD panel. The Spearman correlation between the IMD and
+the capacity-normalised pseudo-flow is $\rho = -0.54$ ($p =
+0.012$): \emph{higher-IMD cities show less per-station turnover}
+on this single window.
+
+We caution that this experiment is a methodological probe rather
+than a behavioural validation. A 24-hour snapshot conflates rider
+trips, operator rebalancing operations, holiday effects and
+station closures into one signed quantity, and a single weekday
+in early March is not enough to disentangle them. The negative
+correlation admits at least four mutually compatible
+interpretations: (i) cities with mature, well-integrated systems
+need less operational rebalancing and therefore record less raw
+$|\Delta\text{bikes}|$ (a \emph{system-equilibrium} reading);
+(ii) high-IMD cities have larger per-station fleet capacity that
+absorbs short-term demand without dock-level turnover; (iii)
+small low-IMD networks are over-served by aggressive rebalancing
+operations that show up as $|\Delta\text{bikes}|$; (iv) the
+specific weekday window we sample reflects local weather, school
+schedules or operator events. We do not adjudicate between these
+on the present data. The methodological lesson is direct:
+GBFS-derived pseudo-flows require a multi-week panel and an
+explicit rebalancing-event filter to separate the operator from
+the rider component. The companion repository
+(\path{utils/gbfs_collector.py}) is now populating a 30-minute
+panel on twenty priority systems for the next iteration of the
+indicator (Figure~\ref{fig:pseudoflow}).
 
 \begin{figure}[H]
     \centering
@@ -1074,16 +1100,53 @@ the cities those references do not cover.
 \label{sec:results-montpellier}
 
 With fifty-three dock-based stations, Montpellier achieves a
-near-optimal IMD score at the national scale. The driver of this
-over-performance is the near-total spatial alignment of the
-bike-sharing network with the TAM tramway lines, which maximises
-$C_M$. The case illustrates the central empirical thesis of the
-paper: targeted multimodal integration with a heavy-transit
-network can outperform massive but disconnected deployments. A
-detailed network-science treatment of V\'elomagg --- including
-centrality, Louvain communities, hourly demand forecasting and
-network resilience --- is the subject of a separate companion
-paper.
+near-optimal IMD score ($88.3$, second to Strasbourg) at the
+national scale. The driver of this over-performance is the
+spatial alignment of the bike-sharing network with the TAM
+tramway lines, which is quantifiable directly from the
+station-level data.
+
+\begin{table}[H]
+\centering
+\caption{Montpellier multimodal alignment, measured on the
+$53$-station V\'elomagg dock-based network. Heavy GTFS stops are
+the count of TAM tramway and bus-priority stops within the 300~m
+buffer of each station. Panel benchmark is the dock-based panel
+of 59 urban areas reported in Table~\ref{tab:top10}.}
+\label{tab:montpellier}
+\small
+\begin{tabular}{@{}lcc@{}}
+\toprule
+Metric & Montpellier & Panel benchmark \\
+\midrule
+Mean heavy stops within 300~m   & $2.91$ & $0.61$ \\
+Share of stations with $\geq 1$ heavy stop & $83\,\%$ & $-$ \\
+Share with $\geq 3$ heavy stops & $40\,\%$ & $-$ \\
+Maximum heavy stops at one station  & $9$    & $-$ \\
+Nearest-neighbour distance, median  & $366$~m & $-$ \\
+Nearest-neighbour distance, mean    & $626$~m & $-$ \\
+Panel percentile of mean heavy stops & $95$th & $-$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Eighty-three percent of V\'elomagg dock-based stations have at
+least one heavy TAM stop within 300~m, and forty percent have at
+least three. The panel mean of heavy stops per station is
+$2.91$ -- the $95$th percentile of the 59-city panel mean
+distribution (panel grand mean $0.61$). The median
+nearest-neighbour distance between adjacent V\'elomagg stations
+is $366$~m, consistent with a dense intra-urban network that
+extends along the tramway corridors. Montpellier's IMD is therefore
+not a re-expression of fleet volume (its volumetric metric ranks
+below the panel median) but of a deliberate co-deployment of bike
+stations with the heavy-transit network. The case illustrates the
+central empirical thesis of the paper: targeted multimodal
+integration with a heavy-transit network can outperform massive
+but disconnected deployments. A detailed network-science
+treatment of V\'elomagg --- including centrality, Louvain
+communities, hourly demand forecasting and network resilience ---
+is the subject of a separate companion paper.
 
 % =========================================================================
 \section{Robustness and validation}
@@ -1469,24 +1532,49 @@ straddles the origin ($-0.74$, CrI $[-4.76, +3.34]$,
 $P(\beta > 0) = 0.36$), corroborating the non-correlation of
 Section~\ref{sec:results-income} on a fully probabilistic basis.
 
-The Bayesian desert diagnostic identifies nine cities with
-$P(\IES < 0.85) \geq 0.90$ -- Saumur, Lyon, Amiens, Nancy, Troyes,
-Laon, Niort, Tarbes and Lille -- and fourteen cities at the
-weaker threshold $P \geq 0.75$, adding Cherbourg-en-Cotentin, Pau,
-Avignon, Marseille and Rennes (Figure~\ref{fig:bayes-ies}). The
-overlap with the Ridge-based desert list of
-Section~\ref{sec:results-deserts} is partial: six cities (Laon,
-Amiens, Troyes, Tarbes, Lille, Pau) are common to both lists; the
-Bayesian analysis demotes Carcassonne, Avignon, Valence,
-Clermont-Ferrand, \'Epinal and Vichy below the $P \geq 0.90$
-threshold and promotes Saumur, Lyon, Nancy and Niort that the
-Ridge analysis missed. The posterior-mean IES of the headline
-twelve is within $\pm 0.05$ of the Ridge IES in every case, so
-the two diagnostics do not contradict each other; they trade
-parsimony of the desert list for a calibrated uncertainty
-statement. We recommend that policy uses report the
-$P \geq 0.75$ shortlist as the operational equity priority and
-the $P \geq 0.90$ shortlist as the high-confidence subset.
+At the reference prior $\tau = 1$, the Bayesian desert diagnostic
+identifies nine cities with $P(\IES < 0.85) \geq 0.90$ -- Saumur,
+Lyon, Amiens, Nancy, Troyes, Laon, Niort, Tarbes and Lille -- and
+fourteen cities at the weaker threshold $P \geq 0.75$, adding
+Cherbourg-en-Cotentin, Pau, Avignon, Marseille and Rennes
+(Figure~\ref{fig:bayes-ies}).
+
+\paragraph{Prior sensitivity.}
+The point list above is conditional on $\tau = 1$. We sweep
+$\tau \in \{0.1, 1.0, 10.0\}$, spanning a hundred-fold range of
+prior precision on the coefficients. The number of cities flagged
+as deserts at $P \geq 0.90$ varies from $11$ at $\tau = 0.1$
+(weakest shrinkage), through $9$ at $\tau = 1.0$, down to $4$ at
+$\tau = 10.0$ (strongest shrinkage). The cycling-commute
+posterior coefficient is positive across the three priors
+($\hat\beta_{\text{velo}} = +9.22, +9.06, +7.74$) and its 95\,\%
+credible interval excludes zero in all three regimes. The
+intersection of the desert sets at $P \geq 0.90$ across the three
+priors contains only four cities -- \textbf{Amiens, Lyon, Nancy,
+Saumur} -- which we therefore designate as the
+\emph{prior-invariant high-confidence deserts}. The seven cities
+that drop out at $\tau = 10$ (Cherbourg-en-Cotentin, Laon, Lille,
+Niort, Pau, Tarbes, Troyes) should be read as
+\emph{prior-sensitive} robust deserts. The policy reading is
+direct: a defensible high-confidence shortlist is the four-city
+prior-invariant set; the nine-city $\tau = 1$ list is the
+reference but should be reported together with the prior
+sensitivity.
+
+\paragraph{Overlap with the Ridge desert list.}
+Six cities (Laon, Amiens, Troyes, Tarbes, Lille, Pau) are common
+to the $\tau = 1$ Bayesian list and the Ridge list of
+Section~\ref{sec:results-deserts}; the Bayesian analysis demotes
+Carcassonne, Avignon, Valence, Clermont-Ferrand, \'Epinal and
+Vichy below the $P \geq 0.90$ threshold and promotes Saumur, Lyon,
+Nancy and Niort that the Ridge analysis missed. The
+posterior-mean IES of the headline twelve is within $\pm 0.05$ of
+the Ridge IES in every case, so the two diagnostics do not
+contradict each other; they trade parsimony of the desert list
+for a calibrated uncertainty statement. We recommend that policy
+uses report the prior-invariant four-city list as the
+high-confidence subset and the $P \geq 0.75$ shortlist as the
+operational equity priority.
 
 \begin{figure}[H]
     \centering
@@ -1622,15 +1710,22 @@ $D_{90} = 0.176$. The single highest-leverage city is Lyon
 ($0.18$), Amiens, Nancy and Toulouse (all at $0.17$). The
 calibration-fit penalty of removing any single city is small:
 $\max_{i} |\Delta\bar\rho_i| = 0.075$ and
-$\mathrm{median}_{i} |\Delta\bar\rho_i| = 0.009$. Removing Lyon
-shifts the calibrated weight vector by 41\,\% of its norm but
-leaves $\bar\rho$ unchanged at three decimal places, indicating
-that Lyon is a high-leverage but balanced point in the
-calibration panel (Figure~\ref{fig:e12-leverage}). The
-diagnostic singles out Lyon as the city whose data should be
-re-audited as a priority and motivates reporting both the
-in-sample and Lyon-removed weight vectors when the indicator is
-applied to longitudinal updates.
+$\mathrm{median}_{i} |\Delta\bar\rho_i| = 0.009$. The Lyon-removed
+weight vector reported in Table~\ref{tab:weights-comparison} is
+$\mathbf{w}_{-\text{Lyon}}^{\,\ast} = (0.393, 0.194, 0.062,
+0.351)$: removing Lyon halves the infrastructure weight ($w_I$
+from $0.372$ to $0.194$) and reroutes the freed mass onto
+topography ($w_T$ from $0.201$ to $0.351$), leaving multimodality
+nearly unchanged. The substantive question is then whether the
+ranking changes accordingly. The answer is largely no: the
+Kendall $\tau$ between the published ranking and the
+Lyon-removed ranking is $0.83$, the Spearman $\rho$ is $0.95$,
+and the Top-10 sets overlap on nine cities -- Saint-Nazaire
+drops out and Dijon enters (Figure~\ref{fig:e12-leverage}). The
+Top-3 (Strasbourg, Montpellier, Nantes) is unchanged. The
+diagnostic therefore singles out Lyon as the city whose data
+should be re-audited as a priority but does not destabilise the
+substantive Top-10 conclusions.
 
 \begin{figure}[H]
     \centering
@@ -1697,28 +1792,50 @@ structural intervention envisaged by the National Cycling Plan.
 \label{sec:val-summary}
 
 Table~\ref{tab:experiments-status} summarises the twelve
-executed experiments and the one outstanding test. The executed
-tests support eight conclusions: the supervised weights
-generalise out of sample; the city ranking is robust under
-data-consistent weight uncertainty; the IMD correlates with
-eco-counter daily flows after controlling for city size; the IES
-diagnostic identifies a robust set of twenty mobility deserts
-across alternative specifications; the IMD distribution carries
-no detectable spatial autocorrelation; component measurement
-noise propagates through the IMD with infrastructure variance
-dominating the score (48\,\%) and multimodality variance
+executed experiments and the one outstanding test. We classify
+each executed test by verdict: \emph{clean} (test ran as
+pre-specified, passes its threshold), \emph{qualified} (passes
+with a documented caveat), or \emph{substitute} (the
+pre-registered protocol is deferred and a proxy is reported in
+its place). Of the twelve executed tests, seven are clean
+(E1, E2, E3, E6, E7, E8, E10, E13), two are qualified (E9 prior
+sensitivity, E12 Lyon-removed reordering) and three are
+substitutes for deferred pre-registered protocols: E4 reports a
+city-level empirical-Bayes adjustment in place of the
+pre-registered station-level kriging of cyclist exposure, E5
+reports a within-city station bootstrap in place of the
+pre-registered full re-enrichment at six buffer radii, and E11
+reports a parametric buffer-radius sweep whose elasticities are
+borrowed from secondary literature rather than measured
+directly. The substitutes bracket the pre-registered tests
+within a coherent uncertainty regime but do not replace them; the
+companion repository documents them as such.
+
+Beyond the verdict counts, the executed tests support eight
+substantive conclusions: the supervised weights generalise out
+of sample; the city ranking is robust under data-consistent
+weight uncertainty; the IMD correlates with eco-counter daily
+flows after controlling for city size; the IES diagnostic
+identifies a robust set of twenty mobility deserts across
+alternative frequentist specifications; the IMD distribution
+carries no detectable spatial autocorrelation; component
+measurement noise propagates through the IMD with infrastructure
+variance dominating the score (48\,\%) and multimodality variance
 dominating the rank (77\,\%); the Bayesian re-specification of
-the IES isolates a nine-city high-confidence desert subset
-($P \geq 0.90$); and the published ranking is robust to buffer
-radius within $[150, 500]$~m. They force four substantive
-revisions of the original framing: the supervised optimum is not
-multimodality-dominated; the safety component is exposure-
-confounded and requires station-level cyclist counts for full
-correction; the city ranking is fragile under arbitrary weight
-uncertainty even though it is robust under data-consistent weight
-uncertainty; and one city (Lyon) carries an asymmetric Cook-style
-leverage on the calibration that motivates publishing the
-Lyon-removed weight vector alongside the in-sample optimum.
+the IES isolates a four-city \emph{prior-invariant}
+high-confidence desert subset (Amiens, Lyon, Nancy, Saumur) plus
+seven prior-sensitive cities; and the published ranking is
+robust to buffer radius within $[150, 500]$~m. They force four
+substantive revisions of the original framing: the supervised
+optimum is not multimodality-dominated; the safety component is
+exposure-confounded and requires station-level cyclist counts
+for full correction; the city ranking is fragile under arbitrary
+weight uncertainty even though it is robust under data-consistent
+weight uncertainty; and one city (Lyon) carries an asymmetric
+Cook-style leverage on the calibration that motivates publishing
+the Lyon-removed weight vector
+(Table~\ref{tab:weights-comparison}) alongside the in-sample
+optimum.
 
 \begin{figure}[H]
     \centering
@@ -1727,34 +1844,38 @@ Lyon-removed weight vector alongside the in-sample optimum.
     experiments. Each row reports the experiment identifier, its
     risk axis (calibration, construct, geometry, equity, panel),
     the headline statistic and its acceptance threshold. Green
-    chips mark passes, orange chips mark qualified passes.}
+    chips mark clean passes, orange chips mark qualified passes
+    (caveat documented), blue chips mark substitutes for deferred
+    pre-registered protocols.}
     \label{fig:scorecard}
 \end{figure}
 
 \begin{table}[H]
 \centering
-\caption{Pre-registered validation experiments. Twelve are
-executed in this paper. The thirteenth requires historical GBFS
-archives still to be ingested.}
+\caption{Validation experiments and their verdicts. \emph{Clean} =
+test ran as pre-specified and passes its threshold;
+\emph{qualified} = passes with a documented caveat;
+\emph{substitute} = pre-registered protocol deferred, proxy
+reported in its place. Twelve are executed, one is outstanding.}
 \label{tab:experiments-status}
 \small
-\begin{tabular}{@{}lp{8.6cm}l@{}}
+\begin{tabular}{@{}lp{7.6cm}l@{}}
 \toprule
-Section & Test & Status \\
+Section & Test & Verdict \\
 \midrule
-\ref{sec:val-loo}        & E1. Out-of-sample CV of the weights & Executed \\
-\ref{sec:val-weights}    & E2. Weight-space stability of the ranking & Executed \\
-\ref{sec:val-flow}       & E3. Behavioural validation vs.\ eco-counters & Executed \\
-\ref{sec:val-safety}     & E4. Exposure-adjusted safety (city-level proxy) & Executed \\
-\ref{sec:val-radius}     & E5. Within-city station bootstrap & Executed \\
-\ref{sec:val-ies}        & E6. Specification robustness of the IES & Executed \\
-\ref{sec:val-moran}      & E8. Spatial autocorrelation diagnostic & Executed \\
-\ref{sec:val-sobol}      & E7. Sobol/Jansen variance decomposition & Executed \\
-\ref{sec:val-bayes-ies}  & E9. Bayesian IES with credible intervals & Executed \\
-\ref{sec:val-per-city-ci}& E10. Per-city bootstrap CI on the IMD score & Executed \\
-\ref{sec:val-radius-sweep}& E11. Parametric buffer-radius sweep & Executed \\
-\ref{sec:val-leverage}   & E12. Cook-style leverage on the calibration panel & Executed \\
-\ref{sec:val-archetypes} & E13. k-means typology of urban archetypes & Executed \\
+\ref{sec:val-loo}        & E1. Out-of-sample CV of the weights & Clean \\
+\ref{sec:val-weights}    & E2. Weight-space stability of the ranking & Clean \\
+\ref{sec:val-flow}       & E3. Behavioural validation vs.\ eco-counters & Clean \\
+\ref{sec:val-safety}     & E4. Exposure-adjusted safety (city-level proxy) & Substitute \\
+\ref{sec:val-radius}     & E5. Within-city station bootstrap (radius proxy) & Substitute \\
+\ref{sec:val-ies}        & E6. Specification robustness of the IES & Clean \\
+\ref{sec:val-moran}      & E8. Spatial autocorrelation diagnostic & Clean \\
+\ref{sec:val-sobol}      & E7. Sobol/Jansen variance decomposition & Clean \\
+\ref{sec:val-bayes-ies}  & E9. Bayesian IES (with prior sensitivity) & Qualified \\
+\ref{sec:val-per-city-ci}& E10. Per-city bootstrap CI on the IMD score & Clean \\
+\ref{sec:val-radius-sweep}& E11. Parametric buffer-radius sweep (lit.\ elasticities) & Substitute \\
+\ref{sec:val-leverage}   & E12. Cook-style leverage (Lyon-removed reordering) & Qualified \\
+\ref{sec:val-archetypes} & E13. k-means typology of urban archetypes & Clean \\
 ---                      & E14. Synthetic control on infrastructure openings & Outstanding \\
 \bottomrule
 \end{tabular}
@@ -1911,11 +2032,14 @@ $\Delta\IMD_i = (1 - \IES_i) \cdot \widehat{\IMD}_i$ on the IMD
 of city $i$. For the nine high-confidence Bayesian deserts of
 Section~\ref{sec:val-bayes-ies} (Saumur, Lyon, Amiens, Nancy,
 Troyes, Laon, Niort, Tarbes, Lille), the median required uplift
-is $11.4$ IMD points -- a one-standard-deviation move on the
+is $12.8$ IMD points; for the four prior-invariant deserts
+(Amiens, Lyon, Nancy, Saumur) the median uplift is $16.9$ IMD
+points. Both fall within roughly one standard deviation of the
 panel's IMD distribution, achievable through targeted
 infrastructure programmes of the National Cycling Plan's typical
 scale. Cities with deeper deserts (Saumur $\IES = 0.59$, Lyon
-$0.48$) would require larger uplifts and longer programmes.
+$0.48$) would require larger uplifts ($17.1$ and $28.9$ points
+respectively) and longer programmes.
 
 \subsubsection*{Social frame: equity-targeted deployment}
 
@@ -2033,9 +2157,12 @@ sample (leave-one-city-out Spearman $\approx 0.5$ on both
 references), correlates with eco-counter daily flows after
 controlling for city size (partial $R^{2} = 0.24$), and predicts
 cycling well-being twice as well as the volumetric metric
-($\rho_{\text{LOO}} = +0.41$ vs.\ $+0.20$). The Bayesian
-re-specification of the IES turns the equity diagnostic into a
-calibrated probability statement on every city.
+($\rho_{\text{LOO}} = +0.41$ vs.\ $+0.20$ on $n = 32$). The
+Bayesian re-specification of the IES turns the equity diagnostic
+into a probability statement on every city, and the
+prior-sensitivity sweep over $\tau \in \{0.1, 1, 10\}$ isolates
+a four-city prior-invariant high-confidence shortlist (Amiens,
+Lyon, Nancy, Saumur).
 
 \item[\textbf{Q2.}] \emph{Volumetric metrics are weak predictors
 of cycling-environment quality.} Strasbourg (39 stations) and
@@ -2084,8 +2211,12 @@ iteration of the indicator.
 
 The framework is therefore no longer a purely descriptive
 ranking; it is a partially validated indicator with twelve
-executed falsification tests, one well-scoped outstanding
-experiment, and a publicly available falsification record.
+executed falsification tests -- seven clean passes, two qualified
+passes (Bayesian IES under prior sweep, Cook-style leverage
+preserved at $\tau = 0.83$), and three substitutes for
+pre-registered protocols deferred to the next iteration --, one
+well-scoped outstanding experiment, and a publicly available
+falsification record.
 
 % =========================================================================
 \section*{CRediT authorship contribution statement}

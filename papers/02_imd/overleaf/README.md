@@ -7,7 +7,7 @@ income, and spatial equity in French bike-sharing systems*.
 
 ```
 overleaf/
-├── main.tex          — paper source (37 pages, 13-experiment programme)
+├── main.tex          — paper source (39 pages, 13-experiment programme)
 ├── references.bib    — bibliography (66 entries)
 ├── main.pdf          — pre-compiled PDF for sanity check
 ├── figures/          — all 17 figures referenced by main.tex
@@ -25,6 +25,21 @@ bibtex   main
 pdflatex main
 pdflatex main
 ```
+
+## What changed in this version
+
+- **Lyon-removed weight vector** added to Table 2 alongside the
+  in-sample optimum, with the Top-10 reordering quantified
+  (Kendall τ = 0.83, 9/10 overlap).
+- **Bayesian IES prior sensitivity** sweep over τ ∈ {0.1, 1, 10}:
+  reports four prior-invariant high-confidence deserts (Amiens,
+  Lyon, Nancy, Saumur) alongside the nine-city τ = 1 reference list.
+- **Montpellier case study** quantified: 83 % of stations have
+  ≥ 1 heavy GTFS stop within 300 m, 95th-percentile mean.
+- **E17 pseudo-flow** demoted to methodological probe with four
+  documented interpretations of the negative correlation.
+- **Honest scorecard labels**: seven clean / two qualified / three
+  substitutes for deferred pre-registered protocols.
 
 ## Figure inventory
 
@@ -46,7 +61,7 @@ pdflatex main
 | e15_predictive_power.pdf | E15 | Metric tournament LOO predictive power |
 | e16_components_vs_fub.pdf | E16 | FUB well-being decomposition by IMD component |
 | e17_pseudo_flow_vs_imd.pdf | E17 | GBFS pseudo-flow vs IMD |
-| summary_scorecard.pdf | -- | Validation scorecard for the 12 executed tests |
+| summary_scorecard.pdf | -- | Validation scorecard (clean/qualified/substitute) |
 
 ## Companion repository
 
