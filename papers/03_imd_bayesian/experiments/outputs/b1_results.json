@@ -1,0 +1,623 @@
+{
+  "model": {
+    "K": 3,
+    "w_min": 0.05,
+    "sigma_w": 1.5,
+    "n_burn": 4000,
+    "n_keep": 12000
+  },
+  "weights_posterior": {
+    "mean": {
+      "M": 0.8180139602067527,
+      "I": 0.08177046940385194,
+      "T": 0.10021557038940629
+    },
+    "q025": {
+      "M": 0.695383212536931,
+      "I": 0.051869669473094335,
+      "T": 0.05181150763467356
+    },
+    "q975": {
+      "M": 0.8887741112141173,
+      "I": 0.15531050518364542,
+      "T": 0.20555846961627733
+    },
+    "p_dominant": {
+      "M": 0.99975,
+      "I": 0.00025,
+      "T": 0.0
+    }
+  },
+  "calibration_posterior": {
+    "beta_FUB": {
+      "mean": 0.5513203898778632,
+      "q025": 0.27480155762880554,
+      "q975": 0.824501035163396
+    },
+    "beta_EMP": {
+      "mean": 0.6900159140717015,
+      "q025": 0.4804129287060244,
+      "q975": 0.9006621194661227
+    },
+    "sigma_FUB_mean": 0.8394832573664429,
+    "sigma_EMP_mean": 0.7359764980491604
+  },
+  "city_summary": [
+    {
+      "city": "Strasbourg",
+      "imd_post_median": 20.504304669007098,
+      "imd_post_mean": 21.35352718456986,
+      "imd_post_q025": 16.02324357473501,
+      "imd_post_q975": 29.979994498964672,
+      "imd_post_sd": 4.1436486457577635,
+      "n_stations": 39
+    },
+    {
+      "city": "Montpellier",
+      "imd_post_median": 18.216581752152923,
+      "imd_post_mean": 19.03758228642682,
+      "imd_post_q025": 14.264258308996276,
+      "imd_post_q975": 27.164390033933344,
+      "imd_post_sd": 3.7523065036224477,
+      "n_stations": 53
+    },
+    {
+      "city": "Paris",
+      "imd_post_median": 17.442173599630657,
+      "imd_post_mean": 18.218171277477154,
+      "imd_post_q025": 13.606618716826787,
+      "imd_post_q975": 26.292959930421105,
+      "imd_post_sd": 3.6420964966482137,
+      "n_stations": 1507
+    },
+    {
+      "city": "Nantes",
+      "imd_post_median": 17.109425094196133,
+      "imd_post_mean": 17.8091620519176,
+      "imd_post_q025": 13.44102321379183,
+      "imd_post_q975": 25.733187804531735,
+      "imd_post_sd": 3.5266138441401793,
+      "n_stations": 124
+    },
+    {
+      "city": "Mulhouse",
+      "imd_post_median": 16.545543369853856,
+      "imd_post_mean": 17.246065960305838,
+      "imd_post_q025": 12.643158691145707,
+      "imd_post_q975": 25.814846474538513,
+      "imd_post_sd": 3.7677073930906504,
+      "n_stations": 60
+    },
+    {
+      "city": "Caen",
+      "imd_post_median": 14.728609141785451,
+      "imd_post_mean": 15.405026973702087,
+      "imd_post_q025": 10.961872895827877,
+      "imd_post_q975": 23.660968621430197,
+      "imd_post_sd": 3.6331450363421793,
+      "n_stations": 75
+    },
+    {
+      "city": "Grand Est",
+      "imd_post_median": 14.301680543181552,
+      "imd_post_mean": 15.006092527629095,
+      "imd_post_q025": 10.379120439097882,
+      "imd_post_q975": 23.616531550096997,
+      "imd_post_sd": 3.7866303784619126,
+      "n_stations": 52
+    },
+    {
+      "city": "Bordeaux",
+      "imd_post_median": 14.195872212260731,
+      "imd_post_mean": 14.929262629563116,
+      "imd_post_q025": 10.230085452588119,
+      "imd_post_q975": 23.73145724351713,
+      "imd_post_sd": 3.8585800654649574,
+      "n_stations": 225
+    },
+    {
+      "city": "Brest",
+      "imd_post_median": 13.634658237212546,
+      "imd_post_mean": 14.305462142124677,
+      "imd_post_q025": 10.434866516098014,
+      "imd_post_q975": 21.703435029792548,
+      "imd_post_sd": 3.212271816500074,
+      "n_stations": 115
+    },
+    {
+      "city": "Rennes",
+      "imd_post_median": 13.54169232390664,
+      "imd_post_mean": 14.246406662577632,
+      "imd_post_q025": 9.563055226407098,
+      "imd_post_q975": 22.850994923848923,
+      "imd_post_sd": 3.806288243957225,
+      "n_stations": 57
+    },
+    {
+      "city": "Saint-Nazaire",
+      "imd_post_median": 13.419645223870841,
+      "imd_post_mean": 14.270286338642379,
+      "imd_post_q025": 9.199737551253158,
+      "imd_post_q975": 23.05422185816595,
+      "imd_post_sd": 3.9959691392279746,
+      "n_stations": 5
+    },
+    {
+      "city": "Toulouse",
+      "imd_post_median": 12.975748570594817,
+      "imd_post_mean": 13.770309194258,
+      "imd_post_q025": 8.805635076249162,
+      "imd_post_q975": 22.56326623640177,
+      "imd_post_sd": 3.958702108671199,
+      "n_stations": 434
+    },
+    {
+      "city": "Belfort",
+      "imd_post_median": 12.553393364623716,
+      "imd_post_mean": 13.440403068743581,
+      "imd_post_q025": 7.996969082630882,
+      "imd_post_q975": 22.572983462203574,
+      "imd_post_sd": 4.272422285150962,
+      "n_stations": 32
+    },
+    {
+      "city": "Dijon",
+      "imd_post_median": 12.423935211981467,
+      "imd_post_mean": 13.253937997839413,
+      "imd_post_q025": 8.785580130619044,
+      "imd_post_q975": 21.915483327993446,
+      "imd_post_sd": 3.7306056423819705,
+      "n_stations": 40
+    },
+    {
+      "city": "Bourg-en-Bresse",
+      "imd_post_median": 12.229101665755069,
+      "imd_post_mean": 13.11234964653676,
+      "imd_post_q025": 7.86064845252963,
+      "imd_post_q975": 22.290926552142377,
+      "imd_post_sd": 4.146016134651692,
+      "n_stations": 45
+    },
+    {
+      "city": "P\u00e9rigueux",
+      "imd_post_median": 12.1795462524791,
+      "imd_post_mean": 12.904494458378116,
+      "imd_post_q025": 8.124129892938033,
+      "imd_post_q975": 21.677712288313487,
+      "imd_post_sd": 3.8828328726607015,
+      "n_stations": 3
+    },
+    {
+      "city": "Argel\u00e8s-sur-Mer",
+      "imd_post_median": 11.99847432502224,
+      "imd_post_mean": 12.828953976070748,
+      "imd_post_q025": 7.593373548526594,
+      "imd_post_q975": 22.12605128784916,
+      "imd_post_sd": 4.180249054586766,
+      "n_stations": 6
+    },
+    {
+      "city": "Les Sables-d'Olonne",
+      "imd_post_median": 11.994698574203174,
+      "imd_post_mean": 12.796730129743557,
+      "imd_post_q025": 7.771601351722066,
+      "imd_post_q975": 21.901282015305537,
+      "imd_post_sd": 4.054526318438239,
+      "n_stations": 16
+    },
+    {
+      "city": "Besan\u00e7on",
+      "imd_post_median": 11.944853008061322,
+      "imd_post_mean": 12.698724465363775,
+      "imd_post_q025": 8.454133279567007,
+      "imd_post_q975": 20.846868460174736,
+      "imd_post_sd": 3.5328003333206723,
+      "n_stations": 33
+    },
+    {
+      "city": "Agen",
+      "imd_post_median": 11.890998392483048,
+      "imd_post_mean": 12.770089538006875,
+      "imd_post_q025": 7.492482698689545,
+      "imd_post_q975": 22.07059323907958,
+      "imd_post_sd": 4.173992003188547,
+      "n_stations": 16
+    },
+    {
+      "city": "Auray",
+      "imd_post_median": 11.750314090964356,
+      "imd_post_mean": 12.486132869614302,
+      "imd_post_q025": 7.631983173452209,
+      "imd_post_q975": 21.474790301088774,
+      "imd_post_sd": 3.9617102631961747,
+      "n_stations": 11
+    },
+    {
+      "city": "Saint-Brieuc",
+      "imd_post_median": 11.359739099442379,
+      "imd_post_mean": 12.126049096510872,
+      "imd_post_q025": 7.1788656063893646,
+      "imd_post_q975": 20.971308954009878,
+      "imd_post_sd": 3.963986690511027,
+      "n_stations": 12
+    },
+    {
+      "city": "Soissons",
+      "imd_post_median": 11.356854221731268,
+      "imd_post_mean": 12.174769539902682,
+      "imd_post_q025": 7.637008814546961,
+      "imd_post_q975": 20.939626918928862,
+      "imd_post_sd": 3.783961771486409,
+      "n_stations": 28
+    },
+    {
+      "city": "Lille",
+      "imd_post_median": 11.241605264748058,
+      "imd_post_mean": 11.988388750865182,
+      "imd_post_q025": 7.013169378875812,
+      "imd_post_q975": 21.13237010825763,
+      "imd_post_sd": 4.044255059963115,
+      "n_stations": 268
+    },
+    {
+      "city": "La Baule",
+      "imd_post_median": 11.2142266859657,
+      "imd_post_mean": 11.952776657340383,
+      "imd_post_q025": 7.2078569974186575,
+      "imd_post_q975": 20.94141889107006,
+      "imd_post_sd": 3.915987752391495,
+      "n_stations": 14
+    },
+    {
+      "city": "FR",
+      "imd_post_median": 11.177835115633458,
+      "imd_post_mean": 11.98542785351069,
+      "imd_post_q025": 7.664609209463867,
+      "imd_post_q975": 20.325894821157807,
+      "imd_post_sd": 3.618114605024558,
+      "n_stations": 49
+    },
+    {
+      "city": "Cergy-Pontoise",
+      "imd_post_median": 11.154847113137837,
+      "imd_post_mean": 11.960597039972013,
+      "imd_post_q025": 7.638041442093382,
+      "imd_post_q975": 20.35245521707,
+      "imd_post_sd": 3.6108782846185905,
+      "n_stations": 45
+    },
+    {
+      "city": "Rouen",
+      "imd_post_median": 11.085037307006857,
+      "imd_post_mean": 11.868375953458562,
+      "imd_post_q025": 7.39950653117335,
+      "imd_post_q975": 20.422126545417413,
+      "imd_post_sd": 3.7123069328432896,
+      "n_stations": 131
+    },
+    {
+      "city": "Clermont-Ferrand",
+      "imd_post_median": 11.049174077074714,
+      "imd_post_mean": 11.858123480561094,
+      "imd_post_q025": 7.000613151221689,
+      "imd_post_q975": 20.415493992909436,
+      "imd_post_sd": 3.841458049291161,
+      "n_stations": 82
+    },
+    {
+      "city": "Lyon",
+      "imd_post_median": 10.951052988849305,
+      "imd_post_mean": 11.755990889168432,
+      "imd_post_q025": 6.981509261659619,
+      "imd_post_q975": 20.18055485002787,
+      "imd_post_sd": 3.777476532845785,
+      "n_stations": 452
+    },
+    {
+      "city": "Valence",
+      "imd_post_median": 10.918595988803489,
+      "imd_post_mean": 11.666666506003228,
+      "imd_post_q025": 6.784734272427343,
+      "imd_post_q975": 20.613125379209404,
+      "imd_post_sd": 3.9622024370864115,
+      "n_stations": 68
+    },
+    {
+      "city": "Troyes",
+      "imd_post_median": 10.839700310797415,
+      "imd_post_mean": 11.572248563788602,
+      "imd_post_q025": 6.655138990396132,
+      "imd_post_q975": 20.645151810135843,
+      "imd_post_sd": 4.00540881833832,
+      "n_stations": 30
+    },
+    {
+      "city": "Pau",
+      "imd_post_median": 10.742824949502157,
+      "imd_post_mean": 11.514806338531672,
+      "imd_post_q025": 6.6799067790482285,
+      "imd_post_q975": 20.275690914536707,
+      "imd_post_sd": 3.901259243434305,
+      "n_stations": 40
+    },
+    {
+      "city": "La Roche-sur-Yon",
+      "imd_post_median": 10.709177984080759,
+      "imd_post_mean": 11.438919533855866,
+      "imd_post_q025": 6.701229345771782,
+      "imd_post_q975": 20.111061934322258,
+      "imd_post_sd": 3.8427794833998496,
+      "n_stations": 31
+    },
+    {
+      "city": "Cholet",
+      "imd_post_median": 10.657618083430652,
+      "imd_post_mean": 11.401296183506433,
+      "imd_post_q025": 6.897639197755683,
+      "imd_post_q975": 19.96125274507366,
+      "imd_post_sd": 3.72432809540456,
+      "n_stations": 16
+    },
+    {
+      "city": "Valenciennes",
+      "imd_post_median": 10.466927705690257,
+      "imd_post_mean": 11.283247659351474,
+      "imd_post_q025": 6.492185348668638,
+      "imd_post_q975": 20.423073196481567,
+      "imd_post_sd": 3.971790066170539,
+      "n_stations": 40
+    },
+    {
+      "city": "Ardenne M\u00e9tropole",
+      "imd_post_median": 10.316275224564958,
+      "imd_post_mean": 11.102654471634548,
+      "imd_post_q025": 6.431520984642462,
+      "imd_post_q975": 19.994422431959933,
+      "imd_post_sd": 3.866348805295893,
+      "n_stations": 34
+    },
+    {
+      "city": "Avignon",
+      "imd_post_median": 10.313658628176,
+      "imd_post_mean": 11.184825399949547,
+      "imd_post_q025": 6.582027312304022,
+      "imd_post_q975": 20.115478307471314,
+      "imd_post_sd": 3.8671945674318664,
+      "n_stations": 29
+    },
+    {
+      "city": "Vichy",
+      "imd_post_median": 10.275416044120199,
+      "imd_post_mean": 11.096348884262596,
+      "imd_post_q025": 6.338768660305777,
+      "imd_post_q975": 20.18516157628404,
+      "imd_post_sd": 3.9472298252545706,
+      "n_stations": 8
+    },
+    {
+      "city": "Amiens",
+      "imd_post_median": 10.18377737955316,
+      "imd_post_mean": 10.897558522211693,
+      "imd_post_q025": 6.31733632125945,
+      "imd_post_q975": 19.473934543470786,
+      "imd_post_sd": 3.76040340119539,
+      "n_stations": 45
+    },
+    {
+      "city": "Calais",
+      "imd_post_median": 10.138728422829123,
+      "imd_post_mean": 10.991319130398864,
+      "imd_post_q025": 6.16957122955547,
+      "imd_post_q975": 20.23906217992518,
+      "imd_post_sd": 4.011496574431956,
+      "n_stations": 89
+    },
+    {
+      "city": "Saint-\u00c9tienne",
+      "imd_post_median": 10.074501651866385,
+      "imd_post_mean": 10.81412827693496,
+      "imd_post_q025": 6.837057541021015,
+      "imd_post_q975": 18.548739299919646,
+      "imd_post_sd": 3.3245148694888815,
+      "n_stations": 97
+    },
+    {
+      "city": "Cherbourg-en-Cotentin",
+      "imd_post_median": 9.944617151704842,
+      "imd_post_mean": 10.64977394654406,
+      "imd_post_q025": 6.099375969876027,
+      "imd_post_q975": 19.204228627747007,
+      "imd_post_sd": 3.7417585207472848,
+      "n_stations": 49
+    },
+    {
+      "city": "Louviers",
+      "imd_post_median": 9.873349738003569,
+      "imd_post_mean": 10.711981443175159,
+      "imd_post_q025": 6.011706448468694,
+      "imd_post_q975": 19.74279093571806,
+      "imd_post_sd": 3.9130809937148348,
+      "n_stations": 40
+    },
+    {
+      "city": "Ch\u00e2tellerault",
+      "imd_post_median": 9.694837206302633,
+      "imd_post_mean": 10.571828326770884,
+      "imd_post_q025": 6.030636393440343,
+      "imd_post_q975": 19.406641260961003,
+      "imd_post_sd": 3.8258772736367774,
+      "n_stations": 13
+    },
+    {
+      "city": "Nancy",
+      "imd_post_median": 9.654472999098115,
+      "imd_post_mean": 10.484186725396034,
+      "imd_post_q025": 5.87287041151761,
+      "imd_post_q975": 19.367532596975188,
+      "imd_post_sd": 3.8420559119125532,
+      "n_stations": 37
+    },
+    {
+      "city": "Landerneau",
+      "imd_post_median": 9.581674449677658,
+      "imd_post_mean": 10.224898603771646,
+      "imd_post_q025": 6.094971234460942,
+      "imd_post_q975": 18.009560981427757,
+      "imd_post_sd": 3.399767658810273,
+      "n_stations": 14
+    },
+    {
+      "city": "Courzieu",
+      "imd_post_median": 9.502950446184943,
+      "imd_post_mean": 10.373209741527827,
+      "imd_post_q025": 5.860549608363318,
+      "imd_post_q975": 19.14223017911024,
+      "imd_post_sd": 3.797291625552455,
+      "n_stations": 4
+    },
+    {
+      "city": "Montreuil-Bellay",
+      "imd_post_median": 9.494963878219,
+      "imd_post_mean": 10.365288080879502,
+      "imd_post_q025": 5.872953916744193,
+      "imd_post_q975": 19.15304822945234,
+      "imd_post_sd": 3.8080618954729437,
+      "n_stations": 6
+    },
+    {
+      "city": "Niort",
+      "imd_post_median": 9.432167814289583,
+      "imd_post_mean": 10.248679178233058,
+      "imd_post_q025": 5.6994674849775135,
+      "imd_post_q975": 19.006962420230725,
+      "imd_post_sd": 3.7895931750987555,
+      "n_stations": 51
+    },
+    {
+      "city": "Royan",
+      "imd_post_median": 9.402241685806292,
+      "imd_post_mean": 10.263685891292894,
+      "imd_post_q025": 5.786891352929171,
+      "imd_post_q975": 18.977873984238286,
+      "imd_post_sd": 3.77379456686215,
+      "n_stations": 8
+    },
+    {
+      "city": "Libourne",
+      "imd_post_median": 9.352768865108235,
+      "imd_post_mean": 10.240611096998173,
+      "imd_post_q025": 5.636494663264188,
+      "imd_post_q975": 19.18709625192228,
+      "imd_post_sd": 3.874137646446008,
+      "n_stations": 66
+    },
+    {
+      "city": "Tarbes",
+      "imd_post_median": 9.342303044348444,
+      "imd_post_mean": 10.202908470348877,
+      "imd_post_q025": 5.744545209519918,
+      "imd_post_q975": 18.870813608008234,
+      "imd_post_sd": 3.753539015449308,
+      "n_stations": 13
+    },
+    {
+      "city": "Marseille",
+      "imd_post_median": 9.322904730655313,
+      "imd_post_mean": 9.988108904598288,
+      "imd_post_q025": 5.718108800392221,
+      "imd_post_q975": 18.062253826194038,
+      "imd_post_sd": 3.520200223645713,
+      "n_stations": 221
+    },
+    {
+      "city": "Brive-la-Gaillarde",
+      "imd_post_median": 9.280549709290721,
+      "imd_post_mean": 10.119731785562392,
+      "imd_post_q025": 5.583986445470483,
+      "imd_post_q975": 18.903447464915722,
+      "imd_post_sd": 3.785591116012754,
+      "n_stations": 26
+    },
+    {
+      "city": "Arundy",
+      "imd_post_median": 9.112005121501246,
+      "imd_post_mean": 9.965474628158658,
+      "imd_post_q025": 5.539127498178767,
+      "imd_post_q975": 18.620321196565836,
+      "imd_post_sd": 3.7691660641787794,
+      "n_stations": 3
+    },
+    {
+      "city": "Auxerre",
+      "imd_post_median": 9.039706864521717,
+      "imd_post_mean": 9.899078739890763,
+      "imd_post_q025": 5.387731138925889,
+      "imd_post_q975": 18.629182800576313,
+      "imd_post_sd": 3.782601125825607,
+      "n_stations": 55
+    },
+    {
+      "city": "Saumur",
+      "imd_post_median": 9.019381000599122,
+      "imd_post_mean": 9.79077117376833,
+      "imd_post_q025": 5.503116060379181,
+      "imd_post_q975": 18.049199276546922,
+      "imd_post_sd": 3.5722002370467134,
+      "n_stations": 22
+    },
+    {
+      "city": "Carcassonne",
+      "imd_post_median": 8.721347552209522,
+      "imd_post_mean": 9.528108551963793,
+      "imd_post_q025": 5.317030789411746,
+      "imd_post_q975": 17.75017565651772,
+      "imd_post_sd": 3.561228173707551,
+      "n_stations": 10
+    },
+    {
+      "city": "Longwy",
+      "imd_post_median": 8.710786785377856,
+      "imd_post_mean": 9.560141907893206,
+      "imd_post_q025": 5.087512961840076,
+      "imd_post_q975": 18.31054501218228,
+      "imd_post_sd": 3.7914476689398064,
+      "n_stations": 39
+    },
+    {
+      "city": "\u00c9pinal",
+      "imd_post_median": 8.691034108701679,
+      "imd_post_mean": 9.496686361392221,
+      "imd_post_q025": 5.252205008229329,
+      "imd_post_q975": 17.707808043264457,
+      "imd_post_sd": 3.5581511938252284,
+      "n_stations": 105
+    },
+    {
+      "city": "Annecy",
+      "imd_post_median": 8.602278713556638,
+      "imd_post_mean": 9.402358763644306,
+      "imd_post_q025": 5.14029102614857,
+      "imd_post_q975": 17.640198020389388,
+      "imd_post_sd": 3.5710309290780615,
+      "n_stations": 80
+    },
+    {
+      "city": "Lascaux",
+      "imd_post_median": 8.444447415050362,
+      "imd_post_mean": 9.306461179787888,
+      "imd_post_q025": 4.831976413048188,
+      "imd_post_q975": 18.075058896214852,
+      "imd_post_sd": 3.806665640936457,
+      "n_stations": 5
+    },
+    {
+      "city": "Laon",
+      "imd_post_median": 7.1209655651986585,
+      "imd_post_mean": 7.773502676132011,
+      "imd_post_q025": 4.287817220016088,
+      "imd_post_q975": 14.557807164718856,
+      "imd_post_sd": 2.9147090643503333,
+      "n_stations": 19
+    }
+  ]
+}
