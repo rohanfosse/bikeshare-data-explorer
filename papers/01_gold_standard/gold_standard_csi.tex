@@ -42,8 +42,8 @@
   \begin{itemize}[leftmargin=1.4em,itemsep=0.15em,topsep=0.2em]}{%
   \end{itemize}\par\medskip}
 
-\title{\bfseries\sffamily\Large Auditing Open Mobility Feeds at Country and Global Scale:\\
-1{,}509 GBFS Systems, Seven Anomaly Classes and One Operator-Specific Hotspot per Country}
+\title{\bfseries\sffamily\Large Auditing GBFS bike-sharing feeds at country and global scale:\\
+A reproducible anomaly taxonomy for open mobility data}
 
 \author[1]{Rohan Foss\'e\thanks{Lead contact: \texttt{rfosse@cesi.fr}}}
 \author[2]{Ga\"el Pallares}
@@ -54,12 +54,17 @@
 \begin{document}
 \maketitle
 
-% Graphical abstract (Elsevier CSI : "encouraged"; rendered at top of article)
-\begin{figure}[!t]
-\centering
-\includegraphics[width=0.85\linewidth]{fig00_visual_abstract.png}
-\caption*{}
-\end{figure}
+% Graphical abstract: per Elsevier CSI author guidelines the graphical
+% abstract is uploaded as a separate file via Editorial Manager and is
+% NOT embedded in the manuscript PDF. The file `fig00_visual_abstract.png`
+% in `figures/` is the production asset to upload at submission time.
+% (Comment the block below in/out for working drafts vs. final submission.)
+%
+% \begin{figure}[!t]
+% \centering
+% \includegraphics[width=0.85\linewidth]{fig00_visual_abstract.png}
+% \caption*{}
+% \end{figure}
 
 \section*{Abstract}
 \noindent
@@ -100,7 +105,7 @@ released for bit-exact reproduction.
 \noindent\textbf{Keywords:} GBFS; data quality; open mobility data; FAIR; reproducibility; bike sharing; standards compliance.
 
 % ===================================================================
-\section{Introduction}\label{secIntro}
+\section{Introduction}
 
 For more than a decade, bike-sharing systems have been a structural
 component of urban mobility policy in France and across Europe, advancing
@@ -134,25 +139,40 @@ claim: syntactic standardisation of an open feed is not sufficient to
 turn it into a research artefact, and any quantitative use of GBFS data
 must be preceded by an explicit, documented and reproducible audit.
 
-Empirical audits of mobility feeds have so far remained piecemeal. Tao
-\textit{et al.} \cite{Tao2020} document sampling biases in mobile-phone
-records used for origin-destination estimation; Romanillos \textit{et
-al.} \cite{Romanillos2016} warn against statistical artefacts of
-ingesting raw GPS feeds directly; Fishman \cite{Fishman2016} stresses
-the heterogeneity of operational definitions in international BSS
-comparisons. In the adjacent transit literature, the GTFS community has
-been more proactive: the Canonical GTFS Schedule Validator
+Empirical audits of mobility feeds have so far remained piecemeal.
+Bike-sharing demand modelling and rebalancing analysis have generated
+a rich operational literature
+\cite{Buehler2017BikeShare,Medard2017Rebalancing,Eren2020Review}, but
+all of these works treat the input feeds as given and do not audit
+the standard itself. Tao \textit{et al.} \cite{Tao2020} document
+sampling biases in mobile-phone records used for origin-destination
+estimation; Romanillos \textit{et al.} \cite{Romanillos2016} warn
+against statistical artefacts of ingesting raw GPS feeds directly;
+Fishman \cite{Fishman2016} stresses the heterogeneity of operational
+definitions in international BSS comparisons.
+In the adjacent transit literature, the GTFS community has been more
+proactive: the Canonical GTFS Schedule Validator
 \cite{MobilityData2024Validator} and the earlier Conveyal validator
 \cite{Antrim2013Conveyal} codify hundreds of schema-level checks on
 transit feeds, and the data-engineering community has produced reusable
 declarative-validation frameworks such as Great Expectations
 \cite{GreatExpectations2024}, Pandera \cite{Pandera2024} and the
-Frictionless Data specifications \cite{FrictionlessData2023};
-ISO/IEC~25012 \cite{ISO25012} formalises the data-quality dimensions
-that we implicitly mobilise. None of these references, however,
-addresses GBFS specifically, and none of them produces a versioned,
-audited reference dataset at the scale of a country. The present paper
-fills that gap for the French case.
+Frictionless Data specifications \cite{FrictionlessData2023}.
+The underlying data-quality literature is mature : Wang and Strong
+\cite{Wang1996Quality} established the consumer-centred dimensions,
+Pipino \textit{et al.} \cite{Pipino2002Assessment} the assessment
+procedures, and Naumann \cite{Naumann2014DataProfiling} the modern
+profiling approach. ISO/IEC~25012 \cite{ISO25012} and its companion
+measurement standard ISO/IEC~25024 \cite{ISO25024} formalise the
+quality dimensions ; for geographic information specifically,
+ISO~19157 \cite{ISO19157} provides the corresponding framework, and
+the European INSPIRE directive \cite{INSPIRE2007} makes them
+regulatory. W3C's DCAT \cite{DCAT2020} and Data Quality Vocabulary
+\cite{W3CDQV} translate these dimensions into machine-readable
+metadata. None of these references, however, addresses GBFS
+specifically, and none produces a versioned, audited reference
+dataset at the scale of a country. The present paper fills that gap
+for the French case and extends to the global GBFS catalogue.
 
 The contributions are fourfold. First, an empirically-grounded
 \textbf{taxonomy} of seven anomaly classes (A1--A5 plus the two
@@ -492,7 +512,7 @@ is the next priority of the validation roadmap (experiment E1,
 Section~\ref{secDiscussion}); they are reported as robustness
 measures, not as substitutes.
 
-\subsection{Cross-country transferability pilot}\label{secCrossCountry}
+\subsection{Cross-country transferability pilot}
 A natural objection to the present protocol is that A1--A5 might be
 artefacts of French publication practice rather than structural
 features of open-mobility-feed publication in general. To address this
@@ -704,7 +724,7 @@ their own audit (the rule of A1 was rule-level brittle), and the
 underlying signal is genuine (21 real car-sharing systems in
 Germany are still labelled as bike-sharing on national portals).
 
-\subsection{Operator-level fragmentation of the capacity field}\label{secConsequences}
+\subsection{Operator-level fragmentation of the capacity field}
 Across the case studies above, a recurring mechanism explains why
 the same anomaly recurs across operators: the GBFS field
 \texttt{station\_information.capacity} is populated by French
@@ -760,7 +780,14 @@ reminds us that the most durable infrastructures are those whose
 governance is explicit and tied to an identifiable community of
 practice; moving the artefact from author-led to community-led
 governance is therefore an institutional challenge as much as a
-scientific one.
+scientific one. The technical lesson of the audit, that a single
+field (\texttt{capacity}) cannot serve six different operational
+semantics, is also the empirical case for what Stonebraker and
+\c{C}etintemel \cite{Stonebraker2005OneSize} call the end of
+``one size fits all'' data architectures : open standards that
+attempt to span dock-based, free-floating and car-sharing fleets in
+the same schema accumulate semantic ambiguity exactly because they
+refuse to specialise.
 
 \subsection{Limitations}\label{secLimitations}
 The protocol has four acknowledged limitations.
@@ -1100,7 +1127,7 @@ FUB Barometer  & municipal score &
 \end{tabular}
 \end{table}
 
-\subsection{Released schema}\label{secSchema}
+\subsection{Released schema}
 The Audit Catalogue Parquet exposes 30 columns documented in
 Table~\ref{tab:schema}: 14 from the raw GBFS payload (preserved
 verbatim or normalised), 7 from the audit pipeline (typed,
@@ -1211,20 +1238,18 @@ for bit-exact reproduction; random seeds are fixed (\texttt{numpy=42},
 \texttt{python=42}); idempotence unit tests run in CI; the audit
 report is generated automatically on every release.
 
-\subsection{Engineering footprint}
-The released Parquet weighs $7.8$\,MB on disk for the 46{,}307 stations;
-it loads in $0.23$\,s into a \texttt{pandas} DataFrame with a memory
-peak of $15.9$\,MB ($\sim 200{,}000$ rows/s on a commodity laptop).
-Typical research queries are sub-25\,ms: filtering to dock-based
-stations takes $5.2$\,ms, grouping by city $3.7$\,ms, a
-Paris-bounding-box query $6.0$\,ms, a merge with FUB 2023 (62 cities)
-$21.7$\,ms. The audit pipeline itself is implemented in $1{,}319$
-lines of code across three modules (\texttt{utils/data\_loader.py},
-\texttt{utils/gbfs\_collector.py}, \texttt{scripts/collect\_status.py}),
-exposing 35 public functions and one collector class.
+\subsection{Implementation}
+The released Parquet file is $7.8$\,MB on disk for the
+$46{,}307$ stations and loads in under one second into a
+standard \texttt{pandas} session on commodity hardware ; typical
+analytical queries (city-level filtering, bounding-box selection,
+joins with external panels) complete in tens of milliseconds.
+The audit pipeline is implemented in roughly $1{,}300$ lines of
+Python organised in three modules, with a stable public API
+documented in the source repository.
 
 % ===================================================================
-\section{Data and code availability}\label{secDataAvailability}
+\section{Data and code availability}
 
 \paragraph{Lead contact.} Requests for further information should be
 directed to and will be fulfilled by the lead contact, Rohan Foss\'e
@@ -1275,7 +1300,7 @@ are released as supplementary material alongside the dataset.
 
 % ===================================================================
 \appendix
-\section{Usage examples}\label{secUsage}
+\section{Usage examples}
 
 Three concrete reuse patterns are documented below; complete notebooks
 are released alongside the dataset.
