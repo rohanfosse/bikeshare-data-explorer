@@ -2514,6 +2514,123 @@ re-calibration of the IMD with the A6 patch applied to Lyon,
 Marseille and Lille only, and report the substantive downstream
 effects.
 
+\subsection{Panel-wide GTFS audit: a G1--G5 anomaly taxonomy}
+\label{sec:val-gtfs-audit}
+
+E29 ran the OSM-vs-GTFS calibration on the ten largest French
+networks; here we extend the check to the entire 59-city panel
+and formalise the result as a five-class taxonomy of GTFS
+anomalies, structurally parallel to the GBFS A1--A5 taxonomy of
+\citet{Fosse2026gold}.
+
+The protocol re-applies the Gold Standard's six-step audit
+sequence (inventory $\to$ validation $\to$ triangulation $\to$
+classification $\to$ audit log $\to$ patch protocol) to the
+GTFS layer of Module~4. For each panel city we query OSM
+Overpass in the bounding box of its dock-based stations and
+compare the per-station mean heavy-stop count to the value
+$C_M^{\text{GTFS}}$ that Module~4 produced. The resulting
+per-city ratio $\rho_i = C_M^{\text{OSM}} / C_M^{\text{GTFS}}$
+defines the class. We propose:
+
+\begin{table}[H]
+\centering
+\caption{Proposed GTFS anomaly taxonomy on the IMD panel,
+parallel to the GBFS taxonomy A1--A5 of
+\citet{Fosse2026gold}. The classification is empirically grounded
+in the panel-wide audit of E31.}
+\label{tab:gtfs-taxonomy}
+\small
+\begin{tabular}{@{}llll@{}}
+\toprule
+Class & Name & Signature & Incidence \\
+\midrule
+G1 & Severe GTFS under-coverage & $\rho_i > 5$ or $C_M^{\text{GTFS}} = 0$ with OSM $> 0$ & 4 cities \\
+G2 & Moderate GTFS under-coverage & $2 < \rho_i \leq 5$ & 2 cities \\
+G3 & Well-calibrated              & $0.5 \leq \rho_i \leq 2$           & 42 cities \\
+G4 & GTFS over-coverage           & $\rho_i < 0.5$                     & 9 cities \\
+G5 & Empty network on both feeds  & $C_M^{\text{GTFS}} = 0$ and OSM $= 0$ & 1 city \\
+\midrule
+\multicolumn{4}{@{}l}{Total audited: 58 / 59 (Lyon excluded by bbox $>200$ km, see below).} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.99\linewidth]{e31_audit_log.pdf}
+    \caption{Left: distribution of the 58 audited cities across
+    the proposed G1--G5 classes. Right: per-city OSM vs.\ GTFS
+    multimodality, log-log, coloured by class. Cities below the
+    $y = x$ line are GTFS-rich (G4), cities far above are
+    GTFS-poor (G1--G2). The four G1 cities are individually
+    labelled.}
+    \label{fig:gtfs-audit}
+\end{figure}
+
+\paragraph{G1 incidence detail (severe under-coverage).}
+The four G1 cities are Marseille ($\rho = 28.5$), Valenciennes
+($\rho = 12.5$), Lille ($\rho = 11.7$) and Clermont-Ferrand
+($\rho = 10.9$). The signature is the same in all four: GTFS
+under-counts by more than an order of magnitude what OSM finds.
+These four cities each operate a tramway or BRT network that the
+national GTFS aggregation does not represent at the time of the
+panel build. The pattern is regional rather than operator-level:
+each of the four AOMs publishes a separate feed and each is
+incomplete in the same way, suggesting a shared upstream issue
+on the \texttt{transport.data.gouv.fr} ingestion side rather
+than per-operator feed bugs.
+
+\paragraph{G2 incidence (moderate under-coverage).}
+The two G2 cities are Pau ($\rho = 3.0$) and Tarbes ($\rho =
+2.3$), both classified as Bayesian deserts at $\tau = 1$ in
+Section~\ref{sec:val-bayes-ies}. Their desert status is therefore
+moderately A6-sensitive.
+
+\paragraph{G4 incidence (OSM under-counts GTFS).}
+Nine cities (Mulhouse, Caen, Cergy-Pontoise, Soissons, Auray, La
+Baule, Cholet, Valence, Cherbourg-en-Cotentin) show
+$\rho < 0.5$. The plausible reading is incomplete OSM tagging --
+bus-priority stops missing the \texttt{public\_transport=station}
+tag -- rather than over-rich GTFS. G4 is not a remediation
+priority because the published IMD reads GTFS authoritative for
+these cities; the proposed action is to audit OSM tagging
+locally rather than re-issue the IMD.
+
+\paragraph{Lyon bbox anomaly: an A4 hint at the GBFS layer.}
+Lyon's dock-based stations as ingested in the Gold Standard span
+a bounding box of $292$ km on the longest diagonal, far beyond
+the metropolitan footprint of a 452-station bike-sharing network.
+The bbox exceeds our $200$ km audit threshold and we excluded
+Lyon from the OSM query rather than burn the Overpass quota on
+a continental-scale rectangle. The Gold Standard release should
+re-audit Lyon for class A4 (geospatial error) at the station
+level: at least one Lyon-labelled record is geocoded outside the
+metropolitan area, and our Cook-style leverage finding on Lyon
+(Section~\ref{sec:val-leverage}) probably aggregates the
+GBFS-A4 station-level mis-location, the GTFS-A6 feed-level
+under-coverage and the IES-desert-mis-classification into one
+composite signal.
+
+\paragraph{Implications for the desert list.}
+Six cities (G1$\cup$G2) require the A6 triangulation patch, not
+the three of E30. Specifically, the Bayesian $\tau = 1$ desert
+list of Section~\ref{sec:val-bayes-ies} that includes Lyon,
+Marseille, Lille \emph{and} Pau \emph{and} Tarbes should be
+re-evaluated under the triangulated $M$. Of the six G1+G2 cities,
+five overlap with the $\tau = 1$ desert list (Marseille, Lille,
+Lyon\footnotemark[1], Pau, Tarbes); Valenciennes and
+Clermont-Ferrand are not in the $\tau = 1$ desert list but were
+in the broader robust set. The recommended post-A6 desert set is
+therefore narrower than reported in
+Section~\ref{sec:val-bayes-ies}, with the prior-invariant
+high-confidence subset reducing to \{Amiens, Nancy, Saumur\}
+once the A6 patch is applied to the full G1$\cup$G2 group, not
+just to the three cities of E30.
+\footnotetext[1]{Lyon could not be triangulated in E31 due to the
+GBFS-A4 bbox issue; we rely on the manual triangulation reported
+in E30.}
+
 \subsection{A6 re-calibration: the Lyon, Marseille and Lille shift}
 \label{sec:val-a6-rerun}
 
@@ -2802,6 +2919,7 @@ Section & Test & Verdict \\
 \ref{sec:val-eu-stations}    & E25. Live European station-level fetch (10 cities) & Clean \\
 \ref{sec:val-imd-lite}       & E26. IMD-lite multimodality $M$ on European panel & Clean \\
 \ref{sec:val-osm-gtfs}       & E29. OSM-vs-GTFS calibration on French panel & Qualified \\
+\ref{sec:val-gtfs-audit}     & E31. Panel-wide GTFS audit, G1--G5 taxonomy & Clean \\
 \ref{sec:val-a6-rerun}       & E30. A6 re-calibration on Lyon/Marseille/Lille & Qualified \\
 \ref{sec:val-life-exp}       & E21. Coupling to département life expectancy & Null \\
 ---                          & E14. Synthetic control on infrastructure openings & Outstanding \\
@@ -3318,6 +3436,6 @@ at the centre and four 300~m cardinal offsets of station $s$.
 \end{itemize}
 
 % =========================================================================
-\bibliography{../references}
+\bibliography{references}
 
 \end{document}

@@ -1,0 +1,557 @@
+{
+  "n_panel": 59,
+  "n_audited": 58,
+  "taxonomy": {
+    "G1": {
+      "description": "Severe GTFS under-coverage",
+      "signature": "OSM/GTFS > 5 or GTFS = 0 with OSM > 0"
+    },
+    "G2": {
+      "description": "Moderate GTFS under-coverage",
+      "signature": "2 < OSM/GTFS <= 5"
+    },
+    "G3": {
+      "description": "Well-calibrated",
+      "signature": "0.5 <= OSM/GTFS <= 2"
+    },
+    "G4": {
+      "description": "GTFS over-coverage",
+      "signature": "OSM/GTFS < 0.5"
+    },
+    "G5": {
+      "description": "Empty on both feeds",
+      "signature": "GTFS = 0 and OSM = 0"
+    }
+  },
+  "class_counts": {
+    "G1": 4,
+    "G2": 2,
+    "G3": 42,
+    "G4": 9,
+    "G5": 1
+  },
+  "audit_log": [
+    {
+      "city": "Lille",
+      "n_stations": 268,
+      "M_gtfs": 0.13432835820895522,
+      "M_osm": 1.5671641791044777,
+      "ratio": 11.666666666666668,
+      "g_class": "G1",
+      "action": "Triangulate: take M = max(GTFS, OSM); flag operator for AOM contact"
+    },
+    {
+      "city": "Clermont-Ferrand",
+      "n_stations": 82,
+      "M_gtfs": 0.0975609756097561,
+      "M_osm": 1.0609756097560976,
+      "ratio": 10.875,
+      "g_class": "G1",
+      "action": "Triangulate: take M = max(GTFS, OSM); flag operator for AOM contact"
+    },
+    {
+      "city": "Marseille",
+      "n_stations": 221,
+      "M_gtfs": 0.08144796380090498,
+      "M_osm": 2.321266968325792,
+      "ratio": 28.5,
+      "g_class": "G1",
+      "action": "Triangulate: take M = max(GTFS, OSM); flag operator for AOM contact"
+    },
+    {
+      "city": "Valenciennes",
+      "n_stations": 40,
+      "M_gtfs": 0.15,
+      "M_osm": 1.875,
+      "ratio": 12.5,
+      "g_class": "G1",
+      "action": "Triangulate: take M = max(GTFS, OSM); flag operator for AOM contact"
+    },
+    {
+      "city": "Pau",
+      "n_stations": 40,
+      "M_gtfs": 0.05,
+      "M_osm": 0.15,
+      "ratio": 2.9999999999999996,
+      "g_class": "G2",
+      "action": "Triangulate: take M = max(GTFS, OSM)"
+    },
+    {
+      "city": "Tarbes",
+      "n_stations": 13,
+      "M_gtfs": 0.23076923076923078,
+      "M_osm": 0.5384615384615384,
+      "ratio": 2.333333333333333,
+      "g_class": "G2",
+      "action": "Triangulate: take M = max(GTFS, OSM)"
+    },
+    {
+      "city": "Ch\u00e2tellerault",
+      "n_stations": 13,
+      "M_gtfs": 0.3076923076923077,
+      "M_osm": 0.3076923076923077,
+      "ratio": 1.0,
+      "g_class": "G3",
+      "action": "No action needed"
+    },
+    {
+      "city": "Vichy",
+      "n_stations": 8,
+      "M_gtfs": 0.125,
+      "M_osm": 0.125,
+      "ratio": 1.0,
+      "g_class": "G3",
+      "action": "No action needed"
+    },
+    {
+      "city": "Ardenne M\u00e9tropole",
+      "n_stations": 34,
+      "M_gtfs": 0.17647058823529413,
+      "M_osm": 0.08823529411764706,
+      "ratio": 0.5,
+      "g_class": "G3",
+      "action": "No action needed"
+    },
+    {
+      "city": "Montreuil-Bellay",
+      "n_stations": 6,
+      "M_gtfs": 0.3333333333333333,
+      "M_osm": 0.16666666666666666,
+      "ratio": 0.5,
+      "g_class": "G3",
+      "action": "No action needed"
+    },
+    {
+      "city": "Landerneau",
+      "n_stations": 14,
+      "M_gtfs": 0.2857142857142857,
+      "M_osm": 0.14285714285714285,
+      "ratio": 0.5,
+      "g_class": "G3",
+      "action": "No action needed"
+    },
+    {
+      "city": "Royan",
+      "n_stations": 8,
+      "M_gtfs": 0.25,
+      "M_osm": 0.25,
+      "ratio": 1.0,
+      "g_class": "G3",
+      "action": "No action needed"
+    },
+    {
+      "city": "Calais",
+      "n_stations": 89,
+      "M_gtfs": 0.06741573033707865,
+      "M_osm": 0.0898876404494382,
+      "ratio": 1.3333333333333333,
+      "g_class": "G3",
+      "action": "No action needed"
+    },
+    {
+      "city": "Louviers",
+      "n_stations": 40,
+      "M_gtfs": 0.075,
+      "M_osm": 0.05,
+      "ratio": 0.6666666666666667,
+      "g_class": "G3",
+      "action": "No action needed"
+    },
+    {
+      "city": "Strasbourg",
+      "n_stations": 39,
+      "M_gtfs": 3.1794871794871793,
+      "M_osm": 1.8461538461538463,
+      "ratio": 0.5806451612903226,
+      "g_class": "G3",
+      "action": "No action needed"
+    },
+    {
+      "city": "Troyes",
+      "n_stations": 30,
+      "M_gtfs": 0.03333333333333333,
+      "M_osm": 0.03333333333333333,
+      "ratio": 1.0,
+      "g_class": "G3",
+      "action": "No action needed"
+    },
+    {
+      "city": "Niort",
+      "n_stations": 51,
+      "M_gtfs": 0.0392156862745098,
+      "M_osm": 0.0392156862745098,
+      "ratio": 1.0,
+      "g_class": "G3",
+      "action": "No action needed"
+    },
+    {
+      "city": "Brive-la-Gaillarde",
+      "n_stations": 26,
+      "M_gtfs": 0.038461538461538464,
+      "M_osm": 0.07692307692307693,
+      "ratio": 2.0,
+      "g_class": "G3",
+      "action": "No action needed"
+    },
+    {
+      "city": "Auxerre",
+      "n_stations": 55,
+      "M_gtfs": 0.03636363636363636,
+      "M_osm": 0.03636363636363636,
+      "ratio": 1.0,
+      "g_class": "G3",
+      "action": "No action needed"
+    },
+    {
+      "city": "Carcassonne",
+      "n_stations": 10,
+      "M_gtfs": 0.2,
+      "M_osm": 0.2,
+      "ratio": 1.0,
+      "g_class": "G3",
+      "action": "No action needed"
+    },
+    {
+      "city": "\u00c9pinal",
+      "n_stations": 105,
+      "M_gtfs": 0.10476190476190476,
+      "M_osm": 0.11428571428571428,
+      "ratio": 1.0909090909090908,
+      "g_class": "G3",
+      "action": "No action needed"
+    },
+    {
+      "city": "Saumur",
+      "n_stations": 22,
+      "M_gtfs": 0.09090909090909091,
+      "M_osm": 0.09090909090909091,
+      "ratio": 1.0,
+      "g_class": "G3",
+      "action": "No action needed"
+    },
+    {
+      "city": "Nancy",
+      "n_stations": 37,
+      "M_gtfs": 0.08108108108108109,
+      "M_osm": 0.08108108108108109,
+      "ratio": 1.0,
+      "g_class": "G3",
+      "action": "No action needed"
+    },
+    {
+      "city": "Longwy",
+      "n_stations": 39,
+      "M_gtfs": 0.02564102564102564,
+      "M_osm": 0.02564102564102564,
+      "ratio": 1.0,
+      "g_class": "G3",
+      "action": "No action needed"
+    },
+    {
+      "city": "Annecy",
+      "n_stations": 80,
+      "M_gtfs": 0.05,
+      "M_osm": 0.0625,
+      "ratio": 1.25,
+      "g_class": "G3",
+      "action": "No action needed"
+    },
+    {
+      "city": "Amiens",
+      "n_stations": 45,
+      "M_gtfs": 0.1111111111111111,
+      "M_osm": 0.17777777777777778,
+      "ratio": 1.6,
+      "g_class": "G3",
+      "action": "No action needed"
+    },
+    {
+      "city": "Libourne",
+      "n_stations": 66,
+      "M_gtfs": 0.12121212121212122,
+      "M_osm": 0.10606060606060606,
+      "ratio": 0.875,
+      "g_class": "G3",
+      "action": "No action needed"
+    },
+    {
+      "city": "La Roche-sur-Yon",
+      "n_stations": 31,
+      "M_gtfs": 0.12903225806451613,
+      "M_osm": 0.06451612903225806,
+      "ratio": 0.5,
+      "g_class": "G3",
+      "action": "No action needed"
+    },
+    {
+      "city": "Laon",
+      "n_stations": 19,
+      "M_gtfs": 0.05263157894736842,
+      "M_osm": 0.05263157894736842,
+      "ratio": 1.0,
+      "g_class": "G3",
+      "action": "No action needed"
+    },
+    {
+      "city": "Rennes",
+      "n_stations": 57,
+      "M_gtfs": 1.280701754385965,
+      "M_osm": 1.894736842105263,
+      "ratio": 1.4794520547945205,
+      "g_class": "G3",
+      "action": "No action needed"
+    },
+    {
+      "city": "Saint-Nazaire",
+      "n_stations": 5,
+      "M_gtfs": 0.8,
+      "M_osm": 0.6,
+      "ratio": 0.7499999999999999,
+      "g_class": "G3",
+      "action": "No action needed"
+    },
+    {
+      "city": "Besan\u00e7on",
+      "n_stations": 33,
+      "M_gtfs": 1.2424242424242424,
+      "M_osm": 1.1818181818181819,
+      "ratio": 0.951219512195122,
+      "g_class": "G3",
+      "action": "No action needed"
+    },
+    {
+      "city": "Toulouse",
+      "n_stations": 434,
+      "M_gtfs": 0.7811059907834101,
+      "M_osm": 1.4631336405529953,
+      "ratio": 1.8731563421828907,
+      "g_class": "G3",
+      "action": "No action needed"
+    },
+    {
+      "city": "Brest",
+      "n_stations": 115,
+      "M_gtfs": 2.1652173913043478,
+      "M_osm": 2.1739130434782608,
+      "ratio": 1.0040160642570282,
+      "g_class": "G3",
+      "action": "No action needed"
+    },
+    {
+      "city": "Saint-Brieuc",
+      "n_stations": 12,
+      "M_gtfs": 0.16666666666666666,
+      "M_osm": 0.16666666666666666,
+      "ratio": 1.0,
+      "g_class": "G3",
+      "action": "No action needed"
+    },
+    {
+      "city": "Paris",
+      "n_stations": 1507,
+      "M_gtfs": 2.794293297942933,
+      "M_osm": 4.172528201725282,
+      "ratio": 1.4932320113987174,
+      "g_class": "G3",
+      "action": "No action needed"
+    },
+    {
+      "city": "Rouen",
+      "n_stations": 131,
+      "M_gtfs": 0.7022900763358778,
+      "M_osm": 1.1908396946564885,
+      "ratio": 1.6956521739130437,
+      "g_class": "G3",
+      "action": "No action needed"
+    },
+    {
+      "city": "Dijon",
+      "n_stations": 40,
+      "M_gtfs": 1.325,
+      "M_osm": 1.3,
+      "ratio": 0.9811320754716982,
+      "g_class": "G3",
+      "action": "No action needed"
+    },
+    {
+      "city": "Belfort",
+      "n_stations": 32,
+      "M_gtfs": 0.0625,
+      "M_osm": 0.0625,
+      "ratio": 1.0,
+      "g_class": "G3",
+      "action": "No action needed"
+    },
+    {
+      "city": "Saint-\u00c9tienne",
+      "n_stations": 97,
+      "M_gtfs": 0.8144329896907216,
+      "M_osm": 0.8969072164948454,
+      "ratio": 1.1012658227848102,
+      "g_class": "G3",
+      "action": "No action needed"
+    },
+    {
+      "city": "Les Sables-d'Olonne",
+      "n_stations": 16,
+      "M_gtfs": 0.375,
+      "M_osm": 0.4375,
+      "ratio": 1.1666666666666667,
+      "g_class": "G3",
+      "action": "No action needed"
+    },
+    {
+      "city": "Argel\u00e8s-sur-Mer",
+      "n_stations": 6,
+      "M_gtfs": 0.16666666666666666,
+      "M_osm": 0.16666666666666666,
+      "ratio": 1.0,
+      "g_class": "G3",
+      "action": "No action needed"
+    },
+    {
+      "city": "Nantes",
+      "n_stations": 124,
+      "M_gtfs": 2.935483870967742,
+      "M_osm": 1.653225806451613,
+      "ratio": 0.5631868131868132,
+      "g_class": "G3",
+      "action": "No action needed"
+    },
+    {
+      "city": "Agen",
+      "n_stations": 16,
+      "M_gtfs": 0.0625,
+      "M_osm": 0.0625,
+      "ratio": 1.0,
+      "g_class": "G3",
+      "action": "No action needed"
+    },
+    {
+      "city": "Avignon",
+      "n_stations": 29,
+      "M_gtfs": 0.4827586206896552,
+      "M_osm": 0.41379310344827586,
+      "ratio": 0.8571428571428571,
+      "g_class": "G3",
+      "action": "No action needed"
+    },
+    {
+      "city": "Montpellier",
+      "n_stations": 53,
+      "M_gtfs": 2.9056603773584904,
+      "M_osm": 3.056603773584906,
+      "ratio": 1.0519480519480522,
+      "g_class": "G3",
+      "action": "No action needed"
+    },
+    {
+      "city": "Bourg-en-Bresse",
+      "n_stations": 45,
+      "M_gtfs": 0.2,
+      "M_osm": 0.15555555555555556,
+      "ratio": 0.7777777777777778,
+      "g_class": "G3",
+      "action": "No action needed"
+    },
+    {
+      "city": "Bordeaux",
+      "n_stations": 225,
+      "M_gtfs": 1.5777777777777777,
+      "M_osm": 1.64,
+      "ratio": 1.0394366197183098,
+      "g_class": "G3",
+      "action": "No action needed"
+    },
+    {
+      "city": "Caen",
+      "n_stations": 75,
+      "M_gtfs": 1.9733333333333334,
+      "M_osm": 0.96,
+      "ratio": 0.48648648648648646,
+      "g_class": "G4",
+      "action": "Audit OSM tagging completeness; GTFS authoritative"
+    },
+    {
+      "city": "Mulhouse",
+      "n_stations": 60,
+      "M_gtfs": 2.55,
+      "M_osm": 1.1666666666666667,
+      "ratio": 0.4575163398692811,
+      "g_class": "G4",
+      "action": "Audit OSM tagging completeness; GTFS authoritative"
+    },
+    {
+      "city": "Cherbourg-en-Cotentin",
+      "n_stations": 49,
+      "M_gtfs": 0.061224489795918366,
+      "M_osm": 0.02040816326530612,
+      "ratio": 0.3333333333333333,
+      "g_class": "G4",
+      "action": "Audit OSM tagging completeness; GTFS authoritative"
+    },
+    {
+      "city": "Soissons",
+      "n_stations": 28,
+      "M_gtfs": 0.8214285714285714,
+      "M_osm": 0.14285714285714285,
+      "ratio": 0.17391304347826086,
+      "g_class": "G4",
+      "action": "Audit OSM tagging completeness; GTFS authoritative"
+    },
+    {
+      "city": "Auray",
+      "n_stations": 11,
+      "M_gtfs": 0.45454545454545453,
+      "M_osm": 0.09090909090909091,
+      "ratio": 0.2,
+      "g_class": "G4",
+      "action": "Audit OSM tagging completeness; GTFS authoritative"
+    },
+    {
+      "city": "La Baule",
+      "n_stations": 14,
+      "M_gtfs": 0.42857142857142855,
+      "M_osm": 0.14285714285714285,
+      "ratio": 0.3333333333333333,
+      "g_class": "G4",
+      "action": "Audit OSM tagging completeness; GTFS authoritative"
+    },
+    {
+      "city": "Cholet",
+      "n_stations": 16,
+      "M_gtfs": 0.4375,
+      "M_osm": 0.125,
+      "ratio": 0.2857142857142857,
+      "g_class": "G4",
+      "action": "Audit OSM tagging completeness; GTFS authoritative"
+    },
+    {
+      "city": "Valence",
+      "n_stations": 68,
+      "M_gtfs": 0.08823529411764706,
+      "M_osm": 0.029411764705882353,
+      "ratio": 0.3333333333333333,
+      "g_class": "G4",
+      "action": "Audit OSM tagging completeness; GTFS authoritative"
+    },
+    {
+      "city": "Cergy-Pontoise",
+      "n_stations": 45,
+      "M_gtfs": 0.9555555555555556,
+      "M_osm": 0.2222222222222222,
+      "ratio": 0.2325581395348837,
+      "g_class": "G4",
+      "action": "Audit OSM tagging completeness; GTFS authoritative"
+    },
+    {
+      "city": "Lascaux",
+      "n_stations": 5,
+      "M_gtfs": 0.0,
+      "M_osm": 0.0,
+      "ratio": 0.0,
+      "g_class": "G5",
+      "action": "Verify that the city actually has heavy transit; possible peripheral position"
+    }
+  ]
+}
