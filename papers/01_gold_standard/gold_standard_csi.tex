@@ -1345,16 +1345,26 @@ data.
 The artefacts cover two scopes with explicit licensing boundaries.
 \begin{itemize}[leftmargin=*]
 \item \textbf{French Audit Catalogue (Zenodo, ODbL v1.0).} The
-46{,}307-station certified Parquet file, the rejected-stations
-log, the audit report, and the machine-readable descriptors (JSON
-Schema, DCAT-AP, Frictionless Data Package, Croissant JSON-LD) are
-deposited on Zenodo under concept DOI
+deposit contains four artefacts under the same concept DOI
 \texttt{10.5281/zenodo.20125460} (current release 1.0.0,
-2026-05), mirrored on \emph{Recherche Data Gouv}. The 142 candidate
-French GBFS feeds inventoried from \emph{transport.data.gouv.fr}
-and MobilityData are archived with SHA-256 hashes in the same
-deposit; the certified subset of 123 systems is derived
-deterministically from them.
+2026-05), mirrored on \emph{Recherche Data Gouv}:
+(i) the $46{,}307$-station certified Parquet
+(\texttt{stations\_gold\_standard\_final.parquet}, $\sim 6.6$\,MB,
+46 typed columns including per-row anomaly flags and audited
+capacities) ;
+(ii) the lightweight system-level executive summary
+(\texttt{stations\_gold\_standard\_audit\_summary.csv}, $\sim$60\,kB,
+one row per audited system with anomaly counts and operator
+attribution) for users who want an overview before downloading the
+full parquet ;
+(iii) the \texttt{rejected\_stations.parquet} log with exclusion
+motives ; and
+(iv) the audit report and machine-readable descriptors
+(JSON Schema, DCAT-AP, Frictionless Data Package, Croissant JSON-LD).
+The 142 candidate French GBFS feeds inventoried from
+\emph{transport.data.gouv.fr} and MobilityData are archived with
+SHA-256 hashes in the same deposit ; the certified subset of 123
+systems is derived deterministically from them.
 \item \textbf{Global audit table (GitHub, MIT licence).} The full
 per-system result of the 1{,}509-system MobilityData-catalogue audit
 is shipped as \texttt{papers/01\_gold\_standard/experiments/e5\_europe/}\linebreak
@@ -1381,25 +1391,63 @@ are released as supplementary material alongside the dataset.
 
 % ===================================================================
 \appendix
-\section{Usage examples}
+\section{Catalogue use cases}
 
-Three concrete reuse patterns are documented below; complete notebooks
-are released alongside the dataset.
+Five concrete reuse patterns are documented below. Each is a
+self-contained few-line snippet against
+\texttt{stations\_gold\_standard\_final.parquet} ; a complete
+Jupyter notebook (\texttt{catalogue\_recipes.ipynb}) is released
+alongside the dataset.
 
-\paragraph{Example 1 -- Loading and filtering.}
-Reading the certified Parquet and filtering to the dock-based subset
-of a given city takes four lines:
+\paragraph{Use case 1 -- Loading the catalogue.}
+A single \texttt{read\_parquet} call exposes the 46 typed columns ;
+typical project filters use \texttt{station\_type},
+\texttt{audit\_confidence} and the per-row anomaly flags
+\texttt{flag\_A1..flag\_A7}.
 \begin{quote}\small\ttfamily
 import pandas as pd\\
 gs = pd.read\_parquet("stations\_gold\_standard\_final.parquet")\\
-paris = gs[(gs.city == "Paris") \&\\
-\ \ (gs.station\_type == "docked\_bike")]\\
-len(paris)\ \ \#\ returns\ 1{,}507
+clean = gs[(gs.station\_type == "docked\_bike") \&\\
+\ \ (gs.audit\_confidence == "high")]\\
+len(clean)\ \ \#\ returns\ 5{,}402
 \end{quote}
 
-\paragraph{Example 2 -- Spatial-equity analysis.} Per-city correlation
-between dock-based station count and median income per consumption
-unit:
+\paragraph{Use case 2 -- Per-operator anomaly profile.}
+The audit's verdict is exposed at the row level by the seven flag
+columns, so a single \texttt{groupby} returns the per-operator
+anomaly rates that drive Section~\ref{secResults} :
+\begin{quote}\small\ttfamily
+gs.groupby("operator\_name").agg(\\
+\ \ n=("uid", "size"),\\
+\ \ A3\_rate=("flag\_A3", "mean"),\\
+\ \ A7\_rate=("flag\_A7", "mean"),\\
+).sort\_values("n", ascending=False).head(10)
+\end{quote}
+The two largest operators on the corpus (\emph{Dott},
+$\sim 20\,000$ stations ; \emph{Pony}, $\sim 11\,500$) come out at
+\texttt{A7\_rate} = 1.0 and \texttt{A3\_rate} = 1.0 respectively,
+which is the row-level expression of the operator-driven hotspots
+documented in Section~\ref{secResults}.
+
+\paragraph{Use case 3 -- Raw vs.\ audited capacity per system.}
+\texttt{capacity\_raw} preserves the GBFS-declared value (including
+placeholders and NaN) while \texttt{capacity\_audited} carries the
+post-audit count (NaN for non-dock types) ; one can therefore
+quantify per-system the gap between what GBFS \emph{claims} and
+what the audit \emph{certifies} :
+\begin{quote}\small\ttfamily
+sys = gs.groupby("system\_id").agg(\\
+\ \ raw\_capacity=("capacity\_raw", "sum"),\\
+\ \ audited\_capacity=("capacity\_audited", "sum"),\\
+).query("raw\_capacity > 1000")\\
+sys["over\_count\_factor"] = sys.raw\_capacity / \\
+\ \ sys.audited\_capacity.replace(0, 1)\\
+sys.sort\_values("over\_count\_factor", ascending=False).head(5)
+\end{quote}
+
+\paragraph{Use case 4 -- Spatial-equity correlation.}
+Per-city correlation between dock-based station count and median
+income per consumption unit :
 \begin{quote}\small\ttfamily
 by\_city = (\\
 \ \ gs[gs.station\_type == "docked\_bike"]\\
@@ -1407,15 +1455,14 @@ by\_city = (\\
 \ \ \ \ n=("uid", "size"),\\
 \ \ \ \ income=("revenu\_median\_uc", "median"))\\
 )\\
-rho = by\_city.n.corr(\\
-\ \ by\_city.income, method="spearman")\\
+rho = by\_city.n.corr(by\_city.income, method="spearman")\\
 \#\ rho\ $\approx\ +0.39$\ (95\%\ bootstrap\ CI)
 \end{quote}
-A positive correlation of $\sim$0.4 indicates moderate income-density
-coupling, consistent with the existence of \emph{social mobility
-deserts} that the third example below makes operational.
 
-\paragraph{Example 3 -- Identifying mobility deserts.}
+\paragraph{Use case 5 -- Identifying mobility deserts.}
+Three filters on \texttt{station\_type}, \texttt{revenu\_median\_uc}
+and the multimodal \texttt{gtfs\_heavy\_stops\_300m} count
+materialise the desert concept of Section~\ref{secResults} :
 \begin{quote}\small\ttfamily
 q1 = gs.revenu\_median\_uc.quantile(0.25)\\
 deserts = gs[(\\
