@@ -423,6 +423,149 @@ def fig05_completeness(stations: pd.DataFrame) -> None:
     _save(fig, GOLD_DIR / "fig05_completeness.pdf")
 
 
+def fig07_global_audit() -> None:
+    """Per-country stacked bar of A1-A4 flagged systems (global audit).
+
+    Reads papers/01_gold_standard/experiments/e5_europe/massive_audit_results.csv
+    and renders a horizontal stacked bar : one row per country, stacked
+    segments for A1 / A2 / A3 / A4. Mirrors Table 7 of the manuscript in
+    a more skim-readable form.
+    """
+    src = ROOT / "papers" / "01_gold_standard" / "experiments" / "e5_europe" / "massive_audit_results.csv"
+    if not src.exists():
+        print(f"  fig07 skipped (missing {src})")
+        return
+    df = pd.read_csv(src)
+    for col in ("a1_cars", "a2_placeholder", "a3_overcap_flag", "a4_perim_flag"):
+        if col in df.columns:
+            df[col] = df[col].fillna(False).infer_objects(copy=False).astype(bool)
+        else:
+            df[col] = False
+    agg = (
+        df.groupby("country")
+          .agg(audited=("system_id", "size"),
+               A1=("a1_cars", "sum"),
+               A2=("a2_placeholder", "sum"),
+               A3=("a3_overcap_flag", "sum"),
+               A4=("a4_perim_flag", "sum"))
+          .reset_index()
+    )
+    agg["total"] = agg[["A1", "A2", "A3", "A4"]].sum(axis=1)
+    # Keep countries with at least 30 audited systems OR any flagged class
+    keep = agg[(agg["audited"] >= 30) | (agg["total"] > 0)].copy()
+    keep = keep.sort_values("total", ascending=True).tail(18)
+    y = np.arange(len(keep))
+
+    fig, ax = plt.subplots(figsize=(6.4, 4.4))
+    colors = {"A1": PRIMARY, "A2": SECONDARY, "A3": ACCENT, "A4": "#8A95A3"}
+    left = np.zeros(len(keep), dtype=float)
+    for cls in ("A1", "A2", "A3", "A4"):
+        vals = keep[cls].to_numpy()
+        ax.barh(y, vals, left=left, color=colors[cls],
+                edgecolor="white", linewidth=0.5, label=cls)
+        left = left + vals
+
+    ax.set_yticks(y)
+    ax.set_yticklabels(keep["country"], fontsize=8.5)
+    for yi, total in enumerate(keep["total"]):
+        if total > 0:
+            ax.text(total + max(left) * 0.012, yi, f"{int(total)}",
+                    va="center", fontsize=7.5, color=DARK_GREY)
+    ax.set_xlabel("Systems flagged on at least one of A1-A4")
+    ax.set_xlim(0, max(left) * 1.18)
+    ax.spines["top"].set_visible(False)
+    ax.spines["right"].set_visible(False)
+    ax.grid(True, axis="x", color=LIGHT_GREY, linewidth=0.4, alpha=0.6)
+    ax.grid(False, axis="y")
+    ax.legend(frameon=False, loc="lower right", fontsize=8,
+              ncol=4, columnspacing=1.0, handlelength=1.2)
+    ax.set_title(
+        "Cross-country incidence of the four structural classes",
+        fontsize=10, pad=8,
+    )
+    _save(fig, GOLD_DIR / "fig07_global_audit.pdf")
+
+
+def fig08_capacity_semantics() -> None:
+    """Conceptual diagram of the 6 incompatible capacity semantics.
+
+    Six cards arranged in a 2x3 grid, each card naming the operator(s),
+    the semantic, the reported value, and the affected station count.
+    Mirrors Table 8 of the manuscript visually so a reader who scans
+    the figure section sees the point in one glance.
+    """
+    cards = [
+        ("Dott",                "Field left unfilled",
+         "NaN",                 "20,224 stations  (FR)",
+         ACCENT, "A7"),
+        ("Bird",                "Field left unfilled",
+         "NaN",                 "4,499 stations  (FR)",
+         ACCENT, "A7"),
+        ("Pony Nice",           "Constant placeholder",
+         "c = 100",             "412 stations",
+         "#D17F3A", "A2"),
+        ("Pony Paris",          "Per-vehicle ratio",
+         "c = 1.6",             "3,617 stations",
+         PRIMARY, "A3"),
+        ("Pony other (12)",     "Conditional fleet profile",
+         "c = 2 to 15",         "7,436 stations",
+         PRIMARY, "A3"),
+        ("Voi",                 "Small fleet estimator",
+         "c = 5 to 10",         "2,816 stations  (FR)",
+         PRIMARY, "A3"),
+    ]
+    fig, ax = plt.subplots(figsize=(6.8, 3.6))
+    ax.set_xlim(0, 100); ax.set_ylim(0, 100)
+    ax.set_aspect("auto")
+    ax.axis("off")
+
+    n_cols, n_rows = 3, 2
+    pad_x, pad_y, gap_x, gap_y = 1.0, 2.5, 2.0, 5.5
+    card_w = (100 - 2 * pad_x - (n_cols - 1) * gap_x) / n_cols
+    card_h = (100 - 2 * pad_y - (n_rows - 1) * gap_y) / n_rows
+
+    for i, (op, sem, val, stns, color, cls) in enumerate(cards):
+        row = i // n_cols
+        col = i % n_cols
+        x = pad_x + col * (card_w + gap_x)
+        y = 100 - pad_y - card_h - row * (card_h + gap_y)
+
+        ax.add_patch(plt.Rectangle(
+            (x, y), card_w, card_h,
+            facecolor="white", edgecolor=LIGHT_GREY, linewidth=0.8,
+            zorder=1,
+        ))
+        # Left accent strip
+        ax.add_patch(plt.Rectangle(
+            (x, y), card_w * 0.04, card_h,
+            facecolor=color, edgecolor=color, linewidth=0,
+            zorder=2,
+        ))
+        # Class chip top-right
+        ax.text(x + card_w - 1.0, y + card_h - 2.6, cls,
+                ha="right", va="top", fontsize=8.5, fontweight="bold",
+                color=color)
+        # Operator name (title)
+        ax.text(x + card_w * 0.10, y + card_h - 2.6, op,
+                ha="left", va="top", fontsize=10.5,
+                fontweight="bold", color=DARK_GREY)
+        # Semantic label
+        ax.text(x + card_w * 0.10, y + card_h * 0.50, sem,
+                ha="left", va="center", fontsize=9, color=DARK_GREY)
+        # Reported value (monospace family)
+        ax.text(x + card_w * 0.10, y + card_h * 0.28, val,
+                ha="left", va="center", fontsize=9,
+                family="monospace", color=color)
+        # Station count
+        ax.text(x + card_w * 0.10, y + card_h * 0.10, stns,
+                ha="left", va="center", fontsize=8, color=MID_GREY)
+
+    ax.text(50, 96, "One field, six semantics  ·  capacity in the French free-floating subset",
+            ha="center", va="center", fontsize=10, fontweight="bold",
+            color="#1A2332")
+    _save(fig, GOLD_DIR / "fig08_capacity_semantics.pdf")
+
+
 # -------------------------------------------------------------------------
 # IMD figures
 # -------------------------------------------------------------------------
@@ -811,6 +954,8 @@ def main() -> None:
     fig04_bordeaux_before_after(catalog, cities_dock)
     fig05_completeness(stations)
     fig06_mobility_deserts(stations)
+    fig07_global_audit()
+    fig08_capacity_semantics()
 
     print("IMD figures:")
     fig01_imd_weights()

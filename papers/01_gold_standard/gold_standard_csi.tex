@@ -694,6 +694,24 @@ Slovakia (SK)             &  19 &  19 & 16 & -- & -- & -- & 16 \\
 \end{tabular}
 \end{table}
 
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.92\linewidth]{figures/fig07_global_audit.pdf}
+\caption{Per-country incidence of the structural classes A1--A4 across
+the 1{,}509-system MobilityData catalogue (top 18 countries by total
+flagged). The chart shows the stacked composition of the
+\textbf{Flagged} column of Table~\ref{tab:global-audit} and makes the
+country-level signatures legible at a glance: A4 (geospatial) drives
+the Polish, Finnish, Swedish and Slovak hotspots (cross-border bounding
+boxes on aggregator feeds), A1 (car-sharing labelled as BSS) drives
+the DACH cluster (Germany, Switzerland), A2 (placeholder capacity) and
+A3 (over-capacity) drive France and the Czech Republic. Macro-region
+(A5), zero-capacity (A6) and null-capacity (A7) are reported separately
+because they are calibrated on station-count-conditioned sub-corpora
+(Tables~\ref{tab:a6-distribution} and~\ref{tab:a7-distribution}).}
+\label{fig:global-audit-overview}
+\end{figure}
+
 \paragraph{Czech Republic case study: one operator drives an entire country.}
 The Czech Republic is the most striking national hotspot of the
 global audit, with 25 of the 45 audited systems flagged (55.6\,\%).
@@ -814,6 +832,24 @@ Voi          & 4  &  2{,}816 & 5--10 & Small fleet-profile estimator \\
 \bottomrule
 \end{tabular}
 \end{table}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.95\linewidth]{figures/fig08_capacity_semantics.pdf}
+\caption{Conceptual diagram of the six incompatible semantics of the
+GBFS \texttt{station\_information.capacity} field observed on the
+French free-floating corpus (39{,}235 stations, 84.7\,\% of the
+certified rows). Each card pairs the operator, the publication
+convention applied to the field, the typical reported value, and the
+anomaly class triggered by that convention (A2 placeholder, A3
+over-capacity profile, A7 null capacity). The diagram makes explicit
+why a downstream consumer applying a single arithmetic to
+\texttt{capacity} aggregates six different physical quantities; it
+complements Table~\ref{tab:capacity-semantics} and motivates the
+dual-column \texttt{capacity\_raw}/\texttt{capacity\_audited} schema of
+the released catalogue.}
+\label{fig:capacity-semantics-diagram}
+\end{figure}
 
 % ===================================================================
 \section{Discussion}\label{secDiscussion}
