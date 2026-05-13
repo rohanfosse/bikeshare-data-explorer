@@ -1,0 +1,21 @@
+{
+  "n_communes_national": 34858,
+  "national_rho_density_only": 0.4020286541500916,
+  "national_ci_density_only": [
+    0.3924301995787422,
+    0.4114743884134706
+  ],
+  "non_zero_n_communes": 18389,
+  "non_zero_rho_density_only": 0.053774545262722635,
+  "non_zero_ci_density_only": [
+    0.037813864443513805,
+    0.06966439356132056
+  ],
+  "panel_n_cities": 58,
+  "panel_rho_density_only": 0.4394782983173891,
+  "panel_ci_density_only": [
+    0.18210852988084814,
+    0.6241060564098795
+  ],
+  "panel_rho_imd4_full": 0.619182380263927
+}

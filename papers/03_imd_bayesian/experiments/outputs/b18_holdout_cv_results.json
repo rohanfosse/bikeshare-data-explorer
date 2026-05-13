@@ -1,0 +1,387 @@
+{
+  "n_folds": 5,
+  "n_held_out": 58,
+  "rho_oos": 0.41751514965086595,
+  "ci_oos": [
+    0.1636036496474383,
+    0.63813587707968
+  ],
+  "fold_weights_M": [
+    0.7361667207765898,
+    0.7818012688078615,
+    0.7678577761733163,
+    0.7023727509946155,
+    0.6926768702746023
+  ],
+  "fold_weights_I": [
+    0.08372123530233708,
+    0.07354211303907025,
+    0.07482552526882656,
+    0.08029691855942808,
+    0.07609704502509895
+  ],
+  "fold_weights_T": [
+    0.09256979817910388,
+    0.07195444312710611,
+    0.079102339564682,
+    0.1205078240547682,
+    0.08408915989227946
+  ],
+  "fold_weights_D": [
+    0.06275307732989077,
+    0.058573308439165105,
+    0.059132194774071556,
+    0.06297597930530235,
+    0.11767887252494763
+  ],
+  "predictions": [
+    {
+      "city": "Montpellier",
+      "fold": 0,
+      "predicted_imd4": 21.845650897029557,
+      "observed_insee": 11.6538640948536
+    },
+    {
+      "city": "Nantes",
+      "fold": 0,
+      "predicted_imd4": 19.727862538197858,
+      "observed_insee": 13.3151074746505
+    },
+    {
+      "city": "Brest",
+      "fold": 0,
+      "predicted_imd4": 15.796441155216396,
+      "observed_insee": 5.49538624215618
+    },
+    {
+      "city": "Auray",
+      "fold": 0,
+      "predicted_imd4": 15.68117464022938,
+      "observed_insee": 3.44924698442029
+    },
+    {
+      "city": "Bourg-en-Bresse",
+      "fold": 0,
+      "predicted_imd4": 15.693608302075823,
+      "observed_insee": 6.57551420970263
+    },
+    {
+      "city": "Les Sables-d'Olonne",
+      "fold": 0,
+      "predicted_imd4": 14.18172375570482,
+      "observed_insee": 6.46057721187666
+    },
+    {
+      "city": "La Roche-sur-Yon",
+      "fold": 0,
+      "predicted_imd4": 12.595239107080875,
+      "observed_insee": 5.8745835239286
+    },
+    {
+      "city": "Landerneau",
+      "fold": 0,
+      "predicted_imd4": 13.228074861592003,
+      "observed_insee": 2.11445297934487
+    },
+    {
+      "city": "Royan",
+      "fold": 0,
+      "predicted_imd4": 11.763035978759865,
+      "observed_insee": 4.55799766015818
+    },
+    {
+      "city": "Cherbourg-en-Cotentin",
+      "fold": 0,
+      "predicted_imd4": 12.153651289632757,
+      "observed_insee": 6.23965766841271
+    },
+    {
+      "city": "Tarbes",
+      "fold": 0,
+      "predicted_imd4": 12.849714500027112,
+      "observed_insee": 5.22272360869269
+    },
+    {
+      "city": "\u00c9pinal",
+      "fold": 0,
+      "predicted_imd4": 10.064288791158697,
+      "observed_insee": 3.35575099094288
+    },
+    {
+      "city": "Saumur",
+      "fold": 0,
+      "predicted_imd4": 10.382290611755746,
+      "observed_insee": 7.07299683546874
+    },
+    {
+      "city": "Paris",
+      "fold": 1,
+      "predicted_imd4": 17.934438581694558,
+      "observed_insee": 9.33003184333977
+    },
+    {
+      "city": "Bordeaux",
+      "fold": 1,
+      "predicted_imd4": 15.792282579237076,
+      "observed_insee": 18.2433716505083
+    },
+    {
+      "city": "Rennes",
+      "fold": 1,
+      "predicted_imd4": 14.46203767720571,
+      "observed_insee": 13.6886804284226
+    },
+    {
+      "city": "Saint-\u00c9tienne",
+      "fold": 1,
+      "predicted_imd4": 10.025210962565136,
+      "observed_insee": 2.55417570652646
+    },
+    {
+      "city": "Agen",
+      "fold": 1,
+      "predicted_imd4": 13.384989100993003,
+      "observed_insee": 6.66858959342826
+    },
+    {
+      "city": "Montreuil-Bellay",
+      "fold": 1,
+      "predicted_imd4": 7.393455597928202,
+      "observed_insee": 2.74711700014134
+    },
+    {
+      "city": "Pau",
+      "fold": 1,
+      "predicted_imd4": 11.407650336354362,
+      "observed_insee": 7.7952352841509
+    },
+    {
+      "city": "Calais",
+      "fold": 1,
+      "predicted_imd4": 10.374739001669408,
+      "observed_insee": 3.10388169143651
+    },
+    {
+      "city": "Troyes",
+      "fold": 1,
+      "predicted_imd4": 11.75503856240212,
+      "observed_insee": 5.50878457511585
+    },
+    {
+      "city": "Carcassonne",
+      "fold": 1,
+      "predicted_imd4": 8.7254529844786,
+      "observed_insee": 2.812904298631
+    },
+    {
+      "city": "Annecy",
+      "fold": 1,
+      "predicted_imd4": 8.583309918709208,
+      "observed_insee": 9.10399847349704
+    },
+    {
+      "city": "Caen",
+      "fold": 2,
+      "predicted_imd4": 13.827724844974284,
+      "observed_insee": 8.51052229085321
+    },
+    {
+      "city": "Valence",
+      "fold": 2,
+      "predicted_imd4": 11.96889551153344,
+      "observed_insee": 8.47263474505972
+    },
+    {
+      "city": "Vichy",
+      "fold": 2,
+      "predicted_imd4": 11.84127163009352,
+      "observed_insee": 4.61748864740261
+    },
+    {
+      "city": "Amiens",
+      "fold": 2,
+      "predicted_imd4": 12.251734719961116,
+      "observed_insee": 6.71558309940503
+    },
+    {
+      "city": "Libourne",
+      "fold": 2,
+      "predicted_imd4": 10.090160879944786,
+      "observed_insee": 4.65326848527402
+    },
+    {
+      "city": "Niort",
+      "fold": 2,
+      "predicted_imd4": 10.256387064543937,
+      "observed_insee": 6.80749864472096
+    },
+    {
+      "city": "Brive-la-Gaillarde",
+      "fold": 2,
+      "predicted_imd4": 10.069710446587003,
+      "observed_insee": 4.06652778309087
+    },
+    {
+      "city": "Nancy",
+      "fold": 2,
+      "predicted_imd4": 12.685323269693521,
+      "observed_insee": 6.0424603262968
+    },
+    {
+      "city": "Longwy",
+      "fold": 2,
+      "predicted_imd4": 9.572186056333635,
+      "observed_insee": 0.358159074439887
+    },
+    {
+      "city": "Lascaux",
+      "fold": 2,
+      "predicted_imd4": 7.304346596942765,
+      "observed_insee": 0.0
+    },
+    {
+      "city": "Mulhouse",
+      "fold": 3,
+      "predicted_imd4": 20.115006321555676,
+      "observed_insee": 4.58545572448006
+    },
+    {
+      "city": "Dijon",
+      "fold": 3,
+      "predicted_imd4": 18.517519005058293,
+      "observed_insee": 8.58836948780252
+    },
+    {
+      "city": "Besan\u00e7on",
+      "fold": 3,
+      "predicted_imd4": 16.851481342011258,
+      "observed_insee": 6.49626758116596
+    },
+    {
+      "city": "Toulouse",
+      "fold": 3,
+      "predicted_imd4": 19.50719321807508,
+      "observed_insee": 11.4511056569196
+    },
+    {
+      "city": "Soissons",
+      "fold": 3,
+      "predicted_imd4": 16.614046231947626,
+      "observed_insee": 2.40348625861818
+    },
+    {
+      "city": "Belfort",
+      "fold": 3,
+      "predicted_imd4": 18.843435120595622,
+      "observed_insee": 4.704251954106
+    },
+    {
+      "city": "La Baule",
+      "fold": 3,
+      "predicted_imd4": 16.23418171817844,
+      "observed_insee": 3.90349616454334
+    },
+    {
+      "city": "Avignon",
+      "fold": 3,
+      "predicted_imd4": 15.350319888505592,
+      "observed_insee": 8.19263586334225
+    },
+    {
+      "city": "Saint-Brieuc",
+      "fold": 3,
+      "predicted_imd4": 17.533245566951198,
+      "observed_insee": 4.49297359580835
+    },
+    {
+      "city": "Lille",
+      "fold": 3,
+      "predicted_imd4": 18.182287522445314,
+      "observed_insee": 8.23901225191742
+    },
+    {
+      "city": "Valenciennes",
+      "fold": 3,
+      "predicted_imd4": 15.932056831139604,
+      "observed_insee": 2.88421199921293
+    },
+    {
+      "city": "Ch\u00e2tellerault",
+      "fold": 3,
+      "predicted_imd4": 12.928703944382946,
+      "observed_insee": 4.98052231037926
+    },
+    {
+      "city": "Lyon",
+      "fold": 3,
+      "predicted_imd4": 17.81412834679437,
+      "observed_insee": 11.9074178438811
+    },
+    {
+      "city": "Laon",
+      "fold": 3,
+      "predicted_imd4": 12.540536253402742,
+      "observed_insee": 2.25914373595414
+    },
+    {
+      "city": "Strasbourg",
+      "fold": 4,
+      "predicted_imd4": 25.297394483351976,
+      "observed_insee": 19.6841422144854
+    },
+    {
+      "city": "Saint-Nazaire",
+      "fold": 4,
+      "predicted_imd4": 17.864298810858937,
+      "observed_insee": 7.81347058162491
+    },
+    {
+      "city": "Cergy-Pontoise",
+      "fold": 4,
+      "predicted_imd4": 16.661109754601387,
+      "observed_insee": 1.08386342662715
+    },
+    {
+      "city": "Rouen",
+      "fold": 4,
+      "predicted_imd4": 17.785766470061766,
+      "observed_insee": 4.98138755839279
+    },
+    {
+      "city": "Argel\u00e8s-sur-Mer",
+      "fold": 4,
+      "predicted_imd4": 12.863766809575683,
+      "observed_insee": 5.76925043551341
+    },
+    {
+      "city": "Cholet",
+      "fold": 4,
+      "predicted_imd4": 13.201844312997007,
+      "observed_insee": 3.92881759461695
+    },
+    {
+      "city": "Clermont-Ferrand",
+      "fold": 4,
+      "predicted_imd4": 17.311844660594,
+      "observed_insee": 5.48998707636534
+    },
+    {
+      "city": "Louviers",
+      "fold": 4,
+      "predicted_imd4": 12.596809664905853,
+      "observed_insee": 2.24395785438833
+    },
+    {
+      "city": "Marseille",
+      "fold": 4,
+      "predicted_imd4": 16.234974679000487,
+      "observed_insee": 2.85554452476184
+    },
+    {
+      "city": "Auxerre",
+      "fold": 4,
+      "predicted_imd4": 9.60517762608204,
+      "observed_insee": 3.23396612263395
+    }
+  ]
+}

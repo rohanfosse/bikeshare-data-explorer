@@ -1,0 +1,17 @@
+{
+  "n": 42,
+  "R2_cerema_only": 0.2959764493947067,
+  "R2_cerema_plus_imd": 0.47499927730868563,
+  "delta_R2": 0.17902282791397894,
+  "beta_cerema": 0.5440371764821841,
+  "ci_beta_cerema": [
+    0.31204332498598497,
+    0.8743967279111291
+  ],
+  "beta_imd_residual": 0.5556341615430833,
+  "ci_beta_imd_residual": [
+    0.06508145515308175,
+    0.8448930090941795
+  ],
+  "imd_residual_significant": true
+}

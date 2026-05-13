@@ -52,3 +52,4 @@ papers/03_imd_bayesian/overleaf_bundle.zip
 # Eco-counter raw CSV caches (large, regenerable)
 data/external/pnf_aggregate/
 data/external/eco_counters_extended/
+data/external/insee_mobpro/

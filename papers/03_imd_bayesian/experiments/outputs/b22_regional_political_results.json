@@ -1,0 +1,316 @@
+{
+  "n_communes_mapped": 31266,
+  "regime_2021": {
+    "droite": {
+      "n_communes": 17271,
+      "imd_mean": 0.09018661616996583,
+      "imd_ci": [
+        0.07470234273404788,
+        0.10713155422915417
+      ],
+      "ies_mean": 0.07359714451341813,
+      "ies_ci": [
+        0.05602850878642904,
+        0.09282980777234541
+      ]
+    },
+    "gauche": {
+      "n_communes": 13789,
+      "imd_mean": -0.05937105396737874,
+      "imd_ci": [
+        -0.06797923793224074,
+        -0.05023349558327127
+      ],
+      "ies_mean": -0.09193309000974363,
+      "ies_ci": [
+        -0.1017295720208793,
+        -0.08171693551355803
+      ]
+    },
+    "regionaliste": {
+      "n_communes": 206,
+      "imd_mean": 0.007471589088475842,
+      "imd_ci": [
+        -0.07656171737615795,
+        0.10273278877826178
+      ],
+      "ies_mean": -0.016654877412078155,
+      "ies_ci": [
+        -0.11193560503771374,
+        0.0910934095056848
+      ]
+    }
+  },
+  "regime_2015": {
+    "droite": {
+      "n_communes": 17295,
+      "imd_mean": 0.09026414578745631,
+      "imd_ci": [
+        0.07526525390358495,
+        0.10670437332579871
+      ],
+      "ies_mean": 0.07370512686539556,
+      "ies_ci": [
+        0.056727984385203864,
+        0.09229438688507603
+      ]
+    },
+    "gauche": {
+      "n_communes": 13765,
+      "imd_mean": -0.05972922751026243,
+      "imd_ci": [
+        -0.06757737259622884,
+        -0.05100586618621454
+      ],
+      "ies_mean": -0.09235737481947887,
+      "ies_ci": [
+        -0.10116828120078214,
+        -0.08251936997001882
+      ]
+    },
+    "regionaliste": {
+      "n_communes": 206,
+      "imd_mean": 0.007471589088475842,
+      "imd_ci": [
+        -0.07656171737615795,
+        0.10273278877826178
+      ],
+      "ies_mean": -0.016654877412078155,
+      "ies_ci": [
+        -0.11193560503771374,
+        0.0910934095056848
+      ]
+    }
+  },
+  "mannwhitney_imd_2021_droite_vs_gauche": {
+    "u": 144705056.0,
+    "p": 9.618355266113922e-234
+  },
+  "mannwhitney_ies_2021_droite_vs_gauche": {
+    "u": 143033289.0,
+    "p": 1.6416920309000725e-204
+  },
+  "regional_means": [
+    {
+      "region_code": "11",
+      "region_name": "Ile-de-France",
+      "regime_2015": "droite",
+      "regime_2021": "droite",
+      "n": 1251,
+      "imd_mean": 0.9837745339552968,
+      "imd_median": -0.0482354231181489,
+      "ies_mean": 1.0801847081755112,
+      "ies_median": -0.0918859143970517,
+      "income_median": 27110.0,
+      "poverty_mean": 13.266094420600858
+    },
+    {
+      "region_code": "04",
+      "region_name": "La Reunion",
+      "regime_2015": "droite",
+      "regime_2021": "gauche",
+      "n": 24,
+      "imd_mean": 0.1460563967740418,
+      "imd_median": -0.04871616627590495,
+      "ies_mean": 0.15141192690714528,
+      "ies_median": -0.07418886440833686,
+      "income_median": 16765.0,
+      "poverty_mean": 37.875
+    },
+    {
+      "region_code": "32",
+      "region_name": "Hauts-de-France",
+      "regime_2015": "droite",
+      "regime_2021": "droite",
+      "n": 3504,
+      "imd_mean": 0.06493449071523892,
+      "imd_median": -0.11805637220633686,
+      "ies_mean": 0.04632303982893604,
+      "ies_median": -0.16231208363907934,
+      "income_median": 22710.0,
+      "poverty_mean": 17.941935483870967
+    },
+    {
+      "region_code": "84",
+      "region_name": "Auvergne-Rhone-Alpes",
+      "regime_2015": "droite",
+      "regime_2021": "droite",
+      "n": 3739,
+      "imd_mean": 0.030121178097347025,
+      "imd_median": -0.1231192369595016,
+      "ies_mean": 0.005607807368117644,
+      "ies_median": -0.1688874581749501,
+      "income_median": 23290.0,
+      "poverty_mean": 12.225621414913958
+    },
+    {
+      "region_code": "93",
+      "region_name": "PACA",
+      "regime_2015": "droite",
+      "regime_2021": "droite",
+      "n": 837,
+      "imd_mean": 0.014827873080829362,
+      "imd_median": -0.1128139455704139,
+      "ies_mean": -0.010512276785710673,
+      "ies_median": -0.1569761919846126,
+      "income_median": 22730.0,
+      "poverty_mean": 13.2508038585209
+    },
+    {
+      "region_code": "44",
+      "region_name": "Grand Est",
+      "regime_2015": "droite",
+      "regime_2021": "droite",
+      "n": 4217,
+      "imd_mean": 0.012125641611517373,
+      "imd_median": -0.1325374582569727,
+      "ies_mean": -0.015574502903860176,
+      "ies_median": -0.1798610291509108,
+      "income_median": 23840.0,
+      "poverty_mean": 15.652631578947368
+    },
+    {
+      "region_code": "94",
+      "region_name": "Corse",
+      "regime_2015": "regionaliste",
+      "regime_2021": "regionaliste",
+      "n": 206,
+      "imd_mean": 0.0074715890884758445,
+      "imd_median": -0.1668165686562898,
+      "ies_mean": -0.01665487741207814,
+      "ies_median": -0.2143988836526151,
+      "income_median": 21580.0,
+      "poverty_mean": 17.68
+    },
+    {
+      "region_code": "53",
+      "region_name": "Bretagne",
+      "regime_2015": "gauche",
+      "regime_2021": "gauche",
+      "n": 1197,
+      "imd_mean": -0.006605084661943101,
+      "imd_median": -0.1054492390899989,
+      "ies_mean": -0.034300357659717486,
+      "ies_median": -0.1467896302270037,
+      "income_median": 22580.0,
+      "poverty_mean": 9.844827586206897
+    },
+    {
+      "region_code": "52",
+      "region_name": "Pays de la Loire",
+      "regime_2015": "droite",
+      "regime_2021": "droite",
+      "n": 1212,
+      "imd_mean": -0.016883055736096265,
+      "imd_median": -0.12055196319223545,
+      "ies_mean": -0.04553140347977429,
+      "ies_median": -0.16282049013334293,
+      "income_median": 22285.0,
+      "poverty_mean": 9.595317725752508
+    },
+    {
+      "region_code": "28",
+      "region_name": "Normandie",
+      "regime_2015": "droite",
+      "regime_2021": "droite",
+      "n": 2511,
+      "imd_mean": -0.02243127493868911,
+      "imd_median": -0.1264036029271144,
+      "ies_mean": -0.05330059534591764,
+      "ies_median": -0.1712130273703427,
+      "income_median": 23160.0,
+      "poverty_mean": 14.46808510638298
+    },
+    {
+      "region_code": "76",
+      "region_name": "Occitanie",
+      "regime_2015": "gauche",
+      "regime_2021": "gauche",
+      "n": 3636,
+      "imd_mean": -0.0519748931900534,
+      "imd_median": -0.14754151285475642,
+      "ies_mean": -0.08410901031419868,
+      "ies_median": -0.19278425110885145,
+      "income_median": 21790.0,
+      "poverty_mean": 15.148936170212766
+    },
+    {
+      "region_code": "75",
+      "region_name": "Nouvelle-Aquitaine",
+      "regime_2015": "gauche",
+      "regime_2021": "gauche",
+      "n": 4064,
+      "imd_mean": -0.0642724559665152,
+      "imd_median": -0.1497793544017959,
+      "ies_mean": -0.09811719959127724,
+      "ies_median": -0.19533024045585207,
+      "income_median": 21790.0,
+      "poverty_mean": 13.008948545861298
+    },
+    {
+      "region_code": "24",
+      "region_name": "Centre-Val de Loire",
+      "regime_2015": "gauche",
+      "regime_2021": "gauche",
+      "n": 1690,
+      "imd_mean": -0.06772596227521371,
+      "imd_median": -0.15566267138774031,
+      "ies_mean": -0.10420668204358044,
+      "ies_median": -0.2049363506401036,
+      "income_median": 23020.0,
+      "poverty_mean": 13.117647058823529
+    },
+    {
+      "region_code": "01",
+      "region_name": "Guadeloupe",
+      "regime_2015": "gauche",
+      "regime_2021": "gauche",
+      "n": 32,
+      "imd_mean": -0.07433470327149182,
+      "imd_median": -0.0770833981863725,
+      "ies_mean": 0.3081601402597776,
+      "ies_median": 0.3050464846416413,
+      "income_median": 0.0,
+      "poverty_mean": 0.0
+    },
+    {
+      "region_code": "02",
+      "region_name": "Martinique",
+      "regime_2015": "gauche",
+      "regime_2021": "gauche",
+      "n": 34,
+      "imd_mean": -0.07608040144319203,
+      "imd_median": -0.0722111754615654,
+      "ies_mean": -0.10580822016451574,
+      "ies_median": -0.10654944668923486,
+      "income_median": 18980.0,
+      "poverty_mean": 27.925925925925927
+    },
+    {
+      "region_code": "27",
+      "region_name": "Bourgogne-Franche-Comte",
+      "regime_2015": "gauche",
+      "regime_2021": "gauche",
+      "n": 3090,
+      "imd_mean": -0.07752830949987921,
+      "imd_median": -0.15047763659168545,
+      "ies_mean": -0.11607923313084,
+      "ies_median": -0.19921462488534092,
+      "income_median": 23220.0,
+      "poverty_mean": 15.609756097560975
+    },
+    {
+      "region_code": "03",
+      "region_name": "Guyane",
+      "regime_2015": "gauche",
+      "regime_2021": "gauche",
+      "n": 22,
+      "imd_mean": -0.23171640445319933,
+      "imd_median": -0.274390711737122,
+      "ies_mean": 0.1298819270527113,
+      "ies_median": 0.08154149614300091,
+      "income_median": 0.0,
+      "poverty_mean": 0.0
+    }
+  ]
+}

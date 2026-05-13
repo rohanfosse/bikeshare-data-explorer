@@ -1,0 +1,383 @@
+{
+  "n_with_imd_income": 31266,
+  "n_with_imd_poverty": 4408,
+  "rho_imd_income": 0.33252041520754466,
+  "ci_imd_income": [
+    0.32135763860626704,
+    0.34309671306188894
+  ],
+  "rho_imd_poverty": 0.18593386500668868,
+  "ci_imd_poverty": [
+    0.1599094805996922,
+    0.212872481914057
+  ],
+  "beta_income_slope": 0.01824208191545321,
+  "n_double_penalty_deserts": 362,
+  "pct_double_penalty_deserts": 8.212341197822141,
+  "imd_threshold_q33": -0.026698098893181896,
+  "poverty_threshold_q66": 15.0,
+  "stratified_by_pop": {
+    "pop_ge_0": {
+      "n": 31266,
+      "rho_income": 0.33252041520754466,
+      "ci_income": [
+        0.3218771815611163,
+        0.342737001921578
+      ]
+    },
+    "pop_ge_1000": {
+      "n": 10012,
+      "rho_income": 0.10838282209225536,
+      "ci_income": [
+        0.08755551555390349,
+        0.12433703572419484
+      ]
+    },
+    "pop_ge_5000": {
+      "n": 2234,
+      "rho_income": 0.000536184192298289,
+      "ci_income": [
+        -0.04341661190668242,
+        0.041669783716046224
+      ]
+    },
+    "pop_ge_10000": {
+      "n": 1038,
+      "rho_income": 0.0857114481412351,
+      "ci_income": [
+        0.024162627171028576,
+        0.1447165535984096
+      ]
+    },
+    "pop_ge_20000": {
+      "n": 482,
+      "rho_income": 0.20723832265470996,
+      "ci_income": [
+        0.10871861849597363,
+        0.2935332540917054
+      ]
+    },
+    "pop_ge_50000": {
+      "n": 133,
+      "rho_income": 0.17982021549862617,
+      "ci_income": [
+        0.023613792406282152,
+        0.3468074935771196
+      ]
+    },
+    "pop_ge_100000": {
+      "n": 42,
+      "rho_income": 0.32089461555450927,
+      "ci_income": [
+        -0.07397340945059472,
+        0.600304882146098
+      ]
+    }
+  },
+  "top_15_equitable": [
+    {
+      "nom": "Paris",
+      "code_commune": "75056",
+      "population": 2103778.0,
+      "IES": 37.178944140159764
+    },
+    {
+      "nom": "Épinay-sur-Seine",
+      "code_commune": "93031",
+      "population": 52833.0,
+      "IES": 29.675911433136484
+    },
+    {
+      "nom": "Grenoble",
+      "code_commune": "38185",
+      "population": 156140.0,
+      "IES": 24.82852129840696
+    },
+    {
+      "nom": "Rouen",
+      "code_commune": "76540",
+      "population": 117662.0,
+      "IES": 24.592523735521713
+    },
+    {
+      "nom": "Saint-Denis",
+      "code_commune": "93066",
+      "population": 149077.0,
+      "IES": 22.70206298708919
+    },
+    {
+      "nom": "Puteaux",
+      "code_commune": "92062",
+      "population": 44002.0,
+      "IES": 21.8969267988461
+    },
+    {
+      "nom": "Le Petit-Quevilly",
+      "code_commune": "76498",
+      "population": 22208.0,
+      "IES": 20.923824435788994
+    },
+    {
+      "nom": "Lyon",
+      "code_commune": "69123",
+      "population": 519127.0,
+      "IES": 20.462466300209925
+    },
+    {
+      "nom": "Issy-les-Moulineaux",
+      "code_commune": "92040",
+      "population": 67669.0,
+      "IES": 19.56465989227804
+    },
+    {
+      "nom": "Le Bouscat",
+      "code_commune": "33069",
+      "population": 25081.0,
+      "IES": 19.522533332927548
+    },
+    {
+      "nom": "Levallois-Perret",
+      "code_commune": "92044",
+      "population": 68092.0,
+      "IES": 18.991805061860173
+    },
+    {
+      "nom": "Anzin",
+      "code_commune": "59014",
+      "population": 13183.0,
+      "IES": 18.63512080048135
+    },
+    {
+      "nom": "Les Lilas",
+      "code_commune": "93045",
+      "population": 23843.0,
+      "IES": 18.378696040459122
+    },
+    {
+      "nom": "Cenon",
+      "code_commune": "33119",
+      "population": 26834.0,
+      "IES": 18.14968735071768
+    },
+    {
+      "nom": "Saint-Priest-en-Jarez",
+      "code_commune": "42275",
+      "population": 6471.0,
+      "IES": 17.970558359863613
+    }
+  ],
+  "top_15_inequitable": [
+    {
+      "nom": "Noyant-Villages",
+      "code_commune": "49228",
+      "population": 5448.0,
+      "IES": -0.22385176198813925
+    },
+    {
+      "nom": "Valdallière",
+      "code_commune": "14726",
+      "population": 5696.0,
+      "IES": -0.19410215860310479
+    },
+    {
+      "nom": "Livarot-Pays-d'Auge",
+      "code_commune": "14371",
+      "population": 6207.0,
+      "IES": -0.18768097199008477
+    },
+    {
+      "nom": "Saint-Philippe",
+      "code_commune": "97417",
+      "population": 5082.0,
+      "IES": -0.1855158863426471
+    },
+    {
+      "nom": "Le Mené",
+      "code_commune": "22046",
+      "population": 6556.0,
+      "IES": -0.18401678072892919
+    },
+    {
+      "nom": "Mesnils-sur-Iton",
+      "code_commune": "27198",
+      "population": 6078.0,
+      "IES": -0.18332610842731753
+    },
+    {
+      "nom": "Lys-Haut-Layon",
+      "code_commune": "49373",
+      "population": 7748.0,
+      "IES": -0.18025966997379017
+    },
+    {
+      "nom": "Vallons-de-l'Erdre",
+      "code_commune": "44180",
+      "population": 6692.0,
+      "IES": -0.17857160841141295
+    },
+    {
+      "nom": "Souleuvre en Bocage",
+      "code_commune": "14061",
+      "population": 8629.0,
+      "IES": -0.17822217679621738
+    },
+    {
+      "nom": "Sainte-Rose",
+      "code_commune": "97419",
+      "population": 6557.0,
+      "IES": -0.17721079370854015
+    },
+    {
+      "nom": "Le Barp",
+      "code_commune": "33029",
+      "population": 5806.0,
+      "IES": -0.17257822507983436
+    },
+    {
+      "nom": "Saint-James",
+      "code_commune": "50487",
+      "population": 5018.0,
+      "IES": -0.1713399005265934
+    },
+    {
+      "nom": "Belin-Béliet",
+      "code_commune": "33042",
+      "population": 6275.0,
+      "IES": -0.17066922107493898
+    },
+    {
+      "nom": "Les Hauts-d'Anjou",
+      "code_commune": "49080",
+      "population": 8751.0,
+      "IES": -0.1703020949541917
+    },
+    {
+      "nom": "Erdre-en-Anjou",
+      "code_commune": "49367",
+      "population": 5771.0,
+      "IES": -0.1698595233715646
+    }
+  ],
+  "top_15_deserts_by_pop": [
+    {
+      "nom": "Saint-Paul",
+      "code_commune": "97415",
+      "population": 108088.0,
+      "IMD4_national": -0.0414742907444119,
+      "income_median": 18910.0,
+      "poverty_rate": 30.0
+    },
+    {
+      "nom": "Le Tampon",
+      "code_commune": "97422",
+      "population": 82579.0,
+      "IMD4_national": -0.0408754196978614,
+      "income_median": 16560.0,
+      "poverty_rate": 38.0
+    },
+    {
+      "nom": "Saint-Louis",
+      "code_commune": "97414",
+      "population": 54941.0,
+      "IMD4_national": -0.0322181260424422,
+      "income_median": 15270.0,
+      "poverty_rate": 43.0
+    },
+    {
+      "nom": "Arles",
+      "code_commune": "13004",
+      "population": 51811.0,
+      "IMD4_national": -0.0829630754493211,
+      "income_median": 20060.0,
+      "poverty_rate": 24.0
+    },
+    {
+      "nom": "Saint-Joseph",
+      "code_commune": "97412",
+      "population": 39207.0,
+      "IMD4_national": -0.0725343663515755,
+      "income_median": 15200.0,
+      "poverty_rate": 43.0
+    },
+    {
+      "nom": "Saint-Benoît",
+      "code_commune": "97410",
+      "population": 38604.0,
+      "IMD4_national": -0.0844002241050616,
+      "income_median": 14550.0,
+      "poverty_rate": 46.0
+    },
+    {
+      "nom": "Sainte-Marie",
+      "code_commune": "97418",
+      "population": 37093.0,
+      "IMD4_national": -0.0445573079457576,
+      "income_median": 19110.0,
+      "poverty_rate": 30.0
+    },
+    {
+      "nom": "La Possession",
+      "code_commune": "97408",
+      "population": 36568.0,
+      "IMD4_national": -0.0579818667952125,
+      "income_median": 20980.0,
+      "poverty_rate": 24.0
+    },
+    {
+      "nom": "Saint-Leu",
+      "code_commune": "97413",
+      "population": 36163.0,
+      "IMD4_national": -0.0582297579927611,
+      "income_median": 17630.0,
+      "poverty_rate": 34.0
+    },
+    {
+      "nom": "Sainte-Suzanne",
+      "code_commune": "97420",
+      "population": 25551.0,
+      "IMD4_national": -0.0422445728446795,
+      "income_median": 17720.0,
+      "poverty_rate": 34.0
+    },
+    {
+      "nom": "Le Robert",
+      "code_commune": "97222",
+      "population": 21553.0,
+      "IMD4_national": -0.0386310828956353,
+      "income_median": 19570.0,
+      "poverty_rate": 27.0
+    },
+    {
+      "nom": "Brignoles",
+      "code_commune": "83023",
+      "population": 17850.0,
+      "IMD4_national": -0.0555691900007177,
+      "income_median": 19980.0,
+      "poverty_rate": 23.0
+    },
+    {
+      "nom": "Saint-Joseph",
+      "code_commune": "97224",
+      "population": 16258.0,
+      "IMD4_national": -0.0493839387468797,
+      "income_median": 20660.0,
+      "poverty_rate": 24.0
+    },
+    {
+      "nom": "Le François",
+      "code_commune": "97210",
+      "population": 15778.0,
+      "IMD4_national": -0.0603857944678132,
+      "income_median": 19610.0,
+      "poverty_rate": 27.0
+    },
+    {
+      "nom": "Sainte-Marie",
+      "code_commune": "97228",
+      "population": 14756.0,
+      "IMD4_national": -0.0546720631164314,
+      "income_median": 16320.0,
+      "poverty_rate": 37.0
+    }
+  ]
+}
