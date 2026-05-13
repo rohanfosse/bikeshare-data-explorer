@@ -1456,8 +1456,12 @@ by\_city = (\\
 \ \ \ \ income=("revenu\_median\_uc", "median"))\\
 )\\
 rho = by\_city.n.corr(by\_city.income, method="spearman")\\
-\#\ rho\ $\approx\ +0.39$\ (95\%\ bootstrap\ CI)
+\#\ rho\ $\approx\ +0.09$\ on\ 64\ cities\ (weak)
 \end{quote}
+The weak positive coupling at the city level is consistent with the
+much stronger structural pattern uncovered by use case~5 below : the
+income-cycling gap is not a city-mean effect but a within-city
+station-level effect concentrated in the lower income quartile.
 
 \paragraph{Use case 5 -- Identifying mobility deserts.}
 Three filters on \texttt{station\_type}, \texttt{revenu\_median\_uc}
@@ -1471,10 +1475,13 @@ deserts = gs[(\\
 \ \ (gs.gtfs\_heavy\_stops\_300m == 0)]\\
 deserts.city.value\_counts().head(10)
 \end{quote}
-This three-condition filter recovers $1{,}041$ stations
-($19.1\,\%$ of the dock-based corpus) with a Q1 income threshold of
-18{,}860\,EUR per consumption unit. Figure~\ref{fig:mobility-deserts}
-shows the top fifteen contributing cities.
+This three-condition filter recovers $1{,}682$ stations
+($30.9\,\%$ of the dock-based corpus) with a Q1 income threshold of
+21{,}040\,EUR per consumption unit on the v1.0 release of the
+catalogue. Figure~\ref{fig:mobility-deserts} shows the top fifteen
+contributing cities; the count is sensitive to the income data
+vintage and to the GTFS-stop buffer, both of which are documented
+hyperparameters of the audit.
 
 \begin{figure}[ht]
 \centering

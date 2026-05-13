@@ -1,0 +1,31 @@
+# GitHub Pages Jekyll configuration
+# Activates the cayman theme (minimal academic look) and enables
+# the standard markdown -> HTML pipeline for the `docs/` directory.
+
+title: GBFS Audit Catalogue
+description: A reproducible audit of 1,509 open bike-sharing feeds across 48 countries.
+theme: jekyll-theme-cayman
+show_downloads: false
+google_analytics:
+# url stub for hyperlink rewriting (none required for project pages)
+baseurl: ""
+url: "https://rohanfosse.github.io/bikeshare-data-explorer"
+
+# Use kramdown + Rouge for code highlighting consistent with GitHub-style.
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  syntax_highlighter: rouge
+
+# SEO & metadata
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude build artefacts from the published site.
+exclude:
+  - "*.aux"
+  - "*.log"
+  - "*.out"
+  - "*.bbl"
+  - "*.blg"
