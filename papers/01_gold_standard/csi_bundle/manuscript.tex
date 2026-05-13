@@ -209,6 +209,24 @@ A7 & Null capacity field (candidate)& $\geq 50\,\%$ of stations declare $c = $ \
 \end{tabular}
 \end{table}
 
+The audit status of the 142 French GBFS feeds at the national portal
+is summarised in Figure~\ref{fig:audit-status}: 126 systems are
+certified into the Audit Catalogue, 14 are excluded as micro-networks
+below the $N_{\min} = 20$ threshold, and 2 fail technical ingestion.
+The 14 car-sharing systems (A1) are filtered upstream.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.7\linewidth]{fig01_audit_status.pdf}
+\caption{Verdict of the systematic audit applied to the 142
+GBFS feeds inventoried on \emph{transport.data.gouv.fr} and
+\emph{MobilityData}. 126 systems are certified; 14 are excluded
+as micro-networks (below the $N_{\min}=20$ threshold) and 2 fail
+technical ingestion. The 14 car-sharing systems (A1) are filtered
+upstream of this catalogue.}
+\label{fig:audit-status}
+\end{figure}
+
 A3 is the most pernicious anomaly. Free-floating fleets (\emph{Pony},
 \emph{Cykleo}, \etc) advertise virtual stations in GBFS, the term
 ``station'' designating the GPS position of an anchoring point
@@ -277,7 +295,24 @@ free-floating fleets (\eg Bordeaux, Nice, Saint-\'Etienne) and those
 historically lumped together with car-sharing systems on the national
 portal (Strasbourg, Grenoble), whereas urban areas served by
 traditional dock-based operators (V\'elib' in Paris, V\'eloMagg in
-Montpellier) are left almost intact.
+Montpellier) are left almost intact. The certified-station mass by
+administrative region after purging is shown in
+Figure~\ref{fig:region-stations}: \^Ile-de-France concentrates the
+historical V\'elib' deployment, while regions with many free-floating
+systems (Nouvelle-Aquitaine, Auvergne-Rh\^one-Alpes) hold a much
+smaller dock-based stock after the A3 correction is applied.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.7\linewidth]{fig03_region_stations.pdf}
+\caption{Certified stations by administrative region, after the
+six-step purging protocol. Annotations report the number of GBFS
+systems per region. \^Ile-de-France concentrates V\'elib';
+Nouvelle-Aquitaine aggregates many systems but holds a smaller
+mass of dock-based stations once free-floating fleets have been
+re-typed by the A3 correction.}
+\label{fig:region-stations}
+\end{figure}
 
 \subsection{Case study: Bordeaux and A3}
 Bordeaux is the paradigmatic case (Table~\ref{tab:bordeaux}). The raw
@@ -294,8 +329,10 @@ three for V\'elib-class infrastructure.
 \centering
 \caption{Bordeaux: impact of the A3 correction on the
 \emph{Pony Bordeaux} subsystem and on the agglomeration as a whole.
-The national IMD rank is reported for context (definition in
-\cite{Fosse2026imd}).}
+The national soft-mobility rank is reported for context: a composite
+supply-side ranking of French agglomerations on dock-based cycling
+infrastructure. The point is not the absolute rank value but the
+seven-position downward move that the A3 correction produces.}
 \label{tab:bordeaux}
 \small
 \begin{tabular}{@{}lrr@{}}
@@ -324,9 +361,10 @@ the 225 genuinely dock-based stations of the historical \emph{V\'elo
 par TBM} system. At the agglomeration level, this collapses the
 nominal docking total by $98\,\%$, drops Bordeaux's dock-based
 infrastructure from the top decile to the second quartile of the
-national distribution, and shifts the Bordeaux IMD rank from 2 to 14
-in our companion composite-index work \cite{Fosse2026imd}. The
-twelve urban areas most exposed to A3 are mapped in
+national distribution, and shifts the agglomeration's rank from
+2 to 14 in a supply-side composite ranking of French dock-based
+cycling networks reconstructed from the same Audit Catalogue.
+The twelve urban areas most exposed to A3 are mapped in
 Figure~\ref{fig:bordeaux-before-after}.
 
 \begin{figure}[ht]
@@ -736,8 +774,9 @@ macro-regional surface threshold and the geofilter bounds.
 \texttt{station\_information} only; auditing
 \texttt{station\_status} (real-time availability) requires a distinct
 protocol, sketched in experiment E4 (a 2-day pilot already detected
-candidate dynamic anomalies on $12.9\,\%$ of monitored stations) and
-developed in a companion paper \cite{Fosse2026flows}.
+candidate dynamic anomalies on $12.9\,\%$ of monitored stations).
+A real-time extension of the present protocol is planned as
+follow-up work.
 
 \textbf{L3 -- Free-floating asymmetry (key caveat).} The dock-based
 subset (5{,}442 stations) is fully certified; the free-floating subset
@@ -802,13 +841,13 @@ E6 & Free-floating-native protocol              & L3                          & 
 
 \subsection{Downstream use}
 The Audit Catalogue unlocks four families of downstream studies:
-composite-index work (the companion IMD paper \cite{Fosse2026imd});
-demand modelling with graph-based neural networks
-\cite{Lin2018BSSGraph} whose false-station nodes from A3 are a known
-confound; spatial-equity analysis combining station access with INSEE
-Filosofi; and multimodal integration with GTFS, since the
-hybridisation schema is compatible with
-\cite{MobilityData2024Validator}.
+supply-side composite-index work on cycling-environment quality at
+station and commune resolution; demand modelling with graph-based
+neural networks \cite{Lin2018BSSGraph} whose false-station nodes
+from A3 are a known confound; spatial-equity analysis combining
+station access with INSEE Filosofi; and multimodal integration with
+GTFS, for which the hybridisation schema is compatible with the
+canonical GTFS validator \cite{MobilityData2024Validator}.
 
 % ===================================================================
 \section{Methods}\label{secMethods}
@@ -1136,6 +1175,24 @@ marked $^\ast$ are derived from external sources.}
 \end{tabular}
 \end{table}
 
+Empirical completeness on the 5{,}442 dock-based stations is
+above $93\,\%$ for every contextual variable except the optional
+\texttt{address} field of the raw GBFS payload
+(Figure~\ref{fig:completeness}). The minimum-completeness threshold
+of $90\,\%$ documented in the audit report is therefore reached on
+every certified column of the released schema.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.7\linewidth]{fig05_completeness.pdf}
+\caption{Empirical completeness of contextual enrichment per
+derived variable on the dock-based subset of the Audit Catalogue
+($n = 5{,}442$). All variables exceed the $90\,\%$ completeness
+threshold required by the audit report; missing values remain below
+$6\,\%$ across the corpus.}
+\label{fig:completeness}
+\end{figure}
+
 \subsection{Reproducibility infrastructure}
 The Audit Catalogue is released in alignment with the four FAIR
 principles \cite{Wilkinson2016}. \emph{Findable:} primary deposit on
@@ -1250,7 +1307,7 @@ rho = by\_city.n.corr(\\
 \end{quote}
 A positive correlation of $\sim$0.4 indicates moderate income-density
 coupling, consistent with the existence of \emph{social mobility
-deserts} documented in the companion IMD paper \cite{Fosse2026imd}.
+deserts} that the third example below makes operational.
 
 \paragraph{Example 3 -- Identifying mobility deserts.}
 \begin{quote}\small\ttfamily
