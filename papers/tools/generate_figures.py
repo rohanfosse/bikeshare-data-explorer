@@ -38,18 +38,24 @@ IMD_DIR = ROOT / "papers" / "02_imd" / "figures"
 GOLD_DIR.mkdir(parents=True, exist_ok=True)
 IMD_DIR.mkdir(parents=True, exist_ok=True)
 
-# Modern academic palette: deep navy as the dominant tone, a single
-# warm accent for the headline case, and a measured grey scale for
-# everything else. The accent is used sparingly (Bordeaux in Fig. 4,
-# audit-report threshold marker in Fig. 5) ; everywhere else, navy
-# carries the data and grey carries the auxiliary context.
-NAVY = "#1F3A6B"
-DARK_GREY = "#404040"
-MID_GREY = "#7A7A7A"
-LIGHT_GREY = "#BFBFBF"
-PALE_GREY = "#E5E5E5"
-ACCENT = "#C0392B"  # warm red used for headline cases only
-HIGHLIGHT = ACCENT  # alias for backwards compatibility
+# Modern academic palette refresh: a brighter primary blue
+# (#1A6FBF) that matches the companion Streamlit dashboard and is
+# common in modern journal figures (Nature, Cell, Distill.pub), a
+# pastel secondary for two-tone bars, a warm orange accent
+# (#E67E22) for headline cases that is less aggressive than the
+# previous fire-engine red, and a softer grey scale. The whole
+# palette stays restrained (4 hues only : primary blue, secondary
+# blue, orange accent, slate grey scale) so figures remain
+# publication-grade.
+PRIMARY = "#1A6FBF"   # main data colour, aligned with the dashboard
+NAVY = PRIMARY        # alias kept for code that still uses the old name
+SECONDARY = "#9DBADD" # pastel companion to the primary blue
+ACCENT = "#E67E22"    # warm orange used sparingly for headline cases
+HIGHLIGHT = ACCENT    # backwards-compat alias
+DARK_GREY = "#5A6470" # slate grey, replaces near-black #404040
+MID_GREY = "#8A95A3"  # softer than before
+LIGHT_GREY = "#D7DDE3" # pearl grey, replaces #BFBFBF
+PALE_GREY = "#EEF1F5" # subtle grid lines, replaces #E5E5E5
 
 # Modern sans-serif typography. Inter / Helvetica / Arial / DejaVu Sans
 # in that fallback order. The first installed font is picked at

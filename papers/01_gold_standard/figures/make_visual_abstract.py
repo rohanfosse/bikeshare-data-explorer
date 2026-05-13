@@ -20,9 +20,9 @@ from matplotlib.patches import FancyBboxPatch, FancyArrowPatch
 OUT = Path(__file__).parent
 
 PRIMARY = "#1A6FBF"
-DARK    = "#0F4C81"
-ACCENT  = "#C0392B"
-GREEN   = "#2E7D32"
+DARK    = "#15538F"   # slightly lighter than #0F4C81, more aerated
+ACCENT  = "#E67E22"   # warm orange replaces fire-engine red #C0392B
+GREEN   = "#3FA464"   # softer green replaces deep forest #2E7D32
 GREY    = "#5A6470"
 LIGHT   = "#F2F4F7"
 BORDER  = "#C7CCD1"
