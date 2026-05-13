@@ -1,0 +1,85 @@
+{
+  "metrics": [
+    "IMD-4 (Bayesian, M+I+T+D)",
+    "IMD-3 (Bayesian, M+I+T)",
+    "Volumetric  log(N x cap.)",
+    "Cerema  km / km^2",
+    "M alone (heavy stops)"
+  ],
+  "references": [
+    "FUB perception 2023",
+    "EMP modal share 2019",
+    "Eco-counter daily flow",
+    "BAAC accidents (per 100k)"
+  ],
+  "spearman_table": {
+    "IMD-4 (Bayesian, M+I+T+D)": {
+      "FUB perception 2023": 0.5561773884217556,
+      "EMP modal share 2019": 0.528407666254501,
+      "Eco-counter daily flow": 0.7467284737678194,
+      "BAAC accidents (per 100k)": 0.6175440666678791
+    },
+    "IMD-3 (Bayesian, M+I+T)": {
+      "FUB perception 2023": 0.5160049451287594,
+      "EMP modal share 2019": 0.528760549696637,
+      "Eco-counter daily flow": 0.6324097331961481,
+      "BAAC accidents (per 100k)": 0.4450895343790915
+    },
+    "Volumetric  log(N x cap.)": {
+      "FUB perception 2023": 0.19535914204128288,
+      "EMP modal share 2019": 0.3042668251693081,
+      "Eco-counter daily flow": 0.5496537425466217,
+      "BAAC accidents (per 100k)": 0.5772944031276103
+    },
+    "Cerema  km / km^2": {
+      "FUB perception 2023": 0.5158215093146361,
+      "EMP modal share 2019": 0.4595029616911234,
+      "Eco-counter daily flow": 0.71433475496691,
+      "BAAC accidents (per 100k)": 0.5717406805447587
+    },
+    "M alone (heavy stops)": {
+      "FUB perception 2023": 0.3672721590563688,
+      "EMP modal share 2019": 0.43993550326600517,
+      "Eco-counter daily flow": 0.593148751585675,
+      "BAAC accidents (per 100k)": 0.29448633783526784
+    }
+  },
+  "n_table": {
+    "IMD-4 (Bayesian, M+I+T+D)": {
+      "FUB perception 2023": 32,
+      "EMP modal share 2019": 44,
+      "Eco-counter daily flow": 25,
+      "BAAC accidents (per 100k)": 44
+    },
+    "IMD-3 (Bayesian, M+I+T)": {
+      "FUB perception 2023": 32,
+      "EMP modal share 2019": 44,
+      "Eco-counter daily flow": 25,
+      "BAAC accidents (per 100k)": 44
+    },
+    "Volumetric  log(N x cap.)": {
+      "FUB perception 2023": 32,
+      "EMP modal share 2019": 44,
+      "Eco-counter daily flow": 25,
+      "BAAC accidents (per 100k)": 44
+    },
+    "Cerema  km / km^2": {
+      "FUB perception 2023": 32,
+      "EMP modal share 2019": 43,
+      "Eco-counter daily flow": 26,
+      "BAAC accidents (per 100k)": 45
+    },
+    "M alone (heavy stops)": {
+      "FUB perception 2023": 32,
+      "EMP modal share 2019": 44,
+      "Eco-counter daily flow": 25,
+      "BAAC accidents (per 100k)": 44
+    }
+  },
+  "bayesian_rho_imd4_eco": {
+    "median": 0.7451888274301537,
+    "q025": 0.6839782627183355,
+    "q975": 0.7786761352743806,
+    "n_panel": 25
+  }
+}

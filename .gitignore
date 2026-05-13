@@ -48,3 +48,7 @@ papers/**/experiments/**/__pycache__/
 papers/01_gold_standard/papier-gold-standard.*
 papers/02_imd/papier-imd.*papers/02_imd/overleaf_bundle.zip
 papers/03_imd_bayesian/overleaf_bundle.zip
+
+# Eco-counter raw CSV caches (large, regenerable)
+data/external/pnf_aggregate/
+data/external/eco_counters_extended/

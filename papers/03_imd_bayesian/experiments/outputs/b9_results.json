@@ -1,0 +1,28 @@
+{
+  "n_portals_attempted": 22,
+  "n_successful": 3,
+  "n_existing_before": 26,
+  "n_filled_empty": 1,
+  "n_new_added": 1,
+  "n_total_after": 28,
+  "results": [
+    {
+      "city": "Paris",
+      "eco_avg_daily_bike_counts": 1969.40166622143,
+      "source": "opendata.paris.fr / comptage-velo-donnees-compteurs",
+      "n_rows": 898584
+    },
+    {
+      "city": "Tours",
+      "eco_avg_daily_bike_counts": 699.2251081711523,
+      "source": "data.tours-metropole.fr / comptage-velo-donnees-compteurs-syndicat-des-mobilites-de-touraine",
+      "n_rows": 84148
+    },
+    {
+      "city": "Saint-Nazaire",
+      "eco_avg_daily_bike_counts": 4711.761048304214,
+      "source": "data.saintnazaireagglo.fr / ex-vue-personnalisee-comptage-velo-et-pedestre-donnees-compteurs",
+      "n_rows": 550531
+    }
+  ]
+}

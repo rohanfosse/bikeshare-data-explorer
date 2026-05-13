@@ -1,0 +1,17 @@
+{
+  "n_existing_with_values": 26,
+  "n_new_cities_fetched": 2,
+  "n_total_with_values_after_merge": 27,
+  "new_cities": [
+    {
+      "city": "Paris",
+      "eco_avg_daily_bike_counts": 292596418432.0541,
+      "source": "opendata.paris.fr"
+    },
+    {
+      "city": "Tours",
+      "eco_avg_daily_bike_counts": 16377.450165198237,
+      "source": "data.tours-metropole.fr"
+    }
+  ]
+}
