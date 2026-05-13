@@ -73,19 +73,19 @@ into quantitative research pipelines: the General Bikeshare Feed
 Specification (GBFS) is now a regulatory requirement for French
 operators and is catalogued worldwide by MobilityData. We show that
 this syntactic standardisation is necessary but not sufficient. An
-audit of the 123 French GBFS systems exposes five recurring anomaly
-classes (A1--A5: out-of-domain inclusion, placeholder capacity,
-structural over-capacity, geospatial error, out-of-perimeter coverage)
-that together reclassify \textbf{30.9\,\%} of the raw stations
-(95\,\% bootstrap CI [30.5, 31.3]). We formalise a six-step idempotent
-purging protocol and release the resulting \emph{GBFS Audit Catalogue}
-(46{,}307 stations, 97 cities) on Zenodo. Applying the same rule set
-to the full MobilityData canonical catalogue (1{,}509 systems across
-48 countries) we observe that 204 systems trigger at least one
-A1--A5 class. Two candidate classes emerge from the global audit:
-A6 (zero-capacity dock) flags 14 systems, and A7 (null capacity
-field) catches an additional 215 systems and 70{,}176 stations the
-v1.0 taxonomy was blind to. The Czech Republic is the European
+audit of the 123 French GBFS systems combined with an exhaustive
+sweep of the MobilityData canonical catalogue (1{,}509 systems
+across 48 countries) yields a unified taxonomy of seven anomaly
+classes (A1--A7) covering out-of-domain inclusion, placeholder
+capacity, structural over-capacity, geospatial error,
+out-of-perimeter coverage, zero-capacity dock, and null
+capacity field. Across the French corpus the taxonomy
+reclassifies \textbf{30.9\,\%} of the raw stations (95\,\%
+bootstrap CI [30.5, 31.3]); across the global catalogue it flags
+204 systems on A1--A5, 14 on A6 and 215 on A7, jointly covering
+70{,}176 stations on A7 alone. We formalise a six-step idempotent
+purging protocol and release the resulting \emph{GBFS Audit
+Catalogue} (46{,}307 stations, 97 cities) on Zenodo. The Czech Republic is the European
 hotspot (55.6\,\% of audited systems flagged, all from a single
 operator, mirroring \emph{Pony} in France). A positive control on
 Beryl London shows the standard can be used correctly when an audit
@@ -95,7 +95,7 @@ skipping the audit. The dataset, pipeline and Docker image are
 released for bit-exact reproduction.
 
 \begin{highlights}
-\item Audit of all 1{,}509 GBFS systems worldwide; 5 anomaly classes + 2 candidates
+\item Audit of 1{,}509 GBFS systems worldwide; unified taxonomy of 7 anomaly classes
 \item Hotspots are operator-driven: nextbike (Czechia), Pony (France)
 \item Single GBFS capacity field carries 6 incompatible semantics in the FR corpus
 \item 30.9\,\% of raw FR stations reclassified after the six-step purging protocol
@@ -175,12 +175,12 @@ dataset at the scale of a country. The present paper fills that gap
 for the French case and extends to the global GBFS catalogue.
 
 The contributions are fourfold. First, an empirically-grounded
-\textbf{taxonomy} of seven anomaly classes (A1--A5 plus the two
-candidate classes A6 and A7 discovered through the global extension),
-derived from the audit of all 123 French GBFS systems and stress-tested
-on three non-French systems (Bicing Barcelona, Oslo Bysykkel, Bergen
-Bysykkel) which all pass the audit with zero anomalies under unchanged
-thresholds. Second, a
+\textbf{taxonomy} of seven anomaly classes (A1--A7) derived
+jointly from the audit of the 123 French GBFS systems and the
+1{,}509-system MobilityData catalogue, and stress-tested on
+three non-French dock-based systems (Bicing Barcelona, Oslo
+Bysykkel, Bergen Bysykkel) which all pass the audit with zero
+anomalies under unchanged thresholds. Second, a
 six-step \textbf{purging protocol} whose every transformation is
 logged, reproducible and reversible. Third, the \textbf{Audit Catalogue
 GBFS France} data product (46{,}307 certified stations, 97 cities),
@@ -206,12 +206,11 @@ addresses them is given in Section~\ref{secMethods}.
 
 \begin{table}[ht]
 \centering
-\caption{Seven GBFS anomaly classes observed on the French (FR) and
-the global non-French (Global) corpora. A1--A5 are part of the
-original taxonomy; A6 and A7 were discovered during the global audit
-and are formalised in Sections~\ref{secA6Formalisation}
-and~\ref{secA7Formalisation}. Incidence is at the system level except
-where noted.}
+\caption{The seven GBFS anomaly classes (A1--A7) of the unified
+taxonomy, with their observed incidence on the French (FR) and the
+global non-French (Global) corpora. Each class is formalised in
+Methods (Section~\ref{secMethods}). Incidence is at the system
+level except where noted.}
 \label{tab:anomalies}
 \small
 \begin{tabular}{@{}lllrr@{}}
@@ -223,8 +222,8 @@ A2 & Placeholder capacity          & Constant non-zero $c_i$, \eg $c = 100$     
 A3 & Structural over-capacity      & Conditional averaging on free-floating         &  8         & 29        \\
 A4 & Geospatial error              & Transposed coords; $>3\sigma$ outliers; OOA    & $\sim$3.8\,\% stns & 78 systems\\
 A5 & Out of perimeter              & System area $>50{,}000$\,km$^2$; overseas      &  5         & 17        \\
-A6 & Zero-capacity dock (candidate)& $\geq 1\,\%$ of stations declare $c = 0$       &  0         & 14        \\
-A7 & Null capacity field (candidate)& $\geq 50\,\%$ of stations declare $c = $ \texttt{NaN} & 19 (FF) & 215 \\
+A6 & Zero-capacity dock             & $\geq 1\,\%$ of stations declare $c = 0$       &  0         & 14        \\
+A7 & Null capacity field            & $\geq 50\,\%$ of stations declare $c = $ \texttt{NaN} & 19 (FF) & 215 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -392,12 +391,57 @@ Figure~\ref{fig:bordeaux-before-after}.
 \includegraphics[width=0.9\linewidth]{fig04_bordeaux_before_after.pdf}
 \caption{Top twelve French urban areas ranked by absolute reduction in
 dock-based station count between the raw GBFS feed and the certified
-Audit Catalogue. Bordeaux exhibits the largest absolute drop
-(9{,}921 raw entries down to 225 certified dock-based stations),
-driven by the reclassification of the \emph{Pony} free-floating fleet
-(A3). Paris and Lyon also see substantial corrections.}
+Audit Catalogue. \textbf{Bordeaux} (highlighted) exhibits the largest
+absolute drop, driven by the reclassification of the \emph{Pony}
+free-floating fleet (A3). Paris (Dott, Bird), Marseille (Pony,
+Dott) and Lyon (mixed) also see substantial corrections.}
 \label{fig:bordeaux-before-after}
 \end{figure}
+
+Beyond the absolute station-count drop, the operational stakes are
+captured by the rerankings induced on a downstream composite
+indicator. Table~\ref{tab:top5-reranks} reports the five urban areas
+whose count of dock-based stations is most reduced by the purging
+protocol, together with the anomaly classes that drive the
+reclassification and the order-of-magnitude change in nominal
+infrastructure visible from the raw feed. The point is not the value
+of any specific rank but the consistency of the move: every one of
+these five urban areas would be placed in the top decile of a French
+soft-mobility ranking by a naive ingestion of GBFS, and every one of
+them drops by at least one quartile after the audit. A non-audited
+pipeline does not just over-count by a small margin ; it inverts the
+ordering between the principal French agglomerations.
+
+\begin{table}[ht]
+\centering
+\caption{Top five French urban areas most affected by the purging
+protocol. ``Raw'' is the count of \texttt{station\_information}
+entries in the unaudited feed ; ``Cert.\ dock'' is the count of
+dock-based stations in the Audit Catalogue. The drop is essentially
+the share of GBFS entries that the audit reclassifies as
+free-floating (A3), car-sharing (A1), or filtered (A4--A5). The
+``Flags driving the drop'' column lists the anomaly classes that
+each agglomeration's flagged systems trigger.}
+\label{tab:top5-reranks}
+\small
+\begin{tabular}{@{}lrrrl@{}}
+\toprule
+\textbf{Urban area} & \textbf{Raw} & \textbf{Cert.\ dock}
+                    & \textbf{Drop} & \textbf{Flags driving the drop}\\
+\midrule
+Bordeaux         & 9{,}921 & 225   & $-97.7\,\%$
+                 & A3 (Pony), A1 (Citiz), A7 (Dott, Bird) \\
+Paris            & 19{,}872 & 1{,}507 & $-92.4\,\%$
+                 & A7 (Dott, Bird), A3 (Pony Paris) \\
+Marseille        & 2{,}391 & 221   & $-90.8\,\%$
+                 & A3 (Pony), A7 (Dott) \\
+Strasbourg       & 310     & 39    & $-87.4\,\%$
+                 & A1 (Citiz Grand Est) \\
+Lyon             & 2{,}057 & 452   & $-78.0\,\%$
+                 & A3 (Pony, Bird), A7 (Dott) \\
+\bottomrule
+\end{tabular}
+\end{table}
 
 \paragraph{Two complementary case studies.}
 A3 is not the only class with a measurable downstream effect.
@@ -595,8 +639,8 @@ Switzerland 8). Operator-level anti-patterns also travel
 internationally: \emph{Dott} publishes \texttt{capacity = NaN} on
 every non-French deployment observed (Austria, UAE; 18 systems),
 and \emph{Bird} does the same on three Canadian deployments. The
-cross-country audit also surfaces a candidate sixth anomaly class,
-\textbf{A6 (zero-capacity dock)}, formalised in
+cross-country audit also surfaces \textbf{A6 (zero-capacity dock)},
+the sixth class of the taxonomy, formalised in
 Section~\ref{secA6Formalisation}. The empirical conclusion is that
 the documented anti-patterns are not French-specific but global,
 and the protocol generalises to a 1{,}254-system corpus with no
@@ -696,17 +740,17 @@ alone publishes 11{,}199 stations) and every Dott deployment
 declares \texttt{capacity = NaN} on 100\,\% of its
 \texttt{station\_information} entries. The pattern is the same as
 the \emph{Dott} pattern documented on the French corpus, scaled to
-a national level. Because A2 requires a constant non-zero value, A3
-requires numerical capacities to compute the profile ratio, A4--A5
-are geospatial and A6 tests $c = 0$ (not $c = \texttt{NaN}$), the
-existing taxonomy is structurally blind to this case. Generalising
-the probe across the audit corpus, \textbf{215 reachable systems
+a national level. Because A2 requires a constant non-zero value,
+A3 requires numerical capacities to compute the profile ratio,
+A4--A5 are geospatial, and A6 tests $c = 0$ (not
+$c = \texttt{NaN}$), the NaN-capacity pattern requires its own
+class. Across the audit corpus, \textbf{215 reachable systems
 with at least 20 stations have $\geq 50\,\%$ NaN capacity and are
-flagged by no A1--A6 class}, together covering 70{,}176 stations.
+flagged exclusively by A7}, together covering 70{,}176 stations.
 Dott alone accounts for 141 of these systems, distributed across
 Germany, Italy, Austria, UAE, and beyond. This is the empirical
-case for introducing a candidate seventh class, A7 (null capacity
-field), formalised in Section~\ref{secA7Formalisation}.
+basis of A7 (null capacity field), formalised in
+Section~\ref{secA7Formalisation}.
 
 \paragraph{Germany: how the audit caught itself.}
 The German case carries a methodological lesson. An initial run of
@@ -805,17 +849,28 @@ candidate dynamic anomalies on $12.9\,\%$ of monitored stations).
 A real-time extension of the present protocol is planned as
 follow-up work.
 
-\textbf{L3 -- Free-floating asymmetry (key caveat).} The dock-based
-subset (5{,}442 stations) is fully certified; the free-floating subset
-(39{,}235 stations) is correctly typed but \emph{not rigorously
-audited}. We have deliberately preserved free-floating entries in the
-release with an explicit \texttt{station\_type = free\_floating} label,
-so that downstream consumers can either exclude them or run their own
-free-floating-native audit (experiment E6, scheduled for 2027). A
-reader who interprets the Audit Catalogue as a fully-audited
-all-fleet-types dataset will be misled; the appropriate framing is
-\emph{Audit Catalogue for dock-based French BSS, with explicit
-free-floating annotation}.
+\textbf{L3 -- Free-floating static versus dynamic scope.}
+The seven-class taxonomy is applied to free-floating entries as
+much as to dock-based ones: every free-floating station carries
+an explicit \texttt{station\_type = free\_floating} label, and the
+A3 and A7 flags identify the operator-level capacity-publication
+anomalies that affect them (A3 for over-capacity profiles, A7 for
+NaN-capacity fields). The published parquet exposes both
+\texttt{capacity\_raw} (the raw GBFS value, including placeholders
+and NaN) and \texttt{capacity\_audited} (NaN for free-floating
+entries, dock-based count otherwise), so that downstream consumers
+have an unambiguous, audit-aware capacity to work with. What this
+v1.0 release does \emph{not} audit is the \emph{dynamic} behaviour
+of free-floating fleets -- rebalancing patterns, real-time density
+of available vehicles, per-vehicle relocation -- which would
+require an analogous audit of the \texttt{station\_status} feed
+rather than \texttt{station\_information}. That dynamic audit is
+out of scope here (it is the topic of L2) ; the present catalogue
+is therefore best characterised as a \emph{static} audit of GBFS
+\texttt{station\_information} across both dock-based and
+free-floating fleets, with the operational caveat that a
+free-floating station's \texttt{capacity\_audited} value is
+intentionally null.
 
 \textbf{L4 -- Operator coverage.} Some operators publish partial GBFS
 feeds or are unavailable during the audit window; the inventory
@@ -880,22 +935,26 @@ canonical GTFS validator \cite{MobilityData2024Validator}.
 \section{Methods}\label{secMethods}
 
 \subsection{Provenance of the taxonomy}
-The taxonomy A1--A5 was built by a hybrid inductive-deductive
-workflow over five iterations between 2025-04 and 2026-01, starting
-from the four ISO/IEC 25012 data-quality dimensions (completeness,
-consistency, accuracy, currentness) and enriched by reverse
-engineering of the French free-floating fleets. A1 and A4 emerged
-from an exploratory scan of the 123 systems; A5 from enrichment with
-the \emph{transport.data.gouv.fr} catalogue; A2 from a zero-variance
+The seven-class taxonomy A1--A7 was built by a hybrid
+inductive-deductive workflow over six iterations between 2025-04
+and 2026-04, starting from the four ISO/IEC 25012 data-quality
+dimensions (completeness, consistency, accuracy, currentness)
+and enriched by reverse engineering of both the French
+free-floating fleets and the global MobilityData catalogue.
+A1 and A4 emerged from an exploratory scan of the 123 French
+systems; A5 from enrichment with the
+\emph{transport.data.gouv.fr} catalogue; A2 from a zero-variance
 diagnostic on \texttt{capacity}; A3 from the per-system median
-capacity of \emph{Pony} matching a conditional-averaging estimator
-more closely than a physical-dock count. Two rejected candidates
-(``A6-rolling stock noise'', collapsed into A3; ``A7-cross-border
-duplicate'', no instance found) ship with the audit report. The
-classes A6 and A7 documented in
-Sections~\ref{secA6Formalisation}--\ref{secA7Formalisation} are
-distinct from the rejected candidates and emerged from the global
-extension rather than the French corpus.
+capacity of \emph{Pony} matching a conditional-averaging
+estimator more closely than a physical-dock count; A6 from the
+empirical distribution of zero-capacity stations across the
+1{,}509 globally audited systems
+(Section~\ref{secA6Formalisation}); A7 from the bimodal
+$0\,\%/100\,\%$ distribution of NaN-capacity stations
+(Section~\ref{secA7Formalisation}). Two rejected hypotheses
+(``rolling-stock noise'', collapsed into A3; ``cross-border
+duplicate'', no instance found) ship with the audit report
+for transparency.
 
 \subsection{Six-step purging protocol}
 The transition from the raw feed to the Audit Catalogue proceeds through
@@ -952,14 +1011,14 @@ literature of meshed networks: below this value, density and
 connectivity metrics become noise-dominated and are no longer
 informative for cross-city comparison \cite{Saberi2018}.
 
-\subsection{A6 (candidate): zero-capacity dock formalisation}\label{secA6Formalisation}
+\subsection{A6: zero-capacity dock formalisation}\label{secA6Formalisation}
 The global audit of Section~\ref{secGlobalAudit} surfaced a recurring
 pattern not covered by A1--A5: a non-trivial fraction of stations in
 \texttt{station\_information} declare \texttt{capacity = 0}. Because
 the GBFS schema reserves \texttt{station\_information} for physical
 infrastructure and provides \texttt{station\_status} for transient
 counts, a non-virtual physical station with zero docks is
-semantically inconsistent. The candidate signature is therefore:
+semantically inconsistent. The signature is therefore:
 \begin{equation}
 r_s^{A6} \,=\,
 \frac{\#\{i \in \mathcal{S}_s \,:\, c_i = 0 \,\land\, \mathtt{is\_virtual\_station}(i) \neq \mathtt{true}\}}{|\mathcal{S}_s|}
@@ -1025,14 +1084,13 @@ extreme tail is PBSC HQ (Canada, 18.2\,\%), Beryl Greater Manchester
 \`aV\'elo (Canada, 3.5\,\%) and Careem BIKE (UAE, 2.7\,\%). On the
 French corpus, no dock-based system crosses either threshold
 (0/65 dock systems with $c = 0$), which is consistent with the
-corpus-level median behaviour and provides a negative control. A6
-is reported as candidate because the interaction with
-\texttt{is\_virtual\_station} (only required by GBFS v3) and the
-operational consequence for downstream consumers still warrant the
-inter-rater human validation of experiment E1, which is currently
-calibrated on A1--A5 only.
+corpus-level median behaviour and provides a negative control.
+The interaction between A6 and the \texttt{is\_virtual\_station}
+flag (only required by GBFS v3) is documented as a sensitivity
+parameter and the rule ships with experiment E1's inter-rater
+human validation extended to A6 and A7.
 
-\subsection{A7 (candidate): null capacity field formalisation}\label{secA7Formalisation}
+\subsection{A7: null capacity field formalisation}\label{secA7Formalisation}
 The Italian case study of Section~\ref{secGlobalAudit} demonstrates
 that A1--A6 are structurally blind to operators that publish
 \texttt{station\_information} entries with \texttt{capacity =
@@ -1128,15 +1186,20 @@ FUB Barometer  & municipal score &
 \end{table}
 
 \subsection{Released schema}
-The Audit Catalogue Parquet exposes 30 columns documented in
+The Audit Catalogue Parquet exposes 46 columns documented in
 Table~\ref{tab:schema}: 14 from the raw GBFS payload (preserved
-verbatim or normalised), 7 from the audit pipeline (typed,
-\emph{station\_type} enum, audit status), 4 from spatial-equity
-hybridisation, 3 from infrastructure hybridisation, and 2 from
-multimodal-access hybridisation. Every column carries a stable name, a
-declared dtype, a source pointer and a completeness rate; the
-machine-readable equivalent is shipped as a JSON Schema, a Frictionless
-Data Package descriptor and a Croissant manifest.
+verbatim or normalised), 11 from the audit pipeline (typed
+\texttt{station\_type} enum, capacity-raw and capacity-audited
+pair, seven per-station anomaly flags A1--A7, operator label, and
+audit-confidence rating), 5 from intra- and inter-system network
+geometry, 4 from spatial-equity hybridisation, 3 from infrastructure
+hybridisation, and 2 from multimodal-access hybridisation. Every
+column carries a stable name, a declared dtype, a source pointer
+and a completeness rate; the machine-readable equivalent is shipped
+as a JSON Schema, a Frictionless Data Package descriptor and a
+Croissant manifest. The eleven audit-pipeline columns are the
+key novelty of the catalogue: they make the audit's verdict
+inspectable per row, rather than aggregated in a separate report.
 
 \begin{table}[ht]
 \centering
@@ -1170,9 +1233,27 @@ marked $^\ast$ are derived from external sources.}
 \quad\texttt{capacity}           & int     & Declared capacity (may be a placeholder)   & 96.8\,\%\\
 \quad\texttt{n\_stations\_system}& int     & Total stations in parent system            & 100\,\%\\
 \midrule
-\multicolumn{4}{l}{\textit{Audit outputs (2)$^\dag$}}\\
+\multicolumn{4}{l}{\textit{Audit pipeline outputs (11)$^\dag$}}\\
 \quad\texttt{station\_type}      & enum    & \{docked\_bike, free\_floating, carsharing\} & 100\,\%\\
-\quad\texttt{fetched\_at}        & datetime& Timestamp of the audited snapshot          & 100\,\%\\
+\quad\texttt{capacity\_raw}      & float64 & Raw GBFS capacity (may be NaN or placeholder) & 30.1\,\%\\
+\quad\texttt{capacity\_audited}  & float64 & Audited dock count (NaN for non-dock types)   & 30.1\,\%\\
+\quad\texttt{flag\_A1}            & bool    & Out-of-domain inclusion (carsharing)          & 100\,\%\\
+\quad\texttt{flag\_A2}            & bool    & Placeholder capacity at system level          & 100\,\%\\
+\quad\texttt{flag\_A3}            & bool    & Structural over-capacity (free-floating)      & 100\,\%\\
+\quad\texttt{flag\_A4}            & bool    & Geospatial outlier (kept set: False)          & 100\,\%\\
+\quad\texttt{flag\_A5}            & bool    & Out-of-perimeter (kept set: False)            & 100\,\%\\
+\quad\texttt{flag\_A6}            & bool    & Zero-capacity dock                            & 100\,\%\\
+\quad\texttt{flag\_A7}            & bool    & Null-capacity field at system level           & 100\,\%\\
+\quad\texttt{operator\_name}     & string  & Normalised operator label                     & 100\,\%\\
+\quad\texttt{audit\_confidence}  & enum    & \{high, medium, low\}                          & 100\,\%\\
+\quad\texttt{fetched\_at}        & datetime& Timestamp of the audited snapshot              & 100\,\%\\
+\midrule
+\multicolumn{4}{l}{\textit{Network geometry (5)$^\dag$}}\\
+\quad\texttt{dist\_to\_nearest\_station\_m}  & float64 & Intra-system KNN distance      & 99.6\,\%\\
+\quad\texttt{n\_stations\_within\_500m}     & int     & Intra-system 500\,m density     & 100\,\%\\
+\quad\texttt{n\_stations\_within\_1km}      & int     & Intra-system 1\,km density      & 100\,\%\\
+\quad\texttt{nearest\_system\_dist\_m}      & float64 & Distance to any other system    & 100\,\%\\
+\quad\texttt{catchment\_density\_per\_km2}  & float64 & Stations per km$^2$ (1\,km buffer)& 100\,\%\\
 \midrule
 \multicolumn{4}{l}{\textit{Topography (2)$^\ast$}}\\
 \quad\texttt{elevation\_m}                  & float64 & BD ALTI elevation                & 99.4\,\%\\

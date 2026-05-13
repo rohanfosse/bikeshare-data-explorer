@@ -45,43 +45,48 @@ def text(ax, x, y, s, ha="center", va="center", fs=8.5, color="black",
             fontweight=weight, fontstyle=style, zorder=5)
 
 def make_figure():
-    fig, ax = plt.subplots(figsize=(9.0, 9.0))
+    fig, ax = plt.subplots(figsize=(9.0, 9.5))
     ax.set_xlim(0, 100); ax.set_ylim(0, 100)
     ax.set_aspect("equal"); ax.axis("off")
 
     # Title
-    text(ax, 50, 97.0, "GBFS France Audit Catalogue", fs=15.5, weight="bold", color=DARK)
-    text(ax, 50, 93.7, "An auditable, versioned reference dataset for the 123 French bike-sharing feeds",
+    text(ax, 50, 97.5, "GBFS Audit Catalogue", fs=15.5, weight="bold", color=DARK)
+    text(ax, 50, 94.4, "A reproducible audit of 1,509 open bike-sharing feeds across 48 countries",
          fs=9.6, color=GREY, style="italic")
 
     # ---- TOP : raw input
-    rounded_box(ax, 6, 80.5, 88, 8.5, fc="#FEF3E2", ec="#E0A030")
-    text(ax, 50, 86.6, "Raw input  ·  transport.data.gouv.fr  +  MobilityData",
+    rounded_box(ax, 6, 81.0, 88, 8.5, fc="#FEF3E2", ec="#E0A030")
+    text(ax, 50, 87.0, "Raw input  ·  transport.data.gouv.fr  +  MobilityData global catalogue",
          fs=10.2, weight="bold", color="#8A5A00")
-    text(ax, 50, 83.0,
-         "142 candidate GBFS feeds  ·  ~67,000 stations  ·  6 operator families  ·  no semantic audit",
+    text(ax, 50, 83.4,
+         "1,509 GBFS systems  ·  48 countries  ·  ~67,000 FR stations  ·  no semantic audit",
          fs=9.3, color="#4A3000")
 
-    arrow(ax, 50, 80.0, 50, 76.7, color=DARK, lw=2.0)
+    arrow(ax, 50, 80.5, 50, 77.5, color=DARK, lw=2.0)
 
-    # ---- MIDDLE-TOP : 5 anomaly classes (compact)
-    text(ax, 50, 74.7, "Five recurring anomaly classes (A1–A5)", fs=10.5, weight="bold", color=DARK)
+    # ---- MIDDLE-TOP : 7 anomaly classes
+    text(ax, 50, 76.0, "Seven anomaly classes (A1–A7)  —  unified taxonomy",
+         fs=10.5, weight="bold", color=DARK)
     anomalies = [
-        ("A1", "Out-of-domain", "Citiz car-sharing\nlabelled as BSS", "14 systems"),
-        ("A2", "Placeholder", "Constant c = 100\non all stations", "3 systems"),
-        ("A3", "Over-capacity", "Conditional averaging\non free-floating", "8 systems"),
-        ("A4", "Geospatial", "Transposed coords\nor > 3σ outliers", "3.8 % stns"),
-        ("A5", "Perimeter", "Overseas; rural\n> 50,000 km²", "5 systems"),
+        ("A1", "Out-of-domain",   "carsharing\nas BSS",         "46 sys."),
+        ("A2", "Placeholder",     "constant c\nall stations",   "48 sys."),
+        ("A3", "Over-capacity",   "conditional avg\nfree-float",  "33 sys."),
+        ("A4", "Geospatial",      "transposed\n>3σ outliers",    "81 sys."),
+        ("A5", "Perimeter",       "overseas; rural\n>50,000 km²", "17 sys."),
+        ("A6", "Zero-capacity",   "c = 0 on\nphysical docks",    "14 sys."),
+        ("A7", "Null-capacity",   "c = NaN on\n≥50% stations",   "215 sys."),
     ]
-    x0, y0, w, h, gap = 5.5, 60.5, 17.2, 11.5, 1.6
+    n_cls = len(anomalies)
+    x0, y0, h, gap = 3.5, 60.5, 11.5, 0.8
+    w = (100 - 2 * x0 - (n_cls - 1) * gap) / n_cls
     for i, (code, name, sig, inc) in enumerate(anomalies):
         x = x0 + i * (w + gap)
         rounded_box(ax, x, y0, w, h, fc=LIGHT, ec=BORDER)
         rounded_box(ax, x, y0 + h - 2.7, w, 2.7, fc=ACCENT, ec=ACCENT, rad=0.012)
-        text(ax, x + w/2, y0 + h - 1.35, f"{code}  —  {name}",
-             fs=9.0, weight="bold", color="white")
-        text(ax, x + w/2, y0 + 5.7, sig, fs=7.6, color="black")
-        text(ax, x + w/2, y0 + 1.7, inc, fs=7.6, color=DARK, weight="bold")
+        text(ax, x + w/2, y0 + h - 1.35, f"{code} {name}",
+             fs=7.9, weight="bold", color="white")
+        text(ax, x + w/2, y0 + 5.7, sig, fs=6.8, color="black")
+        text(ax, x + w/2, y0 + 1.7, inc, fs=7.2, color=DARK, weight="bold")
 
     arrow(ax, 50, 60.2, 50, 56.8, color=DARK, lw=2.0)
 
@@ -131,8 +136,8 @@ def make_figure():
 
     # ---- BOTTOM : Audit Catalogue output
     rounded_box(ax, 6, 11.5, 60, 16.5, fc="#E8F1FB", ec=PRIMARY, lw=1.5)
-    text(ax, 36, 25.0, "GBFS France Audit Catalogue  v1.0", fs=12.0, weight="bold", color=DARK)
-    text(ax, 36, 22.0, "DOI 10.5281/zenodo.20125460  ·  ODbL  ·  Croissant + DCAT-AP + JSON Schema",
+    text(ax, 36, 25.0, "GBFS Audit Catalogue  v1.0", fs=12.0, weight="bold", color=DARK)
+    text(ax, 36, 22.0, "DOI 10.5281/zenodo.20125460  ·  ODbL  ·  46 typed columns  ·  Croissant + DCAT-AP",
          fs=7.9, color=GREY, style="italic")
 
     # Stats columns
@@ -140,7 +145,7 @@ def make_figure():
         ("46,307", "certified\nstations"),
         ("123", "audited\nsystems"),
         ("97", "cities\ncovered"),
-        ("5,442", "dock-based\n(fully audited)"),
+        ("46", "typed\ncolumns"),
         ("30.9 %", "raw stations\nreclassified"),
     ]
     sx2, sw2 = 7.5, 11.5

@@ -38,27 +38,34 @@ IMD_DIR = ROOT / "papers" / "02_imd" / "figures"
 GOLD_DIR.mkdir(parents=True, exist_ok=True)
 IMD_DIR.mkdir(parents=True, exist_ok=True)
 
-# Sober academic palette: deep navy as single accent, grey scale for the
-# rest. No red/orange/green/purple. Designed to read well in greyscale
-# print and to align with SCITEPRESS-style conference papers.
+# Modern academic palette: deep navy as the dominant tone, a single
+# warm accent for the headline case, and a measured grey scale for
+# everything else. The accent is used sparingly (Bordeaux in Fig. 4,
+# audit-report threshold marker in Fig. 5) ; everywhere else, navy
+# carries the data and grey carries the auxiliary context.
 NAVY = "#1F3A6B"
 DARK_GREY = "#404040"
 MID_GREY = "#7A7A7A"
 LIGHT_GREY = "#BFBFBF"
 PALE_GREY = "#E5E5E5"
-HIGHLIGHT = "#8C8C8C"  # used only when a second tone is unavoidable
+ACCENT = "#C0392B"  # warm red used for headline cases only
+HIGHLIGHT = ACCENT  # alias for backwards compatibility
 
+# Modern sans-serif typography. Inter / Helvetica / Arial / DejaVu Sans
+# in that fallback order. The first installed font is picked at
+# render time, so the figures keep their look across systems.
 plt.rcParams.update(
     {
-        "font.family": "serif",
-        "font.serif": ["Times New Roman", "Nimbus Roman", "DejaVu Serif"],
-        "mathtext.fontset": "stix",
-        "font.size": 9,
-        "axes.titlesize": 9,
-        "axes.labelsize": 9,
-        "xtick.labelsize": 8,
-        "ytick.labelsize": 8,
-        "legend.fontsize": 8,
+        "font.family": "sans-serif",
+        "font.sans-serif": ["Inter", "Helvetica Neue", "Helvetica",
+                              "Arial", "DejaVu Sans"],
+        "mathtext.fontset": "dejavusans",
+        "font.size": 9.5,
+        "axes.titlesize": 10.5,
+        "axes.labelsize": 9.5,
+        "xtick.labelsize": 8.5,
+        "ytick.labelsize": 8.5,
+        "legend.fontsize": 8.5,
         "axes.edgecolor": DARK_GREY,
         "axes.linewidth": 0.6,
         "axes.labelcolor": DARK_GREY,
@@ -90,7 +97,7 @@ def _save(fig: plt.Figure, path: Path) -> None:
 # -------------------------------------------------------------------------
 
 def fig01_audit_status(catalog: pd.DataFrame) -> None:
-    """Donut chart of system audit statuses."""
+    """Horizontal bar chart of system audit statuses, sorted by count."""
     labels = {
         "ok": "Certified (Gold Standard)",
         "too_small": "Excluded (micro-network)",
@@ -99,7 +106,7 @@ def fig01_audit_status(catalog: pd.DataFrame) -> None:
         "autopartage": "Excluded (car-sharing, A1)",
         "dom_tom": "Out of perimeter (A5)",
     }
-    colors = {
+    color_map = {
         "Certified (Gold Standard)": NAVY,
         "Excluded (micro-network)": MID_GREY,
         "Excluded (no SI URL)": LIGHT_GREY,
@@ -109,38 +116,26 @@ def fig01_audit_status(catalog: pd.DataFrame) -> None:
     }
     counts = catalog["status"].value_counts()
     series = pd.Series({labels.get(k, k): v for k, v in counts.items()})
+    series = series.sort_values(ascending=True)
 
-    fig, ax = plt.subplots(figsize=(5.0, 3.6))
-    wedges, _texts = ax.pie(
-        series.values,
-        labels=None,
-        colors=[colors.get(k, LIGHT_GREY) for k in series.index],
-        wedgeprops={"width": 0.36, "edgecolor": "white", "linewidth": 1.2},
-        startangle=90,
-        counterclock=False,
-    )
-    ax.text(
-        0,
-        0,
-        f"{int(series.sum())}\nsystems",
-        ha="center",
-        va="center",
-        fontsize=10,
-        color=DARK_GREY,
-    )
-    ax.set_aspect("equal")
-    ax.grid(False)
-    legend_labels = [
-        f"{name} (n={count})" for name, count in series.items()
-    ]
-    ax.legend(
-        wedges,
-        legend_labels,
-        loc="center left",
-        bbox_to_anchor=(1.05, 0.5),
-        frameon=False,
-        fontsize=8,
-    )
+    fig, ax = plt.subplots(figsize=(6.4, 3.2))
+    y_pos = np.arange(len(series))
+    bar_colors = [color_map.get(k, LIGHT_GREY) for k in series.index]
+    ax.barh(y_pos, series.values, color=bar_colors,
+            edgecolor="white", linewidth=0.6)
+    ax.set_yticks(y_pos)
+    ax.set_yticklabels(series.index, fontsize=9)
+    ax.set_xlabel("Number of GBFS systems", fontsize=9)
+    ax.spines["top"].set_visible(False)
+    ax.spines["right"].set_visible(False)
+    ax.grid(axis="x", color=LIGHT_GREY, linewidth=0.4, alpha=0.6)
+    total = int(series.sum())
+    for i, v in enumerate(series.values):
+        ax.text(v + total * 0.01, i, f"{int(v)}  ({100 * v / total:.0f}%)",
+                va="center", fontsize=8, color=DARK_GREY)
+    ax.set_xlim(0, max(series.values) * 1.18)
+    ax.set_title(f"Audit verdict on the {total} inventoried GBFS feeds",
+                 fontsize=10, pad=8)
     _save(fig, GOLD_DIR / "fig01_audit_status.pdf")
 
 
@@ -254,27 +249,39 @@ def fig04_bordeaux_before_after(catalog: pd.DataFrame, cities_dock: pd.DataFrame
     top = merged.sort_values("reduction_pct", ascending=False).head(12)
     top = top.sort_values("reduction_pct", ascending=True)
 
-    fig, ax = plt.subplots(figsize=(5.6, max(3.0, len(top) * 0.34)))
+    fig, ax = plt.subplots(figsize=(6.0, max(3.2, len(top) * 0.36)))
     y = np.arange(len(top))
     h = 0.4
+
+    # Highlight Bordeaux : use the accent colour for both bars,
+    # everyone else uses the standard grey/navy.
+    bordeaux_mask = top["city"].str.lower().eq("bordeaux").to_numpy()
+    raw_colors = [HIGHLIGHT if b else MID_GREY for b in bordeaux_mask]
+    cert_colors = [HIGHLIGHT if b else NAVY for b in bordeaux_mask]
+    raw_alphas = [1.0 if b else 0.85 for b in bordeaux_mask]
+    cert_alphas = [1.0 if b else 0.85 for b in bordeaux_mask]
     ax.barh(
         y + h / 2, top["raw"], height=h,
-        color=MID_GREY, label="Raw GBFS",
+        color=raw_colors, alpha=0.6,
         edgecolor="white", linewidth=0.4,
+        label="Raw GBFS",
     )
     ax.barh(
         y - h / 2, top["certified"], height=h,
-        color=NAVY, label="Gold Standard",
+        color=cert_colors,
         edgecolor="white", linewidth=0.4,
+        label="Gold Standard",
     )
     for i, (_, row) in enumerate(top.iterrows()):
+        is_bx = str(row["city"]).lower() == "bordeaux"
         ax.text(
             row["raw"] + top["raw"].max() * 0.01,
             i + h / 2,
             f"{int(row['raw']):,}",
             va="center",
             fontsize=7.5,
-            color=DARK_GREY,
+            color=HIGHLIGHT if is_bx else DARK_GREY,
+            fontweight="bold" if is_bx else "normal",
         )
         ax.text(
             row["certified"] + top["raw"].max() * 0.01,
@@ -282,14 +289,29 @@ def fig04_bordeaux_before_after(catalog: pd.DataFrame, cities_dock: pd.DataFrame
             f"{int(row['certified']):,}",
             va="center",
             fontsize=7.5,
-            color=DARK_GREY,
+            color=HIGHLIGHT if is_bx else DARK_GREY,
+            fontweight="bold" if is_bx else "normal",
         )
     ax.set_yticks(y)
-    ax.set_yticklabels(top["city"])
+    ytl = [
+        f"$\\bf{{{c}}}$" if c.lower() == "bordeaux" else c
+        for c in top["city"]
+    ]
+    ax.set_yticklabels(ytl)
     ax.set_xlabel("Stations")
-    ax.set_xlim(0, top["raw"].max() * 1.18)
-    ax.legend(loc="lower right", frameon=False)
-    ax.grid(True, axis="x")
+    ax.set_xlim(0, top["raw"].max() * 1.22)
+    # Manual legend to avoid colour confusion
+    from matplotlib.patches import Patch
+    legend_elements = [
+        Patch(facecolor=MID_GREY, alpha=0.6, label="Raw GBFS"),
+        Patch(facecolor=NAVY, label="Gold Standard"),
+        Patch(facecolor=HIGHLIGHT, label="Bordeaux (headline case)"),
+    ]
+    ax.legend(handles=legend_elements, loc="lower right",
+              frameon=False, fontsize=8)
+    ax.spines["top"].set_visible(False)
+    ax.spines["right"].set_visible(False)
+    ax.grid(True, axis="x", color=LIGHT_GREY, linewidth=0.4, alpha=0.6)
     ax.grid(False, axis="y")
     _save(fig, GOLD_DIR / "fig04_bordeaux_before_after.pdf")
 
@@ -364,7 +386,7 @@ def fig05_completeness(stations: pd.DataFrame) -> None:
     out = pd.DataFrame(rows, columns=["variable", "completeness"])
     out = out.sort_values("completeness", ascending=True)
 
-    fig, ax = plt.subplots(figsize=(5.4, 3.0))
+    fig, ax = plt.subplots(figsize=(6.2, 3.2))
     bars = ax.barh(
         out["variable"], out["completeness"],
         color=NAVY, edgecolor="white", linewidth=0.4,
@@ -372,17 +394,25 @@ def fig05_completeness(stations: pd.DataFrame) -> None:
     for bar in bars:
         w = bar.get_width()
         ax.text(
-            w + 0.8,
+            w + 0.2,
             bar.get_y() + bar.get_height() / 2,
-            f"{w:.1f}%",
+            f"{w:.2f}%",
             va="center",
-            fontsize=7.5,
+            fontsize=8,
             color=DARK_GREY,
         )
-    ax.set_xlim(0, 105)
-    ax.set_xlabel("Completeness (%)")
-    ax.axvline(95, color=MID_GREY, linewidth=0.6, linestyle="--", alpha=0.6)
-    ax.grid(True, axis="x")
+    # Truncated x-axis emphasises the variation among already-high
+    # completeness rates that a 0--100 axis hides.
+    ax.set_xlim(80, 103)
+    ax.set_xlabel("Empirical completeness (%)  —  axis truncated at 80%",
+                  fontsize=9)
+    ax.axvline(95, color=ACCENT, linewidth=0.9, linestyle="--",
+                alpha=0.8, label="audit-report threshold (95%)")
+    ax.axvline(90, color=MID_GREY, linewidth=0.6, linestyle=":", alpha=0.6)
+    ax.legend(loc="lower right", frameon=False, fontsize=7.5)
+    ax.spines["top"].set_visible(False)
+    ax.spines["right"].set_visible(False)
+    ax.grid(True, axis="x", color=LIGHT_GREY, linewidth=0.4, alpha=0.6)
     ax.grid(False, axis="y")
     _save(fig, GOLD_DIR / "fig05_completeness.pdf")
 

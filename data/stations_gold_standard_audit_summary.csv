@@ -1,0 +1,124 @@
+system_id,n_stations,operator,flag_A1,flag_A2,flag_A3,flag_A6,flag_A7,n_high_confidence,n_low_confidence
+dott-paris,14747,Dott,0,0,14747,0,14747,0,14747
+pony_paris,3617,Pony,0,0,3617,0,0,0,0
+dott-bordeaux,3449,Dott,0,0,3449,0,3449,0,3449
+bird-bordeaux,3152,Bird,0,0,3152,0,3152,0,3152
+pony_bordeaux,2996,Pony,0,0,2996,0,2996,0,2996
+Paris,1507,Vélib' Métropole,0,0,0,0,0,1507,0
+dott-lyon,1404,Dott,0,0,1404,0,1404,0,1404
+voi_Marseille,1267,Voi,0,0,1267,0,0,0,0
+pony_Angers,1223,Pony,0,0,1223,0,1223,0,1223
+pony_Perpignan,1029,Pony,0,0,1029,0,1029,0,1029
+bird-marseille,803,Bird,0,0,803,0,803,0,803
+voi_Grenoble,697,Voi,0,0,697,0,0,0,0
+pony_Basque_Country,497,Pony,0,0,497,0,497,0,497
+voi_Le_Havre,470,Voi,0,0,470,0,0,0,0
+lyon,452,Vélo'V,0,0,0,0,0,452,0
+toulouse,434,VélÔToulouse,0,0,0,0,0,434,0
+pony_Nice,412,Pony,0,412,412,0,0,0,412
+citiz_alpes_loire,408,Citiz (carsharing),408,0,0,0,0,0,408
+pony_poitiers,393,Pony,0,0,393,0,393,0,393
+voi_SQY,382,Voi,0,0,382,0,0,0,0
+pony_Bourges,377,Pony,0,0,377,0,377,0,377
+dott-gpseo,351,Dott,0,0,351,0,351,0,351
+citiz_grand_est,272,Citiz (carsharing),272,0,0,0,0,0,272
+v_lille,268,V'lille,0,0,0,0,0,268,0
+velo-tbm-bordeaux,225,Le Vélo TBM,0,0,0,0,0,225,0
+levelo_inurba_marseille,221,levélo - Marseille,0,0,0,0,0,221,0
+pony_Evry,212,Pony,0,0,212,0,212,0,212
+pony_Herouville,209,Pony,0,0,209,0,209,0,209
+pony_Lorient,203,Pony,0,0,203,0,203,0,203
+citiz_metropole_lyon,201,Citiz (carsharing),201,0,0,0,0,0,201
+pony_Limoges,154,Pony,0,0,154,0,154,0,154
+inurba-rouen,131,VLS générique,0,0,0,0,0,131,0
+citiz_occitanie,128,Citiz (carsharing),128,0,0,0,0,0,128
+mvelo_plus_grenoble,127,Mvélo+,0,0,127,0,127,0,127
+nantes,124,Naolib,0,0,0,0,0,124,0
+dott-siemu,117,Dott,0,0,117,0,117,0,117
+vilvolt_epinal,105,Vilvolt,0,0,0,0,0,105,0
+citiz_provence,98,Citiz (carsharing),98,0,0,0,0,0,98
+citiz_gironde,98,Citiz (carsharing),98,0,0,0,0,0,98
+velivert_saint_etienne,97,Vélivert,0,0,0,0,0,97,0
+bird-laval,83,Bird,0,0,83,0,83,0,83
+CVelo_FR_Clermont-Ferrand,82,C-Vélo,0,0,0,0,0,82,0
+pony_La_Roche_Sur_Yon,81,Pony,0,0,81,0,81,0,81
+velonecy60minutes_annecy,80,Vélonecy,0,0,0,0,0,80,0
+calais-velos,80,Vel’in,0,0,0,0,0,80,0
+dott-versailles-grand-parc,79,Dott,0,0,79,0,79,0,79
+citiz_lille_arras,77,Citiz (carsharing),77,0,0,0,0,0,77
+donkey_brest,75,Donkey Republic Brest,0,0,0,0,0,75,0
+bird-millau,75,Bird,0,0,75,0,75,0,75
+twisto_velolib_caen,75,Twisto Vélolib,0,0,0,0,0,75,0
+bird-larochesuryon,69,Bird,0,0,69,0,69,0,69
+dott-bourgoin-jallieu,69,Dott,0,0,69,0,69,0,69
+libelo,68,Libélo,0,0,0,0,0,68,0
+calivelo,66,CaliVélo,0,0,0,0,0,66,0
+bird-sarreguemines,64,Bird,0,0,64,0,64,0,64
+bird-draguignan,63,Bird,0,0,63,0,63,0,63
+zebullo,63,Zebullo,0,0,63,0,0,0,0
+pony_Beauvais,62,Pony,0,0,62,0,62,0,62
+bird-montlucon,62,Bird,0,0,62,0,62,0,62
+nextbike_af,60,VéloCité Mulhouse,0,0,0,0,0,60,0
+le_velo_star,57,LE vélo STAR,0,0,0,0,0,57,0
+citiz_bfc,56,Citiz (carsharing),56,0,0,0,0,0,56
+citiz_developpement,55,Citiz (carsharing),55,0,0,0,0,0,55
+citiz_rennes_metropole,55,Citiz (carsharing),55,0,0,0,0,0,55
+auxrmlevelo,55,AuxR_M le vélo,0,0,0,0,0,55,0
+montpellier,53,Vélomagg,0,0,0,0,0,53,0
+grand-est,52,Velo Fluo Grand-Est,0,0,0,0,0,52,0
+Optymo_Belfort_ALS,52,Optymo Belfort Auto libre-service,52,0,0,0,52,0,52
+tanlib,51,Vélo Tanlib,0,0,0,0,0,51,0
+bird-gap,50,Bird,0,0,50,0,50,0,50
+capcotentin,49,CapCotentin,0,0,0,0,0,49,0
+nextbike_ah,49,Vélo&Co,0,0,0,0,0,49,0
+bird-vichy,46,Bird,0,0,46,0,46,0,46
+beb,45,Rubis'Velo,0,0,0,0,0,45,0
+amiens,45,Velam,0,0,0,0,0,45,0
+cergy,45,Vélo&Co,0,0,0,0,0,45,0
+citiz_nantes,41,Citiz (carsharing),41,0,0,0,0,0,41
+idecycle_pau,40,IDEcycle (Pau),0,0,0,0,0,40,0
+donkey_valenciennes,40,Donkey Republic Valenciennes,0,0,0,0,0,40,0
+dijon,40,Velodi,0,0,0,0,0,40,0
+velozef,40,VéloZef,0,40,0,0,0,0,40
+semo,40,Semo Vélo,0,0,0,0,0,40,0
+vertuose,39,Vertuose,0,0,0,0,0,39,0
+nextbike_ae,39,Vélhop - Strasbourg,0,0,0,0,0,39,0
+nancy,37,VéloStan,0,0,0,0,0,37,0
+cyclam,34,Cycl'AM,0,0,0,0,0,34,0
+besancon,33,VéloCité,0,0,0,0,0,33,0
+bird-ajaccio,32,Bird,0,0,32,0,32,0,32
+Optymo_FR_Belfort,32,Optymo Belfort,0,0,0,0,0,32,0
+impulsyon,31,Impulsyon,0,0,0,0,0,31,0
+lemarcel,30,Le Marcel,0,0,0,0,0,30,0
+velopop,29,Vélopop,0,0,0,0,0,29,0
+ogalo,28,Ogalo,0,0,0,0,0,28,0
+cyclovis,28,Cyclovis,0,0,0,0,0,28,0
+citiz_angers,26,Citiz (carsharing),26,0,0,0,0,0,26
+velibeo,26,Vélib' Métropole,0,0,0,0,0,26,0
+knot_strasbourg,25,Knot Strasbourg,0,0,25,0,0,0,0
+citiz_la_rochelle,24,Citiz (carsharing),24,0,0,0,0,0,24
+citiz_grand_poitiers,22,Tier,22,0,0,0,0,0,22
+velocite,19,Vélo'Cité,0,0,0,0,0,19,0
+tempovelo,16,Tempovelo,0,0,0,0,0,16,0
+petitesreines,16,Les Petites Reines,0,0,0,0,0,16,0
+chantrerie,16,Naolib Micromob',0,0,16,0,0,0,0
+choletbus,16,Choletbus 2 Roues,0,0,0,0,0,16,0
+ti_velo,14,Ti Vélo,0,0,0,0,0,14,0
+labaule,14,La Baule,0,0,0,0,0,14,0
+mp_CHATELLERAULT,13,CHATELLERAULT,0,0,0,0,0,13,0
+tlpmobilites,13,TLP Mobilites,0,0,0,0,0,13,0
+saintbrieuc,12,Vélo'Baie,0,0,0,0,0,12,0
+auray-quiberon,11,AQTA,0,0,0,0,0,11,0
+cyclolibre,10,Cyclolibre,0,0,0,0,0,10,0
+calais,9,Velect'in,0,0,0,0,0,9,0
+auto-en-velay,9,Auto-en-Velay,9,0,0,0,0,0,9
+dott-ol-vallee,8,Dott,0,0,8,0,0,0,0
+aupa,8,Citiz (carsharing),8,0,0,0,0,0,8
+velo-modalis,8,VéloModalis - TERRA,0,0,0,0,0,8,0
+vivelo,8,Vivélo,0,0,0,0,0,8,0
+velodaqui,6,Vélo d'Aqui,0,0,0,0,0,6,0
+mp_LASCAUX,5,VELO VEZERE LASCAUX,0,0,0,0,0,5,0
+velyceo,5,VélYcéo,0,0,0,0,0,5,0
+mp_ARBRESLE,4,PAYS DE L'ARBRESLE - VEL'PAR,0,0,0,0,0,4,0
+perivelo,3,Périvélo,0,0,0,0,0,3,0
+mp_OSSAU,3,VALLEE D'OSSAU,0,0,0,0,0,3,0
