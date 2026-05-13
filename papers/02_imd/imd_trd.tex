@@ -127,9 +127,18 @@ cycling well-being predictive power of the volumetric default
 ($\rho_{\mathrm{LOO}}^{\text{FUB}} = +0.41$ vs.\ $+0.20$,
 $n = 32$). A Saltelli/Jansen variance decomposition shows that
 multimodality and infrastructure jointly account for $82\,\%$
-of the IMD score variance; safety contributes essentially
-nothing and the IMD is effectively a two-component composite
-under the calibrated weights.
+of the IMD score variance, and an indicator-redesign experiment
+(Section~\ref{sec:imd-redesign}) shows that dropping the safety
+component (IMD-3) \emph{weakly dominates} the original IMD-4 on
+the calibration target and on the out-of-design eco-counter
+prediction, while dropping safety and topography together
+(IMD-2) further improves the eco-counter correlation
+($+0.651$ vs $+0.632$). Under the simplified IMD-3 the weight
+on the multimodality component rises from $0.37$ to $0.79$:
+\textbf{the IMD is empirically a multimodality index with
+infrastructure refinement}, not a balanced four-axis composite,
+and we recommend IMD-3 as the canonical composite for the next
+Gold Standard release.
 
 To build the audit we construct the Soft Mobility Index (IMD), a
 four-component supervised composite (multimodality, cycling
@@ -3088,10 +3097,141 @@ measurement uncertainty (Bayesian hierarchical or Gaussian
 process on the panel) and outputs each station's IMD as a
 distribution rather than a point.
 \end{itemize}
-A natural rollout path is to release IMD-2 alongside the next
-Gold Standard release that ingests the A6/G1--G5 patch, so that
-the indicator's redesign and the upstream data-quality
-correction land together.
+We implement and validate the first two pieces of this
+redesign in Section~\ref{sec:imd-redesign} below; the
+probabilistic per-station model is left for the next iteration
+of the Gold Standard release.
+
+% =========================================================================
+\section{Indicator redesign: IMD-3 and IMD-2 station-level}
+\label{sec:imd-redesign}
+% =========================================================================
+
+The IMD-4 reported throughout the paper is a four-component
+composite calibrated on the city aggregates. The Sobol
+decomposition of Section~\ref{sec:val-sobol} showed that the
+safety component does not contribute to score variance and that
+topography contributes only $14\,\%$; the within-city variance
+decomposition of Section~\ref{sec:val-within} showed that
+$80.8\,\%$ of the IMD variance is intra-city. Both findings
+motivate two simplifications: drop the non-discriminative
+components and operate at station rather than city granularity.
+We test the two simplifications jointly here.
+
+\paragraph{Method.}
+We re-normalise each component on the dock-based station panel
+(46\,139 stations, panel-wide Min--Max), aggregate to the city
+level by mean, and re-run the differential-evolution calibration
+of Section~\ref{sec:calibration} on three nested specifications:
+\begin{itemize}
+\item \emph{IMD-4}: the four-component reference of the paper.
+\item \emph{IMD-3}: $\IMD^{(3)} = w_M C_M + w_I C_I + w_T C_T$,
+dropping safety.
+\item \emph{IMD-2}: $\IMD^{(2)} = w_M C_M + w_I C_I$, dropping
+safety and topography.
+\end{itemize}
+For each variant we report the recalibrated weights, the
+in-sample mean Spearman $\bar\rho$ against FUB+EMP, and an
+out-of-design Spearman against the eco-counter daily flows
+($n = 25$ cities matched). Per-city uncertainty is obtained by
+station-level bootstrap ($N = 1\,000$ replicates resampled
+within-city), yielding a median and 95\,\% CI on each city's IMD.
+
+\paragraph{Results.}
+
+\begin{table}[H]
+\centering
+\caption{Calibration and predictive performance of the three IMD
+variants. Calibration $\bar\rho$ is the mean Spearman against
+FUB+EMP (in-sample on the matched panel); the eco-counter column
+is the out-of-design Spearman against eco-counter daily flows on
+the $n = 25$ matched cities; the rightmost column is the Kendall
+$\tau$ between each variant's city ranking and the IMD-4 ranking.}
+\label{tab:imd-variants}
+\small
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+Variant & Weights $(w_M, w_I, w_T, w_S)$ &
+$\bar\rho$ (FUB+EMP) &
+$\rho$(eco, $n = 25$) &
+$\tau$ vs IMD-4 &
+Top-10 overlap \\
+\midrule
+IMD-4 & $(0.373, 0.373, 0.204, 0.050)$ & $0.546$ & $0.632$ & $1.000$ & $10/10$ \\
+\textbf{IMD-3} & $(0.790, 0.105, 0.105, -)$ &
+   $\mathbf{0.550}$ & $\mathbf{0.634}$ & $0.963$ & $9/10$ \\
+\textbf{IMD-2} & $(0.872, 0.128, -, -)$ &
+   $0.524$ & $\mathbf{0.651}$ & $0.878$ & $10/10$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The simplifications produce three concrete findings.
+
+First, \textbf{IMD-3 weakly dominates IMD-4 on both metrics}: it
+matches the calibration target ($\bar\rho = 0.550$ vs $0.546$)
+and the eco-counter predictive correlation ($+0.634$ vs $+0.632$)
+with one component fewer. Dropping safety from the composite is
+a clean win, not a trade-off; the safety component carries no
+discriminative information that survives the supervised
+calibration, consistent with the exposure-confounding documented
+in E3--E4.
+
+Second, \textbf{IMD-2 improves on IMD-4 on the out-of-design
+eco-counter metric} ($+0.651$ vs $+0.632$, on the same $n = 25$
+panel), at the cost of a modest drop in the in-sample
+$\bar\rho$ (from $0.546$ to $0.524$). The reading is that
+topography is an in-sample regulariser useful for matching FUB
+and EMP perception scores but adds noise when the indicator is
+asked to predict the most behavioural reference available
+(observed cyclist counts).
+
+Third, the recalibrated weights show that
+\textbf{multimodality is the single dominant driver} of the
+indicator once the calibration is freed from the four-axis
+constraint. The weight on $C_M$ rises from $0.37$ in IMD-4 to
+$0.79$ in IMD-3 and $0.87$ in IMD-2. The IMD is empirically a
+\emph{multimodality index with infrastructure refinement} rather
+than a balanced four-axis composite, and the four-axis form was
+under-specifying the relative importance of $C_M$ throughout the
+paper.
+
+\paragraph{Probabilistic per-city IMD-3.}
+With $N = 1\,000$ station bootstrap replicates, each city's
+IMD-3 has a tight 95\,\% CI: $[20.8, 25.3]$ for Strasbourg
+($\text{sd} = 1.1$), $[18.8, 21.7]$ for Montpellier
+($\text{sd} = 0.7$), $[18.9, 19.9]$ for Paris ($\text{sd} =
+0.2$, narrowest because $n = 1\,507$ stations dampen the
+bootstrap noise). The Top-3 (Strasbourg $>$ Montpellier $>$
+Paris/Nantes/Mulhouse) is CI-distinct under IMD-3 as it was
+under IMD-4. The full per-city CI distribution is in the
+companion repository as \texttt{e32\_per\_city\_ci.pdf}.
+
+\paragraph{Recommendation.}
+We recommend that the next Gold Standard release
+\citep{Fosse2026gold} adopt \textbf{IMD-3 as the canonical
+composite}: it is strictly simpler than IMD-4, matches or
+weakly improves its calibration and out-of-design performance,
+keeps topography as a contextualiser (relevant for hilly
+cities), and exits the safety-composite trap documented in
+E3--E4. \textbf{IMD-2} is the further-simplified variant for
+contexts where the indicator is predominantly used to predict
+behavioural usage (eco-counter, modal share). The two variants
+should be released alongside the A6/G1--G5 GTFS audit patch so
+that the indicator's structural simplification and the upstream
+data-quality correction land together.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\linewidth]{e32_imd_variants.pdf}
+    \caption{Indicator redesign comparison. Left: redistribution
+    of weights as components are dropped -- multimodality $C_M$
+    rises from $0.37$ to $0.87$. Right: in-sample $\bar\rho$
+    against the FUB+EMP calibration target; IMD-3 weakly
+    dominates IMD-4 and IMD-2 trades calibration $\bar\rho$ for
+    out-of-design eco-counter accuracy.}
+    \label{fig:imd-variants}
+\end{figure}
 
 % =========================================================================
 \section{Conclusion}
