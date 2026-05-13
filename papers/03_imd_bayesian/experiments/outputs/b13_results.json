@@ -1,0 +1,227 @@
+{
+  "metrics": [
+    "IMD-4 (Bayesian)",
+    "IMD-3 (Bayesian)",
+    "Volumetric",
+    "Cerema km/km^2",
+    "M alone"
+  ],
+  "references": [
+    "FUB 2023",
+    "EMP 2019",
+    "Eco-counter",
+    "BAAC accidents"
+  ],
+  "table": {
+    "IMD-4 (Bayesian)": {
+      "FUB 2023": {
+        "n": 32,
+        "rho": 0.5561773884217556,
+        "boot_q025": 0.22055584738571965,
+        "boot_q975": 0.8013579355658424,
+        "loo_min": 0.5117548270829714,
+        "loo_max": 0.6577887533910554,
+        "loo_city_min": "Strasbourg",
+        "loo_city_max": "Annecy"
+      },
+      "EMP 2019": {
+        "n": 44,
+        "rho": 0.528407666254501,
+        "boot_q025": 0.24982138164381387,
+        "boot_q975": 0.7156356717834709,
+        "loo_min": 0.49466900467768904,
+        "loo_max": 0.5667404863254245,
+        "loo_city_min": "Strasbourg",
+        "loo_city_max": "Annecy"
+      },
+      "Eco-counter": {
+        "n": 25,
+        "rho": 0.7467284737678194,
+        "boot_q025": 0.4537745985268494,
+        "boot_q975": 0.9082479445247645,
+        "loo_min": 0.7145346483356638,
+        "loo_max": 0.8263710701519036,
+        "loo_city_min": "Strasbourg",
+        "loo_city_max": "Annecy"
+      },
+      "BAAC accidents": {
+        "n": 44,
+        "rho": 0.6175440666678791,
+        "boot_q025": 0.35670574841993985,
+        "boot_q975": 0.8011188644784394,
+        "loo_min": 0.5904552499013807,
+        "loo_max": 0.6669209900442055,
+        "loo_city_min": "Paris",
+        "loo_city_max": "Mulhouse"
+      }
+    },
+    "IMD-3 (Bayesian)": {
+      "FUB 2023": {
+        "n": 32,
+        "rho": 0.5160049451287594,
+        "boot_q025": 0.15682657387767876,
+        "boot_q975": 0.7852701912018585,
+        "loo_min": 0.46756148830885036,
+        "loo_max": 0.6200566991321206,
+        "loo_city_min": "Strasbourg",
+        "loo_city_max": "Annecy"
+      },
+      "EMP 2019": {
+        "n": 44,
+        "rho": 0.528760549696637,
+        "boot_q025": 0.22805885154846975,
+        "boot_q975": 0.7325348697094374,
+        "loo_min": 0.4950471341721683,
+        "loo_max": 0.5723368028437166,
+        "loo_city_min": "Strasbourg",
+        "loo_city_max": "Annecy"
+      },
+      "Eco-counter": {
+        "n": 25,
+        "rho": 0.6324097331961481,
+        "boot_q025": 0.2889267993841966,
+        "boot_q975": 0.8586943129797595,
+        "loo_min": 0.585291779544134,
+        "loo_max": 0.7167104542075751,
+        "loo_city_min": "Strasbourg",
+        "loo_city_max": "Annecy"
+      },
+      "BAAC accidents": {
+        "n": 44,
+        "rho": 0.4450895343790915,
+        "boot_q025": 0.14590647122860229,
+        "boot_q975": 0.6754311510388851,
+        "loo_min": 0.40564934337371433,
+        "loo_max": 0.487606970589578,
+        "loo_city_min": "Paris",
+        "loo_city_max": "Mulhouse"
+      }
+    },
+    "Volumetric": {
+      "FUB 2023": {
+        "n": 32,
+        "rho": 0.19535914204128288,
+        "boot_q025": -0.20810232108925586,
+        "boot_q975": 0.5506181843524054,
+        "loo_min": 0.13782671407636807,
+        "loo_max": 0.28836658040282576,
+        "loo_city_min": "Carcassonne",
+        "loo_city_max": "Marseille"
+      },
+      "EMP 2019": {
+        "n": 44,
+        "rho": 0.3042668251693081,
+        "boot_q025": -0.013480664468380827,
+        "boot_q975": 0.5793222819987865,
+        "loo_min": 0.27007028109791065,
+        "loo_max": 0.38100323396645536,
+        "loo_city_min": "Paris",
+        "loo_city_max": "Marseille"
+      },
+      "Eco-counter": {
+        "n": 25,
+        "rho": 0.5496537425466217,
+        "boot_q025": 0.13484897684447839,
+        "boot_q975": 0.8516564062761691,
+        "loo_min": 0.4908618047031844,
+        "loo_max": 0.6749349814668787,
+        "loo_city_min": "Paris",
+        "loo_city_max": "Strasbourg"
+      },
+      "BAAC accidents": {
+        "n": 44,
+        "rho": 0.5772944031276103,
+        "boot_q025": 0.36416589151112577,
+        "boot_q975": 0.7464437295583322,
+        "loo_min": 0.5470188800102486,
+        "loo_max": 0.6139016734227498,
+        "loo_city_min": "Lyon",
+        "loo_city_max": "Cergy-Pontoise"
+      }
+    },
+    "Cerema km/km^2": {
+      "FUB 2023": {
+        "n": 32,
+        "rho": 0.5158215093146361,
+        "boot_q025": 0.22086441308780258,
+        "boot_q975": 0.7151688337864021,
+        "loo_min": 0.47538352852433324,
+        "loo_max": 0.5557798072505394,
+        "loo_city_min": "Brive-la-Gaillarde",
+        "loo_city_max": "Toulouse"
+      },
+      "EMP 2019": {
+        "n": 43,
+        "rho": 0.4595029616911234,
+        "boot_q025": 0.17941987844516738,
+        "boot_q975": 0.6674248317872227,
+        "loo_min": 0.43173764018897326,
+        "loo_max": 0.5198659848441973,
+        "loo_city_min": "Paris",
+        "loo_city_max": "Auray"
+      },
+      "Eco-counter": {
+        "n": 26,
+        "rho": 0.71433475496691,
+        "boot_q025": 0.40475123473553976,
+        "boot_q975": 0.8657529247492701,
+        "loo_min": 0.6785991233261163,
+        "loo_max": 0.763664583482141,
+        "loo_city_min": "Paris",
+        "loo_city_max": "Annecy"
+      },
+      "BAAC accidents": {
+        "n": 45,
+        "rho": 0.5717406805447587,
+        "boot_q025": 0.31641429143578204,
+        "boot_q975": 0.7765673554932228,
+        "loo_min": 0.5418030643245534,
+        "loo_max": 0.623862602421813,
+        "loo_city_min": "Lyon",
+        "loo_city_max": "Vichy"
+      }
+    },
+    "M alone": {
+      "FUB 2023": {
+        "n": 32,
+        "rho": 0.3672721590563688,
+        "boot_q025": -0.019030401960588392,
+        "boot_q975": 0.6450744991990233,
+        "loo_min": 0.3039355178028915,
+        "loo_max": 0.4316417179920097,
+        "loo_city_min": "Nantes",
+        "loo_city_max": "Annecy"
+      },
+      "EMP 2019": {
+        "n": 44,
+        "rho": 0.43993550326600517,
+        "boot_q025": 0.10152969098845867,
+        "boot_q975": 0.6805103625992093,
+        "loo_min": 0.3998643207134315,
+        "loo_max": 0.48644409109733805,
+        "loo_city_min": "Strasbourg",
+        "loo_city_max": "Saint-\u00c9tienne"
+      },
+      "Eco-counter": {
+        "n": 25,
+        "rho": 0.593148751585675,
+        "boot_q025": 0.2653146392749419,
+        "boot_q975": 0.8161764152529443,
+        "loo_min": 0.5417756621059084,
+        "loo_max": 0.6534697932741309,
+        "loo_city_min": "Strasbourg",
+        "loo_city_max": "Saint-\u00c9tienne"
+      },
+      "BAAC accidents": {
+        "n": 44,
+        "rho": 0.29448633783526784,
+        "boot_q025": -0.03845284099173376,
+        "boot_q975": 0.5628041248539613,
+        "loo_min": 0.24584600247947216,
+        "loo_max": 0.3347982019418403,
+        "loo_city_min": "Paris",
+        "loo_city_max": "Troyes"
+      }
+    }
+  }
+}

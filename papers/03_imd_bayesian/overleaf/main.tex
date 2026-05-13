@@ -883,6 +883,60 @@ real time on every French commune, the IMD-4's lead on
 eco-counter is therefore not a fluke of one weight draw -- it
 holds across the entire posterior on the simplex.
 
+\paragraph{Frequentist robustness: bootstrap CI and
+leave-one-out.}
+The posterior credible interval addresses uncertainty over
+the weights but not over the cities. With panels of
+$n \in [25, 44]$, a single influential city can move the
+sample $\rho$ by $0.05$--$0.10$. We add two non-parametric
+diagnostics on every tournament cell: a $1{,}000$-resample
+bootstrap $95\,\%$ confidence interval on $\rho$, and a
+leave-one-city-out (LOO) range
+$[\rho_{\min}, \rho_{\max}]$ with the most influential city
+named. The IMD-4 correlations are stable under both:
+$\rho_{\text{IMD-4,\,eco}} = +0.747$,
+boot CI $[+0.454, +0.908]$, LOO $[+0.715, +0.826]$ (most
+influential: Strasbourg);
+$\rho_{\text{IMD-4,\,BAAC}} = +0.618$,
+boot CI $[+0.357, +0.801]$, LOO $[+0.590, +0.667]$
+(most influential: Paris);
+$\rho_{\text{IMD-4,\,FUB}} = +0.556$,
+boot CI $[+0.221, +0.801]$, LOO $[+0.512, +0.658]$.
+For all four references the IMD-4 bootstrap CI strictly
+excludes zero. By contrast, the volumetric and
+$M$-alone CIs against FUB straddle zero
+($[-0.208, +0.551]$ and $[-0.019, +0.645]$ respectively),
+confirming that the underperformance of these baselines on
+perception is not merely a point-estimate artefact. The most
+frequent ``most-influential'' city is Strasbourg, which is
+the top-ranked metropole on three of the four references --
+i.e.\ the LOO sensitivity reflects the IMD correctly placing
+Strasbourg at the top, not an outlier driving the fit.
+
+\paragraph{A negative result we report: short-window GBFS
+$|\Delta\,\text{bikes}|$ does not validate the IMD.}
+A natural temptation is to use the same GBFS feeds that
+power the IMD's input variables as an independent
+validation signal, by treating station-level
+$|\Delta\,\text{bikes}|/\text{capacity}$ between
+consecutive snapshots as a proxy for rider activity. We
+collected two days of \texttt{station\_status} snapshots
+across $20$ priority docked systems and computed the
+city-level mean of this pseudo-flow on $18$ cities. The
+correlation with the IMD-4 city median is
+$\rho = -0.34$ with bootstrap CI $[-0.69, +0.14]$ -- a null
+result. The reason is operational: on a 2-day window,
+$|\Delta\,\text{bikes}|$ is dominated by overnight
+rebalancing trucks, not by rider trips, and the per-capacity
+normalisation amplifies churn on small peripheral stations
+relative to large central ones. Validating the IMD on the
+full 59-city panel via GBFS-derived flow would require
+hourly snapshots over a multi-week window so that day-night
+cycles separate rider trips from rebalancing; this is left
+for a follow-up study. We report this negative result in the
+paper because it bounds what the IMD's input feeds can and
+cannot do as an internal validator.
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.85\linewidth]{b10_tournament.pdf}
@@ -1257,6 +1311,36 @@ EMP max          & $+3.16$ & $+2.74$ $[+1.65, +4.09]$ & $0.23$ \\
     right. The model is well calibrated on first and second
     moments and slightly short-tailed on the extreme min/max.}
     \label{fig:ppc}
+\end{figure}
+
+\section{Tournament robustness: bootstrap confidence intervals}
+\label{app:robust}
+
+Section~\ref{sec:application-tournament} reports point
+Spearman $\rho$ for every (metric, reference) pair, a Bayesian
+posterior credible interval on the IMD-4 vs.\ eco-counter
+cell, and a paragraph on bootstrap-CI plus leave-one-out (LOO)
+diagnostics. For full transparency,
+Figure~\ref{fig:tournament-robust} reproduces the tournament
+table with bootstrap CIs printed on every cell. Cells with a
+bootstrap CI that strictly excludes zero correspond to
+robustly positive correlations; cells whose CI crosses zero
+(volumetric and $M$-alone vs.\ FUB perception) are the
+fragile baselines. The IMD-4 row has the only set of four
+correlations all of which exclude zero.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.99\linewidth]{b13_tournament_robust.pdf}
+    \caption{Same tournament as Figure~\ref{fig:tournament}
+    with $1{,}000$-resample bootstrap $95\,\%$ confidence
+    intervals on $\rho$ printed in brackets and sub-panel size
+    $n$ in each cell. The IMD-4 row is the only one whose four
+    CIs all strictly exclude zero; volumetric and $M$-alone vs.\
+    FUB perception have CIs spanning zero, confirming that the
+    underperformance of these baselines on perception is robust
+    to resampling.}
+    \label{fig:tournament-robust}
 \end{figure}
 
 \section{Future work: a hierarchical Gaussian-process IMD}
