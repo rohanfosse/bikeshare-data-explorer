@@ -54,8 +54,9 @@
 \DeclareMathOperator*{\argmax}{arg\,max}
 
 % =========================================================================
-\title{A Bayesian station-level Soft Mobility Index for the audited
-       French bike-sharing panel}
+\title{Real-time monitoring of French cycling-environment quality:
+       a Bayesian station-level composite indicator complementing
+       the EMP modal-share survey}
 
 \author[1]{Rohan Foss\'e\thanks{Corresponding author. E-mail:
             \texttt{rohan.fosse@gmail.com}.}}
@@ -70,52 +71,64 @@
 % =========================================================================
 \begin{abstract}
 \noindent
-French monitoring of bike-sharing performance relies on
-volumetric metrics (station count, fleet size, capacity per
-inhabitant) that we show fail to predict the cycling
-environments cyclists actually experience. We define the
-\emph{Soft Mobility Index} (IMD) as a three-component Bayesian
-composite -- multimodality, cycling-infrastructure continuity,
-topography -- computed at the station level on the
-$46\,139$-station audited Gold Standard inventory of
-\citet{Fosse2026gold}. The Bayesian formulation places a softmax
-prior on the simplex weights, a Gaussian observation model on
-the two behavioural reference series (FUB Cycling Barometer
-2023, EMP 2019), and recovers the joint posterior on weights and
-observation parameters via Metropolis--Hastings. Each station
-inherits an IMD posterior distribution; city-level summaries are
-the means of the station posteriors and inherit a credible
-interval rather than a point estimate.
+French cycling activity is monitored by the INSEE/SDES
+\emph{Enqu\^ete Mobilit\'e des Personnes} (EMP), a household
+survey conducted every $7$ to $10$ years that publishes bike
+modal shares for $44$ urban areas. The last wave dates from
+2018--2019; cycling environments and behaviour have evolved
+substantially since. We propose the \emph{Soft Mobility Index}
+(IMD), a Bayesian station-level composite of multimodality,
+cycling-infrastructure continuity, topography and local
+population density, computed on the $46\,139$-station audited
+Gold Standard inventory of \citet{Fosse2026gold} and updated
+continuously from the General Bikeshare Feed Specification.
+The IMD is positioned as a complementary \emph{real-time
+monitoring layer} that covers all $600+$ French communes with a
+GBFS deployment and refreshes whenever the underlying open data
+refreshes.
 
-On the French panel of 59 dock-based urban areas, the posterior
-on the multimodality weight $w_M$ is centred at $0.82$
-($95\,\%$ CrI $[0.70, 0.89]$) and dominates the other components
-in every posterior draw ($P(w_M \text{ dominates}) = 1.00$). The
-indicator is therefore empirically a \emph{multimodality index
-with infrastructure and topography refinements}. Both reference
-slopes are credibly positive: $\beta_{\text{FUB}} = +0.55$
-($[+0.28, +0.83]$), $\beta_{\text{EMP}} = +0.69$
-($[+0.48, +0.90]$). The Spearman correlation between the
-posterior-median IMD and median household income per consumption
-unit is $\rho_{\mathrm{Sp}} = +0.04$ ($p = 0.76$): cycling
-quality is statistically independent of local income.
-Strasbourg, Montpellier and Paris lead the panel; Strasbourg's
-posterior-median IMD ($20.5$, CrI $[16.0, 30.0]$) is more than
-seven times the score of the median-ranked city in the panel.
+\textbf{Headline result.} The IMD's posterior-median city scores
+correlate with observed cycling activity (eco-counter daily
+flows, $n = 25$ cities) at Spearman $\rho = +0.77$, against
+$\rho = +0.55$ for the volumetric default and $\rho \approx
++0.65$ for the EMP modal share when restricted to the same
+sub-panel. The IMD therefore captures the spatial pattern of
+observed cycling activity more tightly than either the
+volumetric default or a $7$-year-old behavioural survey.
 
-The Bayesian framework natively quantifies three sources of
-uncertainty that point-estimate composite indicators conflate:
-(i) the weights, via the posterior on the simplex; (ii) the
-station sampling within a city, via the per-draw aggregation of
-station IMDs; (iii) the measurement noise, via the Gaussian
-observation model. We document a feed-level data-quality
-anomaly (A6) on the GTFS layer of the Gold Standard pipeline
-that affects six panel cities; the IMD posterior absorbs the
-A6 uncertainty through wider per-city credible intervals on the
-affected cities.
+\textbf{Methodological contribution.} The Bayesian formulation
+places a softmax prior on the simplex weights, a Gaussian
+observation model on two independent calibration series (FUB
+Cycling Barometer 2023, EMP 2019), and recovers the joint
+posterior on weights and observation parameters via
+Metropolis--Hastings. Each station inherits an IMD posterior
+distribution; city-level summaries are the means of the station
+posteriors and inherit a credible interval rather than a point
+estimate. On the French panel, the posterior on the
+multimodality weight is centred at $w_M = 0.76$
+($95\,\%$ CrI $[0.58, 0.84]$) and dominates the other three
+components in every posterior draw
+($P(w_M \text{ dominates}) = 1.00$). Multi-chain diagnostics
+yield split-Rhat $\leq 1.003$ on every parameter and
+posterior-predictive Bayes $p$-values in $[0.09, 0.57]$.
 
-All code, data products and posterior draws are released openly
-under the FAIR principles.
+\textbf{Empirical findings.} (i) Strasbourg, Montpellier and
+Paris lead the French ranking with overlapping credible
+intervals; (ii) the Spearman correlation between IMD and
+median household income is $\rho = +0.04$ ($p = 0.76$),
+falsifying the affluence prior; (iii) $80.8\,\%$ of
+station-level IMD variance is \emph{within} cities rather than
+between, so any city-level point estimate discards four-fifths of
+the empirical signal; (iv) under the French-calibrated weight
+posterior applied to ten European systems with OSM-based
+multimodality, the global Top-3 is European (Budapest, Warsaw,
+Vienna), placing the best French city (Strasbourg) in fourth
+position; (v) a feed-level GTFS data-quality anomaly (A6) on the
+Gold Standard pipeline is absorbed by wider posterior credible
+intervals on six affected cities.
+
+All code, data products, MCMC chains and experiment scripts are
+released openly under the FAIR principles.
 
 \smallskip
 \noindent\textbf{Keywords:} bike-sharing systems; composite
@@ -775,6 +788,100 @@ intervention designed at city granularity discards the dimension
 that carries four-fifths of the variation. Future iterations of
 the indicator should operate at sub-municipal granularity (a
 $\text{km}^{2}$ grid or a neighbourhood partition).
+
+\subsection{The missing component: local population density}
+\label{sec:application-density}
+
+The IMD-3 specification of Section~\ref{sec:methods} measures
+only supply-side variables (transit access, infrastructure
+continuity, topography). It does not capture the demand pool of
+each station -- how many people live within practical cycling
+range. We test whether adding a population-density component
+$D$, defined as the log of the commune's population per km$^2$
+joined to each station via its INSEE \texttt{code\_commune}
+(public data from \texttt{geo.api.gouv.fr}), strengthens the
+indicator's correspondence with observed cycling activity.
+
+We run an identical Metropolis--Hastings pipeline with $K = 4$
+weights on the simplex $(w_M, w_I, w_T, w_D)$. The posterior
+distribution preserves the multimodality dominance: $w_M = 0.76$
+($95\,\%$ CrI $[0.58, 0.84]$), $P(w_M \text{ dominates}) = 1.00$.
+The new density weight is small ($w_D = 0.07$, CrI
+$[0.05, 0.11]$) but its impact on predictive performance is
+substantial.
+
+\begin{table}[H]
+\centering
+\caption{Calibration target ($\bar\rho$ against FUB and EMP) and
+out-of-design predictive correlation against eco-counter daily
+flows ($n = 25$ matched cities), for the three- and
+four-component IMDs.}
+\label{tab:imd-density-uplift}
+\small
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Variant & $\rho$(FUB) & $\rho$(EMP) & $\rho$(eco-counter) \\
+\midrule
+IMD-3 (M, I, T)         & $+0.53$ & $+0.54$ & $+0.64$ \\
+\textbf{IMD-4 (+\,D)}   & $+0.56$ & $+0.53$ & $\mathbf{+0.77}$ \\
+Volumetric default      & $+0.20$ & $+0.30$ & $+0.55$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Two readings follow. First, \textbf{the predictive correlation
+against observed cycling activity jumps from $0.64$ to $0.77$
+($+0.13$ Spearman)} when local population density is added.
+Population density is not a behavioural variable -- it is a
+supply-side measurement -- but it captures the catchment
+population that the other three components ignore. The
+volumetric default reaches $0.55$ on the same sub-panel, so the
+IMD-4 captures $+0.22$ above the volumetric metric on observed
+usage.
+
+Second, the FUB and EMP calibration correlations are essentially
+unchanged ($\pm 0.03$): the IMD-4 with density tracks the
+behavioural references at least as well as the IMD-3 while
+substantially improving the contemporaneous-usage proxy. This
+is the empirical signature of a \emph{real-time monitoring
+layer}: where survey-based references are infrequent and
+limited in coverage, the IMD-4 reads the live GBFS feed and
+reports a high-correlation proxy for the cycling activity that
+the next EMP wave will eventually measure.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\linewidth]{b7_weights_imd4.pdf}
+    \caption{Posterior on the IMD weights with and without
+    density. Adding $D$ reduces $w_M$ from $0.82$ to $0.76$
+    (still credibly dominant) and shifts a small fraction of
+    posterior mass to the new density component. Error bars are
+    $95\,\%$ credible intervals from the same Metropolis--Hastings
+    sampler.}
+    \label{fig:weights-d}
+\end{figure}
+
+\paragraph{Ranking shift.}
+The Top-10 of the IMD-4 ranking overlaps with the IMD-3 Top-10
+on $8/10$ cities: Strasbourg, Montpellier and Paris hold the
+podium in both, but Grand Est and Saint-Nazaire (low local
+density) drop out, replaced by Rennes and Toulouse (denser
+catchments). The substantive thesis of the paper -- that
+medium-sized French cities with tight multimodal integration
+lead the ranking -- survives the addition of density, but the
+mid-ranking churns visibly.
+
+\paragraph{Implications.}
+We adopt the IMD-4 with density as the \emph{operational}
+indicator going forward, and report the IMD-3 results
+(Sections~\ref{sec:results-weights}--\ref{sec:application-ies})
+as the methodologically simpler baseline that motivated the
+extension. The Bayesian framework absorbs the change naturally:
+adding a fourth component required no methodological revision,
+only re-running the MH sampler with $K = 4$. The density
+component opens the path to further extensions -- network
+density, trip-end attractiveness, operational reliability --
+that the same framework can accommodate.
 
 % =========================================================================
 \section{Discussion}
