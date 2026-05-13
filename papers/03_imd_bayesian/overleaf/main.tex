@@ -601,25 +601,164 @@ $-0.74$ with a $95\,\%$ credible interval $[-4.76, +3.34]$
 that straddles zero. Both formulations falsify the affluence
 prior.
 
-\subsection{A spatial-equity index (IES) with credible intervals}
+\subsection{European context under the same posterior}
+\label{sec:application-eu}
 
-Building on this finding we define a Spatial Equity Index
-(IES) as the residual deviation of a city's IMD from its
-socio-economic prediction, computed through a Bayesian
-Ridge regression with the same conjugate
-normal--inverse-gamma framework as our weight calibration.
-The four standardised predictors are income per consumption
-unit, the Gini index of local income, the share of car-free
-households and the share of cycling to work; the regression
-returns a posterior on each city's predicted IMD and on the
-residual ratio $\IES_i = \IMD_i^{\text{obs}} /
-\widehat{\IMD}_i$. Cities with $\IES < 0.85$ in a high
-fraction of the posterior draws are flagged as \emph{social
-mobility deserts}. We report the prior-invariant
-high-confidence shortlist (across $\tau \in \{0.1, 1, 10\}$ for
-the regression prior precision) as Amiens, Nancy, Saumur after
-the A6 GTFS-completeness patch is applied to Lyon, Marseille
-and Lille; the full IES analysis is in the companion repository.
+The French panel of $59$ cities is one observation regime of the
+indicator. To position the French ranking in a continental
+context we apply the B1 weight posterior to ten European
+non-French bike-sharing systems for which we successfully fetched
+the live GBFS station inventory and computed an OSM-based
+multimodality count: Amsterdam-area (Utrecht), Barcelona,
+Berlin (Buch), Budapest, Copenhagen, Geneva, Madrid, Seville,
+Vienna and Warsaw. The European cities lack a French-style
+GTFS/BAAC/SRTM enrichment under our pipeline, so the IMD-3 we
+compute for them is a \emph{multimodality-driven} estimate that
+fixes $C_I$ and $C_T$ at the French panel means; it bounds the
+true IMD-3 below for European cities whose infrastructure and
+topography are at least average, and above otherwise. We use the
+French panel's empirical $\max C_M^{\text{raw}}$ to normalise the
+European multimodality counts on a comparable scale.
+
+\begin{table}[H]
+\centering
+\caption{Top of the combined French-European ranking under the
+B1 weight posterior. European cities are scored on their
+observed multimodality and on the French panel means for the
+remaining two components.}
+\label{tab:eu-ranking}
+\small
+\begin{tabular}{@{}clcccc@{}}
+\toprule
+Rank & City & Country & Posterior median IMD &
+$95\,\%$ CrI \\
+\midrule
+1  & Budapest      & EU & $25.3$ & $[22.7, 33.3]$ \\
+2  & Warsaw        & EU & $22.1$ & $[19.2, 30.4]$ \\
+3  & Vienna        & EU & $21.3$ & $[18.4, 29.7]$ \\
+4  & Strasbourg    & FR & $20.2$ & $[16.0, 29.8]$ \\
+5  & Montpellier   & FR & $18.0$ & $[14.2, 27.1]$ \\
+6  & Paris         & FR & $17.2$ & $[13.6, 26.2]$ \\
+7  & Nantes        & FR & $16.7$ & $[13.4, 25.9]$ \\
+8  & Mulhouse      & FR & $16.0$ & $[12.6, 25.9]$ \\
+9  & Madrid        & EU & $15.1$ & $[11.8, 24.5]$ \\
+10 & Caen          & FR & $14.2$ & $[10.9, 23.8]$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The Top-3 of the combined ranking is therefore European
+(Budapest, Warsaw, Vienna), three to four positions above the
+best French city (Strasbourg, rank 4). The credible intervals
+overlap between the European top and the French top (a posterior
+draw with sufficiently atypical $C_I, C_T$ for the European
+cities could close the gap), but the posterior medians under
+the FR-fixed defaults all favour the European cities. The
+panel medians make the same point on aggregate: $13.3$ on the
+10-city European panel against $10.3$ on the 59-city French
+panel, a $+29\,\%$ EU-over-FR shift on the multimodality-driven
+IMD-3.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\linewidth]{b2_european_ranking.pdf}
+    \caption{Combined Top-20 (French + European non-French)
+    under the B1 weight posterior. European cities are computed
+    with observed multimodality and FR-panel-mean
+    infrastructure and topography; the three EU cities at the
+    top (Budapest, Warsaw, Vienna) sit two to three positions
+    above the best French city (Strasbourg).}
+    \label{fig:eu-ranking}
+\end{figure}
+
+\subsection{A spatial-equity index (IES) with full posterior
+propagation}
+\label{sec:application-ies}
+
+Building on this finding we define a Spatial Equity Index (IES)
+as the residual deviation of a city's IMD from its
+socio-economic prediction:
+\begin{equation}
+\IES_i \;=\; \frac{\IMD_i^{\,\text{obs}}}{\widehat{\IMD}_i},
+\qquad
+\widehat{\IMD}_i \;=\; \boldsymbol{\beta}^{\top}\mathbf{s}_i,
+\label{eq:ies}
+\end{equation}
+with $\mathbf{s}_i$ stacking four standardised INSEE predictors
+(income per consumption unit, Gini, car-free share, cycling
+modal share at work) and $\boldsymbol{\beta}$ regression
+coefficients estimated under a conjugate normal--inverse-gamma
+prior with precision $\tau = 1$.
+
+The Bayesian IES propagates two posteriors simultaneously: (a)
+the posterior on the IMD weights from B1, which gives each
+city $i$ a draw $\IMD_i^{(b)}$ for each weight draw $b$; and
+(b) the conjugate posterior on $\boldsymbol{\beta}$ given that
+draw, which gives each city a predicted $\widehat{\IMD}_i^{(b)}$.
+The IES posterior at city $i$ is therefore the pushforward
+$\IES_i^{(b)} = \IMD_i^{(b)} / \widehat{\IMD}_i^{(b)}$ across
+$500$ weight draws times $500$ regression draws, i.e.\
+$250\,000$ joint samples. The desert posterior probability at
+city $i$ is $P(\IES_i < 0.85 \mid \text{data}) =
+\#\{b: \IES_i^{(b)} < 0.85\} / 250\,000$.
+
+\begin{table}[H]
+\centering
+\caption{Cities flagged as mobility-desert candidates under the
+fully posterior-propagating Bayesian IES. The threshold
+$\IES < 0.85$ is the same operational threshold used in earlier
+work; what changes here is that the posterior probability
+absorbs both the weight uncertainty (B1) and the regression
+uncertainty (B3).}
+\label{tab:ies-bayes}
+\small
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+City & Posterior median $\IES$ & $95\,\%$ CrI & $P(\IES < 0.85)$ & Status \\
+\midrule
+Laon         & $0.75$ & $[0.64, 0.86]$ & $0.96$ & high-confidence desert \\
+Saumur       & $0.76$ & $[0.65, 0.87]$ & $0.93$ & high-confidence desert \\
+Lyon         & $0.76$ & $[0.63, 0.90]$ & $0.88$ & qualified \\
+Nancy        & $0.81$ & $[0.67, 0.97]$ & $0.66$ & possible \\
+Amiens       & $0.83$ & $[0.71, 0.95]$ & $0.64$ & possible \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Only two cities -- \textbf{Laon and Saumur} -- pass the
+$P \geq 0.90$ threshold once both posteriors are propagated. Lyon
+follows at $P = 0.88$ but its IES is partly driven by the GTFS
+A6 anomaly documented in Section~\ref{sec:val-a6}; the Bayesian
+framework propagates the anomaly through a wider CrI rather than
+miscategorising the city, but the substantive verdict is
+appropriately weakened. The full IES posterior over all $59$
+panel cities is in the companion repository.
+
+\paragraph{Pooled coefficient posteriors.}
+Across the $500$ weight draws, the regression coefficients
+converge: the cycling-commute share is the only credibly
+non-zero predictor (posterior mean $+1.47$, $95\,\%$ CrI
+$[+0.72, +2.32]$, $P(\beta > 0) = 1.00$); the car-free household
+share is positive but with a CrI that crosses zero ($+0.75$,
+$[-0.29, +1.77]$, $P > 0 = 0.93$); income and Gini are
+posterior-centred near zero and indistinguishable from
+indifferent ($P > 0 = 0.43$ and $0.29$ respectively). The
+pooled finding is therefore that \emph{prior cycling adoption}
+is the single empirical predictor of cycling-environment
+quality; income and inequality are not credibly correlated with
+the indicator at $n = 59$.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.78\linewidth]{b3_ies_top_deserts.pdf}
+    \caption{Cities by posterior probability of being a mobility
+    desert under the fully propagating Bayesian IES. Red bars
+    mark cities at $P \geq 0.90$; orange marks $P \geq 0.75$;
+    blue marks $P \geq 0.50$. Only two cities (Laon, Saumur)
+    pass the $P \geq 0.90$ threshold once both the weight
+    posterior and the regression posterior are propagated.}
+    \label{fig:ies-bayes}
+\end{figure}
 
 \subsection{The 80\,\% intra-city variance and what it implies}
 
@@ -786,6 +925,166 @@ are released under an open licence at
 \url{https://github.com/rohanfosse/bikeshare-data-explorer}.
 Reproducible build under
 \texttt{papers/03\_imd\_bayesian/}.
+
+% =========================================================================
+\appendix
+
+\section{MCMC convergence diagnostics}
+\label{app:diagnostics}
+
+The B1 sampler was run for four parallel chains with dispersed
+initial conditions ($\sigma_{\text{init}} = 1.5$ on the
+softmax pre-image $\mathbf{z}$, $\sigma_{\text{init}} = 0.5$ on
+the nuisance parameters). Each chain ran for $3\,000$ burn-in
+iterations with proposal-scale adaptation every $200$ iterations
+to a target acceptance rate of $34\,\%$, then for $4\,000$ kept
+iterations. Across the four chains we collected $16\,000$ total
+posterior samples per parameter.
+
+\begin{table}[H]
+\centering
+\caption{Multi-chain diagnostics for the B1 model. Split-Rhat
+and ESS are computed across the four chains pooled. The
+conventional acceptance thresholds are split-Rhat $< 1.05$ and
+ESS $> 400$.}
+\label{tab:diagnostics}
+\small
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Parameter & Split-Rhat & ESS (bulk) & Verdict \\
+\midrule
+$w_M$           & $1.003$ & $1\,956$ & pass \\
+$w_I$           & $1.002$ & $1\,824$ & pass \\
+$w_T$           & $1.003$ & $1\,660$ & pass \\
+$\alpha_{\text{FUB}}$ & $1.001$ & $1\,642$ & pass \\
+$\alpha_{\text{EMP}}$ & $1.000$ & $1\,902$ & pass \\
+$\beta_{\text{FUB}}$  & $1.001$ & $1\,708$ & pass \\
+$\beta_{\text{EMP}}$  & $1.003$ & $2\,242$ & pass \\
+$\log\sigma_{\text{FUB}}$ & $1.002$ & $1\,742$ & pass \\
+$\log\sigma_{\text{EMP}}$ & $1.002$ & $2\,041$ & pass \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+All parameters of interest converge cleanly: split-Rhat is
+below the conventional $1.05$ threshold on every scalar and the
+effective sample sizes exceed $1\,600$ on every parameter. The
+trace plots of the four chains for the three weights and the two
+reference slopes overlap (Figure~\ref{fig:trace}) and the
+autocorrelation of the multimodality weight drops below $0.1$
+within roughly $40$ lags.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\linewidth]{b4_trace_plots.pdf}
+    \caption{Trace plots of $w_M$, $\beta_{\text{FUB}}$ and
+    $\beta_{\text{EMP}}$ across the four MH chains. The four
+    chains overlap with no visible long-run drift.}
+    \label{fig:trace}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\linewidth]{b4_autocorrelation.pdf}
+    \caption{Autocorrelation of the first chain for $w_M$,
+    $\beta_{\text{FUB}}$ and $\beta_{\text{EMP}}$. The
+    correlation drops below $0.1$ within roughly $40$ lags,
+    consistent with the bulk ESS estimates of
+    Table~\ref{tab:diagnostics}.}
+    \label{fig:autocorr}
+\end{figure}
+
+\section{Posterior predictive checks}
+\label{app:ppc}
+
+We test the calibration of the observation model on the FUB
+and EMP standardised reference series by drawing $1\,000$
+posterior replicates of each reference and comparing the
+distribution of four test statistics (mean, standard deviation,
+minimum, maximum) to the observed values. The Bayesian
+posterior predictive $p$-value for each statistic is
+$P(T^{\text{rep}} \geq T^{\text{obs}} \mid \text{data})$; values
+close to $0.5$ indicate calibration, values close to $0$ or $1$
+indicate misfit.
+
+\begin{table}[H]
+\centering
+\caption{Posterior predictive checks on the two reference
+series. All eight Bayesian $p$-values fall in the conventionally
+acceptable range $[0.05, 0.95]$, but the model is slightly
+short-tailed (minimum and maximum $p$-values $\approx 0.10$ on
+both references), consistent with a small under-estimation of
+extreme-tail dispersion in the Gaussian observation model.}
+\label{tab:ppc}
+\small
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Reference and statistic & Observed & Replicate mean ($95\,\%$ CrI) & Bayes $p$ \\
+\midrule
+FUB mean         & $+0.00$ & $+0.00$ $[-0.44, +0.43]$ & $0.49$ \\
+FUB sd           & $1.00$  & $1.03$ $[0.70, 1.39]$    & $0.57$ \\
+FUB min          & $-1.38$ & $-2.02$ $[-3.09, -1.16]$ & $0.10$ \\
+FUB max          & $+3.01$ & $+2.42$ $[+1.28, +4.00]$ & $0.17$ \\
+EMP mean         & $+0.00$ & $+0.01$ $[-0.30, +0.32]$ & $0.50$ \\
+EMP sd           & $1.00$  & $1.01$ $[0.75, 1.29]$    & $0.53$ \\
+EMP min          & $-1.45$ & $-1.99$ $[-3.01, -1.19]$ & $0.09$ \\
+EMP max          & $+3.16$ & $+2.74$ $[+1.65, +4.09]$ & $0.23$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.99\linewidth]{b5_ppc.pdf}
+    \caption{Posterior predictive distributions of the four
+    test statistics on the FUB (top row) and EMP (bottom row)
+    reference series. The red vertical line marks the observed
+    value; the Bayesian $p$-value is the probability mass to its
+    right. The model is well calibrated on first and second
+    moments and slightly short-tailed on the extreme min/max.}
+    \label{fig:ppc}
+\end{figure}
+
+\section{Future work: a hierarchical Gaussian-process IMD}
+\label{app:gp}
+
+The Bayesian formulation of B1 treats every station as having
+an independent IMD given the weight posterior. In practice
+stations close to one another are likely to share unobserved
+environment confounds (a shared cycleway, a shared transit
+corridor); a hierarchical model that captures this spatial
+correlation would tighten the per-station posterior and
+sharpen the within-city heterogeneity diagnostic of
+Section~\ref{sec:results-within}.
+
+A natural extension places a Gaussian-process prior on the
+station-level deviations from the city mean. For station $s$
+in city $i$, write
+$\IMD_s = \mu_i + \epsilon_s$ with
+\begin{equation}
+(\epsilon_{s_1}, \ldots, \epsilon_{s_{n_i}})^{\top}
+   \sim
+   \mathcal{N}\bigl(\mathbf{0},\, K_i\bigr),
+\qquad
+K_{i, s_1 s_2}
+   = \tau_i^{2}\,
+     \exp\!\bigl(-\,d(s_1, s_2)^{2} / \ell^{2}\bigr),
+\end{equation}
+where $d(s_1, s_2)$ is the geodesic distance between the
+stations and $\ell$ is a length scale to be inferred. Hyperpriors
+on $\tau_i$ (city-level scale) and $\ell$ (panel-level length)
+close the model. Inference would proceed by either an HMC kernel
+on the joint $(\mathbf{w}, \boldsymbol{\mu}, \tau, \ell)$ or by
+elliptical-slice sampling on the GP nuisance with MH on the
+remaining blocks. We expect the per-station credible intervals
+to shrink and the within-city heterogeneity diagnostic to
+partition cleanly into a station-level GP signal and a
+city-level mean signal.
+
+A second extension treats the four components as a multivariate
+GP, allowing the components to share spatial structure. The
+combined model is a natural next iteration of the indicator and
+is left for future work.
 
 % =========================================================================
 \bibliography{references}

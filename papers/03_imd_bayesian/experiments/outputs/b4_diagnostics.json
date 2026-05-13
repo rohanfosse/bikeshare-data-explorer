@@ -1,0 +1,114 @@
+{
+  "n_chains": 4,
+  "n_burn": 3000,
+  "n_keep_per_chain": 4000,
+  "diagnostics": {
+    "w_M": {
+      "split_rhat": 1.0030008593415685,
+      "ess_bulk": 1956.2002437193753,
+      "n_total": 16000
+    },
+    "w_I": {
+      "split_rhat": 1.0024583866047854,
+      "ess_bulk": 1824.221171040652,
+      "n_total": 16000
+    },
+    "w_T": {
+      "split_rhat": 1.0028156793139733,
+      "ess_bulk": 1659.6551695426256,
+      "n_total": 16000
+    },
+    "alpha_FUB": {
+      "split_rhat": 1.000809693700185,
+      "ess_bulk": 1641.543998824882,
+      "n_total": 16000
+    },
+    "alpha_EMP": {
+      "split_rhat": 1.000121730929907,
+      "ess_bulk": 1901.95100241393,
+      "n_total": 16000
+    },
+    "beta_FUB": {
+      "split_rhat": 1.0013690573008989,
+      "ess_bulk": 1708.0576830959271,
+      "n_total": 16000
+    },
+    "beta_EMP": {
+      "split_rhat": 1.0030369254904907,
+      "ess_bulk": 2241.821647054195,
+      "n_total": 16000
+    },
+    "log_sigma_FUB": {
+      "split_rhat": 1.0022927819303074,
+      "ess_bulk": 1742.3561258568138,
+      "n_total": 16000
+    },
+    "log_sigma_EMP": {
+      "split_rhat": 1.0021942565334878,
+      "ess_bulk": 2041.1813742982117,
+      "n_total": 16000
+    }
+  },
+  "posterior_predictive": {
+    "FUB": {
+      "mean": {
+        "observed": 1.1796119636642288e-15,
+        "replicate_mean": 0.0001813306616374235,
+        "replicate_q025": -0.43891171134515283,
+        "replicate_q975": 0.4276834551416751,
+        "bayes_p_value": 0.493
+      },
+      "sd": {
+        "observed": 0.9999999999999998,
+        "replicate_mean": 1.0314754809276652,
+        "replicate_q025": 0.7008341069123727,
+        "replicate_q975": 1.3942025920930192,
+        "bayes_p_value": 0.568
+      },
+      "min": {
+        "observed": -1.3838036302824823,
+        "replicate_mean": -2.0231086479429563,
+        "replicate_q025": -3.0944628920307955,
+        "replicate_q975": -1.1587976169783538,
+        "bayes_p_value": 0.097
+      },
+      "max": {
+        "observed": 3.0143187035949732,
+        "replicate_mean": 2.4180517858644865,
+        "replicate_q025": 1.2822071934509074,
+        "replicate_q975": 3.9980893840565974,
+        "bayes_p_value": 0.165
+      }
+    },
+    "EMP": {
+      "mean": {
+        "observed": -2.27091073218782e-16,
+        "replicate_mean": 0.007921957342206977,
+        "replicate_q025": -0.30076240182781616,
+        "replicate_q975": 0.3185077164669408,
+        "bayes_p_value": 0.499
+      },
+      "sd": {
+        "observed": 1.0,
+        "replicate_mean": 1.0124331779771554,
+        "replicate_q025": 0.7510484846019055,
+        "replicate_q975": 1.286429408990099,
+        "bayes_p_value": 0.526
+      },
+      "min": {
+        "observed": -1.4465649496613984,
+        "replicate_mean": -1.994347375023807,
+        "replicate_q025": -3.0124309612597737,
+        "replicate_q975": -1.189186219528592,
+        "bayes_p_value": 0.094
+      },
+      "max": {
+        "observed": 3.163666681244177,
+        "replicate_mean": 2.7351880177284347,
+        "replicate_q025": 1.6475189616770853,
+        "replicate_q975": 4.090662976804177,
+        "bayes_p_value": 0.233
+      }
+    }
+  }
+}
