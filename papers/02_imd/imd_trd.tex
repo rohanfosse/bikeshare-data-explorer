@@ -123,7 +123,13 @@ mobility deserts that survives a sweep of the Bayesian prior
 $\tau \in \{0.1, 1, 10\}$ (Amiens, Lyon, Nancy, Saumur),
 (ii) a nine-city reference list at the operating prior $\tau = 1$,
 and (iii) a broader shortlist of twenty deserts robust across
-frequentist specifications.
+frequentist specifications. A feed-level GTFS completeness
+anomaly identified in E29/E30 (anomaly class A6 in the companion
+Gold Standard programme of \citet{Fosse2026gold}) further
+demotes Lyon, Marseille and Lille from the desert lists when the
+multimodality component is triangulated against OSM; the
+A6-robust prior-invariant desert subset reduces to three cities
+(Amiens, Nancy, Saumur).
 
 The IMD/IES framework is submitted to a thirteen-experiment
 falsification programme organised in two thematic waves: a
@@ -389,10 +395,16 @@ The General Bikeshare Feed Specification \citep{Mobi2024} is an
 open real-time data standard for bike-sharing systems, structured
 as a JSON tree from \path{gbfs.json} to
 \path{station_information.json} and \path{station_status.json}.
-Our pipeline polls two aggregators, \texttt{transport.data.gouv.fr}
-and MobilityData, deduplicates entries and walks the GBFS tree for
-each system, yielding a raw inventory of 46{,}139 stations across
-122 systems and 57 urban areas.
+The companion \citet{Fosse2026gold} paper details the data-quality
+audit protocol applied upstream of the present analysis: the 142
+GBFS feeds inventoried on \emph{transport.data.gouv.fr} and
+MobilityData are filtered through a five-class anomaly taxonomy
+(A1--A5: out-of-domain inclusion, placeholder capacity, structural
+over-capacity, geospatial error, out-of-perimeter system) and a
+six-step purging protocol. The certified output -- the
+\emph{Gold Standard} -- yields the inventory of $46{,}139$
+stations across 122 systems and 57 urban areas that we consume
+here as a frozen input.
 
 The raw inventory is enriched by a five-module pipeline producing
 the \emph{Gold Standard} dataset (Table~\ref{tab:pipeline} and
@@ -401,6 +413,11 @@ spatial and contextual metrics computed within a 300~m radius
 following the last-mile literature \citep{ElGeneidy2016,
 Saberi2018}, whose sensitivity is examined in
 Section~\ref{sec:val-radius}.
+\citet{Fosse2026gold} declares the multimodality enrichment of
+Module~4 as ingestible from either the national GTFS aggregation
+or the OpenStreetMap heavy-transit tag set; the present IMD
+pipeline took the GTFS route, with the empirical consequences
+calibrated in Section~\ref{sec:val-osm-gtfs}.
 
 \begin{table}[H]
 \centering
@@ -2385,11 +2402,34 @@ consistently OSM-measured scale. The gap remains substantial.
 \subsection{Calibration of OSM vs.\ GTFS multimodality}
 \label{sec:val-osm-gtfs}
 
-To check that the EU/FR multimodality gap reported in E26 is not
-an OSM-vs-GTFS measurement artefact, we re-query OSM on the ten
-largest French cities using the exact same query that E26 used
-on European cities, and compare with the Gold Standard's
-GTFS-based $C_M$ per city.
+The companion \citet{Fosse2026gold} paper documents a five-class
+anomaly taxonomy (A1--A5) and a six-step purging protocol applied
+to the raw GBFS feeds before they enter the Gold Standard. The
+five classes are all \emph{station-level} -- they affect
+individual rows of \texttt{station\_information.json}. The
+present section reports a complementary \emph{feed-level}
+completeness anomaly that lives one layer above the Gold Standard
+audit: a systematic under-coverage of the regional GTFS feeds
+that the IMD pipeline ingests for Module 4 (heavy multimodality,
+Table~\ref{tab:pipeline}).
+
+The Gold Standard paper makes the methodological choice
+explicit (\cite{Fosse2026gold}, Section ``Derived layers'') that
+multimodality enrichment can be sourced either from the
+\emph{transport.data.gouv.fr} national GTFS aggregation or from
+the OpenStreetMap heavy-transit tag set, with the two
+operationalisations declared as interchangeable. The IMD pipeline
+adopted the GTFS route for module 4 (Section~\ref{sec:data}); the
+European panel of E26 used OSM because no continental GTFS
+aggregation of equivalent coverage exists. The natural validity
+check is therefore not whether OSM and GTFS agree in principle
+but whether they agree \emph{empirically on the French panel},
+where both can be queried.
+
+To run that check, we re-query OSM on the ten largest French
+cities using the exact same Overpass query that E26 used on
+European cities, and compare with the Gold Standard's GTFS-based
+$C_M$ per city.
 
 \begin{table}[H]
 \centering
@@ -2447,14 +2487,160 @@ Third, the GTFS coverage gap explains the otherwise puzzling
 position of Lyon ($M_{\text{GTFS}} = 0.14$) and Marseille
 ($M_{\text{GTFS}} = 0.08$) at the bottom of the French
 multimodality distribution -- it is a measurement artefact, not
-a true environment deficit. We document this explicitly: the
-recommended next iteration of the pipeline ingests the OSM
-heavy-stop tag set on the French panel and triangulates with
-the (potentially incomplete) GTFS feed, taking the maximum of
-the two as the empirical $M$. The IMD ranking re-computed on
-this corrected $M$ would likely rerate Lyon, Marseille, and Lille
-upward, partially eroding the Cook-style leverage finding of
-Section~\ref{sec:val-leverage} on Lyon.
+a true environment deficit. The pattern slots cleanly into the
+\citet{Fosse2026gold} data-quality programme as a sixth,
+feed-level anomaly that the original A1--A5 taxonomy does not
+cover:
+
+\paragraph{Proposed anomaly class A6 (feed-level completeness
+gap).} \emph{The regional GTFS feed of a metropolitan public
+transport authority systematically under-covers the heavy network
+(tramway, metro, bus rapid transit), producing a Gold Standard
+multimodality value $C_M^{\text{GTFS}}$ that is an order of
+magnitude below the OSM-tag-based recomputation
+$C_M^{\text{OSM}}$ at the same buffer radius.} A6 differs from
+A1--A5 in granularity: A1--A5 affect individual stations or
+bounding boxes, A6 affects an entire municipal GTFS feed and
+therefore every bike-sharing station within that municipality's
+service area. The incidence on the present panel is three
+systems (Lyon, Marseille, Lille). The natural remediation is the
+triangulation already prescribed by \citet{Fosse2026gold} as a
+methodological option: ingest the OSM tag set as a second
+multimodality source and take $C_M = \max(C_M^{\text{GTFS}},
+C_M^{\text{OSM}})$ in Module 4 of the pipeline.
+
+In E30 (Section~\ref{sec:val-a6-rerun}) we run a focused
+re-calibration of the IMD with the A6 patch applied to Lyon,
+Marseille and Lille only, and report the substantive downstream
+effects.
+
+\subsection{A6 re-calibration: the Lyon, Marseille and Lille shift}
+\label{sec:val-a6-rerun}
+
+We apply the triangulation patch $M = \max(C_M^{\text{GTFS}},
+C_M^{\text{OSM}})$ for the three cities where E29 found
+OSM/GTFS ratios above 5 (Lyon, Marseille, Lille), leave the
+panel's other components unchanged, re-Min-Max-normalise the
+multimodality column on the corrected raw values, and re-run the
+differential-evolution weight calibration of
+Section~\ref{sec:calibration}.
+
+\begin{table}[H]
+\centering
+\caption{Effect of the A6 triangulation on the three affected
+cities, on the calibrated weight vector and on the
+Lyon Cook-style leverage diagnostic. All comparisons are
+ref vs.\ triangulated, on the same FUB$\cup$EMP calibration target.}
+\label{tab:a6-rerun}
+\small
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Quantity & Reference & Triangulated & Shift \\
+\midrule
+\multicolumn{4}{@{}l}{\textbf{Per-city impact (A6 cities)}} \\
+Lyon IMD                  & $39.5$ & $\mathbf{68.0}$ & $+28.5$ \\
+Lyon rank in panel        & $25$   & $\mathbf{6}$    & $+19$ places \\
+Lyon $P(\IES < 0.85)$ post.& $1.00$ & $\mathbf{0.00}$ & desert $\to$ not desert \\
+Marseille IMD             & $29.4$ & $\mathbf{53.4}$ & $+24.0$ \\
+Marseille rank            & $46$   & $\mathbf{17}$   & $+29$ places \\
+Marseille $P(\IES)$       & $0.67$ & $\mathbf{0.00}$ & desert $\to$ not desert \\
+Lille IMD                 & $40.8$ & $\mathbf{58.5}$ & $+17.7$ \\
+Lille rank                & $22$   & $\mathbf{10}$   & $+12$ places \\
+Lille $P(\IES)$           & $0.28$ & $\mathbf{0.00}$ & marginal $\to$ clear \\
+\midrule
+\multicolumn{4}{@{}l}{\textbf{Recalibrated weight vector}} \\
+$w_M$ multimodality   & $0.374$ & $0.286$ & $-0.088$ \\
+$w_I$ infrastructure  & $0.372$ & $0.429$ & $+0.057$ \\
+$w_S$ safety          & $0.053$ & $0.070$ & $+0.017$ \\
+$w_T$ topography      & $0.201$ & $0.214$ & $+0.013$ \\
+$\bar\rho$ (FUB+EMP, in-sample) & $0.546$ & $0.476$ & $-0.07$ \\
+\midrule
+\multicolumn{4}{@{}l}{\textbf{Cook-style leverage on Lyon}} \\
+$D_{\text{Lyon}}$    & $0.492$ & $\mathbf{0.140}$ & $-0.352$ \\
+\midrule
+\multicolumn{4}{@{}l}{\textbf{Panel ranking stability}} \\
+Kendall $\tau$(ref, triangulated)  & $1.000$ & $0.876$ & --- \\
+Top-10 overlap                     & $10$    & $7$     & 3 swaps \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Four substantive consequences follow.
+
+First, \textbf{Lyon ceases to be a Bayesian mobility desert}:
+$P(\IES < 0.85)$ collapses from $1.00$ to $0.00$. The Marseille
+and Lille \emph{desert} findings vanish as well. The
+prior-invariant four-city subset of Section~\ref{sec:val-bayes-ies}
+loses Lyon and is reduced to Amiens, Nancy, Saumur. The
+$\tau = 1$ nine-city list loses Lyon, Marseille and Lille (the
+latter was in the broader $P \geq 0.75$ list). The Bayesian
+equity diagnostic is therefore highly sensitive to the A6 anomaly
+and the operational shortlist of mobility deserts should be
+re-issued from the Gold Standard release that ingests the
+triangulated $M$.
+
+Second, \textbf{Lyon ceases to be a Cook-style leverage point}.
+$D_{\text{Lyon}}$ drops from $0.492$ to $0.140$, eight times the
+panel median rather than thirty times. The high-leverage finding
+of Section~\ref{sec:val-leverage} was largely an A6 artefact:
+Lyon's pull on the calibration came not from a genuine peculiarity
+of its cycling environment but from a measurement gap on its
+heavy-transit feeds. The recommendation to publish a Lyon-removed
+weight vector alongside the in-sample optimum
+(Table~\ref{tab:weights-comparison}) is correspondingly weakened.
+
+Third, the \textbf{weight vector tilts from
+multimodality-equal-infrastructure to infrastructure-dominant}:
+$w_I$ rises from $0.372$ to $0.429$ and $w_M$ falls from $0.374$
+to $0.286$. The substantive reading is that, once the three large
+metropolises have their true multimodality booked, multimodality
+discriminates less between cities (Lyon, Marseille and Lille are
+no longer at the bottom of $M$) and the optimisation reallocates
+weight onto the other components -- principally infrastructure --
+to retain the alignment with FUB and EMP. The in-sample
+$\bar\rho$ drops by $0.07$, consistent with the FUB and EMP
+panels containing residual reports that the corrected ranking no
+longer matches.
+
+Fourth, \textbf{the substantive Top-10 is rearranged but
+preserved in spirit}: Kendall $\tau = 0.88$, Top-10 overlap $7
+/ 10$. The three A6 cities all enter the Top-10 (Lyon at rank 6,
+Lille at 10); Bordeaux, Brest, and Rennes drop out by one or two
+places into the $11$--$15$ band. The headline result of the
+paper -- multimodality-dense, medium-sized French cities lead the
+national ranking -- still holds, but the Top-10 set is no longer
+\{Strasbourg, Montpellier, Nantes, Mulhouse, Paris, Caen, Brest,
+Bordeaux, Dijon, Rennes\}; under the A6 patch it becomes
+\{Strasbourg, Montpellier, Nantes, Mulhouse, Paris, Lyon, Caen,
+Belfort, Saint-Nazaire, Lille\}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\linewidth]{e30_triangulated_ranking.pdf}
+    \caption{IMD shift under A6 triangulation for the affected
+    cities (red) and the published Top-10 neighbours (navy).
+    Circles are the reference IMD; squares are the triangulated
+    IMD; arrows trace the shift. Kendall $\tau = 0.88$, Top-10
+    overlap $7/10$, the three A6 cities all enter the Top-15.}
+    \label{fig:e30-triangulated}
+\end{figure}
+
+We do not adopt the triangulated calibration as the
+\emph{reported} IMD in the rest of the paper, because Module~4
+of the Gold Standard pipeline as documented and frozen in
+\citet{Fosse2026gold} ingests the GTFS feed only -- changing the
+source would constitute a Gold Standard re-release rather than a
+paper-internal recomputation. Instead we (i) report E30 as a
+sensitivity experiment whose verdict is that three downstream
+findings (Lyon Cook leverage, Lyon/Marseille/Lille desert status,
+the $w_M = w_I$ co-equality of the calibrated weights) are
+A6-fragile, and (ii) recommend that the next Gold Standard
+release ingest both GTFS and OSM sources and re-issue the IMD on
+the corrected $M$. The four-city prior-invariant high-confidence
+desert subset of Section~\ref{sec:val-bayes-ies} reduces to
+three cities (Amiens, Nancy, Saumur) under the A6 patch; this
+trio is the only fully A6-robust desert subset on the present
+panel.
 
 \begin{figure}[H]
     \centering
@@ -2616,6 +2802,7 @@ Section & Test & Verdict \\
 \ref{sec:val-eu-stations}    & E25. Live European station-level fetch (10 cities) & Clean \\
 \ref{sec:val-imd-lite}       & E26. IMD-lite multimodality $M$ on European panel & Clean \\
 \ref{sec:val-osm-gtfs}       & E29. OSM-vs-GTFS calibration on French panel & Qualified \\
+\ref{sec:val-a6-rerun}       & E30. A6 re-calibration on Lyon/Marseille/Lille & Qualified \\
 \ref{sec:val-life-exp}       & E21. Coupling to département life expectancy & Null \\
 ---                          & E14. Synthetic control on infrastructure openings & Outstanding \\
 \bottomrule
@@ -2856,18 +3043,28 @@ weights.
 
 \subsection{Limitations}
 
-Three limitations of the present study deserve explicit mention.
+Four limitations of the present study deserve explicit mention.
 First, the GBFS feed is a snapshot at the time of collection and
 does not reflect the historical performance of a system; the
 synthetic-control test for the effect of infrastructure openings
 on the IMD trajectory is the dominant outstanding test
 (Section~\ref{sec:val-summary}). Second, the convex-hull
 geometry used to define the served area over-estimates coverage
-for coastal or valley cities; a concave hull or a built-area mask
-are natural refinements. Third, the panel is restricted to
+for coastal or valley cities; a concave hull or a built-area
+mask are natural refinements. Third, the panel is restricted to
 systems publishing GBFS, which under-represents end-of-contract
 operators and community schemes; the dataset can therefore not
 characterise the universe of French bike-sharing arrangements.
+Fourth, Module~4 of the Gold Standard pipeline as run in this
+paper ingested the national GTFS aggregation rather than the
+OpenStreetMap heavy-transit tag set; the OSM--GTFS calibration
+of Section~\ref{sec:val-osm-gtfs} demonstrates that the GTFS
+route under-covers the tramway and metro networks of Lyon,
+Marseille and Lille (anomaly class A6 of the Gold Standard
+data-quality programme). Repeating the IMD calibration after the
+triangulated $M = \max(C_M^{\text{GTFS}}, C_M^{\text{OSM}})$
+patch is the natural next step and is scheduled for the next
+Gold Standard release \citep{Fosse2026gold}.
 
 % =========================================================================
 \section{Conclusion}
@@ -2931,7 +3128,13 @@ OSM over-counts GTFS by a factor of $1.59$ on the French panel,
 so the consistent EU/FR multimodality gap is roughly
 $4 \times$, not the raw $6.6 \times$ -- still a substantial gap
 on the IMD component that the Sobol decomposition identified as
-the dominant driver of cycling well-being. The volumetric prior
+the dominant driver of cycling well-being. The over-count is
+concentrated on three French metropolises (Lyon, Marseille,
+Lille) whose regional GTFS feeds under-cover the tramway and
+metro networks; we name this feed-level completeness gap
+\emph{anomaly A6} and recommend that the next Gold Standard
+release \citep{Fosse2026gold} ingest both GTFS and OSM sources
+for Module~4 and take the maximum. The volumetric prior
 fails for France not because France under-invests but because
 the French model fragments deployments into many small, sparse,
 and weakly multimodal systems instead of fewer dense and tightly
