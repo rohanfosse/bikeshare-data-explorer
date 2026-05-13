@@ -66,9 +66,10 @@
 \usepackage{xspace}
 
 % =========================================================================
-\title{Cycling quality, local income, and spatial equity in French
-       bike-sharing systems: a composite-index audit of fifty-nine
-       urban areas with a thirteen-experiment falsification programme}
+\title{The fragmented French bike-sharing model:
+       a multi-scale audit of cycling-environment quality
+       beyond the volumetric prior, with a thirteen-experiment
+       falsification programme}
 
 \author[1]{Rohan Foss\'e\thanks{Corresponding author. E-mail:
             \texttt{rohan.fosse@gmail.com}.}}
@@ -83,69 +84,66 @@
 % =========================================================================
 \begin{abstract}
 \noindent
-French public investment in bike-sharing rests on the implicit
-assumption that higher local affluence and larger fleet
-deployments produce better cycling environments. We test both
-priors empirically on a national inventory of the General
-Bikeshare Feed Specification (122 operators, 46{,}139 stations,
-57 urban areas) and falsify them at three nested scales. To
-build the test we construct the Soft Mobility Index (IMD), a
-four-component supervised composite (multimodality $M$,
-cycling-infrastructure continuity $I$, cyclist safety $S$,
-topography $T$) calibrated by differential evolution against the
-FUB Cycling Barometer 2023 and the EMP 2019 mobility survey, and
-the complementary Spatial Equity Index (IES), reported in a
-Ridge point form and a Bayesian normal--inverse-gamma form with
-prior sensitivity.
+\textbf{The French bike-sharing model is structurally fragmented
+and weakly transit-integrated, and the current
+monitoring stack (volumetric metrics, national GTFS aggregations)
+systematically under-detects this fragmentation.} We document
+this thesis at three nested scales on the largest audited
+inventory of the General Bikeshare Feed Specification ever
+released for France (122 operators, 46{,}139 stations, 57 urban
+areas, companion Gold Standard release of
+\citet{Fosse2026gold}).
 
-On the French panel, the IMD ranges from $17.2$ to $96.7$;
-$\rho_{\mathrm{Sp}}(\IMD, \text{income}) = +0.041$ ($p = 0.76$);
-medium-sized cities (Strasbourg, Montpellier) outrank Paris and
-Lyon; the IMD doubles the cycling well-being predictive power of
-the volumetric default ($\rho_{\mathrm{LOO}}^{\text{FUB}} = +0.41$
-vs.\ $+0.20$, $n = 32$). $80.8\,\%$ of station-level IMD variance
-is \emph{within} cities rather than between, and seven
-positive-deviant cities share a single signature -- multimodality
-at four times the panel mean. A counterfactual $M{+}I$ uplift to
-the panel 75th percentile implies $+18$ IMD points and a
-$+44\,\%$ eco-counter increase under the elasticity calibrated
-from observed counts.
+\emph{At European scale}, France ranks first on number of GBFS
+systems and eighteenth on cycling modal share. A live
+station-level fetch of ten EU non-FR systems shows that the EU
+non-FR median carries \textbf{six times more stations per system}
+and \textbf{three times the station density} of the French
+median; an OSM-based recomputation of multimodality on the same
+ten cities shows the EU median at \textbf{four times the French
+median} after calibrating the OSM-vs-GTFS measurement bias
+(corrected from a raw $6.6 \times$). Budapest, Warsaw and Vienna
+sit two to three times above the best French city on
+multimodality.
 
-At European scale, France ranks first on number of GBFS systems
-and eighteenth on cycling modal share. A live station-level fetch
-of ten EU non-FR systems and an OSM-based recomputation of the
-multimodality component show that the EU non-FR median carries
-six times more stations per system, three times the station
-density, and four times the multimodality of the French median --
-after calibrating the OSM-vs-GTFS measurement bias on the French
-panel (raw $6.6 \times$ corrected to $\sim 4 \times$). The
-volumetric anomaly is structural: France fragments deployments
-into many small, sparse, weakly transit-integrated systems.
+\emph{Within France}, $80.8\,\%$ of station-level IMD variance is
+\emph{within} cities rather than between, and a Cook-style
+leverage diagnostic plus a feed-level GTFS audit reveal that the
+French metropolises most criticised on cycling-environment
+quality (Lyon, Marseille, Lille) are instead victims of an
+under-covered national GTFS feed: triangulating the multimodality
+component against OpenStreetMap raises Lyon from rank 25 to rank
+6 and removes Lyon, Marseille and Lille from the Bayesian
+mobility-desert list. We name this feed-level data-quality
+anomaly class \emph{A6}, extending the station-level A1--A5
+taxonomy of \citet{Fosse2026gold}, and propose a parallel
+G1--G5 taxonomy on the GTFS layer of the Gold Standard pipeline.
 
-The OSM-vs-GTFS calibration uncovers a feed-level data-quality
-anomaly we name \emph{A6}, extending the station-level A1--A5
-taxonomy of the companion Gold Standard programme
-\citep{Fosse2026gold}. We propose a parallel G1--G5 GTFS-feed
-taxonomy and identify six panel cities (G1 + G2) where the
-national GTFS aggregation under-covers the local tramway and
-metro networks by more than an order of magnitude. Re-running
-the IMD with the triangulated $M = \max(C_M^{\mathrm{GTFS}},
-C_M^{\mathrm{OSM}})$ patch on the three worst cases (Lyon,
-Marseille, Lille) demotes them from the Bayesian desert list
-($P(\IES < 0.85)$ drops $1.00 \to 0.00$ for Lyon, $0.67 \to 0.00$
-for Marseille, $0.28 \to 0.00$ for Lille) and shrinks Lyon's
-Cook-style calibration leverage from $0.49$ to $0.14$. The
-A6-robust prior-invariant high-confidence desert subset thus
-reduces to three cities (Amiens, Nancy, Saumur).
+\emph{Within the indicator},
+$\rho_{\mathrm{Sp}}(\IMD, \text{income}) = +0.041$ ($p = 0.76$):
+cycling-environment quality is statistically independent of local
+income, falsifying the affluence prior. The IMD doubles the
+cycling well-being predictive power of the volumetric default
+($\rho_{\mathrm{LOO}}^{\text{FUB}} = +0.41$ vs.\ $+0.20$,
+$n = 32$). A Saltelli/Jansen variance decomposition shows that
+multimodality and infrastructure jointly account for $82\,\%$
+of the IMD score variance; safety contributes essentially
+nothing and the IMD is effectively a two-component composite
+under the calibrated weights.
 
-The IMD/IES framework is submitted to a thirteen-experiment
-falsification programme; twelve tests are executed and are
-classified as \emph{clean} (seven), \emph{qualified} (two:
-Bayesian IES under prior sweep, Cook leverage as A6/A4
-composite), or \emph{substitute} (three: deferred station-level
-kriging, full radius re-enrichment). The thirteenth, a
-longitudinal synthetic-control identification, requires
-historical GBFS archives still to be ingested. All code, data
+To build the audit we construct the Soft Mobility Index (IMD), a
+four-component supervised composite (multimodality, cycling
+infrastructure, safety, topography) calibrated by differential
+evolution against the FUB Cycling Barometer 2023 and the EMP
+2019 mobility survey, and the complementary Spatial Equity
+Index (IES), reported in Ridge and Bayesian normal--inverse-gamma
+forms with prior sensitivity. The framework is submitted to a
+thirteen-experiment falsification programme; twelve tests are
+executed and classified as \emph{clean} (seven),
+\emph{qualified} (two), or \emph{substitute} (three: deferred
+station-level kriging and a full radius re-enrichment). The
+A6-robust prior-invariant high-confidence desert subset reduces
+to three cities (Amiens, Nancy, Saumur). All code, data
 products, intermediate outputs and experiment scripts are
 released openly under the FAIR principles.
 
@@ -223,30 +221,45 @@ of the IES, per-city confidence intervals, parametric
 buffer-radius sweep, Cook-style leverage and a data-driven
 k-means typology), of which twelve are executed in this paper.
 
-The research questions that organise the analysis are:
+The five research questions that organise the analysis follow
+the three-scale structure of the audit:
 \begin{itemize}
     \item[Q1.] How can the performance of a bike-sharing system be
-    measured by a composite, equitable indicator?
-    \item[Q2.] To what extent do volumetric metrics (number of
-    stations, capacity per inhabitant) predict the resulting
-    cycling quality?
-    \item[Q3.] Is there a systematic relationship between
-    bike-sharing performance and the socio-economic profile of the
-    host urban area?
-    \item[Q4.] Under what robustness conditions does the
-    indicator's ranking and the equity diagnostic survive
-    out-of-sample testing?
+    measured by a composite indicator that is calibrated against
+    behavioural references rather than chosen normatively?
+    \item[Q2.] Do volumetric metrics (number of stations, capacity
+    per inhabitant, fleet size) predict the resulting cycling
+    quality?
+    \item[Q3.] Does local income predict bike-sharing performance,
+    and how should the equity diagnostic be specified?
+    \item[Q4.] How does the French panel compare, on the same
+    supply-side dimensions, with the wider European
+    bike-sharing landscape?
+    \item[Q5.] Are the rankings, the equity lists and the
+    structural diagnoses robust under the documented data-quality
+    anomalies of the upstream Gold Standard release
+    \citep{Fosse2026gold}, and how should the indicator
+    self-correct when those anomalies are exposed?
 \end{itemize}
 
 Section~\ref{sec:related} situates the contribution against the
 literature on bike-sharing, composite indicators and spatial
-equity. Section~\ref{sec:data} documents the data sources and the
-enrichment pipeline. Section~\ref{sec:methods} formalises the IMD
-and the IES. Section~\ref{sec:results} reports descriptive results.
-Section~\ref{sec:validation} reports the executed falsification
-experiments and their implications for the indicator's validity.
-Section~\ref{sec:discussion} discusses the policy implications and
-limitations. Section~\ref{sec:conclusion} concludes.
+equity. Section~\ref{sec:data} documents the data sources and
+the Gold Standard pipeline that the present work consumes.
+Section~\ref{sec:methods} formalises the IMD and the IES.
+Section~\ref{sec:results} reports the French-panel falsification
+of the volumetric and income priors (Q1--Q3).
+Section~\ref{sec:findings-extended} extends the panel-level
+findings with within-city variance decomposition, positive-deviant
+diagnostics and a counterfactual policy simulator.
+Section~\ref{sec:continental} answers Q4 with the European-scale
+comparison. Section~\ref{sec:self-correction} answers Q5 by
+auditing the GTFS feeds that the Gold Standard ingests for
+Module~4 and self-correcting the affected findings.
+Section~\ref{sec:validation} reports the twelve executed
+robustness experiments. Section~\ref{sec:discussion} discusses
+the policy implications and limitations.
+Section~\ref{sec:conclusion} concludes.
 
 % =========================================================================
 \section{Related work}
@@ -518,6 +531,27 @@ For safety and topography, the sign is inverted after normalisation
 so that a higher score reflects a more cycling-friendly
 environment.
 
+\paragraph{The effective IMD is two-component.}
+We retain the four-component form for taxonomic clarity and for
+backwards compatibility with the
+\citet{Fosse2026gold} Gold Standard release, but the Sobol/Jansen
+variance decomposition of Section~\ref{sec:val-sobol} establishes
+that the calibrated IMD is effectively a two-component composite.
+Multimodality and infrastructure jointly account for $82\,\%$ of
+the IMD score variance ($S_M = 0.34$, $S_I = 0.48$, sum
+$\approx 0.82$); topography contributes $14\,\%$; safety
+contributes essentially nothing ($S_S \approx 0.01$) because
+its calibrated weight $w_S$ sits at the simplex floor
+$w_{\min} = 0.05$ -- the supervised optimiser cannot find
+discriminative information in $C_S$ that survives the
+exposure-confounding documented in Section~\ref{sec:val-flow}.
+We continue to report all four components in the body of the
+paper, but the reader should interpret the IMD as a
+\emph{multimodality + infrastructure} composite, with topography
+acting as a contextualiser and safety as a methodological
+placeholder pending the station-level cyclist-exposure
+correction scoped under E14.
+
 \subsection{Weight calibration by differential evolution}
 \label{sec:calibration}
 
@@ -638,23 +672,36 @@ panel (E12), and a data-driven k-means typology of the panel
 (E13). Section~\ref{sec:validation} reports the results.
 
 % =========================================================================
-\section{Results}
+\section{The volumetric prior falsified on the French panel}
 \label{sec:results}
 % =========================================================================
 
-This section reports the descriptive results that answer the
-research questions of Section~\ref{sec:introduction}: a national
-overview of the calibrated IMD (Section~\ref{sec:results-overview}),
-the empirical falsification of the volumetric prior
-(Section~\ref{sec:results-volume}, answering Q2), the empirical
-falsification of the income prior
-(Section~\ref{sec:results-income}, answering Q3), a four-quadrant
-typology of the panel (Section~\ref{sec:results-quadrants}), the
-operational mobility-desert list
-(Section~\ref{sec:results-deserts}, answering Q1), and the
-Montpellier case (Section~\ref{sec:results-montpellier}). The
-robustness conditions under which these answers hold (Q4) are
-deferred to Section~\ref{sec:validation}.
+We open the audit on the French panel by testing the volumetric
+prior implicit in current policy communications: more stations
+should mean better cycling, and richer cities should be
+better-equipped. The section is organised as a single arc of
+falsification. Section~\ref{sec:results-overview} reports the
+ranking and the calibrated weights. Section~\ref{sec:results-volume}
+shows that fleet volume does not predict the ranking: Strasbourg
+(39 stations) outranks Paris (1\,507). Section~\ref{sec:results-income}
+shows that local income does not predict it either: the Spearman
+correlation is $\rho = +0.04$ ($p = 0.76$) and the Bayesian
+posterior on the standardised income coefficient straddles zero.
+Section~\ref{sec:results-quadrants} cross-tabulates IMD and
+income into four quadrants and documents that more than a
+quarter of the panel are \emph{inclusive over-performers}
+(low-income, high-IMD). Section~\ref{sec:results-deserts}
+operationalises the equity diagnostic as the IES.
+Section~\ref{sec:results-usage} answers Q1 directly with a
+metric tournament against four behavioural alternatives:
+the IMD doubles the well-being predictive power of the
+volumetric default and a regression decomposition isolates
+multimodality as the only credibly non-zero IMD component on
+subjective well-being. Section~\ref{sec:results-montpellier}
+illustrates the multimodality-driven thesis on a single case
+study; the deeper structural diagnosis at continental scale and
+the data-quality self-correction follow in
+Sections~\ref{sec:continental} and~\ref{sec:self-correction}.
 
 \subsection{National overview}
 \label{sec:results-overview}
@@ -3012,6 +3059,39 @@ data-quality programme). Repeating the IMD calibration after the
 triangulated $M = \max(C_M^{\text{GTFS}}, C_M^{\text{OSM}})$
 patch is the natural next step and is scheduled for the next
 Gold Standard release \citep{Fosse2026gold}.
+
+\subsection{Next iteration: IMD-2 probabilistic, station-level}
+\label{sec:future-work}
+
+Three of the limitations above converge on a single redesign
+that we scope for the next iteration. The Sobol decomposition
+(Section~\ref{sec:val-sobol}) and the calibration table
+(Section~\ref{sec:val-loo}) jointly show that the IMD is
+effectively two-component (multimodality + cycling
+infrastructure account for $82\,\%$ of the score variance);
+the within-city variance decomposition
+(Section~\ref{sec:val-within}) shows that $80.8\,\%$ of the
+IMD variance lives at station level rather than city level; and
+the OSM--GTFS calibration (Section~\ref{sec:val-osm-gtfs})
+shows that the per-component measurement bias is heterogeneous
+across cities. The natural successor of the present indicator is
+therefore an \emph{IMD-2} that
+\begin{itemize}
+\item drops the safety component from the main composite (a
+construct-valid safety audit is reported separately rather than
+folded into one number),
+\item operates at station rather than city granularity, with
+city-level aggregation a downstream summary,
+\item replaces the deterministic Min--Max + convex combination
+with a probabilistic model that propagates per-component
+measurement uncertainty (Bayesian hierarchical or Gaussian
+process on the panel) and outputs each station's IMD as a
+distribution rather than a point.
+\end{itemize}
+A natural rollout path is to release IMD-2 alongside the next
+Gold Standard release that ingests the A6/G1--G5 patch, so that
+the indicator's redesign and the upstream data-quality
+correction land together.
 
 % =========================================================================
 \section{Conclusion}
