@@ -28,6 +28,14 @@ import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
+# Cross-version GBFS parsing is delegated to the maintained gbfs-toolkit library
+# (handles v1/v2/v3 discovery, localized names, and the v3 num_vehicles_available rename).
+from gbfs_toolkit import (
+    parse_discovery,
+    to_canonical_station_info,
+    to_canonical_station_status,
+)
+
 _ROOT       = Path(__file__).parent.parent
 _CATALOG    = _ROOT / "data" / "gbfs_france" / "systems_catalog.csv"
 _SNAP_DIR   = _ROOT / "data" / "status_snapshots"
@@ -115,7 +123,8 @@ PRIORITY_SYSTEMS: list[str] = [
 def _discover_feed_url(gbfs_url: str, feed_name: str, timeout: int = _TIMEOUT) -> str | None:
     """
     Interroge gbfs.json et retourne l'URL du feed demandé.
-    Compatible GBFS v2.x et v3.x.
+    La résolution v1/v2/v3 (data.feeds plat ou data.<lang>.feeds) est déléguée à
+    gbfs_toolkit.parse_discovery.
     """
     try:
         r = _get_session().get(gbfs_url, timeout=timeout)
@@ -125,22 +134,8 @@ def _discover_feed_url(gbfs_url: str, feed_name: str, timeout: int = _TIMEOUT) -
         log.warning("Impossible de charger %s : %s", gbfs_url, exc)
         return None
 
-    # v3 : data.feeds est un tableau plat
-    feeds_v3 = doc.get("data", {}).get("feeds", [])
-    if feeds_v3:
-        for feed in feeds_v3:
-            if feed.get("name") == feed_name:
-                return feed.get("url")
-
-    # v2 : data.<lang>.feeds
-    data = doc.get("data", {})
-    for lang_key, lang_val in data.items():
-        if isinstance(lang_val, dict):
-            for feed in lang_val.get("feeds", []):
-                if feed.get("name") == feed_name:
-                    return feed.get("url")
-
-    return None
+    feeds, _version = parse_discovery(doc)
+    return feeds.get(feed_name)
 
 
 def _fetch_station_status(status_url: str, timeout: int = _TIMEOUT) -> list[dict]:
@@ -189,16 +184,22 @@ def _fetch_station_info(info_url: str, timeout: int = _TIMEOUT) -> pd.DataFrame:
     if not stations:
         return pd.DataFrame()
 
-    rows = []
-    for s in stations:
-        rows.append({
-            "station_id": str(s.get("station_id", "")),
-            "name":       str(s.get("name", s.get("station_name", ""))),
-            "lat":        float(s.get("lat", 0.0)),
-            "lon":        float(s.get("lon", 0.0)),
-            "capacity":   int(s.get("capacity", 0)),
-        })
-    return pd.DataFrame(rows)
+    # Per-station field parsing (incl. v3 localized name arrays) via gbfs-toolkit,
+    # then adapt to this app's historical info schema/dtypes.
+    canon = to_canonical_station_info({"data": {"stations": stations}}, system_id="")
+    return pd.DataFrame({
+        "station_id": canon["station_id"].astype(str),
+        "name":       canon["name"].fillna("").astype(str),
+        "lat":        pd.to_numeric(canon["lat"], errors="coerce").fillna(0.0),
+        "lon":        pd.to_numeric(canon["lon"], errors="coerce").fillna(0.0),
+        "capacity":   pd.to_numeric(canon["capacity"], errors="coerce").fillna(0).astype(int),
+    })
+
+
+_STATUS_COLUMNS = [
+    "fetched_at", "system_id", "station_id",
+    "num_bikes_available", "num_docks_available", "is_renting", "is_returning",
+]
 
 
 def _parse_status_snapshot(
@@ -206,21 +207,29 @@ def _parse_status_snapshot(
     fetched_at: datetime,
     system_id: str,
 ) -> pd.DataFrame:
-    rows = []
-    for s in stations_raw:
-        sid  = str(s.get("station_id", ""))
-        bikes = s.get("num_bikes_available", s.get("num_vehicles_available", 0))
-        docks = s.get("num_docks_available", 0)
-        rows.append({
-            "fetched_at":           fetched_at,
-            "system_id":            system_id,
-            "station_id":           sid,
-            "num_bikes_available":  int(bikes) if bikes is not None else 0,
-            "num_docks_available":  int(docks) if docks is not None else 0,
-            "is_renting":           bool(s.get("is_renting", True)),
-            "is_returning":         bool(s.get("is_returning", True)),
-        })
-    return pd.DataFrame(rows)
+    """Normalise a raw station_status list to this app's snapshot schema.
+
+    Field parsing (incl. the GBFS 3.0 ``num_vehicles_available`` rename) is delegated to
+    gbfs_toolkit.to_canonical_station_status, then mapped back to the app's historical
+    columns/dtypes (plain int/bool, the caller's ``fetched_at``).
+    """
+    if not stations_raw:
+        return pd.DataFrame(columns=_STATUS_COLUMNS)
+
+    canon = to_canonical_station_status(
+        {"data": {"stations": stations_raw}},
+        system_id=system_id,
+        fetched_at=pd.Timestamp(fetched_at),
+    )
+    return pd.DataFrame({
+        "fetched_at":          fetched_at,
+        "system_id":           system_id,
+        "station_id":          canon["station_id"].astype(str),
+        "num_bikes_available": canon["num_bikes_available"].fillna(0).astype(int),
+        "num_docks_available": canon["num_docks_available"].fillna(0).astype(int),
+        "is_renting":          canon["is_renting"].fillna(True).astype(bool),
+        "is_returning":        canon["is_returning"].fillna(True).astype(bool),
+    })
 
 
 def compute_pseudo_flows(snapshots: pd.DataFrame) -> pd.DataFrame:
