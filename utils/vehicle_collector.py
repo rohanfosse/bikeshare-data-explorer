@@ -32,6 +32,7 @@ from pathlib import Path
 
 import pandas as pd
 
+from gbfs_toolkit import to_canonical_vehicles
 from utils.gbfs_collector import (
     PRIORITY_SYSTEMS,
     _ROOT,
@@ -77,6 +78,12 @@ def _fetch_vehicles(url: str, timeout: int = _TIMEOUT) -> list[dict]:
     return []
 
 
+_VEHICLE_COLUMNS = [
+    "fetched_at", "system_id", "vehicle_id", "lat", "lon",
+    "station_id", "is_disabled", "is_reserved", "vehicle_type_id",
+]
+
+
 def _parse_vehicle_snapshot(
     vehicles_raw: list[dict],
     fetched_at: datetime,
@@ -84,30 +91,36 @@ def _parse_vehicle_snapshot(
 ) -> pd.DataFrame:
     """Normalise un snapshot véhicule.
 
-    Conserve l'identifiant persistant, la position, et les drapeaux
-    qui distinguent un vélo disponible d'un vélo HS / réservé — ces
-    drapeaux servent à filtrer le rééquilibrage lors de la
-    reconstruction OD.
+    Conserve l'identifiant persistant, la position, et les drapeaux qui distinguent un vélo
+    disponible d'un vélo HS / réservé (utilisés pour filtrer le rééquilibrage lors de la
+    reconstruction OD). Le parsing des champs (v2 ``bike_id`` / v3 ``vehicle_id``) est délégué
+    à gbfs_toolkit.to_canonical_vehicles, puis ramené au schéma/dtypes historiques de l'app.
     """
-    rows = []
-    for v in vehicles_raw:
-        vid = v.get("vehicle_id", v.get("bike_id"))
-        if vid is None:
-            continue
-        lat = v.get("lat")
-        lon = v.get("lon")
-        rows.append({
-            "fetched_at":      fetched_at,
-            "system_id":       system_id,
-            "vehicle_id":      str(vid),
-            "lat":             float(lat) if lat is not None else None,
-            "lon":             float(lon) if lon is not None else None,
-            "station_id":      str(v["station_id"]) if v.get("station_id") is not None else None,
-            "is_disabled":     bool(v.get("is_disabled", False)),
-            "is_reserved":     bool(v.get("is_reserved", False)),
-            "vehicle_type_id": str(v["vehicle_type_id"]) if v.get("vehicle_type_id") is not None else None,
-        })
-    return pd.DataFrame(rows)
+    raw = [v for v in vehicles_raw if (v.get("vehicle_id") or v.get("bike_id")) is not None]
+    if not raw:
+        return pd.DataFrame(columns=_VEHICLE_COLUMNS)
+
+    canon = to_canonical_vehicles(
+        {"data": {"vehicles": raw}},
+        system_id=system_id,
+        fetched_at=pd.Timestamp(fetched_at),
+    )
+
+    def _opt_str(col: pd.Series) -> pd.Series:
+        # nullable string -> object with None (preserve the app's historical None, not pd.NA)
+        return col.astype(object).where(col.notna(), None)
+
+    return pd.DataFrame({
+        "fetched_at":      fetched_at,
+        "system_id":       system_id,
+        "vehicle_id":      canon["vehicle_id"].astype(str),
+        "lat":             pd.to_numeric(canon["lat"], errors="coerce"),
+        "lon":             pd.to_numeric(canon["lon"], errors="coerce"),
+        "station_id":      _opt_str(canon["station_id"]),
+        "is_disabled":     canon["is_disabled"].fillna(False).astype(bool),
+        "is_reserved":     canon["is_reserved"].fillna(False).astype(bool),
+        "vehicle_type_id": _opt_str(canon["vehicle_type_id"]),
+    })
 
 
 # ── Reconstruction OD (couche analyse, à lancer une fois l'historique accumulé) ──
