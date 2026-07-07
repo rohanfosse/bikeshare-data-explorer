@@ -109,6 +109,11 @@ def _upsert_daily(out_dir: str, day: str, rows: list[dict]) -> int:
     new = pd.DataFrame(rows)
     if os.path.exists(path):
         old = pd.read_parquet(path)
+        # Un passage sans alerte peut avoir cree un parquet vide SANS colonnes ;
+        # le merge sur alert_id leverait KeyError et perdrait les alertes du jour
+        # (bug des 3-5 juillet 2026, 12 ecritures TaM perdues). Vide avec schema.
+        if "alert_id" not in old.columns:
+            old = pd.DataFrame(columns=new.columns)
         if len(new):
             key = ["alert_id", "content_hash"]
             merged = old.merge(new[key + ["last_seen"]], on=key, how="left",
@@ -151,6 +156,21 @@ def main() -> int:
             summary.append(f"{network}:{len(rows)}a/{total}j" + (f"/{errs}err" if errs else ""))
         except Exception as exc:  # noqa: BLE001
             summary.append(f"{network}:écriture-KO({exc})")
+            # Filet de secours (leçon des 3-5 juillet 2026) : ne JAMAIS perdre
+            # des alertes déjà parsées à cause d'un bug d'écriture. Dump JSON
+            # atomique à côté du parquet ; volumes minuscules.
+            if rows:
+                try:
+                    rdir = os.path.join(root, "transit_alerts", network)
+                    os.makedirs(rdir, exist_ok=True)
+                    rpath = os.path.join(
+                        rdir, "RESCUE_%s_%s.json" % (day, now.strftime("%H%M%S")))
+                    with open(rpath + ".tmp", "w", encoding="utf-8") as fh:
+                        json.dump(rows, fh, ensure_ascii=False)
+                    os.replace(rpath + ".tmp", rpath)
+                    summary.append(f"{network}:secours={os.path.basename(rpath)}")
+                except Exception:  # noqa: BLE001 - le secours ne casse jamais le tir
+                    pass
     log.info("alertes %s", " ".join(summary))
     return 0  # toujours : le cron ne doit jamais s'alarmer, healthcheck s'en charge
 
